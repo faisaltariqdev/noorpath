@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="NoorPath Academy - Learn Quran Online">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a6e4f"/>
+      <stop offset="100%" stop-color="#063d2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="90" r="120" fill="#c9922a" opacity="0.15"/>
+  <circle cx="120" cy="540" r="160" fill="#14b882" opacity="0.12"/>
+  <text x="80" y="180" fill="#e8b84b" font-family="Georgia, serif" font-size="42" font-weight="700">NoorPath Academy</text>
+  <text x="80" y="280" fill="#ffffff" font-family="Georgia, serif" font-size="64" font-weight="700">Learn Quran Online</text>
+  <text x="80" y="350" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" opacity="0.92">Qaida " Tajweed " Hifz " Kids &amp; Family Plans</text>
+  <text x="80" y="430" fill="#e8b84b" font-family="Arial, sans-serif" font-size="30" font-weight="700">FREE 30-Minute Trial Class</text>
+  <text x="80" y="490" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" opacity="0.8">Certified Tutors " Ages 4 to Adults " noorpath.online</text>
+  <rect x="80" y="520" width="320" height="8" rx="4" fill="#c9922a" opacity="0.8"/>
+</svg>
