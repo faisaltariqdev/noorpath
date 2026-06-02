@@ -2766,11 +2766,10 @@
         <div class="cta-form-wrap">
           <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:6px;">Book Your Free Trial</h3>
           <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:22px;">Fill in your details — booking details are sent to our team by email. Prefer instant chat? Tap WhatsApp.</p>
-          <form id="trialForm" action="https://formsubmit.co/faisaltariq042@gmail.com" method="POST" novalidate>
+          <form id="trialForm" action="#" method="POST" novalidate>
             <input type="hidden" name="_subject" value="New NoorPath Free Trial Booking" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" id="formNextUrl" value="" />
             <input type="hidden" name="family_plan" id="familyPlanHidden" value="No" />
             <input class="cta-input" type="text" name="name" id="trialName" placeholder="Your Full Name" required />
             <input class="cta-input" type="email" name="email" id="trialEmail" placeholder="Email Address" required />
@@ -2937,41 +2936,46 @@
     }
   }
 
-  // CTA form — POST to FormSubmit (reliable; no AJAX/CORS issues)
+  // CTA form — AJAX to FormSubmit (avoids redirect + QUIC errors on formsubmit.co)
   const trialForm = document.getElementById('trialForm');
+  const FORM_SUBMIT_URL = 'https://formsubmit.co/ajax/faisaltariq042@gmail.com';
+
+  function showTrialFormSuccess() {
+    const btn = document.getElementById('trialSubmitBtn');
+    const status = document.getElementById('formStatus');
+    if (btn) {
+      btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!';
+      btn.style.background = 'var(--emerald-mid)';
+      btn.disabled = true;
+    }
+    if (status) {
+      status.style.display = 'block';
+      status.textContent = 'Thank you! We will contact you within 24 hours.';
+      status.style.color = 'var(--gold-lt)';
+    }
+  }
+
+  function resetTrialFormButton() {
+    const btn = document.getElementById('trialSubmitBtn');
+    if (btn) {
+      btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class';
+      btn.disabled = false;
+    }
+  }
+
   if (trialForm) {
-    const formNextUrl = document.getElementById('formNextUrl');
-    if (formNextUrl) {
-      const base = window.location.href.split('?')[0].split('#')[0];
-      formNextUrl.value = base + '?sent=1#cta';
-    }
-
-    if (new URLSearchParams(window.location.search).get('sent') === '1') {
-      const btn = document.getElementById('trialSubmitBtn');
-      const status = document.getElementById('formStatus');
-      if (btn) {
-        btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!';
-        btn.style.background = 'var(--emerald-mid)';
-        btn.disabled = true;
-      }
-      if (status) {
-        status.style.display = 'block';
-        status.textContent = 'Thank you! We will contact you within 24 hours.';
-        status.style.color = 'var(--gold-lt)';
-      }
-      history.replaceState({}, '', window.location.pathname + '#cta');
-    }
-
-    trialForm.addEventListener('submit', (e) => {
+    trialForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
       if (!trialForm.checkValidity()) {
-        e.preventDefault();
         trialForm.reportValidity();
         return;
       }
+
       const fp = document.getElementById('familyPlanHidden');
       if (fp) {
         fp.value = document.getElementById('siblingEnroll').checked ? 'Yes — family plan' : 'No';
       }
+
       const btn = document.getElementById('trialSubmitBtn');
       const status = document.getElementById('formStatus');
       if (btn) {
@@ -2982,6 +2986,40 @@
         status.style.display = 'block';
         status.textContent = 'Please wait, sending your booking...';
         status.style.color = 'rgba(255,255,255,.6)';
+      }
+
+      try {
+        const response = await fetch(FORM_SUBMIT_URL, {
+          method: 'POST',
+          body: new FormData(trialForm),
+          headers: { Accept: 'application/json' }
+        });
+        const data = await response.json();
+        const ok = data.success === true || data.success === 'true';
+
+        if (ok) {
+          trialForm.reset();
+          showTrialFormSuccess();
+          return;
+        }
+
+        const msg = data.message || '';
+        if (/activ/i.test(msg)) {
+          if (status) {
+            status.textContent = 'Almost ready! Check faisaltariq042@gmail.com and click the activation link from FormSubmit, then try again.';
+            status.style.color = 'var(--gold-lt)';
+          }
+        } else if (status) {
+          status.textContent = msg || 'Could not send. Please WhatsApp us or email directly.';
+          status.style.color = '#ffb4b4';
+        }
+        resetTrialFormButton();
+      } catch (err) {
+        if (status) {
+          status.textContent = 'Network error. Please try again or contact us on WhatsApp.';
+          status.style.color = '#ffb4b4';
+        }
+        resetTrialFormButton();
       }
     });
   }
