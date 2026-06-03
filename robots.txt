@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://noorpath.online/sitemap.xml
+Sitemap: https://www.noorpath.online/sitemap.xml
