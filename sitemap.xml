@@ -73,6 +73,14 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Free Resources (Linkable Asset) -->
+  <url>
+    <loc>https://noorpath.online/free-resources.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://noorpath.online/blog/</loc>

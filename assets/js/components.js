@@ -75,6 +75,7 @@ const NP = {
           <li><a href="/locations/online-quran-classes-uk.html">United Kingdom</a></li>
           <li><a href="/locations/online-quran-classes-usa.html">United States</a></li>
           <li><a href="/blog/">Blog & Articles</a></li>
+          <li><a href="/free-resources.html">Free Resources</a></li>
           <li><a href="/#tutors">Our Tutors</a></li>
           <li><a href="/#pricing">Pricing</a></li>
           <li><a href="/#cta">Free Trial</a></li>
