@@ -13,6 +13,7 @@ const NP = {
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
         <li class="nav-item"><a class="nav-link" href="/#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="/#roadmap">Roadmap</a></li>
         <li class="nav-item"><a class="nav-link" href="/#tutors">Tutors</a></li>
         <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
@@ -69,8 +70,9 @@ const NP = {
         </ul>
       </div>
       <div class="col-lg-2 col-md-3 col-6">
-        <div class="footer-heading">Locations</div>
+        <div class="footer-heading">Company</div>
         <ul class="footer-links">
+          <li><a href="/about.html">About Us</a></li>
           <li><a href="/locations/online-quran-classes-canada.html">Canada</a></li>
           <li><a href="/locations/online-quran-classes-uk.html">United Kingdom</a></li>
           <li><a href="/locations/online-quran-classes-usa.html">United States</a></li>
