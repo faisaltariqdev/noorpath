@@ -7,8 +7,8 @@
   <meta name="description" content="NoorPath Academy — #1 online Quran academy for families worldwide. Noorani Qaida, Tajweed, Hifz memorization, Arabic, Islamic studies, daily duas for kids. Certified male &amp; female tutors. Family plans for siblings. Free 30-minute trial class — no credit card required.">
   <meta name="keywords" content="learn quran online, online quran classes, quran tutor online, online quran academy, quran learning online, quran classes for kids, online quran for kids, quran classes for children, learn quran for beginners, best online quran academy, noorpath academy, noorpath, noorpath online, noorpath quran, tajweed classes online, tajweed online, learn tajweed online, tajweed course online, hifz program online, online hifz classes, quran memorization online, hifz for kids online, noorani qaida online, learn noorani qaida online, qaida online classes, arabic language online, quranic arabic online, islamic studies online, online islamic education, daily duas for kids, duas for children online, female quran tutor, female quran teacher online, online quran teacher, certified quran tutor, quran tutor for kids, family quran classes, quran classes for siblings, quran family plan, online quran classes canada, quran classes toronto, quran tutor canada, online quran uk, quran classes london, quran tutor uk, online quran usa, quran classes usa, quran tutor texas, online quran australia, quran classes sydney, quran tutor australia, online quran uae, quran classes dubai, online quran pakistan, quran academy pakistan, online quran for adults, quran classes for adults, quran classes for reverts, quran for new muslims, online quran for seniors, one on one quran classes, 1 on 1 quran tutor, private quran tutor, live quran classes, zoom quran classes, skype quran classes, quran classes from home, free quran trial class, free quran class online, quran trial class no credit card">
   <meta name="author" content="NoorPath Academy">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
   <meta name="theme-color" content="#0a6e4f">
   <meta name="rating" content="general">
   <meta name="language" content="English">
@@ -22,7 +22,7 @@
   <meta name="geo.region" content="US, CA, GB, AU, AE, SA, PK">
   <meta name="geo.placename" content="Worldwide">
 
-  <link rel="canonical" href="https://noorpath.online/">
+  <link rel="canonical" href="https://www.noorpath.online/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/og-image.svg">
 
@@ -3364,18 +3364,18 @@
   const FORM_SUBMIT_URL = 'https://formsubmit.co/ajax/info@noorpath.online';
 
   function showTrialFormSuccess() {
-    const btn = document.getElementById('trialSubmitBtn');
-    const status = document.getElementById('formStatus');
-    if (btn) {
-      btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!';
-      btn.style.background = 'var(--emerald-mid)';
-      btn.disabled = true;
-    }
-    if (status) {
-      status.style.display = 'block';
-      status.textContent = 'Thank you! We will contact you within 24 hours.';
-      status.style.color = 'var(--gold-lt)';
-    }
+      const btn = document.getElementById('trialSubmitBtn');
+      const status = document.getElementById('formStatus');
+      if (btn) {
+        btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!';
+        btn.style.background = 'var(--emerald-mid)';
+        btn.disabled = true;
+      }
+      if (status) {
+        status.style.display = 'block';
+        status.textContent = 'Thank you! We will contact you within 24 hours.';
+        status.style.color = 'var(--gold-lt)';
+      }
   }
 
   function resetTrialFormButton() {
@@ -3388,7 +3388,7 @@
 
   if (trialForm) {
     trialForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
+        e.preventDefault();
       if (!trialForm.checkValidity()) {
         trialForm.reportValidity();
         return;
