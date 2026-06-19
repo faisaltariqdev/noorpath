@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /quran-academy-landing.html
+Disallow: /*?s=
+Disallow: /*?*
 
 # AI Crawlers
 User-agent: GPTBot
