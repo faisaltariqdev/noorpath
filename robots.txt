@@ -22,4 +22,3 @@ User-agent: Gemini-Bot
 Allow: /
 
 Sitemap: https://www.noorpath.online/sitemap.xml
-LLMs: https://www.noorpath.online/llms.txt
