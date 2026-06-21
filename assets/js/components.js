@@ -117,22 +117,13 @@ const NP = {
     const footerEl = document.getElementById('np-footer');
     if (footerEl) footerEl.innerHTML = NP.footer();
 
-    const navToggle = document.querySelector('.navbar-toggler');
-    const navMenu = document.getElementById('navMenu');
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-      });
-    }
-
     // Navbar scroll
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('mainNav');
       if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
+    });
 
     // Fade-up
-    if (document.body.classList.contains('performance-home')) return;
     const fadeEls = document.querySelectorAll('.fade-up');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
