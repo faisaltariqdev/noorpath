@@ -17,6 +17,7 @@ const NP = {
         <li class="nav-item"><a class="nav-link" href="/locations">Locations</a></li>
         <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
         <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/founder">Founder</a></li>
         <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
         <li class="nav-item ms-2"><a class="nav-link btn-nav-cta" href="/online-quran-classes#cta">Free Trial</a></li>
       </ul>
@@ -73,6 +74,7 @@ const NP = {
         <div class="footer-heading">Company</div>
         <ul class="footer-links">
           <li><a href="/about.html">About Us</a></li>
+          <li><a href="/founder">Founder & CEO</a></li>
           <li><a href="/locations">All Locations</a></li>
           <li><a href="/locations/online-quran-classes-canada.html">Canada</a></li>
           <li><a href="/locations/online-quran-classes-uk.html">United Kingdom</a></li>

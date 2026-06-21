@@ -355,9 +355,14 @@
     ]
   }
   </script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <noscript>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
+  </noscript>
 
   <style>
     :root {
@@ -391,6 +396,17 @@
     }
     h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; line-height: 1.25; }
     .arabic { font-family: 'Amiri', serif; direction: rtl; }
+    .np-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
 
     /* ── Scrollbar ── */
     ::-webkit-scrollbar { width: 5px; }
@@ -605,7 +621,7 @@
     .stat-item { text-align: left; }
     .stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1; }
     .stat-num sup { font-size: 1rem; color: var(--gold-lt); }
-    .stat-label { font-size: .78rem; color: rgba(255,255,255,.55); margin-top: 2px; text-transform: uppercase; letter-spacing: .8px; }
+    .stat-label { font-size: .78rem; color: rgba(255,255,255,.78); margin-top: 2px; text-transform: uppercase; letter-spacing: .8px; }
     .stat-divider { width: 1px; background: rgba(255,255,255,.15); align-self: stretch; }
 
     /* Hero Visual Card */
@@ -658,9 +674,9 @@
     }
     .live-badge .live-dot { width: 6px; height: 6px; background: var(--emerald-lt); border-radius: 50%; animation: pulse 1.5s infinite; }
     .card-lesson-title { color: var(--white); font-weight: 600; font-size: 1rem; margin-bottom: 4px; }
-    .card-lesson-sub { color: rgba(255,255,255,.6); font-size: .82rem; }
+    .card-lesson-sub { color: rgba(255,255,255,.78); font-size: .82rem; }
     .progress-ring-wrap { margin: 20px 0; }
-    .progress-label { color: rgba(255,255,255,.7); font-size: .8rem; margin-bottom: 6px; display: flex; justify-content: space-between; }
+    .progress-label { color: rgba(255,255,255,.82); font-size: .8rem; margin-bottom: 6px; display: flex; justify-content: space-between; }
     .progress-bar-hero {
       height: 6px; background: rgba(255,255,255,.15); border-radius: 99px; overflow: hidden;
     }
@@ -674,7 +690,7 @@
       text-align: center;
     }
     .mini-card .mc-num { font-family: 'Playfair Display', serif; color: var(--gold-lt); font-size: 1.3rem; font-weight: 700; }
-    .mini-card .mc-label { color: rgba(255,255,255,.55); font-size: .72rem; margin-top: 2px; }
+    .mini-card .mc-label { color: rgba(255,255,255,.78); font-size: .72rem; margin-top: 2px; }
     /* Floating badges */
     .float-badge {
       position: absolute;
@@ -857,7 +873,7 @@
       padding: 18px 20px;
       margin-bottom: 14px;
     }
-    .sc-day { color: rgba(255,255,255,.55); font-size: .72rem; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 4px; }
+    .sc-day { color: rgba(255,255,255,.78); font-size: .72rem; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 4px; }
     .sc-title { color: var(--white); font-weight: 600; font-size: .95rem; }
     .sc-time { color: var(--gold-lt); font-size: .8rem; margin-top: 4px; }
     .sc-badge { background: rgba(20,184,130,.2); color: var(--emerald-lt); font-size: .7rem; padding: 3px 8px; border-radius: 50px; float: right; margin-top: -4px; }
@@ -1027,7 +1043,7 @@
     }
     .pricing-card.featured .pricing-per-class { color: var(--emerald-lt); }
     .pricing-price-sub { font-size: .82rem; color: var(--muted); margin-bottom: 20px; }
-    .pricing-card.featured .pricing-price-sub { color: rgba(255,255,255,.55); }
+    .pricing-card.featured .pricing-price-sub { color: rgba(255,255,255,.78); }
     .pricing-social-proof {
       font-size: .75rem;
       color: var(--muted);
@@ -1036,7 +1052,7 @@
       padding-top: 14px;
       border-top: 1px dashed var(--border);
     }
-    .pricing-card.featured .pricing-social-proof { color: rgba(255,255,255,.5); border-color: rgba(255,255,255,.15); }
+    .pricing-card.featured .pricing-social-proof { color: rgba(255,255,255,.78); border-color: rgba(255,255,255,.22); }
     .pricing-features { list-style: none; padding: 0; margin: 0 0 28px; border-top: 1px solid var(--border); padding-top: 20px; }
     .pricing-card.featured .pricing-features { border-color: rgba(255,255,255,.1); }
     .pricing-features li { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: .9rem; color: var(--slate); }
@@ -1085,6 +1101,9 @@
       font-size: .95rem;
       color: var(--charcoal);
       cursor: pointer;
+      width: 100%;
+      border: 0;
+      text-align: left;
       display: flex; justify-content: space-between; align-items: center;
       background: var(--white);
       transition: background .2s;
@@ -1113,7 +1132,7 @@
     .cta-orb-1 { width: 400px; height: 400px; background: var(--gold); top: -100px; left: -80px; }
     .cta-orb-2 { width: 300px; height: 300px; background: var(--emerald-lt); bottom: -60px; right: -60px; }
     .cta-title { font-size: clamp(2rem, 5vw, 3.2rem); color: var(--white); font-weight: 700; margin-bottom: 18px; }
-    .cta-desc { color: rgba(255,255,255,.7); font-size: 1.05rem; line-height: 1.75; margin-bottom: 36px; }
+    .cta-desc { color: rgba(255,255,255,.82); font-size: 1.05rem; line-height: 1.75; margin-bottom: 36px; }
     .cta-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
     .cta-form-wrap {
       background: rgba(255,255,255,.08);
@@ -1164,7 +1183,7 @@
     /* ── Footer ── */
     footer {
       background: var(--charcoal);
-      color: rgba(255,255,255,.65);
+      color: rgba(255,255,255,.78);
       padding: 70px 0 30px;
     }
     .footer-brand .logo-text { color: var(--white); font-size: 1.5rem; }
@@ -1174,7 +1193,7 @@
       width: 38px; height: 38px;
       border-radius: 10px;
       background: rgba(255,255,255,.08);
-      color: rgba(255,255,255,.65);
+      color: rgba(255,255,255,.78);
       border: 1px solid rgba(255,255,255,.1);
       display: flex; align-items: center; justify-content: center;
       font-size: .9rem;
@@ -1185,11 +1204,11 @@
     .footer-heading { color: var(--white); font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; font-family: 'DM Sans', sans-serif; }
     .footer-links { list-style: none; padding: 0; margin: 0; }
     .footer-links li { margin-bottom: 10px; }
-    .footer-links a { color: rgba(255,255,255,.55); font-size: .88rem; text-decoration: none; transition: color .2s; }
+    .footer-links a { color: rgba(255,255,255,.78); font-size: .88rem; text-decoration: none; transition: color .2s; }
     .footer-links a:hover { color: var(--emerald-lt); }
     .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); margin-top: 50px; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; font-size: .8rem; }
     .footer-bottom-links { display: flex; gap: 20px; }
-    .footer-bottom-links a { color: rgba(255,255,255,.4); text-decoration: none; transition: color .2s; }
+    .footer-bottom-links a { color: rgba(255,255,255,.72); text-decoration: none; transition: color .2s; }
     .footer-bottom-links a:hover { color: rgba(255,255,255,.8); }
 
     /* ── Arabic Verse Display ── */
@@ -1264,7 +1283,7 @@
     .scroll-indicator {
       position: absolute; bottom: 30px; left: 50%;
       transform: translateX(-50%);
-      color: rgba(255,255,255,.4);
+      color: rgba(255,255,255,.72);
       font-size: .75rem;
       display: flex; flex-direction: column; align-items: center; gap: 6px;
       animation: float1 2.5s ease-in-out infinite;
@@ -1281,7 +1300,7 @@
       font-weight: 500;
     }
     .promo-bar a { color: var(--gold-lt); text-decoration: underline; font-weight: 700; }
-    .promo-bar .close-promo { cursor: pointer; float: right; padding: 0 12px; opacity: .7; }
+    .promo-bar .close-promo { cursor: pointer; float: right; padding: 0 12px; opacity: .9; background: transparent; border: 0; color: var(--white); font: inherit; line-height: inherit; }
     .promo-bar .close-promo:hover { opacity: 1; }
 
     /* ── Learning Roadmap ── */
@@ -1383,7 +1402,7 @@
                   radial-gradient(ellipse at 80% 50%, rgba(201,146,42,.15) 0%, transparent 50%);
     }
     #ages .section-title { color: var(--white); }
-    #ages .section-desc { color: rgba(255,255,255,.6); }
+    #ages .section-desc { color: rgba(255,255,255,.82); }
     #ages .section-eyebrow { background: rgba(255,255,255,.08); color: var(--gold-lt); border-color: rgba(255,255,255,.12); }
     .age-card {
       background: rgba(255,255,255,.06);
@@ -1423,7 +1442,7 @@
       margin-bottom: 6px;
     }
     .age-title { color: var(--white); font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
-    .age-desc { color: rgba(255,255,255,.6); font-size: .86rem; line-height: 1.7; margin-bottom: 16px; }
+    .age-desc { color: rgba(255,255,255,.82); font-size: .86rem; line-height: 1.7; margin-bottom: 16px; }
     .age-features { list-style: none; padding: 0; margin: 0; }
     .age-features li {
       color: rgba(255,255,255,.75);
@@ -1502,8 +1521,8 @@
     }
     .feat-item { text-align: center; padding: 12px; position: relative; z-index: 1; }
     .feat-item i { font-size: 1.6rem; color: var(--gold-lt); margin-bottom: 10px; }
-    .feat-item h5 { color: var(--white); font-size: .92rem; font-weight: 700; margin-bottom: 4px; font-family: 'Plus Jakarta Sans', sans-serif; }
-    .feat-item p { color: rgba(255,255,255,.65); font-size: .78rem; margin: 0; }
+    .feat-title { color: var(--white); font-size: .92rem; font-weight: 700; margin-bottom: 4px; font-family: 'Plus Jakarta Sans', sans-serif; }
+    .feat-item p { color: rgba(255,255,255,.78); font-size: .78rem; margin: 0; }
 
     /* Hero badge pills */
     .hero-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
@@ -1571,7 +1590,7 @@
     }
     .ft-parent-icon { font-size: 1.5rem; }
     .ft-parent-name { font-weight: 700; font-size: .95rem; }
-    .ft-parent-sub { font-size: .78rem; color: rgba(255,255,255,.55); }
+    .ft-parent-sub { font-size: .78rem; color: rgba(255,255,255,.78); }
     .ft-children { display: flex; flex-direction: column; gap: 10px; padding-left: 8px; border-left: 2px dashed rgba(255,255,255,.2); margin-left: 12px; }
     .ft-child {
       background: rgba(255,255,255,.06);
@@ -1585,7 +1604,7 @@
     .ft-child-info { display: flex; align-items: center; gap: 10px; }
     .ft-child-emoji { font-size: 1.2rem; }
     .ft-child-name { font-weight: 600; font-size: .88rem; }
-    .ft-child-age { font-size: .72rem; color: rgba(255,255,255,.5); }
+    .ft-child-age { font-size: .72rem; color: rgba(255,255,255,.78); }
     .ft-child-track {
       font-size: .7rem;
       font-weight: 700;
@@ -1771,10 +1790,12 @@
 <div class="promo-bar" id="promoBanner">
   🎁 <strong>FREE trial class</strong> — Beginner to advanced, all ages welcome. No credit card required.
   <a href="#cta">Claim Now &rarr;</a>
-  <span class="close-promo" onclick="document.getElementById('promoBanner').remove()">&times;</span>
+  <button class="close-promo" type="button" id="closePromo" aria-label="Close promotion banner">&times;</button>
 </div>
 
 <div id="np-nav"></div>
+
+<main id="main-content">
 
 <!-- ═══ HERO ═══ -->
 <section class="hero" id="home">
@@ -1872,7 +1893,7 @@
               <div style="font-family:'Amiri',serif;font-size:1.6rem;color:var(--white);direction:rtl;letter-spacing:.5px;">
                 وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ
               </div>
-              <div style="color:rgba(255,255,255,.5);font-size:.75rem;margin-top:8px;font-style:italic;">"And when My servants ask about Me – Indeed I am near" · Al-Baqarah 2:186</div>
+              <div style="color:rgba(255,255,255,.78);font-size:.75rem;margin-top:8px;font-style:italic;">"And when My servants ask about Me – Indeed I am near" · Al-Baqarah 2:186</div>
             </div>
             <div class="progress-ring-wrap">
               <div class="progress-label">
@@ -1935,10 +1956,10 @@
 <div class="features-strip">
   <div class="container position-relative">
     <div class="row g-4">
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-layer-group"></i><h5>8 Learning Stages</h5><p>Qaida to Scholar</p></div></div>
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-users"></i><h5>5 Age Groups</h5><p>Toddlers to Seniors</p></div></div>
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-certificate"></i><h5>Ijazah Tutors</h5><p>Al-Azhar certified</p></div></div>
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-globe"></i><h5>40+ Countries</h5><p>24/7 flexible slots</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-layer-group"></i><div class="feat-title">8 Learning Stages</div><p>Qaida to Scholar</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-users"></i><div class="feat-title">5 Age Groups</div><p>Toddlers to Seniors</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-certificate"></i><div class="feat-title">Ijazah Tutors</div><p>Al-Azhar certified</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-globe"></i><div class="feat-title">40+ Countries</div><p>24/7 flexible slots</p></div></div>
     </div>
   </div>
 </div>
@@ -2042,7 +2063,7 @@
     <div class="text-center mb-5 fade-up">
       <span class="section-eyebrow"><i class="fas fa-heart me-1"></i> For Every Age</span>
       <h2 class="section-title">From <span class="accent" style="color:var(--gold-lt)">Toddlers</span> to Adults</h2>
-      <p class="section-desc center" style="color:rgba(255,255,255,.6)">Dedicated teaching methods, tutor matching, and session length tailored to each age group.</p>
+      <p class="section-desc center" style="color:rgba(255,255,255,.82)">Dedicated teaching methods, tutor matching, and session length tailored to each age group.</p>
     </div>
     <div class="row g-4">
       <div class="col-lg-4 col-md-6 fade-up">
@@ -2463,7 +2484,7 @@
         <span class="aio-pill">Serve Parents</span>
       </div>
       <h3 style="color:var(--white);font-size:1.6rem;margin-bottom:12px;position:relative;z-index:1;">Everything Your Child Needs in One Place</h3>
-      <p style="color:rgba(255,255,255,.7);font-size:.95rem;margin:0;max-width:640px;position:relative;z-index:1;">No need to join separate classes. Our All-in-One track builds Quran reading, Islamic manners, prophetic knowledge, and gratitude toward parents — step by step, age 4 to 12.</p>
+      <p style="color:rgba(255,255,255,.82);font-size:.95rem;margin:0;max-width:640px;position:relative;z-index:1;">No need to join separate classes. Our All-in-One track builds Quran reading, Islamic manners, prophetic knowledge, and gratitude toward parents — step by step, age 4 to 12.</p>
     </div>
 
     <div class="row g-4">
@@ -2627,7 +2648,7 @@
       </div>
       <div class="col-lg-6 fade-up fade-up-delay-2">
         <div class="how-visual h-100">
-          <div style="color:rgba(255,255,255,.6);font-size:.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;font-weight:600;">📅 Sample Weekly Schedule</div>
+          <div style="color:rgba(255,255,255,.82);font-size:.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;font-weight:600;">📅 Sample Weekly Schedule</div>
           <div class="schedule-card">
             <div class="sc-day">Monday & Wednesday</div>
             <div class="d-flex justify-content-between align-items-start">
@@ -2659,7 +2680,7 @@
             </div>
           </div>
           <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);">
-            <div style="color:rgba(255,255,255,.6);font-size:.8rem;margin-bottom:12px;">🌐 Available Timezones</div>
+            <div style="color:rgba(255,255,255,.82);font-size:.8rem;margin-bottom:12px;">🌐 Available Timezones</div>
             <div class="d-flex flex-wrap gap-2">
               <span style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);font-size:.75rem;padding:4px 12px;border-radius:50px;">EST / UTC-5</span>
               <span style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);font-size:.75rem;padding:4px 12px;border-radius:50px;">GMT / UTC+0</span>
@@ -3082,12 +3103,12 @@
         <p class="cta-desc">Join over 12,000 students worldwide who are transforming their connection with the Quran. Your first class is completely free.</p>
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:20px;margin-bottom:28px;">
           <div class="arabic-verse-text" style="font-size:1.3rem;color:rgba(255,255,255,.9);">وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ</div>
-          <div style="color:rgba(255,255,255,.5);font-size:.78rem;margin-top:6px;font-style:italic;">"And We send down the Quran as healing and mercy for believers." — Al-Isra 17:82</div>
+          <div style="color:rgba(255,255,255,.78);font-size:.78rem;margin-top:6px;font-style:italic;">"And We send down the Quran as healing and mercy for believers." — Al-Isra 17:82</div>
         </div>
         <div class="d-flex flex-wrap gap-3">
-          <div class="d-flex align-items-center gap-2" style="color:rgba(255,255,255,.7);font-size:.88rem;"><i class="fas fa-check-circle" style="color:var(--gold-lt)"></i> No Credit Card</div>
-          <div class="d-flex align-items-center gap-2" style="color:rgba(255,255,255,.7);font-size:.88rem;"><i class="fas fa-check-circle" style="color:var(--gold-lt)"></i> 30-Min Free Session</div>
-          <div class="d-flex align-items-center gap-2" style="color:rgba(255,255,255,.7);font-size:.88rem;"><i class="fas fa-check-circle" style="color:var(--gold-lt)"></i> Certified Tutors</div>
+          <div class="d-flex align-items-center gap-2" style="color:rgba(255,255,255,.82);font-size:.88rem;"><i class="fas fa-check-circle" style="color:var(--gold-lt)"></i> No Credit Card</div>
+          <div class="d-flex align-items-center gap-2" style="color:rgba(255,255,255,.82);font-size:.88rem;"><i class="fas fa-check-circle" style="color:var(--gold-lt)"></i> 30-Min Free Session</div>
+          <div class="d-flex align-items-center gap-2" style="color:rgba(255,255,255,.82);font-size:.88rem;"><i class="fas fa-check-circle" style="color:var(--gold-lt)"></i> Certified Tutors</div>
         </div>
         <div class="cta-contact-row">
           <a href="https://wa.me/923124877906" target="_blank" rel="noopener noreferrer" class="cta-contact-btn cta-wa-btn" title="Chat on WhatsApp">
@@ -3101,15 +3122,19 @@
       <div class="col-lg-5 offset-lg-1 fade-up fade-up-delay-2">
         <div class="cta-form-wrap">
           <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:6px;">Book Your Free Trial</h3>
-          <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:22px;">Fill in your details — booking details are sent to our team by email. Prefer instant chat? Tap WhatsApp.</p>
+          <p style="color:rgba(255,255,255,.78);font-size:.85rem;margin-bottom:22px;">Fill in your details — booking details are sent to our team by email. Prefer instant chat? Tap WhatsApp.</p>
           <form id="trialForm" action="#" method="POST" novalidate>
             <input type="hidden" name="_subject" value="New NoorPath Free Trial Booking" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="family_plan" id="familyPlanHidden" value="No" />
+            <label class="np-sr-only" for="trialName">Your full name</label>
             <input class="cta-input" type="text" name="name" id="trialName" placeholder="Your Full Name" required />
+            <label class="np-sr-only" for="trialEmail">Email address</label>
             <input class="cta-input" type="email" name="email" id="trialEmail" placeholder="Email Address" required />
+            <label class="np-sr-only" for="trialPhone">WhatsApp or phone number</label>
             <input class="cta-input" type="tel" name="phone" id="trialPhone" placeholder="WhatsApp / Phone Number" required />
+            <label class="np-sr-only" for="trialCountry">Select your country</label>
             <select class="cta-input" name="country" id="trialCountry" required style="cursor:pointer;">
               <option value="" disabled selected>Select Your Country</option>
               <option value="Pakistan">Pakistan</option>
@@ -3129,6 +3154,7 @@
               <option value="Bangladesh">Bangladesh</option>
               <option value="Other">Other</option>
             </select>
+            <label class="np-sr-only" for="numChildren">How many children to enroll?</label>
             <select class="cta-input" name="children" id="numChildren" required style="cursor:pointer;">
               <option value="" disabled selected>How many children to enroll?</option>
               <option value="1 child">1 child</option>
@@ -3141,6 +3167,7 @@
               <input type="checkbox" id="siblingEnroll" />
               <span>Enrolling 2 or more siblings together (family plan)</span>
             </label>
+            <label class="np-sr-only" for="trialCourse">Select a course</label>
             <select class="cta-input" name="course" id="trialCourse" required style="cursor:pointer;">
               <option value="" disabled selected>Select a Course</option>
               <option value="Family Plan — Multiple Siblings">Family Plan — Multiple Siblings</option>
@@ -3157,8 +3184,8 @@
               <i class="fas fa-paper-plane me-2"></i> Book My Free Class
             </button>
           </form>
-          <p id="formStatus" style="color:rgba(255,255,255,.6);font-size:.8rem;text-align:center;margin-top:10px;display:none;"></p>
-          <p style="color:rgba(255,255,255,.35);font-size:.72rem;text-align:center;margin-top:12px;">
+          <p id="formStatus" aria-live="polite" style="color:rgba(255,255,255,.78);font-size:.8rem;text-align:center;margin-top:10px;display:none;"></p>
+          <p style="color:rgba(255,255,255,.72);font-size:.72rem;text-align:center;margin-top:12px;">
             <i class="fas fa-lock me-1"></i> Your information is 100% private and secure.
           </p>
         </div>
@@ -3214,38 +3241,53 @@
   </div>
 </section>
 
+</main>
+
 <!-- ═══ FOOTER ═══ -->
 <div id="np-footer"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/components.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="/assets/js/components.js"></script>
 <script>
-  // Navbar scroll effect
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('mainNav');
-    if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+  document.getElementById('closePromo')?.addEventListener('click', () => {
+    document.getElementById('promoBanner')?.remove();
   });
-
-  // Fade-up intersection observer
-  const fadeEls = document.querySelectorAll('.fade-up');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-  }, { threshold: 0.12 });
-  fadeEls.forEach(el => observer.observe(el));
 
   // FAQ Toggle
   function toggleFaq(el) {
     const allQ = document.querySelectorAll('.faq-question');
     const allA = document.querySelectorAll('.faq-answer');
-    allQ.forEach(q => q.classList.remove('active'));
+    allQ.forEach(q => {
+      q.classList.remove('active');
+      q.setAttribute('aria-expanded', 'false');
+    });
     allA.forEach(a => a.classList.remove('open'));
     const answer = el.nextElementSibling;
     const isOpen = answer.classList.contains('open');
     if (!isOpen) {
       el.classList.add('active');
+      el.setAttribute('aria-expanded', 'true');
       answer.classList.add('open');
     }
   }
+
+  document.querySelectorAll('.faq-question').forEach((question, index) => {
+    question.setAttribute('role', 'button');
+    question.setAttribute('tabindex', '0');
+    question.setAttribute('aria-expanded', question.classList.contains('active') ? 'true' : 'false');
+    const answer = question.nextElementSibling;
+    if (answer) {
+      const answerId = `faq-answer-${index + 1}`;
+      answer.id = answerId;
+      question.setAttribute('aria-controls', answerId);
+    }
+    question.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleFaq(question);
+      }
+    });
+  });
 
   // CTA form — AJAX to FormSubmit (avoids redirect + QUIC errors on formsubmit.co)
   const trialForm = document.getElementById('trialForm');
@@ -3296,7 +3338,7 @@
       if (status) {
         status.style.display = 'block';
         status.textContent = 'Please wait, sending your booking...';
-        status.style.color = 'rgba(255,255,255,.6)';
+        status.style.color = 'rgba(255,255,255,.78)';
       }
 
       try {

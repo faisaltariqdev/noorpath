@@ -61,6 +61,11 @@
       "permanent": true
     },
     {
+      "source": "/founder.html",
+      "destination": "/founder",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "noorpath.online" }],
       "destination": "https://www.noorpath.online/$1",
@@ -79,7 +84,8 @@
     { "source": "/female-quran-teacher-online", "destination": "/female-quran-teacher-online.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
-    { "source": "/terms-of-service", "destination": "/terms-of-service.html" }
+    { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/founder", "destination": "/founder.html" }
   ],
   "headers": [
     {
