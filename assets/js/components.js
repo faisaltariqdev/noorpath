@@ -12,13 +12,13 @@ const NP = {
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
-        <li class="nav-item"><a class="nav-link" href="/#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="/online-quran-classes">Online Quran Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="/locations">Locations</a></li>
+        <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
         <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#roadmap">Roadmap</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#tutors">Tutors</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
         <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
-        <li class="nav-item ms-2"><a class="nav-link btn-nav-cta" href="/#cta">Free Trial</a></li>
+        <li class="nav-item ms-2"><a class="nav-link btn-nav-cta" href="/online-quran-classes#cta">Free Trial</a></li>
       </ul>
     </div>
   </div>
@@ -36,7 +36,7 @@ const NP = {
       <div class="col-auto"><a href="/locations/online-quran-classes-canada.html" style="background:rgba(10,110,79,.08);border:1px solid rgba(10,110,79,.2);border-radius:50px;padding:7px 16px;font-size:.8rem;color:var(--emerald);font-weight:600;text-decoration:none;">Quran Classes Canada</a></div>
       <div class="col-auto"><a href="/locations/online-quran-classes-uk.html" style="background:rgba(10,110,79,.08);border:1px solid rgba(10,110,79,.2);border-radius:50px;padding:7px 16px;font-size:.8rem;color:var(--emerald);font-weight:600;text-decoration:none;">Quran Classes UK</a></div>
       <div class="col-auto"><a href="/locations/online-quran-classes-usa.html" style="background:rgba(10,110,79,.08);border:1px solid rgba(10,110,79,.2);border-radius:50px;padding:7px 16px;font-size:.8rem;color:var(--emerald);font-weight:600;text-decoration:none;">Quran Classes USA</a></div>
-      <div class="col-auto"><a href="/#cta" style="background:var(--gold);border-radius:50px;padding:7px 16px;font-size:.8rem;color:var(--charcoal);font-weight:700;text-decoration:none;">Free Trial Class</a></div>
+      <div class="col-auto"><a href="/online-quran-classes#cta" style="background:var(--gold);border-radius:50px;padding:7px 16px;font-size:.8rem;color:var(--charcoal);font-weight:700;text-decoration:none;">Free Trial Class</a></div>
     </div>
   </div>
 </section>
@@ -49,11 +49,11 @@ const NP = {
             Noor<span style="color:var(--gold)">Path</span> <span style="color:rgba(255,255,255,.5);font-size:.75rem;vertical-align:middle;">Academy</span>
           </div>
         </div>
-        <p class="footer-desc">Illuminating hearts through the teachings of the Holy Quran. Premium online Quran education for families worldwide since 2018.</p>
+        <p class="footer-desc">Illuminating hearts through the teachings of the Holy Quran. Founder-led online Quran education for families worldwide since 2018, built with a strong focus on quality teaching, accessibility, and modern learning technology.</p>
         <div class="footer-social">
-          <a class="social-btn" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a class="social-btn" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a class="social-btn" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a class="social-btn" href="/blog/" aria-label="Blog"><i class="fas fa-blog"></i></a>
+          <a class="social-btn" href="/about.html" aria-label="About NoorPath"><i class="fas fa-circle-info"></i></a>
+          <a class="social-btn" href="mailto:info@noorpath.online" aria-label="Email NoorPath"><i class="fas fa-envelope"></i></a>
           <a class="social-btn" href="https://wa.me/923124877906" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
@@ -73,14 +73,15 @@ const NP = {
         <div class="footer-heading">Company</div>
         <ul class="footer-links">
           <li><a href="/about.html">About Us</a></li>
+          <li><a href="/locations">All Locations</a></li>
           <li><a href="/locations/online-quran-classes-canada.html">Canada</a></li>
           <li><a href="/locations/online-quran-classes-uk.html">United Kingdom</a></li>
           <li><a href="/locations/online-quran-classes-usa.html">United States</a></li>
           <li><a href="/blog/">Blog & Articles</a></li>
           <li><a href="/free-resources.html">Free Resources</a></li>
-          <li><a href="/#tutors">Our Tutors</a></li>
-          <li><a href="/#pricing">Pricing</a></li>
-          <li><a href="/#cta">Free Trial</a></li>
+          <li><a href="/about.html">Our Tutors</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/online-quran-classes#cta">Free Trial</a></li>
         </ul>
       </div>
       <div class="col-lg-4 col-md-6">
@@ -88,15 +89,15 @@ const NP = {
         <ul class="footer-links">
           <li><a href="mailto:info@noorpath.online"><i class="fas fa-envelope me-2"></i>info@noorpath.online</a></li>
           <li><a href="https://wa.me/923124877906" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp me-2"></i>WhatsApp: +92 312 4877906</a></li>
-          <li><a href="https://noorpath.online"><i class="fas fa-globe me-2"></i>noorpath.online</a></li>
+          <li><a href="https://www.noorpath.online"><i class="fas fa-globe me-2"></i>www.noorpath.online</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div>© 2026 NoorPath Academy. All rights reserved.</div>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
       </div>
     </div>
   </div>
