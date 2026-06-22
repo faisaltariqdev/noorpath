@@ -109,27 +109,39 @@ const NP = {
 </a>`,
 
   initPage: () => {
-    // Insert nav
+    // Insert nav - Critical
     const navEl = document.getElementById('np-nav');
     if (navEl) navEl.innerHTML = NP.nav();
 
-    // Insert footer
-    const footerEl = document.getElementById('np-footer');
-    if (footerEl) footerEl.innerHTML = NP.footer();
+    // Defer non-critical parts
+    const deferWork = () => {
+      // Insert footer
+      const footerEl = document.getElementById('np-footer');
+      if (footerEl) footerEl.innerHTML = NP.footer();
 
-    // Navbar scroll
+      // Fade-up
+      const fadeEls = document.querySelectorAll('.fade-up');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      fadeEls.forEach(el => observer.observe(el));
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(deferWork);
+    } else {
+      setTimeout(deferWork, 1000);
+    }
+
+    // Navbar scroll - Passive listener for performance
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('mainNav');
       if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    // Fade-up
-    const fadeEls = document.querySelectorAll('.fade-up');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    fadeEls.forEach(el => observer.observe(el));
+    }, { passive: true });
   }
 };
 
-document.addEventListener('DOMContentLoaded', NP.initPage);
+// Use a small delay to ensure main thread is free for initial paint
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(NP.initPage, 10);
+});

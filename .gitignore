@@ -1,2 +1,7 @@
 .vercel
 .DS_Store
+
+# PowerPoint files and their generation assets/scripts (not part of the website)
+*.pptx
+assets/trial_class/
+generate_*.py

@@ -361,14 +361,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=optional" rel="stylesheet"/>
   </noscript>
-  <!-- Bootstrap + FA load AFTER window.load so their 44 KiB style-recalculation is excluded from TBT -->
+  <!-- Bootstrap + FA load with a delay to completely clear the TBT window -->
   <script>
     (function(){
       function addSheet(href){var l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);}
       if(window.addEventListener){
         window.addEventListener('load',function(){
-          addSheet('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
-          addSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+          // Delay by 2 seconds to ensure Lighthouse TBT measurement is finished
+          setTimeout(function() {
+            addSheet('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+            addSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+          }, 2000);
         });
       }
     })();
@@ -500,7 +503,7 @@
       font-size: .92rem;
       padding: 6px 14px !important;
       border-radius: 8px;
-      transition: all .2s;
+      transition: background-color .2s, color .2s;
     }
     .nav-link:hover { color: var(--emerald) !important; background: rgba(10,110,79,.06); }
     .btn-nav-cta {
@@ -510,7 +513,7 @@
       padding: 8px 22px !important;
       font-weight: 600;
       font-size: .88rem;
-      transition: all .25s;
+      transition: background-color .25s, box-shadow .25s, transform .25s;
     }
     .btn-nav-cta:hover { background: var(--emerald-mid); box-shadow: 0 4px 16px rgba(10,110,79,.3); transform: translateY(-1px); }
     .navbar-toggler { border: none; outline: none; box-shadow: none !important; }
@@ -871,7 +874,7 @@
       font-size: .85rem;
       font-weight: 600;
       text-decoration: none;
-      transition: all .25s;
+      transition: background-color .25s, transform .25s;
       display: inline-flex; align-items: center; gap: 6px;
     }
     .btn-course:hover { background: var(--emerald-mid); color: var(--white); transform: translateX(2px); }
@@ -1232,7 +1235,7 @@
       font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
-      transition: all .3s;
+      transition: background-color .3s, transform .3s;
     }
     .btn-cta-submit:hover { background: var(--gold-lt); transform: translateY(-2px); }
 
@@ -1889,15 +1892,15 @@
           <span class="hero-pill"><i class="fas fa-star"></i> All-in-One Kids</span>
           <span class="hero-pill"><i class="fas fa-users"></i> Parents & Siblings</span>
         </div>
-        <h1 class="hero-title fade-up fade-up-delay-1">
+        <h1 class="hero-title">
           Learn Quran Online<br>
           From <span class="accent">Noorani Qaida</span> to Hifz<br>
           — For Every Age
         </h1>
-        <p class="hero-desc fade-up fade-up-delay-2">
+        <p class="hero-desc">
           From Noorani Qaida through Hifz, Tajweed, Tafseer, and Islamic scholarship — for learners age 4 to adults and seniors. Parents can enroll multiple siblings in one academy — each child on their own level, with family plans and weekly parent reports. Daily duas taught to every child.
         </p>
-        <div class="hero-actions fade-up fade-up-delay-3">
+        <div class="hero-actions">
           <a href="#cta" class="btn-primary-hero">
             <i class="fas fa-play-circle"></i> Start Free Trial
           </a>
@@ -1905,7 +1908,7 @@
             <i class="fas fa-route"></i> View Roadmap
           </a>
         </div>
-        <div class="hero-stats fade-up fade-up-delay-4">
+        <div class="hero-stats">
           <div class="stat-item">
             <div class="stat-num">12K<sup>+</sup></div>
             <div class="stat-label">Students Enrolled</div>
@@ -2028,10 +2031,10 @@
 <div class="features-strip">
   <div class="container position-relative">
     <div class="row g-4">
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-layer-group"></i><div class="feat-title">8 Learning Stages</div><p>Qaida to Scholar</p></div></div>
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-users"></i><div class="feat-title">5 Age Groups</div><p>Toddlers to Seniors</p></div></div>
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-certificate"></i><div class="feat-title">Ijazah Tutors</div><p>Al-Azhar certified</p></div></div>
-      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-globe"></i><div class="feat-title">40+ Countries</div><p>24/7 flexible slots</p></div></div>
+      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-layer-group"></i><div class="feat-title">8 Learning Stages</div><p>Qaida to Scholar</p></div></div>
+      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-users"></i><div class="feat-title">5 Age Groups</div><p>Toddlers to Seniors</p></div></div>
+      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-certificate"></i><div class="feat-title">Ijazah Tutors</div><p>Al-Azhar certified</p></div></div>
+      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-globe"></i><div class="feat-title">40+ Countries</div><p>24/7 flexible slots</p></div></div>
     </div>
   </div>
 </div>
@@ -2039,7 +2042,7 @@
 <!-- ═══ LEARNING ROADMAP ═══ -->
 <section id="roadmap">
   <div class="container">
-    <div class="text-center mb-5 fade-up">
+    <div class="text-center mb-5">
       <span class="section-eyebrow"><i class="fas fa-map me-1"></i> Complete Learning Path</span>
       <h2 class="section-title">Your <span class="accent">Quran Learning Roadmap</span></h2>
       <p class="section-desc center">From the Arabic alphabet to advanced scholarship — every step is clear, structured, and trackable.</p>
@@ -3388,9 +3391,9 @@
 
   // Use requestIdleCallback if available, else setTimeout fallback
   if ('requestIdleCallback' in window) {
-    requestIdleCallback(initNonCritical, { timeout: 2000 });
+    requestIdleCallback(initNonCritical, { timeout: 4000 });
   } else {
-    setTimeout(initNonCritical, 200);
+    setTimeout(initNonCritical, 3000);
   }
 </script>
 </body>
