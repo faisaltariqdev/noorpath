@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
+import { courses } from "@/data/courses";
 
 export const metadata: Metadata = {
   title: "Online Quran & Islamic Courses — All Programs",
@@ -19,72 +20,6 @@ export const metadata: Metadata = {
     images: ["/og-image.svg"],
   },
 };
-
-const courses = [
-  {
-    slug: "noorani-qaida-online",
-    icon: "📖",
-    title: "Noorani Qaida Online",
-    desc: "The proven first step for Quran beginners — master Arabic letters, pronunciation, and foundations before moving to Quran recitation.",
-    features: ["Arabic alphabet from scratch", "Correct Makharij (pronunciation points)", "Harakat and vowel signs", "Tanwin and Sukoon rules", "Suitable for children from age 4"],
-    level: "Complete Beginner",
-    age: "Ages 4+",
-  },
-  {
-    slug: "tajweed-classes-online",
-    icon: "🎵",
-    title: "Tajweed Classes Online",
-    desc: "Learn the rules of beautiful Quran recitation — Noon Sakinah, Madd, Ghunna, and all major Tajweed principles with practice.",
-    features: ["All major Tajweed rules explained", "Audio examples with certified Qari", "Step-by-step rule application", "Practice with actual Quran verses", "Ijazah track available"],
-    level: "Beginner to Advanced",
-    age: "All ages",
-  },
-  {
-    slug: "hifz-program-online",
-    icon: "🧠",
-    title: "Hifz Program Online",
-    desc: "Complete Quran memorization program with structured daily lessons, revision system, and Sanad preparation — Juz by Juz.",
-    features: ["Structured Juz memorization plan", "Daily new + revision sessions", "Sabaq and Sabqi system", "Weekly revision tests", "Sanad and Ijazah certification track"],
-    level: "Intermediate to Advanced",
-    age: "Ages 7+",
-  },
-  {
-    slug: "quran-classes-for-kids",
-    icon: "🌙",
-    title: "Quran Classes for Kids",
-    desc: "Our All-in-One kids programme — Noorani Qaida, daily duas, Hadith, and Islamic values all in one fun weekly session.",
-    features: ["Noorani Qaida or Quran recitation", "20 essential daily duas", "Short Hadith for character building", "Islamic manners and values", "Weekly parent progress report"],
-    level: "Beginner",
-    age: "Ages 4–12",
-  },
-  {
-    slug: "arabic-language-online",
-    icon: "📝",
-    title: "Arabic Language Online",
-    desc: "Learn Quranic and Modern Standard Arabic — understand the Quran in its original language, build grammar and vocabulary step by step.",
-    features: ["Quranic Arabic fundamentals", "Arabic grammar (Nahw & Sarf)", "Vocabulary building", "Quranic word understanding", "Conversational Arabic (optional)"],
-    level: "Beginner to Advanced",
-    age: "All ages",
-  },
-  {
-    slug: "islamic-studies-online",
-    icon: "🕌",
-    title: "Islamic Studies Online",
-    desc: "Comprehensive Islamic education — Fiqh, Aqeedah, Seerah, Islamic history, and character development for children and adults.",
-    features: ["Islamic pillars and Fiqh basics", "Seerah (Prophet's biography)", "Aqeedah (Islamic beliefs)", "Islamic history and civilization", "Character and morals (Akhlaq)"],
-    level: "All levels",
-    age: "All ages",
-  },
-  {
-    slug: "daily-duas-for-kids",
-    icon: "🤲",
-    title: "Daily Duas for Kids",
-    desc: "Teach your children the most important daily Islamic supplications — with Arabic, transliteration, meaning, and fun memorization methods.",
-    features: ["Morning and evening duas", "Mealtime duas", "Sleep and waking duas", "Travel and protection duas", "Fun memorization games"],
-    level: "Beginner",
-    age: "Ages 3–10",
-  },
-];
 
 const coursesJsonLd = {
   "@context": "https://schema.org",

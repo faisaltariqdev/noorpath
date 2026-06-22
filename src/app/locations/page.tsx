@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { locations } from "@/data/locations";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
@@ -19,20 +20,6 @@ export const metadata: Metadata = {
   },
 };
 
-const locations = [
-  { slug: "online-quran-classes-usa", flag: "🇺🇸", country: "United States", cities: "New York, Texas, California, Florida, Illinois", desc: "Live online Quran classes for Muslim families across the USA. All timezones covered." },
-  { slug: "online-quran-classes-uk", flag: "🇬🇧", country: "United Kingdom", cities: "London, Birmingham, Manchester, Bradford, Leeds", desc: "Online Quran tutors for UK families — BST and GMT timezone specialists." },
-  { slug: "online-quran-classes-canada", flag: "🇨🇦", country: "Canada", cities: "Toronto, Vancouver, Calgary, Ottawa, Montreal", desc: "Certified online Quran teachers for Canadian Muslim families — all provinces." },
-  { slug: "online-quran-classes-australia", flag: "🇦🇺", country: "Australia", cities: "Sydney, Melbourne, Brisbane, Perth, Adelaide", desc: "Online Quran classes for Australian families — AEST and AWST timezones." },
-  { slug: "online-quran-classes-uae", flag: "🇦🇪", country: "United Arab Emirates", cities: "Dubai, Abu Dhabi, Sharjah, Ajman", desc: "Expert online Quran tutors for UAE families — GST timezone available." },
-  { flag: "🇸🇦", country: "Saudi Arabia", cities: "Riyadh, Jeddah, Makkah, Madinah, Dammam", desc: "Online Quran classes for Saudi families and expats — AST timezone." },
-  { flag: "🇩🇪", country: "Germany", cities: "Berlin, Hamburg, Munich, Frankfurt, Cologne", desc: "Online Quran education for Muslim families in Germany — CET timezone." },
-  { flag: "🇲🇾", country: "Malaysia", cities: "Kuala Lumpur, Penang, Johor Bahru, Ipoh", desc: "Online Quran classes for Malaysian families — MYT timezone." },
-  { flag: "🇵🇰", country: "Pakistan", cities: "Karachi, Lahore, Islamabad, Peshawar, Quetta", desc: "Expert online Quran tutors for Pakistani families — PKT timezone." },
-  { flag: "🇧🇩", country: "Bangladesh", cities: "Dhaka, Chittagong, Sylhet, Rajshahi", desc: "Online Quran classes for Bangladeshi families — BST (+6) timezone." },
-  { flag: "🇿🇦", country: "South Africa", cities: "Johannesburg, Cape Town, Durban, Pretoria", desc: "Online Quran education for South African Muslim families — SAST timezone." },
-  { flag: "🇮🇩", country: "Indonesia", cities: "Jakarta, Surabaya, Bandung, Medan", desc: "Online Quran classes for Indonesian families — WIB and WITA timezones." },
-];
 
 const locationsJsonLd = {
   "@context": "https://schema.org",
@@ -84,15 +71,14 @@ export default function LocationsPage() {
                 </h2>
                 <p style={{ color: "var(--muted)", fontSize: ".82rem", marginBottom: 8 }}>{l.cities}</p>
                 <p style={{ color: "var(--muted)", fontSize: ".87rem", lineHeight: 1.6, marginBottom: 16 }}>{l.desc}</p>
-                {"slug" in l ? (
-                  <Link href={`/locations/${l.slug}`} style={{ background: "var(--emerald)", color: "#fff", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <Link href={`/locations/${l.slug}`} style={{ flex: 1, textAlign: "center", background: "var(--emerald)", color: "#fff", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
                     Learn More →
                   </Link>
-                ) : (
-                  <Link href="/online-quran-classes#cta" style={{ background: "var(--emerald)", color: "#fff", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
-                    Book Trial →
+                  <Link href="/online-quran-classes#cta" style={{ flex: 1, textAlign: "center", background: "var(--gold)", color: "var(--charcoal)", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
+                    Free Trial →
                   </Link>
-                )}
+                </div>
               </div>
             ))}
           </div>
