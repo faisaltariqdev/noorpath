@@ -1,7 +1,43 @@
-.vercel
-.DS_Store
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/versions
 
-# PowerPoint files and their generation assets/scripts (not part of the website)
+# Next.js build
+.next/
+out/
+
+# Production
+build/
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+.pnpm-debug.log*
+
+# Vercel
+.vercel
+
+# PowerPoint and trial assets (do not track)
 *.pptx
 assets/trial_class/
 generate_*.py
