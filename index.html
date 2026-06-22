@@ -1495,7 +1495,7 @@
     .pyramid-level.l3 .pyramid-num { background: rgba(15,143,102,.12); color: var(--emerald-mid); }
     .pyramid-level.l4 .pyramid-num { background: rgba(201,146,42,.12); color: var(--gold); }
     .pyramid-level.l5 .pyramid-num { background: rgba(180,83,9,.12); color: #b45309; }
-    .pyramid-info h4 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .pyramid-info .pyramid-h { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
     .pyramid-info p { font-size: .84rem; color: var(--muted); margin: 0; line-height: 1.6; }
     .knowledge-stats {
       display: grid;
@@ -1790,6 +1790,25 @@
     }
     .aio-parent-banner h4 { color: var(--charcoal); font-size: 1.05rem; margin-bottom: 8px; }
     .aio-parent-banner p { color: var(--muted); font-size: .9rem; margin: 0; line-height: 1.75; }
+
+    /* ═══ PERFORMANCE: skip rendering of offscreen sections (cuts Style & Layout + TBT) ═══ */
+    #roadmap, #ages, #parents, #knowledge, #courses,
+    #all-in-one, #why, #how-it-works, #tutors,
+    #testimonials, #pricing, #faq {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 800px;
+    }
+
+    /* ═══ PERFORMANCE: keep transitions on GPU-composited props only (fixes non-composited animations) ═══ */
+    .btn-cta-submit, #trialSubmitBtn, .btn-course,
+    .btn-primary-hero, .btn-outline-hero, .btn-nav-cta {
+      transition-property: transform, box-shadow, background-color, color, border-color, opacity;
+    }
+
+    /* ═══ ACCESSIBILITY: improve color contrast (WCAG AA) ═══ */
+    .trust-logo-item { color: #4b5563; opacity: .9; }
+    .trust-logo-item:hover { opacity: 1; }
+    .navbar-brand .logo-text span:first-of-type { color: #9a6f15; }
   </style>
 </head>
 <body>
@@ -2250,11 +2269,11 @@
       </div>
       <div class="col-lg-7 fade-up fade-up-delay-2">
         <div class="level-pyramid">
-          <div class="pyramid-level l5"><div class="pyramid-num">L5</div><div class="pyramid-info"><h4>Scholar / Ijazah</h4><p>Qirat, Ijazah, Fiqh, Hadith</p></div></div>
-          <div class="pyramid-level l4"><div class="pyramid-num">L4</div><div class="pyramid-info"><h4>Tafseer & Arabic</h4><p>Nahw-Sarf, Islamic sciences</p></div></div>
-          <div class="pyramid-level l3"><div class="pyramid-num">L3</div><div class="pyramid-info"><h4>Tajweed & Hifz</h4><p>Sanad preparation</p></div></div>
-          <div class="pyramid-level l2"><div class="pyramid-num">L2</div><div class="pyramid-info"><h4>Quran Reading</h4><p>Fluent Nazra & surahs</p></div></div>
-          <div class="pyramid-level l1"><div class="pyramid-num">L1</div><div class="pyramid-info"><h4>Noorani Qaida</h4><p>Start from zero</p></div></div>
+          <div class="pyramid-level l5"><div class="pyramid-num">L5</div><div class="pyramid-info"><div class="pyramid-h">Scholar / Ijazah</div><p>Qirat, Ijazah, Fiqh, Hadith</p></div></div>
+          <div class="pyramid-level l4"><div class="pyramid-num">L4</div><div class="pyramid-info"><div class="pyramid-h">Tafseer & Arabic</div><p>Nahw-Sarf, Islamic sciences</p></div></div>
+          <div class="pyramid-level l3"><div class="pyramid-num">L3</div><div class="pyramid-info"><div class="pyramid-h">Tajweed & Hifz</div><p>Sanad preparation</p></div></div>
+          <div class="pyramid-level l2"><div class="pyramid-num">L2</div><div class="pyramid-info"><div class="pyramid-h">Quran Reading</div><p>Fluent Nazra & surahs</p></div></div>
+          <div class="pyramid-level l1"><div class="pyramid-num">L1</div><div class="pyramid-info"><div class="pyramid-h">Noorani Qaida</div><p>Start from zero</p></div></div>
         </div>
       </div>
     </div>

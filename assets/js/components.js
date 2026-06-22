@@ -5,7 +5,7 @@ const NP = {
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <div class="logo-text">Noor<span>Path</span> <span style="color:rgba(255,255,255,.5);font-size:.7rem;vertical-align:middle;">Academy</span></div>
+      <div class="logo-text">Noor<span>Path</span> <span style="color:rgba(26,26,46,.6);font-size:.7rem;vertical-align:middle;">Academy</span></div>
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
       <span style="color:#fff;font-size:1.4rem;"><i class="fas fa-bars"></i></span>
