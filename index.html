@@ -3254,137 +3254,80 @@
 <!-- ═══ FOOTER ═══ -->
 <div id="np-footer"></div>
 
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="/assets/js/components.js"></script>
 <script>
+  // Promo close — critical, run immediately
   document.getElementById('closePromo')?.addEventListener('click', () => {
     document.getElementById('promoBanner')?.remove();
   });
 
-  // FAQ Toggle
-  function toggleFaq(el) {
-    const allQ = document.querySelectorAll('.faq-question');
-    const allA = document.querySelectorAll('.faq-answer');
-    allQ.forEach(q => {
-      q.classList.remove('active');
+  // FAQ + Form — non-critical, defer to idle time so main thread stays free
+  function initNonCritical() {
+    // ── FAQ Toggle ──
+    function toggleFaq(el) {
+      document.querySelectorAll('.faq-question').forEach(q => {
+        q.classList.remove('active');
+        q.setAttribute('aria-expanded', 'false');
+      });
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+      const answer = el.nextElementSibling;
+      if (answer && !answer.classList.contains('open')) {
+        el.classList.add('active');
+        el.setAttribute('aria-expanded', 'true');
+        answer.classList.add('open');
+      }
+    }
+    document.querySelectorAll('.faq-question').forEach((q, i) => {
+      q.setAttribute('role', 'button');
+      q.setAttribute('tabindex', '0');
       q.setAttribute('aria-expanded', 'false');
+      const a = q.nextElementSibling;
+      if (a) { a.id = `faq-a-${i}`; q.setAttribute('aria-controls', `faq-a-${i}`); }
+      q.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(q); }
+      });
     });
-    allA.forEach(a => a.classList.remove('open'));
-    const answer = el.nextElementSibling;
-    const isOpen = answer.classList.contains('open');
-    if (!isOpen) {
-      el.classList.add('active');
-      el.setAttribute('aria-expanded', 'true');
-      answer.classList.add('open');
-    }
-  }
 
-  document.querySelectorAll('.faq-question').forEach((question, index) => {
-    question.setAttribute('role', 'button');
-    question.setAttribute('tabindex', '0');
-    question.setAttribute('aria-expanded', question.classList.contains('active') ? 'true' : 'false');
-    const answer = question.nextElementSibling;
-    if (answer) {
-      const answerId = `faq-answer-${index + 1}`;
-      answer.id = answerId;
-      question.setAttribute('aria-controls', answerId);
-    }
-    question.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggleFaq(question);
-      }
-    });
-  });
+    // ── CTA Form ──
+    const trialForm = document.getElementById('trialForm');
+    if (!trialForm) return;
+    const FORM_URL = 'https://formsubmit.co/ajax/info@noorpath.online';
 
-  // CTA form — AJAX to FormSubmit (avoids redirect + QUIC errors on formsubmit.co)
-  const trialForm = document.getElementById('trialForm');
-  const FORM_SUBMIT_URL = 'https://formsubmit.co/ajax/info@noorpath.online';
-
-  function showTrialFormSuccess() {
-    const btn = document.getElementById('trialSubmitBtn');
-    const status = document.getElementById('formStatus');
-    if (btn) {
-      btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!';
-      btn.style.background = 'var(--emerald-mid)';
-      btn.disabled = true;
-    }
-    if (status) {
-      status.style.display = 'block';
-      status.textContent = 'Thank you! We will contact you within 24 hours.';
-      status.style.color = 'var(--gold-lt)';
-    }
-  }
-
-  function resetTrialFormButton() {
-    const btn = document.getElementById('trialSubmitBtn');
-    if (btn) {
-      btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class';
-      btn.disabled = false;
-    }
-  }
-
-  if (trialForm) {
-    trialForm.addEventListener('submit', async (e) => {
+    trialForm.addEventListener('submit', async e => {
       e.preventDefault();
-      if (!trialForm.checkValidity()) {
-        trialForm.reportValidity();
-        return;
-      }
-
+      if (!trialForm.checkValidity()) { trialForm.reportValidity(); return; }
       const fp = document.getElementById('familyPlanHidden');
-      if (fp) {
-        fp.value = document.getElementById('siblingEnroll').checked ? 'Yes — family plan' : 'No';
-      }
-
+      if (fp) fp.value = document.getElementById('siblingEnroll')?.checked ? 'Yes — family plan' : 'No';
       const btn = document.getElementById('trialSubmitBtn');
       const status = document.getElementById('formStatus');
-      if (btn) {
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...';
-        btn.disabled = true;
-      }
-      if (status) {
-        status.style.display = 'block';
-        status.textContent = 'Please wait, sending your booking...';
-        status.style.color = 'rgba(255,255,255,.78)';
-      }
-
+      if (btn) { btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...'; btn.disabled = true; }
+      if (status) { status.style.display = 'block'; status.textContent = 'Please wait...'; status.style.color = 'rgba(255,255,255,.78)'; }
       try {
-        const response = await fetch(FORM_SUBMIT_URL, {
-          method: 'POST',
-          body: new FormData(trialForm),
-          headers: { Accept: 'application/json' }
-        });
-        const data = await response.json();
+        const res = await fetch(FORM_URL, { method: 'POST', body: new FormData(trialForm), headers: { Accept: 'application/json' } });
+        const data = await res.json();
         const ok = data.success === true || data.success === 'true';
-
         if (ok) {
           trialForm.reset();
-          showTrialFormSuccess();
+          if (btn) { btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!'; btn.style.background = 'var(--emerald-mid)'; }
+          if (status) { status.textContent = 'Thank you! We will contact you within 24 hours.'; status.style.color = 'var(--gold-lt)'; }
           return;
         }
-
         const msg = data.message || '';
-        if (/activ/i.test(msg)) {
-          if (status) {
-            status.textContent = 'Almost ready! Check info@noorpath.online and click the activation link from FormSubmit, then try again.';
-            status.style.color = 'var(--gold-lt)';
-          }
-        } else if (status) {
-          status.textContent = msg || 'Could not send. Please WhatsApp us or email directly.';
-          status.style.color = '#ffb4b4';
-        }
-        resetTrialFormButton();
-      } catch (err) {
-        if (status) {
-          status.textContent = 'Network error. Please try again or contact us on WhatsApp.';
-          status.style.color = '#ffb4b4';
-        }
-        resetTrialFormButton();
+        if (status) { status.textContent = /activ/i.test(msg) ? 'Check info@noorpath.online for an activation link, then try again.' : (msg || 'Could not send. Please WhatsApp us.'); status.style.color = /activ/i.test(msg) ? 'var(--gold-lt)' : '#ffb4b4'; }
+        if (btn) { btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class'; btn.disabled = false; }
+      } catch {
+        if (status) { status.textContent = 'Network error. Please WhatsApp us directly.'; status.style.color = '#ffb4b4'; }
+        if (btn) { btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class'; btn.disabled = false; }
       }
     });
   }
 
+  // Use requestIdleCallback if available, else setTimeout fallback
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(initNonCritical, { timeout: 2000 });
+  } else {
+    setTimeout(initNonCritical, 200);
+  }
 </script>
 </body>
 </html>
