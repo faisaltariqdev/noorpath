@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/data/blog";
 import { blogContent } from "@/data/blogContent";
+import { blogFaqs } from "@/data/blogFaqs";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
 interface Props {
@@ -87,9 +88,14 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
+  const faqSchema = blogFaqs[slug];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       {/* Inject blog-post-specific CSS */}
       {richContent?.style && (

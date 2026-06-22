@@ -18,24 +18,46 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <nav
-      className={`navbar-np ${scrolled ? "scrolled" : ""}`}
+      className={`navbar-np${scrolled ? " scrolled" : ""}`}
       aria-label="Main navigation"
+      role="navigation"
     >
-      <div className="max-w-[1200px] mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="logo-text no-underline">
-          Noor<span className="path">Path</span>{" "}
-          <span className="academy">Academy</span>
+      <div
+        style={{
+          maxWidth: 1200,
+          margin: "0 auto",
+          padding: "0 20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        {/* Logo */}
+        <Link href="/" style={{ textDecoration: "none" }}>
+          <div className="logo-text">
+            Noor<span className="path">Path</span>{" "}
+            <span className="academy">Academy</span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden lg:flex items-center gap-1 list-none m-0 p-0">
+        <ul
+          className="hidden lg:flex"
+          style={{
+            listStyle: "none",
+            margin: 0,
+            padding: 0,
+            alignItems: "center",
+            gap: 2,
+          }}
+        >
           {navLinks.map((l) => (
             <li key={l.href}>
               <Link href={l.href} className="nav-link-np">
@@ -43,45 +65,69 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="ml-2">
+          <li style={{ marginLeft: 10 }}>
             <Link href="/online-quran-classes#cta" className="btn-nav-cta">
-              Free Trial
+              🎓 Free Trial
             </Link>
           </li>
         </ul>
 
-        {/* Mobile toggle */}
+        {/* Mobile hamburger */}
         <button
-          className="lg:hidden text-white p-2"
-          aria-label="Toggle navigation"
+          className="lg:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
+          style={{
+            background: "rgba(255,255,255,.1)",
+            border: "1px solid rgba(255,255,255,.15)",
+            borderRadius: 10,
+            color: "#fff",
+            padding: "8px 10px",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+          }}
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile dropdown */}
       {open && (
-        <div className="lg:hidden bg-[rgba(10,50,35,.98)] backdrop-blur-sm px-4 pb-4 pt-2">
-          <ul className="list-none m-0 p-0 flex flex-col gap-1">
+        <div
+          style={{
+            background: "rgba(6,28,18,.98)",
+            backdropFilter: "blur(16px)",
+            borderTop: "1px solid rgba(255,255,255,.08)",
+            padding: "12px 20px 20px",
+          }}
+          className="lg:hidden"
+        >
+          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {navLinks.map((l) => (
-              <li key={l.href}>
+              <li
+                key={l.href}
+                style={{ borderBottom: "1px solid rgba(255,255,255,.06)" }}
+              >
                 <Link
                   href={l.href}
-                  className="nav-link-np block py-2"
+                  className="nav-link-np"
+                  style={{ display: "block", padding: "12px 8px" }}
                   onClick={() => setOpen(false)}
                 >
                   {l.label}
                 </Link>
               </li>
             ))}
-            <li className="mt-2">
+            <li style={{ marginTop: 14 }}>
               <Link
                 href="/online-quran-classes#cta"
-                className="btn-nav-cta inline-block"
+                className="btn-nav-cta"
+                style={{ display: "block", textAlign: "center", padding: "12px" }}
                 onClick={() => setOpen(false)}
               >
-                Free Trial Class
+                🎓 Book Free Trial Class
               </Link>
             </li>
           </ul>

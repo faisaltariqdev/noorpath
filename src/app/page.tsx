@@ -62,24 +62,64 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "EducationalOrganization",
+      "@type": ["EducationalOrganization", "LocalBusiness"],
       "@id": "https://www.noorpath.online/#organization",
       name: "NoorPath Academy",
-      url: "https://www.noorpath.online/",
-      logo: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg", width: 1200, height: 630 },
+      alternateName: ["NoorPath Online Quran Academy", "NoorPath Quran School"],
+      url: "https://www.noorpath.online",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.noorpath.online/og-image.svg",
+        width: 1200,
+        height: 630,
+      },
+      image: "https://www.noorpath.online/og-image.svg",
       email: "info@noorpath.online",
       telephone: "+923124877906",
       foundingDate: "2018",
-      description: "NoorPath Academy is a premium online Quran academy offering 1-on-1 live classes for kids, adults and families worldwide.",
+      description: "NoorPath Academy is a premium online Quran academy offering certified 1-on-1 live classes for kids, adults, and families worldwide. Courses include Noorani Qaida, Tajweed, Hifz, Arabic language, and Islamic studies.",
       address: { "@type": "PostalAddress", addressCountry: "PK" },
-      sameAs: ["https://www.noorpath.online"],
+      areaServed: "Worldwide",
+      priceRange: "$$",
+      numberOfEmployees: { "@type": "QuantitativeValue", value: 50 },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "2400",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      sameAs: [
+        "https://www.noorpath.online",
+        "https://wa.me/923124877906",
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Online Quran & Islamic Courses",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Noorani Qaida Online", url: "https://www.noorpath.online/courses/noorani-qaida-online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Tajweed Classes Online", url: "https://www.noorpath.online/courses/tajweed-classes-online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Hifz Program Online", url: "https://www.noorpath.online/courses/hifz-program-online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Quran Classes for Kids", url: "https://www.noorpath.online/courses/quran-classes-for-kids" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Arabic Language Online", url: "https://www.noorpath.online/courses/arabic-language-online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Islamic Studies Online", url: "https://www.noorpath.online/courses/islamic-studies-online" } },
+        ],
+      },
     },
     {
       "@type": "WebSite",
       "@id": "https://www.noorpath.online/#website",
-      url: "https://www.noorpath.online/",
+      url: "https://www.noorpath.online",
       name: "NoorPath Academy",
       publisher: { "@id": "https://www.noorpath.online/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: "https://www.noorpath.online/blog?q={search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
     },
     {
       "@type": "FAQPage",
@@ -88,6 +128,18 @@ const jsonLd = {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
+    },
+    {
+      "@type": "ItemList",
+      name: "NoorPath Academy Online Courses",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, url: "https://www.noorpath.online/courses/noorani-qaida-online", name: "Noorani Qaida Online" },
+        { "@type": "ListItem", position: 2, url: "https://www.noorpath.online/courses/tajweed-classes-online", name: "Tajweed Classes Online" },
+        { "@type": "ListItem", position: 3, url: "https://www.noorpath.online/courses/hifz-program-online", name: "Hifz Program Online" },
+        { "@type": "ListItem", position: 4, url: "https://www.noorpath.online/courses/quran-classes-for-kids", name: "Quran Classes for Kids" },
+        { "@type": "ListItem", position: 5, url: "https://www.noorpath.online/courses/arabic-language-online", name: "Arabic Language Online" },
+        { "@type": "ListItem", position: 6, url: "https://www.noorpath.online/courses/islamic-studies-online", name: "Islamic Studies Online" },
+      ],
     },
   ],
 };
@@ -123,10 +175,10 @@ export default function HomePage() {
           overflow: "hidden",
         }}
       >
-        {/* Orbs */}
-        {["top-[8%] left-[12%] w-[420px] h-[420px] bg-emerald-mid", "top-[60%] right-[8%] w-[300px] h-[300px] bg-gold", "top-[35%] left-[55%] w-[250px] h-[250px] bg-emerald-lt"].map((cls, i) => (
-          <div key={i} className={`absolute rounded-full opacity-25 blur-[80px] pointer-events-none ${cls}`} />
-        ))}
+        {/* Background glow orbs */}
+        <div style={{ position:"absolute", top:"8%", left:"10%", width:420, height:420, borderRadius:"50%", background:"#0f8f66", opacity:.2, filter:"blur(80px)", pointerEvents:"none" }} />
+        <div style={{ position:"absolute", top:"60%", right:"5%", width:300, height:300, borderRadius:"50%", background:"#c9922a", opacity:.15, filter:"blur(70px)", pointerEvents:"none" }} />
+        <div style={{ position:"absolute", top:"30%", left:"55%", width:260, height:260, borderRadius:"50%", background:"#14b882", opacity:.12, filter:"blur(70px)", pointerEvents:"none" }} />
 
         <div className="max-w-[1200px] mx-auto px-4 w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -162,24 +214,24 @@ export default function HomePage() {
                 From Noorani Qaida through Hifz, Tajweed, Tafseer, and Islamic scholarship — for learners age 4 to adults and seniors. Parents can enroll multiple siblings — each child on their own level, with family plans and weekly progress reports.
               </p>
 
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 36 }}>
-                <Link href="#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "14px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".95rem" }}>
-                  <PlayCircle size={18} /> Start Free Trial
+              <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 32 }}>
+                <Link href="#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "15px 32px", borderRadius: 50, textDecoration: "none", fontSize: ".95rem", boxShadow: "0 6px 24px rgba(201,146,42,.4)", letterSpacing: ".2px" }}>
+                  <PlayCircle size={18} /> 🎓 Start Free Trial
                 </Link>
-                <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", color: "#fff", fontWeight: 600, padding: "14px 28px", borderRadius: 50, textDecoration: "none", border: "2px solid rgba(255,255,255,.35)", fontSize: ".95rem" }}>
-                  <MapPin size={18} /> View Courses
+                <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "15px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
+                  <MapPin size={16} /> View Courses
                 </Link>
               </div>
 
               {/* Stats */}
-              <div style={{ display: "flex", gap: 0, flexWrap: "wrap" }}>
-                {[["12K+","Students Enrolled"],["250+","Certified Tutors"],["40+","Countries"],["4.9★","Avg Rating"]].map(([num, label], i, arr) => (
-                  <div key={label} style={{ display: "flex", alignItems: "center" }}>
-                    <div style={{ textAlign: "center", padding: "0 20px" }}>
-                      <div style={{ color: "#fff", fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", fontWeight: 700 }}>{num}</div>
-                      <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".8px" }}>{label}</div>
+              <div style={{ display: "flex", flexWrap: "wrap", background: "rgba(255,255,255,.05)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 16, padding: "16px 0", marginTop: 8 }}>
+                {[["12K+","Students"],["250+","Tutors"],["40+","Countries"],["4.9★","Rating"]].map(([num, label], i, arr) => (
+                  <div key={label} style={{ display: "flex", alignItems: "center", flex: 1 }}>
+                    <div style={{ textAlign: "center", padding: "0 16px", width: "100%" }}>
+                      <div style={{ color: "var(--gold-lt)", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.45rem", fontWeight: 700, lineHeight: 1 }}>{num}</div>
+                      <div style={{ color: "rgba(255,255,255,.55)", fontSize: ".7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".9px", marginTop: 4 }}>{label}</div>
                     </div>
-                    {i < arr.length - 1 && <div style={{ width: 1, height: 40, background: "rgba(255,255,255,.2)" }} />}
+                    {i < arr.length - 1 && <div style={{ width: 1, height: 36, background: "rgba(255,255,255,.12)", flexShrink: 0 }} />}
                   </div>
                 ))}
               </div>
@@ -295,13 +347,13 @@ export default function HomePage() {
               <p className="section-desc">We combine certified Islamic scholarship with modern teaching methods, flexible scheduling, and genuine care for every student&apos;s progress.</p>
               <Link href="/online-quran-classes#cta" className="btn-primary-np">Start Free Trial →</Link>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {whyPoints.map((w) => (
-                <div key={w.title} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid var(--border)", borderRadius: 16, padding: 20 }}>
-                  <div style={{ color: "var(--emerald)", flexShrink: 0, marginTop: 2 }}>{w.icon}</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {whyPoints.map((w, i) => (
+                <div key={w.title} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid rgba(10,110,79,.1)", borderRadius: 16, padding: "18px 22px", boxShadow: "0 2px 12px rgba(10,110,79,.06)", transition: "all .3s" }}>
+                  <div style={{ color: "#fff", width: 44, height: 44, flexShrink: 0, borderRadius: 12, background: i % 2 === 0 ? "var(--emerald)" : "linear-gradient(135deg,var(--emerald-mid),var(--emerald))", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(10,110,79,.25)" }}>{w.icon}</div>
                   <div>
-                    <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 4 }}>{w.title}</div>
-                    <div style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.6 }}>{w.desc}</div>
+                    <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 4, fontSize: ".97rem" }}>{w.title}</div>
+                    <div style={{ color: "var(--muted)", fontSize: ".86rem", lineHeight: 1.65 }}>{w.desc}</div>
                   </div>
                 </div>
               ))}
@@ -319,12 +371,13 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <div key={t.name} className="content-card">
-                <div style={{ color: "var(--gold)", fontSize: "1.1rem", marginBottom: 12 }}>{"★".repeat(t.stars)}</div>
-                <p style={{ color: "var(--slate)", fontSize: ".9rem", lineHeight: 1.7, marginBottom: 16 }}>&quot;{t.text}&quot;</p>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <strong style={{ color: "var(--charcoal)", fontSize: ".9rem" }}>{t.name}</strong>
-                  <span style={{ fontSize: ".82rem" }}>{t.country}</span>
+              <div key={t.name} style={{ background: "#fff", border: "1px solid rgba(10,110,79,.1)", borderRadius: 20, padding: 28, boxShadow: "0 4px 20px rgba(10,110,79,.07)", position: "relative", overflow: "hidden" }}>
+                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg, var(--gold), var(--gold-lt))" }} />
+                <div style={{ color: "var(--gold)", fontSize: "1.2rem", marginBottom: 14, letterSpacing: 2 }}>{"★".repeat(t.stars)}</div>
+                <p style={{ color: "var(--slate)", fontSize: ".91rem", lineHeight: 1.75, marginBottom: 20, fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 14, borderTop: "1px solid rgba(10,110,79,.08)" }}>
+                  <strong style={{ color: "var(--charcoal)", fontSize: ".92rem" }}>{t.name}</strong>
+                  <span style={{ fontSize: ".85rem", background: "rgba(10,110,79,.06)", padding: "4px 12px", borderRadius: 50, color: "var(--emerald)", fontWeight: 600 }}>{t.country}</span>
                 </div>
               </div>
             ))}
@@ -421,32 +474,100 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SEO LOCATIONS ── */}
-      <section style={{ background: "var(--ivory)", padding: "48px 0", borderTop: "1px solid var(--border)" }}>
+      {/* ── INTERNAL LINKS HUB ── */}
+      <section style={{ background: "var(--ivory)", padding: "60px 0", borderTop: "1px solid var(--border)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <h2 style={{ textAlign: "center", fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", marginBottom: 20, color: "var(--charcoal)" }}>
-            Online Quran Classes for Every Family, Everywhere
-          </h2>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-            {[
-              ["/locations/online-quran-classes-usa","🇺🇸 USA"],
-              ["/locations/online-quran-classes-canada","🇨🇦 Canada"],
-              ["/locations/online-quran-classes-uk","🇬🇧 UK"],
-              ["/locations/online-quran-classes-australia","🇦🇺 Australia"],
-              ["/locations/online-quran-classes-uae","🇦🇪 UAE"],
-              ["/locations","🇸🇦 Saudi Arabia"],
-              ["/locations","🇩🇪 Germany"],
-              ["/locations","🇲🇾 Malaysia"],
-            ].map(([href, label]) => (
-              <Link key={String(label)} href={String(href)} style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 50, padding: "7px 16px", fontSize: ".82rem", color: "var(--charcoal)", fontWeight: 600, textDecoration: "none" }}>
-                {label}
-              </Link>
-            ))}
+          {/* Quick links grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div>
+              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 14, borderBottom: "2px solid var(--emerald)", paddingBottom: 8 }}>
+                📚 Popular Courses
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                {[
+                  ["/courses/noorani-qaida-online", "Noorani Qaida Online"],
+                  ["/courses/tajweed-classes-online", "Tajweed Classes Online"],
+                  ["/courses/hifz-program-online", "Hifz Program Online"],
+                  ["/courses/quran-classes-for-kids", "Quran Classes for Kids"],
+                  ["/courses/arabic-language-online", "Arabic Language Online"],
+                  ["/courses/islamic-studies-online", "Islamic Studies Online"],
+                ].map(([href, label]) => (
+                  <li key={String(label)}>
+                    <Link href={String(href)} style={{ color: "var(--muted)", fontSize: ".85rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
+                      <span style={{ color: "var(--emerald)", fontWeight: 700 }}>→</span> {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 14, borderBottom: "2px solid var(--emerald)", paddingBottom: 8 }}>
+                🌍 Locations We Serve
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                {[
+                  ["/locations/online-quran-classes-usa", "🇺🇸 Online Quran Classes USA"],
+                  ["/locations/online-quran-classes-uk", "🇬🇧 Online Quran Classes UK"],
+                  ["/locations/online-quran-classes-canada", "🇨🇦 Online Quran Classes Canada"],
+                  ["/locations/online-quran-classes-australia", "🇦🇺 Online Quran Classes Australia"],
+                  ["/locations/online-quran-classes-uae", "🇦🇪 Online Quran Classes UAE"],
+                  ["/locations/online-quran-classes-pakistan", "🇵🇰 Online Quran Classes Pakistan"],
+                  ["/locations/online-quran-classes-germany", "🇩🇪 Online Quran Classes Germany"],
+                  ["/locations", "View all 12 countries →"],
+                ].map(([href, label]) => (
+                  <li key={String(label)}>
+                    <Link href={String(href)} style={{ color: "var(--muted)", fontSize: ".85rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
+                      <span style={{ color: "var(--emerald)", fontWeight: 700 }}>→</span> {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 14, borderBottom: "2px solid var(--emerald)", paddingBottom: 8 }}>
+                🔗 Popular Pages
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                {[
+                  ["/quran-teacher-online", "Online Quran Teacher"],
+                  ["/free-quran-classes-online", "Free Quran Classes Online"],
+                  ["/online-quran-for-beginners", "Online Quran for Beginners"],
+                  ["/female-quran-teacher-online", "Female Quran Teacher Online"],
+                  ["/online-quran-classes-for-adults", "Quran Classes for Adults"],
+                  ["/online-quran-classes", "Online Quran Classes"],
+                  ["/pricing", "Pricing & Plans"],
+                  ["/blog", "Islamic Blog & Resources"],
+                ].map(([href, label]) => (
+                  <li key={String(label)}>
+                    <Link href={String(href)} style={{ color: "var(--muted)", fontSize: ".85rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
+                      <span style={{ color: "var(--emerald)", fontWeight: 700 }}>→</span> {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <p style={{ color: "var(--muted)", textAlign: "center", fontSize: ".82rem", maxWidth: 720, margin: "0 auto", lineHeight: 1.7 }}>
-            <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> delivers live 1-on-1 online Quran education via Zoom, Skype and Google Meet. We specialise in <em>online Quran classes for kids</em>, <em>Tajweed courses</em>, <em>online Hifz programs</em>, <em>Noorani Qaida</em>, <em>Quranic Arabic</em>, and <em>daily duas for children</em>. Serving families in Toronto, London, Texas, Sydney, Dubai, Riyadh and beyond.{" "}
-            <Link href="#cta" style={{ color: "var(--emerald)", fontWeight: 600 }}>Book your free trial class today.</Link>
-          </p>
+
+          {/* SEO paragraph */}
+          <div style={{ borderTop: "1px solid var(--border)", paddingTop: 24 }}>
+            <p style={{ color: "var(--muted)", fontSize: ".82rem", maxWidth: 960, margin: "0 auto", lineHeight: 1.85, textAlign: "center" }}>
+              <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is a leading <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> offering certified 1-on-1 live classes via Zoom and Skype for Muslim families worldwide. Our programmes include{" "}
+              <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link>,{" "}
+              <Link href="/courses/tajweed-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Tajweed classes</Link>,{" "}
+              <Link href="/courses/hifz-program-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Quran Hifz memorization</Link>,{" "}
+              <Link href="/courses/arabic-language-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Arabic language courses</Link>, and{" "}
+              <Link href="/courses/daily-duas-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>daily duas for children</Link>.
+              We offer <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>free trial Quran classes</Link> with no credit card required.
+              Find a <Link href="/quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>certified online Quran teacher</Link> or browse our{" "}
+              <Link href="/online-quran-for-beginners" style={{ color: "var(--emerald)", fontWeight: 600 }}>beginner Quran course</Link> to start today.
+              Serving 12,000+ students in the <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 600 }}>USA</Link>,{" "}
+              <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 600 }}>UK</Link>,{" "}
+              <Link href="/locations/online-quran-classes-canada" style={{ color: "var(--emerald)", fontWeight: 600 }}>Canada</Link>,{" "}
+              <Link href="/locations/online-quran-classes-australia" style={{ color: "var(--emerald)", fontWeight: 600 }}>Australia</Link>,{" "}
+              <Link href="/locations/online-quran-classes-uae" style={{ color: "var(--emerald)", fontWeight: 600 }}>UAE</Link>, and 40+ countries.{" "}
+              <Link href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your free Quran class today →</Link>
+            </p>
+          </div>
         </div>
       </section>
     </>
