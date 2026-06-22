@@ -148,10 +148,43 @@ a { color: var(--emerald); }
 }
 
 /* ══════════════════════════════════════════════════════════════
+   RESPONSIVE NAV (overrides Tailwind lg: classes)
+══════════════════════════════════════════════════════════════ */
+.nav-desktop { display: none !important; }
+.nav-mobile-btn { display: flex !important; }
+
+@media (min-width: 1024px) {
+  .nav-desktop { display: flex !important; }
+  .nav-mobile-btn { display: none !important; }
+  .nav-mobile-menu { display: none !important; }
+}
+
+/* ══════════════════════════════════════════════════════════════
    SECTIONS
 ══════════════════════════════════════════════════════════════ */
 section { padding: 88px 0; }
-@media (max-width: 767px) { section { padding: 56px 0; } }
+@media (max-width: 767px) {
+  section { padding: 56px 0; }
+  .section-title { font-size: clamp(1.6rem, 6vw, 2.1rem) !important; }
+  .pricing-card-highlight { transform: scale(1) !important; }
+  .guarantee-strip { flex-direction: column; text-align: center; padding: 24px 20px; }
+  /* Hero mobile padding */
+  section.hero { padding-top: 130px !important; }
+  /* Course + testimonial cards full width on mobile */
+  .course-card, .testimonial-card, .pricing-card, .pricing-card-highlight, .faq-card, .why-card {
+    width: 100%;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MOBILE NAV DROPDOWN
+══════════════════════════════════════════════════════════════ */
+.nav-mobile-menu {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .nav-mobile-menu { display: none !important; }
+}
 
 .section-eyebrow {
   display: inline-flex;
@@ -573,42 +606,98 @@ footer {
   background: #fff;
   border: 1.5px solid var(--border);
   border-radius: 20px;
-  padding: 28px 24px;
+  padding: 32px 24px;
   text-align: center;
   position: relative;
   transition: all .3s cubic-bezier(.25,.46,.45,.94);
-  overflow: hidden;
 }
 .pricing-card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, var(--emerald), var(--emerald-lt));
+  border-radius: 20px 20px 0 0;
   opacity: 0;
   transition: opacity .3s;
 }
 .pricing-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 64px rgba(10,110,79,.18);
   border-color: rgba(10,110,79,.3);
 }
 .pricing-card:hover::before { opacity: 1; }
 
 .pricing-card-highlight {
-  background: linear-gradient(135deg, #0a6e4f 0%, #0d5436 100%);
-  border: none;
+  background: linear-gradient(160deg, #0a6e4f 0%, #065038 100%);
+  border: 2px solid rgba(232,184,75,.3);
   border-radius: 20px;
-  padding: 28px 24px;
+  padding: 32px 24px;
   text-align: center;
   position: relative;
   transition: all .3s cubic-bezier(.25,.46,.45,.94);
-  box-shadow: 0 12px 48px rgba(10,110,79,.35);
-  overflow: hidden;
+  box-shadow: 0 16px 56px rgba(10,110,79,.4), 0 0 0 1px rgba(232,184,75,.1);
+  transform: scale(1.03);
 }
 .pricing-card-highlight:hover {
+  transform: scale(1.03) translateY(-8px);
+  box-shadow: 0 28px 72px rgba(10,110,79,.5);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TESTIMONIAL CARDS
+══════════════════════════════════════════════════════════════ */
+.testimonial-card {
+  background: #fff;
+  border: 1px solid rgba(10,110,79,.1);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(10,110,79,.07);
+  position: relative;
+  overflow: hidden;
+  transition: all .3s cubic-bezier(.25,.46,.45,.94);
+}
+.testimonial-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 64px rgba(10,110,79,.45);
+  box-shadow: 0 16px 40px rgba(10,110,79,.13);
+  border-color: rgba(10,110,79,.2);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   GUARANTEE STRIP
+══════════════════════════════════════════════════════════════ */
+.guarantee-strip {
+  background: linear-gradient(135deg, #0a6e4f 0%, #065038 100%);
+  border-radius: 20px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SOCIAL PROOF TICKER
+══════════════════════════════════════════════════════════════ */
+.social-proof-bar {
+  background: linear-gradient(90deg, #0a6e4f, #065038);
+  padding: 13px 0;
+  overflow: hidden;
+}
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LOGO GLOW
+══════════════════════════════════════════════════════════════ */
+.logo-glow {
+  text-shadow: 0 0 20px rgba(232,184,75,.3), 0 0 40px rgba(232,184,75,.1);
+  transition: text-shadow .3s ease;
+}
+.logo-glow:hover {
+  text-shadow: 0 0 30px rgba(232,184,75,.5), 0 0 60px rgba(232,184,75,.2);
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -640,6 +729,36 @@ footer {
   background: #fff;
 }
 .faq-card:hover::before { opacity: 1; }
+
+/* ══════════════════════════════════════════════════════════════
+   COURSE CARDS
+══════════════════════════════════════════════════════════════ */
+.course-card {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: all .3s cubic-bezier(.25,.46,.45,.94);
+  position: relative;
+  overflow: hidden;
+}
+.course-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,110,79,.03), transparent);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.course-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 48px rgba(10,110,79,.16);
+  border-color: rgba(10,110,79,.3);
+}
+.course-card:hover::before { opacity: 1; }
 
 /* ══════════════════════════════════════════════════════════════
    WHY-CARD — Why NoorPath cards
@@ -681,4 +800,16 @@ footer {
 @keyframes pulse-dot {
   0%,100% { opacity: 1; transform: scale(1); }
   50% { opacity: .5; transform: scale(.85); }
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; box-shadow: 0 0 0 0 currentColor; }
+  50% { opacity: .7; box-shadow: 0 0 0 4px transparent; }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MOBILE — CTA SECTION
+══════════════════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+  .cta-section { padding: 56px 0 !important; }
+  .cta-form-wrap { padding: 24px 16px !important; }
 }

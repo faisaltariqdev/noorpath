@@ -190,6 +190,36 @@ export const blogPosts: BlogPost[] = [
     keywords: ["tajweed rules","tajweed for beginners","learn tajweed","quran recitation rules"],
     excerpt: "Tajweed is the science of correct Quran recitation. This comprehensive guide covers all major rules — from Noon Sakinah to Madd — with clear Arabic examples and exercises.",
   },
+  {
+    slug: "five-pillars-of-islam-explained",
+    title: "Five Pillars of Islam — Complete Guide with Quran & Hadith Evidence",
+    description: "Learn the Five Pillars of Islam (Arkan al-Islam) with full Quran references, Hadith evidence, and practical guidance for children and new Muslims.",
+    category: "Islamic Knowledge",
+    date: "2026-04-01",
+    readTime: "15 min",
+    keywords: ["five pillars of islam","pillars of islam","what are the five pillars of islam","arkan al islam","islamic pillars explained"],
+    excerpt: "The Five Pillars of Islam are the foundation of a Muslim's life. This comprehensive guide explains Shahada, Salah, Zakat, Sawm, and Hajj with Quranic proof and practical tips.",
+  },
+  {
+    slug: "surah-al-fatiha-arabic-english",
+    title: "Surah Al-Fatiha — Arabic Text, English Translation, Meaning & Benefits",
+    description: "Complete Surah Al-Fatiha guide: full Arabic text, word-by-word English translation, tafsir, virtues, and how it is the cornerstone of every salah.",
+    category: "Quran Learning",
+    date: "2026-04-10",
+    readTime: "10 min",
+    keywords: ["surah al fatiha","surah fatiha","al fatiha english","surah fatiha translation","surah fatiha benefits","opening surah"],
+    excerpt: "Surah Al-Fatiha (The Opening) is recited 17 times daily in every Muslim's prayer. Discover its full Arabic text, word-by-word English translation, and profound tafsir.",
+  },
+  {
+    slug: "best-online-quran-academy-guide",
+    title: "Best Online Quran Academy 2026 — How to Choose & What to Look For",
+    description: "Looking for the best online Quran academy? This guide reveals what top academies offer, red flags to avoid, and why NoorPath is trusted by 12,000+ families worldwide.",
+    category: "Online Learning",
+    date: "2026-05-01",
+    readTime: "12 min",
+    keywords: ["best online quran academy","online quran academy","quran learning online","top quran academy online","choose quran academy"],
+    excerpt: "With hundreds of online Quran academies, how do you choose the right one? We reveal the 7 must-have qualities — and why 12,000+ families chose NoorPath Academy.",
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

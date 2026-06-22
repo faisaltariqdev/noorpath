@@ -100,9 +100,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" style={{ textDecoration: "none" }}>
             <div
+              className="logo-glow"
               style={{
                 fontFamily: "'Playfair Display', Georgia, serif",
-                fontSize: "1.4rem",
+                fontSize: "1.45rem",
                 fontWeight: 700,
                 color: "#fff",
                 letterSpacing: "-.3px",
@@ -110,7 +111,7 @@ export default function Navbar() {
               }}
             >
               Noor
-              <span style={{ color: "#c9922a" }}>Path</span>{" "}
+              <span style={{ color: "#d4a030" }}>Path</span>{" "}
               <span
                 style={{
                   color: "rgba(255,255,255,.45)",
@@ -129,7 +130,7 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <ul
-            className="hidden lg:flex"
+            className="nav-desktop"
             style={{ listStyle: "none", margin: 0, padding: 0, alignItems: "center", gap: 2 }}
           >
             {navLinks.map((l) => (
@@ -178,7 +179,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden"
+            className="nav-mobile-btn"
             aria-label="Toggle navigation menu"
             aria-expanded={open}
             onClick={() => setOpen((o) => !o)}
@@ -206,7 +207,7 @@ export default function Navbar() {
               borderTop: "1px solid rgba(255,255,255,.08)",
               padding: "12px 20px 20px",
             }}
-            className="lg:hidden"
+            className="nav-mobile-menu"
           >
             <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
               {navLinks.map((l) => (

@@ -5329,4 +5329,254 @@ export const blogContent: Record<string, { style: string; content: string }> = {
                 </div>
               </a>`,
   },
+
+  "five-pillars-of-islam-explained": {
+    style: ``,
+    content: `
+<div class="highlight-box">
+  <strong>The Prophet Muhammad ﷺ said:</strong><br/>
+  <em>"Islam is built upon five [pillars]: testifying that there is no god worthy of worship except Allah and that Muhammad is the Messenger of Allah, establishing the prayer, paying the Zakat, making the pilgrimage to the House, and fasting in Ramadan."</em>
+  <br/><span style="font-size:.85rem;color:var(--muted)">— Sahih al-Bukhari 8, Sahih Muslim 16</span>
+</div>
+
+<h2>What Are the Five Pillars of Islam?</h2>
+<p>The Five Pillars of Islam (Arabic: <strong>أَرْكَانُ الْإِسْلَام</strong> — Arkan al-Islam) are the five fundamental acts of worship that every Muslim must perform. They form the framework of Muslim life and are the bedrock of the Islamic faith.</p>
+<p>Whether you are a new Muslim, a curious learner, or a parent teaching your children about Islam — understanding these five pillars in depth is the most important foundation you can give them.</p>
+
+<h2>The 1st Pillar: Shahada (Declaration of Faith)</h2>
+<div class="arabic" style="font-size:1.8rem;text-align:center;padding:24px 0;">أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَّسُوْلُ اللّٰهِ</div>
+<p style="text-align:center;font-style:italic;color:var(--muted);margin-bottom:24px">"Ash-hadu alla ilaha illallah wa ash-hadu anna Muhammadan rasulullah"</p>
+<p>The Shahada is the declaration: <strong>"I bear witness that there is no god but Allah, and I bear witness that Muhammad is the Messenger of Allah."</strong></p>
+<p>This is the first and most important pillar. Reciting it with sincere belief and understanding makes a person Muslim. It is the key to Paradise, the essence of Tawhid (monotheism), and the foundation upon which all other pillars rest.</p>
+<div class="highlight-box">
+  <strong>Quranic Reference (47:19):</strong> "Know, therefore, that there is no god but Allah." — This verse commands <em>knowledge</em> of Tawhid, not mere repetition.
+</div>
+
+<h2>The 2nd Pillar: Salah (Daily Prayer)</h2>
+<p>Salah — the ritual prayer — is performed <strong>five times every day</strong>: Fajr (dawn), Dhuhr (midday), Asr (afternoon), Maghrib (sunset), and Isha (night). It is the most frequently mentioned act of worship in the Quran — over 700 times.</p>
+<ul>
+  <li><strong>Fajr:</strong> 2 Rakaat — from dawn until sunrise</li>
+  <li><strong>Dhuhr:</strong> 4 Rakaat — after the sun passes its zenith</li>
+  <li><strong>Asr:</strong> 4 Rakaat — afternoon</li>
+  <li><strong>Maghrib:</strong> 3 Rakaat — after sunset</li>
+  <li><strong>Isha:</strong> 4 Rakaat — at night</li>
+</ul>
+<div class="highlight-box">
+  <strong>Quran (2:238):</strong> "Guard strictly the [five obligatory] prayers, especially the middle Salat, and stand before Allah with obedience."
+</div>
+<p>The Prophet ﷺ described prayer as <em>"the pillar of the religion"</em>. It is the first act of worship we will be asked about on the Day of Judgment. Salah keeps a Muslim connected to Allah five times a day, providing structure, mindfulness, and spiritual cleansing.</p>
+
+<h2>The 3rd Pillar: Zakat (Purifying Alms)</h2>
+<p>Zakat is the obligatory annual charitable contribution — <strong>2.5% of all accumulated wealth</strong> above the Nisab threshold (approximately the value of 85 grams of gold or 595 grams of silver). It purifies wealth and the soul.</p>
+<p>Zakat is payable on: cash and bank savings, gold and silver, business inventory, and agricultural produce. It is distributed to 8 specific categories mentioned in the Quran (9:60): the poor, the needy, those in debt, travellers, etc.</p>
+<div class="highlight-box">
+  <strong>Quran (9:103):</strong> "Take from their wealth a charity by which you purify them and cause them increase, and invoke [Allah's blessings] upon them."
+</div>
+<p>Zakat redistributes wealth, reduces poverty, and builds brotherhood in the Muslim community. It is distinct from voluntary charity (Sadaqah), which is always encouraged.</p>
+
+<h2>The 4th Pillar: Sawm (Fasting in Ramadan)</h2>
+<p>Sawm is the obligatory fast during the month of <strong>Ramadan</strong> — the 9th month of the Islamic lunar calendar. Muslims abstain from food, drink, smoking, and marital relations from Fajr (dawn) to Maghrib (sunset).</p>
+<div class="highlight-box">
+  <strong>Quran (2:183):</strong> "O you who have believed, decreed upon you is fasting as it was decreed upon those before you, that you may become righteous."
+</div>
+<p>Ramadan is the month in which the Quran was revealed (Quran 2:185). Muslims also intensify prayer (Tarawih), Quran recitation, and charity during this month. The Night of Power (Laylat al-Qadr) — better than 1,000 months — falls in the last 10 nights.</p>
+<p><strong>Who is exempt from fasting?</strong> The elderly, the chronically ill, pregnant and nursing women, travellers, and those who are temporarily sick may skip fasts and make them up later (or pay Fidyah if unable to make up).</p>
+
+<h2>The 5th Pillar: Hajj (Pilgrimage to Makkah)</h2>
+<p>Hajj is the annual pilgrimage to Makkah, Saudi Arabia, <strong>obligatory once in a lifetime</strong> for every Muslim who is physically and financially able. It takes place during the month of Dhul Hijjah (12th Islamic month).</p>
+<div class="highlight-box">
+  <strong>Quran (3:97):</strong> "And [due] to Allah from the people is a pilgrimage to the House — for whoever is able to find thereto a way."
+</div>
+<p>The rituals of Hajj follow the footsteps of Prophet Ibrahim (Abraham) and his family. They include: wearing Ihram (white garments), Tawaf (7 circuits around the Kaaba), Sa'i (walking between Safa and Marwa), standing at Arafat, and the symbolic stoning of Shaytan at Mina.</p>
+<p>The Prophet ﷺ said: <em>"Whoever performs Hajj for the sake of Allah and does not commit any obscenity or wrongdoing, he will return as sinless as the day his mother gave birth to him."</em> (Bukhari & Muslim)</p>
+
+<h2>Why Are the Five Pillars Important for Children?</h2>
+<p>Teaching children the Five Pillars from an early age builds their Islamic identity, gives them spiritual discipline, and connects them to their Creator. At NoorPath Academy, our Islamic Studies course covers all Five Pillars with age-appropriate explanations, Quranic references, and interactive activities designed for children aged 4-16.</p>
+<div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
+  <strong>📚 Want to teach your child the Five Pillars properly?</strong><br/>
+  Enroll in our <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">Islamic Studies Online Course</a> — structured lessons on Aqeedah, Fiqh, Seerah, and Islamic practice. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Are the Five Pillars mentioned in the Quran?</h3>
+<p>Yes. Shahada (belief in Allah and the Prophet) is mentioned throughout the Quran. Salah is mentioned over 700 times. Zakat is mentioned together with Salah 32 times. Sawm is detailed in Surah Al-Baqarah (2:183-185). Hajj is described in Surah Al-Imran (3:97) and Surah Al-Hajj.</p>
+
+<h3>What happens if a Muslim does not fulfil the Five Pillars?</h3>
+<p>Missing any pillar without a valid reason is sinful. However, Islam recognises genuine hardship and provides allowances (rukhsah). Missing Salah without reason is considered a major sin. Missing Hajj when able is also a major sin. The door of repentance (Tawbah) is always open.</p>
+
+<h3>Is Jihad a sixth pillar of Islam?</h3>
+<p>No. Jihad means "struggle" — including the internal struggle against one's nafs (ego). While important in Islamic theology, it is not counted among the Five Pillars. The five pillars are explicitly named in the authenticated Hadith of Bukhari and Muslim.</p>
+
+<div style="text-align:center;margin:40px 0;">
+  <a href="/online-quran-classes#cta" style="display:inline-block;background:var(--emerald);color:#fff;padding:16px 36px;border-radius:50px;font-weight:700;text-decoration:none;font-size:1rem;">
+    🎓 Start Learning Islam Online — Free Trial →
+  </a>
+</div>
+    `,
+  },
+
+  "surah-al-fatiha-arabic-english": {
+    style: ``,
+    content: `
+<div class="highlight-box" style="text-align:center;">
+  <strong>The Prophet ﷺ said:</strong> <em>"Whoever does not recite Al-Fatiha in his prayer, his prayer is invalid."</em>
+  <br/><span style="font-size:.85rem;color:var(--muted)">— Sahih al-Bukhari 756</span>
+</div>
+
+<h2>Introduction: The Opening Chapter</h2>
+<p>Surah Al-Fatiha (سُورَةُ الْفَاتِحَة) — "The Opening" — is the first chapter of the Holy Quran. It consists of <strong>7 verses (ayaat)</strong> and is the most frequently recited surah in the world. Every Muslim recites it at least <strong>17 times every day</strong> — in every rakaat of every prayer.</p>
+<p>Its other names include: <em>Umm al-Kitab</em> (Mother of the Book), <em>Umm al-Quran</em> (Mother of the Quran), <em>Al-Sab' al-Mathani</em> (The Seven Oft-Repeated Verses), <em>Al-Shifa</em> (The Cure), and <em>Al-Ruqyah</em> (The Healing Prayer).</p>
+
+<h2>Surah Al-Fatiha — Complete Arabic Text</h2>
+<div class="arabic" style="font-size:1.7rem;line-height:2.6;text-align:center;padding:32px 24px;background:rgba(10,110,79,.04);border-radius:16px;border:1px solid rgba(10,110,79,.1);margin:24px 0;">
+  بِسۡمِ اللّٰهِ الرَّحۡمٰنِ الرَّحِيۡمِ ۝<br/>
+  اَلۡحَمۡدُ لِلّٰهِ رَبِّ الۡعٰلَمِيۡنَ ۙ۝<br/>
+  الرَّحۡمٰنِ الرَّحِيۡمِ ۙ۝<br/>
+  مٰلِكِ يَوۡمِ الدِّيۡنِ ؕ۝<br/>
+  اِيَّاكَ نَعۡبُدُ وَاِيَّاكَ نَسۡتَعِيۡنُ ؕ۝<br/>
+  اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَ ۙ۝<br/>
+  صِرَاطَ الَّذِيۡنَ اَنۡعَمۡتَ عَلَيۡهِمۡ ۙ غَيۡرِ الۡمَغۡضُوۡبِ عَلَيۡهِمۡ وَلَا الضَّآلِّيۡنَ ۝
+</div>
+
+<h2>Surah Al-Fatiha — English Translation (Word by Word)</h2>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;">
+  <thead>
+    <tr style="background:rgba(10,110,79,.08);">
+      <th style="padding:12px 16px;text-align:left;font-size:.85rem;color:var(--charcoal);">Verse</th>
+      <th style="padding:12px 16px;text-align:right;font-size:.85rem;color:var(--charcoal);">Arabic</th>
+      <th style="padding:12px 16px;text-align:left;font-size:.85rem;color:var(--charcoal);">English Translation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">1</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:right;font-size:1.2rem;" class="arabic">بِسۡمِ اللّٰهِ الرَّحۡمٰنِ الرَّحِيۡمِ</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);">In the name of Allah, the Most Gracious, the Most Merciful</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">2</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:right;font-size:1.2rem;" class="arabic">اَلۡحَمۡدُ لِلّٰهِ رَبِّ الۡعٰلَمِيۡنَ</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);">All praise is due to Allah, Lord of all the worlds</td></tr>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">3</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:right;font-size:1.2rem;" class="arabic">الرَّحۡمٰنِ الرَّحِيۡمِ</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);">The Most Gracious, the Most Merciful</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">4</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:right;font-size:1.2rem;" class="arabic">مٰلِكِ يَوۡمِ الدِّيۡنِ</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Master of the Day of Judgment</td></tr>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">5</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:right;font-size:1.2rem;" class="arabic">اِيَّاكَ نَعۡبُدُ وَاِيَّاكَ نَسۡتَعِيۡنُ</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);">You alone we worship, and You alone we ask for help</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">6</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:right;font-size:1.2rem;" class="arabic">اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَ</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Guide us to the straight path</td></tr>
+    <tr><td style="padding:12px 16px;font-weight:600;color:var(--emerald)">7</td><td style="padding:12px 16px;text-align:right;font-size:1.2rem;" class="arabic">صِرَاطَ الَّذِيۡنَ اَنۡعَمۡتَ عَلَيۡهِمۡ...</td><td style="padding:12px 16px;">The path of those upon whom You have bestowed favour, not of those who have evoked Your anger or those who are astray</td></tr>
+  </tbody>
+</table>
+
+<h2>Meaning & Tafsir of Surah Al-Fatiha</h2>
+<p>Al-Fatiha is a conversation between the servant and Allah. The Prophet ﷺ narrated: <em>"Allah said: 'I have divided the prayer between Myself and My slave into two halves, and My slave shall have what he has asked for.'"</em> (Sahih Muslim 395)</p>
+<ul>
+  <li><strong>Verse 1 (Bismillah):</strong> Beginning every action with Allah's name establishes intention (niyyah) and seeks His blessing and protection.</li>
+  <li><strong>Verse 2 (Al-Hamd):</strong> Praising Allah for all His blessings — seen and unseen. "Rabb al-'Alameen" — Lord of everything in existence.</li>
+  <li><strong>Verses 3-4 (Ar-Rahman, Ar-Raheem, Malik):</strong> Allah's mercy encompasses all His creation. His justice governs the Day of Judgment.</li>
+  <li><strong>Verse 5 (Iyyaka):</strong> The central declaration — we worship only Allah and depend only on Him. This verse divides Fatiha into praise (1-4) and supplication (5-7).</li>
+  <li><strong>Verses 6-7 (Ihdina):</strong> The greatest du'a — asking for guidance to the Straight Path, the path of prophets, companions, and the righteous.</li>
+</ul>
+
+<h2>Benefits and Virtues of Surah Al-Fatiha</h2>
+<div class="highlight-box">
+  <strong>The Prophet ﷺ said:</strong> <em>"By the One in Whose hand is my soul, nothing like it has been revealed in the Torah, the Gospel, the Psalms, or the Quran."</em> — Tirmidhi (graded Sahih)
+</div>
+<ul>
+  <li>It is the greatest surah in the Quran — as confirmed by multiple authentic hadiths</li>
+  <li>It is a cure (Ruqyah) — the companions used it to heal a sick man (Bukhari 5736)</li>
+  <li>Reciting it is an act of worship accepted by Allah as a personal conversation</li>
+  <li>It contains the essence of the entire Quran — praise, monotheism, worship, and supplication</li>
+  <li>It protects against evil, disease, and spiritual harm when recited with belief</li>
+</ul>
+
+<h2>Teaching Surah Al-Fatiha to Children</h2>
+<p>Al-Fatiha is typically the <strong>first complete surah</strong> a child learns. At NoorPath Academy, we use a proven 3-step method:</p>
+<ol>
+  <li><strong>Listen & Repeat:</strong> The tutor recites each ayah with correct Tajweed; the child repeats until memorised</li>
+  <li><strong>Word Meaning:</strong> Each Arabic word is explained in simple English so the child understands what they are saying to Allah</li>
+  <li><strong>Prayer Application:</strong> The child practices reciting Al-Fatiha in the context of Salah with proper Tajweed</li>
+</ol>
+
+<div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
+  <strong>📚 Want your child to learn Surah Al-Fatiha with correct Tajweed?</strong><br/>
+  Our certified tutors teach Surah Al-Fatiha as part of our <a href="/courses/quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free 30-min trial →</a>
+</div>
+    `,
+  },
+
+  "best-online-quran-academy-guide": {
+    style: ``,
+    content: `
+<div class="highlight-box">
+  <strong>The truth about online Quran academies:</strong> Not all are equal. Some use unqualified tutors, pre-recorded lessons, and aggressive upselling. This guide helps you spot the difference — and find the academy that truly serves your family.
+</div>
+
+<h2>Why Choosing the Right Online Quran Academy Matters</h2>
+<p>The global online Quran learning market has exploded since 2020. Today, hundreds of academies compete for your family's attention — and money. But with the wrong academy, your child could develop <strong>incorrect Tajweed habits</strong> that take years to fix, learn from unverified tutors, or lose interest entirely due to poor teaching quality.</p>
+<p>In this guide, we analyse exactly what separates the best online Quran academies from the rest — so you can make the right choice for your family.</p>
+
+<h2>7 Must-Have Qualities in Any Online Quran Academy</h2>
+
+<h3>1. Ijazah-Certified or Al-Azhar Qualified Tutors</h3>
+<p>The <strong>Ijazah</strong> is an authenticated chain of Quran teaching that connects the student to the Prophet ﷺ himself. Any reputable academy should clearly state whether their tutors hold Ijazah (with the specific Riwayah — e.g. Hafs 'an Asim) or are university-qualified from institutions like Al-Azhar University in Cairo.</p>
+<div class="highlight-box">
+  <strong>🔴 Red flag:</strong> If an academy cannot tell you the specific Ijazah chain or qualification of your tutor, this is a serious warning sign.
+</div>
+
+<h3>2. 1-on-1 Live Classes (Not Pre-Recorded)</h3>
+<p>Quran recitation requires real-time correction of pronunciation, Tajweed, and Makharij (articulation points). Pre-recorded lessons cannot provide this. The best academies offer <strong>live 1-on-1 sessions</strong> via Zoom, Skype, or a similar platform.</p>
+
+<h3>3. Transparent Pricing with Free Trial</h3>
+<p>Top academies offer a <strong>free trial class</strong> — no credit card required — so you can assess the tutor's quality, communication style, and methodology before committing financially. Monthly cancellation policies and clear pricing breakdowns are non-negotiable signs of trustworthiness.</p>
+
+<h3>4. Age-Appropriate Curriculum</h3>
+<p>A child aged 4 needs a completely different teaching approach compared to a teenager or adult learner. The best academies have <strong>structured, age-appropriate curricula</strong> — from Noorani Qaida for beginners, through to Hifz memorization and advanced Tajweed for older students.</p>
+
+<h3>5. Female Tutors Available</h3>
+<p>For many Muslim families, having a <strong>female tutor</strong> for daughters (and sometimes sons) is a religious and cultural preference. A quality academy should have a dedicated pool of certified female tutors and guarantee this option without waiting lists.</p>
+
+<h3>6. Progress Reporting & Parent Communication</h3>
+<p>You should receive regular <strong>written progress reports</strong>, know exactly what was covered in each class, and be able to communicate with your tutor directly. Good academies also offer parent calls to discuss the child's development.</p>
+
+<h3>7. Satisfaction Guarantee</h3>
+<p>The best academies stand behind their service. A <strong>money-back guarantee</strong> for the first month demonstrates that the academy is confident in its tutors and committed to your satisfaction — not just your payment.</p>
+
+<h2>NoorPath Academy — Our Commitment to Quality</h2>
+<p>At <strong>NoorPath Academy</strong>, we built our academy around these 7 principles from day one. Here is how we measure up:</p>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;">
+  <thead>
+    <tr style="background:rgba(10,110,79,.08);">
+      <th style="padding:12px 16px;text-align:left;font-size:.85rem;">Quality Criterion</th>
+      <th style="padding:12px 16px;text-align:center;font-size:.85rem;">NoorPath Academy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Ijazah-certified tutors</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Yes — all tutors verified</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Live 1-on-1 classes</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Yes — via Zoom &amp; Skype</td></tr>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Free trial class</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ 30-min free trial</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Female tutors available</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Dedicated female tutor pool</td></tr>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Age-specific curricula</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Ages 4–70+</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Weekly progress reports</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Every class</td></tr>
+    <tr><td style="padding:12px 16px;">Satisfaction guarantee</td><td style="padding:12px 16px;text-align:center;color:var(--emerald);font-weight:700;">✓ Full 30-day refund</td></tr>
+  </tbody>
+</table>
+
+<h2>Common Mistakes Families Make When Choosing an Academy</h2>
+<ul>
+  <li><strong>Choosing the cheapest option:</strong> Very low prices often mean unqualified tutors, no Ijazah, and poor quality control</li>
+  <li><strong>Not checking tutor qualifications:</strong> Always ask for the tutor's specific qualifications and experience</li>
+  <li><strong>Ignoring the trial class:</strong> A free trial is your best chance to assess the tutor before committing</li>
+  <li><strong>No Tajweed focus:</strong> Basic Quran reading without Tajweed creates bad habits. Ensure the curriculum includes proper Tajweed</li>
+  <li><strong>Ignoring parent reviews:</strong> Look for academies with hundreds of verified reviews on Google, Trustpilot, or Facebook</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<h3>How much should online Quran classes cost?</h3>
+<p>Quality 1-on-1 live Quran classes typically range from $25–$80/month depending on frequency. Be cautious of prices below $15/month — this often indicates pre-recorded content or unqualified tutors.</p>
+
+<h3>Are online Quran classes as effective as in-person?</h3>
+<p>Yes — for 1-on-1 live sessions with qualified tutors, research shows online learning is equally or more effective than in-person, due to schedule flexibility, comfort of learning at home, and access to better tutors globally.</p>
+
+<h3>How long does it take to learn Quran online?</h3>
+<p>Noorani Qaida (alphabet to basic reading): 3–6 months. Basic Quran reading: 1–2 years. Tajweed proficiency: 2–3 years. Hifz (full memorisation): 3–7 years depending on commitment and starting age.</p>
+
+<div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);text-align:center;">
+  <strong>🌟 Ready to start with the best?</strong><br/><br/>
+  Join 12,000+ families who chose NoorPath Academy.<br/>
+  Certified tutors · Free 30-min trial · 100% satisfaction guarantee.<br/><br/>
+  <a href="/online-quran-classes#cta" style="display:inline-block;background:var(--emerald);color:#fff;padding:14px 32px;border-radius:50px;font-weight:700;text-decoration:none;margin-top:8px;">Book Your Free Trial Class →</a>
+</div>
+    `,
+  },
 };

@@ -198,20 +198,35 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <h1 style={{ color: "#fff", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 700, lineHeight: 1.15, marginBottom: 20 }}>
+              {/* Urgency/Scarcity badge — psychological trigger */}
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.15)", border: "1px solid rgba(239,68,68,.3)", borderRadius: 50, padding: "6px 16px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600, marginBottom: 16 }}>
+                <span style={{ width: 7, height: 7, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite" }} />
+                Only <strong style={{ color: "#fff" }}>7 free trial slots</strong> left this week
+              </div>
+
+              <h1 style={{ color: "#fff", fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 700, lineHeight: 1.12, marginBottom: 18 }}>
                 Learn Quran Online<br />
                 From <em style={{ color: "var(--gold-lt)" }}>Noorani Qaida</em> to Hifz<br />
                 — For Every Age
               </h1>
-              <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.75, marginBottom: 28, maxWidth: 520 }}>
-                From Noorani Qaida through Hifz, Tajweed, Tafseer, and Islamic scholarship — for learners age 4 to adults and seniors. Parents can enroll multiple siblings — each child on their own level, with family plans and weekly progress reports.
+              <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.78, marginBottom: 24, maxWidth: 520 }}>
+                Certified Ijazah tutors from Egypt & Pakistan. Online Quran for kids, adults &amp; sisters. Start with a <strong style={{ color: "var(--gold-lt)" }}>FREE 30-minute trial</strong> — no commitment.
               </p>
 
-              <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 32 }}>
-                <Link href="#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "15px 32px", borderRadius: 50, textDecoration: "none", fontSize: ".95rem", boxShadow: "0 6px 24px rgba(201,146,42,.4)", letterSpacing: ".2px" }}>
-                  <PlayCircle size={18} /> 🎓 Start Free Trial
+              {/* Trust micro-proof */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 24 }}>
+                {[["🛡️","100% Safe &amp; Secure"],["👩‍🏫","Female Tutors Available"],["⏰","Flexible Scheduling"]].map(([icon, label]) => (
+                  <span key={label} style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 50, padding: "5px 13px", color: "rgba(255,255,255,.9)", fontSize: ".78rem" }}
+                    dangerouslySetInnerHTML={{ __html: `${icon} ${label}` }}
+                  />
+                ))}
+              </div>
+
+              <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 28 }}>
+                <Link href="#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "16px 34px", borderRadius: 50, textDecoration: "none", fontSize: ".96rem", boxShadow: "0 8px 28px rgba(201,146,42,.45)", letterSpacing: ".2px" }}>
+                  <PlayCircle size={18} /> 🎓 Book Free Trial Now
                 </Link>
-                <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "15px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
+                <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "16px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
                   <MapPin size={16} /> View Courses
                 </Link>
               </div>
@@ -309,14 +324,14 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courseCards.map((c) => (
-              <div key={c.title} className="content-card" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                <div style={{ fontSize: "2rem" }}>{c.icon}</div>
+              <div key={c.title} className="course-card" style={{ gap: 12 }}>
+                <div style={{ fontSize: "2.2rem", lineHeight: 1 }}>{c.icon}</div>
                 <div>
                   <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.15rem", fontWeight: 700, color: "var(--charcoal)", marginBottom: 6 }}>{c.title}</h3>
                   <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, margin: 0 }}>{c.desc}</p>
                 </div>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "auto", paddingTop: 12, borderTop: "1px solid var(--border)" }}>
-                  <span style={{ fontSize: ".75rem", color: "var(--muted)", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".5px" }}>{c.level}</span>
+                  <span style={{ fontSize: ".73rem", color: "var(--emerald)", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".6px", background: "rgba(10,110,79,.08)", padding: "3px 10px", borderRadius: 50 }}>{c.level}</span>
                   <Link href={c.href} style={{ background: "var(--emerald)", color: "#fff", padding: "8px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
                     Enroll →
                   </Link>
@@ -364,19 +379,47 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <div key={t.name} style={{ background: "#fff", border: "1px solid rgba(10,110,79,.1)", borderRadius: 20, padding: 28, boxShadow: "0 4px 20px rgba(10,110,79,.07)", position: "relative", overflow: "hidden" }}>
+              <div key={t.name} className="testimonial-card">
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg, var(--gold), var(--gold-lt))" }} />
-                <div style={{ color: "var(--gold)", fontSize: "1.2rem", marginBottom: 14, letterSpacing: 2 }}>{"★".repeat(t.stars)}</div>
-                <p style={{ color: "var(--slate)", fontSize: ".91rem", lineHeight: 1.75, marginBottom: 20, fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
+                <div style={{ color: "var(--gold)", fontSize: "1.15rem", marginBottom: 12, letterSpacing: 2 }}>{"★".repeat(t.stars)}</div>
+                <p style={{ color: "var(--slate)", fontSize: ".91rem", lineHeight: 1.78, marginBottom: 20, fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 14, borderTop: "1px solid rgba(10,110,79,.08)" }}>
                   <strong style={{ color: "var(--charcoal)", fontSize: ".92rem" }}>{t.name}</strong>
-                  <span style={{ fontSize: ".85rem", background: "rgba(10,110,79,.06)", padding: "4px 12px", borderRadius: 50, color: "var(--emerald)", fontWeight: 600 }}>{t.country}</span>
+                  <span style={{ fontSize: ".82rem", background: "rgba(10,110,79,.07)", padding: "4px 12px", borderRadius: 50, color: "var(--emerald)", fontWeight: 600 }}>{t.country}</span>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* ── SOCIAL PROOF TICKER ── */}
+      <div className="social-proof-bar">
+        <div className="max-w-[1200px] mx-auto px-4 overflow-hidden">
+          <div style={{ display: "flex", gap: 56, alignItems: "center", animation: "ticker 30s linear infinite", whiteSpace: "nowrap" }}>
+            {[
+              "🇺🇸 Sara J. from USA just enrolled",
+              "🇬🇧 Yusuf K. from UK started free trial",
+              "🇦🇺 Fatima R. from Australia enrolled",
+              "🇨🇦 Ahmed M. from Canada completed Qaida",
+              "🇩🇪 Maryam S. from Germany joined today",
+              "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
+              "⭐ 4.9/5 — 2,400+ verified parent reviews",
+              "🎓 847 students enrolled this month",
+              "🇺🇸 Sara J. from USA just enrolled",
+              "🇬🇧 Yusuf K. from UK started free trial",
+              "🇦🇺 Fatima R. from Australia enrolled",
+              "🇨🇦 Ahmed M. from Canada completed Qaida",
+              "🇩🇪 Maryam S. from Germany joined today",
+              "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
+              "⭐ 4.9/5 — 2,400+ verified parent reviews",
+              "🎓 847 students enrolled this month",
+            ].map((item, i) => (
+              <span key={i} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", fontWeight: 500, flexShrink: 0 }}>{item}</span>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* ── PRICING PREVIEW ── */}
       <section id="pricing" style={{ background: "var(--cream)" }}>
@@ -388,38 +431,75 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[
-              { name: "Starter", price: "$29", period: "/month", desc: "1 class per week · Perfect for beginners", highlight: false, features: ["1 class/week", "Certified tutor", "Progress reports", "Cancel anytime"] },
-              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular for progress", highlight: true, features: ["2 classes/week", "Priority tutor matching", "Weekly reports + parent call", "Family discount available"] },
-              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress & Hifz", highlight: false, features: ["4 classes/week", "Dedicated tutor", "Hifz & Ijazah track", "Monthly performance review"] },
+              { name: "Starter", price: "$29", period: "/month", desc: "1 class per week · Perfect for beginners", highlight: false, badge: null, features: ["1 class/week (30 min)", "Certified Ijazah tutor", "Progress reports", "Free trial included", "Cancel anytime"] },
+              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular choice", highlight: true, badge: "⭐ Most Popular", features: ["2 classes/week (30 min each)", "Priority tutor matching", "Weekly reports + parent call", "Family discount available", "Hifz track eligible"] },
+              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress", highlight: false, badge: "🔥 Best Value", features: ["4 classes/week (30 min each)", "Dedicated personal tutor", "Hifz & Ijazah track", "Monthly performance review", "Priority scheduling"] },
             ].map((p) => (
               <div key={p.name} className={p.highlight ? "pricing-card-highlight" : "pricing-card"}>
-                {p.highlight && (
-                  <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "var(--gold)", color: "var(--charcoal)", fontSize: ".72rem", fontWeight: 700, padding: "5px 16px", borderRadius: 50, textTransform: "uppercase", whiteSpace: "nowrap", letterSpacing: ".5px" }}>
-                    ⭐ Most Popular
+                {/* Badge inside card — not absolute positioned */}
+                {p.badge && (
+                  <div style={{ display: "inline-block", background: p.highlight ? "var(--gold)" : "rgba(10,110,79,.1)", color: p.highlight ? "var(--charcoal)" : "var(--emerald)", fontSize: ".72rem", fontWeight: 700, padding: "5px 14px", borderRadius: 50, textTransform: "uppercase", letterSpacing: ".5px", marginBottom: 14 }}>
+                    {p.badge}
                   </div>
                 )}
-                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.25rem", fontWeight: 700, color: p.highlight ? "#fff" : "var(--charcoal)", marginBottom: 8 }}>{p.name}</div>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 2, marginBottom: 10 }}>
-                  <span style={{ fontSize: "2.4rem", fontWeight: 800, color: p.highlight ? "#fff" : "var(--emerald)" }}>{p.price}</span>
-                  <span style={{ color: p.highlight ? "rgba(255,255,255,.6)" : "var(--muted)", fontSize: ".85rem" }}>{p.period}</span>
+                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", fontWeight: 700, color: p.highlight ? "#fff" : "var(--charcoal)", marginBottom: 10 }}>{p.name}</div>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 2, marginBottom: 8 }}>
+                  <span style={{ fontSize: "2.6rem", fontWeight: 800, color: p.highlight ? "#fff" : "var(--emerald)", lineHeight: 1 }}>{p.price}</span>
+                  <span style={{ color: p.highlight ? "rgba(255,255,255,.55)" : "var(--muted)", fontSize: ".85rem" }}>{p.period}</span>
                 </div>
-                <p style={{ color: p.highlight ? "rgba(255,255,255,.75)" : "var(--muted)", fontSize: ".85rem", marginBottom: 18 }}>{p.desc}</p>
-                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px 0", textAlign: "left", display: "flex", flexDirection: "column", gap: 8 }}>
+                <p style={{ color: p.highlight ? "rgba(255,255,255,.7)" : "var(--muted)", fontSize: ".83rem", marginBottom: 18, lineHeight: 1.5 }}>{p.desc}</p>
+                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px 0", textAlign: "left", display: "flex", flexDirection: "column", gap: 10 }}>
                   {p.features.map((f) => (
-                    <li key={f} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: ".84rem", color: p.highlight ? "rgba(255,255,255,.85)" : "var(--slate)" }}>
-                      <span style={{ color: p.highlight ? "#4ade80" : "var(--emerald)", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                    <li key={f} style={{ display: "flex", alignItems: "center", gap: 10, fontSize: ".85rem", color: p.highlight ? "rgba(255,255,255,.85)" : "var(--slate)" }}>
+                      <span style={{ width: 18, height: 18, background: p.highlight ? "rgba(74,222,128,.2)" : "rgba(10,110,79,.12)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: ".7rem", color: p.highlight ? "#4ade80" : "var(--emerald)", fontWeight: 700 }}>✓</span>
+                      {f}
                     </li>
                   ))}
                 </ul>
-                <Link href="/pricing" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "12px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".9rem", textAlign: "center" }}>
-                  Get Started →
+                <Link href="/online-quran-classes#cta" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem", textAlign: "center", letterSpacing: ".2px" }}>
+                  Start Free Trial →
                 </Link>
+                <div style={{ color: p.highlight ? "rgba(255,255,255,.4)" : "var(--muted)", fontSize: ".73rem", marginTop: 10 }}>30-min free trial included · No credit card</div>
               </div>
             ))}
           </div>
           <p style={{ textAlign: "center", color: "var(--muted)", fontSize: ".85rem" }}>
             All plans include free trial · No contracts · <Link href="/pricing" style={{ color: "var(--emerald)", fontWeight: 600 }}>View full pricing details →</Link>
           </p>
+        </div>
+      </section>
+
+      {/* ── GUARANTEE + TRUST STRIP ── */}
+      <section style={{ background: "var(--charcoal)", padding: "48px 0" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="guarantee-strip">
+            <div style={{ fontSize: "3rem", flexShrink: 0 }}>🛡️</div>
+            <div style={{ flex: 1 }}>
+              <div style={{ color: "var(--gold-lt)", fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, marginBottom: 6 }}>NoorPath 100% Satisfaction Guarantee</div>
+              <p style={{ color: "rgba(255,255,255,.8)", fontSize: ".92rem", lineHeight: 1.7, margin: 0 }}>
+                Not happy after your first month? We&apos;ll refund every penny — no questions asked. Our tutors are so confident in their teaching that we stand behind every lesson. <strong style={{ color: "#fff" }}>Zero risk to you.</strong>
+              </p>
+            </div>
+            <div style={{ flexShrink: 0 }}>
+              <Link href="/online-quran-classes#cta" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "14px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap" }}>
+                🎓 Book Free Trial →
+              </Link>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+            {[
+              ["🏆","Al-Azhar Certified","All tutors verified"],
+              ["🔒","100% Safe & Secure","Data privacy protected"],
+              ["⏰","Any Time Zone","24/7 scheduling"],
+              ["❤️","Cancel Anytime","No lock-in contracts"],
+            ].map(([icon, title, sub]) => (
+              <div key={title} style={{ textAlign: "center", padding: "20px 16px", background: "rgba(255,255,255,.04)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 16 }}>
+                <div style={{ fontSize: "1.8rem", marginBottom: 8 }}>{icon}</div>
+                <div style={{ color: "#fff", fontWeight: 700, fontSize: ".9rem", marginBottom: 4 }}>{title}</div>
+                <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".78rem" }}>{sub}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -467,20 +547,40 @@ export default function HomePage() {
               <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)" }}>
                 🎓 Free Trial Class
               </span>
+              {/* Scarcity trigger */}
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.2)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600, marginBottom: 16 }}>
+                <span style={{ width: 7, height: 7, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite" }} />
+                7 spots left this week — filling fast
+              </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,4vw,2.8rem)", fontWeight: 700, color: "#fff", marginBottom: 20 }}>
                 Start Your Quran Journey<br />
                 <em style={{ color: "var(--gold-lt)" }}>Today — Completely Free</em>
               </h2>
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 {[
                   [<CheckCircle size={18} key="1" />,"Free 30-minute trial class — no credit card needed"],
-                  [<Video size={18} key="2" />,"Live 1-on-1 with a certified tutor via Zoom"],
-                  [<Lock size={18} key="3" />,"Your info is 100% private and secure"],
+                  [<Video size={18} key="2" />,"Live 1-on-1 with a certified Ijazah tutor via Zoom"],
+                  [<Lock size={18} key="3" />,"100% private & secure — cancel anytime"],
+                  [<Award size={18} key="4" />,"Personalised learning plan sent after trial"],
                 ].map(([icon, text]) => (
-                  <div key={String(text)} style={{ display: "flex", alignItems: "center", gap: 10, color: "rgba(255,255,255,.85)", fontSize: ".92rem" }}>
-                    <span style={{ color: "var(--gold-lt)" }}>{icon}</span> {text}
+                  <div key={String(text)} style={{ display: "flex", alignItems: "center", gap: 12, color: "rgba(255,255,255,.85)", fontSize: ".92rem" }}>
+                    <span style={{ color: "var(--gold-lt)", flexShrink: 0 }}>{icon}</span> {text}
                   </div>
                 ))}
+              </div>
+              <div style={{ marginTop: 24, display: "flex", gap: 16, flexWrap: "wrap" }}>
+                <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>2,400+</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>5-Star Reviews</div>
+                </div>
+                <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>12K+</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Active Students</div>
+                </div>
+                <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>40+</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Countries</div>
+                </div>
               </div>
             </div>
             <div className="cta-form-wrap">
