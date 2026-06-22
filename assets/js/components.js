@@ -5,7 +5,7 @@ const NP = {
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <div class="logo-text">Noor<span>Path</span> <span style="color:rgba(26,26,46,.6);font-size:.7rem;vertical-align:middle;">Academy</span></div>
+      <div class="logo-text">Noor<span>Path</span> <span style="color:rgba(255,255,255,.5);font-size:.7rem;vertical-align:middle;">Academy</span></div>
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
       <span style="color:#fff;font-size:1.4rem;"><i class="fas fa-bars"></i></span>
@@ -109,39 +109,27 @@ const NP = {
 </a>`,
 
   initPage: () => {
-    // Insert nav - Critical
+    // Insert nav
     const navEl = document.getElementById('np-nav');
     if (navEl) navEl.innerHTML = NP.nav();
 
-    // Defer non-critical parts
-    const deferWork = () => {
-      // Insert footer
-      const footerEl = document.getElementById('np-footer');
-      if (footerEl) footerEl.innerHTML = NP.footer();
+    // Insert footer
+    const footerEl = document.getElementById('np-footer');
+    if (footerEl) footerEl.innerHTML = NP.footer();
 
-      // Fade-up
-      const fadeEls = document.querySelectorAll('.fade-up');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-      }, { threshold: 0.1 });
-      fadeEls.forEach(el => observer.observe(el));
-    };
-
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(deferWork);
-    } else {
-      setTimeout(deferWork, 1000);
-    }
-
-    // Navbar scroll - Passive listener for performance
+    // Navbar scroll
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('mainNav');
       if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
+    });
+
+    // Fade-up
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
   }
 };
 
-// Use a small delay to ensure main thread is free for initial paint
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(NP.initPage, 10);
-});
+document.addEventListener('DOMContentLoaded', NP.initPage);

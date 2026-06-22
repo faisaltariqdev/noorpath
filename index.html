@@ -355,27 +355,14 @@
     ]
   }
   </script>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <noscript>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=optional" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
   </noscript>
-  <!-- Bootstrap + FA load with a delay to completely clear the TBT window -->
-  <script>
-    (function(){
-      function addSheet(href){var l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);}
-      if(window.addEventListener){
-        window.addEventListener('load',function(){
-          // Delay by 2 seconds to ensure Lighthouse TBT measurement is finished
-          setTimeout(function() {
-            addSheet('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
-            addSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
-          }, 2000);
-        });
-      }
-    })();
-  </script>
 
   <style>
     :root {
@@ -397,49 +384,6 @@
       --radius:     16px;
       --radius-lg:  24px;
     }
-
-    /* ── Critical Bootstrap Grid (subset) — avoids FOUC while Bootstrap loads after window.load ── */
-    .container{width:100%;max-width:1200px;margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px}
-    .row{display:flex;flex-wrap:wrap;margin-right:-12px;margin-left:-12px}
-    .row>*{padding-right:12px;padding-left:12px;box-sizing:border-box}
-    .g-3,.g-4,.g-5{margin:0!important}.g-3>*{padding:0!important}.g-4>*{padding:0!important}.g-5>*{padding:0!important}
-    .g-3{gap:1rem}.g-4{gap:1.5rem}.g-5{gap:3rem}
-    .gy-5{row-gap:3rem!important}
-    .col-6{flex:0 0 auto;width:50%}.col-auto{flex:0 0 auto;width:auto}.col-12{flex:0 0 auto;width:100%}
-    @media(min-width:768px){.col-md-3{flex:0 0 auto;width:25%}.col-md-6{flex:0 0 auto;width:50%}}
-    @media(min-width:992px){
-      .col-lg-2{flex:0 0 auto;width:16.666%}.col-lg-3{flex:0 0 auto;width:25%}
-      .col-lg-4{flex:0 0 auto;width:33.333%}.col-lg-5{flex:0 0 auto;width:41.667%}
-      .col-lg-6{flex:0 0 auto;width:50%}.col-lg-7{flex:0 0 auto;width:58.333%}
-      .col-lg-8{flex:0 0 auto;width:66.667%}
-      .justify-content-lg-end{justify-content:flex-end!important}
-      .align-items-lg-center{align-items:center!important}
-      .mt-lg-0{margin-top:0!important}
-      .navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}
-      .navbar-expand-lg .navbar-toggler{display:none}
-    }
-    .d-flex{display:flex!important}.d-none{display:none!important}.d-block{display:block!important}
-    .flex-wrap{flex-wrap:wrap!important}
-    .align-items-center{align-items:center!important}.align-items-start{align-items:flex-start!important}
-    .align-items-end{align-items:flex-end!important}.align-items-stretch{align-items:stretch!important}
-    .justify-content-center{justify-content:center!important}.justify-content-between{justify-content:space-between!important}
-    .gap-1{gap:.25rem!important}.gap-2{gap:.5rem!important}.gap-3{gap:1rem!important}.gap-4{gap:1.5rem!important}
-    .ms-auto{margin-left:auto!important}.ms-2{margin-left:.5rem!important}
-    .me-1{margin-right:.25rem!important}.me-2{margin-right:.5rem!important}
-    .mt-2{margin-top:.5rem!important}.mt-3{margin-top:1rem!important}
-    .mt-4{margin-top:1.5rem!important}.mt-5{margin-top:3rem!important}
-    .mb-4{margin-bottom:1.5rem!important}.mb-5{margin-bottom:3rem!important}
-    .position-relative{position:relative!important}.position-absolute{position:absolute!important}
-    .text-center{text-align:center!important}.text-start{text-align:left!important}
-    .fw-bold{font-weight:700!important}.fw-600{font-weight:600!important}
-    .z-1{z-index:1!important}.w-100{width:100%!important}
-    .collapse:not(.show){display:none}.collapse.show{display:block}
-    .navbar-collapse{flex-grow:1}
-    .navbar-nav{display:flex;flex-direction:column;list-style:none;margin:0;padding:0}
-    @media(min-width:992px){.navbar-nav{flex-direction:row}}
-    .border-0{border:0!important}
-    /* FA icon placeholder until FontAwesome CSS loads */
-    .fas,.far,.fab,.fa{display:inline-block;font-style:normal;line-height:1}
 
     /* ── Reset & Base ── */
     *, *::before, *::after { box-sizing: border-box; }
@@ -503,7 +447,7 @@
       font-size: .92rem;
       padding: 6px 14px !important;
       border-radius: 8px;
-      transition: background-color .2s, color .2s;
+      transition: all .2s;
     }
     .nav-link:hover { color: var(--emerald) !important; background: rgba(10,110,79,.06); }
     .btn-nav-cta {
@@ -513,7 +457,7 @@
       padding: 8px 22px !important;
       font-weight: 600;
       font-size: .88rem;
-      transition: background-color .25s, box-shadow .25s, transform .25s;
+      transition: all .25s;
     }
     .btn-nav-cta:hover { background: var(--emerald-mid); box-shadow: 0 4px 16px rgba(10,110,79,.3); transform: translateY(-1px); }
     .navbar-toggler { border: none; outline: none; box-shadow: none !important; }
@@ -541,7 +485,6 @@
       filter: blur(80px);
       opacity: .25;
       pointer-events: none;
-      will-change: transform;
     }
     .hero-orb-1 { width: 500px; height: 500px; background: var(--gold); top: -150px; right: -100px; opacity: .45; animation: orbFloat 9s ease-in-out infinite; }
     .hero-orb-2 { width: 350px; height: 350px; background: var(--emerald-lt); bottom: -80px; left: -80px; opacity: .4; animation: orbFloat 11s ease-in-out infinite reverse; }
@@ -580,7 +523,6 @@
       z-index: 0;
       animation: heroPulse 5s ease-in-out infinite;
       pointer-events: none;
-      will-change: transform, opacity;
     }
     .hero-glow-ring-2 {
       position: absolute;
@@ -595,7 +537,6 @@
       z-index: 0;
       animation: ringSpin 20s linear infinite;
       pointer-events: none;
-      will-change: transform;
     }
     @keyframes heroPulse {
       0%, 100% { opacity: .7; transform: translate(-50%, -50%) scale(1); }
@@ -759,8 +700,8 @@
       box-shadow: 0 8px 32px rgba(0,0,0,.18);
       display: flex; align-items: center; gap: 10px;
     }
-    .float-badge-1 { top: 20px; left: -60px; animation: float1 4s ease-in-out infinite; will-change: transform; }
-    .float-badge-2 { bottom: 30px; right: -50px; animation: float2 5s ease-in-out infinite; will-change: transform; }
+    .float-badge-1 { top: 20px; left: -60px; animation: float1 4s ease-in-out infinite; }
+    .float-badge-2 { bottom: 30px; right: -50px; animation: float2 5s ease-in-out infinite; }
     @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
     @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
     .fb-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
@@ -874,7 +815,7 @@
       font-size: .85rem;
       font-weight: 600;
       text-decoration: none;
-      transition: background-color .25s, transform .25s;
+      transition: all .25s;
       display: inline-flex; align-items: center; gap: 6px;
     }
     .btn-course:hover { background: var(--emerald-mid); color: var(--white); transform: translateX(2px); }
@@ -1235,7 +1176,7 @@
       font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
-      transition: background-color .3s, transform .3s;
+      transition: all .3s;
     }
     .btn-cta-submit:hover { background: var(--gold-lt); transform: translateY(-2px); }
 
@@ -1333,10 +1274,6 @@
       .hero-card-main { padding: 22px; }
       .mini-cards { grid-template-columns: 1fr 1fr; gap: 8px; }
     }
-
-    /* Reserve nav + footer space to prevent layout shift from deferred JS */
-    #np-nav { min-height: 70px; }
-    #np-footer { min-height: 280px; }
 
     /* Utility */
     .text-emerald { color: var(--emerald); }
@@ -1551,7 +1488,7 @@
     .pyramid-level.l3 .pyramid-num { background: rgba(15,143,102,.12); color: var(--emerald-mid); }
     .pyramid-level.l4 .pyramid-num { background: rgba(201,146,42,.12); color: var(--gold); }
     .pyramid-level.l5 .pyramid-num { background: rgba(180,83,9,.12); color: #b45309; }
-    .pyramid-info .pyramid-h { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .pyramid-info h4 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
     .pyramid-info p { font-size: .84rem; color: var(--muted); margin: 0; line-height: 1.6; }
     .knowledge-stats {
       display: grid;
@@ -1747,7 +1684,6 @@
       text-decoration: none;
       transition: all .3s;
       animation: waPulse 2.5s ease-in-out infinite;
-      will-change: transform, opacity;
     }
     .whatsapp-float:hover {
       transform: scale(1.08);
@@ -1755,8 +1691,8 @@
       color: var(--white);
     }
     @keyframes waPulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: .88; transform: scale(1.06); }
+      0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,.45); }
+      50% { box-shadow: 0 6px 32px rgba(37,211,102,.65), 0 0 0 12px rgba(37,211,102,.15); }
     }
 
     /* ── All-in-One Course ── */
@@ -1846,17 +1782,6 @@
     }
     .aio-parent-banner h4 { color: var(--charcoal); font-size: 1.05rem; margin-bottom: 8px; }
     .aio-parent-banner p { color: var(--muted); font-size: .9rem; margin: 0; line-height: 1.75; }
-
-    /* ═══ PERFORMANCE: keep transitions on GPU-composited props only (fixes non-composited animations) ═══ */
-    .btn-cta-submit, #trialSubmitBtn, .btn-course,
-    .btn-primary-hero, .btn-outline-hero, .btn-nav-cta {
-      transition-property: transform, box-shadow, background-color, color, border-color, opacity;
-    }
-
-    /* ═══ ACCESSIBILITY: improve color contrast (WCAG AA) ═══ */
-    .trust-logo-item { color: #4b5563; opacity: .9; }
-    .trust-logo-item:hover { opacity: 1; }
-    .navbar-brand .logo-text span:first-of-type { color: #9a6f15; }
   </style>
 </head>
 <body>
@@ -1892,15 +1817,15 @@
           <span class="hero-pill"><i class="fas fa-star"></i> All-in-One Kids</span>
           <span class="hero-pill"><i class="fas fa-users"></i> Parents & Siblings</span>
         </div>
-        <h1 class="hero-title">
+        <h1 class="hero-title fade-up fade-up-delay-1">
           Learn Quran Online<br>
           From <span class="accent">Noorani Qaida</span> to Hifz<br>
           — For Every Age
         </h1>
-        <p class="hero-desc">
+        <p class="hero-desc fade-up fade-up-delay-2">
           From Noorani Qaida through Hifz, Tajweed, Tafseer, and Islamic scholarship — for learners age 4 to adults and seniors. Parents can enroll multiple siblings in one academy — each child on their own level, with family plans and weekly parent reports. Daily duas taught to every child.
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions fade-up fade-up-delay-3">
           <a href="#cta" class="btn-primary-hero">
             <i class="fas fa-play-circle"></i> Start Free Trial
           </a>
@@ -1908,7 +1833,7 @@
             <i class="fas fa-route"></i> View Roadmap
           </a>
         </div>
-        <div class="hero-stats">
+        <div class="hero-stats fade-up fade-up-delay-4">
           <div class="stat-item">
             <div class="stat-num">12K<sup>+</sup></div>
             <div class="stat-label">Students Enrolled</div>
@@ -2031,10 +1956,10 @@
 <div class="features-strip">
   <div class="container position-relative">
     <div class="row g-4">
-      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-layer-group"></i><div class="feat-title">8 Learning Stages</div><p>Qaida to Scholar</p></div></div>
-      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-users"></i><div class="feat-title">5 Age Groups</div><p>Toddlers to Seniors</p></div></div>
-      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-certificate"></i><div class="feat-title">Ijazah Tutors</div><p>Al-Azhar certified</p></div></div>
-      <div class="col-6 col-md-3"><div class="feat-item"><i class="fas fa-globe"></i><div class="feat-title">40+ Countries</div><p>24/7 flexible slots</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-layer-group"></i><div class="feat-title">8 Learning Stages</div><p>Qaida to Scholar</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-users"></i><div class="feat-title">5 Age Groups</div><p>Toddlers to Seniors</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-certificate"></i><div class="feat-title">Ijazah Tutors</div><p>Al-Azhar certified</p></div></div>
+      <div class="col-6 col-md-3 fade-up"><div class="feat-item"><i class="fas fa-globe"></i><div class="feat-title">40+ Countries</div><p>24/7 flexible slots</p></div></div>
     </div>
   </div>
 </div>
@@ -2042,7 +1967,7 @@
 <!-- ═══ LEARNING ROADMAP ═══ -->
 <section id="roadmap">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 fade-up">
       <span class="section-eyebrow"><i class="fas fa-map me-1"></i> Complete Learning Path</span>
       <h2 class="section-title">Your <span class="accent">Quran Learning Roadmap</span></h2>
       <p class="section-desc center">From the Arabic alphabet to advanced scholarship — every step is clear, structured, and trackable.</p>
@@ -2317,11 +2242,11 @@
       </div>
       <div class="col-lg-7 fade-up fade-up-delay-2">
         <div class="level-pyramid">
-          <div class="pyramid-level l5"><div class="pyramid-num">L5</div><div class="pyramid-info"><div class="pyramid-h">Scholar / Ijazah</div><p>Qirat, Ijazah, Fiqh, Hadith</p></div></div>
-          <div class="pyramid-level l4"><div class="pyramid-num">L4</div><div class="pyramid-info"><div class="pyramid-h">Tafseer & Arabic</div><p>Nahw-Sarf, Islamic sciences</p></div></div>
-          <div class="pyramid-level l3"><div class="pyramid-num">L3</div><div class="pyramid-info"><div class="pyramid-h">Tajweed & Hifz</div><p>Sanad preparation</p></div></div>
-          <div class="pyramid-level l2"><div class="pyramid-num">L2</div><div class="pyramid-info"><div class="pyramid-h">Quran Reading</div><p>Fluent Nazra & surahs</p></div></div>
-          <div class="pyramid-level l1"><div class="pyramid-num">L1</div><div class="pyramid-info"><div class="pyramid-h">Noorani Qaida</div><p>Start from zero</p></div></div>
+          <div class="pyramid-level l5"><div class="pyramid-num">L5</div><div class="pyramid-info"><h4>Scholar / Ijazah</h4><p>Qirat, Ijazah, Fiqh, Hadith</p></div></div>
+          <div class="pyramid-level l4"><div class="pyramid-num">L4</div><div class="pyramid-info"><h4>Tafseer & Arabic</h4><p>Nahw-Sarf, Islamic sciences</p></div></div>
+          <div class="pyramid-level l3"><div class="pyramid-num">L3</div><div class="pyramid-info"><h4>Tajweed & Hifz</h4><p>Sanad preparation</p></div></div>
+          <div class="pyramid-level l2"><div class="pyramid-num">L2</div><div class="pyramid-info"><h4>Quran Reading</h4><p>Fluent Nazra & surahs</p></div></div>
+          <div class="pyramid-level l1"><div class="pyramid-num">L1</div><div class="pyramid-info"><h4>Noorani Qaida</h4><p>Start from zero</p></div></div>
         </div>
       </div>
     </div>
@@ -3321,79 +3246,149 @@
 <!-- ═══ FOOTER ═══ -->
 <div id="np-footer"></div>
 
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="/assets/js/components.js"></script>
 <script>
-  // Promo close — critical, run immediately
   document.getElementById('closePromo')?.addEventListener('click', () => {
     document.getElementById('promoBanner')?.remove();
   });
 
-  // FAQ + Form — non-critical, defer to idle time so main thread stays free
-  function initNonCritical() {
-    // ── FAQ Toggle ──
-    function toggleFaq(el) {
-      document.querySelectorAll('.faq-question').forEach(q => {
-        q.classList.remove('active');
-        q.setAttribute('aria-expanded', 'false');
-      });
-      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-      const answer = el.nextElementSibling;
-      if (answer && !answer.classList.contains('open')) {
-        el.classList.add('active');
-        el.setAttribute('aria-expanded', 'true');
-        answer.classList.add('open');
-      }
-    }
-    document.querySelectorAll('.faq-question').forEach((q, i) => {
-      q.setAttribute('role', 'button');
-      q.setAttribute('tabindex', '0');
+  // FAQ Toggle
+  function toggleFaq(el) {
+    const allQ = document.querySelectorAll('.faq-question');
+    const allA = document.querySelectorAll('.faq-answer');
+    allQ.forEach(q => {
+      q.classList.remove('active');
       q.setAttribute('aria-expanded', 'false');
-      const a = q.nextElementSibling;
-      if (a) { a.id = `faq-a-${i}`; q.setAttribute('aria-controls', `faq-a-${i}`); }
-      q.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(q); }
-      });
     });
+    allA.forEach(a => a.classList.remove('open'));
+    const answer = el.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    if (!isOpen) {
+      el.classList.add('active');
+      el.setAttribute('aria-expanded', 'true');
+      answer.classList.add('open');
+    }
+  }
 
-    // ── CTA Form ──
-    const trialForm = document.getElementById('trialForm');
-    if (!trialForm) return;
-    const FORM_URL = 'https://formsubmit.co/ajax/info@noorpath.online';
+  document.querySelectorAll('.faq-question').forEach((question, index) => {
+    question.setAttribute('role', 'button');
+    question.setAttribute('tabindex', '0');
+    question.setAttribute('aria-expanded', question.classList.contains('active') ? 'true' : 'false');
+    const answer = question.nextElementSibling;
+    if (answer) {
+      const answerId = `faq-answer-${index + 1}`;
+      answer.id = answerId;
+      question.setAttribute('aria-controls', answerId);
+    }
+    question.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleFaq(question);
+      }
+    });
+  });
 
-    trialForm.addEventListener('submit', async e => {
+  // CTA form — AJAX to FormSubmit (avoids redirect + QUIC errors on formsubmit.co)
+  const trialForm = document.getElementById('trialForm');
+  const FORM_SUBMIT_URL = 'https://formsubmit.co/ajax/info@noorpath.online';
+
+  function showTrialFormSuccess() {
+    const btn = document.getElementById('trialSubmitBtn');
+    const status = document.getElementById('formStatus');
+    if (btn) {
+      btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!';
+      btn.style.background = 'var(--emerald-mid)';
+      btn.disabled = true;
+    }
+    if (status) {
+      status.style.display = 'block';
+      status.textContent = 'Thank you! We will contact you within 24 hours.';
+      status.style.color = 'var(--gold-lt)';
+    }
+  }
+
+  function resetTrialFormButton() {
+    const btn = document.getElementById('trialSubmitBtn');
+    if (btn) {
+      btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class';
+      btn.disabled = false;
+    }
+  }
+
+  if (trialForm) {
+    trialForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (!trialForm.checkValidity()) { trialForm.reportValidity(); return; }
+      if (!trialForm.checkValidity()) {
+        trialForm.reportValidity();
+        return;
+      }
+
       const fp = document.getElementById('familyPlanHidden');
-      if (fp) fp.value = document.getElementById('siblingEnroll')?.checked ? 'Yes — family plan' : 'No';
+      if (fp) {
+        fp.value = document.getElementById('siblingEnroll').checked ? 'Yes — family plan' : 'No';
+      }
+
       const btn = document.getElementById('trialSubmitBtn');
       const status = document.getElementById('formStatus');
-      if (btn) { btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...'; btn.disabled = true; }
-      if (status) { status.style.display = 'block'; status.textContent = 'Please wait...'; status.style.color = 'rgba(255,255,255,.78)'; }
+      if (btn) {
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...';
+        btn.disabled = true;
+      }
+      if (status) {
+        status.style.display = 'block';
+        status.textContent = 'Please wait, sending your booking...';
+        status.style.color = 'rgba(255,255,255,.78)';
+      }
+
       try {
-        const res = await fetch(FORM_URL, { method: 'POST', body: new FormData(trialForm), headers: { Accept: 'application/json' } });
-        const data = await res.json();
+        const response = await fetch(FORM_SUBMIT_URL, {
+          method: 'POST',
+          body: new FormData(trialForm),
+          headers: { Accept: 'application/json' }
+        });
+        const data = await response.json();
         const ok = data.success === true || data.success === 'true';
+
         if (ok) {
           trialForm.reset();
-          if (btn) { btn.innerHTML = '<i class="fas fa-check-circle me-2"></i> Request Sent!'; btn.style.background = 'var(--emerald-mid)'; }
-          if (status) { status.textContent = 'Thank you! We will contact you within 24 hours.'; status.style.color = 'var(--gold-lt)'; }
+          showTrialFormSuccess();
           return;
         }
+
         const msg = data.message || '';
-        if (status) { status.textContent = /activ/i.test(msg) ? 'Check info@noorpath.online for an activation link, then try again.' : (msg || 'Could not send. Please WhatsApp us.'); status.style.color = /activ/i.test(msg) ? 'var(--gold-lt)' : '#ffb4b4'; }
-        if (btn) { btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class'; btn.disabled = false; }
-      } catch {
-        if (status) { status.textContent = 'Network error. Please WhatsApp us directly.'; status.style.color = '#ffb4b4'; }
-        if (btn) { btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Book My Free Class'; btn.disabled = false; }
+        if (/activ/i.test(msg)) {
+          if (status) {
+            status.textContent = 'Almost ready! Check info@noorpath.online and click the activation link from FormSubmit, then try again.';
+            status.style.color = 'var(--gold-lt)';
+          }
+        } else if (status) {
+          status.textContent = msg || 'Could not send. Please WhatsApp us or email directly.';
+          status.style.color = '#ffb4b4';
+        }
+        resetTrialFormButton();
+      } catch (err) {
+        if (status) {
+          status.textContent = 'Network error. Please try again or contact us on WhatsApp.';
+          status.style.color = '#ffb4b4';
+        }
+        resetTrialFormButton();
       }
     });
   }
 
-  // Use requestIdleCallback if available, else setTimeout fallback
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(initNonCritical, { timeout: 4000 });
-  } else {
-    setTimeout(initNonCritical, 3000);
+  // Progress bar animation on scroll
+  const progressFill = document.querySelector('.progress-bar-hero-fill');
+  if (progressFill) {
+    const progressObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          progressFill.style.width = '72%';
+          progressObserver.disconnect();
+        }
+      });
+    });
+    progressObserver.observe(progressFill);
   }
 </script>
 </body>
