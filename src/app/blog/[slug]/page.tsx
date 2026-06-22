@@ -27,7 +27,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://www.noorpath.online/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.date,
       authors: ["NoorPath Academy"],
+      siteName: "NoorPath Academy",
+      images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: post.title,
+      description: post.description,
+      images: ["/og-image.svg"],
     },
   };
 }
@@ -41,15 +50,36 @@ export default async function BlogPostPage({ params }: Props) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-    publisher: { "@type": "Organization", name: "NoorPath Academy", logo: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg" } },
-    url: `https://www.noorpath.online/blog/${post.slug}`,
-    mainEntityOfPage: `https://www.noorpath.online/blog/${post.slug}`,
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `https://www.noorpath.online/blog/${post.slug}#article`,
+        headline: post.title,
+        description: post.description,
+        datePublished: post.date,
+        dateModified: post.date,
+        image: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg", width: 1200, height: 630 },
+        author: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+        publisher: {
+          "@type": "Organization",
+          name: "NoorPath Academy",
+          logo: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg", width: 1200, height: 630 },
+        },
+        url: `https://www.noorpath.online/blog/${post.slug}`,
+        mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.noorpath.online/blog/${post.slug}` },
+        keywords: post.keywords.join(", "),
+        articleSection: post.category,
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.noorpath.online/blog" },
+          { "@type": "ListItem", position: 3, name: post.category, item: `https://www.noorpath.online/blog/${post.slug}` },
+        ],
+      },
+    ],
   };
 
   return (

@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   title: "About NoorPath Academy — Online Quran Education for Families",
   description: "Learn about NoorPath Academy — our mission, team of certified tutors, and commitment to making quality Quran education accessible to every Muslim family worldwide.",
   alternates: { canonical: "https://www.noorpath.online/about" },
+  openGraph: {
+    title: "About NoorPath Academy — Online Quran Education for Families",
+    description: "Our mission: making quality Quran education accessible to every Muslim family worldwide. 12,000+ students, 250+ certified tutors, 40+ countries.",
+    url: "https://www.noorpath.online/about",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "About NoorPath Academy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About NoorPath Academy",
+    description: "12,000+ students, 250+ Ijazah tutors, 40+ countries. Quality Quran education for every family.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const jsonLd = {

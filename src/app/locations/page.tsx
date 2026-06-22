@@ -5,6 +5,18 @@ export const metadata: Metadata = {
   title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
   description: "NoorPath Academy serves families in 40+ countries. Find online Quran classes for your location — USA, UK, Canada, Australia, UAE, Saudi Arabia, and more.",
   alternates: { canonical: "https://www.noorpath.online/locations" },
+  openGraph: {
+    title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
+    description: "NoorPath Academy serves 12,000+ students in 40+ countries. Find Quran classes in your country.",
+    url: "https://www.noorpath.online/locations",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Classes Worldwide — NoorPath Academy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Online Quran Classes by Location | NoorPath Academy",
+    description: "USA, UK, Canada, Australia, UAE and 40+ countries. Free trial.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const locations = [
@@ -22,9 +34,33 @@ const locations = [
   { flag: "🇮🇩", country: "Indonesia", cities: "Jakarta, Surabaya, Bandung, Medan", desc: "Online Quran classes for Indonesian families — WIB and WITA timezones." },
 ];
 
+const locationsJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      name: "Online Quran Classes — Worldwide",
+      description: "NoorPath Academy provides online Quran education to families in 40+ countries. All timezones covered.",
+      provider: { "@type": "EducationalOrganization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+      areaServed: ["United States","United Kingdom","Canada","Australia","UAE","Saudi Arabia","Pakistan","Germany","Malaysia","Bangladesh","South Africa","Indonesia"],
+      serviceType: "Online Quran Education",
+      url: "https://www.noorpath.online/locations",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+        { "@type": "ListItem", position: 2, name: "Locations", item: "https://www.noorpath.online/locations" },
+      ],
+    },
+  ],
+};
+
 export default function LocationsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationsJsonLd) }} />
+
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>

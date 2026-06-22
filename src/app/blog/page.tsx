@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   title: "Islamic Blog — Quran Learning, Duas & Islamic Knowledge",
   description: "Islamic articles and guides covering Quran learning, Tajweed, duas for kids, Islamic parenting, and more. Expert-written content for Muslim families worldwide.",
   alternates: { canonical: "https://www.noorpath.online/blog" },
+  openGraph: {
+    title: "Islamic Blog — Quran Learning, Duas & Islamic Knowledge | NoorPath Academy",
+    description: "Expert-written Islamic articles on Quran learning, Tajweed, duas for kids, and Islamic parenting for families worldwide.",
+    url: "https://www.noorpath.online/blog",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy Islamic Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Islamic Blog | NoorPath Academy",
+    description: "Quran learning guides, duas for kids, Tajweed tips, Islamic parenting and more.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const categoryColors: Record<string, string> = {
@@ -24,11 +36,34 @@ const categoryColors: Record<string, string> = {
   "Islamic Culture": "#8b5cf6",
 };
 
+const blogJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.noorpath.online/blog",
+      name: "NoorPath Academy Islamic Blog",
+      description: "Expert-written Islamic articles on Quran learning, Tajweed, duas for kids, and Islamic parenting.",
+      url: "https://www.noorpath.online/blog",
+      publisher: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+        { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.noorpath.online/blog" },
+      ],
+    },
+  ],
+};
+
 export default function BlogPage() {
   const sorted = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }} />
+
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>

@@ -11,7 +11,21 @@ export const metadata: Metadata = {
   title: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
   description:
     "NoorPath Academy — online Quran academy for families worldwide. Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies & daily duas for kids. Certified tutors. Family plans. Free 30-min trial.",
-  alternates: { canonical: "https://www.noorpath.online/" },
+  // No trailing slash — consistent with trailingSlash:false in next.config.ts
+  alternates: { canonical: "https://www.noorpath.online" },
+  openGraph: {
+    title: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
+    description: "Join 12,000+ students. Online Quran classes for kids & adults — Qaida, Tajweed, Hifz, Arabic. Certified tutors. Family plans. Free 30-min trial.",
+    url: "https://www.noorpath.online",
+    type: "website",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Learn Quran Online | NoorPath Academy — Free Trial",
+    description: "Online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const courseCards = [

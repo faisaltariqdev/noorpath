@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   title: "Online Quran & Islamic Courses — All Programs",
   description: "Browse all NoorPath Academy courses — Noorani Qaida, Tajweed, Hifz, Arabic language, Islamic studies, daily duas for kids. Certified tutors, family plans. Free trial.",
   alternates: { canonical: "https://www.noorpath.online/courses" },
+  openGraph: {
+    title: "Online Quran & Islamic Courses — All Programs | NoorPath Academy",
+    description: "Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies & daily duas. Certified tutors, family plans. Free trial.",
+    url: "https://www.noorpath.online/courses",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Courses — NoorPath Academy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Online Quran & Islamic Courses | NoorPath Academy",
+    description: "7 courses: Qaida, Tajweed, Hifz, Arabic, Islamic Studies. Free trial.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const courses = [
@@ -74,9 +86,47 @@ const courses = [
   },
 ];
 
+const coursesJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "@id": "https://www.noorpath.online/courses#list",
+      name: "Online Quran & Islamic Courses — NoorPath Academy",
+      description: "Complete list of online Quran and Islamic studies courses offered by NoorPath Academy.",
+      url: "https://www.noorpath.online/courses",
+      numberOfItems: 7,
+      itemListElement: courses.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Course",
+          name: c.title,
+          description: c.desc,
+          url: `https://www.noorpath.online/courses/${c.slug}`,
+          provider: { "@type": "Organization", name: "NoorPath Academy", sameAs: "https://www.noorpath.online" },
+          educationalLevel: c.level,
+          typicalAgeRange: c.age,
+          courseMode: "online",
+          teaches: c.features.join(", "),
+        },
+      })),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+        { "@type": "ListItem", position: 2, name: "Courses", item: "https://www.noorpath.online/courses" },
+      ],
+    },
+  ],
+};
+
 export default function CoursesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(coursesJsonLd) }} />
+
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>

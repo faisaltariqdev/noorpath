@@ -1,0 +1,74 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#041f14"/>
+      <stop offset="50%" style="stop-color:#0a3d28"/>
+      <stop offset="100%" style="stop-color:#0a6e4f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9922a"/>
+      <stop offset="100%" style="stop-color:#e8b84b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#c9922a;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#0a3d28;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="980" cy="120" r="200" fill="none" stroke="rgba(201,146,42,0.12)" stroke-width="1"/>
+  <circle cx="980" cy="120" r="140" fill="none" stroke="rgba(201,146,42,0.08)" stroke-width="1"/>
+  <circle cx="220" cy="500" r="160" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="180" width="4" height="270" rx="2" fill="url(#gold)"/>
+
+  <!-- Arabic text area -->
+  <text x="1120" y="80" font-size="28" fill="rgba(255,255,255,0.15)" text-anchor="end" font-family="serif">'BR1N#R (P'3REP 1N(PQCN</text>
+
+  <!-- Logo -->
+  <text x="108" y="240" font-size="56" font-weight="700" fill="white" font-family="Georgia, serif">Noor</text>
+  <text x="262" y="240" font-size="56" font-weight="700" fill="url(#gold)" font-family="Georgia, serif">Path</text>
+  <text x="108" y="270" font-size="16" font-weight="600" fill="rgba(255,255,255,0.45)" font-family="Arial, sans-serif" letter-spacing="4">A C A D E M Y</text>
+
+  <!-- Divider -->
+  <rect x="108" y="290" width="320" height="1" fill="rgba(255,255,255,0.12)"/>
+
+  <!-- Headline -->
+  <text x="108" y="350" font-size="42" font-weight="700" fill="white" font-family="Georgia, serif">Learn Quran Online</text>
+  <text x="108" y="400" font-size="28" fill="rgba(255,255,255,0.75)" font-family="Arial, sans-serif">Certified Tutors · Family Plans · Free Trial</text>
+
+  <!-- Stats row -->
+  <rect x="108" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="178" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">12K+</text>
+  <text x="178" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Students</text>
+
+  <rect x="264" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="334" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">250+</text>
+  <text x="334" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Tutors</text>
+
+  <rect x="420" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="490" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">40+</text>
+  <text x="490" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Countries</text>
+
+  <rect x="576" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="646" y="484" font-size="26" font-weight="700" fill="url(#gold)" text-anchor="middle" font-family="Georgia, serif">4.9</text>
+  <text x="646" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Rating</text>
+
+  <!-- Right card -->
+  <rect x="800" y="200" width="320" height="360" rx="20" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="960" y="260" font-size="16" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">FREE TRIAL CLASS</text>
+  <text x="960" y="310" font-size="38" fill="white" text-anchor="middle" font-family="Georgia, serif">Start Today</text>
+  <text x="960" y="350" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">No credit card required</text>
+  <text x="960" y="390" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Live 1-on-1 via Zoom</text>
+  <text x="960" y="430" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Certified Ijazah tutors</text>
+  <rect x="860" y="475" width="200" height="50" rx="25" fill="url(#gold)"/>
+  <text x="960" y="507" font-size="16" font-weight="700" fill="#1a1a2e" text-anchor="middle" font-family="Arial, sans-serif">Book Free Trial ’</text>
+
+  <!-- URL -->
+  <text x="600" y="605" font-size="18" fill="rgba(255,255,255,0.4)" text-anchor="middle" font-family="Arial, sans-serif">www.noorpath.online</text>
+</svg>

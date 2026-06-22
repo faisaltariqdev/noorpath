@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
   description: "Online Quran classes for kids and adults — live 1-on-1 sessions via Zoom with certified tutors. Noorani Qaida, Tajweed, Hifz, Arabic. Family plans. Free 30-min trial.",
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes" },
+  openGraph: {
+    title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
+    description: "Join 12,000+ students. Live 1-on-1 Quran classes via Zoom — Qaida, Tajweed, Hifz, Arabic. Family plans. Free 30-min trial.",
+    url: "https://www.noorpath.online/online-quran-classes",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Classes — NoorPath Academy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Online Quran Classes | Live 1-on-1 | NoorPath Academy",
+    description: "Certified tutors, family plans, free 30-min trial. Qaida, Tajweed, Hifz, Arabic.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const features = [
@@ -18,9 +30,44 @@ const features = [
   { icon: <CheckCircle size={22} />, title: "Weekly Progress Reports", desc: "Parents receive detailed weekly reports on their child's progress and next goals." },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.noorpath.online/online-quran-classes#service",
+      name: "Online Quran Classes — Live 1-on-1",
+      description: "Live 1-on-1 online Quran classes with certified tutors via Zoom. Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies. Family plans. Free trial.",
+      provider: { "@type": "EducationalOrganization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+      serviceType: "Online Quran Education",
+      areaServed: { "@type": "Country", name: "Worldwide" },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Online Quran Courses",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Noorani Qaida Online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Tajweed Classes Online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Hifz Program Online" } },
+          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Arabic Language Online" } },
+        ],
+      },
+      url: "https://www.noorpath.online/online-quran-classes",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+        { "@type": "ListItem", position: 2, name: "Online Quran Classes", item: "https://www.noorpath.online/online-quran-classes" },
+      ],
+    },
+  ],
+};
+
 export default function OnlineQuranClassesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>

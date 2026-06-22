@@ -1,8 +1,38 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { Playfair_Display, Plus_Jakarta_Sans, Amiri } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+
+// ─── Fonts: self-hosted at build time — removes render-blocking Google CDN request ───
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+  preload: true,
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-jakarta",
+  display: "swap",
+  preload: true,
+});
+
+const amiri = Amiri({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "700"],
+  variable: "--font-amiri",
+  display: "swap",
+  preload: false, // Arabic font: not needed for initial paint
+});
+
+// ─── Replace with your Google Analytics 4 Measurement ID ───────────────────────────
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noorpath.online"),
@@ -25,7 +55,12 @@ export const metadata: Metadata = {
   publisher: "NoorPath Academy",
   robots: {
     index: true, follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+    googleBot: {
+      index: true, follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   openGraph: {
     type: "website",
@@ -34,7 +69,7 @@ export const metadata: Metadata = {
     siteName: "NoorPath Academy",
     title: "Learn Quran Online | NoorPath Academy — Free Trial",
     description: "Join 12,000+ students worldwide. Quran classes for kids & adults — Qaida, Tajweed, Hifz, Arabic. Certified tutors. Family plans. Free 30-min trial.",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy" }],
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -43,23 +78,43 @@ export const metadata: Metadata = {
     description: "Online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans. Certified tutors. Free trial.",
     images: ["/og-image.svg"],
   },
-  verification: { google: "" },
+  // ── Replace the empty string with your Google Search Console verification token ──
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${playfair.variable} ${jakarta.variable} ${amiri.variable}`}
+    >
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/og-image.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* DNS prefetch for WhatsApp and form submission */}
+        <link rel="dns-prefetch" href="//wa.me" />
+        <link rel="dns-prefetch" href="//formsubmit.co" />
       </head>
       <body>
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
         <WhatsAppFloat />
+
+        {/* ── Google Analytics 4 — strategy="afterInteractive" loads after page is interactive ── */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}',{page_path:window.location.pathname});`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

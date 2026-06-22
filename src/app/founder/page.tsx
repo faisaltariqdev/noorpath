@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
   description: "Learn about Faisal Tariq, Founder & CEO of NoorPath Academy — software engineer and Islamic education entrepreneur building accessible online Quran learning for families worldwide.",
   alternates: { canonical: "https://www.noorpath.online/founder" },
+  openGraph: {
+    title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
+    description: "Software engineer and Islamic education entrepreneur building accessible Quran education for families in 40+ countries.",
+    url: "https://www.noorpath.online/founder",
+    images: [{ url: "/assets/faisal-tariq-founder.png", width: 500, height: 500, alt: "Faisal Tariq — Founder & CEO, NoorPath Academy" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Faisal Tariq — Founder & CEO | NoorPath Academy",
+    description: "Software engineer building accessible Quran education for families worldwide.",
+    images: ["/assets/faisal-tariq-founder.png"],
+  },
 };
 
 const jsonLd = {
