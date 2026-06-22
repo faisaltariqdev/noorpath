@@ -3,8 +3,7 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import {
   Sprout, Baby, Smile, Star, Users, PlayCircle, MapPin,
-  Layers, Award, Globe, CheckCircle, Clock, Shield, Video,
-  ChevronDown, Lock
+  Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -152,12 +151,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ── PROMO BAR ── */}
-      <div className="promo-bar">
-        🎁 <strong>FREE trial class</strong> — Beginner to advanced, all ages welcome. No credit card required.
-        <Link href="#cta">Claim Now →</Link>
-      </div>
-
       {/* ══════════════════════════════
           HERO
       ══════════════════════════════ */}
@@ -170,7 +163,7 @@ export default function HomePage() {
           position: "relative",
           display: "flex",
           alignItems: "center",
-          paddingTop: 100,
+          paddingTop: 140,   /* 40px promo bar + 62px navbar + some breathing room */
           paddingBottom: 60,
           overflow: "hidden",
         }}
@@ -349,8 +342,8 @@ export default function HomePage() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {whyPoints.map((w, i) => (
-                <div key={w.title} style={{ display: "flex", gap: 16, background: "#fff", border: "1px solid rgba(10,110,79,.1)", borderRadius: 16, padding: "18px 22px", boxShadow: "0 2px 12px rgba(10,110,79,.06)", transition: "all .3s" }}>
-                  <div style={{ color: "#fff", width: 44, height: 44, flexShrink: 0, borderRadius: 12, background: i % 2 === 0 ? "var(--emerald)" : "linear-gradient(135deg,var(--emerald-mid),var(--emerald))", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(10,110,79,.25)" }}>{w.icon}</div>
+                <div key={w.title} className="why-card">
+                  <div style={{ color: "#fff", width: 46, height: 46, flexShrink: 0, borderRadius: 12, background: i % 2 === 0 ? "var(--emerald)" : "linear-gradient(135deg,var(--emerald-mid),var(--emerald))", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(10,110,79,.25)" }}>{w.icon}</div>
                   <div>
                     <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 4, fontSize: ".97rem" }}>{w.title}</div>
                     <div style={{ color: "var(--muted)", fontSize: ".86rem", lineHeight: 1.65 }}>{w.desc}</div>
@@ -395,19 +388,30 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[
-              { name: "Starter", price: "$29", period: "/month", desc: "1 class per week · Perfect for beginners", highlight: false },
-              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular for progress", highlight: true },
-              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress & Hifz", highlight: false },
+              { name: "Starter", price: "$29", period: "/month", desc: "1 class per week · Perfect for beginners", highlight: false, features: ["1 class/week", "Certified tutor", "Progress reports", "Cancel anytime"] },
+              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular for progress", highlight: true, features: ["2 classes/week", "Priority tutor matching", "Weekly reports + parent call", "Family discount available"] },
+              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress & Hifz", highlight: false, features: ["4 classes/week", "Dedicated tutor", "Hifz & Ijazah track", "Monthly performance review"] },
             ].map((p) => (
-              <div key={p.name} style={{ background: p.highlight ? "var(--emerald)" : "#fff", border: p.highlight ? "none" : "1px solid var(--border)", borderRadius: 20, padding: 28, textAlign: "center", position: "relative" }}>
-                {p.highlight && <div style={{ position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)", background: "var(--gold)", color: "var(--charcoal)", fontSize: ".72rem", fontWeight: 700, padding: "4px 14px", borderRadius: 50, textTransform: "uppercase", whiteSpace: "nowrap" }}>Most Popular</div>}
-                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.2rem", fontWeight: 700, color: p.highlight ? "#fff" : "var(--charcoal)", marginBottom: 8 }}>{p.name}</div>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 2, marginBottom: 12 }}>
-                  <span style={{ fontSize: "2.2rem", fontWeight: 800, color: p.highlight ? "#fff" : "var(--emerald)" }}>{p.price}</span>
+              <div key={p.name} className={p.highlight ? "pricing-card-highlight" : "pricing-card"}>
+                {p.highlight && (
+                  <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: "var(--gold)", color: "var(--charcoal)", fontSize: ".72rem", fontWeight: 700, padding: "5px 16px", borderRadius: 50, textTransform: "uppercase", whiteSpace: "nowrap", letterSpacing: ".5px" }}>
+                    ⭐ Most Popular
+                  </div>
+                )}
+                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.25rem", fontWeight: 700, color: p.highlight ? "#fff" : "var(--charcoal)", marginBottom: 8 }}>{p.name}</div>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 2, marginBottom: 10 }}>
+                  <span style={{ fontSize: "2.4rem", fontWeight: 800, color: p.highlight ? "#fff" : "var(--emerald)" }}>{p.price}</span>
                   <span style={{ color: p.highlight ? "rgba(255,255,255,.6)" : "var(--muted)", fontSize: ".85rem" }}>{p.period}</span>
                 </div>
-                <p style={{ color: p.highlight ? "rgba(255,255,255,.75)" : "var(--muted)", fontSize: ".88rem", marginBottom: 20 }}>{p.desc}</p>
-                <Link href="/pricing" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "11px 0", borderRadius: 10, fontWeight: 700, textDecoration: "none", fontSize: ".9rem" }}>
+                <p style={{ color: p.highlight ? "rgba(255,255,255,.75)" : "var(--muted)", fontSize: ".85rem", marginBottom: 18 }}>{p.desc}</p>
+                <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px 0", textAlign: "left", display: "flex", flexDirection: "column", gap: 8 }}>
+                  {p.features.map((f) => (
+                    <li key={f} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: ".84rem", color: p.highlight ? "rgba(255,255,255,.85)" : "var(--slate)" }}>
+                      <span style={{ color: p.highlight ? "#4ade80" : "var(--emerald)", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/pricing" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "12px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".9rem", textAlign: "center" }}>
                   Get Started →
                 </Link>
               </div>
@@ -425,17 +429,32 @@ export default function HomePage() {
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow">❓ FAQ</span>
             <h2 className="section-title">Frequently Asked <em className="accent">Questions</em></h2>
+            <p className="section-desc center">Everything you need to know before booking your first class.</p>
           </div>
-          <div className="max-w-[800px] mx-auto" style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-            {faqs.map((f, i) => (
-              <details key={i} style={{ borderBottom: "1px solid var(--border)", padding: "20px 0" }}>
-                <summary style={{ fontWeight: 600, color: "var(--charcoal)", cursor: "pointer", fontSize: ".97rem", listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  {f.q}
-                  <ChevronDown size={18} style={{ color: "var(--emerald)", flexShrink: 0 }} />
-                </summary>
-                <p style={{ color: "var(--muted)", marginTop: 12, lineHeight: 1.75, fontSize: ".92rem" }}>{f.a}</p>
-              </details>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-[1000px] mx-auto">
+            {[
+              { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with your assigned tutor. You get a fixed weekly schedule that fits your timezone, with no pre-recorded lessons. Your child connects with the teacher directly for maximum learning." },
+              { q: "What age groups do you accept?", a: "We accept learners from age 4 to seniors. We have specialist tutors for toddlers (Duas & basics), school-age children (Noorani Qaida + Quran), teenagers (Tajweed + Hifz), adults, and elderly learners — each with age-appropriate methods." },
+              { q: "Do you offer a free trial class?", a: "Yes! We offer a completely free 30-minute trial class with no credit card required. Your child meets the tutor, gets a level assessment, and you receive a personalised learning plan — all for free." },
+              { q: "Are there family discount plans?", a: "Absolutely. If you enroll 2 or more siblings from the same family, each sibling gets a significant discount. Contact us for exact pricing based on your children's levels and how many classes per week you need." },
+              { q: "How are tutors selected and vetted?", a: "All tutors hold Ijazah certification or Al-Azhar university qualifications. They undergo background verification, teaching trials, and ongoing monthly performance evaluations. Only the top 15% of applicants are accepted." },
+              { q: "Can I request a female Quran teacher?", a: "Yes — we have a dedicated pool of certified female Quran teachers. When filling in the booking form, simply indicate that you prefer a female tutor and we will ensure your assigned teacher is female." },
+              { q: "What equipment do I need?", a: "Just a smartphone, tablet, or laptop with Zoom or Skype installed. No special equipment needed. The teacher shares the Quran/Qaida on screen during the class. A stable internet connection is all that's required." },
+              { q: "How long does it take to complete Noorani Qaida?", a: "With 3 classes per week, most beginners (children) complete Noorani Qaida in 3–5 months. Adults typically complete it in 4–6 months. After completing Qaida, students move directly to reading the Holy Quran." },
+            ].map((f) => (
+              <div key={f.q} className="faq-card">
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+                  <div style={{ flexShrink: 0, width: 32, height: 32, background: "rgba(10,110,79,.1)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--emerald)", fontWeight: 800, fontSize: ".85rem" }}>?</div>
+                  <div>
+                    <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: ".97rem", fontWeight: 700, color: "var(--charcoal)", marginBottom: 8, lineHeight: 1.35 }}>{f.q}</h3>
+                    <p style={{ color: "var(--muted)", lineHeight: 1.75, fontSize: ".88rem", margin: 0 }}>{f.a}</p>
+                  </div>
+                </div>
+              </div>
             ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: 36 }}>
+            <Link href="/online-quran-classes#cta" className="btn-primary-np">Still have questions? Book a free call →</Link>
           </div>
         </div>
       </section>

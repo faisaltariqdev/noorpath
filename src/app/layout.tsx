@@ -99,7 +99,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Navbar />
-        <main id="main-content">{children}</main>
+        {/* padding-top accounts for fixed Navbar + promo bar height */}
+        <main id="main-content" style={{ paddingTop: 0 }}>{children}</main>
         <Footer />
         <WhatsAppFloat />
 
