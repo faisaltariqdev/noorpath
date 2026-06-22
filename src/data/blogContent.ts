@@ -5330,6 +5330,287 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>`,
   },
 
+  "surah-al-kahf-arabic-english-friday": {
+    style: ``,
+    content: `
+<div class="highlight-box">
+  <strong>The Prophet Muhammad ﷺ said:</strong><br/>
+  <em>"Whoever reads Surah Al-Kahf on Friday, a light will shine for him between the two Fridays."</em>
+  <br/><span style="font-size:.85rem;color:var(--muted)">— Al-Hakim (Sahih), Bayhaqi</span>
+</div>
+
+<h2>What is Surah Al-Kahf?</h2>
+<p>Surah Al-Kahf (سُورَةُ الْكَهْف — The Cave) is the 18th chapter of the Holy Quran. It contains <strong>110 verses (ayaat)</strong> and was revealed in Makkah. It is one of the most frequently recited surahs in the Quran, particularly on <strong>Fridays (Yawm al-Jumu'ah)</strong>.</p>
+<p>The surah contains four major stories — each a profound lesson about faith, wealth, knowledge, and power — and it begins and ends with praise of Allah. Scholars consider it one of the most comprehensive surahs in the entire Quran.</p>
+
+<h2>Why Read Surah Al-Kahf on Friday?</h2>
+<p>Multiple authentic hadiths establish the great virtue of reciting Surah Al-Kahf specifically on Fridays:</p>
+<div class="highlight-box">
+  <strong>Hadith 1:</strong> "Whoever reads Surah Al-Kahf on Friday, a light will shine for him between the two Fridays." — Al-Hakim (Sahih)
+</div>
+<div class="highlight-box">
+  <strong>Hadith 2:</strong> "Whoever reads the first 10 verses of Surah Al-Kahf will be protected from the Dajjal." — Sahih Muslim 809
+</div>
+<div class="highlight-box">
+  <strong>Hadith 3:</strong> "Whoever reads the last 10 verses of Surah Al-Kahf will be protected from the Fitnah of the Dajjal." — Sahih Muslim 809
+</div>
+<p>The <strong>time window</strong> for Friday recitation: from Maghrib on Thursday night until Maghrib on Friday. The earlier you recite, the greater the light that will shine for you.</p>
+
+<h2>The Four Stories of Surah Al-Kahf</h2>
+<h3>Story 1: The People of the Cave (Ashaab al-Kahf) — Verses 9-26</h3>
+<p>Young believers fled persecution by their people and took refuge in a cave. Allah caused them to sleep for 309 years, preserving them as a miracle. When they awoke, they found a changed world and their story became a sign of the resurrection.</p>
+<p><strong>Lesson:</strong> Faith in Allah protects believers. Allah never abandons those who turn to Him.</p>
+
+<h3>Story 2: The Two Gardeners — Verses 32-44</h3>
+<p>A rich man with two beautiful gardens became arrogant and forgot to be grateful to Allah. His poor but faithful companion warned him, but the rich man refused to listen. His gardens were destroyed by a calamity.</p>
+<p><strong>Lesson:</strong> Wealth and success are trials from Allah, not signs of His approval. Gratitude (shukr) protects wealth; arrogance destroys it.</p>
+
+<h3>Story 3: Musa and Al-Khidr — Verses 60-82</h3>
+<p>Prophet Musa ﷺ travelled to meet a wise servant of Allah (Al-Khidr) to learn from him. Al-Khidr performed three seemingly illogical actions — which later proved to be tests of wisdom over apparent knowledge.</p>
+<p><strong>Lesson:</strong> Divine wisdom surpasses human understanding. Patience with what you do not understand is a virtue.</p>
+
+<h3>Story 4: Dhul-Qarnayn — Verses 83-98</h3>
+<p>A powerful and just king travelled East and West, helping oppressed peoples. He built a great wall to protect people from Gog and Magog (Ya'juj and Ma'juj).</p>
+<p><strong>Lesson:</strong> Power used justly, with submission to Allah, is a blessing. Earthly power is temporary.</p>
+
+<h2>Surah Al-Kahf — First 10 Verses (Arabic)</h2>
+<div class="arabic" style="font-size:1.5rem;line-height:2.8;text-align:center;padding:32px 24px;background:rgba(10,110,79,.04);border-radius:16px;border:1px solid rgba(10,110,79,.1);margin:24px 0;">
+  بِسۡمِ اللّٰهِ الرَّحۡمٰنِ الرَّحِيۡمِ<br/>
+  اَلۡحَمۡدُ لِلّٰهِ الَّذِىۡۤ اَنۡزَلَ عَلٰى عَبۡدِهِ الۡكِتٰبَ وَلَمۡ يَجۡعَل لَّهٗ عِوَجَا ؕ‏ ۝<br/>
+  قَيِّمًا لِّيُنۡذِرَ بَاۡسًا شَدِيۡدًا مِّنۡ لَّدُنۡهُ وَيُبَشِّرَ الۡمُؤۡمِنِيۡنَ الَّذِيۡنَ يَعۡمَلُوۡنَ الصّٰلِحٰتِ اَنَّ لَهُمۡ اَجۡرًا حَسَنًا ۙ‏ ۝<br/>
+  مَّاكِثِيۡنَ فِيۡهِ اَبَدًا ۙ‏ ۝
+</div>
+
+<h2>Benefits of Reciting Surah Al-Kahf</h2>
+<ul>
+  <li>Protection from the Fitnah (trial) of the Dajjal (Antichrist)</li>
+  <li>A light that shines from one Friday to the next</li>
+  <li>Forgiveness of sins between two Fridays</li>
+  <li>Protection from Shaytan's whispers</li>
+  <li>Understanding of the deeper wisdom behind trials in life</li>
+</ul>
+
+<div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
+  <strong>📚 Want to learn Quran recitation with Tajweed?</strong><br/>
+  Our certified tutors teach Surah Al-Kahf and the full Quran with correct pronunciation. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
+</div>
+    `,
+  },
+
+  "how-to-do-wudu-step-by-step": {
+    style: ``,
+    content: `
+<div class="highlight-box">
+  <strong>The Prophet ﷺ said:</strong><br/>
+  <em>"Cleanliness is half of faith (Iman)."</em>
+  <br/><span style="font-size:.85rem;color:var(--muted)">— Sahih Muslim 223</span>
+</div>
+
+<h2>What is Wudu?</h2>
+<p>Wudu (وضوء — also spelt Wuzu or Wudhu) is the Islamic act of ritual purification (ablution) performed using clean water before Salah (prayer), touching the Quran, and certain other acts of worship. It is a Fard (obligatory) requirement — without valid Wudu, your prayer is not accepted.</p>
+<p>Allah says in the Quran (5:6): <em>"O you who have believed, when you rise to [perform] prayer, wash your faces and your forearms to the elbows and wipe over your heads and wash your feet to the ankles."</em></p>
+
+<h2>What Breaks Wudu?</h2>
+<p>Before learning how to make Wudu, understand what <strong>invalidates</strong> it:</p>
+<ul>
+  <li>Passing wind, urine, or stool</li>
+  <li>Loss of consciousness (sleep, fainting)</li>
+  <li>Sexual discharge</li>
+  <li>Direct skin contact with the opposite gender (according to some madhabs)</li>
+</ul>
+
+<h2>How to Do Wudu — Step by Step (with Duas)</h2>
+
+<h3>Step 1: Make the Intention (Niyyah)</h3>
+<p>Make the intention in your heart to purify yourself for the sake of Allah. You do not need to say it aloud — the intention is in the heart. This is a Fard step.</p>
+
+<h3>Step 2: Say Bismillah</h3>
+<div class="arabic" style="font-size:1.4rem;text-align:center;padding:16px;margin:16px 0;">بِسْمِ اللهِ</div>
+<p style="text-align:center;font-style:italic;color:var(--muted)">"Bismillah" — "In the name of Allah"</p>
+<p>Begin by saying Bismillah. Some scholars consider this Sunnah; others Wajib (necessary).</p>
+
+<h3>Step 3: Wash Hands (3 times)</h3>
+<p>Wash both hands up to and including the wrists — three times each. Make sure water reaches between the fingers.</p>
+
+<h3>Step 4: Rinse the Mouth (3 times)</h3>
+<p>Take water into the mouth, swirl it around, and spit it out — three times. This is called Madmadah.</p>
+
+<h3>Step 5: Clean the Nose (3 times)</h3>
+<p>Sniff water into the nose and blow it out — three times. This is called Istinshaq. Use the left hand to blow the nose.</p>
+
+<h3>Step 6: Wash the Face (3 times)</h3>
+<p>Wash the entire face — from the hairline to the chin and from ear to ear — three times. Make sure water reaches every part.</p>
+<div class="highlight-box">
+  <strong>Dua when washing face:</strong><br/>
+  <span style="font-family:'Amiri',serif;font-size:1.1rem;">اَللّٰهُمَّ بَيِّضۡ وَجۡهِیۡ يَوۡمَ تَبۡيَضُّ الۡوُجُوۡهُ وَلَا تُسَوِّدۡ وَجۡهِیۡ يَوۡمَ تَسۡوَدُّ الۡوُجُوۡهُ</span><br/>
+  "O Allah, whiten my face on the Day when faces are whitened, and do not blacken my face on the Day when faces are blackened."
+</div>
+
+<h3>Step 7: Wash the Arms (3 times)</h3>
+<p>Wash the right arm from the tips of the fingers up to and including the elbow — three times. Repeat for the left arm. Make sure water covers every part including the inner elbow.</p>
+
+<h3>Step 8: Wipe the Head (Masah) — once</h3>
+<p>Wet your hands and wipe over the entire head — front to back and back to front — once. This is called Masah al-Raas.</p>
+<p>Then wipe the inner part of both ears with the index fingers and the outer part with the thumbs.</p>
+
+<h3>Step 9: Wash the Feet (3 times)</h3>
+<p>Wash the right foot from toes to and including the ankle — three times. Make sure water reaches between the toes. Repeat for the left foot.</p>
+
+<h3>Step 10: Recite the Dua After Wudu</h3>
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:20px;background:rgba(10,110,79,.04);border-radius:12px;margin:16px 0;">
+  أَشۡهَدُ أَنۡ لَّآ إِلٰهَ إِلَّا اللّٰهُ وَحۡدَهٗ لَا شَرِيۡكَ لَهٗ وَأَشۡهَدُ أَنَّ مُحَمَّدًا عَبۡدُهٗ وَرَسُوۡلُهٗ
+</div>
+<p style="text-align:center;font-style:italic;color:var(--muted);margin-bottom:12px">"Ash-hadu an la ilaha illallahu wahdahu la sharika lahu, wa ash-hadu anna Muhammadan 'abduhu wa rasuluh"</p>
+<p>The Prophet ﷺ said: "Whoever performs Wudu properly and then says this dua — all 8 gates of Paradise will be opened for him to enter through whichever he wishes." — Sahih Muslim 234</p>
+
+<h2>Wudu Chart — Quick Reference</h2>
+<table style="width:100%;border-collapse:collapse;margin:24px 0;">
+  <thead>
+    <tr style="background:rgba(10,110,79,.08);">
+      <th style="padding:10px 14px;text-align:left;font-size:.84rem;">Step</th>
+      <th style="padding:10px 14px;text-align:left;font-size:.84rem;">Action</th>
+      <th style="padding:10px 14px;text-align:center;font-size:.84rem;">Times</th>
+      <th style="padding:10px 14px;text-align:center;font-size:.84rem;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">1</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Niyyah (Intention)</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">1</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(10,110,79,.1);color:var(--emerald);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Fard</span></td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">2</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Bismillah</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">1</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(201,146,42,.1);color:var(--gold);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Sunnah</span></td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Wash Hands</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(201,146,42,.1);color:var(--gold);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Sunnah</span></td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">4</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Rinse Mouth</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(201,146,42,.1);color:var(--gold);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Sunnah</span></td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">5</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Clean Nose</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(201,146,42,.1);color:var(--gold);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Sunnah</span></td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">6</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Wash Face</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(10,110,79,.1);color:var(--emerald);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Fard</span></td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">7</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Wash Arms to Elbow</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(10,110,79,.1);color:var(--emerald);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Fard</span></td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">8</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Wipe Head (Masah)</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">1</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(10,110,79,.1);color:var(--emerald);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Fard</span></td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">9</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Wipe Ears</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">1</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(201,146,42,.1);color:var(--gold);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Sunnah</span></td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--emerald)">10</td><td style="padding:10px 14px;border-bottom:1px solid var(--border)">Wash Feet to Ankle</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center">3</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:center"><span style="background:rgba(10,110,79,.1);color:var(--emerald);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Fard</span></td></tr>
+    <tr><td style="padding:10px 14px;font-weight:600;color:var(--emerald)">11</td><td style="padding:10px 14px">Dua after Wudu</td><td style="padding:10px 14px;text-align:center">1</td><td style="padding:10px 14px;text-align:center"><span style="background:rgba(201,146,42,.1);color:var(--gold);border-radius:50px;padding:2px 10px;font-size:.75rem;font-weight:700">Sunnah</span></td></tr>
+  </tbody>
+</table>
+
+<h2>Common Mistakes in Wudu</h2>
+<ul>
+  <li><strong>Not covering the elbows:</strong> The elbow must be washed — "up to and including"</li>
+  <li><strong>Not washing between fingers and toes:</strong> Water must reach every part</li>
+  <li><strong>Too quick Masah:</strong> The head wipe must cover the full head (front to back)</li>
+  <li><strong>Washing the neck:</strong> Not part of Wudu in any authentic hadith</li>
+  <li><strong>Wasting water:</strong> The Prophet ﷺ used minimal water for Wudu</li>
+</ul>
+
+<div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
+  <strong>📚 Learn to pray Salah correctly with a certified tutor</strong><br/>
+  Our tutors teach Wudu, Salah, Tajweed and Islamic studies to children and adults. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free 30-min trial →</a>
+</div>
+    `,
+  },
+
+  "islamic-quotes-in-english-arabic": {
+    style: ``,
+    content: `
+<div class="highlight-box">
+  <strong>Allah says in the Quran (13:28):</strong><br/>
+  <span style="font-family:'Amiri',serif;font-size:1.2rem;">أَلَا بِذِكۡرِ اللّٰهِ تَطۡمَئِنُّ الۡقُلُوبُ</span><br/>
+  <em>"Verily, in the remembrance of Allah do hearts find rest."</em>
+</div>
+
+<h2>Islamic Quotes from the Quran — 50 Most Inspiring Verses</h2>
+
+<h3>On Patience (Sabr)</h3>
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">إِنَّ اللّٰهَ مَعَ الصّٰبِرِيۡنَ</div>
+<p><em>"Indeed, Allah is with the patient."</em> — Quran 2:153</p>
+
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">وَلَنَبۡلُوَنَّكُمۡ بِشَیۡءٍ مِّنَ الۡخَوۡفِ وَالۡجُوعِ</div>
+<p><em>"And We will surely test you with something of fear and hunger and a loss of wealth and lives and fruits, but give good tidings to the patient."</em> — Quran 2:155</p>
+
+<h3>On Trust in Allah (Tawakkul)</h3>
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">وَمَنۡ يَّتَوَكَّلۡ عَلَى اللّٰهِ فَهُوَ حَسۡبُهٗ</div>
+<p><em>"And whoever relies upon Allah — then He is sufficient for him."</em> — Quran 65:3</p>
+
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">فَاِنَّ مَعَ الۡعُسۡرِ يُسۡرًا ؕ اِنَّ مَعَ الۡعُسۡرِ يُسۡرًا</div>
+<p><em>"For indeed, with hardship will be ease. Indeed, with hardship will be ease."</em> — Quran 94:5-6</p>
+
+<h3>On Hope and Mercy</h3>
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">قُلۡ يٰعِبَادِيَ الَّذِيۡنَ اَسۡرَفُوۡا عَلٰٓى اَنۡفُسِهِمۡ لَا تَقۡنَطُوۡا مِنۡ رَّحۡمَةِ اللّٰهِ</div>
+<p><em>"Say: O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins."</em> — Quran 39:53</p>
+
+<h3>On Gratitude (Shukr)</h3>
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">لَئِنۡ شَكَرۡتُمۡ لَاَزِيۡدَنَّكُمۡ</div>
+<p><em>"If you are grateful, I will surely increase you [in favour]."</em> — Quran 14:7</p>
+
+<h2>Islamic Quotes from Hadith — Prophet Muhammad ﷺ</h2>
+
+<div class="highlight-box">
+  <strong>"The strong person is not the one who wrestles others down. The truly strong person is the one who controls himself when he is angry."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Sahih Bukhari 6114, Sahih Muslim 2609</span>
+</div>
+
+<div class="highlight-box">
+  <strong>"None of you truly believes until he loves for his brother what he loves for himself."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Sahih Bukhari 13, Sahih Muslim 45</span>
+</div>
+
+<div class="highlight-box">
+  <strong>"The best of people are those who are most beneficial to people."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Al-Mu'jam Al-Awsat, graded Hasan by Al-Albani</span>
+</div>
+
+<div class="highlight-box">
+  <strong>"Make things easy, do not make things difficult. Give good news and do not chase people away."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Sahih Bukhari 69</span>
+</div>
+
+<div class="highlight-box">
+  <strong>"Take advantage of five before five: your youth before your old age, your health before your sickness, your wealth before your poverty, your free time before your preoccupation, and your life before your death."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Al-Hakim (Sahih)</span>
+</div>
+
+<h2>Islamic Quotes for Children</h2>
+<ul>
+  <li>"Speak good or remain silent." — Sahih Bukhari</li>
+  <li>"Smile at your brother — it is sadaqah (charity)." — Tirmidhi (Sahih)</li>
+  <li>"Feed the hungry, visit the sick, and free the captives." — Sahih Bukhari</li>
+  <li>"The best of you is the one who learns the Quran and teaches it." — Sahih Bukhari</li>
+  <li>"A kind word is a form of charity." — Sahih Bukhari and Muslim</li>
+</ul>
+
+<h2>Islamic Quotes on Knowledge</h2>
+<div class="arabic" style="font-size:1.3rem;text-align:center;padding:16px;margin:12px 0;">اِقۡرَاۡ بِاسۡمِ رَبِّكَ الَّذِیۡ خَلَقَ</div>
+<p><em>"Read in the name of your Lord who created."</em> — Quran 96:1 (First revelation to the Prophet ﷺ)</p>
+
+<div class="highlight-box">
+  <strong>"Seeking knowledge is an obligation upon every Muslim."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Ibn Majah (Sahih by Al-Albani)</span>
+</div>
+
+<div class="highlight-box">
+  <strong>"Whoever follows a path in pursuit of knowledge, Allah will make easy for him a path to Paradise."</strong>
+  <br/><span style="font-size:.82rem;color:var(--muted)">— Sahih Muslim 2699</span>
+</div>
+
+<h2>Islamic Quotes on Family</h2>
+<p>The Prophet ﷺ said: <em>"The best of you is the one who is best to his family."</em> — Tirmidhi (Sahih)</p>
+<p>The Prophet ﷺ said: <em>"Paradise lies at the feet of your mother."</em> — Ahmad, Nasai (Sahih)</p>
+<p>Allah says in the Quran (17:23): <em>"Your Lord has decreed that you worship none but Him, and that you be kind to your parents."</em></p>
+
+<h2>Short Islamic Quotes for Sharing</h2>
+<ul>
+  <li>"Alhamdulillah for everything." — Inspired by Quran 1:2</li>
+  <li>"Tawakkul: trust Allah's plan."</li>
+  <li>"Sabr is not waiting. It is trusting Allah's timing."</li>
+  <li>"Your heart will be at peace when it is connected to Allah."</li>
+  <li>"Make dua. It is the weapon of the believer."</li>
+  <li>"The Quran is a cure for what is in the hearts." — Quran 10:57</li>
+  <li>"Pray before you are prayed upon."</li>
+  <li>"Be like the date palm — beneficial no matter what."</li>
+</ul>
+
+<div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);text-align:center;">
+  <strong>📚 Teach your children the Quran and its wisdom</strong><br/>
+  Our certified tutors teach the Quran, its meaning, and Islamic character development. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a>
+</div>
+    `,
+  },
+
   "five-pillars-of-islam-explained": {
     style: ``,
     content: `

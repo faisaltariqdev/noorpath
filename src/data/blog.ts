@@ -7,7 +7,14 @@ export interface BlogPost {
   readTime: string;
   keywords: string[];
   excerpt: string;
+  author: string;
+  authorTitle: string;
+  authorSlug: string;
 }
+
+const AUTHOR = "Faisal Tariq";
+const AUTHOR_TITLE = "Islamic Education Specialist & Quran Learning Expert";
+const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
@@ -19,6 +26,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min",
     keywords: ["99 names of allah","asmaul husna","names of allah","allah names meaning"],
     excerpt: "Discover the 99 Beautiful Names of Allah — their Arabic text, English meanings, benefits, and proven techniques to help your children memorize them.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "alhamdulillah-meaning-in-english",
@@ -29,6 +37,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min",
     keywords: ["alhamdulillah meaning","alhamdulillah in english","meaning of alhamdulillah"],
     excerpt: "Alhamdulillah (الحمد لله) translates to 'All praise is due to Allah' — one of the most powerful phrases in Islam. Learn its deep meaning and benefits.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "astaghfirullah-meaning",
@@ -39,6 +48,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min",
     keywords: ["astaghfirullah meaning","astaghfirullah","seeking forgiveness in islam"],
     excerpt: "Astaghfirullah (أستغفر الله) means 'I seek forgiveness from Allah'. Discover when, how many times, and why this powerful dhikr should be part of your daily life.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "ayatul-kursi-arabic-english-benefits",
@@ -49,16 +59,18 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min",
     keywords: ["ayatul kursi","ayatul kursi benefits","ayatul kursi english translation","ayat al kursi"],
     excerpt: "Ayatul Kursi (Verse 2:255) is the greatest verse in the Quran. Get the full Arabic text, perfect English translation, and discover its amazing spiritual benefits.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "benefits-of-online-quran-classes",
-    title: "15 Benefits of Online Quran Classes for Kids & Adults (2025)",
+    title: "15 Benefits of Online Quran Classes for Kids & Adults (2026)",
     description: "Discover why online Quran classes are better than local classes — flexibility, certified tutors, 1-on-1 attention, and more benefits explained.",
     category: "Online Learning",
     date: "2025-08-15",
     readTime: "9 min",
     keywords: ["benefits of online quran classes","online quran learning benefits","why learn quran online"],
     excerpt: "Online Quran classes offer flexibility, certified 1-on-1 tutors, no travel, and personalised pacing. Here are 15 compelling reasons thousands of families are switching online.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "best-age-to-start-quran-learning",
@@ -69,6 +81,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min",
     keywords: ["best age to start quran","when to start quran learning","quran for kids age"],
     excerpt: "Most Islamic scholars recommend starting Quran learning between ages 4-7. But the right age depends on your child's readiness. Here's the complete expert guide.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "dua-e-qunoot-arabic-english",
@@ -79,6 +92,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min",
     keywords: ["dua e qunoot","qunoot dua arabic","dua qunoot english","witr dua"],
     excerpt: "Dua e Qunoot is a powerful supplication recited in Witr prayer. Get the complete Arabic text, English meaning, and learn exactly when and how to recite it.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "duas-for-kids-to-memorize",
@@ -89,6 +103,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min",
     keywords: ["duas for kids","daily duas for children","duas children should know","islamic duas for kids"],
     excerpt: "Help your child build a strong Islamic foundation with these 20 essential daily duas — from waking up to sleeping, eating to studying. Arabic + English included.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "how-to-memorize-quran-faster",
@@ -99,6 +114,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "11 min",
     keywords: ["how to memorize quran","quran memorization tips","hifz tips","memorize quran faster"],
     excerpt: "Discover 12 science-backed and Islamic techniques used by Huffaz worldwide to memorize Quran faster — including the best daily schedule, revision methods, and mindset tips.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "how-to-pray-salah-step-by-step",
@@ -109,6 +125,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "14 min",
     keywords: ["how to pray salah","how to pray in islam","salah steps","islamic prayer guide","namaz steps"],
     excerpt: "Learn exactly how to pray Salah step by step — from Wudu to Salam. Complete guide with Arabic text, transliteration, English meaning, and illustrations for each position.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "how-to-teach-quran-to-kids",
@@ -119,6 +136,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min",
     keywords: ["how to teach quran to kids","teaching quran children","quran for kids at home"],
     excerpt: "Teaching Quran to your children is one of the greatest gifts you can give them. Here are expert-tested methods, routines, and reward systems that make it fun and effective.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "islamic-baby-names-2026",
@@ -129,6 +147,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "15 min",
     keywords: ["islamic baby names","muslim baby names","arabic baby names","islamic names 2026"],
     excerpt: "Choosing the right name for your baby is a sacred trust. Discover 200+ beautiful Islamic baby names for 2026 — with Arabic meanings, origins, and pronunciation.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "islamic-dream-interpretation",
@@ -139,6 +158,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min",
     keywords: ["islamic dream interpretation","dream meaning in islam","tabeer ul ruya","ibn sirin dreams"],
     excerpt: "Islam teaches that true dreams (Ru'ya Sadiqa) are a form of divine communication. Learn the Islamic framework for dream interpretation based on Quran and Hadith.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "mashallah-meaning",
@@ -149,6 +169,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min",
     keywords: ["mashallah meaning","mashallah in english","what does mashallah mean"],
     excerpt: "Mashallah (ما شاء الله) means 'What Allah has willed' — an expression of admiration and gratitude. Learn when to say it, why it protects from evil eye, and its deep meaning.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "noorani-qaida-complete-guide",
@@ -159,6 +180,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "11 min",
     keywords: ["noorani qaida","learn noorani qaida","noorani qaida online","arabic for beginners quran"],
     excerpt: "Noorani Qaida is the most effective method for beginners to learn Arabic pronunciation and start reading the Quran. Here's your complete guide to learning it online.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "signs-of-qiyamah",
@@ -169,6 +191,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "13 min",
     keywords: ["signs of qiyamah","day of judgment signs","minor signs of qiyamah","major signs of qiyamah"],
     excerpt: "The Prophet ﷺ described many signs before the Day of Judgment. Learn the minor and major signs of Qiyamah from authentic Hadith and what they mean for Muslims today.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "surah-yaseen-arabic-english",
@@ -179,6 +202,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "20 min",
     keywords: ["surah yaseen","surah yasin arabic","surah yaseen english translation","surah yaseen benefits"],
     excerpt: "Surah Yaseen is the heart of the Quran. Get the full Arabic text, clear English translation, and learn the profound spiritual benefits of making it your daily recitation.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "tajweed-rules-complete-guide",
@@ -189,6 +213,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "16 min",
     keywords: ["tajweed rules","tajweed for beginners","learn tajweed","quran recitation rules"],
     excerpt: "Tajweed is the science of correct Quran recitation. This comprehensive guide covers all major rules — from Noon Sakinah to Madd — with clear Arabic examples and exercises.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "five-pillars-of-islam-explained",
@@ -199,6 +224,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "15 min",
     keywords: ["five pillars of islam","pillars of islam","what are the five pillars of islam","arkan al islam","islamic pillars explained"],
     excerpt: "The Five Pillars of Islam are the foundation of a Muslim's life. This comprehensive guide explains Shahada, Salah, Zakat, Sawm, and Hajj with Quranic proof and practical tips.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "surah-al-fatiha-arabic-english",
@@ -209,6 +235,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min",
     keywords: ["surah al fatiha","surah fatiha","al fatiha english","surah fatiha translation","surah fatiha benefits","opening surah"],
     excerpt: "Surah Al-Fatiha (The Opening) is recited 17 times daily in every Muslim's prayer. Discover its full Arabic text, word-by-word English translation, and profound tafsir.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "best-online-quran-academy-guide",
@@ -219,6 +246,40 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min",
     keywords: ["best online quran academy","online quran academy","quran learning online","top quran academy online","choose quran academy"],
     excerpt: "With hundreds of online Quran academies, how do you choose the right one? We reveal the 7 must-have qualities — and why 12,000+ families chose NoorPath Academy.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "surah-al-kahf-arabic-english-friday",
+    title: "Surah Al-Kahf — Arabic Text, English Translation & Why Read on Friday",
+    description: "Complete Surah Al-Kahf guide: full Arabic text, English translation, word-by-word meaning, and the powerful Hadith about reading it every Friday.",
+    category: "Quran",
+    date: "2026-06-01",
+    readTime: "18 min",
+    keywords: ["surah al kahf","surah kahf arabic","surah kahf english","surah kahf friday","surah kahf benefits","read surah kahf on friday"],
+    excerpt: "Surah Al-Kahf is the most recommended surah to recite on Fridays. The Prophet ﷺ said: 'Whoever reads Surah Al-Kahf on Friday, a light will shine for him between two Fridays.' Full Arabic + English inside.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-do-wudu-step-by-step",
+    title: "How to Do Wudu Step by Step — Complete Islamic Guide with Duas",
+    description: "Learn how to perform Wudu (ablution) correctly in Islam — step-by-step guide with Arabic duas, common mistakes, and Fiqh rulings for beginners.",
+    category: "Prayer & Worship",
+    date: "2026-06-08",
+    readTime: "10 min",
+    keywords: ["how to do wudu","wudu steps","wudu in islam","ablution in islam","wudu step by step","making wudu","wudu dua"],
+    excerpt: "Wudu (ablution) is required before every Salah. Learn exactly how to perform Wudu step by step with the correct Arabic duas, common mistakes to avoid, and Fiqh rulings.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "islamic-quotes-in-english-arabic",
+    title: "150+ Best Islamic Quotes in English & Arabic — Quran & Hadith",
+    description: "The most inspiring Islamic quotes from the Quran and Hadith — in English and Arabic — for motivation, hope, gratitude, patience, and daily reflection.",
+    category: "Islamic Knowledge",
+    date: "2026-06-15",
+    readTime: "14 min",
+    keywords: ["islamic quotes","islamic quotes in english","quran quotes","hadith quotes","muslim quotes","inspirational islamic quotes","arabic quotes"],
+    excerpt: "Discover 150+ beautiful Islamic quotes from the Quran and Hadith — in English and Arabic. Perfect for daily reflection, sharing, and teaching your children about Islam.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
 ];
 

@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/online-quran-classes", label: "Online Quran Classes" },
+  { href: "/online-quran-classes", label: "Online Classes" },
   { href: "/courses", label: "Courses" },
-  { href: "/locations", label: "Locations" },
+  { href: "/our-tutors", label: "Our Tutors" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/about", label: "About Us" },
-  { href: "/founder", label: "Founder" },
   { href: "/blog", label: "Blog" },
+  { href: "/islamic-resources", label: "Resources" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Navbar() {

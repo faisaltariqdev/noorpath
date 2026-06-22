@@ -731,6 +731,19 @@ footer {
 .faq-card:hover::before { opacity: 1; }
 
 /* ══════════════════════════════════════════════════════════════
+   RESOURCE CARD (Islamic Resources page)
+══════════════════════════════════════════════════════════════ */
+.resource-card {
+  transition: all .25s ease;
+  cursor: pointer;
+}
+.resource-card:hover {
+  border-color: var(--emerald) !important;
+  box-shadow: 0 8px 24px rgba(10,110,79,.12);
+  transform: translateY(-4px);
+}
+
+/* ══════════════════════════════════════════════════════════════
    COURSE CARDS
 ══════════════════════════════════════════════════════════════ */
 .course-card {

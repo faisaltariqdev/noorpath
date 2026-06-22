@@ -14,8 +14,10 @@ const courses = [
 const company = [
   { href: "/about", label: "About Us" },
   { href: "/founder", label: "Founder & CEO" },
+  { href: "/our-tutors", label: "Our Tutors" },
   { href: "/locations", label: "All Locations" },
   { href: "/blog", label: "Blog & Articles" },
+  { href: "/islamic-resources", label: "Free Resources" },
   { href: "/pricing", label: "Pricing" },
   { href: "/online-quran-classes#cta", label: "Free Trial" },
 ];

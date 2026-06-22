@@ -28,6 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/about`,                                    priority: 0.75, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
+    { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: NOW },
+    { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: NOW },
     // ── Legal ───────────────────────────────────────────────────────────────────
     { url: `${BASE}/privacy-policy`,                           priority: 0.3,  changeFrequency: "yearly",  lastModified: LAUNCH },
     { url: `${BASE}/terms-of-service`,                         priority: 0.3,  changeFrequency: "yearly",  lastModified: LAUNCH },

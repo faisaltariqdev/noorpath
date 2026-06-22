@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    authors: [{ name: post.author, url: `https://www.noorpath.online/${post.authorSlug}` }],
     alternates: { canonical: `https://www.noorpath.online/blog/${post.slug}` },
     openGraph: {
       title: post.title,
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.date,
-      authors: ["NoorPath Academy"],
+      authors: [post.author],
       siteName: "NoorPath Academy",
       images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: post.title }],
     },
@@ -65,7 +66,13 @@ export default async function BlogPostPage({ params }: Props) {
         datePublished: post.date,
         dateModified: post.date,
         image: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg", width: 1200, height: 630 },
-        author: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+        author: {
+          "@type": "Person",
+          name: post.author,
+          jobTitle: post.authorTitle,
+          url: `https://www.noorpath.online/${post.authorSlug}`,
+          worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+        },
         publisher: {
           "@type": "Organization",
           name: "NoorPath Academy",
@@ -115,15 +122,27 @@ export default async function BlogPostPage({ params }: Props) {
           <span className="blog-tag" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)" }}>
             {post.category}
           </span>
-          <h1 style={{ marginTop: 12 }}>{post.title}</h1>
-          <div style={{ display: "flex", gap: 16, color: "rgba(255,255,255,.6)", fontSize: ".83rem", marginTop: 12 }}>
-            <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
-              <BookOpen size={14} />{" "}
-              {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-            </span>
-            <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
-              <Clock size={14} /> {post.readTime} read
-            </span>
+          <h1 style={{ marginTop: 12, maxWidth: 820 }}>{post.title}</h1>
+          {/* Author + date + read time row */}
+          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 16, marginTop: 18, paddingTop: 18, borderTop: "1px solid rgba(255,255,255,.1)" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: ".9rem", flexShrink: 0 }}>
+                FT
+              </div>
+              <div>
+                <div style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem" }}>{post.author}</div>
+                <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".75rem" }}>{post.authorTitle}</div>
+              </div>
+            </div>
+            <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,.55)", fontSize: ".82rem", marginLeft: "auto" }}>
+              <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                <BookOpen size={13} />{" "}
+                {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                <Clock size={13} /> {post.readTime} read
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -160,8 +179,20 @@ export default async function BlogPostPage({ params }: Props) {
                   </>
                 )}
 
+                {/* Author bio box */}
+                <div style={{ display: "flex", gap: 16, alignItems: "flex-start", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 24, marginTop: 40 }}>
+                  <div style={{ width: 54, height: 54, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: "1.1rem", flexShrink: 0 }}>FT</div>
+                  <div>
+                    <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".97rem", marginBottom: 2 }}>{post.author}</div>
+                    <div style={{ color: "var(--emerald)", fontSize: ".78rem", fontWeight: 600, marginBottom: 8 }}>{post.authorTitle}</div>
+                    <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.7, margin: 0 }}>
+                      Faisal Tariq is the founder of NoorPath Academy with over 8 years of experience in online Quran education. He has helped 12,000+ students worldwide learn Quran, Tajweed, and Islamic studies through certified, personalised tutoring.
+                    </p>
+                  </div>
+                </div>
+
                 {/* CTA box at bottom of article */}
-                <div style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 16, padding: 28, textAlign: "center", marginTop: 40 }}>
+                <div style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 16, padding: 28, textAlign: "center", marginTop: 24 }}>
                   <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.3rem", marginBottom: 12 }}>
                     Want to Learn More with a Certified Tutor?
                   </h3>

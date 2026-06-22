@@ -184,24 +184,29 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 20 }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 28 }}>
                 {[
                   [<Sprout size={13} key="s" />, "Beginner to Advanced"],
                   [<Baby size={13} key="b" />, "All Ages Welcome"],
                   [<Smile size={13} key="h" />, "Daily Duas for Kids"],
                   [<Star size={13} key="st" />, "All-in-One Kids"],
-                  [<Users size={13} key="u" />, "Parents & Siblings"],
+                  [<Users size={13} key="u" />, "Family Plans"],
                 ].map(([icon, label]) => (
-                  <span key={String(label)} style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "5px 12px", color: "#fff", fontSize: ".78rem", fontWeight: 500 }}>
+                  <span key={String(label)} style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "6px 14px", color: "#fff", fontSize: ".79rem", fontWeight: 500 }}>
                     {icon} {label}
                   </span>
                 ))}
               </div>
 
               {/* Urgency/Scarcity badge — psychological trigger */}
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.15)", border: "1px solid rgba(239,68,68,.3)", borderRadius: 50, padding: "6px 16px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600, marginBottom: 16 }}>
-                <span style={{ width: 7, height: 7, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite" }} />
-                Only <strong style={{ color: "#fff" }}>7 free trial slots</strong> left this week
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 22 }}>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.18)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "7px 18px", fontSize: ".79rem", color: "#fca5a5", fontWeight: 600 }}>
+                  <span style={{ width: 8, height: 8, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite", flexShrink: 0 }} />
+                  Only <strong style={{ color: "#fff", marginLeft: 4 }}>7 spots left</strong>&nbsp;this week
+                </div>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500 }}>
+                  ✓ No credit card
+                </div>
               </div>
 
               <h1 style={{ color: "#fff", fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 700, lineHeight: 1.12, marginBottom: 18 }}>

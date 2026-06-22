@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     "online quran usa","online quran canada","online quran australia",
     "female quran tutor","family quran classes",
   ],
-  authors: [{ name: "NoorPath Academy", url: "https://www.noorpath.online" }],
+  authors: [{ name: "Faisal Tariq", url: "https://www.noorpath.online/founder" }],
   creator: "NoorPath Academy",
   publisher: "NoorPath Academy",
   robots: {
@@ -92,10 +92,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/og-image.svg" />
-        {/* DNS prefetch for WhatsApp and form submission */}
+        <link rel="apple-touch-icon" href="/og-image.svg" sizes="any" />
+        <meta name="theme-color" content="#0a6e4f" />
+        <meta name="msapplication-TileColor" content="#0a6e4f" />
+        {/* Preconnect for faster Google Fonts DNS resolution */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* DNS prefetch */}
         <link rel="dns-prefetch" href="//wa.me" />
         <link rel="dns-prefetch" href="//formsubmit.co" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       </head>
       <body>
         <Navbar />
