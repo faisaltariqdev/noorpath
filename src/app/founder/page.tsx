@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-  description: "Learn about Faisal Tariq, Founder & CEO of NoorPath Academy — software engineer and Islamic education entrepreneur building accessible online Quran learning for families worldwide.",
+  description: "Meet Faisal Tariq, Founder and CEO of NoorPath Academy, building accessible online Quran learning for Muslim families worldwide.",
   alternates: { canonical: "https://www.noorpath.online/founder" },
   openGraph: {
     title: "Faisal Tariq — Founder & CEO of NoorPath Academy",

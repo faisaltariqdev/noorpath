@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://www.noorpath.online/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
-      modifiedTime: post.date,
+      modifiedTime: post.updatedAt ?? post.date,
       authors: [post.author],
       siteName: "NoorPath Academy",
       images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: post.title }],
@@ -64,7 +64,7 @@ export default async function BlogPostPage({ params }: Props) {
         headline: post.title,
         description: post.description,
         datePublished: post.date,
-        dateModified: post.date,
+        dateModified: post.updatedAt ?? post.date,
         image: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg", width: 1200, height: 630 },
         author: {
           "@type": "Person",

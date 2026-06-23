@@ -5,7 +5,7 @@ import { CheckCircle, Clock, BookOpen, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes for Adults — Learn Quran at Any Age",
-  description: "Start or continue your Quran journey as an adult. NoorPath Academy offers private online Quran classes for adults — complete beginners to advanced Tajweed and Hifz. Free trial.",
+  description: "Private online Quran classes for adults: beginners, Tajweed, Hifz and Quran reading with certified tutors. Flexible schedule, free trial.",
   keywords: [
     "online quran classes for adults","quran for adults online","learn quran as an adult",
     "adult quran classes","quran classes beginners adults","tajweed for adults online",

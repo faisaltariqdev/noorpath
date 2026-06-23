@@ -5,7 +5,7 @@ import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp } from "lucide
 
 export const metadata: Metadata = {
   title: "About NoorPath Academy — Online Quran Education for Families",
-  description: "Learn about NoorPath Academy — our mission, team of certified tutors, and commitment to making quality Quran education accessible to every Muslim family worldwide.",
+  description: "Learn about NoorPath Academy, our certified Quran tutors, founder-led mission, and online Quran education for Muslim families worldwide.",
   alternates: { canonical: "https://www.noorpath.online/about" },
   openGraph: {
     title: "About NoorPath Academy — Online Quran Education for Families",

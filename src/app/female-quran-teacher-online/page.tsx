@@ -5,7 +5,7 @@ import { CheckCircle, Shield, Award, Users } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Female Quran Teacher Online — Certified Hafiza Tutors for Sisters & Kids",
-  description: "Find a certified female Quran teacher online. NoorPath Academy has Hafiza tutors for sisters, daughters, and female learners worldwide. 1-on-1 live classes via Zoom. Free trial.",
+  description: "Find a certified female Quran teacher online for sisters, daughters and kids. Hafiza tutors, safe 1-on-1 Zoom classes and free trial.",
   keywords: [
     "female quran teacher online","female quran tutor","online quran teacher for sisters",
     "hafiza tutor online","female quran classes","quran classes for girls","online quran for women",

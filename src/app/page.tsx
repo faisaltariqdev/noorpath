@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
   description:
-    "NoorPath Academy — online Quran academy for families worldwide. Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies & daily duas for kids. Certified tutors. Family plans. Free 30-min trial.",
+    "Join 12,000+ families at NoorPath Academy. Certified 1-on-1 online Quran classes — Tajweed, Hifz, Noorani Qaida & Arabic. Free 30-min trial, no credit card.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
@@ -79,7 +79,7 @@ const jsonLd = {
       email: "info@noorpath.online",
       telephone: "+923124877906",
       foundingDate: "2018",
-      description: "NoorPath Academy is a premium online Quran academy offering certified 1-on-1 live classes for kids, adults, and families worldwide. Courses include Noorani Qaida, Tajweed, Hifz, Arabic language, and Islamic studies.",
+      description: "NoorPath Academy offers certified 1-on-1 online Quran classes for kids, adults and families worldwide: Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
       address: { "@type": "PostalAddress", addressCountry: "PK" },
       areaServed: "Worldwide",
       priceRange: "$$",

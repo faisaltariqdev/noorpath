@@ -4,7 +4,7 @@ import { Award, Star, Globe, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Certified Quran Tutors — Ijazah & Al-Azhar Qualified | NoorPath Academy",
-  description: "Meet NoorPath Academy's certified Quran tutors — all holding Ijazah certification or Al-Azhar University qualifications. Male and female tutors available for all ages.",
+  description: "Meet NoorPath Academy's certified Quran tutors: Ijazah and Al-Azhar qualified male and female teachers for kids, adults and families.",
   alternates: { canonical: "https://www.noorpath.online/our-tutors" },
   openGraph: {
     title: "Certified Quran Tutors — Ijazah & Al-Azhar Qualified | NoorPath Academy",

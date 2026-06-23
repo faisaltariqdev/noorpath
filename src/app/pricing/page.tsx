@@ -5,7 +5,7 @@ import CTAForm from "@/components/CTAForm";
 
 export const metadata: Metadata = {
   title: "Online Quran Class Pricing — Affordable Plans for Families",
-  description: "Transparent, affordable online Quran class pricing. Plans for individual learners, families with siblings, and intensive Hifz programs. Free trial class included.",
+  description: "Affordable online Quran class pricing from $29/month. Starter, Standard and Intensive family plans with certified tutors and free trial.",
   alternates: { canonical: "https://www.noorpath.online/pricing" },
   openGraph: {
     title: "Online Quran Class Pricing — Affordable Family Plans | NoorPath Academy",
@@ -88,9 +88,54 @@ const faqs = [
   { q: "Are female tutors available?", a: "Yes, we have certified female tutors (Hafiza) available for female students and young girls at all plan levels." },
 ];
 
+const pricingJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.noorpath.online/pricing#service",
+      name: "Online Quran Class Pricing",
+      description: "Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with a free trial class.",
+      provider: {
+        "@type": "EducationalOrganization",
+        name: "NoorPath Academy",
+        url: "https://www.noorpath.online",
+      },
+      serviceType: "Online Quran Education",
+      areaServed: "Worldwide",
+      offers: plans.map((plan) => ({
+        "@type": "Offer",
+        name: `${plan.name} Plan`,
+        price: plan.price.replace("$", ""),
+        priceCurrency: "USD",
+        description: `${plan.sessionsPerWeek}. ${plan.desc}`,
+        availability: "https://schema.org/InStock",
+        url: "https://www.noorpath.online/pricing",
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: { "@type": "Answer", text: faq.a },
+      })),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+        { "@type": "ListItem", position: 2, name: "Pricing", item: "https://www.noorpath.online/pricing" },
+      ],
+    },
+  ],
+};
+
 export default function PricingPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingJsonLd) }} />
+
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>

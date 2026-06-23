@@ -5,7 +5,7 @@ import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-re
 
 export const metadata: Metadata = {
   title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
-  description: "Online Quran classes for kids and adults — live 1-on-1 sessions via Zoom with certified tutors. Noorani Qaida, Tajweed, Hifz, Arabic. Family plans. Free 30-min trial.",
+  description: "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic. Certified tutors, family plans, free trial.",
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes" },
   openGraph: {
     title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",

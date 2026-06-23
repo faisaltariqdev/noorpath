@@ -4,7 +4,7 @@ import { CheckCircle, Gift, Star, Users, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Free Quran Classes Online — Trial for Kids & Adults | NoorPath Academy",
-  description: "Get a FREE online Quran class — no credit card, no commitment. 30-minute live trial with a certified Quran teacher. Available for kids, adults, and families worldwide.",
+  description: "Book a free online Quran class with a certified teacher. 30-minute live 1-on-1 trial for kids, adults and families. No credit card.",
   keywords: ["free quran classes online", "free quran lessons online", "free online quran class", "free quran trial", "free quran learning", "free quran class for kids", "free quran course", "free islamic classes online", "free quran teacher online", "free quran education"],
   alternates: { canonical: "https://www.noorpath.online/free-quran-classes-online" },
   openGraph: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Free Islamic Resources — Quran PDFs, Duas, Hadith & Learning Materials | NoorPath",
-  description: "Free Islamic educational resources: Quran learning guides, printable duas, Tajweed charts, Islamic studies materials, and learning tools for Muslim families worldwide.",
+  description: "Free Islamic resources for families: Quran learning guides, duas, Tajweed charts, Islamic studies materials and helpful learning tools.",
   alternates: { canonical: "https://www.noorpath.online/islamic-resources" },
   openGraph: {
     title: "Free Islamic Resources — Quran, Duas & Learning Materials | NoorPath Academy",

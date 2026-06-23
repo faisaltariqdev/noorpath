@@ -42,6 +42,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <p>The Prophet Muhammad ﷺ said: <strong>"Allah has ninety-nine names, one hundred less one. Whoever memorizes them will enter Paradise."</strong> (Bukhari & Muslim)</p>
 
+          <div class="highlight-box">
+            <strong>Quick answer for searchers:</strong> The 99 Names of Allah are called <strong>Asmaul Husna</strong>, meaning "The Most Beautiful Names." They describe Allah's perfect attributes, including His mercy, knowledge, power, forgiveness, protection, and guidance. Below you will find the complete <strong>99 Names of Allah with Arabic text, transliteration, English meaning, benefits, and memorization tips</strong>.
+          </div>
+
           <!-- Quick Reference Table -->
           <div style="background:var(--ivory);border:1px solid var(--border);border-radius:14px;padding:24px;margin:28px 0;">
             <h2 style="font-size:1.2rem;margin:0 0 16px;color:var(--charcoal);">Quick Reference: 10 Most Important Names of Allah</h2>
@@ -1378,6 +1382,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     }`,
     content: `<p><strong>Astaghfirullah</strong> (أستغفر الله) — "I seek forgiveness from Allah" — is one of the most powerful and important phrases in Islam. The Prophet Muhammad ﷺ, despite being the most beloved creation of Allah and free of major sin, would say it a <strong>minimum of 70–100 times every single day</strong>. This tells us everything about how important istighfar (seeking forgiveness) should be in our lives.</p>
 
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>Astaghfirullah meaning in English</strong> is "I seek forgiveness from Allah." In Arabic it is written <strong>أَسْتَغْفِرُ اللَّهَ</strong>. Muslims say Astaghfirullah after mistakes, after every Salah, during stress, and as daily dhikr to ask Allah to forgive, cover, and remove sins.
+          </div>
+
           <div class="word-hero">
             <div class="word-arabic-hero">أَسْتَغْفِرُ اللَّهَ</div>
             <div class="word-roman-hero">Astaghfiru-llāh</div>
@@ -1633,6 +1641,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
       .info-item { flex: 1 1 50%; border-bottom: 1px solid var(--border); }
     }`,
     content: `<p><strong>Ayatul Kursi</strong> (آية الكرسي) — the <em>"Verse of the Throne"</em> — is verse 255 of Surah Al-Baqarah, the 2nd chapter of the Holy Quran. It is universally regarded by Islamic scholars as <strong>the greatest, most powerful verse in the entire Quran</strong>.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>Ayatul Kursi meaning</strong> is "The Verse of the Throne." It is Quran 2:255 and describes Allah's absolute oneness, life, knowledge, authority, and power over the heavens and the earth. Muslims recite Ayatul Kursi after Salah, before sleep, and for protection because authentic hadith mention its great virtues.
+          </div>
 
           <p>The Prophet Muhammad ﷺ asked his companion Abu Dharr (رضي الله عنه): <em>"Do you know which verse of Allah's Book is the greatest?"</em> He replied: "Allah and His Messenger know best." The Prophet ﷺ then said: <strong>"Ayatul Kursi."</strong> (Muslim)</p>
 
@@ -3898,6 +3910,9 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     .faq-a { padding:16px 20px; color:#374151; font-size:.95rem; line-height:1.7; border-top:1px solid var(--border); }
     @media (max-width:576px) { .break-grid,.compare-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
     content: `<p><strong>Mashallah</strong> (ما شاء الله) is one of the most commonly spoken phrases in the Muslim world — heard everywhere from family gatherings to social media captions. But many people use it as a habit without fully understanding its profound meaning and purpose in Islam.</p>
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>MashaAllah / Mashallah meaning in English</strong> is "What Allah has willed" or "Allah has willed it." Muslims say Mashallah when praising a blessing, a child, success, beauty, or good news while acknowledging that every blessing comes from Allah and seeking protection from the evil eye.
+          </div>
           <p>This guide explains the exact Arabic meaning of Mashallah, when to say it correctly, its Quranic origin, and why scholars recommend it as protection from the evil eye.</p>
 
           <div class="word-hero">

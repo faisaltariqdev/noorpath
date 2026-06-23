@@ -4,6 +4,7 @@ export interface BlogPost {
   description: string;
   category: string;
   date: string;
+  updatedAt?: string;
   readTime: string;
   keywords: string[];
   excerpt: string;
@@ -19,13 +20,14 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   {
     slug: "99-names-of-allah-asmaul-husna",
-    title: "99 Names of Allah (Asmaul Husna) — Meanings, Benefits & How to Memorize",
-    description: "Complete guide to the 99 Names of Allah (Asmaul Husna) with Arabic text, English meanings, transliteration, and memorization tips for children and adults.",
+    title: "99 Names of Allah with Meaning — Asmaul Husna Arabic, English & Benefits",
+    description: "Complete 99 Names of Allah with Arabic, transliteration, English meanings, benefits, duas and memorization tips for kids and adults.",
     category: "Islamic Knowledge",
     date: "2025-06-15",
-    readTime: "12 min",
-    keywords: ["99 names of allah","asmaul husna","names of allah","allah names meaning"],
-    excerpt: "Discover the 99 Beautiful Names of Allah — their Arabic text, English meanings, benefits, and proven techniques to help your children memorize them.",
+    updatedAt: "2026-06-23",
+    readTime: "14 min",
+    keywords: ["99 names of allah","99 names allah","99 names of allah with meaning","asmaul husna","asma ul husna english","names of allah","allah names meaning"],
+    excerpt: "Read the complete 99 Names of Allah with Arabic text, transliteration, English meanings, benefits, duas, and memorization tips for children and adults.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
@@ -41,23 +43,25 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "astaghfirullah-meaning",
-    title: "Astaghfirullah Meaning — Complete Guide to Seeking Forgiveness",
-    description: "Learn what Astaghfirullah means, when to say it, how many times, and its powerful spiritual benefits in Islam.",
+    title: "Astaghfirullah Meaning in English — Arabic, Benefits & When to Say It",
+    description: "Astaghfirullah means I seek forgiveness from Allah. Learn the Arabic, English meaning, benefits, when to say it, and daily istighfar routine.",
     category: "Dhikr & Duas",
     date: "2025-07-20",
-    readTime: "6 min",
-    keywords: ["astaghfirullah meaning","astaghfirullah","seeking forgiveness in islam"],
+    updatedAt: "2026-06-23",
+    readTime: "8 min",
+    keywords: ["astaghfirullah meaning","astaghfirullah meaning in english","astaghfirullah arabic","astaghfirullah benefits","astaghfirullah","istighfar meaning","seeking forgiveness in islam"],
     excerpt: "Astaghfirullah (أستغفر الله) means 'I seek forgiveness from Allah'. Discover when, how many times, and why this powerful dhikr should be part of your daily life.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "ayatul-kursi-arabic-english-benefits",
-    title: "Ayatul Kursi — Arabic Text, English Translation & Benefits",
-    description: "Complete guide to Ayatul Kursi with full Arabic text, English translation, transliteration, word-by-word meaning, and spiritual benefits.",
+    title: "Ayatul Kursi Meaning — Arabic, English Translation, Transliteration & Benefits",
+    description: "Read Ayatul Kursi in Arabic with English translation, transliteration, meaning, word-by-word explanation, benefits and when to recite it.",
     category: "Quran",
     date: "2025-08-01",
-    readTime: "8 min",
-    keywords: ["ayatul kursi","ayatul kursi benefits","ayatul kursi english translation","ayat al kursi"],
+    updatedAt: "2026-06-23",
+    readTime: "10 min",
+    keywords: ["ayatul kursi meaning","ayat al kursi meaning","ayatul kursi","ayatul kursi arabic","ayatul kursi transliteration","ayatul kursi benefits","ayatul kursi english translation","ayat al kursi"],
     excerpt: "Ayatul Kursi (Verse 2:255) is the greatest verse in the Quran. Get the full Arabic text, perfect English translation, and discover its amazing spiritual benefits.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
@@ -162,12 +166,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "mashallah-meaning",
-    title: "Mashallah Meaning — When to Say It & Why It Matters",
-    description: "What does Mashallah mean in Arabic and English? Learn the correct usage, meaning, and importance of this beautiful Islamic expression in daily life.",
+    title: "MashaAllah Meaning in English — Mashallah Arabic, Usage & Response",
+    description: "MashaAllah means what Allah has willed. Learn Mashallah Arabic, English meaning, when to say it, how to respond, and evil eye protection.",
     category: "Dhikr & Duas",
     date: "2025-12-10",
-    readTime: "5 min",
-    keywords: ["mashallah meaning","mashallah in english","what does mashallah mean"],
+    updatedAt: "2026-06-23",
+    readTime: "7 min",
+    keywords: ["mashaallah meaning","mashallah meaning","masha allah meaning","mashallah in english","what does mashallah mean","mashallah response","mashallah arabic"],
     excerpt: "Mashallah (ما شاء الله) means 'What Allah has willed' — an expression of admiration and gratitude. Learn when to say it, why it protects from evil eye, and its deep meaning.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },

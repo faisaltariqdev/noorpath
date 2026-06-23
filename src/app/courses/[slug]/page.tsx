@@ -16,14 +16,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const course = getCourse(slug);
   if (!course) return {};
+  const description = `${course.title} with certified online Quran tutors. ${course.level} program for ${course.age}. Live 1-on-1 classes, flexible schedule and free trial.`;
   return {
     title: `${course.title} — Online | NoorPath Academy`,
-    description: course.fullDesc,
+    description,
     keywords: course.keywords,
     alternates: { canonical: `https://www.noorpath.online/courses/${slug}` },
     openGraph: {
       title: `${course.title} — Online | NoorPath Academy`,
-      description: course.fullDesc,
+      description,
       url: `https://www.noorpath.online/courses/${slug}`,
       images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: course.title }],
     },

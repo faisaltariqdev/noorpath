@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     template: "%s | NoorPath Academy",
   },
   description:
-    "NoorPath Academy — #1 online Quran academy for families worldwide. Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies & daily duas for kids. Certified tutors. Family plans. Free 30-min trial.",
+    "Join NoorPath Academy for live 1-on-1 online Quran classes: Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Free 30-min trial.",
   keywords: [
     "learn quran online","online quran classes","quran tutor online",
     "online quran academy","quran classes for kids","tajweed classes online",

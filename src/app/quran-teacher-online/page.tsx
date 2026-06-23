@@ -4,7 +4,7 @@ import { CheckCircle, Star, Shield, Clock, Users, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Online Quran Teacher — Certified 1-on-1 Tutors | NoorPath Academy",
-  description: "Find a certified online Quran teacher for your child or yourself. All tutors hold Ijazah certification. 1-on-1 live classes, female teachers available. Free 30-min trial.",
+  description: "Find a certified online Quran teacher for kids or adults. Ijazah tutors, female teachers, live 1-on-1 classes and free 30-min trial.",
   keywords: ["online quran teacher", "quran teacher online", "certified quran teacher", "quran tutor online", "online quran tutor", "find quran teacher", "quran teacher for kids", "female quran teacher online", "ijazah certified quran teacher", "1 on 1 quran teacher"],
   alternates: { canonical: "https://www.noorpath.online/quran-teacher-online" },
   openGraph: {

@@ -4,7 +4,7 @@ import { CheckCircle, BookOpen, Clock, Star } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Online Quran for Beginners — Learn from Zero | NoorPath Academy",
-  description: "Start learning Quran online with zero prior knowledge. Certified teachers guide complete beginners through Arabic letters, Noorani Qaida, and Quran recitation. Free trial.",
+  description: "Learn Quran online from zero with certified teachers. Start Arabic letters, Noorani Qaida and Quran recitation step by step. Free trial.",
   keywords: ["online quran for beginners", "quran for beginners", "learn quran for beginners", "quran beginners course", "start learning quran online", "quran from scratch", "noorani qaida for beginners", "how to learn quran online", "quran learning for beginners adults", "quran basics online"],
   alternates: { canonical: "https://www.noorpath.online/online-quran-for-beginners" },
   openGraph: {
@@ -27,7 +27,7 @@ const jsonLd = {
     {
       "@type": "Course",
       name: "Online Quran for Beginners — Noorani Qaida Program",
-      description: "A complete beginner's Quran learning program starting from Arabic letters and Noorani Qaida, progressing to full Quran recitation with Tajweed. For children and adults.",
+      description: "Beginner Quran program from Arabic letters and Noorani Qaida to Quran recitation with Tajweed for children and adults.",
       provider: {
         "@type": "EducationalOrganization",
         name: "NoorPath Academy",

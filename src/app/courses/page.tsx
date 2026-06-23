@@ -5,7 +5,7 @@ import { courses } from "@/data/courses";
 
 export const metadata: Metadata = {
   title: "Online Quran & Islamic Courses — All Programs",
-  description: "Browse all NoorPath Academy courses — Noorani Qaida, Tajweed, Hifz, Arabic language, Islamic studies, daily duas for kids. Certified tutors, family plans. Free trial.",
+  description: "Browse NoorPath Academy courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies and duas for kids. Certified tutors, free trial.",
   alternates: { canonical: "https://www.noorpath.online/courses" },
   openGraph: {
     title: "Online Quran & Islamic Courses — All Programs | NoorPath Academy",
