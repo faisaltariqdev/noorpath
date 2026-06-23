@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import {
   Sprout, Baby, Smile, Star, Users, PlayCircle, MapPin,
-  Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown
+  Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown,
+  GraduationCap, Trophy, Heart, UserCheck, ClipboardList, Landmark,
+  BookOpen, Music, Brain, PenLine
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -28,12 +31,12 @@ export const metadata: Metadata = {
 };
 
 const courseCards = [
-  { icon: "📖", title: "Noorani Qaida", desc: "Start from zero — Arabic letters to full reading", level: "Beginner", href: "/courses/noorani-qaida-online" },
-  { icon: "🎵", title: "Tajweed Rules", desc: "Recite Quran beautifully with correct pronunciation", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
-  { icon: "🧠", title: "Hifz Program", desc: "Full Quran memorization with Sanad preparation", level: "Intermediate–Advanced", href: "/courses/hifz-program-online" },
-  { icon: "🌙", title: "Kids All-in-One", desc: "Qaida + Daily Duas + Hadith — everything in one", level: "Ages 4–12", href: "/courses/quran-classes-for-kids" },
-  { icon: "📝", title: "Arabic Language", desc: "Understand the Quran in its original language", level: "All levels", href: "/courses/arabic-language-online" },
-  { icon: "🕌", title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, morals & Islamic character", level: "All ages", href: "/courses/islamic-studies-online" },
+  { icon: <BookOpen size={22} />, title: "Noorani Qaida", desc: "Start from zero — Arabic letters to full reading", level: "Beginner", href: "/courses/noorani-qaida-online" },
+  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Recite Quran beautifully with correct pronunciation", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
+  { icon: <Brain size={22} />, title: "Hifz Program", desc: "Full Quran memorization with Sanad preparation", level: "Intermediate–Advanced", href: "/courses/hifz-program-online" },
+  { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida + Daily Duas + Hadith — everything in one", level: "Ages 4–12", href: "/courses/quran-classes-for-kids" },
+  { icon: <PenLine size={22} />, title: "Arabic Language", desc: "Understand the Quran in its original language", level: "All levels", href: "/courses/arabic-language-online" },
+  { icon: <Landmark size={22} />, title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, morals & Islamic character", level: "All ages", href: "/courses/islamic-studies-online" },
 ];
 
 const whyPoints = [
@@ -229,7 +232,7 @@ export default function HomePage() {
 
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 28 }}>
                 <Link href="#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "16px 34px", borderRadius: 50, textDecoration: "none", fontSize: ".96rem", boxShadow: "0 8px 28px rgba(201,146,42,.45)", letterSpacing: ".2px" }}>
-                  <PlayCircle size={18} /> 🎓 Book Free Trial Now
+                  <PlayCircle size={18} /> Book Free Trial Now
                 </Link>
                 <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "16px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
                   <MapPin size={16} /> View Courses
@@ -266,9 +269,14 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-                  {[["🧑‍🏫","1-on-1","Private Session"],["⭐","4.9/5","Tutor Rating"],["📋","Progress","Weekly Reports"],["🕌","Certified","Ijazah Tutors"]].map(([emoji, num, label]) => (
+                  {([
+                    [<UserCheck size={20} key="uc" />, "1-on-1", "Private Session"],
+                    [<Star size={20} key="st" />, "4.9/5", "Tutor Rating"],
+                    [<ClipboardList size={20} key="cl" />, "Progress", "Weekly Reports"],
+                    [<Award size={20} key="aw" />, "Certified", "Ijazah Tutors"],
+                  ] as [React.ReactNode, string, string][]).map(([icon, num, label]) => (
                     <div key={label} style={{ background: "rgba(255,255,255,.06)", borderRadius: 12, padding: 14, textAlign: "center" }}>
-                      <div style={{ fontSize: "1.3rem" }}>{emoji}</div>
+                      <div style={{ color: "var(--gold-lt)", display: "flex", justifyContent: "center", marginBottom: 6 }}>{icon}</div>
                       <div style={{ color: "#fff", fontWeight: 700, fontSize: ".95rem" }}>{num}</div>
                       <div style={{ color: "rgba(255,255,255,.55)", fontSize: ".72rem" }}>{label}</div>
                     </div>
@@ -323,14 +331,14 @@ export default function HomePage() {
       <section id="courses" style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <span className="section-eyebrow">📚 Our Programmes</span>
+            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Layers size={13} /> Our Programmes</span>
             <h2 className="section-title">Complete <em className="accent">Quran & Islamic</em> Curriculum</h2>
             <p className="section-desc center">From the Arabic alphabet to advanced scholarship — expert tutors, structured paths, measurable progress.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courseCards.map((c) => (
               <div key={c.title} className="course-card" style={{ gap: 12 }}>
-                <div style={{ fontSize: "2.2rem", lineHeight: 1 }}>{c.icon}</div>
+                <div style={{ color: "var(--emerald)", width: 44, height: 44, background: "rgba(10,110,79,.1)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center" }}>{c.icon}</div>
                 <div>
                   <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.15rem", fontWeight: 700, color: "var(--charcoal)", marginBottom: 6 }}>{c.title}</h3>
                   <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, margin: 0 }}>{c.desc}</p>
@@ -355,7 +363,7 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="section-eyebrow">✅ Why Choose Us</span>
+              <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> Why Choose Us</span>
               <h2 className="section-title">Why 12,000+ Families Choose <em className="accent">NoorPath</em></h2>
               <p className="section-desc">We combine certified Islamic scholarship with modern teaching methods, flexible scheduling, and genuine care for every student&apos;s progress.</p>
               <Link href="/online-quran-classes#cta" className="btn-primary-np">Start Free Trial →</Link>
@@ -379,7 +387,7 @@ export default function HomePage() {
       <section id="testimonials" style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <span className="section-eyebrow">⭐ Parent Reviews</span>
+            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Star size={13} /> Parent Reviews</span>
             <h2 className="section-title">What Families Say About <em className="accent">NoorPath</em></h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -409,16 +417,16 @@ export default function HomePage() {
               "🇨🇦 Ahmed M. from Canada completed Qaida",
               "🇩🇪 Maryam S. from Germany joined today",
               "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
-              "⭐ 4.9/5 — 2,400+ verified parent reviews",
-              "🎓 847 students enrolled this month",
+              "★ 4.9/5 — 2,400+ verified parent reviews",
+              "✓ 847 students enrolled this month",
               "🇺🇸 Sara J. from USA just enrolled",
               "🇬🇧 Yusuf K. from UK started free trial",
               "🇦🇺 Fatima R. from Australia enrolled",
               "🇨🇦 Ahmed M. from Canada completed Qaida",
               "🇩🇪 Maryam S. from Germany joined today",
               "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
-              "⭐ 4.9/5 — 2,400+ verified parent reviews",
-              "🎓 847 students enrolled this month",
+              "★ 4.9/5 — 2,400+ verified parent reviews",
+              "✓ 847 students enrolled this month",
             ].map((item, i) => (
               <span key={i} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", fontWeight: 500, flexShrink: 0 }}>{item}</span>
             ))}
@@ -430,15 +438,15 @@ export default function HomePage() {
       <section id="pricing" style={{ background: "var(--cream)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <span className="section-eyebrow">💰 Pricing</span>
+            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Award size={13} /> Pricing</span>
             <h2 className="section-title">Simple, <em className="accent">Transparent</em> Pricing</h2>
             <p className="section-desc center">No hidden fees. Cancel anytime. Family discount for 2+ siblings.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[
               { name: "Starter", price: "$29", period: "/month", desc: "1 class per week · Perfect for beginners", highlight: false, badge: null, features: ["1 class/week (30 min)", "Certified Ijazah tutor", "Progress reports", "Free trial included", "Cancel anytime"] },
-              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular choice", highlight: true, badge: "⭐ Most Popular", features: ["2 classes/week (30 min each)", "Priority tutor matching", "Weekly reports + parent call", "Family discount available", "Hifz track eligible"] },
-              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress", highlight: false, badge: "🔥 Best Value", features: ["4 classes/week (30 min each)", "Dedicated personal tutor", "Hifz & Ijazah track", "Monthly performance review", "Priority scheduling"] },
+              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular choice", highlight: true, badge: "★ Most Popular", features: ["2 classes/week (30 min each)", "Priority tutor matching", "Weekly reports + parent call", "Family discount available", "Hifz track eligible"] },
+              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress", highlight: false, badge: "▲ Best Value", features: ["4 classes/week (30 min each)", "Dedicated personal tutor", "Hifz & Ijazah track", "Monthly performance review", "Priority scheduling"] },
             ].map((p) => (
               <div key={p.name} className={p.highlight ? "pricing-card-highlight" : "pricing-card"}>
                 {/* Badge inside card — not absolute positioned */}
@@ -478,7 +486,7 @@ export default function HomePage() {
       <section style={{ background: "var(--charcoal)", padding: "48px 0" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="guarantee-strip">
-            <div style={{ fontSize: "3rem", flexShrink: 0 }}>🛡️</div>
+            <div style={{ flexShrink: 0, color: "var(--gold-lt)", width: 56, height: 56, background: "rgba(201,146,42,.15)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}><Shield size={28} /></div>
             <div style={{ flex: 1 }}>
               <div style={{ color: "var(--gold-lt)", fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, marginBottom: 6 }}>NoorPath 100% Satisfaction Guarantee</div>
               <p style={{ color: "rgba(255,255,255,.8)", fontSize: ".92rem", lineHeight: 1.7, margin: 0 }}>
@@ -487,19 +495,19 @@ export default function HomePage() {
             </div>
             <div style={{ flexShrink: 0 }}>
               <Link href="/online-quran-classes#cta" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "14px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap" }}>
-                🎓 Book Free Trial →
+                <GraduationCap size={16} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Book Free Trial →
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-            {[
-              ["🏆","Al-Azhar Certified","All tutors verified"],
-              ["🔒","100% Safe & Secure","Data privacy protected"],
-              ["⏰","Any Time Zone","24/7 scheduling"],
-              ["❤️","Cancel Anytime","No lock-in contracts"],
-            ].map(([icon, title, sub]) => (
+            {([
+              [<Trophy size={24} key="t" />, "Al-Azhar Certified", "All tutors verified"],
+              [<Lock size={24} key="l" />, "100% Safe & Secure", "Data privacy protected"],
+              [<Clock size={24} key="c" />, "Any Time Zone", "24/7 scheduling"],
+              [<Heart size={24} key="h" />, "Cancel Anytime", "No lock-in contracts"],
+            ] as [React.ReactNode, string, string][]).map(([icon, title, sub]) => (
               <div key={title} style={{ textAlign: "center", padding: "20px 16px", background: "rgba(255,255,255,.04)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 16 }}>
-                <div style={{ fontSize: "1.8rem", marginBottom: 8 }}>{icon}</div>
+                <div style={{ color: "var(--gold-lt)", display: "flex", justifyContent: "center", marginBottom: 10 }}>{icon}</div>
                 <div style={{ color: "#fff", fontWeight: 700, fontSize: ".9rem", marginBottom: 4 }}>{title}</div>
                 <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".78rem" }}>{sub}</div>
               </div>
@@ -512,7 +520,7 @@ export default function HomePage() {
       <section id="faq" style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <span className="section-eyebrow">❓ FAQ</span>
+            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> FAQ</span>
             <h2 className="section-title">Frequently Asked <em className="accent">Questions</em></h2>
             <p className="section-desc center">Everything you need to know before booking your first class.</p>
           </div>
@@ -551,7 +559,7 @@ export default function HomePage() {
             <div>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 12, marginBottom: 20 }}>
                 <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)", margin: 0 }}>
-                  🎓 Free Trial Class
+                  <GraduationCap size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 5 }} />Free Trial Class
                 </span>
                 {/* Scarcity trigger */}
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.2)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600 }}>
@@ -628,7 +636,7 @@ export default function HomePage() {
             </div>
             <div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 14, borderBottom: "2px solid var(--emerald)", paddingBottom: 8 }}>
-                🌍 Locations We Serve
+                <Globe size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Locations We Serve
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
@@ -651,7 +659,7 @@ export default function HomePage() {
             </div>
             <div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 14, borderBottom: "2px solid var(--emerald)", paddingBottom: 8 }}>
-                🔗 Popular Pages
+                <MapPin size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Popular Pages
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[

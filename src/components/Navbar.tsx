@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, GraduationCap } from "lucide-react";
 
 const navLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
@@ -172,7 +172,7 @@ export default function Navbar() {
                 }}
                 className="btn-nav-cta"
               >
-                🎓 Free Trial
+                <GraduationCap size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: 5 }} />Free Trial
               </Link>
             </li>
           </ul>
@@ -238,7 +238,7 @@ export default function Navbar() {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  🎓 Book Free Trial Class
+                  <GraduationCap size={15} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Book Free Trial Class
                 </Link>
               </li>
             </ul>

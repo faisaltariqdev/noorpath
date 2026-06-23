@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
-import { Award, Users, Globe, Heart } from "lucide-react";
+import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About NoorPath Academy — Online Quran Education for Families",
@@ -77,7 +78,7 @@ export default function AboutPage() {
       <section>
         <div className="max-w-[800px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <span className="section-eyebrow">🕌 Our Mission</span>
+            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Landmark size={13} /> Our Mission</span>
             <h2 className="section-title">Making Quality Quran Education <em className="accent">Accessible to Every Family</em></h2>
           </div>
 
@@ -94,14 +95,14 @@ export default function AboutPage() {
           <div className="content-card" style={{ marginBottom: 24 }}>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.15rem", color: "var(--charcoal)", marginBottom: 14 }}>Our Values</h3>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 14 }}>
-              {[
-                ["🌿", "Quality Teaching", "Every tutor is rigorously vetted — Ijazah-certified with verified backgrounds and regular performance reviews."],
-                ["👨‍👩‍👧", "Family First", "We design our scheduling, pricing, and communication to support parents — not just students."],
-                ["🌍", "Accessibility", "No family should be denied Quran education because of geography or resources. We offer fair pricing and family plans."],
-                ["📈", "Measurable Progress", "Weekly reports, milestone tracking, and open parent communication ensure every child moves forward."],
-              ].map(([icon, title, desc]) => (
+              {([
+                [<Sprout size={20} key="s" />, "Quality Teaching", "Every tutor is rigorously vetted — Ijazah-certified with verified backgrounds and regular performance reviews."],
+                [<Users size={20} key="u" />, "Family First", "We design our scheduling, pricing, and communication to support parents — not just students."],
+                [<Globe size={20} key="g" />, "Accessibility", "No family should be denied Quran education because of geography or resources. We offer fair pricing and family plans."],
+                [<TrendingUp size={20} key="t" />, "Measurable Progress", "Weekly reports, milestone tracking, and open parent communication ensure every child moves forward."],
+              ] as [React.ReactNode, string, string][]).map(([icon, title, desc]) => (
                 <li key={String(title)} style={{ display: "flex", gap: 14 }}>
-                  <span style={{ fontSize: "1.4rem", flexShrink: 0 }}>{icon}</span>
+                  <span style={{ color: "var(--emerald)", flexShrink: 0, width: 36, height: 36, background: "rgba(10,110,79,.1)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" }}>{icon}</span>
                   <div>
                     <strong style={{ color: "var(--charcoal)", display: "block", marginBottom: 4 }}>{title}</strong>
                     <span style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.6 }}>{desc}</span>
