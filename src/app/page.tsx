@@ -204,7 +204,7 @@ export default function HomePage() {
                   <span style={{ width: 8, height: 8, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite", flexShrink: 0 }} />
                   Only <strong style={{ color: "#fff", marginLeft: 4 }}>7 spots left</strong>&nbsp;this week
                 </div>
-                <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500 }}>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500, marginLeft: 16 }}>
                   ✓ No credit card
                 </div>
               </div>
