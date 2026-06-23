@@ -549,13 +549,15 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)" }}>
-                🎓 Free Trial Class
-              </span>
-              {/* Scarcity trigger */}
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.2)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600, marginBottom: 16 }}>
-                <span style={{ width: 7, height: 7, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite" }} />
-                7 spots left this week — filling fast
+              <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 12, marginBottom: 20 }}>
+                <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)", margin: 0 }}>
+                  🎓 Free Trial Class
+                </span>
+                {/* Scarcity trigger */}
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.2)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600 }}>
+                  <span style={{ width: 7, height: 7, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite" }} />
+                  7 spots left this week — filling fast
+                </div>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,4vw,2.8rem)", fontWeight: 700, color: "#fff", marginBottom: 20 }}>
                 Start Your Quran Journey<br />
