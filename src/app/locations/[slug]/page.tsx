@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Globe } from "lucide-react";
 
 interface Props {
@@ -51,7 +52,7 @@ export default async function LocationDetailPage({ params }: Props) {
         "@type": "Service",
         name: `Online Quran Classes in ${loc.country}`,
         description: `NoorPath Academy provides certified online Quran education to families in ${loc.country}. Covering ${loc.cities}.`,
-        provider: { "@type": "EducationalOrganization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+        provider: ORGANIZATION_REF,
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
         url: `https://www.noorpath.online/locations/${slug}`,

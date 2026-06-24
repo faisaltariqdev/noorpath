@@ -4,6 +4,7 @@ import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/data/blog";
 import { blogContent } from "@/data/blogContent";
 import { blogFaqs } from "@/data/blogFaqs";
+import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
 interface Props {
@@ -71,12 +72,12 @@ export default async function BlogPostPage({ params }: Props) {
           name: post.author,
           jobTitle: post.authorTitle,
           url: `https://www.noorpath.online/${post.authorSlug}`,
-          worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+          worksFor: ORGANIZATION_REF,
         },
         publisher: {
-          "@type": "Organization",
+          "@id": ORGANIZATION_ID,
           name: "NoorPath Academy",
-          logo: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.svg", width: 1200, height: 630 },
+          logo: { "@type": "ImageObject", url: "https://www.noorpath.online/favicon.svg", width: 512, height: 512 },
         },
         url: `https://www.noorpath.online/blog/${post.slug}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.noorpath.online/blog/${post.slug}` },

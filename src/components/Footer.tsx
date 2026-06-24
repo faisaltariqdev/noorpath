@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { MessageCircle, Mail, Globe } from "lucide-react";
-import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { MessageCircle, Mail, Globe, Star } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { TRUSTPILOT_URL } from "@/lib/organizationSchema";
 
 const courses = [
   { href: "/courses/tajweed-classes-online", label: "Tajweed Rules" },
@@ -116,43 +116,7 @@ export default function Footer() {
                 2018, built with a strong focus on quality teaching,
                 accessibility, and modern learning technology.
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Link
-                  href="https://www.facebook.com/noorpathacademy"
-                  className="social-btn"
-                  aria-label="NoorPath on Facebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebook size={15} />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/noorpathacademy"
-                  className="social-btn"
-                  aria-label="NoorPath on Instagram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram size={15} />
-                </Link>
-                <Link
-                  href="https://www.youtube.com/@noorpathacademy"
-                  className="social-btn"
-                  aria-label="NoorPath on YouTube"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaYoutube size={15} />
-                </Link>
-                <Link
-                  href="https://twitter.com/noorpathacademy"
-                  className="social-btn"
-                  aria-label="NoorPath on Twitter/X"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaXTwitter size={15} />
-                </Link>
+              <div className="flex gap-2 flex-wrap items-center">
                 <Link
                   href="https://wa.me/923124877906"
                   className="social-btn"
@@ -175,6 +139,29 @@ export default function Footer() {
                   aria-label="NoorPath Website"
                 >
                   <Globe size={15} />
+                </Link>
+                <Link
+                  href={TRUSTPILOT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Review NoorPath Academy on Trustpilot"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 6,
+                    background: "rgba(0,182,122,.15)",
+                    border: "1px solid rgba(0,182,122,.35)",
+                    borderRadius: 8,
+                    padding: "6px 12px",
+                    color: "#00b67a",
+                    fontSize: ".78rem",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    marginTop: 4,
+                  }}
+                >
+                  <Star size={14} fill="#00b67a" stroke="#00b67a" />
+                  Trustpilot
                 </Link>
               </div>
             </div>
@@ -224,6 +211,17 @@ export default function Footer() {
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <Globe size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <Link href="https://www.noorpath.online">www.noorpath.online</Link>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <Star size={14} style={{ flexShrink: 0, opacity: 0.7, color: "#00b67a" }} />
+                  <Link
+                    href={TRUSTPILOT_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#00b67a" }}
+                  >
+                    Review us on Trustpilot
+                  </Link>
                 </li>
               </ul>
             </div>

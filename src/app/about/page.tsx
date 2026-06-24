@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
+import { ORGANIZATION_ID } from "@/lib/organizationSchema";
 import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -26,13 +27,7 @@ const jsonLd = {
   "@type": "AboutPage",
   name: "About NoorPath Academy",
   url: "https://www.noorpath.online/about",
-  mainEntity: {
-    "@type": "EducationalOrganization",
-    name: "NoorPath Academy",
-    foundingDate: "2018",
-    description: "NoorPath Academy is a premier online Quran academy offering 1-on-1 live classes for kids, adults, and families worldwide.",
-    numberOfEmployees: { "@type": "QuantitativeValue", value: "250" },
-  },
+  mainEntity: { "@id": ORGANIZATION_ID },
 };
 
 const stats = [

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, BookOpen, Clock, Star } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -28,11 +29,7 @@ const jsonLd = {
       "@type": "Course",
       name: "Online Quran for Beginners — Noorani Qaida Program",
       description: "Beginner Quran program from Arabic letters and Noorani Qaida to Quran recitation with Tajweed for children and adults.",
-      provider: {
-        "@type": "EducationalOrganization",
-        name: "NoorPath Academy",
-        url: "https://www.noorpath.online",
-      },
+      provider: ORGANIZATION_REF,
       courseMode: "online",
       educationalLevel: "Beginner",
       teaches: "Arabic alphabet, Noorani Qaida, Quran recitation, basic Tajweed",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { courses, getCourse } from "@/data/courses";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
 
 interface Props {
@@ -52,7 +53,7 @@ export default async function CourseDetailPage({ params }: Props) {
         name: course.title,
         description: course.fullDesc,
         url: `https://www.noorpath.online/courses/${slug}`,
-        provider: { "@type": "Organization", name: "NoorPath Academy", sameAs: "https://www.noorpath.online" },
+        provider: ORGANIZATION_REF,
         educationalLevel: course.level,
         typicalAgeRange: course.age,
         courseMode: "online",

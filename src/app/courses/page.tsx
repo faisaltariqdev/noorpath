@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 import { courses } from "@/data/courses";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
 export const metadata: Metadata = {
   title: "Online Quran & Islamic Courses — All Programs",
@@ -39,7 +40,7 @@ const coursesJsonLd = {
           name: c.title,
           description: c.desc,
           url: `https://www.noorpath.online/courses/${c.slug}`,
-          provider: { "@type": "Organization", name: "NoorPath Academy", sameAs: "https://www.noorpath.online" },
+          provider: ORGANIZATION_REF,
           educationalLevel: c.level,
           typicalAgeRange: c.age,
           courseMode: "online",

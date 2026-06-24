@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { locations } from "@/data/locations";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
@@ -28,7 +29,7 @@ const locationsJsonLd = {
       "@type": "Service",
       name: "Online Quran Classes — Worldwide",
       description: "NoorPath Academy provides online Quran education to families in 40+ countries. All timezones covered.",
-      provider: { "@type": "EducationalOrganization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+      provider: ORGANIZATION_REF,
       areaServed: ["United States","United Kingdom","Canada","Australia","UAE","Saudi Arabia","Pakistan","Germany","Malaysia","Bangladesh","South Africa","Indonesia"],
       serviceType: "Online Quran Education",
       url: "https://www.noorpath.online/locations",

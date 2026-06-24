@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Shield, Award, Users } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ const jsonLd = {
   "@type": "Service",
   name: "Female Quran Teacher Online",
   description: "Certified female Quran tutors (Hafiza) for sisters, daughters, and female learners worldwide. Safe 1-on-1 online Quran classes.",
-  provider: { "@type": "EducationalOrganization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+  provider: ORGANIZATION_REF,
   serviceType: "Online Quran Education",
   audience: { "@type": "Audience", audienceType: "Female Muslim learners of all ages" },
   url: "https://www.noorpath.online/female-quran-teacher-online",

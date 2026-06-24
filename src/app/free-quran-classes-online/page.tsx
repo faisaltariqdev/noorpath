@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Gift, Star, Users, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -28,11 +29,7 @@ const jsonLd = {
       "@type": "Service",
       name: "Free Online Quran Classes — Trial",
       description: "NoorPath Academy offers a free 30-minute online Quran class for new students. Certified tutors, 1-on-1 live sessions, no credit card required.",
-      provider: {
-        "@type": "EducationalOrganization",
-        name: "NoorPath Academy",
-        url: "https://www.noorpath.online",
-      },
+      provider: ORGANIZATION_REF,
       serviceType: "Free Online Quran Trial Class",
       offers: {
         "@type": "Offer",

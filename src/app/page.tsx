@@ -64,66 +64,6 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["EducationalOrganization", "LocalBusiness"],
-      "@id": "https://www.noorpath.online/#organization",
-      name: "NoorPath Academy",
-      alternateName: ["NoorPath Online Quran Academy", "NoorPath Quran School"],
-      url: "https://www.noorpath.online",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.noorpath.online/og-image.svg",
-        width: 1200,
-        height: 630,
-      },
-      image: "https://www.noorpath.online/og-image.svg",
-      email: "info@noorpath.online",
-      telephone: "+923124877906",
-      foundingDate: "2018",
-      description: "NoorPath Academy offers certified 1-on-1 online Quran classes for kids, adults and families worldwide: Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
-      address: { "@type": "PostalAddress", addressCountry: "PK" },
-      areaServed: "Worldwide",
-      priceRange: "$$",
-      numberOfEmployees: { "@type": "QuantitativeValue", value: 50 },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "2400",
-        bestRating: "5",
-        worstRating: "1",
-      },
-      sameAs: [
-        "https://www.noorpath.online",
-        "https://wa.me/923124877906",
-      ],
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Online Quran & Islamic Courses",
-        itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Noorani Qaida Online", url: "https://www.noorpath.online/courses/noorani-qaida-online" } },
-          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Tajweed Classes Online", url: "https://www.noorpath.online/courses/tajweed-classes-online" } },
-          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Hifz Program Online", url: "https://www.noorpath.online/courses/hifz-program-online" } },
-          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Quran Classes for Kids", url: "https://www.noorpath.online/courses/quran-classes-for-kids" } },
-          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Arabic Language Online", url: "https://www.noorpath.online/courses/arabic-language-online" } },
-          { "@type": "Offer", itemOffered: { "@type": "Course", name: "Islamic Studies Online", url: "https://www.noorpath.online/courses/islamic-studies-online" } },
-        ],
-      },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.noorpath.online/#website",
-      url: "https://www.noorpath.online",
-      name: "NoorPath Academy",
-      publisher: { "@id": "https://www.noorpath.online/#organization" },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: "https://www.noorpath.online/blog?q={search_term_string}",
-        },
-        "query-input": "required name=search_term_string",
-      },
-    },
-    {
       "@type": "FAQPage",
       mainEntity: faqs.map((f) => ({
         "@type": "Question",

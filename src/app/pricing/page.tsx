@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
 export const metadata: Metadata = {
   title: "Online Quran Class Pricing — Affordable Plans for Families",
@@ -96,11 +97,7 @@ const pricingJsonLd = {
       "@id": "https://www.noorpath.online/pricing#service",
       name: "Online Quran Class Pricing",
       description: "Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with a free trial class.",
-      provider: {
-        "@type": "EducationalOrganization",
-        name: "NoorPath Academy",
-        url: "https://www.noorpath.online",
-      },
+      provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education",
       areaServed: "Worldwide",
       offers: plans.map((plan) => ({

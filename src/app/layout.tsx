@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import OrganizationJsonLd from "@/components/OrganizationJsonLd";
 
 // ─── Fonts: self-hosted at build time — removes render-blocking Google CDN request ───
 const playfair = Playfair_Display({
@@ -104,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       </head>
       <body>
+        <OrganizationJsonLd />
         <Navbar />
         {/* padding-top accounts for fixed Navbar + promo bar height */}
         <main id="main-content" style={{ paddingTop: 0 }}>{children}</main>
