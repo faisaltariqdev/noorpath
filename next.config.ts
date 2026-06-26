@@ -5,6 +5,13 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
 
+  env: {
+    NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: process.env.VERCEL_GIT_COMMIT_SHA ?? "",
+    NEXT_PUBLIC_BUILD_DATE: process.env.VERCEL_GIT_COMMIT_SHA
+      ? new Date().toISOString().split("T")[0]
+      : "",
+  },
+
   // Image optimization: prefer avif then webp, serve from /public
   images: {
     formats: ["image/avif", "image/webp"],

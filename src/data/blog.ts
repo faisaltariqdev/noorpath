@@ -276,6 +276,21 @@ export const blogPosts: BlogPost[] = [
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
+    slug: "inshallah-meaning-in-english",
+    title: "Inshallah Meaning in English — In Sha Allah Arabic, Usage & Response",
+    description: "Inshallah means if Allah wills. Learn In Sha Allah Arabic text, English meaning, Quran usage, when to say it, correct response, and common mistakes.",
+    category: "Dhikr & Duas",
+    date: "2026-06-24",
+    readTime: "9 min",
+    keywords: [
+      "inshallah meaning", "in sha allah meaning", "inshallah in english", "what does inshallah mean",
+      "inshallah arabic", "inshallah response", "in sha Allah", "if Allah wills meaning",
+      "inshallah pronunciation", "inshallah vs mashallah", "inshallah in quran",
+    ],
+    excerpt: "Inshallah (إِنْ شَاءَ اللَّهُ) means 'If Allah wills' — a phrase of hope, humility, and trust in Allah's plan for the future. Learn when to say it, its Quranic roots, and how to respond.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "islamic-quotes-in-english-arabic",
     title: "150+ Best Islamic Quotes in English & Arabic — Quran & Hadith",
     description: "The most inspiring Islamic quotes from the Quran and Hadith — in English and Arabic — for motivation, hope, gratitude, patience, and daily reflection.",

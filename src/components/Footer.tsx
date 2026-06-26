@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MessageCircle, Mail, Globe, Star } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { TRUSTPILOT_URL } from "@/lib/organizationSchema";
+import { getBuildLabel } from "@/lib/siteVersion";
 
 const courses = [
   { href: "/courses/tajweed-classes-online", label: "Tajweed Rules" },
@@ -228,7 +229,12 @@ export default function Footer() {
           </div>
 
           <div className="footer-bottom">
-            <div>© 2026 NoorPath Academy. All rights reserved.</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              <div>© 2026 NoorPath Academy. All rights reserved.</div>
+              <div style={{ fontSize: ".72rem", color: "rgba(255,255,255,.45)", fontFamily: "monospace" }}>
+                Deploy {getBuildLabel()}
+              </div>
+            </div>
             <div className="flex gap-5">
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/terms-of-service">Terms of Service</Link>
