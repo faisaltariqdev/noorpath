@@ -1,5 +1,5 @@
 /** Bump when shipping a user-visible release */
-export const SITE_VERSION = "2.2.0";
+export const SITE_VERSION = "2.3.0";
 
 export function getBuildLabel(): string {
   const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA?.slice(0, 7);

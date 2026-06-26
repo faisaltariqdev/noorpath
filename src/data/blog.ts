@@ -276,6 +276,22 @@ export const blogPosts: BlogPost[] = [
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
+    slug: "learn-quran-online-adult-beginner-guide",
+    title: "Learn Quran Online as an Adult Beginner — Complete Step-by-Step Guide (2026)",
+    description: "Never too late to start. Learn how to read the Quran online as an adult — Noorani Qaida, schedule, Tajweed, choosing a tutor, and a 12-week roadmap from zero to fluent reading.",
+    category: "Online Learning",
+    date: "2026-06-24",
+    readTime: "16 min",
+    keywords: [
+      "learn quran online", "learn quran online as adult", "quran for adults beginners",
+      "how to learn quran as an adult", "online quran classes for adults", "learn quran from scratch",
+      "quran learning online beginner", "adult quran classes", "learn to read quran online",
+      "quran classes for adults online", "start learning quran online", "quran for adult beginners",
+    ],
+    excerpt: "Millions of adults worldwide are learning to read the Quran online for the first time — or returning after years away. This complete 2026 guide gives you the exact roadmap: Noorani Qaida, schedule, Tajweed, choosing a tutor, and a week-by-week plan from zero to fluent reading.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "inshallah-meaning-in-english",
     title: "Inshallah Meaning in English — In Sha Allah Arabic, Usage & Response",
     description: "Inshallah means if Allah wills. Learn In Sha Allah Arabic text, English meaning, Quran usage, when to say it, correct response, and common mistakes.",
