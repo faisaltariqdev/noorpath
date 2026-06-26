@@ -38,16 +38,10 @@ const features = [
 ];
 
 const classFaqs = [
-  { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a certified tutor via Zoom or Google Meet. Students learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home on a fixed weekly schedule." },
-  { q: "How much do online Quran classes cost?", a: "NoorPath Academy plans start from $29/month. Your first class is a free 30-minute trial with no credit card required. Family discounts are available for 2+ siblings." },
-  { q: "Are online Quran classes effective for kids?", a: "Yes. 1-on-1 online Quran classes often produce faster progress than group classes because the tutor focuses entirely on your child. NoorPath has 12,000+ students and 4.9/5 parent ratings." },
-  { q: "Can I learn Quran online as a beginner?", a: "Absolutely. NoorPath starts from Noorani Qaida (Arabic alphabet) for complete beginners — children from age 4 and adults of any age welcome." },
-];
-
-const classFaqs = [
   { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a certified tutor via Zoom or Google Meet. Students learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home at a schedule that fits their timezone." },
   { q: "How much do online Quran classes cost?", a: "NoorPath Academy plans start from $29/month. Your first class is a free 30-minute trial with no credit card required. Family discounts are available for 2+ siblings." },
   { q: "Are online Quran classes effective for kids?", a: "Yes. 1-on-1 online Quran classes often produce faster progress than group classes because the tutor focuses entirely on your child. NoorPath has 12,000+ students and specialist tutors for ages 4+." },
+  { q: "Can I learn Quran online as a beginner?", a: "Absolutely. NoorPath starts from Noorani Qaida (Arabic alphabet) for complete beginners — children from age 4 and adults of any age welcome." },
   { q: "Can I get a female Quran teacher online?", a: "Yes. NoorPath offers certified female tutors (Hafiza) for sisters and daughters. Request a female teacher when booking your free trial." },
 ];
 
