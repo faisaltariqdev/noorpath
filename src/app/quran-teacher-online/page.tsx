@@ -39,12 +39,6 @@ const jsonLd = {
         description: "Free 30-minute trial class",
         availability: "https://schema.org/InStock",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "2400",
-        bestRating: "5",
-      },
       url: "https://www.noorpath.online/quran-teacher-online",
     },
     {

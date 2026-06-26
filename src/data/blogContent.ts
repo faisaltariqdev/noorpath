@@ -981,17 +981,17 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             Our certified tutors teach Asmaul Husna, Quran recitation, Tajweed, daily duas, and complete Islamic Studies to children and adults worldwide.<br><br>
             <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a> &nbsp;|&nbsp;
             <a href="/best-online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
-            <a href="/blog/duas-for-kids-to-memorize.html" style="color:var(--emerald);font-weight:700;">40+ duas for kids →</a>
+            <a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:700;">40+ duas for kids →</a>
           </div>
 
           <div style="background:var(--ivory);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin:28px 0;">
             <h3 style="font-size:1rem;font-weight:800;margin:0 0 12px;color:var(--charcoal);">Related Islamic Learning Resources</h3>
             <ul style="margin:0;padding-left:20px;color:var(--muted);line-height:2;">
-              <li><a href="/blog/how-to-pray-salah-step-by-step.html" style="color:var(--emerald);font-weight:600;">How to Pray Salah Step by Step — Complete Beginner's Guide</a></li>
-              <li><a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="color:var(--emerald);font-weight:600;">Ayatul Kursi — Arabic, Translation & Benefits</a></li>
-              <li><a href="/blog/duas-for-kids-to-memorize.html" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
-              <li><a href="/blog/dua-e-qunoot-arabic-english.html" style="color:var(--emerald);font-weight:600;">Dua e Qunoot — Arabic, English & How to Recite</a></li>
-              <li><a href="/blog/how-to-teach-quran-to-kids.html" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids — Parent's Guide</a></li>
+              <li><a href="/blog/how-to-pray-salah-step-by-step" style="color:var(--emerald);font-weight:600;">How to Pray Salah Step by Step — Complete Beginner's Guide</a></li>
+              <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);font-weight:600;">Ayatul Kursi — Arabic, Translation & Benefits</a></li>
+              <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
+              <li><a href="/blog/dua-e-qunoot-arabic-english" style="color:var(--emerald);font-weight:600;">Dua e Qunoot — Arabic, English & How to Recite</a></li>
+              <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids — Parent's Guide</a></li>
             </ul>
           </div>
         </div>
@@ -1000,7 +1000,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="text-decoration:none;">
+              <a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Arabic, Translation & Benefits</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1008,7 +1008,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/surah-yaseen-arabic-english.html" style="text-decoration:none;">
+              <a href="/blog/surah-yaseen-arabic-english" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Surah Yaseen Full Arabic + Translation</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1016,7 +1016,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/duas-for-kids-to-memorize.html" style="text-decoration:none;">
+              <a href="/blog/duas-for-kids-to-memorize" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Daily Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">20 Essential Duas for Kids to Memorize</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1024,7 +1024,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules Complete Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1317,22 +1317,22 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/astaghfirullah-meaning.html" style="text-decoration:none;">
+              <a href="/blog/astaghfirullah-meaning" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/99-names-of-allah-asmaul-husna.html" style="text-decoration:none;">
+              <a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/duas-for-kids-to-memorize.html" style="text-decoration:none;">
+              <a href="/blog/duas-for-kids-to-memorize" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Daily Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">20 Essential Duas for Kids to Memorize</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/dua-e-qunoot-arabic-english.html" style="text-decoration:none;">
+              <a href="/blog/dua-e-qunoot-arabic-english" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Dua</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Dua e Qunoot — Arabic & Translation</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>`,
   },
@@ -1564,22 +1564,22 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/alhamdulillah-meaning-in-english.html" style="text-decoration:none;">
+              <a href="/blog/alhamdulillah-meaning-in-english" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Alhamdulillah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/99-names-of-allah-asmaul-husna.html" style="text-decoration:none;">
+              <a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="text-decoration:none;">
+              <a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Full Arabic & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/duas-for-kids-to-memorize.html" style="text-decoration:none;">
+              <a href="/blog/duas-for-kids-to-memorize" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Daily Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">20 Essential Duas for Kids to Memorize</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>`,
   },
@@ -1935,7 +1935,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/surah-yaseen-arabic-english.html" style="text-decoration:none;">
+              <a href="/blog/surah-yaseen-arabic-english" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Surah Yaseen — Full Arabic & Translation</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1943,7 +1943,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/99-names-of-allah-asmaul-husna.html" style="text-decoration:none;">
+              <a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1951,7 +1951,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/duas-for-kids-to-memorize.html" style="text-decoration:none;">
+              <a href="/blog/duas-for-kids-to-memorize" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Daily Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">20 Essential Duas for Kids to Memorize</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -1959,7 +1959,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/how-to-memorize-quran-faster.html" style="text-decoration:none;">
+              <a href="/blog/how-to-memorize-quran-faster" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Hifz</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Memorize Quran Faster</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2077,7 +2077,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids.html" style="text-decoration:none;">
+              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2085,7 +2085,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules for Beginners</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2169,7 +2169,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             </ul>
             <p><strong>What to start with:</strong></p>
             <ul>
-              <li>Begin with <a href="/courses/noorani-qaida-online.html" style="color:var(--emerald);">Noorani Qaida</a> (6–12 months)</li>
+              <li>Begin with <a href="/courses/noorani-qaida-online" style="color:var(--emerald);">Noorani Qaida</a> (6–12 months)</li>
               <li>20–30 minute lessons, 5 days/week</li>
               <li>Start memorizing short Surahs from Juz Amma</li>
             </ul>
@@ -2183,7 +2183,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <li>30–45 minute lessons, 5 days/week</li>
               <li>Complete Noorani Qaida if not already done</li>
               <li>Begin proper Quran reading with Tajweed</li>
-              <li>Excellent age to begin <a href="/courses/hifz-program-online.html" style="color:var(--emerald);">Hifz (memorization)</a></li>
+              <li>Excellent age to begin <a href="/courses/hifz-program-online" style="color:var(--emerald);">Hifz (memorization)</a></li>
               <li>Can now understand meaning and context of verses</li>
             </ul>
           </div>
@@ -2248,7 +2248,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids.html" style="text-decoration:none;">
+              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids: Complete Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2256,7 +2256,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/noorani-qaida-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/noorani-qaida-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Noorani Qaida</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Noorani Qaida: Complete Beginner's Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2501,7 +2501,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <div class="highlight-box">
-            <strong>At NoorPath Academy</strong>, our tutors teach Dua e Qunoot alongside correct Witr prayer methods, Tajweed, and Quran recitation — all in one structured lesson. <a href="/courses/islamic-studies-online.html" style="color:var(--emerald);font-weight:700;">See our Islamic Studies course →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class</a>.
+            <strong>At NoorPath Academy</strong>, our tutors teach Dua e Qunoot alongside correct Witr prayer methods, Tajweed, and Quran recitation — all in one structured lesson. <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">See our Islamic Studies course →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class</a>.
           </div>
 
           <!-- =================== FAQ =================== -->
@@ -2533,22 +2533,22 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="text-decoration:none;">
+              <a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Arabic, Translation & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/duas-for-kids-to-memorize.html" style="text-decoration:none;">
+              <a href="/blog/duas-for-kids-to-memorize" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Daily Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">20 Essential Duas for Kids to Memorize</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/99-names-of-allah-asmaul-husna.html" style="text-decoration:none;">
+              <a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/surah-yaseen-arabic-english.html" style="text-decoration:none;">
+              <a href="/blog/surah-yaseen-arabic-english" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Surah Yaseen — Full Arabic Text</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>`,
   },
@@ -2705,7 +2705,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Daily Duas are part of our All-in-One Kids Program at NoorPath Academy.</strong> Our tutors teach children their daily Duas alongside Noorani Qaida, short Surahs, and basic Islamic manners — all in one structured class. <a href="/courses/daily-duas-for-kids.html" style="color:var(--emerald);font-weight:700;">Learn about our Daily Duas program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class</a>.
+            <strong>Daily Duas are part of our All-in-One Kids Program at NoorPath Academy.</strong> Our tutors teach children their daily Duas alongside Noorani Qaida, short Surahs, and basic Islamic manners — all in one structured class. <a href="/courses/daily-duas-for-kids" style="color:var(--emerald);font-weight:700;">Learn about our Daily Duas program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class</a>.
           </div>
         </div>
 
@@ -2713,7 +2713,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids.html" style="text-decoration:none;">
+              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2721,7 +2721,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/best-age-to-start-quran-learning.html" style="text-decoration:none;">
+              <a href="/blog/best-age-to-start-quran-learning" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Best Age to Start Quran Learning</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2871,7 +2871,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Need a dedicated Hifz tutor?</strong> At NoorPath Academy, our certified Huffaz tutors follow the Sabaq-Sabaqi-Manzil system strictly, provide daily classes, and send weekly progress reports to parents. <a href="/courses/hifz-program-online.html" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class today</a>.
+            <strong>Need a dedicated Hifz tutor?</strong> At NoorPath Academy, our certified Huffaz tutors follow the Sabaq-Sabaqi-Manzil system strictly, provide daily classes, and send weekly progress reports to parents. <a href="/courses/hifz-program-online" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class today</a>.
           </div>
         </div>
 
@@ -2879,7 +2879,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/noorani-qaida-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/noorani-qaida-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Noorani Qaida</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Noorani Qaida: Complete Beginner's Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -2887,7 +2887,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules: The Complete Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -3101,7 +3101,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <h2>How to Teach Salah to Kids</h2>
           <p>If you are a parent, teach prayer gradually. Start with love, repetition, and routine. Let children copy the movements, hear the adhan, memorize short duas, and build emotional connection to the masjid and the prayer mat. A child who loves Salah before mastering it is already on the right path.</p>
-          <p>For a fuller parenting approach, read our guide on <a href="/blog/how-to-teach-quran-to-kids.html" style="color:var(--emerald);font-weight:700;">how to teach Quran to kids</a> and combine Quran learning with daily prayer training.</p>
+          <p>For a fuller parenting approach, read our guide on <a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:700;">how to teach Quran to kids</a> and combine Quran learning with daily prayer training.</p>
 
           <h2 id="faq">Frequently Asked Questions</h2>
           <div class="faq-item">
@@ -3130,22 +3130,22 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/dua-e-qunoot-arabic-english.html" style="text-decoration:none;">
+              <a href="/blog/dua-e-qunoot-arabic-english" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Dua</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Dua e Qunoot - Arabic & Meaning</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids.html" style="text-decoration:none;">
+              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/astaghfirullah-meaning.html" style="text-decoration:none;">
+              <a href="/blog/astaghfirullah-meaning" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah - Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/courses/islamic-studies-online.html" style="text-decoration:none;">
+              <a href="/courses/islamic-studies-online" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Course</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Islamic Studies Online</div></div><div class="blog-card-body"><span class="read-more">Explore <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>`,
   },
@@ -3254,7 +3254,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;">
                     <span class="blog-tag">Tajweed</span>
@@ -3265,7 +3265,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/benefits-of-online-quran-classes.html" style="text-decoration:none;">
+              <a href="/blog/benefits-of-online-quran-classes" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;">
                     <span class="blog-tag">Online Learning</span>
@@ -3574,10 +3574,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     <div class="highlight-box mt-5">
       <strong>More Islamic Knowledge at NoorPath Academy:</strong>
       <ul style="margin:12px 0 0;padding-left:20px;">
-        <li><a href="/blog/signs-of-qiyamah.html" style="color:var(--emerald);">Signs of Qiyamah — 10 Major &amp; 77 Minor Signs</a></li>
-        <li><a href="/blog/99-names-of-allah-asmaul-husna.html" style="color:var(--emerald);">99 Names of Allah (Asmaul Husna) with Meanings</a></li>
-        <li><a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="color:var(--emerald);">Ayatul Kursi — Arabic, Translation &amp; Benefits</a></li>
-        <li><a href="/blog/islamic-dream-interpretation.html" style="color:var(--emerald);">Islamic Dream Interpretation — Complete Guide</a></li>
+        <li><a href="/blog/signs-of-qiyamah" style="color:var(--emerald);">Signs of Qiyamah — 10 Major &amp; 77 Minor Signs</a></li>
+        <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);">99 Names of Allah (Asmaul Husna) with Meanings</a></li>
+        <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);">Ayatul Kursi — Arabic, Translation &amp; Benefits</a></li>
+        <li><a href="/blog/islamic-dream-interpretation" style="color:var(--emerald);">Islamic Dream Interpretation — Complete Guide</a></li>
       </ul>
     </div>`,
   },
@@ -3875,10 +3875,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     <div class="highlight-box mt-5">
       <strong>Continue Learning at NoorPath Academy:</strong>
       <ul style="margin:12px 0 0;padding-left:20px;">
-        <li><a href="/blog/signs-of-qiyamah.html" style="color:var(--emerald);">Signs of Qiyamah — 10 Major &amp; 77 Minor Signs</a></li>
-        <li><a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="color:var(--emerald);">Ayatul Kursi — Arabic, Translation &amp; 7 Benefits</a></li>
-        <li><a href="/blog/99-names-of-allah-asmaul-husna.html" style="color:var(--emerald);">99 Names of Allah with Meanings</a></li>
-        <li><a href="/blog/surah-yaseen-arabic-english.html" style="color:var(--emerald);">Surah Yaseen — Full Arabic &amp; English Translation</a></li>
+        <li><a href="/blog/signs-of-qiyamah" style="color:var(--emerald);">Signs of Qiyamah — 10 Major &amp; 77 Minor Signs</a></li>
+        <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);">Ayatul Kursi — Arabic, Translation &amp; 7 Benefits</a></li>
+        <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);">99 Names of Allah with Meanings</a></li>
+        <li><a href="/blog/surah-yaseen-arabic-english" style="color:var(--emerald);">Surah Yaseen — Full Arabic &amp; English Translation</a></li>
       </ul>
     </div>`,
   },
@@ -4033,10 +4033,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
-            <div class="col-sm-6"><a href="/blog/alhamdulillah-meaning-in-english.html" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Alhamdulillah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/astaghfirullah-meaning.html" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah — Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Arabic & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/99-names-of-allah-asmaul-husna.html" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a>`,
+            <div class="col-sm-6"><a href="/blog/alhamdulillah-meaning-in-english" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Alhamdulillah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
+            <div class="col-sm-6"><a href="/blog/astaghfirullah-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah — Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
+            <div class="col-sm-6"><a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Arabic & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
+            <div class="col-sm-6"><a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a>`,
   },
   "noorani-qaida-complete-guide": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -4115,7 +4115,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box">
             <strong>The solution:</strong> 1-on-1 live online Noorani Qaida classes with a certified tutor. At NoorPath Academy, our Noorani Qaida teachers are experienced in correcting Arabic pronunciation for native English speakers — in the UK, USA, Canada, Australia, India, and beyond.<br><br>
-            <a href="/courses/noorani-qaida-online.html" style="color:var(--emerald);font-weight:700;">Learn more about our Noorani Qaida online course →</a>
+            <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Learn more about our Noorani Qaida online course →</a>
           </div>
 
           <h2>What Comes After Noorani Qaida?</h2>
@@ -4136,7 +4136,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/best-age-to-start-quran-learning.html" style="text-decoration:none;">
+              <a href="/blog/best-age-to-start-quran-learning" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Best Age to Start Quran Learning</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -4144,7 +4144,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules: The Complete Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -4495,10 +4495,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     <div class="highlight-box mt-5">
       <strong>Deepen Your Islamic Knowledge at NoorPath Academy:</strong>
       <ul style="margin:12px 0 0;padding-left:20px;">
-        <li><a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="color:var(--emerald);">Ayatul Kursi — Full Arabic, Translation &amp; 7 Benefits</a></li>
-        <li><a href="/blog/99-names-of-allah-asmaul-husna.html" style="color:var(--emerald);">99 Names of Allah (Asmaul Husna) with Meanings</a></li>
-        <li><a href="/blog/surah-yaseen-arabic-english.html" style="color:var(--emerald);">Surah Yaseen — Full Arabic Text &amp; Translation</a></li>
-        <li><a href="/blog/duas-for-kids-to-memorize.html" style="color:var(--emerald);">Essential Duas for Kids to Memorize</a></li>
+        <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);">Ayatul Kursi — Full Arabic, Translation &amp; 7 Benefits</a></li>
+        <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);">99 Names of Allah (Asmaul Husna) with Meanings</a></li>
+        <li><a href="/blog/surah-yaseen-arabic-english" style="color:var(--emerald);">Surah Yaseen — Full Arabic Text &amp; Translation</a></li>
+        <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);">Essential Duas for Kids to Memorize</a></li>
       </ul>
     </div>`,
   },
@@ -5169,7 +5169,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/ayatul-kursi-arabic-english-benefits.html" style="text-decoration:none;">
+              <a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Full Arabic with Benefits</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -5177,7 +5177,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/99-names-of-allah-asmaul-husna.html" style="text-decoration:none;">
+              <a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -5185,7 +5185,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide.html" style="text-decoration:none;">
+              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules for Beginners</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -5193,7 +5193,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/how-to-memorize-quran-faster.html" style="text-decoration:none;">
+              <a href="/blog/how-to-memorize-quran-faster" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Hifz</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Memorize Quran Faster</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -5303,7 +5303,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <div class="highlight-box">
             <strong>The best approach:</strong> Take live 1-on-1 online Tajweed classes with a certified tutor who holds an Ijazah chain. At <strong>NoorPath Academy</strong>, our tutors not only know the rules — they have the experience to identify and correct your specific pronunciation errors.
             <br><br>
-            <a href="/courses/tajweed-classes-online.html" style="color:var(--emerald);font-weight:700;">View our Tajweed course →</a>
+            <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">View our Tajweed course →</a>
           </div>
 
           <h2>Summary: Key Tajweed Rules</h2>
@@ -5321,7 +5321,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            Ready to master Tajweed with a certified tutor? <a href="/courses/tajweed-classes-online.html" style="color:var(--emerald);font-weight:700;">Book your free Tajweed trial class</a> at NoorPath Academy — no payment required.
+            Ready to master Tajweed with a certified tutor? <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">Book your free Tajweed trial class</a> at NoorPath Academy — no payment required.
           </div>
         </div>
 
@@ -5329,7 +5329,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids.html" style="text-decoration:none;">
+              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids: Complete Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
@@ -5337,7 +5337,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="/blog/benefits-of-online-quran-classes.html" style="text-decoration:none;">
+              <a href="/blog/benefits-of-online-quran-classes" style="text-decoration:none;">
                 <div class="blog-card">
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Online Learning</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">10 Benefits of Online Quran Classes</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>

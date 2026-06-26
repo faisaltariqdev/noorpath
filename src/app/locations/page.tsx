@@ -4,8 +4,14 @@ import { locations } from "@/data/locations";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
-  description: "NoorPath Academy serves families in 40+ countries. Find online Quran classes for your location — USA, UK, Canada, Australia, UAE, Saudi Arabia, and more.",
+  title: "Online Quran Classes by Country — USA, UK, Canada, Australia & 40+ Nations",
+  description: "Learn Quran online in USA, UK, Canada, Australia, UAE, Pakistan & 40+ countries. Certified 1-on-1 tutors, all timezones, free trial.",
+  keywords: [
+    "online quran classes usa", "online quran classes uk", "online quran classes canada",
+    "online quran classes australia", "learn quran online worldwide", "quran teacher online",
+    "online quran academy", "quran classes by country", "islamic education online",
+    "online quran uae", "online quran pakistan", "online quran germany", "online quran malaysia",
+  ],
   alternates: { canonical: "https://www.noorpath.online/locations" },
   openGraph: {
     title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
@@ -33,6 +39,17 @@ const locationsJsonLd = {
       areaServed: ["United States","United Kingdom","Canada","Australia","UAE","Saudi Arabia","Pakistan","Germany","Malaysia","Bangladesh","South Africa","Indonesia"],
       serviceType: "Online Quran Education",
       url: "https://www.noorpath.online/locations",
+    },
+    {
+      "@type": "ItemList",
+      name: "Online Quran Classes by Country — NoorPath Academy",
+      numberOfItems: locations.length,
+      itemListElement: locations.map((l, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: `Online Quran Classes ${l.country}`,
+        url: `https://www.noorpath.online/locations/${l.slug}`,
+      })),
     },
     {
       "@type": "BreadcrumbList",

@@ -7,6 +7,12 @@ import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-re
 export const metadata: Metadata = {
   title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
   description: "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic. Certified tutors, family plans, free trial.",
+  keywords: [
+    "online quran classes", "learn quran online", "quran classes online", "online quran academy",
+    "quran tutor online", "live quran classes", "quran classes for kids", "online quran teacher",
+    "best online quran classes", "quran learning online", "1 on 1 quran classes", "free quran trial",
+    "tajweed classes online", "noorani qaida online", "hifz program online", "islamic classes online",
+  ],
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes" },
   openGraph: {
     title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
@@ -31,6 +37,20 @@ const features = [
   { icon: <CheckCircle size={22} />, title: "Weekly Progress Reports", desc: "Parents receive detailed weekly reports on their child's progress and next goals." },
 ];
 
+const classFaqs = [
+  { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a certified tutor via Zoom or Google Meet. Students learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home on a fixed weekly schedule." },
+  { q: "How much do online Quran classes cost?", a: "NoorPath Academy plans start from $29/month. Your first class is a free 30-minute trial with no credit card required. Family discounts are available for 2+ siblings." },
+  { q: "Are online Quran classes effective for kids?", a: "Yes. 1-on-1 online Quran classes often produce faster progress than group classes because the tutor focuses entirely on your child. NoorPath has 12,000+ students and 4.9/5 parent ratings." },
+  { q: "Can I learn Quran online as a beginner?", a: "Absolutely. NoorPath starts from Noorani Qaida (Arabic alphabet) for complete beginners — children from age 4 and adults of any age welcome." },
+];
+
+const classFaqs = [
+  { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a certified tutor via Zoom or Google Meet. Students learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home at a schedule that fits their timezone." },
+  { q: "How much do online Quran classes cost?", a: "NoorPath Academy plans start from $29/month. Your first class is a free 30-minute trial with no credit card required. Family discounts are available for 2+ siblings." },
+  { q: "Are online Quran classes effective for kids?", a: "Yes. 1-on-1 online Quran classes often produce faster progress than group classes because the tutor focuses entirely on your child. NoorPath has 12,000+ students and specialist tutors for ages 4+." },
+  { q: "Can I get a female Quran teacher online?", a: "Yes. NoorPath offers certified female tutors (Hafiza) for sisters and daughters. Request a female teacher when booking your free trial." },
+];
+
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -53,6 +73,14 @@ const serviceJsonLd = {
         ],
       },
       url: "https://www.noorpath.online/online-quran-classes",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: classFaqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
     {
       "@type": "BreadcrumbList",

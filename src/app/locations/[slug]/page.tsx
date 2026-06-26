@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
+import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Globe } from "lucide-react";
 
@@ -17,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const loc = getLocation(slug);
   if (!loc) return {};
-  const description = `Online Quran classes in ${loc.country} with certified tutors. Live 1-on-1 lessons for kids and adults, ${loc.timezone} scheduling and free trial.`;
+  const description = `Learn Quran online in ${loc.country} with certified 1-on-1 tutors. Noorani Qaida, Tajweed, Hifz & kids classes. ${loc.timezone} slots. Free trial.`;
   return {
-    title: `Online Quran Classes in ${loc.country} — NoorPath Academy`,
+    title: `Online Quran Classes ${loc.country} — Learn Quran Online | NoorPath`,
     description,
-    keywords: loc.keywords,
+    keywords: getLocationKeywords(loc),
     alternates: { canonical: `https://www.noorpath.online/locations/${slug}` },
     openGraph: {
       title: `Online Quran Classes in ${loc.country} | NoorPath Academy`,
@@ -44,6 +45,8 @@ export default async function LocationDetailPage({ params }: Props) {
   if (!loc) notFound();
 
   const related = locations.filter((l) => l.slug !== slug).slice(0, 4);
+  const faqs = getLocationFaqs(loc);
+  const seoParagraphs = getLocationSeoParagraphs(loc);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -51,7 +54,7 @@ export default async function LocationDetailPage({ params }: Props) {
       {
         "@type": "Service",
         name: `Online Quran Classes in ${loc.country}`,
-        description: `NoorPath Academy provides certified online Quran education to families in ${loc.country}. Covering ${loc.cities}.`,
+        description: `NoorPath Academy provides certified online Quran education to families in ${loc.country}. Covering ${loc.cities}. Live 1-on-1 classes: Qaida, Tajweed, Hifz, Arabic, Islamic studies.`,
         provider: ORGANIZATION_REF,
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
@@ -62,6 +65,14 @@ export default async function LocationDetailPage({ params }: Props) {
           priceCurrency: "USD",
           description: "Free 30-minute trial class",
         },
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -123,6 +134,31 @@ export default async function LocationDetailPage({ params }: Props) {
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem" }}>
                   Whether you are looking for Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), or Islamic studies, we have a course and a tutor for you — with classes scheduled to fit your {loc.timezone} timezone perfectly.
                 </p>
+                {seoParagraphs.map((para) => (
+                  <p key={para.slice(0, 40)} style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginTop: 16 }}>
+                    {para}
+                  </p>
+                ))}
+              </div>
+
+              {/* Popular courses for this country */}
+              <div className="content-card" style={{ marginBottom: 28 }}>
+                <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
+                  Popular Online Quran Courses in {loc.country}
+                </h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {[
+                    { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online — Learn Arabic letters from scratch" },
+                    { href: "/courses/tajweed-classes-online", label: "Tajweed Classes Online — Beautiful Quran recitation" },
+                    { href: "/courses/quran-classes-for-kids", label: "Quran Classes for Kids — All-in-one kids programme" },
+                    { href: "/courses/hifz-program-online", label: "Hifz Program Online — Quran memorization" },
+                    { href: "/female-quran-teacher-online", label: "Female Quran Teacher Online — For sisters & daughters" },
+                  ].map((c) => (
+                    <Link key={c.href} href={c.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
+                      → {c.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
 
               {/* Cities covered */}
@@ -185,6 +221,21 @@ export default async function LocationDetailPage({ params }: Props) {
                         <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 2, fontSize: ".95rem" }}>{item.title}</div>
                         <div style={{ fontSize: ".85rem", color: "var(--muted)", lineHeight: 1.6 }}>{item.desc}</div>
                       </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* FAQ */}
+              <div className="content-card" style={{ marginBottom: 28 }}>
+                <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
+                  Frequently Asked Questions — Online Quran Classes {loc.country}
+                </h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                  {faqs.map((f) => (
+                    <div key={f.q}>
+                      <h3 style={{ fontSize: ".95rem", fontWeight: 700, color: "var(--charcoal)", marginBottom: 6 }}>{f.q}</h3>
+                      <p style={{ color: "var(--muted)", lineHeight: 1.75, fontSize: ".88rem", margin: 0 }}>{f.a}</p>
                     </div>
                   ))}
                 </div>

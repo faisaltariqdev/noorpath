@@ -39,12 +39,6 @@ const jsonLd = {
         description: "No credit card required. Book your free trial class today.",
         availability: "https://schema.org/InStock",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "2400",
-        bestRating: "5",
-      },
       url: "https://www.noorpath.online/free-quran-classes-online",
     },
     {
