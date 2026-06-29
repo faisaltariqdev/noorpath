@@ -74,7 +74,7 @@ export function getOrganizationJsonLd() {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
+            urlTemplate: `${BASE_URL}/online-quran-classes-for-kids`,
           },
           "query-input": "required name=search_term_string",
         },

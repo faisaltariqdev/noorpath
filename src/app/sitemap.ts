@@ -8,13 +8,24 @@ const BASE = "https://www.noorpath.online";
 const LAUNCH = new Date("2024-01-15");
 const CONTENT_UPDATE = new Date("2025-06-01");
 const RECENT = new Date("2026-01-10");
-const NOW = new Date("2026-06-22");
+const NOW = new Date("2026-06-24");
+
+/** Commercial blogs that drive student enrollment */
+const COMMERCIAL_BLOG_SLUGS = new Set([
+  "online-quran-classes-for-kids-parent-guide",
+  "learn-quran-online-adult-beginner-guide",
+  "best-online-quran-academy-guide",
+  "benefits-of-online-quran-classes",
+  "how-to-teach-quran-to-kids",
+  "best-age-to-start-quran-learning",
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     // ── Tier 1: highest priority commercial pages ───────────────────────────────
     { url: BASE,                                               priority: 1.0,  changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/online-quran-classes`,                    priority: 0.95, changeFrequency: "weekly",  lastModified: RECENT },
+    { url: `${BASE}/online-quran-classes`,                    priority: 0.95, changeFrequency: "weekly",  lastModified: NOW },
+    { url: `${BASE}/online-quran-classes-for-kids`,          priority: 0.96, changeFrequency: "weekly",  lastModified: NOW },
     // ── Tier 2: main conversion + high-traffic pages ────────────────────────────
     { url: `${BASE}/courses`,                                  priority: 0.9,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/quran-teacher-online`,                     priority: 0.9,  changeFrequency: "monthly", lastModified: NOW },
@@ -53,8 +64,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
     url: `${BASE}/blog/${p.slug}`,
     lastModified: new Date(p.updatedAt ?? p.date),
-    priority: 0.75,
-    changeFrequency: "monthly" as const,
+    priority: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? 0.88 : 0.75,
+    changeFrequency: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? ("weekly" as const) : ("monthly" as const),
   }));
 
   return [...staticPages, ...coursePages, ...locationPages, ...blogPages];

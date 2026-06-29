@@ -5,7 +5,9 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
+  title: {
+    absolute: "Online Quran Classes for Kids & Adults — Free Trial 2026",
+  },
   description: "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic. Certified tutors, family plans, free trial.",
   keywords: [
     "online quran classes", "learn quran online", "quran classes online", "online quran academy",
@@ -102,6 +104,7 @@ export default function OnlineQuranClassesPage() {
           <p>Join 12,000+ students worldwide. Personalised Quran learning from Noorani Qaida to Hifz — for every age, every level, every family.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/online-quran-classes-for-kids" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Kids Classes</Link>
             <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View All Courses</Link>
           </div>
         </div>

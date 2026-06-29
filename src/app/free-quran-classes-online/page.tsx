@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Gift, Star, Users, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Free Quran Classes Online — Trial for Kids & Adults | NoorPath Academy",
+  title: {
+    absolute: "Free Quran Classes Online — Kids & Adults | No Credit Card Trial",
+  },
   description: "Book a free online Quran class with a certified teacher. 30-minute live 1-on-1 trial for kids, adults and families. No credit card.",
   keywords: ["free quran classes online", "free quran lessons online", "free online quran class", "free quran trial", "free quran learning", "free quran class for kids", "free quran course", "free islamic classes online", "free quran teacher online", "free quran education"],
   alternates: { canonical: "https://www.noorpath.online/free-quran-classes-online" },
@@ -223,18 +226,21 @@ export default function FreeQuranClassesPage() {
       </section>
 
       {/* CTA */}
-      <section className="cta-section">
-        <div className="max-w-[1200px] mx-auto px-4 text-center">
-          <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "clamp(1.8rem,3vw,2.4rem)", marginBottom: 16 }}>
-            Book Your FREE Quran Class Right Now
-          </h2>
-          <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 8, maxWidth: 500, margin: "0 auto 8px" }}>
-            30 minutes. Live. 1-on-1. With a certified Quran teacher. Completely free.
-          </p>
-          <p style={{ color: "rgba(255,255,255,.5)", marginBottom: 28, fontSize: ".85rem" }}>No credit card · No commitment · Cancel anytime</p>
-          <Link href="/online-quran-classes#cta" className="btn-primary-np" style={{ fontSize: "1.05rem", padding: "16px 36px" }}>
-            🎁 Book FREE Trial Class →
-          </Link>
+      <section className="cta-section" id="cta">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "clamp(1.8rem,3vw,2.4rem)", marginBottom: 16 }}>
+                Book Your FREE Quran Class
+              </h2>
+              <p style={{ color: "rgba(255,255,255,.75)", lineHeight: 1.7 }}>
+                30 minutes. Live. 1-on-1. Certified teacher. No credit card.
+              </p>
+            </div>
+            <div className="cta-form-wrap">
+              <CTAForm />
+            </div>
+          </div>
         </div>
       </section>
     </>

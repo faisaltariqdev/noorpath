@@ -26,9 +26,10 @@ const company = [
 ];
 
 const quickLinks = [
+  { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids" },
   { href: "/courses/tajweed-classes-online", label: "Tajweed Classes Online" },
   { href: "/courses/hifz-program-online", label: "Hifz Program Online" },
-  { href: "/courses/quran-classes-for-kids", label: "Quran Classes for Kids" },
+  { href: "/courses/quran-classes-for-kids", label: "Kids Quran Course" },
   { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online" },
   { href: "/courses/arabic-language-online", label: "Arabic Language" },
   { href: "/locations/online-quran-classes-canada", label: "Quran Classes Canada" },

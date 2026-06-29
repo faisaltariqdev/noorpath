@@ -10,7 +10,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
+  title: {
+    absolute: "Learn Quran Online for Kids & Families — Free 30-Min Trial (2026)",
+  },
   description:
     "Join 12,000+ families at NoorPath Academy. Certified 1-on-1 online Quran classes — Tajweed, Hifz, Noorani Qaida & Arabic. Free 30-min trial, no credit card.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
@@ -34,7 +36,7 @@ const courseCards = [
   { icon: <BookOpen size={22} />, title: "Noorani Qaida", desc: "Start from zero — Arabic letters to full reading", level: "Beginner", href: "/courses/noorani-qaida-online" },
   { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Recite Quran beautifully with correct pronunciation", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
   { icon: <Brain size={22} />, title: "Hifz Program", desc: "Full Quran memorization with Sanad preparation", level: "Intermediate–Advanced", href: "/courses/hifz-program-online" },
-  { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida + Daily Duas + Hadith — everything in one", level: "Ages 4–12", href: "/courses/quran-classes-for-kids" },
+  { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida + Daily Duas + Hadith — everything in one", level: "Ages 4–12", href: "/online-quran-classes-for-kids" },
   { icon: <PenLine size={22} />, title: "Arabic Language", desc: "Understand the Quran in its original language", level: "All levels", href: "/courses/arabic-language-online" },
   { icon: <Landmark size={22} />, title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, morals & Islamic character", level: "All ages", href: "/courses/islamic-studies-online" },
 ];
@@ -562,7 +564,8 @@ export default function HomePage() {
                   ["/courses/noorani-qaida-online", "Noorani Qaida Online"],
                   ["/courses/tajweed-classes-online", "Tajweed Classes Online"],
                   ["/courses/hifz-program-online", "Hifz Program Online"],
-                  ["/courses/quran-classes-for-kids", "Quran Classes for Kids"],
+                  ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
+                  ["/courses/quran-classes-for-kids", "Kids Quran Course"],
                   ["/courses/arabic-language-online", "Arabic Language Online"],
                   ["/courses/islamic-studies-online", "Islamic Studies Online"],
                 ].map(([href, label]) => (
@@ -603,6 +606,7 @@ export default function HomePage() {
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
+                  ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
                   ["/quran-teacher-online", "Online Quran Teacher"],
                   ["/free-quran-classes-online", "Free Quran Classes Online"],
                   ["/online-quran-for-beginners", "Online Quran for Beginners"],
@@ -626,6 +630,7 @@ export default function HomePage() {
           <div style={{ borderTop: "1px solid var(--border)", paddingTop: 24 }}>
             <p style={{ color: "var(--muted)", fontSize: ".82rem", maxWidth: 960, margin: "0 auto", lineHeight: 1.85, textAlign: "center" }}>
               <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is a leading <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> offering certified 1-on-1 live classes via Zoom and Skype for Muslim families worldwide. Our programmes include{" "}
+              <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for kids</Link>,{" "}
               <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link>,{" "}
               <Link href="/courses/tajweed-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Tajweed classes</Link>,{" "}
               <Link href="/courses/hifz-program-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Quran Hifz memorization</Link>,{" "}

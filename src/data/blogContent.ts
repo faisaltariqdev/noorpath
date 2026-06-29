@@ -973,14 +973,14 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="faq-item">
             <div class="faq-q"><span>How do you teach 99 names of Allah to children?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The best way to teach Asmaul Husna to children: (1) Start with the most common names — Allah, Ar-Rahman, Ar-Raheem — which children already hear in Bismillah and Salah. (2) Teach 2-3 names per week with simple English meanings. (3) Connect names to stories — Al-Razzaq provides food, Al-Shafi heals sickness. (4) Use nasheed and songs with the names. (5) Enroll children in Islamic Studies classes where certified tutors teach Asmaul Husna as part of a structured curriculum. <a href="/best-online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Learn more about online Quran and Islamic Studies classes for kids →</a></div>
+            <div class="faq-a">The best way to teach Asmaul Husna to children: (1) Start with the most common names — Allah, Ar-Rahman, Ar-Raheem — which children already hear in Bismillah and Salah. (2) Teach 2-3 names per week with simple English meanings. (3) Connect names to stories — Al-Razzaq provides food, Al-Shafi heals sickness. (4) Use nasheed and songs with the names. (5) Enroll children in Islamic Studies classes where certified tutors teach Asmaul Husna as part of a structured curriculum. <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Learn more about online Quran and Islamic Studies classes for kids →</a></div>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Learn Islamic Studies & Quran at NoorPath Academy</strong><br>
             Our certified tutors teach Asmaul Husna, Quran recitation, Tajweed, daily duas, and complete Islamic Studies to children and adults worldwide.<br><br>
             <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a> &nbsp;|&nbsp;
-            <a href="/best-online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
+            <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
             <a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:700;">40+ duas for kids →</a>
           </div>
 
@@ -6255,6 +6255,204 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
               <li><a href="/blog/tajweed-rules-complete-guide" style="color:var(--emerald);font-weight:600;">Tajweed Rules — Complete Guide</a></li>
               <li><a href="/blog/best-age-to-start-quran-learning" style="color:var(--emerald);font-weight:600;">Best Age to Start Quran Learning (For Your Children)</a></li>
+            </ul>
+          </div>`,
+  },
+  "online-quran-classes-for-kids-parent-guide": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 24px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .check-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin:20px 0; }
+    .check-item { background:var(--ivory); border:1px solid var(--border); border-radius:10px; padding:14px 16px; font-size:.9rem; }
+    .check-item strong { color:var(--emerald); }
+    .price-table { width:100%; border-collapse:collapse; font-size:.92rem; margin:24px 0; }
+    .price-table th { background:var(--emerald); color:#fff; padding:12px 14px; text-align:left; }
+    .price-table td { padding:11px 14px; border-bottom:1px solid var(--border); }
+    .mistake-box { background:#fff5f5; border-left:4px solid #ef4444; border-radius:8px; padding:18px 22px; margin:16px 0; }
+    @media (max-width:576px) { .check-grid { grid-template-columns:1fr; } }`,
+    content: `<p>Every Muslim parent asks the same question: <em>"How do I find safe, effective online Quran classes for my child?"</em> With hundreds of platforms advertising on Google, the choice feels overwhelming — yet the decision shapes your child's relationship with the Quran for life.</p>
+
+          <p>This is the complete 2026 parent guide: best age to start, how to evaluate safety, what to look for in a tutor, realistic costs, red flags to avoid, and exactly how to book a free trial without risk.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer for busy parents:</strong> The best <strong>online Quran classes for kids</strong> are live <strong>1-on-1</strong> (not group or pre-recorded), taught by <strong>Ijazah-certified tutors</strong>, with <strong>parent-monitored Zoom sessions</strong>, <strong>20–30 minute lessons</strong> for ages 4–8, and a <strong>free trial before payment</strong>. <a href="/online-quran-classes-for-kids#cta" style="color:var(--emerald);font-weight:700;">Book a free trial at NoorPath Academy →</a>
+          </div>
+
+          <h2>Why Parents Are Choosing Online Quran Classes in 2026</h2>
+          <ul>
+            <li><strong>No local madrassa:</strong> Many families in UK, USA, Canada, and Australia have no qualified Quran teacher nearby.</li>
+            <li><strong>Busy schedules:</strong> After-school slots at 4–6 pm fit homework and dinner — no weekend madrassa commute.</li>
+            <li><strong>1-on-1 attention:</strong> Your child is never lost in a classroom of 15 students.</li>
+            <li><strong>Certified global tutors:</strong> Access Al-Azhar and Ijazah teachers regardless of where you live.</li>
+            <li><strong>Parent visibility:</strong> Sit nearby during Zoom — see and hear every minute of the lesson.</li>
+          </ul>
+
+          <h2>Best Age to Start Online Quran Classes</h2>
+          <table class="price-table">
+            <thead><tr><th>Age</th><th>Session Length</th><th>What They Learn</th></tr></thead>
+            <tbody>
+              <tr><td><strong>4–5 years</strong></td><td>20–25 min</td><td>Arabic letters through games, short duas, listening to Quran</td></tr>
+              <tr><td><strong>6–7 years</strong></td><td>25–30 min</td><td>Noorani Qaida, letter joining, Surah Al-Fatiha start</td></tr>
+              <tr><td><strong>8–10 years</strong></td><td>30–35 min</td><td>Qaida completion, Quran reading, basic Tajweed</td></tr>
+              <tr><td><strong>11–12 years</strong></td><td>35–45 min</td><td>Fluent reading, Tajweed rules, optional Hifz</td></tr>
+            </tbody>
+          </table>
+          <p>Read our detailed guide: <a href="/blog/best-age-to-start-quran-learning" style="color:var(--emerald);font-weight:600;">Best Age to Start Quran Learning</a></p>
+
+          <h2>12-Point Checklist: How to Choose the Best Online Quran Academy</h2>
+          <div class="check-grid">
+            <div class="check-item"><strong>✓ Free trial</strong> — No payment before experiencing a real lesson</div>
+            <div class="check-item"><strong>✓ 1-on-1 live</strong> — Not group webinars or recorded videos</div>
+            <div class="check-item"><strong>✓ Ijazah tutors</strong> — Verified certification, not self-declared</div>
+            <div class="check-item"><strong>✓ Child specialists</strong> — Teachers experienced with ages 4–12</div>
+            <div class="check-item"><strong>✓ Parent reports</strong> — Weekly progress updates in writing</div>
+            <div class="check-item"><strong>✓ Safe platform</strong> — Zoom/Meet only, no private messaging</div>
+            <div class="check-item"><strong>✓ Flexible reschedule</strong> — 24-hour notice policy</div>
+            <div class="check-item"><strong>✓ Female tutors</strong> — Available for daughters</div>
+            <div class="check-item"><strong>✓ Qaida first</strong> — Structured curriculum, not random surahs</div>
+            <div class="check-item"><strong>✓ Timezone slots</strong> — UK/US/AU evening availability</div>
+            <div class="check-item"><strong>✓ Sibling discount</strong> — Family plans for 2+ children</div>
+            <div class="check-item"><strong>✓ Transparent pricing</strong> — No hidden fees after trial</div>
+          </div>
+
+          <h2>Is Online Quran Learning Safe for Children?</h2>
+          <p>Safety is the #1 concern for Muslim parents — and rightly so. Follow these protocols:</p>
+          <ol>
+            <li><strong>Supervise the first month</strong> — Stay in the room or within earshot during every lesson.</li>
+            <li><strong>Use communal devices</strong> — Laptop in living room, not child's bedroom with door closed.</li>
+            <li><strong>No private messaging</strong> — All communication through the academy's official channels.</li>
+            <li><strong>Verify credentials</strong> — Ask for Ijazah certificate or Al-Azhar graduation proof.</li>
+            <li><strong>Trust your instinct</strong> — If a teacher refuses parent observation, find another academy.</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>📖 Prophet ﷺ said:</strong> <em>"The best of you are those who learn the Quran and teach it."</em> (Bukhari). Choosing the right teacher is a sacred responsibility — take time to evaluate, use the free trial, and ask questions before enrolling.
+          </div>
+
+          <h2>How Much Do Online Quran Classes for Kids Cost?</h2>
+          <table class="price-table">
+            <thead><tr><th>Plan</th><th>Sessions/Week</th><th>Typical Monthly Cost</th></tr></thead>
+            <tbody>
+              <tr><td>Starter</td><td>2× 30 min</td><td>$29–$45/month</td></tr>
+              <tr><td>Standard</td><td>3× 30 min</td><td>$45–$65/month</td></tr>
+              <tr><td>Intensive</td><td>5× 30 min</td><td>$70–$100/month</td></tr>
+            </tbody>
+          </table>
+          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy pricing</a>, plans start from $29/month with sibling discounts. Your first class is always free.</p>
+
+          <h2>What Happens in the First Free Trial Class?</h2>
+          <ol>
+            <li>Teacher introduces themselves warmly to your child (5 min)</li>
+            <li>Gentle level assessment — any prior Arabic? (5 min)</li>
+            <li>Real teaching — usually 3–5 Arabic letters or a short dua (15 min)</li>
+            <li>Parent Q&A and learning plan for month 1 (5 min)</li>
+          </ol>
+          <p>Your child should leave smiling and wanting to come back. If they don't — try a different tutor. A good academy will rematch without charge.</p>
+
+          <h2>5 Mistakes Parents Make (Avoid These)</h2>
+          <div class="mistake-box"><strong>❌ Choosing the cheapest tutor:</strong> Incorrect Tajweed learned at age 5 takes years to fix. Invest in qualified teachers.</div>
+          <div class="mistake-box"><strong>❌ Forcing 60-minute sessions:</strong> Children burn out. Short, consistent lessons win every time.</div>
+          <div class="mistake-box"><strong>❌ No home practice:</strong> 5–10 minutes daily revision between classes doubles progress.</div>
+          <div class="mistake-box"><strong>❌ Skipping Noorani Qaida:</strong> Jumping to Quran without Qaida creates permanent pronunciation errors.</div>
+          <div class="mistake-box"><strong>❌ Not checking progress:</strong> Ask for weekly written reports. Silence from the academy is a red flag.</div>
+
+          <h2>Online Quran Classes by Country</h2>
+          <ul>
+            <li><a href="/locations/online-quran-classes-uk" style="color:var(--emerald);font-weight:600;">Online Quran Classes UK</a> — After-school 3:30–6 pm GMT slots</li>
+            <li><a href="/locations/online-quran-classes-usa" style="color:var(--emerald);font-weight:600;">Online Quran Classes USA</a> — Morning and evening US timezones</li>
+            <li><a href="/locations/online-quran-classes-canada" style="color:var(--emerald);font-weight:600;">Online Quran Classes Canada</a> — EST/PST flexible scheduling</li>
+            <li><a href="/locations/online-quran-classes-australia" style="color:var(--emerald);font-weight:600;">Online Quran Classes Australia</a> — After-school AEST/AEDT</li>
+          </ul>
+
+          <div class="highlight-box" style="margin-top:32px;">
+            <strong>Ready to give your child the gift of Quran?</strong><br><br>
+            NoorPath Academy offers <strong>live 1-on-1 online Quran classes for kids</strong> ages 4–12 with Ijazah-certified tutors, weekly parent reports, and a completely free 30-minute trial. 12,000+ families trust us worldwide.<br><br>
+            <a href="/online-quran-classes-for-kids#cta" style="color:var(--emerald);font-weight:700;font-size:1.1rem;">Book your child's free trial class now →</a>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Landing Page</a></li>
+              <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids at Home</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Choose the Best Online Quran Academy</a></li>
+              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
+            </ul>
+          </div>`,
+  },
+  "bismillah-meaning-in-english": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul { margin-bottom: 18px; padding-left: 24px; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .word-hero { text-align:center; padding:48px 24px; background:linear-gradient(135deg,rgba(10,110,79,.04),rgba(10,110,79,.09)); border-radius:20px; margin:32px 0; border:1px solid rgba(10,110,79,.12); }
+    .word-arabic-hero { font-family:'Amiri',serif; font-size:3.5rem; color:var(--emerald); line-height:1.3; margin-bottom:16px; direction:rtl; }
+    .word-roman-hero { font-size:1.3rem; font-style:italic; color:#4b5563; margin-bottom:12px; }
+    .break-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:20px 0; }
+    .break-card { background:var(--ivory); border:1px solid var(--border); border-radius:12px; padding:18px 14px; text-align:center; }
+    .bc-arabic { font-family:'Amiri',serif; font-size:1.5rem; color:var(--emerald); direction:rtl; margin-bottom:6px; }
+    .bc-meaning { font-weight:700; color:var(--charcoal); font-size:.85rem; }
+    @media (max-width:576px) { .break-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
+    content: `<p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults use it daily without knowing its full depth, Quranic roots, or the difference between the short and complete forms.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>Bismillah meaning in English</strong> is <em>"In the name of Allah."</em> Muslims say it before eating, drinking, traveling, studying, and starting any important action — seeking Allah's blessings and help. The full form is <strong>Bismillah ir-Rahman ir-Raheem</strong> — "In the name of Allah, the Most Gracious, the Most Merciful."
+          </div>
+
+          <div class="word-hero">
+            <div class="word-arabic-hero">بِسْمِ اللَّهِ</div>
+            <div class="word-roman-hero">Bismillāh</div>
+            <div style="font-weight:600;color:var(--charcoal);">"In the name of Allah"</div>
+          </div>
+
+          <h2>Bismillah Meaning Word by Word</h2>
+          <div class="break-grid">
+            <div class="break-card"><div class="bc-arabic">بِ</div><div class="bc-meaning">Bi = In / With</div></div>
+            <div class="break-card"><div class="bc-arabic">سْمِ</div><div class="bc-meaning">Ismi = Name</div></div>
+            <div class="break-card"><div class="bc-arabic">اللَّهِ</div><div class="bc-meaning">Allah = Allah (God)</div></div>
+          </div>
+
+          <h2>Short Form vs Full Form</h2>
+          <div class="gold-box">
+            <strong>Short:</strong> بِسْمِ اللَّهِ — <em>Bismillah</em> — for daily actions (eating, entering home, starting homework)<br><br>
+            <strong>Full:</strong> بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — <em>Bismillah ir-Rahman ir-Raheem</em> — for Salah, Quran recitation, and formal acts. Opens every surah of the Quran except Surah At-Tawbah.
+          </div>
+
+          <h2>When Should You Say Bismillah?</h2>
+          <ul>
+            <li><strong>Before eating or drinking</strong> — Prophet ﷺ taught: "Say Bismillah, eat with your right hand, and eat from what is nearest to you." (Bukhari)</li>
+            <li><strong>Before leaving home</strong> — "Bismillah, tawakkaltu 'alallah" — In Allah's name, I trust in Allah</li>
+            <li><strong>Before studying Quran or any knowledge</strong> — Seeking Allah's help in understanding</li>
+            <li><strong>Before starting work, travel, or marriage</strong> — Any significant new endeavour</li>
+            <li><strong>Before wudu and Salah</strong> — Beginning acts of worship</li>
+          </ul>
+
+          <h2>Bismillah in the Quran</h2>
+          <p>Every surah of the Quran (except Surah At-Tawbah) begins with Bismillah ir-Rahman ir-Raheem. The Quran itself opens with Surah Al-Fatiha, which starts with this blessed phrase — making Bismillah the gateway to the entire Book of Allah.</p>
+
+          <h2>Teaching Children to Say Bismillah</h2>
+          <p>The best way children learn Bismillah is through daily repetition in context — not lectures. Say it aloud before every meal, every car journey, and every Quran lesson. When children hear parents say Bismillah naturally, they adopt it as their own habit.</p>
+          <p>For structured Quran and Islamic education, certified tutors teach Bismillah as part of <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a> and daily Islamic manners in <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>.</p>
+
+          <div class="highlight-box" style="margin-top:32px;">
+            <strong>Want your child to learn Bismillah, Quran, and Islamic manners with a certified tutor?</strong>
+            <a href="/online-quran-classes-for-kids#cta" style="color:var(--emerald);font-weight:700;display:block;margin-top:12px;">Book a free 30-minute trial class for your child →</a>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning</a></li>
+              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning</a></li>
+              <li><a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha — Arabic & English</a></li>
             </ul>
           </div>`,
   },

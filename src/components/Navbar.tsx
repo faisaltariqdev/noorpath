@@ -5,6 +5,7 @@ import { Menu, X, GraduationCap } from "lucide-react";
 
 const navLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
+  { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
   { href: "/courses", label: "Courses" },
   { href: "/our-tutors", label: "Our Tutors" },
   { href: "/pricing", label: "Pricing" },
