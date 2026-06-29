@@ -8,7 +8,17 @@ const BASE = "https://www.noorpath.online";
 const LAUNCH = new Date("2024-01-15");
 const CONTENT_UPDATE = new Date("2025-06-01");
 const RECENT = new Date("2026-01-10");
-const NOW = new Date("2026-06-24");
+const NOW = new Date("2026-06-25");
+
+/** Root-level keyword landing pages (Qutor-style commercial URLs) */
+const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
+  { url: `${BASE}/learn-quran-online`,          priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/online-quran-academy`,         priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/learn-tajweed-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/hifz-quran-online`,           priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/quran-lesson-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/studying-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+];
 
 /** Commercial blogs that drive student enrollment */
 const COMMERCIAL_BLOG_SLUGS = new Set([
@@ -68,5 +78,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? ("weekly" as const) : ("monthly" as const),
   }));
 
-  return [...staticPages, ...coursePages, ...locationPages, ...blogPages];
+  return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...blogPages];
 }

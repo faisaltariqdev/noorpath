@@ -3,8 +3,11 @@ import type { NextRequest } from "next/server";
 
 /** Old static-site paths → current Next.js routes */
 const LEGACY_PATHS: Record<string, string> = {
-  "/learn-quran-online": "/online-quran-classes",
   "/best-online-quran-classes-for-kids": "/online-quran-classes-for-kids",
+  "/online-quran-learning": "/learn-quran-online",
+  "/quran-teaching": "/quran-teacher-online",
+  "/quran-teaching-online": "/studying-quran-online",
+  "/learn-quran-online.html": "/learn-quran-online",
   "/online-quran-for-kids": "/online-quran-classes-for-kids",
   "/quran-classes-for-kids": "/online-quran-classes-for-kids",
   "/online-quran-teaching-jobs": "/our-tutors",

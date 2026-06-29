@@ -606,7 +606,13 @@ export default function HomePage() {
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
+                  ["/learn-quran-online", "Learn Quran Online"],
+                  ["/online-quran-academy", "Online Quran Academy"],
                   ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
+                  ["/learn-tajweed-online", "Learn Tajweed Online"],
+                  ["/hifz-quran-online", "Hifz Quran Online"],
+                  ["/quran-lesson-online", "Quran Lesson Online"],
+                  ["/studying-quran-online", "Studying Quran Online"],
                   ["/quran-teacher-online", "Online Quran Teacher"],
                   ["/free-quran-classes-online", "Free Quran Classes Online"],
                   ["/online-quran-for-beginners", "Online Quran for Beginners"],
@@ -629,11 +635,13 @@ export default function HomePage() {
           {/* SEO paragraph */}
           <div style={{ borderTop: "1px solid var(--border)", paddingTop: 24 }}>
             <p style={{ color: "var(--muted)", fontSize: ".82rem", maxWidth: 960, margin: "0 auto", lineHeight: 1.85, textAlign: "center" }}>
-              <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is a leading <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> offering certified 1-on-1 live classes via Zoom and Skype for Muslim families worldwide. Our programmes include{" "}
-              <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for kids</Link>,{" "}
+              <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is a leading{" "}
+              <Link href="/online-quran-academy" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> where you can{" "}
+              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via certified 1-on-1 live classes for Muslim families worldwide. Our programmes include{" "}
               <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link>,{" "}
-              <Link href="/courses/tajweed-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Tajweed classes</Link>,{" "}
-              <Link href="/courses/hifz-program-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Quran Hifz memorization</Link>,{" "}
+              <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for kids</Link>,{" "}
+              <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed online</Link>,{" "}
+              <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz online</Link>,{" "}
               <Link href="/courses/arabic-language-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Arabic language courses</Link>, and{" "}
               <Link href="/courses/daily-duas-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>daily duas for children</Link>.
               We offer <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>free trial Quran classes</Link> with no credit card required.
