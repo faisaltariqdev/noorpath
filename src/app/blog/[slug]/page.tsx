@@ -74,11 +74,7 @@ export default async function BlogPostPage({ params }: Props) {
           url: `https://www.noorpath.online/${post.authorSlug}`,
           worksFor: ORGANIZATION_REF,
         },
-        publisher: {
-          "@id": ORGANIZATION_ID,
-          name: "NoorPath Academy",
-          logo: { "@type": "ImageObject", url: "https://www.noorpath.online/favicon.svg", width: 512, height: 512 },
-        },
+        publisher: { "@id": ORGANIZATION_ID },
         url: `https://www.noorpath.online/blog/${post.slug}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.noorpath.online/blog/${post.slug}` },
         keywords: post.keywords.join(", "),
