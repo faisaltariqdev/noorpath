@@ -6,9 +6,9 @@ import { locations } from "@/data/locations";
 const BASE = "https://www.noorpath.online";
 
 const LAUNCH = new Date("2024-01-15");
-const CONTENT_UPDATE = new Date("2025-06-01");
-const RECENT = new Date("2026-01-10");
-const NOW = new Date("2026-06-25");
+const CONTENT_UPDATE = new Date("2026-05-01");
+const RECENT = new Date("2026-06-01");
+const NOW = new Date("2026-07-01");
 
 /** Root-level keyword landing pages (Qutor-style commercial URLs) */
 const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
@@ -44,8 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/blog`,                                     priority: 0.85, changeFrequency: "daily",   lastModified: NOW },
     { url: `${BASE}/pricing`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     // ── Tier 3: supporting pages ────────────────────────────────────────────────
-    { url: `${BASE}/female-quran-teacher-online`,              priority: 0.85, changeFrequency: "monthly", lastModified: RECENT },
-    { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.85, changeFrequency: "monthly", lastModified: RECENT },
+    { url: `${BASE}/female-quran-teacher-online`,              priority: 0.9,  changeFrequency: "weekly",  lastModified: NOW },
+    { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: NOW },
     { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/about`,                                    priority: 0.75, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
