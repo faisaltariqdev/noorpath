@@ -84,10 +84,14 @@ const DEFAULT_STEPS: LandingStep[] = [
 ];
 
 const DEFAULT_LOCATIONS: LandingLocation[] = [
-  { href: "/locations/online-quran-classes-uk", label: "🇬🇧 UK", note: "After-school GMT slots" },
-  { href: "/locations/online-quran-classes-usa", label: "🇺🇸 USA", note: "Morning & evening EST/PST" },
-  { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Flexible EST/PST" },
-  { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "After-school AEST" },
+  { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "GMT/BST — after-school slots" },
+  { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "EST/PST morning & evening" },
+  { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "EST/PST — flexible" },
+  { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "AEST — after-school" },
+  { href: "/locations/online-quran-classes-uae", label: "🇦🇪 UAE", note: "GST — morning & evening" },
+  { href: "/locations/online-quran-classes-germany", label: "🇩🇪 Germany", note: "CET — evening slots" },
+  { href: "/locations/online-quran-classes-pakistan", label: "🇵🇰 Pakistan", note: "PKT — all-day available" },
+  { href: "/locations", label: "🌍 40+ More Countries", note: "All timezones covered" },
 ];
 
 export default function KeywordLandingPage({
@@ -148,6 +152,15 @@ export default function KeywordLandingPage({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((crumb, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: crumb.label,
+          ...(crumb.href ? { item: `https://www.noorpath.online${crumb.href}` } : { item: url }),
         })),
       },
     ],
@@ -381,7 +394,7 @@ export default function KeywordLandingPage({
               <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
                 Available in Your Country
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-16">
                 {locations.map((loc) => (
                   <Link
                     key={loc.href}

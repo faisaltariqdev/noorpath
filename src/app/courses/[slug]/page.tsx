@@ -74,6 +74,16 @@ export default async function CourseDetailPage({ params }: Props) {
           { "@type": "ListItem", position: 3, name: course.title, item: `https://www.noorpath.online/courses/${slug}` },
         ],
       },
+      ...(course.faqs && course.faqs.length > 0
+        ? [{
+            "@type": "FAQPage",
+            mainEntity: course.faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }]
+        : []),
     ],
   };
 
@@ -185,6 +195,23 @@ export default async function CourseDetailPage({ params }: Props) {
                   ))}
                 </div>
               </div>
+
+              {/* FAQ section */}
+              {course.faqs && course.faqs.length > 0 && (
+                <div className="content-card" style={{ marginTop: 28 }}>
+                  <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 20 }}>
+                    Frequently Asked Questions
+                  </h2>
+                  {course.faqs.map((f, i) => (
+                    <details key={i} style={{ borderBottom: "1px solid var(--border)", padding: "16px 0" }}>
+                      <summary style={{ fontWeight: 600, color: "var(--charcoal)", cursor: "pointer", fontSize: ".92rem", listStyle: "none", display: "flex", justifyContent: "space-between" }}>
+                        {f.q} <span style={{ color: "var(--emerald)", marginLeft: 8, flexShrink: 0 }}>+</span>
+                      </summary>
+                      <p style={{ color: "var(--muted)", marginTop: 10, lineHeight: 1.75, fontSize: ".88rem" }}>{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              )}
 
               {/* Related courses */}
               {related.length > 0 && (
