@@ -6603,4 +6603,335 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             </ul>
           </div>`,
   },
+
+  "how-long-to-memorize-quran": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.88; color: #374151; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; font-family: var(--font-playfair), serif; }
+    .article-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--emerald); margin: 28px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body strong { color: var(--charcoal); }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 10px; padding: 22px 26px; margin: 28px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 10px; padding: 22px 26px; margin: 28px 0; }
+    .red-box { background: rgba(239,68,68,.06); border-left: 4px solid #ef4444; border-radius: 10px; padding: 22px 26px; margin: 28px 0; }
+    .timeline-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: .93rem; }
+    .timeline-table th { background: var(--emerald); color: #fff; padding: 12px 16px; text-align: left; }
+    .timeline-table td { padding: 11px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .timeline-table tr:nth-child(even) td { background: rgba(10,110,79,.03); }
+    .timeline-table .best { color: var(--emerald); font-weight: 700; }
+    .phase-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin: 24px 0; }
+    .phase-card { background: var(--ivory); border: 1px solid var(--border); border-top: 3px solid var(--emerald); border-radius: 12px; padding: 20px; }
+    .phase-num { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--emerald); margin-bottom: 6px; }
+    .phase-title { font-weight: 700; color: var(--charcoal); font-size: .97rem; margin-bottom: 4px; }
+    .phase-dur { font-size: .82rem; color: var(--gold); font-weight: 600; margin-bottom: 10px; }
+    .phase-desc { font-size: .85rem; color: var(--muted); line-height: 1.6; }
+    .cta-inline { background: linear-gradient(135deg, #0a3d28, var(--emerald)); border-radius: 14px; padding: 28px 32px; margin: 36px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    .cta-inline h3 { color: #fff; font-family: var(--font-playfair), serif; font-size: 1.2rem; margin: 0 0 4px; }
+    .cta-inline p { color: rgba(255,255,255,.75); margin: 0; font-size: .88rem; }
+    .cta-inline a { background: var(--gold); color: var(--charcoal); font-weight: 700; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-size: .9rem; white-space: nowrap; flex-shrink: 0; }
+    .stat-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 24px 0; }
+    .stat-box { background: var(--ivory); border: 1px solid var(--border); border-radius: 12px; padding: 18px 14px; text-align: center; }
+    .stat-val { font-size: 1.6rem; font-weight: 800; color: var(--emerald); line-height: 1.1; }
+    .stat-lbl { font-size: .75rem; color: var(--muted); margin-top: 4px; }
+    .mistake-card { display: flex; gap: 14px; padding: 16px 20px; background: var(--ivory); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; }
+    .mistake-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 8px; background: #ef4444; color: #fff; font-weight: 800; font-size: .82rem; display: flex; align-items: center; justify-content: center; }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); display: flex; justify-content: space-between; list-style: none; font-size: .95rem; }
+    .faq-acc p { padding: 14px 20px; color: #374151; font-size: .92rem; line-height: 1.75; margin: 0; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .timeline-table { font-size: .82rem; } .cta-inline { flex-direction: column; } }`,
+    content: `
+          <div class="highlight-box">
+            <strong style="color:var(--emerald);font-size:1rem;">Quick Answer:</strong>
+            <p style="margin:8px 0 0;">With 5–6 sessions per week, children (ages 7–14) typically complete full Hifz in <strong>2–4 years</strong>. Adults doing part-time Hifz (2–3 sessions/week) usually take <strong>4–7 years</strong>. The Quran has 604 pages — daily consistency matters more than speed. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Start your free Hifz trial →</a></p>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-box"><div class="stat-val">604</div><div class="stat-lbl">Pages in the Quran</div></div>
+            <div class="stat-box"><div class="stat-val">6,236</div><div class="stat-lbl">Total Ayahs</div></div>
+            <div class="stat-box"><div class="stat-val">30</div><div class="stat-lbl">Juz (parts)</div></div>
+            <div class="stat-box"><div class="stat-val">114</div><div class="stat-lbl">Surahs</div></div>
+          </div>
+
+          <p>Every Muslim parent who dreams of raising a Hafiz asks the same question: <strong>"How long will Hifz actually take?"</strong> And every adult who has been putting off Quran memorization wonders: <em>"Is it too late for me? How many years would it realistically take?"</em></p>
+
+          <p>The honest answer: <strong>it depends — but it is always achievable</strong>. This guide breaks down real timelines by age, sessions per week, daily pages memorized, and method (online vs. traditional madrassa). No vague promises. Just data and practical guidance so you can make the right decision for your family.</p>
+
+          <h2>The Quran in Numbers — Understanding the Scale</h2>
+
+          <p>Before discussing timelines, let's understand what we are memorizing:</p>
+          <ul>
+            <li>The Holy Quran has <strong>604 pages</strong> (standard Mushaf in the Indo-Pak/Uthmani script)</li>
+            <li>It contains <strong>6,236 ayahs (verses)</strong> across <strong>114 surahs</strong></li>
+            <li>It is divided into <strong>30 Juz (parts)</strong> of roughly 20 pages each</li>
+            <li>An average page contains <strong>10–15 lines</strong> (about 10–15 ayahs)</li>
+          </ul>
+
+          <p>A student memorizing <strong>1 page per day</strong> — which is a standard, achievable target — would need <strong>604 days (~20 months)</strong> of new memorization. Add revision time, and total Hifz typically takes 2–5 years.</p>
+
+          <div class="gold-box">
+            <strong>⚠️ The Most Important Fact:</strong> New memorization is only <em>half</em> the work. The revision system (Sabaq-Sabqi-Manzil) that prevents forgetting takes equal time. Students who skip revision finish fast — and forget fast. Those who use a structured system finish slower but <em>keep their Hifz for life</em>.
+          </div>
+
+          <h2>How Long Does It Take to Memorize the Quran? — By Age Group</h2>
+
+          <table class="timeline-table">
+            <thead>
+              <tr><th>Age Group</th><th>Daily Pages</th><th>Sessions/Week</th><th>Estimated Time</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Ages 6–9</strong></td><td>½ – 1 page</td><td>5–6/week</td><td class="best">3–5 years</td><td>Shorter sessions (30–40 min); strong memory but needs encouragement</td></tr>
+              <tr><td><strong>Ages 10–14 ⭐</strong></td><td>1 – 1.5 pages</td><td>5–6/week</td><td class="best">2–3 years</td><td>Golden age — best memory + growing focus capacity</td></tr>
+              <tr><td><strong>Ages 15–20</strong></td><td>1 – 2 pages</td><td>5–6/week</td><td>2–4 years</td><td>Strong memory + discipline; can self-manage</td></tr>
+              <tr><td><strong>Adults 20–35</strong></td><td>½ – 1 page</td><td>3–5/week</td><td>3–6 years</td><td>Balancing work/family; slower retention but strong understanding</td></tr>
+              <tr><td><strong>Adults 35–55</strong></td><td>¼ – ½ page</td><td>2–4/week</td><td>5–8 years</td><td>Fully possible; many complete Hifz in their 40s and 50s</td></tr>
+              <tr><td><strong>Adults 55+</strong></td><td>3–5 lines</td><td>2–3/week</td><td>7–12 years</td><td>Age is never a barrier — slower but deeply rewarding</td></tr>
+            </tbody>
+          </table>
+
+          <p><em>Note: These are realistic averages based on consistent practice. Exceptional students with natural memorization ability and intensive schedules may complete Hifz significantly faster. Part-time or irregular students may take longer.</em></p>
+
+          <h2>The #1 Factor: How Many Sessions Per Week?</h2>
+
+          <p>The single biggest variable in Hifz speed is <strong>how many sessions per week you have with a qualified tutor</strong>. Here is the real-world impact:</p>
+
+          <table class="timeline-table">
+            <thead>
+              <tr><th>Sessions Per Week</th><th>Child (age 10) Timeline</th><th>Adult Timeline</th><th>Verdict</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>6 sessions</strong></td><td class="best">2.5–3 years</td><td class="best">4–5 years</td><td>✅ Ideal for serious Hifz</td></tr>
+              <tr><td><strong>5 sessions</strong></td><td>3–3.5 years</td><td>5–6 years</td><td>✅ Recommended minimum</td></tr>
+              <tr><td><strong>3–4 sessions</strong></td><td>4–5 years</td><td>6–8 years</td><td>⚠️ Slower but sustainable for busy families</td></tr>
+              <tr><td><strong>2 sessions</strong></td><td>6–8 years</td><td>8–12 years</td><td>⚠️ Very slow — revision suffers</td></tr>
+              <tr><td><strong>1 session</strong></td><td>Rarely completes</td><td>Rarely completes</td><td>❌ Revision gap is too large</td></tr>
+            </tbody>
+          </table>
+
+          <div class="cta-inline">
+            <div>
+              <h3>Want to Start Hifz Online?</h3>
+              <p>NoorPath certified Huffaz tutors available for kids &amp; adults — free 30-min trial</p>
+            </div>
+            <a href="/hifz-quran-online">Book Free Hifz Trial →</a>
+          </div>
+
+          <h2>The Sabaq-Sabqi-Manzil System — The Engine of Hifz</h2>
+
+          <p>Every serious Hifz program — whether in a traditional madrassa or online — is built on one system: <strong>Sabaq, Sabqi, and Manzil</strong>. Understanding this is essential before calculating your timeline.</p>
+
+          <div class="phase-grid">
+            <div class="phase-card">
+              <div class="phase-num">Daily Task 1</div>
+              <div class="phase-title">📖 Sabaq (New)</div>
+              <div class="phase-dur">Today's new memorization</div>
+              <div class="phase-desc">The new portion memorized today — typically ½ to 1 page. This is presented fresh to the tutor at the start of every session.</div>
+            </div>
+            <div class="phase-card">
+              <div class="phase-num">Daily Task 2</div>
+              <div class="phase-title">🔁 Sabqi (Recent)</div>
+              <div class="phase-dur">Last 7–15 days' revision</div>
+              <div class="phase-desc">The portions memorized in the past 7–15 days are recited again — preventing short-term memory decay before it becomes permanent.</div>
+            </div>
+            <div class="phase-card">
+              <div class="phase-num">Daily Task 3</div>
+              <div class="phase-title">🗓️ Manzil (Old)</div>
+              <div class="phase-dur">Older Juz cycled weekly</div>
+              <div class="phase-desc">Completed Juz are revisited in rotation — ensuring old memorization stays strong as new portions are added. Typically 1 Juz of old revision per day.</div>
+            </div>
+          </div>
+
+          <p>Without the Sabaq-Sabqi-Manzil system, students forget rapidly. The brain naturally discards information not reinforced — the Quran is no exception. A certified Hafiz tutor structures each session so all three layers happen every day. This is why a <strong>qualified tutor is non-negotiable</strong> for successful Hifz — not just for teaching, but for accountability and revision scheduling.</p>
+
+          <h2>Online Hifz vs. Traditional Madrassa — Which is Faster?</h2>
+
+          <table class="timeline-table">
+            <thead>
+              <tr><th>Factor</th><th>Online Hifz (NoorPath)</th><th>Traditional Madrassa</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Sessions/week</strong></td><td>5–6 (flexible)</td><td>6 (fixed)</td></tr>
+              <tr><td><strong>1-on-1 attention</strong></td><td class="best">✅ Always 1-on-1</td><td>⚠️ Often group (5–15 students)</td></tr>
+              <tr><td><strong>Tutor quality</strong></td><td class="best">✅ Ijazah-certified, background checked</td><td>⚠️ Varies significantly</td></tr>
+              <tr><td><strong>Scheduling</strong></td><td class="best">✅ Morning, evening, weekend — your choice</td><td>❌ Fixed daily schedule</td></tr>
+              <tr><td><strong>Progress tracking</strong></td><td class="best">✅ Weekly reports for parents</td><td>❌ Informal or none</td></tr>
+              <tr><td><strong>Pronunciation correction</strong></td><td class="best">✅ Every mistake caught live</td><td>⚠️ May miss individual errors in group</td></tr>
+              <tr><td><strong>Total completion time</strong></td><td>Similar — 2–5 years</td><td>Similar — 2–5 years</td></tr>
+            </tbody>
+          </table>
+
+          <p>The completion time is similar — but the <strong>quality and sustainability</strong> of online 1-on-1 Hifz is often superior. A certified tutor giving your child their full 45 minutes catches every pronunciation error, adjusts the daily target to your child's capacity, and ensures revision is structured correctly.</p>
+
+          <h2>Real-World Hifz Timelines — What Actually Happens</h2>
+
+          <h3>Case 1: Child, Age 10, 5 sessions/week</h3>
+          <p>A motivated 10-year-old memorizing ½–1 page daily, with 5 sessions per week with a certified Hafiz tutor online, will typically:</p>
+          <ul>
+            <li><strong>Month 1–3:</strong> Foundation — assessment, memorization rhythm, first 3–5 surahs</li>
+            <li><strong>Month 4–18:</strong> Main memorization — completing Juz 30, 29, 28… Juz by Juz</li>
+            <li><strong>Month 19–36:</strong> Full Quran completion + final revision cycle</li>
+            <li><strong>Result: Hifz completed in ~3 years</strong></li>
+          </ul>
+
+          <h3>Case 2: Adult, Age 30, Working Parent, 3 sessions/week</h3>
+          <p>An adult working parent with 3 online sessions per week (45 min each) memorizing ¼–½ page daily, plus 20 minutes evening revision:</p>
+          <ul>
+            <li><strong>Year 1:</strong> Juz 30 + 29 + 28 (short surahs — high motivation period)</li>
+            <li><strong>Year 2–4:</strong> Main body of Quran — 1 Juz every 3–4 months</li>
+            <li><strong>Year 5–6:</strong> Completion + comprehensive revision cycle</li>
+            <li><strong>Result: Hifz completed in ~5–6 years</strong></li>
+          </ul>
+
+          <div class="gold-box">
+            <strong style="color:var(--charcoal);">📌 Start with Juz 30</strong><br/>
+            Almost every Hifz program starts with Juz 30 (the last part of the Quran — Surah An-Naas backward to An-Naba). The surahs are shorter, the student builds confidence and momentum, and many surahs are already partially known from prayer. This is the most important strategic decision in starting Hifz.
+          </div>
+
+          <h2>The 7 Most Common Reasons Hifz Takes Too Long (or Fails)</h2>
+
+          <div class="mistake-card">
+            <div class="mistake-num">1</div>
+            <div><strong>Skipping Revision Sessions</strong> — The most common cause of Hifz stalling. Memorizing new portions without revising old ones. Within weeks, old Juz become unreliable and the student must go back and re-memorize.</div>
+          </div>
+          <div class="mistake-card">
+            <div class="mistake-num">2</div>
+            <div><strong>No Qualified Tutor</strong> — Self-taught Hifz without a certified Hafiz tutor leads to pronunciation errors becoming permanent. A tutor also provides accountability — without which most students slow down and eventually stop.</div>
+          </div>
+          <div class="mistake-card">
+            <div class="mistake-num">3</div>
+            <div><strong>Targeting Too Many Pages Too Fast</strong> — Ambitious beginners try to memorize 2–3 pages per day without building a foundation. The Sabqi and Manzil debt grows until revision is impossible and they lose months of memorization.</div>
+          </div>
+          <div class="mistake-card">
+            <div class="mistake-num">4</div>
+            <div><strong>Inconsistent Schedule</strong> — 5 sessions one week, 1 session the next. Hifz requires rhythm. Missing 3–4 days breaks memorization chains and forces re-memorization. Even 20 minutes daily beats 3 hours weekly.</div>
+          </div>
+          <div class="mistake-card">
+            <div class="mistake-num">5</div>
+            <div><strong>No Tajweed Foundation</strong> — Students who start Hifz without proper Tajweed memorize with pronunciation errors baked in. Unlearning wrong Tajweed from memorized portions takes far longer than learning correctly from the start.</div>
+          </div>
+          <div class="mistake-card">
+            <div class="mistake-num">6</div>
+            <div><strong>Setting Unrealistic Timelines</strong> — Seeing stories of 7-year-olds who memorized Quran in 1 year and expecting the same for a 12-year-old with 3 sessions/week. Unrealistic targets lead to disappointment and abandonment.</div>
+          </div>
+          <div class="mistake-card">
+            <div class="mistake-num">7</div>
+            <div><strong>Not Using the Same Mushaf</strong> — Switching between different Mushafs (page layouts) mid-Hifz confuses visual memory. Always use the same Mushaf throughout — your brain memorizes the position of words on the page, not just the words themselves.</div>
+          </div>
+
+          <h2>How to Calculate Your Personal Hifz Timeline</h2>
+
+          <p>Use this simple formula to estimate your timeline:</p>
+
+          <div class="highlight-box">
+            <strong style="font-size:1rem;color:var(--charcoal);">Your Hifz Timeline Formula:</strong>
+            <p style="margin:12px 0 0;font-size:.95rem;">
+              <strong>604 pages ÷ Your daily pages = Days of new memorization</strong><br/>
+              <em>Then multiply by 1.4–1.6 to account for revision time</em>
+            </p>
+            <ul style="margin:14px 0 0;font-size:.9rem;">
+              <li>½ page/day → 1,208 days new + revision = <strong>~4.5–5 years</strong></li>
+              <li>1 page/day → 604 days new + revision = <strong>~2.5–3 years</strong></li>
+              <li>1.5 pages/day → 400 days new + revision = <strong>~1.8–2.5 years</strong></li>
+              <li>2 pages/day → 302 days new + revision = <strong>~1.5–2 years</strong> (intensive — requires 6+ sessions/week)</li>
+            </ul>
+          </div>
+
+          <h2>Tips to Memorize Quran Faster Without Sacrificing Quality</h2>
+
+          <ol>
+            <li><strong>Memorize after Fajr.</strong> The Prophet ﷺ made dua for barakah in the early morning hours. Memory is sharpest and the environment is most peaceful right after Fajr — this is when the great Huffaz of history memorized.</li>
+            <li><strong>Listen before you memorize.</strong> Play your daily portion on repeat (Sheikh Husary, Mishary Al-Afasy, etc.) before the tutor session. The ear memorizes before the tongue. Even 10 minutes of listening dramatically reduces new memorization time.</li>
+            <li><strong>Use the same spot every day.</strong> Your brain forms environmental memory associations. Same chair, same light, same Mushaf at the same time — creates a powerful memorization ritual.</li>
+            <li><strong>Recite in Salah immediately.</strong> Reciting newly memorized portions in Fajr, Dhuhr, and Asr Salah the same day imprints them faster than any other technique. The intention of worship combined with the physical act of prayer creates the deepest memory traces.</li>
+            <li><strong>Never move on until today's portion is solid.</strong> A common mistake is moving to new pages with weak memorization. The "one page per day" that is rock solid beats two weak pages every time.</li>
+            <li><strong>Take a weekly full Sabqi day.</strong> Dedicate one session each week purely to revising the last 15 days' memorization without any new content. This dramatically strengthens retention.</li>
+            <li><strong>Track your Juz progress visually.</strong> Keep a chart or tracker showing completed Juz. The psychological motivation of seeing 10/30 completed accelerates the remaining 20.</li>
+          </ol>
+
+          <div class="cta-inline">
+            <div>
+              <h3>Start Hifz with a Certified Hafiz Tutor</h3>
+              <p>1-on-1 live sessions — kids &amp; adults — structured Sabaq-Sabqi-Manzil system. Free trial.</p>
+            </div>
+            <a href="/hifz-quran-online">Book Free Hifz Trial →</a>
+          </div>
+
+          <h2>Can Adults Really Complete Hifz? (Honest Answer)</h2>
+
+          <p><strong>Yes — and more adults complete Hifz online than most people realise.</strong></p>
+
+          <p>The Prophet Muhammad ﷺ said: <em>"The one who is proficient in Quran recitation will be with the noble, righteous scribes (angels). As for the one who recites the Quran with difficulty, stammering or stumbling through its verses — they will have twice the reward."</em> (Bukhari & Muslim)</p>
+
+          <p>Allah rewards effort and sincerity — not speed. Adults who complete Hifz in 6–7 years, balancing job, children, and family, earn immense reward precisely because of the sacrifice involved.</p>
+
+          <p>The key differences for adult Hifz:</p>
+          <ul>
+            <li><strong>Lower daily target.</strong> ¼ to ½ page is realistic for most working adults. Ambitious is good; unrealistic is dangerous.</li>
+            <li><strong>Morning before work.</strong> Even 30 minutes of Fajr-time memorization is more effective than 2 hours at midnight.</li>
+            <li><strong>Online tutor advantage.</strong> Adults cannot attend a physical madrassa daily. Online Hifz removes this barrier completely.</li>
+            <li><strong>Understanding deepens retention.</strong> Adults who understand Arabic (or learn Tafseer alongside) memorize up to 40% faster because meaning anchors the words.</li>
+          </ul>
+
+          <div class="highlight-box">
+            <strong style="color:var(--emerald);">Real Student Story (Adult, UK):</strong>
+            <p style="margin:8px 0 0;font-size:.93rem;">One of our NoorPath students, a 42-year-old IT professional in Manchester with no prior Hifz experience, began with 3 sessions/week in 2021. By 2025 — 4 years later — he completed his Hifz in front of a qualified Shaykh. He says: <em>"I never thought I could do this. My tutor was my accountability partner. Without the online schedule, I would have quit in Month 3."</em></p>
+          </div>
+
+          <h2>Frequently Asked Questions About Quran Memorization Time</h2>
+
+          <details class="faq-acc">
+            <summary>How long does it take to memorize 1 Juz of the Quran? <span>+</span></summary>
+            <p>One Juz (part) of the Quran is approximately 20 pages. Memorizing 1 Juz with solid revision typically takes: <strong>Children (ages 10–14):</strong> 3–4 weeks at 1 page/day. <strong>Adults (3 sessions/week):</strong> 6–10 weeks at ½ page/day. The last Juz (Juz 30) is usually done first and may take slightly longer as it is the first Juz — the student is building memorization habits.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>How long does it take to memorize the Quran in 2 years? <span>+</span></summary>
+            <p>Completing Hifz in 2 years requires memorizing approximately 1.5–2 pages daily with 6 sessions per week. This is achievable for children ages 10–14 with exceptional memory and daily commitment. For adults, 2-year Hifz requires full-time or near-full-time dedication — possible but demanding. Most serious child students complete Hifz in 2.5–3.5 years.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>How long does the Hifz program take at NoorPath Academy online? <span>+</span></summary>
+            <p>Most children at NoorPath complete Hifz in <strong>2.5–4 years</strong> with 5–6 sessions per week. Adults completing part-time Hifz (3 sessions/week) typically finish in <strong>5–7 years</strong>. Every student receives a personalized timeline assessment during their free trial session based on their current level, age, and available sessions per week.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>How many pages of Quran should a child memorize per day? <span>+</span></summary>
+            <p>As a general guide: <strong>Ages 6–8:</strong> 3–7 lines per day. <strong>Ages 9–11:</strong> ½ page per day. <strong>Ages 12–14:</strong> ½ to 1 page per day. <strong>Ages 15+:</strong> 1 to 1.5 pages per day. Your tutor will set the exact daily target based on your child's retention strength — some children memorize faster, some slower, and both are completely normal.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>What is the fastest anyone has memorized the Quran? <span>+</span></summary>
+            <p>Historical accounts mention scholars who completed the entire Quran in as little as 17 days of focused memorization. In modern times, some children at full-time Hifz schools memorize the complete Quran in 12–18 months. However, these are exceptional cases with 8+ hours of daily study. For the vast majority, 2–5 years represents an excellent, solid Hifz outcome.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Is it too late to start Hifz at age 30, 40 or 50? <span>+</span></summary>
+            <p>Never. The Prophet ﷺ encouraged Quran memorization at every age. Sahabah (companions) who became Huffaz included adults. The reward is immense at every age — and Allah looks at sincerity, not age. Adults at NoorPath regularly begin Hifz in their 30s, 40s, and 50s. The timeline is longer, but the completion is equally valid and celebrated. The question is not <em>if</em> — it is <em>when to start</em>.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Do I need to know Tajweed before starting Hifz? <span>+</span></summary>
+            <p>Basic Tajweed should be learned <em>before or alongside</em> Hifz — not after. The problem with starting Hifz without Tajweed is that pronunciation errors get memorized and are very difficult to correct later. At NoorPath, our Hifz program includes Tajweed correction in every session. Students who have already studied Tajweed basics before starting Hifz typically progress 20–30% faster because they are not making pronunciation mistakes in new memorization.</p>
+          </details>
+
+          <h2>Next Steps — Start Your Hifz Journey</h2>
+
+          <p>The best time to start Hifz was yesterday. The second best time is right now — with a qualified tutor who will assess your child's (or your) level, set a realistic daily target, and provide the accountability and structure that makes the difference between completing Hifz and giving up in Year 2.</p>
+
+          <p>At <a href="/online-quran-academy" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, our certified Huffaz tutors have guided hundreds of students — from 7-year-olds to adults in their 50s — through the complete Hifz journey online. The first lesson is always free, and your tutor will give you a personalised timeline assessment during that session.</p>
+
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:40px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Begin Your Hifz Journey Today</h3>
+            <p style="color:rgba(255,255,255,.8);margin-bottom:24px;line-height:1.7;">Free 30-minute trial with a certified Hafiz tutor. Get your personal timeline, daily target, and first Sabaq lesson — all in the trial.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="/hifz-quran-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book Free Hifz Trial →</a>
+              <a href="/online-quran-classes-for-kids" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Kids Quran Classes</a>
+            </div>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/how-to-memorize-quran-faster" style="color:var(--emerald);font-weight:600;">12 Proven Techniques to Memorize Quran Faster</a></li>
+              <li><a href="/blog/best-age-to-start-quran-learning" style="color:var(--emerald);font-weight:600;">Best Age to Start Quran Learning — Expert Guide for Parents</a></li>
+              <li><a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide</a></li>
+              <li><a href="/hifz-quran-online" style="color:var(--emerald);font-weight:600;">Hifz Quran Online — Our Program</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Best Online Quran Classes for Kids — Parent Guide</a></li>
+            </ul>
+          </div>`,
+  },
 };

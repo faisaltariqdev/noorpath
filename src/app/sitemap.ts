@@ -28,6 +28,7 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "benefits-of-online-quran-classes",
   "how-to-teach-quran-to-kids",
   "best-age-to-start-quran-learning",
+  "how-long-to-memorize-quran",
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {

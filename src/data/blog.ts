@@ -343,6 +343,26 @@ export const blogPosts: BlogPost[] = [
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
+    slug: "how-long-to-memorize-quran",
+    title: "How Long Does It Take to Memorize the Quran? — Complete 2026 Guide",
+    description:
+      "How long does it take to memorize the Quran? Real timelines by age, sessions/week & method. Kids: 2–4 years. Adults: 3–7 years. Full Hifz breakdown with Sabaq-Sabqi-Manzil system.",
+    category: "Hifz & Memorization",
+    date: "2026-07-01",
+    updatedAt: "2026-07-01",
+    readTime: "18 min",
+    keywords: [
+      "how long to memorize quran", "how long does it take to memorize the quran",
+      "quran memorization time", "hifz quran time", "how long hifz takes",
+      "memorize quran in 2 years", "how long to complete hifz", "quran hifz duration",
+      "online quran memorization", "hifz for adults time", "how long for kids to memorize quran",
+      "quran memorization schedule", "sabaq sabqi manzil",
+    ],
+    excerpt:
+      "The real answer to 'How long does it take to memorize the Quran?' — broken down by age, sessions per week, daily pages, and whether you are learning online or in a madrassa. Plus the Sabaq-Sabqi-Manzil system explained.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "islamic-quotes-in-english-arabic",
     title: "150+ Best Islamic Quotes in English & Arabic — Quran & Hadith",
     description: "The most inspiring Islamic quotes from the Quran and Hadith — in English and Arabic — for motivation, hope, gratitude, patience, and daily reflection.",
