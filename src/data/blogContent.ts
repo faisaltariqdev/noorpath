@@ -1,5 +1,416 @@
 // Auto-extracted from original HTML blog files — styles + content
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "dua-for-anxiety-stress-depression": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 26px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 10px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+
+    /* Table of contents */
+    .toc-box { background: var(--ivory); border: 1px solid var(--border); border-radius: 14px; padding: 22px 26px; margin: 28px 0; }
+    .toc-box h3 { margin: 0 0 12px; color: var(--charcoal); font-size: 1rem; }
+    .toc-box ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+    .toc-box li { margin-bottom: 6px; font-size: .9rem; }
+
+    /* Dua card */
+    .dua-card { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 26px 26px 22px; margin: 22px 0; box-shadow: 0 2px 10px rgba(10,110,79,.05); }
+    .dua-card.featured { border: 2px solid var(--emerald); background: linear-gradient(180deg, rgba(10,110,79,.04), #fff); }
+    .dua-num { display: inline-flex; align-items: center; justify-content: center; min-width: 30px; height: 30px; border-radius: 8px; background: var(--emerald); color: #fff; font-size: .82rem; font-weight: 800; margin-right: 10px; }
+    .dua-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--charcoal); display: flex; align-items: center; margin-bottom: 4px; }
+    .dua-for { font-size: .82rem; color: var(--emerald); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 16px; }
+    .dua-arabic { font-family: 'Amiri', serif; font-size: 1.85rem; color: var(--charcoal); direction: rtl; text-align: right; line-height: 2.1; margin: 8px 0 14px; padding: 14px 18px; background: var(--ivory); border-radius: 12px; }
+    .dua-roman { font-style: italic; color: #4b5563; font-size: .95rem; line-height: 1.7; margin-bottom: 10px; }
+    .dua-english { color: var(--charcoal); font-weight: 600; font-size: .96rem; line-height: 1.7; margin-bottom: 14px; }
+    .dua-meta { display: flex; flex-wrap: wrap; gap: 10px; border-top: 1px solid var(--border); padding-top: 14px; }
+    .dua-badge { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; font-weight: 600; border-radius: 20px; padding: 4px 12px; }
+    .dua-badge.src { background: rgba(232,184,75,.12); color: #a97613; }
+    .dua-badge.when { background: rgba(10,110,79,.1); color: var(--emerald); }
+
+    /* Quran reference */
+    .quran-ref { background: rgba(232,184,75,.05); border: 1px solid rgba(232,184,75,.22); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+    .quran-ref-arabic { font-family: 'Amiri', serif; font-size: 1.5rem; direction: rtl; text-align: right; color: var(--charcoal); margin-bottom: 10px; line-height: 1.9; }
+    .quran-ref-english { font-size: .95rem; color: #374151; font-style: italic; margin-bottom: 6px; }
+    .quran-ref-source { font-size: .8rem; color: var(--emerald); font-weight: 700; }
+
+    /* Routine steps */
+    .routine-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0; }
+    .routine-card { background: var(--ivory); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+    .routine-time { font-size: .78rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+    .routine-card h4 { margin: 0 0 8px; color: var(--charcoal); font-size: 1rem; }
+    .routine-card p { margin: 0; font-size: .86rem; color: var(--muted); line-height: 1.6; }
+
+    /* FAQ accordion */
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; flex-shrink: 0; font-size: 1.2rem; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+
+    /* Care callout */
+    .care-box { background: rgba(99,102,241,.06); border: 1px solid rgba(99,102,241,.2); border-radius: 14px; padding: 22px 26px; margin: 28px 0; }
+    .care-box strong { color: #4f46e5; }
+
+    @media (max-width: 576px) {
+      .dua-arabic { font-size: 1.5rem; line-height: 1.9; }
+      .toc-box ol { columns: 1; }
+      .routine-grid { grid-template-columns: 1fr; }
+    }`,
+    content: `<p>Anxiety before sleep. A chest that tightens for no clear reason. Overthinking that will not switch off. Grief that sits heavy on the heart. If you are reading this, you already know the feeling — and you are looking for something more than a breathing exercise. You are looking for <strong>peace that reaches the soul</strong>.</p>
+
+          <p>Islam does not dismiss your anxiety. The Prophet Muhammad ﷺ — the most beloved of all creation — experienced worry, grief and distress, and Allah gave him specific words to say in those moments. These are not vague affirmations. They are <strong>authentic duas for anxiety, stress and depression</strong>, taken directly from the Quran and Sahih Hadith, that millions of Muslims have turned to for over 1,400 years.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The most powerful and comprehensive <strong>dua for anxiety</strong> is the one the Prophet ﷺ taught: <em>"Allahumma inni a'udhu bika minal-hammi wal-hazan"</em> — "O Allah, I seek refuge in You from anxiety and grief." (Sahih al-Bukhari 6369). Below are <strong>15 authentic duas</strong> for worry, sadness, overthinking, fear and a broken heart — each with Arabic, transliteration, English meaning, source, and exactly when to recite it.
+          </div>
+
+          <div class="toc-box">
+            <h3>What you will find in this guide</h3>
+            <ol>
+              <li><a href="#comprehensive">The most comprehensive dua</a></li>
+              <li><a href="#worry">Duas for worry &amp; anxiety</a></li>
+              <li><a href="#grief">Duas for grief &amp; sadness</a></li>
+              <li><a href="#distress">Duas for severe distress</a></li>
+              <li><a href="#heart">Duas for a broken heart</a></li>
+              <li><a href="#sleep">Duas for sleep &amp; night anxiety</a></li>
+              <li><a href="#relief">Duas for hardship &amp; relief</a></li>
+              <li><a href="#why">Why dhikr calms the heart</a></li>
+              <li><a href="#routine">A daily anxiety-relief routine</a></li>
+              <li><a href="#help">When to also seek help</a></li>
+            </ol>
+          </div>
+
+          <!-- =================== THE COMPREHENSIVE DUA =================== -->
+          <h2 id="comprehensive">The Most Powerful Dua for Anxiety &amp; Grief</h2>
+
+          <p>When the Prophet ﷺ found a companion (Abu Umamah) sitting in the mosque overwhelmed by worry and debt, he did not just comfort him — he taught him a dua to say <strong>morning and evening</strong>. Abu Umamah later said: <em>"I said it, and Allah removed my worry and paid off my debt."</em> This single dua names eight burdens of the heart in four pairs, and asks Allah for refuge from all of them.</p>
+
+          <div class="dua-card featured">
+            <div class="dua-title"><span class="dua-num">1</span> The Comprehensive Dua of Refuge</div>
+            <div class="dua-for">For anxiety, grief, laziness, fear &amp; debt</div>
+            <div class="dua-arabic">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ</div>
+            <div class="dua-roman">Allahumma inni a'udhu bika minal-hammi wal-hazan, wal-'ajzi wal-kasal, wal-bukhli wal-jubn, wa dala'id-dayni wa ghalabatir-rijal.</div>
+            <div class="dua-english">"O Allah, I seek refuge in You from anxiety and grief, from weakness and laziness, from miserliness and cowardice, from being overburdened by debt and overpowered by others."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Sahih al-Bukhari 6369</span>
+              <span class="dua-badge when">🕐 Morning &amp; evening</span>
+            </div>
+          </div>
+
+          <div class="gold-box">
+            <strong>Why this dua is so complete:</strong> Scholars note it treats two different diseases of the heart. <em>Hamm</em> (anxiety) is fear of what has <strong>not yet</strong> happened — the future. <em>Hazan</em> (grief) is sorrow over what <strong>already</strong> happened — the past. Most anxiety lives in one of these two places, and this dua covers both at once.
+          </div>
+
+          <!-- =================== WORRY & ANXIETY =================== -->
+          <h2 id="worry">Duas for Worry &amp; Overthinking</h2>
+
+          <p>When the mind races and you cannot stop thinking about everything that could go wrong, these short, memorable duas re-anchor the heart in tawakkul (reliance on Allah).</p>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">2</span> Hasbunallah — Sufficiency</div>
+            <div class="dua-for">For overthinking &amp; feeling overwhelmed</div>
+            <div class="dua-arabic">حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ</div>
+            <div class="dua-roman">Hasbunallahu wa ni'mal-wakil.</div>
+            <div class="dua-english">"Allah is sufficient for us, and He is the best Disposer of affairs."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Quran 3:173 &amp; al-Bukhari 4563</span>
+              <span class="dua-badge when">🕐 When worried about an outcome</span>
+            </div>
+          </div>
+
+          <p>Ibrahim (peace be upon him) said this when thrown into the fire, and the Prophet ﷺ and the believers said it when warned of a gathering army. In both cases, the fear was real — and Allah turned it to safety. Say it when your worry feels bigger than you.</p>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">3</span> Reliance &amp; Trust</div>
+            <div class="dua-for">For decisions &amp; fear of the future</div>
+            <div class="dua-arabic">حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ</div>
+            <div class="dua-roman">Hasbiyallahu la ilaha illa huwa, 'alayhi tawakkaltu wa huwa rabbul-'arshil-'azim.</div>
+            <div class="dua-english">"Allah is sufficient for me. There is no god but Him. In Him I put my trust, and He is the Lord of the Mighty Throne."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Quran 9:129 · Abu Dawud 5081</span>
+              <span class="dua-badge when">🕐 7 times, morning &amp; evening</span>
+            </div>
+          </div>
+
+          <!-- =================== GRIEF & SADNESS =================== -->
+          <h2 id="grief">Duas for Grief, Sadness &amp; Depression</h2>
+
+          <p>For the heavy, settled sadness that does not lift — the kind that feels like depression — the Prophet ﷺ gave one of the most beautiful and complete supplications ever spoken. He said whoever says it, <em>"Allah will remove their sorrow and replace their grief with joy."</em></p>
+
+          <div class="dua-card featured">
+            <div class="dua-title"><span class="dua-num">4</span> The Dua That Removes Sorrow</div>
+            <div class="dua-for">For deep sadness &amp; depression</div>
+            <div class="dua-arabic">اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْدِكَ، ابْنُ أَمَتِكَ... أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجِلَاءَ حُزْنِي، وَذَهَابَ هَمِّي</div>
+            <div class="dua-roman">Allahumma inni 'abduka... an taj'alal-Qur'ana rabi'a qalbi, wa nura sadri, wa jila'a huzni, wa dhahaba hammi.</div>
+            <div class="dua-english">"O Allah... make the Quran the spring of my heart, the light of my chest, the remover of my sadness and the reliever of my anxiety."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Musnad Ahmad 3712 (Sahih)</span>
+              <span class="dua-badge when">🕐 In sujood &amp; times of grief</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">5</span> The Dua of Prophet Yunus</div>
+            <div class="dua-for">For distress, regret &amp; feeling trapped</div>
+            <div class="dua-arabic">لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</div>
+            <div class="dua-roman">La ilaha illa anta subhanaka inni kuntu minaz-zalimin.</div>
+            <div class="dua-english">"There is no god but You, glory be to You. Indeed, I was among the wrongdoers."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Quran 21:87 · Tirmidhi 3505</span>
+              <span class="dua-badge when">🕐 When you feel trapped in darkness</span>
+            </div>
+          </div>
+
+          <p>Yunus (peace be upon him) said this in the darkness of the whale's belly — trapped, alone, and in despair. The Prophet ﷺ said: <em>"No Muslim ever supplicates with these words for anything but Allah answers him."</em> (Tirmidhi). When your situation feels like a dark place you cannot escape, this is the dua.</p>
+
+          <!-- =================== SEVERE DISTRESS =================== -->
+          <h2 id="distress">Duas for Severe Distress &amp; Panic</h2>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">6</span> The Dua for Moments of Distress</div>
+            <div class="dua-for">For panic &amp; acute anxiety attacks</div>
+            <div class="dua-arabic">لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ</div>
+            <div class="dua-roman">La ilaha illallahul-'Azimul-Halim, la ilaha illallahu Rabbul-'Arshil-'Azim, la ilaha illallahu Rabbus-samawati wa Rabbul-ardi wa Rabbul-'Arshil-Karim.</div>
+            <div class="dua-english">"There is no god but Allah, the Magnificent, the Forbearing. There is no god but Allah, Lord of the Mighty Throne. There is no god but Allah, Lord of the heavens, Lord of the earth, and Lord of the Noble Throne."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 al-Bukhari 6345 · Muslim 2730</span>
+              <span class="dua-badge when">🕐 During intense stress or panic</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">7</span> Ya Hayyu Ya Qayyum</div>
+            <div class="dua-for">For seeking rescue &amp; strength</div>
+            <div class="dua-arabic">يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ</div>
+            <div class="dua-roman">Ya Hayyu ya Qayyum, bi-rahmatika astaghith.</div>
+            <div class="dua-english">"O Ever-Living, O Sustainer, by Your mercy I seek relief."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Tirmidhi 3524</span>
+              <span class="dua-badge when">🕐 In any moment of hardship</span>
+            </div>
+          </div>
+
+          <!-- =================== BROKEN HEART =================== -->
+          <h2 id="heart">Duas for a Broken Heart</h2>
+
+          <p>Whether it is heartbreak, loss, or a betrayal you did not deserve, these words ask Allah — the only One who fully understands your heart — to mend what is broken and replace it with something better.</p>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">8</span> The Dua for a Loss</div>
+            <div class="dua-for">For grief after losing something or someone</div>
+            <div class="dua-arabic">إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا</div>
+            <div class="dua-roman">Inna lillahi wa inna ilayhi raji'un. Allahumma-jurni fi musibati wa akhlif li khayran minha.</div>
+            <div class="dua-english">"Indeed we belong to Allah, and to Him we shall return. O Allah, reward me for my affliction and replace it for me with something better."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Sahih Muslim 918</span>
+              <span class="dua-badge when">🕐 When you experience any loss</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">9</span> Asking for Your Affairs to Be Set Right</div>
+            <div class="dua-for">For when everything feels broken</div>
+            <div class="dua-arabic">يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ</div>
+            <div class="dua-roman">Ya Hayyu ya Qayyum, bi-rahmatika astaghith, aslih li sha'ni kullahu wa la takilni ila nafsi tarfata 'ayn.</div>
+            <div class="dua-english">"O Ever-Living, O Sustainer, by Your mercy I seek relief. Set right all of my affairs, and do not leave me to myself even for the blink of an eye."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Sunan an-Nasa'i (al-Kubra) · Hasan</span>
+              <span class="dua-badge when">🕐 Morning &amp; evening</span>
+            </div>
+          </div>
+
+          <!-- =================== SLEEP =================== -->
+          <h2 id="sleep">Duas for Sleep &amp; Night-time Anxiety</h2>
+
+          <p>Anxiety often strikes hardest at night, when the world goes quiet and the mind gets loud. The Prophet ﷺ gave us a protective routine before sleep — reciting <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the last three Surahs (the Quls) — and this dua to place your heart in Allah's care.</p>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">10</span> The Dua Before Sleep</div>
+            <div class="dua-for">For a calm, protected sleep</div>
+            <div class="dua-arabic">اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ</div>
+            <div class="dua-roman">Allahumma aslamtu nafsi ilayk, wa fawwadtu amri ilayk, wa alja'tu zahri ilayk, raghbatan wa rahbatan ilayk.</div>
+            <div class="dua-english">"O Allah, I submit myself to You, I entrust my affairs to You, and I turn my back to You in hope and fear of You."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 al-Bukhari 247 · Muslim 2710</span>
+              <span class="dua-badge when">🌙 As the last words before sleep</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">11</span> Against Frightening Thoughts at Night</div>
+            <div class="dua-for">For racing thoughts &amp; fear in bed</div>
+            <div class="dua-arabic">أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ، وَشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ</div>
+            <div class="dua-roman">A'udhu bi-kalimatillahit-tammati min ghadabihi wa 'iqabih, wa sharri 'ibadih, wa min hamazatish-shayatini wa an yahdurun.</div>
+            <div class="dua-english">"I seek refuge in the perfect words of Allah from His anger and punishment, from the evil of His servants, and from the whisperings of the devils and their presence."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Abu Dawud 3893 · Tirmidhi 3528</span>
+              <span class="dua-badge when">🌙 When anxious thoughts keep you awake</span>
+            </div>
+          </div>
+
+          <!-- =================== HARDSHIP & RELIEF =================== -->
+          <h2 id="relief">Duas for Hardship &amp; Ease</h2>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">12</span> Turning Hardship into Ease</div>
+            <div class="dua-for">For a task or situation that feels impossible</div>
+            <div class="dua-arabic">اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلًا</div>
+            <div class="dua-roman">Allahumma la sahla illa ma ja'altahu sahla, wa anta taj'alul-hazna idha shi'ta sahla.</div>
+            <div class="dua-english">"O Allah, there is no ease except in what You make easy, and You make hardship easy if You will."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Ibn Hibban 2427 (Sahih)</span>
+              <span class="dua-badge when">🕐 Before a difficult task</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">13</span> Seeking Well-being (Afiyah)</div>
+            <div class="dua-for">For overall peace in body &amp; mind</div>
+            <div class="dua-arabic">اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ</div>
+            <div class="dua-roman">Allahumma inni as'alukal-'afwa wal-'afiyata fid-dunya wal-akhirah.</div>
+            <div class="dua-english">"O Allah, I ask You for pardon and well-being in this world and the Hereafter."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Ibn Majah 3871 · Hasan</span>
+              <span class="dua-badge when">🕐 Morning &amp; evening</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">14</span> The Prophet's Dua for Strength of Heart</div>
+            <div class="dua-for">For anxiety, sadness &amp; feeling incapable</div>
+            <div class="dua-arabic">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ</div>
+            <div class="dua-roman">Allahumma inni a'udhu bika minal-hammi wal-hazan, wa a'udhu bika minal-'ajzi wal-kasal.</div>
+            <div class="dua-english">"O Allah, I seek refuge in You from anxiety and grief, and I seek refuge in You from weakness and laziness."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 Sahih al-Bukhari 2893</span>
+              <span class="dua-badge when">🕐 Any time you feel stuck</span>
+            </div>
+          </div>
+
+          <div class="dua-card">
+            <div class="dua-title"><span class="dua-num">15</span> The Simplest Dhikr for Peace</div>
+            <div class="dua-for">For a restless, tired heart</div>
+            <div class="dua-arabic">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ</div>
+            <div class="dua-roman">La hawla wa la quwwata illa billah.</div>
+            <div class="dua-english">"There is no might nor power except with Allah."</div>
+            <div class="dua-meta">
+              <span class="dua-badge src">📖 al-Bukhari 6384 · Muslim 2704</span>
+              <span class="dua-badge when">🕐 Repeat gently whenever anxious</span>
+            </div>
+          </div>
+
+          <p>The Prophet ﷺ called this phrase <em>"a treasure from the treasures of Paradise."</em> It is the easiest to memorise and the most calming to repeat — a single sentence that hands the entire weight of your worry back to the One who can actually carry it.</p>
+
+          <!-- =================== WHY DHIKR WORKS =================== -->
+          <h2 id="why">Why Dhikr Genuinely Calms the Heart</h2>
+
+          <p>These are not just words we say out of habit. Allah tells us directly that remembrance is designed to settle the human heart:</p>
+
+          <div class="quran-ref">
+            <div class="quran-ref-arabic">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+            <div class="quran-ref-english">"Unquestionably, by the remembrance of Allah do hearts find rest."</div>
+            <div class="quran-ref-source">— Quran 13:28 (Surah Ar-Ra'd)</div>
+          </div>
+
+          <p>Anxiety often grows from a feeling of being <strong>out of control</strong> — carrying a future you cannot predict and a past you cannot change. Dhikr works because it moves that weight from your shoulders to Allah's decree. When you say "Hasbunallah" (Allah is enough for me), you are not denying the problem — you are correctly naming who is actually in charge of the outcome. That shift, repeated daily, rewires how the heart responds to fear.</p>
+
+          <!-- =================== ROUTINE =================== -->
+          <h2 id="routine">A Simple Daily Anxiety-Relief Routine</h2>
+
+          <p>Duas work best as a consistent habit, not just an emergency button. Here is a realistic routine built entirely from the Sunnah — it takes under 10 minutes a day.</p>
+
+          <div class="routine-grid">
+            <div class="routine-card">
+              <div class="routine-time">☀️ After Fajr (Morning)</div>
+              <h4>Morning Adhkar</h4>
+              <p>Recite Ayatul Kursi, the comprehensive dua (#1), and "Hasbunallah" (#2) x7. This sets a calm tone before the day's stress begins.</p>
+            </div>
+            <div class="routine-card">
+              <div class="routine-time">🌆 After Asr / Maghrib (Evening)</div>
+              <h4>Evening Adhkar</h4>
+              <p>Repeat the same morning set. The Prophet ﷺ specifically prescribed these duas for morning and evening protection.</p>
+            </div>
+            <div class="routine-card">
+              <div class="routine-time">😰 In the Moment</div>
+              <h4>When Anxiety Hits</h4>
+              <p>Quietly repeat "La hawla wa la quwwata illa billah" (#15) or the dua of Yunus (#5) until your breathing slows.</p>
+            </div>
+            <div class="routine-card">
+              <div class="routine-time">🌙 Before Sleep</div>
+              <h4>Night Protection</h4>
+              <p>Ayatul Kursi + the three Quls, then the sleep dua (#10). This directly targets night-time anxiety and racing thoughts.</p>
+            </div>
+          </div>
+
+          <div class="gold-box">
+            <strong>The secret ingredient — tawakkul with action:</strong> Making dua is not a substitute for taking action; it is what gives your action peace. Tie your camel <em>and</em> trust Allah, as the Prophet ﷺ taught. Say the dua, then take the next practical step — whether that is a conversation, a plan, or reaching out for support.
+          </div>
+
+          <!-- =================== SEEK HELP =================== -->
+          <h2 id="help">When to Also Seek Help</h2>
+
+          <div class="care-box">
+            <p style="margin:0;"><strong>Important:</strong> Duas and professional care are not opposites — seeking treatment is itself from the Sunnah. The Prophet ﷺ said: <em>"Allah has not sent down a disease except that He has also sent down its cure."</em> (al-Bukhari 5678). If your anxiety or depression is persistent, overwhelming, or affecting your daily life, please speak to a doctor or a qualified mental-health professional alongside your duas. Seeking help is a sign of strength and trust in Allah's wisdom — not a lack of faith.</p>
+          </div>
+
+          <!-- =================== FAQ =================== -->
+          <h2>Frequently Asked Questions</h2>
+
+          <details class="faq-acc">
+            <summary>What is the most powerful dua for anxiety? <span>+</span></summary>
+            <p>The most comprehensive dua for anxiety is the one the Prophet ﷺ taught Abu Umamah: "Allahumma inni a'udhu bika minal-hammi wal-hazan, wal-'ajzi wal-kasal, wal-bukhli wal-jubn, wa dala'id-dayni wa ghalabatir-rijal" (Sahih al-Bukhari 6369). It asks Allah for refuge from anxiety, grief, weakness, laziness, miserliness, cowardice, debt, and being overpowered — covering both fear of the future and sorrow over the past.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Which dua removes stress and worry instantly? <span>+</span></summary>
+            <p>For immediate relief, repeat "Hasbunallahu wa ni'mal-wakil" (Allah is sufficient for us and He is the best Disposer of affairs — Quran 3:173) or "La hawla wa la quwwata illa billah" (there is no might nor power except with Allah). Both are short, easy to memorise, and shift the burden of the outcome to Allah. Recite them slowly and repeatedly until your heart settles.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Is there a dua for depression in Islam? <span>+</span></summary>
+            <p>Yes. The most beautiful dua for deep sadness is the one in Musnad Ahmad where the Prophet ﷺ said whoever recites it, "Allah will remove their sorrow and replace their grief with joy." It includes the words: "make the Quran the spring of my heart, the light of my chest, the remover of my sadness and the reliever of my anxiety." The dua of Yunus (Quran 21:87) is also powerful for feeling trapped in darkness. For persistent depression, combine these duas with professional help — seeking treatment is from the Sunnah.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>What dua should I read for a broken heart? <span>+</span></summary>
+            <p>For heartbreak or loss, recite "Inna lillahi wa inna ilayhi raji'un. Allahumma-jurni fi musibati wa akhlif li khayran minha" — "Indeed we belong to Allah and to Him we return. O Allah, reward me in my affliction and replace it with something better" (Sahih Muslim 918). Umm Salamah said this after losing her husband, and Allah replaced him with a better one — marriage to the Prophet ﷺ himself.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>What dua calms anxiety before sleep? <span>+</span></summary>
+            <p>Before sleeping, recite Ayatul Kursi and the last three Surahs (Al-Ikhlas, Al-Falaq, An-Nas), then say: "Allahumma aslamtu nafsi ilayk..." — "O Allah, I submit myself to You and entrust my affairs to You" (al-Bukhari 247). For racing thoughts, add "A'udhu bi-kalimatillahit-tammat..." seeking refuge in Allah's perfect words. This Sunnah routine directly targets night-time anxiety.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>How many times should I recite these duas? <span>+</span></summary>
+            <p>Most of these duas have no fixed number — recite with sincerity and presence rather than counting. Some have specific guidance: "Hasbiyallahu la ilaha illa huwa..." is recited 7 times morning and evening (Abu Dawud 5081). Quality of attention matters far more than quantity. It is better to say one dua with a present heart than a hundred distractedly.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Do duas for anxiety really work? <span>+</span></summary>
+            <p>Allah promises in the Quran: "By the remembrance of Allah do hearts find rest" (13:28). Countless companions testified to relief — Abu Umamah's worry and debt were removed after consistent recitation. Duas work by reconnecting the anxious heart to the One in control, building tawakkul (reliance) that replaces fear with trust. They are most effective as a daily habit combined with practical action and, when needed, professional care.</p>
+          </details>
+
+          <!-- =================== CTA =================== -->
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Find Peace Through a Deeper Connection with the Quran</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">The Quran is described as a healing for what is in the hearts (10:57). Learning to read and understand it — even a few minutes a day — is one of the most powerful long-term remedies for a restless heart. Start with a free 30-minute trial with a certified tutor.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="/online-quran-classes#cta" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+              <a href="/online-quran-for-beginners" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Quran for Beginners</a>
+            </div>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);font-weight:600;">Ayatul Kursi — Arabic, English &amp; Protective Benefits</a></li>
+              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning — The Dua That Opens Closed Doors</a></li>
+              <li><a href="/blog/dua-e-qunoot-arabic-english" style="color:var(--emerald);font-weight:600;">Dua e Qunoot — Arabic Text &amp; English Translation</a></li>
+              <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);font-weight:600;">99 Names of Allah — Call on Him by His Beautiful Names</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+            </ul>
+          </div>`,
+  },
   "99-names-of-allah-asmaul-husna": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
     .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }

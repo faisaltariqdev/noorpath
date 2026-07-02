@@ -19,6 +19,26 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dua-for-anxiety-stress-depression",
+    title: "Dua for Anxiety, Stress & Depression — 15 Powerful Duas for Peace of Mind (Arabic + English)",
+    description: "15 authentic duas for anxiety, stress, depression, overthinking & a broken heart — full Arabic, transliteration, English meaning, Hadith source & when to recite.",
+    category: "Dhikr & Duas",
+    date: "2026-07-03",
+    updatedAt: "2026-07-03",
+    readTime: "16 min",
+    keywords: [
+      "dua for anxiety", "dua for stress", "dua for depression", "dua for peace of mind",
+      "dua for overthinking", "dua for sadness", "dua for a broken heart", "islamic dua for anxiety",
+      "dua to remove worry and stress", "dua for hardship and relief", "dua for sleep anxiety",
+      "dua for fear", "dua for calm", "allahumma inni audhu bika minal hammi wal hazan",
+      "dua of yunus", "hasbunallah wa nimal wakil", "dua for mental peace", "quran verses for anxiety",
+      "islamic supplication for depression", "dua for worry",
+    ],
+    excerpt:
+      "Anxiety, stress and sadness are part of being human — and Islam gives us powerful, authentic duas the Prophet ﷺ himself used. Here are 15 duas for anxiety, grief, overthinking and a broken heart, with Arabic, transliteration, English meaning, and exactly when to recite each one.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "99-names-of-allah-asmaul-husna",
     title: "99 Names of Allah in English & Arabic — Asmaul Husna Complete List (2026)",
     description: "Complete 99 Names of Allah with Arabic text, transliteration, English meanings, Quranic references, benefits and memorization tips. Authentic & verified.",
