@@ -93,6 +93,15 @@ export const metadata: Metadata = {
     description: "Online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans. Certified tutors. Free trial.",
     images: ["/og-image.png"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon-32x32.png",
+  },
   // ── Replace the empty string with your Google Search Console verification token ──
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "",
@@ -106,8 +115,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${playfair.variable} ${jakarta.variable} ${amiri.variable}`}
     >
       <head>
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/og-image.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <meta name="msapplication-TileColor" content="#0a6e4f" />
         {/* Preconnect for faster Google Fonts DNS resolution */}
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
