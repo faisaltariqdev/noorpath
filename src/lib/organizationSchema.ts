@@ -22,7 +22,7 @@ export function getOrganizationJsonLd() {
           width: 512,
           height: 512,
         },
-        image: `${BASE_URL}/og-image.svg`,
+        image: `${BASE_URL}/og-image.png`,
         email: "info@noorpath.online",
         telephone: "+923124877906",
         foundingDate: "2018",
@@ -50,7 +50,13 @@ export function getOrganizationJsonLd() {
           bestRating: "5",
           worstRating: "1",
         },
-        sameAs: [BASE_URL, "https://wa.me/923124877906", TRUSTPILOT_URL],
+        sameAs: [
+          BASE_URL,
+          "https://wa.me/923124877906",
+          TRUSTPILOT_URL,
+          "https://www.instagram.com/noorpath.online/",
+          "https://www.tiktok.com/@noorpathacademy",
+        ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Online Quran & Islamic Courses",

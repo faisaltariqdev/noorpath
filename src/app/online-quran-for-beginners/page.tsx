@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, BookOpen, Clock, Star } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Online Quran for Beginners — Learn from Zero | NoorPath Academy",
   description: "Learn Quran online from zero with certified teachers. Start Arabic letters, Noorani Qaida and Quran recitation step by step. Free trial.",
@@ -12,13 +14,13 @@ export const metadata: Metadata = {
     title: "Online Quran for Beginners — Learn from Zero | NoorPath Academy",
     description: "Start learning Quran from scratch. Certified teachers, Noorani Qaida, step-by-step for all ages. Free trial class.",
     url: "https://www.noorpath.online/online-quran-for-beginners",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran for Beginners — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran for Beginners — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran for Beginners | NoorPath Academy",
     description: "Learn Quran from zero. Noorani Qaida. Certified teachers. Free trial.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

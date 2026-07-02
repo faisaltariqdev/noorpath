@@ -4,6 +4,8 @@ import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Star, Globe, MapPin } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: {
     absolute: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial 2026",
@@ -38,13 +40,13 @@ export const metadata: Metadata = {
     description:
       "Certified tutors teach kids ages 4–12 via live 1-on-1 Zoom classes. Noorani Qaida, Tajweed, Hifz. Parent-monitored, flexible scheduling. Book free trial.",
     url: "https://www.noorpath.online/online-quran-classes-for-kids",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes for Kids — Free Trial",
     description: "1-on-1 live Quran classes for kids. Certified tutors, ages 4–12. No credit card.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -125,6 +127,13 @@ const jsonLd = {
           byDay: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
         },
       },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        ratingCount: "2400",
+        bestRating: "5",
+        worstRating: "1",
+      },
     },
     {
       "@type": "Service",
@@ -137,6 +146,13 @@ const jsonLd = {
       audience: { "@type": "Audience", audienceType: "Muslim children ages 4–12 and their parents" },
       url: PAGE_URL,
       areaServed: ["United Kingdom", "United States", "Canada", "Australia", "United Arab Emirates", "Germany"],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        ratingCount: "2400",
+        bestRating: "5",
+        worstRating: "1",
+      },
       offers: {
         "@type": "Offer",
         price: "0",

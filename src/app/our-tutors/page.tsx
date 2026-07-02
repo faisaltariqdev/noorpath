@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Award, Star, Globe, CheckCircle } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Our Certified Quran Tutors — Ijazah & Al-Azhar Qualified | NoorPath Academy",
   description: "Meet NoorPath Academy's certified Quran tutors: Ijazah and Al-Azhar qualified male and female teachers for kids, adults and families.",
@@ -10,13 +12,13 @@ export const metadata: Metadata = {
     title: "Certified Quran Tutors — Ijazah & Al-Azhar Qualified | NoorPath Academy",
     description: "250+ certified Quran tutors. All hold Ijazah or Al-Azhar qualifications. Male & female tutors. Free trial with any tutor.",
     url: "https://www.noorpath.online/our-tutors",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy Certified Tutors" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy Certified Tutors" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Certified Quran Tutors | NoorPath Academy",
     description: "250+ Ijazah-certified tutors. Male & female available. Free trial class.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -44,15 +46,69 @@ const jsonLd = {
       itemListElement: [
         {
           "@type": "ListItem", position: 1,
-          item: { "@type": "Person", name: "Sheikh Ahmad Hassan", jobTitle: "Quran & Tajweed Specialist", worksFor: { "@type": "Organization", name: "NoorPath Academy" } }
+          item: {
+            "@type": "Person",
+            name: "Sheikh Ahmad Hassan",
+            jobTitle: "Quran & Tajweed Specialist",
+            description: "Ijazah-certified tutor with 12 years experience — specialist in Tajweed, Noorani Qaida and Advanced Quran for adults and teenagers.",
+            worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "800", bestRating: "5" },
+          },
         },
         {
           "@type": "ListItem", position: 2,
-          item: { "@type": "Person", name: "Ustadha Maryam Al-Farisi", jobTitle: "Female Quran Teacher", worksFor: { "@type": "Organization", name: "NoorPath Academy" } }
+          item: {
+            "@type": "Person",
+            name: "Ustadha Maryam Al-Farisi",
+            jobTitle: "Female Quran Teacher & Child Specialist",
+            description: "Al-Azhar University graduate specialising in teaching children ages 4–10. Certified female tutor with 9 years experience.",
+            worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", ratingCount: "600", bestRating: "5" },
+          },
         },
         {
           "@type": "ListItem", position: 3,
-          item: { "@type": "Person", name: "Hafiz Muhammad Yusuf", jobTitle: "Hifz Program Specialist", worksFor: { "@type": "Organization", name: "NoorPath Academy" } }
+          item: {
+            "@type": "Person",
+            name: "Hafiz Muhammad Yusuf",
+            jobTitle: "Hifz Program Director",
+            description: "Ijazah holder in multiple Qira'at, 15 years experience. Leads the Hifz program — helped 400+ students achieve partial or full Quran memorisation.",
+            worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "400", bestRating: "5" },
+          },
+        },
+        {
+          "@type": "ListItem", position: 4,
+          item: {
+            "@type": "Person",
+            name: "Ustadha Sara Abdullah",
+            jobTitle: "Arabic Language & Islamic Studies Teacher",
+            description: "Medina University Arabic Language graduate with 8 years experience teaching Arabic to English-speaking adults.",
+            worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", ratingCount: "350", bestRating: "5" },
+          },
+        },
+        {
+          "@type": "ListItem", position: 5,
+          item: {
+            "@type": "Person",
+            name: "Qari Ibrahim Al-Khalidi",
+            jobTitle: "Tajweed & Recitation Expert",
+            description: "Ijazah-certified in Qaloon recitation. Dar al-Quran graduate with 11 years experience in Tajweed rules, Makharij and beautiful recitation.",
+            worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "550", bestRating: "5" },
+          },
+        },
+        {
+          "@type": "ListItem", position: 6,
+          item: {
+            "@type": "Person",
+            name: "Ustadha Fatima Al-Rashidi",
+            jobTitle: "Senior Female Quran Teacher",
+            description: "Ijazah-certified female tutor with 10 years experience teaching sisters and daughters exclusively. One of our most requested female tutors.",
+            worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
+            aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", ratingCount: "700", bestRating: "5" },
+          },
         },
       ],
     },

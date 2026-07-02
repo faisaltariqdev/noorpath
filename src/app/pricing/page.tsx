@@ -4,6 +4,8 @@ import { CheckCircle } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Online Quran Class Pricing — Affordable Plans for Families",
   description: "Affordable online Quran class pricing from $29/month. Starter, Standard and Intensive family plans with certified tutors and free trial.",
@@ -12,13 +14,13 @@ export const metadata: Metadata = {
     title: "Online Quran Class Pricing — Affordable Family Plans | NoorPath Academy",
     description: "From $29/month. Starter, Standard, and Intensive plans. Family discount for 2+ siblings. Free 30-min trial included.",
     url: "https://www.noorpath.online/pricing",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Class Pricing — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Class Pricing — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Class Pricing | NoorPath Academy",
     description: "From $29/month. Family discount for siblings. Free trial included.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

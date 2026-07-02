@@ -4,6 +4,8 @@ import { Clock, Globe, CheckCircle, Star } from "lucide-react";
 import { locations } from "@/data/locations";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: { absolute: "Online Quran Classes by Country — USA, UK, Canada, Australia & 40+ Nations | NoorPath" },
   description:
@@ -20,13 +22,13 @@ export const metadata: Metadata = {
     title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
     description: "NoorPath Academy serves 12,000+ students in 40+ countries. Certified tutors, all timezones. Free trial.",
     url: "https://www.noorpath.online/locations",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Classes Worldwide — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes Worldwide — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes by Location | NoorPath Academy",
     description: "USA, UK, Canada, Australia, UAE and 40+ countries. Certified tutors. Free trial.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

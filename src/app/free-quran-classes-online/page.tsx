@@ -4,6 +4,8 @@ import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Gift, Star, Users, Clock } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: {
     absolute: "Free Quran Classes Online — Kids & Adults | No Credit Card Trial",
@@ -15,13 +17,13 @@ export const metadata: Metadata = {
     title: "Free Quran Classes Online — Free Trial | NoorPath Academy",
     description: "Book your FREE 30-minute online Quran class today. Certified teachers, no credit card needed. For kids, adults and families.",
     url: "https://www.noorpath.online/free-quran-classes-online",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Free Quran Classes Online — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Quran Classes Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Quran Classes Online | NoorPath Academy",
     description: "Free 30-min trial class with certified Quran teacher. No credit card.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

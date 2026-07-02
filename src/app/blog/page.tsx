@@ -3,6 +3,8 @@ import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import { BookOpen, Clock } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Islamic Blog — Quran Learning, Duas & Islamic Knowledge",
   description: "Islamic articles and guides covering Quran learning, Tajweed, duas for kids, Islamic parenting, and more. Expert-written content for Muslim families worldwide.",
@@ -11,13 +13,13 @@ export const metadata: Metadata = {
     title: "Islamic Blog — Quran Learning, Duas & Islamic Knowledge | NoorPath Academy",
     description: "Expert-written Islamic articles on Quran learning, Tajweed, duas for kids, and Islamic parenting for families worldwide.",
     url: "https://www.noorpath.online/blog",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy Islamic Blog" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy Islamic Blog" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Islamic Blog | NoorPath Academy",
     description: "Quran learning guides, duas for kids, Tajweed tips, Islamic parenting and more.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

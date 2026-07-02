@@ -4,6 +4,8 @@ import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: { absolute: "Online Quran Classes for Adults — Learn Quran at Any Age | Free Trial 2026" },
   description:
@@ -20,13 +22,13 @@ export const metadata: Metadata = {
     title: "Online Quran Classes for Adults | NoorPath Academy",
     description: "Private online Quran classes for adults of all levels — from complete beginners to advanced Tajweed. Certified tutors, flexible scheduling. Free trial.",
     url: "https://www.noorpath.online/online-quran-classes-for-adults",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Classes for Adults — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes for Adults — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes for Adults | NoorPath Academy",
     description: "Private Quran classes for adult learners — beginners to Hifz. Free 30-min trial.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -54,6 +56,13 @@ const jsonLd = {
       url: "https://www.noorpath.online/online-quran-classes-for-adults",
       offers: { "@type": "Offer", price: "29", priceCurrency: "USD", description: "From $29/month. Free 30-min trial." },
       areaServed: { "@type": "Country", name: "Worldwide" },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        ratingCount: "2400",
+        bestRating: "5",
+        worstRating: "1",
+      },
     },
     {
       "@type": "FAQPage",

@@ -10,6 +10,9 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamicParams = false;
+export const revalidate = false;
+
 export async function generateStaticParams() {
   return locations.map((l) => ({ slug: l.slug }));
 }
@@ -28,13 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Online Quran Classes in ${loc.country} | NoorPath Academy`,
       description,
       url: `https://www.noorpath.online/locations/${slug}`,
-      images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: `Online Quran Classes ${loc.country}` }],
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Online Quran Classes ${loc.country}` }],
     },
     twitter: {
       card: "summary_large_image",
       title: `Online Quran Classes in ${loc.country} | NoorPath`,
       description: `${loc.desc} Free trial available.`,
-      images: ["/og-image.svg"],
+      images: ["/og-image.png"],
     },
   };
 }
@@ -59,6 +62,13 @@ export default async function LocationDetailPage({ params }: Props) {
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
         url: `https://www.noorpath.online/locations/${slug}`,
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "2400",
+          bestRating: "5",
+          worstRating: "1",
+        },
         offers: {
           "@type": "Offer",
           price: "0",

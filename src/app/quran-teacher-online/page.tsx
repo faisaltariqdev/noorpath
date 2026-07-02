@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Star, Shield, Clock, Users, Award } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Online Quran Teacher — Certified 1-on-1 Tutors | NoorPath Academy",
   description: "Find a certified online Quran teacher for kids or adults. Ijazah tutors, female teachers, live 1-on-1 classes and free 30-min trial.",
@@ -12,13 +14,13 @@ export const metadata: Metadata = {
     title: "Online Quran Teacher — Certified 1-on-1 Tutors | NoorPath Academy",
     description: "Certified online Quran teachers for kids & adults. Ijazah-certified, female tutors available, flexible schedules. Book free trial.",
     url: "https://www.noorpath.online/quran-teacher-online",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Teacher — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Teacher — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Teacher | NoorPath Academy",
     description: "Certified 1-on-1 Quran teachers. Free trial. Female tutors available.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

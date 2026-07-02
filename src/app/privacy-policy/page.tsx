@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "NoorPath Academy privacy policy — how we collect, use, and protect your personal information.",

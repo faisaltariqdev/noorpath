@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Free Islamic Resources — Quran PDFs, Duas, Hadith & Learning Materials | NoorPath",
   description: "Free Islamic resources for families: Quran learning guides, duas, Tajweed charts, Islamic studies materials and helpful learning tools.",
@@ -9,13 +11,13 @@ export const metadata: Metadata = {
     title: "Free Islamic Resources — Quran, Duas & Learning Materials | NoorPath Academy",
     description: "Free downloadable Islamic resources: Quran learning guides, duas for kids, Tajweed charts, and more. 100% free for Muslim families worldwide.",
     url: "https://www.noorpath.online/islamic-resources",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Free Islamic Resources — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Islamic Resources — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Islamic Resources | NoorPath Academy",
     description: "Free Quran learning guides, duas for kids, Tajweed charts and more — 100% free.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

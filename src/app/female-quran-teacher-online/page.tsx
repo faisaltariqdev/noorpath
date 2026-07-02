@@ -4,6 +4,8 @@ import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Shield, Award, Users, Star, BookOpen, Clock, Heart } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: { absolute: "Female Quran Teacher Online — Certified Hafiza for Sisters & Kids | Free Trial" },
   description:
@@ -20,13 +22,13 @@ export const metadata: Metadata = {
     title: "Female Quran Teacher Online — Certified Hafiza Tutors | NoorPath Academy",
     description: "Certified female Quran teachers for sisters, daughters & female learners worldwide. Safe 1-on-1 Quran classes online. Free 30-min trial.",
     url: "https://www.noorpath.online/female-quran-teacher-online",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Female Quran Teacher Online — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Female Quran Teacher Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Female Quran Teacher Online | Certified Hafiza Tutors | NoorPath Academy",
     description: "Safe, comfortable 1-on-1 Quran classes for sisters & daughters. Hafiza-certified. Free trial.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

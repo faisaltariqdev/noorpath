@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "NoorPath Academy terms of service — rules and conditions for using our online Quran education platform.",

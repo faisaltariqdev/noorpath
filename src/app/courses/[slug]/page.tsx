@@ -9,6 +9,9 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamicParams = false;
+export const revalidate = false;
+
 export async function generateStaticParams() {
   return courses.map((c) => ({ slug: c.slug }));
 }
@@ -27,13 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${course.title} — Online | NoorPath Academy`,
       description,
       url: `https://www.noorpath.online/courses/${slug}`,
-      images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: course.title }],
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: course.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${course.title} | NoorPath Academy`,
       description: course.desc,
-      images: ["/og-image.svg"],
+      images: ["/og-image.png"],
     },
   };
 }
@@ -58,6 +61,13 @@ export default async function CourseDetailPage({ params }: Props) {
         typicalAgeRange: course.age,
         courseMode: "online",
         teaches: course.features.join(", "),
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "2400",
+          bestRating: "5",
+          worstRating: "1",
+        },
         offers: {
           "@type": "Offer",
           price: "0",

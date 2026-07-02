@@ -28,7 +28,7 @@
   <rect x="80" y="180" width="4" height="270" rx="2" fill="url(#gold)"/>
 
   <!-- Arabic text area -->
-  <text x="1120" y="80" font-size="28" fill="rgba(255,255,255,0.15)" text-anchor="end" font-family="serif">'BR1N#R (P'3REP 1N(PQCN</text>
+  <text x="1120" y="80" font-size="28" fill="rgba(255,255,255,0.15)" text-anchor="end" font-family="serif">&#x646;&#x648;&#x631; &#x628;&#x627;&#x62B;</text>
 
   <!-- Logo -->
   <text x="108" y="240" font-size="56" font-weight="700" fill="white" font-family="Georgia, serif">Noor</text>
@@ -40,7 +40,7 @@
 
   <!-- Headline -->
   <text x="108" y="350" font-size="42" font-weight="700" fill="white" font-family="Georgia, serif">Learn Quran Online</text>
-  <text x="108" y="400" font-size="28" fill="rgba(255,255,255,0.75)" font-family="Arial, sans-serif">Certified Tutors · Family Plans · Free Trial</text>
+  <text x="108" y="400" font-size="28" fill="rgba(255,255,255,0.75)" font-family="Arial, sans-serif">Certified Tutors &#xB7; Family Plans &#xB7; Free Trial</text>
 
   <!-- Stats row -->
   <rect x="108" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
@@ -56,7 +56,7 @@
   <text x="490" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Countries</text>
 
   <rect x="576" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <text x="646" y="484" font-size="26" font-weight="700" fill="url(#gold)" text-anchor="middle" font-family="Georgia, serif">4.9</text>
+  <text x="646" y="484" font-size="26" font-weight="700" fill="url(#gold)" text-anchor="middle" font-family="Georgia, serif">4.9</text>
   <text x="646" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Rating</text>
 
   <!-- Right card -->
@@ -67,7 +67,7 @@
   <text x="960" y="390" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Live 1-on-1 via Zoom</text>
   <text x="960" y="430" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Certified Ijazah tutors</text>
   <rect x="860" y="475" width="200" height="50" rx="25" fill="url(#gold)"/>
-  <text x="960" y="507" font-size="16" font-weight="700" fill="#1a1a2e" text-anchor="middle" font-family="Arial, sans-serif">Book Free Trial ’</text>
+  <text x="960" y="507" font-size="16" font-weight="700" fill="#1a1a2e" text-anchor="middle" font-family="Arial, sans-serif">Book Free Trial &#x2192;</text>
 
   <!-- URL -->
   <text x="600" y="605" font-size="18" fill="rgba(255,255,255,0.4)" text-anchor="middle" font-family="Arial, sans-serif">www.noorpath.online</text>

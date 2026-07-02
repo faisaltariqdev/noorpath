@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ORGANIZATION_ID } from "@/lib/organizationSchema";
 import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp, CheckCircle, Shield, Star, BookOpen, Clock, GraduationCap } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: { absolute: "About NoorPath Academy — Certified Online Quran Education for Families | Since 2018" },
   description:
@@ -18,13 +20,13 @@ export const metadata: Metadata = {
     title: "About NoorPath Academy — Online Quran Education for Families",
     description: "Our mission: making quality Quran education accessible to every Muslim family worldwide. 12,000+ students, 250+ certified tutors, 40+ countries.",
     url: "https://www.noorpath.online/about",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "About NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About NoorPath Academy",
     description: "12,000+ students, 250+ Ijazah tutors, 40+ countries. Quality Quran education for every family.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

@@ -4,6 +4,8 @@ import { CheckCircle, Clock, Users, Award, Star } from "lucide-react";
 import { courses } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: { absolute: "Online Quran & Islamic Courses — All Programs | NoorPath Academy 2026" },
   description:
@@ -18,13 +20,13 @@ export const metadata: Metadata = {
     title: "Online Quran & Islamic Courses — All Programs | NoorPath Academy",
     description: "7 certified courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic Studies & more. Ijazah tutors, family plans. Free trial.",
     url: "https://www.noorpath.online/courses",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Courses — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Courses — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran & Islamic Courses | NoorPath Academy",
     description: "7 courses: Qaida, Tajweed, Hifz, Arabic, Islamic Studies. Certified tutors. Free trial.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
   description: "Meet Faisal Tariq, Founder and CEO of NoorPath Academy, building accessible online Quran learning for Muslim families worldwide.",

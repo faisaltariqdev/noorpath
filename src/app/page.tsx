@@ -9,6 +9,8 @@ import {
   BookOpen, Music, Brain, PenLine
 } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: {
     absolute: "Learn Quran Online for Kids & Families — Free 30-Min Trial (2026)",
@@ -22,13 +24,13 @@ export const metadata: Metadata = {
     description: "Join 12,000+ students. Online Quran classes for kids & adults — Qaida, Tajweed, Hifz, Arabic. Certified tutors. Family plans. Free 30-min trial.",
     url: "https://www.noorpath.online",
     type: "website",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Learn Quran Online | NoorPath Academy — Free Trial",
     description: "Online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

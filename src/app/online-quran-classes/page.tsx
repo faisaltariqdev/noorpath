@@ -4,6 +4,8 @@ import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
 
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: {
     absolute: "Online Quran Classes for Kids & Adults — Free Trial 2026",
@@ -20,13 +22,13 @@ export const metadata: Metadata = {
     title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
     description: "Join 12,000+ students. Live 1-on-1 Quran classes via Zoom — Qaida, Tajweed, Hifz, Arabic. Family plans. Free 30-min trial.",
     url: "https://www.noorpath.online/online-quran-classes",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Online Quran Classes — NoorPath Academy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes | Live 1-on-1 | NoorPath Academy",
     description: "Certified tutors, family plans, free 30-min trial. Qaida, Tajweed, Hifz, Arabic.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -69,6 +71,13 @@ const serviceJsonLd = {
         ],
       },
       url: "https://www.noorpath.online/online-quran-classes",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        ratingCount: "2400",
+        bestRating: "5",
+        worstRating: "1",
+      },
     },
     {
       "@type": "FAQPage",
