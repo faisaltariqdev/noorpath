@@ -56,6 +56,7 @@ export function getOrganizationJsonLd() {
           TRUSTPILOT_URL,
           "https://www.instagram.com/noorpath.online/",
           "https://www.tiktok.com/@noorpathacademy",
+          "https://www.facebook.com/noorpathquranacademy",
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",

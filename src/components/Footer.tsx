@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MessageCircle, Mail, Globe, Star } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram, FaTiktok } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa6";
 import { TRUSTPILOT_URL } from "@/lib/organizationSchema";
 import { getBuildLabel } from "@/lib/siteVersion";
 
@@ -134,6 +134,15 @@ export default function Footer() {
                   <FaWhatsapp size={15} />
                 </Link>
                 <Link
+                  href="https://www.facebook.com/noorpathquranacademy"
+                  className="social-btn"
+                  aria-label="NoorPath on Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF size={15} />
+                </Link>
+                <Link
                   href="https://www.instagram.com/noorpath.online/"
                   className="social-btn"
                   aria-label="NoorPath on Instagram"
@@ -231,6 +240,16 @@ export default function Footer() {
                     rel="noopener noreferrer"
                   >
                     WhatsApp: +92 312 4877906
+                  </Link>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <FaFacebookF size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
+                  <Link
+                    href="https://www.facebook.com/noorpathquranacademy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    NoorPath Academy
                   </Link>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
