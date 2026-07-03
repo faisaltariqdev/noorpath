@@ -95,12 +95,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      // favicon.ico (src/app/favicon.ico) is auto-injected by Next and contains
+      // 16/32/48/256 — the 48px size Google Search prefers. These add modern + hi-res.
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/favicon-32x32.png",
   },
   // ── Replace the empty string with your Google Search Console verification token ──
   verification: {
@@ -115,9 +115,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${playfair.variable} ${jakarta.variable} ${amiri.variable}`}
     >
       <head>
-        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <meta name="msapplication-TileColor" content="#0a6e4f" />
         {/* Preconnect for faster Google Fonts DNS resolution */}
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
