@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { blogPosts } from "@/data/blog";
 
 export const revalidate = false;
 
@@ -199,7 +200,7 @@ export default function IslamicResourcesPage() {
                 🎓 Book a Free Quran Class →
               </Link>
               <Link href="/blog" style={{ display: "inline-block", background: "rgba(255,255,255,.1)", color: "#fff", fontWeight: 600, padding: "13px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", textAlign: "center", border: "1px solid rgba(255,255,255,.2)" }}>
-                Read All 25 Blog Articles →
+                Read All {blogPosts.length} Blog Articles →
               </Link>
             </div>
           </div>

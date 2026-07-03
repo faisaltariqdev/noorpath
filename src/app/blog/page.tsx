@@ -112,7 +112,7 @@ export default function BlogPage() {
               <div style={{ color: "var(--muted)", fontSize: ".8rem", marginTop: 2 }}>Founder, NoorPath Academy · Islamic Education Specialist · 8+ years experience</div>
             </div>
             <div style={{ marginLeft: "auto", flexShrink: 0, display: "flex", gap: 8 }}>
-              <span style={{ background: "rgba(10,110,79,.08)", color: "var(--emerald)", borderRadius: 50, padding: "4px 12px", fontSize: ".74rem", fontWeight: 700 }}>25 Articles</span>
+              <span style={{ background: "rgba(10,110,79,.08)", color: "var(--emerald)", borderRadius: 50, padding: "4px 12px", fontSize: ".74rem", fontWeight: 700 }}>{sorted.length} Articles</span>
             </div>
           </div>
 

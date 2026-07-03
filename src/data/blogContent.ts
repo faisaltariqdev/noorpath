@@ -1,5 +1,390 @@
 // Auto-extracted from original HTML blog files — styles + content
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "islamic-phrases-meaning": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 26px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .phrase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+    .phrase-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; transition: box-shadow .2s; }
+    .phrase-card:hover { box-shadow: 0 4px 16px rgba(10,110,79,.1); }
+    .phrase-arabic { font-family: 'Amiri', serif; font-size: 1.5rem; color: var(--emerald); direction: rtl; text-align: right; margin-bottom: 6px; }
+    .phrase-name { font-weight: 700; color: var(--charcoal); font-size: 1rem; margin-bottom: 2px; }
+    .phrase-meaning { font-size: .85rem; color: var(--muted); line-height: 1.6; margin-bottom: 8px; }
+    .phrase-link { font-size: .8rem; font-weight: 700; color: var(--emerald); }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .phrase-grid { grid-template-columns: 1fr; } }`,
+    content: `<p>Every day, Muslims around the world use beautiful Arabic phrases — to praise Allah, express gratitude, greet one another, and remember Him in moments of joy and difficulty. If you have ever wondered what <strong>Alhamdulillah</strong>, <strong>Subhanallah</strong> or <strong>JazakAllah Khair</strong> actually mean, this is your complete reference.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The most common Islamic phrases are <strong>Bismillah</strong> (in the name of Allah), <strong>Alhamdulillah</strong> (all praise to Allah), <strong>Subhanallah</strong> (glory be to Allah), <strong>Allahu Akbar</strong> (Allah is the Greatest), <strong>Mashallah</strong> (what Allah has willed), <strong>Inshallah</strong> (if Allah wills), and <strong>JazakAllah Khair</strong> (may Allah reward you). Below are 30 phrases with Arabic, meaning and when to say each.</p>
+          </div>
+
+          <p>This guide is a hub — each phrase links to a full in-depth article with pronunciation, Quranic references, benefits and common mistakes.</p>
+
+          <h2 id="praise">Phrases of Praise &amp; Remembrance (Dhikr)</h2>
+          <div class="phrase-grid">
+            <div class="phrase-card">
+              <div class="phrase-arabic">الحمد لله</div>
+              <div class="phrase-name">Alhamdulillah</div>
+              <div class="phrase-meaning">"All praise and thanks are due to Allah." Said to express gratitude for any blessing.</div>
+              <a class="phrase-link" href="/blog/alhamdulillah-meaning-in-english">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">سبحان الله</div>
+              <div class="phrase-name">Subhanallah</div>
+              <div class="phrase-meaning">"Glory be to Allah." Said in awe of Allah's perfection and creation.</div>
+              <a class="phrase-link" href="/blog/subhanallah-meaning">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">الله أكبر</div>
+              <div class="phrase-name">Allahu Akbar</div>
+              <div class="phrase-meaning">"Allah is the Greatest." Said in prayer, adhan, and moments of amazement.</div>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">لا إله إلا الله</div>
+              <div class="phrase-name">La ilaha illallah</div>
+              <div class="phrase-meaning">"There is no god but Allah." The declaration of faith (Tawheed).</div>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">أستغفر الله</div>
+              <div class="phrase-name">Astaghfirullah</div>
+              <div class="phrase-meaning">"I seek forgiveness from Allah." Said in repentance and after mistakes.</div>
+              <a class="phrase-link" href="/blog/astaghfirullah-meaning">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">لا حول ولا قوة إلا بالله</div>
+              <div class="phrase-name">La hawla wa la quwwata illa billah</div>
+              <div class="phrase-meaning">"There is no might nor power except with Allah." Said in hardship.</div>
+            </div>
+          </div>
+
+          <h2 id="daily">Everyday &amp; Situational Phrases</h2>
+          <div class="phrase-grid">
+            <div class="phrase-card">
+              <div class="phrase-arabic">بسم الله</div>
+              <div class="phrase-name">Bismillah</div>
+              <div class="phrase-meaning">"In the name of Allah." Said before eating, starting any task or action.</div>
+              <a class="phrase-link" href="/blog/bismillah-meaning-in-english">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">ما شاء الله</div>
+              <div class="phrase-name">Mashallah</div>
+              <div class="phrase-meaning">"What Allah has willed." Said when admiring something to ward off the evil eye.</div>
+              <a class="phrase-link" href="/blog/mashallah-meaning">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">إن شاء الله</div>
+              <div class="phrase-name">Inshallah</div>
+              <div class="phrase-meaning">"If Allah wills." Said when speaking about future plans and hopes.</div>
+              <a class="phrase-link" href="/blog/inshallah-meaning-in-english">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">جزاك الله خيرا</div>
+              <div class="phrase-name">JazakAllah Khair</div>
+              <div class="phrase-meaning">"May Allah reward you with good." The Islamic way to say thank you.</div>
+              <a class="phrase-link" href="/blog/jazakallah-khair-meaning">Read full guide →</a>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">إنا لله وإنا إليه راجعون</div>
+              <div class="phrase-name">Inna lillahi wa inna ilayhi raji'un</div>
+              <div class="phrase-meaning">"To Allah we belong and to Him we return." Said upon hearing of a death or loss.</div>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">بارك الله فيك</div>
+              <div class="phrase-name">Barakallahu Feek</div>
+              <div class="phrase-meaning">"May Allah bless you." A common response to JazakAllah Khair.</div>
+            </div>
+          </div>
+
+          <h2 id="greetings">Greetings &amp; Responses</h2>
+          <div class="phrase-grid">
+            <div class="phrase-card">
+              <div class="phrase-arabic">السلام عليكم</div>
+              <div class="phrase-name">Assalamu Alaikum</div>
+              <div class="phrase-meaning">"Peace be upon you." The Islamic greeting between Muslims.</div>
+            </div>
+            <div class="phrase-card">
+              <div class="phrase-arabic">وعليكم السلام</div>
+              <div class="phrase-name">Wa Alaikum Assalam</div>
+              <div class="phrase-meaning">"And upon you be peace." The reply to Assalamu Alaikum.</div>
+            </div>
+          </div>
+
+          <div class="gold-box">
+            <strong>Why learn these phrases?</strong> These are not just words — each one is a form of dhikr (remembrance of Allah) that carries reward and keeps the heart connected to Allah throughout the day. The Prophet ﷺ said the words most beloved to Allah are four: Subhanallah, Alhamdulillah, La ilaha illallah, and Allahu Akbar. (Sahih Muslim 2137)
+          </div>
+
+          <h2>Frequently Asked Questions</h2>
+          <details class="faq-acc"><summary>What are the most common Islamic phrases? <span>+</span></summary><p>The most common Islamic phrases are: Bismillah (in the name of Allah), Alhamdulillah (all praise to Allah), Subhanallah (glory be to Allah), Allahu Akbar (Allah is the Greatest), Mashallah (what Allah has willed), Inshallah (if Allah wills), Astaghfirullah (I seek Allah's forgiveness), JazakAllah Khair (may Allah reward you), and Assalamu Alaikum (peace be upon you).</p></details>
+          <details class="faq-acc"><summary>What do Muslims say to praise Allah? <span>+</span></summary><p>Muslims praise Allah with four beloved phrases: Subhanallah (glory be to Allah), Alhamdulillah (all praise to Allah), La ilaha illallah (there is no god but Allah), and Allahu Akbar (Allah is the Greatest). The Prophet ﷺ said these are the most beloved words to Allah (Sahih Muslim 2137). Together they are known as the "four pillars of dhikr."</p></details>
+          <details class="faq-acc"><summary>What is the reply to JazakAllah Khair? <span>+</span></summary><p>The best reply to JazakAllah Khair is "Wa iyyakum" (and you too) or "Wa antum fa jazakumullahu khairan" (and may Allah reward you with good too). Many also respond with "Barakallahu feek" (may Allah bless you). Read our full <a href="/blog/jazakallah-khair-meaning">JazakAllah Khair guide</a> for details.</p></details>
+          <details class="faq-acc"><summary>What is the difference between Mashallah and Inshallah? <span>+</span></summary><p>Mashallah (what Allah has willed) is said about something that already exists or happened — like admiring a child or success. Inshallah (if Allah wills) is said about the future — plans, hopes and intentions. Mashallah appreciates the present; Inshallah looks to the future.</p></details>
+
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn Arabic &amp; Understand the Quran</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Understanding these phrases is the first step. Learn to read the Quran in its original language with a certified tutor — free 30-minute trial.</p>
+            <a href="/online-quran-classes#cta" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Explore Each Phrase in Depth</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory be to Allah</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+              <li><a href="/blog/jazakallah-khair-meaning" style="color:var(--emerald);font-weight:600;">JazakAllah Khair Meaning &amp; Response</a></li>
+              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning &amp; Evil Eye Protection</a></li>
+              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning &amp; Benefits</a></li>
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning &amp; Correct Usage</a></li>
+              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning — In the Name of Allah</a></li>
+            </ul>
+          </div>`,
+  },
+  "subhanallah-meaning": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 24px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .word-hero { text-align: center; padding: 48px 24px; background: linear-gradient(135deg, rgba(10,110,79,.04), rgba(10,110,79,.09)); border-radius: 20px; margin: 32px 0; border: 1px solid rgba(10,110,79,.12); }
+    .word-arabic-hero { font-family: 'Amiri', serif; font-size: 3.5rem; color: var(--emerald); line-height: 1.3; margin-bottom: 16px; direction: rtl; }
+    .word-roman-hero { font-size: 1.5rem; font-style: italic; color: #4b5563; margin-bottom: 12px; }
+    .word-meaning-hero { font-size: 1.1rem; font-weight: 600; color: var(--charcoal); }
+    .quran-ref { background: rgba(232,184,75,.05); border: 1px solid rgba(232,184,75,.22); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+    .quran-ref-arabic { font-family: 'Amiri', serif; font-size: 1.5rem; direction: rtl; text-align: right; color: var(--charcoal); margin-bottom: 10px; line-height: 1.9; }
+    .quran-ref-english { font-size: .95rem; color: #374151; font-style: italic; margin-bottom: 6px; }
+    .quran-ref-source { font-size: .8rem; color: var(--emerald); font-weight: 700; }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .word-arabic-hero { font-size: 2.5rem; } }`,
+    content: `<p><strong>Subhanallah</strong> (سبحان الله) is one of the most beloved phrases to Allah and one of the most frequently said words by Muslims worldwide. It is a declaration of Allah's absolute perfection — a way of glorifying Him and declaring Him free from every fault, partner, and imperfection.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>Subhanallah meaning in English</strong> is "Glory be to Allah" or "Allah is free from all imperfection." In Arabic it is written <strong>سُبْحَانَ اللَّهِ</strong>. Muslims say it in awe of Allah's creation, in wonder, in prayer, and as daily dhikr — declaring that Allah is perfect and above any flaw.
+          </div>
+
+          <div class="word-hero">
+            <div class="word-arabic-hero">سُبْحَانَ اللَّهِ</div>
+            <div class="word-roman-hero">Subhāna-llāh</div>
+            <div class="word-meaning-hero">"Glory be to Allah"</div>
+          </div>
+
+          <h2>What Does Subhanallah Really Mean?</h2>
+          <p>The word <em>Subhan</em> comes from the Arabic root <strong>s-b-h</strong>, which means to declare something free from any defect or deficiency. So Subhanallah is not just "glory to Allah" — it is a powerful statement that <strong>Allah is perfect, flawless, and far above anything unbefitting of His majesty</strong>. When you see something amazing, or something goes wrong that you cannot explain, saying Subhanallah affirms that Allah is perfect in all He does.</p>
+
+          <h2>When to Say Subhanallah</h2>
+          <ul>
+            <li><strong>In awe and amazement</strong> — when you see something beautiful or astonishing in creation.</li>
+            <li><strong>After every prayer</strong> — recited 33 times as part of the Sunnah tasbeeh (Subhanallah 33x, Alhamdulillah 33x, Allahu Akbar 34x).</li>
+            <li><strong>In shock or disbelief</strong> — instead of negative expressions, Muslims say Subhanallah.</li>
+            <li><strong>As daily dhikr</strong> — to earn continuous reward throughout the day.</li>
+            <li><strong>To glorify Allah</strong> when hearing of something inappropriate attributed to Him.</li>
+          </ul>
+
+          <h2>The Immense Reward of Subhanallah</h2>
+          <div class="quran-ref">
+            <div class="quran-ref-english">The Prophet ﷺ said: "Two words are light on the tongue, heavy on the scale, and beloved to the Most Merciful: Subhanallahi wa bihamdih, Subhanallahil-Azeem."</div>
+            <div class="quran-ref-source">— Sahih al-Bukhari 6682</div>
+          </div>
+          <p>He ﷺ also said: "Whoever says 'Subhanallahi wa bihamdih' one hundred times a day will have his sins forgiven even if they are like the foam of the sea." (Sahih al-Bukhari 6405). This makes Subhanallah one of the easiest yet most rewarding acts of worship.</p>
+
+          <div class="gold-box">
+            <strong>Subhanallah wa bihamdihi:</strong> Adding "wa bihamdihi" (and by His praise) creates the phrase "Glory be to Allah and praise be to Him." This complete form is the one described in the hadith above as forgiving sins like the foam of the sea.
+          </div>
+
+          <h2>Subhanallah vs Alhamdulillah — The Difference</h2>
+          <p>These two phrases are often confused. <strong>Subhanallah</strong> (glory be to Allah) declares Allah's <em>perfection</em> — said in awe and to glorify Him. <strong><a href="/blog/alhamdulillah-meaning-in-english">Alhamdulillah</a></strong> (all praise to Allah) expresses <em>gratitude</em> — said to thank Allah for blessings. One glorifies; the other thanks. Both are among the four most beloved words to Allah, along with <em>Allahu Akbar</em> and <em>La ilaha illallah</em>.</p>
+
+          <h2>Frequently Asked Questions</h2>
+          <details class="faq-acc"><summary>What does Subhanallah mean in English? <span>+</span></summary><p>Subhanallah (سبحان الله) means "Glory be to Allah" or "Allah is free from all imperfection." It declares that Allah is perfect, flawless, and far above any defect, partner or weakness. Muslims say it in awe, wonder, prayer and as daily remembrance.</p></details>
+          <details class="faq-acc"><summary>When should you say Subhanallah? <span>+</span></summary><p>Say Subhanallah: when you see something amazing or beautiful in Allah's creation, in moments of shock or disbelief, 33 times after each of the five daily prayers as Sunnah tasbeeh, and as general daily dhikr to earn reward and glorify Allah.</p></details>
+          <details class="faq-acc"><summary>What is the reward for saying Subhanallah? <span>+</span></summary><p>The Prophet ﷺ said whoever says "Subhanallahi wa bihamdih" 100 times a day will have their sins forgiven even if they are like the foam of the sea (Bukhari 6405). He also described it as light on the tongue but heavy on the scale of good deeds (Bukhari 6682).</p></details>
+          <details class="faq-acc"><summary>What is the difference between Subhanallah and Alhamdulillah? <span>+</span></summary><p>Subhanallah (glory be to Allah) declares Allah's perfection and is said in awe. Alhamdulillah (all praise to Allah) expresses gratitude and is said to thank Allah for blessings. One glorifies Allah; the other thanks Him. Both are among the four most beloved phrases to Allah.</p></details>
+          <details class="faq-acc"><summary>How many times should you say Subhanallah after prayer? <span>+</span></summary><p>The Sunnah is to say Subhanallah 33 times after each obligatory prayer, followed by Alhamdulillah 33 times and Allahu Akbar 34 times — totaling 100. The Prophet ﷺ said whoever does this will have their sins forgiven even if they are like the foam of the sea (Sahih Muslim 597).</p></details>
+
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn to Recite &amp; Understand the Quran</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Deepen your connection with Allah — learn Quran and Arabic with a certified tutor. Free 30-minute trial, no credit card.</p>
+            <a href="/online-quran-classes#cta" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning &amp; Benefits</a></li>
+              <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);font-weight:600;">99 Names of Allah — Asmaul Husna</a></li>
+            </ul>
+          </div>`,
+  },
+  "jazakallah-khair-meaning": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 24px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .word-hero { text-align: center; padding: 48px 24px; background: linear-gradient(135deg, rgba(10,110,79,.04), rgba(10,110,79,.09)); border-radius: 20px; margin: 32px 0; border: 1px solid rgba(10,110,79,.12); }
+    .word-arabic-hero { font-family: 'Amiri', serif; font-size: 3rem; color: var(--emerald); line-height: 1.4; margin-bottom: 16px; direction: rtl; }
+    .word-roman-hero { font-size: 1.4rem; font-style: italic; color: #4b5563; margin-bottom: 12px; }
+    .word-meaning-hero { font-size: 1.1rem; font-weight: 600; color: var(--charcoal); }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .word-arabic-hero { font-size: 2.1rem; } }`,
+    content: `<p><strong>JazakAllah Khair</strong> (جزاك الله خيرا) is how Muslims say "thank you" — but it means far more than a simple thanks. Instead of thanking someone yourself, you are asking <strong>Allah to reward them with good</strong>, which is the greatest gift you could ever give in return.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>JazakAllah Khair meaning in English</strong> is "May Allah reward you with good." In Arabic it is written <strong>جَزَاكَ اللَّهُ خَيْرًا</strong>. Muslims say it instead of "thank you" — because rather than thanking a person with words, you ask Allah (who can reward infinitely) to reward them. The proper response is "Wa iyyakum" (and you too).
+          </div>
+
+          <div class="word-hero">
+            <div class="word-arabic-hero">جَزَاكَ اللَّهُ خَيْرًا</div>
+            <div class="word-roman-hero">Jazāka-llāhu khayran</div>
+            <div class="word-meaning-hero">"May Allah reward you with good"</div>
+          </div>
+
+          <h2>Word-by-Word Meaning</h2>
+          <ul>
+            <li><strong>Jazak (جزاك)</strong> — "may He reward you"</li>
+            <li><strong>Allahu (الله)</strong> — "Allah"</li>
+            <li><strong>Khairan (خيرا)</strong> — "with good"</li>
+          </ul>
+          <p>Note: "Jazak" changes based on who you address — <em>JazakAllah</em> (to a male), <em>JazakiAllah</em> (to a female), and <em>JazakumAllah</em> (to a group). Adding <em>Khair</em> completes the beautiful meaning "may Allah reward you with good."</p>
+
+          <h2>Why Say JazakAllah Khair Instead of Thank You?</h2>
+          <p>The Prophet ﷺ said: <em>"Whoever has a good done to him and says to the doer 'JazakAllahu khairan' has done the utmost in praising him."</em> (Sunan at-Tirmidhi 2035). In other words, when you cannot repay someone's kindness, you hand the reward over to Allah — who rewards without limit. It is the most generous form of gratitude in Islam.</p>
+
+          <h2>How to Respond to JazakAllah Khair</h2>
+          <p>There are several beautiful replies:</p>
+          <ul>
+            <li><strong>Wa iyyakum</strong> (وإياكم) — "And you too" (most common)</li>
+            <li><strong>Wa antum fa jazakumullahu khairan</strong> — "And may Allah also reward you with good"</li>
+            <li><strong>Barakallahu feek</strong> (بارك الله فيك) — "May Allah bless you"</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Common spelling variations:</strong> JazakAllah, Jazak Allah, JazakAllahu Khairan, Jazakumullah Khair — these are all transliterations of the same Arabic phrase. "JazakAllahu Khairan" is the most complete and grammatically correct form.
+          </div>
+
+          <h2>Frequently Asked Questions</h2>
+          <details class="faq-acc"><summary>What does JazakAllah Khair mean? <span>+</span></summary><p>JazakAllah Khair (جزاك الله خيرا) means "May Allah reward you with good." It is the Islamic way of saying thank you — instead of thanking a person directly, you ask Allah to reward them, which is the greatest form of gratitude since Allah rewards without limit.</p></details>
+          <details class="faq-acc"><summary>How do you respond to JazakAllah Khair? <span>+</span></summary><p>The most common response is "Wa iyyakum" (and you too). You can also say "Wa antum fa jazakumullahu khairan" (and may Allah reward you with good too) or "Barakallahu feek" (may Allah bless you). All acknowledge the dua and return the good wish.</p></details>
+          <details class="faq-acc"><summary>Is it JazakAllah or JazakAllahu Khairan? <span>+</span></summary><p>"JazakAllahu Khairan" is the complete and grammatically correct form, meaning "may Allah reward you with good." "JazakAllah" alone is a shortened everyday version. Both are widely used and understood. The word changes by gender: JazakAllah (male), JazakiAllah (female), JazakumAllah (group).</p></details>
+          <details class="faq-acc"><summary>Why do Muslims say JazakAllah instead of shukran? <span>+</span></summary><p>Shukran simply means "thank you." JazakAllah Khair goes further — it is a dua (supplication) asking Allah to reward the person with good. The Prophet ﷺ said whoever says JazakAllahu khairan to someone who helped them "has done the utmost in praising him" (Tirmidhi 2035), making it the superior expression of gratitude.</p></details>
+
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn the Language of the Quran</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Understand the words you say every day. Learn Arabic and Quran with a certified tutor — free 30-minute trial.</p>
+            <a href="/online-quran-classes#cta" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory be to Allah</a></li>
+              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning &amp; Evil Eye Protection</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+            </ul>
+          </div>`,
+  },
+  "surah-mulk-benefits": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 24px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .big-name { font-family: 'Amiri', serif; font-size: 3rem; text-align: center; color: var(--emerald); padding: 32px 16px 8px; line-height: 1.3; }
+    .quran-ref { background: rgba(232,184,75,.05); border: 1px solid rgba(232,184,75,.22); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+    .quran-ref-arabic { font-family: 'Amiri', serif; font-size: 1.5rem; direction: rtl; text-align: right; color: var(--charcoal); margin-bottom: 10px; line-height: 1.9; }
+    .quran-ref-english { font-size: .95rem; color: #374151; font-style: italic; margin-bottom: 6px; }
+    .quran-ref-source { font-size: .8rem; color: var(--emerald); font-weight: 700; }
+    .benefit-row { display: flex; gap: 14px; padding: 18px; background: var(--ivory); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; }
+    .benefit-icon-box { min-width: 42px; height: 42px; border-radius: 10px; background: rgba(10,110,79,.1); display: flex; align-items: center; justify-content: center; color: var(--emerald); font-size: 1.2rem; }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .big-name { font-size: 2.2rem; } }`,
+    content: `<p><strong>Surah Al-Mulk</strong> (سورة الملك) is the 67th chapter of the Quran and one of the most beloved surahs in a Muslim's daily life. The Prophet Muhammad ﷺ recited it <strong>every single night</strong> before sleeping — and taught that it protects and intercedes for the one who reads it.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>Surah Mulk</strong> (also called Tabarak) is the 67th surah of the Quran, containing 30 verses. Its greatest benefit is that it <strong>intercedes for the reader until they are forgiven, and protects from the punishment of the grave</strong>. The Prophet ﷺ recited it every night. Reading it nightly is a highly recommended Sunnah.
+          </div>
+
+          <div class="big-name">تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ</div>
+          <p style="text-align:center;font-style:italic;color:var(--muted);margin-bottom:32px;">"Blessed is He in whose hand is the dominion." (Quran 67:1)</p>
+
+          <h2>The Main Benefits of Surah Mulk</h2>
+          <div class="benefit-row"><div class="benefit-icon-box">🛡️</div><div><strong>Protection from the punishment of the grave.</strong> Ibn Abbas said the Prophet ﷺ called it "the preventer" (al-Mani'ah) that saves from the torment of the grave.</div></div>
+          <div class="benefit-row"><div class="benefit-icon-box">🤲</div><div><strong>It intercedes for the reader.</strong> The Prophet ﷺ said it is "a surah of thirty verses that will intercede for a man until he is forgiven." (Tirmidhi 2891)</div></div>
+          <div class="benefit-row"><div class="benefit-icon-box">🌙</div><div><strong>A nightly Sunnah.</strong> The Prophet ﷺ would not sleep until he had recited Surah Al-Mulk and Surah As-Sajdah. (Tirmidhi 2892)</div></div>
+
+          <h2>The Hadith on Surah Mulk</h2>
+          <div class="quran-ref">
+            <div class="quran-ref-english">The Prophet ﷺ said: "There is a surah in the Quran of thirty verses which will intercede for its reader until he is forgiven: 'Tabarakalladhi biyadihil-mulk' (Surah Al-Mulk)."</div>
+            <div class="quran-ref-source">— Sunan at-Tirmidhi 2891 · Abu Dawud 1400</div>
+          </div>
+
+          <h2>What Is Surah Mulk About?</h2>
+          <p>Surah Al-Mulk reminds us that all dominion and power belong to Allah alone. It reflects on the perfection of Allah's creation — the layered heavens, the stars, the birds in the sky — inviting the reader to look again and again and find no flaw. It warns of the Hereafter and comforts the believer with Allah's mercy and control over all things. Reciting it nightly reconnects the heart to Allah's sovereignty before sleep.</p>
+
+          <div class="gold-box">
+            <strong>Why read it at night?</strong> The Prophet ﷺ made it a nightly habit. Scholars recommend reciting Surah Al-Mulk after Isha or before sleeping, so that if a person dies in their sleep, this surah stands as a protector and intercessor for them. Memorizing its 30 verses is a highly rewarding goal.
+          </div>
+
+          <h2>Frequently Asked Questions</h2>
+          <details class="faq-acc"><summary>What are the benefits of Surah Mulk? <span>+</span></summary><p>The main benefits of Surah Mulk are: it intercedes for the reader until they are forgiven (Tirmidhi 2891), it protects from the punishment of the grave (called "al-Mani'ah" — the preventer), and reciting it nightly is a Sunnah of the Prophet ﷺ who never slept without reading it.</p></details>
+          <details class="faq-acc"><summary>When should you read Surah Mulk? <span>+</span></summary><p>The best time to read Surah Mulk is at night, after Isha prayer or before sleeping. The Prophet ﷺ would not sleep until he recited it. Reading it nightly ensures its protection and intercession, especially if one passes away during sleep.</p></details>
+          <details class="faq-acc"><summary>How many verses are in Surah Mulk? <span>+</span></summary><p>Surah Al-Mulk has 30 verses (ayat) and is the 67th chapter of the Quran. It is a Makki surah, revealed in Mecca. It is also known as "Tabarak" after its first word, and "Al-Mani'ah" (the preventer) and "Al-Munjiyah" (the saver) for its protective qualities.</p></details>
+          <details class="faq-acc"><summary>Does Surah Mulk protect from the grave punishment? <span>+</span></summary><p>Yes. According to authentic narrations, Surah Al-Mulk protects the reader from the punishment of the grave. Ibn Abbas reported that the Prophet ﷺ called it "the preventer" that saves a person from the torment of the grave. This is why reciting it every night is strongly encouraged.</p></details>
+          <details class="faq-acc"><summary>How long does it take to memorize Surah Mulk? <span>+</span></summary><p>Most people can memorize Surah Al-Mulk (30 verses) in 2–4 weeks with daily practice of 10–15 minutes. Reciting it every night naturally aids memorization. At NoorPath Academy, our <a href="/hifz-quran-online">Hifz tutors</a> use proven methods to help students memorize it quickly and correctly.</p></details>
+
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn to Recite Surah Mulk Correctly</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Recite and memorize Surah Al-Mulk with proper Tajweed under a certified tutor. Free 30-minute trial class.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="/online-quran-classes#cta" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial →</a>
+              <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Hifz Program</a>
+            </div>
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/surah-yaseen-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Yaseen — Arabic, English &amp; Benefits</a></li>
+              <li><a href="/blog/surah-al-kahf-arabic-english-friday" style="color:var(--emerald);font-weight:600;">Surah Al-Kahf — Why Read It on Fridays</a></li>
+              <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);font-weight:600;">Ayatul Kursi — Arabic, English &amp; Benefits</a></li>
+              <li><a href="/blog/how-to-memorize-quran-faster" style="color:var(--emerald);font-weight:600;">How to Memorize Quran Faster — 12 Techniques</a></li>
+            </ul>
+          </div>`,
+  },
   "dua-for-anxiety-stress-depression": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
     .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
@@ -1728,6 +2113,16 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
             <div class="col-sm-6">
+              <a href="/blog/islamic-phrases-meaning" style="text-decoration:none;">
+                <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Knowledge</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">30 Common Islamic Phrases & Their Meanings</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/blog/subhanallah-meaning" style="text-decoration:none;">
+                <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Dhikr & Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Subhanallah — Glory be to Allah</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
+              </a>
+            </div>
+            <div class="col-sm-6">
               <a href="/blog/astaghfirullah-meaning" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>
@@ -1974,6 +2369,16 @@ export const blogContent: Record<string, { style: string; content: string }> = {
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
+            <div class="col-sm-6">
+              <a href="/blog/islamic-phrases-meaning" style="text-decoration:none;">
+                <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Knowledge</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">30 Common Islamic Phrases & Their Meanings</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/blog/subhanallah-meaning" style="text-decoration:none;">
+                <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Dhikr & Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Subhanallah — Glory be to Allah</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
+              </a>
+            </div>
             <div class="col-sm-6">
               <a href="/blog/alhamdulillah-meaning-in-english" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Alhamdulillah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div>
@@ -4444,9 +4849,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <div class="row g-3">
+            <div class="col-sm-6"><a href="/blog/islamic-phrases-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Knowledge</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">30 Common Islamic Phrases & Their Meanings</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
+            <div class="col-sm-6"><a href="/blog/subhanallah-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Dhikr & Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Subhanallah — Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
             <div class="col-sm-6"><a href="/blog/alhamdulillah-meaning-in-english" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Alhamdulillah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
             <div class="col-sm-6"><a href="/blog/astaghfirullah-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah — Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Arabic & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
             <div class="col-sm-6"><a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a>`,
   },
   "noorani-qaida-complete-guide": {

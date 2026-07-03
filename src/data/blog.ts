@@ -19,6 +19,74 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "islamic-phrases-meaning",
+    title: "30 Common Islamic Phrases & Their Meanings — Arabic, English & When to Say Them",
+    description: "The complete guide to common Islamic phrases every Muslim uses daily — Alhamdulillah, Subhanallah, Mashallah, Inshallah, JazakAllah & more, with Arabic, meaning & usage.",
+    category: "Islamic Knowledge",
+    date: "2026-07-03",
+    updatedAt: "2026-07-03",
+    readTime: "15 min",
+    keywords: [
+      "islamic phrases", "islamic phrases and meanings", "common islamic phrases", "arabic islamic phrases",
+      "muslim phrases", "islamic sayings", "islamic words and meanings", "arabic phrases muslims say",
+      "islamic terms", "muslim greetings", "islamic expressions", "arabic words muslims use",
+    ],
+    excerpt:
+      "From Alhamdulillah to JazakAllah Khair — a complete guide to 30 common Islamic phrases every Muslim says daily. Learn the Arabic, meaning, when to say each one, and how to respond, all in one place.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "subhanallah-meaning",
+    title: "Subhanallah Meaning in English — Arabic, When to Say It & Benefits",
+    description: "Subhanallah (سبحان الله) means 'Glory be to Allah.' Learn the full meaning, Arabic text, when to say it, its benefits from Hadith, and how it differs from Alhamdulillah.",
+    category: "Dhikr & Duas",
+    date: "2026-07-03",
+    updatedAt: "2026-07-03",
+    readTime: "8 min",
+    keywords: [
+      "subhanallah meaning", "subhanallah meaning in english", "what does subhanallah mean",
+      "subhanallah arabic", "subhan allah meaning", "subhanallah benefits", "meaning of subhanallah",
+      "subhanallah wa bihamdihi", "when to say subhanallah",
+    ],
+    excerpt:
+      "Subhanallah (سبحان الله) means 'Glory be to Allah' — a declaration of Allah's perfection said in awe, wonder and worship. Learn its full meaning, when to say it, and its immense reward.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "jazakallah-khair-meaning",
+    title: "JazakAllah Khair Meaning — English, Arabic, Response & When to Say It",
+    description: "JazakAllah Khair (جزاك الله خيرا) means 'May Allah reward you with good.' Learn the meaning, correct response, when to say it, and the difference from shukran.",
+    category: "Dhikr & Duas",
+    date: "2026-07-03",
+    updatedAt: "2026-07-03",
+    readTime: "7 min",
+    keywords: [
+      "jazakallah khair meaning", "jazakallah meaning", "jazakallah khair", "jazakallahu khairan meaning",
+      "what does jazakallah mean", "jazakallah response", "reply to jazakallah", "jazakallah khair in arabic",
+      "jazakallah khairan", "meaning of jazakallah",
+    ],
+    excerpt:
+      "JazakAllah Khair (جزاك الله خيرا) means 'May Allah reward you with good' — the Islamic way to say thank you. Learn its full meaning, how to respond, and why it is better than 'shukran'.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "surah-mulk-benefits",
+    title: "Surah Mulk — Benefits, Arabic Text, English Translation & Why to Read It Nightly",
+    description: "Surah Al-Mulk (the 67th chapter) protects from the punishment of the grave. Read the full benefits, Arabic text, English translation and why the Prophet ﷺ recited it every night.",
+    category: "Quran",
+    date: "2026-07-03",
+    updatedAt: "2026-07-03",
+    readTime: "10 min",
+    keywords: [
+      "surah mulk", "surah mulk benefits", "surah al mulk", "surah mulk english", "surah mulk arabic",
+      "benefits of surah mulk", "surah mulk translation", "why read surah mulk", "surah mulk protection grave",
+      "surah mulk every night", "tabarakalladhi",
+    ],
+    excerpt:
+      "Surah Al-Mulk is the Quranic chapter the Prophet ﷺ recited every night — it intercedes for the reader and protects from the punishment of the grave. Discover its benefits, Arabic text and English meaning.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "dua-for-anxiety-stress-depression",
     title: "Dua for Anxiety, Stress & Depression — 15 Powerful Duas for Peace of Mind (Arabic + English)",
     description: "15 authentic duas for anxiety, stress, depression, overthinking & a broken heart — full Arabic, transliteration, English meaning, Hadith source & when to recite.",
