@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
+import { getCitiesByCountrySlug } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Globe } from "lucide-react";
@@ -48,6 +49,7 @@ export default async function LocationDetailPage({ params }: Props) {
   if (!loc) notFound();
 
   const related = locations.filter((l) => l.slug !== slug).slice(0, 4);
+  const cityPages = getCitiesByCountrySlug(slug);
   const faqs = getLocationFaqs(loc);
   const seoParagraphs = getLocationSeoParagraphs(loc);
 
@@ -64,8 +66,8 @@ export default async function LocationDetailPage({ params }: Props) {
         url: `https://www.noorpath.online/locations/${slug}`,
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.9",
-          ratingCount: "2400",
+          ratingValue: loc.rating,
+          ratingCount: loc.reviews,
           bestRating: "5",
           worstRating: "1",
         },
@@ -176,12 +178,27 @@ export default async function LocationDetailPage({ params }: Props) {
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
                   Cities We Serve in {loc.country}
                 </h2>
+                {cityPages.length > 0 && (
+                  <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 14 }}>
+                    Explore our dedicated city guides for local timezone slots and community details:
+                  </p>
+                )}
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                  {loc.cities.split(",").map((city) => (
-                    <span key={city} style={{ background: "rgba(10,110,79,.08)", color: "var(--emerald)", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 600, border: "1px solid rgba(10,110,79,.15)" }}>
-                      {loc.flag} {city.trim()}
-                    </span>
+                  {cityPages.map((cp) => (
+                    <Link key={cp.slug} href={`/online-quran-classes/${cp.slug}`} style={{ background: "var(--emerald)", color: "#fff", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 700, textDecoration: "none" }}>
+                      {cp.flag} Quran Classes in {cp.city} →
+                    </Link>
                   ))}
+                  {loc.cities.split(",").map((city) => {
+                    const label = city.trim();
+                    const hasPage = cityPages.some((cp) => cp.city.toLowerCase() === label.toLowerCase());
+                    if (hasPage) return null;
+                    return (
+                      <span key={city} style={{ background: "rgba(10,110,79,.08)", color: "var(--emerald)", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 600, border: "1px solid rgba(10,110,79,.15)" }}>
+                        {loc.flag} {label}
+                      </span>
+                    );
+                  })}
                   <span style={{ background: "var(--ivory)", color: "var(--muted)", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 500, border: "1px solid var(--border)" }}>
                     + All cities online
                   </span>
@@ -277,7 +294,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Quran Classes for {loc.country}
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".83rem", marginBottom: 8, lineHeight: 1.6 }}>
-                  Free 30-minute trial. No credit card needed.
+                  Plans from $29/mo (~{loc.approxPrice}). Free 30-minute trial — no credit card needed.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, margin: "16px 0" }}>
                   {[
@@ -294,7 +311,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Book Free Trial →
                 </Link>
                 <div style={{ marginTop: 14, color: "rgba(255,255,255,.5)", fontSize: ".73rem" }}>
-                  ⭐⭐⭐⭐⭐ Rated 4.9/5 by 2,400+ parents
+                  ⭐⭐⭐⭐⭐ Rated {loc.rating}/5 by {loc.reviews}+ {loc.country} families
                 </div>
               </div>
 

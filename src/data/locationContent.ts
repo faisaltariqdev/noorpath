@@ -1,6 +1,7 @@
 import type { Location } from "./locations";
 
 export function getLocationFaqs(loc: Location) {
+  const primaryCity = loc.cities.split(",")[0].trim();
   return [
     {
       q: `How do online Quran classes work in ${loc.country}?`,
@@ -8,7 +9,15 @@ export function getLocationFaqs(loc: Location) {
     },
     {
       q: `What is the best online Quran academy in ${loc.country}?`,
-      a: `NoorPath Academy is trusted by Muslim families across ${loc.country} including ${loc.cities.split(",")[0].trim()} and beyond. With Ijazah-certified tutors, flexible ${loc.timezone} scheduling, family plans, and a 4.9/5 rating, NoorPath is a top choice for online Quran learning in ${loc.country}.`,
+      a: `NoorPath Academy is trusted by Muslim families across ${loc.country} including ${primaryCity} and beyond. With Ijazah-certified tutors, flexible ${loc.timezone} scheduling, family plans, and a ${loc.rating}/5 rating from ${loc.reviews}+ ${loc.country} families, NoorPath is a top choice for online Quran learning in ${loc.country}.`,
+    },
+    {
+      q: `How much do online Quran classes cost in ${loc.country}?`,
+      a: `Plans start from $29/month (about ${loc.approxPrice}/month, billed in USD) with a free 30-minute trial. NoorPath offers Starter, Standard, and Intensive plans plus family discounts for 2+ siblings. Book a free trial to discuss the best plan for your ${loc.timezone} schedule.`,
+    },
+    {
+      q: `What time are the Quran classes held in ${loc.country}?`,
+      a: `Classes for ${loc.country} run in your local ${loc.timezone} timezone — morning (roughly 6–10am), afternoon (12–3pm), and evening (6–10pm), plus weekend slots. ${loc.localContext.split(". ").slice(-1)[0]}`,
     },
     {
       q: `Can kids learn Quran online in ${loc.country}?`,
@@ -18,10 +27,6 @@ export function getLocationFaqs(loc: Location) {
       q: `Are female Quran teachers available in ${loc.country}?`,
       a: `Absolutely. NoorPath Academy has certified female Quran teachers (Hafiza) available for sisters and daughters in ${loc.country}. Request a female tutor when booking your free trial class.`,
     },
-    {
-      q: `How much do online Quran classes cost in ${loc.country}?`,
-      a: `Plans start from $29/month with a free 30-minute trial. NoorPath offers Starter, Standard, and Intensive plans plus family discounts for 2+ siblings. Book a free trial to discuss pricing for your ${loc.timezone} schedule.`,
-    },
   ];
 }
 
@@ -29,8 +34,9 @@ export function getLocationSeoParagraphs(loc: Location): string[] {
   const primaryCity = loc.cities.split(",")[0].trim();
   return [
     `Looking for the best online Quran classes in ${loc.country}? NoorPath Academy delivers live, certified 1-on-1 Quran tutoring to Muslim families in ${primaryCity}, ${loc.cities.split(",").slice(1, 3).map((c) => c.trim()).join(", ")}, and every city nationwide. Whether you want to learn Quran online from scratch, improve Tajweed, start Hifz, or enrol your children, our tutors adapt to your goals and ${loc.timezone} timezone.`,
-    `Our online Quran academy serves ${loc.population} across ${loc.country} with Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), Arabic language, Islamic studies, and daily duas for kids. Every tutor holds Ijazah certification or Al-Azhar qualifications. Classes run morning, afternoon, and evening in ${loc.timezone} — perfect for school-age children, working adults, and busy families.`,
-    `Join 12,000+ students worldwide who trust NoorPath for online Quran learning. Families in ${loc.country} choose us for flexible scheduling, female tutor options, family sibling discounts, and a completely free 30-minute trial with no payment required. Start learning Quran online today from the comfort of your home in ${loc.country}.`,
+    loc.localContext,
+    `Our online Quran academy serves ${loc.population} across ${loc.country} with Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), Arabic language, Islamic studies, and daily duas for kids. Every tutor holds Ijazah certification or Al-Azhar qualifications. Classes run morning, afternoon, and evening in ${loc.timezone} — perfect for school-age children, working adults, and busy families. Plans start from just $29/month (about ${loc.approxPrice}), with a completely free 30-minute trial.`,
+    `Join 12,000+ students worldwide who trust NoorPath for online Quran learning — rated ${loc.rating}/5 by ${loc.reviews}+ families in ${loc.country}. Families here choose us for flexible scheduling, female tutor options, family sibling discounts, and no long-term contracts. Start learning Quran online today from the comfort of your home in ${loc.country}.`,
   ];
 }
 

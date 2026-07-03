@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, Globe, CheckCircle, Star } from "lucide-react";
+import { Clock, Globe, CheckCircle, Star, MapPin } from "lucide-react";
 import { locations } from "@/data/locations";
+import { cities } from "@/data/cities";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
 export const revalidate = false;
@@ -58,7 +59,7 @@ const locationsJsonLd = {
       name: "Online Quran Classes — Worldwide",
       description: "NoorPath Academy provides online Quran education to families in 40+ countries. All timezones covered.",
       provider: ORGANIZATION_REF,
-      areaServed: ["United States", "United Kingdom", "Canada", "Australia", "UAE", "Saudi Arabia", "Pakistan", "Germany", "Malaysia", "Bangladesh", "South Africa", "Indonesia"],
+      areaServed: locations.map((l) => l.country),
       serviceType: "Online Quran Education",
       url: "https://www.noorpath.online/locations",
     },
@@ -161,6 +162,22 @@ export default function LocationsPage() {
                   </Link>
                 </div>
               </div>
+            ))}
+          </div>
+
+          {/* Popular cities */}
+          <div style={{ textAlign: "center", marginBottom: 32 }}>
+            <span className="section-eyebrow"><MapPin size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Popular Cities</span>
+            <h2 className="section-title">Quran Classes in <em className="accent">Your City</em></h2>
+            <p className="section-desc center">
+              Dedicated city guides with local timezone slots, community details, and certified tutors — no travel needed.
+            </p>
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 64 }}>
+            {cities.map((c) => (
+              <Link key={c.slug} href={`/online-quran-classes/${c.slug}`} style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 6, padding: "9px 16px", background: "#fff", border: "1px solid var(--border)", borderRadius: 12, fontSize: ".85rem", color: "var(--charcoal)", fontWeight: 600 }}>
+                {c.flag} Quran Classes in {c.city}
+              </Link>
             ))}
           </div>
 

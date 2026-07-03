@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog";
 import { courses } from "@/data/courses";
 import { locations } from "@/data/locations";
+import { cities } from "@/data/cities";
 
 const BASE = "https://www.noorpath.online";
 
@@ -72,6 +73,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
+  const cityPages: MetadataRoute.Sitemap = cities.map((c) => ({
+    url: `${BASE}/online-quran-classes/${c.slug}`,
+    lastModified: NOW,
+    priority: 0.86,
+    changeFrequency: "weekly" as const,
+  }));
+
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
     url: `${BASE}/blog/${p.slug}`,
     lastModified: new Date(p.updatedAt ?? p.date),
@@ -79,5 +87,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? ("weekly" as const) : ("monthly" as const),
   }));
 
-  return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...blogPages];
+  return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...cityPages, ...blogPages];
 }
