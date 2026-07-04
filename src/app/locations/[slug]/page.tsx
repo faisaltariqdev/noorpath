@@ -341,7 +341,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Quran Classes for {loc.country}
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".83rem", marginBottom: 8, lineHeight: 1.6 }}>
-                  Plans from $29/mo (~{loc.approxPrice}). Free 30-minute trial — no credit card needed.
+                  Free 30-minute trial — no credit card needed.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, margin: "16px 0" }}>
                   {[
