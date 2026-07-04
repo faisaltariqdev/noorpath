@@ -21,9 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city } = await params;
   const c = getCity(city);
   if (!c) return {};
-  const description = `Learn Quran online in ${c.city} with certified 1-on-1 tutors. Noorani Qaida, Tajweed, Hifz & kids classes in your ${c.timezone} timezone. Free 30-min trial — no travel needed.`;
+  const description = `Online Quran classes in ${c.city} for kids & adults — certified 1-on-1 Quran tutors from home. Noorani Qaida, Tajweed, Hifz & female teachers in your ${c.timezone} timezone. Free 30-min trial, no travel needed.`;
   return {
-    title: `Online Quran Classes in ${c.city} — Certified Quran Tutors | NoorPath`,
+    title: `Online Quran Classes in ${c.city} for Kids & Adults | NoorPath`,
     description,
     keywords: c.keywords,
     alternates: { canonical: `https://www.noorpath.online/online-quran-classes/${c.slug}` },
