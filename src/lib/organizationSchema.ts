@@ -43,13 +43,6 @@ export function getOrganizationJsonLd() {
           contactType: "customer service",
           availableLanguage: ["English", "Arabic", "Urdu"],
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "2400",
-          bestRating: "5",
-          worstRating: "1",
-        },
         sameAs: [
           BASE_URL,
           "https://wa.me/923124877906",

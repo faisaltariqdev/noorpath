@@ -144,6 +144,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Script>
           </>
         )}
+
+        {/* ── Google Ads conversion tracking ── */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18212142815"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18212142815');`}
+        </Script>
       </body>
     </html>
   );
