@@ -19,6 +19,26 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "online-quran-classes-uk-kids-guide",
+    title: "Online Quran Classes in the UK for Kids — The Complete 2026 Parents' Guide",
+    description: "Looking for online Quran classes in the UK for your kids? Compare costs, safety, timings, female tutors & how to choose the best academy. Free 30-min trial — no credit card.",
+    category: "Online Learning",
+    date: "2026-07-06",
+    updatedAt: "2026-07-06",
+    readTime: "14 min",
+    keywords: [
+      "online quran classes uk", "online quran classes for kids uk", "quran classes for kids uk",
+      "quran teacher online uk", "learn quran online uk", "online quran academy uk",
+      "female quran teacher uk", "online quran lessons uk", "quran tutor for kids uk",
+      "best online quran classes uk", "quran classes birmingham", "quran classes london online",
+      "online quran classes manchester", "quran classes bradford", "quran classes leeds",
+      "kids quran teacher uk", "online madrassah uk", "quran classes near me uk",
+    ],
+    excerpt:
+      "A complete 2026 guide for UK Muslim parents: how online Quran classes work, what they cost, how to keep your child safe, female tutor options, and how to choose the right academy — with a free trial checklist.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "islamic-phrases-meaning",
     title: "30 Common Islamic Phrases & Their Meanings — Arabic, English & When to Say Them",
     description: "The complete guide to common Islamic phrases every Muslim uses daily — Alhamdulillah, Subhanallah, Mashallah, Inshallah, JazakAllah & more, with Arabic, meaning & usage.",

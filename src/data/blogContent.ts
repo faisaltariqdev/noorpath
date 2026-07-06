@@ -1,5 +1,226 @@
 // Auto-extracted from original HTML blog files — styles + content
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "online-quran-classes-uk-kids-guide": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 26px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 22px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .np-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: .93rem; }
+    .np-table th, .np-table td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+    .np-table th { background: var(--ivory); color: var(--charcoal); font-weight: 700; }
+    .np-table tr:nth-child(even) td { background: rgba(10,110,79,.03); }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } }`,
+    content: `<p>If you are a Muslim parent in the UK searching for <strong>online Quran classes for your kids</strong>, you are not alone. Across Birmingham, Bradford, London, Luton, Manchester and Leicester, thousands of families now choose live online Quran lessons over the local weekend madrassah — for one simple reason: <strong>it works better, and it fits around busy British family life.</strong></p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Online Quran classes in the UK connect your child with a certified tutor over a live 1-on-1 video call. Good academies charge from around £20–£40/month, offer <strong>female tutors for daughters</strong>, teach in UK-friendly evening/weekend slots, and give a <strong>free trial before you pay</strong>. Start with <a href="/online-quran-classes-for-kids">a free 30-minute trial class</a> — no credit card required.
+          </div>
+
+          <p>This guide covers everything a UK parent needs to decide: how online classes work, what they cost, how to keep your child safe, whether they are as effective as in-person madrassah, and how to choose the right teacher. Let's begin.</p>
+
+          <div class="gold-box">
+            <strong>Key takeaways:</strong>
+            <ul style="margin-bottom:0;">
+              <li>Online Quran classes for UK kids cost roughly <strong>£20–£45/month</strong> and are taught 1-on-1 by certified tutors.</li>
+              <li>The ideal starting age is <strong>4–7</strong>, but any age works — everyone begins with Noorani Qaida.</li>
+              <li><strong>Female tutors</strong> are available for daughters, and parents can watch every class.</li>
+              <li>1-on-1 online lessons are usually <strong>faster than a crowded local madrassah</strong>.</li>
+              <li>Always start with a <strong>free trial</strong> before paying — no credit card required.</li>
+            </ul>
+          </div>
+
+          <div class="highlight-box">
+            <strong>On this page:</strong>
+            <ul style="margin-bottom:0;">
+              <li><a href="#how-it-works">How online Quran classes work</a></li>
+              <li><a href="#why-uk-parents">Why UK parents are switching</a></li>
+              <li><a href="#cost">How much they cost in the UK</a></li>
+              <li><a href="#what-learns">What your child will learn</a></li>
+              <li><a href="#madrassah">Online vs local madrassah</a></li>
+              <li><a href="#cities">Which UK cities we serve</a></li>
+              <li><a href="#safety">Are they safe for children?</a></li>
+              <li><a href="#female-tutors">Female Quran teachers</a></li>
+              <li><a href="#choose">How to choose the best academy</a></li>
+              <li><a href="#getting-started">How to get started</a></li>
+              <li><a href="#faq">Frequently asked questions</a></li>
+            </ul>
+          </div>
+
+          <h2 id="how-it-works">How do online Quran classes for kids actually work?</h2>
+          <p>The format is simple and proven. Your child sits at a laptop, tablet or phone at a scheduled time and joins a live video call (usually Zoom or Google Meet) with a qualified Quran teacher. The tutor shares the Qaida or Mushaf on screen, listens to your child recite, and <strong>corrects pronunciation in real time</strong> — exactly like sitting beside a teacher, but from your own home.</p>
+          <p>A typical UK child's journey looks like this:</p>
+          <ol>
+            <li><strong>Noorani Qaida</strong> — the Arabic alphabet, vowels, and letter-joining (the foundation). <a href="/courses/noorani-qaida-online">Learn about Noorani Qaida online →</a></li>
+            <li><strong>Quran reading with Tajweed</strong> — reciting the Mushaf with correct rules. <a href="/learn-tajweed-online">Explore Tajweed classes →</a></li>
+            <li><strong>Hifz (memorisation)</strong> — for children who want to memorise the Quran. <a href="/hifz-quran-online">See the Hifz programme →</a></li>
+          </ol>
+
+          <h2 id="why-uk-parents">Why are UK parents switching to online Quran classes?</h2>
+          <p>The traditional route — driving your child to a local mosque or madrassah after school — still exists, but more British Muslim families choose online every year. Here is why:</p>
+          <ul>
+            <li><strong>No travel, no traffic.</strong> No school-run-style dashes across Birmingham or London in the dark winter evenings.</li>
+            <li><strong>1-on-1 attention.</strong> Local madrassahs often have 15–30 children per teacher. Online is one child, one tutor — far faster progress.</li>
+            <li><strong>Choose the perfect tutor.</strong> You are not limited to your local mosque. You can pick a certified, experienced teacher — including a <strong>female tutor for your daughter</strong>.</li>
+            <li><strong>Flexible UK timings.</strong> Early morning before school, straight after school, or weekends — you choose the slot.</li>
+            <li><strong>You can watch.</strong> Parents can sit in on classes, so you always know exactly what your child is learning.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>UK tip:</strong> Because most reputable academies teach globally, they already schedule around <strong>GMT/BST timezones</strong>. Ask for an after-school (4pm–8pm UK) or weekend slot when you book, and confirm the tutor can commit to that time every week.
+          </div>
+
+          <h2 id="cost">How much do online Quran classes cost in the UK?</h2>
+          <p>Pricing depends on how many lessons per week your child takes. Here is a realistic 2026 guide for UK families:</p>
+
+          <table class="np-table">
+            <thead>
+              <tr><th>Plan</th><th>Lessons / week</th><th>Typical UK cost</th><th>Best for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Starter</td><td>2 lessons</td><td>£20–£30 / month</td><td>Young beginners (Qaida)</td></tr>
+              <tr><td>Standard</td><td>3 lessons</td><td>£30–£45 / month</td><td>Most kids — fastest progress</td></tr>
+              <tr><td>Intensive / Hifz</td><td>5 lessons</td><td>£45–£70 / month</td><td>Memorisation students</td></tr>
+              <tr><td>Family plan</td><td>Multiple siblings</td><td>Discounted per child</td><td>2+ children learning</td></tr>
+            </tbody>
+          </table>
+
+          <p>Compare that to a private in-person Quran tutor in London or Manchester, who can charge <strong>£15–£30 per hour</strong> — online delivers the same certified quality at a fraction of the cost. <a href="/pricing">See NoorPath's transparent pricing →</a></p>
+
+          <h2 id="what-learns">What will my child actually learn?</h2>
+          <p>A good online academy follows a clear, staged curriculum so your child always knows the next step. Here is the typical path from complete beginner to confident reciter:</p>
+          <ul>
+            <li><strong>Arabic letters &amp; Noorani Qaida</strong> — recognising and pronouncing every letter and vowel correctly. <a href="/blog/noorani-qaida-complete-guide">Read the complete Noorani Qaida guide →</a></li>
+            <li><strong>Quran reading (Nazira)</strong> — reading the Mushaf fluently, starting with Juz Amma.</li>
+            <li><strong>Tajweed</strong> — the rules of beautiful, correct recitation. <a href="/learn-tajweed-online">Explore Tajweed →</a></li>
+            <li><strong>Memorisation (Hifz)</strong> — for children who want to become Hafiz, using the proven Sabaq–Sabqi–Manzil system. <a href="/blog/how-long-to-memorize-quran">How long Hifz takes →</a></li>
+            <li><strong>Duas &amp; Islamic basics</strong> — everyday duas, Salah, and character (akhlaq).</li>
+          </ul>
+          <p>Not sure when to begin? Our guide on the <a href="/blog/best-age-to-start-quran-learning">best age to start Quran learning</a> helps you decide.</p>
+
+          <h2 id="madrassah">Online Quran classes vs the local madrassah — which is better?</h2>
+          <p>Both have their place, but here is an honest side-by-side comparison for a busy UK family:</p>
+
+          <table class="np-table">
+            <thead>
+              <tr><th>Factor</th><th>Online 1-on-1</th><th>Local madrassah</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Attention per child</td><td>Full session, 1-on-1</td><td>Shared among 15–30 kids</td></tr>
+              <tr><td>Travel</td><td>None — learn from home</td><td>Daily commute in traffic</td></tr>
+              <tr><td>Choice of tutor</td><td>Pick any certified teacher</td><td>Whoever is local</td></tr>
+              <tr><td>Female tutor for daughters</td><td>Easily arranged</td><td>Often unavailable</td></tr>
+              <tr><td>Timing flexibility</td><td>You choose the slot</td><td>Fixed class times</td></tr>
+              <tr><td>Parent visibility</td><td>Watch live + weekly reports</td><td>Limited</td></tr>
+              <tr><td>Progress speed</td><td>Often 2–3× faster</td><td>Slower in large groups</td></tr>
+            </tbody>
+          </table>
+
+          <h2 id="cities">Which UK cities do online Quran classes cover?</h2>
+          <p>Because classes are delivered online, your postcode does not matter — a certified tutor comes to you wherever you are. NoorPath families learn from right across the UK, including <strong>London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton, Blackburn, Glasgow, Cardiff, Sheffield, Nottingham and Slough</strong>. Whether you are in a big city or a small town with no nearby madrassah, your child gets the same qualified teaching. <a href="/locations/online-quran-classes-uk">See our dedicated UK page →</a></p>
+
+          <h2 id="safety">Are online Quran classes safe for children?</h2>
+          <p>Safety is the number-one concern for every parent — and rightly so. Online classes are safe <em>when you choose a reputable academy and follow a few sensible rules:</em></p>
+          <ul>
+            <li>Use trusted platforms only (<strong>Zoom or Google Meet</strong>), never unknown apps.</li>
+            <li><strong>Supervise the first few weeks</strong> — sit nearby, especially for younger children.</li>
+            <li>Verify the tutor's <strong>Ijazah / certification</strong> before enrolling.</li>
+            <li>Ensure there is <strong>no private messaging</strong> between tutor and child — all communication goes through you, the parent.</li>
+            <li>Keep the device in a <strong>shared family space</strong>, not the child's bedroom.</li>
+          </ul>
+          <p>At NoorPath Academy, all tutors are background-verified and certified, parents are encouraged to observe classes, and you receive <strong>weekly progress reports</strong> so you are never in the dark.</p>
+
+          <h2 id="female-tutors">Can my daughter learn with a female Quran teacher?</h2>
+          <p>Yes — and this is one of the biggest advantages of learning online. Many UK families prefer a <strong>female tutor (Ustadha / Hafiza)</strong> for their daughters. Online, you are not limited to whoever happens to teach at your local mosque; you can request a qualified female teacher and she will teach your daughter 1-on-1 with the same curriculum and scheduling. <a href="/female-quran-teacher-online">Learn about female Quran teachers →</a></p>
+
+          <h2 id="concerns">Common concerns UK parents have (answered)</h2>
+          <p><strong>"Will my child stay focused on a screen?"</strong> A 20–30 minute 1-on-1 lesson is purposeful, supervised screen time — very different from passive scrolling. Because the tutor is engaging your child directly the entire time, there is nowhere to hide, and most children stay far more attentive than in a large madrassah group.</p>
+          <p><strong>"Is online really as effective?"</strong> For most children it is <em>more</em> effective. The reason is simple maths: in a busy madrassah one teacher supervises 20+ children, so each child recites for only a minute or two. Online, your child recites for the whole session with instant correction — which is why progress is often two to three times faster through Qaida and early Quran reading.</p>
+          <p><strong>"What equipment do we need?"</strong> Just a laptop, tablet or phone, a stable internet connection, and a quiet corner. Headphones help younger children focus. That is all.</p>
+
+          <h2 id="choose">How to choose the best online Quran academy in the UK (checklist)</h2>
+          <p>Before you pay anyone, run through this checklist. A good academy will happily tick every box:</p>
+          <ul>
+            <li>✅ <strong>Free trial lesson</strong> before any payment (no credit card required)</li>
+            <li>✅ <strong>Ijazah-certified</strong> or Al-Azhar–qualified tutors</li>
+            <li>✅ <strong>Live 1-on-1</strong> classes (not pre-recorded videos or group calls)</li>
+            <li>✅ <strong>Female tutors available</strong> for daughters</li>
+            <li>✅ Structured <strong>Qaida → Quran → Tajweed → Hifz</strong> curriculum</li>
+            <li>✅ <strong>UK-friendly timings</strong> (after-school & weekends)</li>
+            <li>✅ <strong>Weekly progress reports</strong> to parents</li>
+            <li>✅ Transparent monthly pricing and easy cancellation</li>
+            <li>✅ Experience teaching <strong>British-born children</strong> in English</li>
+          </ul>
+
+          <h2 id="getting-started">How to get started (the easy first step)</h2>
+          <p>You do not need to commit to anything to find out if online learning suits your child. The smartest first move is a <strong>free trial class</strong>: you meet the tutor, watch how they interact with your child, and see the platform in action — all before paying a penny.</p>
+          <p>At NoorPath Academy we offer a <strong>free 30-minute trial</strong> with a certified tutor, we serve families right across the UK, and there is <strong>no credit card required</strong> to book. If it is a good fit, you continue; if not, there is no obligation at all.</p>
+
+          <div class="gold-box">
+            <strong>Ready to try?</strong> <a href="/online-quran-classes-for-kids">Book your child's free 30-minute trial class</a> today — choose a UK-friendly time, request a male or female tutor, and see the difference 1-on-1 learning makes.
+          </div>
+
+          <h2 id="faq">Frequently asked questions</h2>
+
+          <details class="faq-acc">
+            <summary>How much do online Quran classes cost in the UK? <span>+</span></summary>
+            <p>Online Quran classes for kids in the UK typically cost between £20 and £45 per month depending on how many lessons per week your child takes. Starter plans (2 lessons/week) begin around £20–£30/month, while standard 3-lesson plans run £30–£45/month. Family plans offer discounts for multiple siblings. NoorPath Academy offers a free 30-minute trial with no credit card required.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>What is the best age for a child to start online Quran classes? <span>+</span></summary>
+            <p>The ideal age is 4–7 years, when children have strong memory and can manage 20–30 minute sessions. However, children of any age can start, and older children (8–12) often progress faster through Qaida and early Quran reading. Every child begins with Noorani Qaida before reading the Mushaf.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>Are online Quran classes safe for my child? <span>+</span></summary>
+            <p>Yes, when you use a reputable academy. Use trusted platforms (Zoom or Google Meet), supervise the first few weeks, verify the tutor's certification, keep the device in a shared family space, and ensure there is no private messaging between tutor and child. NoorPath tutors are background-verified and parents are encouraged to observe classes.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>Can my daughter learn with a female Quran teacher online? <span>+</span></summary>
+            <p>Yes. Online learning lets you request a certified female tutor (Ustadha/Hafiza) for your daughter, regardless of where you live in the UK. She teaches 1-on-1 with the same curriculum, timings and pricing as any other class. Simply request a female teacher when booking your free trial.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>Are online classes as good as the local mosque madrassah? <span>+</span></summary>
+            <p>For most children, online is more effective. In a local madrassah one teacher supervises many children, so each child recites only briefly. In a 1-on-1 online lesson your child recites for the whole session with instant correction, which is why online students often progress two to three times faster through Qaida and early Quran reading.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>What times are online Quran classes available for UK families? <span>+</span></summary>
+            <p>Reputable academies schedule around GMT/BST timezones and offer after-school (4pm–8pm UK) and weekend slots ideal for British families. When you book, request your preferred weekly time and confirm your tutor can commit to it consistently.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>Which UK cities do you offer online Quran classes in? <span>+</span></summary>
+            <p>Because classes are fully online, we serve families anywhere in the UK — including London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton, Blackburn, Glasgow, Cardiff, Sheffield and Nottingham — as well as smaller towns without a nearby madrassah. Your child gets the same certified teaching regardless of postcode.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>What equipment does my child need for online Quran classes? <span>+</span></summary>
+            <p>Just a laptop, tablet or smartphone with a camera, a stable internet connection, and a quiet space. Headphones help younger children focus. Classes run on Zoom or Google Meet, both of which are free to install.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>Do you offer online Quran classes for adults too? <span>+</span></summary>
+            <p>Yes. Alongside kids' classes, we teach adult beginners and revert Muslims with the same 1-on-1 format and flexible UK timings. You can <a href="/online-quran-classes-for-adults">learn about adult Quran classes</a> or read our <a href="/blog/learn-quran-online-adult-beginner-guide">adult beginner's guide</a>.</p>
+          </details>
+
+          <details class="faq-acc">
+            <summary>How do I book a free trial Quran class in the UK? <span>+</span></summary>
+            <p>Booking takes two minutes: <a href="/online-quran-classes-for-kids">visit the free trial page</a>, choose a UK-friendly time, tell us your child's age and whether you'd like a male or female tutor, and we'll confirm your free 30-minute session. No credit card and no obligation to continue.</p>
+          </details>`,
+  },
   "islamic-phrases-meaning": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
     .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
