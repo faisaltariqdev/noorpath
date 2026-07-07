@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const countries = [
   "Pakistan","United States","United Kingdom","Canada","Australia",
@@ -19,6 +19,17 @@ export default function CTAForm() {
   const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle");
   const [msg, setMsg] = useState("");
   const [familyPlan, setFamilyPlan] = useState(false);
+
+  // When the user hits "Back" after submitting, the browser restores this page
+  // from the bfcache with its old JS state — leaving the button stuck on
+  // "Sending...". Reset the form state whenever the page is restored.
+  useEffect(() => {
+    const onPageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) { setStatus("idle"); setMsg(""); }
+    };
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

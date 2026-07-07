@@ -45,7 +45,7 @@ const amiri = Amiri({
 });
 
 // ─── Replace with your Google Analytics 4 Measurement ID ───────────────────────────
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-CTEG1YPKCT";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noorpath.online"),
