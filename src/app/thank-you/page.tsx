@@ -11,14 +11,22 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <>
-      {/* Google Ads conversion event — fires when this page loads */}
-      <Script id="google-ads-conversion" strategy="afterInteractive">
+      {/* ── Google Ads: register a page_view for this URL so the URL-based
+          "Free Trial Booked" conversion (Destination: /thank-you) fires
+          reliably even if the base tag loaded a moment earlier. ── */}
+      <Script id="google-ads-thankyou-pageview" strategy="afterInteractive">
         {`
-          if (typeof gtag === 'function') {
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18212142815/thank_you_page_visit',
-            });
-          }
+          (function () {
+            var tries = 0;
+            function fire() {
+              if (typeof window.gtag === 'function') {
+                window.gtag('config', 'AW-18212142815', { 'page_path': '/thank-you' });
+                return;
+              }
+              if (tries++ < 100) { setTimeout(fire, 100); }
+            }
+            fire();
+          })();
         `}
       </Script>
 

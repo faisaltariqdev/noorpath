@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 const countries = [
   "Pakistan","United States","United Kingdom","Canada","Australia",
@@ -17,7 +16,6 @@ const coursesOptions = [
 ];
 
 export default function CTAForm() {
-  const router = useRouter();
   const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle");
   const [msg, setMsg] = useState("");
   const [familyPlan, setFamilyPlan] = useState(false);
@@ -36,7 +34,10 @@ export default function CTAForm() {
       const data = await res.json();
       if (data.success === true || data.success === "true") {
         form.reset();
-        router.push("/thank-you");
+        // Full-page navigation (not client-side) so the Google Ads tag fires a
+        // fresh page_view on /thank-you — required for the URL-based
+        // "Free Trial Booked" conversion to register.
+        window.location.href = "/thank-you";
       } else {
         setStatus("error");
         setMsg(data.message || "Could not send. Please WhatsApp us.");
