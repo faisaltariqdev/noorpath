@@ -19,6 +19,25 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "six-kalimas-of-islam",
+    title: "6 Kalimas of Islam — Arabic, English Translation, Transliteration & Meaning",
+    description: "Learn all 6 Kalimas of Islam with Arabic text, English translation, transliteration and meaning. First to Sixth Kalima — Tayyabah, Shahadat, Tamjeed, Tawheed, Istighfar & Radd-e-Kufr, with memorization tips for kids.",
+    category: "Islamic Knowledge",
+    date: "2026-07-07",
+    updatedAt: "2026-07-07",
+    readTime: "13 min",
+    keywords: [
+      "6 kalimas", "six kalimas", "6 kalimas of islam", "6 kalimas in english",
+      "six kalimas with english translation", "first kalima", "second kalima", "third kalima",
+      "fourth kalima", "fifth kalima", "sixth kalima", "kalima tayyaba", "kalma", "6 kalmay",
+      "kalima shahadat", "kalima tamjeed", "kalima tawheed", "kalima astaghfar", "radd e kufr",
+      "6 kalimas arabic", "6 kalimas transliteration", "six kalimas meaning", "kalimas for kids",
+    ],
+    excerpt:
+      "The 6 Kalimas of Islam are the foundation every Muslim child memorises first. Read all six — Tayyabah, Shahadat, Tamjeed, Tawheed, Istighfar and Radd-e-Kufr — with full Arabic, transliteration, clear English translation, meaning, and easy tips to help children memorise them.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "online-quran-classes-uk-kids-guide",
     title: "Online Quran Classes in the UK for Kids — The Complete 2026 Parents' Guide",
     description: "Looking for online Quran classes in the UK for your kids? Compare costs, safety, timings, female tutors & how to choose the best academy. Free 30-min trial — no credit card.",

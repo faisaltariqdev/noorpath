@@ -1,5 +1,154 @@
 // Auto-extracted from original HTML blog files — styles + content
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "six-kalimas-of-islam": {
+    style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+    .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
+    .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 26px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 22px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--emerald); font-weight: 600; }
+    .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+    .np-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: .93rem; }
+    .np-table th, .np-table td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+    .np-table th { background: var(--ivory); color: var(--charcoal); font-weight: 700; }
+    .np-table tr:nth-child(even) td { background: rgba(10,110,79,.03); }
+    .kalima-card { background: rgba(10,110,79,.05); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; margin: 24px 0; }
+    .kalima-card .knum { display: inline-block; background: var(--emerald); color: #fff; font-weight: 700; font-size: .78rem; padding: 4px 14px; border-radius: 20px; margin-bottom: 10px; letter-spacing: .3px; }
+    .arabic { font-family: var(--font-amiri, 'Amiri', serif); direction: rtl; text-align: right; font-size: 1.9rem; line-height: 2.5; color: var(--charcoal); margin: 10px 0; }
+    .translit { font-style: italic; color: var(--emerald); font-weight: 600; margin: 8px 0; }
+    .trans-en { color: #374151; margin: 8px 0; }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } }`,
+    content: `<p>The <strong>6 Kalimas of Islam</strong> are the very first thing most Muslim children are taught to memorise — six short, powerful statements that summarise the core of Islamic belief. From declaring the Oneness of Allah to seeking His forgiveness and rejecting disbelief, the Six Kalimas are a complete foundation of faith in just a few lines.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The 6 Kalimas are: (1) <strong>Tayyabah</strong> (Purity), (2) <strong>Shahadat</strong> (Testimony), (3) <strong>Tamjeed</strong> (Glorification), (4) <strong>Tawheed</strong> (Oneness), (5) <strong>Istighfar</strong> (Seeking Forgiveness), and (6) <strong>Radd-e-Kufr</strong> (Rejection of Disbelief). Below you will find each one in Arabic, transliteration and clear English — plus how to help your child memorise them. Want a tutor to teach them correctly? <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>
+
+          <div class="gold-box">
+            <strong>Key takeaways:</strong>
+            <ul style="margin-bottom:0;">
+              <li>The Six Kalimas are a teaching set of statements drawn from the <strong>Quran and authentic Hadith</strong>, traditionally taught to children to build their belief.</li>
+              <li>They move step by step — from <strong>declaring faith</strong> to <strong>glorifying Allah</strong>, <strong>affirming His Oneness</strong>, <strong>asking forgiveness</strong>, and finally <strong>rejecting shirk and disbelief</strong>.</li>
+              <li>Most children can memorise all six with correct pronunciation in a few weeks of short daily practice.</li>
+              <li>Correct Arabic <strong>pronunciation (Tajweed)</strong> matters — a certified tutor prevents mistakes that are hard to fix later.</li>
+            </ul>
+          </div>
+
+          <div class="highlight-box">
+            <strong>On this page:</strong>
+            <ul style="margin-bottom:0;">
+              <li><a href="#what-are">What are the 6 Kalimas?</a></li>
+              <li><a href="#first">First Kalima — Tayyabah</a></li>
+              <li><a href="#second">Second Kalima — Shahadat</a></li>
+              <li><a href="#third">Third Kalima — Tamjeed</a></li>
+              <li><a href="#fourth">Fourth Kalima — Tawheed</a></li>
+              <li><a href="#fifth">Fifth Kalima — Istighfar</a></li>
+              <li><a href="#sixth">Sixth Kalima — Radd-e-Kufr</a></li>
+              <li><a href="#order">Why the order matters</a></li>
+              <li><a href="#memorize">How to help kids memorise the Kalimas</a></li>
+              <li><a href="#faq">Frequently asked questions</a></li>
+            </ul>
+          </div>
+
+          <h2 id="what-are">What are the 6 Kalimas of Islam?</h2>
+          <p>The Six Kalimas (Urdu: <em>chhay kalmay</em>, Arabic: <em>al-kalimat as-sitt</em>) are six short declarations of faith that have been taught for centuries — especially across South Asia and among Muslim families worldwide — as a simple, memorisable summary of Islamic belief. Each Kalima has a name that describes its theme, and together they form a spiritual ladder: you begin by declaring faith, then glorify Allah, affirm His absolute Oneness, seek His forgiveness, and finally renounce all forms of disbelief.</p>
+          <p><strong>An honest scholarly note:</strong> the individual phrases of the Kalimas come directly from the Quran and authentic Hadith. The specific numbering of them as a fixed set of "six" is a well-established teaching tradition (used in madrasas to help children learn), rather than a single narration listing them one to six. This takes nothing away from their value — reciting them is pure remembrance (dhikr) of Allah and a beautiful foundation for a child's faith.</p>
+
+          <h2 id="first">First Kalima — Tayyabah (The Word of Purity)</h2>
+          <div class="kalima-card">
+            <span class="knum">1 · KALIMA TAYYABAH</span>
+            <div class="arabic">لَا إِلٰهَ إِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ</div>
+            <p class="translit">Laa ilaaha illa-llaahu, Muhammadur-rasoolu-llaah.</p>
+            <p class="trans-en"><strong>English:</strong> There is none worthy of worship except Allah, and Muhammad ﷺ is the Messenger of Allah.</p>
+          </div>
+          <p>The First Kalima is the heart of Islam. It contains the two testimonies of faith in their simplest form — the Oneness of Allah (Tawheed) and the prophethood of Muhammad ﷺ. This is the statement a person says to enter Islam, and the one Muslims hope to have on their lips when they leave this world.</p>
+
+          <h2 id="second">Second Kalima — Shahadat (The Word of Testimony)</h2>
+          <div class="kalima-card">
+            <span class="knum">2 · KALIMA SHAHADAT</span>
+            <div class="arabic">أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهٗ لَا شَرِيْكَ لَهٗ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهٗ وَرَسُوْلُهٗ</div>
+            <p class="translit">Ash-hadu an laa ilaaha illa-llaahu wahdahu laa shareeka lah, wa ash-hadu anna Muhammadan abduhu wa rasooluh.</p>
+            <p class="trans-en"><strong>English:</strong> I bear witness that there is none worthy of worship except Allah, alone, without any partner, and I bear witness that Muhammad ﷺ is His servant and Messenger.</p>
+          </div>
+          <p>The Second Kalima is the fuller declaration of faith. Where the First Kalima <em>states</em> the belief, the Shahadat has the believer personally <em>bear witness</em> to it — adding that Allah has no partner and that the Prophet ﷺ is both His servant (abd) and His Messenger (rasool). This is the same testimony recited in every Tashahhud during Salah.</p>
+
+          <h2 id="third">Third Kalima — Tamjeed (The Word of Glorification)</h2>
+          <div class="kalima-card">
+            <span class="knum">3 · KALIMA TAMJEED</span>
+            <div class="arabic">سُبْحَانَ اللّٰهِ وَالْحَمْدُ لِلّٰهِ وَلَا إِلٰهَ إِلَّا اللّٰهُ وَاللّٰهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ الْعَلِيِّ الْعَظِيْمِ</div>
+            <p class="translit">Subhaana-llaahi wal-hamdu lillaahi wa laa ilaaha illa-llaahu wa-llaahu akbar, wa laa hawla wa laa quwwata illa billaahil-aliyyil-azeem.</p>
+            <p class="trans-en"><strong>English:</strong> Glory be to Allah, and all praise is for Allah, and there is none worthy of worship except Allah, and Allah is the Greatest. There is no might nor power except with Allah, the Most High, the Most Great.</p>
+          </div>
+          <p>The Third Kalima gathers the greatest words of remembrance in Islam: <a href="/blog/subhanallah-meaning">Subhanallah</a>, Alhamdulillah, La ilaha illallah and Allahu Akbar — the four phrases the Prophet ﷺ described as the most beloved to Allah. It ends with "La hawla wa la quwwata illa billah," a treasure of Paradise that expresses total reliance on Allah.</p>
+
+          <h2 id="fourth">Fourth Kalima — Tawheed (The Word of Oneness)</h2>
+          <div class="kalima-card">
+            <span class="knum">4 · KALIMA TAWHEED</span>
+            <div class="arabic">لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهٗ لَا شَرِيْكَ لَهٗ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ حَيٌّ لَّا يَمُوْتُ أَبَدًا أَبَدًا ذُو الْجَلَالِ وَالْإِكْرَامِ بِيَدِهِ الْخَيْرُ وَهُوَ عَلٰى كُلِّ شَيْءٍ قَدِيْرٌ</div>
+            <p class="translit">Laa ilaaha illa-llaahu wahdahu laa shareeka lah, lahul-mulku wa lahul-hamdu yuhyee wa yumeetu wa huwa hayyun laa yamootu abadan abada, dhul-jalaali wal-ikraam, biyadihil-khayr, wa huwa alaa kulli shay-in qadeer.</p>
+            <p class="trans-en"><strong>English:</strong> There is none worthy of worship except Allah, alone, without partner. His is the kingdom and His is all praise. He gives life and causes death. He is Ever-Living and will never die. Owner of Majesty and Honour. In His hand is all good, and He has power over all things.</p>
+          </div>
+          <p>The Fourth Kalima is a beautiful expansion on Tawheed — the absolute Oneness of Allah. It praises Allah as the eternal King who gives life and death, never dies Himself, holds all goodness, and has power over everything. Reciting it deepens a believer's certainty in Allah's greatness and control over all affairs.</p>
+
+          <h2 id="fifth">Fifth Kalima — Istighfar (The Word of Seeking Forgiveness)</h2>
+          <div class="kalima-card">
+            <span class="knum">5 · KALIMA ISTIGHFAR</span>
+            <div class="arabic">أَسْتَغْفِرُ اللّٰهَ رَبِّيْ مِنْ كُلِّ ذَنْبٍ أَذْنَبْتُهٗ عَمَدًا أَوْ خَطَأً سِرًّا أَوْ عَلَانِيَةً وَأَتُوْبُ إِلَيْهِ مِنَ الذَّنْبِ الَّذِيْ أَعْلَمُ وَمِنَ الذَّنْبِ الَّذِيْ لَا أَعْلَمُ إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوْبِ وَسَتَّارُ الْعُيُوْبِ وَغَفَّارُ الذُّنُوْبِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ الْعَلِيِّ الْعَظِيْمِ</div>
+            <p class="translit">Astaghfiru-llaaha rabbee min kulli dhambin adhnabtuhu amadan aw khata-an sirran aw alaaniyatan wa atoobu ilayhi minadh-dhambil-ladhee a'lamu wa minadh-dhambil-ladhee laa a'lam, innaka anta allaamul-ghuyoobi wa sattaarul-uyoobi wa ghaffaarudh-dhunoobi wa laa hawla wa laa quwwata illa billaahil-aliyyil-azeem.</p>
+            <p class="trans-en"><strong>English:</strong> I seek forgiveness from Allah, my Lord, for every sin I committed knowingly or unknowingly, secretly or openly, and I turn to Him in repentance from the sin I know and the sin I do not know. Indeed You are the Knower of the unseen, the Concealer of faults, and the Forgiver of sins. There is no might nor power except with Allah, the Most High, the Most Great.</p>
+          </div>
+          <p>The Fifth Kalima is a comprehensive <a href="/blog/astaghfirullah-meaning">Istighfar</a> (seeking forgiveness). It covers every kind of sin — intentional or accidental, hidden or open, known or unknown — and beautifully calls upon Allah as the One who conceals faults and forgives sins. It teaches children that a Muslim always returns to Allah in repentance.</p>
+
+          <h2 id="sixth">Sixth Kalima — Radd-e-Kufr (Rejection of Disbelief)</h2>
+          <div class="kalima-card">
+            <span class="knum">6 · KALIMA RADD-E-KUFR</span>
+            <div class="arabic">اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ أَنْ أُشْرِكَ بِكَ شَيْئًا وَّأَنَا أَعْلَمُ بِهٖ وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُ بِهٖ تُبْتُ عَنْهُ وَتَبَرَّأْتُ مِنَ الْكُفْرِ وَالشِّرْكِ وَالْكِذْبِ وَالْغِيْبَةِ وَالْبِدْعَةِ وَالنَّمِيْمَةِ وَالْفَوَاحِشِ وَالْبُهْتَانِ وَالْمَعَاصِيْ كُلِّهَا وَأَسْلَمْتُ وَأَقُوْلُ لَا إِلٰهَ إِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ</div>
+            <p class="translit">Allaahumma innee a'oodhu bika min an ushrika bika shay-an wa ana a'lamu bihi wa astaghfiruka limaa laa a'lamu bihi tubtu anhu wa tabarra'tu minal-kufri wash-shirki wal-kidhbi wal-gheebati wal-bid'ati wan-nameemati wal-fawaahishi wal-buhtaani wal-ma'aasee kulliha wa aslamtu wa aqoolu laa ilaaha illa-llaahu Muhammadur-rasoolu-llaah.</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, I seek refuge in You from knowingly associating any partner with You, and I seek Your forgiveness for what I do not know of it. I repent from it, and I dissociate from disbelief, polytheism, lying, backbiting, innovation, tale-telling, indecency, slander and all acts of disobedience. I submit to You, and I say: there is none worthy of worship except Allah, and Muhammad ﷺ is the Messenger of Allah.</p>
+          </div>
+          <p>The Sixth Kalima is the strongest declaration of the set. The believer seeks Allah's protection from shirk (associating partners with Allah) and openly renounces disbelief and major sins — lying, backbiting, slander and more — before re-affirming faith. It seals the Six Kalimas with a firm, conscious return to pure Islam.</p>
+
+          <h2 id="order">Why the order of the Kalimas matters</h2>
+          <p>The Six Kalimas are arranged like a journey of faith. Notice the natural progression:</p>
+          <table class="np-table">
+            <thead><tr><th>Kalima</th><th>Name</th><th>Theme</th></tr></thead>
+            <tbody>
+              <tr><td>First</td><td>Tayyabah</td><td>Declaring faith (purity of belief)</td></tr>
+              <tr><td>Second</td><td>Shahadat</td><td>Bearing witness to that faith</td></tr>
+              <tr><td>Third</td><td>Tamjeed</td><td>Glorifying and praising Allah</td></tr>
+              <tr><td>Fourth</td><td>Tawheed</td><td>Affirming Allah's absolute Oneness</td></tr>
+              <tr><td>Fifth</td><td>Istighfar</td><td>Seeking Allah's forgiveness</td></tr>
+              <tr><td>Sixth</td><td>Radd-e-Kufr</td><td>Rejecting disbelief and shirk</td></tr>
+            </tbody>
+          </table>
+          <p>This is why the Kalimas are such a powerful teaching tool for children: in six short pieces, a child internalises the entire arc of belief — from affirming Allah, to praising Him, to seeking His forgiveness and turning away from everything that harms faith.</p>
+
+          <h2 id="memorize">How to help your kids memorise the 6 Kalimas</h2>
+          <p>Memorising the Kalimas is easier than parents expect — the key is short, consistent, joyful repetition. Here is a simple method that works:</p>
+          <ol>
+            <li><strong>One Kalima at a time.</strong> Do not rush all six together. Master the First Kalima fully before moving to the Second.</li>
+            <li><strong>Listen first, then repeat.</strong> Correct pronunciation comes from hearing it correctly. Have your child listen to a clear reciter or tutor, then repeat in small chunks.</li>
+            <li><strong>Break long Kalimas into pieces.</strong> The Fifth and Sixth Kalimas are long — split them into 3–4 short segments and join them once each segment is solid.</li>
+            <li><strong>Daily 5-minute revision.</strong> Five focused minutes every day beats an hour once a week. Recite yesterday's Kalima before learning anything new.</li>
+            <li><strong>Attach meaning.</strong> Teach the English meaning alongside the Arabic so it is remembrance with understanding, not just sounds.</li>
+            <li><strong>Reward and encourage.</strong> Celebrate each completed Kalima. Positive reinforcement keeps young children motivated.</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>Get the pronunciation right from day one.</strong> The most common problem parents face is a child memorising a Kalima with incorrect Arabic sounds that become very hard to fix later. A certified tutor listens live and corrects gently in real time. See our <a href="/blog/how-to-teach-quran-to-kids">guide on teaching Quran to kids</a>, explore <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> to build strong Arabic reading, or <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a> to memorise next.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Ready to help your child learn the Kalimas correctly?</strong> NoorPath Academy's certified tutors teach the Six Kalimas, Noorani Qaida, and Quran with proper Tajweed in live 1-on-1 classes — with male and female teachers and flexible UK/US timings. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial class</a> — no credit card required.
+          </div>`,
+  },
   "online-quran-classes-uk-kids-guide": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
     .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
