@@ -1,5 +1,266 @@
 // Auto-extracted from original HTML blog files — styles + content
+
+// Shared style for Islamic reference articles (verses, duas, alphabet)
+const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+  .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
+  .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 26px 0 10px; }
+  .article-body p { margin-bottom: 18px; }
+  .article-body ul, .article-body ol { margin: 0 0 18px 22px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body a { color: var(--emerald); font-weight: 600; }
+  .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+  .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+  .np-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: .93rem; }
+  .np-table th, .np-table td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+  .np-table th { background: var(--ivory); color: var(--charcoal); font-weight: 700; }
+  .np-table tr:nth-child(even) td { background: rgba(10,110,79,.03); }
+  .verse-card { background: rgba(10,110,79,.05); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; margin: 24px 0; }
+  .verse-card .vnum { display: inline-block; background: var(--emerald); color: #fff; font-weight: 700; font-size: .78rem; padding: 4px 14px; border-radius: 20px; margin-bottom: 10px; letter-spacing: .3px; }
+  .arabic { font-family: var(--font-amiri, 'Amiri', serif); direction: rtl; text-align: right; font-size: 1.9rem; line-height: 2.5; color: var(--charcoal); margin: 10px 0; }
+  .translit { font-style: italic; color: var(--emerald); font-weight: 600; margin: 8px 0; }
+  .trans-en { color: #374151; margin: 8px 0; }
+  .letter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 24px 0; }
+  .letter-cell { border: 1px solid var(--border); border-radius: 12px; padding: 12px 6px; text-align: center; background: rgba(10,110,79,.03); }
+  .letter-cell .lg-ar { font-family: var(--font-amiri, 'Amiri', serif); font-size: 2rem; color: var(--emerald); direction: rtl; line-height: 1.3; }
+  .letter-cell .lg-name { font-size: .8rem; font-weight: 700; color: var(--charcoal); margin-top: 4px; }
+  .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+  .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+  .faq-acc summary::-webkit-details-marker { display: none; }
+  .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+  .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
+  @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } .letter-grid { grid-template-columns: repeat(3, 1fr); } }`;
+
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "darood-sharif": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Darood Sharif</strong> (also spelled Durood Shareef) is the beautiful blessing that Muslims send upon the Prophet Muhammad ﷺ. The most well-known form — <strong>Darood Ibrahim</strong> — is recited in the final sitting of every Salah, making it one of the most repeated supplications in a Muslim's life.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Darood Sharif means sending blessings (salawat) upon the Prophet ﷺ. The complete form recited in Salah is <strong>Darood Ibrahim</strong>: "Allaahumma salli alaa Muhammadin wa alaa aali Muhammad…". Allah promises ten blessings for every one Darood a person sends. Want your child to recite it perfectly in Salah? <a href="/online-quran-classes-for-kids">Book a free trial class</a>.
+          </div>
+
+          <h2 id="what-is">What is Darood Sharif?</h2>
+          <p>Darood Sharif (Arabic: <em>salawat</em>) is a dua in which we ask Allah to honour, exalt and send peace upon the Prophet Muhammad ﷺ. Allah Himself commands it in the Quran: "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace." (Surah Al-Ahzab 33:56).</p>
+
+          <h2 id="darood-ibrahim">Darood Ibrahim (recited in Salah)</h2>
+          <div class="verse-card">
+            <span class="vnum">DAROOD IBRAHIM · Complete</span>
+            <div class="arabic">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّعَلٰى اٰلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلٰى اِبْرَاهِيْمَ وَعَلٰى اٰلِ اِبْرَاهِيْمَ اِنَّكَ حَمِيْدٌ مَّجِيْدٌ ۖ اَللّٰهُمَّ بَارِكْ عَلٰى مُحَمَّدٍ وَّعَلٰى اٰلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلٰى اِبْرَاهِيْمَ وَعَلٰى اٰلِ اِبْرَاهِيْمَ اِنَّكَ حَمِيْدٌ مَّجِيْدٌ</div>
+            <p class="translit">Allaahumma salli alaa Muhammadin wa alaa aali Muhammadin kamaa sallayta alaa Ibraaheema wa alaa aali Ibraaheema innaka hameedum majeed. Allaahumma baarik alaa Muhammadin wa alaa aali Muhammadin kamaa baarakta alaa Ibraaheema wa alaa aali Ibraaheema innaka hameedum majeed.</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim; indeed, You are Praiseworthy and Glorious. O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim; indeed, You are Praiseworthy and Glorious.</p>
+          </div>
+          <p>This is the Darood the Prophet ﷺ taught his companions when they asked how to send blessings upon him (Sahih al-Bukhari). It is recited in the last sitting (Qa'dah) of Salah, after the Tashahhud.</p>
+
+          <h2 id="short-darood">Short Darood Sharif</h2>
+          <div class="verse-card">
+            <span class="vnum">SHORT DAROOD</span>
+            <div class="arabic">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّعَلٰى اٰلِهٖ وَاَصْحَابِهٖ وَسَلِّمْ</div>
+            <p class="translit">Allaahumma salli alaa Muhammadin wa alaa aalihi wa as-haabihi wa sallim.</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, send blessings and peace upon Muhammad, and upon his family and his companions.</p>
+          </div>
+          <p>Muslims also commonly say the short salawat <em>"Sallallahu alayhi wa sallam"</em> (may Allah's peace and blessings be upon him) whenever the Prophet's ﷺ name is mentioned.</p>
+
+          <h2 id="benefits">Benefits of reciting Darood Sharif</h2>
+          <ul>
+            <li><strong>Tenfold blessings:</strong> The Prophet ﷺ said, "Whoever sends one blessing upon me, Allah will send ten blessings upon him." (Sahih Muslim).</li>
+            <li><strong>Sins forgiven and ranks raised:</strong> With each salawat, Allah forgives sins and elevates the reciter's status.</li>
+            <li><strong>Nearest on the Day of Judgment:</strong> "The people nearest to me on the Day of Resurrection will be those who send the most blessings upon me." (Tirmidhi).</li>
+            <li><strong>Duas are accepted:</strong> Sending Darood at the beginning and end of dua is a key reason for its acceptance.</li>
+            <li><strong>Angels' prayers:</strong> The angels ask forgiveness for the one who sends blessings upon the Prophet ﷺ.</li>
+          </ul>
+
+          <h2 id="when">When to recite Darood Sharif</h2>
+          <ul>
+            <li>In every Salah, in the final sitting after Tashahhud.</li>
+            <li>Abundantly on <strong>Friday (Jumu'ah)</strong> — the Prophet ﷺ especially encouraged it.</li>
+            <li>Whenever his ﷺ blessed name is mentioned.</li>
+            <li>At the start and end of every dua.</li>
+            <li>As daily dhikr, morning and evening.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Teaching Darood to children:</strong> Since Darood Ibrahim is part of Salah, children should learn it early with correct pronunciation. Break it into two halves (the "salli" part and the "barik" part), practise a few minutes daily, and connect it to their prayer. A tutor can correct pronunciation live — see our <a href="/blog/how-to-pray-salah-step-by-step">step-by-step Salah guide</a> and <a href="/blog/duas-for-kids-to-memorize">essential duas for kids</a>.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Want your child to recite Darood Sharif perfectly in their prayer?</strong> NoorPath Academy's certified tutors teach Salah, Darood, and Quran with correct Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "4-quls": {
+    style: ISLAMIC_STYLE,
+    content: `<p>The <strong>4 Quls</strong> (Four Quls) are four short surahs of the Quran that each begin with the word <em>"Qul"</em> — meaning "Say". They are among the most recited surahs in Islam, memorised early by children, and known for their powerful protection. The Four Quls are <strong>Surah Al-Kafirun, Surah Al-Ikhlas, Surah Al-Falaq and Surah An-Nas</strong>.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The 4 Quls are Surah Al-Kafirun (109), Al-Ikhlas (112), Al-Falaq (113) and An-Nas (114). The last three are recited for protection every morning and evening and before sleep. Read them all below with Arabic, transliteration and English. Want your child to memorise the 4 Quls correctly? <a href="/online-quran-classes-for-kids">Book a free trial</a>.
+          </div>
+
+          <h2 id="what-are">What are the 4 Quls?</h2>
+          <p>Four surahs of the Quran open with the command "Qul" (Say). Muslims group them together as the "4 Quls" because they are short, easy to memorise, and carry immense benefit — especially the last three, which the Prophet ﷺ used daily for protection from all harm.</p>
+
+          <h2 id="kafirun">1. Surah Al-Kafirun</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-KAFIRUN · 109</span>
+            <div class="arabic">قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ ۝ لَآ أَعْبُدُ مَا تَعْبُدُونَ ۝ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ ۝ وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ ۝ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ ۝ لَكُمْ دِينُكُمْ وَلِىَ دِينِ</div>
+            <p class="translit">Qul yaa ayyuhal-kaafiroon. Laa a'budu maa ta'budoon. Wa laa antum aabidoona maa a'bud. Wa laa ana aabidum-maa abadtum. Wa laa antum aabidoona maa a'bud. Lakum deenukum wa liya deen.</p>
+            <p class="trans-en"><strong>English:</strong> Say: O disbelievers, I do not worship what you worship, nor do you worship what I worship. Nor will I worship what you worship, nor will you worship what I worship. For you is your religion, and for me is my religion.</p>
+          </div>
+
+          <h2 id="ikhlas">2. Surah Al-Ikhlas</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-IKHLAS · 112</span>
+            <div class="arabic">قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝ ٱللَّهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ</div>
+            <p class="translit">Qul huwallaahu ahad. Allaahus-samad. Lam yalid wa lam yoolad. Wa lam yakun lahu kufuwan ahad.</p>
+            <p class="trans-en"><strong>English:</strong> Say: He is Allah, [who is] One. Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.</p>
+          </div>
+          <p>The Prophet ﷺ said Surah Al-Ikhlas equals one-third of the Quran (Sahih al-Bukhari), because it purely describes the Oneness of Allah (Tawheed).</p>
+
+          <h2 id="falaq">3. Surah Al-Falaq</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-FALAQ · 113</span>
+            <div class="arabic">قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</div>
+            <p class="translit">Qul a'oodhu bi rabbil-falaq. Min sharri maa khalaq. Wa min sharri ghaasiqin idhaa waqab. Wa min sharrin-naffaathaati fil-uqad. Wa min sharri haasidin idhaa hasad.</p>
+            <p class="trans-en"><strong>English:</strong> Say: I seek refuge in the Lord of daybreak, from the evil of that which He created, and from the evil of darkness when it settles, and from the evil of the blowers in knots, and from the evil of an envier when he envies.</p>
+          </div>
+
+          <h2 id="nas">4. Surah An-Nas</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AN-NAS · 114</span>
+            <div class="arabic">قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ</div>
+            <p class="translit">Qul a'oodhu bi rabbin-naas. Malikin-naas. Ilaahin-naas. Min sharril-waswaasil-khannaas. Alladhee yuwaswisu fee sudoorin-naas. Minal-jinnati wan-naas.</p>
+            <p class="trans-en"><strong>English:</strong> Say: I seek refuge in the Lord of mankind, the Sovereign of mankind, the God of mankind, from the evil of the retreating whisperer, who whispers [evil] into the breasts of mankind, from among the jinn and mankind.</p>
+          </div>
+
+          <h2 id="benefits">Benefits of the 4 Quls</h2>
+          <ul>
+            <li><strong>Al-Falaq and An-Nas (Al-Mu'awwidhatayn)</strong> are the two surahs of protection. The Prophet ﷺ recited them morning and evening and before sleeping, blowing into his hands and wiping over his body (Sahih al-Bukhari).</li>
+            <li><strong>Surah Al-Ikhlas</strong> equals one-third of the Quran in reward.</li>
+            <li><strong>Surah Al-Kafirun</strong> is a declaration of pure Tawheed and freedom from shirk; reciting it before sleep is a Sunnah.</li>
+            <li>Reciting the last three Quls three times each morning and evening suffices a person against everything (Tirmidhi, Abu Dawud).</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Teaching the 4 Quls to kids:</strong> These four surahs are short and perfect for early memorisation. Teach one at a time, listen-and-repeat in small pieces, and revise daily. See our <a href="/blog/duas-for-kids-to-memorize">essential duas for kids</a> and the <a href="/blog/six-kalimas-of-islam">6 Kalimas guide</a> to build a strong foundation.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Help your child memorise the 4 Quls with perfect Tajweed.</strong> NoorPath Academy offers live 1-on-1 Quran classes with certified male and female tutors and a free 30-minute trial. <a href="/online-quran-classes-for-kids">Book your free trial today</a> — no credit card required.
+          </div>`,
+  },
+  "arabic-alphabet-for-kids": {
+    style: ISLAMIC_STYLE,
+    content: `<p>The <strong>Arabic alphabet for kids</strong> — known as <strong>Huroof-e-Tahaji</strong> — is the very first step every child takes on the path to reading the Quran. The Arabic alphabet has <strong>28 letters</strong>, and once a child knows their names and sounds, they are ready to begin Noorani Qaida and, soon after, read the Quran itself.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The Arabic alphabet has 28 letters, written and read from right to left. Children start by learning each letter's name and sound (Alif, Baa, Taa…), then how the letters join, then vowels (Zabar, Zer, Pesh). Below is the full alphabet chart. Want a tutor to teach your child the correct sounds? <a href="/online-quran-classes-for-kids">Book a free trial</a>.
+          </div>
+
+          <h2 id="how-many">How many letters are in the Arabic alphabet?</h2>
+          <p>There are <strong>28 letters</strong> in the Arabic alphabet. Arabic is written from <strong>right to left</strong>, and most letters change their shape slightly depending on whether they appear at the beginning, middle, or end of a word — but the name and sound stay the same. That is why children first learn the letters on their own before learning how they join.</p>
+
+          <h2 id="chart">Arabic alphabet chart (Huroof-e-Tahaji)</h2>
+          <p>Here are all 28 Arabic letters with their names. Tap through them slowly with your child and repeat each name aloud:</p>
+          <div class="letter-grid">
+            <div class="letter-cell"><div class="lg-ar">ا</div><div class="lg-name">Alif</div></div>
+            <div class="letter-cell"><div class="lg-ar">ب</div><div class="lg-name">Baa</div></div>
+            <div class="letter-cell"><div class="lg-ar">ت</div><div class="lg-name">Taa</div></div>
+            <div class="letter-cell"><div class="lg-ar">ث</div><div class="lg-name">Thaa</div></div>
+            <div class="letter-cell"><div class="lg-ar">ج</div><div class="lg-name">Jeem</div></div>
+            <div class="letter-cell"><div class="lg-ar">ح</div><div class="lg-name">Haa</div></div>
+            <div class="letter-cell"><div class="lg-ar">خ</div><div class="lg-name">Khaa</div></div>
+            <div class="letter-cell"><div class="lg-ar">د</div><div class="lg-name">Daal</div></div>
+            <div class="letter-cell"><div class="lg-ar">ذ</div><div class="lg-name">Dhaal</div></div>
+            <div class="letter-cell"><div class="lg-ar">ر</div><div class="lg-name">Raa</div></div>
+            <div class="letter-cell"><div class="lg-ar">ز</div><div class="lg-name">Zay</div></div>
+            <div class="letter-cell"><div class="lg-ar">س</div><div class="lg-name">Seen</div></div>
+            <div class="letter-cell"><div class="lg-ar">ش</div><div class="lg-name">Sheen</div></div>
+            <div class="letter-cell"><div class="lg-ar">ص</div><div class="lg-name">Saad</div></div>
+            <div class="letter-cell"><div class="lg-ar">ض</div><div class="lg-name">Daad</div></div>
+            <div class="letter-cell"><div class="lg-ar">ط</div><div class="lg-name">Taa (Toa)</div></div>
+            <div class="letter-cell"><div class="lg-ar">ظ</div><div class="lg-name">Zaa (Dhoa)</div></div>
+            <div class="letter-cell"><div class="lg-ar">ع</div><div class="lg-name">Ayn</div></div>
+            <div class="letter-cell"><div class="lg-ar">غ</div><div class="lg-name">Ghayn</div></div>
+            <div class="letter-cell"><div class="lg-ar">ف</div><div class="lg-name">Faa</div></div>
+            <div class="letter-cell"><div class="lg-ar">ق</div><div class="lg-name">Qaaf</div></div>
+            <div class="letter-cell"><div class="lg-ar">ك</div><div class="lg-name">Kaaf</div></div>
+            <div class="letter-cell"><div class="lg-ar">ل</div><div class="lg-name">Laam</div></div>
+            <div class="letter-cell"><div class="lg-ar">م</div><div class="lg-name">Meem</div></div>
+            <div class="letter-cell"><div class="lg-ar">ن</div><div class="lg-name">Noon</div></div>
+            <div class="letter-cell"><div class="lg-ar">و</div><div class="lg-name">Waaw</div></div>
+            <div class="letter-cell"><div class="lg-ar">ه</div><div class="lg-name">Haa</div></div>
+            <div class="letter-cell"><div class="lg-ar">ي</div><div class="lg-name">Yaa</div></div>
+          </div>
+
+          <h2 id="steps">The right order to teach the Arabic alphabet</h2>
+          <ol>
+            <li><strong>Letter names</strong> — recognise and name each of the 28 letters (Alif, Baa, Taa…).</li>
+            <li><strong>Letter sounds</strong> — the actual sound each letter makes, with correct pronunciation from the throat and mouth (Makharij).</li>
+            <li><strong>Letter shapes</strong> — how each letter looks at the beginning, middle and end of a word.</li>
+            <li><strong>Joining letters</strong> — connecting letters to form small words.</li>
+            <li><strong>Vowels (Harakat)</strong> — Zabar (a), Zer (i), Pesh (u), then Tanween and Sukoon.</li>
+          </ol>
+          <p>This is exactly the sequence taught in <a href="/courses/noorani-qaida-online">Noorani Qaida</a> — the proven primer used worldwide to prepare children to read the Quran. Learn more in our <a href="/blog/noorani-qaida-complete-guide">complete Noorani Qaida guide</a>.</p>
+
+          <h2 id="tips">Tips to teach the Arabic alphabet to kids</h2>
+          <ul>
+            <li><strong>Short, daily sessions</strong> (5–10 minutes) work far better than long weekly ones.</li>
+            <li><strong>Colour, sound and play</strong> — young children learn letters faster through visuals, songs and games.</li>
+            <li><strong>Correct sounds from day one</strong> — some Arabic letters (like ح, ع, ض, ق) have no English equivalent, so hearing them correctly matters.</li>
+            <li><strong>Repeat and revise</strong> yesterday's letters before adding new ones.</li>
+            <li><strong>Use a live tutor</strong> for pronunciation — this is the one thing apps and charts cannot correct.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Why pronunciation matters:</strong> Several Arabic letters sound similar to a beginner (like س / ص, or ت / ط). If a child learns them incorrectly, it affects their Quran recitation for years. A certified tutor listens live and corrects gently — the safest way to build a strong foundation.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Ready to teach your child the Arabic alphabet the right way?</strong> NoorPath Academy's certified tutors teach the Arabic alphabet and Noorani Qaida in fun, live 1-on-1 classes with male and female teachers. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "ayat-e-karima": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Ayat e Karima</strong> (also spelled Ayat Kareema) is one of the most beloved and powerful duas in the Quran — the supplication of Prophet Yunus (عليه السلام) recited from within the belly of the whale. Muslims turn to Ayat e Karima in times of hardship, distress, worry and difficulty, trusting in Allah's promise to relieve those who call upon Him.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Ayat e Karima is "Laa ilaaha illaa anta subhaanaka innee kuntu minaz-zaalimeen" (Quran 21:87) — "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers." It is the dua of Prophet Yunus, recited for relief from every kind of hardship and distress.
+          </div>
+
+          <h2 id="arabic">Ayat e Karima — Arabic, transliteration & translation</h2>
+          <div class="verse-card">
+            <span class="vnum">AYAT E KARIMA · Quran 21:87</span>
+            <div class="arabic">لَّآ إِلٰهَ إِلَّآ أَنْتَ سُبْحَانَكَ إِنِّىْ كُنْتُ مِنَ الظَّالِمِيْنَ</div>
+            <p class="translit">Laa ilaaha illaa anta subhaanaka innee kuntu minaz-zaalimeen.</p>
+            <p class="trans-en"><strong>English:</strong> There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.</p>
+          </div>
+
+          <h2 id="story">The story behind Ayat e Karima</h2>
+          <p>Prophet Yunus (Jonah, عليه السلام) called his people to Allah, but when they did not respond, he left in frustration. He boarded a ship, and by Allah's decree he was thrown into the sea and swallowed by a large fish. In the darkness of the fish's belly, deep in the ocean, he called upon Allah with these words. Allah says: "So We responded to him and saved him from the distress. And thus do We save the believers." (Quran 21:88).</p>
+          <p>This verse teaches that no matter how dark or hopeless a situation feels, sincere reliance on Allah brings relief.</p>
+
+          <h2 id="benefits">Benefits of reciting Ayat e Karima</h2>
+          <ul>
+            <li><strong>Relief from hardship and distress</strong> — Allah promises to save the believer who calls upon Him with it, just as He saved Yunus (عليه السلام).</li>
+            <li><strong>A powerful dua of repentance</strong> — it combines Tawheed (Allah's Oneness), glorification (Subhanaka), and humble admission of one's mistakes.</li>
+            <li>The Prophet ﷺ said: "The supplication of Dhun-Nun (Yunus)… no Muslim ever supplicates with it for anything except that Allah answers him." (Tirmidhi).</li>
+            <li>It brings <strong>calm to an anxious heart</strong> and renews trust (tawakkul) in Allah.</li>
+          </ul>
+
+          <h2 id="how">How and when to recite Ayat e Karima</h2>
+          <ul>
+            <li>In any moment of worry, fear, grief or difficulty — recite it with a present, sincere heart.</li>
+            <li>Many recite it repeatedly (some traditionally recite it a set number of times) while making a specific dua for relief. There is no fixed obligatory count — sincerity matters most.</li>
+            <li>Combine it with sending <a href="/blog/darood-sharif">Darood Sharif</a> before and after your dua for greater acceptance.</li>
+            <li>For ongoing anxiety, pair it with the duas in our <a href="/blog/dua-for-anxiety-stress-depression">duas for anxiety and stress</a> guide.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Teach it to your children:</strong> Ayat e Karima is short and easy for kids to memorise — a beautiful early dua that teaches them to turn to Allah in every difficulty. Learn correct pronunciation with a tutor so the meaning and sounds are right from the start.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Learn the Quran and its duas with correct Tajweed.</strong> NoorPath Academy's certified tutors teach Quran, duas and Tajweed in live 1-on-1 classes with a free 30-minute trial. <a href="/online-quran-classes-for-kids">Book your free trial</a> — no credit card required.
+          </div>`,
+  },
   "six-kalimas-of-islam": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
     .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }

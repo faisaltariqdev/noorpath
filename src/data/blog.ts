@@ -19,6 +19,79 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "darood-sharif",
+    title: "Darood Sharif — Arabic, English Translation, Transliteration & Benefits",
+    description: "Read Darood Sharif (Durood Ibrahim) in Arabic with English translation, transliteration, meaning and benefits. Learn the Darood recited in Salah, its rewards from Hadith & how to teach it to kids.",
+    category: "Dhikr & Duas",
+    date: "2026-07-07",
+    updatedAt: "2026-07-07",
+    readTime: "10 min",
+    keywords: [
+      "darood sharif", "durood sharif", "darood shareef", "durood shareef", "darood ibrahim",
+      "durood ibrahim", "darood sharif in arabic", "darood sharif english", "darood pak",
+      "darood sharif transliteration", "darood in salah", "benefits of darood sharif",
+      "durood ibrahim in english", "salawat", "how to read darood sharif", "darood for kids",
+    ],
+    excerpt:
+      "Darood Sharif (Durood Ibrahim) is the blessing upon the Prophet ﷺ recited in every Salah. Read the full Arabic text, transliteration, clear English translation, its authentic benefits from Hadith, and how to teach it to your children.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "4-quls",
+    title: "4 Quls — Arabic, English Translation & Benefits (Four Quls of the Quran)",
+    description: "The 4 Quls — Surah Al-Kafirun, Al-Ikhlas, Al-Falaq & An-Nas — with full Arabic, transliteration, English translation and benefits. Learn the Four Quls for protection & help kids memorize them.",
+    category: "Quran",
+    date: "2026-07-07",
+    updatedAt: "2026-07-07",
+    readTime: "11 min",
+    keywords: [
+      "4 quls", "four quls", "4 quls in english", "4 quls arabic", "char qul",
+      "four quls of the quran", "4 quls with translation", "surah kafirun", "surah ikhlas",
+      "surah falaq", "surah nas", "4 quls for protection", "4 quls benefits", "quls surahs",
+      "4 qul shareef", "four qul", "4 quls transliteration", "quls for kids",
+    ],
+    excerpt:
+      "The 4 Quls are four short surahs of the Quran — Al-Kafirun, Al-Ikhlas, Al-Falaq and An-Nas — each beginning with 'Qul' (Say). Read all four with Arabic, transliteration, English translation, their powerful benefits for protection, and tips to help kids memorize them.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "arabic-alphabet-for-kids",
+    title: "Arabic Alphabet for Kids — 28 Letters (Huroof-e-Tahaji) with Sounds & Names",
+    description: "Learn the Arabic alphabet for kids: all 28 letters (Huroof-e-Tahaji) with names, sounds, English transliteration and a printable-style chart. The easy first step before Noorani Qaida & reading the Quran.",
+    category: "Quran Learning",
+    date: "2026-07-07",
+    updatedAt: "2026-07-07",
+    readTime: "12 min",
+    keywords: [
+      "arabic alphabet for kids", "arabic alphabet", "arabic letters", "haroof e tahaji",
+      "huroof e tahaji", "alif baa taa", "arabic alphabet with english", "28 arabic letters",
+      "arabic letters for kids", "arabic alphabet chart", "learn arabic alphabet",
+      "arabic alphabet sounds", "arabic abc", "noorani qaida letters", "arabic huroof",
+      "arabic alphabet names", "how to teach arabic alphabet to kids",
+    ],
+    excerpt:
+      "The Arabic alphabet (Huroof-e-Tahaji) has 28 letters — and it is the very first step for any child learning to read the Quran. Here is the full alphabet with each letter's name, sound, and English transliteration, plus a simple method to teach it to kids at home.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "ayat-e-karima",
+    title: "Ayat e Karima — Arabic, English Translation, Meaning & Benefits",
+    description: "Ayat e Karima (La ilaha illa anta subhanaka inni kuntu minaz-zalimin) — the dua of Prophet Yunus. Read the Arabic, transliteration, English meaning, benefits, and how to recite it in hardship.",
+    category: "Dhikr & Duas",
+    date: "2026-07-07",
+    updatedAt: "2026-07-07",
+    readTime: "8 min",
+    keywords: [
+      "ayat e karima", "ayat kareema", "ayate karima", "ayat e karima in english",
+      "la ilaha illa anta subhanaka inni kuntu minaz zalimin", "dua of yunus", "ayat karima benefits",
+      "ayat e karima arabic", "ayat e kareema", "dua e yunus", "ayat karima meaning",
+      "ayat e karima wazifa", "ayat e karima transliteration", "surah anbiya 87",
+    ],
+    excerpt:
+      "Ayat e Karima is the powerful dua of Prophet Yunus (عليه السلام) from the Quran (21:87) — recited for relief from hardship, distress and worry. Read the Arabic, transliteration, English meaning, its benefits, and exactly when and how to recite it.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "six-kalimas-of-islam",
     title: "6 Kalimas of Islam — Arabic, English Translation, Transliteration & Meaning",
     description: "Learn all 6 Kalimas of Islam with Arabic text, English translation, transliteration and meaning. First to Sixth Kalima — Tayyabah, Shahadat, Tamjeed, Tawheed, Istighfar & Radd-e-Kufr, with memorization tips for kids.",
