@@ -6,6 +6,7 @@ import { getCitiesByCountrySlug } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Globe } from "lucide-react";
+import CTAForm from "@/components/CTAForm";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -127,29 +128,81 @@ export default async function LocationDetailPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Hero */}
+      {/* Hero with inline lead form */}
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
-          <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>
+          <nav aria-label="Breadcrumb" style={{ marginBottom: 18 }}>
             <Link href="/" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>Home</Link>
             <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
             <Link href="/locations" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>Locations</Link>
             <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>{loc.country}</span>
           </nav>
-          <div style={{ fontSize: "3.5rem", marginBottom: 12 }}>{loc.flag}</div>
-          <h1>Online Quran Classes in {loc.country}</h1>
-          <p style={{ maxWidth: 620 }}>{loc.desc}</p>
-          <div style={{ display: "flex", gap: 16, marginTop: 20, flexWrap: "wrap" }}>
-            {[
-              { icon: "🕐", label: loc.timezone },
-              { icon: "📍", label: loc.cities.split(",")[0].trim() + " & more" },
-              { icon: "👥", label: loc.population },
-            ].map((item) => (
-              <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", borderRadius: 20, padding: "6px 14px", fontSize: ".83rem", color: "rgba(255,255,255,.9)" }}>
-                <span>{item.icon}</span> {item.label}
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            {/* Left — pitch */}
+            <div>
+              <div style={{ fontSize: "3rem", marginBottom: 10 }}>{loc.flag}</div>
+              <h1>Online Quran Classes in {loc.country}</h1>
+              <p style={{ maxWidth: 560, marginBottom: 22 }}>{loc.desc}</p>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: 11, marginBottom: 22 }}>
+                {[
+                  "Certified 1-on-1 tutors with Ijazah",
+                  `Flexible slots in your ${loc.timezone} timezone`,
+                  "Male & female teachers — kids & adults welcome",
+                  "Free 30-minute trial — no credit card required",
+                ].map((b) => (
+                  <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                    <CheckCircle size={18} style={{ color: "var(--gold-lt)", flexShrink: 0, marginTop: 2 }} />
+                    <span style={{ color: "rgba(255,255,255,.9)", fontSize: ".95rem", lineHeight: 1.5 }}>{b}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 18 }}>
+                {[
+                  { icon: "🕐", label: loc.timezone },
+                  { icon: "📍", label: loc.cities.split(",")[0].trim() + " & more" },
+                  { icon: "👥", label: loc.population },
+                ].map((item) => (
+                  <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", borderRadius: 20, padding: "6px 14px", fontSize: ".82rem", color: "rgba(255,255,255,.9)" }}>
+                    <span>{item.icon}</span> {item.label}
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ color: "var(--gold-lt)", fontSize: ".9rem", fontWeight: 700 }}>
+                ⭐⭐⭐⭐⭐ Rated {loc.rating}/5 by {loc.reviews}+ {loc.country} families
+              </div>
+            </div>
+
+            {/* Right — live lead form (above the fold) */}
+            <div
+              id="trial"
+              style={{
+                background: "rgba(255,255,255,.07)",
+                border: "1px solid rgba(255,255,255,.16)",
+                borderRadius: 20,
+                padding: "26px 24px",
+                boxShadow: "0 24px 60px rgba(0,0,0,.35)",
+                backdropFilter: "blur(6px)",
+                scrollMarginTop: 90,
+              }}
+            >
+              <div style={{ textAlign: "center", marginBottom: 6 }}>
+                <span style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 800, fontSize: ".72rem", letterSpacing: ".5px", padding: "4px 12px", borderRadius: 20, textTransform: "uppercase" }}>
+                  100% Free · No card needed
+                </span>
+              </div>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.5rem", textAlign: "center", marginBottom: 4 }}>
+                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>FREE</span> Trial Class
+              </h2>
+              <p style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", textAlign: "center", marginBottom: 18 }}>
+                30-minute 1-on-1 session · Pick your own time
+              </p>
+              <CTAForm />
+            </div>
           </div>
         </div>
       </div>
@@ -354,9 +407,9 @@ export default async function LocationDetailPage({ params }: Props) {
                     <div key={p} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", textAlign: "left" }}>{p}</div>
                   ))}
                 </div>
-                <Link href="/online-quran-classes#cta" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "13px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem" }}>
+                <a href="#trial" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "13px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem" }}>
                   Book Free Trial →
-                </Link>
+                </a>
                 <div style={{ marginTop: 14, color: "rgba(255,255,255,.5)", fontSize: ".73rem" }}>
                   ⭐⭐⭐⭐⭐ Rated {loc.rating}/5 by {loc.reviews}+ {loc.country} families
                 </div>
@@ -389,9 +442,9 @@ export default async function LocationDetailPage({ params }: Props) {
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>
             Join hundreds of families from {loc.country} already learning with NoorPath Academy. Free trial — no commitment.
           </p>
-          <Link href="/online-quran-classes#cta" className="btn-primary-np">
+          <a href="#trial" className="btn-primary-np">
             Book Free Trial Class →
-          </Link>
+          </a>
         </div>
       </section>
     </>
