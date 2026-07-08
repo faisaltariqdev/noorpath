@@ -48,7 +48,7 @@ export default function CTAForm() {
         // Full-page navigation (not client-side) so the Google Ads tag fires a
         // fresh page_view on /thank-you — required for the URL-based
         // "Free Trial Booked" conversion to register.
-        window.location.href = "/thank-you";
+        window.location.href = "/thank-you?submitted=1";
       } else {
         setStatus("error");
         setMsg(data.message || "Could not send. Please WhatsApp us.");

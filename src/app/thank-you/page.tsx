@@ -11,19 +11,31 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <>
-      {/* ── Google Ads: register a page_view for this URL so the URL-based
-          "Free Trial Booked" conversion (Destination: /thank-you) fires
-          reliably even if the base tag loaded a moment earlier. ── */}
+      {/* ── Google Ads page_view + GA4 generate_lead (only after real form submit) ── */}
       <Script id="google-ads-thankyou-pageview" strategy="afterInteractive">
         {`
           (function () {
+            var GA_ID = '${process.env.NEXT_PUBLIC_GA_ID ?? "G-CTEG1YPKCT"}';
             var tries = 0;
             function fire() {
-              if (typeof window.gtag === 'function') {
-                window.gtag('config', 'AW-18212142815', { 'page_path': '/thank-you' });
+              if (typeof window.gtag !== 'function') {
+                if (tries++ < 100) { setTimeout(fire, 100); }
                 return;
               }
-              if (tries++ < 100) { setTimeout(fire, 100); }
+              window.gtag('config', 'AW-18212142815', { page_path: '/thank-you' });
+              var params = new URLSearchParams(window.location.search);
+              var fromForm = params.get('submitted') === '1';
+              var alreadyTracked = sessionStorage.getItem('np_lead_tracked') === '1';
+              if (fromForm && !alreadyTracked) {
+                window.gtag('event', 'generate_lead', {
+                  send_to: GA_ID,
+                  event_category: 'engagement',
+                  event_label: 'free_trial_booking',
+                  value: 1,
+                  currency: 'USD',
+                });
+                sessionStorage.setItem('np_lead_tracked', '1');
+              }
             }
             fire();
           })();
