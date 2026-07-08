@@ -84,13 +84,6 @@ export default async function CityPage({ params }: Props) {
         areaServed: { "@type": "City", name: c.city, containedInPlace: { "@type": "Country", name: c.country } },
         serviceType: "Online Quran Education",
         url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: c.rating,
-          ratingCount: c.reviews,
-          bestRating: "5",
-          worstRating: "1",
-        },
         offers: {
           "@type": "Offer",
           price: "0",

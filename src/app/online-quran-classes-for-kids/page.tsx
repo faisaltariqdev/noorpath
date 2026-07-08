@@ -146,13 +146,6 @@ const jsonLd = {
       audience: { "@type": "Audience", audienceType: "Muslim children ages 4–12 and their parents" },
       url: PAGE_URL,
       areaServed: ["United Kingdom", "United States", "Canada", "Australia", "United Arab Emirates", "Germany"],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "2400",
-        bestRating: "5",
-        worstRating: "1",
-      },
       offers: {
         "@type": "Offer",
         price: "0",

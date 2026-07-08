@@ -71,13 +71,6 @@ const serviceJsonLd = {
         ],
       },
       url: "https://www.noorpath.online/online-quran-classes",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "2400",
-        bestRating: "5",
-        worstRating: "1",
-      },
     },
     {
       "@type": "FAQPage",

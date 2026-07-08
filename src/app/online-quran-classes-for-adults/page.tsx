@@ -56,13 +56,6 @@ const jsonLd = {
       url: "https://www.noorpath.online/online-quran-classes-for-adults",
       offers: { "@type": "Offer", price: "29", priceCurrency: "USD", description: "From $29/month. Free 30-min trial." },
       areaServed: { "@type": "Country", name: "Worldwide" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "2400",
-        bestRating: "5",
-        worstRating: "1",
-      },
     },
     {
       "@type": "FAQPage",
