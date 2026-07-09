@@ -19,6 +19,78 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dua-e-istikhara",
+    title: "Dua e Istikhara — Arabic, English & How to Pray Salat al-Istikhara",
+    description: "Full Dua e Istikhara in Arabic with English translation and transliteration. Learn how to pray Salat al-Istikhara step by step, when to do it, and how to recognise the answer — from Sahih al-Bukhari.",
+    category: "Dhikr & Duas",
+    date: "2026-07-09",
+    updatedAt: "2026-07-09",
+    readTime: "11 min",
+    keywords: [
+      "dua e istikhara", "istikhara dua", "istikhara", "how to pray istikhara",
+      "salat al istikhara", "istikhara prayer", "istikhara dua in english", "istikhara ki dua",
+      "istikhara dua arabic", "istikhara for marriage", "how to do istikhara", "istikhara signs",
+      "istikhara namaz", "dua istikhara transliteration", "istikhara method", "istikhara answer",
+    ],
+    excerpt:
+      "Dua e Istikhara is the prayer of seeking guidance the Prophet ﷺ taught for every decision — marriage, career, travel and more. Read the full Arabic dua, transliteration and English meaning, plus the exact step-by-step method of Salat al-Istikhara and how its answer really comes.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "tahajjud-prayer",
+    title: "Tahajjud Prayer — How to Pray, Best Time, Rakats & Benefits",
+    description: "Complete Tahajjud guide: what it is, the best time to pray Tahajjud, how many rakats, step-by-step method, powerful duas, and its benefits from Quran & Hadith. Learn the night prayer of the Prophet ﷺ.",
+    category: "Salah & Worship",
+    date: "2026-07-09",
+    updatedAt: "2026-07-09",
+    readTime: "12 min",
+    keywords: [
+      "tahajjud", "tahajjud prayer", "tahajjud time", "how to pray tahajjud",
+      "tahajjud namaz", "tahajjud rakats", "tahajjud prayer time", "benefits of tahajjud",
+      "tahajjud dua", "night prayer islam", "qiyam ul layl", "last third of the night",
+      "how many rakats in tahajjud", "tahajjud time today", "wake up for tahajjud",
+    ],
+    excerpt:
+      "Tahajjud is the voluntary night prayer the Quran itself calls a source of a 'praised station'. Learn exactly when Tahajjud time starts, how many rakats to pray, the step-by-step method, the dua the Prophet ﷺ recited, and why duas made in the last third of the night are answered.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "surah-waqiah-benefits",
+    title: "Surah Waqiah — Benefits, Arabic Text & English Translation",
+    description: "Surah Al-Waqiah (chapter 56) benefits for rizq and protection from poverty, with Arabic text of key verses, English translation, when to recite it, and what the hadith really say. Read the Surah of Wealth explained.",
+    category: "Quran",
+    date: "2026-07-09",
+    updatedAt: "2026-07-09",
+    readTime: "10 min",
+    keywords: [
+      "surah waqiah", "surah waqiah benefits", "surah al waqiah", "surah waqiah for wealth",
+      "surah waqiah for rizq", "benefits of surah waqiah", "surah waqiah read online",
+      "surah waqiah english translation", "surah waqiah in which para", "surah e waqiah",
+      "surah waqiah full", "when to read surah waqiah", "surah waqiah at night",
+    ],
+    excerpt:
+      "Surah Al-Waqiah (The Inevitable Event) is famously recited for rizq — protection from poverty — and describes the Day of Judgment in vivid detail. Read its themes, key verses with Arabic and English, its authentic benefits, and the best time to recite it every night.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "surah-rahman-benefits",
+    title: "Surah Rahman — Benefits, Arabic Text & English Translation",
+    description: "Surah Ar-Rahman (chapter 55) — the 'Bride of the Quran'. Its benefits, the meaning of 'Which of the favours of your Lord will you deny?', key verses in Arabic & English, and the best times to recite it.",
+    category: "Quran",
+    date: "2026-07-09",
+    updatedAt: "2026-07-09",
+    readTime: "9 min",
+    keywords: [
+      "surah rahman", "surah ar rahman", "surah rahman benefits", "benefits of surah rahman",
+      "surah rahman read online", "surah rahman english translation", "surah rehman",
+      "fabi ayyi ala i rabbikuma tukazziban", "bride of the quran", "surah rahman for shifa",
+      "surah rahman listen", "surah rahman in which para", "when to read surah rahman",
+    ],
+    excerpt:
+      "Surah Ar-Rahman is called the Bride of the Quran — a breathtaking chapter listing Allah's favours with the repeated question: 'Which of the favours of your Lord will you deny?' Read its meaning, key verses with Arabic and English, its benefits, and how to make it part of your daily recitation.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "darood-sharif",
     title: "Darood Sharif — Arabic, English Translation, Transliteration & Benefits",
     description: "Read Darood Sharif (Durood Ibrahim) in Arabic with English translation, transliteration, meaning and benefits. Learn the Darood recited in Salah, its rewards from Hadith & how to teach it to kids.",

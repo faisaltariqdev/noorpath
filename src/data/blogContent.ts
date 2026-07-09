@@ -31,6 +31,274 @@ const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; co
   @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } .letter-grid { grid-template-columns: repeat(3, 1fr); } }`;
 
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "dua-e-istikhara": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Dua e Istikhara</strong> is the supplication of seeking guidance from Allah before any important decision — marriage, a job offer, moving abroad, choosing a school, or any matter where the heart hesitates. The Prophet ﷺ taught this dua to his companions "as he would teach them a surah of the Quran" (Sahih al-Bukhari 1162) — showing how central it is to a Muslim's life.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Istikhara means "seeking the best (khayr) from Allah." You pray <strong>2 rakats of voluntary prayer</strong>, then recite the Istikhara dua, mentioning your specific need. The answer comes as ease or difficulty in the matter — <em>not necessarily a dream</em>. The full dua with Arabic, transliteration and English is below. Want to learn duas and Salah with a live tutor? <a href="/online-quran-classes-for-kids">Book a free trial class</a>.
+          </div>
+
+          <h2 id="what-is">What is Istikhara?</h2>
+          <p>Istikhara (استخارة) comes from the Arabic root <em>khayr</em> (goodness) and literally means "to seek what is best." Salat al-Istikhara is a two-rakat voluntary prayer followed by a specific dua in which you hand your decision over to Allah — asking Him to make the matter easy if it is good for you, and to turn it away if it is bad for you.</p>
+          <p>Jabir ibn Abdullah (رضي الله عنه) said: "The Messenger of Allah ﷺ used to teach us Istikhara for every matter, just as he would teach us a surah of the Quran." (Sahih al-Bukhari 1162)</p>
+
+          <h2 id="dua">The complete Dua e Istikhara</h2>
+          <div class="verse-card">
+            <span class="vnum">DUA E ISTIKHARA · Sahih al-Bukhari 1162</span>
+            <div class="arabic">اَللّٰهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ وَتَعْلَمُ وَلَا أَعْلَمُ وَأَنْتَ عَلَّامُ الْغُيُوبِ، اَللّٰهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هٰذَا الْأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هٰذَا الْأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ</div>
+            <p class="translit">Allaahumma innee astakheeruka bi 'ilmika, wa astaqdiruka bi qudratika, wa as'aluka min fadlikal-'azeem. Fa innaka taqdiru wa laa aqdiru, wa ta'lamu wa laa a'lamu, wa anta 'allaamul-ghuyoob. Allaahumma in kunta ta'lamu anna haadhal-amra khayrun lee fee deenee wa ma'aashee wa 'aaqibati amree, faqdurhu lee wa yassirhu lee thumma baarik lee feeh. Wa in kunta ta'lamu anna haadhal-amra sharrun lee fee deenee wa ma'aashee wa 'aaqibati amree, fasrifhu 'annee wasrifnee 'anhu, waqdur liyal-khayra haythu kaana thumma ardinee bih.</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, I seek Your guidance through Your knowledge, and I seek strength through Your power, and I ask You of Your great bounty. For You are able and I am not, and You know and I do not, and You are the Knower of the unseen. O Allah, if You know that this matter is good for me in my religion, my livelihood and the outcome of my affair, then decree it for me, make it easy for me, and bless me in it. And if You know that this matter is bad for me in my religion, my livelihood and the outcome of my affair, then turn it away from me and turn me away from it, and decree for me what is good wherever it may be, then make me content with it.</p>
+          </div>
+          <p>When you reach the words <em>"haadhal-amra"</em> (this matter), mention your specific need — or simply think of it clearly in your heart.</p>
+
+          <h2 id="how-to">How to pray Salat al-Istikhara — step by step</h2>
+          <ol>
+            <li><strong>Make wudu</strong> as you would for any prayer.</li>
+            <li><strong>Pray 2 rakats</strong> of voluntary (nafl) prayer with the intention of Istikhara. It is common to recite Surah Al-Kafirun in the first rakat and Surah Al-Ikhlas in the second, though any surahs are valid.</li>
+            <li><strong>After the salam,</strong> raise your hands and recite the Istikhara dua above.</li>
+            <li><strong>Name your matter</strong> when you reach "haadhal-amra" — for example, "this marriage" or "this job."</li>
+            <li><strong>Then proceed</strong> with the decision you are inclined towards, trusting that Allah will open or close the doors.</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>Common misconception:</strong> Many people believe Istikhara's answer must come as a dream, or as seeing the colours green or white. This has no basis in authentic hadith. The answer of Istikhara is that <strong>Allah makes the good matter easy and the harmful matter difficult</strong> — through circumstances, your heart settling, or doors opening and closing. A dream may happen, but it is not required and not the standard.
+          </div>
+
+          <h2 id="when">When should you pray Istikhara?</h2>
+          <ul>
+            <li><strong>Marriage proposals</strong> — accepting or declining a rishta.</li>
+            <li><strong>Career decisions</strong> — a new job, business venture, or resignation.</li>
+            <li><strong>Moving or travel</strong> — relocating your family, hijrah, big journeys.</li>
+            <li><strong>Education</strong> — choosing a school, university, or course.</li>
+            <li><strong>Any permissible matter</strong> where you genuinely hesitate. Istikhara is not for things already obligatory (like praying Salah) or forbidden.</li>
+          </ul>
+          <p>You may repeat Istikhara up to seven days if the matter remains unclear — some scholars cite the narration of Anas (رضي الله عنه) encouraging repetition.</p>
+
+          <h2 id="conditions">Etiquettes for the best result</h2>
+          <ul>
+            <li>Pray with full conviction that Allah will choose what is best.</li>
+            <li>Empty your heart of a pre-decided outcome — go in genuinely open.</li>
+            <li>Choose a calm time; the last third of the night before <a href="/blog/tahajjud-prayer">Tahajjud</a> is ideal but any time outside the forbidden prayer times is valid.</li>
+            <li>Combine it with consultation (<em>istishara</em>) of trustworthy, knowledgeable people.</li>
+            <li>Begin and end the dua with praise of Allah and <a href="/blog/darood-sharif">Darood Sharif</a>.</li>
+          </ul>
+
+          <h2 id="teach-kids">Teaching Istikhara to your children</h2>
+          <p>Teenagers especially benefit from learning Istikhara early — it trains them to include Allah in every decision. Start by teaching the shortened concept ("we ask Allah to choose for us"), then help them memorise the dua in parts, and let them see you praying Istikhara for family decisions.</p>
+
+          <div class="highlight-box">
+            <strong>Want your child to learn duas, Salah and Quran with correct pronunciation?</strong> NoorPath Academy's certified tutors teach live 1-on-1 classes covering Salah, essential duas and Quran with Tajweed. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "tahajjud-prayer": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Tahajjud</strong> is the voluntary night prayer performed after waking from sleep — the prayer of the Prophets, the righteous, and every believer seeking closeness to Allah. The Quran promises the one who prays it a <em>Maqam Mahmud</em> — a praised station: "And during the night, wake up and pray, as an extra offering of your own; so that your Lord may raise you to a praised station." (Surah Al-Isra 17:79)</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Tahajjud is prayed <strong>after Isha and after sleeping</strong>, ideally in the <strong>last third of the night</strong> (roughly 1–2 hours before Fajr). Pray a minimum of <strong>2 rakats</strong>, in sets of two — the Prophet ﷺ commonly prayed 8 rakats plus 3 Witr. Duas in this time are answered. Full method below. Want to perfect your Salah and recitation? <a href="/online-quran-classes-for-adults">Book a free trial class</a>.
+          </div>
+
+          <h2 id="what-is">What is Tahajjud?</h2>
+          <p>Tahajjud (تهجد) comes from <em>hajada</em> — to remain awake at night. It is a voluntary (nafl) prayer performed after waking from sleep at night, and it is the most virtuous voluntary prayer. The Prophet ﷺ said: "The best prayer after the obligatory prayers is the night prayer." (Sahih Muslim 1163)</p>
+          <p>Tahajjud falls under the broader term <strong>Qiyam ul-Layl</strong> (standing in prayer at night). Strictly, Tahajjud is Qiyam performed <em>after sleeping</em>, which is the Sunnah of the Prophet ﷺ.</p>
+
+          <h2 id="time">When is Tahajjud time?</h2>
+          <table class="np-table">
+            <tr><th>Portion of night</th><th>Approximate time</th><th>Virtue</th></tr>
+            <tr><td>First third</td><td>After Isha</td><td>Valid, lesser reward</td></tr>
+            <tr><td>Middle third</td><td>Around midnight</td><td>Better</td></tr>
+            <tr><td><strong>Last third</strong></td><td>Roughly 1–3 hours before Fajr</td><td><strong>Best — the hour of descent and answered duas</strong></td></tr>
+          </table>
+          <p>The Prophet ﷺ said: "Our Lord descends every night to the lowest heaven when the last third of the night remains, and He says: Who is calling upon Me, that I may answer him? Who is asking of Me, that I may give him? Who is seeking My forgiveness, that I may forgive him?" (Sahih al-Bukhari 1145)</p>
+          <p><strong>To calculate the last third:</strong> divide the time between Maghrib and Fajr into three parts — the final part is the last third. For example, if Maghrib is 9pm and Fajr is 4:30am, the last third begins around 1:20am.</p>
+
+          <h2 id="rakats">How many rakats is Tahajjud?</h2>
+          <ul>
+            <li><strong>Minimum:</strong> 2 rakats.</li>
+            <li><strong>The Prophet's ﷺ usual practice:</strong> 8 rakats (prayed in sets of 2), followed by 3 rakats of Witr — 11 total. Aisha (رضي الله عنها) said: "He never prayed more than eleven rakats, in Ramadan or outside it." (Sahih al-Bukhari 1147)</li>
+            <li><strong>No fixed maximum:</strong> pray what is easy and sustainable. Consistency is beloved to Allah — "The most beloved deeds to Allah are the most consistent, even if small." (Sahih al-Bukhari 6464)</li>
+          </ul>
+
+          <h2 id="how-to">How to pray Tahajjud — step by step</h2>
+          <ol>
+            <li><strong>Sleep after Isha</strong> with the intention of waking for Tahajjud — even the intention carries reward.</li>
+            <li><strong>Wake before Fajr</strong> (set an alarm for the last third if possible) and make wudu.</li>
+            <li><strong>Begin with 2 light rakats,</strong> as the Prophet ﷺ recommended opening the night prayer.</li>
+            <li><strong>Pray in sets of 2 rakats</strong> — recite Al-Fatiha and any surahs; longer recitation is better if you can.</li>
+            <li><strong>Make long, unhurried dua</strong> in sujood and after the prayer — this is the time duas are answered.</li>
+            <li><strong>Close with Witr</strong> (1 or 3 rakats) if you have not prayed it after Isha, including <a href="/blog/dua-e-qunoot-arabic-english">Dua e Qunoot</a>.</li>
+          </ol>
+
+          <h2 id="dua">Dua of the Prophet ﷺ in Tahajjud</h2>
+          <div class="verse-card">
+            <span class="vnum">OPENING DUA OF TAHAJJUD · Bukhari 1120 (excerpt)</span>
+            <div class="arabic">اَللّٰهُمَّ لَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ وَلَكَ الْحَمْدُ لَكَ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ</div>
+            <p class="translit">Allaahumma lakal-hamdu anta qayyimus-samaawaati wal-ardi wa man feehinn, wa lakal-hamdu laka mulkus-samaawaati wal-ardi wa man feehinn…</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, to You belongs all praise; You are the Sustainer of the heavens and the earth and all within them. To You belongs all praise; Yours is the dominion of the heavens and the earth and all within them…</p>
+          </div>
+
+          <h2 id="benefits">Benefits of Tahajjud</h2>
+          <ul>
+            <li><strong>A praised station:</strong> Allah promises Maqam Mahmud to those who pray it (Quran 17:79).</li>
+            <li><strong>Answered duas:</strong> the last third of the night is the hour Allah answers those who call on Him (Bukhari 1145).</li>
+            <li><strong>Mark of the righteous:</strong> "They used to sleep but little of the night, and in the hours before dawn they would ask forgiveness." (Quran 51:17–18)</li>
+            <li><strong>Forgiveness of sins and closeness to Allah:</strong> "Hold fast to night prayer, for it was the way of the righteous before you, a means of closeness to your Lord, an expiation for bad deeds, and a barrier from sin." (Tirmidhi 3549)</li>
+            <li><strong>Peace of heart:</strong> the stillness of the night removes anxiety — see also our <a href="/blog/dua-for-anxiety-stress-depression">duas for anxiety and stress</a>.</li>
+          </ul>
+
+          <h2 id="tips">7 practical tips to wake up for Tahajjud</h2>
+          <ol>
+            <li>Sleep early — protect your night from screens after Isha.</li>
+            <li>Make a sincere intention before sleeping; recite <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the sleeping adhkar.</li>
+            <li>Start small: even 10 minutes before Fajr with 2 rakats counts.</li>
+            <li>Set your alarm 20–30 minutes before Fajr rather than aiming for 2am immediately.</li>
+            <li>Take a short afternoon nap (qaylulah) — the Sunnah helper of night prayer.</li>
+            <li>Avoid heavy late dinners.</li>
+            <li>Be consistent — a small regular Tahajjud is better than an occasional long one.</li>
+          </ol>
+
+          <div class="highlight-box">
+            <strong>Want to perfect your Salah, recitation and duas?</strong> NoorPath Academy's certified tutors teach adults and children in live 1-on-1 classes — Salah, Tajweed and Quran from the basics. <a href="/online-quran-classes-for-adults">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "surah-waqiah-benefits": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Surah Al-Waqiah</strong> (سورة الواقعة — "The Inevitable Event") is the 56th chapter of the Quran with 96 verses, revealed in Makkah. It takes its name from its opening word describing the Day of Judgment — the event that will certainly occur. It is one of the most-recited surahs in Muslim homes, famously associated with <strong>rizq (provision) and protection from poverty</strong>.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Surah Waqiah is chapter 56 of the Quran (para/juz 27). It describes the three groups of people on the Day of Judgment and is widely recited <strong>every night</strong> based on the narration: "Whoever recites Surah Al-Waqiah every night will never be afflicted by poverty." Read its themes, key verses and authentic benefits below. Want to read the Quran fluently? <a href="/courses/noorani-qaida-online">Start with Noorani Qaida</a>.
+          </div>
+
+          <h2 id="facts">Surah Waqiah at a glance</h2>
+          <table class="np-table">
+            <tr><th>Detail</th><th>Answer</th></tr>
+            <tr><td>Chapter number</td><td>56</td></tr>
+            <tr><td>Verses</td><td>96</td></tr>
+            <tr><td>Para / Juz</td><td>27</td></tr>
+            <tr><td>Revelation</td><td>Makkah (Makki)</td></tr>
+            <tr><td>Named after</td><td>Al-Waqiah — "The Inevitable Event" (the Day of Judgment)</td></tr>
+            <tr><td>Famous for</td><td>Rizq (provision), protection from poverty, vivid description of the Hereafter</td></tr>
+          </table>
+
+          <h2 id="themes">What is Surah Waqiah about?</h2>
+          <p>The surah opens with the moment the Day of Judgment strikes — when the earth is shaken and mountains crumble to scattered dust — and then divides all of humanity into <strong>three groups</strong>:</p>
+          <ul>
+            <li><strong>As-Sabiqun (The Foremost):</strong> those nearest to Allah, rewarded with the highest gardens.</li>
+            <li><strong>Ashab al-Yamin (People of the Right):</strong> the righteous believers, in comfort and honour.</li>
+            <li><strong>Ashab ash-Shimal (People of the Left):</strong> the deniers, in scorching wind and shadow of black smoke.</li>
+          </ul>
+          <p>The middle of the surah presents four powerful proofs of Allah's power that we witness daily — the creation of man, the seed the farmer sows, the water we drink, and the fire we kindle — each followed by the question: could <em>you</em> create this?</p>
+
+          <h2 id="verses">Key verses with Arabic and English</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-WAQIAH · 56:1–3</span>
+            <div class="arabic">إِذَا وَقَعَتِ الْوَاقِعَةُ ۝ لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ ۝ خَافِضَةٌ رَّافِعَةٌ</div>
+            <p class="translit">Idhaa waqa'atil-waaqi'ah. Laysa li waq'atihaa kaadhibah. Khaafidatur-raafi'ah.</p>
+            <p class="trans-en"><strong>English:</strong> When the Inevitable Event occurs — of its occurrence there is no denial — it will bring some low and raise others high.</p>
+          </div>
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-WAQIAH · 56:63–64</span>
+            <div class="arabic">أَفَرَأَيْتُم مَّا تَحْرُثُونَ ۝ أَأَنتُمْ تَزْرَعُونَهُ أَمْ نَحْنُ الزَّارِعُونَ</div>
+            <p class="translit">Afara'aytum maa tahruthoon. A-antum tazra'oonahu am nahnuz-zaari'oon.</p>
+            <p class="trans-en"><strong>English:</strong> Have you seen what you sow? Is it you who make it grow, or are We the Grower?</p>
+          </div>
+
+          <h2 id="benefits">Benefits of Surah Waqiah</h2>
+          <ul>
+            <li><strong>Protection from poverty:</strong> Ibn Mas'ud (رضي الله عنه) narrated that the Prophet ﷺ said: "Whoever recites Surah Al-Waqiah every night will never be afflicted by poverty." (Recorded by al-Bayhaqi in Shu'ab al-Iman; scholars grade its chain as weak, but many — including Ibn Kathir — mention the widespread practice of the righteous acting upon it as encouragement.)</li>
+            <li><strong>Certainty about the Hereafter:</strong> its vivid imagery strengthens iman and softens the heart.</li>
+            <li><strong>Gratitude and tawakkul:</strong> the four proofs (crops, water, fire, creation) train the heart to see Allah as the true Provider — the deeper meaning behind its association with rizq.</li>
+            <li><strong>Part of nightly worship:</strong> pairing it with <a href="/blog/surah-mulk-benefits">Surah Mulk</a> makes a beautiful nightly Quran routine.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Honest note on the hadith:</strong> The famous "never afflicted by poverty" narration has a weak chain according to hadith scholars. However, reciting Surah Waqiah remains rewarding like all Quran recitation — every letter carries ten rewards (Tirmidhi 2910) — and its message itself builds the mindset of trusting Allah as Ar-Razzaq (The Provider). Recite it for reward and reflection, and trust Allah for provision.
+          </div>
+
+          <h2 id="when">When to recite Surah Waqiah</h2>
+          <ul>
+            <li><strong>Every night</strong> — the practice narrated from the salaf, often after Maghrib or Isha.</li>
+            <li>Alongside Surah Mulk before sleeping.</li>
+            <li>In times of financial difficulty — combined with Istighfar, which the Quran links to rizq (Surah Nuh 71:10–12), and practical effort.</li>
+          </ul>
+
+          <h2 id="learn">Learn to recite Surah Waqiah correctly</h2>
+          <p>Surah Waqiah contains many similar-sounding words where Tajweed matters. If you or your child cannot yet read the Quran fluently, start with <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> — the step-by-step primer that takes you from the alphabet to fluent Quran reading.</p>
+
+          <div class="highlight-box">
+            <strong>Want to recite Surah Waqiah with proper Tajweed?</strong> NoorPath Academy's certified tutors teach live 1-on-1 Quran classes for kids and adults — from Qaida to fluent recitation. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "surah-rahman-benefits": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Surah Ar-Rahman</strong> (سورة الرحمن — "The Most Merciful") is the 55th chapter of the Quran with 78 verses. It is famously called the <strong>"Bride of the Quran"</strong> (Arus al-Quran) for its stunning beauty — a rhythmic chapter listing Allah's favours in creation, Paradise and beyond, punctuated 31 times by one unforgettable question: <em>"Which of the favours of your Lord will you deny?"</em></p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Surah Rahman is chapter 55 of the Quran (juz 27), named after Allah's name <strong>Ar-Rahman (The Most Merciful)</strong>. Its refrain "Fabi ayyi aalaa'i Rabbikumaa tukadhdhibaan" repeats 31 times, addressing both humans and jinn. It is recited for gratitude, reflection and comfort of the heart. Key verses and benefits below. Want your child to read it beautifully? <a href="/online-quran-classes-for-kids">Book a free trial</a>.
+          </div>
+
+          <h2 id="facts">Surah Rahman at a glance</h2>
+          <table class="np-table">
+            <tr><th>Detail</th><th>Answer</th></tr>
+            <tr><td>Chapter number</td><td>55</td></tr>
+            <tr><td>Verses</td><td>78</td></tr>
+            <tr><td>Para / Juz</td><td>27</td></tr>
+            <tr><td>Famous name</td><td>The Bride of the Quran (Arus al-Quran)</td></tr>
+            <tr><td>Repeated verse</td><td>"Which of the favours of your Lord will you deny?" — 31 times</td></tr>
+            <tr><td>Audience</td><td>Both mankind and jinn (addressed together)</td></tr>
+          </table>
+
+          <h2 id="themes">What is Surah Rahman about?</h2>
+          <p>The surah opens not with a command but with a name — <strong>Ar-Rahman</strong> — and His greatest favour: "Ar-Rahman. He taught the Quran. He created man. He taught him speech." (55:1–4). It then sweeps through Allah's signs: the sun and moon in precise orbit, the sky raised high, the earth laid out with fruit and grain, the two seas meeting without transgressing, pearls and coral, ships like mountains on the ocean.</p>
+          <p>After every few favours comes the refrain — a direct question to jinn and mankind — before the surah moves to the Day of Judgment and then two breathtaking descriptions of Paradise: two gardens with flowing springs, every fruit in pairs, and companions of pure beauty.</p>
+
+          <h2 id="verses">Key verses with Arabic and English</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AR-RAHMAN · 55:1–4</span>
+            <div class="arabic">الرَّحْمَٰنُ ۝ عَلَّمَ الْقُرْآنَ ۝ خَلَقَ الْإِنسَانَ ۝ عَلَّمَهُ الْبَيَانَ</div>
+            <p class="translit">Ar-Rahmaan. 'Allamal-Qur'aan. Khalaqal-insaan. 'Allamahul-bayaan.</p>
+            <p class="trans-en"><strong>English:</strong> The Most Merciful. He taught the Quran. He created man. He taught him eloquent speech.</p>
+          </div>
+          <div class="verse-card">
+            <span class="vnum">THE REPEATED VERSE · 31 times</span>
+            <div class="arabic">فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+            <p class="translit">Fabi ayyi aalaa'i Rabbikumaa tukadhdhibaan.</p>
+            <p class="trans-en"><strong>English:</strong> So which of the favours of your Lord will you both (mankind and jinn) deny?</p>
+          </div>
+          <div class="verse-card">
+            <span class="vnum">SURAH AR-RAHMAN · 55:26–27</span>
+            <div class="arabic">كُلُّ مَنْ عَلَيْهَا فَانٍ ۝ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ</div>
+            <p class="translit">Kullu man 'alayhaa faan. Wa yabqaa wajhu Rabbika dhul-jalaali wal-ikraam.</p>
+            <p class="trans-en"><strong>English:</strong> All that is on earth will perish, and there will remain the Face of your Lord, Owner of Majesty and Honour.</p>
+          </div>
+
+          <h2 id="benefits">Benefits of reciting Surah Rahman</h2>
+          <ul>
+            <li><strong>Gratitude training:</strong> the repeated question rewires the heart to count blessings instead of complaints — a Quranic antidote to ingratitude.</li>
+            <li><strong>Comfort and peace:</strong> many find its rhythm deeply calming; it is widely listened to for tranquility of the heart. Allah says: "By the remembrance of Allah do hearts find rest." (13:28)</li>
+            <li><strong>Reflection on Paradise:</strong> its two garden passages build longing for the Hereafter and motivation for good deeds.</li>
+            <li><strong>General Quran reward:</strong> every letter recited earns ten rewards (Tirmidhi 2910). A surah of 78 verses recited regularly accumulates immense reward.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Note on "Bride of the Quran":</strong> The narration calling Surah Ar-Rahman the bride of the Quran (recorded by al-Bayhaqi) is graded weak by hadith scholars — but the title has remained across centuries because it captures the surah's unmatched beauty. Recite it for its Quranic reward and its message; the beauty speaks for itself.
+          </div>
+
+          <h2 id="when">When to recite Surah Rahman</h2>
+          <ul>
+            <li><strong>Morning:</strong> starting the day by counting Allah's favours sets a grateful tone.</li>
+            <li><strong>In times of sadness or anxiety</strong> — paired with the <a href="/blog/dua-for-anxiety-stress-depression">duas for anxiety</a>.</li>
+            <li><strong>Family recitation:</strong> its rhythm makes it one of the easiest long surahs for children to love and memorise — many kids learn the refrain first.</li>
+          </ul>
+
+          <h2 id="learn">Help your child fall in love with Surah Rahman</h2>
+          <p>Because of its repetition and rhythm, Surah Rahman is often a child's favourite long surah. Start with correct letter sounds through the <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet</a> and <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a>, then progress to recitation with a live tutor correcting Tajweed in real time.</p>
+
+          <div class="highlight-box">
+            <strong>Want your child to recite the Bride of the Quran beautifully?</strong> NoorPath Academy's certified tutors teach live 1-on-1 Quran classes with Tajweed for ages 4–12 and adults. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
   "darood-sharif": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Darood Sharif</strong> (also spelled Durood Shareef) is the beautiful blessing that Muslims send upon the Prophet Muhammad ﷺ. The most well-known form — <strong>Darood Ibrahim</strong> — is recited in the final sitting of every Salah, making it one of the most repeated supplications in a Muslim's life.</p>
