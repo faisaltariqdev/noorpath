@@ -52,7 +52,6 @@ const jsonLd = {
             jobTitle: "Quran & Tajweed Specialist",
             description: "Ijazah-certified tutor with 12 years experience — specialist in Tajweed, Noorani Qaida and Advanced Quran for adults and teenagers.",
             worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "800", bestRating: "5" },
           },
         },
         {
@@ -63,7 +62,6 @@ const jsonLd = {
             jobTitle: "Female Quran Teacher & Child Specialist",
             description: "Al-Azhar University graduate specialising in teaching children ages 4–10. Certified female tutor with 9 years experience.",
             worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", ratingCount: "600", bestRating: "5" },
           },
         },
         {
@@ -74,7 +72,6 @@ const jsonLd = {
             jobTitle: "Hifz Program Director",
             description: "Ijazah holder in multiple Qira'at, 15 years experience. Leads the Hifz program — helped 400+ students achieve partial or full Quran memorisation.",
             worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "400", bestRating: "5" },
           },
         },
         {
@@ -85,7 +82,6 @@ const jsonLd = {
             jobTitle: "Arabic Language & Islamic Studies Teacher",
             description: "Medina University Arabic Language graduate with 8 years experience teaching Arabic to English-speaking adults.",
             worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", ratingCount: "350", bestRating: "5" },
           },
         },
         {
@@ -96,7 +92,6 @@ const jsonLd = {
             jobTitle: "Tajweed & Recitation Expert",
             description: "Ijazah-certified in Qaloon recitation. Dar al-Quran graduate with 11 years experience in Tajweed rules, Makharij and beautiful recitation.",
             worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "550", bestRating: "5" },
           },
         },
         {
@@ -107,7 +102,6 @@ const jsonLd = {
             jobTitle: "Senior Female Quran Teacher",
             description: "Ijazah-certified female tutor with 10 years experience teaching sisters and daughters exclusively. One of our most requested female tutors.",
             worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", ratingCount: "700", bestRating: "5" },
           },
         },
       ],

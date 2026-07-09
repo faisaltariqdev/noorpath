@@ -85,19 +85,6 @@ export default async function LocationDetailPage({ params }: Props) {
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
         url: `https://www.noorpath.online/locations/${slug}`,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: loc.rating,
-          ratingCount: loc.reviews,
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: localTestimonials.map((t) => ({
-          "@type": "Review",
-          reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-          author: { "@type": "Person", name: t.name },
-          reviewBody: t.text,
-        })),
         offers: {
           "@type": "Offer",
           price: "0",
