@@ -9,17 +9,29 @@ const BASE = "https://www.noorpath.online";
 const LAUNCH = new Date("2024-01-15");
 const CONTENT_UPDATE = new Date("2026-05-01");
 const RECENT = new Date("2026-06-01");
-const NOW = new Date("2026-07-01");
+const NOW = new Date("2026-07-10");
 
-/** Root-level keyword landing pages (Qutor-style commercial URLs) */
-const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
-  { url: `${BASE}/learn-quran-online`,          priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/online-quran-academy`,         priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/learn-tajweed-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/hifz-quran-online`,           priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/quran-lesson-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/studying-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-];
+/** High-traffic Islamic reference blogs — priority indexing for organic search */
+const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
+  "allahu-akbar-meaning-in-english",
+  "la-ilaha-illallah-meaning",
+  "dua-before-sleeping-islam",
+  "evil-eye-dua-nazar-ruqyah",
+  "morning-evening-adhkar-dhikr",
+  "last-two-ayahs-surah-baqarah",
+  "dua-for-parents-rabbirhamhuma",
+  "surah-ikhlas-benefits",
+  "ayatul-kursi-arabic-english-benefits",
+  "alhamdulillah-meaning-in-english",
+  "subhanallah-meaning",
+  "mashallah-meaning",
+  "inshallah-meaning-in-english",
+  "bismillah-meaning-in-english",
+  "surah-yaseen-arabic-english",
+  "surah-mulk-benefits",
+  "dua-e-istikhara",
+  "4-quls",
+]);
 
 /** Commercial blogs that drive student enrollment */
 const COMMERCIAL_BLOG_SLUGS = new Set([
@@ -31,6 +43,16 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "best-age-to-start-quran-learning",
   "how-long-to-memorize-quran",
 ]);
+
+/** Root-level keyword landing pages (Qutor-style commercial URLs) */
+const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
+  { url: `${BASE}/learn-quran-online`,          priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/online-quran-academy`,         priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/learn-tajweed-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/hifz-quran-online`,           priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/quran-lesson-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/studying-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -83,8 +105,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
     url: `${BASE}/blog/${p.slug}`,
     lastModified: new Date(p.updatedAt ?? p.date),
-    priority: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? 0.88 : 0.75,
-    changeFrequency: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? ("weekly" as const) : ("monthly" as const),
+    priority: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? 0.88 : HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug) ? 0.84 : 0.75,
+    changeFrequency: (COMMERCIAL_BLOG_SLUGS.has(p.slug) || HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug)) ? ("weekly" as const) : ("monthly" as const),
   }));
 
   return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...cityPages, ...blogPages];

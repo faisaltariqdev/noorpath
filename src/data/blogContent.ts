@@ -31,6 +31,735 @@ const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; co
   @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } .letter-grid { grid-template-columns: repeat(3, 1fr); } }`;
 
 export const blogContent: Record<string, { style: string; content: string }> = {
+  "allahu-akbar-meaning-in-english": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Allahu Akbar (الله أكبر) means <strong>"Allah is the Greatest"</strong> — declaring that nothing and no one is greater than Allah. Muslims say it in the Adhan, Salah, Eid Takbir, and moments of awe, gratitude or need. It is one of the four most beloved words to Allah (Sahih Muslim 2137).
+          </div>
+
+          <h2 id="arabic">Allahu Akbar — Arabic, transliteration &amp; English</h2>
+          <div class="verse-card">
+            <span class="vnum">TAKBIR · DECLARATION OF ALLAH'S GREATNESS</span>
+            <div class="arabic">اللهُ أَكْبَرُ</div>
+            <p class="translit">Allahu Akbar.</p>
+            <p class="trans-en"><strong>English:</strong> Allah is the Greatest. / Allah is Greater.</p>
+          </div>
+
+          <h2 id="word-by-word">Word-by-word meaning</h2>
+          <table class="np-table">
+            <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>الله</td><td>Allah</td><td>Allah — the one true God, Creator of everything</td></tr>
+            <tr><td>أَكْبَر</td><td>Akbar</td><td>Greater / Greatest — from kabir (great), superlative form</td></tr>
+          </table>
+          <p>Grammatically, <em>akbar</em> is the superlative of <em>kabir</em> (great). So Allahu Akbar means Allah is greater than everything — greater than any fear, any joy, any power, any problem. When a Muslim says it, they affirm that nothing compares to Allah's greatness.</p>
+
+          <h2 id="when">When do Muslims say Allahu Akbar?</h2>
+          <table class="np-table">
+            <tr><th>Occasion</th><th>How it is used</th></tr>
+            <tr><td><strong>Adhan (call to prayer)</strong></td><td>Proclaimed six times — calling the community to Salah</td></tr>
+            <tr><td><strong>Salah (prayer)</strong></td><td>Opening takbir (Takbirat al-Ihram), before every movement between positions</td></tr>
+            <tr><td><strong>After Salah</strong></td><td>34 times as part of post-prayer dhikr alongside Subhanallah and Alhamdulillah</td></tr>
+            <tr><td><strong>Eid &amp; celebrations</strong></td><td>Takbirat: "Allahu Akbar, Allahu Akbar, La ilaha illallah, Allahu Akbar, Allahu Akbar wa lillahil-hamd"</td></tr>
+            <tr><td><strong>Seeing something amazing</strong></td><td>Expressing awe at Allah's creation — a sunset, a blessing, a wonder</td></tr>
+            <tr><td><strong>Times of difficulty</strong></td><td>Remembering Allah is greater than any trial — strength and comfort in hardship</td></tr>
+            <tr><td><strong>Good news</strong></td><td>Gratitude and glorification — Allah is greater than any blessing received</td></tr>
+          </table>
+
+          <h2 id="hadith">Authentic hadith — reward of Allahu Akbar</h2>
+          <div class="gold-box">
+            <p>The Prophet ﷺ said: <em>"The most beloved words to Allah are four: <strong>Subhanallah</strong>, <strong>Alhamdulillah</strong>, <strong>La ilaha illallah</strong>, and <strong>Allahu Akbar</strong>. It does not matter with which of them you begin."</em></p>
+            <p style="margin-bottom:0;"><strong>Source:</strong> Sahih Muslim 2137</p>
+          </div>
+          <p>These four phrases form the core of daily dhikr. After every obligatory prayer, the Sunnah is to recite Subhanallah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times — totalling 100 remembrances. The Prophet ﷺ said whoever does this, their sins will be forgiven even if they are like the foam of the sea (Sahih Muslim 597).</p>
+
+          <h2 id="salah">Allahu Akbar in Salah — the Takbir</h2>
+          <p>Every prayer begins with <strong>Takbirat al-Ihram</strong> — raising the hands and saying "Allahu Akbar" to enter the state of prayer. This takbir is repeated when moving from standing to bowing (ruku), from bowing to standing, from standing to prostration (sujood), and between the two sujoods. Learn the full prayer with our <a href="/blog/how-to-pray-salah-step-by-step">step-by-step Salah guide</a>.</p>
+
+          <h2 id="related-phrases">Allahu Akbar among the four pillars of dhikr</h2>
+          <ul>
+            <li><a href="/blog/subhanallah-meaning">Subhanallah</a> — Glory be to Allah (declares perfection)</li>
+            <li><a href="/blog/alhamdulillah-meaning-in-english">Alhamdulillah</a> — All praise to Allah (expresses gratitude)</li>
+            <li><a href="/blog/la-ilaha-illallah-meaning">La ilaha illallah</a> — There is no god but Allah (affirms Tawheed)</li>
+            <li><strong>Allahu Akbar</strong> — Allah is the Greatest (declares supremacy)</li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What does Allahu Akbar mean in English?<span>+</span></summary>
+            <p>It means "Allah is the Greatest" or "Allah is Greater" — declaring that Allah is greater than anything in existence: any person, power, fear, or desire.</p>
+          </details>
+          <details class="faq-acc"><summary>How do you pronounce Allahu Akbar?<span>+</span></summary>
+            <p>Allahu Akbar — "Al-la-hu Ak-bar." The "kh" in Akbar is a deep throat sound. Stress falls on "Ak" in Akbar. Practice with a Quran tutor for perfect pronunciation.</p>
+          </details>
+          <details class="faq-acc"><summary>Is Allahu Akbar only said in prayer?<span>+</span></summary>
+            <p>No. While it is central to Salah, Muslims also say it in the Adhan, on Eid, during dhikr after prayer, when seeing something amazing, and in any moment of glorifying Allah.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Want your child to learn Allahu Akbar, Salah and daily dhikr with correct pronunciation?</strong> NoorPath Academy teaches Islamic phrases, Noorani Qaida and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "la-ilaha-illallah-meaning": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>La ilaha illallah</strong> (لا إله إلا الله) is the declaration that defines Islam itself. Every Muslim child learns it as the First Kalima; every convert speaks it to enter the faith; and the Prophet ﷺ called it the best dhikr. Here is the complete <strong>La ilaha illallah meaning in English</strong>, with Arabic, transliteration, and why it is the most important sentence a Muslim ever speaks.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> La ilaha illallah means <strong>"There is no god worthy of worship except Allah."</strong> It is the core of Tawheed (monotheism), the first part of the Shahada, and the First Kalima (Kalima Tayyaba). The Prophet ﷺ said the best dhikr is La ilaha illallah (Tirmidhi 3383).
+          </div>
+
+          <h2 id="arabic">La ilaha illallah — Arabic, transliteration &amp; English</h2>
+          <div class="verse-card">
+            <span class="vnum">FIRST KALIMA · KALIMA TAYYABA · THE WORD OF PURITY</span>
+            <div class="arabic">لَا إِلَٰهَ إِلَّا اللَّهُ</div>
+            <p class="translit">Laa ilaaha illallaah.</p>
+            <p class="trans-en"><strong>English:</strong> There is no god worthy of worship except Allah.</p>
+          </div>
+
+          <h2 id="word-by-word">Word-by-word meaning</h2>
+          <table class="np-table">
+            <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>لَا</td><td>Laa</td><td>No — negation; rejecting all false gods</td></tr>
+            <tr><td>إِلَٰهَ</td><td>Ilaaha</td><td>God / deity worthy of worship</td></tr>
+            <tr><td>إِلَّا</td><td>Illaa</td><td>Except — the exception is only Allah</td></tr>
+            <tr><td>اللَّهُ</td><td>Allaah</td><td>Allah — the one true God</td></tr>
+          </table>
+          <p>This phrase has two parts: <strong>negation</strong> (laa ilaaha — there is no god) and <strong>affirmation</strong> (illallaah — except Allah). Together they form the purest statement of Tawheed — worship belongs to Allah alone.</p>
+
+          <h2 id="shahada">Connection to the Shahada (First Pillar of Islam)</h2>
+          <p>The full Shahada (testimony of faith) is:</p>
+          <div class="verse-card">
+            <div class="arabic">أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ</div>
+            <p class="translit">Ash-hadu an laa ilaaha illallaah wa ash-hadu anna Muhammadan rasoolullaah.</p>
+            <p class="trans-en"><strong>English:</strong> I bear witness that there is no god but Allah, and I bear witness that Muhammad is the Messenger of Allah.</p>
+          </div>
+          <p>La ilaha illallah is the first half — without it, nothing else in Islam stands. It is also the First Kalima (Kalima Tayyaba) taught to every Muslim child. See our guide to the <a href="/blog/six-kalimas-of-islam">6 Kalimas of Islam</a>.</p>
+
+          <h2 id="benefits">Benefits and authentic hadith</h2>
+          <ul>
+            <li><strong>Best dhikr:</strong> The Prophet ﷺ said: "The best dhikr is La ilaha illallah, and the best dua is Alhamdulillah." (Tirmidhi 3383)</li>
+            <li><strong>Among the most beloved words:</strong> One of the four phrases most beloved to Allah (Sahih Muslim 2137)</li>
+            <li><strong>Key to Paradise:</strong> Whoever's last words are La ilaha illallah will enter Paradise (Abu Dawud 3116 — hasan)</li>
+            <li><strong>Erases sins:</strong> Regular recitation with sincerity is a cause of forgiveness</li>
+            <li><strong>Foundation of all worship:</strong> Salah, fasting, Hajj — all depend on this belief</li>
+          </ul>
+
+          <h2 id="tawheed">What is Tawheed?</h2>
+          <p><strong>Tawheed</strong> means affirming the oneness of Allah in three ways: (1) <em>Tawheed ar-Rububiyyah</em> — Allah alone creates and sustains; (2) <em>Tawheed al-Uluhiyyah</em> — worship belongs to Allah alone; (3) <em>Tawheed al-Asma was-Sifat</em> — Allah's names and attributes are unique and perfect. La ilaha illallah captures the heart of Tawheed al-Uluhiyyah — the worship that belongs to Allah alone.</p>
+
+          <h2 id="teach-kids">How to teach La ilaha illallah to children</h2>
+          <ol>
+            <li>Break into two parts: "Laa ilaaha" (no god) + "illallaah" (except Allah)</li>
+            <li>Explain simply: "We only worship Allah — not idols, not people, not anything else"</li>
+            <li>Listen and repeat daily — 5 minutes builds fluency fast</li>
+            <li>Connect to Salah — it appears in Tashahhud every prayer</li>
+            <li>Pair with <a href="/blog/allahu-akbar-meaning-in-english">Allahu Akbar</a> and the four pillars of dhikr</li>
+          </ol>
+
+          <h2 id="related">Related guides</h2>
+          <ul>
+            <li><a href="/blog/six-kalimas-of-islam">6 Kalimas of Islam — Full Arabic &amp; English</a></li>
+            <li><a href="/blog/five-pillars-of-islam-explained">Five Pillars of Islam Explained</a></li>
+            <li><a href="/blog/islamic-phrases-meaning">30 Islamic Phrases — Meanings &amp; When to Say</a></li>
+            <li><a href="/blog/surah-ikhlas-benefits">Surah Ikhlas — Pure Tawheed in 4 Verses</a></li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is La ilaha illallah in English?<span>+</span></summary>
+            <p>"There is no god worthy of worship except Allah." It rejects all false deities and affirms that only Allah deserves worship, obedience and devotion.</p>
+          </details>
+          <details class="faq-acc"><summary>Is La ilaha illallah the same as the Shahada?<span>+</span></summary>
+            <p>It is the first half of the Shahada. The complete Shahada adds "Muhammadan rasoolullah" — bearing witness that Muhammad ﷺ is Allah's Messenger.</p>
+          </details>
+          <details class="faq-acc"><summary>How often should you say La ilaha illallah?<span>+</span></summary>
+            <p>There is no fixed limit — say it throughout the day as dhikr. It is in every Salah (Tashahhud), and many Muslims recite it frequently as remembrance of Allah.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Help your child learn the Kalimas and Shahada with correct Tajweed.</strong> NoorPath Academy teaches the 6 Kalimas, Islamic Studies and Quran in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>`,
+  },
+  "dua-before-sleeping-islam": {
+    style: ISLAMIC_STYLE,
+    content: `<p>Before closing your eyes each night, the Prophet Muhammad ﷺ taught a complete routine of <strong>dua before sleeping</strong> — words that bring protection, forgiveness and peace until Fajr. This guide covers every authentic sleeping dua in Islam: Arabic, transliteration, English meaning, and the exact Sunnah order.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The Sunnah bedtime routine: (1) Wudu, (2) lie on your right side, (3) recite <strong>Bismika Allahumma amutu wa ahya</strong>, (4) <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a>, (5) <a href="/blog/last-two-ayahs-surah-baqarah">last 2 ayats of Surah Baqarah</a>, (6) the <a href="/blog/4-quls">3 Quls</a> blown into the hands and wiped over the body. Full text below.
+          </div>
+
+          <h2 id="main-dua">Main dua before sleeping — Bismika Allahumma</h2>
+          <div class="verse-card">
+            <span class="vnum">PROPHETIC DUA BEFORE SLEEP · Sahih al-Bukhari 6314</span>
+            <div class="arabic">بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا</div>
+            <p class="translit">Bismika Allaahumma amootu wa ahya.</p>
+            <p class="trans-en"><strong>English:</strong> In Your name, O Allah, I die and I live.</p>
+          </div>
+          <p>Sleep is likened to a small death — and waking is resurrection. This dua places the night in Allah's hands. The Prophet ﷺ said it every night before sleeping (Sahih al-Bukhari 6314).</p>
+
+          <h2 id="complete-routine">Complete Sunnah bedtime routine — step by step</h2>
+          <ol>
+            <li><strong>Perform wudu</strong> before sleeping if possible (Sunnah)</li>
+            <li><strong>Dust the bed</strong> lightly with the edge of your garment</li>
+            <li><strong>Lie on your right side</strong> — the Sunnah sleeping position</li>
+            <li>Recite <strong>Bismika Allahumma amutu wa ahya</strong></li>
+            <li>Recite <strong><a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a></strong> (Surah Al-Baqarah 2:255) — Allah appoints a guardian; no Shaytan comes near until morning (Bukhari 5009)</li>
+            <li>Recite the <strong><a href="/blog/last-two-ayahs-surah-baqarah">last two ayats of Surah Baqarah</a></strong> — they will be kafat (sufficient) for you (Bukhari 5009)</li>
+            <li>Recite <strong>Surah Al-Ikhlas, Al-Falaq and An-Nas</strong> — each once, blow into your palms, and wipe over your body (Bukhari 5017). See our <a href="/blog/4-quls">4 Quls guide</a></li>
+          </ol>
+
+          <h2 id="more-duas">More duas before sleeping</h2>
+          <div class="verse-card">
+            <span class="vnum">DUA · Sahih al-Bukhari 6320</span>
+            <div class="arabic">اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ</div>
+            <p class="translit">Allaahumma qinee 'adhaabaka yawma tab'athu 'ibaadak.</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, protect me from Your punishment on the Day You resurrect Your servants.</p>
+          </div>
+          <div class="verse-card">
+            <span class="vnum">DUA · Sahih Muslim 2714</span>
+            <div class="arabic">اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ</div>
+            <p class="translit">Allaahumma aslamtu nafsee ilayk, wa fawwadtu amree ilayk, wa wajjahtu wajhee ilayk...</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, I submit myself to You, entrust my affairs to You, and turn my face to You...</p>
+          </div>
+          <p>These longer duas express complete trust in Allah (tawakkul) before sleep. Recite whichever you know — consistency matters more than quantity.</p>
+
+          <h2 id="protection">Why bedtime adhkar protect you through the night</h2>
+          <p>Al-Bara ibn Azib (رضي الله عنه) reported the Prophet's ﷺ instruction: Ayatul Kursi brings a guardian angel and keeps Shaytan away until morning; the last two ayats of Surah Baqarah are kafat (sufficient). The 3 Quls were recited by the Prophet ﷺ every night before sleep — blown into the hands and wiped over the body. Together they form the strongest nightly shield in Islam.</p>
+
+          <h2 id="kids">Teaching bedtime duas to children</h2>
+          <ul>
+            <li>Start with <strong>Bismika Allahumma</strong> — only one short sentence</li>
+            <li>Add <strong>Surah Al-Ikhlas</strong> once they know it from Salah</li>
+            <li>Make it a family routine — parents recite out loud, children follow</li>
+            <li>Explain: "We ask Allah to protect us while we sleep"</li>
+            <li>See <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a> for more</li>
+          </ul>
+
+          <h2 id="related">Related guides</h2>
+          <ul>
+            <li><a href="/blog/last-two-ayahs-surah-baqarah">Last Two Ayats of Surah Baqarah</a></li>
+            <li><a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi — Arabic, English &amp; Benefits</a></li>
+            <li><a href="/blog/4-quls">The 4 Quls — Ikhlas, Falaq &amp; Naas</a></li>
+            <li><a href="/blog/surah-mulk-benefits">Surah Mulk Before Sleep</a></li>
+            <li><a href="/blog/morning-evening-adhkar-dhikr">Morning &amp; Evening Adhkar</a></li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is the best dua before sleeping?<span>+</span></summary>
+            <p>Bismika Allahumma amutu wa ahya is the primary prophetic dua. For protection, add Ayatul Kursi, the last two ayats of Surah Baqarah, and the 3 Quls — this is the complete Sunnah routine.</p>
+          </details>
+          <details class="faq-acc"><summary>Do you need wudu to recite dua before sleep?<span>+</span></summary>
+            <p>Wudu before sleeping is Sunnah but not required for reciting duas. The Prophet ﷺ encouraged sleeping in wudu, but you may still recite all bedtime adhkar without it.</p>
+          </details>
+          <details class="faq-acc"><summary>Can children recite Ayatul Kursi before sleep?<span>+</span></summary>
+            <p>Yes — once memorised. Many children learn Ayatul Kursi early. Start with shorter duas and Surah Ikhlas, then build up to the full bedtime routine.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Want your child to learn bedtime duas with correct pronunciation?</strong> NoorPath Academy teaches sleeping adhkar, daily duas and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>`,
+  },
+  "evil-eye-dua-nazar-ruqyah": {
+    style: ISLAMIC_STYLE,
+    content: `<p>The <strong>evil eye (nazar / al-ain)</strong> is real in Islam — confirmed in the Quran and authentic Sunnah. Millions search for the right <strong>evil eye dua</strong> to protect themselves and their children. This guide covers only what is proven: prophetic duas, Quranic Ruqyah, and the correct Islamic method of protection — without amulets, superstition or shirk.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Protect from the evil eye by: (1) saying <strong><a href="/blog/mashallah-meaning">Mashallah</a></strong> when admiring something, (2) reciting <strong><a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a></strong> daily, (3) reciting <strong>Surah Al-Falaq and An-Nas</strong> morning, evening and before sleep, (4) making dua for protection. Ruqyah is reciting Quran only — no charms or talismans.
+          </div>
+
+          <h2 id="proof">Is the evil eye real in Islam?</h2>
+          <div class="gold-box">
+            <p>The Prophet ﷺ said: <em>"The evil eye is real. If anything were to overtake the divine decree (qadar), it would be the evil eye."</em></p>
+            <p style="margin-bottom:0;"><strong>Source:</strong> Sahih Muslim 2188</p>
+          </div>
+          <p>Allah says in the Quran: <em>"And from the evil of an envier when he envies."</em> (113:5 — Surah Al-Falaq). The evil eye (al-ain) occurs when someone admires a blessing — beauty, health, wealth, a child — without mentioning Allah, and harm may follow by Allah's permission. It is not magic; it is a reality the Prophet ﷺ confirmed.</p>
+
+          <h2 id="prevention">How to prevent the evil eye — the prophetic method</h2>
+          <table class="np-table">
+            <tr><th>Action</th><th>Evidence &amp; method</th></tr>
+            <tr><td><strong>Say Mashallah</strong></td><td>When admiring anything — "Mashallah, tabarakallah" — acknowledging Allah's will (Quran 18:39). See <a href="/blog/mashallah-meaning">Mashallah meaning guide</a></td></tr>
+            <tr><td><strong>Recite Ayatul Kursi</strong></td><td>Morning, evening and before sleep — protection from Shaytan and harm (Bukhari 5009)</td></tr>
+            <tr><td><strong>Surah Al-Falaq &amp; An-Nas</strong></td><td>3 times morning and evening; before sleep blown into hands and wiped over body (Abu Dawud 5082, Bukhari 5017)</td></tr>
+            <tr><td><strong>Hide blessings</strong></td><td>The Prophet ﷺ hid Hasan and Husayn (رضي الله عنهما) when admiring them, saying protective duas (Bukhari 3371)</td></tr>
+            <tr><td><strong>Dua for children</strong></td><td>"U'eedhukuma bi kalimatillahit-tammati min kulli shaytanin wa hammah wa min kulli 'aynin lammah" — I seek protection for you in Allah's perfect words from every devil and harmful eye (Bukhari 3371)</td></tr>
+          </table>
+
+          <h2 id="ruqyah">Ruqyah Shariah — Quranic healing and protection</h2>
+          <p><strong>Ruqyah</strong> is reciting Quran and authentic duas for healing and protection. It is the only Islamically approved form of spiritual remedy. The Prophet ﷺ performed Ruqyah and approved it when done with Quranic words alone.</p>
+          <div class="verse-card">
+            <span class="vnum">RUQYAH · SURAH AL-FALAQ 113</span>
+            <div class="arabic">قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</div>
+            <p class="trans-en"><strong>English:</strong> Say: I seek refuge in the Lord of daybreak, from the evil of what He created, and from the evil of darkness when it settles, and from the evil of those who blow on knots, and from the evil of an envier when he envies.</p>
+          </div>
+          <p>Surah An-Nas (114) seeks refuge in the Lord of mankind from the whispering of Shaytan. Together with Al-Falaq, they are the ultimate protection surahs — recited in <a href="/blog/morning-evening-adhkar-dhikr">morning and evening adhkar</a> and before sleep.</p>
+
+          <h2 id="dua-children">Evil eye dua for babies and children</h2>
+          <div class="verse-card">
+            <span class="vnum">PROPHETIC DUA FOR CHILDREN · Sahih al-Bukhari 3371</span>
+            <div class="arabic">أُعِيذُكُمَا بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِن كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِن كُلِّ عَيْنٍ لَامَّةٍ</div>
+            <p class="translit">U'eedhukuma bi kalimaatillaahit-taammati min kulli shaytaanin wa haammah wa min kulli 'aynin laammah.</p>
+            <p class="trans-en"><strong>English:</strong> I seek protection for you both in the perfect words of Allah from every devil and poisonous creature and from every harmful evil eye.</p>
+          </div>
+          <p>The Prophet ﷺ said this over Hasan and Husayn (رضي الله عنهما). Parents should recite it over their children — especially when receiving compliments or when leaving the home.</p>
+
+          <h2 id="symptoms">Possible signs of the evil eye — with caution</h2>
+          <p>Islamic scholars mention possible signs: sudden unexplained illness, loss of appetite, unusual fatigue, or sudden reversal of fortune after being praised. <strong>Important:</strong> always seek medical help first for any illness. Ruqyah complements — it does not replace — medical treatment. Consult a knowledgeable scholar for Ruqyah if symptoms persist after medical evaluation.</p>
+
+          <h2 id="avoid">What to avoid — not from the Sunnah</h2>
+          <ul>
+            <li>Blue eye amulets (nazar boncugu) with no Quranic basis</li>
+            <li>Taweez containing unknown writing or shirk</li>
+            <li>Visiting fortune tellers or magicians — the Prophet ﷺ said this is kufr (Muslim 2230)</li>
+            <li>Believing only objects protect — protection is from Allah alone through His words</li>
+          </ul>
+
+          <h2 id="related">Related protection guides</h2>
+          <ul>
+            <li><a href="/blog/mashallah-meaning">Mashallah Meaning &amp; Evil Eye</a></li>
+            <li><a href="/blog/4-quls">The 4 Quls — Surah Falaq &amp; Naas</a></li>
+            <li><a href="/blog/dua-before-sleeping-islam">Dua Before Sleeping</a></li>
+            <li><a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi Benefits</a></li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What dua protects from the evil eye?<span>+</span></summary>
+            <p>Recite Surah Al-Falaq and An-Nas (the last two surahs of the Quran), Ayatul Kursi, and say Mashallah when admiring blessings. For children, use the prophetic dua: U'eedhukuma bi kalimaatillah...</p>
+          </details>
+          <details class="faq-acc"><summary>Does saying Mashallah prevent nazar?<span>+</span></summary>
+            <p>Scholars recommend saying Mashallah (and ideally "la quwwata illa billah") when admiring something, as the complete Quranic phrase in Surah Al-Kahf 18:39. It attributes the blessing to Allah and seeks protection.</p>
+          </details>
+          <details class="faq-acc"><summary>What is Ruqyah in Islam?<span>+</span></summary>
+            <p>Ruqyah is reciting Quran — especially Ayatul Kursi, Al-Fatiha, Al-Falaq and An-Nas — and authentic duas for healing and protection. It must contain only Allah's words, with sincere belief that Allah alone heals.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Teach your child Surah Al-Falaq, An-Nas and daily protection duas with a live tutor.</strong> NoorPath Academy offers Islamic Studies and Quran classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>`,
+  },
+  "morning-evening-adhkar-dhikr": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Morning and evening adhkar</strong> (adhkar as-sabah wal-masa) are among the most rewarding daily habits in Islam — yet many Muslims are unsure of the complete list. The Prophet ﷺ never missed his morning and evening remembrances. This guide gives you every essential adhkar with Arabic, transliteration and English in one place.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Recite morning adhkar after <strong>Fajr</strong> and evening adhkar after <strong>Asr or Maghrib</strong>. Core adhkar: Ayatul Kursi (1x), the 3 Quls (3x each), Sayyid al-Istighfar, Hasbiyallahu (7x), and La ilaha illallah wahdahu. Takes ~10 minutes. Protects you until the next adhkar time.
+          </div>
+
+          <h2 id="when">When to recite morning and evening adhkar</h2>
+          <table class="np-table">
+            <tr><th>Adhkar</th><th>Best time</th><th>Protection until</th></tr>
+            <tr><td><strong>Morning adhkar</strong> (adhkar as-sabah)</td><td>After Fajr until sunrise</td><td>Evening (Maghrib)</td></tr>
+            <tr><td><strong>Evening adhkar</strong> (adhkar al-masa)</td><td>After Asr or after Maghrib</td><td>Morning (Fajr next day)</td></tr>
+          </table>
+          <p>The Prophet ﷺ said: "Whoever recites the last two verses of Surah Al-Baqarah at night, they will be sufficient for him." Combined with morning/evening adhkar, you are under Allah's protection around the clock.</p>
+
+          <h2 id="core-list">Core morning &amp; evening adhkar — full list</h2>
+
+          <h3>1. Ayatul Kursi (once)</h3>
+          <div class="verse-card">
+            <div class="arabic">ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ...</div>
+            <p class="trans-en">Allah — there is no deity except Him, the Ever-Living, the Sustainer of existence... (<a href="/blog/ayatul-kursi-arabic-english-benefits">Full Ayatul Kursi guide</a>)</p>
+          </div>
+          <p>Recited once morning and once evening. Whoever recites it morning and evening will be protected (Nasai — hasan).</p>
+
+          <h3>2. The Three Quls (3 times each)</h3>
+          <p>Recite Surah Al-Ikhlas, Al-Falaq and An-Nas — each three times — morning and evening. The Prophet ﷺ said this is sufficient for everything (Abu Dawud 5082). See <a href="/blog/4-quls">4 Quls complete guide</a>.</p>
+
+          <h3>3. Sayyid al-Istighfar (once)</h3>
+          <div class="verse-card">
+            <div class="arabic">اللَّهُمَّ أَنتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ...</div>
+            <p class="translit">Allaahumma anta rabbee laa ilaaha illaa ant, khalaqtanee wa ana 'abduk...</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, You are my Lord. There is no god but You. You created me and I am Your servant... (<a href="/blog/astaghfirullah-meaning">Full istighfar guide</a>)</p>
+          </div>
+          <p>Whoever says it with conviction in the morning and dies that day enters Paradise; whoever says it in the evening and dies that night enters Paradise (Bukhari 6306).</p>
+
+          <h3>4. Hasbiyallahu la ilaha illa huwa (7 times)</h3>
+          <div class="verse-card">
+            <div class="arabic">حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ</div>
+            <p class="translit">Hasbiyallaahu laa ilaaha illaa huwa, 'alayhi tawakkaltu wa huwa rabbul-'arshil-'azeem.</p>
+            <p class="trans-en"><strong>English:</strong> Allah is sufficient for me. There is no god but Him. In Him I put my trust. He is the Lord of the Mighty Throne.</p>
+          </div>
+          <p>Recite 7 times morning and evening. Whoever says this 7 times, Allah will suffice him against all worry (Abu Dawud 5081).</p>
+
+          <h3>5. La ilaha illallah wahdahu la shareeka lah (100x or 10x)</h3>
+          <div class="verse-card">
+            <div class="arabic">لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ</div>
+            <p class="translit">Laa ilaaha illallaahu wahdahu laa shareeka lah, lahul-mulku wa lahul-hamdu wa huwa 'alaa kulli shay'in qadeer.</p>
+            <p class="trans-en"><strong>English:</strong> There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He is over all things competent.</p>
+          </div>
+          <p>Reciting this 100 times daily erases sins even if they are like foam on the sea (Bukhari 6403). See <a href="/blog/la-ilaha-illallah-meaning">La ilaha illallah meaning</a>.</p>
+
+          <h3>6. Subhanallah, Alhamdulillah, Allahu Akbar (33 each)</h3>
+          <p>The four pillars of dhikr — after Fajr and Maghrib, or after every Salah. Subhanallah 33x, Alhamdulillah 33x, Allahu Akbar 34x. See guides: <a href="/blog/subhanallah-meaning">Subhanallah</a>, <a href="/blog/alhamdulillah-meaning-in-english">Alhamdulillah</a>, <a href="/blog/allahu-akbar-meaning-in-english">Allahu Akbar</a>.</p>
+
+          <h2 id="routine">10-minute daily adhkar routine</h2>
+          <table class="np-table">
+            <tr><th>Step</th><th>Adhkar</th><th>Count</th></tr>
+            <tr><td>1</td><td>Ayatul Kursi</td><td>1x</td></tr>
+            <tr><td>2</td><td>Surah Al-Ikhlas, Al-Falaq, An-Nas</td><td>3x each</td></tr>
+            <tr><td>3</td><td>Sayyid al-Istighfar</td><td>1x</td></tr>
+            <tr><td>4</td><td>Hasbiyallahu la ilaha illa huwa</td><td>7x</td></tr>
+            <tr><td>5</td><td>Subhanallah, Alhamdulillah, Allahu Akbar</td><td>33, 33, 34</td></tr>
+          </table>
+          <p>Do this after Fajr (morning) and after Maghrib (evening). Use a dhikr counter app or prayer beads if helpful — but presence of heart matters more than speed.</p>
+
+          <h2 id="related">Related guides</h2>
+          <ul>
+            <li><a href="/blog/dua-before-sleeping-islam">Dua Before Sleeping — Bedtime Adhkar</a></li>
+            <li><a href="/blog/evil-eye-dua-nazar-ruqyah">Evil Eye Protection &amp; Ruqyah</a></li>
+            <li><a href="/blog/duas-for-kids-to-memorize">20 Duas for Kids to Memorize</a></li>
+            <li><a href="/blog/last-two-ayahs-surah-baqarah">Last Two Ayats of Surah Baqarah</a></li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What are morning and evening adhkar?<span>+</span></summary>
+            <p>They are specific Quranic verses and prophetic duas recited after Fajr (morning) and after Asr/Maghrib (evening) for protection, forgiveness and reward until the next adhkar time.</p>
+          </details>
+          <details class="faq-acc"><summary>How long do morning adhkar take?<span>+</span></summary>
+            <p>The core list takes about 10 minutes once memorised. Start with Ayatul Kursi and the 3 Quls — add more gradually. Consistency beats quantity.</p>
+          </details>
+          <details class="faq-acc"><summary>Can I recite evening adhkar after Isha?<span>+</span></summary>
+            <p>The Sunnah time is after Asr or Maghrib. If you miss that window, recite as soon as you remember — do not skip entirely. The goal is daily protection through Allah's words.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Build a daily adhkar habit for your whole family.</strong> NoorPath Academy teaches morning/evening adhkar, duas and Quran with Tajweed in live 1-on-1 classes for kids and adults. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>`,
+  },
+  "last-two-ayahs-surah-baqarah": {
+    style: ISLAMIC_STYLE,
+    content: `<p>The <strong>last two ayats of Surah Al-Baqarah</strong> (verses 285–286) are among the most recited and beloved passages in the Quran. Muslims around the world read them before sleep, after Isha, and during Ramadan — because the Prophet Muhammad ﷺ said that whoever recites them at night, <strong>they will be sufficient (kafat) for him</strong>.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The last 2 ayats of Surah Baqarah affirm complete faith in Allah, His angels, books and all messengers — then ask Allah not to burden us beyond our capacity and to forgive our mistakes. Recite them <strong>before sleep</strong> with <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> for protection through the night. Full Arabic, transliteration and English below.
+          </div>
+
+          <h2 id="full-text">Last two ayats — full Arabic, transliteration &amp; English</h2>
+
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-BAQARAH · 2:285</span>
+            <div class="arabic">آمَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِۦ ۚ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ</div>
+            <p class="translit">Aamanar-rasoolu bimaa unzila ilayhi min rabbihi wal-mu'minoon. Kullun aamana billaahi wa malaa'ikatihi wa kutubihi wa rusulihi laa nufarriqu bayna ahadim-min rusulihi. Wa qaaloo sami'naa wa ata'naa. Ghufraanaka rabbanaa wa ilaykal-maseer.</p>
+            <p class="trans-en"><strong>English:</strong> The Messenger has believed in what was revealed to him from his Lord, and [so have] the believers. All of them have believed in Allah and His angels and His books and His messengers, [saying], "We make no distinction between any of His messengers." And they say, "We hear and we obey. [We seek] Your forgiveness, our Lord, and to You is the [final] destination."</p>
+          </div>
+
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-BAQARAH · 2:286</span>
+            <div class="arabic">لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ</div>
+            <p class="translit">Laa yukallifullaahu nafsan illaa wus'ahaa. Lahaa maa kasabat wa 'alayhaa maktasabat. Rabbanaa laa tu'aakhidhnaa in naseenaa aw akhta'naa. Rabbanaa wa laa tahmil 'alaynaa isran kamaa hamaltahu 'alal-ladheena min qablinaa. Rabbanaa wa laa tuhammilnaa maa laa taaqata lanaa bih. Wa'fu 'annaa waghfir lanaa warhamnaa. Anta mawlaanaa fansurnaa 'alal-qawmil-kaafireen.</p>
+            <p class="trans-en"><strong>English:</strong> Allah does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. "Our Lord, do not impose blame upon us if we forget or make mistake. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our Protector, so give us victory over the disbelieving people."</p>
+          </div>
+
+          <h2 id="word-by-word">Key phrases — word-by-word meaning</h2>
+          <table class="np-table">
+            <tr><th>Arabic phrase</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>آمَنَ الرَّسُولُ</td><td>Aamanar-rasool</td><td>The Messenger believed — affirming the Prophet's ﷺ complete faith</td></tr>
+            <tr><td>لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ</td><td>Laa nufarriqu...</td><td>We make no distinction between any of His messengers — faith in all prophets equally</td></tr>
+            <tr><td>سَمِعْنَا وَأَطَعْنَا</td><td>Sami'naa wa ata'naa</td><td>We hear and we obey — submission to Allah's commands</td></tr>
+            <tr><td>لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا</td><td>Laa yukallifu...</td><td>Allah does not burden a soul beyond its capacity — divine mercy in accountability</td></tr>
+            <tr><td>لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا</td><td>Laa tu'aakhidhnaa...</td><td>Do not hold us accountable if we forget or make a mistake — forgiveness for human error</td></tr>
+            <tr><td>وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَا</td><td>Wa'fu 'annaa...</td><td>Pardon us, forgive us and have mercy on us — the heart of the closing dua</td></tr>
+          </table>
+
+          <h2 id="hadith">The authentic hadith — why these ayats matter</h2>
+          <div class="gold-box">
+            <p><strong>Al-Bara ibn Azib</strong> (رضي الله عنه) reported that the Prophet ﷺ said about bedtime recitation:</p>
+            <p><em>"When you go to your bed, recite Ayatul Kursi — Allah will appoint a guardian over you and no shaytan (devil) will come near you until morning. And if you recite the last two verses of Surah Al-Baqarah, <strong>they will be sufficient (kafat) for you</strong>."</em></p>
+            <p style="margin-bottom:0;"><strong>Source:</strong> Sahih al-Bukhari 5009, Sahih Muslim 807</p>
+          </div>
+          <p>The word <strong>kafat</strong> (كَفَتْ) means they will be sufficient — covering protection, reward and whatever the reciter needs for that night. This is why millions of Muslims never sleep without these two ayats.</p>
+          <p>Ibn Mas'ud (رضي الله عنه) also narrated that the Prophet ﷺ said these two ayats were given to him from a treasure beneath the Throne (<em>'Arsh</em>) — highlighting their extraordinary status among all verses of the Quran.</p>
+
+          <h2 id="benefits">Benefits of reciting the last two ayats of Surah Baqarah</h2>
+          <ul>
+            <li><strong>Night protection</strong> — paired with Ayatul Kursi in the authentic bedtime hadith (Bukhari 5009)</li>
+            <li><strong>Forgiveness for forgetfulness and mistakes</strong> — the dua explicitly asks Allah not to hold us accountable for nisyan (forgetting) and khata (errors)</li>
+            <li><strong>Relief from unbearable burdens</strong> — Allah only holds us to what is within our capacity (Quran 2:286)</li>
+            <li><strong>Complete affirmation of iman</strong> — faith in Allah, angels, books and all messengers without distinction</li>
+            <li><strong>Closing dua of the longest surah</strong> — Surah Al-Baqarah opens with guidance and closes with mercy and supplication</li>
+            <li><strong>General Quran reward</strong> — every letter recited earns ten good deeds (Tirmidhi 2910)</li>
+          </ul>
+
+          <h2 id="when">When should you recite them?</h2>
+          <table class="np-table">
+            <tr><th>Time</th><th>Why</th></tr>
+            <tr><td><strong>Before sleep</strong></td><td>The primary Sunnah — the hadith specifically mentions "at night" (Bukhari 5009)</td></tr>
+            <tr><td>After Isha prayer</td><td>Many Muslims recite them immediately after the night prayer</td></tr>
+            <tr><td>During Ramadan / after Taraweeh</td><td>Recited when completing Surah Al-Baqarah in congregation</td></tr>
+            <tr><td>When feeling overwhelmed</td><td>Verse 286 reminds us Allah does not burden beyond capacity — recite and make the dua sincerely</td></tr>
+            <tr><td>After completing Surah Al-Baqarah</td><td>Traditional practice when finishing a khatm or personal reading of the surah</td></tr>
+          </table>
+
+          <h2 id="bedtime-routine">Bedtime adhkar — the complete Sunnah routine</h2>
+          <p>The Prophet's ﷺ instruction to Al-Bara ibn Azib gives a clear order for bedtime:</p>
+          <ol>
+            <li>Perform wudu before sleeping if possible</li>
+            <li>Dust the bed lightly with the edge of your garment (Sunnah)</li>
+            <li>Lie on your right side</li>
+            <li>Recite <strong><a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a></strong> (Surah Al-Baqarah 2:255) — protection from Shaytan until morning</li>
+            <li>Recite the <strong>last two ayats of Surah Al-Baqarah</strong> — they will be kafat (sufficient)</li>
+            <li>Many also add the three Quls: <a href="/blog/4-quls">Surah Al-Ikhlas, Al-Falaq and An-Nas</a>, blowing into the hands and wiping over the body as the Prophet ﷺ did</li>
+          </ol>
+
+          <h2 id="meaning-dua">Understanding the closing dua (verse 286)</h2>
+          <p>Verse 286 is one of the most comprehensive duas in the Quran. It teaches us that:</p>
+          <ul>
+            <li><strong>Allah is just but merciful</strong> — you are only accountable for what is within your ability</li>
+            <li><strong>Forgetfulness is human</strong> — we ask Allah not to punish us for honest mistakes and lapses of memory</li>
+            <li><strong>Previous nations carried heavy burdens</strong> — we ask not to be tested like those before us who altered their scriptures and laws</li>
+            <li><strong>We admit our limits</strong> — "do not burden us with what we cannot bear" is humility before Allah</li>
+            <li><strong>We end with mercy</strong> — pardon, forgiveness and rahmah, then trust in Allah as our Mawla (Protector)</li>
+          </ul>
+          <p>Recite this dua slowly and mean every word — especially on nights when anxiety, guilt or overwhelm weigh on your heart. Pair it with our guide to <a href="/blog/dua-for-anxiety-stress-depression">duas for anxiety and stress</a> for a complete spiritual toolkit.</p>
+
+          <h2 id="teach-kids">How to teach children the last two ayats</h2>
+          <ol>
+            <li><strong>Start with the dua part</strong> — verse 286's "Rabbanaa laa tu'aakhidhnaa..." is shorter and more memorable for young children</li>
+            <li><strong>Explain simply:</strong> "We tell Allah we tried our best, please forgive us if we forgot or made a mistake"</li>
+            <li><strong>Listen and repeat</strong> — 5–10 minutes daily with a clear recitation builds fluency fast</li>
+            <li><strong>Make it a bedtime habit</strong> — recite together every night so it becomes automatic like brushing teeth</li>
+            <li><strong>Connect to Ayatul Kursi</strong> — teach both as the "night protection pair" from the Sunnah</li>
+          </ol>
+          <p>Children who learn these ayats early carry a lifelong shield of protection and a deep connection to the Quran. See also our guides on <a href="/blog/duas-for-kids-to-memorize">20 duas for kids</a> and <a href="/blog/surah-mulk-benefits">Surah Mulk before sleep</a>.</p>
+
+          <h2 id="related">Related Quran &amp; dua guides</h2>
+          <ul>
+            <li><a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi — Arabic, English &amp; Benefits</a></li>
+            <li><a href="/blog/4-quls">The 4 Quls — Surah Ikhlas, Falaq &amp; Naas</a></li>
+            <li><a href="/blog/surah-mulk-benefits">Surah Mulk — Benefits &amp; When to Recite</a></li>
+            <li><a href="/blog/dua-for-parents-rabbirhamhuma">Dua for Parents — Rabbirhamhuma</a></li>
+            <li><a href="/blog/how-to-pray-salah-step-by-step">How to Pray Salah Step by Step</a></li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What are the last two ayats of Surah Baqarah?<span>+</span></summary>
+            <p>They are verses 285 and 286 of Surah Al-Baqarah — the closing verses of the longest surah in the Quran. Verse 285 affirms complete faith; verse 286 contains the famous dua asking Allah for forgiveness, mercy and not to burden us beyond our capacity.</p>
+          </details>
+          <details class="faq-acc"><summary>What does kafat mean in the hadith?<span>+</span></summary>
+            <p>Kafat (كَفَتْ) means "they will be sufficient." Scholars explain this covers protection through the night, immense reward, and whatever the believer needs — so reciting these two ayats before sleep is a complete spiritual provision for the night.</p>
+          </details>
+          <details class="faq-acc"><summary>Do I recite Ayatul Kursi before or after the last two ayats?<span>+</span></summary>
+            <p>The hadith of Al-Bara ibn Azib mentions Ayatul Kursi first, then the last two ayats. This is the order most Muslims follow: Ayatul Kursi for protection, then the last two verses as kafat (sufficient).</p>
+          </details>
+          <details class="faq-acc"><summary>Can I recite only the dua part (verse 286)?<span>+</span></summary>
+            <p>The Sunnah is to recite both verses together as the hadith refers to "the last two verses." However, the dua in verse 286 can also be made separately at any time — it is a standalone supplication taught in the Quran itself.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Want your child to learn the last two ayats with correct Tajweed and meaning?</strong> NoorPath Academy teaches Quran memorisation, bedtime adhkar, Noorani Qaida and Islamic Studies in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "dua-for-parents-rabbirhamhuma": {
+    style: ISLAMIC_STYLE,
+    content: `<p>Parents are among the greatest blessings Allah gives us. Islam places them right after worship of Allah Himself — and one of the most powerful ways to honour them is through <strong>dua for parents</strong>. The Quran teaches a short, unforgettable supplication that millions of Muslims recite daily: <strong>Rabbirhamhuma kama rabbayani saghira</strong>.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The best dua for parents in the Quran is from Surah Al-Isra (17:24): <em>"My Lord, have mercy upon them as they raised me when I was small."</em> Recite it after every Salah, in sujood, and whenever you think of your parents — whether they are alive or have passed away. Full Arabic, transliteration and meaning below.
+          </div>
+
+          <h2 id="main-dua">The main dua for parents (Surah Al-Isra 17:24)</h2>
+          <div class="verse-card">
+            <span class="vnum">QURANIC DUA FOR PARENTS · Surah Al-Isra 17:24</span>
+            <div class="arabic">رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا</div>
+            <p class="translit">Rabbir-hamhumaa kamaa rabbayaanee sagheera.</p>
+            <p class="trans-en"><strong>English:</strong> My Lord, have mercy upon them both as they raised me when I was small.</p>
+          </div>
+
+          <h2 id="word-by-word">Word-by-word meaning</h2>
+          <table class="np-table">
+            <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>رَبِّ</td><td>Rabbi</td><td>My Lord — the One who nurtures and sustains</td></tr>
+            <tr><td>ارْحَمْهُمَا</td><td>Irhamhumaa</td><td>Have mercy on both of them (mother and father)</td></tr>
+            <tr><td>كَمَا</td><td>Kamaa</td><td>Just as / in the same way</td></tr>
+            <tr><td>رَبَّيَانِي</td><td>Rabbayaanee</td><td>They raised me, nurtured me, cared for me</td></tr>
+            <tr><td>صَغِيرًا</td><td>Sagheera</td><td>When I was small, weak and completely dependent</td></tr>
+          </table>
+          <p>This dua connects two mercies: your parents' mercy toward you in childhood, and your prayer that Allah's mercy may cover them in return. You can never fully repay parents for sleepless nights, sacrifice and love — but this dua asks Allah, whose mercy is unlimited, to reward them.</p>
+
+          <h2 id="context">Why does the Quran command this dua?</h2>
+          <p>Allah says in Surah Al-Isra:</p>
+          <div class="gold-box">
+            <em>"Your Lord has decreed that you worship none but Him, and that you be dutiful to your parents. If one or both of them reach old age with you, do not say 'uff' to them nor repel them, but speak to them a noble word. And lower to them the wing of humility out of mercy and say: <strong>My Lord, have mercy upon them as they raised me when I was small.</strong>"</em> (Quran 17:23–24)
+          </p>
+          <p>Notice: immediately after commanding worship of Allah alone, Allah commands kindness to parents — then teaches this exact dua. Honouring parents through dua is an act of worship.</p>
+
+          <h2 id="second-dua">Second Quranic dua for parents (Surah Ibrahim 14:41)</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH IBRAHIM 14:41</span>
+            <div class="arabic">رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ</div>
+            <p class="translit">Rabbanaghfir lee wa liwaalidayya wa lil-mu'mineena yawma yaqoomul-hisaab.</p>
+            <p class="trans-en"><strong>English:</strong> Our Lord, forgive me and my parents and the believers on the Day when the account is established.</p>
+          </div>
+          <p>Prophet Ibrahim (عليه السلام) made this dua — asking forgiveness for himself and his parents. It is especially meaningful when praying for deceased parents who need Allah's forgiveness and mercy in the Hereafter.</p>
+
+          <h2 id="living">Dua for parents who are alive</h2>
+          <p>When your parents are still with you, this is the time to maximise your dua and your kindness. Recite Rabbirhamhuma daily and add personal duas such as:</p>
+          <ul>
+            <li>O Allah, grant my parents long life in obedience to You</li>
+            <li>O Allah, cure them if they are ill and ease their pain</li>
+            <li>O Allah, guide them and increase them in faith</li>
+            <li>O Allah, expand their provision and bless their home</li>
+            <li>O Allah, make me a source of comfort, not difficulty, for them</li>
+          </ul>
+          <p>The Prophet ﷺ said: <em>"The pleasure of the Lord lies in the pleasure of the parent, and the displeasure of the Lord lies in the displeasure of the parent."</em> (Tirmidhi 1899). Making dua for them is one of the greatest acts of birr (righteousness).</p>
+
+          <h2 id="deceased">Dua for deceased parents</h2>
+          <p>When a parent passes away, your dua does not stop — it becomes even more important. The Prophet ﷺ said that when a person dies, their deeds end except for three: ongoing charity (sadaqah jariyah), beneficial knowledge, and <strong>a righteous child who prays for them</strong> (Sahih Muslim 1631).</p>
+          <p>For deceased parents, recite:</p>
+          <ul>
+            <li><strong>Rabbirhamhuma kama rabbayani saghira</strong> — asking Allah's mercy</li>
+            <li><strong>Rabbanaghfir lee wa liwaalidayya</strong> — asking forgiveness (Surah Ibrahim 14:41)</li>
+            <li>Personal dua: <em>O Allah, forgive my mother/father, have mercy on them, expand their grave, and admit them to the highest level of Paradise without reckoning</em></li>
+          </ul>
+          <p>Also give sadaqah on their behalf, perform Umrah or Hajj if possible, and stay connected to people they loved. These acts reach them in the grave, by Allah's permission.</p>
+
+          <h2 id="when">When should you recite dua for parents?</h2>
+          <table class="np-table">
+            <tr><th>Time</th><th>Why it matters</th></tr>
+            <tr><td>After every obligatory Salah</td><td>Duas after Salah are among the most likely to be accepted</td></tr>
+            <tr><td>In sujood (prostration)</td><td>The Prophet ﷺ said you are closest to Allah in sujood — make dua then</td></tr>
+            <tr><td>Last third of the night</td><td>Allah descends and answers those who call upon Him (Bukhari 1145)</td></tr>
+            <tr><td>On Jumu'ah (Friday)</td><td>There is an hour on Friday when duas are accepted (Bukhari 935)</td></tr>
+            <tr><td>When you think of them</td><td>Any sincere moment — driving, cooking, before sleep</td></tr>
+            <tr><td>On their birthday or death anniversary</td><td>Increase dua and sadaqah on these days</td></tr>
+          </table>
+
+          <h2 id="benefits">Benefits of making dua for parents</h2>
+          <ul>
+            <li><strong>Ongoing reward (sadaqah jariyah)</strong> — your dua benefits them in this life and the next</li>
+            <li><strong>Forgiveness for you</strong> — birr toward parents is a cause of Allah forgiving the child</li>
+            <li><strong>Acceptance of your duas</strong> — the righteous child's dua for parents is powerful</li>
+            <li><strong>Peace of heart</strong> — knowing you are fulfilling a Quranic command brings tranquillity</li>
+            <li><strong>Teaching the next generation</strong> — when your children see you make dua for your parents, they learn to make dua for you</li>
+          </ul>
+
+          <h2 id="teach-kids">How to teach children the dua for parents</h2>
+          <ol>
+            <li><strong>Explain simply:</strong> "This dua asks Allah to be kind to Mum and Dad because they took care of us when we were little."</li>
+            <li><strong>Break it into parts:</strong> Teach "Rabbirhamhuma" first, then add "kama rabbayani saghira."</li>
+            <li><strong>Listen and repeat:</strong> Play a clear recitation and let your child repeat after it daily.</li>
+            <li><strong>Model it:</strong> Make the dua out loud after Salah so children hear and copy you.</li>
+            <li><strong>Connect to action:</strong> Teach that dua goes with kindness — helping parents, speaking gently, not raising your voice.</li>
+          </ol>
+          <p>Children who learn this dua early develop gratitude and a lifelong habit of honouring parents. Pair it with our guide to <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a> and live Islamic Studies classes where tutors teach duas with meaning and correct pronunciation.</p>
+
+          <h2 id="more-duas">More ways to honour your parents in Islam</h2>
+          <ul>
+            <li>Speak to them with respect — never say "uff" or harsh words (Quran 17:23)</li>
+            <li>Visit them regularly if you live apart; call them often</li>
+            <li>Spend on them when they need — even if they are wealthy, gifts show love</li>
+            <li>Make dua for them by name in every prayer</li>
+            <li>After their death: pray, give sadaqah, and maintain ties with their friends and relatives</li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is the best dua for parents in the Quran?<span>+</span></summary>
+            <p>The dua from Surah Al-Isra (17:24): Rabbirhamhuma kama rabbayani saghira — "My Lord, have mercy upon them as they raised me when I was small." It is the dua Allah Himself teaches in the Quran immediately after commanding kindness to parents.</p>
+          </details>
+          <details class="faq-acc"><summary>Can I make dua for my parents if they are still alive?<span>+</span></summary>
+            <p>Yes — and you should, every day. Ask Allah for their mercy, health, guidance, long life in obedience to Him, and comfort in old age. Living parents benefit directly from your dua and your kindness.</p>
+          </details>
+          <details class="faq-acc"><summary>Does dua reach parents who have passed away?<span>+</span></summary>
+            <p>Yes. The Prophet ﷺ said a righteous child's dua is among the deeds that continue benefiting a parent after death (Sahih Muslim 1631). Sadaqah given on their behalf and beneficial knowledge they taught also reach them.</p>
+          </details>
+          <details class="faq-acc"><summary>How many times should I recite the parents' dua?<span>+</span></summary>
+            <p>There is no fixed number. Recite it daily — especially after Salah — and whenever you think of your parents. Sincerity matters more than counting.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Want your child to learn Quranic duas with correct pronunciation and meaning?</strong> NoorPath Academy teaches <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>, Noorani Qaida, Quran with Tajweed and Islamic Studies in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>`,
+  },
+  "surah-ikhlas-benefits": {
+    style: ISLAMIC_STYLE,
+    content: `<p><strong>Surah Al-Ikhlas</strong> (سورة الإخلاص) — "The Sincerity" or "The Purity" — is the 112th chapter of the Quran. It has only four short verses, yet the Prophet Muhammad ﷺ said it equals <strong>one-third of the Quran</strong> in reward. It is one of the Four Quls, among the first surahs children memorise, and a cornerstone of every Muslim's daily dhikr.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Surah Ikhlas affirms pure Tawheed — that Allah is One, Eternal, and has no partner, parent or child. Recite it in Salah, morning and evening adhkar, and before sleep. The Prophet ﷺ said whoever loves it will enter Paradise. Want your child to memorise Surah Ikhlas with correct Tajweed? <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>
+
+          <h2 id="full-text">Surah Ikhlas — full Arabic, transliteration &amp; English</h2>
+          <div class="verse-card">
+            <span class="vnum">SURAH AL-IKHLAS · 112:1–4 · Juz 30</span>
+            <div class="arabic">قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝ ٱللَّهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ</div>
+            <p class="translit">Qul huwa Allaahu ahad. Allaahus-samad. Lam yalid wa lam yoolad. Wa lam yakun lahu kufuwan ahad.</p>
+            <p class="trans-en"><strong>English:</strong> Say: He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born. And there is none comparable to Him.</p>
+          </div>
+
+          <h2 id="verse-by-verse">Verse-by-verse meaning</h2>
+          <table class="np-table">
+            <tr><th>Verse</th><th>Arabic</th><th>Meaning</th></tr>
+            <tr><td>1</td><td>قُلْ هُوَ ٱللَّهُ أَحَدٌ</td><td><strong>Say: He is Allah, the One</strong> — absolute Oneness (Tawheed). Allah is unique; nothing shares His essence or attributes.</td></tr>
+            <tr><td>2</td><td>ٱللَّهُ ٱلصَّمَدُ</td><td><strong>Allah, the Eternal Refuge (As-Samad)</strong> — the One all creation depends on, who depends on none.</td></tr>
+            <tr><td>3</td><td>لَمْ يَلِدْ وَلَمْ يُولَدْ</td><td><strong>He neither begets nor is born</strong> — He has no children and no parents. This rejects every claim that Allah has a son or partner.</td></tr>
+            <tr><td>4</td><td>وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ</td><td><strong>And there is none comparable to Him</strong> — nothing equals Allah in any way.</td></tr>
+          </table>
+
+          <h2 id="why-one-third">Why does Surah Ikhlas equal one-third of the Quran?</h2>
+          <p>Abu Sa'id al-Khudri (رضي الله عنه) reported that the Prophet ﷺ said to his companions: "Is any one of you unable to recite one-third of the Quran in a night?" They found it hard. He said: <strong>"Qul huwa Allahu ahad is one-third of the Quran."</strong> (Sahih al-Bukhari 5015)</p>
+          <p>Scholars explain that the Quran's message centres on three themes: (1) Tawheed — the Oneness of Allah, (2) rulings and laws, and (3) stories and news. Surah Ikhlas captures the entire theme of Tawheed in four verses — so its reward is like one-third of the Quran.</p>
+
+          <div class="gold-box">
+            <strong>Important:</strong> This means the <em>reward</em> of reciting Surah Ikhlas is like one-third of the Quran — it does not replace reading the rest of the Quran. Keep reciting the whole Book, and add Surah Ikhlas abundantly for extra reward.
+          </div>
+
+          <h2 id="benefits">Benefits of Surah Ikhlas</h2>
+          <ul>
+            <li><strong>Equals one-third of the Quran</strong> in reward (Sahih al-Bukhari 5015).</li>
+            <li><strong>Love of this surah leads to Paradise</strong> — a man loved to recite it in every prayer; the Prophet ﷺ said: "Your love for it will admit you to Paradise." (Sahih al-Bukhari 774)</li>
+            <li><strong>Morning &amp; evening protection</strong> — recite Surah Ikhlas, Al-Falaq and An-Nas three times each morning and evening; they suffice against everything (Tirmidhi, Abu Dawud).</li>
+            <li><strong>Before sleep</strong> — the Prophet ﷺ recited the last three Quls, blew into his hands, and wiped over his body (Sahih al-Bukhari 5017).</li>
+            <li><strong>In every Salah</strong> — it is a perfect short surah after Al-Fatiha, especially for children and beginners.</li>
+            <li><strong>Strengthens Tawheed</strong> — it protects belief from shirk and clarifies who Allah truly is.</li>
+          </ul>
+
+          <h2 id="when">When should you recite Surah Ikhlas?</h2>
+          <ul>
+            <li><strong>In Salah</strong> — after Surah Al-Fatiha in any rakat.</li>
+            <li><strong>Morning and evening</strong> — three times with Al-Falaq and An-Nas.</li>
+            <li><strong>Before sleeping</strong> — as the Prophet ﷺ did.</li>
+            <li><strong>After every obligatory prayer</strong> — many scholars encourage reciting it as part of post-Salah dhikr.</li>
+            <li><strong>Anytime you want reward</strong> — because of its immense virtue, recite it often throughout the day.</li>
+          </ul>
+
+          <h2 id="kids">How to teach Surah Ikhlas to kids</h2>
+          <p>Surah Ikhlas is ideal for children because it is short, rhythmic and full of meaning:</p>
+          <ol>
+            <li><strong>Listen first</strong> — play a clear Qari (e.g. Mishary or Al-Husary) and let your child hear it daily.</li>
+            <li><strong>One verse at a time</strong> — start with "Qul huwa Allahu ahad," then add the next verse when the first is solid.</li>
+            <li><strong>Explain simply</strong> — "Allah is One. He has no mum or dad. Nobody is like Him."</li>
+            <li><strong>Use it in Salah</strong> — once memorised, let them recite it after Al-Fatiha in prayer.</li>
+            <li><strong>Correct Tajweed early</strong> — letters like ح in "Ahad" and ص in "As-Samad" need a live ear. A tutor prevents mistakes that stick for years.</li>
+          </ol>
+          <p>Most children memorise Surah Ikhlas in a few days to one week with short daily practice. Pair it with the other <a href="/blog/4-quls">4 Quls</a> for a complete protection set.</p>
+
+          <h2 id="facts">Key facts about Surah Ikhlas</h2>
+          <table class="np-table">
+            <tr><th>Detail</th><th>Info</th></tr>
+            <tr><td>Chapter number</td><td>112</td></tr>
+            <tr><td>Number of verses</td><td>4</td></tr>
+            <tr><td>Juz (Para)</td><td>30 (Juz Amma)</td></tr>
+            <tr><td>Revelation</td><td>Makki (revealed in Makkah)</td></tr>
+            <tr><td>Also known as</td><td>Surah At-Tawheed, Surah Al-Asas</td></tr>
+            <tr><td>Opens with</td><td>قُلْ (Qul — "Say")</td></tr>
+          </table>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is Surah Ikhlas about?<span>+</span></summary>
+            <p>Surah Ikhlas is entirely about Tawheed — the Oneness of Allah. It teaches that Allah is One, Eternal, without parents or children, and that nothing is comparable to Him. It is the clearest short summary of Islamic belief in the Quran.</p>
+          </details>
+          <details class="faq-acc"><summary>Does Surah Ikhlas really equal one-third of the Quran?<span>+</span></summary>
+            <p>Yes — in reward. The Prophet ﷺ said in Sahih al-Bukhari that "Qul huwa Allahu ahad" is one-third of the Quran. This refers to the reward of recitation, not that you can skip the rest of the Quran.</p>
+          </details>
+          <details class="faq-acc"><summary>How many times should I recite Surah Ikhlas?<span>+</span></summary>
+            <p>There is no fixed daily minimum. Recite it in Salah, three times morning and evening with the other Quls, and before sleep. Reciting it often is highly rewarded because of its virtue.</p>
+          </details>
+          <details class="faq-acc"><summary>Can my child learn Surah Ikhlas online?<span>+</span></summary>
+            <p>Yes. Live 1-on-1 online classes are ideal because a tutor corrects pronunciation in real time. NoorPath Academy teaches Surah Ikhlas, the 4 Quls, Noorani Qaida and Quran with Tajweed — with a free 30-minute trial.</p>
+          </details>
+
+          <div class="highlight-box">
+            <strong>Ready to help your child memorise Surah Ikhlas with correct Tajweed?</strong> NoorPath Academy's certified male and female tutors teach live 1-on-1 Quran classes for kids and adults worldwide. <a href="/online-quran-classes-for-kids">Book your free trial class</a> — no credit card required.
+          </div>`,
+  },
   "dua-e-istikhara": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Dua e Istikhara</strong> is the supplication of seeking guidance from Allah before any important decision — marriage, a job offer, moving abroad, choosing a school, or any matter where the heart hesitates. The Prophet ﷺ taught this dua to his companions "as he would teach them a surah of the Quran" (Sahih al-Bukhari 1162) — showing how central it is to a Muslim's life.</p>
@@ -944,13 +1673,13 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             </div>
             <div class="phrase-card">
               <div class="phrase-arabic">الله أكبر</div>
-              <div class="phrase-name">Allahu Akbar</div>
-              <div class="phrase-meaning">"Allah is the Greatest." Said in prayer, adhan, and moments of amazement.</div>
+              <div class="phrase-name"><a href="/blog/allahu-akbar-meaning-in-english">Allahu Akbar</a></div>
+              <div class="phrase-meaning">"Allah is the Greatest." Said in prayer, adhan, and moments of amazement. <a href="/blog/allahu-akbar-meaning-in-english">Full guide →</a></div>
             </div>
             <div class="phrase-card">
               <div class="phrase-arabic">لا إله إلا الله</div>
-              <div class="phrase-name">La ilaha illallah</div>
-              <div class="phrase-meaning">"There is no god but Allah." The declaration of faith (Tawheed).</div>
+              <div class="phrase-name"><a href="/blog/la-ilaha-illallah-meaning">La ilaha illallah</a></div>
+              <div class="phrase-meaning">"There is no god but Allah." The declaration of faith (Tawheed). <a href="/blog/la-ilaha-illallah-meaning">Full guide →</a></div>
             </div>
             <div class="phrase-card">
               <div class="phrase-arabic">أستغفر الله</div>

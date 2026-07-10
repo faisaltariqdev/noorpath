@@ -59,10 +59,14 @@ const resourceCategories = [
     title: "Duas & Dhikr",
     color: "#c9922a",
     resources: [
+      { title: "Allahu Akbar — Full Meaning", desc: "Arabic, English, when to say it & hadith benefits", href: "/blog/allahu-akbar-meaning-in-english", type: "Article" },
+      { title: "La Ilaha Illallah — Shahada Meaning", desc: "First Kalima, Tawheed & authentic benefits", href: "/blog/la-ilaha-illallah-meaning", type: "Article" },
+      { title: "Dua Before Sleeping — Complete Guide", desc: "Bedtime adhkar, Ayatul Kursi & 3 Quls Sunnah routine", href: "/blog/dua-before-sleeping-islam", type: "Article" },
+      { title: "Morning & Evening Adhkar", desc: "Complete dhikr list — Arabic, transliteration & English", href: "/blog/morning-evening-adhkar-dhikr", type: "Article" },
+      { title: "Evil Eye Dua (Nazar) & Ruqyah", desc: "Protection duas, symptoms & prophetic method", href: "/blog/evil-eye-dua-nazar-ruqyah", type: "Article" },
+      { title: "Last Two Ayats of Surah Baqarah", desc: "Arabic, English, kafat hadith & before-sleep benefits", href: "/blog/last-two-ayahs-surah-baqarah", type: "Article" },
       { title: "20 Essential Duas for Kids", desc: "Daily duas with Arabic, transliteration & English", href: "/blog/duas-for-kids-to-memorize", type: "Article" },
       { title: "Dua e Qunoot — Full Guide", desc: "Arabic text, English meaning, when to recite", href: "/blog/dua-e-qunoot-arabic-english", type: "Article" },
-      { title: "Alhamdulillah — Full Meaning", desc: "Complete explanation with benefits and usage", href: "/blog/alhamdulillah-meaning-in-english", type: "Article" },
-      { title: "Astaghfirullah — Complete Guide", desc: "When to say it, how many times, benefits", href: "/blog/astaghfirullah-meaning", type: "Article" },
     ],
   },
   {
