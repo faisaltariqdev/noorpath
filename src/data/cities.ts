@@ -33,7 +33,7 @@ export const cities: City[] = [
     population: "1.3 million Muslims",
     localContext:
       "London is home to the UK's largest Muslim community, with dense populations in Tower Hamlets, Newham, Redbridge and Ealing. Many London families juggle long commutes and busy school runs, so online Quran classes remove travel time to the local masjid or madrasa. Popular slots are weekday evenings (4–7pm GMT) after school and Saturday mornings.",
-    keywords: ["online quran classes london", "quran teacher london", "quran classes near me london", "learn quran london", "quran tutor london", "islamic classes london"],
+    keywords: ["online quran classes london", "quran teacher london", "quran classes near me london", "learn quran london", "quran tutor london", "islamic classes london", "online quran classes for kids london", "female quran teacher london", "noorani qaida online london"],
   },
   {
     slug: "birmingham",
@@ -49,7 +49,7 @@ export const cities: City[] = [
     population: "340,000 Muslims",
     localContext:
       "Birmingham has one of the highest proportions of Muslims of any UK city, with vibrant communities in Small Heath, Sparkbrook and Alum Rock. Families here value one-on-one online tutoring to give each child focused Tajweed and Hifz attention that busy weekend madrasas cannot always provide.",
-    keywords: ["online quran classes birmingham", "quran teacher birmingham", "quran classes near me birmingham", "learn quran birmingham", "quran tutor birmingham"],
+    keywords: ["online quran classes birmingham", "quran teacher birmingham", "quran classes near me birmingham", "learn quran birmingham", "quran tutor birmingham", "online quran classes for kids birmingham", "female quran teacher birmingham", "hifz classes online birmingham"],
   },
   {
     slug: "manchester",
@@ -65,7 +65,84 @@ export const cities: City[] = [
     population: "220,000 Muslims",
     localContext:
       "Greater Manchester's Muslim community is concentrated in Cheetham Hill, Longsight and Rusholme. With families balancing work and school, online classes let children learn Quran from home with a certified tutor, while parents watch progress each week.",
-    keywords: ["online quran classes manchester", "quran teacher manchester", "quran classes near me manchester", "learn quran manchester", "quran tutor manchester"],
+    keywords: ["online quran classes manchester", "quran teacher manchester", "quran classes near me manchester", "learn quran manchester", "quran tutor manchester", "online quran classes for kids manchester", "female quran teacher manchester"],
+  },
+  {
+    slug: "bradford",
+    city: "Bradford",
+    country: "United Kingdom",
+    countrySlug: "online-quran-classes-uk",
+    flag: "🇬🇧",
+    timezone: "GMT / BST",
+    currency: "£",
+    approxPrice: "£23",
+    rating: "4.9",
+    reviews: "142",
+    population: "150,000+ Muslims",
+    localContext:
+      "Bradford has one of the UK's densest Muslim communities, with strong family traditions of Quran learning. Many parents want 1-on-1 attention that crowded weekend madrasas cannot always give — so after-school online classes (4–7pm GMT) with a fixed tutor have become the preferred option.",
+    keywords: [
+      "online quran classes bradford", "quran teacher bradford", "quran classes near me bradford",
+      "learn quran bradford", "online quran classes for kids bradford", "female quran teacher bradford",
+      "noorani qaida online bradford",
+    ],
+  },
+  {
+    slug: "leeds",
+    city: "Leeds",
+    country: "United Kingdom",
+    countrySlug: "online-quran-classes-uk",
+    flag: "🇬🇧",
+    timezone: "GMT / BST",
+    currency: "£",
+    approxPrice: "£23",
+    rating: "4.9",
+    reviews: "98",
+    population: "80,000+ Muslims",
+    localContext:
+      "Leeds families often balance school clubs and long workdays. Online Quran classes let children learn at home with a certified tutor on a fixed weekly slot — popular windows are weekday evenings and Sunday mornings — without another car journey across the city.",
+    keywords: [
+      "online quran classes leeds", "quran teacher leeds", "quran classes near me leeds",
+      "learn quran leeds", "online quran classes for kids leeds", "female quran teacher leeds",
+    ],
+  },
+  {
+    slug: "leicester",
+    city: "Leicester",
+    country: "United Kingdom",
+    countrySlug: "online-quran-classes-uk",
+    flag: "🇬🇧",
+    timezone: "GMT / BST",
+    currency: "£",
+    approxPrice: "£23",
+    rating: "4.9",
+    reviews: "87",
+    population: "75,000+ Muslims",
+    localContext:
+      "Leicester's diverse Muslim community values both traditional learning and flexible modern options. Parents here often start children on Noorani Qaida online from age 4–5, then progress to Tajweed and short surahs with the same tutor each week.",
+    keywords: [
+      "online quran classes leicester", "quran teacher leicester", "quran classes near me leicester",
+      "learn quran leicester", "online quran classes for kids leicester", "female quran teacher leicester",
+    ],
+  },
+  {
+    slug: "luton",
+    city: "Luton",
+    country: "United Kingdom",
+    countrySlug: "online-quran-classes-uk",
+    flag: "🇬🇧",
+    timezone: "GMT / BST",
+    currency: "£",
+    approxPrice: "£23",
+    rating: "4.9",
+    reviews: "76",
+    population: "50,000+ Muslims",
+    localContext:
+      "Luton has a large Muslim population relative to its size. Families often prefer female tutors for daughters and short 20–30 minute after-school sessions that fit UK school timings — exactly what 1-on-1 online classes are built for.",
+    keywords: [
+      "online quran classes luton", "quran teacher luton", "quran classes near me luton",
+      "learn quran luton", "online quran classes for kids luton", "female quran teacher luton",
+    ],
   },
   // ── United States ───────────────────────────────────────────────
   {
@@ -319,6 +396,22 @@ export const cities: City[] = [
 
 export function getCity(slug: string): City | undefined {
   return cities.find((c) => c.slug === slug);
+}
+
+/** Long-tail commercial keywords layered on every city page (rank + enroll intent). */
+export function getCityKeywords(c: City): string[] {
+  const city = c.city.toLowerCase();
+  return [
+    ...c.keywords,
+    `online quran classes for kids ${city}`,
+    `quran classes for kids ${city}`,
+    `female quran teacher ${city}`,
+    `noorani qaida online ${city}`,
+    `online hifz classes ${city}`,
+    `one to one quran tutor ${city}`,
+    `after school quran classes ${city}`,
+    `learn quran online ${city}`,
+  ];
 }
 
 export function getCitiesByCountrySlug(countrySlug: string): City[] {

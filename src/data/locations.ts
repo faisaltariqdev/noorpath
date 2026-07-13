@@ -43,8 +43,8 @@ export const locations: Location[] = [
     slug: "online-quran-classes-uk",
     flag: "🇬🇧",
     country: "United Kingdom",
-    cities: "London, Birmingham, Manchester, Bradford, Leeds",
-    desc: "Online Quran tutors for UK families — BST and GMT timezone specialists.",
+    cities: "London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton",
+    desc: "Online Quran tutors for UK families — BST and GMT timezone specialists. Kids, female tutors & after-school slots.",
     timezone: "GMT / BST",
     population: "3.9 million Muslims",
     currency: "£",
@@ -54,7 +54,7 @@ export const locations: Location[] = [
     reviews: "548",
     localContext:
       "The UK's largest Muslim communities are in London, Birmingham, Bradford and Manchester. British families most often choose after-school classes between 4pm and 7pm GMT, plus weekend morning slots — a rhythm our UK-timezone tutors are built around.",
-    keywords: ["online quran classes uk", "quran teacher uk", "online quran uk", "islamic classes uk", "learn quran online uk"],
+    keywords: ["online quran classes uk", "quran teacher uk", "online quran uk", "islamic classes uk", "learn quran online uk", "online quran classes for kids uk", "female quran teacher uk", "noorani qaida online uk", "online hifz classes for kids uk", "after school quran classes uk"],
   },
   {
     slug: "online-quran-classes-canada",

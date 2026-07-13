@@ -19,6 +19,41 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "female-quran-teacher-for-kids",
+    title: "Female Quran Teacher for Kids — Safe Hafiza Tutors Online (UK & Worldwide)",
+    description: "Find a certified female Quran teacher for kids online — Hafiza tutors for daughters ages 4–12. Safe 1-on-1 Zoom classes, UK after-school slots, Noorani Qaida to Hifz. Free trial for parents.",
+    category: "Quran Learning",
+    date: "2026-07-13",
+    updatedAt: "2026-07-13",
+    readTime: "10 min",
+    keywords: [
+      "female quran teacher for kids", "female quran teacher for kids uk", "female quran tutor for kids",
+      "hafiza for kids online", "quran teacher for girls online", "female quran classes for children",
+      "online quran teacher for daughters", "lady quran teacher for kids", "safe quran classes for girls",
+      "female noorani qaida teacher", "hafiza tutor for children",
+    ],
+    excerpt:
+      "Parents searching for a female Quran teacher for kids want safety, patience and correct Tajweed. Here is how Hafiza tutors work online, what ages to start, UK/US timing tips, and how to book a free trial with a female teacher.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-hifz-classes-for-kids",
+    title: "Online Hifz Classes for Kids — Age, Schedule, Sabaq System & Free Trial",
+    description: "Online Hifz classes for kids explained: best age to start memorisation, daily Sabaq-Sabqi-Manzil system, how many pages per day, UK/US schedules, and how to begin with a free trial Hafiz/Hafiza tutor.",
+    category: "Quran Learning",
+    date: "2026-07-13",
+    updatedAt: "2026-07-13",
+    readTime: "11 min",
+    keywords: [
+      "online hifz classes for kids", "hifz classes for kids online", "quran memorization for kids online",
+      "online hifz for children", "best age to start hifz", "hifz program for kids",
+      "sabaq sabqi manzil", "online hifz classes uk", "hifz tutor for kids", "how to start hifz for kids",
+    ],
+    excerpt:
+      "Online Hifz for kids only works with the right age, a fixed daily schedule, and the Sabaq–Sabqi–Manzil revision system. This parent guide covers when to start, how much to memorise per day, and how to choose a live Hafiz tutor.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "dua-for-success-exams",
     title: "Dua for Success & Exams — Arabic, English & Powerful Duas from Quran",
     description: "Best dua for success in exams, studies and life: Rabbir zidni ilma, Allahumma la sahla, and more. Full Arabic, transliteration, English meaning, when to recite, and how parents can teach these duas to kids.",

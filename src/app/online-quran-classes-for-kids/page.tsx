@@ -27,13 +27,17 @@ export const metadata: Metadata = {
     "tajweed classes for kids",
     "safe online quran classes",
     "free quran trial for kids",
-    "online quran classes for kids uk",
-    "online quran classes for kids usa",
-    "online quran classes for kids canada",
-    "online quran classes for kids australia",
-    "female quran teacher for kids",
-    "quran classes for children ages 4 to 12",
-  ],
+            "online quran classes for kids uk",
+            "online quran classes for kids usa",
+            "online quran classes for kids canada",
+            "online quran classes for kids australia",
+            "female quran teacher for kids",
+            "quran classes for children ages 4 to 12",
+            "after school quran classes online",
+            "one to one quran classes for kids",
+            "online noorani qaida for kids",
+            "online hifz classes for kids",
+          ],
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes-for-kids" },
   openGraph: {
     title: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial",
@@ -213,6 +217,15 @@ export default function OnlineQuranClassesForKidsPage() {
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial for Your Child →</Link>
+            <a
+              href={`https://wa.me/923124877906?text=${encodeURIComponent("Assalamu Alaikum, I want to book a FREE Quran trial class for my child. Please share kids class details.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-np"
+              style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
+            >
+              WhatsApp Us
+            </a>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View Pricing</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
               <Star size={14} fill="var(--gold)" color="var(--gold)" /> 4.9/5 from 2,400+ families
@@ -366,6 +379,11 @@ export default function OnlineQuranClassesForKidsPage() {
                 ["/locations/online-quran-classes-usa", "Quran Classes USA"],
                 ["/locations/online-quran-classes-canada", "Quran Classes Canada"],
                 ["/locations/online-quran-classes-australia", "Quran Classes Australia"],
+                ["/online-quran-classes/london", "Kids Classes London"],
+                ["/online-quran-classes/birmingham", "Kids Classes Birmingham"],
+                ["/online-quran-classes/bradford", "Kids Classes Bradford"],
+                ["/online-quran-classes/manchester", "Kids Classes Manchester"],
+                ["/female-quran-teacher-online", "Female Teacher for Girls"],
               ].map(([href, label]) => (
                 <Link key={href} href={href} style={{
                   background: "#fff", border: "1px solid var(--emerald)", borderRadius: 50,

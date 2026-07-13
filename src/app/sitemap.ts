@@ -43,6 +43,8 @@ const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
 
 /** Commercial blogs that drive student enrollment */
 const COMMERCIAL_BLOG_SLUGS = new Set([
+  "female-quran-teacher-for-kids",
+  "online-hifz-classes-for-kids",
   "online-quran-classes-for-kids-parent-guide",
   "learn-quran-online-adult-beginner-guide",
   "best-online-quran-academy-guide",
@@ -50,6 +52,7 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "how-to-teach-quran-to-kids",
   "best-age-to-start-quran-learning",
   "how-long-to-memorize-quran",
+  "online-quran-classes-uk-kids-guide",
 ]);
 
 /** Root-level keyword landing pages (Qutor-style commercial URLs) */

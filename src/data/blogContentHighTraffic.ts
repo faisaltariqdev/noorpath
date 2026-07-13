@@ -21,6 +21,92 @@ const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151
   @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } }`;
 
 export const highTrafficBlogContent: Record<string, { style: string; content: string }> = {
+  "female-quran-teacher-for-kids": {
+    style: S,
+    content: `<p>Parents searching for a <strong>female Quran teacher for kids</strong> want three things: a safe learning space for daughters, a patient Hafiza who understands children, and correct Tajweed from day one. Online 1-on-1 classes make that combination available in every timezone — including UK after-school hours.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Yes — you can book a certified <strong>female Quran teacher (Hafiza)</strong> for girls ages 4–12 for live Zoom classes. Sessions are private, parent-monitored, and cover Noorani Qaida through Hifz. <a href="/female-quran-teacher-online">See female tutors</a> or <a href="/online-quran-classes-for-kids">book a kids free trial</a> and request a female teacher.
+          </div>
+
+          <h2 id="why">Why parents choose a female tutor for daughters</h2>
+          <ul>
+            <li><strong>Comfort:</strong> many girls focus better with a sister teacher.</li>
+            <li><strong>Family preference:</strong> parents want a fully female teaching environment.</li>
+            <li><strong>Role model:</strong> seeing a Hafiza who completed memorisation inspires girls.</li>
+            <li><strong>Safety:</strong> Zoom/Meet only, no private chat, parents can observe anytime.</li>
+          </ul>
+
+          <h2 id="age">Best age to start with a female teacher</h2>
+          <table class="np-table">
+            <tr><th>Age</th><th>Session length</th><th>Focus</th></tr>
+            <tr><td>4–6</td><td>20–25 min</td><td>Letters, sounds, short duas — play-based</td></tr>
+            <tr><td>7–9</td><td>30 min</td><td>Noorani Qaida, Al-Fatiha, basic Tajweed</td></tr>
+            <tr><td>10–12</td><td>35–45 min</td><td>Fluent reading, Tajweed, optional Hifz start</td></tr>
+          </table>
+
+          <h2 id="uk">Female Quran teacher for kids in the UK</h2>
+          <p>UK families usually book <strong>4–7pm GMT/BST</strong> after school. Popular cities include London, Birmingham, Manchester, Bradford, Leeds and Leicester — but because classes are online, any UK postcode works. See also <a href="/locations/online-quran-classes-uk">online Quran classes UK</a> and city pages like <a href="/online-quran-classes/london">London</a> and <a href="/online-quran-classes/bradford">Bradford</a>.</p>
+
+          <h2 id="what">What your daughter will learn</h2>
+          <ol>
+            <li>Arabic alphabet with correct Makharij</li>
+            <li>Noorani Qaida → joining letters → Quran reading</li>
+            <li>Short surahs and daily duas</li>
+            <li>Tajweed rules applied in recitation</li>
+            <li>Optional Hifz with Sabaq–Sabqi–Manzil revision</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>How to book:</strong> On the free trial form, write “female tutor for daughter, age X, UK evenings” (or your country). We match within 24 hours. No credit card for the trial.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Ready to meet a Hafiza tutor?</strong> <a href="/female-quran-teacher-online#cta">Book a free female-teacher trial</a> or message us on WhatsApp from any kids class page.
+          </div>`,
+  },
+  "online-hifz-classes-for-kids": {
+    style: S,
+    content: `<p><strong>Online Hifz classes for kids</strong> let children memorise the Quran at home with a live Hafiz or Hafiza — using the same Sabaq–Sabqi–Manzil system used in traditional Hifz schools, without daily travel.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Start Hifz when your child can read Quran with basic fluency (often ages 7–10). Online Hifz needs 5–6 short sessions per week plus home revision. <a href="/courses/hifz-program-online">Hifz program details</a> · <a href="/online-quran-classes-for-kids">kids free trial</a>.
+          </div>
+
+          <h2 id="age">Best age to start online Hifz</h2>
+          <ul>
+            <li><strong>Ideal:</strong> 7–10 after Noorani Qaida and fluent Juz Amma reading.</li>
+            <li><strong>Earlier:</strong> short surah memorisation is fine at 5–6, but full Hifz needs reading skill.</li>
+            <li><strong>Later:</strong> ages 11–14 often progress faster if motivated.</li>
+          </ul>
+          <p>Related guide: <a href="/blog/best-age-to-start-quran-learning">best age to start Quran learning</a> and <a href="/blog/how-long-to-memorize-quran">how long to memorize the Quran</a>.</p>
+
+          <h2 id="system">The Sabaq–Sabqi–Manzil system</h2>
+          <table class="np-table">
+            <tr><th>Layer</th><th>Meaning</th><th>Parent tip</th></tr>
+            <tr><td>Sabaq</td><td>Today's new lines</td><td>Keep new portion small and solid</td></tr>
+            <tr><td>Sabqi</td><td>Recent days' memorisation</td><td>Revise before adding more</td></tr>
+            <tr><td>Manzil</td><td>Older completed Juz</td><td>Weekly cycle so nothing is forgotten</td></tr>
+          </table>
+
+          <h2 id="schedule">Sample weekly schedule (kids)</h2>
+          <ul>
+            <li>5–6 live lessons × 25–40 minutes</li>
+            <li>10–15 minutes home revision on non-lesson days</li>
+            <li>UK: often 5–6pm GMT after school; weekends for catch-up</li>
+          </ul>
+
+          <h2 id="pages">How many pages per day?</h2>
+          <p>Ages 7–9: a few lines to half a page. Ages 10–12: half to one page when retention is strong. Quality beats speed — rushing creates weak Hifz that collapses under exam pressure.</p>
+
+          <div class="gold-box">
+            <strong>Female Hifz tutors:</strong> Daughters can memorise with a certified Hafiza. Request “female Hifz tutor” on your trial form — see <a href="/blog/female-quran-teacher-for-kids">female Quran teacher for kids</a>.
+          </div>
+
+          <div class="highlight-box">
+            <strong>Is your child ready for Hifz?</strong> Book a free assessment lesson — the tutor checks reading level and recommends a realistic timeline. <a href="/online-quran-classes-for-kids#cta">Start free trial</a>.
+          </div>`,
+  },
   "dua-for-success-exams": {
     style: S,
     content: `<p>A <strong>dua for success</strong> is one of the most searched Islamic duas worldwide — especially before exams, job interviews, and life goals. Islam does not separate effort from tawakkul: you study hard, then ask Allah to open what you cannot open alone.</p>

@@ -27,6 +27,14 @@ export function getLocationFaqs(loc: Location) {
       q: `Are female Quran teachers available in ${loc.country}?`,
       a: `Absolutely. NoorPath Academy has certified female Quran teachers (Hafiza) available for sisters and daughters in ${loc.country}. Request a female tutor when booking your free trial class.`,
     },
+    {
+      q: `Do you offer after-school online Quran classes in ${loc.country}?`,
+      a: `Yes. Most families in ${loc.country} book after-school and evening slots in ${loc.timezone}. Your child's weekly time stays fixed. Weekend mornings are also popular for Hifz and siblings.`,
+    },
+    {
+      q: `Can my child start Noorani Qaida or Hifz online in ${loc.country}?`,
+      a: `Yes. Beginners start with Noorani Qaida; children who already read fluently can join structured online Hifz with the Sabaq–Sabqi–Manzil system. Book a free trial to assess the right track.`,
+    },
   ];
 }
 
@@ -56,7 +64,13 @@ export function getLocationKeywords(loc: Location): string[] {
     `tajweed classes online ${country}`,
     `hifz program online ${country}`,
     `quran classes for kids ${country}`,
+    `online quran classes for kids ${country}`,
+    `online quran classes for kids ${short}`,
     `female quran teacher ${country}`,
+    `female quran teacher for kids ${short}`,
+    `online hifz classes for kids ${short}`,
+    `after school quran classes ${short}`,
+    `one to one quran tutor online ${short}`,
     `online quran learning ${country}`,
   ];
 }

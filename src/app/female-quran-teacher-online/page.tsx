@@ -16,6 +16,8 @@ export const metadata: Metadata = {
     "online quran for women", "female quran teacher uk", "female quran teacher usa",
     "quran classes for ladies", "lady quran teacher online", "female islamic teacher online",
     "online quran classes for females", "hafiza online classes", "female hifz teacher online",
+    "female quran teacher for kids", "female quran teacher for kids uk",
+    "female quran tutor for daughters", "hafiza for kids online", "girl quran teacher online",
   ],
   alternates: { canonical: "https://www.noorpath.online/female-quran-teacher-online" },
   openGraph: {
@@ -131,10 +133,36 @@ export default function FemaleQuranTeacherPage() {
         <div className="max-w-[1200px] mx-auto px-4">
 
           {/* Quick Answer */}
-          <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 40, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
+          <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             Yes — NoorPath Academy has <strong>certified female Quran teachers (Hafiza)</strong> available for sisters and daughters of all ages worldwide. Classes are live 1-on-1 via Zoom, private, and fully female-only. The first 30-minute lesson is free.{" "}
             <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+          </div>
+
+          <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 10 }}>
+              Female Quran Teacher for Kids (UK &amp; Worldwide)
+            </h2>
+            <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: 12 }}>
+              Looking for a <strong>female Quran teacher for kids</strong>? Daughters ages 4–12 can learn Noorani Qaida, Tajweed and Hifz with a certified Hafiza —
+              including UK after-school slots (4–7pm GMT). Parents observe freely. Read our full guide:{" "}
+              <Link href="/blog/female-quran-teacher-for-kids" style={{ color: "var(--emerald)", fontWeight: 700 }}>Female Quran Teacher for Kids</Link>
+              {" · "}
+              <Link href="/blog/online-hifz-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 700 }}>Online Hifz for Kids</Link>.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+              {[
+                ["/online-quran-classes/london", "London"],
+                ["/online-quran-classes/birmingham", "Birmingham"],
+                ["/online-quran-classes/bradford", "Bradford"],
+                ["/online-quran-classes/manchester", "Manchester"],
+                ["/locations/online-quran-classes-uk", "All UK"],
+              ].map(([href, label]) => (
+                <Link key={href} href={href} style={{ fontSize: ".8rem", fontWeight: 600, color: "var(--emerald)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: 20, padding: "5px 12px", background: "#fff" }}>
+                  {label}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Trust Stats */}
