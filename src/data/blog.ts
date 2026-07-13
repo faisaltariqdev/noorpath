@@ -11,6 +11,8 @@ export interface BlogPost {
   author: string;
   authorTitle: string;
   authorSlug: string;
+  /** Optional social / article cover (path under /public) */
+  coverImage?: string;
 }
 
 const AUTHOR = "Faisal Tariq";
@@ -35,6 +37,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Parents searching for a female Quran teacher for kids want safety, patience and correct Tajweed. Here is how Hafiza tutors work online, what ages to start, UK/US timing tips, and how to book a free trial with a female teacher.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+    coverImage: "/marketing/female-hafiza-tutor.jpg",
   },
   {
     slug: "online-hifz-classes-for-kids",
@@ -52,6 +55,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Online Hifz for kids only works with the right age, a fixed daily schedule, and the Sabaq–Sabqi–Manzil revision system. This parent guide covers when to start, how much to memorise per day, and how to choose a live Hafiz tutor.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+    coverImage: "/marketing/kids-hifz-memorisation.jpg",
   },
   {
     slug: "dua-for-success-exams",

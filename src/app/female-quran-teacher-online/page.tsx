@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
@@ -24,13 +25,13 @@ export const metadata: Metadata = {
     title: "Female Quran Teacher Online — Certified Hafiza Tutors | NoorPath Academy",
     description: "Certified female Quran teachers for sisters, daughters & female learners worldwide. Safe 1-on-1 Quran classes online. Free 30-min trial.",
     url: "https://www.noorpath.online/female-quran-teacher-online",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Female Quran Teacher Online — NoorPath Academy" }],
+    images: [{ url: "/marketing/female-hafiza-tutor.jpg", width: 1200, height: 800, alt: "Female Quran Teacher Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Female Quran Teacher Online | Certified Hafiza Tutors | NoorPath Academy",
     description: "Safe, comfortable 1-on-1 Quran classes for sisters & daughters. Hafiza-certified. Free trial.",
-    images: ["/og-image.png"],
+    images: ["/marketing/female-hafiza-tutor.jpg"],
   },
 };
 
@@ -137,6 +138,71 @@ export default function FemaleQuranTeacherPage() {
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             Yes — NoorPath Academy has <strong>certified female Quran teachers (Hafiza)</strong> available for sisters and daughters of all ages worldwide. Classes are live 1-on-1 via Zoom, private, and fully female-only. The first 30-minute lesson is free.{" "}
             <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
+            <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid var(--border)" }}>
+              <Image
+                src="/marketing/female-hafiza-tutor.jpg"
+                alt="Certified female Hafiza teaching a girl Quran online"
+                width={900}
+                height={600}
+                priority
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </div>
+            <div>
+              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 12 }}>
+                A safe, sister-only classroom
+              </h2>
+              <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 14 }}>
+                Every lesson is private Zoom with a Hafiza tutor — no male presence, no group chat rooms.
+                Ideal for daughters, teenage girls, and adult sisters returning to Quran.
+              </p>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                {[
+                  "Background-verified Hafiza / Ijazah tutors",
+                  "Parents can observe kids' sessions anytime",
+                  "UK after-school + worldwide evening slots",
+                  "Qaida → Tajweed → Hifz with the same teacher",
+                ].map((t) => (
+                  <li key={t} style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: ".9rem", color: "var(--slate)" }}>
+                    <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} /> {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="content-card" style={{ marginBottom: 32 }}>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", marginBottom: 8 }}>Female learning path — data parents ask for</h2>
+            <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 14, lineHeight: 1.6 }}>Typical progress when classes are consistent (3–5× / week).</p>
+            <div style={{ overflowX: "auto" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".85rem" }}>
+                <thead>
+                  <tr style={{ background: "var(--emerald)", color: "#fff" }}>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Learner</th>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Session</th>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>First month</th>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>By month 6</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Girls 4–6", "20–25 min", "Letters + short duas", "Qaida words + Fatiha start"],
+                    ["Girls 7–12", "30–40 min", "Qaida / short surahs", "Independent reading + Tajweed"],
+                    ["Teen girls", "35–45 min", "Tajweed diagnosis", "Fluent Salah surahs / Hifz option"],
+                    ["Adult sisters", "30–45 min", "Confidence + basics", "Personal Quran goals met"],
+                  ].map((row) => (
+                    <tr key={row[0]} style={{ borderBottom: "1px solid var(--border)" }}>
+                      {row.map((cell, i) => (
+                        <td key={i} style={{ padding: "10px 12px", fontWeight: i === 0 ? 700 : 400, color: i === 0 ? "var(--charcoal)" : "var(--muted)" }}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>

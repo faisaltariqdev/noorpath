@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+  const ogImage = post.coverImage ?? "/og-image.png";
   return {
     title: post.title,
     description: post.description,
@@ -37,13 +38,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: post.updatedAt ?? post.date,
       authors: [post.author],
       siteName: "NoorPath Academy",
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: post.title }],
+      images: [{ url: ogImage, width: 1200, height: 800, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image" as const,
       title: post.title,
       description: post.description,
-      images: ["/og-image.png"],
+      images: [ogImage],
     },
   };
 }
@@ -58,6 +59,9 @@ export default async function BlogPostPage({ params }: Props) {
     .slice(0, 3);
 
   const richContent = blogContent[slug];
+  const articleImage = post.coverImage
+    ? `https://www.noorpath.online${post.coverImage}`
+    : "https://www.noorpath.online/og-image.png";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -69,7 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
         description: post.description,
         datePublished: post.date,
         dateModified: post.updatedAt ?? post.date,
-        image: { "@type": "ImageObject", url: "https://www.noorpath.online/og-image.png", width: 1200, height: 630 },
+        image: { "@type": "ImageObject", url: articleImage, width: 1200, height: 800 },
         author: {
           "@type": "Person",
           name: post.author,

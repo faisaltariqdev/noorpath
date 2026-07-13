@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { cities, getCity, getCityKeywords } from "@/data/cities";
 import { getLocation } from "@/data/locations";
@@ -32,13 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Online Quran Classes in ${c.city} | Kids & Adults | NoorPath`,
       description,
       url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Online Quran Classes ${c.city}` }],
+      images: [{ url: "/marketing/family-evening-quran.jpg", width: 1200, height: 800, alt: `Online Quran Classes ${c.city}` }],
     },
     twitter: {
       card: "summary_large_image",
       title: `Online Quran Classes in ${c.city} | NoorPath`,
       description: `Certified online Quran tutors for families in ${c.city}. Free trial available.`,
-      images: ["/og-image.png"],
+      images: ["/marketing/family-evening-quran.jpg"],
     },
   };
 }
@@ -197,7 +198,25 @@ export default async function CityPage({ params }: Props) {
         </div>
       </div>
 
-      <section style={{ padding: "56px 0" }}>
+      {/* Visual strip */}
+      <section style={{ padding: "36px 0 0", background: "var(--ivory)" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { src: "/marketing/kids-online-quran-class.jpg", alt: `Kids online Quran class for families in ${c.city}`, caption: "Kids · live 1-on-1" },
+              { src: "/marketing/female-hafiza-tutor.jpg", alt: `Female Quran teacher for daughters in ${c.city}`, caption: "Female Hafiza tutors" },
+              { src: "/marketing/kids-hifz-memorisation.jpg", alt: `Online Hifz memorisation for kids in ${c.city}`, caption: "Hifz & memorisation" },
+            ].map((img) => (
+              <figure key={img.src} style={{ margin: 0, position: "relative", borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)", background: "#fff" }}>
+                <Image src={img.src} alt={img.alt} width={800} height={534} style={{ width: "100%", height: 200, objectFit: "cover", display: "block" }} />
+                <figcaption style={{ padding: "10px 14px", fontSize: ".82rem", fontWeight: 700, color: "var(--charcoal)" }}>{img.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: "40px 0 56px", background: "var(--ivory)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
@@ -224,6 +243,53 @@ export default async function CityPage({ params }: Props) {
                     <p style={{ fontSize: ".82rem", color: "var(--muted)", margin: 0, lineHeight: 1.55 }}>{card.desc}</p>
                   </div>
                 ))}
+              </div>
+
+              <div className="content-card" style={{ marginBottom: 28 }}>
+                <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 8 }}>
+                  {c.city} Parent Snapshot — Real Numbers
+                </h2>
+                <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 16, lineHeight: 1.6 }}>
+                  Typical outcomes for families who stay consistent for 3–6 months (live classes + short home practice).
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                  {[
+                    { v: "4–12", l: "Kids age range" },
+                    { v: "20–45m", l: "Session length" },
+                    { v: c.approxPrice, l: "From / month" },
+                    { v: "30 min", l: "Free trial" },
+                  ].map((s) => (
+                    <div key={s.l} style={{ textAlign: "center", background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "14px 8px" }}>
+                      <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.15rem" }}>{s.v}</div>
+                      <div style={{ fontSize: ".72rem", color: "var(--muted)", marginTop: 2 }}>{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".85rem" }}>
+                    <thead>
+                      <tr style={{ background: "var(--emerald)", color: "#fff" }}>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Path</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Week 1–4</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Month 3</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Month 6+</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ["Beginner kids", "Arabic letters + 2–3 duas", "Joining words (Qaida)", "Short surahs + Fatiha"],
+                        ["Tajweed", "Makharij check", "Core rules in reading", "Fluent, beautiful recitation"],
+                        ["Hifz track", "Reading readiness test", "Daily Sabaq habit", "Steady Juz progress"],
+                      ].map((row) => (
+                        <tr key={row[0]} style={{ borderBottom: "1px solid var(--border)" }}>
+                          {row.map((cell, i) => (
+                            <td key={i} style={{ padding: "10px 12px", color: i === 0 ? "var(--charcoal)" : "var(--muted)", fontWeight: i === 0 ? 700 : 400 }}>{cell}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               {country && (
@@ -314,6 +380,20 @@ export default async function CityPage({ params }: Props) {
             </div>
 
             <div>
+              <div className="content-card" style={{ marginBottom: 20, padding: 0, overflow: "hidden" }}>
+                <Image
+                  src="/marketing/family-evening-quran.jpg"
+                  alt={`Family evening online Quran class in ${c.city}`}
+                  width={800}
+                  height={534}
+                  style={{ width: "100%", height: 180, objectFit: "cover", display: "block" }}
+                />
+                <div style={{ padding: "16px 18px" }}>
+                  <p style={{ fontSize: ".85rem", color: "var(--muted)", margin: 0, lineHeight: 1.55 }}>
+                    After-school Quran at home in {c.city} — no madrasa travel, fixed weekly slot in {c.timezone}.
+                  </p>
+                </div>
+              </div>
               <div className="content-card" style={{ marginBottom: 20 }}>
                 <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 14 }}>
                   <Clock size={16} style={{ display: "inline", marginRight: 6, color: "var(--emerald)" }} />

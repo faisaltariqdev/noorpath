@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
@@ -44,13 +45,13 @@ export const metadata: Metadata = {
     description:
       "Certified tutors teach kids ages 4–12 via live 1-on-1 Zoom classes. Noorani Qaida, Tajweed, Hifz. Parent-monitored, flexible scheduling. Book free trial.",
     url: "https://www.noorpath.online/online-quran-classes-for-kids",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
+    images: [{ url: "/marketing/kids-online-quran-class.jpg", width: 1200, height: 800, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes for Kids — Free Trial",
     description: "1-on-1 live Quran classes for kids. Certified tutors, ages 4–12. No credit card.",
-    images: ["/og-image.png"],
+    images: ["/marketing/kids-online-quran-class.jpg"],
   },
 };
 
@@ -248,11 +249,66 @@ export default function OnlineQuranClassesForKidsPage() {
         </div>
       </div>
 
+      {/* Hero visual + snapshot */}
+      <section style={{ padding: "40px 0 0" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
+            <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid var(--border)", position: "relative" }}>
+              <Image
+                src="/marketing/kids-online-quran-class.jpg"
+                alt="Child learning Quran online with a live tutor on Zoom"
+                width={900}
+                height={600}
+                priority
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </div>
+            <div>
+              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.55rem", color: "var(--charcoal)", marginBottom: 12 }}>
+                What a kids class looks like
+              </h2>
+              <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 16 }}>
+                Your child sits at home with a Qaida or Quran, joins Zoom, and spends the full session reciting with a certified tutor —
+                not watching a recording. Parents can sit nearby for the first weeks.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { v: "85%+", l: "Trial → paid plan" },
+                  { v: "1 tutor", l: "Same teacher weekly" },
+                  { v: "3–5×", l: "Classes / week ideal" },
+                  { v: "0 card", l: "Needed for trial" },
+                ].map((x) => (
+                  <div key={x.l} style={{ background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "14px 12px" }}>
+                    <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.1rem" }}>{x.v}</div>
+                    <div style={{ fontSize: ".75rem", color: "var(--muted)" }}>{x.l}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            {[
+              { src: "/marketing/female-hafiza-tutor.jpg", alt: "Female Hafiza teaching a girl Quran online", title: "Female tutor option", desc: "Daughters can learn with a certified Hafiza — private Zoom." },
+              { src: "/marketing/kids-hifz-memorisation.jpg", alt: "Child memorising Quran at home for Hifz", title: "Hifz for kids", desc: "Sabaq–Sabqi–Manzil system once reading is fluent." },
+              { src: "/marketing/family-evening-quran.jpg", alt: "Family evening online Quran learning at home", title: "After-school slots", desc: "UK evenings, US after-school, AU weekends — fixed weekly." },
+            ].map((card) => (
+              <figure key={card.src} className="content-card" style={{ margin: 0, padding: 0, overflow: "hidden" }}>
+                <Image src={card.src} alt={card.alt} width={700} height={467} style={{ width: "100%", height: 160, objectFit: "cover", display: "block" }} />
+                <figcaption style={{ padding: "14px 16px" }}>
+                  <div style={{ fontWeight: 700, fontSize: ".92rem", color: "var(--charcoal)", marginBottom: 4 }}>{card.title}</div>
+                  <p style={{ fontSize: ".82rem", color: "var(--muted)", margin: 0, lineHeight: 1.5 }}>{card.desc}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section>
         <div className="max-w-[1200px] mx-auto px-4">
 
           {/* WHY NOORPATH */}
-          <div style={{ textAlign: "center", marginBottom: 48, marginTop: 56 }}>
+          <div style={{ textAlign: "center", marginBottom: 48, marginTop: 40 }}>
             <span className="section-eyebrow">🌙 Why Parents Choose NoorPath</span>
             <h2 className="section-title">The Best Online Quran Classes for <em className="accent">Kids</em> — Built for Real Families</h2>
             <p style={{ color: "var(--muted)", maxWidth: 680, margin: "12px auto 0", lineHeight: 1.7 }}>
@@ -282,7 +338,7 @@ export default function OnlineQuranClassesForKidsPage() {
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
             Quran Learning by Age — What to Expect
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
               ["Ages 4–6", "20–25 min sessions", "Arabic letters through games, colours, and short duas. Building love for Quran before any academic pressure. Focus on fun engagement and letter recognition."],
               ["Ages 7–9", "30 min sessions", "Noorani Qaida completion, Surah Al-Fatiha, basic Tajweed rules, daily duas and Islamic manners. Children begin reading the Quran independently."],
@@ -294,6 +350,31 @@ export default function OnlineQuranClassesForKidsPage() {
                 <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, margin: 0 }}>{desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="content-card" style={{ marginBottom: 48 }}>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 8 }}>Parent success checklist</h2>
+            <p style={{ color: "var(--muted)", fontSize: ".9rem", marginBottom: 16, lineHeight: 1.6 }}>
+              Families who hit these five points see the fastest progress in the first 90 days.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {[
+                ["Fixed weekly slot", "Same days/times — kids learn by habit"],
+                ["Quiet corner", "Tablet + headphones beat a noisy living room"],
+                ["Short home practice", "5–10 minutes on off-days beats cramming"],
+                ["Female tutor if preferred", "Request on the trial form for daughters"],
+                ["Weekly report read", "Ask the tutor one clarifying question each week"],
+                ["Sibling plan early", "Family discount up to 20% for 2+ kids"],
+              ].map(([t, d]) => (
+                <div key={t} style={{ display: "flex", gap: 10, padding: "12px 14px", background: "rgba(10,110,79,.04)", borderRadius: 10 }}>
+                  <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} />
+                  <div>
+                    <div style={{ fontWeight: 700, fontSize: ".88rem", color: "var(--charcoal)" }}>{t}</div>
+                    <div style={{ fontSize: ".8rem", color: "var(--muted)" }}>{d}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* CURRICULUM TABLE */}

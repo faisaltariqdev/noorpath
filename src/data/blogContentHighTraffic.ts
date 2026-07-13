@@ -18,15 +18,34 @@ const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151
   .arabic { font-family: var(--font-amiri, 'Amiri', serif); direction: rtl; text-align: right; font-size: 1.9rem; line-height: 2.5; color: var(--charcoal); margin: 10px 0; }
   .translit { font-style: italic; color: var(--emerald); font-weight: 600; margin: 8px 0; }
   .trans-en { color: #374151; margin: 8px 0; }
-  @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } }`;
+  .article-figure { margin: 28px 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: #fff; }
+  .article-figure img { width: 100%; height: auto; display: block; }
+  .article-figure figcaption { padding: 12px 16px; font-size: .85rem; color: var(--muted); line-height: 1.5; }
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 24px 0; }
+  .stat-pill { text-align: center; background: rgba(10,110,79,.05); border-radius: 12px; padding: 14px 8px; }
+  .stat-pill strong { display: block; color: var(--emerald); font-size: 1.15rem; }
+  .stat-pill span { font-size: .72rem; color: var(--muted); }
+  @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } .stat-row { grid-template-columns: 1fr 1fr; } }`;
 
 export const highTrafficBlogContent: Record<string, { style: string; content: string }> = {
   "female-quran-teacher-for-kids": {
     style: S,
     content: `<p>Parents searching for a <strong>female Quran teacher for kids</strong> want three things: a safe learning space for daughters, a patient Hafiza who understands children, and correct Tajweed from day one. Online 1-on-1 classes make that combination available in every timezone — including UK after-school hours.</p>
 
+          <figure class="article-figure">
+            <img src="/marketing/female-hafiza-tutor.jpg" alt="Certified female Hafiza tutor teaching a girl Quran online via Zoom" width="1200" height="800" loading="eager" />
+            <figcaption>A private Zoom class with a Hafiza tutor — parents can observe from the same room.</figcaption>
+          </figure>
+
           <div class="highlight-box">
             <strong>Quick answer:</strong> Yes — you can book a certified <strong>female Quran teacher (Hafiza)</strong> for girls ages 4–12 for live Zoom classes. Sessions are private, parent-monitored, and cover Noorani Qaida through Hifz. <a href="/female-quran-teacher-online">See female tutors</a> or <a href="/online-quran-classes-for-kids">book a kids free trial</a> and request a female teacher.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>4–12</strong><span>Ideal ages</span></div>
+            <div class="stat-pill"><strong>20–45m</strong><span>Session length</span></div>
+            <div class="stat-pill"><strong>100%</strong><span>Female sessions</span></div>
+            <div class="stat-pill"><strong>30 min</strong><span>Free trial</span></div>
           </div>
 
           <h2 id="why">Why parents choose a female tutor for daughters</h2>
@@ -39,14 +58,28 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <h2 id="age">Best age to start with a female teacher</h2>
           <table class="np-table">
-            <tr><th>Age</th><th>Session length</th><th>Focus</th></tr>
-            <tr><td>4–6</td><td>20–25 min</td><td>Letters, sounds, short duas — play-based</td></tr>
-            <tr><td>7–9</td><td>30 min</td><td>Noorani Qaida, Al-Fatiha, basic Tajweed</td></tr>
-            <tr><td>10–12</td><td>35–45 min</td><td>Fluent reading, Tajweed, optional Hifz start</td></tr>
+            <tr><th>Age</th><th>Session length</th><th>Focus</th><th>Parent tip</th></tr>
+            <tr><td>4–6</td><td>20–25 min</td><td>Letters, sounds, short duas — play-based</td><td>Sit nearby for the first 2–4 weeks</td></tr>
+            <tr><td>7–9</td><td>30 min</td><td>Noorani Qaida, Al-Fatiha, basic Tajweed</td><td>Ask for a weekly written progress note</td></tr>
+            <tr><td>10–12</td><td>35–45 min</td><td>Fluent reading, Tajweed, optional Hifz start</td><td>Protect a fixed after-school slot</td></tr>
           </table>
 
           <h2 id="uk">Female Quran teacher for kids in the UK</h2>
           <p>UK families usually book <strong>4–7pm GMT/BST</strong> after school. Popular cities include London, Birmingham, Manchester, Bradford, Leeds and Leicester — but because classes are online, any UK postcode works. See also <a href="/locations/online-quran-classes-uk">online Quran classes UK</a> and city pages like <a href="/online-quran-classes/london">London</a> and <a href="/online-quran-classes/bradford">Bradford</a>.</p>
+
+          <figure class="article-figure">
+            <img src="/marketing/family-evening-quran.jpg" alt="British Muslim family learning Quran together in the evening at home" width="1200" height="800" loading="lazy" />
+            <figcaption>After-school Quran at home — no madrasa travel, same weekly time.</figcaption>
+          </figure>
+
+          <h2 id="checklist">Parent checklist before booking</h2>
+          <ol>
+            <li>Decide male vs <strong>female tutor</strong> (write it on the trial form).</li>
+            <li>Note your child’s age and whether they know any Arabic letters.</li>
+            <li>Pick 2–3 preferred times in your timezone (e.g. Mon/Wed 5pm).</li>
+            <li>Prepare a quiet corner, tablet/laptop, and headphones if siblings are nearby.</li>
+            <li>Attend the first trial with your daughter to set expectations.</li>
+          </ol>
 
           <h2 id="what">What your daughter will learn</h2>
           <ol>
@@ -69,8 +102,20 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
     style: S,
     content: `<p><strong>Online Hifz classes for kids</strong> let children memorise the Quran at home with a live Hafiz or Hafiza — using the same Sabaq–Sabqi–Manzil system used in traditional Hifz schools, without daily travel.</p>
 
+          <figure class="article-figure">
+            <img src="/marketing/kids-hifz-memorisation.jpg" alt="Child memorising Quran at home during online Hifz classes" width="1200" height="800" loading="eager" />
+            <figcaption>Hifz works best with a quiet routine at home plus a live tutor who checks every day.</figcaption>
+          </figure>
+
           <div class="highlight-box">
             <strong>Quick answer:</strong> Start Hifz when your child can read Quran with basic fluency (often ages 7–10). Online Hifz needs 5–6 short sessions per week plus home revision. <a href="/courses/hifz-program-online">Hifz program details</a> · <a href="/online-quran-classes-for-kids">kids free trial</a>.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>7–10</strong><span>Best start age</span></div>
+            <div class="stat-pill"><strong>5–6×</strong><span>Live lessons / week</span></div>
+            <div class="stat-pill"><strong>25–40m</strong><span>Per session</span></div>
+            <div class="stat-pill"><strong>3 layers</strong><span>Sabaq system</span></div>
           </div>
 
           <h2 id="age">Best age to start online Hifz</h2>
@@ -83,21 +128,39 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <h2 id="system">The Sabaq–Sabqi–Manzil system</h2>
           <table class="np-table">
-            <tr><th>Layer</th><th>Meaning</th><th>Parent tip</th></tr>
-            <tr><td>Sabaq</td><td>Today's new lines</td><td>Keep new portion small and solid</td></tr>
-            <tr><td>Sabqi</td><td>Recent days' memorisation</td><td>Revise before adding more</td></tr>
-            <tr><td>Manzil</td><td>Older completed Juz</td><td>Weekly cycle so nothing is forgotten</td></tr>
+            <tr><th>Layer</th><th>Meaning</th><th>In a live class</th><th>Parent tip</th></tr>
+            <tr><td>Sabaq</td><td>Today's new lines</td><td>Tutor listens + corrects</td><td>Keep new portion small and solid</td></tr>
+            <tr><td>Sabqi</td><td>Recent days' memorisation</td><td>Quick re-test</td><td>Revise before adding more</td></tr>
+            <tr><td>Manzil</td><td>Older completed Juz</td><td>Weekly cycle</td><td>So nothing is forgotten</td></tr>
           </table>
 
+          <figure class="article-figure">
+            <img src="/marketing/kids-online-quran-class.jpg" alt="Child in an online Quran class preparing for Hifz with a live tutor" width="1200" height="800" loading="lazy" />
+            <figcaption>Reading fluency first — then Hifz. A trial lesson assesses readiness in 30 minutes.</figcaption>
+          </figure>
+
           <h2 id="schedule">Sample weekly schedule (kids)</h2>
+          <table class="np-table">
+            <tr><th>Day</th><th>Live class</th><th>Home revision</th></tr>
+            <tr><td>Mon–Thu</td><td>30–40 min after school</td><td>10 min before bed (optional)</td></tr>
+            <tr><td>Fri</td><td>Shorter review or off</td><td>Listen to yesterday’s Sabaq</td></tr>
+            <tr><td>Sat–Sun</td><td>1 catch-up if needed</td><td>15 min Manzil loop</td></tr>
+          </table>
           <ul>
-            <li>5–6 live lessons × 25–40 minutes</li>
-            <li>10–15 minutes home revision on non-lesson days</li>
-            <li>UK: often 5–6pm GMT after school; weekends for catch-up</li>
+            <li>UK: often <strong>5–6pm GMT</strong> after school; weekends for catch-up</li>
+            <li>US: early morning or after school EST/PST</li>
+            <li>Fewer than 3 live sessions/week usually stalls retention</li>
           </ul>
 
           <h2 id="pages">How many pages per day?</h2>
           <p>Ages 7–9: a few lines to half a page. Ages 10–12: half to one page when retention is strong. Quality beats speed — rushing creates weak Hifz that collapses under exam pressure.</p>
+
+          <h2 id="red-flags">Signs your child is (or isn’t) ready</h2>
+          <ul>
+            <li><strong>Ready:</strong> reads short surahs smoothly, enjoys repetition, can focus 25+ minutes.</li>
+            <li><strong>Not yet:</strong> still guessing letters, fights every session, or has no fixed daily slot.</li>
+          </ul>
+          <p>If they are not ready, start with <a href="/courses/noorani-qaida-online">Noorani Qaida</a> or regular <a href="/online-quran-classes-for-kids">kids Quran classes</a> first.</p>
 
           <div class="gold-box">
             <strong>Female Hifz tutors:</strong> Daughters can memorise with a certified Hafiza. Request “female Hifz tutor” on your trial form — see <a href="/blog/female-quran-teacher-for-kids">female Quran teacher for kids</a>.
