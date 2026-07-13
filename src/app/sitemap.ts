@@ -9,10 +9,18 @@ const BASE = "https://www.noorpath.online";
 const LAUNCH = new Date("2024-01-15");
 const CONTENT_UPDATE = new Date("2026-05-01");
 const RECENT = new Date("2026-06-01");
-const NOW = new Date("2026-07-10");
+const NOW = new Date("2026-07-13");
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
 const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
+  "dua-for-success-exams",
+  "dua-for-marriage",
+  "rabbana-atina-fid-dunya",
+  "dua-for-forgiveness-istighfar",
+  "how-to-do-ghusl-step-by-step",
+  "labbaik-allahumma-labbaik",
+  "dua-entering-leaving-home",
+  "how-to-pray-witr",
   "allahu-akbar-meaning-in-english",
   "la-ilaha-illallah-meaning",
   "dua-before-sleeping-islam",
