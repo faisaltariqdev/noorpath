@@ -86,12 +86,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: NOW },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: NOW },
-    // ── Legal ───────────────────────────────────────────────────────────────────
-    { url: `${BASE}/privacy-policy`,                           priority: 0.3,  changeFrequency: "yearly",  lastModified: LAUNCH },
-    { url: `${BASE}/terms-of-service`,                         priority: 0.3,  changeFrequency: "yearly",  lastModified: LAUNCH },
+    // privacy-policy + terms-of-service intentionally omitted (robots noindex)
   ];
 
-  // Auto-generate from shared data (all 7 courses + all 12 locations)
+  // Auto-generate from shared data (courses + country locations + cities + blogs)
   const coursePages: MetadataRoute.Sitemap = courses.map((c) => ({
     url: `${BASE}/courses/${c.slug}`,
     lastModified: CONTENT_UPDATE,
@@ -113,12 +111,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
-    url: `${BASE}/blog/${p.slug}`,
-    lastModified: new Date(p.updatedAt ?? p.date),
-    priority: COMMERCIAL_BLOG_SLUGS.has(p.slug) ? 0.88 : HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug) ? 0.84 : 0.75,
-    changeFrequency: (COMMERCIAL_BLOG_SLUGS.has(p.slug) || HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug)) ? ("weekly" as const) : ("monthly" as const),
-  }));
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => {
+    const raw = p.updatedAt ?? p.date;
+    const lastModified = Number.isFinite(Date.parse(raw)) ? new Date(raw) : NOW;
+    const isCommercial = COMMERCIAL_BLOG_SLUGS.has(p.slug);
+    const isHighTraffic = HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug);
+    return {
+      url: `${BASE}/blog/${p.slug}`,
+      lastModified,
+      priority: isCommercial ? 0.88 : isHighTraffic ? 0.84 : 0.75,
+      changeFrequency: (isCommercial || isHighTraffic) ? ("weekly" as const) : ("monthly" as const),
+    };
+  });
 
   return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...cityPages, ...blogPages];
 }
