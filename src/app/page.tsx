@@ -361,16 +361,16 @@ export default function HomePage() {
               "🇨🇦 Ahmed M. from Canada completed Qaida",
               "🇩🇪 Maryam S. from Germany joined today",
               "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
-              "★ 4.9/5 — 2,400+ verified parent reviews",
-              "✓ 847 students enrolled this month",
+              "★ Reviewed by real parents on Trustpilot",
+              "✓ Free 30-min trial — no credit card needed",
               "🇺🇸 Sara J. from USA just enrolled",
               "🇬🇧 Yusuf K. from UK started free trial",
               "🇦🇺 Fatima R. from Australia enrolled",
               "🇨🇦 Ahmed M. from Canada completed Qaida",
               "🇩🇪 Maryam S. from Germany joined today",
               "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
-              "★ 4.9/5 — 2,400+ verified parent reviews",
-              "✓ 847 students enrolled this month",
+              "★ Reviewed by real parents on Trustpilot",
+              "✓ Free 30-min trial — no credit card needed",
             ].map((item, i) => (
               <span key={i} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", fontWeight: 500, flexShrink: 0 }}>{item}</span>
             ))}
@@ -529,8 +529,8 @@ export default function HomePage() {
               </div>
               <div style={{ marginTop: 24, display: "flex", gap: 16, flexWrap: "wrap" }}>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
-                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>2,400+</div>
-                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>5-Star Reviews</div>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>★★★★★</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Trustpilot Reviews</div>
                 </div>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
                   <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>12K+</div>

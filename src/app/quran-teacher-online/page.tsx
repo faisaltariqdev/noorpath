@@ -104,7 +104,7 @@ export default function QuranTeacherOnlinePage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Online Quran Teacher</span>
           </nav>
           <span style={{ display: "inline-block", background: "rgba(232,184,75,.15)", border: "1px solid rgba(232,184,75,.3)", color: "var(--gold-lt)", borderRadius: 50, padding: "5px 16px", fontSize: ".8rem", fontWeight: 700, marginBottom: 16, letterSpacing: ".5px" }}>
-            ⭐ 4.9/5 Rating — 2,400+ Reviews
+            ⭐ Ijazah-Certified Tutors — Trustpilot Reviewed
           </span>
           <h1>Online Quran Teacher<br /><em style={{ color: "var(--gold-lt)" }}>Certified &amp; Ijazah-Verified</em></h1>
           <p style={{ maxWidth: 600 }}>

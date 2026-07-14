@@ -149,7 +149,7 @@ export default async function CityPage({ params }: Props) {
                 {[
                   { icon: "🕐", label: c.timezone },
                   { icon: "👥", label: c.population },
-                  { icon: "⭐", label: `${c.rating}/5 · ${c.reviews}+ reviews` },
+                  { icon: "⭐", label: "Trustpilot reviewed" },
                 ].map((item) => (
                   <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", borderRadius: 20, padding: "6px 14px", fontSize: ".82rem", color: "rgba(255,255,255,.9)" }}>
                     <span>{item.icon}</span> {item.label}
@@ -410,7 +410,7 @@ export default async function CityPage({ params }: Props) {
                   Reserve Free Trial →
                 </a>
                 <div style={{ marginTop: 12, textAlign: "center", color: "var(--muted)", fontSize: ".75rem" }}>
-                  ⭐ Rated {c.rating}/5 by {c.reviews}+ {c.city} families
+                  ⭐ Trusted by Muslim families in {c.city} &amp; worldwide
                 </div>
               </div>
             </div>

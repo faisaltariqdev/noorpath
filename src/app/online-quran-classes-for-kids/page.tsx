@@ -132,13 +132,6 @@ const jsonLd = {
           byDay: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
         },
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "2400",
-        bestRating: "5",
-        worstRating: "1",
-      },
     },
     {
       "@type": "Service",
@@ -180,8 +173,8 @@ const jsonLd = {
 
 const trustStats = [
   { value: "12,000+", label: "Families Served" },
-  { value: "4.9★", label: "Average Rating" },
-  { value: "2,400+", label: "Parent Reviews" },
+  { value: "1-on-1", label: "Live Classes" },
+  { value: "Ijazah", label: "Certified Tutors" },
   { value: "40+", label: "Countries" },
   { value: "100%", label: "Free Trial" },
 ];
@@ -229,7 +222,7 @@ export default function OnlineQuranClassesForKidsPage() {
             </a>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View Pricing</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> 4.9/5 from 2,400+ families
+              <Star size={14} fill="var(--gold)" color="var(--gold)" /> Loved by families in 40+ countries
             </span>
           </div>
         </div>

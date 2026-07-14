@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Clock, Search, X } from "lucide-react";
 
@@ -35,7 +36,16 @@ const CATEGORIES = [
 ];
 
 export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
-  const [query, setQuery] = useState("");
+  return (
+    <Suspense fallback={null}>
+      <BlogSearchListInner posts={posts} />
+    </Suspense>
+  );
+}
+
+function BlogSearchListInner({ posts }: { posts: BlogListItem[] }) {
+  const searchParams = useSearchParams();
+  const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const [category, setCategory] = useState("All");
 
   const filtered = useMemo(() => {

@@ -197,7 +197,7 @@ export default function KeywordLandingPage({
               View Pricing
             </Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> 4.9/5 · 2,400+ reviews
+              <Star size={14} fill="var(--gold)" color="var(--gold)" /> Trusted by families in 40+ countries
             </span>
           </div>
         </div>

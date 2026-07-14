@@ -61,13 +61,6 @@ export default async function CourseDetailPage({ params }: Props) {
         typicalAgeRange: course.age,
         courseMode: "online",
         teaches: course.features.join(", "),
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          ratingCount: "2400",
-          bestRating: "5",
-          worstRating: "1",
-        },
         offers: {
           "@type": "Offer",
           price: "0",
@@ -261,7 +254,7 @@ export default async function CourseDetailPage({ params }: Props) {
                   Book Free Trial Class →
                 </Link>
                 <div style={{ marginTop: 16, color: "rgba(255,255,255,.5)", fontSize: ".75rem" }}>
-                  ⭐⭐⭐⭐⭐ 4.9/5 from 2,400+ reviews
+                  ⭐ Reviewed by parents on Trustpilot
                 </div>
               </div>
             </div>

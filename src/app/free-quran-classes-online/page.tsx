@@ -198,8 +198,8 @@ export default function FreeQuranClassesPage() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 32 }}>
-            <div style={{ fontSize: "1.1rem", color: "var(--charcoal)", fontWeight: 700 }}>⭐⭐⭐⭐⭐ 4.9/5</div>
-            <div style={{ color: "var(--muted)", fontSize: ".85rem", marginTop: 4 }}>Average rating from 2,400+ verified parent reviews</div>
+            <div style={{ fontSize: "1.1rem", color: "var(--charcoal)", fontWeight: 700 }}>⭐⭐⭐⭐⭐</div>
+            <div style={{ color: "var(--muted)", fontSize: ".85rem", marginTop: 4 }}>Reviewed by real parents on Trustpilot</div>
           </div>
         </div>
       </section>

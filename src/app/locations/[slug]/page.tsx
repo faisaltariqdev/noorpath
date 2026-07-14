@@ -160,7 +160,7 @@ export default async function LocationDetailPage({ params }: Props) {
               </div>
 
               <div style={{ color: "var(--gold-lt)", fontSize: ".9rem", fontWeight: 700 }}>
-                ⭐⭐⭐⭐⭐ Rated {loc.rating}/5 by {loc.reviews}+ {loc.country} families
+                ⭐⭐⭐⭐⭐ Trusted by Muslim families across {loc.country}
               </div>
             </div>
 
@@ -350,7 +350,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   What {loc.country} Families Say
                 </h2>
                 <div style={{ color: "var(--gold)", fontSize: ".9rem", fontWeight: 700, marginBottom: 18 }}>
-                  ⭐⭐⭐⭐⭐ Rated {loc.rating}/5 by {loc.reviews}+ families in {loc.country}
+                  ⭐⭐⭐⭐⭐ What families in {loc.country} tell us
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                   {localTestimonials.map((t) => (
@@ -434,7 +434,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Chat on WhatsApp
                 </a>
                 <div style={{ marginTop: 14, color: "rgba(255,255,255,.5)", fontSize: ".73rem" }}>
-                  ⭐⭐⭐⭐⭐ Rated {loc.rating}/5 by {loc.reviews}+ {loc.country} families
+                  ⭐⭐⭐⭐⭐ Trusted by Muslim families across {loc.country}
                 </div>
               </div>
 

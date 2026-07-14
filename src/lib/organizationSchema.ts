@@ -2,6 +2,8 @@ export const BASE_URL = "https://www.noorpath.online";
 export const ORGANIZATION_ID = `${BASE_URL}/#organization`;
 export const WEBSITE_ID = `${BASE_URL}/#website`;
 export const TRUSTPILOT_URL = "https://www.trustpilot.com/review/noorpath.online";
+/** Google Business Profile (Knowledge Graph id /g/11npsdjwdh) */
+export const GOOGLE_BUSINESS_URL = "https://www.google.com/maps?kgmid=/g/11npsdjwdh";
 
 /** Reference global org from page-level Service/Course schema */
 export const ORGANIZATION_REF = { "@id": ORGANIZATION_ID };
@@ -47,6 +49,7 @@ export function getOrganizationJsonLd() {
           BASE_URL,
           "https://wa.me/923124877906",
           TRUSTPILOT_URL,
+          GOOGLE_BUSINESS_URL,
           "https://www.instagram.com/noorpath.online/",
           "https://www.tiktok.com/@noorpathacademy",
           "https://www.facebook.com/noorpathquranacademy",
@@ -152,7 +155,7 @@ export function getOrganizationJsonLd() {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: `${BASE_URL}/online-quran-classes-for-kids`,
+            urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
           },
           "query-input": "required name=search_term_string",
         },

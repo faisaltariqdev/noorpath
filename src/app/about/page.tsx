@@ -34,7 +34,7 @@ const faqs = [
   { q: "When was NoorPath Academy founded?", a: "NoorPath Academy was founded in 2018 by Faisal Tariq with the mission of making certified Quran education accessible to every Muslim family worldwide — regardless of their country or timezone." },
   { q: "How are NoorPath tutors qualified?", a: "Every tutor at NoorPath Academy holds either Ijazah certification (a chain of narration back to the Prophet ﷺ) or Al-Azhar university qualifications. All tutors are background-checked, undergo teaching trials, and receive monthly performance reviews. Only the top 15% of applicants are accepted." },
   { q: "What age groups does NoorPath Academy teach?", a: "We teach everyone from age 4 to senior adults. We have specialist tutors for toddlers and young children (Noorani Qaida, daily duas), school-age children (Quran recitation, Tajweed), teenagers (Hifz, Arabic), adult beginners, adult advanced learners, and elderly students returning to the Quran." },
-  { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led with a strict quality standard. Unlike large marketplaces, we personally vet every tutor and match each student to the right teacher. We offer weekly progress reports, family plans for siblings, and flexible female tutors for sisters and daughters. Our 4.9/5 rating from 2,400+ reviews reflects genuine family satisfaction." },
+  { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led with a strict quality standard. Unlike large marketplaces, we personally vet every tutor and match each student to the right teacher. We offer weekly progress reports, family plans for siblings, and flexible female tutors for sisters and daughters. Parents can read our genuine reviews on Trustpilot." },
   { q: "Is NoorPath Academy accredited?", a: "NoorPath's tutors hold internationally recognized Ijazah certifications — the gold standard in Quran teaching. Ijazah is an unbroken chain of authorized transmission of the Quran going back to the Prophet Muhammad ﷺ. Many of our tutors also hold degrees from Al-Azhar University in Cairo." },
   { q: "What countries does NoorPath serve?", a: "We serve students in 40+ countries including USA, UK, Canada, Australia, UAE, Saudi Arabia, Pakistan, Germany, Malaysia, Bangladesh, South Africa, France, Netherlands, and many more. We have tutors available across all major timezones." },
 ];
@@ -71,8 +71,8 @@ const stats = [
   { icon: <Users size={28} />, num: "12,000+", label: "Students Served" },
   { icon: <Award size={28} />, num: "250+", label: "Certified Tutors" },
   { icon: <Globe size={28} />, num: "40+", label: "Countries" },
-  { icon: <Heart size={28} />, num: "4.9/5", label: "Parent Rating" },
-  { icon: <Star size={28} />, num: "2,400+", label: "5-Star Reviews" },
+  { icon: <Heart size={28} />, num: "250+", label: "Certified Tutors" },
+  { icon: <Star size={28} />, num: "★★★★★", label: "Trustpilot Reviewed" },
   { icon: <GraduationCap size={28} />, num: "2018", label: "Founded" },
 ];
 
@@ -133,7 +133,7 @@ export default function AboutPage() {
               We serve families in over 40 countries, with 250+ certified tutors holding Ijazah or Al-Azhar university qualifications. Our curriculum spans <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for 4-year-olds</Link> to advanced <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz and Ijazah programs</Link> for adults.
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8 }}>
-              Unlike large marketplace platforms, NoorPath is founder-led and quality-controlled. We personally vet every tutor, monitor every teaching relationship, and only retain teachers who consistently earn 5-star parent feedback. That is why 12,000+ families trust us — and why our rating sits at 4.9/5 from 2,400+ verified reviews.
+              Unlike large marketplace platforms, NoorPath is founder-led and quality-controlled. We personally vet every tutor, monitor every teaching relationship, and only retain teachers who consistently earn 5-star parent feedback. That is why families across 40+ countries trust us — and you can read their genuine reviews on Trustpilot.
             </p>
           </div>
 
