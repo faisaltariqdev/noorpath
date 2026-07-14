@@ -191,7 +191,9 @@ export default async function BlogPostPage({ params }: Props) {
                     <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".97rem", marginBottom: 2 }}>{post.author}</div>
                     <div style={{ color: "var(--emerald)", fontSize: ".78rem", fontWeight: 600, marginBottom: 8 }}>{post.authorTitle}</div>
                     <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.7, margin: 0 }}>
-                      Faisal Tariq is the founder of NoorPath Academy with over 8 years of experience in online Quran education. He has helped 12,000+ students worldwide learn Quran, Tajweed, and Islamic studies through certified, personalised tutoring.
+                      Faisal Tariq is identified on NoorPath as the academy&apos;s
+                      founder. This article is published as part of NoorPath&apos;s
+                      Quran and Islamic education resource library.
                     </p>
                   </div>
                 </div>
@@ -202,7 +204,7 @@ export default async function BlogPostPage({ params }: Props) {
                     Want to Learn More with a Certified Tutor?
                   </h3>
                   <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20, fontSize: ".9rem" }}>
-                    Book a free 30-minute trial class and get personalised guidance from our certified teachers.
+                    Request a free 30-minute trial class to discuss the learner&apos;s level, goals and an available tutor match.
                   </p>
                   <Link href="/online-quran-classes#cta" className="btn-primary-np">
                     Book Free Trial Class →
@@ -227,7 +229,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Start Learning Quran Online
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".83rem", marginBottom: 18, lineHeight: 1.6 }}>
-                  Free 30-minute trial. Certified tutors. No credit card required.
+                  Free 30-minute trial request. No credit card required. Tutor availability is confirmed after your request.
                 </p>
                 <Link
                   href="/online-quran-classes#cta"

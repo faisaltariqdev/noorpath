@@ -3,14 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
-import { CheckCircle, Shield, Award, Users, Star, BookOpen, Clock, Heart } from "lucide-react";
+import { CheckCircle, Shield, Award, Users, BookOpen, Clock, Heart } from "lucide-react";
+import { PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Female Quran Teacher Online — Certified Hafiza for Sisters & Kids | Free Trial" },
+  title: { absolute: "Female Quran Teacher Online — Tutor Requests for Sisters & Kids | Free Trial" },
   description:
-    "Find a certified female Quran teacher online — Hafiza-qualified tutors for sisters, daughters & girls. Safe 1-on-1 Zoom classes, weekly reports, free trial. UK, USA, Canada, Australia.",
+    "Request a female Quran teacher online for sisters, daughters and girls. Live 1-to-1 classes for Quran reading, Tajweed or Hifz, with a free 30-minute trial.",
   keywords: [
     "female quran teacher online", "female quran tutor", "online quran teacher for sisters",
     "hafiza tutor online", "female quran classes", "quran classes for girls online",
@@ -22,44 +23,44 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.noorpath.online/female-quran-teacher-online" },
   openGraph: {
-    title: "Female Quran Teacher Online — Certified Hafiza Tutors | NoorPath Academy",
-    description: "Certified female Quran teachers for sisters, daughters & female learners worldwide. Safe 1-on-1 Quran classes online. Free 30-min trial.",
+    title: "Female Quran Teacher Online — Tutor Requests | NoorPath Academy",
+    description: "Request a female Quran teacher for a sister or daughter. Live 1-on-1 classes with a free 30-minute trial; availability is confirmed after enquiry.",
     url: "https://www.noorpath.online/female-quran-teacher-online",
     images: [{ url: "/marketing/female-hafiza-tutor.jpg", width: 1200, height: 800, alt: "Female Quran Teacher Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Female Quran Teacher Online | Certified Hafiza Tutors | NoorPath Academy",
-    description: "Safe, comfortable 1-on-1 Quran classes for sisters & daughters. Hafiza-certified. Free trial.",
+    title: "Female Quran Teacher Online | NoorPath Academy",
+    description: "Comfortable 1-on-1 Quran classes for sisters and daughters. Request a female tutor and a free trial.",
     images: ["/marketing/female-hafiza-tutor.jpg"],
   },
 };
 
 const faqs = [
-  { q: "Can my daughter learn Quran with a female teacher online?", a: "Yes. NoorPath Academy offers certified female Quran teachers (Hafiza) for girls of all ages — from age 4 through teenagers and adult sisters. All lessons are live 1-on-1 via Zoom with no male presence." },
-  { q: "Are the female tutors at NoorPath qualified?", a: "Yes. All female tutors hold Hifz certification (Hafiza) and many hold Ijazah from recognized scholars or Al-Azhar university qualifications. Every tutor is background-verified and evaluated before teaching." },
-  { q: "What courses can my daughter study with a female teacher?", a: "All courses are available with female teachers: Noorani Qaida, Quran recitation, Tajweed rules, Hifz program, Arabic language, Islamic studies, daily duas, and Tafseer basics." },
-  { q: "How do online Quran classes work for sisters?", a: "Classes run live on Zoom — 1-on-1 with your certified female tutor. You choose a weekly time that suits UK, US, Canadian, Australian or any other timezone. Sessions are private, recorded only with your permission." },
-  { q: "Can adult women learn Quran online with a female teacher?", a: "Absolutely. Many adult sisters at NoorPath are learning from scratch for the first time, returning after years, or studying advanced Tajweed and Hifz. Our female tutors are patient, encouraging, and experienced with adult learners." },
-  { q: "How much do female Quran classes cost?", a: "Plans start from $29/month for 1 class per week. The first lesson is always a free 30-minute trial with a certified female tutor — no credit card required." },
-  { q: "Is there a female Quran teacher available in my timezone?", a: "Yes. NoorPath has female tutors available for UK (GMT/BST), USA (EST/PST/CST), Canada, Australia (AEST), UAE, and 40+ other countries. Evening and after-school slots are available for all timezones." },
-  { q: "Can I get a Hifz teacher who is female for my daughter?", a: "Yes. We have certified Hafiza tutors who specialize in Hifz memorization for girls. They use the proven Sabaq-Sabqi-Manzil system — new memorization plus structured revision — tailored to your daughter's pace." },
+  { q: "Can my daughter learn Quran with a female teacher online?", a: "You can request a female teacher for a daughter or adult sister. Lessons are live and 1-to-1; subject and schedule availability are confirmed after your request." },
+  { q: "Are the female tutors at NoorPath qualified?", a: "Qualifications vary by tutor and teaching focus. NoorPath confirms the proposed tutor's relevant credentials and experience before enrolment." },
+  { q: "What courses can my daughter study with a female teacher?", a: "Female tutor requests may include Noorani Qaida, Quran recitation, Tajweed, Hifz, Arabic, Islamic studies, or daily duas. Availability is confirmed for the requested subject and schedule." },
+  { q: "How do online Quran classes work for sisters?", a: "Classes are live and 1-to-1. Share the learner's level, subject, timezone, and preferred schedule, and NoorPath will confirm a suitable female tutor option." },
+  { q: "Can adult women learn Quran online with a female teacher?", a: "Yes. Adult sisters can request a female tutor for beginner reading, Tajweed, or Hifz. Relevant adult teaching experience and availability are confirmed before enrolment." },
+  { q: "How much do female Quran classes cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} class per week. The first ${TRIAL.durationMinutes}-minute lesson is free and requires no credit card.` },
+  { q: "Is there a female Quran teacher available in my timezone?", a: "Share your timezone and preferred lesson windows when requesting a trial. Female tutor availability is confirmed after your request." },
+  { q: "Can I request a female Hifz teacher for my daughter?", a: "Yes. You can request a female tutor for Hifz. Relevant Hifz credentials, teaching experience, and schedule availability are confirmed for the proposed tutor before enrolment." },
 ];
 
 const features = [
-  { icon: <Shield size={22} />, title: "100% Female Environment", desc: "All sessions are 1-on-1 with a certified female teacher — no male presence at any point. Safe and comfortable for sisters of all ages." },
-  { icon: <Award size={22} />, title: "Hafiza-Certified Tutors", desc: "All female teachers hold Hifz certification (Hafiza). Many also hold Ijazah from recognized scholars or Al-Azhar qualifications." },
-  { icon: <Users size={22} />, title: "All Ages Welcome", desc: "Female tutors for girls from age 4, school-age children, teenagers, adult sisters, new mothers, and senior women learning at their own pace." },
-  { icon: <BookOpen size={22} />, title: "All Courses Available", desc: "Noorani Qaida, Tajweed, Hifz, Arabic language, Islamic studies, daily duas — every course is available with certified female teachers." },
-  { icon: <Clock size={22} />, title: "Flexible Timing", desc: "After-school slots, evening sessions, and weekend classes — available in UK, USA, Canada, Australia, UAE and 40+ countries." },
-  { icon: <Heart size={22} />, title: "Patient & Encouraging", desc: "Our female teachers specialize in building confidence. Sisters and daughters progress faster in a comfortable, judgment-free environment." },
+  { icon: <Shield size={22} />, title: "Private 1-to-1 Lessons", desc: "Female tutor requests are arranged as live 1-to-1 lessons for sisters and daughters." },
+  { icon: <Award size={22} />, title: "Credentials Confirmed", desc: "Relevant Hifz, Ijazah, academic, or teaching credentials are confirmed for the proposed tutor before enrolment." },
+  { icon: <Users size={22} />, title: "Children & Adults", desc: "Matching considers whether the learner is a child, teenager, or adult and the teaching approach requested." },
+  { icon: <BookOpen size={22} />, title: "Subject-Based Matching", desc: "Request support for Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, or daily duas." },
+  { icon: <Clock size={22} />, title: "Timezone Matching", desc: "Share preferred lesson windows; available female tutor options are confirmed after the request." },
+  { icon: <Heart size={22} />, title: "Assess the Fit", desc: "Use the free trial to assess communication, pace, and whether the teaching style suits the learner." },
 ];
 
 const courses = [
-  { name: "Noorani Qaida", href: "/courses/noorani-qaida-online", desc: "Arabic alphabet to full reading — perfect start for beginners" },
+  { name: "Noorani Qaida", href: "/courses/noorani-qaida-online", desc: "Arabic alphabet and reading foundations for beginners" },
   { name: "Quran Recitation", href: "/online-quran-classes", desc: "Surah-by-surah with live pronunciation correction" },
   { name: "Tajweed Rules", href: "/learn-tajweed-online", desc: "Master the rules of beautiful Quran recitation" },
-  { name: "Hifz Program", href: "/hifz-quran-online", desc: "Structured Quran memorization with Hafiza tutor" },
+  { name: "Hifz Program", href: "/hifz-quran-online", desc: "Request a female tutor for structured Quran memorization" },
   { name: "Arabic Language", href: "/courses/arabic-language-online", desc: "Understand the Quran in its original language" },
   { name: "Islamic Studies", href: "/courses/islamic-studies-online", desc: "Fiqh, Seerah, Aqeedah & Islamic character" },
   { name: "Daily Duas for Kids", href: "/courses/daily-duas-for-kids", desc: "Morning, evening and daily duas with meaning" },
@@ -72,19 +73,18 @@ const jsonLd = {
     {
       "@type": "Service",
       "@id": "https://www.noorpath.online/female-quran-teacher-online#service",
-      name: "Female Quran Teacher Online — Certified Hafiza Tutors",
+      name: "Female Quran Teacher Online — Tutor Requests",
       description:
-        "Certified female Quran tutors (Hafiza) for sisters, daughters, and female learners worldwide. Safe 1-on-1 Zoom Quran classes — Qaida, Tajweed, Hifz, Arabic. Free trial.",
+        "Female Quran tutor requests for sisters and daughters. Live 1-on-1 classes may cover Qaida, Tajweed, Hifz, or Arabic, subject to confirmed availability.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education",
       audience: { "@type": "Audience", audienceType: "Female Muslim learners — ages 4 to senior" },
       url: "https://www.noorpath.online/female-quran-teacher-online",
-      areaServed: { "@type": "Country", name: "Worldwide" },
       offers: {
         "@type": "Offer",
-        price: "29",
+        price: String(PRICING_PLANS[0].monthlyPriceUsd),
         priceCurrency: "USD",
-        description: "Starting from $29/month. Free 30-min trial.",
+        description: `Starting from $${PRICING_PLANS[0].monthlyPriceUsd}/month. Free ${TRIAL.durationMinutes}-minute trial request.`,
       },
     },
     {
@@ -119,12 +119,12 @@ export default function FemaleQuranTeacherPage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Female Quran Teacher Online</span>
           </nav>
           <h1>Female Quran Teacher Online</h1>
-          <p>Certified Hafiza tutors for sisters, daughters, and female learners worldwide. Safe, comfortable <strong style={{ color: "var(--gold-lt)" }}>1-on-1 Quran classes via Zoom</strong> — no male presence, all ages welcome. <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial, no credit card.</strong></p>
+          <p>Request a female Quran tutor for a sister or daughter. Live <strong style={{ color: "var(--gold-lt)" }}>1-on-1 online Quran classes</strong> can be matched for reading, Tajweed, Hifz, children, or adults. <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial, no credit card.</strong></p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/online-quran-classes" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>All Classes</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> Trusted by families in 40+ countries
+              Availability confirmed after your request
             </span>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function FemaleQuranTeacherPage() {
           {/* Quick Answer */}
           <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
-            Yes — NoorPath Academy has <strong>certified female Quran teachers (Hafiza)</strong> available for sisters and daughters of all ages worldwide. Classes are live 1-on-1 via Zoom, private, and fully female-only. The first 30-minute lesson is free.{" "}
+            You can <strong>request a female Quran teacher</strong> for a sister or daughter. Classes are live and 1-to-1; relevant credentials and availability are confirmed before enrolment. The first 30-minute lesson is free.{" "}
             <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
@@ -144,7 +144,7 @@ export default function FemaleQuranTeacherPage() {
             <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid var(--border)" }}>
               <Image
                 src="/marketing/female-hafiza-tutor.jpg"
-                alt="Certified female Hafiza teaching a girl Quran online"
+                alt="Female Quran tutor teaching a girl online"
                 width={900}
                 height={600}
                 priority
@@ -153,18 +153,17 @@ export default function FemaleQuranTeacherPage() {
             </div>
             <div>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 12 }}>
-                A safe, sister-only classroom
+                A comfortable 1-to-1 learning option
               </h2>
               <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 14 }}>
-                Every lesson is private Zoom with a Hafiza tutor — no male presence, no group chat rooms.
-                Ideal for daughters, teenage girls, and adult sisters returning to Quran.
+                Request a female tutor for a daughter, teenage girl, or adult sister. We confirm the proposed tutor&apos;s subject fit, relevant credentials, and schedule before enrolment.
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
-                  "Background-verified Hafiza / Ijazah tutors",
-                  "Parents can observe kids' sessions anytime",
-                  "UK after-school + worldwide evening slots",
-                  "Qaida → Tajweed → Hifz with the same teacher",
+                  "Relevant credentials confirmed before enrolment",
+                  "Parents can discuss lesson supervision",
+                  "Timezone preferences included in matching",
+                  "Reading, Tajweed, or Hifz tutor requests",
                 ].map((t) => (
                   <li key={t} style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: ".9rem", color: "var(--slate)" }}>
                     <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} /> {t}
@@ -175,24 +174,24 @@ export default function FemaleQuranTeacherPage() {
           </div>
 
           <div className="content-card" style={{ marginBottom: 32 }}>
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", marginBottom: 8 }}>Female learning path — data parents ask for</h2>
-            <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 14, lineHeight: 1.6 }}>Typical progress when classes are consistent (3–5× / week).</p>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", marginBottom: 8 }}>Female tutor matching by learning stage</h2>
+            <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 14, lineHeight: 1.6 }}>Learning plans are adjusted after the tutor assesses the learner; no fixed outcome timeline is promised.</p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".85rem" }}>
                 <thead>
                   <tr style={{ background: "var(--emerald)", color: "#fff" }}>
                     <th style={{ padding: "10px 12px", textAlign: "left" }}>Learner</th>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Session</th>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>First month</th>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>By month 6</th>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Starting point</th>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Possible focus</th>
+                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Matching consideration</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    ["Girls 4–6", "20–25 min", "Letters + short duas", "Qaida words + Fatiha start"],
-                    ["Girls 7–12", "30–40 min", "Qaida / short surahs", "Independent reading + Tajweed"],
-                    ["Teen girls", "35–45 min", "Tajweed diagnosis", "Fluent Salah surahs / Hifz option"],
-                    ["Adult sisters", "30–45 min", "Confidence + basics", "Personal Quran goals met"],
+                    ["Young learners", "New to Arabic letters", "Qaida, pronunciation, short duas", "Child-focused teaching approach"],
+                    ["School-age girls", "Reading at any level", "Reading, Tajweed, or Hifz", "Level and learning goal"],
+                    ["Teen girls", "Beginner or returning", "Recitation, Tajweed, or Hifz", "Confidence and subject fit"],
+                    ["Adult sisters", "Beginner to experienced", "Personal Quran learning goals", "Schedule and preferred pace"],
                   ].map((row) => (
                     <tr key={row[0]} style={{ borderBottom: "1px solid var(--border)" }}>
                       {row.map((cell, i) => (
@@ -207,11 +206,11 @@ export default function FemaleQuranTeacherPage() {
 
           <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 10 }}>
-              Female Quran Teacher for Kids (UK &amp; Worldwide)
+              Female Quran Teacher for Kids (UK &amp; Online)
             </h2>
             <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: 12 }}>
-              Looking for a <strong>female Quran teacher for kids</strong>? Daughters ages 4–12 can learn Noorani Qaida, Tajweed and Hifz with a certified Hafiza —
-              including UK after-school slots (4–7pm GMT). Parents observe freely. Read our full guide:{" "}
+              Looking for a <strong>female Quran teacher for kids</strong>? Daughters ages 4–12 can request tutor matching for Noorani Qaida, Tajweed, or Hifz —
+              subject to confirmed tutor credentials and schedule availability. Read our full guide:{" "}
               <Link href="/blog/female-quran-teacher-for-kids" style={{ color: "var(--emerald)", fontWeight: 700 }}>Female Quran Teacher for Kids</Link>
               {" · "}
               <Link href="/blog/online-hifz-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 700 }}>Online Hifz for Kids</Link>.
@@ -234,10 +233,10 @@ export default function FemaleQuranTeacherPage() {
           {/* Trust Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
-              { value: "12,000+", label: "Families worldwide" },
-              { value: "4.9/5", label: "Family rating" },
-              { value: "100%", label: "Female-only sessions" },
-              { value: "40+", label: "Countries served" },
+              { value: SERVICE_FACTS[0].value, label: SERVICE_FACTS[0].label },
+              { value: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
+              { value: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
+              { value: "By request", label: "Female tutor matching" },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "22px 12px" }}>
                 <div style={{ fontSize: "1.55rem", fontWeight: 800, color: "var(--emerald)", lineHeight: 1.2 }}>{s.value}</div>
@@ -248,10 +247,10 @@ export default function FemaleQuranTeacherPage() {
 
           {/* Why choose */}
           <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <span className="section-eyebrow">👩‍🏫 Certified Female Tutors</span>
+            <span className="section-eyebrow">👩‍🏫 Female Tutor Requests</span>
             <h2 className="section-title">Why Families Choose Our <em className="accent">Female Teachers</em></h2>
             <p className="section-desc center">
-              At NoorPath Academy, we understand that modesty and comfort are essential in Islamic learning. Our certified female tutors (Hafiza) create a safe, encouraging environment where sisters and daughters thrive.
+              At NoorPath Academy, we understand that modesty and comfort matter in Islamic learning. Request a female tutor, and we will confirm relevant credentials and availability before enrolment.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -268,7 +267,7 @@ export default function FemaleQuranTeacherPage() {
 
           {/* Courses with female teachers */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            All Courses Available with <em className="accent">Female Teachers</em>
+            Subjects You Can Request with <em className="accent">Female Teachers</em>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
             {courses.map((c) => (
@@ -286,13 +285,13 @@ export default function FemaleQuranTeacherPage() {
 
           {/* Who it's for */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Female Quran Classes for All Ages
+            Female Quran Classes for Children and Adults
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {[
-              { age: "Ages 4–12", title: "Girls & Young Children", points: ["Short 20–30 min sessions", "Games & visual Arabic learning", "Weekly parent progress reports", "Patient child-specialist Hafiza"] },
-              { age: "Teens", title: "Teenage Girls", points: ["30–45 min structured sessions", "Tajweed focus for Salah", "Hifz track available", "Female peer encouragement"] },
-              { age: "Adults", title: "Sisters & Mothers", points: ["Flexible morning/evening slots", "Complete beginner welcome", "Private 1-on-1 no judgment", "Adult Hifz track available"] },
+              { age: "Children", title: "Girls & Young Learners", points: ["Age-aware lesson planning", "Visual Arabic learning options", "Parent supervision preferences", "Relevant experience confirmed"] },
+              { age: "Teens", title: "Teenage Girls", points: ["Structured 1-to-1 sessions", "Tajweed tutor requests", "Hifz tutor requests", "Teaching fit assessed in trial"] },
+              { age: "Adults", title: "Sisters & Mothers", points: ["Schedule preferences considered", "Complete beginners welcome", "Private 1-to-1 learning", "Adult Hifz requests welcomed"] },
             ].map((g) => (
               <div key={g.title} className="content-card" style={{ borderTop: "3px solid var(--emerald)" }}>
                 <div style={{ fontSize: ".72rem", fontWeight: 700, color: "var(--emerald)", textTransform: "uppercase", letterSpacing: ".08em", marginBottom: 6 }}>{g.age}</div>
@@ -308,14 +307,14 @@ export default function FemaleQuranTeacherPage() {
 
           {/* Location links */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.5rem", textAlign: "center", marginBottom: 20 }}>
-            Female Quran Teachers Available Worldwide
+            Request Female Quran Teachers by Timezone
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             {[
-              { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "GMT/BST evening slots" },
-              { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "EST/PST morning & evening" },
-              { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Flexible EST/PST" },
-              { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "AEST after-school slots" },
+              { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "Share your GMT/BST preferences" },
+              { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "Share your US timezone" },
+              { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Share your Canadian timezone" },
+              { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "Share your Australian timezone" },
             ].map((l) => (
               <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
                 <div className="content-card" style={{ textAlign: "center", padding: "18px 12px" }}>
@@ -366,13 +365,13 @@ export default function FemaleQuranTeacherPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
-                Book a Free Trial with a<br /><em style={{ color: "var(--gold-lt)" }}>Certified Female Tutor</em>
+                Book a Free Trial with a<br /><em style={{ color: "var(--gold-lt)" }}>Female Tutor Request</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
-                No credit card required. Get a free 30-minute class with a certified Hafiza tutor — and see if it&apos;s the right fit for your daughter or yourself.
+                No credit card required. Request a free 30-minute class with a female tutor and assess whether the match is right for your daughter or yourself.
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                {["Free 30-min trial — no credit card", "100% female environment", "Available UK, USA, Canada, Australia & 40+ countries", "All courses, all ages"].map((b) => (
+                {["Free 30-min trial — no credit card", "Female tutor requested", "Timezone availability confirmed after enquiry", "Credentials confirmed before enrolment"].map((b) => (
                   <li key={b} style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,.8)", fontSize: ".9rem" }}>
                     <CheckCircle size={15} style={{ color: "var(--gold)", flexShrink: 0 }} /> {b}
                   </li>

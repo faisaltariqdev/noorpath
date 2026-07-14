@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { cities, getCity, getCityKeywords } from "@/data/cities";
 import { getLocation } from "@/data/locations";
+import { CONTACT, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, MapPin, Shield, BookOpen, Users } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city } = await params;
   const c = getCity(city);
   if (!c) return {};
-  const description = `Online Quran classes in ${c.city} for kids & adults — 1-on-1 certified tutors, Noorani Qaida, Tajweed, Hifz & female teachers in ${c.timezone}. After-school slots. Free 30-min trial — no travel, no credit card.`;
+  const description = `Online Quran classes in ${c.city} for kids and adults — live 1-on-1 Noorani Qaida, Tajweed and Hifz lessons. Request a female tutor or after-school time in ${c.timezone}, subject to matching.`;
   return {
     title: `Online Quran Classes in ${c.city} for Kids & Adults | Free Trial`,
     description,
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: `Online Quran Classes in ${c.city} | NoorPath`,
-      description: `Certified online Quran tutors for families in ${c.city}. Free trial available.`,
+      description: `Request live 1-on-1 online Quran lessons in ${c.city}. Tutor availability is confirmed after matching.`,
       images: ["/marketing/family-evening-quran.jpg"],
     },
   };
@@ -52,33 +53,33 @@ export default async function CityPage({ params }: Props) {
   const country = getLocation(c.countrySlug);
   const siblingCities = cities.filter((x) => x.countrySlug === c.countrySlug && x.slug !== c.slug);
   const waText = encodeURIComponent(
-    `Assalamu Alaikum, I want to book a FREE Quran trial class for my family in ${c.city}. Please share available ${c.timezone} slots.`
+    `Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`
   );
 
   const faqs = [
     {
       q: `Are there online Quran classes for kids in ${c.city}?`,
-      a: `Yes. NoorPath offers live 1-on-1 online Quran classes for children in ${c.city} (ages 4–12+) covering Noorani Qaida, Tajweed, short surahs, duas and optional Hifz — scheduled in your ${c.timezone} timezone with weekly parent reports.`,
+      a: `Yes. NoorPath offers live 1-on-1 online classes covering Noorani Qaida, Tajweed, short surahs, duas and optional Hifz. Request a ${c.timezone} lesson time; tutor availability is confirmed after matching.`,
     },
     {
       q: `How much do online Quran classes cost in ${c.city}?`,
-      a: `Plans start from $29/month (about ${c.approxPrice}/month, billed in USD), with a free 30-minute trial. Family discounts apply for 2+ siblings. No long-term contract.`,
+      a: `The ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} with no credit card required. Published family discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}.`,
     },
     {
       q: `Do you have a female Quran teacher for daughters in ${c.city}?`,
-      a: `Yes. Certified female tutors (Hafiza) are available for sisters and daughters in ${c.city}. Request a female teacher when booking your free trial.`,
+      a: `You can request a female tutor for a learner in ${c.city}. Female tutor and ${c.timezone} availability are subject to matching.`,
     },
     {
-      q: `What is the best time for after-school Quran classes in ${c.city}?`,
-      a: `Most ${c.city} families book weekday evenings after school in ${c.timezone}, plus weekend mornings. Your child's slot stays fixed each week.`,
+      q: `What times can I request for after-school Quran classes in ${c.city}?`,
+      a: `You can request a weekday evening or weekend time in ${c.timezone}. A recurring lesson time is confirmed after a suitable tutor is matched.`,
     },
     {
       q: `Can beginners start Noorani Qaida online in ${c.city}?`,
       a: `Absolutely. Complete beginners — kids and adults — start with Noorani Qaida (Arabic letters, sounds, joining) before Quran reading. A live tutor corrects pronunciation in real time.`,
     },
     {
-      q: `Is online Quran learning better than a local madrasa in ${c.city}?`,
-      a: `For focused progress, 1-on-1 online often beats crowded group classes because your child recites the full session with instant correction. Many families use both — online for skill, masjid for community.`,
+      q: `How does online Quran learning compare with a local madrasa in ${c.city}?`,
+      a: `A 1-on-1 online lesson offers dedicated recitation time and avoids travel, while a local madrasa may offer in-person community learning. Families can choose either format or combine them according to their needs.`,
     },
   ];
 
@@ -88,16 +89,16 @@ export default async function CityPage({ params }: Props) {
       {
         "@type": "Service",
         name: `Online Quran Classes in ${c.city}`,
-        description: `NoorPath Academy provides certified 1-on-1 online Quran education to families in ${c.city}, ${c.country}. Live classes: Noorani Qaida, Tajweed, Hifz, Arabic, and Islamic studies for kids and adults.`,
+        description: `NoorPath Academy offers live 1-on-1 online Quran lessons for learners in ${c.city}, ${c.country}. Tutor and timezone availability are confirmed after matching.`,
         provider: ORGANIZATION_REF,
         areaServed: { "@type": "City", name: c.city, containedInPlace: { "@type": "Country", name: c.country } },
         serviceType: "Online Quran Education",
         url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
         offers: {
           "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          description: "Free 30-minute trial class",
+          price: String(TRIAL.price),
+          priceCurrency: TRIAL.priceCurrency,
+          description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
         },
       },
       {
@@ -142,14 +143,14 @@ export default async function CityPage({ params }: Props) {
               <h1 style={{ marginBottom: 12 }}>Online Quran Classes in {c.city}</h1>
               <p style={{ maxWidth: 560, marginBottom: 0 }}>
                 Live 1-on-1 Quran tutors for kids &amp; adults in {c.city} — Noorani Qaida, Tajweed, Hifz and female teachers,
-                all in your {c.timezone} timezone. After-school slots.{" "}
-                <strong style={{ color: "var(--gold-lt)" }}>Free 30-min trial — no credit card.</strong>
+                with {c.timezone} scheduling subject to tutor matching.{" "}
+                <strong style={{ color: "var(--gold-lt)" }}>{TRIAL.durationMinutes}-minute trial for ${TRIAL.price} — no credit card.</strong>
               </p>
               <div style={{ display: "flex", gap: 10, marginTop: 18, flexWrap: "wrap" }}>
                 {[
                   { icon: "🕐", label: c.timezone },
-                  { icon: "👥", label: c.population },
-                  { icon: "⭐", label: "Trustpilot reviewed" },
+                  { icon: "💻", label: "Remote online lessons" },
+                  { icon: "💻", label: "Online only" },
                 ].map((item) => (
                   <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", borderRadius: 20, padding: "6px 14px", fontSize: ".82rem", color: "rgba(255,255,255,.9)" }}>
                     <span>{item.icon}</span> {item.label}
@@ -159,7 +160,7 @@ export default async function CityPage({ params }: Props) {
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 22 }}>
                 <a href="#trial" className="btn-primary-np">Book Free Trial →</a>
                 <a
-                  href={`https://wa.me/923124877906?text=${waText}`}
+                  href={`${CONTACT.whatsappUrl}?text=${waText}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-outline-np"
@@ -184,13 +185,13 @@ export default async function CityPage({ params }: Props) {
                 display: "inline-block", background: "var(--gold)", color: "var(--charcoal)",
                 fontSize: ".72rem", fontWeight: 800, padding: "4px 12px", borderRadius: 20, marginBottom: 10,
               }}>
-                100% Free · No card needed
+                {`$${TRIAL.price} Trial · No card needed`}
               </div>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.25rem", marginBottom: 6 }}>
                 Start in {c.city} — Free Trial
               </h2>
               <p style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", marginBottom: 14, lineHeight: 1.55 }}>
-                Tell us your child&apos;s age &amp; preferred {c.timezone} time. We match a tutor within 24 hours.
+                Tell us the learner&apos;s level and preferred {c.timezone} time. Availability is confirmed after tutor matching.
               </p>
               <CTAForm />
             </div>
@@ -204,7 +205,7 @@ export default async function CityPage({ params }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { src: "/marketing/kids-online-quran-class.jpg", alt: `Kids online Quran class for families in ${c.city}`, caption: "Kids · live 1-on-1" },
-              { src: "/marketing/female-hafiza-tutor.jpg", alt: `Female Quran teacher for daughters in ${c.city}`, caption: "Female Hafiza tutors" },
+              { src: "/marketing/female-hafiza-tutor.jpg", alt: `Female Quran teacher option for daughters in ${c.city}`, caption: "Female tutor requests" },
               { src: "/marketing/kids-hifz-memorisation.jpg", alt: `Online Hifz memorisation for kids in ${c.city}`, caption: "Hifz & memorisation" },
             ].map((img) => (
               <figure key={img.src} style={{ margin: 0, position: "relative", borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)", background: "#fff" }}>
@@ -225,17 +226,17 @@ export default async function CityPage({ params }: Props) {
                   Learn Quran Online in {c.city}
                 </h2>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginBottom: 14 }}>
-                  NoorPath Academy connects Muslim families in {c.city} with certified, Ijazah-qualified Quran tutors for live 1-on-1 online lessons.
-                  Whether your child is starting Noorani Qaida, perfecting Tajweed, beginning Hifz, or you want to learn as an adult — we adapt to your goals and {c.timezone} schedule.
+                  NoorPath Academy accepts requests for live 1-on-1 online Quran lessons from learners in {c.city}; this does not imply a physical branch or established local customer base.
+                  Whether the learner is starting Noorani Qaida, studying Tajweed, beginning Hifz, or learning as an adult, tutor and {c.timezone} availability are confirmed after matching.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", margin: 0 }}>{c.localContext}</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-7">
                 {[
-                  { icon: <Users size={20} />, title: `Kids Quran Classes in ${c.city}`, desc: "Ages 4–12 · short engaging sessions · weekly parent reports" },
-                  { icon: <Shield size={20} />, title: `Female Tutors in ${c.city}`, desc: "Hafiza teachers for daughters & sisters · private Zoom" },
-                  { icon: <BookOpen size={20} />, title: `Noorani Qaida & Hifz`, desc: "Beginners to memorisation · same tutor every week" },
+                  { icon: <Users size={20} />, title: `Kids Quran Classes in ${c.city}`, desc: "Live 1-on-1 lessons · tutor matched to stated needs" },
+                  { icon: <Shield size={20} />, title: `Female Tutor Requests in ${c.city}`, desc: "Subject to tutor and timezone availability" },
+                  { icon: <BookOpen size={20} />, title: `Noorani Qaida & Hifz`, desc: "Beginner and memorisation lesson options" },
                 ].map((card) => (
                   <div key={card.title} className="content-card" style={{ margin: 0 }}>
                     <div style={{ color: "var(--emerald)", marginBottom: 10 }}>{card.icon}</div>
@@ -247,17 +248,17 @@ export default async function CityPage({ params }: Props) {
 
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 8 }}>
-                  {c.city} Parent Snapshot — Real Numbers
+                  Lesson Planning Details for {c.city}
                 </h2>
                 <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 16, lineHeight: 1.6 }}>
-                  Typical outcomes for families who stay consistent for 3–6 months (live classes + short home practice).
+                  Published plan details are shown in USD. Learning pace varies by starting level, attendance, lesson frequency, and practice.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                   {[
-                    { v: "4–12", l: "Kids age range" },
-                    { v: "20–45m", l: "Session length" },
-                    { v: c.approxPrice, l: "From / month" },
-                    { v: "30 min", l: "Free trial" },
+                    { v: `$${PRICING_PLANS[0].monthlyPriceUsd}`, l: "Starter / month" },
+                    { v: String(PRICING_PLANS[0].sessionsPerMonth), l: "Starter sessions" },
+                    { v: `${TRIAL.durationMinutes} min`, l: "Trial duration" },
+                    { v: `$${TRIAL.price}`, l: "Trial price" },
                   ].map((s) => (
                     <div key={s.l} style={{ textAlign: "center", background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "14px 8px" }}>
                       <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.15rem" }}>{s.v}</div>
@@ -269,24 +270,23 @@ export default async function CityPage({ params }: Props) {
                   <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".85rem" }}>
                     <thead>
                       <tr style={{ background: "var(--emerald)", color: "#fff" }}>
-                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Path</th>
-                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Week 1–4</th>
-                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Month 3</th>
-                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Month 6+</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Plan</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Sessions / month</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>Minutes / session</th>
+                        <th style={{ padding: "10px 12px", textAlign: "left" }}>USD / month</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {[
-                        ["Beginner kids", "Arabic letters + 2–3 duas", "Joining words (Qaida)", "Short surahs + Fatiha"],
-                        ["Tajweed", "Makharij check", "Core rules in reading", "Fluent, beautiful recitation"],
-                        ["Hifz track", "Reading readiness test", "Daily Sabaq habit", "Steady Juz progress"],
-                      ].map((row) => (
-                        <tr key={row[0]} style={{ borderBottom: "1px solid var(--border)" }}>
+                      {PRICING_PLANS.map((plan) => {
+                        const row = [plan.name, plan.sessionsPerMonth, plan.sessionMinutes, `$${plan.monthlyPriceUsd}`];
+                        return (
+                        <tr key={plan.name} style={{ borderBottom: "1px solid var(--border)" }}>
                           {row.map((cell, i) => (
                             <td key={i} style={{ padding: "10px 12px", color: i === 0 ? "var(--charcoal)" : "var(--muted)", fontWeight: i === 0 ? 700 : 400 }}>{cell}</td>
                           ))}
                         </tr>
-                      ))}
+                        );
+                      })}
                     </tbody>
                   </table>
                 </div>
@@ -296,7 +296,7 @@ export default async function CityPage({ params }: Props) {
                 <div className="content-card" style={{ marginBottom: 28, display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap" }}>
                   <MapPin size={20} style={{ color: "var(--emerald)", flexShrink: 0 }} />
                   <span style={{ color: "var(--slate)", fontSize: ".92rem" }}>
-                    We also serve families across all of {c.country}.
+                    Explore online lesson information for other areas in {c.country}.
                   </span>
                   <Link href={`/locations/${c.countrySlug}`} style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".9rem", textDecoration: "none", marginLeft: "auto" }}>
                     Online Quran Classes in {c.country} →
@@ -329,14 +329,14 @@ export default async function CityPage({ params }: Props) {
                 </h2>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                   {[
-                    "Certified Ijazah-qualified tutors",
-                    `Classes in your ${c.timezone} timezone`,
+                    "Tutor matching based on stated needs",
+                    `${c.timezone} scheduling requests`,
                     "1-on-1 private lessons via Zoom",
-                    "Female tutor option available",
-                    "Weekly parent progress reports",
+                    "Female tutor request option",
+                    "Tutor availability confirmed after matching",
                     "Noorani Qaida, Tajweed, Hifz & Arabic",
-                    "Family discounts for siblings",
-                    "Free 30-minute trial — no card needed",
+                    `Sibling discounts: ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings} ${discountPercent}%`).join(" · ")}`,
+                    `${TRIAL.durationMinutes}-minute trial — $${TRIAL.price}, no card`,
                   ].map((item) => (
                     <div key={item} style={{ display: "flex", gap: 10, alignItems: "flex-start", padding: 12, background: "rgba(10,110,79,.04)", borderRadius: 10 }}>
                       <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 1, flexShrink: 0 }} />
@@ -390,7 +390,7 @@ export default async function CityPage({ params }: Props) {
                 />
                 <div style={{ padding: "16px 18px" }}>
                   <p style={{ fontSize: ".85rem", color: "var(--muted)", margin: 0, lineHeight: 1.55 }}>
-                    After-school Quran at home in {c.city} — no madrasa travel, fixed weekly slot in {c.timezone}.
+                    Request after-school Quran lessons from home in {c.city}. A recurring {c.timezone} time is confirmed after tutor matching.
                   </p>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default async function CityPage({ params }: Props) {
                   Class Timings ({c.timezone})
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  {["Morning: 6 AM – 10 AM", "After school: 3 PM – 6 PM", "Evening: 6 PM – 10 PM", "Weekend slots available"].map((t) => (
+                  {["Morning preference", "After-school preference", "Evening preference", "Weekend preference"].map((t) => (
                     <div key={t} style={{ fontSize: ".85rem", color: "var(--slate)", padding: "8px 10px", background: "var(--ivory)", borderRadius: 8 }}>
                       🕐 {t}
                     </div>
@@ -410,7 +410,7 @@ export default async function CityPage({ params }: Props) {
                   Reserve Free Trial →
                 </a>
                 <div style={{ marginTop: 12, textAlign: "center", color: "var(--muted)", fontSize: ".75rem" }}>
-                  ⭐ Trusted by Muslim families in {c.city} &amp; worldwide
+                  Tutor availability is confirmed after your request.
                 </div>
               </div>
             </div>
@@ -424,12 +424,12 @@ export default async function CityPage({ params }: Props) {
             Start Quran Learning in {c.city} Today
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>
-            Join families from {c.city} already learning with NoorPath. Free trial — no commitment.
+            Request a tutor and preferred {c.timezone} lesson time. Availability is confirmed after matching.
           </p>
           <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="#trial" className="btn-primary-np">Book Free Trial Class →</a>
             <a
-              href={`https://wa.me/923124877906?text=${waText}`}
+              href={`${CONTACT.whatsappUrl}?text=${waText}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-np"

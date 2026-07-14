@@ -6,33 +6,40 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-  description: "Meet Faisal Tariq, Founder and CEO of NoorPath Academy, building accessible online Quran learning for Muslim families worldwide.",
+  description: "Meet Faisal Tariq, Founder and CEO of NoorPath Academy, building accessible online Quran learning for Muslim families.",
   alternates: { canonical: "https://www.noorpath.online/founder" },
   openGraph: {
     title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-    description: "Software engineer and Islamic education entrepreneur building accessible Quran education for families in 40+ countries.",
+    description: "Founder-led work to make online Quran education accessible to Muslim families.",
     url: "https://www.noorpath.online/founder",
     images: [{ url: "/assets/faisal-tariq-founder.png", width: 500, height: 500, alt: "Faisal Tariq — Founder & CEO, NoorPath Academy" }],
   },
   twitter: {
     card: "summary",
     title: "Faisal Tariq — Founder & CEO | NoorPath Academy",
-    description: "Software engineer building accessible Quran education for families worldwide.",
+    description: "Software engineer building accessible online Quran education for families.",
     images: ["/assets/faisal-tariq-founder.png"],
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  mainEntity: {
-    "@type": "Person",
-    name: "Faisal Tariq",
-    jobTitle: "Founder & CEO",
-    worksFor: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
-    description: "Software Engineer and Founder of NoorPath Academy — dedicated to making quality Quran education accessible to every Muslim family worldwide.",
-    url: "https://www.noorpath.online/founder",
-  },
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.noorpath.online/founder",
+      name: "Faisal Tariq — Founder & CEO of NoorPath Academy",
+      description: "The founder story, mission, and values behind NoorPath Academy.",
+      url: "https://www.noorpath.online/founder",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
+        { "@type": "ListItem", position: 2, name: "Founder", item: "https://www.noorpath.online/founder" },
+      ],
+    },
+  ],
 };
 
 export default function FounderPage() {
@@ -79,10 +86,10 @@ export default function FounderPage() {
                   Faisal Tariq is a software engineer and Islamic education entrepreneur who founded NoorPath Academy with a clear mission: to make high-quality Quran education accessible to every Muslim family in the world, regardless of their location.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-                  With a background in software engineering, Faisal combined his technical expertise with a deep passion for Islamic education to build a platform that serves families in over 40 countries — from the USA and UK to Canada, Australia, and beyond.
+                  With a background in software engineering, Faisal combined his technical expertise with a deep interest in Islamic education to build an online learning platform for Muslim families.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 24 }}>
-                  NoorPath Academy was founded in 2018 and has since grown to serve 12,000+ students with 250+ certified tutors, offering everything from Noorani Qaida for 4-year-olds to advanced Hifz programs for adults.
+                  NoorPath Academy was founded in 2018 and offers live 1-to-1 learning across Noorani Qaida, Quran reading, Tajweed, Hifz, and related programs for children and adults.
                 </p>
 
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.1rem", color: "var(--charcoal)", marginBottom: 12 }}>Core Mission</h3>

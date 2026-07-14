@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Online Quran Classes for Kids & Adults — Free Trial 2026",
   },
-  description: "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic. Certified tutors, family plans, free trial.",
+  description: "Live one-to-one online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic, with tutor matching and a free trial request.",
   keywords: [
     "online quran classes", "learn quran online", "quran classes online", "online quran academy",
     "quran tutor online", "live quran classes", "quran classes for kids", "online quran teacher",
@@ -19,34 +19,34 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes" },
   openGraph: {
-    title: "Online Quran Classes — Live 1-on-1 with Certified Tutors | Free Trial",
-    description: "Join 12,000+ students. Live 1-on-1 Quran classes via Zoom — Qaida, Tajweed, Hifz, Arabic. Family plans. Free 30-min trial.",
+    title: "Online Quran Classes — Live One-to-One Lessons | Free Trial",
+    description: "Live one-to-one Quran classes via Zoom or Google Meet — Qaida, Tajweed, Hifz and Arabic, with a free 30-minute trial request.",
     url: "https://www.noorpath.online/online-quran-classes",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes | Live 1-on-1 | NoorPath Academy",
-    description: "Certified tutors, family plans, free 30-min trial. Qaida, Tajweed, Hifz, Arabic.",
+    description: "Tutor matching, family plans and a free 30-minute trial request for Qaida, Tajweed, Hifz or Arabic.",
     images: ["/og-image.png"],
   },
 };
 
 const features = [
-  { icon: <Award size={22} />, title: "Ijazah-Certified Tutors", desc: "Every tutor holds Ijazah or Al-Azhar university qualification — rigorously vetted." },
+  { icon: <Award size={22} />, title: "Tutor Matching", desc: "Request a tutor by learner level, goals, timezone and male or female preference. Available tutor details are confirmed before enrolment." },
   { icon: <Users size={22} />, title: "1-on-1 Private Sessions", desc: "No group classes. Your child gets the tutor's full attention every single session." },
-  { icon: <Clock size={22} />, title: "Flexible Scheduling", desc: "Book morning, evening, or weekend slots that match your timezone and lifestyle." },
-  { icon: <Shield size={22} />, title: "Female Tutors Available", desc: "Certified female tutors (Hafiza) for sisters and daughters — safe and comfortable." },
+  { icon: <Clock size={22} />, title: "Schedule Matching", desc: "Share morning, evening or weekend preferences; the recurring time is confirmed according to tutor availability." },
+  { icon: <Shield size={22} />, title: "Female Tutor Requests", desc: "Request a female tutor for sisters or daughters. NoorPath confirms a suitable match based on current availability." },
   { icon: <Video size={22} />, title: "Live via Zoom / Google Meet", desc: "High-quality live video sessions with screen sharing and digital whiteboards." },
-  { icon: <CheckCircle size={22} />, title: "Weekly Progress Reports", desc: "Parents receive detailed weekly reports on their child's progress and next goals." },
+  { icon: <CheckCircle size={22} />, title: "Learning Goals", desc: "Ask what was covered, what to practise next and how progress will be communicated before enrolment." },
 ];
 
 const classFaqs = [
-  { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a certified tutor via Zoom or Google Meet. Students learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home at a schedule that fits their timezone." },
-  { q: "How much do online Quran classes cost?", a: "NoorPath Academy plans start from $29/month. Your first class is a free 30-minute trial with no credit card required. Family discounts are available for 2+ siblings." },
-  { q: "Are online Quran classes effective for kids?", a: "Yes. 1-on-1 online Quran classes often produce faster progress than group classes because the tutor focuses entirely on your child. NoorPath has 12,000+ students and specialist tutors for ages 4+." },
-  { q: "Can I learn Quran online as a beginner?", a: "Absolutely. NoorPath starts from Noorani Qaida (Arabic alphabet) for complete beginners — children from age 4 and adults of any age welcome." },
-  { q: "Can I get a female Quran teacher online?", a: "Yes. NoorPath offers certified female tutors (Hafiza) for sisters and daughters. Request a female teacher when booking your free trial." },
+  { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a tutor via Zoom or Google Meet. Students can learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home at an agreed time." },
+  { q: "How much do online Quran classes cost?", a: "NoorPath publishes current lesson frequency, duration and monthly prices on its pricing page. New learners can request a free 30-minute trial with no credit card." },
+  { q: "Are online Quran classes effective for kids?", a: "Live one-to-one lessons allow direct recitation feedback, but progress depends on starting level, attendance, tutor fit and practice. Parents should use the trial to assess suitability." },
+  { q: "Can I learn Quran online as a beginner?", a: "Yes. Complete beginners may start with Arabic letter recognition and pronunciation through Noorani Qaida. The tutor can recommend a suitable starting point after assessment." },
+  { q: "Can I get a female Quran teacher online?", a: "You can request a female tutor for sisters or daughters when booking a free trial. NoorPath confirms a suitable match according to learner needs, schedule and current availability." },
 ];
 
 const serviceJsonLd = {
@@ -56,7 +56,7 @@ const serviceJsonLd = {
       "@type": "Service",
       "@id": "https://www.noorpath.online/online-quran-classes#service",
       name: "Online Quran Classes — Live 1-on-1",
-      description: "Live 1-on-1 online Quran classes with certified tutors via Zoom. Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies. Family plans. Free trial.",
+      description: "Live one-to-one online Quran classes via Zoom or Google Meet covering Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies, with a free trial request.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education",
       areaServed: { "@type": "Country", name: "Worldwide" },
@@ -102,8 +102,8 @@ export default function OnlineQuranClassesPage() {
             <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Online Quran Classes</span>
           </nav>
-          <h1>Online Quran Classes — Live 1-on-1 with Certified Tutors</h1>
-          <p>Join 12,000+ students worldwide. Personalised Quran learning from Noorani Qaida to Hifz — for every age, every level, every family.</p>
+          <h1>Online Quran Classes — Live One-to-One Lessons</h1>
+          <p>Personalised online Quran learning for kids and adults, from Noorani Qaida and Quran reading to Tajweed, Hifz and Islamic studies.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/online-quran-classes-for-kids" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Kids Classes</Link>
@@ -144,8 +144,8 @@ export default function OnlineQuranClassesPage() {
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {[
                   [<CheckCircle size={18} key="1" />, "Free 30-minute trial — no credit card needed"],
-                  [<Video size={18} key="2" />, "Live 1-on-1 with a certified tutor via Zoom"],
-                  [<Lock size={18} key="3" />, "Your info is 100% private and secure"],
+                  [<Video size={18} key="2" />, "Live 1-on-1 lesson with an assigned tutor"],
+                  [<Lock size={18} key="3" />, "Privacy and trial terms linked before submission"],
                 ].map(([icon, text]) => (
                   <div key={String(text)} style={{ display: "flex", alignItems: "center", gap: 10, color: "rgba(255,255,255,.85)", fontSize: ".92rem" }}>
                     <span style={{ color: "var(--gold-lt)" }}>{icon}</span> {text}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { courses, getCourse } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
+import { FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const course = getCourse(slug);
   if (!course) return {};
-  const description = `${course.title} with certified online Quran tutors. ${course.level} program for ${course.age}. Live 1-on-1 classes, flexible schedule and free trial.`;
+  const description = `${course.title} for ${course.age}. Live one-to-one online lessons, schedule matching and a free trial request.`;
   return {
     title: `${course.title} — Online | NoorPath Academy`,
     description,
@@ -65,8 +66,7 @@ export default async function CourseDetailPage({ params }: Props) {
           "@type": "Offer",
           price: "0",
           priceCurrency: "USD",
-          description: "Free 30-minute trial class",
-          availability: "https://schema.org/InStock",
+          description: `Free ${TRIAL.durationMinutes}-minute trial class request`,
         },
       },
       {
@@ -182,11 +182,11 @@ export default async function CourseDetailPage({ params }: Props) {
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                   {[
-                    { emoji: "👩‍🏫", title: "Certified Tutors", desc: "All teachers hold Ijazah in Quran recitation and have 3+ years of teaching experience." },
-                    { emoji: "🌍", title: "Students in 40+ Countries", desc: "Join 12,000+ students from the USA, UK, Canada, Australia, UAE and more." },
-                    { emoji: "⏰", title: "Flexible Schedules", desc: "Morning, afternoon, or evening slots available 7 days a week — any timezone." },
-                    { emoji: "👨‍👩‍👧‍👦", title: "Family Plans Available", desc: "Enrol multiple family members and save up to 30% on monthly fees." },
-                    { emoji: "🆓", title: "Free Trial Class", desc: "Try a full 30-minute class for free — no commitment, no credit card needed." },
+                    { emoji: "👩‍🏫", title: "Tutor Matching", desc: "Request a tutor by learner level, course goal, timezone and male or female preference. Available tutor details are confirmed before enrolment." },
+                    { emoji: "💻", title: "Live One-to-One Lessons", desc: "Lessons take place online with the assigned tutor rather than through pre-recorded videos." },
+                    { emoji: "⏰", title: "Schedule Matching", desc: "NoorPath checks current tutor availability against the learner's timezone and preferred class time." },
+                    { emoji: "👨‍👩‍👧‍👦", title: "Family Plans Available", desc: `Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}%, depending on the number enrolled.` },
+                    { emoji: "🆓", title: "Free Trial Class", desc: `Request a ${TRIAL.durationMinutes}-minute trial with no credit card. Tutor availability is confirmed after the request.` },
                   ].map((item) => (
                     <div key={item.title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                       <div style={{ fontSize: "1.6rem", flexShrink: 0 }}>{item.emoji}</div>
@@ -243,10 +243,10 @@ export default async function CourseDetailPage({ params }: Props) {
                   Start {course.shortTitle} Today
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".85rem", marginBottom: 6, lineHeight: 1.6 }}>
-                  Free 30-minute trial class. No credit card required.
+                  Free {TRIAL.durationMinutes}-minute trial request. No credit card required.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, margin: "20px 0" }}>
-                  {["✅ Certified & verified tutors", "✅ 1-on-1 personalised sessions", "✅ Flexible timing — any timezone", "✅ Free first class, cancel anytime"].map((p) => (
+                  {["✓ Available tutor details confirmed", "✓ Live one-to-one session", "✓ Timezone and schedule matching", "✓ Free trial before paid enrolment"].map((p) => (
                     <div key={p} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", textAlign: "left" }}>{p}</div>
                   ))}
                 </div>
@@ -269,7 +269,7 @@ export default async function CourseDetailPage({ params }: Props) {
             Ready to Start {course.shortTitle}?
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>
-            Join 12,000+ students learning with certified tutors. Book your free 30-minute trial today.
+            Request a free {TRIAL.durationMinutes}-minute trial before choosing a paid plan.
           </p>
           <Link href="/online-quran-classes#cta" className="btn-primary-np">
             Book Free Trial Class →

@@ -91,7 +91,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ol>
 
           <div class="gold-box">
-            <strong>How to book:</strong> On the free trial form, write “female tutor for daughter, age X, UK evenings” (or your country). We match within 24 hours. No credit card for the trial.
+            <strong>How to book:</strong> On the free trial form, write “female tutor for daughter, age X, UK evenings” (or your country). NoorPath confirms tutor and schedule availability after the request. No credit card is required for the trial.
           </div>
 
           <div class="highlight-box">
@@ -149,7 +149,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <ul>
             <li>UK: often <strong>5–6pm GMT</strong> after school; weekends for catch-up</li>
             <li>US: early morning or after school EST/PST</li>
-            <li>Fewer than 3 live sessions/week usually stalls retention</li>
+            <li>Lesson frequency should leave enough time for consistent home revision</li>
           </ul>
 
           <h2 id="pages">How many pages per day?</h2>
@@ -579,7 +579,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ul>
 
           <h2 id="family">Family and sibling discounts</h2>
-          <p>If you have 2+ children, always ask about family pricing before paying. Typical structure: <strong>2 siblings ≈ 15% off, 3 siblings ≈ 20% off, 4+ ≈ 25% off</strong> — each child still gets their own 1-on-1 class at their own level. Details on the <a href="/pricing">pricing page</a>.</p>
+          <p>If you have two or more children, ask about family pricing before paying. NoorPath's current sibling discounts and plan details are maintained on the <a href="/pricing">pricing page</a>.</p>
 
           <h2 id="redflags">Red flags — when you are overpaying (or worse)</h2>
           <ol>
@@ -591,7 +591,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ol>
 
           <h2 id="worth">Is it cheaper than a local madrasa or home tutor?</h2>
-          <p>In the UK/US, in-person home Quran tutors charge <strong>£15–£30 / $20–$40 per hour</strong> plus travel constraints. Online 1-on-1 classes deliver the same certified teaching at roughly half the price, with no travel and recorded progress. That is why 12,000+ families have moved online — read the full comparison in <a href="/blog/benefits-of-online-quran-classes">benefits of online Quran classes</a>.</p>
+          <p>In-person and online Quran tutoring costs vary by country, tutor, lesson length and format. Online one-to-one classes remove travel and may offer more scheduling options. Compare the current lesson frequency, duration and full monthly price before choosing — read the full comparison in <a href="/blog/benefits-of-online-quran-classes">benefits of online Quran classes</a>.</p>
 
           <div class="gold-box">
             <strong>Test before you pay anything.</strong> Book a <a href="/online-quran-classes#cta">free 30-minute trial class</a> — meet a certified tutor, see the teaching quality, then decide. No credit card required.
@@ -761,7 +761,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   },
   "how-to-choose-online-quran-teacher": {
     style: S,
-    content: `<p>Hundreds of academies claim "certified tutors" and "best Quran teachers" — and most parents cannot tell the difference until months of fees are wasted. This is the <strong>12-point checklist</strong> teachers themselves would use: how to verify Ijazah claims, what to test in the trial class, and the red flags that end the conversation immediately.</p>
+    content: `<p>Online academies may use phrases such as "certified tutors" and "best Quran teachers" without showing evidence for the specific tutor offered. This <strong>12-point checklist</strong> explains how to ask for relevant credentials, what to assess in a trial class, and which pricing or safeguarding gaps need clarification.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> A good online Quran teacher has (1) verifiable certification, (2) teaches 1-on-1 with live correction, (3) offers a free trial, (4) sends written progress reports, and (5) works under an academy with clear safety rules. Test all five in one <a href="/online-quran-classes#cta">free trial class</a> before paying anyone.

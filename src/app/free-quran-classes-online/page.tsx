@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
-import { CheckCircle, Gift, Star, Users, Clock } from "lucide-react";
+import { Gift } from "lucide-react";
 
 export const revalidate = false;
 
@@ -10,19 +10,19 @@ export const metadata: Metadata = {
   title: {
     absolute: "Free Quran Classes Online — Kids & Adults | No Credit Card Trial",
   },
-  description: "Book a free online Quran class with a certified teacher. 30-minute live 1-on-1 trial for kids, adults and families. No credit card.",
+  description: "Request a free 30-minute live one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
   keywords: ["free quran classes online", "free quran lessons online", "free online quran class", "free quran trial", "free quran learning", "free quran class for kids", "free quran course", "free islamic classes online", "free quran teacher online", "free quran education"],
   alternates: { canonical: "https://www.noorpath.online/free-quran-classes-online" },
   openGraph: {
     title: "Free Quran Classes Online — Free Trial | NoorPath Academy",
-    description: "Book your FREE 30-minute online Quran class today. Certified teachers, no credit card needed. For kids, adults and families.",
+    description: "Request a free 30-minute one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
     url: "https://www.noorpath.online/free-quran-classes-online",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Quran Classes Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Quran Classes Online | NoorPath Academy",
-    description: "Free 30-min trial class with certified Quran teacher. No credit card.",
+    description: "Free 30-minute one-to-one online Quran trial request. No credit card.",
     images: ["/og-image.png"],
   },
 };
@@ -33,7 +33,7 @@ const jsonLd = {
     {
       "@type": "Service",
       name: "Free Online Quran Classes — Trial",
-      description: "NoorPath Academy offers a free 30-minute online Quran class for new students. Certified tutors, 1-on-1 live sessions, no credit card required.",
+      description: "NoorPath Academy offers new learners a free 30-minute one-to-one online Quran trial request with no credit card required.",
       provider: ORGANIZATION_REF,
       serviceType: "Free Online Quran Trial Class",
       offers: {
@@ -42,7 +42,6 @@ const jsonLd = {
         priceCurrency: "USD",
         name: "Free 30-Minute Trial Quran Class",
         description: "No credit card required. Book your free trial class today.",
-        availability: "https://schema.org/InStock",
       },
       url: "https://www.noorpath.online/free-quran-classes-online",
     },
@@ -52,12 +51,12 @@ const jsonLd = {
         {
           "@type": "Question",
           name: "Is the free Quran class really free?",
-          acceptedAnswer: { "@type": "Answer", text: "Yes — completely free. NoorPath Academy offers a free 30-minute live trial class with a certified Quran teacher. No credit card is required, no automatic charges, and no hidden fees. You only pay if you choose to continue after the trial." },
+          acceptedAnswer: { "@type": "Answer", text: "Yes. NoorPath Academy offers a free 30-minute live trial class. No credit card is required and there is no automatic paid enrolment. Tutor and schedule availability are confirmed after your request." },
         },
         {
           "@type": "Question",
           name: "What happens in the free trial Quran class?",
-          acceptedAnswer: { "@type": "Answer", text: "Your assigned certified teacher will assess your current level, understand your learning goals, and demonstrate our teaching methodology. You'll get a taste of how our classes work and can ask any questions. At the end, you'll receive a personalised learning plan." },
+          acceptedAnswer: { "@type": "Answer", text: "The tutor will discuss your current level and learning goals, teach part of a live lesson, and explain suitable next steps. You can ask questions before deciding whether to enrol." },
         },
         {
           "@type": "Question",
@@ -96,11 +95,11 @@ export default function FreeQuranClassesPage() {
           </nav>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(232,184,75,.15)", border: "1px solid rgba(232,184,75,.3)", borderRadius: 50, padding: "6px 18px", marginBottom: 16 }}>
             <Gift size={16} style={{ color: "var(--gold-lt)" }} />
-            <span style={{ color: "var(--gold-lt)", fontSize: ".82rem", fontWeight: 700 }}>100% FREE — No credit card required</span>
+            <span style={{ color: "var(--gold-lt)", fontSize: ".82rem", fontWeight: 700 }}>FREE TRIAL — No credit card required</span>
           </div>
           <h1>Free Online Quran Classes<br /><em style={{ color: "var(--gold-lt)" }}>30-Minute Live Trial</em></h1>
           <p style={{ maxWidth: 580 }}>
-            Experience a live 1-on-1 Quran class with a certified teacher — completely free. For children, adults, and families. All levels, all ages, all timezones.
+            Request a free live 1-on-1 Quran class for a child or adult. NoorPath confirms an available tutor and suitable time after you submit the form.
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
             <Link href="/online-quran-classes#cta" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
@@ -108,7 +107,7 @@ export default function FreeQuranClassesPage() {
             </Link>
           </div>
           <div style={{ display: "flex", gap: 24, marginTop: 28, flexWrap: "wrap" }}>
-            {["✅ Zero cost", "✅ No credit card", "✅ Live 1-on-1 class", "✅ Certified teacher", "✅ Any timezone"].map((t) => (
+            {["✓ No trial fee", "✓ No credit card", "✓ Live 1-on-1 class", "✓ Tutor details confirmed", "✓ Timezone matching"].map((t) => (
               <span key={t} style={{ color: "rgba(255,255,255,.8)", fontSize: ".83rem" }}>{t}</span>
             ))}
           </div>
@@ -212,8 +211,8 @@ export default function FreeQuranClassesPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              { q: "Is the free Quran class really free?", a: "Yes — 100% free. No credit card, no automatic subscription, no hidden charges. You only pay if you choose to enrol after the trial." },
-              { q: "What happens in the free trial class?", a: "Your certified teacher will assess your level, teach a real 30-minute lesson, and give you a personalised learning plan with realistic goals and timelines." },
+              { q: "Is the free Quran class really free?", a: "Yes. No credit card is required and there is no automatic paid subscription. You only pay if you choose a plan after the trial." },
+              { q: "What happens in the free trial class?", a: "The tutor discusses your level and goals, teaches part of a live 30-minute lesson, and explains possible next steps. Progress and timelines vary by learner." },
               { q: "How do I book the free class?", a: "Click 'Book Free Trial Class,' fill in your name, WhatsApp number, and preferred timing. Our team will confirm your slot (usually within 2–3 hours) and send the Zoom link." },
               { q: "Can my child join the free class?", a: "Yes! The free trial is available for all ages — children from age 4, teenagers, adults, and seniors. We have specialist teachers for every age group." },
               { q: "Do I need any equipment?", a: "Just a smartphone, tablet, or computer with Zoom or Skype installed. No special equipment needed. Your teacher will guide you through everything." },
@@ -236,7 +235,7 @@ export default function FreeQuranClassesPage() {
                 Book Your FREE Quran Class
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", lineHeight: 1.7 }}>
-                30 minutes. Live. 1-on-1. Certified teacher. No credit card.
+                30 minutes. Live. 1-on-1. Tutor match confirmed. No credit card.
               </p>
             </div>
             <div className="cta-form-wrap">

@@ -7,10 +7,6 @@ export interface City {
   countrySlug: string;
   flag: string;
   timezone: string;
-  currency: string;
-  approxPrice: string;
-  rating: string;
-  reviews: string;
   population: string;
   /** Unique, genuinely helpful local context (avoids duplicate content) */
   localContext: string;
@@ -26,10 +22,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "214",
     population: "1.3 million Muslims",
     localContext:
       "London is home to the UK's largest Muslim community, with dense populations in Tower Hamlets, Newham, Redbridge and Ealing. Many London families juggle long commutes and busy school runs, so online Quran classes remove travel time to the local masjid or madrasa. Popular slots are weekday evenings (4–7pm GMT) after school and Saturday mornings.",
@@ -42,10 +34,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "168",
     population: "340,000 Muslims",
     localContext:
       "Birmingham has one of the highest proportions of Muslims of any UK city, with vibrant communities in Small Heath, Sparkbrook and Alum Rock. Families here value one-on-one online tutoring to give each child focused Tajweed and Hifz attention that busy weekend madrasas cannot always provide.",
@@ -58,13 +46,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "121",
     population: "220,000 Muslims",
     localContext:
-      "Greater Manchester's Muslim community is concentrated in Cheetham Hill, Longsight and Rusholme. With families balancing work and school, online classes let children learn Quran from home with a certified tutor, while parents watch progress each week.",
+      "Greater Manchester's Muslim community is concentrated in Cheetham Hill, Longsight and Rusholme. Online classes can reduce travel around work and school, with GMT or BST lesson preferences subject to tutor matching.",
     keywords: ["online quran classes manchester", "quran teacher manchester", "quran classes near me manchester", "learn quran manchester", "quran tutor manchester", "online quran classes for kids manchester", "female quran teacher manchester"],
   },
   {
@@ -74,13 +58,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "142",
     population: "150,000+ Muslims",
     localContext:
-      "Bradford has one of the UK's densest Muslim communities, with strong family traditions of Quran learning. Many parents want 1-on-1 attention that crowded weekend madrasas cannot always give — so after-school online classes (4–7pm GMT) with a fixed tutor have become the preferred option.",
+      "Bradford has one of the UK's densest Muslim communities, with strong family traditions of Quran learning. Families can request one-to-one after-school lessons in GMT or BST, subject to tutor matching.",
     keywords: [
       "online quran classes bradford", "quran teacher bradford", "quran classes near me bradford",
       "learn quran bradford", "online quran classes for kids bradford", "female quran teacher bradford",
@@ -94,13 +74,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "98",
     population: "80,000+ Muslims",
     localContext:
-      "Leeds families often balance school clubs and long workdays. Online Quran classes let children learn at home with a certified tutor on a fixed weekly slot — popular windows are weekday evenings and Sunday mornings — without another car journey across the city.",
+      "Leeds families often balance school clubs and long workdays. Online Quran classes can avoid another journey across the city, with weekday evening or weekend preferences subject to tutor matching.",
     keywords: [
       "online quran classes leeds", "quran teacher leeds", "quran classes near me leeds",
       "learn quran leeds", "online quran classes for kids leeds", "female quran teacher leeds",
@@ -113,13 +89,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "87",
     population: "75,000+ Muslims",
     localContext:
-      "Leicester's diverse Muslim community values both traditional learning and flexible modern options. Parents here often start children on Noorani Qaida online from age 4–5, then progress to Tajweed and short surahs with the same tutor each week.",
+      "Leicester's diverse Muslim community values both traditional learning and flexible modern options. Families can request Noorani Qaida, Tajweed, or short-surah lessons in GMT or BST, subject to tutor matching.",
     keywords: [
       "online quran classes leicester", "quran teacher leicester", "quran classes near me leicester",
       "learn quran leicester", "online quran classes for kids leicester", "female quran teacher leicester",
@@ -132,13 +104,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uk",
     flag: "🇬🇧",
     timezone: "GMT / BST",
-    currency: "£",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "76",
     population: "50,000+ Muslims",
     localContext:
-      "Luton has a large Muslim population relative to its size. Families often prefer female tutors for daughters and short 20–30 minute after-school sessions that fit UK school timings — exactly what 1-on-1 online classes are built for.",
+      "Luton has a large Muslim population relative to its size. Families can request a female tutor or an after-school lesson that fits UK school timings, subject to tutor matching.",
     keywords: [
       "online quran classes luton", "quran teacher luton", "quran classes near me luton",
       "learn quran luton", "online quran classes for kids luton", "female quran teacher luton",
@@ -152,13 +120,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-usa",
     flag: "🇺🇸",
     timezone: "EST",
-    currency: "$",
-    approxPrice: "$29",
-    rating: "4.9",
-    reviews: "196",
     population: "800,000 Muslims",
     localContext:
-      "New York City has one of America's largest and most diverse Muslim populations, spread across Brooklyn, Queens and the Bronx. Between school, activities and long commutes, NYC families use online Quran classes to save travel time — booking EST after-school and evening slots that fit the city's fast pace.",
+      "New York City has one of America's largest and most diverse Muslim populations, spread across Brooklyn, Queens and the Bronx. Online lessons can reduce travel around school and activities; EST after-school and evening preferences are subject to tutor matching.",
     keywords: ["online quran classes new york", "quran teacher new york", "quran classes nyc", "learn quran new york", "quran tutor nyc"],
   },
   {
@@ -168,13 +132,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-usa",
     flag: "🇺🇸",
     timezone: "CST",
-    currency: "$",
-    approxPrice: "$29",
-    rating: "4.9",
-    reviews: "142",
     population: "500,000 Muslims",
     localContext:
-      "Houston is home to one of the fastest-growing Muslim communities in the United States, with many masajid and Islamic schools across the metro area. Families here choose online tutoring for personalised Hifz and Tajweed support in the CST timezone, with flexible evening and weekend slots.",
+      "Houston has Muslim communities and Islamic schools across the metro area. Families can request online Hifz or Tajweed support in CST evening or weekend windows, subject to tutor matching.",
     keywords: ["online quran classes houston", "quran teacher houston", "quran classes houston texas", "learn quran houston", "quran tutor houston"],
   },
   {
@@ -184,10 +144,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-usa",
     flag: "🇺🇸",
     timezone: "CST",
-    currency: "$",
-    approxPrice: "$29",
-    rating: "4.8",
-    reviews: "118",
     population: "400,000 Muslims",
     localContext:
       "The Chicago metropolitan area, including the western suburbs, has a long-established Muslim community. Harsh winters make travelling to weekend Quran school difficult for months at a time, so families increasingly rely on consistent year-round online classes in the CST timezone.",
@@ -201,10 +157,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-canada",
     flag: "🇨🇦",
     timezone: "EST",
-    currency: "C$",
-    approxPrice: "C$39",
-    rating: "4.9",
-    reviews: "156",
     population: "600,000 Muslims",
     localContext:
       "The Greater Toronto Area is home to Canada's largest Muslim population, with major communities in Mississauga, Scarborough and Brampton. Cold Canadian winters and long distances make online Quran classes especially practical, letting children learn consistently from home in the EST timezone.",
@@ -218,13 +170,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-australia",
     flag: "🇦🇺",
     timezone: "AEST / AEDT",
-    currency: "A$",
-    approxPrice: "A$45",
-    rating: "4.9",
-    reviews: "97",
     population: "250,000 Muslims",
     localContext:
-      "Sydney is home to Australia's largest Muslim community, particularly in the western suburbs like Lakemba, Auburn and Bankstown. Families here choose online Quran tutoring for its convenience and access to certified tutors, with dedicated AEST early-morning and evening slots.",
+      "Sydney is home to Australia's largest Muslim community, particularly in western suburbs such as Lakemba, Auburn and Bankstown. AEST or AEDT early-morning and evening lesson preferences are subject to tutor matching.",
     keywords: ["online quran classes sydney", "quran teacher sydney", "quran classes sydney", "learn quran sydney", "quran tutor sydney"],
   },
   {
@@ -234,13 +182,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-australia",
     flag: "🇦🇺",
     timezone: "AEST / AEDT",
-    currency: "A$",
-    approxPrice: "A$45",
-    rating: "4.8",
-    reviews: "76",
     population: "200,000 Muslims",
     localContext:
-      "Melbourne's Muslim community thrives in the northern and western suburbs such as Broadmeadows, Coburg and Werribee. With growing demand for certified tutors, families use online classes to give children structured Noorani Qaida, Tajweed and Hifz instruction in the AEST timezone.",
+      "Melbourne's Muslim community includes northern and western suburbs such as Broadmeadows, Coburg and Werribee. Families can request online Qaida, Tajweed or Hifz lessons in AEST or AEDT, subject to tutor matching.",
     keywords: ["online quran classes melbourne", "quran teacher melbourne", "quran classes melbourne", "learn quran melbourne", "quran tutor melbourne"],
   },
   // ── UAE ─────────────────────────────────────────────────────────
@@ -251,13 +195,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uae",
     flag: "🇦🇪",
     timezone: "GST (UTC+4)",
-    currency: "AED",
-    approxPrice: "AED 110",
-    rating: "4.9",
-    reviews: "188",
     population: "2.5 million Muslims",
     localContext:
-      "Dubai's international expat community includes Muslim families from South Asia, the Arab world, Africa and the West. With children often in demanding international schools, parents choose online Quran classes for flexible evening GST slots and English-speaking certified tutors.",
+      "Dubai's international expat community includes Muslim families from South Asia, the Arab world, Africa and the West. Families can request English-language instruction or GST evening lessons, subject to tutor matching.",
     keywords: ["online quran classes dubai", "quran teacher dubai", "quran classes dubai", "learn quran dubai", "quran tutor dubai"],
   },
   {
@@ -267,10 +207,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-uae",
     flag: "🇦🇪",
     timezone: "GST (UTC+4)",
-    currency: "AED",
-    approxPrice: "AED 110",
-    rating: "4.9",
-    reviews: "121",
     population: "1.5 million Muslims",
     localContext:
       "As the UAE capital, Abu Dhabi hosts a large community of Emirati and expat Muslim families. Many combine school Islamic studies with one-on-one online tutoring for personalised Tajweed and Hifz, choosing convenient evening GST slots after work and school.",
@@ -284,13 +220,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-saudi-arabia",
     flag: "🇸🇦",
     timezone: "AST (UTC+3)",
-    currency: "SAR",
-    approxPrice: "SAR 110",
-    rating: "4.9",
-    reviews: "134",
     population: "4 million Muslims",
     localContext:
-      "As the gateway to Makkah, Jeddah has a deeply rooted Islamic culture and a large expat population. Families here use online tutoring to supplement school with personalised Tajweed perfection and structured Hifz, with flexible AST slots that respect prayer times.",
+      "As the gateway to Makkah, Jeddah has a deeply rooted Islamic culture and a large expat population. Families can request online Tajweed or Hifz support in AST around school and prayer times, subject to tutor matching.",
     keywords: ["online quran classes jeddah", "quran teacher jeddah", "quran classes jeddah", "learn quran jeddah", "quran tutor jeddah"],
   },
   {
@@ -300,13 +232,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-saudi-arabia",
     flag: "🇸🇦",
     timezone: "AST (UTC+3)",
-    currency: "SAR",
-    approxPrice: "SAR 110",
-    rating: "4.9",
-    reviews: "142",
     population: "6 million Muslims",
     localContext:
-      "Riyadh, the Saudi capital, combines strong traditional Islamic schooling with a modern expat community. Many families add online one-on-one tutoring for focused Tajweed and Hifz coaching, choosing AST evening and weekend slots around the school day.",
+      "Riyadh, the Saudi capital, combines strong traditional Islamic schooling with a modern expat community. Families can request online one-to-one Tajweed or Hifz support in AST evening or weekend windows, subject to tutor matching.",
     keywords: ["online quran classes riyadh", "quran teacher riyadh", "quran classes riyadh", "learn quran riyadh", "quran tutor riyadh"],
   },
   // ── India ───────────────────────────────────────────────────────
@@ -317,13 +245,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-india",
     flag: "🇮🇳",
     timezone: "IST (UTC+5:30)",
-    currency: "₹",
-    approxPrice: "₹1,500",
-    rating: "4.9",
-    reviews: "148",
     population: "2.4 million Muslims",
     localContext:
-      "Hyderabad has one of India's richest Islamic heritages and a large Muslim population in the Old City and beyond. Families choose online Quran classes for affordable access to certified qaris and structured Hifz programmes, with flexible IST slots.",
+      "Hyderabad has a rich Islamic heritage and a large Muslim population in the Old City and beyond. Families can request online Qaida, Tajweed or Hifz lessons in IST, subject to tutor matching.",
     keywords: ["online quran classes hyderabad", "quran teacher hyderabad", "quran classes hyderabad", "learn quran hyderabad", "quran tutor hyderabad"],
   },
   {
@@ -333,10 +257,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-india",
     flag: "🇮🇳",
     timezone: "IST (UTC+5:30)",
-    currency: "₹",
-    approxPrice: "₹1,500",
-    rating: "4.8",
-    reviews: "112",
     population: "2.3 million Muslims",
     localContext:
       "Mumbai's Muslim community is spread across areas like Mumbra, Kurla and Bhendi Bazaar. In a city famous for long commutes and packed schedules, online Quran classes let children learn from home with a dedicated tutor, saving hours of travel each week.",
@@ -350,13 +270,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-pakistan",
     flag: "🇵🇰",
     timezone: "PKT (UTC+5)",
-    currency: "Rs",
-    approxPrice: "Rs 3,000",
-    rating: "4.9",
-    reviews: "163",
     population: "14 million Muslims",
     localContext:
-      "Karachi, Pakistan's largest city, has families across every neighbourhood seeking quality Quran education. Online classes offer the convenience of learning with a certified qari from home — avoiding the city's traffic and heat — with affordable PKT-timezone plans.",
+      "Karachi's size, traffic and heat can make learning from home practical. Families can request online Quran lessons in PKT morning, after-school or evening windows, subject to tutor matching.",
     keywords: ["online quran classes karachi", "quran teacher karachi", "quran classes karachi", "learn quran karachi", "quran tutor karachi"],
   },
   {
@@ -366,10 +282,6 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-pakistan",
     flag: "🇵🇰",
     timezone: "PKT (UTC+5)",
-    currency: "Rs",
-    approxPrice: "Rs 3,000",
-    rating: "4.9",
-    reviews: "139",
     population: "11 million Muslims",
     localContext:
       "Lahore, the cultural heart of Pakistan, has a strong tradition of Quranic learning. Families here choose online tutoring for its flexibility and access to specialist Hifz and Tajweed tutors, with morning, after-school and evening PKT slots.",
@@ -383,13 +295,9 @@ export const cities: City[] = [
     countrySlug: "online-quran-classes-qatar",
     flag: "🇶🇦",
     timezone: "AST (UTC+3)",
-    currency: "QAR",
-    approxPrice: "QAR 110",
-    rating: "4.9",
-    reviews: "108",
     population: "1.8 million Muslims",
     localContext:
-      "Doha's large expat community brings together Muslim families from across the world. With children in international schools, parents value online Quran classes with English-speaking certified tutors and flexible evening AST slots after school and work.",
+      "Doha's expat community brings together Muslim families from many backgrounds. Families can request English-language instruction or AST evening lessons after school and work, subject to tutor matching.",
     keywords: ["online quran classes doha", "quran teacher doha", "quran classes doha", "learn quran doha", "quran tutor qatar"],
   },
 ];

@@ -1,8 +1,11 @@
+import { TRUSTPILOT } from "@/lib/academyFacts";
+
 // Real reviews from https://www.trustpilot.com/review/noorpath.online
 // ONLY add reviews that actually exist on the Trustpilot page — never invent any.
 
-export const TRUSTPILOT_SCORE = "4.0";
-export const TRUSTPILOT_REVIEW_COUNT = 4;
+export const TRUSTPILOT_SCORE = TRUSTPILOT.score;
+export const TRUSTPILOT_REVIEW_COUNT = TRUSTPILOT.reviewCount;
+export const TRUSTPILOT_LAST_CHECKED = TRUSTPILOT.lastChecked;
 
 export interface TrustpilotReview {
   name: string;

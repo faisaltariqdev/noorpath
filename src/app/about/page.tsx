@@ -2,41 +2,42 @@ import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import { ORGANIZATION_ID } from "@/lib/organizationSchema";
-import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp, CheckCircle, Shield, Star, BookOpen, Clock, GraduationCap } from "lucide-react";
+import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp, CheckCircle, Shield, BookOpen, Clock, GraduationCap } from "lucide-react";
+import { FAMILY_DISCOUNTS, SERVICE_FACTS } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "About NoorPath Academy — Certified Online Quran Education for Families | Since 2018" },
+  title: { absolute: "About NoorPath Academy — Online Quran Education for Families | Since 2018" },
   description:
-    "NoorPath Academy — a founder-led online Quran academy since 2018. 12,000+ students, 250+ Ijazah-certified tutors, 40+ countries. Noorani Qaida, Tajweed, Hifz & Arabic. Free trial.",
+    "NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes with a free 30-minute trial.",
   keywords: [
     "about noorpath academy", "online quran academy", "certified quran tutors", "ijazah certified online quran",
     "quran academy since 2018", "noorpath quran", "online islamic education", "quran school online",
-    "best online quran academy", "quran academy for kids and adults",
+    "online quran academy for families", "quran academy for kids and adults",
   ],
   alternates: { canonical: "https://www.noorpath.online/about" },
   openGraph: {
     title: "About NoorPath Academy — Online Quran Education for Families",
-    description: "Our mission: making quality Quran education accessible to every Muslim family worldwide. 12,000+ students, 250+ certified tutors, 40+ countries.",
+    description: "Our mission is to make quality Quran education accessible through live 1-to-1 lessons, tutor matching, and a free 30-minute trial.",
     url: "https://www.noorpath.online/about",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About NoorPath Academy",
-    description: "12,000+ students, 250+ Ijazah tutors, 40+ countries. Quality Quran education for every family.",
+    description: "Live 1-to-1 Quran education for children and adults, with tutor matching and a free 30-minute trial.",
     images: ["/og-image.png"],
   },
 };
 
 const faqs = [
-  { q: "When was NoorPath Academy founded?", a: "NoorPath Academy was founded in 2018 by Faisal Tariq with the mission of making certified Quran education accessible to every Muslim family worldwide — regardless of their country or timezone." },
-  { q: "How are NoorPath tutors qualified?", a: "Every tutor at NoorPath Academy holds either Ijazah certification (a chain of narration back to the Prophet ﷺ) or Al-Azhar university qualifications. All tutors are background-checked, undergo teaching trials, and receive monthly performance reviews. Only the top 15% of applicants are accepted." },
-  { q: "What age groups does NoorPath Academy teach?", a: "We teach everyone from age 4 to senior adults. We have specialist tutors for toddlers and young children (Noorani Qaida, daily duas), school-age children (Quran recitation, Tajweed), teenagers (Hifz, Arabic), adult beginners, adult advanced learners, and elderly students returning to the Quran." },
-  { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led with a strict quality standard. Unlike large marketplaces, we personally vet every tutor and match each student to the right teacher. We offer weekly progress reports, family plans for siblings, and flexible female tutors for sisters and daughters. Parents can read our genuine reviews on Trustpilot." },
-  { q: "Is NoorPath Academy accredited?", a: "NoorPath's tutors hold internationally recognized Ijazah certifications — the gold standard in Quran teaching. Ijazah is an unbroken chain of authorized transmission of the Quran going back to the Prophet Muhammad ﷺ. Many of our tutors also hold degrees from Al-Azhar University in Cairo." },
-  { q: "What countries does NoorPath serve?", a: "We serve students in 40+ countries including USA, UK, Canada, Australia, UAE, Saudi Arabia, Pakistan, Germany, Malaysia, Bangladesh, South Africa, France, Netherlands, and many more. We have tutors available across all major timezones." },
+  { q: "When was NoorPath Academy founded?", a: "NoorPath Academy was founded in 2018 by Faisal Tariq with the mission of making online Quran education more accessible to Muslim families." },
+  { q: "How are NoorPath tutors qualified?", a: "Qualifications vary by tutor and teaching focus. Before enrolment, NoorPath confirms the proposed tutor's relevant credentials and experience for the requested subject." },
+  { q: "What age groups does NoorPath Academy teach?", a: "NoorPath offers tutor matching for children and adults across Quran reading, Tajweed, Hifz, Arabic, and related learning goals." },
+  { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led and provides live 1-to-1 lessons. Matching considers the learner's level, goals, timezone, and male or female tutor preference; availability is confirmed after each request." },
+  { q: "Is NoorPath Academy accredited?", a: "NoorPath Academy does not present a blanket accreditation claim. Tutor qualifications vary, and specific credentials relevant to the proposed tutor are confirmed before enrolment." },
+  { q: "Where are classes available?", a: "Classes are online. Share your timezone and preferred lesson windows when requesting a trial, and NoorPath will confirm tutor availability." },
 ];
 
 const jsonLd = {
@@ -47,7 +48,7 @@ const jsonLd = {
       name: "About NoorPath Academy",
       url: "https://www.noorpath.online/about",
       mainEntity: { "@id": ORGANIZATION_ID },
-      description: "NoorPath Academy is a certified online Quran academy founded in 2018, serving 12,000+ students in 40+ countries with Ijazah-certified tutors.",
+      description: "NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 lessons and tutor matching for children and adults.",
     },
     {
       "@type": "FAQPage",
@@ -68,11 +69,11 @@ const jsonLd = {
 };
 
 const stats = [
-  { icon: <Users size={28} />, num: "12,000+", label: "Students Served" },
-  { icon: <Award size={28} />, num: "250+", label: "Certified Tutors" },
-  { icon: <Globe size={28} />, num: "40+", label: "Countries" },
-  { icon: <Heart size={28} />, num: "250+", label: "Certified Tutors" },
-  { icon: <Star size={28} />, num: "★★★★★", label: "Trustpilot Reviewed" },
+  { icon: <Users size={28} />, num: SERVICE_FACTS[0].value, label: SERVICE_FACTS[0].label },
+  { icon: <Clock size={28} />, num: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
+  { icon: <CheckCircle size={28} />, num: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
+  { icon: <Globe size={28} />, num: SERVICE_FACTS[3].value, label: SERVICE_FACTS[3].label },
+  { icon: <Heart size={28} />, num: `Up to ${FAMILY_DISCOUNTS[2].discountPercent}%`, label: "Sibling Discount" },
   { icon: <GraduationCap size={28} />, num: "2018", label: "Founded" },
 ];
 
@@ -91,7 +92,7 @@ export default function AboutPage() {
           </nav>
           <h1>About NoorPath Academy</h1>
           <p>
-            Illuminating hearts through the teachings of the Holy Quran — since 2018, for families in 40+ countries. Certified, 1-on-1, live online Quran classes with Ijazah-qualified teachers.
+            Illuminating hearts through the teachings of the Holy Quran since 2018, with live 1-to-1 online classes for children and adults.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
@@ -130,10 +131,10 @@ export default function AboutPage() {
               <strong>NoorPath Academy</strong> is a founder-led <Link href="/online-quran-academy" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> established in 2018 with one goal: to give every Muslim family access to high-quality, personalised Quran and Islamic education — regardless of their location.
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-              We serve families in over 40 countries, with 250+ certified tutors holding Ijazah or Al-Azhar university qualifications. Our curriculum spans <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for 4-year-olds</Link> to advanced <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz and Ijazah programs</Link> for adults.
+              Our curriculum spans <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link> to <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz programs</Link> for children and adults. Tutor matching considers subject, level, schedule, and tutor preference.
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8 }}>
-              Unlike large marketplace platforms, NoorPath is founder-led and quality-controlled. We personally vet every tutor, monitor every teaching relationship, and only retain teachers who consistently earn 5-star parent feedback. That is why families across 40+ countries trust us — and you can read their genuine reviews on Trustpilot.
+              NoorPath is founder-led and focused on 1-to-1 teaching. Before enrolment, families can ask about the proposed tutor&apos;s relevant qualifications and experience, then use the free trial to assess lesson fit.
             </p>
           </div>
 
@@ -145,11 +146,11 @@ export default function AboutPage() {
           <div className="content-card" style={{ marginBottom: 24 }}>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 20 }}>
               {([
-                [<Sprout size={20} key="s" />, "Quality Teaching", "Every tutor is rigorously vetted — Ijazah-certified with verified backgrounds and regular performance reviews. Only the top 15% of tutor applicants are accepted onto the NoorPath platform."],
-                [<Users size={20} key="u" />, "Family First", "We design our scheduling, pricing, and communication to support parents — not just students. Family plans let multiple siblings learn at discounted rates, and female tutors are always available for daughters and sisters."],
-                [<Globe size={20} key="g" />, "Global Accessibility", "No family should be denied Quran education because of geography or time zones. We serve 40+ countries with tutors available across all major timezones — morning, evening, and weekends."],
-                [<TrendingUp size={20} key="t" />, "Measurable Progress", "Weekly reports, milestone tracking, and open parent communication ensure every child moves forward. Parents receive a detailed progress update after every 4 sessions."],
-                [<Shield size={20} key="sh" />, "Safe Learning", "All classes are private 1-on-1 — no strangers in group sessions. Female tutors available by request. We never record sessions without explicit parent consent."],
+                [<Sprout size={20} key="s" />, "Quality Teaching", "We match by teaching focus and confirm the proposed tutor's relevant credentials and experience before enrolment."],
+                [<Users size={20} key="u" />, "Family First", `Family plans support multiple siblings with verified discounts from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%. Female tutor requests are welcome.`],
+                [<Globe size={20} key="g" />, "Online Accessibility", "Share your timezone and preferred lesson windows, and we will confirm tutor availability after your request."],
+                [<TrendingUp size={20} key="t" />, "Individual Learning", "Live 1-to-1 lessons allow the teaching focus and pace to be adapted to the learner's current level and goals."],
+                [<Shield size={20} key="sh" />, "Private Lessons", "Classes are 1-to-1. Parents can discuss supervision preferences, and sisters or daughters may request a female tutor."],
               ] as [React.ReactNode, string, string][]).map(([icon, title, desc]) => (
                 <li key={String(title)} style={{ display: "flex", gap: 14 }}>
                   <span style={{ color: "var(--emerald)", flexShrink: 0, width: 38, height: 38, background: "rgba(10,110,79,.1)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" }}>{icon}</span>
@@ -167,17 +168,17 @@ export default function AboutPage() {
             <span className="section-eyebrow"><Award size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Tutor Standards</span>
             <h2 className="section-title">Our <em className="accent">Tutor Quality</em> Standards</h2>
             <p className="section-desc center">
-              At NoorPath, tutor quality is non-negotiable. Every teacher must meet strict criteria before teaching a single student.
+              Tutor qualifications are not presented as one-size-fits-all. We confirm the details relevant to the proposed match before enrolment.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {[
-              { icon: <Award size={22} />, title: "Ijazah Certification", desc: "Ijazah is the gold standard in Quran teaching — an unbroken chain of authorized transmission going back to the Prophet Muhammad ﷺ. Every NoorPath tutor holds or is working toward Ijazah." },
-              { icon: <GraduationCap size={22} />, title: "Formal Education", desc: "Many tutors hold degrees from Al-Azhar University (Cairo) — the world's oldest Islamic university. Others hold from recognised Islamic institutions in Pakistan, Egypt, and Malaysia." },
-              { icon: <CheckCircle size={22} />, title: "Background Verified", desc: "All tutors undergo identity verification and background checks before joining. We verify academic credentials, check references, and conduct multiple teaching assessments." },
-              { icon: <Clock size={22} />, title: "Ongoing Evaluation", desc: "Monthly parent satisfaction reviews. Tutors scoring below NoorPath's quality threshold are removed immediately. Only consistently 5-star tutors remain on the platform." },
-              { icon: <BookOpen size={22} />, title: "Specialist Matching", desc: "Child tutors, female tutors, adult-specialist tutors, Hifz experts, Tajweed specialists — each student is matched to the teacher best suited to their age, level, and goals." },
-              { icon: <Heart size={22} />, title: "Passion for Teaching", desc: "Teaching the Quran is an act of ibadah (worship). Our tutors are selected not just for certification, but for their genuine love of sharing the Quran with the next generation." },
+              { icon: <Award size={22} />, title: "Relevant Credentials", desc: "Ask about Ijazah, Hifz, academic, or other qualifications relevant to your requested subject. Specific credentials are confirmed before enrolment." },
+              { icon: <GraduationCap size={22} />, title: "Teaching Experience", desc: "The proposed tutor's experience with the learner's age group and subject is considered during matching." },
+              { icon: <CheckCircle size={22} />, title: "Details Before Enrolment", desc: "Families can review the proposed tutor's relevant qualifications and teaching focus before choosing a paid plan." },
+              { icon: <Clock size={22} />, title: "Trial Lesson", desc: "The free 30-minute trial provides a practical opportunity to assess communication, pace, and lesson fit." },
+              { icon: <BookOpen size={22} />, title: "Subject Matching", desc: "Matching categories include children, adults, Hifz, Tajweed, Quran reading, and female tutor requests." },
+              { icon: <Heart size={22} />, title: "Learner Fit", desc: "The learner's current level, goals, timezone, and tutor preference guide the proposed match." },
             ].map((f) => (
               <div key={f.title} className="content-card" style={{ display: "flex", gap: 16 }}>
                 <div style={{ color: "var(--emerald)", flexShrink: 0 }}>{f.icon}</div>
@@ -197,10 +198,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
             {[
               { href: "/courses/noorani-qaida-online", name: "Noorani Qaida Online", desc: "Arabic alphabet to reading — for complete beginners from age 4" },
-              { href: "/learn-tajweed-online", name: "Tajweed Classes", desc: "Recite Quran as the Prophet ﷺ — all major rules with certified Qari" },
+              { href: "/learn-tajweed-online", name: "Tajweed Classes", desc: "Guided recitation practice and application of Tajweed rules" },
               { href: "/hifz-quran-online", name: "Hifz Program", desc: "Complete Quran memorization — structured Juz-by-Juz with revision system" },
-              { href: "/online-quran-classes-for-kids", name: "Kids Quran Classes", desc: "Specialist tutors for children from age 4 — patience and play-based learning" },
-              { href: "/female-quran-teacher-online", name: "Female Quran Teachers", desc: "Certified Hafiza tutors for sisters and daughters — 100% female environment" },
+              { href: "/online-quran-classes-for-kids", name: "Kids Quran Classes", desc: "Tutor matching for children from age 4, based on level and learning goals" },
+              { href: "/female-quran-teacher-online", name: "Female Quran Teachers", desc: "Request a female tutor for a sister or daughter; availability is confirmed after enquiry" },
               { href: "/courses/arabic-language-online", name: "Arabic Language", desc: "Understand the Quran in its original language — Modern Arabic & Quranic Arabic" },
             ].map((c) => (
               <Link key={c.href} href={c.href} style={{ textDecoration: "none" }}>
@@ -217,10 +218,10 @@ export default function AboutPage() {
 
           {/* Countries */}
           <div style={{ textAlign: "center", marginBottom: 32, marginTop: 56 }}>
-            <span className="section-eyebrow"><Globe size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Global Reach</span>
-            <h2 className="section-title">Serving Families in <em className="accent">40+ Countries</em></h2>
+            <span className="section-eyebrow"><Globe size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Online Access</span>
+            <h2 className="section-title">Online Quran Classes by <em className="accent">Location</em></h2>
             <p className="section-desc center">
-              From the USA and UK to Australia, Pakistan, and beyond — NoorPath Academy is available wherever your family is.
+              Explore local information, then share your timezone and preferred lesson windows so tutor availability can be confirmed.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -232,7 +233,7 @@ export default function AboutPage() {
               { href: "/locations/online-quran-classes-uae", label: "🇦🇪 UAE" },
               { href: "/locations/online-quran-classes-pakistan", label: "🇵🇰 Pakistan" },
               { href: "/locations/online-quran-classes-germany", label: "🇩🇪 Germany" },
-              { href: "/locations", label: "🌍 + 33 More" },
+              { href: "/locations", label: "🌍 View All Locations" },
             ].map((l) => (
               <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
                 <div className="content-card" style={{ textAlign: "center", padding: "14px 10px", fontWeight: 600, fontSize: ".88rem", color: "var(--charcoal)" }}>{l.label}</div>
@@ -262,7 +263,7 @@ export default function AboutPage() {
               Ready to Start Your <em style={{ color: "var(--gold-lt)" }}>Quran Journey?</em>
             </h2>
             <p style={{ color: "rgba(255,255,255,.8)", marginBottom: 24, lineHeight: 1.7 }}>
-              Join 12,000+ families who trust NoorPath Academy. First class is always free — no credit card required.
+              Start with a free 30-minute trial. No credit card is required, and tutor availability is confirmed after your request.
             </p>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/online-quran-classes#cta" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>Book Free Trial →</Link>

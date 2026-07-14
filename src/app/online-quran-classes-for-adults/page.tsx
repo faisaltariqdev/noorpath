@@ -3,13 +3,14 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award } from "lucide-react";
+import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: { absolute: "Online Quran Classes for Adults — Learn Quran at Any Age | Free Trial 2026" },
   description:
-    "Online Quran classes for adults: complete beginners to advanced Tajweed & Hifz. Certified 1-on-1 tutors, flexible UK/US/AU schedule, female tutors available, from $29/mo. Free trial.",
+    `Online Quran classes for adults: complete beginners, Tajweed and Hifz. Live 1-on-1 tutor matching, female tutor requests, plans from $${PRICING_PLANS[0].monthlyPriceUsd}/month and a free trial.`,
   keywords: [
     "online quran classes for adults", "quran for adults online", "learn quran as an adult",
     "adult quran classes", "quran classes beginners adults", "tajweed for adults online",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes-for-adults" },
   openGraph: {
     title: "Online Quran Classes for Adults | NoorPath Academy",
-    description: "Private online Quran classes for adults of all levels — from complete beginners to advanced Tajweed. Certified tutors, flexible scheduling. Free trial.",
+    description: "Private online Quran classes for adults, from complete beginners to Tajweed and Hifz. Tutor matching and a free trial.",
     url: "https://www.noorpath.online/online-quran-classes-for-adults",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes for Adults — NoorPath Academy" }],
   },
@@ -33,13 +34,13 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { q: "Can I learn Quran as an adult complete beginner?", a: "Absolutely. Many of our most motivated students are adults who never learned Quran as children. Our Noorani Qaida program is perfect for adult beginners — we teach the Arabic alphabet and pronunciation from scratch. No prior Arabic knowledge required." },
-  { q: "How long does it take to learn to read Quran as an adult?", a: "With 2–3 classes per week plus 15 minutes daily practice, most adult beginners read Juz Amma fluently within 4–6 months. Noorani Qaida takes 8–14 weeks. Progress depends on consistency — our tutors give you a personalized timeline in your first class." },
-  { q: "Do you have female tutors for adult sisters?", a: "Yes — we have certified female tutors (Hafiza) available for all adult female learners. All sessions are private 1-on-1 via Zoom with no male presence. Request a female teacher when booking your free trial." },
-  { q: "Can adults pursue Hifz (Quran memorization)?", a: "Yes! Age is not a barrier for Hifz. We have adult students in their 30s, 40s, and even 60s who are memorizing Quran. Our Hifz tutors use the Sabaq-Sabqi-Manzil revision system and specialize in working with adult learners who balance work and family." },
-  { q: "How much do online Quran classes for adults cost?", a: "Plans start from $29/month for 1 session per week. Standard plan (2 classes/week) is $49/month. Your first 30-minute trial class is completely free — no credit card required. Family discounts available if enrolling children too." },
-  { q: "What timezone do you teach in?", a: "NoorPath tutors are available for UK (GMT/BST), USA (EST/PST/CST), Canada, Australia (AEST), UAE, and 40+ countries. Evening slots, morning slots, and weekend classes are available for all timezones." },
-  { q: "What is the best first step for an adult beginner?", a: "Book a free 30-minute trial. Your tutor will assess your current level and recommend either starting with Noorani Qaida (for zero beginners) or a specific point if you have some prior knowledge. You leave the trial with a clear learning plan." },
+  { q: "Can I learn Quran as an adult complete beginner?", a: "Yes. Noorani Qaida introduces the Arabic alphabet, pronunciation, and reading foundations from the beginning. No prior Arabic knowledge is required." },
+  { q: "How long does it take to learn to read Quran as an adult?", a: "There is no fixed completion timeline. Progress varies with starting level, lesson frequency, practice, and individual goals. The tutor can recommend a learning sequence after assessing your current level." },
+  { q: "Can I request a female tutor for an adult sister?", a: "Yes. Request a female tutor when booking your trial. Subject, schedule availability, and relevant credentials are confirmed before enrolment." },
+  { q: "Can adults pursue Hifz (Quran memorization)?", a: "Yes. Adults can request Hifz tutor matching. The learning and revision plan should reflect existing memorisation, available practice time, and personal goals." },
+  { q: "How much do online Quran classes for adults cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.durationMinutes}-minute trial is free and requires no credit card.` },
+  { q: "What timezone do you teach in?", a: "Share your timezone and preferred lesson windows when booking. Tutor availability is confirmed after your request." },
+  { q: "What is the first step for an adult beginner?", a: "Book a free 30-minute trial. The tutor can assess your current level and recommend either starting with Noorani Qaida or another suitable point if you have prior knowledge." },
 ];
 
 const jsonLd = {
@@ -54,8 +55,12 @@ const jsonLd = {
       serviceType: "Online Quran Education",
       audience: { "@type": "Audience", audienceType: "Adult Muslim learners — complete beginners to advanced" },
       url: "https://www.noorpath.online/online-quran-classes-for-adults",
-      offers: { "@type": "Offer", price: "29", priceCurrency: "USD", description: "From $29/month. Free 30-min trial." },
-      areaServed: { "@type": "Country", name: "Worldwide" },
+      offers: {
+        "@type": "Offer",
+        price: String(PRICING_PLANS[0].monthlyPriceUsd),
+        priceCurrency: "USD",
+        description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Free ${TRIAL.durationMinutes}-minute trial request.`,
+      },
     },
     {
       "@type": "FAQPage",
@@ -91,7 +96,7 @@ export default function OnlineQuranClassesForAdultsPage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>For Adults</span>
           </nav>
           <h1>Online Quran Classes for Adults</h1>
-          <p>It is never too late to learn the Quran. Private 1-on-1 classes with certified tutors — from complete beginner to advanced Tajweed and Hifz. Start with a free trial today.</p>
+          <p>It is never too late to learn the Quran. Private 1-on-1 classes can be matched for complete beginners, Tajweed, or Hifz. Relevant tutor credentials are confirmed before enrolment.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View All Courses</Link>
@@ -108,9 +113,9 @@ export default function OnlineQuranClassesForAdultsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {[
               [<BookOpen size={22} key="b" />, "Complete Beginner Friendly", "Start with Noorani Qaida — Arabic alphabet, pronunciation, and reading fundamentals."],
-              [<Clock size={22} key="c" />, "Your Schedule", "Book morning, evening, or weekend sessions. 24/7 availability across all timezones."],
-              [<Award size={22} key="a" />, "Ijazah Tutors", "Learn from certified scholars who specialize in teaching adult learners with patience."],
-              [<CheckCircle size={22} key="ch" />, "All Levels", "Beginner Qaida, Tajweed, Hifz, Arabic grammar, Tafseer — we teach every level."],
+              [<Clock size={22} key="c" />, "Your Schedule", "Share your timezone and preferred lesson windows; tutor availability is confirmed after your request."],
+              [<Award size={22} key="a" />, "Credentials Confirmed", "Relevant qualifications and adult teaching experience are confirmed for the proposed tutor before enrolment."],
+              [<CheckCircle size={22} key="ch" />, "Learning Goals", "Request matching for beginner Qaida, Quran reading, Tajweed, Hifz, Arabic grammar, or Tafseer."],
             ].map(([icon, title, desc]) => (
               <div key={String(title)} className="content-card" style={{ textAlign: "center" }}>
                 <div style={{ color: "var(--emerald)", display: "flex", justifyContent: "center", marginBottom: 12 }}>{icon}</div>
@@ -123,17 +128,17 @@ export default function OnlineQuranClassesForAdultsPage() {
           {/* Quick Answer box */}
           <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 40, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
-            Yes — it is never too late to start. Adults at NoorPath begin with <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida</Link>, then move to Quran reading, then <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed</Link>. Most adults read Juz Amma in 4–6 months with 2–3 weekly sessions. First lesson is free.{" "}
+            Yes — it is never too late to start. Depending on your current level, you may begin with <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida</Link>, Quran reading, or <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed</Link>. Progress varies, and the first lesson is free.{" "}
             <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
           {/* Trust stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
             {[
-              { value: "4–6 mo", label: "Avg. time to read Juz Amma" },
-              { value: "2–3×", label: "Lessons/week recommended" },
-              { value: "$29", label: "Starting monthly plan" },
-              { value: "Any age", label: "Adults 18–70+ welcome" },
+              { value: "1-to-1", label: "Live online lessons" },
+              { value: `${TRIAL.durationMinutes} min`, label: "Free trial class" },
+              { value: `$${PRICING_PLANS[0].monthlyPriceUsd}`, label: "Starting monthly plan" },
+              { value: "Flexible", label: "Tutor matching" },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "22px 12px" }}>
                 <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--emerald)", lineHeight: 1.2 }}>{s.value}</div>
@@ -182,7 +187,7 @@ export default function OnlineQuranClassesForAdultsPage() {
                 It&apos;s Never Too Late — Start<br /><em style={{ color: "var(--gold-lt)" }}>Your Quran Journey Today</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
-                Free 30-minute trial with a certified tutor. No credit card. No commitment. Just 30 minutes that could change your relationship with the Quran.
+                Free 30-minute trial with no credit card required. Relevant tutor credentials and availability are confirmed before enrolment.
               </p>
             </div>
             <div className="cta-form-wrap">

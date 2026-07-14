@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.noorpath.online/islamic-resources" },
   openGraph: {
     title: "Free Islamic Resources — Quran, Duas & Learning Materials | NoorPath Academy",
-    description: "Free downloadable Islamic resources: Quran learning guides, duas for kids, Tajweed charts, and more. 100% free for Muslim families worldwide.",
+    description: "Free downloadable Islamic resources including Quran learning guides, duas for kids, Tajweed charts and more.",
     url: "https://www.noorpath.online/islamic-resources",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Islamic Resources — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Islamic Resources | NoorPath Academy",
-    description: "Free Quran learning guides, duas for kids, Tajweed charts and more — 100% free.",
+    description: "Free Quran learning guides, duas for kids, Tajweed charts and more.",
     images: ["/og-image.png"],
   },
 };
@@ -97,7 +97,7 @@ const resourceCategories = [
     color: "#f43f5e",
     resources: [
       { title: "Best Age to Start Quran Learning", desc: "Expert guide on when to begin Quran education", href: "/blog/best-age-to-start-quran-learning", type: "Article" },
-      { title: "How to Teach Quran to Kids", desc: "Proven methods, routines and reward systems", href: "/blog/how-to-teach-quran-to-kids", type: "Article" },
+      { title: "How to Teach Quran to Kids", desc: "Practical routines, learning activities and reward ideas", href: "/blog/how-to-teach-quran-to-kids", type: "Article" },
       { title: "Islamic Baby Names 2026", desc: "200+ Arabic names with meanings for boys & girls", href: "/blog/islamic-baby-names-2026", type: "Article" },
       { title: "Quran Classes for Kids", desc: "Structured programme for ages 4-14", href: "/courses/quran-classes-for-kids", type: "Course" },
     ],
@@ -115,12 +115,6 @@ const resourceCategories = [
   },
 ];
 
-const typeColor: Record<string, string> = {
-  Article: "#0a6e4f",
-  Guide: "#c9922a",
-  Course: "#6366f1",
-};
-
 export default function IslamicResourcesPage() {
   return (
     <>
@@ -135,7 +129,7 @@ export default function IslamicResourcesPage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Islamic Resources</span>
           </nav>
           <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)" }}>
-            📚 100% Free Resources
+            📚 Free Resources
           </span>
           <h1 style={{ marginTop: 14, maxWidth: 760 }}>
             Free Islamic Educational <em style={{ color: "var(--gold-lt)" }}>Resources</em> for Every Muslim

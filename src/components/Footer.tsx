@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MessageCircle, Mail, Globe, Star } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa6";
-import { TRUSTPILOT_URL } from "@/lib/organizationSchema";
+import { GOOGLE_BUSINESS_URL, TRUSTPILOT } from "@/lib/academyFacts";
 import { getBuildLabel } from "@/lib/siteVersion";
 
 const courses = [
@@ -19,6 +19,7 @@ const company = [
   { href: "/about", label: "About Us" },
   { href: "/founder", label: "Founder & CEO" },
   { href: "/our-tutors", label: "Our Tutors" },
+  { href: "/safeguarding", label: "Safeguarding" },
   { href: "/locations", label: "All Locations" },
   { href: "/blog", label: "Blog & Articles" },
   { href: "/islamic-resources", label: "Free Resources" },
@@ -178,7 +179,7 @@ export default function Footer() {
                   <Globe size={15} />
                 </Link>
                 <Link
-                  href={TRUSTPILOT_URL}
+                  href={TRUSTPILOT.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Review NoorPath Academy on Trustpilot"
@@ -198,6 +199,15 @@ export default function Footer() {
                 >
                   <Star size={14} fill="#00b67a" stroke="#00b67a" />
                   Review us on Trustpilot
+                </Link>
+                <Link
+                  href={GOOGLE_BUSINESS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View NoorPath Academy on Google"
+                  style={{ color: "rgba(255,255,255,.72)", fontSize: ".78rem" }}
+                >
+                  View on Google
                 </Link>
               </div>
             </div>
@@ -278,17 +288,6 @@ export default function Footer() {
                   <Globe size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <Link href="https://www.noorpath.online">www.noorpath.online</Link>
                 </li>
-                <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <Star size={14} style={{ flexShrink: 0, opacity: 0.7, color: "#00b67a" }} />
-                  <Link
-                    href={TRUSTPILOT_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#00b67a" }}
-                  >
-                    Review us on Trustpilot
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
@@ -301,6 +300,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex gap-5">
+              <Link href="/safeguarding">Safeguarding</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/terms-of-service">Terms of Service</Link>
             </div>

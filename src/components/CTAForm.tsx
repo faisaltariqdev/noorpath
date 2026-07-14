@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { CONTACT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
 
 const countries = [
   "Pakistan","United States","United Kingdom","Canada","Australia",
@@ -39,6 +41,8 @@ export default function CTAForm() {
     try {
       const fd = new FormData(form);
       fd.set("family_plan", familyPlan ? "Yes — family plan" : "No");
+      fd.set("source_page", window.location.href);
+      fd.set("referrer", document.referrer || "Direct");
       const res = await fetch("https://formsubmit.co/ajax/info@noorpath.online", {
         method: "POST", body: fd, headers: { Accept: "application/json" },
       });
@@ -63,6 +67,14 @@ export default function CTAForm() {
     <form onSubmit={handleSubmit} noValidate>
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
+      <input
+        type="text"
+        name="_honey"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px" }}
+      />
       <label className="sr-only" htmlFor="trialName">Your full name</label>
       <input className="cta-input" type="text" name="name" id="trialName" placeholder="Your Full Name" required />
       <label className="sr-only" htmlFor="trialEmail">Email address</label>
@@ -74,10 +86,10 @@ export default function CTAForm() {
         <option value="" disabled>Select Your Country</option>
         {countries.map((c) => <option key={c} value={c}>{c}</option>)}
       </select>
-      <label className="sr-only" htmlFor="numChildren">How many children?</label>
-      <select className="cta-input" name="children" id="numChildren" required style={{ cursor: "pointer" }}>
-        <option value="" disabled>How many children to enroll?</option>
-        {["1 child","2 siblings","3 siblings","4 siblings","5+ siblings"].map((c) => (
+      <label className="sr-only" htmlFor="learners">Who will attend?</label>
+      <select className="cta-input" name="learners" id="learners" required style={{ cursor: "pointer" }}>
+        <option value="" disabled>Who will attend?</option>
+        {["1 child","2 siblings","3 siblings","4 siblings","5+ siblings","1 adult","More than 1 adult"].map((c) => (
           <option key={c} value={c}>{c}</option>
         ))}
       </select>
@@ -91,17 +103,48 @@ export default function CTAForm() {
         {coursesOptions.map((c) => <option key={c} value={c}>{c}</option>)}
       </select>
 
+      <label className="sr-only" htmlFor="trialTimezone">Your timezone or preferred class time</label>
+      <input className="cta-input" type="text" name="timezone" id="trialTimezone" placeholder="Timezone / Preferred Class Time" required />
+
+      <label className="sr-only" htmlFor="tutorPreference">Tutor preference</label>
+      <select className="cta-input" name="tutor_preference" id="tutorPreference" required style={{ cursor: "pointer" }}>
+        <option value="" disabled>Tutor Preference</option>
+        <option value="No preference">No preference</option>
+        <option value="Female tutor requested">Female tutor requested</option>
+        <option value="Male tutor requested">Male tutor requested</option>
+      </select>
+
+      <label style={{ display: "flex", alignItems: "flex-start", gap: 8, color: "rgba(255,255,255,.82)", fontSize: ".78rem", lineHeight: 1.5, marginBottom: 14, cursor: "pointer" }}>
+        <input type="checkbox" name="contact_consent" value="Agreed" required style={{ marginTop: 3 }} />
+        <span>
+          I agree that NoorPath may contact me by email, phone or WhatsApp about this trial request. I have read the{" "}
+          <Link href="/privacy-policy" style={{ color: "var(--gold-lt)" }}>Privacy Policy</Link>
+          {" "}and{" "}
+          <Link href="/terms-of-service" style={{ color: "var(--gold-lt)" }}>Terms of Service</Link>.
+        </span>
+      </label>
+
       <button type="submit" className="btn-cta-submit" disabled={status === "loading"}>
         {status === "loading" ? "⏳ Sending..." : "🕌 Book My Free Class"}
       </button>
 
       {msg && (
         <p style={{ color: status === "success" ? "var(--gold-lt)" : "#ffb4b4", fontSize: ".82rem", textAlign: "center", marginTop: 10 }}>
-          {msg}
+          {msg}{" "}
+          {status === "error" && (
+            <a
+              href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_TRIAL_MESSAGE)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--gold-lt)", fontWeight: 700 }}
+            >
+              Open WhatsApp
+            </a>
+          )}
         </p>
       )}
       <p style={{ color: "rgba(255,255,255,.72)", fontSize: ".72rem", textAlign: "center", marginTop: 12 }}>
-        🔒 Your information is 100% private and secure.
+        No credit card is required. Tutor availability is confirmed after your request.
       </p>
     </form>
   );

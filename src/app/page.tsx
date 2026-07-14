@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
-import { trustpilotReviews, TRUSTPILOT_SCORE, TRUSTPILOT_REVIEW_COUNT } from "@/data/trustpilotReviews";
+import { trustpilotReviews } from "@/data/trustpilotReviews";
+import {
+  CANCELLATION_NOTICE_DAYS,
+  FAMILY_DISCOUNTS,
+  PRICING_PLANS,
+  SERVICE_FACTS,
+  TRIAL,
+  TRUSTPILOT,
+} from "@/lib/academyFacts";
 import {
   Sprout, Baby, Smile, Star, Users, PlayCircle, MapPin,
   Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown,
-  GraduationCap, Trophy, Heart, UserCheck, ClipboardList, Landmark,
+  GraduationCap, Heart, UserCheck, ClipboardList, Landmark,
   BookOpen, Music, Brain, PenLine
 } from "lucide-react";
 
@@ -17,12 +25,12 @@ export const metadata: Metadata = {
     absolute: "Learn Quran Online for Kids & Families — Free 30-Min Trial (2026)",
   },
   description:
-    "Join 12,000+ families at NoorPath Academy. Certified 1-on-1 online Quran classes — Tajweed, Hifz, Noorani Qaida & Arabic. Free 30-min trial, no credit card.",
+    "Live 1-on-1 online Quran classes for kids and adults — Tajweed, Hifz, Noorani Qaida and Arabic. Free 30-minute trial, no credit card.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
     title: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
-    description: "Join 12,000+ students. Online Quran classes for kids & adults — Qaida, Tajweed, Hifz, Arabic. Certified tutors. Family plans. Free 30-min trial.",
+    description: "Online Quran classes for kids and adults — Qaida, Tajweed, Hifz and Arabic. Family plans and a free 30-minute trial with no credit card.",
     url: "https://www.noorpath.online",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
@@ -36,30 +44,40 @@ export const metadata: Metadata = {
 };
 
 const courseCards = [
-  { icon: <BookOpen size={22} />, title: "Noorani Qaida", desc: "Start from zero — Arabic letters to full reading", level: "Beginner", href: "/courses/noorani-qaida-online" },
-  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Recite Quran beautifully with correct pronunciation", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
-  { icon: <Brain size={22} />, title: "Hifz Program", desc: "Full Quran memorization with Sanad preparation", level: "Intermediate–Advanced", href: "/courses/hifz-program-online" },
-  { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida + Daily Duas + Hadith — everything in one", level: "Ages 4–12", href: "/online-quran-classes-for-kids" },
-  { icon: <PenLine size={22} />, title: "Arabic Language", desc: "Understand the Quran in its original language", level: "All levels", href: "/courses/arabic-language-online" },
+  { icon: <BookOpen size={22} />, title: "Noorani Qaida", desc: "Arabic letters, vowel signs and reading foundations", level: "Beginner", href: "/courses/noorani-qaida-online" },
+  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Guided recitation and practical rule application", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
+  { icon: <Brain size={22} />, title: "Hifz Program", desc: "Structured memorization and revision goals", level: "Intermediate–Advanced", href: "/courses/hifz-program-online" },
+  { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida, selected daily duas and short Hadith topics", level: "Ages 4–12", href: "/online-quran-classes-for-kids" },
+  { icon: <PenLine size={22} />, title: "Arabic Language", desc: "Quranic and Modern Standard Arabic study", level: "All levels", href: "/courses/arabic-language-online" },
   { icon: <Landmark size={22} />, title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, morals & Islamic character", level: "All ages", href: "/courses/islamic-studies-online" },
 ];
 
 const whyPoints = [
-  { icon: <CheckCircle size={22} />, title: "Certified Tutors", desc: "Every tutor holds Ijazah or Al-Azhar certification with verified teaching credentials." },
-  { icon: <Users size={22} />, title: "Family Plans", desc: "Enroll 2+ siblings at a discounted family rate — each child on their own level." },
-  { icon: <Clock size={22} />, title: "Flexible Scheduling", desc: "24/7 class slots. Morning, evening, or weekend — we match your timezone." },
-  { icon: <Shield size={22} />, title: "Female Tutors Available", desc: "Separate certified female teachers for sisters and daughters — safe, comfortable learning." },
+  { icon: <CheckCircle size={22} />, title: "Live One-to-One Lessons", desc: "Each online lesson is held live with one learner and one tutor." },
+  { icon: <Users size={22} />, title: "Family Plans", desc: `${FAMILY_DISCOUNTS[0].discountPercent}% off for ${FAMILY_DISCOUNTS[0].siblings}, with larger listed discounts for additional siblings.` },
+  { icon: <Clock size={22} />, title: "Flexible Scheduling", desc: "Tutor matching considers the learner's timezone and current tutor availability." },
+  { icon: <Shield size={22} />, title: "Female Tutor Requests", desc: "Families may request a female tutor; matching is confirmed based on needs, schedule, and availability." },
 ];
-
-const TRUSTPILOT_URL = "https://www.trustpilot.com/review/noorpath.online";
 
 const faqs = [
-  { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with your assigned tutor. You get a fixed weekly schedule that fits your timezone, with no pre-recorded lessons." },
-  { q: "What age groups do you accept?", a: "We accept learners from age 4 to seniors. We have specialist tutors for toddlers, school-age children, teenagers, adults, and elderly learners." },
-  { q: "Do you offer a free trial class?", a: "Yes! We offer a completely free 30-minute trial class with no credit card required. Book your trial above to get started immediately." },
-  { q: "Are there family discount plans?", a: "Absolutely. If you enroll 2 or more siblings from the same family, each sibling gets a significant discount. Contact us for exact pricing based on your children's levels." },
-  { q: "How are tutors selected and vetted?", a: "All tutors hold Ijazah certification or Al-Azhar university qualifications. They undergo background verification, teaching trials, and ongoing performance evaluations." },
+  { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with an assigned tutor. A schedule is confirmed based on your timezone and current tutor availability, with no pre-recorded lessons." },
+  { q: "What age groups do you accept?", a: "NoorPath accepts trial requests for children from age 4, teenagers and adults. Tutor matching considers the learner's age, current level and lesson goals." },
+  { q: "Do you offer a free trial class?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class with no credit card required. Tutor availability is confirmed after the request.` },
+  { q: "Are there family discount plans?", a: `Yes. Published sibling discounts are ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
+  { q: "How are tutors matched?", a: "Tutor matching is based on the learner's needs, schedule, timezone, preferences, and current tutor availability." },
 ];
+
+const homepagePlans = PRICING_PLANS.map((plan) => ({
+  ...plan,
+  highlight: plan.name === "Standard",
+  features: [
+    `${plan.sessionsPerWeek} live one-to-one ${plan.sessionsPerWeek === 1 ? "class" : "classes"} per week`,
+    `${plan.sessionMinutes}-minute sessions`,
+    "Tutor matched by learner needs and availability",
+    "Course materials used during lessons",
+    "Schedule confirmed before enrolment",
+  ],
+}));
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -142,11 +160,10 @@ export default function HomePage() {
                 ))}
               </div>
 
-              {/* Urgency/Scarcity badge — psychological trigger */}
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 22 }}>
-                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.18)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "7px 18px", fontSize: ".79rem", color: "#fca5a5", fontWeight: 600 }}>
-                  <span style={{ width: 8, height: 8, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite", flexShrink: 0 }} />
-                  Only <strong style={{ color: "#fff", marginLeft: 4 }}>7 spots left</strong>&nbsp;this week
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "7px 18px", fontSize: ".79rem", color: "rgba(255,255,255,.85)", fontWeight: 600 }}>
+                  <PlayCircle size={14} />
+                  {TRIAL.durationMinutes}-minute free trial
                 </div>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500, marginLeft: 16 }}>
                   ✓ No credit card
@@ -159,12 +176,11 @@ export default function HomePage() {
                 — For Every Age
               </h1>
               <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.78, marginBottom: 24, maxWidth: 520 }}>
-                Certified Ijazah tutors from Egypt & Pakistan. Online Quran for kids, adults &amp; sisters. Start with a <strong style={{ color: "var(--gold-lt)" }}>FREE 30-minute trial</strong> — no commitment.
+                Live one-to-one online Quran classes for kids, adults &amp; sisters. Start with a <strong style={{ color: "var(--gold-lt)" }}>free {TRIAL.durationMinutes}-minute trial</strong> — no credit card required.
               </p>
 
-              {/* Trust micro-proof */}
               <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 24 }}>
-                {[["🛡️","100% Safe &amp; Secure"],["👩‍🏫","Female Tutors Available"],["⏰","Flexible Scheduling"]].map(([icon, label]) => (
+                {[["🎥","Live 1-to-1 Lessons"],["👩‍🏫","Female Tutors by Request"],["⏰","Timezone-Based Matching"]].map(([icon, label]) => (
                   <span key={label} style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.07)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 50, padding: "5px 13px", color: "rgba(255,255,255,.9)", fontSize: ".78rem" }}
                     dangerouslySetInnerHTML={{ __html: `${icon} ${label}` }}
                   />
@@ -182,10 +198,10 @@ export default function HomePage() {
 
               {/* Stats */}
               <div style={{ display: "flex", flexWrap: "wrap", background: "rgba(255,255,255,.05)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 16, padding: "16px 0", marginTop: 8 }}>
-                {[["12K+","Students"],["250+","Tutors"],["40+","Countries"],["4.9★","Rating"]].map(([num, label], i, arr) => (
+                {SERVICE_FACTS.map(({ value, label }, i, arr) => (
                   <div key={label} style={{ display: "flex", alignItems: "center", flex: 1 }}>
                     <div style={{ textAlign: "center", padding: "0 16px", width: "100%" }}>
-                      <div style={{ color: "var(--gold-lt)", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.45rem", fontWeight: 700, lineHeight: 1 }}>{num}</div>
+                      <div style={{ color: "var(--gold-lt)", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.45rem", fontWeight: 700, lineHeight: 1 }}>{value}</div>
                       <div style={{ color: "rgba(255,255,255,.55)", fontSize: ".7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".9px", marginTop: 4 }}>{label}</div>
                     </div>
                     {i < arr.length - 1 && <div style={{ width: 1, height: 36, background: "rgba(255,255,255,.12)", flexShrink: 0 }} />}
@@ -199,7 +215,7 @@ export default function HomePage() {
               <div style={{ background: "rgba(255,255,255,.06)", backdropFilter: "blur(20px)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 24, padding: 28 }}>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(37,211,102,.15)", border: "1px solid rgba(37,211,102,.3)", borderRadius: 50, padding: "5px 14px", fontSize: ".75rem", color: "#4ade80", fontWeight: 600, marginBottom: 16 }}>
                   <span style={{ width: 7, height: 7, background: "#4ade80", borderRadius: "50%", animation: "pulse 2s infinite" }} />
-                  LIVE SESSION IN PROGRESS
+                  LIVE ONLINE LEARNING
                 </div>
                 <div style={{ background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: 16, textAlign: "center", marginBottom: 18 }}>
                   <div className="arabic" style={{ fontSize: "1.6rem", color: "#fff", letterSpacing: ".5px" }}>
@@ -211,10 +227,10 @@ export default function HomePage() {
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                   {([
-                    [<UserCheck size={20} key="uc" />, "1-on-1", "Private Session"],
-                    [<Star size={20} key="st" />, "4.9/5", "Tutor Rating"],
-                    [<ClipboardList size={20} key="cl" />, "Progress", "Weekly Reports"],
-                    [<Award size={20} key="aw" />, "Certified", "Ijazah Tutors"],
+                    [<UserCheck size={20} key="uc" />, "1-to-1", "Live Lessons"],
+                    [<Star size={20} key="st" />, `${TRIAL.durationMinutes} min`, "Free Trial"],
+                    [<ClipboardList size={20} key="cl" />, "No card", "For the Trial"],
+                    [<Award size={20} key="aw" />, "Flexible", "Timezone Matching"],
                   ] as [React.ReactNode, string, string][]).map(([icon, num, label]) => (
                     <div key={label} style={{ background: "rgba(255,255,255,.06)", borderRadius: 12, padding: 14, textAlign: "center" }}>
                       <div style={{ color: "var(--gold-lt)", display: "flex", justifyContent: "center", marginBottom: 6 }}>{icon}</div>
@@ -238,7 +254,7 @@ export default function HomePage() {
       <div className="trust-bar">
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 16 }}>
-            <span className="trust-label">Trusted By Families In:</span>
+            <span className="trust-label">Location-specific class information:</span>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
               {["🇺🇸 United States","🇬🇧 United Kingdom","🇨🇦 Canada","🇦🇺 Australia","🇸🇦 Saudi Arabia","🇵🇰 Pakistan","🇲🇾 Malaysia","🇩🇪 Germany"].map((c) => (
                 <span key={c} className="trust-logo-item">{c}</span>
@@ -253,10 +269,10 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              [<Layers size={22} key="l" />,"8 Learning Stages","Qaida to Scholar"],
-              [<Users size={22} key="u" />,"5 Age Groups","Toddlers to Seniors"],
-              [<Award size={22} key="a" />,"Ijazah Tutors","Al-Azhar certified"],
-              [<Globe size={22} key="g" />,"40+ Countries","24/7 flexible slots"],
+              [<Layers size={22} key="l" />, SERVICE_FACTS[0].value, SERVICE_FACTS[0].label],
+              [<Users size={22} key="u" />, SERVICE_FACTS[1].value, SERVICE_FACTS[1].label],
+              [<Award size={22} key="a" />, SERVICE_FACTS[2].value, SERVICE_FACTS[2].label],
+              [<Globe size={22} key="g" />, SERVICE_FACTS[3].value, SERVICE_FACTS[3].label],
             ].map(([icon, title, sub]) => (
               <div key={String(title)} style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: 8 }}>
                 <div style={{ color: "var(--emerald)", width: 48, height: 48, background: "rgba(10,110,79,.1)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center" }}>{icon}</div>
@@ -274,7 +290,7 @@ export default function HomePage() {
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Layers size={13} /> Our Programmes</span>
             <h2 className="section-title">Complete <em className="accent">Quran & Islamic</em> Curriculum</h2>
-            <p className="section-desc center">From the Arabic alphabet to advanced scholarship — expert tutors, structured paths, measurable progress.</p>
+            <p className="section-desc center">From the Arabic alphabet to advanced study — live tutoring and structured learning paths.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courseCards.map((c) => (
@@ -305,8 +321,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> Why Choose Us</span>
-              <h2 className="section-title">Why 12,000+ Families Choose <em className="accent">NoorPath</em></h2>
-              <p className="section-desc">We combine certified Islamic scholarship with modern teaching methods, flexible scheduling, and genuine care for every student&apos;s progress.</p>
+              <h2 className="section-title">Why Families Choose <em className="accent">NoorPath</em></h2>
+              <p className="section-desc">We combine live one-to-one teaching, structured programmes, flexible tutor matching, and family plan options.</p>
               <Link href="/online-quran-classes#cta" className="btn-primary-np">Start Free Trial →</Link>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -332,14 +348,14 @@ export default function HomePage() {
             <h2 className="section-title">What Families Say About <em className="accent">NoorPath</em></h2>
             {/* Trustpilot score badge */}
             <a
-              href={TRUSTPILOT_URL}
+              href={TRUSTPILOT.url}
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: "inline-flex", alignItems: "center", gap: 10, marginTop: 16, background: "#f7f9f8", border: "1px solid var(--border)", borderRadius: 12, padding: "10px 20px", textDecoration: "none" }}
             >
               <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>★★★★</span>
-              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{TRUSTPILOT_SCORE} TrustScore</span>
-              <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {TRUSTPILOT_REVIEW_COUNT} reviews on</span>
+              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{TRUSTPILOT.score} TrustScore</span>
+              <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {TRUSTPILOT.reviewCount} reviews · last checked {TRUSTPILOT.lastChecked}</span>
               <span style={{ color: "#00b67a", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
             </a>
           </div>
@@ -355,14 +371,14 @@ export default function HomePage() {
                 <p style={{ color: "var(--slate)", fontSize: ".91rem", lineHeight: 1.78, marginBottom: 20, fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8, paddingTop: 14, borderTop: "1px solid rgba(10,110,79,.08)" }}>
                   <strong style={{ color: "var(--charcoal)", fontSize: ".92rem" }}>{t.name} <span style={{ fontWeight: 500, color: "var(--muted)", fontSize: ".82rem" }}>· {t.country}</span></strong>
-                  <span style={{ fontSize: ".78rem", color: "#00b67a", fontWeight: 700 }}>★ Verified on Trustpilot</span>
+                  <span style={{ fontSize: ".78rem", color: "#00b67a", fontWeight: 700 }}>★ Published on Trustpilot · last checked {TRUSTPILOT.lastChecked}</span>
                 </div>
               </div>
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 32 }}>
             <a
-              href={TRUSTPILOT_URL}
+              href={TRUSTPILOT.url}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-np"
@@ -374,27 +390,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SOCIAL PROOF TICKER ── */}
+      {/* ── SERVICE FACTS TICKER ── */}
       <div className="social-proof-bar">
         <div className="max-w-[1200px] mx-auto px-4 overflow-hidden">
           <div style={{ display: "flex", gap: 56, alignItems: "center", animation: "ticker 30s linear infinite", whiteSpace: "nowrap" }}>
             {[
-              "🇺🇸 Sara J. from USA just enrolled",
-              "🇬🇧 Yusuf K. from UK started free trial",
-              "🇦🇺 Fatima R. from Australia enrolled",
-              "🇨🇦 Ahmed M. from Canada completed Qaida",
-              "🇩🇪 Maryam S. from Germany joined today",
-              "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
-              "★ Reviewed by real parents on Trustpilot",
-              "✓ Free 30-min trial — no credit card needed",
-              "🇺🇸 Sara J. from USA just enrolled",
-              "🇬🇧 Yusuf K. from UK started free trial",
-              "🇦🇺 Fatima R. from Australia enrolled",
-              "🇨🇦 Ahmed M. from Canada completed Qaida",
-              "🇩🇪 Maryam S. from Germany joined today",
-              "🇦🇪 Ibrahim A. from UAE enrolled in Hifz",
-              "★ Reviewed by real parents on Trustpilot",
-              "✓ Free 30-min trial — no credit card needed",
+              "✓ Live one-to-one online lessons",
+              `✓ Free ${TRIAL.durationMinutes}-minute trial`,
+              "✓ No credit card required for the trial",
+              "✓ Tutor matching by learner timezone",
+              `★ Published on Trustpilot · last checked ${TRUSTPILOT.lastChecked}`,
+              "✓ Live one-to-one online lessons",
+              `✓ Free ${TRIAL.durationMinutes}-minute trial`,
+              "✓ No credit card required for the trial",
+              "✓ Tutor matching by learner timezone",
+              `★ Published on Trustpilot · last checked ${TRUSTPILOT.lastChecked}`,
             ].map((item, i) => (
               <span key={i} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", fontWeight: 500, flexShrink: 0 }}>{item}</span>
             ))}
@@ -408,27 +418,22 @@ export default function HomePage() {
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Award size={13} /> Pricing</span>
             <h2 className="section-title">Simple, <em className="accent">Transparent</em> Pricing</h2>
-            <p className="section-desc center">No hidden fees. Cancel anytime. Family discount for 2+ siblings.</p>
+            <p className="section-desc center">Published monthly plans, sibling discounts, and cancellation terms.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {[
-              { name: "Starter", price: "$29", period: "/month", desc: "1 class per week · Perfect for beginners", highlight: false, badge: null, features: ["1 class/week (30 min)", "Certified Ijazah tutor", "Progress reports", "Free trial included", "Cancel anytime"] },
-              { name: "Standard", price: "$49", period: "/month", desc: "2 classes per week · Most popular choice", highlight: true, badge: "★ Most Popular", features: ["2 classes/week (30 min each)", "Priority tutor matching", "Weekly reports + parent call", "Family discount available", "Hifz track eligible"] },
-              { name: "Intensive", price: "$79", period: "/month", desc: "4 classes per week · Fastest progress", highlight: false, badge: "▲ Best Value", features: ["4 classes/week (30 min each)", "Dedicated personal tutor", "Hifz & Ijazah track", "Monthly performance review", "Priority scheduling"] },
-            ].map((p) => (
+            {homepagePlans.map((p) => (
               <div key={p.name} className={p.highlight ? "pricing-card-highlight" : "pricing-card"}>
-                {/* Badge inside card — not absolute positioned */}
-                {p.badge && (
+                {p.highlight && (
                   <div style={{ display: "inline-block", background: p.highlight ? "var(--gold)" : "rgba(10,110,79,.1)", color: p.highlight ? "var(--charcoal)" : "var(--emerald)", fontSize: ".72rem", fontWeight: 700, padding: "5px 14px", borderRadius: 50, textTransform: "uppercase", letterSpacing: ".5px", marginBottom: 14 }}>
-                    {p.badge}
+                    Standard Plan
                   </div>
                 )}
                 <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", fontWeight: 700, color: p.highlight ? "#fff" : "var(--charcoal)", marginBottom: 10 }}>{p.name}</div>
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 2, marginBottom: 8 }}>
-                  <span style={{ fontSize: "2.6rem", fontWeight: 800, color: p.highlight ? "#fff" : "var(--emerald)", lineHeight: 1 }}>{p.price}</span>
-                  <span style={{ color: p.highlight ? "rgba(255,255,255,.55)" : "var(--muted)", fontSize: ".85rem" }}>{p.period}</span>
+                  <span style={{ fontSize: "2.6rem", fontWeight: 800, color: p.highlight ? "#fff" : "var(--emerald)", lineHeight: 1 }}>${p.monthlyPriceUsd}</span>
+                  <span style={{ color: p.highlight ? "rgba(255,255,255,.55)" : "var(--muted)", fontSize: ".85rem" }}>/month</span>
                 </div>
-                <p style={{ color: p.highlight ? "rgba(255,255,255,.7)" : "var(--muted)", fontSize: ".83rem", marginBottom: 18, lineHeight: 1.5 }}>{p.desc}</p>
+                <p style={{ color: p.highlight ? "rgba(255,255,255,.7)" : "var(--muted)", fontSize: ".83rem", marginBottom: 18, lineHeight: 1.5 }}>{p.description}</p>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px 0", textAlign: "left", display: "flex", flexDirection: "column", gap: 10 }}>
                   {p.features.map((f) => (
                     <li key={f} style={{ display: "flex", alignItems: "center", gap: 10, fontSize: ".85rem", color: p.highlight ? "rgba(255,255,255,.85)" : "var(--slate)" }}>
@@ -440,25 +445,25 @@ export default function HomePage() {
                 <Link href="/online-quran-classes#cta" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem", textAlign: "center", letterSpacing: ".2px" }}>
                   Start Free Trial →
                 </Link>
-                <div style={{ color: p.highlight ? "rgba(255,255,255,.4)" : "var(--muted)", fontSize: ".73rem", marginTop: 10 }}>30-min free trial included · No credit card</div>
+                <div style={{ color: p.highlight ? "rgba(255,255,255,.4)" : "var(--muted)", fontSize: ".73rem", marginTop: 10 }}>{TRIAL.durationMinutes}-minute free trial · No credit card</div>
               </div>
             ))}
           </div>
           <p style={{ textAlign: "center", color: "var(--muted)", fontSize: ".85rem" }}>
-            All plans include free trial · No contracts · <Link href="/pricing" style={{ color: "var(--emerald)", fontWeight: 600 }}>View full pricing details →</Link>
+            Trial available before enrolment · Cancel with {CANCELLATION_NOTICE_DAYS} days&apos; notice before the next billing date · <Link href="/pricing" style={{ color: "var(--emerald)", fontWeight: 600 }}>View full pricing details →</Link>
           </p>
         </div>
       </section>
 
-      {/* ── GUARANTEE + TRUST STRIP ── */}
+      {/* ── TRIAL + POLICY STRIP ── */}
       <section style={{ background: "var(--charcoal)", padding: "48px 0" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="guarantee-strip">
             <div style={{ flexShrink: 0, color: "var(--gold-lt)", width: 56, height: 56, background: "rgba(201,146,42,.15)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}><Shield size={28} /></div>
             <div style={{ flex: 1 }}>
-              <div style={{ color: "var(--gold-lt)", fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, marginBottom: 6 }}>NoorPath 100% Satisfaction Guarantee</div>
+              <div style={{ color: "var(--gold-lt)", fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, marginBottom: 6 }}>Try a Class Before Enrolment</div>
               <p style={{ color: "rgba(255,255,255,.8)", fontSize: ".92rem", lineHeight: 1.7, margin: 0 }}>
-                Not happy after your first month? We&apos;ll refund every penny — no questions asked. Our tutors are so confident in their teaching that we stand behind every lesson. <strong style={{ color: "#fff" }}>Zero risk to you.</strong>
+                Request a free {TRIAL.durationMinutes}-minute trial with no credit card required. Tutor availability is confirmed after your request. Paid plans can be cancelled with <strong style={{ color: "#fff" }}>{CANCELLATION_NOTICE_DAYS} days&apos; notice before the next billing date.</strong>
               </p>
             </div>
             <div style={{ flexShrink: 0 }}>
@@ -469,10 +474,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
             {([
-              [<Trophy size={24} key="t" />, "Al-Azhar Certified", "All tutors verified"],
-              [<Lock size={24} key="l" />, "100% Safe & Secure", "Data privacy protected"],
-              [<Clock size={24} key="c" />, "Any Time Zone", "24/7 scheduling"],
-              [<Heart size={24} key="h" />, "Cancel Anytime", "No lock-in contracts"],
+              [<Video size={24} key="t" />, "Live 1-to-1", "Online lessons"],
+              [<Lock size={24} key="l" />, "No Credit Card", "Required for the trial"],
+              [<Clock size={24} key="c" />, "Tutor Matching", "Based on timezone"],
+              [<Heart size={24} key="h" />, `${CANCELLATION_NOTICE_DAYS} Days' Notice`, "Before next billing"],
             ] as [React.ReactNode, string, string][]).map(([icon, title, sub]) => (
               <div key={title} style={{ textAlign: "center", padding: "20px 16px", background: "rgba(255,255,255,.04)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 16 }}>
                 <div style={{ color: "var(--gold-lt)", display: "flex", justifyContent: "center", marginBottom: 10 }}>{icon}</div>
@@ -494,14 +499,14 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-[1000px] mx-auto">
             {[
-              { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with your assigned tutor. You get a fixed weekly schedule that fits your timezone, with no pre-recorded lessons. Your child connects with the teacher directly for maximum learning." },
+              { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with your assigned tutor. The schedule is confirmed based on your timezone and tutor availability, with no pre-recorded lessons." },
               { q: "What age groups do you accept?", a: "We accept learners from age 4 to seniors. We have specialist tutors for toddlers (Duas & basics), school-age children (Noorani Qaida + Quran), teenagers (Tajweed + Hifz), adults, and elderly learners — each with age-appropriate methods." },
-              { q: "Do you offer a free trial class?", a: "Yes! We offer a completely free 30-minute trial class with no credit card required. Your child meets the tutor, gets a level assessment, and you receive a personalised learning plan — all for free." },
-              { q: "Are there family discount plans?", a: "Absolutely. If you enroll 2 or more siblings from the same family, each sibling gets a significant discount. Contact us for exact pricing based on your children's levels and how many classes per week you need." },
-              { q: "How are tutors selected and vetted?", a: "All tutors hold Ijazah certification or Al-Azhar university qualifications. They undergo background verification, teaching trials, and ongoing monthly performance evaluations. Only the top 15% of applicants are accepted." },
-              { q: "Can I request a female Quran teacher?", a: "Yes — we have a dedicated pool of certified female Quran teachers. When filling in the booking form, simply indicate that you prefer a female tutor and we will ensure your assigned teacher is female." },
+              { q: "Do you offer a free trial class?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class with no credit card required. Tutor availability is confirmed after the request.` },
+              { q: "Are there family discount plans?", a: `Yes. Published sibling discounts are ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
+              { q: "How are tutors matched?", a: "Tutor matching considers the learner's needs, schedule, timezone, preferences, and current tutor availability." },
+              { q: "Can I request a female Quran teacher?", a: "Yes. Indicate your preference on the booking form. NoorPath confirms a suitable female tutor based on the learner's needs, schedule, and current availability." },
               { q: "What equipment do I need?", a: "Just a smartphone, tablet, or laptop with Zoom or Skype installed. No special equipment needed. The teacher shares the Quran/Qaida on screen during the class. A stable internet connection is all that's required." },
-              { q: "How long does it take to complete Noorani Qaida?", a: "With 3 classes per week, most beginners (children) complete Noorani Qaida in 3–5 months. Adults typically complete it in 4–6 months. After completing Qaida, students move directly to reading the Holy Quran." },
+              { q: "How long does it take to complete Noorani Qaida?", a: "Completion time is individual and depends on the learner's starting level, lesson frequency, practice, and pace. The tutor can suggest an illustrative learning path after assessing the learner." },
             ].map((f) => (
               <div key={f.q} className="faq-card">
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
@@ -529,22 +534,20 @@ export default function HomePage() {
                 <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)", margin: 0 }}>
                   <GraduationCap size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 5 }} />Free Trial Class
                 </span>
-                {/* Scarcity trigger */}
-                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(239,68,68,.2)", border: "1px solid rgba(239,68,68,.35)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "#fca5a5", fontWeight: 600 }}>
-                  <span style={{ width: 7, height: 7, background: "#f87171", borderRadius: "50%", animation: "pulse 1.5s infinite" }} />
-                  7 spots left this week — filling fast
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "rgba(255,255,255,.8)", fontWeight: 600 }}>
+                  Tutor availability confirmed after request
                 </div>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,4vw,2.8rem)", fontWeight: 700, color: "#fff", marginBottom: 20 }}>
                 Start Your Quran Journey<br />
-                <em style={{ color: "var(--gold-lt)" }}>Today — Completely Free</em>
+                <em style={{ color: "var(--gold-lt)" }}>With a Free Trial</em>
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 {[
                   [<CheckCircle size={18} key="1" />,"Free 30-minute trial class — no credit card needed"],
-                  [<Video size={18} key="2" />,"Live 1-on-1 with a certified Ijazah tutor via Zoom"],
-                  [<Lock size={18} key="3" />,"100% private & secure — cancel anytime"],
-                  [<Award size={18} key="4" />,"Personalised learning plan sent after trial"],
+                  [<Video size={18} key="2" />,"Live 1-on-1 online lesson"],
+                  [<Lock size={18} key="3" />,`No card for trial · ${CANCELLATION_NOTICE_DAYS} days' cancellation notice for paid plans`],
+                  [<Award size={18} key="4" />,"Tutor matching based on learner needs and availability"],
                 ].map(([icon, text]) => (
                   <div key={String(text)} style={{ display: "flex", alignItems: "center", gap: 12, color: "rgba(255,255,255,.85)", fontSize: ".92rem" }}>
                     <span style={{ color: "var(--gold-lt)", flexShrink: 0 }}>{icon}</span> {text}
@@ -553,16 +556,16 @@ export default function HomePage() {
               </div>
               <div style={{ marginTop: 24, display: "flex", gap: 16, flexWrap: "wrap" }}>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
-                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>★★★★★</div>
-                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Trustpilot Reviews</div>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>{TRUSTPILOT.score}/5</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Trustpilot · {TRUSTPILOT.reviewCount} reviews</div>
                 </div>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
-                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>12K+</div>
-                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Active Students</div>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>{TRIAL.durationMinutes} min</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Free Trial Class</div>
                 </div>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
-                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>40+</div>
-                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Countries</div>
+                  <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>No card</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Required for Trial</div>
                 </div>
               </div>
             </div>
@@ -661,9 +664,9 @@ export default function HomePage() {
           {/* SEO paragraph */}
           <div style={{ borderTop: "1px solid var(--border)", paddingTop: 24 }}>
             <p style={{ color: "var(--muted)", fontSize: ".82rem", maxWidth: 960, margin: "0 auto", lineHeight: 1.85, textAlign: "center" }}>
-              <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is a leading{" "}
+              <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is an{" "}
               <Link href="/online-quran-academy" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> where you can{" "}
-              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via certified 1-on-1 live classes for Muslim families worldwide. Our programmes include{" "}
+              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via 1-on-1 live classes. Our programmes include{" "}
               <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link>,{" "}
               <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for kids</Link>,{" "}
               <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed online</Link>,{" "}
@@ -671,13 +674,13 @@ export default function HomePage() {
               <Link href="/courses/arabic-language-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Arabic language courses</Link>, and{" "}
               <Link href="/courses/daily-duas-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>daily duas for children</Link>.
               We offer <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>free trial Quran classes</Link> with no credit card required.
-              Find a <Link href="/quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>certified online Quran teacher</Link> or browse our{" "}
+              Find an <Link href="/quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran teacher</Link> or browse our{" "}
               <Link href="/online-quran-for-beginners" style={{ color: "var(--emerald)", fontWeight: 600 }}>beginner Quran course</Link> to start today.
-              Serving 12,000+ students in the <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 600 }}>USA</Link>,{" "}
+              Explore class information for the <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 600 }}>USA</Link>,{" "}
               <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 600 }}>UK</Link>,{" "}
               <Link href="/locations/online-quran-classes-canada" style={{ color: "var(--emerald)", fontWeight: 600 }}>Canada</Link>,{" "}
               <Link href="/locations/online-quran-classes-australia" style={{ color: "var(--emerald)", fontWeight: 600 }}>Australia</Link>,{" "}
-              <Link href="/locations/online-quran-classes-uae" style={{ color: "var(--emerald)", fontWeight: 600 }}>UAE</Link>, and 40+ countries.{" "}
+              and the <Link href="/locations/online-quran-classes-uae" style={{ color: "var(--emerald)", fontWeight: 600 }}>UAE</Link>.{" "}
               <Link href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your free Quran class today →</Link>
             </p>
           </div>

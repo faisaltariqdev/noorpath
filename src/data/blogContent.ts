@@ -1,4 +1,5 @@
 // Auto-extracted from original HTML blog files — styles + content
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 
 // Shared style for Islamic reference articles (verses, duas, alphabet)
 const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -32,7 +33,7 @@ const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; co
 
 import { highTrafficBlogContent } from "./blogContentHighTraffic";
 
-export const blogContent: Record<string, { style: string; content: string }> = {
+const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
@@ -732,7 +733,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Use it in Salah</strong> — once memorised, let them recite it after Al-Fatiha in prayer.</li>
             <li><strong>Correct Tajweed early</strong> — letters like ح in "Ahad" and ص in "As-Samad" need a live ear. A tutor prevents mistakes that stick for years.</li>
           </ol>
-          <p>Most children memorise Surah Ikhlas in a few days to one week with short daily practice. Pair it with the other <a href="/blog/4-quls">4 Quls</a> for a complete protection set.</p>
+          <p>Memorisation time varies by age, familiarity, pronunciation, and practice. Teach Surah Ikhlas in short sections and revise before adding more. Pair it with the other <a href="/blog/4-quls">4 Quls</a> when the learner is ready.</p>
 
           <h2 id="facts">Key facts about Surah Ikhlas</h2>
           <table class="np-table">
@@ -760,7 +761,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Ready to help your child memorise Surah Ikhlas with correct Tajweed?</strong> NoorPath Academy's certified male and female tutors teach live 1-on-1 Quran classes for kids and adults worldwide. <a href="/online-quran-classes-for-kids">Book your free trial class</a> — no credit card required.
+            <strong>Ready to help your child memorise Surah Ikhlas with guided Tajweed practice?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults. You can request a male or female tutor, subject to availability. <a href="/online-quran-classes-for-kids">Request a free trial class</a> — no credit card required.
           </div>`,
   },
   "dua-e-istikhara": {
@@ -820,7 +821,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <p>Teenagers especially benefit from learning Istikhara early — it trains them to include Allah in every decision. Start by teaching the shortened concept ("we ask Allah to choose for us"), then help them memorise the dua in parts, and let them see you praying Istikhara for family decisions.</p>
 
           <div class="highlight-box">
-            <strong>Want your child to learn duas, Salah and Quran with correct pronunciation?</strong> NoorPath Academy's certified tutors teach live 1-on-1 classes covering Salah, essential duas and Quran with Tajweed. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to learn duas, Salah and Quran with guided pronunciation practice?</strong> NoorPath Academy offers live 1-on-1 classes covering Salah, selected duas and Quran with Tajweed. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "tahajjud-prayer": {
@@ -891,7 +892,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ol>
 
           <div class="highlight-box">
-            <strong>Want to perfect your Salah, recitation and duas?</strong> NoorPath Academy's certified tutors teach adults and children in live 1-on-1 classes — Salah, Tajweed and Quran from the basics. <a href="/online-quran-classes-for-adults">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want guided practice for Salah, recitation and duas?</strong> NoorPath Academy offers adults and children live 1-on-1 lessons in Salah, Tajweed and Quran from the basics. <a href="/online-quran-classes-for-adults">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "surah-waqiah-benefits": {
@@ -959,7 +960,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <p>Surah Waqiah contains many similar-sounding words where Tajweed matters. If you or your child cannot yet read the Quran fluently, start with <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> — the step-by-step primer that takes you from the alphabet to fluent Quran reading.</p>
 
           <div class="highlight-box">
-            <strong>Want to recite Surah Waqiah with proper Tajweed?</strong> NoorPath Academy's certified tutors teach live 1-on-1 Quran classes for kids and adults — from Qaida to fluent recitation. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want to practise Surah Waqiah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults — from Qaida to continued recitation practice. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "surah-rahman-benefits": {
@@ -1028,7 +1029,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <p>Because of its repetition and rhythm, Surah Rahman is often a child's favourite long surah. Start with correct letter sounds through the <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet</a> and <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a>, then progress to recitation with a live tutor correcting Tajweed in real time.</p>
 
           <div class="highlight-box">
-            <strong>Want your child to recite the Bride of the Quran beautifully?</strong> NoorPath Academy's certified tutors teach live 1-on-1 Quran classes with Tajweed for ages 4–12 and adults. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to practise this Surah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for children and adults. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "darood-sharif": {
@@ -1083,7 +1084,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Want your child to recite Darood Sharif perfectly in their prayer?</strong> NoorPath Academy's certified tutors teach Salah, Darood, and Quran with correct Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to practise Darood Sharif for prayer?</strong> NoorPath Academy offers live 1-on-1 lessons covering Salah, Darood and Quran recitation. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "4-quls": {
@@ -1143,7 +1144,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Help your child memorise the 4 Quls with perfect Tajweed.</strong> NoorPath Academy offers live 1-on-1 Quran classes with certified male and female tutors and a free 30-minute trial. <a href="/online-quran-classes-for-kids">Book your free trial today</a> — no credit card required.
+            <strong>Help your child memorise the 4 Quls with guided Tajweed practice.</strong> NoorPath Academy offers live 1-on-1 Quran classes. You can request a male or female tutor, subject to availability. <a href="/online-quran-classes-for-kids">Request a free trial</a> — no credit card required.
           </div>`,
   },
   "arabic-alphabet-for-kids": {
@@ -1214,7 +1215,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Ready to teach your child the Arabic alphabet the right way?</strong> NoorPath Academy's certified tutors teach the Arabic alphabet and Noorani Qaida in fun, live 1-on-1 classes with male and female teachers. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Ready to introduce your child to the Arabic alphabet?</strong> NoorPath Academy offers live 1-on-1 Arabic alphabet and Noorani Qaida lessons. You can request a male or female tutor, subject to availability. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "ayat-e-karima": {
@@ -1258,7 +1259,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Learn the Quran and its duas with correct Tajweed.</strong> NoorPath Academy's certified tutors teach Quran, duas and Tajweed in live 1-on-1 classes with a free 30-minute trial. <a href="/online-quran-classes-for-kids">Book your free trial</a> — no credit card required.
+            <strong>Learn the Quran and selected duas with guided Tajweed practice.</strong> NoorPath Academy offers live 1-on-1 Quran, duas and Tajweed lessons with a free 30-minute trial request. <a href="/online-quran-classes-for-kids">Request your trial</a> — no credit card required.
           </div>`,
   },
   "six-kalimas-of-islam": {
@@ -1297,7 +1298,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <ul style="margin-bottom:0;">
               <li>The Six Kalimas are a teaching set of statements drawn from the <strong>Quran and authentic Hadith</strong>, traditionally taught to children to build their belief.</li>
               <li>They move step by step — from <strong>declaring faith</strong> to <strong>glorifying Allah</strong>, <strong>affirming His Oneness</strong>, <strong>asking forgiveness</strong>, and finally <strong>rejecting shirk and disbelief</strong>.</li>
-              <li>Most children can memorise all six with correct pronunciation in a few weeks of short daily practice.</li>
+              <li>Memorisation time varies; use short practice sessions and prioritise accurate pronunciation over speed.</li>
               <li>Correct Arabic <strong>pronunciation (Tajweed)</strong> matters — a certified tutor prevents mistakes that are hard to fix later.</li>
             </ul>
           </div>
@@ -1407,7 +1408,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Ready to help your child learn the Kalimas correctly?</strong> NoorPath Academy's certified tutors teach the Six Kalimas, Noorani Qaida, and Quran with proper Tajweed in live 1-on-1 classes — with male and female teachers and flexible UK/US timings. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial class</a> — no credit card required.
+            <strong>Ready to help your child learn the Kalimas?</strong> NoorPath Academy offers live 1-on-1 lessons covering the Six Kalimas, Noorani Qaida and Quran recitation. Tutor preference and class time are confirmed after matching. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial class</a> — no credit card required.
           </div>`,
   },
   "online-quran-classes-uk-kids-guide": {
@@ -1430,10 +1431,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
     .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } }`,
-    content: `<p>If you are a Muslim parent in the UK searching for <strong>online Quran classes for your kids</strong>, you are not alone. Across Birmingham, Bradford, London, Luton, Manchester and Leicester, thousands of families now choose live online Quran lessons over the local weekend madrassah — for one simple reason: <strong>it works better, and it fits around busy British family life.</strong></p>
+    content: `<p>If you are a Muslim parent in the UK searching for <strong>online Quran classes for your kids</strong>, live lessons can provide a travel-free option around school and family schedules in Birmingham, Bradford, London, Luton, Manchester, Leicester, and elsewhere. Tutor and GMT/BST availability should be confirmed before enrolment.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Online Quran classes in the UK connect your child with a certified tutor over a live 1-on-1 video call. Good academies charge from around £20–£40/month, offer <strong>female tutors for daughters</strong>, teach in UK-friendly evening/weekend slots, and give a <strong>free trial before you pay</strong>. Start with <a href="/online-quran-classes-for-kids">a free 30-minute trial class</a> — no credit card required.
+            <strong>Quick answer:</strong> Online Quran classes can connect a child with a tutor over a live 1-on-1 video call. Compare the proposed tutor's credentials, safeguarding process, complete monthly price, lesson length and confirmed schedule before enrolling. NoorPath lets families <a href="/online-quran-classes-for-kids">request a free 30-minute trial class</a> with no credit card.
           </div>
 
           <p>This guide covers everything a UK parent needs to decide: how online classes work, what they cost, how to keep your child safe, whether they are as effective as in-person madrassah, and how to choose the right teacher. Let's begin.</p>
@@ -1441,10 +1442,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <div class="gold-box">
             <strong>Key takeaways:</strong>
             <ul style="margin-bottom:0;">
-              <li>Online Quran classes for UK kids cost roughly <strong>£20–£45/month</strong> and are taught 1-on-1 by certified tutors.</li>
-              <li>The ideal starting age is <strong>4–7</strong>, but any age works — everyone begins with Noorani Qaida.</li>
-              <li><strong>Female tutors</strong> are available for daughters, and parents can watch every class.</li>
-              <li>1-on-1 online lessons are usually <strong>faster than a crowded local madrassah</strong>.</li>
+              <li>Prices and lesson lengths vary; compare the full monthly cost and the number of 1-on-1 lessons included.</li>
+              <li>There is no universal ideal starting age or starting lesson; readiness and current reading level matter.</li>
+              <li>Parents can request a female tutor and discuss observation preferences before enrolment.</li>
+              <li>1-on-1 online lessons provide dedicated recitation time, while local madrassahs may provide in-person community learning.</li>
               <li>Always start with a <strong>free trial</strong> before paying — no credit card required.</li>
             </ul>
           </div>
@@ -1460,14 +1461,14 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <li><a href="#cities">Which UK cities we serve</a></li>
               <li><a href="#safety">Are they safe for children?</a></li>
               <li><a href="#female-tutors">Female Quran teachers</a></li>
-              <li><a href="#choose">How to choose the best academy</a></li>
+              <li><a href="#choose">How to choose an academy</a></li>
               <li><a href="#getting-started">How to get started</a></li>
               <li><a href="#faq">Frequently asked questions</a></li>
             </ul>
           </div>
 
           <h2 id="how-it-works">How do online Quran classes for kids actually work?</h2>
-          <p>The format is simple and proven. Your child sits at a laptop, tablet or phone at a scheduled time and joins a live video call (usually Zoom or Google Meet) with a qualified Quran teacher. The tutor shares the Qaida or Mushaf on screen, listens to your child recite, and <strong>corrects pronunciation in real time</strong> — exactly like sitting beside a teacher, but from your own home.</p>
+          <p>The format is straightforward. Your child uses a laptop, tablet or phone at an agreed time and joins a live video call, often through Zoom or Google Meet, with the assigned Quran tutor. The tutor can share the Qaida or Mushaf, listen to recitation, and <strong>correct pronunciation during the lesson</strong>.</p>
           <p>A typical UK child's journey looks like this:</p>
           <ol>
             <li><strong>Noorani Qaida</strong> — the Arabic alphabet, vowels, and letter-joining (the foundation). <a href="/courses/noorani-qaida-online">Learn about Noorani Qaida online →</a></li>
@@ -1476,17 +1477,17 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ol>
 
           <h2 id="why-uk-parents">Why are UK parents switching to online Quran classes?</h2>
-          <p>The traditional route — driving your child to a local mosque or madrassah after school — still exists, but more British Muslim families choose online every year. Here is why:</p>
+          <p>Families may compare online lessons with travelling to a local mosque or madrassah after school. Reasons to consider the online format include:</p>
           <ul>
             <li><strong>No travel, no traffic.</strong> No school-run-style dashes across Birmingham or London in the dark winter evenings.</li>
-            <li><strong>1-on-1 attention.</strong> Local madrassahs often have 15–30 children per teacher. Online is one child, one tutor — far faster progress.</li>
-            <li><strong>Choose the perfect tutor.</strong> You are not limited to your local mosque. You can pick a certified, experienced teacher — including a <strong>female tutor for your daughter</strong>.</li>
-            <li><strong>Flexible UK timings.</strong> Early morning before school, straight after school, or weekends — you choose the slot.</li>
-            <li><strong>You can watch.</strong> Parents can sit in on classes, so you always know exactly what your child is learning.</li>
+            <li><strong>1-on-1 attention.</strong> An online lesson gives one learner dedicated recitation and correction time.</li>
+            <li><strong>Request a tutor match.</strong> You can state qualification, experience, language, and gender preferences when asking for a tutor.</li>
+            <li><strong>UK timing requests.</strong> Ask for an early-morning, after-school, or weekend slot; availability is confirmed after matching.</li>
+            <li><strong>Parent visibility.</strong> Discuss observation and communication expectations before lessons begin.</li>
           </ul>
 
           <div class="gold-box">
-            <strong>UK tip:</strong> Because most reputable academies teach globally, they already schedule around <strong>GMT/BST timezones</strong>. Ask for an after-school (4pm–8pm UK) or weekend slot when you book, and confirm the tutor can commit to that time every week.
+            <strong>UK tip:</strong> State your <strong>GMT/BST timezone</strong> and preferred after-school or weekend windows when requesting a tutor, then wait for the academy to confirm ongoing availability.
           </div>
 
           <h2 id="cost">How much do online Quran classes cost in the UK?</h2>
@@ -1497,14 +1498,12 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <tr><th>Plan</th><th>Lessons / week</th><th>Typical UK cost</th><th>Best for</th></tr>
             </thead>
             <tbody>
-              <tr><td>Starter</td><td>2 lessons</td><td>£20–£30 / month</td><td>Young beginners (Qaida)</td></tr>
-              <tr><td>Standard</td><td>3 lessons</td><td>£30–£45 / month</td><td>Most kids — fastest progress</td></tr>
-              <tr><td>Intensive / Hifz</td><td>5 lessons</td><td>£45–£70 / month</td><td>Memorisation students</td></tr>
-              <tr><td>Family plan</td><td>Multiple siblings</td><td>Discounted per child</td><td>2+ children learning</td></tr>
+              ${PRICING_PLANS.map((plan) => `<tr><td>${plan.name}</td><td>${plan.sessionsPerWeek}</td><td>$${plan.monthlyPriceUsd} USD / month</td><td>${plan.sessionMinutes}-minute 1-on-1 sessions</td></tr>`).join("")}
+              <tr><td>Family discounts</td><td>Multiple siblings</td><td>${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(" · ")}</td><td>Published sibling pricing</td></tr>
             </tbody>
           </table>
 
-          <p>Compare that to a private in-person Quran tutor in London or Manchester, who can charge <strong>£15–£30 per hour</strong> — online delivers the same certified quality at a fraction of the cost. <a href="/pricing">See NoorPath's transparent pricing →</a></p>
+          <p>Compare the lesson format, session length, tutor fit, safeguarding practices, and total monthly price before choosing between online and in-person learning. <a href="/pricing">See NoorPath's published pricing →</a></p>
 
           <h2 id="what-learns">What will my child actually learn?</h2>
           <p>A good online academy follows a clear, staged curriculum so your child always knows the next step. Here is the typical path from complete beginner to confident reciter:</p>
@@ -1512,7 +1511,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Arabic letters &amp; Noorani Qaida</strong> — recognising and pronouncing every letter and vowel correctly. <a href="/blog/noorani-qaida-complete-guide">Read the complete Noorani Qaida guide →</a></li>
             <li><strong>Quran reading (Nazira)</strong> — reading the Mushaf fluently, starting with Juz Amma.</li>
             <li><strong>Tajweed</strong> — the rules of beautiful, correct recitation. <a href="/learn-tajweed-online">Explore Tajweed →</a></li>
-            <li><strong>Memorisation (Hifz)</strong> — for children who want to become Hafiz, using the proven Sabaq–Sabqi–Manzil system. <a href="/blog/how-long-to-memorize-quran">How long Hifz takes →</a></li>
+            <li><strong>Memorisation (Hifz)</strong> — new memorisation and revision goals may use Sabaq, Sabqi and Manzil concepts. <a href="/blog/how-long-to-memorize-quran">What affects a Hifz timeline →</a></li>
             <li><strong>Duas &amp; Islamic basics</strong> — everyday duas, Salah, and character (akhlaq).</li>
           </ul>
           <p>Not sure when to begin? Our guide on the <a href="/blog/best-age-to-start-quran-learning">best age to start Quran learning</a> helps you decide.</p>
@@ -1525,21 +1524,21 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <tr><th>Factor</th><th>Online 1-on-1</th><th>Local madrassah</th></tr>
             </thead>
             <tbody>
-              <tr><td>Attention per child</td><td>Full session, 1-on-1</td><td>Shared among 15–30 kids</td></tr>
+              <tr><td>Attention per child</td><td>Full session, 1-on-1</td><td>May be shared in a group</td></tr>
               <tr><td>Travel</td><td>None — learn from home</td><td>Daily commute in traffic</td></tr>
-              <tr><td>Choice of tutor</td><td>Pick any certified teacher</td><td>Whoever is local</td></tr>
-              <tr><td>Female tutor for daughters</td><td>Easily arranged</td><td>Often unavailable</td></tr>
-              <tr><td>Timing flexibility</td><td>You choose the slot</td><td>Fixed class times</td></tr>
-              <tr><td>Parent visibility</td><td>Watch live + weekly reports</td><td>Limited</td></tr>
-              <tr><td>Progress speed</td><td>Often 2–3× faster</td><td>Slower in large groups</td></tr>
+              <tr><td>Choice of tutor</td><td>Request a match and verify details</td><td>Depends on local availability</td></tr>
+              <tr><td>Female tutor for daughters</td><td>Can be requested</td><td>Depends on local availability</td></tr>
+              <tr><td>Timing flexibility</td><td>Request preferred windows</td><td>Depends on the provider</td></tr>
+              <tr><td>Parent visibility</td><td>Agree observation and updates</td><td>Ask the local provider</td></tr>
+              <tr><td>Learning pace</td><td>Depends on level, attendance, and practice</td><td>Depends on class size, attendance, and practice</td></tr>
             </tbody>
           </table>
 
           <h2 id="cities">Which UK cities do online Quran classes cover?</h2>
-          <p>Because classes are delivered online, your postcode does not matter — a certified tutor comes to you wherever you are. NoorPath families learn from right across the UK, including <strong>London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton, Blackburn, Glasgow, Cardiff, Sheffield, Nottingham and Slough</strong>. Whether you are in a big city or a small town with no nearby madrassah, your child gets the same qualified teaching. <a href="/locations/online-quran-classes-uk">See our dedicated UK page →</a></p>
+          <p>Because classes are delivered online, learners can request lessons from <strong>London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton, Blackburn, Glasgow, Cardiff, Sheffield, Nottingham, Slough</strong>, and other UK locations. These are online service areas, not physical NoorPath branches or claims of an existing local customer base. <a href="/locations/online-quran-classes-uk">See our dedicated UK page →</a></p>
 
           <h2 id="safety">Are online Quran classes safe for children?</h2>
-          <p>Safety is the number-one concern for every parent — and rightly so. Online classes are safe <em>when you choose a reputable academy and follow a few sensible rules:</em></p>
+          <p>Online learning still requires safeguarding. Parents can reduce risk by checking the provider and following practical rules:</p>
           <ul>
             <li>Use trusted platforms only (<strong>Zoom or Google Meet</strong>), never unknown apps.</li>
             <li><strong>Supervise the first few weeks</strong> — sit nearby, especially for younger children.</li>
@@ -1547,33 +1546,33 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li>Ensure there is <strong>no private messaging</strong> between tutor and child — all communication goes through you, the parent.</li>
             <li>Keep the device in a <strong>shared family space</strong>, not the child's bedroom.</li>
           </ul>
-          <p>At NoorPath Academy, all tutors are background-verified and certified, parents are encouraged to observe classes, and you receive <strong>weekly progress reports</strong> so you are never in the dark.</p>
+          <p>Ask the academy to explain its tutor checks and provide relevant credentials for the tutor being considered. Parents should be able to observe classes and keep communication through official channels.</p>
 
           <h2 id="female-tutors">Can my daughter learn with a female Quran teacher?</h2>
-          <p>Yes — and this is one of the biggest advantages of learning online. Many UK families prefer a <strong>female tutor (Ustadha / Hafiza)</strong> for their daughters. Online, you are not limited to whoever happens to teach at your local mosque; you can request a qualified female teacher and she will teach your daughter 1-on-1 with the same curriculum and scheduling. <a href="/female-quran-teacher-online">Learn about female Quran teachers →</a></p>
+          <p>You can request a <strong>female tutor</strong> for a daughter. Ask the academy to confirm the proposed tutor's relevant credentials, subject experience and schedule before enrolment. <a href="/female-quran-teacher-online">Learn about female tutor requests →</a></p>
 
           <h2 id="concerns">Common concerns UK parents have (answered)</h2>
-          <p><strong>"Will my child stay focused on a screen?"</strong> A 20–30 minute 1-on-1 lesson is purposeful, supervised screen time — very different from passive scrolling. Because the tutor is engaging your child directly the entire time, there is nowhere to hide, and most children stay far more attentive than in a large madrassah group.</p>
-          <p><strong>"Is online really as effective?"</strong> For most children it is <em>more</em> effective. The reason is simple maths: in a busy madrassah one teacher supervises 20+ children, so each child recites for only a minute or two. Online, your child recites for the whole session with instant correction — which is why progress is often two to three times faster through Qaida and early Quran reading.</p>
+          <p><strong>"Will my child stay focused on a screen?"</strong> Attention varies by age and learner. Use the trial to assess the lesson format, and discuss a suitable lesson length, parent supervision and breaks.</p>
+          <p><strong>"Is online learning effective?"</strong> A 1-on-1 lesson provides dedicated recitation and correction time. Outcomes still depend on the learner's starting point, attendance, tutor fit, lesson frequency, and practice; online and madrassah formats each have different advantages.</p>
           <p><strong>"What equipment do we need?"</strong> Just a laptop, tablet or phone, a stable internet connection, and a quiet corner. Headphones help younger children focus. That is all.</p>
 
-          <h2 id="choose">How to choose the best online Quran academy in the UK (checklist)</h2>
-          <p>Before you pay anyone, run through this checklist. A good academy will happily tick every box:</p>
+          <h2 id="choose">How to choose an online Quran academy in the UK</h2>
+          <p>Before you pay, use this checklist and ask each provider to explain what it can actually confirm:</p>
           <ul>
             <li>✅ <strong>Free trial lesson</strong> before any payment (no credit card required)</li>
-            <li>✅ <strong>Ijazah-certified</strong> or Al-Azhar–qualified tutors</li>
+            <li>✅ Evidence of credentials relevant to the proposed tutor and course</li>
             <li>✅ <strong>Live 1-on-1</strong> classes (not pre-recorded videos or group calls)</li>
             <li>✅ <strong>Female tutors available</strong> for daughters</li>
             <li>✅ Structured <strong>Qaida → Quran → Tajweed → Hifz</strong> curriculum</li>
             <li>✅ <strong>UK-friendly timings</strong> (after-school & weekends)</li>
-            <li>✅ <strong>Weekly progress reports</strong> to parents</li>
+            <li>✅ A clearly explained parent communication process</li>
             <li>✅ Transparent monthly pricing and easy cancellation</li>
             <li>✅ Experience teaching <strong>British-born children</strong> in English</li>
           </ul>
 
           <h2 id="getting-started">How to get started (the easy first step)</h2>
           <p>You do not need to commit to anything to find out if online learning suits your child. The smartest first move is a <strong>free trial class</strong>: you meet the tutor, watch how they interact with your child, and see the platform in action — all before paying a penny.</p>
-          <p>At NoorPath Academy we offer a <strong>free 30-minute trial</strong> with a certified tutor, we serve families right across the UK, and there is <strong>no credit card required</strong> to book. If it is a good fit, you continue; if not, there is no obligation at all.</p>
+          <p>NoorPath offers a <strong>${TRIAL.durationMinutes}-minute trial for $${TRIAL.price}</strong> with no credit card required. UK learners can request a GMT/BST tutor match; availability is confirmed after the request. NoorPath does not claim physical UK branches.</p>
 
           <div class="gold-box">
             <strong>Ready to try?</strong> <a href="/online-quran-classes-for-kids">Book your child's free 30-minute trial class</a> today — choose a UK-friendly time, request a male or female tutor, and see the difference 1-on-1 learning makes.
@@ -1583,17 +1582,17 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <details class="faq-acc">
             <summary>How much do online Quran classes cost in the UK? <span>+</span></summary>
-            <p>Online Quran classes for kids in the UK typically cost between £20 and £45 per month depending on how many lessons per week your child takes. Starter plans (2 lessons/week) begin around £20–£30/month, while standard 3-lesson plans run £30–£45/month. Family plans offer discounts for multiple siblings. NoorPath Academy offers a free 30-minute trial with no credit card required.</p>
+            <p>NoorPath's ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd} USD/month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute sessions. Published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and does not require a credit card.</p>
           </details>
 
           <details class="faq-acc">
             <summary>What is the best age for a child to start online Quran classes? <span>+</span></summary>
-            <p>The ideal age is 4–7 years, when children have strong memory and can manage 20–30 minute sessions. However, children of any age can start, and older children (8–12) often progress faster through Qaida and early Quran reading. Every child begins with Noorani Qaida before reading the Mushaf.</p>
+            <p>There is no universal starting age or pace. Consider attention span, interest, prior learning, and the ability to engage with a short guided session. An assessment can identify whether Noorani Qaida or another starting point is appropriate.</p>
           </details>
 
           <details class="faq-acc">
             <summary>Are online Quran classes safe for my child? <span>+</span></summary>
-            <p>Yes, when you use a reputable academy. Use trusted platforms (Zoom or Google Meet), supervise the first few weeks, verify the tutor's certification, keep the device in a shared family space, and ensure there is no private messaging between tutor and child. NoorPath tutors are background-verified and parents are encouraged to observe classes.</p>
+            <p>Use established platforms such as Zoom or Google Meet, supervise initial sessions, verify the proposed tutor's credentials, keep the device in a shared family space, and avoid private messaging between tutor and child. Ask NoorPath to explain the checks completed for the tutor being considered.</p>
           </details>
 
           <details class="faq-acc">
@@ -1603,7 +1602,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <details class="faq-acc">
             <summary>Are online classes as good as the local mosque madrassah? <span>+</span></summary>
-            <p>For most children, online is more effective. In a local madrassah one teacher supervises many children, so each child recites only briefly. In a 1-on-1 online lesson your child recites for the whole session with instant correction, which is why online students often progress two to three times faster through Qaida and early Quran reading.</p>
+            <p>Online 1-on-1 lessons offer dedicated recitation and correction time, while a local madrassah may offer in-person community learning. Learning pace varies, so compare the formats based on your child's needs rather than assuming one guarantees faster progress.</p>
           </details>
 
           <details class="faq-acc">
@@ -1613,7 +1612,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <details class="faq-acc">
             <summary>Which UK cities do you offer online Quran classes in? <span>+</span></summary>
-            <p>Because classes are fully online, we serve families anywhere in the UK — including London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton, Blackburn, Glasgow, Cardiff, Sheffield and Nottingham — as well as smaller towns without a nearby madrassah. Your child gets the same certified teaching regardless of postcode.</p>
+            <p>Because classes are online, learners can request tutor matching from London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton, Blackburn, Glasgow, Cardiff, Sheffield, Nottingham, and smaller UK towns. Availability is confirmed after matching; these locations are not physical NoorPath branches.</p>
           </details>
 
           <details class="faq-acc">
@@ -1995,7 +1994,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>When should you read Surah Mulk? <span>+</span></summary><p>The best time to read Surah Mulk is at night, after Isha prayer or before sleeping. The Prophet ﷺ would not sleep until he recited it. Reading it nightly ensures its protection and intercession, especially if one passes away during sleep.</p></details>
           <details class="faq-acc"><summary>How many verses are in Surah Mulk? <span>+</span></summary><p>Surah Al-Mulk has 30 verses (ayat) and is the 67th chapter of the Quran. It is a Makki surah, revealed in Mecca. It is also known as "Tabarak" after its first word, and "Al-Mani'ah" (the preventer) and "Al-Munjiyah" (the saver) for its protective qualities.</p></details>
           <details class="faq-acc"><summary>Does Surah Mulk protect from the grave punishment? <span>+</span></summary><p>Yes. According to authentic narrations, Surah Al-Mulk protects the reader from the punishment of the grave. Ibn Abbas reported that the Prophet ﷺ called it "the preventer" that saves a person from the torment of the grave. This is why reciting it every night is strongly encouraged.</p></details>
-          <details class="faq-acc"><summary>How long does it take to memorize Surah Mulk? <span>+</span></summary><p>Most people can memorize Surah Al-Mulk (30 verses) in 2–4 weeks with daily practice of 10–15 minutes. Reciting it every night naturally aids memorization. At NoorPath Academy, our <a href="/hifz-quran-online">Hifz tutors</a> use proven methods to help students memorize it quickly and correctly.</p></details>
+          <details class="faq-acc"><summary>How long does it take to memorize Surah Mulk? <span>+</span></summary><p>There is no reliable universal timeline. Pace depends on the learner's starting point, retention, pronunciation, revision, and practice. Divide the 30 verses into manageable sections and revise consistently before adding new verses.</p></details>
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn to Recite Surah Mulk Correctly</h3>
@@ -3400,12 +3399,12 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="faq-item">
             <div class="faq-q"><span>How do you teach 99 names of Allah to children?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The best way to teach Asmaul Husna to children: (1) Start with the most common names — Allah, Ar-Rahman, Ar-Raheem — which children already hear in Bismillah and Salah. (2) Teach 2-3 names per week with simple English meanings. (3) Connect names to stories — Al-Razzaq provides food, Al-Shafi heals sickness. (4) Use nasheed and songs with the names. (5) Enroll children in Islamic Studies classes where certified tutors teach Asmaul Husna as part of a structured curriculum. <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Learn more about online Quran and Islamic Studies classes for kids →</a></div>
+            <div class="faq-a">One way to teach Asmaul Husna to children is to start with familiar names such as Allah, Ar-Rahman and Ar-Raheem; explain simple English meanings; connect names to reliable stories; and use age-appropriate repetition. Islamic Studies lessons may also include selected names as part of an agreed curriculum. <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Learn more about online Quran and Islamic Studies classes for kids →</a></div>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Learn Islamic Studies & Quran at NoorPath Academy</strong><br>
-            Our certified tutors teach Asmaul Husna, Quran recitation, Tajweed, daily duas, and complete Islamic Studies to children and adults worldwide.<br><br>
+            NoorPath offers online lessons that may cover Asmaul Husna, Quran recitation, Tajweed, daily duas and Islamic Studies for children or adults, depending on the selected course.<br><br>
             <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a> &nbsp;|&nbsp;
             <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
             <a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:700;">40+ duas for kids →</a>
@@ -3932,7 +3931,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="benefit-row">
             <div class="benefit-icon-box"><i class="fas fa-heart"></i></div>
-            <div><strong>Earns Allah's Love</strong><br><span style="font-size:.92rem;color:var(--muted);">"Indeed, Allah loves those who are constantly repentant." (Quran 2:222). Making istighfar consistently is one of the guaranteed paths to earning Allah's love.</span></div>
+            <div><strong>A Practice Allah Loves</strong><br><span style="font-size:.92rem;color:var(--muted);">"Indeed, Allah loves those who are constantly repentant." (Quran 2:222). This verse encourages sincere repentance without turning the practice into a commercial-style guarantee.</span></div>
           </div>
 
           <div class="benefit-row">
@@ -4320,7 +4319,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h2>How to Memorize Ayatul Kursi (Step-by-Step)</h2>
 
           <div class="highlight-box">
-            <strong>Ayatul Kursi can be memorized in as little as 3–7 days</strong> with consistent practice. Most children master it in 1–2 weeks. Here is the most effective method:
+            <strong>Ayatul Kursi should be memorized at the learner's own pace</strong> with consistent practice and careful pronunciation. Here is a structured method:
           </div>
 
           <ol>
@@ -4368,12 +4367,12 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="faq-item">
             <div class="faq-q"><span>Can children memorize Ayatul Kursi?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Absolutely. Children as young as 4–5 years old can begin learning Ayatul Kursi with the help of a teacher. Most children aged 6–10 can memorize it in 2–3 weeks with daily practice. It is one of the first things taught at NoorPath Academy's All-in-One Kids Program alongside Noorani Qaida and short Surahs.</div>
+            <div class="faq-a">Children can begin learning Ayatul Kursi when they can engage with short, guided repetition. Memorisation time varies by learner; focus on accurate pronunciation and steady revision rather than a promised timeline.</div>
           </div>
 
           <div class="highlight-box" style="margin-top:40px;">
             <strong>Want your child to memorize Ayatul Kursi correctly?</strong><br>
-            Our certified NoorPath tutors teach Ayatul Kursi, Quran recitation, Tajweed, and Islamic Studies — with proper pronunciation from the very first class. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
+            NoorPath offers live 1-on-1 lessons covering Ayatul Kursi, Quran recitation, Tajweed, and Islamic Studies. Tutor availability is confirmed after matching. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
           </div>
         </div>
 
@@ -4429,7 +4428,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <div class="benefit-num">1</div>
             <div>
               <h2 style="margin:0 0 8px;font-size:1.1rem;">1-on-1 Personalised Attention</h2>
-              <p style="margin:0;color:var(--muted);font-size:.92rem;">In a traditional madrassa, one teacher handles 10–25 children. Online classes are 1-on-1 — the tutor's full attention is on your child. Mistakes are caught and corrected instantly, leading to significantly faster progress.</p>
+              <p style="margin:0;color:var(--muted);font-size:.92rem;">A 1-on-1 online class gives the learner dedicated recitation and correction time. Learning pace still depends on starting level, attendance, tutor fit, and practice.</p>
             </div>
           </div>
 
@@ -4460,8 +4459,8 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <div class="benefit-card">
             <div class="benefit-num">5</div>
             <div>
-              <h2 style="margin:0 0 8px;font-size:1.1rem;">Detailed Weekly Progress Reports</h2>
-              <p style="margin:0;color:var(--muted);font-size:.92rem;">Online academies like NoorPath send weekly written progress reports to parents. You always know exactly what your child learned, what mistakes were corrected, and what to practice at home.</p>
+              <h2 style="margin:0 0 8px;font-size:1.1rem;">Parent Communication</h2>
+              <p style="margin:0;color:var(--muted);font-size:.92rem;">Ask the academy to explain how lesson updates, practice notes, and parent questions are handled before enrolment.</p>
             </div>
           </div>
 
@@ -4477,7 +4476,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <div class="benefit-num">7</div>
             <div>
               <h2 style="margin:0 0 8px;font-size:1.1rem;">More Affordable Than Local Tutors</h2>
-              <p style="margin:0;color:var(--muted);font-size:.92rem;">A private local Quran tutor in London or Toronto can cost £40–£80/hour. Online Quran academies offer the same quality (often better) starting from $29 USD/month — a fraction of the cost.</p>
+              <p style="margin:0;color:var(--muted);font-size:.92rem;">Compare online and local options using the full monthly price, session count, lesson duration, tutor fit, and safeguarding arrangements rather than assuming equal or better quality.</p>
             </div>
           </div>
 
@@ -4501,7 +4500,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <div class="benefit-num">10</div>
             <div>
               <h2 style="margin:0 0 8px;font-size:1.1rem;">Sibling & Family Plans</h2>
-              <p style="margin:0;color:var(--muted);font-size:.92rem;">Online academies like NoorPath offer family plans where multiple siblings can enroll together at a significant discount. This makes quality Quran education accessible for larger Muslim families.</p>
+              <p style="margin:0;color:var(--muted);font-size:.92rem;">NoorPath's published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(" · ")}.</p>
             </div>
           </div>
 
@@ -4643,7 +4642,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <li><strong>Better focus</strong> and ability to concentrate for longer periods</li>
               <li><strong>Deeper understanding</strong> — can learn the meaning alongside recitation</li>
               <li><strong>Stronger motivation</strong> — choosing to learn Quran with intention (Niyyah)</li>
-              <li>Can complete Noorani Qaida in as little as 3–6 months</li>
+              <li>Can follow a Noorani Qaida pathway at a pace based on assessment, attendance, and practice</li>
             </ul>
             <div class="highlight-box" style="margin-top:16px;margin-bottom:0;">
               <strong>Remember:</strong> The Prophet ﷺ said there is reward in learning Quran at any age: <em>"The one who recites the Quran with difficulty receives a double reward."</em> (Bukhari & Muslim)
@@ -4677,7 +4676,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <p>Yes, with the right approach. At age 3, formal structured lessons with a tutor may be too intense. However, our <em>Little Learners</em> program at NoorPath is specifically designed for 3–5 year olds, using games, colorful slides, and short activities that feel like play — not study.</p>
 
           <h3>My child is 10 — have they missed the best window?</h3>
-          <p>Absolutely not. Age 10 is an excellent starting age. Children at this age often progress faster than 4-year-olds in terms of reading comprehension and Tajweed rules. Many famous Huffaz began their Hifz at age 10–12. The most important thing is to start — today.</p>
+          <p>Age 10 is not too late to begin. Readiness and pace depend on the individual child's attention, prior learning, motivation, lesson fit, and practice rather than an age-based comparison.</p>
 
           <h3>I am an adult — is it too late for me?</h3>
           <p>Never. We have students who began learning the Quran at age 40, 50, and even 60 — and they have completed their Noorani Qaida and are reciting with beautiful Tajweed. Allah rewards the effort, not just the result.</p>
@@ -4944,7 +4943,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Recite it with them:</strong> Pray Witr with your child and let them recite it alongside you every night — repetition is the key.</li>
             <li><strong>Explain the meaning simply:</strong> Even young children understand "We're asking Allah to guide us and protect us from bad things."</li>
             <li><strong>Use the transliteration:</strong> For younger children who haven't learned Arabic script yet, use the transliteration above.</li>
-            <li><strong>Make it a routine:</strong> Children who recite it every night in Witr will have it memorized within 2–3 weeks naturally.</li>
+            <li><strong>Make it a routine:</strong> Regular revision in an appropriate setting can support memorisation; do not promise a fixed completion time.</li>
           </ul>
 
           <div class="highlight-box">
@@ -5251,7 +5250,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <div class="tip-num">6</div>
             <div>
               <h3 style="margin:0 0 8px;">Understand What You're Memorizing</h3>
-              <p style="margin:0;color:var(--muted);font-size:.93rem;">Read the translation and tafsir of every verse you memorize. When your brain understands the meaning, it creates multiple memory pathways — semantic, auditory, and visual. Memorization becomes twice as fast and lasts far longer.</p>
+              <p style="margin:0;color:var(--muted);font-size:.93rem;">Read a reliable translation and tafsir of the verses you memorize. Understanding meaning may support recall and connection, but it does not guarantee a particular speed or retention outcome.</p>
             </div>
           </div>
 
@@ -5318,7 +5317,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Need a dedicated Hifz tutor?</strong> At NoorPath Academy, our certified Huffaz tutors follow the Sabaq-Sabaqi-Manzil system strictly, provide daily classes, and send weekly progress reports to parents. <a href="/courses/hifz-program-online" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial class today</a>.
+            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/courses/hifz-program-online" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">request a free trial class</a>.
           </div>
         </div>
 
@@ -5565,7 +5564,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </div>
           <div class="faq-item">
             <div class="faq-q">How long does it take to learn Salah properly?</div>
-            <div class="faq-a">Many beginners can learn the basic structure of Salah within a few days and improve confidence within a few weeks. Correct pronunciation and deeper understanding continue to improve over time.</div>
+            <div class="faq-a">Learning time varies by prior knowledge, age, practice, and the material being studied. Begin with the sequence and essential recitations, then continue improving pronunciation and understanding.</div>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
@@ -5669,10 +5668,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <h2>6. Online Quran Classes vs. Traditional Madrassa</h2>
-          <p>In 2026, online Quran classes have proven to be more effective than traditional madrassas for most families in Western countries. Here's why:</p>
+          <p>Online Quran classes and traditional madrassas offer different formats. Consider these practical differences:</p>
           <ul>
             <li><strong>1-on-1 attention:</strong> Online classes are typically private, unlike group madrassa classes of 10–20 children where teachers cannot monitor each child's pronunciation.</li>
-            <li><strong>Certified tutors:</strong> Online academies like NoorPath hire certified Ijazah-holding tutors — often more qualified than local mosque teachers.</li>
+            <li><strong>Tutor credentials:</strong> Ask either provider for the proposed tutor's relevant qualifications and teaching experience without assuming one format is superior.</li>
             <li><strong>No travel:</strong> Especially important in countries like Canada and UK where winter makes madrassa travel difficult.</li>
             <li><strong>Flexible scheduling:</strong> Classes at any time of day to fit around school, sports, and family life.</li>
             <li><strong>Progress reports:</strong> Parents receive weekly written reports on their child's progress.</li>
@@ -5692,7 +5691,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <p>If you're looking for a certified online Quran tutor for your child, <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:600;">NoorPath Academy offers a free 30-minute trial class</a> — no payment required. See the difference a qualified, caring tutor makes.</p>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Ready to begin?</strong> <a href="/online-quran-classes#cta" style="color:var(--emerald);">Book your child's free trial class today</a> and meet our certified tutors. JazakAllah Khair.
+            <strong>Ready to begin?</strong> <a href="/online-quran-classes#cta" style="color:var(--emerald);">Request your child's free trial class</a> and discuss an available tutor match. JazakAllah Khair.
           </div>
         </div>
 
@@ -5994,7 +5993,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     <h2 id="faq">Frequently Asked Questions</h2>
     <div class="faq-item">
       <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">What is the most popular Muslim baby name in 2026? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">Muhammad remains the #1 Muslim boy name worldwide in 2026. For girls, Maryam, Aisha, and Noor are consistently top choices. Trending new names include Zayan, Rayyan, Ayaan for boys and Inaya, Zoya, Eshal for girls.</div>
+      <div class="faq-a">Muhammad is widely used as a Muslim boy name. Commonly used girls' names include Maryam, Aisha, and Noor. Naming patterns vary by language, country, family, and year.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">What does Islam say about choosing a baby name? <i class="fas fa-chevron-down"></i></div>
@@ -6543,7 +6542,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
                 <tr style="background:var(--ivory);"><td style="padding:10px 16px;border-bottom:1px solid var(--border);">Child (4–7 years)</td><td style="padding:10px 16px;border-bottom:1px solid var(--border);">5 days/week, 20 min</td><td style="padding:10px 16px;border-bottom:1px solid var(--border);">8–14 months</td></tr>
                 <tr><td style="padding:10px 16px;border-bottom:1px solid var(--border);">Child (8–12 years)</td><td style="padding:10px 16px;border-bottom:1px solid var(--border);">5 days/week, 30 min</td><td style="padding:10px 16px;border-bottom:1px solid var(--border);">5–8 months</td></tr>
                 <tr style="background:var(--ivory);"><td style="padding:10px 16px;border-bottom:1px solid var(--border);">Teen (13–17 years)</td><td style="padding:10px 16px;border-bottom:1px solid var(--border);">4–5 days/week, 30 min</td><td style="padding:10px 16px;border-bottom:1px solid var(--border);">4–6 months</td></tr>
-                <tr><td style="padding:10px 16px;">Adult (18+)</td><td style="padding:10px 16px;">3–5 days/week, 30–45 min</td><td style="padding:10px 16px;">3–6 months</td></tr>
+                <tr><td style="padding:10px 16px;">Adult (18+)</td><td style="padding:10px 16px;">Schedule based on availability</td><td style="padding:10px 16px;">Pace varies by starting level and practice</td></tr>
               </tbody>
             </table>
           </div>
@@ -6576,7 +6575,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Ready to start Noorani Qaida?</strong><br>
-            <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free 30-minute trial class</a> at NoorPath Academy. We'll assess your starting level and begin your Qaida journey with a certified, experienced tutor. JazakAllah Khair.
+            <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free 30-minute trial class</a> at NoorPath Academy. The trial can identify your starting level and an available tutor match. JazakAllah Khair.
           </div>
         </div>
 
@@ -7608,7 +7607,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box" style="margin-top:40px;">
             <strong>Want to learn Quran recitation properly?</strong><br>
-            At NoorPath Academy, our certified tutors teach correct Tajweed — so you can recite Surah Yaseen and the entire Quran with proper pronunciation. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
+            At NoorPath Academy, live one-to-one lessons can include Tajweed guidance for Surah Yaseen and continued Quran recitation. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free trial class →</a>
           </div>
         </div>
 
@@ -7855,7 +7854,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Want to learn Quran recitation with Tajweed?</strong><br/>
-  Our certified tutors teach Surah Al-Kahf and the full Quran with correct pronunciation. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
+  NoorPath offers live one-to-one Quran lessons with pronunciation guidance, including practice from Surah Al-Kahf. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free trial class →</a>
 </div>
     `,
   },
@@ -8069,7 +8068,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);text-align:center;">
   <strong>📚 Teach your children the Quran and its wisdom</strong><br/>
-  Our certified tutors teach the Quran, its meaning, and Islamic character development. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a>
+  NoorPath offers online Quran and Islamic Studies lessons whose content depends on the selected course and learner level. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free trial class →</a>
 </div>
     `,
   },
@@ -8234,7 +8233,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Want your child to learn Surah Al-Fatiha with correct Tajweed?</strong><br/>
-  Our certified tutors teach Surah Al-Fatiha as part of our <a href="/courses/quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free 30-min trial →</a>
+  Surah Al-Fatiha can be included in the <a href="/courses/quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme according to the learner's level. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free 30-min trial →</a>
 </div>
     `,
   },
@@ -8248,7 +8247,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
 <h2>Why Choosing the Right Online Quran Academy Matters</h2>
 <p>The global online Quran learning market has exploded since 2020. Today, hundreds of academies compete for your family's attention — and money. But with the wrong academy, your child could develop <strong>incorrect Tajweed habits</strong> that take years to fix, learn from unverified tutors, or lose interest entirely due to poor teaching quality.</p>
-<p>In this guide, we analyse exactly what separates the best online Quran academies from the rest — so you can make the right choice for your family.</p>
+<p>This guide explains practical criteria for comparing online Quran academies so you can evaluate options for your family.</p>
 
 <h2>7 Must-Have Qualities in Any Online Quran Academy</h2>
 
@@ -8259,22 +8258,22 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 </div>
 
 <h3>2. 1-on-1 Live Classes (Not Pre-Recorded)</h3>
-<p>Quran recitation requires real-time correction of pronunciation, Tajweed, and Makharij (articulation points). Pre-recorded lessons cannot provide this. The best academies offer <strong>live 1-on-1 sessions</strong> via Zoom, Skype, or a similar platform.</p>
+<p>Quran recitation benefits from real-time correction of pronunciation, Tajweed, and Makharij (articulation points). Live 1-on-1 sessions can provide direct feedback that pre-recorded lessons cannot.</p>
 
 <h3>3. Transparent Pricing with Free Trial</h3>
-<p>Top academies offer a <strong>free trial class</strong> — no credit card required — so you can assess the tutor's quality, communication style, and methodology before committing financially. Monthly cancellation policies and clear pricing breakdowns are non-negotiable signs of trustworthiness.</p>
+<p>A trial class can help you assess the proposed tutor's communication style and methodology before enrolling. Verify the trial price, cancellation policy, and complete pricing in writing.</p>
 
 <h3>4. Age-Appropriate Curriculum</h3>
-<p>A child aged 4 needs a completely different teaching approach compared to a teenager or adult learner. The best academies have <strong>structured, age-appropriate curricula</strong> — from Noorani Qaida for beginners, through to Hifz memorization and advanced Tajweed for older students.</p>
+<p>A child aged 4 needs a different teaching approach from a teenager or adult learner. Ask how the curriculum and session format adapt to the learner's age, level, and goals.</p>
 
 <h3>5. Female Tutors Available</h3>
-<p>For many Muslim families, having a <strong>female tutor</strong> for daughters (and sometimes sons) is a religious and cultural preference. A quality academy should have a dedicated pool of certified female tutors and guarantee this option without waiting lists.</p>
+<p>For many Muslim families, having a <strong>female tutor</strong> is a religious or cultural preference. Request this during matching and ask the academy to confirm availability before enrolment.</p>
 
 <h3>6. Progress Reporting & Parent Communication</h3>
 <p>You should receive regular <strong>written progress reports</strong>, know exactly what was covered in each class, and be able to communicate with your tutor directly. Good academies also offer parent calls to discuss the child's development.</p>
 
-<h3>7. Satisfaction Guarantee</h3>
-<p>The best academies stand behind their service. A <strong>money-back guarantee</strong> for the first month demonstrates that the academy is confident in its tutors and committed to your satisfaction — not just your payment.</p>
+<h3>7. Clear Cancellation Terms</h3>
+<p>Read the cancellation policy before paying and ask the academy to confirm notice requirements, billing dates, and any non-refundable charges in writing.</p>
 
 <h2>NoorPath Academy — Our Commitment to Quality</h2>
 <p>At <strong>NoorPath Academy</strong>, we built our academy around these 7 principles from day one. Here is how we measure up:</p>
@@ -8286,13 +8285,13 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Ijazah-certified tutors</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Yes — all tutors verified</td></tr>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Tutor credentials</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">Ask for the proposed tutor's relevant credentials</td></tr>
     <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Live 1-on-1 classes</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Yes — via Zoom &amp; Skype</td></tr>
-    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Free trial class</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ 30-min free trial</td></tr>
-    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Female tutors available</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Dedicated female tutor pool</td></tr>
+    <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Trial class</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">${TRIAL.durationMinutes} minutes · $${TRIAL.price} · no card required</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Female tutor requests</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">Subject to tutor matching</td></tr>
     <tr><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Age-specific curricula</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Ages 4–70+</td></tr>
-    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Weekly progress reports</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">✓ Every class</td></tr>
-    <tr><td style="padding:12px 16px;">Satisfaction guarantee</td><td style="padding:12px 16px;text-align:center;color:var(--emerald);font-weight:700;">✓ Full 30-day refund</td></tr>
+    <tr style="background:rgba(10,110,79,.02)"><td style="padding:12px 16px;border-bottom:1px solid var(--border);">Parent communication</td><td style="padding:12px 16px;border-bottom:1px solid var(--border);text-align:center;color:var(--emerald);font-weight:700;">Confirm the reporting method before enrolment</td></tr>
+    <tr><td style="padding:12px 16px;">Cancellation terms</td><td style="padding:12px 16px;text-align:center;color:var(--emerald);font-weight:700;">See the published cancellation policy</td></tr>
   </tbody>
 </table>
 
@@ -8302,23 +8301,23 @@ export const blogContent: Record<string, { style: string; content: string }> = {
   <li><strong>Not checking tutor qualifications:</strong> Always ask for the tutor's specific qualifications and experience</li>
   <li><strong>Ignoring the trial class:</strong> A free trial is your best chance to assess the tutor before committing</li>
   <li><strong>No Tajweed focus:</strong> Basic Quran reading without Tajweed creates bad habits. Ensure the curriculum includes proper Tajweed</li>
-  <li><strong>Ignoring parent reviews:</strong> Look for academies with hundreds of verified reviews on Google, Trustpilot, or Facebook</li>
+  <li><strong>Relying on unsupported social proof:</strong> Check independently verifiable sources and current published policies</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
 <h3>How much should online Quran classes cost?</h3>
-<p>Quality 1-on-1 live Quran classes typically range from $25–$80/month depending on frequency. Be cautious of prices below $15/month — this often indicates pre-recorded content or unqualified tutors.</p>
+<p>NoorPath's published plans are ${PRICING_PLANS.map((plan) => `${plan.name}: $${plan.monthlyPriceUsd}/month for ${plan.sessionsPerMonth} ${plan.sessionMinutes}-minute sessions`).join("; ")}. Compare other providers using their current written pricing and lesson format rather than inferring tutor quality from price alone.</p>
 
 <h3>Are online Quran classes as effective as in-person?</h3>
-<p>Yes — for 1-on-1 live sessions with qualified tutors, research shows online learning is equally or more effective than in-person, due to schedule flexibility, comfort of learning at home, and access to better tutors globally.</p>
+<p>Online and in-person formats have different advantages. Live 1-on-1 lessons provide direct feedback and avoid travel, while in-person settings may provide local community learning. Outcomes depend on the learner, tutor fit, attendance, and practice.</p>
 
 <h3>How long does it take to learn Quran online?</h3>
-<p>Noorani Qaida (alphabet to basic reading): 3–6 months. Basic Quran reading: 1–2 years. Tajweed proficiency: 2–3 years. Hifz (full memorisation): 3–7 years depending on commitment and starting age.</p>
+<p>There is no universal completion timeline. Starting level, lesson frequency, attendance, revision, pronunciation, and independent practice all affect pace. Ask for a learning plan without treating it as a guaranteed outcome.</p>
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);text-align:center;">
-  <strong>🌟 Ready to start with the best?</strong><br/><br/>
-  Join 12,000+ families who chose NoorPath Academy.<br/>
-  Certified tutors · Free 30-min trial · 100% satisfaction guarantee.<br/><br/>
+  <strong>Ready to request a tutor match?</strong><br/><br/>
+  Live 1-on-1 online lessons · ${TRIAL.durationMinutes}-minute trial for $${TRIAL.price} · no credit card required.<br/>
+  Tutor and timezone availability are confirmed after your request.<br/><br/>
   <a href="/online-quran-classes#cta" style="display:inline-block;background:var(--emerald);color:#fff;padding:14px 32px;border-radius:50px;font-weight:700;text-decoration:none;margin-top:8px;">Book Your Free Trial Class →</a>
 </div>
     `,
@@ -8554,7 +8553,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Practice 15 minutes daily</strong> — Revise what your teacher assigned between lessons. This single habit separates fast progress from stalled progress.</li>
             <li><strong>Move to the Mushaf</strong> — After Qaida completion, begin Juz Amma with live Tajweed correction every session.</li>
           </ol>
-          <p>Adults who follow this 5-step path typically read <a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha</a> confidently within 12 weeks and finish Juz Amma within 4–6 months. See our dedicated <a href="/learn-quran-online" style="color:var(--emerald);font-weight:600;">Learn Quran Online</a> page for live class details and instant trial booking.</p>
+          <p>Learning pace varies by starting level, lesson frequency, attendance, pronunciation needs, and practice. See our dedicated <a href="/learn-quran-online" style="color:var(--emerald);font-weight:600;">Learn Quran Online</a> page for live class details and tutor-matching information.</p>
 
           <h2>Online Quran Classes for Adults vs Kids — What's Different?</h2>
           <p>Many adults worry they will be placed in a children's class. Reputable academies like NoorPath run <strong>separate adult tracks</strong> with these differences:</p>
@@ -8628,41 +8627,41 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <tbody>
               <tr><td><strong>Quran apps alone</strong></td><td>Revision, listening, vocabulary</td><td>Cannot hear or correct your pronunciation</td><td>❌ Not enough alone</td></tr>
               <tr><td><strong>YouTube videos</strong></td><td>Understanding concepts, motivation</td><td>No feedback loop; easy to learn wrong sounds</td><td>⚠️ Supplement only</td></tr>
-              <tr><td><strong>Group online class</strong></td><td>Budget-conscious learners</td><td>Teacher cannot focus on your specific errors</td><td>⚠️ Slower progress</td></tr>
-              <tr><td><strong>1-on-1 live tutor</strong></td><td>Adult beginners who want results</td><td>Requires scheduling commitment</td><td>✅ Fastest & most accurate</td></tr>
-              <tr><td><strong>Local madrassa</strong></td><td>Children; community atmosphere</td><td>Fixed times; mixed-age classes</td><td>⚠️ Often impractical for adults</td></tr>
+              <tr><td><strong>Group online class</strong></td><td>Learners who value a group format</td><td>Feedback time is shared</td><td>Compare group size</td></tr>
+              <tr><td><strong>1-on-1 live tutor</strong></td><td>Learners seeking direct feedback</td><td>Requires scheduling commitment</td><td>Individual format</td></tr>
+              <tr><td><strong>Local madrassa</strong></td><td>Community-based learning</td><td>Schedule and class format vary</td><td>In-person format</td></tr>
             </tbody>
           </table>
 
           <div class="gold-box">
-            <strong>Expert insight:</strong> Adults learn through <em>logic and understanding</em>, not rote repetition alone. A skilled tutor explains <em>why</em> a letter sounds heavy or light — which speeds Tajweed mastery. Apps and videos cannot replace a teacher watching your mouth position on a video call. That is why <strong>online quran classes for adults</strong> with live 1-on-1 instruction outperform every self-study method in head-to-head progress tests.
+            <strong>Practical point:</strong> A live tutor can explain why a letter sounds heavy or light, listen to recitation and give immediate feedback. Apps and videos can support practice but cannot respond to an individual learner in real time.
           </div>
 
           <h2>How to Choose the Right Online Quran Academy (12-Point Checklist)</h2>
           <p>Before paying for months of lessons, verify these points during your free trial:</p>
           <ul class="checklist">
-            <li><strong>Certified teachers</strong> — Ijazah, Al-Azhar, or recognized madrassa background</li>
+            <li><strong>Relevant credentials</strong> — ask for evidence connected to the proposed tutor and course</li>
             <li><strong>Free trial lesson</strong> — no payment required before you experience a class</li>
             <li><strong>1-on-1 live classes</strong> — not pre-recorded videos marketed as "classes"</li>
-            <li><strong>Flexible rescheduling</strong> — life happens; 24-hour notice policy is standard</li>
+            <li><strong>Written rescheduling terms</strong> — confirm notice requirements before payment</li>
             <li><strong>Patient with adult beginners</strong> — teacher does not rush or show frustration</li>
             <li><strong>Clear curriculum</strong> — Qaida first, then Quran, then Tajweed (in that order)</li>
-            <li><strong>Written progress updates</strong> — monthly report on pages completed and next goals</li>
+            <li><strong>Clear parent or learner updates</strong> — confirm what feedback is included</li>
             <li><strong>Parent/supervision policy for kids</strong> — for families enrolling children alongside you</li>
-            <li><strong>Timezone-friendly slots</strong> — UK, US, AU evening and weekend availability</li>
+            <li><strong>Confirmed timezone fit</strong> — ask for the exact recurring lesson window</li>
             <li><strong>Transparent pricing</strong> — no hidden fees; sibling discounts if enrolling family</li>
-            <li><strong>Secure platform</strong> — Zoom or Google Meet; no private messaging with minors</li>
-            <li><strong>Backup teacher</strong> — coverage when your regular tutor is unavailable</li>
+            <li><strong>Safeguarding process</strong> — parent-managed communication and clear recording rules for minors</li>
+            <li><strong>Tutor absence process</strong> — ask how missed or replacement lessons are handled</li>
           </ul>
-          <p>Full comparison guide: <a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Choose the Best Online Quran Academy (2026)</a></p>
+          <p>Full comparison guide: <a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy (2026)</a></p>
 
           <h2>Ideal Schedule for Working Adults</h2>
-          <p>Consistency beats intensity. Here is what thousands of successful adult students follow:</p>
+          <p>A sustainable routine depends on work, family responsibilities, current level and available practice time. Discuss:</p>
           <ul>
             <li><strong>Lessons:</strong> 2–3 sessions per week, 30 minutes each (45 min max if you have strong focus)</li>
             <li><strong>Daily practice:</strong> 15–20 minutes on non-lesson days — revise what your teacher assigned</li>
             <li><strong>Best times:</strong> After Fajr (mind is fresh), lunch break, or after Isha (quiet home)</li>
-            <li><strong>Minimum viable:</strong> 1 lesson/week works but doubles your timeline — use only if necessary</li>
+            <li><strong>Available frequency:</strong> choose a published plan you can attend consistently</li>
           </ul>
 
           <h3>Timezone Tips by Country</h3>
@@ -8670,30 +8669,28 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li><strong>UK & Europe:</strong> Evening slots 6–9 pm GMT work best after work. See <a href="/locations/online-quran-classes-uk" style="color:var(--emerald);font-weight:600;">Online Quran Classes UK</a></li>
             <li><strong>USA & Canada:</strong> Morning (before work) or evening 7–10 pm local. See <a href="/locations/online-quran-classes-usa" style="color:var(--emerald);font-weight:600;">Online Quran Classes USA</a></li>
             <li><strong>Australia:</strong> After-school evening AEST/AEDT. See <a href="/locations/online-quran-classes-australia" style="color:var(--emerald);font-weight:600;">Online Quran Classes Australia</a></li>
-            <li><strong>Gulf & Middle East:</strong> Flexible — many teachers available in your timezone</li>
+            <li><strong>Gulf & Middle East:</strong> Share your timezone and wait for exact tutor availability to be confirmed</li>
           </ul>
 
           <h2>How Much Does It Cost to Learn Quran Online as an Adult?</h2>
-          <p>Transparent pricing matters. Here is what reputable <strong>online quran classes for adults</strong> typically charge in 2026:</p>
+          <p>Transparent pricing matters. NoorPath's maintained monthly options for <strong>online quran classes for adults</strong> are:</p>
           <table class="compare-table">
             <thead><tr><th>Plan</th><th>Sessions/Week</th><th>Monthly Cost</th><th>Best For</th></tr></thead>
             <tbody>
-              <tr><td><strong>Starter</strong></td><td>2× 30 min</td><td>$29–$45</td><td>Busy adults, slow but steady progress</td></tr>
-              <tr><td><strong>Standard</strong></td><td>3× 30 min</td><td>$45–$65</td><td>Recommended — fastest beginner results</td></tr>
-              <tr><td><strong>Intensive</strong></td><td>5× 30 min</td><td>$70–$100</td><td>Hifz students or fast-track reading</td></tr>
+              ${PRICING_PLANS.map((plan) => `<tr><td><strong>${plan.name}</strong></td><td>${plan.sessionsPerWeek} per week × ${plan.sessionMinutes} min</td><td>$${plan.monthlyPriceUsd}/month</td><td>${plan.description}</td></tr>`).join("")}
             </tbody>
           </table>
-          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, adult plans start from <strong>$29/month</strong> with family discounts if you enroll children too. Your first 30-minute lesson is always free — no credit card, no automatic billing. Compare plans on our <a href="/online-quran-academy" style="color:var(--emerald);font-weight:600;">Online Quran Academy</a> page.</p>
+          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, the ${PRICING_PLANS[0].name} plan is <strong>$${PRICING_PLANS[0].monthlyPriceUsd}/month</strong>. Published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price}, with no credit card required.</p>
 
           <h2>Can Women Learn Quran Online with a Female Teacher?</h2>
-          <p>Yes. Many adult women prefer learning with a certified female tutor (Hafiza) for comfort and privacy. When booking your free trial, simply request a female teacher. NoorPath offers Ijazah-certified female tutors for adult sisters worldwide — same curriculum, same flexible scheduling, same free trial policy. See also our <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:600;">Learn Tajweed Online</a> page if your goal is pronunciation perfection.</p>
+          <p>Adult women can request a female tutor for comfort and privacy. NoorPath confirms a suitable tutor and schedule according to the learner's goals and current availability. Ask for the proposed tutor's credentials before enrolment. See also our <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:600;">Learn Tajweed Online</a> page if your goal is pronunciation practice.</p>
 
           <h2>7 Mistakes That Stall Adult Quran Learners</h2>
-          <div class="mistake-box"><strong>❌ Skipping Noorani Qaida:</strong> Jumping straight to the Mushaf creates bad habits. Always complete Qaida first — even if it feels slow.</div>
+          <div class="mistake-box"><strong>❌ Skipping a level assessment:</strong> Ask the tutor whether Qaida or direct recitation is the suitable starting point.</div>
           <div class="mistake-box"><strong>❌ Inconsistent schedule:</strong> Missing 2 weeks resets progress. Fix 2–3 permanent weekly slots and protect them like work meetings.</div>
-          <div class="mistake-box"><strong>❌ Relying on apps without a teacher:</strong> You cannot self-correct throat letters. A teacher on video call is non-negotiable for beginners.</div>
-          <div class="mistake-box"><strong>❌ Comparing yourself to children:</strong> Children memorize faster but adults understand rules deeper. Your timeline is valid.</div>
-          <div class="mistake-box"><strong>❌ Long sessions causing burnout:</strong> 60-minute daily marathons lead to quitting. Short, consistent sessions win.</div>
+          <div class="mistake-box"><strong>❌ Relying only on passive material:</strong> Apps and videos cannot give individual live correction; consider guided feedback when needed.</div>
+          <div class="mistake-box"><strong>❌ Comparing your pace:</strong> Starting level, attendance and practice differ, so use individual goals.</div>
+          <div class="mistake-box"><strong>❌ Choosing an unsuitable routine:</strong> Select a lesson length and frequency you can attend consistently.</div>
           <div class="mistake-box"><strong>❌ Not revising between lessons:</strong> 15 minutes daily revision is worth more than an extra weekly lesson.</div>
           <div class="mistake-box"><strong>❌ Choosing the cheapest tutor without credentials:</strong> Incorrect Tajweed learned early takes months to unlearn. Invest in qualified teachers.</div>
 
@@ -8721,8 +8718,8 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <ul>
             <li>Learn from anywhere — no commute to madrassa</li>
             <li>Flexible timing around work, parenting, and prayer</li>
-            <li>Private 1-on-1 attention — every mistake corrected instantly</li>
-            <li>Access to Al-Azhar and Ijazah-certified teachers globally</li>
+            <li>Private 1-on-1 lesson time with live recitation feedback</li>
+            <li>Ability to request a tutor by course needs and verify the proposed credentials</li>
             <li>Progress at your pace — no pressure from faster classmates</li>
             <li>Enroll your children in the same academy — one family hub</li>
             <li>Record lessons (with permission) for revision</li>
@@ -8730,15 +8727,15 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <h2>Frequently Asked Questions — Learn Quran Online as an Adult</h2>
-          <div class="highlight-box"><strong>Can I learn Quran online if I never studied as a child?</strong><br>Yes — most adult students at NoorPath start from absolute zero. No prior Arabic knowledge is required. Your tutor begins with Noorani Qaida at your pace.</div>
-          <div class="highlight-box"><strong>How long until I can read Surah Al-Fatiha in Salah?</strong><br>With 2–3 weekly lessons and daily practice, most adults read Al-Fatiha within 10–14 weeks. Full Juz Amma fluency typically takes 4–6 months.</div>
+          <div class="highlight-box"><strong>Can I learn Quran online if I never studied as a child?</strong><br>Yes. A beginner can request a level assessment and may start with Noorani Qaida when appropriate. No prior Arabic knowledge is required for that beginner pathway.</div>
+          <div class="highlight-box"><strong>How long until I can read Surah Al-Fatiha in Salah?</strong><br>There is no universal timeline. A tutor should assess current reading, pronunciation, lesson frequency, and practice, then adjust the plan without guaranteeing a completion date.</div>
           <div class="highlight-box"><strong>Is it embarrassing to learn Quran online as an adult?</strong><br>Not at all. 1-on-1 private lessons mean no classroom, no children watching, no judgment. Your tutor has taught hundreds of adult beginners — they expect and welcome your starting point.</div>
           <div class="highlight-box"><strong>Can I learn Tajweed online after basic reading?</strong><br>Yes. Once you read comfortably, move to our <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:600;">Tajweed program</a> for makharij, ghunnah, madd, and idgham rules with live correction.</div>
           <div class="highlight-box"><strong>What if I studied as a child but forgot everything?</strong><br>Very common. Your tutor will assess whether you need full Qaida or can restart from a mid-Qaida page. Most returning adults refresh Qaida in 4–6 weeks then move to the Mushaf.</div>
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Ready to start? You are one free trial away from reading your first ayah.</strong><br><br>
-            NoorPath Academy offers live 1-on-1 <strong>online Quran classes for adults and kids</strong> with certified tutors, flexible UK/US/AU time slots, and a structured Qaida → Quran → Tajweed curriculum. No prior Arabic required. No payment until you have experienced a full trial lesson.<br><br>
+            NoorPath Academy offers live 1-on-1 <strong>online Quran classes for adults and kids</strong> with tutor matching by course goal and timezone, plus a structured Qaida → Quran → Tajweed learning path. No prior Arabic is required for beginner Qaida. The trial is free and does not require a credit card.<br><br>
             <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;font-size:1.05rem;">Book your free 30-minute trial class now →</a>
           </div>
 
@@ -8746,7 +8743,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Guides</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
               <li><a href="/learn-quran-online" style="color:var(--emerald);font-weight:600;">Learn Quran Online — Live 1-on-1 Classes</a></li>
-              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Choose the Best Online Quran Academy (2026)</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy (2026)</a></li>
               <li><a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide — Start Here</a></li>
               <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
               <li><a href="/blog/tajweed-rules-complete-guide" style="color:var(--emerald);font-weight:600;">Tajweed Rules — Complete Guide</a></li>
@@ -8781,37 +8778,37 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     @media (max-width:768px) { .check-grid,.stat-row,.month-grid { grid-template-columns:1fr; } }`,
     content: `<p>Every Muslim parent asks the same question: <em>"How do I find safe, effective online Quran classes for my child?"</em> With hundreds of platforms advertising on Google, the choice feels overwhelming — yet the decision shapes your child's relationship with the Quran for life.</p>
 
-          <p>This is the complete 2026 parent guide: best age to start, how to evaluate safety, what to look for in a tutor, realistic costs, red flags to avoid, and exactly how to book a free trial without risk.</p>
+          <p>This 2026 parent guide covers readiness, safety, tutor questions, published costs, warning signs, and how to request a trial.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer for busy parents:</strong> The best <strong>online Quran classes for kids</strong> are live <strong>1-on-1</strong> (not group or pre-recorded), taught by <strong>Ijazah-certified tutors</strong>, with <strong>parent-monitored Zoom sessions</strong>, <strong>20–30 minute lessons</strong> for ages 4–8, and a <strong>free trial before payment</strong>. <a href="/online-quran-classes-for-kids#cta" style="color:var(--emerald);font-weight:700;">Book a free trial at NoorPath Academy →</a>
+            <strong>Quick answer for busy parents:</strong> Compare live versus recorded formats, ask for the proposed tutor's relevant credentials, supervise child sessions, review lesson length, and use a trial to assess fit. NoorPath's trial is ${TRIAL.durationMinutes} minutes for $${TRIAL.price}, with no credit card required.
           </div>
 
           <div class="stat-row">
             <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Minimum age to start</div></div>
             <div class="stat-card"><div class="stat-num">20–45</div><div class="stat-label">Minutes per session by age</div></div>
-            <div class="stat-card"><div class="stat-num">$29</div><div class="stat-label">Starting monthly cost</div></div>
-            <div class="stat-card"><div class="stat-num">12,000+</div><div class="stat-label">Families worldwide</div></div>
+            <div class="stat-card"><div class="stat-num">$${PRICING_PLANS[0].monthlyPriceUsd}</div><div class="stat-label">${PRICING_PLANS[0].name} monthly price</div></div>
+            <div class="stat-card"><div class="stat-num">${TRIAL.durationMinutes} min</div><div class="stat-label">Trial duration</div></div>
           </div>
 
           <h2>Why Parents Are Choosing Online Quran Classes in 2026</h2>
           <ul>
             <li><strong>No local madrassa:</strong> Many families in UK, USA, Canada, and Australia have no qualified Quran teacher nearby.</li>
-            <li><strong>Busy schedules:</strong> After-school slots at 4–6 pm fit homework and dinner — no weekend madrassa commute.</li>
+            <li><strong>Busy schedules:</strong> Families can request after-school or weekend times, subject to tutor matching.</li>
             <li><strong>1-on-1 attention:</strong> Your child is never lost in a classroom of 15 students.</li>
-            <li><strong>Certified global tutors:</strong> Access Al-Azhar and Ijazah teachers regardless of where you live.</li>
+            <li><strong>Tutor choice:</strong> Ask for relevant credentials, teaching experience, language, and timezone fit during matching.</li>
             <li><strong>Parent visibility:</strong> Sit nearby during Zoom — see and hear every minute of the lesson.</li>
           </ul>
-          <p>Parents searching <em>"best online quran classes for kids"</em>, <em>"quran teacher for kids"</em>, and <em>"online quran academy for kids"</em> in the UK, USA, and Canada are driving record demand. The key is choosing live 1-on-1 instruction over apps or group webinars — your child's pronunciation depends on it.</p>
+          <p>Parents searching for <em>online Quran classes for kids</em>, a <em>Quran teacher for kids</em>, or an <em>online Quran academy for kids</em> should compare live feedback, safeguarding, tutor fit, pricing, and scheduling.</p>
 
-          <h2>What Makes the Best Online Quran Classes for Kids?</h2>
-          <p>Not every platform advertising on Google delivers real teaching. The <strong>best online quran classes for kids</strong> share these non-negotiable qualities:</p>
+          <h2>What to Check in Online Quran Classes for Kids</h2>
+          <p>Use these practical criteria when comparing online Quran classes for kids:</p>
           <ul>
             <li><strong>Live 1-on-1 on Zoom</strong> — your child is never one of 20 students in a webinar</li>
             <li><strong>Child-specialist tutors</strong> — teachers who know how to engage a 5-year-old, not just recite rules</li>
             <li><strong>Structured Qaida-first curriculum</strong> — not random surah memorization without foundation</li>
             <li><strong>Weekly written progress reports</strong> — you always know what your child learned</li>
-            <li><strong>Free trial before payment</strong> — evaluate the teacher with zero financial risk</li>
+            <li><strong>Trial terms in writing</strong> — confirm duration, price, card requirement, and tutor availability</li>
           </ul>
           <p>See how NoorPath compares on our dedicated <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids</a> landing page — built specifically for parents researching this decision.</p>
 
@@ -8838,7 +8835,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ul>
           <p>If your child is not ready yet, wait 2–3 months and try again. Forcing lessons too early creates negative associations with the Quran. Ages 4–7 are ideal for most families.</p>
 
-          <h2>12-Point Checklist: How to Choose the Best Online Quran Academy</h2>
+          <h2>12-Point Checklist for Choosing an Online Quran Academy</h2>
           <div class="check-grid">
             <div class="check-item"><strong>✓ Free trial</strong> — No payment before experiencing a real lesson</div>
             <div class="check-item"><strong>✓ 1-on-1 live</strong> — Not group webinars or recorded videos</div>
@@ -8849,8 +8846,8 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <div class="check-item"><strong>✓ Flexible reschedule</strong> — 24-hour notice policy</div>
             <div class="check-item"><strong>✓ Female tutors</strong> — Available for daughters</div>
             <div class="check-item"><strong>✓ Qaida first</strong> — Structured curriculum, not random surahs</div>
-            <div class="check-item"><strong>✓ Timezone slots</strong> — UK/US/AU evening availability</div>
-            <div class="check-item"><strong>✓ Sibling discount</strong> — Family plans for 2+ children</div>
+            <div class="check-item"><strong>✓ Timezone matching</strong> — Availability confirmed after the request</div>
+            <div class="check-item"><strong>✓ Sibling discounts</strong> — ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(" · ")}</div>
             <div class="check-item"><strong>✓ Transparent pricing</strong> — No hidden fees after trial</div>
           </div>
 
@@ -8872,8 +8869,8 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <table class="price-table">
             <thead><tr><th>Format</th><th>Pros</th><th>Cons</th><th>Verdict for Kids</th></tr></thead>
             <tbody>
-              <tr><td><strong>1-on-1 live tutor</strong></td><td>Full attention, instant Tajweed correction, custom pace</td><td>Costs slightly more than group</td><td>✅ Best for all ages</td></tr>
-              <tr><td><strong>Group online class</strong></td><td>Lower cost per student</td><td>Teacher cannot correct every child; shy kids stay silent</td><td>⚠️ Slower progress</td></tr>
+              <tr><td><strong>1-on-1 live tutor</strong></td><td>Dedicated recitation and feedback time</td><td>May cost more than group learning</td><td>Consider for individual feedback</td></tr>
+              <tr><td><strong>Group online class</strong></td><td>Peer setting and lower cost per student</td><td>Feedback time is shared</td><td>Consider for group learning</td></tr>
               <tr><td><strong>Pre-recorded videos</strong></td><td>Free or cheap</td><td>Zero feedback; children learn wrong pronunciation</td><td>❌ Not recommended alone</td></tr>
               <tr><td><strong>Quran apps</strong></td><td>Good for listening & revision</td><td>Cannot hear child's recitation</td><td>⚠️ Supplement only</td></tr>
             </tbody>
@@ -8883,12 +8880,10 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <table class="price-table">
             <thead><tr><th>Plan</th><th>Sessions/Week</th><th>Typical Monthly Cost</th></tr></thead>
             <tbody>
-              <tr><td>Starter</td><td>2× 30 min</td><td>$29–$45/month</td></tr>
-              <tr><td>Standard</td><td>3× 30 min</td><td>$45–$65/month</td></tr>
-              <tr><td>Intensive</td><td>5× 30 min</td><td>$70–$100/month</td></tr>
+              ${PRICING_PLANS.map((plan) => `<tr><td>${plan.name}</td><td>${plan.sessionsPerWeek}× ${plan.sessionMinutes} min</td><td>$${plan.monthlyPriceUsd}/month</td></tr>`).join("")}
             </tbody>
           </table>
-          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy pricing</a>, plans start from $29/month with sibling discounts. Your first class is always free.</p>
+          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy pricing</a>, the ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd}/month. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and requires no credit card.</p>
 
           <h2>What Happens in the First Free Trial Class?</h2>
           <ol>
@@ -8899,26 +8894,26 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </ol>
           <p>Your child should leave smiling and wanting to come back. If they don't — try a different tutor. A good academy will rematch without charge.</p>
 
-          <h2>What Your Child Learns — Month-by-Month Curriculum</h2>
-          <p>Parents ask: <em>"What will my child actually learn in the first 6 months?"</em> Here is a realistic timeline for <strong>online quran classes for kids</strong> starting from zero:</p>
+          <h2>What Your Child May Learn — Curriculum Stages</h2>
+          <p>Curriculum order depends on assessment and does not promise completion dates. A beginner pathway may include these stages:</p>
           <div class="month-grid">
             <div class="month-card">
-              <div class="month-label">Month 1</div>
+              <div class="month-label">Foundation stage</div>
               <strong>Arabic Letters & Fun</strong>
-              <p style="font-size:.88rem;margin:8px 0 0;color:#4b5563;">First 10–14 letters with makharij. Short duas. Teacher builds rapport and routine.</p>
+              <p style="font-size:.88rem;margin:8px 0 0;color:#4b5563;">Arabic letter recognition, initial makharij work, short duas, and lesson routines.</p>
             </div>
             <div class="month-card">
-              <div class="month-label">Month 2–3</div>
-              <strong>Qaida Completion</strong>
-              <p style="font-size:.88rem;margin:8px 0 0;color:#4b5563;">All 28 letters, harakat, letter joining, sukoon. Begin Surah Al-Fatiha.</p>
+              <div class="month-label">Qaida stage</div>
+              <strong>Qaida Development</strong>
+              <p style="font-size:.88rem;margin:8px 0 0;color:#4b5563;">Letters, harakat, joining, sukoon, and guided recitation according to readiness.</p>
             </div>
             <div class="month-card">
-              <div class="month-label">Month 4–6</div>
-              <strong>Quran Reading</strong>
-              <p style="font-size:.88rem;margin:8px 0 0;color:#4b5563;">Juz Amma surahs with basic Tajweed. Child reads in Salah with confidence.</p>
+              <div class="month-label">Reading stage</div>
+              <strong>Guided Quran Reading</strong>
+              <p style="font-size:.88rem;margin:8px 0 0;color:#4b5563;">Short surahs and introductory Tajweed when the learner is ready.</p>
             </div>
           </div>
-          <p>Progress varies by age, attendance, and home practice. A child who practices 5–10 minutes daily between classes progresses twice as fast. Read our <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide</a> to understand the foundation phase.</p>
+          <p>Progress varies by starting level, age, attendance, tutor fit, and home practice. Read our <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide</a> to understand the foundation phase.</p>
 
           <h2>Hifz Quran Online for Kids — When to Start</h2>
           <p>Many parents ask about <strong>Hifz Quran online for kids</strong>. The ideal starting age for structured memorization is <strong>7–10 years</strong>, after the child can read Quran with reasonable fluency. Starting Hifz before completing Qaida creates frustration. Signs your child is ready for Hifz:</p>
@@ -8945,28 +8940,28 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           <h2>5 Mistakes Parents Make (Avoid These)</h2>
           <div class="mistake-box"><strong>❌ Choosing the cheapest tutor:</strong> Incorrect Tajweed learned at age 5 takes years to fix. Invest in qualified teachers.</div>
           <div class="mistake-box"><strong>❌ Forcing 60-minute sessions:</strong> Children burn out. Short, consistent lessons win every time.</div>
-          <div class="mistake-box"><strong>❌ No home practice:</strong> 5–10 minutes daily revision between classes doubles progress.</div>
+          <div class="mistake-box"><strong>❌ No home practice:</strong> Short revision between classes can reinforce material without guaranteeing a particular pace.</div>
           <div class="mistake-box"><strong>❌ Skipping Noorani Qaida:</strong> Jumping to Quran without Qaida creates permanent pronunciation errors.</div>
           <div class="mistake-box"><strong>❌ Not checking progress:</strong> Ask for weekly written reports. Silence from the academy is a red flag.</div>
 
           <h2>Frequently Asked Questions — Online Quran Classes for Kids</h2>
-          <div class="highlight-box"><strong>What is the best age to start online Quran classes for kids?</strong><br>The ideal age is 4–7 years with 20–30 minute sessions. NoorPath accepts children from age 4 with adapted teaching. Ages 8–12 progress faster with 35–45 minute sessions.</div>
-          <div class="highlight-box"><strong>Are online Quran classes safe for my child?</strong><br>Yes — when you choose a reputable academy, supervise sessions, use Zoom only, verify Ijazah credentials, and ensure no private messaging. NoorPath background-verifies all tutors.</div>
-          <div class="highlight-box"><strong>Can my daughter learn with a female Quran teacher?</strong><br>Yes. Request a certified female Hafiza when booking your free trial. NoorPath offers female tutors for daughters and young girls worldwide.</div>
+          <div class="highlight-box"><strong>When can a child start online Quran classes?</strong><br>Readiness depends on the child's ability to engage with a short guided session, not a universal age or promised pace. Discuss age, attention span, and lesson length during tutor matching.</div>
+          <div class="highlight-box"><strong>Are online Quran classes safe for my child?</strong><br>Parents should supervise sessions, use an agreed platform, verify the proposed tutor's credentials, keep communication through official channels, and avoid private messaging between tutor and child.</div>
+          <div class="highlight-box"><strong>Can my daughter learn with a female Quran teacher?</strong><br>You can request a female tutor when booking the trial. Tutor and timezone availability are confirmed after matching.</div>
           <div class="highlight-box"><strong>Should my child complete Noorani Qaida before the Quran?</strong><br>Always. Qaida teaches letter pronunciation foundations. Skipping it leads to Tajweed errors that take years to fix. Every qualified kids program starts with Qaida.</div>
           <div class="highlight-box"><strong>How many Quran lessons per week does my child need?</strong><br>2–3 sessions of 20–35 minutes per week is ideal for most children. Hifz students may need 5–6 sessions weekly with daily home revision.</div>
 
           <h2>Online Quran Classes by Country</h2>
           <ul>
-            <li><a href="/locations/online-quran-classes-uk" style="color:var(--emerald);font-weight:600;">Online Quran Classes UK</a> — After-school 3:30–6 pm GMT slots</li>
-            <li><a href="/locations/online-quran-classes-usa" style="color:var(--emerald);font-weight:600;">Online Quran Classes USA</a> — Morning and evening US timezones</li>
-            <li><a href="/locations/online-quran-classes-canada" style="color:var(--emerald);font-weight:600;">Online Quran Classes Canada</a> — EST/PST flexible scheduling</li>
-            <li><a href="/locations/online-quran-classes-australia" style="color:var(--emerald);font-weight:600;">Online Quran Classes Australia</a> — After-school AEST/AEDT</li>
+            <li><a href="/locations/online-quran-classes-uk" style="color:var(--emerald);font-weight:600;">Online Quran Classes UK</a> — GMT/BST requests subject to matching</li>
+            <li><a href="/locations/online-quran-classes-usa" style="color:var(--emerald);font-weight:600;">Online Quran Classes USA</a> — US timezone requests subject to matching</li>
+            <li><a href="/locations/online-quran-classes-canada" style="color:var(--emerald);font-weight:600;">Online Quran Classes Canada</a> — Provincial timezone requests subject to matching</li>
+            <li><a href="/locations/online-quran-classes-australia" style="color:var(--emerald);font-weight:600;">Online Quran Classes Australia</a> — AEST/AEDT/AWST requests subject to matching</li>
           </ul>
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Ready to give your child the gift of Quran?</strong><br><br>
-            NoorPath Academy offers <strong>live 1-on-1 online Quran classes for kids</strong> ages 4–12 with Ijazah-certified tutors, weekly parent reports, and a completely free 30-minute trial. 12,000+ families trust us worldwide.<br><br>
+            NoorPath Academy offers <strong>live 1-on-1 online Quran classes for kids</strong>. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price}, requires no credit card, and is subject to tutor matching.<br><br>
             <a href="/online-quran-classes-for-kids#cta" style="color:var(--emerald);font-weight:700;font-size:1.1rem;">Book your child's free trial class now →</a>
           </div>
 
@@ -8975,7 +8970,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
               <li><a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Landing Page</a></li>
               <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids at Home</a></li>
-              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Choose the Best Online Quran Academy</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
               <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
             </ul>
           </div>`,
@@ -9034,7 +9029,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <h2>Teaching Children to Say Bismillah</h2>
           <p>The best way children learn Bismillah is through daily repetition in context — not lectures. Say it aloud before every meal, every car journey, and every Quran lesson. When children hear parents say Bismillah naturally, they adopt it as their own habit.</p>
-          <p>For structured Quran and Islamic education, certified tutors teach Bismillah as part of <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a> and daily Islamic manners in <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>.</p>
+          <p>Bismillah can be included in <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a> and daily Islamic manners topics in <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>, according to the selected course.</p>
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Want your child to learn Bismillah, Quran, and Islamic manners with a certified tutor?</strong>
@@ -9091,7 +9086,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
     content: `
           <div class="highlight-box">
             <strong style="color:var(--emerald);font-size:1rem;">Quick Answer:</strong>
-            <p style="margin:8px 0 0;">With 5–6 sessions per week, children (ages 7–14) typically complete full Hifz in <strong>2–4 years</strong>. Adults doing part-time Hifz (2–3 sessions/week) usually take <strong>4–7 years</strong>. The Quran has 604 pages — daily consistency matters more than speed. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Start your free Hifz trial →</a></p>
+            <p style="margin:8px 0 0;">There is no reliable universal Hifz timeline. Starting fluency, retention, revision quality, lesson frequency, attendance, health, and available practice time all affect pace. Treat any schedule as a planning estimate, not a guaranteed outcome.</p>
           </div>
 
           <div class="stat-row">
@@ -9103,7 +9098,7 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <p>Every Muslim parent who dreams of raising a Hafiz asks the same question: <strong>"How long will Hifz actually take?"</strong> And every adult who has been putting off Quran memorization wonders: <em>"Is it too late for me? How many years would it realistically take?"</em></p>
 
-          <p>The honest answer: <strong>it depends — but it is always achievable</strong>. This guide breaks down real timelines by age, sessions per week, daily pages memorized, and method (online vs. traditional madrassa). No vague promises. Just data and practical guidance so you can make the right decision for your family.</p>
+          <p>The honest answer is that pace varies materially by learner. This guide explains the workload, revision system, questions to ask, and factors to discuss before beginning.</p>
 
           <h2>The Quran in Numbers — Understanding the Scale</h2>
 
@@ -9115,54 +9110,20 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <li>An average page contains <strong>10–15 lines</strong> (about 10–15 ayahs)</li>
           </ul>
 
-          <p>A student memorizing <strong>1 page per day</strong> — which is a standard, achievable target — would need <strong>604 days (~20 months)</strong> of new memorization. Add revision time, and total Hifz typically takes 2–5 years.</p>
+          <p>Page counts alone cannot predict completion because new memorisation must be balanced with revision, correction, breaks, and changes in retention. A daily target should be adjusted from observed performance.</p>
 
           <div class="gold-box">
-            <strong>⚠️ The Most Important Fact:</strong> New memorization is only <em>half</em> the work. The revision system (Sabaq-Sabqi-Manzil) that prevents forgetting takes equal time. Students who skip revision finish fast — and forget fast. Those who use a structured system finish slower but <em>keep their Hifz for life</em>.
+            <strong>Revision matters:</strong> New memorisation should be balanced with recent and older revision. No method guarantees permanent retention; regular review and correction remain necessary.
           </div>
 
-          <h2>How Long Does It Take to Memorize the Quran? — By Age Group</h2>
-
-          <table class="timeline-table">
-            <thead>
-              <tr><th>Age Group</th><th>Daily Pages</th><th>Sessions/Week</th><th>Estimated Time</th><th>Notes</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><strong>Ages 6–9</strong></td><td>½ – 1 page</td><td>5–6/week</td><td class="best">3–5 years</td><td>Shorter sessions (30–40 min); strong memory but needs encouragement</td></tr>
-              <tr><td><strong>Ages 10–14 ⭐</strong></td><td>1 – 1.5 pages</td><td>5–6/week</td><td class="best">2–3 years</td><td>Golden age — best memory + growing focus capacity</td></tr>
-              <tr><td><strong>Ages 15–20</strong></td><td>1 – 2 pages</td><td>5–6/week</td><td>2–4 years</td><td>Strong memory + discipline; can self-manage</td></tr>
-              <tr><td><strong>Adults 20–35</strong></td><td>½ – 1 page</td><td>3–5/week</td><td>3–6 years</td><td>Balancing work/family; slower retention but strong understanding</td></tr>
-              <tr><td><strong>Adults 35–55</strong></td><td>¼ – ½ page</td><td>2–4/week</td><td>5–8 years</td><td>Fully possible; many complete Hifz in their 40s and 50s</td></tr>
-              <tr><td><strong>Adults 55+</strong></td><td>3–5 lines</td><td>2–3/week</td><td>7–12 years</td><td>Age is never a barrier — slower but deeply rewarding</td></tr>
-            </tbody>
-          </table>
-
-          <p><em>Note: These are realistic averages based on consistent practice. Exceptional students with natural memorization ability and intensive schedules may complete Hifz significantly faster. Part-time or irregular students may take longer.</em></p>
-
-          <h2>The #1 Factor: How Many Sessions Per Week?</h2>
-
-          <p>The single biggest variable in Hifz speed is <strong>how many sessions per week you have with a qualified tutor</strong>. Here is the real-world impact:</p>
-
-          <table class="timeline-table">
-            <thead>
-              <tr><th>Sessions Per Week</th><th>Child (age 10) Timeline</th><th>Adult Timeline</th><th>Verdict</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><strong>6 sessions</strong></td><td class="best">2.5–3 years</td><td class="best">4–5 years</td><td>✅ Ideal for serious Hifz</td></tr>
-              <tr><td><strong>5 sessions</strong></td><td>3–3.5 years</td><td>5–6 years</td><td>✅ Recommended minimum</td></tr>
-              <tr><td><strong>3–4 sessions</strong></td><td>4–5 years</td><td>6–8 years</td><td>⚠️ Slower but sustainable for busy families</td></tr>
-              <tr><td><strong>2 sessions</strong></td><td>6–8 years</td><td>8–12 years</td><td>⚠️ Very slow — revision suffers</td></tr>
-              <tr><td><strong>1 session</strong></td><td>Rarely completes</td><td>Rarely completes</td><td>❌ Revision gap is too large</td></tr>
-            </tbody>
-          </table>
-
-          <div class="cta-inline">
-            <div>
-              <h3>Want to Start Hifz Online?</h3>
-              <p>NoorPath certified Huffaz tutors available for kids &amp; adults — free 30-min trial</p>
-            </div>
-            <a href="/hifz-quran-online">Book Free Hifz Trial →</a>
-          </div>
+          <h2>Factors That Affect a Hifz Plan</h2>
+          <ul>
+            <li><strong>Starting fluency:</strong> reading accuracy and Tajweed needs affect how much correction is required.</li>
+            <li><strong>Retention:</strong> the amount of new material should follow observed recall, not an age-based promise.</li>
+            <li><strong>Revision load:</strong> Sabqi and Manzil increase as memorised material grows.</li>
+            <li><strong>Attendance and practice:</strong> consistency supports continuity but does not guarantee a completion date.</li>
+            <li><strong>Wellbeing and responsibilities:</strong> school, work, health, and family commitments should shape the plan.</li>
+          </ul>
 
           <h2>The Sabaq-Sabqi-Manzil System — The Engine of Hifz</h2>
 
@@ -9185,50 +9146,32 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <div class="phase-num">Daily Task 3</div>
               <div class="phase-title">🗓️ Manzil (Old)</div>
               <div class="phase-dur">Older Juz cycled weekly</div>
-              <div class="phase-desc">Completed Juz are revisited in rotation — ensuring old memorization stays strong as new portions are added. Typically 1 Juz of old revision per day.</div>
+              <div class="phase-desc">Completed Juz are revisited in rotation. The revision amount should be adjusted to the learner's current retention and total memorised material.</div>
             </div>
           </div>
 
           <p>Without the Sabaq-Sabqi-Manzil system, students forget rapidly. The brain naturally discards information not reinforced — the Quran is no exception. A certified Hafiz tutor structures each session so all three layers happen every day. This is why a <strong>qualified tutor is non-negotiable</strong> for successful Hifz — not just for teaching, but for accountability and revision scheduling.</p>
 
-          <h2>Online Hifz vs. Traditional Madrassa — Which is Faster?</h2>
+          <h2>Online Hifz and Traditional Madrassa Formats</h2>
 
           <table class="timeline-table">
             <thead>
               <tr><th>Factor</th><th>Online Hifz (NoorPath)</th><th>Traditional Madrassa</th></tr>
             </thead>
             <tbody>
-              <tr><td><strong>Sessions/week</strong></td><td>5–6 (flexible)</td><td>6 (fixed)</td></tr>
-              <tr><td><strong>1-on-1 attention</strong></td><td class="best">✅ Always 1-on-1</td><td>⚠️ Often group (5–15 students)</td></tr>
-              <tr><td><strong>Tutor quality</strong></td><td class="best">✅ Ijazah-certified, background checked</td><td>⚠️ Varies significantly</td></tr>
-              <tr><td><strong>Scheduling</strong></td><td class="best">✅ Morning, evening, weekend — your choice</td><td>❌ Fixed daily schedule</td></tr>
-              <tr><td><strong>Progress tracking</strong></td><td class="best">✅ Weekly reports for parents</td><td>❌ Informal or none</td></tr>
-              <tr><td><strong>Pronunciation correction</strong></td><td class="best">✅ Every mistake caught live</td><td>⚠️ May miss individual errors in group</td></tr>
-              <tr><td><strong>Total completion time</strong></td><td>Similar — 2–5 years</td><td>Similar — 2–5 years</td></tr>
+              <tr><td><strong>Lesson format</strong></td><td>Live online 1-on-1 options</td><td>May be individual or group</td></tr>
+              <tr><td><strong>Tutor credentials</strong></td><td>Verify the proposed tutor</td><td>Verify the proposed teacher</td></tr>
+              <tr><td><strong>Scheduling</strong></td><td>Request a preferred timezone and window</td><td>Confirm the local schedule</td></tr>
+              <tr><td><strong>Parent communication</strong></td><td>Confirm reporting and observation arrangements</td><td>Confirm reporting and observation arrangements</td></tr>
+              <tr><td><strong>Community setting</strong></td><td>Remote learning from home</td><td>In-person learning may provide local community</td></tr>
+              <tr><td><strong>Completion time</strong></td><td>No universal timeline</td><td>No universal timeline</td></tr>
             </tbody>
           </table>
 
-          <p>The completion time is similar — but the <strong>quality and sustainability</strong> of online 1-on-1 Hifz is often superior. A certified tutor giving your child their full 45 minutes catches every pronunciation error, adjusts the daily target to your child's capacity, and ensures revision is structured correctly.</p>
+          <p>Neither format guarantees a faster or better outcome. Compare tutor fit, safeguarding, feedback, revision structure, travel, community needs, and schedule before choosing.</p>
 
-          <h2>Real-World Hifz Timelines — What Actually Happens</h2>
-
-          <h3>Case 1: Child, Age 10, 5 sessions/week</h3>
-          <p>A motivated 10-year-old memorizing ½–1 page daily, with 5 sessions per week with a certified Hafiz tutor online, will typically:</p>
-          <ul>
-            <li><strong>Month 1–3:</strong> Foundation — assessment, memorization rhythm, first 3–5 surahs</li>
-            <li><strong>Month 4–18:</strong> Main memorization — completing Juz 30, 29, 28… Juz by Juz</li>
-            <li><strong>Month 19–36:</strong> Full Quran completion + final revision cycle</li>
-            <li><strong>Result: Hifz completed in ~3 years</strong></li>
-          </ul>
-
-          <h3>Case 2: Adult, Age 30, Working Parent, 3 sessions/week</h3>
-          <p>An adult working parent with 3 online sessions per week (45 min each) memorizing ¼–½ page daily, plus 20 minutes evening revision:</p>
-          <ul>
-            <li><strong>Year 1:</strong> Juz 30 + 29 + 28 (short surahs — high motivation period)</li>
-            <li><strong>Year 2–4:</strong> Main body of Quran — 1 Juz every 3–4 months</li>
-            <li><strong>Year 5–6:</strong> Completion + comprehensive revision cycle</li>
-            <li><strong>Result: Hifz completed in ~5–6 years</strong></li>
-          </ul>
+          <h2>Reviewing a Hifz Plan</h2>
+          <p>Review the plan periodically using observed retention, correction needs, attendance, revision quality, and learner wellbeing. Adjust the new portion rather than forcing an age-based or calendar-based target.</p>
 
           <div class="gold-box">
             <strong style="color:var(--charcoal);">📌 Start with Juz 30</strong><br/>
@@ -9266,34 +9209,20 @@ export const blogContent: Record<string, { style: string; content: string }> = {
             <div><strong>Not Using the Same Mushaf</strong> — Switching between different Mushafs (page layouts) mid-Hifz confuses visual memory. Always use the same Mushaf throughout — your brain memorizes the position of words on the page, not just the words themselves.</div>
           </div>
 
-          <h2>How to Calculate Your Personal Hifz Timeline</h2>
+          <h2>How to Discuss a Personal Hifz Plan</h2>
 
-          <p>Use this simple formula to estimate your timeline:</p>
-
-          <div class="highlight-box">
-            <strong style="font-size:1rem;color:var(--charcoal);">Your Hifz Timeline Formula:</strong>
-            <p style="margin:12px 0 0;font-size:.95rem;">
-              <strong>604 pages ÷ Your daily pages = Days of new memorization</strong><br/>
-              <em>Then multiply by 1.4–1.6 to account for revision time</em>
-            </p>
-            <ul style="margin:14px 0 0;font-size:.9rem;">
-              <li>½ page/day → 1,208 days new + revision = <strong>~4.5–5 years</strong></li>
-              <li>1 page/day → 604 days new + revision = <strong>~2.5–3 years</strong></li>
-              <li>1.5 pages/day → 400 days new + revision = <strong>~1.8–2.5 years</strong></li>
-              <li>2 pages/day → 302 days new + revision = <strong>~1.5–2 years</strong> (intensive — requires 6+ sessions/week)</li>
-            </ul>
-          </div>
+          <p>Ask how the tutor will assess reading accuracy, choose an initial portion, balance Sabaq with Sabqi and Manzil, review retention, and reduce the target when revision quality falls. Any date estimate should be treated as provisional.</p>
 
           <h2>Tips to Memorize Quran Faster Without Sacrificing Quality</h2>
 
           <ol>
-            <li><strong>Memorize after Fajr.</strong> The Prophet ﷺ made dua for barakah in the early morning hours. Memory is sharpest and the environment is most peaceful right after Fajr — this is when the great Huffaz of history memorized.</li>
-            <li><strong>Listen before you memorize.</strong> Play your daily portion on repeat (Sheikh Husary, Mishary Al-Afasy, etc.) before the tutor session. The ear memorizes before the tongue. Even 10 minutes of listening dramatically reduces new memorization time.</li>
+            <li><strong>Choose a sustainable time.</strong> Some learners prefer after Fajr, while others retain better at a different quiet time.</li>
+            <li><strong>Listen before you memorize.</strong> Listening to a reliable reciter can support familiarity before guided recitation.</li>
             <li><strong>Use the same spot every day.</strong> Your brain forms environmental memory associations. Same chair, same light, same Mushaf at the same time — creates a powerful memorization ritual.</li>
-            <li><strong>Recite in Salah immediately.</strong> Reciting newly memorized portions in Fajr, Dhuhr, and Asr Salah the same day imprints them faster than any other technique. The intention of worship combined with the physical act of prayer creates the deepest memory traces.</li>
+            <li><strong>Revise in appropriate contexts.</strong> Repeat newly memorized portions regularly and ask a teacher how to use them safely in Salah.</li>
             <li><strong>Never move on until today's portion is solid.</strong> A common mistake is moving to new pages with weak memorization. The "one page per day" that is rock solid beats two weak pages every time.</li>
-            <li><strong>Take a weekly full Sabqi day.</strong> Dedicate one session each week purely to revising the last 15 days' memorization without any new content. This dramatically strengthens retention.</li>
-            <li><strong>Track your Juz progress visually.</strong> Keep a chart or tracker showing completed Juz. The psychological motivation of seeing 10/30 completed accelerates the remaining 20.</li>
+            <li><strong>Schedule revision-only sessions.</strong> The frequency should reflect the learner's current retention and revision load.</li>
+            <li><strong>Track completed and revision material.</strong> A simple record helps identify weak portions without promising faster completion.</li>
           </ol>
 
           <div class="cta-inline">
@@ -9310,34 +9239,34 @@ export const blogContent: Record<string, { style: string; content: string }> = {
 
           <p>The Prophet Muhammad ﷺ said: <em>"The one who is proficient in Quran recitation will be with the noble, righteous scribes (angels). As for the one who recites the Quran with difficulty, stammering or stumbling through its verses — they will have twice the reward."</em> (Bukhari & Muslim)</p>
 
-          <p>Allah rewards effort and sincerity — not speed. Adults who complete Hifz in 6–7 years, balancing job, children, and family, earn immense reward precisely because of the sacrifice involved.</p>
+          <p>Allah rewards effort and sincerity, not speed. Adults can build a sustainable Hifz routine around work and family without relying on a promised completion timeline.</p>
 
           <p>The key differences for adult Hifz:</p>
           <ul>
             <li><strong>Lower daily target.</strong> ¼ to ½ page is realistic for most working adults. Ambitious is good; unrealistic is dangerous.</li>
-            <li><strong>Morning before work.</strong> Even 30 minutes of Fajr-time memorization is more effective than 2 hours at midnight.</li>
+            <li><strong>Choose a workable routine.</strong> A quiet morning may suit some adults, but the sustainable time differs by learner.</li>
             <li><strong>Online tutor advantage.</strong> Adults cannot attend a physical madrassa daily. Online Hifz removes this barrier completely.</li>
-            <li><strong>Understanding deepens retention.</strong> Adults who understand Arabic (or learn Tafseer alongside) memorize up to 40% faster because meaning anchors the words.</li>
+            <li><strong>Use meaning as a learning aid.</strong> Studying reliable translation or Tafseer may support understanding without guaranteeing a faster pace.</li>
           </ul>
 
           <div class="highlight-box">
-            <strong style="color:var(--emerald);">Real Student Story (Adult, UK):</strong>
-            <p style="margin:8px 0 0;font-size:.93rem;">One of our NoorPath students, a 42-year-old IT professional in Manchester with no prior Hifz experience, began with 3 sessions/week in 2021. By 2025 — 4 years later — he completed his Hifz in front of a qualified Shaykh. He says: <em>"I never thought I could do this. My tutor was my accountability partner. Without the online schedule, I would have quit in Month 3."</em></p>
+            <strong style="color:var(--emerald);">Protect learner privacy:</strong>
+            <p style="margin:8px 0 0;font-size:.93rem;">Do not rely on unattributed student stories or templated outcomes when evaluating a programme. Ask for the curriculum, safeguarding process, tutor information, and written policies instead.</p>
           </div>
 
           <h2>Frequently Asked Questions About Quran Memorization Time</h2>
 
           <details class="faq-acc">
             <summary>How long does it take to memorize 1 Juz of the Quran? <span>+</span></summary>
-            <p>One Juz (part) of the Quran is approximately 20 pages. Memorizing 1 Juz with solid revision typically takes: <strong>Children (ages 10–14):</strong> 3–4 weeks at 1 page/day. <strong>Adults (3 sessions/week):</strong> 6–10 weeks at ½ page/day. The last Juz (Juz 30) is usually done first and may take slightly longer as it is the first Juz — the student is building memorization habits.</p>
+            <p>One Juz is approximately 20 pages in a common 604-page Mushaf, but page count does not establish a reliable timeline. Reading accuracy, retention, revision load, attendance, and practice all affect pace.</p>
           </details>
           <details class="faq-acc">
             <summary>How long does it take to memorize the Quran in 2 years? <span>+</span></summary>
-            <p>Completing Hifz in 2 years requires memorizing approximately 1.5–2 pages daily with 6 sessions per week. This is achievable for children ages 10–14 with exceptional memory and daily commitment. For adults, 2-year Hifz requires full-time or near-full-time dedication — possible but demanding. Most serious child students complete Hifz in 2.5–3.5 years.</p>
+            <p>A fixed two-year target should not be presented as achievable for a category of learners without individual evidence. Ask a tutor to assess current fluency and retention, then review the plan regularly without treating the date as guaranteed.</p>
           </details>
           <details class="faq-acc">
             <summary>How long does the Hifz program take at NoorPath Academy online? <span>+</span></summary>
-            <p>Most children at NoorPath complete Hifz in <strong>2.5–4 years</strong> with 5–6 sessions per week. Adults completing part-time Hifz (3 sessions/week) typically finish in <strong>5–7 years</strong>. Every student receives a personalized timeline assessment during their free trial session based on their current level, age, and available sessions per week.</p>
+            <p>NoorPath does not promise a standard completion time. A tutor match and initial learning plan can consider current level, goals, and schedule, but future pace remains subject to retention, attendance, revision, and practice.</p>
           </details>
           <details class="faq-acc">
             <summary>How many pages of Quran should a child memorize per day? <span>+</span></summary>
@@ -9345,26 +9274,26 @@ export const blogContent: Record<string, { style: string; content: string }> = {
           </details>
           <details class="faq-acc">
             <summary>What is the fastest anyone has memorized the Quran? <span>+</span></summary>
-            <p>Historical accounts mention scholars who completed the entire Quran in as little as 17 days of focused memorization. In modern times, some children at full-time Hifz schools memorize the complete Quran in 12–18 months. However, these are exceptional cases with 8+ hours of daily study. For the vast majority, 2–5 years represents an excellent, solid Hifz outcome.</p>
+            <p>Exceptional anecdotes are not a sound basis for a learner's plan. Focus on accurate recitation, sustainable revision, wellbeing, and observed retention rather than speed comparisons.</p>
           </details>
           <details class="faq-acc">
             <summary>Is it too late to start Hifz at age 30, 40 or 50? <span>+</span></summary>
-            <p>Never. The Prophet ﷺ encouraged Quran memorization at every age. Sahabah (companions) who became Huffaz included adults. The reward is immense at every age — and Allah looks at sincerity, not age. Adults at NoorPath regularly begin Hifz in their 30s, 40s, and 50s. The timeline is longer, but the completion is equally valid and celebrated. The question is not <em>if</em> — it is <em>when to start</em>.</p>
+            <p>Adults can begin Hifz at different ages. Discuss reading level, available revision time, health, responsibilities, and a sustainable routine without assuming a standard outcome or timeline.</p>
           </details>
           <details class="faq-acc">
             <summary>Do I need to know Tajweed before starting Hifz? <span>+</span></summary>
-            <p>Basic Tajweed should be learned <em>before or alongside</em> Hifz — not after. The problem with starting Hifz without Tajweed is that pronunciation errors get memorized and are very difficult to correct later. At NoorPath, our Hifz program includes Tajweed correction in every session. Students who have already studied Tajweed basics before starting Hifz typically progress 20–30% faster because they are not making pronunciation mistakes in new memorization.</p>
+            <p>Basic Tajweed can be learned before or alongside Hifz so pronunciation is corrected during memorisation. Ask how Tajweed feedback will be included in the proposed lesson plan; do not rely on percentage-based progress claims.</p>
           </details>
 
           <h2>Next Steps — Start Your Hifz Journey</h2>
 
-          <p>The best time to start Hifz was yesterday. The second best time is right now — with a qualified tutor who will assess your child's (or your) level, set a realistic daily target, and provide the accountability and structure that makes the difference between completing Hifz and giving up in Year 2.</p>
+          <p>Begin when the learner can commit to a sustainable routine. Ask for an assessment, an initial revision structure, and a process for adjusting targets based on observed retention.</p>
 
-          <p>At <a href="/online-quran-academy" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, our certified Huffaz tutors have guided hundreds of students — from 7-year-olds to adults in their 50s — through the complete Hifz journey online. The first lesson is always free, and your tutor will give you a personalised timeline assessment during that session.</p>
+          <p>At <a href="/online-quran-academy" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, you can request a Hifz tutor match and discuss a learning plan. Tutor availability is confirmed after matching, and no completion outcome is guaranteed.</p>
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:40px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Begin Your Hifz Journey Today</h3>
-            <p style="color:rgba(255,255,255,.8);margin-bottom:24px;line-height:1.7;">Free 30-minute trial with a certified Hafiz tutor. Get your personal timeline, daily target, and first Sabaq lesson — all in the trial.</p>
+            <p style="color:rgba(255,255,255,.8);margin-bottom:24px;line-height:1.7;">${TRIAL.durationMinutes}-minute trial for $${TRIAL.price}, with no credit card required. Tutor availability is confirmed after your request.</p>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
               <a href="/hifz-quran-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book Free Hifz Trial →</a>
               <a href="/online-quran-classes-for-kids" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Kids Quran Classes</a>
@@ -9378,8 +9307,25 @@ export const blogContent: Record<string, { style: string; content: string }> = {
               <li><a href="/blog/best-age-to-start-quran-learning" style="color:var(--emerald);font-weight:600;">Best Age to Start Quran Learning — Expert Guide for Parents</a></li>
               <li><a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide</a></li>
               <li><a href="/hifz-quran-online" style="color:var(--emerald);font-weight:600;">Hifz Quran Online — Our Program</a></li>
-              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Best Online Quran Classes for Kids — Parent Guide</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
             </ul>
           </div>`,
   },
 };
+
+const canonicalTrialText = `${TRIAL.durationMinutes}-minute trial for $${TRIAL.price}`;
+const canonicalStarterPrice = `$${PRICING_PLANS[0].monthlyPriceUsd}/month`;
+
+export const blogContent: Record<string, { style: string; content: string }> =
+  Object.fromEntries(
+    Object.entries(rawBlogContent).map(([slug, entry]) => [
+      slug,
+      {
+        ...entry,
+        content: entry.content
+          .replace(/\b(?:a )?free 30-minute trial(?: class)?\b/gi, canonicalTrialText)
+          .replace(/\bfree 30-min trial\b/gi, canonicalTrialText)
+          .replace(/\$29\/month/gi, canonicalStarterPrice),
+      },
+    ])
+  );

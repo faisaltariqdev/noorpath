@@ -7,19 +7,19 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: "Online Quran for Beginners — Learn from Zero | NoorPath Academy",
-  description: "Learn Quran online from zero with certified teachers. Start Arabic letters, Noorani Qaida and Quran recitation step by step. Free trial.",
+  description: "Learn Quran online from zero through Arabic letters, Noorani Qaida and Quran recitation in live one-to-one lessons. Request a free trial.",
   keywords: ["online quran for beginners", "quran for beginners", "learn quran for beginners", "quran beginners course", "start learning quran online", "quran from scratch", "noorani qaida for beginners", "how to learn quran online", "quran learning for beginners adults", "quran basics online"],
   alternates: { canonical: "https://www.noorpath.online/online-quran-for-beginners" },
   openGraph: {
     title: "Online Quran for Beginners — Learn from Zero | NoorPath Academy",
-    description: "Start learning Quran from scratch. Certified teachers, Noorani Qaida, step-by-step for all ages. Free trial class.",
+    description: "Start learning Quran from scratch with Noorani Qaida and a step-by-step live lesson path. Free trial request.",
     url: "https://www.noorpath.online/online-quran-for-beginners",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran for Beginners — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran for Beginners | NoorPath Academy",
-    description: "Learn Quran from zero. Noorani Qaida. Certified teachers. Free trial.",
+    description: "Learn Quran from zero with Noorani Qaida and live one-to-one lessons. Free trial.",
     images: ["/og-image.png"],
   },
 };
@@ -41,7 +41,6 @@ const jsonLd = {
         price: "0",
         priceCurrency: "USD",
         description: "Free 30-minute trial class",
-        availability: "https://schema.org/InStock",
       },
       url: "https://www.noorpath.online/online-quran-for-beginners",
     },
@@ -56,22 +55,22 @@ const jsonLd = {
         {
           "@type": "Question",
           name: "Where do beginners start when learning Quran online?",
-          acceptedAnswer: { "@type": "Answer", text: "Beginners start with Noorani Qaida — a structured book that teaches Arabic letters (Huroof), their pronunciation points (Makharij), vowel signs (Harakat), and basic Tajweed rules. It typically takes 3–6 months to complete, after which students move to Quran recitation." },
+          acceptedAnswer: { "@type": "Answer", text: "Beginners commonly start with Noorani Qaida — a structured book that teaches Arabic letters (Huroof), pronunciation points (Makharij), vowel signs (Harakat), and basic Tajweed rules. Progress depends on starting level, lesson frequency and practice." },
         },
         {
           "@type": "Question",
           name: "How long does it take for a beginner to learn to read the Quran?",
-          acceptedAnswer: { "@type": "Answer", text: "With regular classes (3–5 times per week), most beginners can read the Quran fluently within 6–12 months. Children typically progress faster than adults. Our certified teachers set personalised goals for each student." },
+          acceptedAnswer: { "@type": "Answer", text: "There is no universal timeframe. Progress depends on starting level, lesson frequency, attendance and practice. The trial helps identify a suitable starting point and lesson routine." },
         },
         {
           "@type": "Question",
           name: "What age is best to start learning Quran online?",
-          acceptedAnswer: { "@type": "Answer", text: "The Prophet Muhammad ﷺ said to teach children the Quran. Children as young as 4 can begin learning Arabic letters and duas. However, it's never too late — we have students starting in their 50s, 60s, and beyond. The best age is now!" },
+          acceptedAnswer: { "@type": "Answer", text: "Children and adults can begin at a level suited to their reading ability and attention span. A parent can request a trial to discuss whether the lesson format is suitable for their child." },
         },
         {
           "@type": "Question",
           name: "Is online Quran learning effective for beginners?",
-          acceptedAnswer: { "@type": "Answer", text: "Yes — our 1-on-1 live online classes are highly effective for beginners. The teacher focuses 100% on your child (or you), correcting pronunciation immediately, customising the pace, and providing immediate feedback. Our 12,000+ students worldwide are proof of the results." },
+          acceptedAnswer: { "@type": "Answer", text: "Live one-to-one lessons allow the tutor to listen to the learner, correct pronunciation during the session and adapt the lesson pace. Results still depend on attendance and practice." },
         },
       ],
     },
@@ -86,12 +85,12 @@ const jsonLd = {
 };
 
 const steps = [
-  { num: "01", title: "Arabic Letters (Huroof)", desc: "Learn all 29 Arabic letters — their shapes, names, and pronunciation points (Makharij). This is the foundation of everything.", duration: "2–4 weeks" },
-  { num: "02", title: "Vowel Signs (Harakat)", desc: "Learn Fathah, Kasrah, Dammah and how they change the sound of letters. Start joining letters into syllables.", duration: "2–3 weeks" },
-  { num: "03", title: "Noorani Qaida Completion", desc: "Work through the full Noorani Qaida — Tanwin, Sukoon, Shaddah, Madd, and all foundational rules for Quran reading.", duration: "2–4 months" },
+  { num: "01", title: "Arabic Letters (Huroof)", desc: "Learn all 29 Arabic letters — their shapes, names, and pronunciation points (Makharij). This is the foundation of everything.", duration: "Learner-paced" },
+  { num: "02", title: "Vowel Signs (Harakat)", desc: "Learn Fathah, Kasrah, Dammah and how they change the sound of letters. Start joining letters into syllables.", duration: "Learner-paced" },
+  { num: "03", title: "Noorani Qaida Completion", desc: "Work through the full Noorani Qaida — Tanwin, Sukoon, Shaddah, Madd, and all foundational rules for Quran reading.", duration: "Learner-paced" },
   { num: "04", title: "Quran Recitation Begins", desc: "Start reading from Surah Al-Fatiha and short surahs of Juz Amma. Apply pronunciation skills to real Quran verses.", duration: "Ongoing" },
-  { num: "05", title: "Basic Tajweed Rules", desc: "Learn the rules of beautiful recitation — Noon Sakinah, Meem Sakinah, Madd rules — to recite the Quran correctly.", duration: "3–6 months" },
-  { num: "06", title: "Fluent Quran Reading", desc: "Read the complete Quran fluently from cover to cover, with proper Tajweed, at your own pace.", duration: "6–12 months total" },
+  { num: "05", title: "Basic Tajweed Rules", desc: "Learn the rules of beautiful recitation — Noon Sakinah, Meem Sakinah, Madd rules — to recite the Quran correctly.", duration: "Learner-paced" },
+  { num: "06", title: "Fluent Quran Reading", desc: "Continue building fluency and Tajweed through regular guided reading and practice.", duration: "Ongoing" },
 ];
 
 export default function OnlineQuranBeginnersPage() {
@@ -112,11 +111,11 @@ export default function OnlineQuranBeginnersPage() {
           </span>
           <h1>Online Quran for Beginners<br /><em style={{ color: "var(--gold-lt)" }}>From First Letter to Full Recitation</em></h1>
           <p style={{ maxWidth: 600 }}>
-            Learn to read the Holy Quran from scratch — Arabic letters, Noorani Qaida, and Tajweed — with a certified teacher in 1-on-1 live classes. For all ages, any timezone.
+            Learn to read the Holy Quran from scratch — Arabic letters, Noorani Qaida, and Tajweed — in 1-on-1 live classes for children and adults. Schedule matching depends on tutor availability.
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
             <Link href="/online-quran-classes#cta" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 28px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
-              Start Learning Free →
+              Request Free Trial →
             </Link>
             <Link href="/courses/noorani-qaida-online" style={{ background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 600, textDecoration: "none", fontSize: "1rem" }}>
               View Noorani Qaida Course
@@ -145,7 +144,7 @@ export default function OnlineQuranBeginnersPage() {
               Your Step-by-Step Path to Reading the Quran
             </h2>
             <p style={{ color: "var(--muted)", marginTop: 10, maxWidth: 580, margin: "10px auto 0" }}>
-              Every beginner follows the same proven path. Our certified teachers guide you through each step at your own pace.
+              This common learning sequence is adapted to each learner&apos;s starting point, pace and practice.
             </p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 20, maxWidth: 820, margin: "0 auto" }}>
@@ -184,9 +183,9 @@ export default function OnlineQuranBeginnersPage() {
               <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                 {[
                   { icon: "🕌", title: "Fardh (Obligation)", desc: "Every Muslim is required to read the Quran. The Prophet ﷺ said: 'The best of you are those who learn the Quran and teach it.' — Sahih Bukhari." },
-                  { icon: "⏰", title: "Every Day is a Fresh Start", desc: "The best time to start is today. Our beginners progress remarkably fast with our proven 1-on-1 method. Many read fluently within 6 months." },
+                  { icon: "⏰", title: "Build a Consistent Routine", desc: "A regular lesson and practice routine can help a beginner build reading confidence over time." },
                   { icon: "🌍", title: "Learn from Anywhere", desc: "Online 1-on-1 classes mean you can learn from the comfort of your home, regardless of where you live in the world." },
-                  { icon: "👨‍👩‍👧‍👦", title: "Teach Your Children Too", desc: "Parents who learn alongside their children make 3x more progress. Our family plans allow the whole family to learn together." },
+                  { icon: "👨‍👩‍👧‍👦", title: "Learn as a Family", desc: "Family plans allow children and adults to follow lessons suited to their own levels." },
                 ].map((item) => (
                   <div key={item.title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                     <span style={{ fontSize: "1.6rem", flexShrink: 0 }}>{item.icon}</span>
@@ -203,11 +202,11 @@ export default function OnlineQuranBeginnersPage() {
                 What Beginners Achieve at NoorPath
               </h3>
               {[
-                { label: "Month 1", outcome: "Complete Arabic alphabet with correct pronunciation" },
-                { label: "Month 2–3", outcome: "Noorani Qaida completed — ready for Quran" },
-                { label: "Month 4–6", outcome: "Reading Quran with basic Tajweed rules" },
-                { label: "Month 7–12", outcome: "Reading full Quran fluently cover to cover" },
-                { label: "Year 2+", outcome: "Advanced Tajweed or begin Hifz journey" },
+                { label: "Foundation", outcome: "Arabic letters, sounds and pronunciation points" },
+                { label: "Qaida", outcome: "Joining letters, vowel signs and foundational reading rules" },
+                { label: "Quran reading", outcome: "Guided reading with correction during live lessons" },
+                { label: "Tajweed", outcome: "Applying relevant Tajweed rules during recitation" },
+                { label: "Next goals", outcome: "Continue fluency, Tajweed or discuss a suitable Hifz path" },
               ].map((item) => (
                 <div key={item.label} style={{ display: "flex", gap: 14, alignItems: "flex-start", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
                   <div style={{ flexShrink: 0, background: "rgba(10,110,79,.1)", color: "var(--emerald)", borderRadius: 8, padding: "4px 10px", fontSize: ".78rem", fontWeight: 700, whiteSpace: "nowrap" }}>{item.label}</div>
@@ -234,11 +233,11 @@ export default function OnlineQuranBeginnersPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {[
               { q: "Can I learn Quran online as a complete beginner?", a: "Absolutely. NoorPath Academy specialises in complete beginners. Our Noorani Qaida program starts from the very first letter with no prior knowledge of Arabic required." },
-              { q: "Where do I start when learning Quran from scratch?", a: "Beginners start with Noorani Qaida — learning Arabic letters, pronunciation, vowel signs, and foundational rules. This typically takes 3–6 months before moving to Quran recitation." },
-              { q: "How long does it take a beginner to read the Quran?", a: "With regular classes (3–5 times per week), most beginners can read Quran fluently within 6–12 months. Children often progress faster. Our teachers set personalised timelines." },
-              { q: "What age is best to start learning Quran?", a: "Age 4+ for children. But the Prophet ﷺ said it's never too late — we have students starting in their 50s and 60s. The best time to start is today." },
-              { q: "Is online Quran learning effective for beginners?", a: "Yes — 1-on-1 live classes are highly effective because the teacher focuses solely on your child, corrects pronunciation immediately, and adapts the pace to their learning speed." },
-              { q: "Do I need special equipment to learn Quran online?", a: "Just a smartphone, tablet, or laptop with Zoom installed. No special equipment needed. The teacher shares their screen for the Quran/Qaida book. That's all you need." },
+              { q: "Where do I start when learning Quran from scratch?", a: "Beginners commonly start with Noorani Qaida — learning Arabic letters, pronunciation, vowel signs, and foundational rules. The tutor can adjust the starting point after hearing the learner read." },
+              { q: "How long does it take a beginner to read the Quran?", a: "There is no universal timeframe. Progress depends on starting level, lesson frequency, attendance and practice. The trial helps identify a suitable routine." },
+              { q: "What age is best to start learning Quran?", a: "Children and adults can begin at a level suited to their reading ability and attention span. Parents can use the trial to discuss whether the format suits their child." },
+              { q: "Is online Quran learning effective for beginners?", a: "A live 1-on-1 lesson lets the tutor hear the learner, correct pronunciation and adjust the pace. Results still depend on consistent attendance and practice." },
+              { q: "Do I need special equipment to learn Quran online?", a: "A smartphone, tablet, or laptop with a stable internet connection and the agreed meeting app is sufficient. The tutor can share Quran or Qaida material during the lesson." },
             ].map((item) => (
               <div key={item.q} style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, padding: "18px 22px" }}>
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 700, fontSize: ".95rem", color: "var(--charcoal)", marginBottom: 8 }}>{item.q}</h3>
@@ -256,7 +255,7 @@ export default function OnlineQuranBeginnersPage() {
             Begin Your Quran Journey Today
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28, maxWidth: 520, margin: "0 auto 28px" }}>
-            Join 12,000+ students who started as complete beginners and now recite Quran beautifully. Your first class is free.
+            Start from your current level with a live one-to-one lesson. Request a free trial before choosing a paid plan.
           </p>
           <Link href="/online-quran-classes#cta" className="btn-primary-np">
             Book Free Trial Class →

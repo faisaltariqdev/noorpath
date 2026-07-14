@@ -62,7 +62,7 @@ export default function BlogPage() {
           <p>Expert-written guides by <strong style={{ color: "var(--gold-lt)" }}>Faisal Tariq</strong> — on Quran learning, Tajweed, duas, Islamic parenting, and more — helping Muslim families worldwide.</p>
           {/* Stats */}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 20 }}>
-            {[[String(blogPosts.length),"Articles"],["9","Categories"],["12K+","Monthly Readers"],["Free","Always"]].map(([n,l]) => (
+            {[[String(blogPosts.length),"Articles"],["9","Categories"],["Quran","Learning Guides"],["Free","Article Access"]].map(([n,l]) => (
               <div key={l} style={{ background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 12, padding: "8px 18px" }}>
                 <span style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.1rem" }}>{n}</span>
                 <span style={{ color: "rgba(255,255,255,.55)", fontSize: ".78rem", marginLeft: 6 }}>{l}</span>
@@ -102,7 +102,7 @@ export default function BlogPage() {
           <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
             Ready to Start Learning the Quran?
           </h2>
-          <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>Join 12,000+ students worldwide with a free 30-minute trial class.</p>
+          <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>Explore live one-to-one Quran classes and request a free 30-minute trial before enrolment.</p>
           <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial Class →</Link>
         </div>
       </section>

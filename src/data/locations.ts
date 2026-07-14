@@ -6,16 +6,6 @@ export interface Location {
   desc: string;
   timezone: string;
   population: string;
-  /** Local currency symbol used for pricing reference, e.g. "£" */
-  currency: string;
-  /** ISO currency code, e.g. "GBP" */
-  currencyCode: string;
-  /** Approximate localized starting price (billed in USD), e.g. "£23" */
-  approxPrice: string;
-  /** Star rating shown in schema + UI */
-  rating: string;
-  /** Number of reviews for this country (varied for authenticity) */
-  reviews: string;
   /** 1–2 sentences of genuinely unique local context to avoid duplicate content */
   localContext: string;
   keywords: string[];
@@ -27,16 +17,11 @@ export const locations: Location[] = [
     flag: "🇺🇸",
     country: "United States",
     cities: "New York, Houston, Chicago, Los Angeles, Dallas",
-    desc: "Live online Quran classes for Muslim families across the USA. All timezones covered.",
+    desc: "Live online Quran classes for Muslim families across the USA, with timezone-based tutor matching.",
     timezone: "EST / CST / MST / PST",
     population: "3.45 million Muslims",
-    currency: "$",
-    currencyCode: "USD",
-    approxPrice: "$29",
-    rating: "4.9",
-    reviews: "612",
     localContext:
-      "With Muslim communities concentrated in New York, Michigan, Texas and California, most American families book after-school slots (4–8pm) or weekend mornings. Our tutors cover all four US timezones, so a family in California and one in New York can both find a slot that fits.",
+      "Muslim communities are concentrated in New York, Michigan, Texas and California, and after-school or weekend lessons can reduce travel around busy family schedules. EST, CST, MST and PST preferences can be requested, subject to tutor matching.",
     keywords: ["online quran classes usa", "quran teacher usa", "online quran usa", "islamic classes usa", "learn quran online usa"],
   },
   {
@@ -44,16 +29,11 @@ export const locations: Location[] = [
     flag: "🇬🇧",
     country: "United Kingdom",
     cities: "London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton",
-    desc: "Online Quran tutors for UK families — BST and GMT timezone specialists. Kids, female tutors & after-school slots.",
+    desc: "Online Quran tutor requests for UK families, with BST/GMT schedule matching and options to request kids or female tutors.",
     timezone: "GMT / BST",
     population: "3.9 million Muslims",
-    currency: "£",
-    currencyCode: "GBP",
-    approxPrice: "£23",
-    rating: "4.9",
-    reviews: "548",
     localContext:
-      "The UK's largest Muslim communities are in London, Birmingham, Bradford and Manchester. British families most often choose after-school classes between 4pm and 7pm GMT, plus weekend morning slots — a rhythm our UK-timezone tutors are built around.",
+      "The UK's largest Muslim communities are in London, Birmingham, Bradford and Manchester. Families can request after-school or weekend lessons in GMT or BST, subject to tutor matching.",
     keywords: ["online quran classes uk", "quran teacher uk", "online quran uk", "islamic classes uk", "learn quran online uk", "online quran classes for kids uk", "female quran teacher uk", "noorani qaida online uk", "online hifz classes for kids uk", "after school quran classes uk"],
   },
   {
@@ -61,16 +41,11 @@ export const locations: Location[] = [
     flag: "🇨🇦",
     country: "Canada",
     cities: "Toronto, Vancouver, Calgary, Ottawa, Montreal",
-    desc: "Certified online Quran teachers for Canadian Muslim families — all provinces.",
+    desc: "Live online Quran classes for Canadian Muslim families across multiple timezones.",
     timezone: "EST / CST / MST / PST",
     population: "1.77 million Muslims",
-    currency: "C$",
-    currencyCode: "CAD",
-    approxPrice: "C$39",
-    rating: "4.9",
-    reviews: "324",
     localContext:
-      "Canada's Muslim population is growing fastest in the Greater Toronto Area, Montreal and Vancouver. With provinces spanning six timezones, our tutors offer early-morning slots for the Atlantic provinces and late-evening slots for BC families.",
+      "Canada's Muslim population is concentrated in areas including Greater Toronto, Montreal and Vancouver. Families can request lesson times for their provincial timezone, subject to tutor matching.",
     keywords: ["online quran classes canada", "quran teacher canada", "online quran canada", "learn quran online canada", "islamic classes canada"],
   },
   {
@@ -81,13 +56,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Australian families — AEST and AWST timezones.",
     timezone: "AEST / AWST",
     population: "813,000 Muslims",
-    currency: "A$",
-    currencyCode: "AUD",
-    approxPrice: "A$45",
-    rating: "4.8",
-    reviews: "198",
     localContext:
-      "Most Australian Muslim families live in Sydney and Melbourne, with growing communities in Perth and Brisbane. Because Australia is hours ahead of the Middle East, our tutors reserve early-morning and post-school AEST slots specifically for Aussie students.",
+      "Many Australian Muslim families live in Sydney and Melbourne, with communities in Perth and Brisbane. AEST, AEDT and AWST lesson preferences can be requested, subject to tutor matching.",
     keywords: ["online quran classes australia", "quran teacher australia", "online quran australia", "learn quran australia", "islamic classes australia"],
   },
   {
@@ -95,14 +65,9 @@ export const locations: Location[] = [
     flag: "🇦🇪",
     country: "United Arab Emirates",
     cities: "Dubai, Abu Dhabi, Sharjah, Ajman, Al Ain",
-    desc: "Expert online Quran tutors for UAE families — GST timezone available.",
+    desc: "Live online Quran classes for UAE families — GST scheduling by tutor match.",
     timezone: "GST (UTC+4)",
     population: "3.86 million Muslims",
-    currency: "AED",
-    currencyCode: "AED",
-    approxPrice: "AED 110",
-    rating: "4.9",
-    reviews: "437",
     localContext:
       "The UAE is home to a large expat Muslim community from South Asia, the Arab world and the West. Dubai and Abu Dhabi families often prefer evening classes after work and school, and many request English-speaking tutors for children raised in international schools.",
     keywords: ["online quran classes uae", "quran teacher uae", "online quran dubai", "learn quran uae", "islamic classes uae"],
@@ -115,13 +80,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Saudi families and expats — AST timezone.",
     timezone: "AST (UTC+3)",
     population: "33 million Muslims",
-    currency: "SAR",
-    currencyCode: "SAR",
-    approxPrice: "SAR 110",
-    rating: "4.9",
-    reviews: "389",
     localContext:
-      "Families in Riyadh, Jeddah and the Eastern Province often combine in-person Islamic schooling with online tutoring for personalised Tajweed and Hifz support. Our tutors offer flexible AST slots that work around the Saudi school day and prayer times.",
+      "Families in Riyadh, Jeddah and the Eastern Province may combine in-person Islamic schooling with online Tajweed or Hifz support. AST lesson preferences can be requested around school and prayer times, subject to tutor matching.",
     keywords: ["online quran classes saudi arabia", "quran teacher saudi", "learn quran ksa", "islamic classes riyadh", "online quran jeddah"],
   },
   {
@@ -132,13 +92,8 @@ export const locations: Location[] = [
     desc: "Online Quran education for Muslim families in Germany — CET timezone.",
     timezone: "CET / CEST",
     population: "5.5 million Muslims",
-    currency: "€",
-    currencyCode: "EUR",
-    approxPrice: "€27",
-    rating: "4.8",
-    reviews: "241",
     localContext:
-      "Germany has one of Europe's largest Muslim populations, with strong Turkish and Arab communities in Berlin, Cologne and the Ruhr region. Many German-born children speak German as a first language, so our tutors focus on clear English or Arabic instruction with patient pronunciation coaching.",
+      "Germany has one of Europe's largest Muslim populations, with strong Turkish and Arab communities in Berlin, Cologne and the Ruhr region. Families can request English- or Arabic-language instruction with pronunciation support, subject to tutor matching.",
     keywords: ["online quran classes germany", "quran teacher germany", "online quran berlin", "learn quran germany", "islamic classes germany"],
   },
   {
@@ -149,13 +104,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Malaysian families — MYT timezone.",
     timezone: "MYT (UTC+8)",
     population: "20 million Muslims",
-    currency: "RM",
-    currencyCode: "MYR",
-    approxPrice: "RM 130",
-    rating: "4.9",
-    reviews: "176",
     localContext:
-      "Malaysia's Muslim majority already values strong Quranic education, and many families use online tutoring to add one-on-one Tajweed refinement and Hifz support on top of school. Our MYT-timezone tutors offer evening and weekend slots around the Malaysian school calendar.",
+      "Malaysia's Muslim majority has established Quranic education traditions, and online tutoring can add one-to-one Tajweed or Hifz support alongside school. MYT evening and weekend preferences are subject to tutor matching.",
     keywords: ["online quran classes malaysia", "quran teacher malaysia", "learn quran malaysia", "islamic classes kl", "online quran kl"],
   },
   {
@@ -163,16 +113,11 @@ export const locations: Location[] = [
     flag: "🇵🇰",
     country: "Pakistan",
     cities: "Karachi, Lahore, Islamabad, Rawalpindi, Peshawar",
-    desc: "Expert online Quran tutors for Pakistani families — PKT timezone.",
+    desc: "Live online Quran classes for Pakistani families — PKT scheduling by tutor match.",
     timezone: "PKT (UTC+5)",
     population: "220 million Muslims",
-    currency: "Rs",
-    currencyCode: "PKR",
-    approxPrice: "Rs 3,000",
-    rating: "4.9",
-    reviews: "302",
     localContext:
-      "Pakistani families increasingly choose online Quran classes for the convenience of learning at home with a certified qari, especially in Karachi, Lahore and Islamabad. Our PKT tutors offer affordable plans and flexible morning, after-school and evening slots.",
+      "For families in Karachi, Lahore, Islamabad and elsewhere, online Quran classes can reduce travel and support learning from home. PKT morning, after-school and evening preferences are subject to tutor matching.",
     keywords: ["online quran classes pakistan", "quran teacher pakistan", "learn quran pakistan", "online quran karachi", "online quran lahore"],
   },
   {
@@ -183,13 +128,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Bangladeshi families — BST (+6) timezone.",
     timezone: "BST (UTC+6)",
     population: "153 million Muslims",
-    currency: "Tk",
-    currencyCode: "BDT",
-    approxPrice: "Tk 2,500",
-    rating: "4.8",
-    reviews: "134",
     localContext:
-      "In Dhaka, Chittagong and Sylhet, more families now supplement madrasa or school learning with one-on-one online sessions for correct Tajweed and structured Hifz. Our tutors offer Bangla-friendly instruction and flexible BST slots.",
+      "In Dhaka, Chittagong and Sylhet, online sessions can supplement madrasa or school learning with one-to-one Tajweed and Hifz support. Bangla-language and BST scheduling preferences are subject to tutor matching.",
     keywords: ["online quran classes bangladesh", "quran teacher bangladesh", "learn quran dhaka", "islamic classes bangladesh"],
   },
   {
@@ -200,13 +140,8 @@ export const locations: Location[] = [
     desc: "Online Quran education for South African Muslim families — SAST timezone.",
     timezone: "SAST (UTC+2)",
     population: "1.9 million Muslims",
-    currency: "R",
-    currencyCode: "ZAR",
-    approxPrice: "R 500",
-    rating: "4.9",
-    reviews: "112",
     localContext:
-      "South Africa's established Muslim communities in Cape Town, Durban and Johannesburg have a rich Islamic heritage. Families here often seek certified tutors for Tajweed perfection and Hifz, with convenient SAST evening and weekend slots.",
+      "South Africa's established Muslim communities in Cape Town, Durban and Johannesburg have a rich Islamic heritage. Families can request Tajweed or Hifz lessons in SAST evening or weekend windows, subject to tutor matching.",
     keywords: ["online quran classes south africa", "quran teacher south africa", "learn quran cape town", "islamic classes sa"],
   },
   {
@@ -217,11 +152,6 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Indonesian families — WIB and WITA timezones.",
     timezone: "WIB / WITA (UTC+7/8)",
     population: "237 million Muslims",
-    currency: "Rp",
-    currencyCode: "IDR",
-    approxPrice: "Rp 250k",
-    rating: "4.8",
-    reviews: "158",
     localContext:
       "As the world's most populous Muslim country, Indonesia has deep Quranic traditions. Jakarta, Surabaya and Bandung families use online tutoring to add personalised Tajweed and Hifz coaching, with WIB and WITA slots that fit local school schedules.",
     keywords: ["online quran classes indonesia", "quran teacher indonesia", "learn quran jakarta", "islamic classes indonesia"],
@@ -234,13 +164,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Indian Muslim families — IST timezone.",
     timezone: "IST (UTC+5:30)",
     population: "200 million Muslims",
-    currency: "₹",
-    currencyCode: "INR",
-    approxPrice: "₹1,500",
-    rating: "4.9",
-    reviews: "267",
     localContext:
-      "India has one of the largest Muslim populations in the world, with vibrant communities in Hyderabad, Mumbai, Delhi and Lucknow. Families choose online classes for access to certified qaris and structured Hifz, with affordable IST-timezone plans.",
+      "India has one of the largest Muslim populations in the world, with communities in Hyderabad, Mumbai, Delhi and Lucknow. Families can request online Qaida, Tajweed or Hifz lessons in IST, subject to tutor matching.",
     keywords: ["online quran classes india", "quran teacher india", "learn quran online india", "online quran hyderabad", "islamic classes india"],
   },
   {
@@ -251,13 +176,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Nigerian Muslim families — WAT timezone.",
     timezone: "WAT (UTC+1)",
     population: "100 million Muslims",
-    currency: "₦",
-    currencyCode: "NGN",
-    approxPrice: "₦12,000",
-    rating: "4.8",
-    reviews: "96",
     localContext:
-      "Nigeria has Africa's largest Muslim population, concentrated in the north and in Lagos. Families use online Quran tutoring to connect with certified tutors for Tajweed and Hifz, with reliable WAT-timezone scheduling for evenings and weekends.",
+      "Nigeria has Africa's largest Muslim population, concentrated in the north and in Lagos. WAT evening and weekend preferences for online Tajweed or Hifz lessons are subject to tutor matching.",
     keywords: ["online quran classes nigeria", "quran teacher nigeria", "learn quran online nigeria", "online quran lagos", "islamic classes nigeria"],
   },
   {
@@ -268,13 +188,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Muslim families in France — CET timezone.",
     timezone: "CET / CEST",
     population: "5.7 million Muslims",
-    currency: "€",
-    currencyCode: "EUR",
-    approxPrice: "€27",
-    rating: "4.8",
-    reviews: "163",
     localContext:
-      "France is home to Western Europe's largest Muslim community, with strong North African roots in Paris, Marseille and Lyon. Many French-born children learn best with English or Arabic-speaking tutors who patiently build Quranic reading from the ground up.",
+      "France is home to Western Europe's largest Muslim community, with strong North African roots in Paris, Marseille and Lyon. Families can request English- or Arabic-language instruction for beginner Quran reading, subject to tutor matching.",
     keywords: ["online quran classes france", "quran teacher france", "learn quran online france", "online quran paris", "cours de coran en ligne"],
   },
   {
@@ -285,13 +200,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Dutch Muslim families — CET timezone.",
     timezone: "CET / CEST",
     population: "1 million Muslims",
-    currency: "€",
-    currencyCode: "EUR",
-    approxPrice: "€27",
-    rating: "4.9",
-    reviews: "88",
     localContext:
-      "The Netherlands has established Turkish, Moroccan and Surinamese Muslim communities in Amsterdam, Rotterdam and The Hague. Dutch families value certified tutors and flexible CET evening slots that fit around Dutch school hours.",
+      "The Netherlands has established Turkish, Moroccan and Surinamese Muslim communities in Amsterdam, Rotterdam and The Hague. CET or CEST evening lesson preferences can be requested around school hours, subject to tutor matching.",
     keywords: ["online quran classes netherlands", "quran teacher netherlands", "learn quran online netherlands", "online quran amsterdam", "islamic classes holland"],
   },
   {
@@ -302,11 +212,6 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Qatar families and expats — AST timezone.",
     timezone: "AST (UTC+3)",
     population: "2.6 million Muslims",
-    currency: "QAR",
-    currencyCode: "QAR",
-    approxPrice: "QAR 110",
-    rating: "4.9",
-    reviews: "127",
     localContext:
       "Qatar's diverse expat community in Doha and Lusail includes families from across the Muslim world. Many prefer evening online sessions after work and international-school hours, with English-speaking tutors for their children.",
     keywords: ["online quran classes qatar", "quran teacher qatar", "learn quran online qatar", "online quran doha", "islamic classes qatar"],
@@ -319,13 +224,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Kuwaiti families and expats — AST timezone.",
     timezone: "AST (UTC+3)",
     population: "3.3 million Muslims",
-    currency: "KD",
-    currencyCode: "KWD",
-    approxPrice: "KD 9",
-    rating: "4.9",
-    reviews: "104",
     localContext:
-      "Kuwaiti and expat families in Kuwait City and Salmiya often add one-on-one online tutoring for personalised Tajweed and Hifz alongside school. Our AST tutors offer flexible evening and weekend slots.",
+      "Kuwaiti and expat families in Kuwait City and Salmiya may add one-to-one online Tajweed or Hifz lessons alongside school. AST evening and weekend preferences are subject to tutor matching.",
     keywords: ["online quran classes kuwait", "quran teacher kuwait", "learn quran online kuwait", "online quran kuwait city", "islamic classes kuwait"],
   },
   {
@@ -336,13 +236,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Singaporean Muslim families — SGT timezone.",
     timezone: "SGT (UTC+8)",
     population: "900,000 Muslims",
-    currency: "S$",
-    currencyCode: "SGD",
-    approxPrice: "S$39",
-    rating: "4.9",
-    reviews: "79",
     localContext:
-      "Singapore's Malay-Muslim community balances demanding school schedules with Islamic learning. Families value efficient, high-quality one-on-one online sessions in the evenings and on weekends, with certified tutors in the SGT timezone.",
+      "Singapore's Malay-Muslim community balances school schedules with Islamic learning. SGT evening and weekend preferences for one-to-one online lessons are subject to tutor matching.",
     keywords: ["online quran classes singapore", "quran teacher singapore", "learn quran online singapore", "islamic classes singapore", "quran tutor singapore"],
   },
   {
@@ -353,13 +248,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Irish Muslim families — GMT timezone.",
     timezone: "GMT / IST",
     population: "80,000 Muslims",
-    currency: "€",
-    currencyCode: "EUR",
-    approxPrice: "€27",
-    rating: "4.9",
-    reviews: "54",
     localContext:
-      "Ireland's growing Muslim community is centred in Dublin, Cork and Galway. With limited local weekend-madrasa options in smaller towns, families rely on online tutoring for certified, consistent Quran teaching in the GMT timezone.",
+      "Ireland's Muslim community is centred in Dublin, Cork and Galway. Online tutoring can reduce travel for families in smaller towns, with GMT or IST lesson preferences subject to tutor matching.",
     keywords: ["online quran classes ireland", "quran teacher ireland", "learn quran online ireland", "online quran dublin", "islamic classes ireland"],
   },
   {
@@ -370,13 +260,8 @@ export const locations: Location[] = [
     desc: "Online Quran classes for New Zealand Muslim families — NZST timezone.",
     timezone: "NZST (UTC+12)",
     population: "75,000 Muslims",
-    currency: "NZ$",
-    currencyCode: "NZD",
-    approxPrice: "NZ$49",
-    rating: "4.9",
-    reviews: "47",
     localContext:
-      "New Zealand's Muslim community, centred in Auckland and Wellington, is one of the most far-east of any English-speaking country. Our tutors reserve dedicated early-morning and evening NZST slots so distance is never a barrier to certified Quran learning.",
+      "New Zealand's Muslim community is centred in Auckland and Wellington. NZST or NZDT early-morning and evening preferences can be requested, subject to tutor matching.",
     keywords: ["online quran classes new zealand", "quran teacher new zealand", "learn quran online nz", "online quran auckland", "islamic classes new zealand"],
   },
   {
@@ -387,11 +272,6 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Turkish and expat families — TRT timezone.",
     timezone: "TRT (UTC+3)",
     population: "84 million Muslims",
-    currency: "₺",
-    currencyCode: "TRY",
-    approxPrice: "₺400",
-    rating: "4.8",
-    reviews: "121",
     localContext:
       "Turkey's deep Islamic heritage lives on in Istanbul, Ankara and Izmir. Families and expats use online tutoring to add Arabic-language Quran instruction and one-on-one Tajweed refinement, with flexible TRT-timezone scheduling.",
     keywords: ["online quran classes turkey", "quran teacher turkey", "learn quran online turkey", "online quran istanbul", "islamic classes turkey"],

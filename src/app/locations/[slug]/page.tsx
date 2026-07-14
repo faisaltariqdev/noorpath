@@ -4,6 +4,7 @@ import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
 import { getCitiesByCountrySlug } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
+import { CONTACT, FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Globe } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const loc = getLocation(slug);
   if (!loc) return {};
   const topCities = loc.cities.split(",").slice(0, 3).map((c) => c.trim()).join(", ");
-  const description = `Online Quran classes in ${loc.country} for kids & adults — certified 1-on-1 tutors in ${topCities} & more. Noorani Qaida, Tajweed, Hifz & female teachers in your ${loc.timezone} timezone. Free 30-min trial, no credit card.`;
+  const description = `Online Quran classes in ${loc.country} for kids and adults — live 1-on-1 lessons for ${topCities} and more. Request Qaida, Tajweed, Hifz or a female tutor in ${loc.timezone}, subject to matching.`;
   return {
     title: `Online Quran Classes in ${loc.country} — Kids & Adults | NoorPath`,
     description,
@@ -55,41 +56,22 @@ export default async function LocationDetailPage({ params }: Props) {
   const faqs = getLocationFaqs(loc);
   const seoParagraphs = getLocationSeoParagraphs(loc);
 
-  const cityList = loc.cities.split(",").map((c) => c.trim());
-  const localTestimonials = [
-    {
-      name: "Aisha R.",
-      city: cityList[0] ?? loc.country,
-      text: `We spent months searching for reliable online Quran classes in ${loc.country}. NoorPath matched us with a certified female tutor in our ${loc.timezone} timezone — my daughter now recites with proper Tajweed. The free trial made the decision easy.`,
-    },
-    {
-      name: "Bilal K.",
-      city: cityList[1] ?? cityList[0] ?? loc.country,
-      text: `The Hifz program is superb. My son memorised 3 Juz in 6 months with weekly progress reports sent to us. Honestly the best decision for our family in ${loc.country}.`,
-    },
-    {
-      name: "Fatima S.",
-      city: cityList[2] ?? cityList[0] ?? loc.country,
-      text: `Flexible evening slots that fit around ${loc.country} school hours, patient 1-on-1 tutors, and real personal attention my kids never got at the weekend madrasa. Highly recommended for busy parents.`,
-    },
-  ];
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
         name: `Online Quran Classes in ${loc.country}`,
-        description: `NoorPath Academy provides certified online Quran education to families in ${loc.country}. Covering ${loc.cities}. Live 1-on-1 classes: Qaida, Tajweed, Hifz, Arabic, Islamic studies.`,
+        description: `NoorPath Academy offers live 1-on-1 online Quran lessons for learners in ${loc.country}, including ${loc.cities}. Tutor and timezone availability are confirmed after matching.`,
         provider: ORGANIZATION_REF,
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
         url: `https://www.noorpath.online/locations/${slug}`,
         offers: {
           "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          description: "Free 30-minute trial class",
+          price: String(TRIAL.price),
+          priceCurrency: TRIAL.priceCurrency,
+          description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
         },
       },
       {
@@ -135,10 +117,10 @@ export default async function LocationDetailPage({ params }: Props) {
 
               <div style={{ display: "flex", flexDirection: "column", gap: 11, marginBottom: 22 }}>
                 {[
-                  "Certified 1-on-1 tutors with Ijazah",
-                  `Flexible slots in your ${loc.timezone} timezone`,
-                  "Male & female teachers — kids & adults welcome",
-                  "Free 30-minute trial — no credit card required",
+                  "Live 1-on-1 online lessons",
+                  `${loc.timezone} scheduling subject to tutor matching`,
+                  "Male or female tutor requests",
+                  `${TRIAL.durationMinutes}-minute trial — $${TRIAL.price}, no credit card`,
                 ].map((b) => (
                   <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                     <CheckCircle size={18} style={{ color: "var(--gold-lt)", flexShrink: 0, marginTop: 2 }} />
@@ -151,7 +133,7 @@ export default async function LocationDetailPage({ params }: Props) {
                 {[
                   { icon: "🕐", label: loc.timezone },
                   { icon: "📍", label: loc.cities.split(",")[0].trim() + " & more" },
-                  { icon: "👥", label: loc.population },
+                  { icon: "💻", label: "Remote online lessons" },
                 ].map((item) => (
                   <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,.1)", borderRadius: 20, padding: "6px 14px", fontSize: ".82rem", color: "rgba(255,255,255,.9)" }}>
                     <span>{item.icon}</span> {item.label}
@@ -160,7 +142,7 @@ export default async function LocationDetailPage({ params }: Props) {
               </div>
 
               <div style={{ color: "var(--gold-lt)", fontSize: ".9rem", fontWeight: 700 }}>
-                ⭐⭐⭐⭐⭐ Trusted by Muslim families across {loc.country}
+                Online lessons · Tutor availability confirmed after matching
               </div>
             </div>
 
@@ -179,14 +161,14 @@ export default async function LocationDetailPage({ params }: Props) {
             >
               <div style={{ textAlign: "center", marginBottom: 6 }}>
                 <span style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 800, fontSize: ".72rem", letterSpacing: ".5px", padding: "4px 12px", borderRadius: 20, textTransform: "uppercase" }}>
-                  100% Free · No card needed
+                  {`$${TRIAL.price} Trial · No card needed`}
                 </span>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.5rem", textAlign: "center", marginBottom: 4 }}>
-                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>FREE</span> Trial Class
+                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Trial</span> Class
               </h2>
               <p style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", textAlign: "center", marginBottom: 18 }}>
-                30-minute 1-on-1 session · Pick your own time
+                {TRIAL.durationMinutes}-minute 1-on-1 session · Request a preferred time
               </p>
               <CTAForm />
 
@@ -199,7 +181,7 @@ export default async function LocationDetailPage({ params }: Props) {
 
               {/* WhatsApp quick chat */}
               <a
-                href={`https://wa.me/923124877906?text=${encodeURIComponent(`Assalamu Alaikum, I want to book a FREE Quran trial class (${loc.country}). Please share the details.`)}`}
+                href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -232,10 +214,10 @@ export default async function LocationDetailPage({ params }: Props) {
                   Online Quran Classes for {loc.country} Families
                 </h2>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginBottom: 16 }}>
-                  NoorPath Academy provides certified, professional online Quran education to Muslim families across {loc.country} — covering major cities including {loc.cities}. Our tutors are fully certified with Ijazah in Quran recitation and have years of experience teaching students of all ages and backgrounds.
+                  NoorPath Academy offers live online Quran education for learners in {loc.country}, including {loc.cities}. Lessons are delivered remotely; NoorPath does not claim a physical branch in these cities.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem" }}>
-                  Whether you are looking for Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), or Islamic studies, we have a course and a tutor for you — with classes scheduled to fit your {loc.timezone} timezone perfectly.
+                  You can request Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), or Islamic studies in {loc.timezone}. Tutor and schedule availability are confirmed after matching.
                 </p>
                 {seoParagraphs.map((para) => (
                   <p key={para.slice(0, 40)} style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginTop: 16 }}>
@@ -264,10 +246,10 @@ export default async function LocationDetailPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* Cities covered */}
+              {/* Online city coverage */}
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
-                  Cities We Serve in {loc.country}
+                  Online Quran Classes by City in {loc.country}
                 </h2>
                 {cityPages.length > 0 && (
                   <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 14 }}>
@@ -291,7 +273,7 @@ export default async function LocationDetailPage({ params }: Props) {
                     );
                   })}
                   <span style={{ background: "var(--ivory)", color: "var(--muted)", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 500, border: "1px solid var(--border)" }}>
-                    + All cities online
+                    + Other cities online
                   </span>
                 </div>
               </div>
@@ -323,42 +305,21 @@ export default async function LocationDetailPage({ params }: Props) {
               {/* Why NoorPath */}
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
-                  Why Muslim Families in {loc.country} Choose NoorPath
+                  Planning Online Quran Lessons in {loc.country}
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                   {[
-                    { emoji: "⏰", title: `${loc.timezone} Timezone`, desc: `All classes scheduled to fit your ${loc.timezone} timezone — morning, afternoon, or evening.` },
-                    { emoji: "👩‍🏫", title: "Certified Tutors with Ijazah", desc: "All our teachers hold Ijazah in Quran recitation — verified credentials, professional teaching." },
-                    { emoji: "🌙", title: "1-on-1 Online Classes", desc: "Private, personalised sessions via Zoom or Skype — your child gets the tutor's full attention." },
-                    { emoji: "👨‍👩‍👧‍👦", title: "Family Plans", desc: "Enrol multiple children and save up to 30% with our family pricing plans." },
-                    { emoji: <Globe size={20} />, title: "40+ Countries Served", desc: `${loc.country} is part of our global community of 12,000+ students in 40+ countries.` },
+                    { emoji: "⏰", title: `${loc.timezone} Timezone`, desc: "Request morning, afternoon, evening, or weekend lessons; exact availability is confirmed after tutor matching." },
+                    { emoji: "👩‍🏫", title: "Tutor Matching", desc: "Share the learner's level, goals, tutor preference, and timezone when requesting a match." },
+                    { emoji: "🌙", title: "1-on-1 Online Classes", desc: "Private online sessions via Zoom or Google Meet, without travel to a physical branch." },
+                    { emoji: "👨‍👩‍👧‍👦", title: "Published Family Discounts", desc: FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(" · ") },
+                    { emoji: <Globe size={20} />, title: "Online Access", desc: `Learners in ${loc.country} can request remote lessons without NoorPath claiming a local branch or customer base.` },
                   ].map((item) => (
                     <div key={item.title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                       <div style={{ fontSize: "1.5rem", flexShrink: 0 }}>{typeof item.emoji === "string" ? item.emoji : item.emoji}</div>
                       <div>
                         <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 2, fontSize: ".95rem" }}>{item.title}</div>
                         <div style={{ fontSize: ".85rem", color: "var(--muted)", lineHeight: 1.6 }}>{item.desc}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Local testimonials */}
-              <div className="content-card" style={{ marginBottom: 28 }}>
-                <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 6 }}>
-                  What {loc.country} Families Say
-                </h2>
-                <div style={{ color: "var(--gold)", fontSize: ".9rem", fontWeight: 700, marginBottom: 18 }}>
-                  ⭐⭐⭐⭐⭐ What families in {loc.country} tell us
-                </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-                  {localTestimonials.map((t) => (
-                    <div key={t.name} style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, padding: "16px 18px" }}>
-                      <div style={{ color: "var(--gold)", fontSize: ".95rem", letterSpacing: 2, marginBottom: 8 }}>★★★★★</div>
-                      <p style={{ color: "var(--slate)", fontSize: ".9rem", lineHeight: 1.7, margin: "0 0 10px", fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
-                      <div style={{ fontSize: ".82rem", color: "var(--charcoal)", fontWeight: 700 }}>
-                        {t.name} <span style={{ color: "var(--muted)", fontWeight: 500 }}>— {loc.flag} {t.city}, {loc.country}</span>
                       </div>
                     </div>
                   ))}
@@ -406,14 +367,14 @@ export default async function LocationDetailPage({ params }: Props) {
                   Quran Classes for {loc.country}
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".83rem", marginBottom: 8, lineHeight: 1.6 }}>
-                  Free 30-minute trial — no credit card needed.
+                  {TRIAL.durationMinutes}-minute trial for ${TRIAL.price} — no credit card needed.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, margin: "16px 0" }}>
                   {[
-                    `✅ ${loc.timezone} timezone covered`,
-                    "✅ Certified tutors with Ijazah",
+                    `✅ ${loc.timezone} scheduling request`,
+                    "✅ Tutor matched to stated needs",
                     "✅ 1-on-1 personalised classes",
-                    "✅ Female tutor option",
+                    "✅ Female tutor request option",
                     "✅ Kids & adults welcome",
                   ].map((p) => (
                     <div key={p} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", textAlign: "left" }}>{p}</div>
@@ -423,7 +384,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Book Free Trial →
                 </a>
                 <a
-                  href={`https://wa.me/923124877906?text=${encodeURIComponent(`Assalamu Alaikum, I want to book a FREE Quran trial class (${loc.country}). Please share the details.`)}`}
+                  href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, background: "#25D366", color: "#0b3d2e", padding: "12px", borderRadius: 12, fontWeight: 800, textDecoration: "none", fontSize: ".9rem", marginTop: 10 }}
@@ -434,7 +395,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Chat on WhatsApp
                 </a>
                 <div style={{ marginTop: 14, color: "rgba(255,255,255,.5)", fontSize: ".73rem" }}>
-                  ⭐⭐⭐⭐⭐ Trusted by Muslim families across {loc.country}
+                  Tutor availability is confirmed after your request.
                 </div>
               </div>
 
@@ -444,7 +405,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Class Timings ({loc.timezone})
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  {["Morning: 6 AM – 10 AM", "Afternoon: 12 PM – 3 PM", "Evening: 6 PM – 10 PM", "Weekend slots available"].map((t) => (
+                  {["Morning preference", "Afternoon preference", "Evening preference", "Weekend preference"].map((t) => (
                     <div key={t} style={{ fontSize: ".85rem", color: "var(--slate)", padding: "8px 10px", background: "var(--ivory)", borderRadius: 8 }}>
                       🕐 {t}
                     </div>
@@ -463,7 +424,7 @@ export default async function LocationDetailPage({ params }: Props) {
             Start Quran Learning in {loc.country} Today
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>
-            Join hundreds of families from {loc.country} already learning with NoorPath Academy. Free trial — no commitment.
+            Request an online tutor and preferred {loc.timezone} lesson time. Availability is confirmed after matching.
           </p>
           <a href="#trial" className="btn-primary-np">
             Book Free Trial Class →

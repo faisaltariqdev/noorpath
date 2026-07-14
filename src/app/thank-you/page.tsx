@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import { CONTACT, TRIAL } from "@/lib/academyFacts";
 
 export const metadata: Metadata = {
-  title: "Thank You — Free Trial Booked | NoorPath Academy",
-  description: "Your free trial class has been booked. We will contact you within 24 hours to confirm your session.",
+  title: "Thank You — Trial Request Received | NoorPath Academy",
+  description: "NoorPath Academy has received your free-trial request and will contact you to confirm tutor and schedule availability.",
   robots: { index: false, follow: false },
 };
 
@@ -50,12 +51,14 @@ export default function ThankYouPage() {
 
           {/* Heading */}
           <h1 style={{ fontFamily: "'Playfair Display', serif", color: "#fff", fontSize: "clamp(1.6rem, 4vw, 2.2rem)", marginBottom: 16, lineHeight: 1.3 }}>
-            JazakAllah Khair!<br />Your Free Trial is Booked
+            JazakAllah Khair!<br />Your Trial Request Is Received
           </h1>
 
           {/* Sub */}
           <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1.05rem", lineHeight: 1.8, marginBottom: 32 }}>
-            We have received your request. Our team will contact you on WhatsApp or email within <strong style={{ color: "#f0c040" }}>24 hours</strong> to confirm your free 30-minute trial class.
+            We have received your request. Our team will contact you on WhatsApp
+            or email to confirm tutor and schedule availability for your free{" "}
+            <strong style={{ color: "#f0c040" }}>{TRIAL.durationMinutes}-minute trial</strong>.
           </p>
 
           {/* Info card */}
@@ -64,9 +67,9 @@ export default function ThankYouPage() {
               What happens next?
             </h2>
             {[
-              { step: "1", text: "We will WhatsApp you to confirm the class time (UK / your timezone)" },
-              { step: "2", text: "You will receive a Zoom link for your free 30-minute session" },
-              { step: "3", text: "Your child meets the certified tutor — no pressure, no payment needed" },
+              { step: "1", text: "We will contact you to confirm an available tutor and class time in your timezone" },
+              { step: "2", text: `After confirmation, you will receive joining details for the ${TRIAL.durationMinutes}-minute online session` },
+              { step: "3", text: "The learner attends the trial before deciding whether to enrol in a paid plan" },
             ].map(({ step, text }) => (
               <div key={step} style={{ display: "flex", gap: 14, alignItems: "flex-start", marginBottom: 14 }}>
                 <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#0a6e4f", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: ".85rem", flexShrink: 0 }}>
@@ -79,7 +82,7 @@ export default function ThankYouPage() {
 
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.me/923124877906?text=Assalamu%20Alaikum%2C%20I%20just%20booked%20a%20free%20trial%20class%20on%20NoorPath%20Academy.%20Please%20confirm%20my%20session."
+            href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent("Assalamu Alaikum. I just submitted a free trial request on NoorPath Academy. Please confirm tutor and schedule availability.")}`}
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "#25D366", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 700, fontSize: "1rem", textDecoration: "none", marginBottom: 20 }}

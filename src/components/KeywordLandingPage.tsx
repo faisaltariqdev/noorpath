@@ -1,8 +1,14 @@
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
-import { Star } from "lucide-react";
 import type { ReactNode } from "react";
+import {
+  CANCELLATION_NOTICE_DAYS,
+  FAMILY_DISCOUNTS,
+  PRICING_PLANS,
+  SERVICE_FACTS,
+  TRIAL,
+} from "@/lib/academyFacts";
 
 export interface LandingFeature {
   icon: ReactNode;
@@ -70,17 +76,13 @@ export interface KeywordLandingPageProps {
   extraContent?: ReactNode;
 }
 
-const DEFAULT_STATS = [
-  { value: "12,000+", label: "Students worldwide" },
-  { value: "4.9/5", label: "Family rating" },
-  { value: "250+", label: "Certified tutors" },
-  { value: "40+", label: "Countries served" },
-];
+const DEFAULT_STATS = SERVICE_FACTS;
+const STARTING_MONTHLY_PRICE = Math.min(...PRICING_PLANS.map((plan) => plan.monthlyPriceUsd));
 
 const DEFAULT_STEPS: LandingStep[] = [
-  { title: "Book Free Trial", desc: "Fill the form — we match you with the best tutor for your level, age, and timezone within hours." },
-  { title: "Attend Live Class", desc: "30-minute 1-on-1 lesson on Zoom. Real teaching, real correction — not a sales pitch." },
-  { title: "Start Your Plan", desc: "Love the trial? Choose a monthly plan. Family discounts available. Cancel anytime." },
+  { title: "Request Free Trial", desc: `Fill the form to request a free ${TRIAL.durationMinutes}-minute trial. Tutor availability is confirmed after your request.` },
+  { title: "Attend Live Class", desc: `${TRIAL.durationMinutes}-minute 1-on-1 online lesson with no credit card required.` },
+  { title: "Choose Your Plan", desc: `Review the monthly plans and sibling discounts. Paid plans require ${CANCELLATION_NOTICE_DAYS} days' cancellation notice before the next billing date.` },
 ];
 
 const DEFAULT_LOCATIONS: LandingLocation[] = [
@@ -90,8 +92,8 @@ const DEFAULT_LOCATIONS: LandingLocation[] = [
   { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "AEST — after-school" },
   { href: "/locations/online-quran-classes-uae", label: "🇦🇪 UAE", note: "GST — morning & evening" },
   { href: "/locations/online-quran-classes-germany", label: "🇩🇪 Germany", note: "CET — evening slots" },
-  { href: "/locations/online-quran-classes-pakistan", label: "🇵🇰 Pakistan", note: "PKT — all-day available" },
-  { href: "/locations", label: "🌍 40+ More Countries", note: "All timezones covered" },
+  { href: "/locations/online-quran-classes-pakistan", label: "🇵🇰 Pakistan", note: "PKT — tutor matching" },
+  { href: "/locations", label: "🌍 More Locations", note: "View location information" },
 ];
 
 export default function KeywordLandingPage({
@@ -116,10 +118,10 @@ export default function KeywordLandingPage({
   ctaHeadline,
   ctaSubtext,
   ctaBullets = [
-    "✓ Free 30-minute trial — no credit card",
-    "✓ Certified Ijazah & Al-Azhar tutors",
+    `✓ Free ${TRIAL.durationMinutes}-minute trial — no credit card`,
+    "✓ Live one-to-one online lessons",
     "✓ Kids, adults & family plans",
-    "✓ UK, US, Canada, Australia timezones",
+    "✓ Tutor matching based on timezone and availability",
   ],
   relatedLinks,
   extraContent,
@@ -140,9 +142,9 @@ export default function KeywordLandingPage({
         url,
         offers: {
           "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          description: "Free 30-minute trial class",
+          price: String(TRIAL.price),
+          priceCurrency: TRIAL.priceCurrency,
+          description: `Free ${TRIAL.durationMinutes}-minute trial class`,
           url: `${url}#cta`,
         },
       },
@@ -197,7 +199,7 @@ export default function KeywordLandingPage({
               View Pricing
             </Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> Trusted by families in 40+ countries
+              Live 1-to-1 lessons · tutor matching by timezone
             </span>
           </div>
         </div>
@@ -280,7 +282,7 @@ export default function KeywordLandingPage({
           {phases && phases.length > 0 && (
             <>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-                Your Learning Roadmap
+                Your Illustrative Learning Roadmap
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                 {phases.map((p) => (
@@ -289,7 +291,7 @@ export default function KeywordLandingPage({
                       {p.phase}
                     </div>
                     <div style={{ fontWeight: 800, color: "var(--charcoal)", fontSize: "1rem", marginBottom: 4 }}>{p.title}</div>
-                    <div style={{ fontSize: ".82rem", color: "var(--gold)", fontWeight: 600, marginBottom: 10 }}>{p.duration}</div>
+                    <div style={{ fontSize: ".82rem", color: "var(--gold)", fontWeight: 600, marginBottom: 10 }}>Illustrative: {p.duration}</div>
                     <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
                   </div>
                 ))}
@@ -331,7 +333,7 @@ export default function KeywordLandingPage({
           {compareRows && compareRows.length > 0 && (
             <>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-                Why Live Online Classes Win
+                Comparing Learning Formats
               </h2>
               <div style={{ overflowX: "auto", marginBottom: 48 }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".92rem" }}>
@@ -377,10 +379,10 @@ export default function KeywordLandingPage({
           >
             <div>
               <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", marginBottom: 8, color: "var(--charcoal)" }}>
-                Plans from $29/month · First Class Free
+                Plans from ${STARTING_MONTHLY_PRICE}/month · Free Trial Available
               </h3>
               <p style={{ color: "var(--muted)", fontSize: ".9rem", margin: 0, lineHeight: 1.6 }}>
-                No credit card for trial. Family discounts for 2+ siblings. Cancel anytime.
+                No credit card for the trial. Family discounts: {FAMILY_DISCOUNTS.map((item) => `${item.siblings} ${item.discountPercent}% off`).join(" · ")}. Cancel with {CANCELLATION_NOTICE_DAYS} days&apos; notice before the next billing date.
               </p>
             </div>
             <Link href="#cta" className="btn-primary-np" style={{ whiteSpace: "nowrap" }}>
@@ -478,7 +480,7 @@ export default function KeywordLandingPage({
             </div>
             <div className="cta-form-wrap">
               <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
-                Start Free Trial — Takes 30 Seconds
+                Request Your Free Trial
               </h3>
               <CTAForm />
             </div>

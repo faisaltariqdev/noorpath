@@ -8,8 +8,7 @@ const BASE = "https://www.noorpath.online";
 
 const LAUNCH = new Date("2024-01-15");
 const CONTENT_UPDATE = new Date("2026-05-01");
-const RECENT = new Date("2026-06-01");
-const NOW = new Date("2026-07-13");
+const NOW = new Date("2026-07-14");
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
 const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
@@ -97,7 +96,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: NOW },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: NOW },
-    // privacy-policy + terms-of-service intentionally omitted (robots noindex)
+    { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: NOW },
+    { url: `${BASE}/privacy-policy`,                           priority: 0.4,  changeFrequency: "yearly",  lastModified: NOW },
+    { url: `${BASE}/terms-of-service`,                         priority: 0.4,  changeFrequency: "yearly",  lastModified: NOW },
   ];
 
   // Auto-generate from shared data (courses + country locations + cities + blogs)

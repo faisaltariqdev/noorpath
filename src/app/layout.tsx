@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Playfair_Display, Plus_Jakarta_Sans, Amiri } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import OrganizationJsonLd from "@/components/OrganizationJsonLd";
+import TrackingConsent from "@/components/TrackingConsent";
 
 // Enforce build-time prerendering across the App Router.
 // Any server-only dynamic usage will now fail fast during build.
@@ -44,9 +44,6 @@ const amiri = Amiri({
   preload: false, // Arabic font: not needed for initial paint
 });
 
-// ─── Replace with your Google Analytics 4 Measurement ID ───────────────────────────
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-CTEG1YPKCT";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noorpath.online"),
   title: {
@@ -83,14 +80,14 @@ export const metadata: Metadata = {
     url: "https://www.noorpath.online",
     siteName: "NoorPath Academy",
     title: "Learn Quran Online | NoorPath Academy — Free Trial",
-    description: "Join 12,000+ students worldwide. Quran classes for kids & adults — Qaida, Tajweed, Hifz, Arabic. Certified tutors. Family plans. Free 30-min trial.",
+    description: "Live one-to-one online Quran classes for kids and adults — Qaida, Tajweed, Hifz, Arabic and Islamic studies. Request a free 30-minute trial.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@NoorPathAcademy",
     title: "Learn Quran Online | NoorPath Academy — Free 30-Min Trial",
-    description: "Online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans. Certified tutors. Free trial.",
+    description: "Online Quran classes for kids and adults. Tajweed, Hifz, Qaida, Arabic, family plans and a free trial.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -131,28 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main-content" style={{ paddingTop: 0 }}>{children}</main>
         <Footer />
         <WhatsAppFloat />
-
-        {/* ── Google Analytics 4 — strategy="afterInteractive" loads after page is interactive ── */}
-        {GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga4-init" strategy="afterInteractive">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}',{page_path:window.location.pathname});`}
-            </Script>
-          </>
-        )}
-
-        {/* ── Google Ads conversion tracking ── */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18212142815"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18212142815');`}
-        </Script>
+        <TrackingConsent />
       </body>
     </html>
   );

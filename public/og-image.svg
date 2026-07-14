@@ -40,32 +40,32 @@
 
   <!-- Headline -->
   <text x="108" y="350" font-size="42" font-weight="700" fill="white" font-family="Georgia, serif">Learn Quran Online</text>
-  <text x="108" y="400" font-size="28" fill="rgba(255,255,255,0.75)" font-family="Arial, sans-serif">Certified Tutors &#xB7; Family Plans &#xB7; Free Trial</text>
+  <text x="108" y="400" font-size="28" fill="rgba(255,255,255,0.75)" font-family="Arial, sans-serif">Live One-to-One &#xB7; Family Plans &#xB7; Free Trial</text>
 
   <!-- Stats row -->
   <rect x="108" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <text x="178" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">12K+</text>
-  <text x="178" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Students</text>
+  <text x="178" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">1-to-1</text>
+  <text x="178" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Live Lessons</text>
 
   <rect x="264" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <text x="334" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">250+</text>
-  <text x="334" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Tutors</text>
+  <text x="334" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">30 min</text>
+  <text x="334" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Free Trial</text>
 
   <rect x="420" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <text x="490" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">40+</text>
-  <text x="490" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Countries</text>
+  <text x="490" y="484" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-family="Georgia, serif">No card</text>
+  <text x="490" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">For Trial</text>
 
   <rect x="576" y="450" width="140" height="72" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <text x="646" y="484" font-size="26" font-weight="700" fill="url(#gold)" text-anchor="middle" font-family="Georgia, serif">4.9</text>
-  <text x="646" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Rating</text>
+  <text x="646" y="484" font-size="26" font-weight="700" fill="url(#gold)" text-anchor="middle" font-family="Georgia, serif">Flexible</text>
+  <text x="646" y="508" font-size="13" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Arial, sans-serif">Tutor Matching</text>
 
   <!-- Right card -->
   <rect x="800" y="200" width="320" height="360" rx="20" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
   <text x="960" y="260" font-size="16" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">FREE TRIAL CLASS</text>
-  <text x="960" y="310" font-size="38" fill="white" text-anchor="middle" font-family="Georgia, serif">Start Today</text>
+  <text x="960" y="310" font-size="32" fill="white" text-anchor="middle" font-family="Georgia, serif">Request a Trial</text>
   <text x="960" y="350" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">No credit card required</text>
   <text x="960" y="390" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Live 1-on-1 via Zoom</text>
-  <text x="960" y="430" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Certified Ijazah tutors</text>
+  <text x="960" y="430" font-size="15" fill="rgba(255,255,255,0.6)" text-anchor="middle" font-family="Arial, sans-serif">Tutor match confirmed after request</text>
   <rect x="860" y="475" width="200" height="50" rx="25" fill="url(#gold)"/>
   <text x="960" y="507" font-size="16" font-weight="700" fill="#1a1a2e" text-anchor="middle" font-family="Arial, sans-serif">Book Free Trial &#x2192;</text>
 

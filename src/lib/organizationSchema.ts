@@ -1,9 +1,13 @@
-export const BASE_URL = "https://www.noorpath.online";
+import {
+  BASE_URL as ACADEMY_BASE_URL,
+  CONTACT,
+  GOOGLE_BUSINESS_URL,
+  TRUSTPILOT,
+} from "@/lib/academyFacts";
+
+export const BASE_URL = ACADEMY_BASE_URL;
 export const ORGANIZATION_ID = `${BASE_URL}/#organization`;
 export const WEBSITE_ID = `${BASE_URL}/#website`;
-export const TRUSTPILOT_URL = "https://www.trustpilot.com/review/noorpath.online";
-/** Google Business Profile (Knowledge Graph id /g/11npsdjwdh) */
-export const GOOGLE_BUSINESS_URL = "https://www.google.com/maps?kgmid=/g/11npsdjwdh";
 
 /** Reference global org from page-level Service/Course schema */
 export const ORGANIZATION_REF = { "@id": ORGANIZATION_ID };
@@ -13,7 +17,7 @@ export function getOrganizationJsonLd() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["EducationalOrganization", "LocalBusiness"],
+        "@type": "EducationalOrganization",
         "@id": ORGANIZATION_ID,
         name: "NoorPath Academy",
         alternateName: ["NoorPath Online Quran Academy", "NoorPath Quran School"],
@@ -25,30 +29,20 @@ export function getOrganizationJsonLd() {
           height: 512,
         },
         image: `${BASE_URL}/og-image.png`,
-        email: "info@noorpath.online",
-        telephone: "+923124877906",
-        foundingDate: "2018",
+        email: CONTACT.email,
+        telephone: CONTACT.phoneE164,
         description:
-          "NoorPath Academy offers certified 1-on-1 online Quran classes for kids, adults and families worldwide: Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
-        address: {
-          "@type": "PostalAddress",
-          addressCountry: "PK",
-          addressLocality: "Online",
-        },
+          "NoorPath Academy offers live one-to-one online Quran classes for kids and adults, including Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
         areaServed: "Worldwide",
         priceRange: "$$",
-        numberOfEmployees: { "@type": "QuantitativeValue", value: 50 },
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+923124877906",
-          email: "info@noorpath.online",
+          telephone: CONTACT.phoneE164,
+          email: CONTACT.email,
           contactType: "customer service",
-          availableLanguage: ["English", "Arabic", "Urdu"],
         },
         sameAs: [
-          BASE_URL,
-          "https://wa.me/923124877906",
-          TRUSTPILOT_URL,
+          TRUSTPILOT.url,
           GOOGLE_BUSINESS_URL,
           "https://www.instagram.com/noorpath.online/",
           "https://www.tiktok.com/@noorpathacademy",
@@ -63,7 +57,7 @@ export function getOrganizationJsonLd() {
               itemOffered: {
                 "@type": "Course",
                 name: "Learn Quran Online",
-                description: "Live 1-on-1 online Quran classes for kids and adults — Noorani Qaida, Tajweed, Hifz, Arabic. Certified Ijazah tutors. Free 30-min trial.",
+                description: "Live one-to-one online Quran classes for kids and adults covering Noorani Qaida, Tajweed, Hifz and Arabic, with a free trial request.",
                 provider: { "@type": "Organization", name: "NoorPath Academy", "@id": ORGANIZATION_ID },
                 url: `${BASE_URL}/learn-quran-online`,
                 courseMode: "online",
@@ -86,7 +80,7 @@ export function getOrganizationJsonLd() {
               itemOffered: {
                 "@type": "Course",
                 name: "Tajweed Classes Online",
-                description: "Online Tajweed course with Ijazah-certified tutors. Learn all major rules — Makharij, Madd, Ghunna, Qalqalah — with live recitation correction.",
+                description: "Online Tajweed lessons covering Makharij, Madd, Ghunna and Qalqalah with live recitation correction.",
                 provider: { "@type": "Organization", name: "NoorPath Academy", "@id": ORGANIZATION_ID },
                 url: `${BASE_URL}/learn-tajweed-online`,
                 courseMode: "online",
@@ -98,7 +92,7 @@ export function getOrganizationJsonLd() {
               itemOffered: {
                 "@type": "Course",
                 name: "Hifz Program Online",
-                description: "Structured online Quran memorization program with certified Huffaz tutors. Sabaq-Sabqi-Manzil revision system for kids and adults.",
+                description: "Online Quran memorization lessons for kids and adults using a structured revision approach.",
                 provider: { "@type": "Organization", name: "NoorPath Academy", "@id": ORGANIZATION_ID },
                 url: `${BASE_URL}/hifz-quran-online`,
                 courseMode: "online",
@@ -110,7 +104,7 @@ export function getOrganizationJsonLd() {
               itemOffered: {
                 "@type": "Course",
                 name: "Quran Classes for Kids",
-                description: "Online Quran classes for children ages 4–12. Child-specialist certified tutors, Noorani Qaida, daily duas, and weekly parent progress reports.",
+                description: "Online Quran classes for children ages 4–12 covering Noorani Qaida, Quran reading, Tajweed and daily duas.",
                 provider: { "@type": "Organization", name: "NoorPath Academy", "@id": ORGANIZATION_ID },
                 url: `${BASE_URL}/online-quran-classes-for-kids`,
                 courseMode: "online",

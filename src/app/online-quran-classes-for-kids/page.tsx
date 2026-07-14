@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
-import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Star, Globe, MapPin } from "lucide-react";
+import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
     absolute: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial 2026",
   },
   description:
-    "Best online Quran classes for kids ages 4–12. Certified 1-on-1 tutors, Noorani Qaida, Tajweed & Hifz. Safe Zoom classes, flexible UK/US/AU times. Free 30-min trial — no credit card.",
+    "Online Quran classes for kids ages 4–12. Live 1-on-1 Noorani Qaida, Tajweed and Hifz lessons with tutor matching and a free 30-minute trial.",
   keywords: [
     "online quran classes for kids",
     "quran classes for kids online",
     "learn quran online for kids",
-    "best online quran classes for kids",
+    "online quran classes for kids",
     "online quran for children",
     "quran teacher for kids online",
     "kids quran classes",
@@ -43,14 +44,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial",
     description:
-      "Certified tutors teach kids ages 4–12 via live 1-on-1 Zoom classes. Noorani Qaida, Tajweed, Hifz. Parent-monitored, flexible scheduling. Book free trial.",
+      "Live 1-on-1 Quran classes for kids ages 4–12. Request Noorani Qaida, Tajweed, Hifz or a female tutor. Book a free trial.",
     url: "https://www.noorpath.online/online-quran-classes-for-kids",
     images: [{ url: "/marketing/kids-online-quran-class.jpg", width: 1200, height: 800, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes for Kids — Free Trial",
-    description: "1-on-1 live Quran classes for kids. Certified tutors, ages 4–12. No credit card.",
+    description: "1-on-1 live Quran classes for kids ages 4–12. Tutor matching and a free trial with no credit card.",
     images: ["/marketing/kids-online-quran-class.jpg"],
   },
 };
@@ -59,36 +60,36 @@ const PAGE_URL = `${BASE_URL}/online-quran-classes-for-kids`;
 
 const faqs = [
   {
-    q: "What is the best age to start online Quran classes for kids?",
-    a: "Most scholars and child educators recommend ages 4–7. At NoorPath, children from age 4 can start with short 20–25 minute sessions using games and visual Qaida. Ages 7–12 typically progress faster with 30–40 minute lessons. Starting early builds a love for Quran before academic pressure begins.",
+    q: "What age can a child start online Quran classes?",
+    a: "Children can start from age 4. The appropriate lesson length and starting material depend on attention span, prior reading experience, and the family's goals.",
   },
   {
     q: "Are online Quran classes safe for children?",
-    a: "Yes — when you choose a reputable academy. NoorPath uses Zoom/Google Meet only (no private messaging), encourages parent supervision especially in the first month, and all tutors are background-verified with Ijazah credentials. Parents can join any session unannounced at any time.",
+    a: "Classes are live and 1-to-1. Parents can discuss supervision preferences before lessons begin and ask for the proposed tutor's relevant credentials and experience before enrolment.",
   },
   {
     q: "How much do online Quran classes for kids cost?",
-    a: "Plans start from $29/month with family discounts for siblings. Your first class is a completely free 30-minute trial — no credit card required. See our pricing page for full plan details. Sibling discounts of up to 20% are available for 2+ children enrolled.",
+    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. The ${TRIAL.durationMinutes}-minute trial is free and requires no credit card. Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% for two siblings to ${FAMILY_DISCOUNTS[2].discountPercent}% for four or more.`,
   },
   {
     q: "How long should a Quran class be for a child?",
-    a: "Ages 4–6: 20–25 minutes. Ages 7–9: 30 minutes. Ages 10–12: 35–45 minutes. Our tutors adjust session length to your child's attention span — never forcing longer classes than they can handle. Short, consistent sessions are more effective than long infrequent ones.",
+    a: `Lesson length should reflect the child's age, attention span, goals, and selected plan. Published plan lengths are ${PRICING_PLANS.map((plan) => `${plan.sessionMinutes} minutes`).join(", ")}, and the suitable option can be discussed after the trial.`,
   },
   {
     q: "Can my child learn with a female Quran teacher?",
-    a: "Yes. We have certified female tutors (Hafiza) available for daughters and young girls across all timezones — UK, USA, Canada, Australia, and Gulf. Request a female teacher when booking your free trial and we will match accordingly.",
+    a: "You can request a female Quran teacher when booking. Subject and schedule availability, along with relevant credentials, are confirmed before enrolment.",
   },
   {
-    q: "What will my child learn in the first month?",
-    a: "Month 1 typically covers: Arabic letter recognition, basic harakat (vowels), 3–5 short duas, Islamic manners, and — for many children — the first lines of Surah Al-Fatiha. You receive a weekly parent progress report after every session.",
+    q: "What will my child learn first?",
+    a: "The tutor first considers the child's current level. A beginner may start with Arabic letters and harakat, while a reader may begin with recitation correction, Tajweed, or a suitable Hifz plan.",
   },
   {
-    q: "Do you offer classes for families in the UK, USA, and Australia?",
-    a: "Yes. We serve families in 40+ countries with timezone-friendly slots — UK evenings (5–9pm GMT), US mornings and evenings (EST/PST), Canadian after-school times, and Australian weekend slots. Your child's class time is always fixed and consistent.",
+    q: "Can I request classes for my timezone?",
+    a: "Yes. Share your timezone and preferred lesson windows when booking; tutor availability is confirmed after your request.",
   },
   {
     q: "Is the free trial really free?",
-    a: "Yes — 100% free. One live 30-minute 1-on-1 class with a certified tutor. No credit card, no automatic charges, no hidden fees. Book only if you want to continue. Over 85% of families who try a class continue with a monthly plan.",
+    a: "Yes. The live 30-minute 1-on-1 trial costs $0 and requires no credit card. Tutor availability is confirmed after your request.",
   },
   {
     q: "What is Noorani Qaida and why do kids start with it?",
@@ -96,7 +97,7 @@ const faqs = [
   },
   {
     q: "Can siblings share a tutor or class?",
-    a: "For the best learning results, each child gets their own 1-on-1 class with the same or different tutor. However, we offer sibling family pricing — up to 20% off when you enroll 2 or more children. Contact us after booking your free trial to set up a family plan.",
+    a: `Lessons are offered 1-to-1. Sibling discounts are ${FAMILY_DISCOUNTS[0].discountPercent}% for two siblings, ${FAMILY_DISCOUNTS[1].discountPercent}% for three, and ${FAMILY_DISCOUNTS[2].discountPercent}% for four or more.`,
   },
 ];
 
@@ -108,7 +109,7 @@ const jsonLd = {
       "@id": `${PAGE_URL}#course`,
       name: "Online Quran Classes for Kids",
       description:
-        "Live 1-on-1 online Quran classes for children ages 4–12. Certified Ijazah and Al-Azhar tutors teach Noorani Qaida, Tajweed, Hifz, daily duas and Islamic studies via Zoom. Free 30-minute trial class included.",
+        "Live 1-on-1 online Quran classes for children ages 4–12, with tutor matching for Noorani Qaida, Tajweed, Hifz, daily duas and Islamic studies.",
       provider: { "@type": "Organization", name: "NoorPath Academy", "@id": ORGANIZATION_ID },
       url: PAGE_URL,
       courseMode: "online",
@@ -121,16 +122,6 @@ const jsonLd = {
         priceCurrency: "USD",
         description: "Free 30-minute trial class — no credit card required",
         url: `${PAGE_URL}#cta`,
-        availability: "https://schema.org/InStock",
-      },
-      hasCourseInstance: {
-        "@type": "CourseInstance",
-        courseMode: "online",
-        courseSchedule: {
-          "@type": "Schedule",
-          repeatFrequency: "P1W",
-          byDay: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
-        },
       },
     },
     {
@@ -138,12 +129,11 @@ const jsonLd = {
       "@id": `${PAGE_URL}#service`,
       name: "Online Quran Classes for Kids",
       description:
-        "Live 1-on-1 online Quran classes for children ages 4–12. Certified tutors teach Noorani Qaida, Tajweed, Hifz, and Islamic studies via Zoom.",
+        "Live 1-on-1 online Quran classes for children ages 4–12, with tutor matching for Noorani Qaida, Tajweed, Hifz, and Islamic studies.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education for Children",
       audience: { "@type": "Audience", audienceType: "Muslim children ages 4–12 and their parents" },
       url: PAGE_URL,
-      areaServed: ["United Kingdom", "United States", "Canada", "Australia", "United Arab Emirates", "Germany"],
       offers: {
         "@type": "Offer",
         price: "0",
@@ -172,20 +162,20 @@ const jsonLd = {
 };
 
 const trustStats = [
-  { value: "12,000+", label: "Families Served" },
-  { value: "1-on-1", label: "Live Classes" },
-  { value: "Ijazah", label: "Certified Tutors" },
-  { value: "40+", label: "Countries" },
-  { value: "100%", label: "Free Trial" },
+  { value: SERVICE_FACTS[0].value, label: SERVICE_FACTS[0].label },
+  { value: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
+  { value: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
+  { value: SERVICE_FACTS[3].value, label: SERVICE_FACTS[3].label },
+  { value: "By request", label: "Female Tutor Matching" },
 ];
 
 const geoLocations = [
-  { country: "🇬🇧 United Kingdom", detail: "Evening slots 5–9pm GMT. UK-accent-friendly tutors. Most popular: Mon–Thu evenings." },
-  { country: "🇺🇸 United States", detail: "EST/PST/CST times available. Morning and after-school slots. Weekend Hifz sessions." },
-  { country: "🇨🇦 Canada", detail: "Eastern and Pacific timezone slots. After-school and Saturday options." },
-  { country: "🇦🇺 Australia", detail: "Weekend mornings and afternoon slots. AEST/AEDT friendly scheduling." },
-  { country: "🇦🇪 Gulf (UAE/KSA)", detail: "GST/AST evening and weekend slots. Arabic-speaking tutors available." },
-  { country: "🇩🇪 Europe", detail: "CET/CEST compatible slots. English and Urdu-speaking tutors." },
+  { country: "🇬🇧 United Kingdom", detail: "Share your GMT or BST lesson preferences." },
+  { country: "🇺🇸 United States", detail: "Share your US timezone and preferred lesson windows." },
+  { country: "🇨🇦 Canada", detail: "Share your Canadian timezone and preferred lesson windows." },
+  { country: "🇦🇺 Australia", detail: "Share your AEST or AEDT lesson preferences." },
+  { country: "🇦🇪 Gulf (UAE/KSA)", detail: "Share your GST or AST lesson preferences." },
+  { country: "🇩🇪 Europe", detail: "Share your European timezone and language preferences." },
 ];
 
 export default function OnlineQuranClassesForKidsPage() {
@@ -205,8 +195,7 @@ export default function OnlineQuranClassesForKidsPage() {
           </nav>
           <h1>Online Quran Classes for Kids</h1>
           <p>
-            Live 1-on-1 Quran classes for children ages 4–12 — certified tutors, engaging lessons, and weekly parent reports.
-            Trusted by 12,000+ families in the UK, USA, Canada, Australia and 40+ countries worldwide.{" "}
+            Live 1-on-1 Quran classes for children ages 4–12, with matching for Quran reading, Tajweed, Hifz, and female tutor requests.{" "}
             <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial — no credit card.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
@@ -222,7 +211,7 @@ export default function OnlineQuranClassesForKidsPage() {
             </a>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View Pricing</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> Loved by families in 40+ countries
+              Tutor availability confirmed after your request
             </span>
           </div>
         </div>
@@ -261,15 +250,15 @@ export default function OnlineQuranClassesForKidsPage() {
                 What a kids class looks like
               </h2>
               <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 16 }}>
-                Your child sits at home with a Qaida or Quran, joins Zoom, and spends the full session reciting with a certified tutor —
-                not watching a recording. Parents can sit nearby for the first weeks.
+                Your child sits at home with a Qaida or Quran, joins the live class, and practises directly with a tutor —
+                not watching a recording. Parents can discuss how they would like to supervise lessons.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { v: "85%+", l: "Trial → paid plan" },
-                  { v: "1 tutor", l: "Same teacher weekly" },
-                  { v: "3–5×", l: "Classes / week ideal" },
-                  { v: "0 card", l: "Needed for trial" },
+                  { v: "1-to-1", l: "Live online lesson" },
+                  { v: "30 min", l: "Free trial class" },
+                  { v: "Flexible", l: "Tutor matching" },
+                  { v: "No card", l: "Needed for trial" },
                 ].map((x) => (
                   <div key={x.l} style={{ background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "14px 12px" }}>
                     <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.1rem" }}>{x.v}</div>
@@ -281,9 +270,9 @@ export default function OnlineQuranClassesForKidsPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             {[
-              { src: "/marketing/female-hafiza-tutor.jpg", alt: "Female Hafiza teaching a girl Quran online", title: "Female tutor option", desc: "Daughters can learn with a certified Hafiza — private Zoom." },
+              { src: "/marketing/female-hafiza-tutor.jpg", alt: "Female tutor teaching a girl Quran online", title: "Female tutor request", desc: "Request a female tutor for a daughter; availability is confirmed after enquiry." },
               { src: "/marketing/kids-hifz-memorisation.jpg", alt: "Child memorising Quran at home for Hifz", title: "Hifz for kids", desc: "Sabaq–Sabqi–Manzil system once reading is fluent." },
-              { src: "/marketing/family-evening-quran.jpg", alt: "Family evening online Quran learning at home", title: "After-school slots", desc: "UK evenings, US after-school, AU weekends — fixed weekly." },
+              { src: "/marketing/family-evening-quran.jpg", alt: "Family evening online Quran learning at home", title: "Timezone matching", desc: "Share preferred lesson windows when requesting a tutor." },
             ].map((card) => (
               <figure key={card.src} className="content-card" style={{ margin: 0, padding: 0, overflow: "hidden" }}>
                 <Image src={card.src} alt={card.alt} width={700} height={467} style={{ width: "100%", height: 160, objectFit: "cover", display: "block" }} />
@@ -303,21 +292,21 @@ export default function OnlineQuranClassesForKidsPage() {
           {/* WHY NOORPATH */}
           <div style={{ textAlign: "center", marginBottom: 48, marginTop: 40 }}>
             <span className="section-eyebrow">🌙 Why Parents Choose NoorPath</span>
-            <h2 className="section-title">The Best Online Quran Classes for <em className="accent">Kids</em> — Built for Real Families</h2>
+            <h2 className="section-title">Online Quran Classes for <em className="accent">Kids</em> — Built for Families</h2>
             <p style={{ color: "var(--muted)", maxWidth: 680, margin: "12px auto 0", lineHeight: 1.7 }}>
               Not group webinars. Not pre-recorded videos. Real live teachers who know how to keep your child engaged,
-              correct pronunciation instantly, and send you progress updates every week.
+              provide live pronunciation feedback, and adapt the lesson to the child&apos;s level.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {[
-              [<Users size={22} key="u" />, "1-on-1 Private Attention", "Your child is never lost in a group. The tutor focuses 100% on your child's pace, mistakes, and motivation — every single session."],
-              [<Award size={22} key="a" />, "Ijazah-Certified Tutors", "Every teacher holds Ijazah or Al-Azhar qualification, with specific experience teaching children from ages 4 to 12."],
-              [<Shield size={22} key="s" />, "Safe & Parent-Monitored", "Zoom/Google Meet only. No private chat. Parents welcome to observe any session — especially in the first month."],
-              [<Clock size={22} key="c" />, "Flexible Scheduling", "UK evenings, US mornings/evenings, Canadian after-school, Australian weekend slots — always consistent and fixed."],
-              [<BookOpen size={22} key="b" />, "Full Kids Curriculum", "Noorani Qaida → Quran reading → Tajweed → duas, Hadith, seerah & Islamic manners — all in one structured program."],
-              [<CheckCircle size={22} key="ch" />, "Weekly Progress Reports", "Know exactly what your child learned, what comes next, and how you can support their practice at home."],
+              [<Users size={22} key="u" />, "1-on-1 Attention", "The tutor can adapt reading practice, correction, and lesson pace to the individual learner."],
+              [<Award size={22} key="a" />, "Credentials Confirmed", "Relevant qualifications and experience teaching children are confirmed for the proposed tutor before enrolment."],
+              [<Shield size={22} key="s" />, "Parent-Aware Lessons", "Parents can discuss supervision and communication preferences before lessons begin."],
+              [<Clock size={22} key="c" />, "Timezone Matching", "Share your timezone and preferred lesson windows; availability is confirmed after your request."],
+              [<BookOpen size={22} key="b" />, "Kids Learning Subjects", "Request Noorani Qaida, Quran reading, Tajweed, Hifz, duas, or Islamic studies."],
+              [<CheckCircle size={22} key="ch" />, "Trial Before Enrolment", "Use the free trial to assess communication, lesson pace, and teaching fit before choosing a plan."],
             ].map(([icon, title, desc]) => (
               <div key={String(title)} className="content-card">
                 <div style={{ color: "var(--emerald)", marginBottom: 12 }}>{icon}</div>
@@ -329,13 +318,13 @@ export default function OnlineQuranClassesForKidsPage() {
 
           {/* AGE GROUPS */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Quran Learning by Age — What to Expect
+            Quran Learning by Age — Possible Focus
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
-              ["Ages 4–6", "20–25 min sessions", "Arabic letters through games, colours, and short duas. Building love for Quran before any academic pressure. Focus on fun engagement and letter recognition."],
-              ["Ages 7–9", "30 min sessions", "Noorani Qaida completion, Surah Al-Fatiha, basic Tajweed rules, daily duas and Islamic manners. Children begin reading the Quran independently."],
-              ["Ages 10–12", "35–45 min sessions", "Fluent Quran reading, full Tajweed rules, optional Hifz start, Arabic vocabulary, Islamic studies and character building before teenage years."],
+              ["Ages 4–6", "Foundation focus", "Arabic letters, sounds, short duas, and visual activities can be selected according to attention span and current level."],
+              ["Ages 7–9", "Reading focus", "Possible topics include Noorani Qaida, short surahs, introductory Tajweed, daily duas, and Islamic manners."],
+              ["Ages 10–12", "Individual goals", "Possible topics include Quran reading, Tajweed, Hifz, Arabic vocabulary, and Islamic studies."],
             ].map(([age, duration, desc]) => (
               <div key={String(age)} className="content-card" style={{ borderTop: "3px solid var(--emerald)" }}>
                 <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.1rem", marginBottom: 4 }}>{age}</div>
@@ -348,7 +337,7 @@ export default function OnlineQuranClassesForKidsPage() {
           <div className="content-card" style={{ marginBottom: 48 }}>
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 8 }}>Parent success checklist</h2>
             <p style={{ color: "var(--muted)", fontSize: ".9rem", marginBottom: 16, lineHeight: 1.6 }}>
-              Families who hit these five points see the fastest progress in the first 90 days.
+              These practical steps can support a consistent learning routine without promising a fixed result or timeline.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {[
@@ -356,8 +345,8 @@ export default function OnlineQuranClassesForKidsPage() {
                 ["Quiet corner", "Tablet + headphones beat a noisy living room"],
                 ["Short home practice", "5–10 minutes on off-days beats cramming"],
                 ["Female tutor if preferred", "Request on the trial form for daughters"],
-                ["Weekly report read", "Ask the tutor one clarifying question each week"],
-                ["Sibling plan early", "Family discount up to 20% for 2+ kids"],
+                ["Review lesson notes", "Ask the tutor clarifying questions when needed"],
+                ["Sibling plan", `Discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%`],
               ].map(([t, d]) => (
                 <div key={t} style={{ display: "flex", gap: 10, padding: "12px 14px", background: "rgba(10,110,79,.04)", borderRadius: 10 }}>
                   <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} />
@@ -372,31 +361,31 @@ export default function OnlineQuranClassesForKidsPage() {
 
           {/* CURRICULUM TABLE */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Kids Quran Curriculum — Month by Month
+            Kids Quran Curriculum — Learning Stages
           </h2>
           <div style={{ overflowX: "auto", marginBottom: 48 }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".88rem" }}>
               <thead>
                 <tr style={{ background: "var(--emerald)", color: "#fff" }}>
-                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Month</th>
+                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Stage</th>
                   <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Focus Area</th>
                   <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>What Your Child Learns</th>
-                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Outcome</th>
+                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Tutor Support</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ["Month 1", "Arabic Alphabet", "Letter shapes, sounds (Makharij), harakat (vowels), short duas", "Recognises all 29 Arabic letters"],
-                  ["Month 2–3", "Noorani Qaida", "Letter joining, tanween, shadda, madd rules with exercises", "Reads simple Arabic words fluently"],
-                  ["Month 4–5", "Quran Reading", "Short Surahs (Ikhlas, Nas, Falaq, Al-Fatiha), reading with Tajweed", "Reads from the Quran independently"],
-                  ["Month 6–8", "Tajweed Rules", "Qalqalah, Ghunna, Ikhfa, Iqlab, Idgham — applied during recitation", "Recites with proper Tajweed rules"],
-                  ["Month 9–12", "Advanced / Specialised", "Hifz (memorisation), Arabic vocabulary, Islamic studies or Seerah", "Personalised advanced learning path"],
-                ].map(([month, focus, learns, outcome]) => (
-                  <tr key={String(month)} style={{ borderBottom: "1px solid var(--border)" }}>
-                    <td style={{ padding: "12px 16px", fontWeight: 700, color: "var(--emerald)", whiteSpace: "nowrap" }}>{month}</td>
+                  ["Foundation", "Arabic Alphabet", "Letter shapes, sounds (Makharij), harakat (vowels), short duas", "Introduce and practise at the child's pace"],
+                  ["Reading Basics", "Noorani Qaida", "Letter joining, tanween, shadda, and madd exercises", "Correct reading patterns and pronunciation"],
+                  ["Quran Reading", "Guided Recitation", "Short surahs and reading practice with introductory Tajweed", "Provide live correction and suitable practice"],
+                  ["Tajweed", "Rule Application", "Qalqalah, Ghunna, Ikhfa, Iqlab, and Idgham during recitation", "Select rules appropriate to the learner's level"],
+                  ["Individual Goal", "Specialised Study", "Hifz, Arabic vocabulary, Islamic studies, or Seerah", "Agree a personalised learning focus"],
+                ].map(([stage, focus, learns, support]) => (
+                  <tr key={String(stage)} style={{ borderBottom: "1px solid var(--border)" }}>
+                    <td style={{ padding: "12px 16px", fontWeight: 700, color: "var(--emerald)", whiteSpace: "nowrap" }}>{stage}</td>
                     <td style={{ padding: "12px 16px", fontWeight: 600 }}>{focus}</td>
                     <td style={{ padding: "12px 16px", color: "var(--muted)" }}>{learns}</td>
-                    <td style={{ padding: "12px 16px", color: "var(--charcoal)", fontSize: ".82rem" }}>{outcome}</td>
+                    <td style={{ padding: "12px 16px", color: "var(--charcoal)", fontSize: ".82rem" }}>{support}</td>
                   </tr>
                 ))}
               </tbody>
@@ -409,9 +398,9 @@ export default function OnlineQuranClassesForKidsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {[
-              ["1", "Book Free Trial", "Fill the form below. We match your child with the best tutor for their age, level, and timezone — within 24 hours."],
+              ["1", "Book Free Trial", "Fill the form below with your child's age, level, goals, timezone, and tutor preference. We will confirm availability."],
               ["2", "Attend First Class", "30-minute live lesson on Zoom. Your child meets their teacher and starts learning immediately. Parents welcome to join."],
-              ["3", "Choose Your Plan", "Love the trial? Pick a monthly plan. Family discounts for 2+ siblings. Cancel anytime — no contracts."],
+              ["3", "Choose Your Plan", `After the trial, choose a monthly plan if it fits. Sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%.`],
             ].map(([num, title, desc]) => (
               <div key={String(num)} style={{ textAlign: "center", padding: "24px 16px" }}>
                 <div style={{
@@ -430,11 +419,11 @@ export default function OnlineQuranClassesForKidsPage() {
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
               <Globe size={20} color="var(--emerald)" />
               <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", margin: 0 }}>
-                Kids Quran Classes Available in Your Country
+                Request Kids Quran Classes by Timezone
               </h2>
             </div>
             <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 24, lineHeight: 1.6 }}>
-              We serve Muslim families in 40+ countries with timezone-compatible scheduling. Your child&apos;s class time is always consistent and never changes without notice.
+              Share your timezone and preferred lesson windows. Tutor availability is confirmed after your request.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {geoLocations.map((loc) => (
@@ -473,7 +462,7 @@ export default function OnlineQuranClassesForKidsPage() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
               {[
                 ["/blog/online-quran-classes-for-kids-parent-guide", "Complete Parent Guide 2026"],
-                ["/blog/best-age-to-start-quran-learning", "Best Age to Start Quran"],
+                ["/blog/best-age-to-start-quran-learning", "When to Start Quran Learning"],
                 ["/blog/how-to-teach-quran-to-kids", "How to Teach Quran at Home"],
                 ["/courses/quran-classes-for-kids", "Kids Quran Course Details"],
                 ["/female-quran-teacher-online", "Female Quran Teacher"],
@@ -490,7 +479,7 @@ export default function OnlineQuranClassesForKidsPage() {
 
           {/* FAQs */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Parents Ask Us This Every Day
+            Common Questions from Parents
           </h2>
           <div className="max-w-[700px] mx-auto" style={{ marginBottom: 48 }}>
             {faqs.map((f, i) => (
@@ -512,16 +501,15 @@ export default function OnlineQuranClassesForKidsPage() {
                 Book Your Child&apos;s<br /><em style={{ color: "var(--gold-lt)" }}>Free Quran Trial Class</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 16, lineHeight: 1.7 }}>
-                30 minutes. 1 certified tutor. 1 happy child learning Quran. No credit card. No commitment.
-                Over 85% of parents who try a class continue with a monthly plan.
+                30 minutes. One live 1-to-1 trial. No credit card required. Tutor availability is confirmed after your request.
               </p>
               <ul style={{ color: "rgba(255,255,255,.8)", fontSize: ".9rem", lineHeight: 2, paddingLeft: 20 }}>
                 <li>✓ Ages 4–12 welcome</li>
-                <li>✓ Male or female tutor available</li>
-                <li>✓ UK, US, Canada, Australia timezones</li>
-                <li>✓ Sibling family discounts up to 20%</li>
-                <li>✓ Weekly parent progress reports</li>
-                <li>✓ Cancel anytime — no contracts</li>
+                <li>✓ Male or female tutor requests</li>
+                <li>✓ Timezone preferences considered</li>
+                <li>✓ Sibling discounts up to {FAMILY_DISCOUNTS[2].discountPercent}%</li>
+                <li>✓ Credentials confirmed before enrolment</li>
+                <li>✓ Free trial with no credit card</li>
               </ul>
             </div>
             <div className="cta-form-wrap">

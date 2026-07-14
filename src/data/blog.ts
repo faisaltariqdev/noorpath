@@ -672,7 +672,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "benefits-of-online-quran-classes",
     title: "15 Benefits of Online Quran Classes for Kids & Adults (2026)",
-    description: "Discover why online Quran classes are better than local classes — flexibility, certified tutors, 1-on-1 attention, and more benefits explained.",
+    description: "Compare online Quran classes with local classes by lesson format, tutor evidence, scheduling, safeguarding, travel and one-to-one attention.",
     category: "Online Learning",
     date: "2025-08-15",
     readTime: "9 min",
@@ -849,12 +849,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "best-online-quran-academy-guide",
     title: "Best Online Quran Academy 2026 — How to Choose & What to Look For",
-    description: "Looking for the best online Quran academy? This guide reveals what top academies offer, red flags to avoid, and why NoorPath is trusted by 12,000+ families worldwide.",
+    description: "Looking for the best online Quran academy for your needs? Compare tutor evidence, safeguarding, lesson format, pricing, trial terms and red flags before choosing.",
     category: "Online Learning",
     date: "2026-05-01",
     readTime: "12 min",
     keywords: ["best online quran academy","online quran academy","quran learning online","top quran academy online","choose quran academy"],
-    excerpt: "With hundreds of online Quran academies, how do you choose the right one? We reveal the 7 must-have qualities — and why 12,000+ families chose NoorPath Academy.",
+    excerpt: "Compare seven practical qualities when choosing an online Quran academy, including verifiable tutor details, safeguarding, pricing and trial terms.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
@@ -1069,7 +1069,7 @@ export const blogPosts: BlogPost[] = [
       "questions to ask quran tutor", "good quran teacher qualities",
     ],
     excerpt:
-      "Hundreds of academies claim 'certified tutors' — most parents can't tell the difference until months are wasted. This 12-point checklist shows exactly how to test a Quran teacher in the trial class, verify Ijazah claims, and spot pricing red flags.",
+      "Academies may claim 'certified tutors' without showing evidence for the proposed teacher. Use this 12-point checklist to assess a trial, verify relevant credentials and spot pricing or safeguarding gaps.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {

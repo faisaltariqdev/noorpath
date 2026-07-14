@@ -1,42 +1,81 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle, Clock, Users, Award, Star } from "lucide-react";
+import { CheckCircle, Users, Award } from "lucide-react";
 import { courses } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: { absolute: "Online Quran & Islamic Courses — All Programs | NoorPath Academy 2026" },
   description:
-    "Browse 7 certified online Quran courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes & daily duas. Ijazah tutors, free 30-min trial. UK, USA, Canada, Australia.",
+    "Browse 7 online Quran courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes and daily duas. Live 1-to-1 lessons and a free 30-minute trial.",
   keywords: [
     "online quran courses", "quran classes online", "noorani qaida online", "tajweed classes online",
     "hifz program online", "arabic language online", "islamic studies online", "quran for kids online",
-    "online quran tutor", "quran learning programs", "best online quran course", "certified quran teacher online",
+    "online quran tutor", "quran learning programs", "online quran course", "quran teacher online",
   ],
   alternates: { canonical: "https://www.noorpath.online/courses" },
   openGraph: {
     title: "Online Quran & Islamic Courses — All Programs | NoorPath Academy",
-    description: "7 certified courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic Studies & more. Ijazah tutors, family plans. Free trial.",
+    description: "7 online courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic Studies and more. Live 1-to-1 lessons and a free trial.",
     url: "https://www.noorpath.online/courses",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Courses — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran & Islamic Courses | NoorPath Academy",
-    description: "7 courses: Qaida, Tajweed, Hifz, Arabic, Islamic Studies. Certified tutors. Free trial.",
+    description: "7 courses: Qaida, Tajweed, Hifz, Arabic and Islamic Studies. Free 30-minute trial.",
     images: ["/og-image.png"],
+  },
+};
+
+const courseTrustCopy: Record<string, { desc: string; features: string[]; audience: string }> = {
+  "noorani-qaida-online": {
+    desc: "Arabic letters, pronunciation, and reading foundations for Quran beginners.",
+    features: ["Arabic alphabet from scratch", "Makharij practice", "Harakat and vowel signs", "Tanwin and Sukoon rules", "Suitable for children and adults"],
+    audience: "Children and adults",
+  },
+  "tajweed-classes-online": {
+    desc: "Learn and practise Tajweed rules through guided Quran recitation.",
+    features: ["Noon and Meem Sakinah", "Madd and Qalqalah", "Ghunna practice", "Live recitation correction", "Rule application in Quran verses"],
+    audience: "Children and adults who can read Arabic",
+  },
+  "hifz-program-online": {
+    desc: "Structured Quran memorisation with new lesson planning and ongoing revision.",
+    features: ["Individual memorisation plan", "New passage practice", "Recent revision", "Long-term revision", "Pace adjusted after assessment"],
+    audience: "Children and adults pursuing Hifz",
+  },
+  "quran-classes-for-kids": {
+    desc: "Quran reading for children with optional Qaida, duas, and Islamic studies topics.",
+    features: ["Noorani Qaida or Quran recitation", "Daily duas", "Short Hadith", "Islamic manners and values", "1-to-1 lesson format"],
+    audience: "Children ages 4–12",
+  },
+  "arabic-language-online": {
+    desc: "Quranic and Modern Standard Arabic lessons covering grammar and vocabulary.",
+    features: ["Quranic Arabic fundamentals", "Arabic grammar", "Vocabulary building", "Quranic word study", "Conversational Arabic requests"],
+    audience: "Children and adults",
+  },
+  "islamic-studies-online": {
+    desc: "Islamic studies lessons covering Fiqh, Aqeedah, Seerah, history, and character.",
+    features: ["Pillars and Fiqh basics", "Seerah", "Aqeedah", "Islamic history", "Character and morals"],
+    audience: "Children and adults",
+  },
+  "daily-duas-for-kids": {
+    desc: "Daily Islamic supplications for children with Arabic, transliteration, and meaning.",
+    features: ["Morning and evening duas", "Mealtime duas", "Sleep and waking duas", "Travel duas", "Meaning and memorisation practice"],
+    audience: "Children",
   },
 };
 
 const faqs = [
   { q: "Which Quran course should I start with?", a: "If your child or you have no Arabic reading ability, start with Noorani Qaida — it teaches the Arabic alphabet and pronunciation from scratch. If you can already read Arabic but want to improve recitation, start with the Tajweed course. If you want memorization, the Hifz Program is for you. Book a free trial and your tutor will recommend the right starting point." },
-  { q: "How long does each course take to complete?", a: "Noorani Qaida: 3–6 months (3 sessions/week). Tajweed: 6–12 months. Hifz (full Quran): 2–5 years depending on age and pace. Arabic Language: 6–18 months. Islamic Studies: ongoing program. Course duration varies by student age, sessions per week, and practice time." },
-  { q: "Can my child take multiple courses at once?", a: "Yes. Many families enroll children in Noorani Qaida + Daily Duas, or Quran recitation + Islamic Studies simultaneously. Our tutors can combine related subjects in a single session or schedule separate sessions for each subject." },
-  { q: "Are the courses available for adults?", a: "All courses are available for adults. We have adult-specialist tutors who are experienced working with adult learners — patient, non-judgmental, and skilled at teaching busy adults who juggle work and family. Many adults start from zero with Noorani Qaida." },
-  { q: "Do courses include female Quran teachers?", a: "Yes. Every course at NoorPath Academy is available with certified female tutors (Hafiza). Simply request a female teacher when booking, and we will assign a certified female tutor for all lessons." },
-  { q: "How much do the courses cost?", a: "Plans start from $29/month (1 session/week). Standard plan with 2 sessions/week is $49/month. Family discounts are available for 2+ siblings. Your first 30-minute trial class is always free — no credit card required." },
+  { q: "How long does each course take to complete?", a: "Course length varies by starting level, learning goals, lesson frequency, and practice between classes. After assessing the learner, the tutor can explain the recommended sequence without promising a fixed completion date." },
+  { q: "Can my child take multiple courses at once?", a: "You can request a learning plan that combines related subjects, such as Noorani Qaida with daily duas or Quran recitation with Islamic studies. The suitable lesson structure is confirmed after the learner's needs are reviewed." },
+  { q: "Are the courses available for adults?", a: "Adult learners can request matching for Noorani Qaida, Quran reading, Tajweed, Hifz, Arabic, or Islamic studies. The suitable course and tutor are confirmed after reviewing the learner's level and goals." },
+  { q: "Do courses include female Quran teachers?", a: "You can request a female Quran teacher when booking. Availability depends on the subject and schedule and is confirmed after your request." },
+  { q: "How much do the courses cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.durationMinutes}-minute trial is free and requires no credit card.` },
 ];
 
 const coursesJsonLd = {
@@ -55,13 +94,13 @@ const coursesJsonLd = {
         item: {
           "@type": "Course",
           name: c.title,
-          description: c.desc,
+          description: courseTrustCopy[c.slug].desc,
           url: `https://www.noorpath.online/courses/${c.slug}`,
           provider: ORGANIZATION_REF,
           educationalLevel: c.level,
-          typicalAgeRange: c.age,
+          typicalAgeRange: courseTrustCopy[c.slug].audience,
           courseMode: "online",
-          teaches: c.features.join(", "),
+          teaches: courseTrustCopy[c.slug].features.join(", "),
         },
       })),
     },
@@ -98,13 +137,13 @@ export default function CoursesPage() {
           </nav>
           <h1>Online Quran &amp; Islamic Courses</h1>
           <p>
-            From complete beginners to advanced Hifz students — 7 certified courses with Ijazah-qualified tutors, flexible schedules, family plans, and female teachers on request.{" "}
+            From complete beginners to Hifz students — 7 online courses with live 1-to-1 lessons, family plans, and female tutor requests subject to confirmed availability.{" "}
             <strong style={{ color: "var(--gold-lt)" }}>First class is free.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 20, alignItems: "center" }}>
             <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> 4.9/5 · 12,000+ students
+              Tutor credentials and availability confirmed before enrolment
             </span>
           </div>
         </div>
@@ -116,10 +155,10 @@ export default function CoursesPage() {
           {/* Trust stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
-              { value: "7", label: "Certified courses" },
-              { value: "250+", label: "Ijazah-certified tutors" },
-              { value: "$29/mo", label: "Starting price" },
-              { value: "Free", label: "First trial class" },
+              { value: String(courses.length), label: "Online courses" },
+              { value: "1-to-1", label: "Live lessons" },
+              { value: `$${PRICING_PLANS[0].monthlyPriceUsd}/mo`, label: "Starting price" },
+              { value: `${TRIAL.durationMinutes} min`, label: "Free trial" },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "22px 12px" }}>
                 <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--emerald)", lineHeight: 1.2 }}>{s.value}</div>
@@ -152,17 +191,16 @@ export default function CoursesPage() {
                   </div>
                 </div>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", color: "var(--charcoal)", marginBottom: 10 }}>{c.title}</h2>
-                <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, marginBottom: 16 }}>{c.desc}</p>
+                <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, marginBottom: 16 }}>{courseTrustCopy[c.slug].desc}</p>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px 0", display: "flex", flexDirection: "column", gap: 8 }}>
-                  {c.features.map((f) => (
+                  {courseTrustCopy[c.slug].features.map((f) => (
                     <li key={f} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: ".85rem", color: "var(--slate)" }}>
                       <CheckCircle size={14} style={{ color: "var(--emerald)", flexShrink: 0 }} /> {f}
                     </li>
                   ))}
                 </ul>
                 <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16, fontSize: ".8rem", color: "var(--muted)" }}>
-                  <span style={{ display: "flex", alignItems: "center", gap: 4 }}><Clock size={13} style={{ color: "var(--emerald)" }} /> {c.duration}</span>
-                  <span style={{ display: "flex", alignItems: "center", gap: 4 }}><Users size={13} style={{ color: "var(--emerald)" }} /> {c.sessionsPerWeek}</span>
+                  <span style={{ display: "flex", alignItems: "center", gap: 4 }}><Users size={13} style={{ color: "var(--emerald)" }} /> 1-to-1 online lessons</span>
                 </div>
                 <div style={{ display: "flex", gap: 10 }}>
                   <Link href={`/courses/${c.slug}`} style={{ flex: 1, textAlign: "center", background: "var(--emerald)", color: "#fff", padding: "11px 0", borderRadius: 10, fontWeight: 700, textDecoration: "none", fontSize: ".88rem" }}>
@@ -179,13 +217,13 @@ export default function CoursesPage() {
           {/* Who are the tutors */}
           <div style={{ textAlign: "center", marginBottom: 32 }}>
             <span className="section-eyebrow"><Award size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Tutor Quality</span>
-            <h2 className="section-title">All Courses Taught by <em className="accent">Certified Tutors</em></h2>
+            <h2 className="section-title">Tutor Matching for <em className="accent">Each Learning Goal</em></h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {[
-              { icon: <Award size={22} />, title: "Ijazah Certified", desc: "Tutors hold unbroken chain of Quran authorization — the highest standard in Quran teaching." },
-              { icon: <Users size={22} />, title: "Female Tutors Available", desc: "Certified female teachers (Hafiza) for sisters and daughters — 100% female sessions." },
-              { icon: <CheckCircle size={22} />, title: "Rigorously Vetted", desc: "Background checked, teaching-assessed, and monthly parent-feedback reviewed. Only top 15% are accepted." },
+              { icon: <Award size={22} />, title: "Relevant Credentials", desc: "Specific qualifications and teaching experience are confirmed for the proposed tutor before enrolment." },
+              { icon: <Users size={22} />, title: "Female Tutor Requests", desc: "Sisters and families may request a female tutor; subject and schedule availability are confirmed after enquiry." },
+              { icon: <CheckCircle size={22} />, title: "Trial Before Enrolment", desc: "Use the free 30-minute trial to assess lesson fit before selecting a monthly plan." },
             ].map((f) => (
               <div key={f.title} className="content-card" style={{ textAlign: "center" }}>
                 <div style={{ color: "var(--emerald)", display: "flex", justifyContent: "center", marginBottom: 12 }}>{f.icon}</div>

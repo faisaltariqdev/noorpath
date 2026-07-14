@@ -1,54 +1,55 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, Globe, CheckCircle, Star, MapPin } from "lucide-react";
+import { Clock, Globe, CheckCircle, MapPin } from "lucide-react";
 import { locations } from "@/data/locations";
 import { cities } from "@/data/cities";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Online Quran Classes by Country — USA, UK, Canada, Australia & 40+ Nations | NoorPath" },
+  title: { absolute: "Online Quran Classes by Country — USA, UK, Canada, Australia & More | NoorPath" },
   description:
-    "Learn Quran online in USA, UK, Canada, Australia, UAE, Pakistan, Germany & 40+ countries. Certified 1-on-1 tutors, all timezones, female teachers available, free 30-min trial.",
+    "Request online Quran classes in the USA, UK, Canada, Australia, UAE, Pakistan, Germany and more. Live 1-on-1 lessons with timezone-based tutor matching.",
   keywords: [
     "online quran classes usa", "online quran classes uk", "online quran classes canada",
     "online quran classes australia", "learn quran online worldwide", "quran teacher online",
     "online quran academy", "quran classes by country", "islamic education online",
     "online quran uae", "online quran pakistan", "online quran germany", "online quran malaysia",
-    "quran classes all countries", "online quran worldwide",
+    "quran classes by timezone", "online quran worldwide",
   ],
   alternates: { canonical: "https://www.noorpath.online/locations" },
   openGraph: {
     title: "Online Quran Classes by Location — USA, UK, Canada, Australia & More",
-    description: "NoorPath Academy serves 12,000+ students in 40+ countries. Certified tutors, all timezones. Free trial.",
+    description: "Explore live 1-on-1 online Quran classes by country and request tutor matching for your timezone.",
     url: "https://www.noorpath.online/locations",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Classes Worldwide — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Classes by Location | NoorPath Academy",
-    description: "USA, UK, Canada, Australia, UAE and 40+ countries. Certified tutors. Free trial.",
+    description: "Online Quran classes for the USA, UK, Canada, Australia, UAE and more, with availability confirmed after matching.",
     images: ["/og-image.png"],
   },
 };
 
 const faqs = [
-  { q: "Do you offer online Quran classes in my country?", a: "Yes — NoorPath Academy serves students in 40+ countries including USA, UK, Canada, Australia, UAE, Saudi Arabia, Pakistan, Germany, Malaysia, Bangladesh, South Africa, France, Netherlands, and many more. If you do not see your country listed, contact us — we almost certainly have a tutor in your timezone." },
-  { q: "What timezone do the online Quran classes run in?", a: "We have tutors available across all major timezones. UK students typically book GMT/BST morning and evening slots. US students can book across EST, CST, MST, and PST. Australia (AEST), Canada, UAE and other country-specific availability is shown on each location page." },
-  { q: "Are online Quran classes available in the UK?", a: "Yes. NoorPath Academy has a large pool of tutors available for UK families in GMT and BST timezones. Popular slots include after-school (4–7pm) and weekend morning classes. See our UK Quran classes page for details." },
-  { q: "Can I learn Quran online if I live in the USA?", a: "Absolutely. NoorPath serves thousands of students across all US states and timezones — EST, CST, MST, and PST. Evening and weekend slots are available in all zones. See our USA online Quran classes page for more." },
-  { q: "Are there female Quran teachers available internationally?", a: "Yes. Certified female Quran teachers (Hafiza) are available for students in all 40+ countries. Simply request a female teacher when booking your free trial and we will match you with a certified Hafiza in your timezone." },
-  { q: "Is there a free trial for international students?", a: "Yes. All students worldwide get a free 30-minute trial class regardless of their country. No credit card required. The trial includes a level assessment and a personalised learning plan from your tutor." },
+  { q: "Can I request online Quran classes in my country?", a: "NoorPath accepts tutor-matching requests from the countries listed here, including the USA, UK, Canada, Australia, UAE, Saudi Arabia, Pakistan, Germany, Malaysia, Bangladesh, South Africa, France and the Netherlands. If your country is not listed, contact us to check availability in your timezone." },
+  { q: "What timezone do the online Quran classes run in?", a: "You can request a lesson time in your local timezone. GMT/BST, EST, CST, MST, PST, AEST, GST and other timezone preferences are subject to tutor matching and confirmed after your request." },
+  { q: "Are online Quran classes available in the UK?", a: "You can request GMT or BST lessons for a learner in the UK. After-school and weekend preferences are subject to tutor matching. See our UK Quran classes page for local scheduling context." },
+  { q: "Can I learn Quran online if I live in the USA?", a: "You can request EST, CST, MST or PST lessons from anywhere in the USA. Evening and weekend preferences are subject to tutor matching. See our USA online Quran classes page for more." },
+  { q: "Can I request a female Quran teacher?", a: "Yes. Request a female tutor when booking your trial; tutor and timezone availability are confirmed after matching." },
+  { q: "Is there a free trial for international students?", a: `Yes. The trial is ${TRIAL.durationMinutes} minutes, costs $${TRIAL.price}, and does not require a credit card. ${TRIAL.availabilityNote}` },
 ];
 
 const timezones = [
-  { zone: "GMT/BST", flag: "🇬🇧", label: "United Kingdom", slots: "8am–9pm" },
-  { zone: "EST/PST", flag: "🇺🇸", label: "United States", slots: "7am–10pm" },
-  { zone: "EST/PST", flag: "🇨🇦", label: "Canada", slots: "8am–10pm" },
-  { zone: "AEST/AEDT", flag: "🇦🇺", label: "Australia", slots: "7am–9pm" },
-  { zone: "GST", flag: "🇦🇪", label: "UAE", slots: "8am–11pm" },
-  { zone: "PKT", flag: "🇵🇰", label: "Pakistan", slots: "7am–10pm" },
+  { zone: "GMT/BST", flag: "🇬🇧", label: "United Kingdom" },
+  { zone: "EST/CST/MST/PST", flag: "🇺🇸", label: "United States" },
+  { zone: "Provincial timezones", flag: "🇨🇦", label: "Canada" },
+  { zone: "AEST/AEDT/AWST", flag: "🇦🇺", label: "Australia" },
+  { zone: "GST", flag: "🇦🇪", label: "UAE" },
+  { zone: "PKT", flag: "🇵🇰", label: "Pakistan" },
 ];
 
 const locationsJsonLd = {
@@ -57,7 +58,7 @@ const locationsJsonLd = {
     {
       "@type": "Service",
       name: "Online Quran Classes — Worldwide",
-      description: "NoorPath Academy provides online Quran education to families in 40+ countries. All timezones covered.",
+      description: "NoorPath Academy provides live 1-on-1 online Quran lessons with country and timezone-based tutor matching.",
       provider: ORGANIZATION_REF,
       areaServed: locations.map((l) => l.country),
       serviceType: "Online Quran Education",
@@ -107,12 +108,12 @@ export default function LocationsPage() {
           </nav>
           <h1>Online Quran Classes for Families Worldwide</h1>
           <p>
-            NoorPath Academy serves <strong style={{ color: "var(--gold-lt)" }}>12,000+ students in 40+ countries</strong> — certified 1-on-1 Quran classes in your timezone, morning through evening, every day of the week. First class is free.
+            Explore <strong style={{ color: "var(--gold-lt)" }}>live 1-on-1 online Quran classes</strong> by country and request a tutor for your timezone. Scheduling is subject to tutor matching.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 20, alignItems: "center" }}>
             <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              <Star size={14} fill="var(--gold)" color="var(--gold)" /> Available in your timezone
+              <Clock size={14} color="var(--gold)" /> Availability confirmed after matching
             </span>
           </div>
         </div>
@@ -124,10 +125,10 @@ export default function LocationsPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
-              { value: "40+", label: "Countries served" },
-              { value: "12,000+", label: "Families worldwide" },
-              { value: "24/7", label: "Timezone coverage" },
-              { value: "Free", label: "First trial class" },
+              { value: String(locations.length), label: "Country guides" },
+              { value: "1-to-1", label: "Live online lessons" },
+              { value: `${TRIAL.durationMinutes} min`, label: "Trial duration" },
+              { value: `$${TRIAL.price}`, label: "Trial price" },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "22px 12px" }}>
                 <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--emerald)", lineHeight: 1.2 }}>{s.value}</div>
@@ -138,7 +139,7 @@ export default function LocationsPage() {
 
           {/* Country cards */}
           <div style={{ textAlign: "center", marginBottom: 32 }}>
-            <span className="section-eyebrow"><Globe size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> 40+ Countries</span>
+            <span className="section-eyebrow"><Globe size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Country Guides</span>
             <h2 className="section-title">Find <em className="accent">Quran Classes</em> in Your Country</h2>
             <p className="section-desc center">
               Each country page has local timezone slots, country-specific tutor availability, and tailored scheduling options for your family.
@@ -170,7 +171,7 @@ export default function LocationsPage() {
             <span className="section-eyebrow"><MapPin size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Popular Cities</span>
             <h2 className="section-title">Quran Classes in <em className="accent">Your City</em></h2>
             <p className="section-desc center">
-              Dedicated city guides with local timezone slots, community details, and certified tutors — no travel needed.
+              Dedicated city guides with timezone context, community details, and online tutor matching — no travel needed.
             </p>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 64 }}>
@@ -186,7 +187,7 @@ export default function LocationsPage() {
             <span className="section-eyebrow"><Clock size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Scheduling</span>
             <h2 className="section-title">Available in <em className="accent">Your Timezone</em></h2>
             <p className="section-desc center">
-              NoorPath tutors are available from early morning to late evening across all major timezones. No matter where you live, we have a slot that fits your family routine.
+              Request a preferred lesson window in your local timezone. Exact availability is confirmed after a suitable tutor is matched.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mb-16">
@@ -196,27 +197,27 @@ export default function LocationsPage() {
                 <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 4 }}>{tz.label}</div>
                 <div style={{ fontSize: ".78rem", color: "var(--emerald)", fontWeight: 600, marginBottom: 4 }}>{tz.zone}</div>
                 <div style={{ fontSize: ".82rem", color: "var(--muted)", display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
-                  <Clock size={12} /> {tz.slots} local time
+                  <Clock size={12} /> Subject to tutor matching
                 </div>
               </div>
             ))}
           </div>
 
-          {/* What you get in every country */}
+          {/* Online lesson options */}
           <div style={{ textAlign: "center", marginBottom: 32 }}>
-            <span className="section-eyebrow">✅ Every Location</span>
-            <h2 className="section-title">Same Quality <em className="accent">Everywhere</em></h2>
+            <span className="section-eyebrow">✅ Lesson Options</span>
+            <h2 className="section-title">Plan Your <em className="accent">Online Lessons</em></h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
             {[
-              "Certified Ijazah-qualified tutors in your timezone",
-              "Female tutors available for sisters and daughters",
+              "Tutor matching based on level and timezone",
+              "Female tutor requests for sisters and daughters",
               "1-on-1 private sessions via Zoom or Google Meet",
-              "Flexible scheduling — morning, evening, or weekend",
-              "Weekly progress reports for parents",
-              "Family discount plans for 2+ siblings",
-              "Free 30-minute trial — no credit card required",
-              "All courses: Qaida, Tajweed, Hifz, Arabic, Islamic Studies",
+              "Morning, evening, or weekend scheduling requests",
+              `${PRICING_PLANS[0].name}: $${PRICING_PLANS[0].monthlyPriceUsd}/month`,
+              `Sibling discounts: ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings} ${discountPercent}%`).join(" · ")}`,
+              `${TRIAL.durationMinutes}-minute trial — $${TRIAL.price}, no credit card`,
+              "Qaida, Tajweed, Hifz, Arabic, and Islamic Studies options",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: 10, alignItems: "flex-start", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, padding: "14px 18px" }}>
                 <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 1, flexShrink: 0 }} />
@@ -247,7 +248,7 @@ export default function LocationsPage() {
               Start Your Free Trial <em style={{ color: "var(--gold-lt)" }}>Today</em>
             </h2>
             <p style={{ color: "rgba(255,255,255,.8)", marginBottom: 24 }}>
-              No credit card. No commitment. Just a free 30-minute class with a certified tutor in your timezone.
+              {TRIAL.durationMinutes}-minute trial for ${TRIAL.price}; no credit card required. {TRIAL.availabilityNote}
             </p>
             <Link href="/online-quran-classes#cta" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>
               Book Free Trial →

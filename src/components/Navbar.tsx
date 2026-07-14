@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X, GraduationCap } from "lucide-react";
+import { TRIAL } from "@/lib/academyFacts";
 
 const navLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
@@ -42,13 +43,13 @@ export default function Navbar() {
           }}
         >
           🎁{" "}
-          <strong style={{ fontWeight: 700 }}>FREE trial class</strong>{" "}
-          — Beginner to advanced, all ages. No credit card required.{" "}
+          <strong style={{ fontWeight: 700 }}>Free {TRIAL.durationMinutes}-minute trial</strong>{" "}
+          — No credit card required. Tutor availability is confirmed after your request.{" "}
           <Link
             href="/online-quran-classes#cta"
             style={{ color: "#e8b84b", fontWeight: 700, marginLeft: 8, textDecoration: "none" }}
           >
-            Claim Now →
+            Request Trial →
           </Link>
           <button
             aria-label="Close announcement"
