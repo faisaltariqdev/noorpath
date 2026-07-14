@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
+import { trustpilotReviews, TRUSTPILOT_SCORE, TRUSTPILOT_REVIEW_COUNT } from "@/data/trustpilotReviews";
 import {
   Sprout, Baby, Smile, Star, Users, PlayCircle, MapPin,
   Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown,
@@ -50,11 +51,7 @@ const whyPoints = [
   { icon: <Shield size={22} />, title: "Female Tutors Available", desc: "Separate certified female teachers for sisters and daughters — safe, comfortable learning." },
 ];
 
-const testimonials = [
-  { name: "Sarah Johnson", country: "🇺🇸 USA", text: "My children transformed their Quran recitation within just 3 months. Incredibly patient and qualified tutors. Best investment for my family!", stars: 5 },
-  { name: "Ahmed Al-Rashid", country: "🇸🇦 Saudi Arabia", text: "The Hifz program is exceptionally structured. My son memorized 5 Juz in 8 months. Weekly progress reports keep us fully informed.", stars: 5 },
-  { name: "Fatima Malik", country: "🇬🇧 UK", text: "As a single mother, the family plan for my 3 children is a lifesaver. The female tutors are wonderful and my daughters are thriving.", stars: 5 },
-];
+const TRUSTPILOT_URL = "https://www.trustpilot.com/review/noorpath.online";
 
 const faqs = [
   { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with your assigned tutor. You get a fixed weekly schedule that fits your timezone, with no pre-recorded lessons." },
@@ -327,25 +324,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* ── TESTIMONIALS (real Trustpilot reviews) ── */}
       <section id="testimonials" style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Star size={13} /> Parent Reviews</span>
             <h2 className="section-title">What Families Say About <em className="accent">NoorPath</em></h2>
+            {/* Trustpilot score badge */}
+            <a
+              href={TRUSTPILOT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", gap: 10, marginTop: 16, background: "#f7f9f8", border: "1px solid var(--border)", borderRadius: 12, padding: "10px 20px", textDecoration: "none" }}
+            >
+              <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>★★★★</span>
+              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{TRUSTPILOT_SCORE} TrustScore</span>
+              <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {TRUSTPILOT_REVIEW_COUNT} reviews on</span>
+              <span style={{ color: "#00b67a", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
+            </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {trustpilotReviews.map((t) => (
               <div key={t.name} className="testimonial-card">
-                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg, var(--gold), var(--gold-lt))" }} />
-                <div style={{ color: "var(--gold)", fontSize: "1.15rem", marginBottom: 12, letterSpacing: 2 }}>{"★".repeat(t.stars)}</div>
+                <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "#00b67a" }} />
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+                  <span style={{ color: "#00b67a", fontSize: "1.15rem", letterSpacing: 2 }}>{"★".repeat(t.stars)}</span>
+                  <span style={{ fontSize: ".76rem", color: "var(--muted)" }}>{t.date}</span>
+                </div>
+                <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".95rem", marginBottom: 8 }}>{t.title}</div>
                 <p style={{ color: "var(--slate)", fontSize: ".91rem", lineHeight: 1.78, marginBottom: 20, fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 14, borderTop: "1px solid rgba(10,110,79,.08)" }}>
-                  <strong style={{ color: "var(--charcoal)", fontSize: ".92rem" }}>{t.name}</strong>
-                  <span style={{ fontSize: ".82rem", background: "rgba(10,110,79,.07)", padding: "4px 12px", borderRadius: 50, color: "var(--emerald)", fontWeight: 600 }}>{t.country}</span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8, paddingTop: 14, borderTop: "1px solid rgba(10,110,79,.08)" }}>
+                  <strong style={{ color: "var(--charcoal)", fontSize: ".92rem" }}>{t.name} <span style={{ fontWeight: 500, color: "var(--muted)", fontSize: ".82rem" }}>· {t.country}</span></strong>
+                  <span style={{ fontSize: ".78rem", color: "#00b67a", fontWeight: 700 }}>★ Verified on Trustpilot</span>
                 </div>
               </div>
             ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: 32 }}>
+            <a
+              href={TRUSTPILOT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-np"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8 }}
+            >
+              Read all reviews on Trustpilot →
+            </a>
           </div>
         </div>
       </section>
