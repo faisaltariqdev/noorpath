@@ -977,6 +977,120 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Discover 150+ beautiful Islamic quotes from the Quran and Hadith — in English and Arabic. Perfect for daily reflection, sharing, and teaching your children about Islam.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "online-quran-classes-cost-pricing-guide",
+    title: "How Much Do Online Quran Classes Cost? — Real Prices Per Hour & Month (2026)",
+    description:
+      "Online Quran classes cost $4–$25 per class depending on tutor, country and plan. Full 2026 price breakdown — per hour, per month, kids vs adults, Hifz vs Tajweed, family discounts, and how to avoid overpaying.",
+    category: "Quran Learning",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "11 min",
+    keywords: [
+      "online quran classes cost", "how much do online quran classes cost", "quran teacher price per hour",
+      "online quran teacher cost", "quran classes fees", "quran tuition fees per month",
+      "cheap online quran classes", "affordable quran classes online", "quran academy monthly fee",
+      "hifz classes cost", "female quran teacher cost", "quran classes price usa uk",
+    ],
+    excerpt:
+      "Before booking any academy, parents ask the same question: how much do online Quran classes actually cost? Here is the honest 2026 price breakdown — per class, per month, by course type and country — plus the red flags that mean you are overpaying.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "learn-quran-as-an-adult-never-too-late",
+    title: "Learning Quran as an Adult — Why It's Never Too Late (Start at 25, 40 or 60)",
+    description:
+      "Think you're too old to learn Quran? Adults at 25, 40, even 70 learn to read Quran in 6–12 months with 1-on-1 online classes. Beginner roadmap, real timelines, private judgment-free tutors, and a free trial.",
+    category: "Quran Learning",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "12 min",
+    keywords: [
+      "learn quran as an adult", "am i too old to learn quran", "learning quran at 30",
+      "learning quran at 40", "learn to read quran adult beginner", "quran classes for adults online",
+      "how long for an adult to learn quran", "adult quran learning embarrassed",
+      "never learned to read quran", "learn quran from zero adult", "quran for late starters",
+    ],
+    excerpt:
+      "Thousands of adults quietly search 'am I too old to learn Quran?' every month. The answer is no — and this guide shows the exact 6–12 month roadmap adults use to go from zero Arabic to reading the Quran, privately and without embarrassment.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "new-muslim-guide-to-reading-quran",
+    title: "New Muslim? How to Start Reading the Quran — Step-by-Step Revert Guide",
+    description:
+      "A complete Quran guide for new Muslims and reverts: where to start reading, English translations, learning Arabic letters, your first surahs, salah basics, and patient 1-on-1 teachers for converts. Free trial class.",
+    category: "Quran Learning",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "13 min",
+    keywords: [
+      "new muslim how to read quran", "quran for new muslims", "revert guide to quran",
+      "where to start reading quran", "quran for converts", "new muslim learning quran",
+      "first surah to learn new muslim", "quran classes for reverts", "how to learn quran after converting",
+      "new muslim salah and quran", "best quran translation for new muslims",
+    ],
+    excerpt:
+      "You took your Shahada — now what? This step-by-step guide shows new Muslims exactly where to start with the Quran: which translation to read first, how to learn the Arabic letters, your first three surahs, and how revert-friendly tutors work.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-classes-usa-kids-guide",
+    title: "Online Quran Classes for Kids in the USA — Parent Guide, Timings & Cost (2026)",
+    description:
+      "Online Quran classes for kids in the USA: after-school EST/CST/PST schedules, certified male & female tutors, cost per month, safety checklist for American Muslim parents, and a free 30-minute trial class.",
+    category: "Quran Learning",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "12 min",
+    keywords: [
+      "online quran classes usa", "quran classes for kids usa", "online quran teacher usa",
+      "quran classes in america", "quran tutor for kids usa", "online quran academy usa",
+      "quran classes est time", "female quran teacher usa", "weekend quran classes usa kids",
+      "quran classes for kids near me", "american muslim kids quran",
+    ],
+    excerpt:
+      "American Muslim parents juggle school, sports and masjid runs — this guide shows how online Quran classes fit US timezones (EST/CST/PST), what they cost, how tutors are vetted, and the safety checklist to use before booking any academy.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-choose-online-quran-teacher",
+    title: "How to Choose an Online Quran Teacher — 12-Point Checklist & Red Flags",
+    description:
+      "Choosing an online Quran teacher? Use this 12-point checklist: Ijazah certification, trial class tests, Tajweed accuracy, safety rules for kids, pricing traps and red flags. Compare academies before you pay.",
+    category: "Quran Learning",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "11 min",
+    keywords: [
+      "how to choose online quran teacher", "best online quran teacher", "online quran teacher checklist",
+      "qualified quran teacher online", "ijazah certified quran teacher", "online quran academy comparison",
+      "quran teacher red flags", "is online quran academy legit", "how to verify quran teacher",
+      "questions to ask quran tutor", "good quran teacher qualities",
+    ],
+    excerpt:
+      "Hundreds of academies claim 'certified tutors' — most parents can't tell the difference until months are wasted. This 12-point checklist shows exactly how to test a Quran teacher in the trial class, verify Ijazah claims, and spot pricing red flags.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "finish-quran-in-ramadan-30-day-plan",
+    title: "How to Finish the Quran in Ramadan — 30-Day Khatm Reading Plan (Printable)",
+    description:
+      "Finish the whole Quran in Ramadan with this 30-day Khatm plan: 4 pages after each salah, juz-per-day table, busy-schedule and working-parent versions, plus tips to keep going after Ramadan ends.",
+    category: "Quran Learning",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "10 min",
+    keywords: [
+      "how to finish quran in ramadan", "quran khatm in 30 days", "ramadan quran reading plan",
+      "complete quran in ramadan", "juz a day ramadan", "quran reading schedule ramadan",
+      "how many pages to read quran in 30 days", "khatam quran ramadan plan",
+      "finish quran in one month", "ramadan quran challenge", "quran khatm dua",
+    ],
+    excerpt:
+      "One juz a day — or 4 pages after each of the five prayers — completes the entire Quran in exactly 30 days. Here is the full Ramadan Khatm plan, with realistic versions for workers, mothers and students, and what to do when you fall behind.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

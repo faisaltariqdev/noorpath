@@ -544,4 +544,334 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <strong>Learn Salah and Qunoot with live correction.</strong> NoorPath tutors teach adults and kids step by step. <a href="/online-quran-classes-for-adults">Adult free trial</a> · <a href="/online-quran-classes-for-kids">Kids free trial</a>.
           </div>`,
   },
+  "online-quran-classes-cost-pricing-guide": {
+    style: S,
+    content: `<p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer in 2026: anywhere from <strong>$4 to $25 per class</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Most families pay <strong>$30–$80 per month</strong> for 2 classes/week of 30 minutes with a certified tutor. Hifz and Ijazah-track programs cost more; group classes cost less but progress slower. Compare with <a href="/pricing">NoorPath pricing</a> — first 30-minute trial is free, no card required.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>$4–25</strong><span>Per class range</span></div>
+            <div class="stat-pill"><strong>$30–80</strong><span>Typical monthly</span></div>
+            <div class="stat-pill"><strong>2–5×</strong><span>Classes per week</span></div>
+            <div class="stat-pill"><strong>Free</strong><span>Trial class</span></div>
+          </div>
+
+          <h2 id="table">Online Quran class prices in 2026 — the real ranges</h2>
+          <table class="np-table">
+            <tr><th>Course type</th><th>Per 30-min class</th><th>Typical monthly (2×/week)</th><th>Notes</th></tr>
+            <tr><td>Noorani Qaida (beginners)</td><td>$4–$10</td><td>$30–$60</td><td>Best starting point for kids and adult beginners</td></tr>
+            <tr><td>Quran reading (Nazra)</td><td>$5–$12</td><td>$35–$70</td><td>Fluency and daily recitation</td></tr>
+            <tr><td>Tajweed course</td><td>$6–$15</td><td>$40–$90</td><td>Requires a genuinely certified tutor</td></tr>
+            <tr><td>Hifz (memorisation)</td><td>$8–$25</td><td>$60–$150</td><td>Needs 4–5 days/week with a Hafiz — see <a href="/hifz-quran-online">Hifz online</a></td></tr>
+            <tr><td>Arabic language</td><td>$7–$18</td><td>$50–$100</td><td>Grammar-based, longer sessions</td></tr>
+          </table>
+
+          <h2 id="factors">What actually changes the price</h2>
+          <ul>
+            <li><strong>Tutor certification:</strong> an Ijazah-holder or Al-Azhar graduate costs more than an unverified reciter — and is worth it. See <a href="/our-tutors">how NoorPath vets tutors</a>.</li>
+            <li><strong>1-on-1 vs group:</strong> group classes look cheap, but a 1-on-1 student typically progresses 2–3× faster, so cost-per-progress is usually lower.</li>
+            <li><strong>Class length and frequency:</strong> 30 minutes is standard for kids; adults and Hifz students often need 45–60 minutes.</li>
+            <li><strong>Female tutors:</strong> demand for <a href="/female-quran-teacher-online">certified Hafiza teachers</a> is high; some academies charge extra — NoorPath does not.</li>
+            <li><strong>Your country:</strong> academies price in USD/GBP; the tutor's location matters less than their certification.</li>
+          </ul>
+
+          <h2 id="family">Family and sibling discounts</h2>
+          <p>If you have 2+ children, always ask about family pricing before paying. Typical structure: <strong>2 siblings ≈ 15% off, 3 siblings ≈ 20% off, 4+ ≈ 25% off</strong> — each child still gets their own 1-on-1 class at their own level. Details on the <a href="/pricing">pricing page</a>.</p>
+
+          <h2 id="redflags">Red flags — when you are overpaying (or worse)</h2>
+          <ol>
+            <li><strong>No free trial:</strong> a serious academy lets you test the tutor first.</li>
+            <li><strong>Long lock-in contracts:</strong> monthly rolling plans are the fair standard.</li>
+            <li><strong>"Certified" with no proof:</strong> ask which institution issued the Ijazah or degree.</li>
+            <li><strong>Suspiciously cheap Hifz:</strong> real memorisation needs an experienced Hafiz 4–5 days a week — $20/month Hifz is not real Hifz.</li>
+            <li><strong>Upfront yearly payment demands:</strong> pay monthly until trust is earned.</li>
+          </ol>
+
+          <h2 id="worth">Is it cheaper than a local madrasa or home tutor?</h2>
+          <p>In the UK/US, in-person home Quran tutors charge <strong>£15–£30 / $20–$40 per hour</strong> plus travel constraints. Online 1-on-1 classes deliver the same certified teaching at roughly half the price, with no travel and recorded progress. That is why 12,000+ families have moved online — read the full comparison in <a href="/blog/benefits-of-online-quran-classes">benefits of online Quran classes</a>.</p>
+
+          <div class="gold-box">
+            <strong>Test before you pay anything.</strong> Book a <a href="/online-quran-classes#cta">free 30-minute trial class</a> — meet a certified tutor, see the teaching quality, then decide. No credit card required.
+          </div>`,
+  },
+  "learn-quran-as-an-adult-never-too-late": {
+    style: S,
+    content: `<p>Every month, thousands of adults quietly type the same painful question into Google: <em>"am I too old to learn Quran?"</em> Some are 25, some are 40, some are 65. The answer — from teachers who have taught every age — is simple: <strong>no adult is too old to learn Quran</strong>, and most go from zero to reading within 6–12 months with the right method.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Adults learn Quran reading in <strong>6–12 months</strong> with two 30-minute 1-on-1 classes per week. There is no age limit, classes are completely private (no group, no judgment), and you can start from the Arabic alphabet. <a href="/online-quran-classes-for-adults">Book an adult free trial</a>.
+          </div>
+
+          <h2 id="embarrassment">The embarrassment problem — and why online solves it</h2>
+          <p>The biggest barrier for adult learners is not ability — it is shame. Sitting in a madrasa next to seven-year-olds, or admitting to your community that you never learned, stops most adults before they start. A private 1-on-1 online class removes the audience entirely: it is just you and one patient tutor who teaches adults every day. Nobody else ever sees your class.</p>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>0</strong><span>Arabic needed to start</span></div>
+            <div class="stat-pill"><strong>6–12mo</strong><span>Zero → reading</span></div>
+            <div class="stat-pill"><strong>1-on-1</strong><span>Fully private</span></div>
+            <div class="stat-pill"><strong>Any age</strong><span>25, 40, 60, 70+</span></div>
+          </div>
+
+          <h2 id="timeline">Realistic adult timeline (from actual students)</h2>
+          <table class="np-table">
+            <tr><th>Phase</th><th>Duration</th><th>What you achieve</th></tr>
+            <tr><td>1. Arabic letters &amp; sounds</td><td>4–8 weeks</td><td>Recognise and pronounce all 28 letters in every position</td></tr>
+            <tr><td>2. Noorani Qaida</td><td>2–4 months</td><td>Joining letters, vowels, sukoon, madd — the reading system</td></tr>
+            <tr><td>3. First Quran pages</td><td>1–2 months</td><td>Slow but correct recitation from the mushaf</td></tr>
+            <tr><td>4. Fluency + basic Tajweed</td><td>3–5 months</td><td>Reading any page with correct rules</td></tr>
+          </table>
+          <p>Full method in the <a href="/blog/learn-quran-online-adult-beginner-guide">adult beginner guide</a> and the <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida guide</a>.</p>
+
+          <h2 id="age40">Learning at 40, 50 or 60 — what changes?</h2>
+          <p>Adults actually hold two advantages over children: <strong>discipline and motivation</strong>. What slows adults down is inconsistency, not age. The formula that works at every age:</p>
+          <ul>
+            <li><strong>2 fixed classes per week</strong> — same days, same time, non-negotiable.</li>
+            <li><strong>10 minutes daily self-practice</strong> — repetition beats marathon sessions.</li>
+            <li><strong>One patient tutor</strong> who corrects pronunciation live — apps cannot hear your mistakes the way a teacher can.</li>
+          </ul>
+
+          <h2 id="women">For sisters: female tutors available</h2>
+          <p>Many women prefer learning with a female teacher. Certified <a href="/female-quran-teacher-online">Hafiza tutors</a> teach adult sisters in fully private sessions — mornings, evenings or weekends in your timezone.</p>
+
+          <h2 id="reward">The reward of the struggling reader</h2>
+          <div class="verse-card">
+            <span class="vnum">Hadith — Sahih Muslim</span>
+            <p class="trans-en">"The one who recites the Quran and stumbles over it, finding it difficult, will have a double reward."</p>
+          </div>
+          <p>Your slow, effortful recitation is not a deficiency — it is written as double reward. Every adult who starts today is ahead of the adult who waits another year.</p>
+
+          <div class="gold-box">
+            <strong>Start privately this week.</strong> Book a <a href="/online-quran-classes-for-adults">free 30-minute adult trial</a> — tell the tutor you are starting from zero. That is exactly what they are trained for. No credit card, no group, no judgment.
+          </div>`,
+  },
+  "new-muslim-guide-to-reading-quran": {
+    style: S,
+    content: `<p>You took your Shahada — congratulations, and welcome. Now the Quran sits in front of you: 604 pages, in a language you cannot yet read, with everyone giving different advice. This guide gives <strong>new Muslims and reverts</strong> a calm, step-by-step path: what to read first in English, how to learn the Arabic letters, your first three surahs, and how to find a teacher who understands converts.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Start by <em>reading a good English translation</em> (understanding), while separately learning the <em>Arabic letters</em> (recitation) — two parallel tracks. You need Al-Fatiha plus one short surah memorised for salah; everything else can come gradually. <a href="/online-quran-classes-for-adults">Revert-friendly tutors — free trial</a>.
+          </div>
+
+          <h2 id="tracks">The two-track method every convert should know</h2>
+          <table class="np-table">
+            <tr><th>Track</th><th>Goal</th><th>How</th><th>Timeline</th></tr>
+            <tr><td><strong>Understanding</strong></td><td>Know what Allah says</td><td>Read English translation daily, 1–2 pages</td><td>Starts today</td></tr>
+            <tr><td><strong>Recitation</strong></td><td>Read the Arabic itself</td><td>Arabic letters → <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> → mushaf</td><td>6–12 months</td></tr>
+          </table>
+          <p>Most new Muslims burn out because they try to do everything in Arabic from day one. Separate the two tracks and both become easy.</p>
+
+          <h2 id="translation">Which English translation should you read first?</h2>
+          <ul>
+            <li><strong>The Clear Quran (Mustafa Khattab)</strong> — modern, flowing English; the most recommended first translation for reverts.</li>
+            <li><strong>Saheeh International</strong> — precise and widely used in study circles.</li>
+            <li>Start with <strong>Juz 30</strong> (the short surahs at the end) and <strong>Surah Al-Fatiha</strong> — short, powerful chapters you will also use in prayer.</li>
+          </ul>
+
+          <h2 id="first-surahs">Your first three surahs (for salah)</h2>
+          <ol>
+            <li><strong>Al-Fatiha</strong> — required in every unit of prayer. Full guide: <a href="/blog/surah-al-fatiha-arabic-english">Surah Al-Fatiha</a>.</li>
+            <li><strong>Al-Ikhlas</strong> — 4 verses, equals a third of the Quran in reward. See <a href="/blog/surah-ikhlas-benefits">benefits</a>.</li>
+            <li><strong>An-Nas</strong> — 6 verses of protection, part of the <a href="/blog/4-quls">4 Quls</a>.</li>
+          </ol>
+          <p>Memorise them from audio + transliteration first; a tutor then corrects your pronunciation. For prayer itself, follow the <a href="/blog/how-to-pray-salah-step-by-step">step-by-step salah guide</a> and <a href="/blog/how-to-do-wudu-step-by-step">wudu guide</a>.</p>
+
+          <h2 id="letters">Learning the Arabic letters (it is easier than it looks)</h2>
+          <p>Arabic has 28 letters. Most adults learn to recognise all of them within 4–8 weeks with two short lessons a week. Then Noorani Qaida teaches you how letters join and carry vowels — the same system used worldwide for 100+ years. From there you read the mushaf directly, slowly at first.</p>
+
+          <h2 id="teacher">Why converts do best with a 1-on-1 teacher</h2>
+          <ul>
+            <li><strong>No assumed knowledge:</strong> a good tutor explains everything from zero, without the cultural shorthand born-Muslims grew up with.</li>
+            <li><strong>No judgment:</strong> private classes mean you can ask "basic" questions freely — that is the whole point.</li>
+            <li><strong>Correct habits from day one:</strong> pronunciation mistakes are much easier to prevent than to fix later.</li>
+            <li><strong>Sisters:</strong> <a href="/female-quran-teacher-online">female tutors</a> are available for one-on-one classes.</li>
+          </ul>
+
+          <h2 id="pace">A realistic first-year plan</h2>
+          <table class="np-table">
+            <tr><th>Months</th><th>Focus</th></tr>
+            <tr><td>1–2</td><td>English translation of Juz 30 + Al-Fatiha memorised + Arabic letters begun</td></tr>
+            <tr><td>3–6</td><td>Noorani Qaida + Al-Ikhlas &amp; An-Nas + salah fully learned</td></tr>
+            <tr><td>7–12</td><td>First mushaf pages + <a href="/blog/morning-evening-adhkar-dhikr">daily adhkar</a> + short surah memorisation</td></tr>
+          </table>
+
+          <div class="gold-box">
+            <strong>You do not have to figure this out alone.</strong> Book a <a href="/online-quran-classes-for-adults">free 30-minute trial</a> and mention you are a new Muslim — you will be matched with a patient tutor experienced with reverts. No credit card required.
+          </div>`,
+  },
+  "online-quran-classes-usa-kids-guide": {
+    style: S,
+    content: `<p>Between school, soccer practice and the 40-minute drive to the nearest masjid, American Muslim parents know the struggle: <strong>consistent Quran education is hard to maintain in the USA</strong>. Weekend Islamic school covers two hours a week; kids forget by Wednesday. This guide shows how online 1-on-1 Quran classes fit US schedules and timezones, what they cost, and the safety checklist to use before booking anything.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Yes — kids across all US timezones (EST, CST, MST, PST) get live 1-on-1 Quran classes after school or on weekends, with certified male or <a href="/female-quran-teacher-online">female tutors</a>. Typical cost: <strong>$35–$80/month</strong>. <a href="/online-quran-classes-for-kids">Book a free 30-minute kids trial</a>.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>All 50</strong><span>States covered</span></div>
+            <div class="stat-pill"><strong>4–8pm</strong><span>Local after-school slots</span></div>
+            <div class="stat-pill"><strong>1-on-1</strong><span>Own tutor per child</span></div>
+            <div class="stat-pill"><strong>30 min</strong><span>Free trial</span></div>
+          </div>
+
+          <h2 id="timings">Class timings by US timezone</h2>
+          <table class="np-table">
+            <tr><th>Timezone</th><th>Popular kids slots</th><th>Weekend option</th></tr>
+            <tr><td>Eastern (New York, New Jersey, Florida)</td><td>4:00–8:00 PM EST</td><td>Sat/Sun mornings</td></tr>
+            <tr><td>Central (Texas, Chicago, Minnesota)</td><td>4:00–7:30 PM CST</td><td>Sat/Sun mornings</td></tr>
+            <tr><td>Mountain (Denver, Phoenix)</td><td>4:00–7:00 PM MST</td><td>Sat/Sun flexible</td></tr>
+            <tr><td>Pacific (California, Seattle)</td><td>3:30–7:00 PM PST</td><td>Sat/Sun mornings</td></tr>
+          </table>
+          <p>Because tutors teach from multiple regions, even 6 AM before-school slots are possible. City pages: <a href="/online-quran-classes/new-york">New York</a>, <a href="/online-quran-classes/houston">Houston</a>, <a href="/online-quran-classes/chicago">Chicago</a> — or see all <a href="/locations/online-quran-classes-usa">USA classes</a>.</p>
+
+          <h2 id="weekend-school">Online classes vs Sunday school — do you need both?</h2>
+          <p>They solve different problems. Sunday school gives community and Islamic environment; it rarely produces fluent Quran readers because 25 kids share one teacher for two hours a week. A 1-on-1 online class produces reading fluency because your child recites the entire lesson, every lesson. Many families keep both: Sunday school for community, online classes for actual Quran progress.</p>
+
+          <h2 id="cost">What US families actually pay</h2>
+          <ul>
+            <li><strong>Group online classes:</strong> $25–$40/month — cheaper, slower progress.</li>
+            <li><strong>1-on-1 online classes:</strong> $35–$80/month for 2 classes/week — the standard choice.</li>
+            <li><strong>In-person home tutor (US):</strong> $25–$50 <em>per hour</em> — 3–5× the cost of online.</li>
+            <li><strong>Siblings:</strong> family discounts of 15–25% — see <a href="/pricing">pricing</a> and the full <a href="/blog/online-quran-classes-cost-pricing-guide">cost guide</a>.</li>
+          </ul>
+
+          <h2 id="safety">Safety checklist for American parents</h2>
+          <ol>
+            <li>Classes on <strong>Zoom/Google Meet only</strong> — no private messaging apps with the child.</li>
+            <li>Parents can <strong>join or observe any session</strong>, anytime, unannounced.</li>
+            <li>Tutor credentials verified — Ijazah or institution certificates on request (<a href="/our-tutors">meet our tutors</a>).</li>
+            <li>Option to request a <strong>female tutor</strong> for daughters.</li>
+            <li>Weekly written <strong>progress reports</strong> to the parent, not just verbal claims.</li>
+            <li>Monthly rolling payment — never long contracts upfront.</li>
+          </ol>
+
+          <h2 id="start">How your child starts (this week)</h2>
+          <ol>
+            <li>Book the <a href="/online-quran-classes-for-kids">free 30-minute trial</a> — note your child's age and state/timezone.</li>
+            <li>The trial tutor assesses level: alphabet, <a href="/blog/noorani-qaida-complete-guide">Qaida</a>, reading or <a href="/blog/online-hifz-classes-for-kids">Hifz-ready</a>.</li>
+            <li>Pick 2–3 fixed weekly slots that survive the school-year schedule.</li>
+            <li>Same tutor every class — consistency is what Sunday school can't give.</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>Try it before deciding.</strong> The <a href="/online-quran-classes-for-kids">free trial class</a> takes 30 minutes, needs no credit card, and you will know within one session if it fits your child.
+          </div>`,
+  },
+  "how-to-choose-online-quran-teacher": {
+    style: S,
+    content: `<p>Hundreds of academies claim "certified tutors" and "best Quran teachers" — and most parents cannot tell the difference until months of fees are wasted. This is the <strong>12-point checklist</strong> teachers themselves would use: how to verify Ijazah claims, what to test in the trial class, and the red flags that end the conversation immediately.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> A good online Quran teacher has (1) verifiable certification, (2) teaches 1-on-1 with live correction, (3) offers a free trial, (4) sends written progress reports, and (5) works under an academy with clear safety rules. Test all five in one <a href="/online-quran-classes#cta">free trial class</a> before paying anyone.
+          </div>
+
+          <h2 id="checklist">The 12-point checklist</h2>
+          <h3>Credentials (check before the trial)</h3>
+          <ol>
+            <li><strong>Ijazah or institution:</strong> ask exactly which scholar or institution certified them (e.g. Al-Azhar). Vague answers = fail. See how <a href="/our-tutors">NoorPath vets tutors</a>.</li>
+            <li><strong>Teaching experience with your age group:</strong> teaching a 5-year-old and a 45-year-old are different skills.</li>
+            <li><strong>Language match:</strong> the tutor must explain in a language your family is comfortable with — English, Urdu, Arabic.</li>
+            <li><strong>Female tutor availability</strong> if you need one for daughters or sisters — <a href="/female-quran-teacher-online">verified Hafiza teachers</a>.</li>
+          </ol>
+
+          <h3>Teaching quality (test during the trial)</h3>
+          <ol start="5">
+            <li><strong>Deliberate mistake test:</strong> recite a verse with one wrong harakah. A real teacher catches it instantly and corrects gently.</li>
+            <li><strong>Method, not just listening:</strong> ask "what will the first 3 months look like?" — a professional describes a sequence (<a href="/blog/noorani-qaida-complete-guide">Qaida</a> → reading → <a href="/blog/tajweed-rules-complete-guide">Tajweed</a>), not vague promises.</li>
+            <li><strong>Patience under repetition:</strong> ask them to re-explain one rule twice. Irritation in the trial becomes worse after payment.</li>
+            <li><strong>Homework system:</strong> what does the student practise between classes, and how is it checked?</li>
+          </ol>
+
+          <h3>Academy standards (check before paying)</h3>
+          <ol start="9">
+            <li><strong>Free trial with the actual tutor</strong> — not a "demo teacher" who disappears after you pay.</li>
+            <li><strong>Written weekly/monthly progress reports</strong> to the parent.</li>
+            <li><strong>Platform safety:</strong> Zoom/Meet only, parents may observe anytime, no private chats with children.</li>
+            <li><strong>Monthly rolling payments</strong> — no long lock-in, no large upfront demands. Compare rates in the <a href="/blog/online-quran-classes-cost-pricing-guide">cost guide</a>.</li>
+          </ol>
+
+          <h2 id="redflags">Instant red flags</h2>
+          <table class="np-table">
+            <tr><th>Red flag</th><th>Why it matters</th></tr>
+            <tr><td>"Certified" but can't name the certifying body</td><td>Unverifiable claims are usually false</td></tr>
+            <tr><td>No free trial offered</td><td>They don't want you testing quality first</td></tr>
+            <tr><td>Pushes 6–12 month upfront payment</td><td>Locks you in before you see real teaching</td></tr>
+            <tr><td>Different teacher after payment than in trial</td><td>Bait-and-switch — the most common complaint</td></tr>
+            <tr><td>Contacts your child outside class hours</td><td>Safety violation — leave immediately</td></tr>
+            <tr><td>No progress reports, only "he's doing great"</td><td>You cannot verify months of fees</td></tr>
+          </table>
+
+          <h2 id="questions">7 questions to ask in the first conversation</h2>
+          <ol>
+            <li>Which institution certified this tutor, and can I see it?</li>
+            <li>Will the trial teacher be our permanent teacher?</li>
+            <li>What is the exact plan for the first 3 months?</li>
+            <li>How do you report progress to parents?</li>
+            <li>What happens if we miss a class — make-up policy?</li>
+            <li>Can I sit in on my child's classes anytime?</li>
+            <li>Is pricing monthly rolling, and are there sibling discounts?</li>
+          </ol>
+          <p>An academy that answers all seven directly is worth trialling. For a full comparison framework, see <a href="/blog/best-online-quran-academy-guide">how to choose an online Quran academy</a>.</p>
+
+          <div class="gold-box">
+            <strong>Run the checklist on us.</strong> Book a <a href="/online-quran-classes#cta">free 30-minute trial</a>, use the deliberate-mistake test, ask all 7 questions — then decide. No credit card required.
+          </div>`,
+  },
+  "finish-quran-in-ramadan-30-day-plan": {
+    style: S,
+    content: `<p>Completing the whole Quran in Ramadan — a full <strong>Khatm</strong> — sounds enormous until you see the math: the standard mushaf has <strong>604 pages across 30 juz</strong>. That is <strong>one juz (about 20 pages) per day</strong> — or just <strong>4 pages after each of the five daily prayers</strong>. This guide gives you the full 30-day plan, realistic versions for workers and parents, and what to do when you fall behind.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Read <strong>4 pages after every salah</strong> (5 × 4 = 20 pages = 1 juz daily) and you finish the entire Quran in exactly 30 days. If you miss a slot, add it to the next prayer — never let one missed session become a missed day.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>604</strong><span>Pages total</span></div>
+            <div class="stat-pill"><strong>20</strong><span>Pages per day</span></div>
+            <div class="stat-pill"><strong>4</strong><span>Pages per salah</span></div>
+            <div class="stat-pill"><strong>30</strong><span>Days to Khatm</span></div>
+          </div>
+
+          <h2 id="plan">The classic plan: 4 pages after each prayer</h2>
+          <table class="np-table">
+            <tr><th>Prayer</th><th>Pages</th><th>Tip</th></tr>
+            <tr><td>Fajr</td><td>4</td><td>Best focus of the day — never skip this slot</td></tr>
+            <tr><td>Dhuhr</td><td>4</td><td>Lunch-break reading at work/school</td></tr>
+            <tr><td>Asr</td><td>4</td><td>Before the pre-iftar rush</td></tr>
+            <tr><td>Maghrib</td><td>4</td><td>After iftar settles</td></tr>
+            <tr><td>Isha/Taraweeh</td><td>4</td><td>Close the day's juz before sleep</td></tr>
+          </table>
+
+          <h2 id="busy">Realistic versions for busy schedules</h2>
+          <ul>
+            <li><strong>Working professional:</strong> 8 pages Fajr + 4 Dhuhr + 8 after Isha. Front-load the weekend with 25 pages/day to build a buffer.</li>
+            <li><strong>Mothers with young kids:</strong> 10 pages before the house wakes at suhoor time + 10 after kids sleep. If a day collapses, read a half-juz and extend two days past Eid — Khatm does not expire.</li>
+            <li><strong>Students:</strong> pair each juz with lecture breaks; Juz 1–15 before the last ten nights, then slow down for worship-heavy nights.</li>
+            <li><strong>Slow readers / new readers:</strong> target a <em>half Khatm</em> (2 pages per salah) with better Tajweed instead of a rushed full one — quality of recitation carries its own reward. Improve speed year-round with <a href="/learn-tajweed-online">Tajweed classes</a>.</li>
+          </ul>
+
+          <h2 id="behind">Fell behind? The catch-up rules</h2>
+          <ol>
+            <li><strong>Never double a whole day</strong> — 40 pages in one sitting causes burnout. Spread the missed juz as +1 page per salah over 4 days.</li>
+            <li><strong>Use the last ten nights</strong> — many readers finish 2 juz on odd nights while seeking Laylatul Qadr.</li>
+            <li><strong>A Khatm finished on day 33 is still a Khatm</strong> — completion beats abandonment.</li>
+          </ol>
+
+          <h2 id="dua">Dua upon completing the Quran</h2>
+          <p>Many scholars recommend making dua at Khatm — it is a moment when dua is hoped to be accepted. Gather the family if you can, and ask broadly: forgiveness, steadfastness, and to be from the people of the Quran. Pair your reading with the <a href="/blog/morning-evening-adhkar-dhikr">daily adhkar routine</a> for the full Ramadan rhythm.</p>
+
+          <h2 id="after">Keeping the Quran after Ramadan ends</h2>
+          <p>The saddest pattern: 20 pages a day in Ramadan, zero in Shawwal. Lock in a smaller permanent habit before Eid:</p>
+          <ul>
+            <li><strong>2 pages after Fajr</strong> — a Khatm every ~10 months, forever.</li>
+            <li><strong>Fix your recitation</strong> with a live teacher so reading stays enjoyable — <a href="/online-quran-classes-for-adults">adult classes</a> or <a href="/online-quran-classes-for-kids">kids classes</a>.</li>
+            <li><strong>Start memorising</strong> what you kept re-reading — see <a href="/blog/how-to-memorize-quran-faster">how to memorize Quran faster</a>.</li>
+          </ul>
+
+          <div class="gold-box">
+            <strong>Reading slowly or with mistakes?</strong> A certified tutor can fix your fluency and Tajweed before next Ramadan. <a href="/online-quran-classes#cta">Book a free 30-minute trial</a> — kids and adults, all timezones.
+          </div>`,
+  },
 };

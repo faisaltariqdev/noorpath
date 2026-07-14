@@ -53,6 +53,12 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "best-age-to-start-quran-learning",
   "how-long-to-memorize-quran",
   "online-quran-classes-uk-kids-guide",
+  "online-quran-classes-cost-pricing-guide",
+  "learn-quran-as-an-adult-never-too-late",
+  "new-muslim-guide-to-reading-quran",
+  "online-quran-classes-usa-kids-guide",
+  "how-to-choose-online-quran-teacher",
+  "finish-quran-in-ramadan-30-day-plan",
 ]);
 
 /** Root-level keyword landing pages (Qutor-style commercial URLs) */
