@@ -39,6 +39,11 @@ const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
   "surah-mulk-benefits",
   "dua-e-istikhara",
   "4-quls",
+  "attahiyat-full-arabic-english-tashahhud",
+  "safar-ki-dua-travel-dua-arabic-english",
+  "inna-lillahi-wa-inna-ilayhi-rajiun-meaning",
+  "dua-before-and-after-eating",
+  "islamic-months-names-in-order",
 ]);
 
 /** Commercial blogs that drive student enrollment */

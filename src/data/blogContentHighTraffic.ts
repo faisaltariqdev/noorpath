@@ -874,4 +874,261 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <strong>Reading slowly or with mistakes?</strong> A certified tutor can fix your fluency and Tajweed before next Ramadan. <a href="/online-quran-classes#cta">Book a free 30-minute trial</a> — kids and adults, all timezones.
           </div>`,
   },
+  "attahiyat-full-arabic-english-tashahhud": {
+    style: S,
+    content: `<p>You recite <strong>Attahiyat</strong> (the Tashahhud) in every sitting of every salah — at least nine times a day in the five daily prayers. Yet many Muslims were never taught its origin: these are the words exchanged between the Prophet ﷺ and Allah on the night of <strong>Mi'raj</strong>, with the angels' reply joined at the end. Here is the full Arabic, transliteration, English meaning, and how to memorize it properly.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Attahiyat (Tashahhud) is the dua recited while sitting in salah after every two rakats. It begins <em>At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat…</em> and includes the Shahada. It is obligatory in the final sitting of every prayer.
+          </div>
+
+          <h2 id="full">Attahiyat full — Arabic, transliteration & English</h2>
+          <div class="verse-card">
+            <span class="vnum">Tashahhud</span>
+            <p class="arabic">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
+            <p class="translit">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ash-hadu an la ilaha illallah, wa ash-hadu anna Muhammadan 'abduhu wa rasuluh.</p>
+            <p class="trans-en">"All greetings, prayers and pure words are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that none has the right to be worshipped except Allah, and I bear witness that Muhammad is His servant and Messenger."</p>
+          </div>
+
+          <h2 id="story">The beautiful story behind Attahiyat</h2>
+          <p>Many scholars relate that these words echo the exchange of the Mi'raj: the Prophet ﷺ greeted Allah with <em>"At-tahiyyatu lillahi…"</em>, Allah replied with <em>"As-salamu 'alayka ayyuha-n-nabiyyu…"</em>, and the Prophet ﷺ — refusing to keep the greeting for himself alone — responded <em>"As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin"</em>, including every righteous servant until the Day of Judgment. When you sit in Tashahhud, you join that conversation.</p>
+
+          <h2 id="when">When exactly to recite it in salah</h2>
+          <table class="np-table">
+            <tr><th>Prayer</th><th>Sittings with Attahiyat</th></tr>
+            <tr><td>Fajr (2 rakats)</td><td>1 — final sitting (+ Durood and dua)</td></tr>
+            <tr><td>Dhuhr, Asr, Isha (4 rakats)</td><td>2 — after 2nd rakat (Attahiyat only) and final sitting</td></tr>
+            <tr><td>Maghrib (3 rakats)</td><td>2 — after 2nd rakat and final sitting</td></tr>
+          </table>
+          <p>In the final sitting, follow Attahiyat with <a href="/blog/darood-sharif">Durood Ibrahim</a> and a closing dua before salam. Full prayer walkthrough: <a href="/blog/how-to-pray-salah-step-by-step">how to pray salah step by step</a>.</p>
+
+          <h2 id="mistakes">Common mistakes to avoid</h2>
+          <ul>
+            <li><strong>Rushing the words</strong> — Tashahhud has no time pressure; recite each phrase clearly.</li>
+            <li><strong>Merging words</strong> like <em>"wasalawatu-wattayyibatu"</em> into a blur — learn word-by-word once with a teacher and it stays correct for life.</li>
+            <li><strong>Skipping the finger movement</strong> — raise the index finger at <em>ash-hadu an la ilaha illallah</em> (methods vary by madhab; follow your teacher).</li>
+            <li><strong>Wrong pronunciation of ط and ص</strong> — heavy letters in <em>tayyibat</em> and <em>salawat</em> change meaning if softened. A quick <a href="/learn-tajweed-online">Tajweed session</a> fixes this permanently.</li>
+          </ul>
+
+          <h2 id="memorize">How to memorize Attahiyat (kids & new Muslims)</h2>
+          <ol>
+            <li>Split it into 4 lines (greeting → salam to Prophet → salam to believers → Shahada).</li>
+            <li>Learn one line per day with audio repetition — 10 minutes daily.</li>
+            <li>Recite it aloud in every practice salah for a week.</li>
+            <li>Have a teacher listen once for pronunciation before it becomes habit — <a href="/online-quran-classes-for-kids">kids classes</a> and <a href="/online-quran-classes-for-adults">adult classes</a> both cover salah recitation with live correction.</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>Is your salah recitation correct?</strong> In a free 30-minute class, a certified tutor listens to your Attahiyat, Fatiha and surahs and gently corrects every word. <a href="/online-quran-classes#cta">Book the free trial</a> — kids, adults and new Muslims welcome.
+          </div>`,
+  },
+  "safar-ki-dua-travel-dua-arabic-english": {
+    style: S,
+    content: `<p>Whether it is the school run, a business flight or Umrah travel, the Sunnah gives us a beautiful <strong>safar ki dua (travel dua)</strong> to begin every journey — the same words the Prophet ﷺ said when he settled onto his mount. Here is the full Arabic, transliteration, English meaning, the return-journey addition, and how to teach it to children in five minutes.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The main travel dua is <em>Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun</em> — "Glory be to the One who subjected this (vehicle) for us, and we could never have done it ourselves; and indeed, to our Lord we will return." Say it when your car, plane or train starts moving.
+          </div>
+
+          <h2 id="dua">Safar ki dua — full text</h2>
+          <div class="verse-card">
+            <span class="vnum">Quran 43:13–14</span>
+            <p class="arabic">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ</p>
+            <p class="translit">Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun.</p>
+            <p class="trans-en">"Glory be to Him who has subjected this to us, and we could never have accomplished it ourselves. And indeed, to our Lord we will surely return."</p>
+          </div>
+          <p>Before it, the Sunnah is to say <strong>Bismillah</strong> when boarding, and <strong>Allahu Akbar</strong> three times once seated (Sahih Muslim).</p>
+
+          <h2 id="order">Step-by-step order when starting any journey</h2>
+          <ol>
+            <li><strong>Bismillah</strong> — while stepping into the car/plane.</li>
+            <li><strong>Alhamdulillah</strong> — once seated.</li>
+            <li><strong>Allahu Akbar × 3</strong>.</li>
+            <li>The travel dua above.</li>
+            <li>Optional: the Prophet's ﷺ longer dua asking for righteousness in the journey and protection for the family left behind.</li>
+          </ol>
+
+          <h2 id="return">The return-journey addition</h2>
+          <div class="verse-card">
+            <span class="vnum">Sahih Muslim</span>
+            <p class="arabic">آيِبُونَ تَائِبُونَ عَابِدُونَ لِرَبِّنَا حَامِدُونَ</p>
+            <p class="translit">Ayibuna, ta'ibuna, 'abiduna, li-rabbina hamidun.</p>
+            <p class="trans-en">"We return, repenting, worshipping, and praising our Lord."</p>
+          </div>
+          <p>The Prophet ﷺ added these words when coming home — a reminder that every safe return is a gift.</p>
+
+          <h2 id="plane">Is there a special airplane dua?</h2>
+          <p>The same dua covers every mode of transport — camel, car, ship or aircraft. "Subjected this for us" applies even more powerfully at 40,000 feet. Many travellers also recite <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the <a href="/blog/4-quls">4 Quls</a> for protection during the flight.</p>
+
+          <h2 id="kids">Teaching kids the travel dua (5-minute method)</h2>
+          <ul>
+            <li><strong>Car ritual:</strong> nobody drives off until the family says the dua together — kids memorise it within two weeks of school runs.</li>
+            <li><strong>One line at a time:</strong> start with just <em>Subhanalladhi sakhkhara lana hadha</em>, add the rest after a week.</li>
+            <li><strong>Reward chart:</strong> a star each time a child remembers first — simple and surprisingly effective.</li>
+            <li>More kid-friendly duas: <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a> and the <a href="/courses/daily-duas-for-kids">Daily Duas course</a>.</li>
+          </ul>
+
+          <h2 id="traveller">Bonus: the traveller's dua is accepted</h2>
+          <p>The Prophet ﷺ said three duas are not rejected — among them <strong>the dua of the traveller</strong> (Tirmidhi). Long journey ahead? That is your window: make dua for family, rizq, and guidance while you travel.</p>
+
+          <div class="gold-box">
+            <strong>Want your children to learn every daily dua with correct Arabic?</strong> The kids' programme covers travel, eating, sleeping and morning duas with a live tutor. <a href="/online-quran-classes-for-kids">Book a free 30-minute kids trial</a>.
+          </div>`,
+  },
+  "inna-lillahi-wa-inna-ilayhi-rajiun-meaning": {
+    style: S,
+    content: `<p><strong>Inna lillahi wa inna ilayhi rajiun</strong> — you hear it at every loss: a death, an accident, bad news. But these words are far more than a condolence formula. They are a direct quote from the Quran (2:156), Allah's own prescription for grief, and the Prophet ﷺ taught that saying them at <em>any</em> loss — even a broken sandal strap — brings reward and replacement.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> It means <strong>"Indeed, we belong to Allah, and indeed, to Him we return"</strong> (Quran 2:156). Say it upon hearing of a death or any calamity, big or small. This statement is called <em>Istirja'</em>.
+          </div>
+
+          <h2 id="arabic">Full Arabic, transliteration & meaning</h2>
+          <div class="verse-card">
+            <span class="vnum">Quran 2:156</span>
+            <p class="arabic">إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</p>
+            <p class="translit">Inna lillahi wa inna ilayhi raji'un.</p>
+            <p class="trans-en">"Indeed, we belong to Allah, and indeed, to Him we return."</p>
+          </div>
+          <p>The full verse: <em>"…who, when disaster strikes them, say: Indeed we belong to Allah, and indeed to Him we return. Those are the ones upon whom are blessings from their Lord, and mercy. And it is those who are guided."</em> (2:155–157). Allah attaches three gifts to these words: <strong>His blessings, His mercy, and guidance.</strong></p>
+
+          <h2 id="when">When to say it</h2>
+          <ul>
+            <li><strong>On hearing of a death</strong> — Muslim or non-Muslim relative, friend or stranger.</li>
+            <li><strong>At any calamity:</strong> job loss, illness diagnosis, accident, financial loss.</li>
+            <li><strong>At small losses too:</strong> the Prophet ﷺ taught it even for minor harms — it trains the heart to return everything to its Owner.</li>
+          </ul>
+
+          <h2 id="umm-salamah">The dua that brings something better (Umm Salamah's story)</h2>
+          <div class="verse-card">
+            <span class="vnum">Sahih Muslim</span>
+            <p class="arabic">اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا</p>
+            <p class="translit">Allahumma'jurni fi musibati wa akhlif li khayran minha.</p>
+            <p class="trans-en">"O Allah, reward me in my affliction and replace it for me with something better."</p>
+          </div>
+          <p>Umm Salamah (RA) said these words after her husband Abu Salamah died — thinking no one could be better. Allah then married her to the <strong>Prophet ﷺ himself</strong>. Say Istirja' + this dua together at every loss.</p>
+
+          <h2 id="reply">How to reply when someone shares sad news</h2>
+          <table class="np-table">
+            <tr><th>Situation</th><th>What to say</th></tr>
+            <tr><td>Someone announces a death</td><td>Say "Inna lillahi wa inna ilayhi raji'un" yourself, then make dua for the deceased</td></tr>
+            <tr><td>Condolence to the family</td><td>"May Allah forgive them, grant them Jannah, and give you patience (sabr jameel)"</td></tr>
+            <tr><td>For a deceased Muslim</td><td>"Allahummaghfir lahu warhamhu" — O Allah, forgive and have mercy on him/her</td></tr>
+          </table>
+          <p>There is no fixed "reply" to Istirja' itself — respond with dua, not formalities. Related: <a href="/blog/dua-for-parents-rabbirhamhuma">dua for parents</a> and <a href="/blog/dua-for-forgiveness-istighfar">istighfar guide</a>.</p>
+
+          <h2 id="spelling">Correct spelling (for messages)</h2>
+          <p>You will see <em>innalillahiwainnailaihirojiun</em>, <em>inna lillahi wa inallah e raji un</em> and other run-together spellings. The clearest English rendering is: <strong>Inna lillahi wa inna ilayhi raji'un.</strong> When messaging condolences, adding the English meaning is a beautiful touch for younger family members who may not know it.</p>
+
+          <h2 id="teach">Teach children the meaning, not just the words</h2>
+          <p>Children repeat this phrase at funerals without understanding. Explain it simply: <em>"Everything belongs to Allah — He lent it to us, and He takes it back to Himself."</em> This one sentence builds resilience rooted in aqeedah. Structured Islamic education for kids — including duas and their meanings — is part of the <a href="/courses/islamic-studies-online">Islamic Studies course</a>.</p>
+
+          <div class="gold-box">
+            <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/online-quran-classes#cta">Book a free 30-minute trial</a> for kids or adults.
+          </div>`,
+  },
+  "dua-before-and-after-eating": {
+    style: S,
+    content: `<p>Three short duas turn every meal into worship: <strong>Bismillah before eating</strong>, a special dua <strong>if you forget</strong>, and a beautiful dua of gratitude <strong>after eating</strong>. They take five seconds each — and they are usually the first duas Muslim children ever learn. Full Arabic, transliteration, meanings and Sunnah table manners below.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Before eating say <strong>بِسْمِ اللَّهِ (Bismillah)</strong>. If you forget and remember mid-meal, say <strong>Bismillahi awwalahu wa akhirahu</strong>. After finishing, say <strong>Alhamdulillahilladhi at'amana wa saqana wa ja'alana muslimin</strong>.
+          </div>
+
+          <h2 id="before">Dua before eating</h2>
+          <div class="verse-card">
+            <span class="vnum">Before eating</span>
+            <p class="arabic">بِسْمِ اللَّهِ</p>
+            <p class="translit">Bismillah.</p>
+            <p class="trans-en">"In the name of Allah."</p>
+          </div>
+          <p>The Prophet ﷺ instructed: <em>"Mention Allah's name, eat with your right hand, and eat from what is nearest to you."</em> (Bukhari & Muslim). Full meaning of the phrase: <a href="/blog/bismillah-meaning-in-english">Bismillah explained</a>.</p>
+
+          <h2 id="forgot">Forgot Bismillah? There's a dua for that</h2>
+          <div class="verse-card">
+            <span class="vnum">If you forget — Tirmidhi</span>
+            <p class="arabic">بِسْمِ اللَّهِ أَوَّلَهُ وَآخِرَهُ</p>
+            <p class="translit">Bismillahi awwalahu wa akhirahu.</p>
+            <p class="trans-en">"In the name of Allah, at its beginning and at its end."</p>
+          </div>
+          <p>Say it the moment you remember, even halfway through the meal — the blessing covers what passed and what remains.</p>
+
+          <h2 id="after">Dua after eating</h2>
+          <div class="verse-card">
+            <span class="vnum">After eating — Tirmidhi, Abu Dawud</span>
+            <p class="arabic">الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ</p>
+            <p class="translit">Alhamdulillahilladhi at'amana wa saqana wa ja'alana muslimin.</p>
+            <p class="trans-en">"All praise is for Allah who fed us, gave us drink, and made us Muslims."</p>
+          </div>
+          <p>A shorter authentic option: <em>Alhamdulillah</em> — the Prophet ﷺ said Allah is pleased with a servant who praises Him after every bite and sip (Muslim). More on gratitude: <a href="/blog/alhamdulillah-meaning-in-english">Alhamdulillah meaning</a>.</p>
+
+          <h2 id="sunnah">Sunnah eating etiquettes (quick list)</h2>
+          <ul>
+            <li>Eat with the <strong>right hand</strong>, from the side nearest you.</li>
+            <li><strong>Sit</strong> to eat and drink; don't lean back arrogantly.</li>
+            <li>Don't criticise food — the Prophet ﷺ never did; he simply left what he disliked.</li>
+            <li>Don't blow on hot food; let it cool.</li>
+            <li>Finish your plate — the last morsel carries blessing you can't see.</li>
+            <li>Share: "The food of one is enough for two…" (Bukhari).</li>
+          </ul>
+
+          <h2 id="kids">Teaching kids the eating duas (the fun way)</h2>
+          <ol>
+            <li><strong>Family rule:</strong> the youngest says Bismillah aloud for everyone — kids love the job.</li>
+            <li><strong>The "catch me" game:</strong> parents "forget" Bismillah on purpose; the child who catches it and says <em>Bismillahi awwalahu wa akhirahu</em> wins a point.</li>
+            <li><strong>Print the after-eating dua</strong> on the fridge at child eye-level for the first month.</li>
+            <li>These three duas are lesson one of the <a href="/courses/daily-duas-for-kids">Daily Duas for Kids course</a>, taught with live pronunciation correction. See also <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a>.</li>
+          </ol>
+
+          <div class="gold-box">
+            <strong>Want a tutor to teach your child all the daily duas with correct Arabic?</strong> Ages 4+ welcome. <a href="/online-quran-classes-for-kids">Book a free 30-minute kids trial</a> — no credit card needed.
+          </div>`,
+  },
+  "islamic-months-names-in-order": {
+    style: S,
+    content: `<p>Can you name all <strong>12 Islamic months in order</strong>? Most Muslims know Ramadan and Muharram — fewer can recite the full Hijri calendar. Yet Allah says in the Quran: <em>"Indeed, the number of months with Allah is twelve months in the register of Allah from the day He created the heavens and the earth; of these, four are sacred."</em> (At-Tawbah 9:36). Here is every month, its meaning, and the key dates inside it.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The 12 Islamic months in order: <strong>Muharram, Safar, Rabi al-Awwal, Rabi al-Thani, Jumada al-Awwal, Jumada al-Thani, Rajab, Sha'ban, Ramadan, Shawwal, Dhul Qa'dah, Dhul Hijjah.</strong> The four sacred months are Muharram, Rajab, Dhul Qa'dah and Dhul Hijjah.
+          </div>
+
+          <h2 id="table">All 12 Hijri months — names, meanings & key dates</h2>
+          <table class="np-table">
+            <tr><th>#</th><th>Month</th><th>Meaning</th><th>Key dates & events</th></tr>
+            <tr><td>1</td><td><strong>Muharram</strong> 🕌</td><td>"Forbidden" — sacred month</td><td>Islamic New Year (1st); Ashura fast (10th)</td></tr>
+            <tr><td>2</td><td>Safar</td><td>"Empty" — homes emptied for travel</td><td>—</td></tr>
+            <tr><td>3</td><td>Rabi al-Awwal</td><td>"First spring"</td><td>Birth of the Prophet ﷺ; Hijrah arrival in Madinah</td></tr>
+            <tr><td>4</td><td>Rabi al-Thani</td><td>"Second spring"</td><td>—</td></tr>
+            <tr><td>5</td><td>Jumada al-Awwal</td><td>"First (month of) parched land"</td><td>—</td></tr>
+            <tr><td>6</td><td>Jumada al-Thani</td><td>"Second (month of) parched land"</td><td>—</td></tr>
+            <tr><td>7</td><td><strong>Rajab</strong> 🕌</td><td>"To respect" — sacred month</td><td>Isra & Mi'raj (widely commemorated 27th)</td></tr>
+            <tr><td>8</td><td>Sha'ban</td><td>"Scattered" — tribes dispersed for water</td><td>The Prophet ﷺ fasted most in this month</td></tr>
+            <tr><td>9</td><td><strong>Ramadan</strong> 🌙</td><td>"Scorching heat"</td><td>Month of fasting & Quran; Laylatul Qadr (last 10 nights)</td></tr>
+            <tr><td>10</td><td>Shawwal</td><td>"Raised" — camels raised their tails</td><td>Eid al-Fitr (1st); six Sunnah fasts</td></tr>
+            <tr><td>11</td><td><strong>Dhul Qa'dah</strong> 🕌</td><td>"Month of sitting" — no war</td><td>Sacred month before Hajj</td></tr>
+            <tr><td>12</td><td><strong>Dhul Hijjah</strong> 🕌</td><td>"Month of pilgrimage"</td><td>Hajj (8th–13th); Day of Arafah (9th); Eid al-Adha (10th)</td></tr>
+          </table>
+
+          <h2 id="sacred">The four sacred months</h2>
+          <p><strong>Muharram, Rajab, Dhul Qa'dah and Dhul Hijjah</strong> are the months Allah declared sacred — sins weigh heavier and good deeds carry greater reward. Three are consecutive (Dhul Qa'dah → Muharram) surrounding Hajj; Rajab stands alone in the middle of the year.</p>
+
+          <h2 id="lunar">Why Islamic months move ~11 days each year</h2>
+          <p>The Hijri calendar is <strong>lunar</strong> — each month begins with the sighting of the new crescent and lasts 29 or 30 days, giving a year of ~354 days. That is why Ramadan drifts through all seasons over a 33-year cycle: every Muslim generation experiences fasting in both summer and winter. The calendar counts from the <strong>Hijrah</strong> — the Prophet's ﷺ migration to Madinah (622 CE), chosen by Umar (RA) as year 1.</p>
+
+          <h2 id="worship">Worship calendar — what to do in which month</h2>
+          <ul>
+            <li><strong>Muharram:</strong> fast the 9th–10th (Ashura) — expiates the previous year's sins.</li>
+            <li><strong>Sha'ban:</strong> increase voluntary fasting, prepare for Ramadan.</li>
+            <li><strong>Ramadan:</strong> fasting, Taraweeh, and a Quran <a href="/blog/finish-quran-in-ramadan-30-day-plan">Khatm plan</a>.</li>
+            <li><strong>Shawwal:</strong> six fasts = reward of fasting the whole year (Muslim).</li>
+            <li><strong>Dhul Hijjah:</strong> first 10 days are the best days of the year; fast Arafah (9th) if not on Hajj — see <a href="/blog/labbaik-allahumma-labbaik">Labbaik meaning</a>.</li>
+          </ul>
+
+          <h2 id="memorize">Memorization trick for kids</h2>
+          <p>Group them as <strong>4-4-4</strong>: (Muharram, Safar, two Rabis) → (two Jumadas, Rajab, Sha'ban) → (Ramadan, Shawwal, two Dhuls). Sing them to a simple rhythm at bedtime for a week — most children lock all 12 in within days. Islamic calendar, duas and stories are all part of the <a href="/courses/islamic-studies-online">Islamic Studies course for kids</a>.</p>
+
+          <div class="gold-box">
+            <strong>Give your child a complete Islamic foundation</strong> — Quran, duas, and Islamic knowledge with a personal tutor. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial class</a>.
+          </div>`,
+  },
 };

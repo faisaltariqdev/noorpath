@@ -1091,6 +1091,101 @@ export const blogPosts: BlogPost[] = [
       "One juz a day — or 4 pages after each of the five prayers — completes the entire Quran in exactly 30 days. Here is the full Ramadan Khatm plan, with realistic versions for workers, mothers and students, and what to do when you fall behind.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "attahiyat-full-arabic-english-tashahhud",
+    title: "Attahiyat Full — Arabic Text, English Meaning & How to Recite Tashahhud",
+    description:
+      "Attahiyat (Tashahhud) full text in Arabic with transliteration and English meaning — the beautiful story behind it, when to recite it in salah, common mistakes, and easy tips to memorize it correctly.",
+    category: "Prayer & Worship",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "9 min",
+    keywords: [
+      "attahiyat", "attahiyat full", "attahiyat in english", "attahiyat lillahi wa salawatu",
+      "tashahhud", "tashahhud in english", "attahiyat dua", "attahiyat surah",
+      "attahiyat transliteration", "what to say in tashahhud", "attahiyat meaning",
+      "at tahiyyat", "attahiyat arabic text",
+    ],
+    excerpt:
+      "Attahiyat is recited in every sitting of every salah — yet many Muslims never learned its beautiful meaning: it is the conversation of the Prophet ﷺ with Allah on the night of Mi'raj. Full Arabic, transliteration, English, and memorization tips.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "safar-ki-dua-travel-dua-arabic-english",
+    title: "Safar Ki Dua (Travel Dua) — Arabic, English & Transliteration + Airplane Dua",
+    description:
+      "Safar ki dua (dua for travelling) — Subhanalladhi sakhkhara lana hadha — full Arabic text, transliteration, English meaning, when to recite it, the return-journey addition, and short duas kids can memorize before any trip.",
+    category: "Dhikr & Duas",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "8 min",
+    keywords: [
+      "safar ki dua", "travel dua", "dua for travelling", "dua for journey",
+      "safar ki dua in english", "subhanallazi sakhkhara lana haza", "dua for safe journey",
+      "airplane dua islam", "dua when boarding plane", "musafir ki dua",
+      "travelling dua arabic", "dua for travel protection",
+    ],
+    excerpt:
+      "Every journey — car, plane or train — begins with the Sunnah travel dua: Subhanalladhi sakhkhara lana hadha. Full Arabic, transliteration, word-by-word English meaning, the extra return-journey lines, and a 5-minute method to teach it to kids.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "inna-lillahi-wa-inna-ilayhi-rajiun-meaning",
+    title: "Inna Lillahi Wa Inna Ilayhi Rajiun — Meaning, When to Say It & Reply to Condolences",
+    description:
+      "Inna lillahi wa inna ilayhi rajiun (إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ) means 'Indeed we belong to Allah, and to Him we return' — Quran 2:156. Full meaning, when to say it, how to reply, and the dua of Umm Salamah for loss.",
+    category: "Islamic Knowledge",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "9 min",
+    keywords: [
+      "inna lillahi wa inna ilayhi rajiun", "inna lillahi wa inallah e raji un", "inna lillahi meaning",
+      "what to say when someone dies islam", "innalillahiwainnailaihirojiun", "inna lillahi in arabic",
+      "istirja meaning", "reply to inna lillahi", "condolence message islam",
+      "dua when someone dies", "quran 2:156", "indeed we belong to allah",
+    ],
+    excerpt:
+      "Said at every loss — big or small — Inna lillahi wa inna ilayhi rajiun is Quran 2:156, the words Allah Himself taught for moments of grief. Full Arabic, correct spelling, deeper meaning, what to reply, and the Sunnah dua that brings something better.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-before-and-after-eating",
+    title: "Dua Before & After Eating — Arabic, English + What If You Forget (Bismillah)",
+    description:
+      "Dua before eating (Bismillah), the dua if you forget (Bismillahi awwalahu wa akhirahu), and dua after eating (Alhamdulillahilladhi at'amana) — full Arabic, transliteration, English meaning, Sunnah eating etiquettes, and how to teach kids.",
+    category: "Dhikr & Duas",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "8 min",
+    keywords: [
+      "dua before eating", "dua after eating", "dua for eating", "khane ki dua",
+      "bismillah before eating", "dua before food", "dua after food english",
+      "what to say before eating islam", "forgot to say bismillah before eating",
+      "eating dua for kids", "sunnah way of eating", "dua after meal",
+    ],
+    excerpt:
+      "Three short duas transform every meal into worship: Bismillah before, a special dua if you forget, and Alhamdulillah-illadhi at'amana after. Full Arabic with transliteration, English meanings, Sunnah eating manners, and a fun way to teach kids.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "islamic-months-names-in-order",
+    title: "12 Islamic Months in Order — Names, Meanings & Important Dates (Hijri Calendar)",
+    description:
+      "All 12 Islamic months in order — Muharram to Dhul Hijjah — with correct Arabic names, meanings, the four sacred months, and key dates: Ramadan, both Eids, Ashura, Hajj and more. Complete Hijri calendar guide.",
+    category: "Islamic Knowledge",
+    date: "2026-07-14",
+    updatedAt: "2026-07-14",
+    readTime: "10 min",
+    keywords: [
+      "islamic months", "islamic months in order", "islamic months name", "hijri calendar months",
+      "12 islamic months", "islamic calendar months", "muharram safar rabi al awwal",
+      "sacred months in islam", "islamic month names in english", "hijri months meaning",
+      "arabic months in order", "islamic calendar explained",
+    ],
+    excerpt:
+      "Muharram, Safar, Rabi al-Awwal… can you name all 12 Islamic months in order? This guide covers every Hijri month with its meaning, the four sacred months Allah mentions in the Quran, and the key worship dates every Muslim family should know.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
