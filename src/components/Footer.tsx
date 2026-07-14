@@ -168,28 +168,8 @@ export default function Footer() {
                   <Mail size={15} />
                 </Link>
               </div>
-              {/* Trustpilot badge */}
-              <div style={{ marginTop: 16 }}>
-                <Link
-                  href="https://www.trustpilot.com/review/noorpath.online"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 8,
-                    background: "rgba(255,255,255,.06)",
-                    border: "1px solid rgba(255,255,255,.14)",
-                    borderRadius: 10,
-                    padding: "8px 14px",
-                    textDecoration: "none",
-                  }}
-                >
-                  <span style={{ color: "#00b67a", fontSize: ".95rem", lineHeight: 1 }}>★</span>
-                  <span style={{ color: "rgba(255,255,255,.85)", fontSize: ".8rem", fontWeight: 600 }}>
-                    Review us on Trustpilot
-                  </span>
-                </Link>
+              {/* Website + Trustpilot (one line) */}
+              <div style={{ marginTop: 16, display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
                 <Link
                   href="https://www.noorpath.online"
                   className="social-btn"
@@ -214,11 +194,10 @@ export default function Footer() {
                     fontSize: ".78rem",
                     fontWeight: 700,
                     textDecoration: "none",
-                    marginTop: 4,
                   }}
                 >
                   <Star size={14} fill="#00b67a" stroke="#00b67a" />
-                  Trustpilot
+                  Review us on Trustpilot
                 </Link>
               </div>
             </div>
