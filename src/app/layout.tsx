@@ -1,11 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans, Amiri } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
-import OrganizationJsonLd from "@/components/OrganizationJsonLd";
-import TrackingConsent from "@/components/TrackingConsent";
+import PublicShell from "@/components/PublicShell";
 
 // Enforce build-time prerendering across the App Router.
 // Any server-only dynamic usage will now fail fast during build.
@@ -119,16 +115,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="//formsubmit.co" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//connect.facebook.net" />
+        {/* Noorani Qaida learning module fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
-        <a href="#main-content" className="skip-to-content">Skip to main content</a>
-        <OrganizationJsonLd />
-        <Navbar />
-        {/* padding-top accounts for fixed Navbar + promo bar height */}
-        <main id="main-content" style={{ paddingTop: 0 }}>{children}</main>
-        <Footer />
-        <WhatsAppFloat />
-        <TrackingConsent />
+        <PublicShell>{children}</PublicShell>
       </body>
     </html>
   );
