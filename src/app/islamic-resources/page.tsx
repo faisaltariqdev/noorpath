@@ -335,8 +335,8 @@ export default function IslamicResourcesPage() {
       {/* Share CTA */}
       <section style={{ background: "var(--ivory)", borderTop: "1px solid var(--border)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <div style={{ background: "linear-gradient(135deg, #0a6e4f, #065038)", borderRadius: 24, padding: "40px 36px", display: "flex", flexWrap: "wrap", alignItems: "center", gap: 24 }}>
-            <div style={{ flex: 1, minWidth: 280 }}>
+          <div className="p-6 sm:p-9" style={{ background: "linear-gradient(135deg, #0a6e4f, #065038)", borderRadius: 24, display: "flex", flexWrap: "wrap", alignItems: "center", gap: 24 }}>
+            <div className="min-w-[min(280px,100%)]" style={{ flex: 1 }}>
               <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.6rem", marginBottom: 10 }}>
                 Share These Resources — Sadaqah Jaariyah 🌟
               </h2>

@@ -251,7 +251,7 @@ export default async function CityPage({ params }: Props) {
               { src: "/marketing/kids-hifz-memorisation.jpg", alt: `Online Hifz memorisation for kids in ${c.city}`, caption: "Hifz & memorisation" },
             ].map((img) => (
               <figure key={img.src} style={{ margin: 0, position: "relative", borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)", background: "#fff" }}>
-                <Image src={img.src} alt={img.alt} width={800} height={534} style={{ width: "100%", height: 200, objectFit: "cover", display: "block" }} />
+                <Image src={img.src} alt={img.alt} width={800} height={534} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" style={{ width: "100%", height: 200, objectFit: "cover", display: "block" }} />
                 <figcaption style={{ padding: "10px 14px", fontSize: ".82rem", fontWeight: 700, color: "var(--charcoal)" }}>{img.caption}</figcaption>
               </figure>
             ))}
@@ -453,6 +453,7 @@ export default async function CityPage({ params }: Props) {
                   alt={`Family evening online Quran class in ${c.city}`}
                   width={800}
                   height={534}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ width: "100%", height: 180, objectFit: "cover", display: "block" }}
                 />
                 <div style={{ padding: "16px 18px" }}>

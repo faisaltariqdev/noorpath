@@ -433,7 +433,7 @@ export default function UkCityQuranPage({
 
       <section style={{ padding: "28px 0", background: "var(--ivory)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {SERVICE_FACTS.map((fact) => (
               <div key={fact.label} style={{ textAlign: "center", padding: "11px 8px" }}>
                 <div style={{ color: "var(--emerald)", fontWeight: 800, fontSize: "1.2rem" }}>

@@ -43,7 +43,7 @@ export default function OnlineQuranTeacherGuide() {
         }}
       >
         <strong style={{ display: "block", marginBottom: 12 }}>In this guide</strong>
-        <ol style={{ columns: 2, columnGap: 32, margin: 0 }}>
+        <ol className="guide-toc-list" style={{ columns: 2, columnGap: 32, margin: 0 }}>
           <li><a href="#meaning" style={linkStyle}>Teacher and tutor terminology</a></li>
           <li><a href="#matching" style={linkStyle}>Step-by-step tutor matching</a></li>
           <li><a href="#evaluation" style={linkStyle}>Teacher evaluation checklist</a></li>

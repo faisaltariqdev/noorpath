@@ -121,6 +121,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="//connect.facebook.net" />
       </head>
       <body>
+        <a href="#main-content" className="skip-to-content">Skip to main content</a>
         <OrganizationJsonLd />
         <Navbar />
         {/* padding-top accounts for fixed Navbar + promo bar height */}

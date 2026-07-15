@@ -148,6 +148,7 @@ export default function FemaleQuranTeacherPage() {
                 width={900}
                 height={600}
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ width: "100%", height: "auto", display: "block" }}
               />
             </div>

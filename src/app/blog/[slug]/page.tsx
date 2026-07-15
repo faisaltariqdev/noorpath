@@ -263,7 +263,7 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* ── Main content ─────────────────────────────────── */}
             <div className="lg:col-span-2">
-              <div style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 20, padding: "36px 32px" }}>
+              <div className="px-4 py-7 sm:px-8 sm:py-9" style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 20 }}>
 
                 {asset && (
                   <aside
@@ -471,8 +471,8 @@ export default async function BlogPostPage({ params }: Props) {
                 )}
 
                 {/* Author bio box */}
-                <div style={{ display: "flex", gap: 16, alignItems: "flex-start", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 24, marginTop: 40 }}>
-                  <div style={{ width: 54, height: 54, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: "1.1rem", flexShrink: 0 }}>FT</div>
+                <div className="np-author-bio" style={{ display: "flex", gap: 14, alignItems: "flex-start", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 22, marginTop: 40 }}>
+                  <div style={{ width: 50, height: 50, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: "1rem", flexShrink: 0 }}>FT</div>
                   <div>
                     <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".97rem", marginBottom: 2 }}>{post.author}</div>
                     <div style={{ color: "var(--emerald)", fontSize: ".78rem", fontWeight: 600, marginBottom: 8 }}>{post.authorTitle}</div>
@@ -485,7 +485,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
 
                 {/* CTA box at bottom of article */}
-                <div style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 16, padding: 28, textAlign: "center", marginTop: 24 }}>
+                <div className="np-inner-cta" style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 16, textAlign: "center", marginTop: 24 }}>
                   <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.3rem", marginBottom: 12 }}>
                     Want to Discuss a Learning Plan?
                   </h3>

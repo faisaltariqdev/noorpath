@@ -188,18 +188,18 @@ export default function OurTutorsPage() {
       </section>
 
       {/* Hiring process */}
-      <section style={{ background: "var(--ivory)" }}>
+      <section style={{ background: "var(--ivory)", overflow: "visible" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow">🔍 Our Vetting Process</span>
             <h2 className="section-title">How We Match Our <em className="accent">Tutors</em></h2>
             <p className="section-desc center">Our matching process focuses on subject fit, relevant credentials, lesson compatibility, and the preferences shared in your request.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
             {qualitySteps.map((s, i) => (
-              <div key={s.title} style={{ background: "#fff", borderRadius: 16, padding: 24, border: "1px solid var(--border)", position: "relative" }}>
-                <div style={{ position: "absolute", top: -14, left: 20, width: 28, height: 28, background: "var(--emerald)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontSize: ".8rem" }}>{i + 1}</div>
-                <div style={{ color: "var(--emerald)", marginBottom: 12, marginTop: 8 }}>{s.icon}</div>
+              <div key={s.title} style={{ background: "#fff", borderRadius: 16, padding: "28px 24px 24px", border: "1px solid var(--border)", position: "relative" }}>
+                <div style={{ position: "absolute", top: -14, left: 20, width: 28, height: 28, background: "var(--emerald)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontSize: ".8rem", zIndex: 1 }}>{i + 1}</div>
+                <div style={{ color: "var(--emerald)", marginBottom: 12 }}>{s.icon}</div>
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", fontWeight: 700, color: "var(--charcoal)", marginBottom: 8 }}>{s.title}</h3>
                 <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
               </div>

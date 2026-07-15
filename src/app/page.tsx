@@ -167,12 +167,12 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 22 }}>
+              <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 10, marginBottom: 22 }}>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "7px 18px", fontSize: ".79rem", color: "rgba(255,255,255,.85)", fontWeight: 600 }}>
                   <PlayCircle size={14} />
                   {TRIAL.durationMinutes}-minute free trial
                 </div>
-                <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500, marginLeft: 16 }}>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500 }}>
                   ✓ No credit card
                 </div>
               </div>
@@ -204,12 +204,12 @@ export default function HomePage() {
               </div>
 
               {/* Stats */}
-              <div style={{ display: "flex", flexWrap: "wrap", background: "rgba(255,255,255,.05)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 16, padding: "16px 0", marginTop: 8 }}>
+              <div className="hero-stats-bar" style={{ display: "flex", flexWrap: "wrap", background: "rgba(255,255,255,.05)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 16, padding: "16px 0", marginTop: 8 }}>
                 {SERVICE_FACTS.map(({ value, label }, i, arr) => (
-                  <div key={label} style={{ display: "flex", alignItems: "center", flex: 1 }}>
-                    <div style={{ textAlign: "center", padding: "0 16px", width: "100%" }}>
-                      <div style={{ color: "var(--gold-lt)", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.45rem", fontWeight: 700, lineHeight: 1 }}>{value}</div>
-                      <div style={{ color: "rgba(255,255,255,.55)", fontSize: ".7rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".9px", marginTop: 4 }}>{label}</div>
+                  <div key={label} style={{ display: "flex", alignItems: "center", flex: "1 1 100px" }}>
+                    <div style={{ textAlign: "center", padding: "6px 12px", width: "100%" }}>
+                      <div style={{ color: "var(--gold-lt)", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.1rem,3.5vw,1.45rem)", fontWeight: 700, lineHeight: 1 }}>{value}</div>
+                      <div style={{ color: "rgba(255,255,255,.55)", fontSize: ".68rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".8px", marginTop: 4 }}>{label}</div>
                     </div>
                     {i < arr.length - 1 && <div style={{ width: 1, height: 36, background: "rgba(255,255,255,.12)", flexShrink: 0 }} />}
                   </div>

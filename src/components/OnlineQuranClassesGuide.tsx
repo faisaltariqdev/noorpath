@@ -27,7 +27,7 @@ export default function OnlineQuranClassesGuide() {
         }}
       >
         <strong style={{ display: "block", marginBottom: 12 }}>In this guide</strong>
-        <ol style={{ columns: 2, columnGap: 32, margin: 0 }}>
+        <ol className="guide-toc-list" style={{ columns: 2, columnGap: 32, margin: 0 }}>
           <li><a href="#what-are-online-quran-classes" style={linkStyle}>What online Quran classes are</a></li>
           <li><a href="#how-online-learning-works" style={linkStyle}>How online Quran learning works</a></li>
           <li><a href="#benefits" style={linkStyle}>Benefits for families</a></li>

@@ -24,7 +24,7 @@ export default function UkQuranClassesGuide() {
         }}
       >
         <strong style={{ display: "block", marginBottom: 12 }}>UK guide contents</strong>
-        <ol style={{ columns: 2, columnGap: 32, margin: 0 }}>
+        <ol className="guide-toc-list" style={{ columns: 2, columnGap: 32, margin: 0 }}>
           <li><a href="#uk-expectations" style={linkStyle}>What UK learners should expect</a></li>
           <li><a href="#uk-scheduling" style={linkStyle}>GMT and BST scheduling</a></li>
           <li><a href="#uk-learning-route" style={linkStyle}>Choosing a learning route</a></li>

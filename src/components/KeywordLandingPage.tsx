@@ -364,11 +364,11 @@ export default function KeywordLandingPage({
 
           {/* Pricing teaser */}
           <div
+            className="np-pricing-teaser"
             style={{
               background: "linear-gradient(135deg, rgba(10,110,79,.08), rgba(232,184,75,.08))",
               border: "1px solid rgba(10,110,79,.15)",
               borderRadius: 16,
-              padding: "32px 36px",
               marginBottom: 48,
               display: "flex",
               flexWrap: "wrap",
@@ -421,7 +421,7 @@ export default function KeywordLandingPage({
 
           {/* Related links */}
           {relatedLinks && relatedLinks.length > 0 && (
-            <div style={{ background: "var(--ivory)", borderRadius: 16, padding: "28px 32px", marginBottom: 48, border: "1px solid var(--border)" }}>
+            <div className="np-related-links" style={{ background: "var(--ivory)", borderRadius: 16, marginBottom: 48, border: "1px solid var(--border)" }}>
               <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", marginBottom: 16 }}>
                 Explore More Programs
               </h3>

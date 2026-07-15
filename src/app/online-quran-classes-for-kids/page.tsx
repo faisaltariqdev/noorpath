@@ -242,6 +242,7 @@ export default function OnlineQuranClassesForKidsPage() {
                 width={900}
                 height={600}
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ width: "100%", height: "auto", display: "block" }}
               />
             </div>
@@ -275,7 +276,7 @@ export default function OnlineQuranClassesForKidsPage() {
               { src: "/marketing/family-evening-quran.jpg", alt: "Family evening online Quran learning at home", title: "Timezone matching", desc: "Share preferred lesson windows when requesting a tutor." },
             ].map((card) => (
               <figure key={card.src} className="content-card" style={{ margin: 0, padding: 0, overflow: "hidden" }}>
-                <Image src={card.src} alt={card.alt} width={700} height={467} style={{ width: "100%", height: 160, objectFit: "cover", display: "block" }} />
+                <Image src={card.src} alt={card.alt} width={700} height={467} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" style={{ width: "100%", height: 160, objectFit: "cover", display: "block" }} />
                 <figcaption style={{ padding: "14px 16px" }}>
                   <div style={{ fontWeight: 700, fontSize: ".92rem", color: "var(--charcoal)", marginBottom: 4 }}>{card.title}</div>
                   <p style={{ fontSize: ".82rem", color: "var(--muted)", margin: 0, lineHeight: 1.5 }}>{card.desc}</p>

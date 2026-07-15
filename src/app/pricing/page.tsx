@@ -139,7 +139,7 @@ export default function PricingPage() {
           </div>
 
           {/* Family discount */}
-          <div style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 20, padding: "32px 36px", textAlign: "center", marginBottom: 48 }}>
+          <div className="px-5 py-8 sm:px-9" style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 20, textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", color: "var(--charcoal)", marginBottom: 12 }}>👨‍👩‍👧‍👦 Family Sibling Discount</h2>
             <p style={{ color: "var(--muted)", maxWidth: 560, margin: "0 auto 20px" }}>Enroll multiple children from the same family and save on every sibling.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -170,7 +170,7 @@ export default function PricingPage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "2.2rem", marginBottom: 16 }}>Start With a Free Trial — No Credit Card</h2>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "clamp(1.6rem, 4.5vw, 2.2rem)", marginBottom: 16 }}>Start With a Free Trial — No Credit Card</h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>Experience NoorPath before you commit. Get a free 30-minute class with a certified tutor.</p>
             </div>
             <div className="cta-form-wrap">

@@ -103,7 +103,7 @@ export default function AboutPage() {
       {/* Stats */}
       <section style={{ background: "var(--ivory)", padding: "48px 0", borderBottom: "1px solid var(--border)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
             {stats.map((s) => (
               <div key={s.label}>
                 <div style={{ color: "var(--emerald)", marginBottom: 8, display: "flex", justifyContent: "center" }}>{s.icon}</div>
@@ -257,7 +257,7 @@ export default function AboutPage() {
           </div>
 
           {/* CTA */}
-          <div style={{ background: "linear-gradient(135deg, var(--emerald-dk) 0%, var(--emerald) 100%)", borderRadius: 20, padding: "36px 32px", textAlign: "center", marginBottom: 48 }}>
+          <div className="np-inner-cta" style={{ background: "linear-gradient(135deg, var(--emerald-dk) 0%, var(--emerald) 100%)", borderRadius: 20, textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.8rem", marginBottom: 12 }}>
               Ready to Start Your <em style={{ color: "var(--gold-lt)" }}>Quran Journey?</em>
             </h2>

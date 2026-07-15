@@ -94,7 +94,7 @@ export default function FounderPage() {
             </div>
 
             {/* Bio */}
-            <div style={{ gridColumn: "span 2" }}>
+            <div className="md:col-span-2">
               <div className="content-card">
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.2rem", color: "var(--charcoal)", marginBottom: 16 }}>The Story Behind NoorPath</h3>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>

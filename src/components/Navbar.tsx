@@ -37,12 +37,11 @@ export default function Navbar() {
       {/* ── PROMO BAR ── */}
       {promoVisible && (
         <div
+          className="promo-bar-np"
           style={{
             background: "linear-gradient(90deg, #0a6e4f 0%, #0d5436 100%)",
             color: "#fff",
             textAlign: "center",
-            padding: "9px 44px",
-            fontSize: ".82rem",
             fontWeight: 500,
             position: "relative",
             letterSpacing: ".2px",
@@ -53,7 +52,7 @@ export default function Navbar() {
           — No credit card required. Tutor availability is confirmed after your request.{" "}
           <Link
             href="/online-quran-classes#cta"
-            style={{ color: "#e8b84b", fontWeight: 700, marginLeft: 8, textDecoration: "none" }}
+            style={{ color: "#e8b84b", fontWeight: 700, marginLeft: 8, textDecoration: "none", whiteSpace: "nowrap" }}
           >
             Request Trial →
           </Link>
@@ -62,7 +61,7 @@ export default function Navbar() {
             onClick={() => setPromoVisible(false)}
             style={{
               position: "absolute",
-              right: 14,
+              right: 8,
               top: "50%",
               transform: "translateY(-50%)",
               background: "none",
@@ -165,6 +164,7 @@ export default function Navbar() {
             <li style={{ position: "relative" }}>
               <details>
                 <summary
+                  className="nav-countries-np"
                   style={{
                     color: "rgba(255,255,255,.82)",
                     fontWeight: 500,
@@ -200,7 +200,7 @@ export default function Navbar() {
                 </div>
               </details>
             </li>
-            <li style={{ marginLeft: 10 }}>
+            <li className="nav-cta-item-np" style={{ marginLeft: 10 }}>
               <Link
                 href="/online-quran-classes#cta"
                 style={{
