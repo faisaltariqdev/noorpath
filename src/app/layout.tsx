@@ -56,9 +56,8 @@ export const metadata: Metadata = {
     "learn quran online","online quran classes","quran tutor online",
     "online quran academy","quran classes for kids","tajweed classes online",
     "hifz program online","noorani qaida online","arabic language online",
-    "islamic studies online","daily duas for kids","online quran uk",
-    "online quran usa","online quran canada","online quran australia",
-    "female quran tutor","family quran classes","best online quran academy",
+    "islamic studies online","daily duas for kids","female quran tutor",
+    "family quran classes","online quran lessons",
     "learn quran from home","online quran teacher","quran learning online",
     "online islamic education","1 on 1 quran classes","free quran classes online",
   ],
@@ -76,7 +75,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
     url: "https://www.noorpath.online",
     siteName: "NoorPath Academy",
     title: "Learn Quran Online | NoorPath Academy — Free Trial",
@@ -120,6 +118,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="//wa.me" />
         <link rel="dns-prefetch" href="//formsubmit.co" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//connect.facebook.net" />
       </head>
       <body>
         <OrganizationJsonLd />

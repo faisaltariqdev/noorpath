@@ -173,7 +173,7 @@ export default function CoursesPage() {
             <h2 className="section-title">Choose the Right <em className="accent">Quran Course</em> for You</h2>
             <p className="section-desc center">
               Not sure where to start? Use this quick guide: <strong>No Arabic reading?</strong> → Start with <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida</Link>.{" "}
-              <strong>Can read Arabic?</strong> → <Link href="/courses/tajweed-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed Classes</Link>.{" "}
+              <strong>Can read Arabic?</strong> → <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed Classes</Link>.{" "}
               <strong>Memorization goal?</strong> → <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz Program</Link>.{" "}
               Or book a free trial and your tutor will advise you.
             </p>

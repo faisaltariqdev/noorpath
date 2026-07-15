@@ -3,6 +3,7 @@ import { blogPosts } from "@/data/blog";
 import { courses } from "@/data/courses";
 import { locations } from "@/data/locations";
 import { cities } from "@/data/cities";
+import { backlinkAssets } from "@/data/backlinkAssets";
 
 const BASE = "https://www.noorpath.online";
 
@@ -65,15 +66,22 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "finish-quran-in-ramadan-30-day-plan",
 ]);
 
+const BACKLINK_ASSET_SLUGS = new Set(
+  backlinkAssets.map((asset) => asset.slug)
+);
+
 /** Root-level keyword landing pages (Qutor-style commercial URLs) */
 const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/learn-quran-online`,          priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/online-quran-academy`,         priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
   { url: `${BASE}/learn-tajweed-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
   { url: `${BASE}/hifz-quran-online`,           priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/quran-lesson-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/studying-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
 ];
+
+const REDIRECTED_COURSE_SLUGS = new Set([
+  "quran-classes-for-kids",
+  "tajweed-classes-online",
+  "hifz-program-online",
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -93,21 +101,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: NOW },
     { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/about`,                                    priority: 0.75, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/contact`,                                  priority: 0.7,  changeFrequency: "yearly",  lastModified: NOW },
     { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: NOW },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: NOW },
     { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: NOW },
+    { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: NOW },
+    { url: `${BASE}/accessibility-statement`,                  priority: 0.5,  changeFrequency: "yearly",  lastModified: NOW },
     { url: `${BASE}/privacy-policy`,                           priority: 0.4,  changeFrequency: "yearly",  lastModified: NOW },
     { url: `${BASE}/terms-of-service`,                         priority: 0.4,  changeFrequency: "yearly",  lastModified: NOW },
   ];
 
   // Auto-generate from shared data (courses + country locations + cities + blogs)
-  const coursePages: MetadataRoute.Sitemap = courses.map((c) => ({
+  const coursePages: MetadataRoute.Sitemap = courses
+    .filter((c) => !REDIRECTED_COURSE_SLUGS.has(c.slug))
+    .map((c) => ({
     url: `${BASE}/courses/${c.slug}`,
     lastModified: CONTENT_UPDATE,
     priority: 0.85,
     changeFrequency: "monthly" as const,
-  }));
+    }));
 
   const locationPages: MetadataRoute.Sitemap = locations.map((l) => ({
     url: `${BASE}/locations/${l.slug}`,
@@ -128,11 +141,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const lastModified = Number.isFinite(Date.parse(raw)) ? new Date(raw) : NOW;
     const isCommercial = COMMERCIAL_BLOG_SLUGS.has(p.slug);
     const isHighTraffic = HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug);
+    const isBacklinkAsset = BACKLINK_ASSET_SLUGS.has(p.slug);
     return {
       url: `${BASE}/blog/${p.slug}`,
       lastModified,
-      priority: isCommercial ? 0.88 : isHighTraffic ? 0.84 : 0.75,
-      changeFrequency: (isCommercial || isHighTraffic) ? ("weekly" as const) : ("monthly" as const),
+      priority: isCommercial ? 0.88 : isBacklinkAsset ? 0.86 : isHighTraffic ? 0.84 : 0.75,
+      changeFrequency: (isCommercial || isBacklinkAsset || isHighTraffic) ? ("weekly" as const) : ("monthly" as const),
     };
   });
 

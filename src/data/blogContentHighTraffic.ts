@@ -108,7 +108,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </figure>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Start Hifz when your child can read Quran with basic fluency (often ages 7–10). Online Hifz needs 5–6 short sessions per week plus home revision. <a href="/courses/hifz-program-online">Hifz program details</a> · <a href="/online-quran-classes-for-kids">kids free trial</a>.
+            <strong>Quick answer:</strong> Start Hifz when your child can read Quran with basic fluency (often ages 7–10). Online Hifz needs 5–6 short sessions per week plus home revision. <a href="/hifz-quran-online">Hifz program details</a> · <a href="/online-quran-classes-for-kids">kids free trial</a>.
           </div>
 
           <div class="stat-row">
@@ -549,7 +549,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
     content: `<p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer in 2026: anywhere from <strong>$4 to $25 per class</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Most families pay <strong>$30–$80 per month</strong> for 2 classes/week of 30 minutes with a certified tutor. Hifz and Ijazah-track programs cost more; group classes cost less but progress slower. Compare with <a href="/pricing">NoorPath pricing</a> — first 30-minute trial is free, no card required.
+            <strong>Quick answer:</strong> Online Quran class prices vary by lesson length, frequency, format and tutor. Compare total teaching time, payment terms and what support is included. See <a href="/pricing">NoorPath pricing</a> for its current published plans; the 30-minute trial is free and requires no card.
           </div>
 
           <div class="stat-row">
@@ -594,23 +594,23 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>In-person and online Quran tutoring costs vary by country, tutor, lesson length and format. Online one-to-one classes remove travel and may offer more scheduling options. Compare the current lesson frequency, duration and full monthly price before choosing — read the full comparison in <a href="/blog/benefits-of-online-quran-classes">benefits of online Quran classes</a>.</p>
 
           <div class="gold-box">
-            <strong>Test before you pay anything.</strong> Book a <a href="/online-quran-classes#cta">free 30-minute trial class</a> — meet a certified tutor, see the teaching quality, then decide. No credit card required.
+            <strong>Test the proposed match before enrolling.</strong> Request a <a href="/online-quran-classes#cta">free 30-minute trial class</a>, ask about the tutor&apos;s relevant credentials and assess the lesson fit. No credit card is required.
           </div>`,
   },
   "learn-quran-as-an-adult-never-too-late": {
     style: S,
-    content: `<p>Every month, thousands of adults quietly type the same painful question into Google: <em>"am I too old to learn Quran?"</em> Some are 25, some are 40, some are 65. The answer — from teachers who have taught every age — is simple: <strong>no adult is too old to learn Quran</strong>, and most go from zero to reading within 6–12 months with the right method.</p>
+    content: `<p>Adults often ask: <em>"am I too old to learn Quran?"</em> Age alone does not prevent someone from beginning. Adults can start from Arabic letters or return at their current reading level, with progress shaped by attendance, practice, lesson frequency and individual learning needs.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Adults learn Quran reading in <strong>6–12 months</strong> with two 30-minute 1-on-1 classes per week. There is no age limit, classes are completely private (no group, no judgment), and you can start from the Arabic alphabet. <a href="/online-quran-classes-for-adults">Book an adult free trial</a>.
+            <strong>Quick answer:</strong> Adults can begin Quran reading from the Arabic alphabet through private one-to-one lessons. There is no honest universal completion time; the starting level, schedule and practice routine all matter. <a href="/online-quran-classes-for-adults">Request an adult free trial</a>.
           </div>
 
           <h2 id="embarrassment">The embarrassment problem — and why online solves it</h2>
-          <p>The biggest barrier for adult learners is not ability — it is shame. Sitting in a madrasa next to seven-year-olds, or admitting to your community that you never learned, stops most adults before they start. A private 1-on-1 online class removes the audience entirely: it is just you and one patient tutor who teaches adults every day. Nobody else ever sees your class.</p>
+          <p>Some adult learners feel uncomfortable joining a children&apos;s group or discussing their starting level publicly. A private one-to-one online lesson provides a direct setting with the proposed tutor. Ask how communication, privacy and lesson access are handled before enrolling.</p>
 
           <div class="stat-row">
             <div class="stat-pill"><strong>0</strong><span>Arabic needed to start</span></div>
-            <div class="stat-pill"><strong>6–12mo</strong><span>Zero → reading</span></div>
+            <div class="stat-pill"><strong>Your pace</strong><span>Progress varies</span></div>
             <div class="stat-pill"><strong>1-on-1</strong><span>Fully private</span></div>
             <div class="stat-pill"><strong>Any age</strong><span>25, 40, 60, 70+</span></div>
           </div>
@@ -644,7 +644,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>Your slow, effortful recitation is not a deficiency — it is written as double reward. Every adult who starts today is ahead of the adult who waits another year.</p>
 
           <div class="gold-box">
-            <strong>Start privately this week.</strong> Book a <a href="/online-quran-classes-for-adults">free 30-minute adult trial</a> — tell the tutor you are starting from zero. That is exactly what they are trained for. No credit card, no group, no judgment.
+            <strong>Request a private trial.</strong> Book a <a href="/online-quran-classes-for-adults">free 30-minute adult trial</a> and share your current level honestly so NoorPath can discuss a suitable tutor match. No credit card is required.
           </div>`,
   },
   "new-muslim-guide-to-reading-quran": {
@@ -659,7 +659,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <table class="np-table">
             <tr><th>Track</th><th>Goal</th><th>How</th><th>Timeline</th></tr>
             <tr><td><strong>Understanding</strong></td><td>Know what Allah says</td><td>Read English translation daily, 1–2 pages</td><td>Starts today</td></tr>
-            <tr><td><strong>Recitation</strong></td><td>Read the Arabic itself</td><td>Arabic letters → <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> → mushaf</td><td>6–12 months</td></tr>
+            <tr><td><strong>Recitation</strong></td><td>Read the Arabic itself</td><td>Arabic letters → <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> → mushaf</td><td>Learner-paced</td></tr>
           </table>
           <p>Most new Muslims burn out because they try to do everything in Arabic from day one. Separate the two tracks and both become easy.</p>
 
@@ -679,7 +679,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>Memorise them from audio + transliteration first; a tutor then corrects your pronunciation. For prayer itself, follow the <a href="/blog/how-to-pray-salah-step-by-step">step-by-step salah guide</a> and <a href="/blog/how-to-do-wudu-step-by-step">wudu guide</a>.</p>
 
           <h2 id="letters">Learning the Arabic letters (it is easier than it looks)</h2>
-          <p>Arabic has 28 letters. Most adults learn to recognise all of them within 4–8 weeks with two short lessons a week. Then Noorani Qaida teaches you how letters join and carry vowels — the same system used worldwide for 100+ years. From there you read the mushaf directly, slowly at first.</p>
+          <p>Arabic has 28 letters. Adults can begin by learning to recognise and pronounce them, then use Noorani Qaida to study how letters join and carry vowels. The time required varies by prior knowledge, lesson frequency and practice. From there, the learner can move towards reading from the mushaf.</p>
 
           <h2 id="teacher">Why converts do best with a 1-on-1 teacher</h2>
           <ul>
@@ -871,7 +871,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ul>
 
           <div class="gold-box">
-            <strong>Reading slowly or with mistakes?</strong> A certified tutor can fix your fluency and Tajweed before next Ramadan. <a href="/online-quran-classes#cta">Book a free 30-minute trial</a> — kids and adults, all timezones.
+            <strong>Reading slowly or with mistakes?</strong> A live tutor can listen to your recitation and discuss suitable fluency or Tajweed goals. <a href="/online-quran-classes#cta">Request a free 30-minute trial</a> for a child or adult; timezone availability is confirmed after matching.
           </div>`,
   },
   "attahiyat-full-arabic-english-tashahhud": {
@@ -919,7 +919,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ol>
 
           <div class="gold-box">
-            <strong>Is your salah recitation correct?</strong> In a free 30-minute class, a certified tutor listens to your Attahiyat, Fatiha and surahs and gently corrects every word. <a href="/online-quran-classes#cta">Book the free trial</a> — kids, adults and new Muslims welcome.
+            <strong>Would you like help with recitation?</strong> In a requested free 30-minute trial, discuss the learner&apos;s current level and ask whether the proposed tutor can support the relevant reading goals. <a href="/online-quran-classes#cta">Request the free trial</a>; tutor availability is confirmed after matching.
           </div>`,
   },
   "safar-ki-dua-travel-dua-arabic-english": {

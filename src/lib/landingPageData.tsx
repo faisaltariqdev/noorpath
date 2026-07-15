@@ -63,6 +63,7 @@ export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & 
   ctaHeadline: <>Start Learning Quran <em style={{ color: "var(--gold-lt)" }}>Online Today</em></>,
   ctaSubtext: "Book your free trial — meet your tutor, get a level assessment, and receive a personalised learning plan.",
   relatedLinks: [
+    { href: "/blog/how-to-improve-quran-recitation", label: "How to Improve Quran Recitation" },
     { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids" },
     { href: "/online-quran-classes-for-adults", label: "Quran Classes for Adults" },
     { href: "/online-quran-for-beginners", label: "Quran for Beginners" },
@@ -179,7 +180,7 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
   ctaHeadline: <>Start Tajweed <em style={{ color: "var(--gold-lt)" }}>Online Today</em></>,
   ctaSubtext: "Request a free Tajweed trial to experience live one-to-one recitation feedback.",
   relatedLinks: [
-    { href: "/courses/tajweed-classes-online", label: "Tajweed Course Details" },
+    { href: "/learn-tajweed-online", label: "Tajweed Course Details" },
     { href: "/blog/tajweed-rules-complete-guide", label: "Tajweed Rules Guide" },
     { href: "/quran-teacher-online", label: "Online Quran Teacher" },
     { href: "/learn-quran-online", label: "Learn Quran Online" },
@@ -232,7 +233,7 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
   ctaHeadline: <>Begin Your <em style={{ color: "var(--gold-lt)" }}>Hifz Journey Online</em></>,
   ctaSubtext: "Request a free trial lesson and discuss an individual memorization and revision plan.",
   relatedLinks: [
-    { href: "/courses/hifz-program-online", label: "Hifz Program Details" },
+    { href: "/hifz-quran-online", label: "Hifz Program Details" },
     { href: "/blog/how-to-memorize-quran-faster", label: "Memorization Tips" },
     { href: "/online-quran-classes-for-kids", label: "Kids Quran Classes" },
     { href: "/learn-quran-online", label: "Learn Quran Online" },
@@ -339,7 +340,7 @@ export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath">
   ctaSubtext: "Your first study session is free — meet your tutor and get a personalised Quran study plan.",
   relatedLinks: [
     { href: "/learn-quran-online", label: "Learn Quran Online" },
-    { href: "/online-quran-academy", label: "Online Quran Academy" },
+    { href: "/online-quran-classes", label: "Online Quran Academy" },
     { href: "/online-quran-for-beginners", label: "Quran for Beginners" },
     { href: "/blog/benefits-of-online-quran-classes", label: "Benefits of Online Classes" },
   ],

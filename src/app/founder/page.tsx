@@ -1,42 +1,57 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { BASE_URL, ORGANIZATION_ID } from "@/lib/organizationSchema";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-  description: "Meet Faisal Tariq, Founder and CEO of NoorPath Academy, building accessible online Quran learning for Muslim families.",
+  description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
   alternates: { canonical: "https://www.noorpath.online/founder" },
   openGraph: {
     title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-    description: "Founder-led work to make online Quran education accessible to Muslim families.",
+    description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
     url: "https://www.noorpath.online/founder",
     images: [{ url: "/assets/faisal-tariq-founder.png", width: 500, height: 500, alt: "Faisal Tariq — Founder & CEO, NoorPath Academy" }],
   },
   twitter: {
     card: "summary",
     title: "Faisal Tariq — Founder & CEO | NoorPath Academy",
-    description: "Software engineer building accessible online Quran education for families.",
+    description: "Founder and CEO of NoorPath Academy.",
     images: ["/assets/faisal-tariq-founder.png"],
   },
 };
+
+const profileUrl = `${BASE_URL}/founder`;
+const personId = `${profileUrl}#person`;
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://www.noorpath.online/founder",
+      "@type": "ProfilePage",
+      "@id": profileUrl,
       name: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-      description: "The founder story, mission, and values behind NoorPath Academy.",
-      url: "https://www.noorpath.online/founder",
+      description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
+      url: profileUrl,
+      mainEntity: { "@id": personId },
+      isPartOf: { "@id": `${BASE_URL}/#website` },
+    },
+    {
+      "@type": "Person",
+      "@id": personId,
+      name: "Faisal Tariq",
+      jobTitle: "Founder and CEO",
+      url: profileUrl,
+      image: `${BASE_URL}/assets/faisal-tariq-founder.png`,
+      worksFor: { "@id": ORGANIZATION_ID },
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-        { "@type": "ListItem", position: 2, name: "Founder", item: "https://www.noorpath.online/founder" },
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Founder", item: profileUrl },
       ],
     },
   ],
@@ -55,7 +70,7 @@ export default function FounderPage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Founder</span>
           </nav>
           <h1>Meet Our Founder & CEO</h1>
-          <p>The vision and values behind NoorPath Academy — built with passion for Islamic education and modern technology.</p>
+          <p>Meet Faisal Tariq, the Founder and CEO of NoorPath Academy.</p>
         </div>
       </div>
 
@@ -83,21 +98,24 @@ export default function FounderPage() {
               <div className="content-card">
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.2rem", color: "var(--charcoal)", marginBottom: 16 }}>The Story Behind NoorPath</h3>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-                  Faisal Tariq is a software engineer and Islamic education entrepreneur who founded NoorPath Academy with a clear mission: to make high-quality Quran education accessible to every Muslim family in the world, regardless of their location.
+                  Faisal Tariq is the Founder and CEO of NoorPath Academy. NoorPath provides online Quran learning for children, adults and families.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-                  With a background in software engineering, Faisal combined his technical expertise with a deep interest in Islamic education to build an online learning platform for Muslim families.
+                  NoorPath offers live one-to-one lessons and matches learners with tutors according to their learning goals, schedule and stated preferences.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 24 }}>
-                  NoorPath Academy was founded in 2018 and offers live 1-to-1 learning across Noorani Qaida, Quran reading, Tajweed, Hifz, and related programs for children and adults.
+                  Available learning routes include Noorani Qaida, Quran reading, Tajweed, Hifz, Arabic and Islamic studies. Tutor details and availability are confirmed during the enquiry and enrolment process.
                 </p>
 
-                <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.1rem", color: "var(--charcoal)", marginBottom: 12 }}>Core Mission</h3>
+                <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.1rem", color: "var(--charcoal)", marginBottom: 12 }}>Learn More</h3>
                 <div style={{ background: "rgba(10,110,79,.06)", border: "1px solid rgba(10,110,79,.15)", borderRadius: 12, padding: 20 }}>
-                  <p style={{ color: "var(--emerald)", fontStyle: "italic", margin: 0, lineHeight: 1.75, fontFamily: "'Playfair Display',serif", fontSize: "1.05rem" }}>
-                    &ldquo;Every Muslim child deserves access to quality Quran education. Technology gives us the power to deliver that — wherever they are in the world.&rdquo;
+                  <p style={{ color: "var(--emerald)", margin: 0, lineHeight: 1.75, fontFamily: "'Playfair Display',serif", fontSize: "1.05rem" }}>
+                    Read about NoorPath&apos;s services, tutor matching and approach on the{" "}
+                    <Link href="/about" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                      About page
+                    </Link>
+                    .
                   </p>
-                  <div style={{ textAlign: "right", marginTop: 10, color: "var(--muted)", fontSize: ".85rem" }}>— Faisal Tariq</div>
                 </div>
               </div>
             </div>

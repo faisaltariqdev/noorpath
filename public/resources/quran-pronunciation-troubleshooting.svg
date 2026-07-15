@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Quran pronunciation troubleshooting pathway</title>
+  <desc id="desc">A NoorPath visual guide for responding to a recurring Quran recitation difficulty. The pathway is notice, isolate, compare, practise slowly, seek live feedback, record correction, and review. Four issue areas are distinguished: sound or letter, vowel or timing, Tajweed rule, and fluency. The chart cannot diagnose recitation; a teacher needs to listen.</desc>
+  <defs>
+    <linearGradient id="topGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#063d2c"/>
+      <stop offset="1" stop-color="#0f8f66"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#063d2c" flood-opacity=".11"/>
+    </filter>
+    <style>
+      .sans { font-family: Arial, Helvetica, sans-serif; }
+      .serif { font-family: Georgia, "Times New Roman", serif; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 700; letter-spacing: 2.2px; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #2d3748; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 19px; fill: #2d3748; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1500" fill="#fdf8f0"/>
+  <circle cx="1100" cy="90" r="230" fill="#c9922a" opacity=".15"/>
+  <path d="M0 1380 C290 1315 780 1480 1200 1365 V1500 H0 Z" fill="#0a6e4f" opacity=".06"/>
+
+  <g id="header" aria-label="Title and introduction">
+    <rect width="1200" height="306" fill="url(#topGradient)"/>
+    <path d="M0 268 C330 336 866 228 1200 282 V306 H0 Z" fill="#fdf8f0"/>
+    <g transform="translate(72 50)">
+      <rect width="178" height="42" rx="21" fill="#e8b84b"/>
+      <text x="89" y="28" text-anchor="middle" class="label" font-size="17" letter-spacing="1.7" fill="#063d2c">NOORPATH GUIDE</text>
+    </g>
+    <text x="72" y="148" class="serif" font-size="55" font-weight="700" fill="#ffffff">Quran pronunciation</text>
+    <text x="72" y="212" class="serif" font-size="55" font-weight="700" fill="#ffffff">troubleshooting</text>
+    <text x="72" y="260" class="sans" font-size="23" fill="#dfeee8">A careful pathway from noticing a difficulty to reviewing its correction.</text>
+  </g>
+
+  <g id="issue-types" aria-label="Four types of recitation issue">
+    <text x="72" y="362" class="label" fill="#0a6e4f">FIRST, NAME WHAT YOU NOTICE</text>
+    <text x="72" y="400" class="body">Use these as observation categories, not as a diagnosis.</text>
+
+    <g id="sound-letter" aria-label="Sound or letter issue" transform="translate(72 438)" filter="url(#cardShadow)">
+      <rect width="246" height="198" rx="22" fill="#ffffff" stroke="#0a6e4f" stroke-width="3"/>
+      <circle cx="40" cy="42" r="20" fill="#0a6e4f"/>
+      <path d="M30 42 H50 M40 32 V52" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <text x="28" y="88" class="serif" font-size="29" font-weight="700" fill="#063d2c">Sound / letter</text>
+      <text x="28" y="124" class="small">
+        <tspan x="28" dy="0">Which letter or</tspan>
+        <tspan x="28" dy="27">articulation feels</tspan>
+        <tspan x="28" dy="27">unclear?</tspan>
+      </text>
+    </g>
+
+    <g id="vowel-timing" aria-label="Vowel or timing issue" transform="translate(342 438)" filter="url(#cardShadow)">
+      <rect width="246" height="198" rx="22" fill="#ffffff" stroke="#c9922a" stroke-width="3"/>
+      <circle cx="40" cy="42" r="20" fill="#c9922a"/>
+      <path d="M40 30 V42 L49 48" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="88" class="serif" font-size="29" font-weight="700" fill="#063d2c">Vowel / timing</text>
+      <text x="28" y="124" class="small">
+        <tspan x="28" dy="0">Is a vowel, pause</tspan>
+        <tspan x="28" dy="27">or duration being</tspan>
+        <tspan x="28" dy="27">heard differently?</tspan>
+      </text>
+    </g>
+
+    <g id="tajweed-rule" aria-label="Tajweed rule issue" transform="translate(612 438)" filter="url(#cardShadow)">
+      <rect width="246" height="198" rx="22" fill="#ffffff" stroke="#0f8f66" stroke-width="3"/>
+      <circle cx="40" cy="42" r="20" fill="#0f8f66"/>
+      <path d="M31 42 L38 49 L50 34" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="88" class="serif" font-size="29" font-weight="700" fill="#063d2c">Tajweed rule</text>
+      <text x="28" y="124" class="small">
+        <tspan x="28" dy="0">Does a learned rule</tspan>
+        <tspan x="28" dy="27">need clarification in</tspan>
+        <tspan x="28" dy="27">this exact place?</tspan>
+      </text>
+    </g>
+
+    <g id="fluency" aria-label="Fluency issue" transform="translate(882 438)" filter="url(#cardShadow)">
+      <rect width="246" height="198" rx="22" fill="#ffffff" stroke="#2d6f63" stroke-width="3"/>
+      <circle cx="40" cy="42" r="20" fill="#2d6f63"/>
+      <path d="M29 48 C35 35 42 55 51 35" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <text x="28" y="88" class="serif" font-size="29" font-weight="700" fill="#063d2c">Fluency</text>
+      <text x="28" y="124" class="small">
+        <tspan x="28" dy="0">Is flow breaking even</tspan>
+        <tspan x="28" dy="27">when the individual</tspan>
+        <tspan x="28" dy="27">parts are known?</tspan>
+      </text>
+    </g>
+  </g>
+
+  <g id="pathway" aria-label="Seven-step troubleshooting pathway">
+    <rect x="72" y="686" width="1056" height="534" rx="28" fill="#063d2c"/>
+    <text x="112" y="748" class="label" fill="#e8b84b">FOLLOW THE CORRECTION PATHWAY</text>
+    <text x="112" y="788" class="sans" font-size="22" fill="#dfeee8">Move slowly. A teacher&#8217;s live feedback is the key checkpoint.</text>
+
+    <path d="M178 878 H316 M424 878 H562 M670 878 H808 M916 878 H1000 V1060 H916 M808 1060 H670 M562 1060 H424 M316 1060 H178"
+      fill="none" stroke="#e8b84b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+
+    <g id="notice" aria-label="Step 1, Notice" transform="translate(112 818)">
+      <circle cx="66" cy="60" r="58" fill="#fdf8f0"/>
+      <text x="66" y="52" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#0a6e4f">1</text>
+      <text x="66" y="79" text-anchor="middle" class="sans" font-size="18" font-weight="700" fill="#063d2c">NOTICE</text>
+    </g>
+    <g id="isolate" aria-label="Step 2, Isolate" transform="translate(358 818)">
+      <circle cx="66" cy="60" r="58" fill="#fdf8f0"/>
+      <text x="66" y="52" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#0a6e4f">2</text>
+      <text x="66" y="79" text-anchor="middle" class="sans" font-size="18" font-weight="700" fill="#063d2c">ISOLATE</text>
+    </g>
+    <g id="compare" aria-label="Step 3, Compare" transform="translate(604 818)">
+      <circle cx="66" cy="60" r="58" fill="#fdf8f0"/>
+      <text x="66" y="52" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#0a6e4f">3</text>
+      <text x="66" y="79" text-anchor="middle" class="sans" font-size="18" font-weight="700" fill="#063d2c">COMPARE</text>
+    </g>
+    <g id="practise" aria-label="Step 4, Practise slowly" transform="translate(850 818)">
+      <circle cx="66" cy="60" r="58" fill="#fdf8f0"/>
+      <text x="66" y="49" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#0a6e4f">4</text>
+      <text x="66" y="73" text-anchor="middle" class="sans" font-size="16" font-weight="700" fill="#063d2c">PRACTISE</text>
+      <text x="66" y="92" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#063d2c">SLOWLY</text>
+    </g>
+
+    <g id="feedback" aria-label="Step 5, Seek live feedback" transform="translate(850 1000)">
+      <circle cx="66" cy="60" r="58" fill="#e8b84b"/>
+      <text x="66" y="48" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#063d2c">5</text>
+      <text x="66" y="72" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#063d2c">SEEK LIVE</text>
+      <text x="66" y="91" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#063d2c">FEEDBACK</text>
+    </g>
+    <g id="record-correction" aria-label="Step 6, Record correction" transform="translate(604 1000)">
+      <circle cx="66" cy="60" r="58" fill="#fdf8f0"/>
+      <text x="66" y="48" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#0a6e4f">6</text>
+      <text x="66" y="72" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#063d2c">RECORD</text>
+      <text x="66" y="91" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#063d2c">CORRECTION</text>
+    </g>
+    <g id="review" aria-label="Step 7, Review" transform="translate(358 1000)">
+      <circle cx="66" cy="60" r="58" fill="#fdf8f0"/>
+      <text x="66" y="52" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#0a6e4f">7</text>
+      <text x="66" y="79" text-anchor="middle" class="sans" font-size="18" font-weight="700" fill="#063d2c">REVIEW</text>
+    </g>
+
+    <g aria-label="Pathway notes">
+      <text x="112" y="1174" class="sans" font-size="19" fill="#bdd8cd">Compare with a teacher-approved model. Record the correction in notes or audio, then revisit it.</text>
+    </g>
+  </g>
+
+  <g id="disclaimer" aria-label="Important recitation disclaimer">
+    <rect x="72" y="1260" width="1056" height="146" rx="22" fill="#f7f2e8" stroke="#c9922a" stroke-width="3"/>
+    <circle cx="116" cy="1308" r="20" fill="#c9922a"/>
+    <text x="116" y="1316" text-anchor="middle" class="sans" font-size="24" font-weight="700" fill="#ffffff">i</text>
+    <text x="152" y="1316" class="sans" font-size="24" font-weight="700" fill="#063d2c">Listening cannot be replaced by a chart</text>
+    <text x="112" y="1360" class="small">
+      <tspan x="112" dy="0">This chart cannot diagnose recitation. Teacher listening is needed to identify</tspan>
+      <tspan x="112" dy="28">the issue, demonstrate the correction and check the learner&#8217;s attempt.</tspan>
+    </text>
+  </g>
+
+  <g id="credit" aria-label="Source credit">
+    <line x1="72" y1="1438" x2="1128" y2="1438" stroke="#0a6e4f" stroke-opacity=".22" stroke-width="2"/>
+    <text x="72" y="1475" class="sans" font-size="19" fill="#0a6e4f" font-weight="700">NOORPATH</text>
+    <text x="1128" y="1475" text-anchor="end" class="sans" font-size="18" fill="#6b7280">Source: noorpath.online/blog/quran-pronunciation-troubleshooting</text>
+  </g>
+</svg>

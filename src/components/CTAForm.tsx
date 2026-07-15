@@ -1,11 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { track } from "next-pixels";
 import { CONTACT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
+import { hasAnalyticsConsent } from "@/components/TrackingConsent";
 
 const countries = [
-  "Pakistan","United States","United Kingdom","Canada","Australia",
-  "United Arab Emirates","Saudi Arabia","Germany","France","Malaysia",
+  "United Kingdom","United States","United Arab Emirates","Canada","Australia",
+  "Germany","Qatar","Kuwait","Saudi Arabia","Pakistan","France","Malaysia",
   "Indonesia","Turkey","South Africa","India","Bangladesh","Other",
 ];
 
@@ -48,7 +50,35 @@ export default function CTAForm() {
       });
       const data = await res.json();
       if (data.success === true || data.success === "true") {
+        const email = String(fd.get("email") || "");
+        const phone = String(fd.get("phone") || "");
+        const fullName = String(fd.get("name") || "").trim();
+        const nameParts = fullName.split(/\s+/);
+        const firstName = nameParts[0] || undefined;
+        const lastName = nameParts.length > 1 ? nameParts.slice(1).join(" ") : undefined;
+
+        if (hasAnalyticsConsent()) {
+          // Meta browser + server events are sent only after analytics consent.
+          track({
+            eventName: "Lead",
+            emails: email ? [email] : undefined,
+            phones: phone ? [phone] : undefined,
+            firstName,
+            lastName,
+            data: {
+              content_name: "Free Trial Booking",
+              content_category: String(fd.get("course") || "trial"),
+              status: true,
+            },
+            apiRoute: "/api/fb-events",
+          });
+        }
+
         form.reset();
+        if (hasAnalyticsConsent()) {
+          // Brief pause so the consented CAPI POST can leave before navigation.
+          await new Promise((r) => setTimeout(r, 300));
+        }
         // Full-page navigation (not client-side) so the Google Ads tag fires a
         // fresh page_view on /thank-you — required for the URL-based
         // "Free Trial Booked" conversion to register.

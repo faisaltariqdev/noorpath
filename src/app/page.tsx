@@ -11,6 +11,7 @@ import {
   TRIAL,
   TRUSTPILOT,
 } from "@/lib/academyFacts";
+import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import {
   Sprout, Baby, Smile, Star, Users, PlayCircle, MapPin,
   Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown,
@@ -45,12 +46,18 @@ export const metadata: Metadata = {
 
 const courseCards = [
   { icon: <BookOpen size={22} />, title: "Noorani Qaida", desc: "Arabic letters, vowel signs and reading foundations", level: "Beginner", href: "/courses/noorani-qaida-online" },
-  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Guided recitation and practical rule application", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
-  { icon: <Brain size={22} />, title: "Hifz Program", desc: "Structured memorization and revision goals", level: "Intermediate–Advanced", href: "/courses/hifz-program-online" },
+  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Guided recitation and practical rule application", level: "Beginner–Advanced", href: "/learn-tajweed-online" },
+  { icon: <Brain size={22} />, title: "Hifz Program", desc: "Structured memorization and revision goals", level: "Intermediate–Advanced", href: "/hifz-quran-online" },
   { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida, selected daily duas and short Hadith topics", level: "Ages 4–12", href: "/online-quran-classes-for-kids" },
   { icon: <PenLine size={22} />, title: "Arabic Language", desc: "Quranic and Modern Standard Arabic study", level: "All levels", href: "/courses/arabic-language-online" },
   { icon: <Landmark size={22} />, title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, morals & Islamic character", level: "All ages", href: "/courses/islamic-studies-online" },
 ];
+
+const priorityCountries = PRIORITY_MARKETS.map(({ flag, country, slug }) => ({
+  flag,
+  country,
+  href: `/locations/${slug}`,
+}));
 
 const whyPoints = [
   { icon: <CheckCircle size={22} />, title: "Live One-to-One Lessons", desc: "Each online lesson is held live with one learner and one tutor." },
@@ -95,9 +102,9 @@ const jsonLd = {
       name: "NoorPath Academy Online Courses",
       itemListElement: [
         { "@type": "ListItem", position: 1, url: "https://www.noorpath.online/courses/noorani-qaida-online", name: "Noorani Qaida Online" },
-        { "@type": "ListItem", position: 2, url: "https://www.noorpath.online/courses/tajweed-classes-online", name: "Tajweed Classes Online" },
-        { "@type": "ListItem", position: 3, url: "https://www.noorpath.online/courses/hifz-program-online", name: "Hifz Program Online" },
-        { "@type": "ListItem", position: 4, url: "https://www.noorpath.online/courses/quran-classes-for-kids", name: "Quran Classes for Kids" },
+        { "@type": "ListItem", position: 2, url: "https://www.noorpath.online/learn-tajweed-online", name: "Learn Tajweed Online" },
+        { "@type": "ListItem", position: 3, url: "https://www.noorpath.online/hifz-quran-online", name: "Hifz Quran Online" },
+        { "@type": "ListItem", position: 4, url: "https://www.noorpath.online/online-quran-classes-for-kids", name: "Online Quran Classes for Kids" },
         { "@type": "ListItem", position: 5, url: "https://www.noorpath.online/courses/arabic-language-online", name: "Arabic Language Online" },
         { "@type": "ListItem", position: 6, url: "https://www.noorpath.online/courses/islamic-studies-online", name: "Islamic Studies Online" },
       ],
@@ -256,9 +263,12 @@ export default function HomePage() {
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 16 }}>
             <span className="trust-label">Location-specific class information:</span>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-              {["🇺🇸 United States","🇬🇧 United Kingdom","🇨🇦 Canada","🇦🇺 Australia","🇸🇦 Saudi Arabia","🇵🇰 Pakistan","🇲🇾 Malaysia","🇩🇪 Germany"].map((c) => (
-                <span key={c} className="trust-logo-item">{c}</span>
+              {priorityCountries.map(({ flag, country, href }) => (
+                <Link key={href} href={href} className="trust-logo-item" style={{ textDecoration: "none" }}>
+                  {flag} {country}
+                </Link>
               ))}
+              <Link href="/locations" className="trust-logo-item" style={{ textDecoration: "none", fontWeight: 700 }}>All locations →</Link>
             </div>
           </div>
         </div>
@@ -288,7 +298,7 @@ export default function HomePage() {
       <section id="courses" style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Layers size={13} /> Our Programmes</span>
+            <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Layers size={13} /> Learning Paths</span>
             <h2 className="section-title">Complete <em className="accent">Quran & Islamic</em> Curriculum</h2>
             <p className="section-desc center">From the Arabic alphabet to advanced study — live tutoring and structured learning paths.</p>
           </div>
@@ -322,7 +332,7 @@ export default function HomePage() {
             <div>
               <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> Why Choose Us</span>
               <h2 className="section-title">Why Families Choose <em className="accent">NoorPath</em></h2>
-              <p className="section-desc">We combine live one-to-one teaching, structured programmes, flexible tutor matching, and family plan options.</p>
+              <p className="section-desc">We combine live one-to-one teaching, structured learning paths, flexible tutor matching, and family plan options.</p>
               <Link href="/online-quran-classes#cta" className="btn-primary-np">Start Free Trial →</Link>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -591,10 +601,9 @@ export default function HomePage() {
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
                   ["/courses/noorani-qaida-online", "Noorani Qaida Online"],
-                  ["/courses/tajweed-classes-online", "Tajweed Classes Online"],
-                  ["/courses/hifz-program-online", "Hifz Program Online"],
+                  ["/learn-tajweed-online", "Learn Tajweed Online"],
+                  ["/hifz-quran-online", "Hifz Quran Online"],
                   ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
-                  ["/courses/quran-classes-for-kids", "Kids Quran Course"],
                   ["/courses/arabic-language-online", "Arabic Language Online"],
                   ["/courses/islamic-studies-online", "Islamic Studies Online"],
                 ].map(([href, label]) => (
@@ -611,22 +620,16 @@ export default function HomePage() {
                 <Globe size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Locations We Serve
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
-                {[
-                  ["/locations/online-quran-classes-usa", "🇺🇸 Online Quran Classes USA"],
-                  ["/locations/online-quran-classes-uk", "🇬🇧 Online Quran Classes UK"],
-                  ["/locations/online-quran-classes-canada", "🇨🇦 Online Quran Classes Canada"],
-                  ["/locations/online-quran-classes-australia", "🇦🇺 Online Quran Classes Australia"],
-                  ["/locations/online-quran-classes-uae", "🇦🇪 Online Quran Classes UAE"],
-                  ["/locations/online-quran-classes-pakistan", "🇵🇰 Online Quran Classes Pakistan"],
-                  ["/locations/online-quran-classes-germany", "🇩🇪 Online Quran Classes Germany"],
-                  ["/locations", "View all 12 countries →"],
-                ].map(([href, label]) => (
-                  <li key={String(label)}>
-                    <Link href={String(href)} style={{ color: "var(--muted)", fontSize: ".85rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
-                      <span style={{ color: "var(--emerald)", fontWeight: 700 }}>→</span> {label}
+                {priorityCountries.map(({ flag, country, href }) => (
+                  <li key={href}>
+                    <Link href={href} style={{ color: "var(--muted)", fontSize: ".85rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
+                      <span style={{ color: "var(--emerald)", fontWeight: 700 }}>→</span> {flag} Online Quran Classes {country}
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link href="/locations" style={{ color: "var(--emerald)", fontSize: ".85rem", textDecoration: "none", fontWeight: 700 }}>→ View all locations</Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -636,12 +639,9 @@ export default function HomePage() {
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
                   ["/learn-quran-online", "Learn Quran Online"],
-                  ["/online-quran-academy", "Online Quran Academy"],
                   ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
                   ["/learn-tajweed-online", "Learn Tajweed Online"],
                   ["/hifz-quran-online", "Hifz Quran Online"],
-                  ["/quran-lesson-online", "Quran Lesson Online"],
-                  ["/studying-quran-online", "Studying Quran Online"],
                   ["/quran-teacher-online", "Online Quran Teacher"],
                   ["/free-quran-classes-online", "Free Quran Classes Online"],
                   ["/online-quran-for-beginners", "Online Quran for Beginners"],
@@ -665,8 +665,8 @@ export default function HomePage() {
           <div style={{ borderTop: "1px solid var(--border)", paddingTop: 24 }}>
             <p style={{ color: "var(--muted)", fontSize: ".82rem", maxWidth: 960, margin: "0 auto", lineHeight: 1.85, textAlign: "center" }}>
               <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is an{" "}
-              <Link href="/online-quran-academy" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> where you can{" "}
-              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via 1-on-1 live classes. Our programmes include{" "}
+              <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> where you can{" "}
+              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via 1-on-1 live classes. Course options include{" "}
               <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link>,{" "}
               <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for kids</Link>,{" "}
               <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed online</Link>,{" "}
@@ -676,11 +676,13 @@ export default function HomePage() {
               We offer <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>free trial Quran classes</Link> with no credit card required.
               Find an <Link href="/quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran teacher</Link> or browse our{" "}
               <Link href="/online-quran-for-beginners" style={{ color: "var(--emerald)", fontWeight: 600 }}>beginner Quran course</Link> to start today.
-              Explore class information for the <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 600 }}>USA</Link>,{" "}
-              <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 600 }}>UK</Link>,{" "}
-              <Link href="/locations/online-quran-classes-canada" style={{ color: "var(--emerald)", fontWeight: 600 }}>Canada</Link>,{" "}
-              <Link href="/locations/online-quran-classes-australia" style={{ color: "var(--emerald)", fontWeight: 600 }}>Australia</Link>,{" "}
-              and the <Link href="/locations/online-quran-classes-uae" style={{ color: "var(--emerald)", fontWeight: 600 }}>UAE</Link>.{" "}
+              Explore country-specific class information in our <Link href="/locations" style={{ color: "var(--emerald)", fontWeight: 600 }}>locations hub</Link>:{" "}
+              {priorityCountries.map(({ country, href }, index) => (
+                <React.Fragment key={href}>
+                  <Link href={href} style={{ color: "var(--emerald)", fontWeight: 600 }}>{country}</Link>
+                  {index < priorityCountries.length - 2 ? ", " : index === priorityCountries.length - 2 ? " and " : ". "}
+                </React.Fragment>
+              ))}
               <Link href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your free Quran class today →</Link>
             </p>
           </div>

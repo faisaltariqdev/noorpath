@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
+import {
+  backlinkAssets,
+  type BacklinkAssetType,
+} from "@/data/backlinkAssets";
 
 export const revalidate = false;
 
@@ -39,8 +43,38 @@ const jsonLd = {
       url: "https://www.noorpath.online/islamic-resources",
       publisher: { "@type": "Organization", name: "NoorPath Academy", url: "https://www.noorpath.online" },
     },
+    {
+      "@type": "ItemList",
+      name: "NoorPath Backlink and Research Assets",
+      numberOfItems: backlinkAssets.length,
+      itemListElement: backlinkAssets.map((asset, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: asset.title,
+        url: `https://www.noorpath.online/blog/${asset.slug}`,
+      })),
+    },
   ],
 };
+
+const backlinkCategoryStyles: Record<
+  BacklinkAssetType,
+  { label: string; color: string }
+> = {
+  Infographic: { label: "Infographics", color: "#0a6e4f" },
+  Statistics: { label: "Statistics", color: "#1d4ed8" },
+  "Ultimate Guide": { label: "Ultimate Guides", color: "#c9922a" },
+  Research: { label: "Research", color: "#6d28d9" },
+  Comparison: { label: "Comparisons", color: "#0f766e" },
+};
+
+const backlinkAssetCategories = (
+  Object.keys(backlinkCategoryStyles) as BacklinkAssetType[]
+).map((type) => ({
+  type,
+  ...backlinkCategoryStyles[type],
+  assets: backlinkAssets.filter((asset) => asset.assetType === type),
+}));
 
 const resourceCategories = [
   {
@@ -99,7 +133,7 @@ const resourceCategories = [
       { title: "Best Age to Start Quran Learning", desc: "Expert guide on when to begin Quran education", href: "/blog/best-age-to-start-quran-learning", type: "Article" },
       { title: "How to Teach Quran to Kids", desc: "Practical routines, learning activities and reward ideas", href: "/blog/how-to-teach-quran-to-kids", type: "Article" },
       { title: "Islamic Baby Names 2026", desc: "200+ Arabic names with meanings for boys & girls", href: "/blog/islamic-baby-names-2026", type: "Article" },
-      { title: "Quran Classes for Kids", desc: "Structured programme for ages 4-14", href: "/courses/quran-classes-for-kids", type: "Course" },
+      { title: "Quran Classes for Kids", desc: "Structured programme for ages 4-14", href: "/online-quran-classes-for-kids", type: "Course" },
     ],
   },
   {
@@ -135,7 +169,9 @@ export default function IslamicResourcesPage() {
             Free Islamic Educational <em style={{ color: "var(--gold-lt)" }}>Resources</em> for Every Muslim
           </h1>
           <p style={{ color: "rgba(255,255,255,.8)", maxWidth: 620, lineHeight: 1.75, marginTop: 14 }}>
-            Quran learning guides, surahs with translations, duas for kids, prayer guides, Tajweed rules, and more — all free, written by certified Islamic educators.
+            Quran learning guides, sourced statistics, research reviews,
+            infographics and practical Islamic resources published with visible
+            source and editorial information.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 24 }}>
             {["📖 Quran Guides","🤲 Duas & Dhikr","🕌 Prayer","👶 For Children","🌍 Islamic Knowledge","📿 Full Surahs"].map((tag) => (
@@ -145,13 +181,128 @@ export default function IslamicResourcesPage() {
         </div>
       </div>
 
+      <section style={{ background: "var(--ivory)" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <span className="section-eyebrow">Cite, download and share</span>
+            <h2 className="section-title">
+              Backlink and <em className="accent">research assets</em>
+            </h2>
+            <p className="section-desc center">
+              Ten canonical resources with source notes, update dates and
+              reusable files. Link to the article page when quoting data or
+              embedding an infographic.
+            </p>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 38 }}>
+            {backlinkAssetCategories.map((category) => (
+              <div key={category.type}>
+                <div
+                  style={{
+                    alignItems: "center",
+                    borderBottom: `3px solid ${category.color}`,
+                    display: "flex",
+                    justifyContent: "space-between",
+                    marginBottom: 20,
+                    paddingBottom: 12,
+                  }}
+                >
+                  <h2
+                    style={{
+                      color: "var(--charcoal)",
+                      fontFamily: "'Playfair Display',serif",
+                      fontSize: "1.3rem",
+                      margin: 0,
+                    }}
+                  >
+                    {category.label}
+                  </h2>
+                  <span style={{ color: "var(--muted)", fontSize: ".78rem" }}>
+                    {category.assets.length} resources
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {category.assets.map((asset) => (
+                    <Link
+                      key={asset.slug}
+                      href={`/blog/${asset.slug}`}
+                      className="resource-card"
+                      style={{
+                        background: "#fff",
+                        border: "1px solid var(--border)",
+                        borderRadius: 15,
+                        display: "block",
+                        padding: 21,
+                        textDecoration: "none",
+                      }}
+                    >
+                      <span
+                        style={{
+                          background: `${category.color}14`,
+                          borderRadius: 30,
+                          color: category.color,
+                          display: "inline-block",
+                          fontSize: ".7rem",
+                          fontWeight: 800,
+                          marginBottom: 10,
+                          padding: "4px 9px",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {asset.assetType}
+                      </span>
+                      <h3
+                        style={{
+                          color: "var(--charcoal)",
+                          fontFamily: "'Playfair Display',serif",
+                          fontSize: "1.02rem",
+                          lineHeight: 1.4,
+                          marginBottom: 7,
+                        }}
+                      >
+                        {asset.title}
+                      </h3>
+                      <p
+                        style={{
+                          color: "var(--muted)",
+                          fontSize: ".82rem",
+                          lineHeight: 1.65,
+                          margin: 0,
+                        }}
+                      >
+                        {asset.description}
+                      </p>
+                      <span
+                        style={{
+                          color: category.color,
+                          display: "inline-block",
+                          fontSize: ".79rem",
+                          fontWeight: 700,
+                          marginTop: 12,
+                        }}
+                      >
+                        View sources and reuse options →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Resources grid */}
       <section style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 56 }}>
             <span className="section-eyebrow">📚 Browse by Category</span>
             <h2 className="section-title">All Free <em className="accent">Islamic Resources</em></h2>
-            <p className="section-desc center">Written and reviewed by certified Quran teachers and Islamic educators. Share freely — no copyright restrictions.</p>
+            <p className="section-desc center">
+              Review each page&apos;s sources, scope and reuse terms before
+              quoting or republishing it.
+            </p>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 48 }}>
@@ -209,9 +360,9 @@ export default function IslamicResourcesPage() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
               {[
                 ["/courses/noorani-qaida-online", "Noorani Qaida Online"],
-                ["/courses/tajweed-classes-online", "Tajweed Classes"],
-                ["/courses/hifz-program-online", "Hifz Memorization"],
-                ["/courses/quran-classes-for-kids", "Quran for Kids"],
+                ["/learn-tajweed-online", "Tajweed Classes"],
+                ["/hifz-quran-online", "Hifz Memorization"],
+                ["/online-quran-classes-for-kids", "Quran for Kids"],
                 ["/courses/arabic-language-online", "Arabic Language"],
                 ["/courses/islamic-studies-online", "Islamic Studies"],
                 ["/female-quran-teacher-online", "Female Quran Teacher"],

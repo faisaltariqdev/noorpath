@@ -1,82 +1,156 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import OnlineQuranTeacherGuide from "@/components/OnlineQuranTeacherGuide";
+import {
+  BASE_URL,
+  ORGANIZATION_REF,
+  WEBSITE_ID,
+} from "@/lib/organizationSchema";
+import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Star, Shield, Clock, Users, Award } from "lucide-react";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
+const PAGE_URL = `${BASE_URL}/quran-teacher-online`;
+
 export const metadata: Metadata = {
-  title: "Online Quran Teacher — 1-on-1 Tutor Matching | NoorPath Academy",
-  description: "Find an online Quran teacher for kids or adults. Request help with Quran reading, Tajweed or Hifz, including female tutor requests and a free 30-minute trial.",
-  keywords: ["online quran teacher", "quran teacher online", "certified quran teacher", "quran tutor online", "online quran tutor", "find quran teacher", "quran teacher for kids", "female quran teacher online", "ijazah certified quran teacher", "1 on 1 quran teacher"],
-  alternates: { canonical: "https://www.noorpath.online/quran-teacher-online" },
+  title: {
+    absolute: "Online Quran Teacher | 1-to-1 Tutor Matching",
+  },
+  description:
+    "Request an online Quran teacher for a child or adult. Compare tutor fit for Qaida, Tajweed or Hifz, verify relevant credentials and book a free trial.",
+  keywords: [
+    "online quran teacher",
+    "quran teacher online",
+    "online quran tutor",
+    "quran tutor online",
+    "find quran teacher",
+    "quran teacher for kids",
+    "quran teacher for adults",
+    "female quran teacher online",
+    "private quran tutor",
+    "1 to 1 quran teacher",
+  ],
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Online Quran Teacher — 1-on-1 Tutor Matching | NoorPath Academy",
-    description: "Online Quran teacher matching for kids and adults. Request reading, Tajweed, Hifz or a female tutor, subject to confirmed availability.",
-    url: "https://www.noorpath.online/quran-teacher-online",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Teacher — NoorPath Academy" }],
+    title: "Online Quran Teacher — 1-to-1 Tutor Matching",
+    description:
+      "A factual guide to requesting and evaluating an online Quran teacher for reading, Tajweed, Hifz, children or adults.",
+    url: PAGE_URL,
+    type: "website",
+    images: [
+      {
+        url: "/marketing/family-evening-quran.jpg",
+        width: 1024,
+        height: 683,
+        alt: "Family preparing for a live online Quran lesson at home",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Teacher | NoorPath Academy",
-    description: "1-on-1 Quran teacher matching. Free trial; female tutor requests welcome.",
-    images: ["/og-image.png"],
+    description:
+      "Request a one-to-one Quran teacher match by learning goal, level, timezone and tutor preference.",
+    images: ["/marketing/family-evening-quran.jpg"],
   },
 };
+
+const faqs = [
+  {
+    q: "How do I find an online Quran teacher?",
+    a: "Start by sharing the learner’s age or learning stage, current reading level, course goal, timezone, preferred lesson windows and tutor preference. NoorPath then checks a proposed match and confirms relevant tutor details and availability before enrolment.",
+  },
+  {
+    q: "Is an online Quran teacher the same as an online Quran tutor?",
+    a: "Families often use “teacher” and “tutor” for the same live teaching role. On this page, both terms describe one-to-one online support. The important questions are subject fit, relevant credentials, teaching approach, safeguarding and schedule compatibility.",
+  },
+  {
+    q: "How can I check a Quran teacher’s qualifications?",
+    a: "Ask which credentials or experience are relevant to the requested subject, who issued any stated qualification and whether the details can be confirmed for the proposed tutor. Credentials vary, so do not assume every tutor has the same certification or Ijazah.",
+  },
+  {
+    q: "Can I request a female Quran teacher?",
+    a: "Yes. A female tutor can be requested for a child or adult learner. Matching depends on the requested subject, timezone, schedule and current availability, which NoorPath confirms after the request.",
+  },
+  {
+    q: "What can an online Quran teacher teach?",
+    a: "A request may cover Noorani Qaida, Quran reading, Tajweed practice, Hifz and revision, Arabic or Islamic studies. The proposed tutor should be matched to the learner’s current ability and the specific subject rather than assumed to teach every course.",
+  },
+  {
+    q: "Can children learn safely with an online Quran tutor?",
+    a: "Parents should arrange communication, understand the safeguarding process, remain appropriately involved and know how to report a concern or request a change. NoorPath publishes separate safeguarding guidance for families to review before enrolment.",
+  },
+  {
+    q: "Can adults request a private Quran teacher online?",
+    a: "Yes. Adult beginners, returning readers and learners focusing on Tajweed or Hifz can request one-to-one lessons. The trial helps assess communication, pace, starting level and whether the proposed teaching approach fits the learner.",
+  },
+  {
+    q: "What happens during the free trial?",
+    a: `The ${TRIAL.durationMinutes}-minute trial introduces the proposed tutor, reviews the learner’s starting point, includes a short sample lesson and discusses possible next steps. It costs $${TRIAL.price}, requires no credit card and does not guarantee a recurring slot until availability is confirmed.`,
+  },
+  {
+    q: "How much does an online Quran teacher cost?",
+    a: `Published plans currently start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} sessions of ${PRICING_PLANS[0].sessionMinutes} minutes. Families should check the pricing page for current plan details and published currency before enrolling.`,
+  },
+  {
+    q: "How quickly will I learn with an online Quran teacher?",
+    a: "There is no reliable universal timeline. Progress depends on the starting level, lesson focus, attendance, practice, feedback and individual learning needs. A tutor can propose review points after observing the learner, but should not guarantee a completion date.",
+  },
+];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Service",
+      "@id": `${PAGE_URL}#service`,
       name: "Online Quran Teacher — 1-on-1 Live Classes",
-      description: "Online Quran teacher matching for 1-on-1 live classes for children and adults, including Quran reading, Tajweed, Hifz, and female tutor requests.",
+      description:
+        "Online Quran teacher matching for one-to-one lessons for children and adults, including Quran reading, Tajweed, Hifz and female tutor requests.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Teaching",
+      areaServed: PRIORITY_MARKETS.map(({ country }) => ({
+        "@type": "Country",
+        name: country,
+      })),
+      inLanguage: "en",
       offers: {
         "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        description: "Free 30-minute trial class",
+        price: String(TRIAL.price),
+        priceCurrency: TRIAL.priceCurrency,
+        description: `${TRIAL.durationMinutes}-minute trial; no credit card required; tutor availability confirmed after request`,
+        url: `${BASE_URL}/free-quran-classes-online`,
       },
-      url: "https://www.noorpath.online/quran-teacher-online",
+      termsOfService: `${BASE_URL}/terms-of-service`,
+      url: PAGE_URL,
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${PAGE_URL}#webpage`,
+      name: "Online Quran Teacher and Tutor Matching",
+      description:
+        "How to request, evaluate and verify an online Quran teacher match for a child or adult learner.",
+      url: PAGE_URL,
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": `${PAGE_URL}#service` },
+      inLanguage: "en",
     },
     {
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How do I find a qualified online Quran teacher?",
-          acceptedAnswer: { "@type": "Answer", text: "At NoorPath Academy, we match you with an online Quran teacher based on your level, age, goals, and preferred schedule. Specific credentials and relevant experience are confirmed for the proposed tutor before enrolment." },
-        },
-        {
-          "@type": "Question",
-          name: "How can I check a Quran teacher's qualifications?",
-          acceptedAnswer: { "@type": "Answer", text: "Qualifications vary by tutor and teaching focus. We confirm the proposed tutor's relevant credentials and experience before enrolment so you can make an informed decision." },
-        },
-        {
-          "@type": "Question",
-          name: "Are female Quran teachers available?",
-          acceptedAnswer: { "@type": "Answer", text: "You can request a female Quran teacher for a sister or daughter when booking. Matching depends on the subject, schedule, and confirmed tutor availability." },
-        },
-        {
-          "@type": "Question",
-          name: "What does an online Quran teacher teach?",
-          acceptedAnswer: { "@type": "Answer", text: "Our online Quran teachers teach: Noorani Qaida (beginners), Quran recitation with Tajweed, Quran Hifz (memorization), Arabic language, Islamic studies (Fiqh, Seerah, Aqeedah), and daily duas for children." },
-        },
-        {
-          "@type": "Question",
-          name: "How much does an online Quran teacher cost?",
-          acceptedAnswer: { "@type": "Answer", text: `The free trial lasts ${TRIAL.durationMinutes} minutes and requires no credit card. Monthly plans start at $${PRICING_PLANS[0].monthlyPriceUsd} for one ${PRICING_PLANS[0].sessionMinutes}-minute session per week, with sibling discounts available.` },
-        },
-      ],
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: { "@type": "Answer", text: faq.a },
+      })),
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-        { "@type": "ListItem", position: 2, name: "Online Quran Teacher", item: "https://www.noorpath.online/quran-teacher-online" },
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Online Quran Classes", item: `${BASE_URL}/online-quran-classes` },
+        { "@type": "ListItem", position: 3, name: "Online Quran Teacher", item: PAGE_URL },
       ],
     },
   ],
@@ -103,14 +177,14 @@ export default function QuranTeacherOnlinePage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Online Quran Teacher</span>
           </nav>
           <span style={{ display: "inline-block", background: "rgba(232,184,75,.15)", border: "1px solid rgba(232,184,75,.3)", color: "var(--gold-lt)", borderRadius: 50, padding: "5px 16px", fontSize: ".8rem", fontWeight: 700, marginBottom: 16, letterSpacing: ".5px" }}>
-            ⭐ Tutor Matching — Trustpilot Reviewed
+            Tutor Matching · Availability Confirmed After Request
           </span>
           <h1>Online Quran Teacher<br /><em style={{ color: "var(--gold-lt)" }}>Matched to Your Learning Goal</em></h1>
           <p style={{ maxWidth: 600 }}>
             Connect with an online Quran teacher for 1-on-1 live classes for a child or adult. We match by level, subject, schedule, and tutor preference, then confirm credentials and availability.
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
-            <Link href="/online-quran-classes#cta" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 28px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
+            <Link href="/free-quran-classes-online" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 28px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
               Book Free Trial →
             </Link>
             <Link href="/courses" style={{ background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 600, textDecoration: "none", fontSize: "1rem" }}>
@@ -142,7 +216,7 @@ export default function QuranTeacherOnlinePage() {
               { icon: <Users size={28} />, title: "Female Tutor Requests", desc: "Sisters and families may request a female Quran teacher. Matching is subject to the requested subject and schedule." },
               { icon: <Clock size={28} />, title: "Timezone Matching", desc: "Share your timezone and preferred lesson windows; available options are confirmed after your request." },
               { icon: <Star size={28} />, title: "Subject Matching", desc: "We match for Quran reading, Tajweed, Hifz, children, adults, and other stated learning goals." },
-              { icon: <CheckCircle size={28} />, title: "Trial Before Enrolment", desc: "Use the free 30-minute trial to assess communication, lesson fit, and next steps before choosing a plan." },
+              { icon: <CheckCircle size={28} />, title: "Trial Before Enrolment", desc: `Use the free ${TRIAL.durationMinutes}-minute trial to assess communication, lesson fit, and next steps before choosing a plan.` },
             ].map((item) => (
               <div key={item.title} className="content-card">
                 <div style={{ color: "var(--emerald)", marginBottom: 14 }}>{item.icon}</div>
@@ -192,9 +266,9 @@ export default function QuranTeacherOnlinePage() {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 {[
-                  { emoji: "📖", title: "Noorani Qaida", desc: "Arabic letters, Makharij, Harakat — for complete beginners from age 4" },
+                  { emoji: "📖", title: "Noorani Qaida", desc: "Arabic letters, sounds, joining and reading foundations for complete beginners" },
                   { emoji: "🎵", title: "Tajweed Rules", desc: "Tajweed rule practice, including Noon Sakinah, Madd, and Ghunna" },
-                  { emoji: "🧠", title: "Quran Hifz (Memorization)", desc: "Structured memorization Juz by Juz with Sabaq–Sabqi–Manzil system" },
+                  { emoji: "🧠", title: "Quran Hifz (Memorization)", desc: "Memorization and revision planning adapted to current retention and learning goals" },
                   { emoji: "📝", title: "Arabic Language", desc: "Quranic Arabic, grammar (Nahw & Sarf), vocabulary and understanding" },
                   { emoji: "🕌", title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, Islamic history and Akhlaq (character)" },
                   { emoji: "🤲", title: "Daily Duas for Kids", desc: "Essential supplications with Arabic, transliteration and meaning" },
@@ -225,7 +299,7 @@ export default function QuranTeacherOnlinePage() {
                     </div>
                   ))}
                 </div>
-                <Link href="/online-quran-classes#cta" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "14px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem", marginBottom: 12 }}>
+                <Link href="/free-quran-classes-online" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "14px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem", marginBottom: 12 }}>
                   Book Free Trial Class →
                 </Link>
                 <div style={{ color: "rgba(255,255,255,.45)", fontSize: ".75rem" }}>No credit card required for the trial</div>
@@ -235,6 +309,8 @@ export default function QuranTeacherOnlinePage() {
         </div>
       </section>
 
+      <OnlineQuranTeacherGuide />
+
       {/* FAQ */}
       <section style={{ padding: "72px 0" }}>
         <div className="max-w-[800px] mx-auto px-4">
@@ -242,13 +318,7 @@ export default function QuranTeacherOnlinePage() {
             Frequently Asked Questions
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            {[
-              { q: "How do I find an online Quran teacher?", a: "We match you based on level, age, goals, schedule, and tutor preference. Relevant credentials and experience are confirmed for the proposed tutor before enrolment." },
-              { q: "How can I confirm a Quran teacher's qualifications?", a: "Ask us about the proposed tutor's qualifications and teaching experience. We confirm the specific credentials relevant to your requested subject before enrolment." },
-              { q: "Can I request a female Quran teacher?", a: "Yes. Request a female teacher when registering; subject and schedule availability will be confirmed after your request." },
-              { q: "What age groups do Quran teachers teach?", a: "Matching is available for children and adults. We consider the learner's age, current level, and goals when proposing a tutor." },
-              { q: "How much does an online Quran teacher cost?", a: `Your first ${TRIAL.durationMinutes}-minute class is free with no credit card required. Monthly plans start at $${PRICING_PLANS[0].monthlyPriceUsd} for one ${PRICING_PLANS[0].sessionMinutes}-minute session per week, and sibling discounts are available.` },
-            ].map((item) => (
+            {faqs.map((item) => (
               <div key={item.q} style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, padding: "20px 24px" }}>
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1rem", color: "var(--charcoal)", marginBottom: 10, fontWeight: 700 }}>{item.q}</h3>
                 <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
@@ -265,9 +335,11 @@ export default function QuranTeacherOnlinePage() {
             Request Your Online Quran Teacher
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28, maxWidth: 520, margin: "0 auto 28px" }}>
-            1-on-1 live classes. Free 30-minute trial with no credit card. Tutor availability is confirmed after your request.
+            One-to-one live classes. Free {TRIAL.durationMinutes}-minute trial
+            with no credit card. Tutor availability is confirmed after your
+            request.
           </p>
-          <Link href="/online-quran-classes#cta" className="btn-primary-np">
+          <Link href="/free-quran-classes-online" className="btn-primary-np">
             Book Free Trial Class →
           </Link>
         </div>

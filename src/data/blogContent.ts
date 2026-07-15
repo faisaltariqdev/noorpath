@@ -32,9 +32,11 @@ const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; co
   @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } .letter-grid { grid-template-columns: repeat(3, 1fr); } }`;
 
 import { highTrafficBlogContent } from "./blogContentHighTraffic";
+import { priorityABlogContent } from "./blogContentPriorityA";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
+  ...priorityABlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>
@@ -4629,7 +4631,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <li>30–45 minute lessons, 5 days/week</li>
               <li>Complete Noorani Qaida if not already done</li>
               <li>Begin proper Quran reading with Tajweed</li>
-              <li>Excellent age to begin <a href="/courses/hifz-program-online" style="color:var(--emerald);">Hifz (memorization)</a></li>
+              <li>Excellent age to begin <a href="/hifz-quran-online" style="color:var(--emerald);">Hifz (memorization)</a></li>
               <li>Can now understand meaning and context of verses</li>
             </ul>
           </div>
@@ -5317,7 +5319,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/courses/hifz-program-online" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">request a free trial class</a>.
+            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">request a free trial class</a>.
           </div>
         </div>
 
@@ -7750,7 +7752,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div class="highlight-box">
             <strong>The best approach:</strong> Take live 1-on-1 online Tajweed classes with a certified tutor who holds an Ijazah chain. At <strong>NoorPath Academy</strong>, our tutors not only know the rules — they have the experience to identify and correct your specific pronunciation errors.
             <br><br>
-            <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">View our Tajweed course →</a>
+            <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:700;">View our Tajweed course →</a>
           </div>
 
           <h2>Summary: Key Tajweed Rules</h2>
@@ -7768,7 +7770,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            Ready to master Tajweed with a certified tutor? <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">Book your free Tajweed trial class</a> at NoorPath Academy — no payment required.
+            Ready to master Tajweed with a certified tutor? <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:700;">Book your free Tajweed trial class</a> at NoorPath Academy — no payment required.
           </div>
         </div>
 
@@ -8233,7 +8235,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Want your child to learn Surah Al-Fatiha with correct Tajweed?</strong><br/>
-  Surah Al-Fatiha can be included in the <a href="/courses/quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme according to the learner's level. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free 30-min trial →</a>
+  Surah Al-Fatiha can be included in the <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme according to the learner's level. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Request a free 30-min trial →</a>
 </div>
     `,
   },
@@ -8525,7 +8527,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>This is the complete, practical guide: not theory — a <strong>step-by-step roadmap</strong> from absolute zero to reading short surahs fluently, choosing the right online academy, building a schedule that fits work and family, and avoiding the mistakes that stall most adult beginners.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> The fastest path for an adult beginner is <strong>2–3 live one-on-one online lessons per week</strong> (30 minutes each) + <strong>15–20 minutes daily self-practice</strong>, starting with <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a> before opening the Mushaf. Most adults reach basic fluent reading in <strong>4–6 months</strong>. You do not need to know Arabic as a language — only how to read the script with correct Tajweed.
+            <strong>Quick answer:</strong> An adult beginner can start with <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a>, combine live one-to-one lessons with short practice between classes, and move to the Mushaf when their reading foundation is ready. There is no universal completion time; starting level, attendance, lesson frequency and practice all affect progress.
           </div>
 
           <div class="stat-row">
@@ -8539,13 +8541,13 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Three forces are driving this surge:</p>
           <ul>
             <li><strong>Life stage:</strong> Many adults feel a spiritual pull after marriage, having children, or losing a parent — they want to read Quran themselves, not depend on recordings alone.</li>
-            <li><strong>Accessibility:</strong> No local madrassa fits a working adult's schedule. <a href="/online-quran-classes" style="color:var(--emerald);font-weight:600;">Online Quran classes</a> run at 6 am, lunch break, or 9 pm — wherever you live.</li>
+            <li><strong>Accessibility:</strong> A working adult may struggle to fit travel and fixed local timetables around other responsibilities. <a href="/online-quran-classes" style="color:var(--emerald);font-weight:600;">Online Quran classes</a> allow learners to request suitable windows, subject to tutor availability.</li>
             <li><strong>Privacy & dignity:</strong> Sitting in a classroom with 7-year-olds feels awkward. One-on-one online lessons let adults learn at their own pace without embarrassment.</li>
           </ul>
-          <p>Google searches for <em>"how to learn quran as an adult"</em>, <em>"online quran classes for adults"</em>, and <em>"learn quran from scratch"</em> continue rising year over year. The demand is real — and the technology to serve it finally matches the need.</p>
+          <p>People use queries such as <em>"how to learn quran as an adult"</em>, <em>"online quran classes for adults"</em>, and <em>"learn quran from scratch"</em> when looking for a suitable starting route. A useful guide should answer the question without assuming a fixed pace or outcome.</p>
 
           <h2>How to Learn Quran Online as an Adult — 5 Steps from Zero</h2>
-          <p>If you want to <strong>learn Quran online</strong> as a complete beginner, follow this exact sequence used by thousands of adult students at <a href="/learn-quran-online" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>:</p>
+          <p>If you want to <strong>learn Quran online</strong> as a complete beginner, this sequence provides a practical starting framework. The proposed tutor should adapt it after assessing your current level:</p>
           <ol>
             <li><strong>Book a free trial</strong> — Experience a real 30-minute live lesson before paying anything. No credit card required.</li>
             <li><strong>Start Noorani Qaida</strong> — Your tutor assesses your level and begins with Arabic letters and harakat. Never skip this step.</li>
@@ -8600,7 +8602,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div class="week-item">
               <div class="week-label">Week 1</div>
               <div class="week-title">Setup & Free Trial</div>
-              <p style="margin:0;font-size:.95rem;">Book a free trial with a certified tutor. Set up a quiet corner, printed Qaida or Mushaf, notebook, and stable internet. Tell your teacher your goal: "I want to read Quran from zero." Assess starting level — most adults begin at Qaida page 1.</p>
+              <p style="margin:0;font-size:.95rem;">Request a free trial and ask about the proposed tutor&apos;s relevant experience and credentials. Set up a quiet corner, printed Qaida or Mushaf, notebook, and stable internet. Explain your goal and let the tutor assess the appropriate starting point rather than assuming every adult begins on the same page.</p>
             </div>
             <div class="week-item">
               <div class="week-label">Weeks 2–4</div>
@@ -9289,7 +9291,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>Begin when the learner can commit to a sustainable routine. Ask for an assessment, an initial revision structure, and a process for adjusting targets based on observed retention.</p>
 
-          <p>At <a href="/online-quran-academy" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, you can request a Hifz tutor match and discuss a learning plan. Tutor availability is confirmed after matching, and no completion outcome is guaranteed.</p>
+          <p>At <a href="/online-quran-classes" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, you can request a Hifz tutor match and discuss a learning plan. Tutor availability is confirmed after matching, and no completion outcome is guaranteed.</p>
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:40px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Begin Your Hifz Journey Today</h3>

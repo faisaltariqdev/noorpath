@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/data/blog";
 import { blogContent } from "@/data/blogContent";
+import { backlinkAssetContent } from "@/data/backlinkAssetContent";
+import { getBacklinkAsset } from "@/data/backlinkAssets";
 import { blogFaqs } from "@/data/blogFaqs";
 import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
@@ -10,6 +12,24 @@ import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 interface Props {
   params: Promise<{ slug: string }>;
 }
+
+const supportingResourceLinks: Record<string, string[]> = {
+  "benefits-of-online-quran-classes": ["quran-learning-method-comparisons"],
+  "how-to-choose-online-quran-teacher": [
+    "quran-learning-method-comparisons",
+    "quran-practice-and-progress-guide",
+  ],
+  "how-to-memorize-quran-faster": [
+    "hifz-revision-schedule",
+    "quran-memorization-retention-research",
+  ],
+  "online-hifz-classes-for-kids": ["hifz-revision-schedule"],
+  "tajweed-rules-complete-guide": [
+    "quran-pronunciation-troubleshooting",
+    "tajweed-learning-format-comparison",
+  ],
+  "how-to-teach-quran-to-kids": ["quran-curriculum-and-lesson-planning"],
+};
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -22,7 +42,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+  const asset = getBacklinkAsset(slug);
   const ogImage = post.coverImage ?? "/og-image.png";
+  const ogImageHeight = post.coverImage
+    ? asset?.assetType === "Infographic"
+      ? 1500
+      : 800
+    : 630;
   return {
     title: post.title,
     description: post.description,
@@ -38,7 +64,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: post.updatedAt ?? post.date,
       authors: [post.author],
       siteName: "NoorPath Academy",
-      images: [{ url: ogImage, width: 1200, height: 800, alt: post.title }],
+      locale: (post.inLanguage ?? "en").replace("-", "_"),
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: ogImageHeight,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image" as const,
@@ -54,26 +88,43 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  const related = blogPosts
-    .filter((p) => p.slug !== slug && p.category === post.category)
-    .slice(0, 3);
+  const asset = getBacklinkAsset(slug);
+  const supportingResources = (supportingResourceLinks[slug] ?? [])
+    .map((resourceSlug) => getBacklinkAsset(resourceSlug))
+    .filter((resource): resource is NonNullable<typeof resource> =>
+      Boolean(resource)
+    );
+  const related = asset
+    ? asset.relatedSlugs
+        .map((relatedSlug) => getBlogPost(relatedSlug))
+        .filter((relatedPost): relatedPost is NonNullable<typeof relatedPost> =>
+          Boolean(relatedPost)
+        )
+    : blogPosts
+        .filter((p) => p.slug !== slug && p.category === post.category)
+        .slice(0, 3);
 
-  const richContent = blogContent[slug];
+  const richContent = backlinkAssetContent[slug] ?? blogContent[slug];
   const articleImage = post.coverImage
     ? `https://www.noorpath.online${post.coverImage}`
     : "https://www.noorpath.online/og-image.png";
+  const articleImageHeight = post.coverImage
+    ? asset?.assetType === "Infographic"
+      ? 1500
+      : 800
+    : 630;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
+        "@type": asset?.schemaType ?? "Article",
         "@id": `https://www.noorpath.online/blog/${post.slug}#article`,
         headline: post.title,
         description: post.description,
         datePublished: post.date,
         dateModified: post.updatedAt ?? post.date,
-        image: { "@type": "ImageObject", url: articleImage, width: 1200, height: 800 },
+        image: { "@type": "ImageObject", url: articleImage, width: 1200, height: articleImageHeight },
         author: {
           "@type": "Person",
           name: post.author,
@@ -86,9 +137,63 @@ export default async function BlogPostPage({ params }: Props) {
         mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.noorpath.online/blog/${post.slug}` },
         keywords: post.keywords.join(", "),
         articleSection: post.category,
-        inLanguage: "en-US",
-        wordCount: richContent ? Math.round(richContent.content.replace(/<[^>]+>/g, "").split(/\s+/).length) : undefined,
+        inLanguage: post.inLanguage ?? "en",
+        isAccessibleForFree: true,
+        ...(asset?.sourceUrls.length
+          ? { citation: asset.sourceUrls }
+          : {}),
+        wordCount: richContent
+          ? richContent.content
+              .replace(/<[^>]+>/g, " ")
+              .trim()
+              .split(/\s+/).length
+          : undefined,
       },
+      ...(asset?.howToSteps
+        ? [
+            {
+              "@type": "HowTo",
+              "@id": `https://www.noorpath.online/blog/${post.slug}#howto`,
+              name: post.title,
+              description: post.description,
+              inLanguage: post.inLanguage ?? "en",
+              mainEntityOfPage: {
+                "@id": `https://www.noorpath.online/blog/${post.slug}`,
+              },
+              step: asset.howToSteps.map((step, index) => ({
+                "@type": "HowToStep",
+                position: index + 1,
+                name: step.name,
+                text: step.text,
+                url: `https://www.noorpath.online/blog/${post.slug}#method`,
+              })),
+            },
+          ]
+        : []),
+      ...(asset?.datasetPath && asset.datasetMetadata
+        ? [
+            {
+              "@type": "Dataset",
+              "@id": `https://www.noorpath.online/blog/${post.slug}#dataset`,
+              name: asset.datasetMetadata.name,
+              description: asset.datasetMetadata.description,
+              creator: ORGANIZATION_REF,
+              publisher: ORGANIZATION_REF,
+              dateModified: post.updatedAt ?? post.date,
+              temporalCoverage: asset.datasetMetadata.temporalCoverage,
+              spatialCoverage: asset.datasetMetadata.spatialCoverage.map(
+                (name) => ({ "@type": "Place", name })
+              ),
+              variableMeasured: asset.datasetMetadata.variableMeasured,
+              isAccessibleForFree: true,
+              distribution: {
+                "@type": "DataDownload",
+                encodingFormat: "text/csv",
+                contentUrl: `https://www.noorpath.online${asset.datasetPath}`,
+              },
+            },
+          ]
+        : []),
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -142,7 +247,7 @@ export default async function BlogPostPage({ params }: Props) {
             <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,.55)", fontSize: ".82rem", marginLeft: "auto" }}>
               <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <BookOpen size={13} />{" "}
-                {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                {new Date(post.date).toLocaleDateString(post.inLanguage ?? "en-US", { year: "numeric", month: "long", day: "numeric" })}
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <Clock size={13} /> {post.readTime} read
@@ -159,6 +264,137 @@ export default async function BlogPostPage({ params }: Props) {
             {/* ── Main content ─────────────────────────────────── */}
             <div className="lg:col-span-2">
               <div style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 20, padding: "36px 32px" }}>
+
+                {asset && (
+                  <aside
+                    aria-label="Resource download and citation"
+                    style={{
+                      background: "var(--ivory)",
+                      border: "1px solid var(--border)",
+                      borderRadius: 14,
+                      marginBottom: 28,
+                      padding: 20,
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "var(--emerald)",
+                        fontSize: ".75rem",
+                        fontWeight: 800,
+                        letterSpacing: ".08em",
+                        marginBottom: 8,
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      {asset.assetType} · Free to cite
+                    </div>
+                    <p
+                      style={{
+                        color: "var(--muted)",
+                        fontSize: ".86rem",
+                        lineHeight: 1.7,
+                        marginBottom: 14,
+                      }}
+                    >
+                      Cite the page URL and access date. Downloadable files retain
+                      their source notes and methodology.
+                    </p>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+                      {asset.downloadPath && (
+                        <a
+                          href={asset.downloadPath}
+                          download
+                          style={{
+                            background: "var(--emerald)",
+                            borderRadius: 9,
+                            color: "#fff",
+                            fontSize: ".82rem",
+                            fontWeight: 700,
+                            padding: "9px 13px",
+                            textDecoration: "none",
+                          }}
+                        >
+                          Download SVG
+                        </a>
+                      )}
+                      {asset.datasetPath && (
+                        <a
+                          href={asset.datasetPath}
+                          download
+                          style={{
+                            background: "var(--emerald)",
+                            borderRadius: 9,
+                            color: "#fff",
+                            fontSize: ".82rem",
+                            fontWeight: 700,
+                            padding: "9px 13px",
+                            textDecoration: "none",
+                          }}
+                        >
+                          Download source CSV
+                        </a>
+                      )}
+                      <Link
+                        href={asset.commercialParent.href}
+                        style={{
+                          border: "1px solid var(--border)",
+                          borderRadius: 9,
+                          color: "var(--emerald)",
+                          fontSize: ".82rem",
+                          fontWeight: 700,
+                          padding: "9px 13px",
+                          textDecoration: "none",
+                        }}
+                      >
+                        {asset.commercialParent.label}
+                      </Link>
+                    </div>
+                    <p
+                      style={{
+                        color: "var(--muted)",
+                        fontSize: ".75rem",
+                        lineHeight: 1.6,
+                        margin: "14px 0 0",
+                        overflowWrap: "anywhere",
+                      }}
+                    >
+                      Suggested citation: {post.author}. “{post.title}.”
+                      NoorPath Academy, {post.updatedAt ?? post.date}.{" "}
+                      https://www.noorpath.online/blog/{post.slug}
+                    </p>
+                    {asset.downloadPath && (
+                      <details style={{ marginTop: 12 }}>
+                        <summary
+                          style={{
+                            color: "var(--emerald)",
+                            cursor: "pointer",
+                            fontSize: ".8rem",
+                            fontWeight: 700,
+                          }}
+                        >
+                          Website embed code
+                        </summary>
+                        <code
+                          style={{
+                            background: "#fff",
+                            border: "1px solid var(--border)",
+                            borderRadius: 8,
+                            color: "var(--slate)",
+                            display: "block",
+                            fontSize: ".72rem",
+                            lineHeight: 1.6,
+                            marginTop: 9,
+                            overflowWrap: "anywhere",
+                            padding: 10,
+                            whiteSpace: "pre-wrap",
+                          }}
+                        >
+                          {`<a href="https://www.noorpath.online/blog/${post.slug}"><img src="https://www.noorpath.online${asset.downloadPath}" alt="${post.title} by NoorPath Academy"></a>`}
+                        </code>
+                      </details>
+                    )}
+                  </aside>
+                )}
 
                 {richContent ? (
                   /* Real content from original HTML */
@@ -184,6 +420,56 @@ export default async function BlogPostPage({ params }: Props) {
                   </>
                 )}
 
+                {supportingResources.length > 0 && (
+                  <aside
+                    aria-label="Related canonical resources"
+                    style={{
+                      background: "rgba(10,110,79,.05)",
+                      border: "1px solid rgba(10,110,79,.15)",
+                      borderRadius: 14,
+                      marginTop: 28,
+                      padding: 20,
+                    }}
+                  >
+                    <h2
+                      style={{
+                        color: "var(--charcoal)",
+                        fontSize: "1.05rem",
+                        marginBottom: 10,
+                      }}
+                    >
+                      Related canonical resources
+                    </h2>
+                    <p
+                      style={{
+                        color: "var(--muted)",
+                        fontSize: ".84rem",
+                        lineHeight: 1.65,
+                        marginBottom: 10,
+                      }}
+                    >
+                      Use these source-led pages for the detailed framework,
+                      comparison or evidence review.
+                    </p>
+                    <div style={{ display: "grid", gap: 8 }}>
+                      {supportingResources.map((resource) => (
+                        <Link
+                          key={resource.slug}
+                          href={`/blog/${resource.slug}`}
+                          style={{
+                            color: "var(--emerald)",
+                            fontSize: ".86rem",
+                            fontWeight: 700,
+                            textDecoration: "none",
+                          }}
+                        >
+                          → {resource.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </aside>
+                )}
+
                 {/* Author bio box */}
                 <div style={{ display: "flex", gap: 16, alignItems: "flex-start", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 24, marginTop: 40 }}>
                   <div style={{ width: 54, height: 54, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: "1.1rem", flexShrink: 0 }}>FT</div>
@@ -201,7 +487,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {/* CTA box at bottom of article */}
                 <div style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 16, padding: 28, textAlign: "center", marginTop: 24 }}>
                   <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.3rem", marginBottom: 12 }}>
-                    Want to Learn More with a Certified Tutor?
+                    Want to Discuss a Learning Plan?
                   </h3>
                   <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20, fontSize: ".9rem" }}>
                     Request a free 30-minute trial class to discuss the learner&apos;s level, goals and an available tutor match.

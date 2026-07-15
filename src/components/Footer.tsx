@@ -3,12 +3,13 @@ import { MessageCircle, Mail, Globe, Star } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa6";
 import { GOOGLE_BUSINESS_URL, TRUSTPILOT } from "@/lib/academyFacts";
+import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
 
 const courses = [
-  { href: "/courses/tajweed-classes-online", label: "Tajweed Rules" },
-  { href: "/courses/hifz-program-online", label: "Hifz Program" },
-  { href: "/courses/quran-classes-for-kids", label: "Kids Quran" },
+  { href: "/learn-tajweed-online", label: "Tajweed Rules" },
+  { href: "/hifz-quran-online", label: "Hifz Program" },
+  { href: "/online-quran-classes-for-kids", label: "Kids Quran" },
   { href: "/courses/noorani-qaida-online", label: "Noorani Qaida" },
   { href: "/courses/arabic-language-online", label: "Arabic Language" },
   { href: "/courses/islamic-studies-online", label: "Islamic Studies" },
@@ -20,6 +21,7 @@ const company = [
   { href: "/founder", label: "Founder & CEO" },
   { href: "/our-tutors", label: "Our Tutors" },
   { href: "/safeguarding", label: "Safeguarding" },
+  { href: "/contact", label: "Contact" },
   { href: "/locations", label: "All Locations" },
   { href: "/blog", label: "Blog & Articles" },
   { href: "/islamic-resources", label: "Free Resources" },
@@ -29,19 +31,18 @@ const company = [
 
 const quickLinks = [
   { href: "/learn-quran-online", label: "Learn Quran Online" },
-  { href: "/online-quran-academy", label: "Online Quran Academy" },
+  { href: "/online-quran-classes", label: "Online Quran Academy" },
   { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids" },
   { href: "/learn-tajweed-online", label: "Learn Tajweed Online" },
   { href: "/hifz-quran-online", label: "Hifz Quran Online" },
-  { href: "/courses/tajweed-classes-online", label: "Tajweed Course" },
-  { href: "/courses/hifz-program-online", label: "Hifz Program Online" },
-  { href: "/courses/quran-classes-for-kids", label: "Kids Quran Course" },
   { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online" },
   { href: "/courses/arabic-language-online", label: "Arabic Language" },
-  { href: "/locations/online-quran-classes-canada", label: "Quran Classes Canada" },
-  { href: "/locations/online-quran-classes-uk", label: "Quran Classes UK" },
-  { href: "/locations/online-quran-classes-usa", label: "Quran Classes USA" },
 ];
+
+const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({
+  href: `/locations/${slug}`,
+  label: country,
+}));
 
 export default function Footer() {
   return (
@@ -89,6 +90,16 @@ export default function Footer() {
               Free Trial Class
             </Link>
           </div>
+          <nav aria-label="Priority country locations" className="flex flex-wrap gap-3 justify-center">
+            <Link href="/locations" style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".8rem" }}>
+              All locations
+            </Link>
+            {priorityCountries.map((country) => (
+              <Link key={country.href} href={country.href} style={{ color: "var(--muted)", fontWeight: 600, fontSize: ".8rem" }}>
+                {country.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </section>
 
@@ -120,9 +131,8 @@ export default function Footer() {
               </div>
               <p className="footer-desc">
                 Illuminating hearts through the teachings of the Holy Quran.
-                Founder-led online Quran education for families worldwide since
-                2018, built with a strong focus on quality teaching,
-                accessibility, and modern learning technology.
+                Founder-led online Quran education for children, adults and
+                families, with live lessons and timezone-based tutor matching.
               </p>
               <div className="flex gap-2 flex-wrap items-center">
                 <Link
@@ -300,7 +310,10 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex gap-5">
+              <Link href="/contact">Contact</Link>
               <Link href="/safeguarding">Safeguarding</Link>
+              <Link href="/editorial-policy">Editorial Policy</Link>
+              <Link href="/accessibility-statement">Accessibility</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/terms-of-service">Terms of Service</Link>
             </div>

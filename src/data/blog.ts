@@ -1,3 +1,5 @@
+import { backlinkAssets } from "@/data/backlinkAssets";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -11,6 +13,7 @@ export interface BlogPost {
   author: string;
   authorTitle: string;
   authorSlug: string;
+  inLanguage?: string;
   /** Optional social / article cover (path under /public) */
   coverImage?: string;
 }
@@ -20,6 +23,7 @@ const AUTHOR_TITLE = "Islamic Education Specialist & Quran Learning Expert";
 const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
+  ...backlinkAssets,
   {
     slug: "female-quran-teacher-for-kids",
     title: "Female Quran Teacher for Kids — Safe Hafiza Tutors Online (UK & Worldwide)",
@@ -677,7 +681,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-08-15",
     readTime: "9 min",
     keywords: ["benefits of online quran classes","online quran learning benefits","why learn quran online"],
-    excerpt: "Online Quran classes offer flexibility, certified 1-on-1 tutors, no travel, and personalised pacing. Here are 15 compelling reasons thousands of families are switching online.",
+    excerpt: "Compare online Quran classes with local options across scheduling, travel, one-to-one attention, tutor evidence, safeguarding and learning pace.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
@@ -1000,7 +1004,7 @@ export const blogPosts: BlogPost[] = [
     slug: "learn-quran-as-an-adult-never-too-late",
     title: "Learning Quran as an Adult — Why It's Never Too Late (Start at 25, 40 or 60)",
     description:
-      "Think you're too old to learn Quran? Adults at 25, 40, even 70 learn to read Quran in 6–12 months with 1-on-1 online classes. Beginner roadmap, real timelines, private judgment-free tutors, and a free trial.",
+      "Think you're too old to learn Quran? Explore a learner-paced adult beginner route from Arabic letters to guided reading, with private one-to-one lessons and a free trial request.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1012,7 +1016,7 @@ export const blogPosts: BlogPost[] = [
       "never learned to read quran", "learn quran from zero adult", "quran for late starters",
     ],
     excerpt:
-      "Thousands of adults quietly search 'am I too old to learn Quran?' every month. The answer is no — and this guide shows the exact 6–12 month roadmap adults use to go from zero Arabic to reading the Quran, privately and without embarrassment.",
+      "Adults can begin Quran learning at any age. This guide explains a private, learner-paced route from Arabic letters to guided Quran reading without promising a fixed timeline.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {

@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { cities, getCity, getCityKeywords } from "@/data/cities";
+import { getCityGuide } from "@/data/cityGuides";
 import { getLocation } from "@/data/locations";
 import { CONTACT, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import { getCurrencyNote, getLocale, getOpenGraphLocale } from "@/lib/geoSeo";
 import { CheckCircle, Clock, MapPin, Shield, BookOpen, Users } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -24,9 +27,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city } = await params;
   const c = getCity(city);
   if (!c) return {};
-  const description = `Online Quran classes in ${c.city} for kids and adults — live 1-on-1 Noorani Qaida, Tajweed and Hifz lessons. Request a female tutor or after-school time in ${c.timezone}, subject to matching.`;
+  const guide = getCityGuide(c.slug);
+  const oneToOne = getLocale(c.countrySlug) === "en-US" ? "1-on-1" : "1-to-1";
+  const description =
+    guide?.description ??
+    `Online Quran classes in ${c.city} for kids and adults — live ${oneToOne} Noorani Qaida, Tajweed and Hifz lessons. Request a preferred ${c.timezone} time, subject to tutor matching.`;
   return {
-    title: `Online Quran Classes in ${c.city} for Kids & Adults | Free Trial`,
+    title: {
+      absolute: `Online Quran Classes ${c.city} | Live ${oneToOne} Trial`,
+    },
     description,
     keywords: getCityKeywords(c),
     alternates: { canonical: `https://www.noorpath.online/online-quran-classes/${c.slug}` },
@@ -34,6 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Online Quran Classes in ${c.city} | Kids & Adults | NoorPath`,
       description,
       url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
+      locale: getOpenGraphLocale(c.countrySlug),
       images: [{ url: "/marketing/family-evening-quran.jpg", width: 1200, height: 800, alt: `Online Quran Classes ${c.city}` }],
     },
     twitter: {
@@ -51,7 +61,13 @@ export default async function CityPage({ params }: Props) {
   if (!c) notFound();
 
   const country = getLocation(c.countrySlug);
-  const siblingCities = cities.filter((x) => x.countrySlug === c.countrySlug && x.slug !== c.slug);
+  const siblingCities = cities
+    .filter((x) => x.countrySlug === c.countrySlug && x.slug !== c.slug)
+    .slice(0, 2);
+  const locale = getLocale(c.countrySlug);
+  const currencyNote = getCurrencyNote(c.countrySlug);
+  const cityGuide = getCityGuide(c.slug);
+  const memorisation = locale === "en-US" ? "memorization" : "memorisation";
   const waText = encodeURIComponent(
     `Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`
   );
@@ -93,6 +109,7 @@ export default async function CityPage({ params }: Props) {
         provider: ORGANIZATION_REF,
         areaServed: { "@type": "City", name: c.city, containedInPlace: { "@type": "Country", name: c.country } },
         serviceType: "Online Quran Education",
+        inLanguage: locale,
         url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
         offers: {
           "@type": "Offer",
@@ -102,7 +119,32 @@ export default async function CityPage({ params }: Props) {
         },
       },
       {
+        "@type": "WebPage",
+        name: `Online Quran Classes in ${c.city}`,
+        url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
+        inLanguage: locale,
+      },
+      ...(cityGuide
+        ? [
+            {
+              "@type": "Article",
+              headline: cityGuide.title,
+              description: cityGuide.description,
+              mainEntityOfPage: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
+              author: ORGANIZATION_REF,
+              publisher: ORGANIZATION_REF,
+              dateModified: "2026-07-15",
+              inLanguage: locale,
+              about: {
+                "@type": "Service",
+                name: `Online Quran Classes in ${c.city}`,
+              },
+            },
+          ]
+        : []),
+      {
         "@type": "FAQPage",
+        inLanguage: locale,
         mainEntity: faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
@@ -217,7 +259,7 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
-      <section style={{ padding: "40px 0 56px", background: "var(--ivory)" }}>
+      <section lang={locale} style={{ padding: "40px 0 56px", background: "var(--ivory)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
@@ -231,6 +273,13 @@ export default async function CityPage({ params }: Props) {
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", margin: 0 }}>{c.localContext}</p>
               </div>
+
+              {cityGuide && (
+                <CountryQuranClassesGuide
+                  guide={cityGuide}
+                  eyebrow="City learning guide"
+                />
+              )}
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-7">
                 {[
@@ -251,7 +300,7 @@ export default async function CityPage({ params }: Props) {
                   Lesson Planning Details for {c.city}
                 </h2>
                 <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 16, lineHeight: 1.6 }}>
-                  Published plan details are shown in USD. Learning pace varies by starting level, attendance, lesson frequency, and practice.
+                  {currencyNote} Learning pace varies by starting level, attendance, lesson frequency, and practice.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                   {[
@@ -310,10 +359,11 @@ export default async function CityPage({ params }: Props) {
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[
+                    { href: "/online-quran-classes", label: "Online Quran Classes — Global lesson guide" },
                     { href: "/online-quran-classes-for-kids", label: `Online Quran Classes for Kids in ${c.city}` },
                     { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online — Arabic letters from scratch" },
-                    { href: "/courses/tajweed-classes-online", label: "Tajweed Classes Online — Beautiful recitation" },
-                    { href: "/courses/hifz-program-online", label: "Hifz Program Online — Quran memorization" },
+                    { href: "/learn-tajweed-online", label: "Learn Tajweed Online — Recitation support" },
+                    { href: "/hifz-quran-online", label: `Hifz Quran Online — Quran ${memorisation}` },
                     { href: "/female-quran-teacher-online", label: `Female Quran Teacher Online — For ${c.city} families` },
                   ].map((x) => (
                     <Link key={x.href} href={x.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
@@ -325,7 +375,24 @@ export default async function CityPage({ params }: Props) {
 
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 16 }}>
-                  What Families in {c.city} Get
+                  Verify the Online Lesson Details
+                </h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {[
+                    { href: "/our-tutors", label: "Tutor matching information" },
+                    { href: "/pricing", label: "Published lesson pricing" },
+                    { href: "/safeguarding", label: "Safeguarding information" },
+                  ].map((item) => (
+                    <Link key={item.href} href={item.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
+                      → {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="content-card" style={{ marginBottom: 28 }}>
+                <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 16 }}>
+                  Online Lesson Options for {c.city}
                 </h2>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                   {[

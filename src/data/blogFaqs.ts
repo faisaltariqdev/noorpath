@@ -2,6 +2,76 @@
 type BlogFaqSchema = Record<string, unknown>;
 
 const rawBlogFaqs: Record<string, BlogFaqSchema> = {
+  "how-to-improve-quran-recitation": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the fastest way to improve Quran recitation?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Identify the main reading bottleneck, practise a small passage with one correction target, and obtain feedback that you immediately apply. This reduces wasted practice but does not guarantee improvement within a fixed number of days.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I improve Quran recitation by listening only?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Listening helps establish a sound model, but recitation also requires audible production and correction. Follow the text while listening, recite the same short section, compare carefully, and seek teacher feedback for differences you cannot identify.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many minutes should I practise Quran recitation each day?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Choose a focused duration you can sustain. Ten, twenty and thirty-minute routines can all be adapted. A shorter attentive session is often more useful than a longer session that repeats uncorrected mistakes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I learn all Tajweed rules before reciting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Reading and rule application should develop together at the learner's level. Beginners need letter and vowel foundations, while developing readers can add common Tajweed rules gradually with suitable feedback.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can an app tell me whether my Quran recitation is correct?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apps can support listening, recording and practice organisation. Automated detection may flag possible differences, but it should not be treated as final proof of correct articulation, stopping or readiness for advanced study.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I know whether my Quran recitation is improving?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Repeat the same baseline under similar conditions, track one error category, and test the correction in a new passage. Fewer prompts, more consistent application and better self-correction are stronger evidence than page count alone.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I make my Quran recitation voice beautiful?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Prioritise accurate letters, measured pace, controlled breathing and suitable stopping. Do not force melody or imitate a style that causes distortion. Vocal quality should support accurate reading rather than replace it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need a Quran teacher to improve my recitation?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Self-practice is useful, but live listening is important when you cannot diagnose a sound, rule or stopping issue. Check that the proposed teacher's feedback and relevant experience match your current learning goal.",
+        },
+      },
+    ],
+  },
   "female-quran-teacher-for-kids": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can my daughter learn Quran with a female teacher online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. NoorPath offers certified female Quran teachers (Hafiza) for girls ages 4–12 in live 1-on-1 Zoom classes. Parents can observe sessions and request a female tutor when booking the free trial."}}, {"@type": "Question", "name": "What age should girls start with a female Quran teacher?", "acceptedAnswer": {"@type": "Answer", "text": "Most girls start between ages 4–7 with short 20–25 minute sessions for Arabic letters and duas. Ages 7–12 progress through Noorani Qaida, Tajweed and optional Hifz with 30–45 minute lessons."}}, {"@type": "Question", "name": "Are female Quran teachers available for UK kids?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Hafiza tutors offer UK after-school slots (typically 4–7pm GMT/BST) for families in London, Birmingham, Manchester, Bradford, Leeds, Leicester, Luton and nationwide."}}, {"@type": "Question", "name": "Is online Quran safe for daughters?", "acceptedAnswer": {"@type": "Answer", "text": "With a reputable academy: use Zoom/Google Meet only, no private messaging, parent supervision especially in the first month, and verified female tutors. NoorPath encourages parents to join any session."}}, {"@type": "Question", "name": "How do I request a female tutor for my child?", "acceptedAnswer": {"@type": "Answer", "text": "Book the free trial and write that you need a female teacher for your daughter, including her age and preferred timezone. Matching usually happens within 24 hours — no credit card for the trial."}}]},
   "online-hifz-classes-for-kids": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best age to start online Hifz for kids?", "acceptedAnswer": {"@type": "Answer", "text": "The ideal window is usually ages 7–10 after the child can read Quran with basic fluency. Younger children can memorise short surahs, but structured full Hifz works best once reading is solid."}}, {"@type": "Question", "name": "How do online Hifz classes work?", "acceptedAnswer": {"@type": "Answer", "text": "A live Hafiz or Hafiza listens to new memorisation (Sabaq), recent revision (Sabqi) and older portions (Manzil) in each lesson via Zoom. Parents receive weekly progress notes and a home revision plan."}}, {"@type": "Question", "name": "How many days per week should a child do Hifz online?", "acceptedAnswer": {"@type": "Answer", "text": "Most children need 5–6 live sessions per week plus short daily home revision. Fewer than 3 sessions usually makes retention too weak for long-term Hifz."}}, {"@type": "Question", "name": "Can girls do Hifz with a female tutor online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Certified Hafiza tutors teach girls the same Sabaq–Sabqi–Manzil system in private 1-on-1 classes. Request a female Hifz teacher on your free trial form."}}, {"@type": "Question", "name": "How long does online Hifz take for a child?", "acceptedAnswer": {"@type": "Answer", "text": "With 5–6 sessions weekly, many children complete full Hifz in roughly 2.5–4 years depending on age, retention and consistency. A free trial includes a personalised timeline estimate."}}]},
   "dua-for-success-exams": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best dua for success in exams?", "acceptedAnswer": {"@type": "Answer", "text": "A powerful short dua for success and ease is: Allaahumma laa sahla illaa maa ja'altahu sahla, wa anta taj'alul-hazna idhaa shi'ta sahla — 'O Allah, there is no ease except what You make easy, and You make the difficult easy if You wish.' Pair it with Rabbi zidni 'ilma (My Lord, increase me in knowledge — Quran 20:114) and sincere study."}}, {"@type": "Question", "name": "What is Rabbi zidni ilma in English?", "acceptedAnswer": {"@type": "Answer", "text": "Rabbi zidni 'ilma means 'My Lord, increase me in knowledge.' It is from Surah Ta-Ha 20:114 and is the only place in the Quran where Allah commands His Messenger ﷺ to ask for increase — specifically in knowledge."}}, {"@type": "Question", "name": "What dua should I recite before an exam?", "acceptedAnswer": {"@type": "Answer", "text": "Before an exam: say Bismillah, recite Allahumma la sahla, recite Rabbi zidni 'ilma three times, and optionally the dua of Musa (Quran 20:25-28) for clarity of speech. Then focus on what you studied — Islam combines dua with effort."}}, {"@type": "Question", "name": "Is there a dua for concentration while studying?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use Rabbi zidni 'ilma for beneficial knowledge, Allahumma la sahla for ease, and Musa's dua Rabbish-rah lee sadree for an open chest and clear speech. Study in short focused sessions and avoid haram distractions that cloud the mind."}}, {"@type": "Question", "name": "Can children recite these success duas?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Start with the short Rabbi zidni 'ilma and Allahumma la sahla. Teach them before homework and exams. Correct pronunciation from a tutor prevents mistakes that stick — NoorPath Academy offers a free kids trial for duas and Quran."}}]},

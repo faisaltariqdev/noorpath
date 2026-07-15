@@ -5,13 +5,18 @@ import { locations } from "@/data/locations";
 import { cities } from "@/data/cities";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import {
+  PRIORITY_MARKETS,
+  getPriorityMarket,
+  orderByMarketPriority,
+} from "@/lib/geoSeo";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Online Quran Classes by Country — USA, UK, Canada, Australia & More | NoorPath" },
+  title: { absolute: "Online Quran Classes by Country | NoorPath" },
   description:
-    "Request online Quran classes in the USA, UK, Canada, Australia, UAE, Pakistan, Germany and more. Live 1-on-1 lessons with timezone-based tutor matching.",
+    "Explore online Quran class guides for nine priority markets and other existing countries. Request live one-to-one lessons in your local timezone.",
   keywords: [
     "online quran classes usa", "online quran classes uk", "online quran classes canada",
     "online quran classes australia", "learn quran online worldwide", "quran teacher online",
@@ -43,14 +48,17 @@ const faqs = [
   { q: "Is there a free trial for international students?", a: `Yes. The trial is ${TRIAL.durationMinutes} minutes, costs $${TRIAL.price}, and does not require a credit card. ${TRIAL.availabilityNote}` },
 ];
 
-const timezones = [
-  { zone: "GMT/BST", flag: "🇬🇧", label: "United Kingdom" },
-  { zone: "EST/CST/MST/PST", flag: "🇺🇸", label: "United States" },
-  { zone: "Provincial timezones", flag: "🇨🇦", label: "Canada" },
-  { zone: "AEST/AEDT/AWST", flag: "🇦🇺", label: "Australia" },
-  { zone: "GST", flag: "🇦🇪", label: "UAE" },
-  { zone: "PKT", flag: "🇵🇰", label: "Pakistan" },
-];
+const priorityLocations = orderByMarketPriority(
+  locations.filter((location) => getPriorityMarket(location.slug))
+);
+const secondaryLocations = locations.filter((location) => !getPriorityMarket(location.slug));
+const orderedLocations = [...priorityLocations, ...secondaryLocations];
+const timezones = PRIORITY_MARKETS.map((market) => ({
+  zone: market.timezone,
+  flag: locations.find((location) => location.slug === market.slug)?.flag ?? "🌍",
+  label: market.country,
+  guidance: market.schedulingGuidance,
+}));
 
 const locationsJsonLd = {
   "@context": "https://schema.org",
@@ -60,15 +68,15 @@ const locationsJsonLd = {
       name: "Online Quran Classes — Worldwide",
       description: "NoorPath Academy provides live 1-on-1 online Quran lessons with country and timezone-based tutor matching.",
       provider: ORGANIZATION_REF,
-      areaServed: locations.map((l) => l.country),
+      areaServed: orderedLocations.map((l) => l.country),
       serviceType: "Online Quran Education",
       url: "https://www.noorpath.online/locations",
     },
     {
       "@type": "ItemList",
       name: "Online Quran Classes by Country — NoorPath Academy",
-      numberOfItems: locations.length,
-      itemListElement: locations.map((l, i) => ({
+      numberOfItems: orderedLocations.length,
+      itemListElement: orderedLocations.map((l, i) => ({
         "@type": "ListItem",
         position: i + 1,
         name: `Online Quran Classes ${l.country}`,
@@ -137,16 +145,16 @@ export default function LocationsPage() {
             ))}
           </div>
 
-          {/* Country cards */}
+          {/* Priority country cards */}
           <div style={{ textAlign: "center", marginBottom: 32 }}>
-            <span className="section-eyebrow"><Globe size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Country Guides</span>
-            <h2 className="section-title">Find <em className="accent">Quran Classes</em> in Your Country</h2>
+            <span className="section-eyebrow"><Globe size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Priority Country Guides</span>
+            <h2 className="section-title">Local Planning for <em className="accent">Priority Markets</em></h2>
             <p className="section-desc center">
-              Each country page has local timezone slots, country-specific tutor availability, and tailored scheduling options for your family.
+              These guides lead with local timezone, language and billing context. NoorPath teaches online; listing a country or city does not indicate a physical branch or established local customer base.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {locations.map((l) => (
+            {priorityLocations.map((l) => (
               <div key={l.country} className="content-card">
                 <div style={{ fontSize: "2.5rem", marginBottom: 12 }}>{l.flag}</div>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", color: "var(--charcoal)", marginBottom: 6 }}>
@@ -162,6 +170,29 @@ export default function LocationsPage() {
                     Free Trial →
                   </Link>
                 </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign: "center", marginBottom: 28 }}>
+            <span className="section-eyebrow">Additional Existing Guides</span>
+            <h2 className="section-title">Other <em className="accent">Country Guides</em></h2>
+            <p className="section-desc center">
+              These existing pages remain available in natural English with local-time scheduling guidance. They are supporting guides, not claims of local premises.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {secondaryLocations.map((l) => (
+              <div key={l.country} className="content-card">
+                <div style={{ fontSize: "2.2rem", marginBottom: 10 }}>{l.flag}</div>
+                <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.05rem", color: "var(--charcoal)", marginBottom: 6 }}>
+                  Online Quran Classes {l.country}
+                </h2>
+                <p style={{ color: "var(--muted)", fontSize: ".82rem", marginBottom: 8 }}>{l.timezone}</p>
+                <p style={{ color: "var(--muted)", fontSize: ".86rem", lineHeight: 1.6, marginBottom: 16 }}>{l.desc}</p>
+                <Link href={`/locations/${l.slug}`} style={{ display: "block", textAlign: "center", background: "rgba(10,110,79,.08)", color: "var(--emerald)", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 700, textDecoration: "none" }}>
+                  View Country Guide →
+                </Link>
               </div>
             ))}
           </div>
@@ -187,7 +218,7 @@ export default function LocationsPage() {
             <span className="section-eyebrow"><Clock size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Scheduling</span>
             <h2 className="section-title">Available in <em className="accent">Your Timezone</em></h2>
             <p className="section-desc center">
-              Request a preferred lesson window in your local timezone. Exact availability is confirmed after a suitable tutor is matched.
+              These are planning references, not guaranteed operating hours. Request a preferred local-time window; the exact recurring time is confirmed only after a suitable tutor is matched.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mb-16">
@@ -196,8 +227,8 @@ export default function LocationsPage() {
                 <div style={{ fontSize: "2rem", marginBottom: 8 }}>{tz.flag}</div>
                 <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 4 }}>{tz.label}</div>
                 <div style={{ fontSize: ".78rem", color: "var(--emerald)", fontWeight: 600, marginBottom: 4 }}>{tz.zone}</div>
-                <div style={{ fontSize: ".82rem", color: "var(--muted)", display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
-                  <Clock size={12} /> Subject to tutor matching
+                <div style={{ fontSize: ".78rem", color: "var(--muted)", lineHeight: 1.55 }}>
+                  {tz.guidance}
                 </div>
               </div>
             ))}

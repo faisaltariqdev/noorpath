@@ -363,7 +363,7 @@ export default function OnlineQuranClassesForKidsPage() {
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
             Kids Quran Curriculum — Learning Stages
           </h2>
-          <div style={{ overflowX: "auto", marginBottom: 48 }}>
+          <div style={{ overflowX: "auto", marginBottom: 16 }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".88rem" }}>
               <thead>
                 <tr style={{ background: "var(--emerald)", color: "#fff" }}>
@@ -391,6 +391,17 @@ export default function OnlineQuranClassesForKidsPage() {
               </tbody>
             </table>
           </div>
+          <p style={{ color: "var(--muted)", fontSize: ".84rem", lineHeight: 1.65, margin: "0 0 48px" }}>
+            Parent resources: see our{" "}
+            <Link href="/blog/quran-curriculum-and-lesson-planning" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+              Quran curriculum and lesson-planning guide
+            </Link>{" "}
+            and{" "}
+            <Link href="/blog/quran-practice-and-progress-guide" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+              research-informed Quran practice and progress guide
+            </Link>
+            . These frameworks must be adapted to observed ability and do not guarantee learning timelines.
+          </p>
 
           {/* HOW IT WORKS */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
@@ -464,7 +475,7 @@ export default function OnlineQuranClassesForKidsPage() {
                 ["/blog/online-quran-classes-for-kids-parent-guide", "Complete Parent Guide 2026"],
                 ["/blog/best-age-to-start-quran-learning", "When to Start Quran Learning"],
                 ["/blog/how-to-teach-quran-to-kids", "How to Teach Quran at Home"],
-                ["/courses/quran-classes-for-kids", "Kids Quran Course Details"],
+                ["/online-quran-classes-for-kids", "Kids Quran Course Details"],
                 ["/female-quran-teacher-online", "Female Quran Teacher"],
                 ["/courses/noorani-qaida-online", "Noorani Qaida Course"],
                 ["/learn-quran-online", "Learn Quran Online"],

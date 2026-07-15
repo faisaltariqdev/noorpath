@@ -4,10 +4,21 @@ import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
 import { getCitiesByCountrySlug } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
+import { getCountryGuide } from "@/data/countryGuides";
 import { CONTACT, FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import {
+  getCountryHubHreflang,
+  getCurrencyNote,
+  getLocale,
+  getOpenGraphLocale,
+  getPriorityContent,
+  getPriorityMarket,
+  getRelatedPriorityCountries,
+} from "@/lib/geoSeo";
 import { CheckCircle, Clock, Globe } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,17 +35,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const loc = getLocation(slug);
   if (!loc) return {};
-  const topCities = loc.cities.split(",").slice(0, 3).map((c) => c.trim()).join(", ");
-  const description = `Online Quran classes in ${loc.country} for kids and adults — live 1-on-1 lessons for ${topCities} and more. Request Qaida, Tajweed, Hifz or a female tutor in ${loc.timezone}, subject to matching.`;
+  const market = getPriorityMarket(slug);
+  const content = getPriorityContent(slug);
+  const description =
+    content?.metadataDescription ??
+    `Online Quran classes in ${loc.country} for children and adults. Request live one-to-one Qaida, Tajweed or Hifz lessons in ${loc.timezone}, subject to tutor matching.`;
+  const canonical = `https://www.noorpath.online/locations/${slug}`;
   return {
-    title: `Online Quran Classes in ${loc.country} — Kids & Adults | NoorPath`,
+    title: content?.metadataTitle ?? `Online Quran Classes in ${loc.country} | NoorPath`,
     description,
     keywords: getLocationKeywords(loc),
-    alternates: { canonical: `https://www.noorpath.online/locations/${slug}` },
+    alternates: {
+      canonical,
+      ...(market ? { languages: getCountryHubHreflang() } : {}),
+    },
     openGraph: {
       title: `Online Quran Classes in ${loc.country} | NoorPath Academy`,
       description,
-      url: `https://www.noorpath.online/locations/${slug}`,
+      url: canonical,
+      locale: getOpenGraphLocale(slug),
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Online Quran Classes ${loc.country}` }],
     },
     twitter: {
@@ -51,10 +70,22 @@ export default async function LocationDetailPage({ params }: Props) {
   const loc = getLocation(slug);
   if (!loc) notFound();
 
-  const related = locations.filter((l) => l.slug !== slug).slice(0, 4);
+  const market = getPriorityMarket(slug);
+  const priorityContent = getPriorityContent(slug);
+  const relatedPriority = getRelatedPriorityCountries(slug).map((relatedMarket) =>
+    getLocation(relatedMarket.slug)
+  ).filter((relatedLocation): relatedLocation is NonNullable<typeof relatedLocation> =>
+    Boolean(relatedLocation)
+  );
+  const related = market
+    ? relatedPriority
+    : locations.filter((l) => l.slug !== slug).slice(0, 4);
   const cityPages = getCitiesByCountrySlug(slug);
   const faqs = getLocationFaqs(loc);
   const seoParagraphs = getLocationSeoParagraphs(loc);
+  const locale = getLocale(slug);
+  const currencyNote = getCurrencyNote(slug);
+  const countryGuide = getCountryGuide(slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -66,6 +97,7 @@ export default async function LocationDetailPage({ params }: Props) {
         provider: ORGANIZATION_REF,
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
+        inLanguage: locale,
         url: `https://www.noorpath.online/locations/${slug}`,
         offers: {
           "@type": "Offer",
@@ -75,7 +107,32 @@ export default async function LocationDetailPage({ params }: Props) {
         },
       },
       {
+        "@type": "WebPage",
+        name: priorityContent?.heading ?? `Online Quran Classes in ${loc.country}`,
+        url: `https://www.noorpath.online/locations/${slug}`,
+        inLanguage: locale,
+      },
+      ...(countryGuide
+        ? [
+            {
+              "@type": "Article",
+              headline: countryGuide.title,
+              description: countryGuide.description,
+              mainEntityOfPage: `https://www.noorpath.online/locations/${slug}`,
+              author: ORGANIZATION_REF,
+              publisher: ORGANIZATION_REF,
+              dateModified: "2026-07-15",
+              inLanguage: locale,
+              about: {
+                "@type": "Service",
+                name: `Online Quran Classes in ${loc.country}`,
+              },
+            },
+          ]
+        : []),
+      {
         "@type": "FAQPage",
+        inLanguage: locale,
         mainEntity: faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
@@ -201,7 +258,7 @@ export default async function LocationDetailPage({ params }: Props) {
         </div>
       </div>
 
-      <section style={{ padding: "60px 0" }}>
+      <section lang={locale} style={{ padding: "60px 0" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
@@ -211,7 +268,7 @@ export default async function LocationDetailPage({ params }: Props) {
               {/* About */}
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", color: "var(--charcoal)", marginBottom: 16 }}>
-                  Online Quran Classes for {loc.country} Families
+                  {priorityContent?.heading ?? `Online Quran Classes for ${loc.country} Families`}
                 </h2>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginBottom: 16 }}>
                   NoorPath Academy offers live online Quran education for learners in {loc.country}, including {loc.cities}. Lessons are delivered remotely; NoorPath does not claim a physical branch in these cities.
@@ -226,6 +283,22 @@ export default async function LocationDetailPage({ params }: Props) {
                 ))}
               </div>
 
+              {market && (
+                <div className="content-card" style={{ marginBottom: 28 }}>
+                  <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 12 }}>
+                    Local Scheduling and Billing Context
+                  </h2>
+                  <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", marginBottom: 12 }}>
+                    {market.schedulingGuidance}
+                  </p>
+                  <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", margin: 0 }}>
+                    {currencyNote}
+                  </p>
+                </div>
+              )}
+
+              {countryGuide && <CountryQuranClassesGuide guide={countryGuide} />}
+
               {/* Popular courses for this country */}
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
@@ -233,14 +306,32 @@ export default async function LocationDetailPage({ params }: Props) {
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[
+                    { href: "/online-quran-classes", label: "Online Quran Classes — Global lesson guide" },
                     { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online — Learn Arabic letters from scratch" },
-                    { href: "/courses/tajweed-classes-online", label: "Tajweed Classes Online — Beautiful Quran recitation" },
-                    { href: "/courses/quran-classes-for-kids", label: "Quran Classes for Kids — All-in-one kids programme" },
-                    { href: "/courses/hifz-program-online", label: "Hifz Program Online — Quran memorization" },
+                    { href: "/learn-tajweed-online", label: "Learn Tajweed Online — Recitation support" },
+                    { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids — Age-appropriate lessons" },
+                    { href: "/hifz-quran-online", label: "Hifz Quran Online — Quran memorisation" },
                     { href: "/female-quran-teacher-online", label: "Female Quran Teacher Online — For sisters & daughters" },
                   ].map((c) => (
                     <Link key={c.href} href={c.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
                       → {c.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="content-card" style={{ marginBottom: 28 }}>
+                <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
+                  Check Tutor, Pricing and Safeguarding Details
+                </h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {[
+                    { href: "/our-tutors", label: "How tutor matching works" },
+                    { href: "/pricing", label: "Current USD lesson plans and family discounts" },
+                    { href: "/safeguarding", label: "Safeguarding information for online lessons" },
+                  ].map((item) => (
+                    <Link key={item.href} href={item.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
+                      → {item.label}
                     </Link>
                   ))}
                 </div>

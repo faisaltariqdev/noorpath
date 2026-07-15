@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X, GraduationCap } from "lucide-react";
 import { TRIAL } from "@/lib/academyFacts";
+import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 
 const navLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
@@ -14,6 +15,11 @@ const navLinks = [
   { href: "/islamic-resources", label: "Resources" },
   { href: "/about", label: "About" },
 ];
+
+const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({
+  href: `/locations/${slug}`,
+  label: country,
+}));
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -156,6 +162,44 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
+            <li style={{ position: "relative" }}>
+              <details>
+                <summary
+                  style={{
+                    color: "rgba(255,255,255,.82)",
+                    fontWeight: 500,
+                    fontSize: ".875rem",
+                    padding: "7px 13px",
+                    borderRadius: 8,
+                    cursor: "pointer",
+                  }}
+                >
+                  Countries
+                </summary>
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(100% + 10px)",
+                    right: 0,
+                    width: 240,
+                    padding: 12,
+                    background: "rgba(6,28,18,.99)",
+                    border: "1px solid rgba(255,255,255,.12)",
+                    borderRadius: 12,
+                    boxShadow: "0 16px 36px rgba(0,0,0,.35)",
+                  }}
+                >
+                  <Link href="/locations" style={{ display: "block", color: "#e8b84b", padding: "8px 10px", fontWeight: 700, textDecoration: "none" }}>
+                    All locations
+                  </Link>
+                  {priorityCountries.map((country) => (
+                    <Link key={country.href} href={country.href} style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "7px 10px", fontSize: ".84rem", textDecoration: "none" }}>
+                      {country.label}
+                    </Link>
+                  ))}
+                </div>
+              </details>
+            </li>
             <li style={{ marginLeft: 10 }}>
               <Link
                 href="/online-quran-classes#cta"
@@ -224,6 +268,23 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
+              <li style={{ borderBottom: "1px solid rgba(255,255,255,.06)", padding: "8px" }}>
+                <details>
+                  <summary style={{ color: "rgba(255,255,255,.85)", padding: "5px 0", fontWeight: 600, cursor: "pointer" }}>
+                    Priority countries
+                  </summary>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 4, paddingTop: 8 }}>
+                    <Link href="/locations" onClick={() => setOpen(false)} style={{ color: "#e8b84b", padding: "6px 0", fontSize: ".84rem" }}>
+                      All locations
+                    </Link>
+                    {priorityCountries.map((country) => (
+                      <Link key={country.href} href={country.href} onClick={() => setOpen(false)} style={{ color: "rgba(255,255,255,.78)", padding: "6px 0", fontSize: ".84rem" }}>
+                        {country.label}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+              </li>
               <li style={{ marginTop: 14 }}>
                 <Link
                   href="/online-quran-classes#cta"

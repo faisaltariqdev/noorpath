@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">An adaptable Hifz revision schedule</title>
+  <desc id="desc">A NoorPath visual guide presenting three flexible areas of Hifz study: new memorisation or Sabaq, recent review or Sabqi, and long-term review or Manzil. It also shows a daily prepare, listen, recall, correct, and record flow. The framework should be adjusted with the learner's teacher.</desc>
+  <defs>
+    <linearGradient id="headerGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#063d2c"/>
+      <stop offset="1" stop-color="#0a6e4f"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#063d2c" flood-opacity=".12"/>
+    </filter>
+    <style>
+      .sans { font-family: Arial, Helvetica, sans-serif; }
+      .serif { font-family: Georgia, "Times New Roman", serif; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 2.4px; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #2d3748; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 20px; fill: #2d3748; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1500" fill="#fdf8f0"/>
+  <circle cx="1120" cy="74" r="220" fill="#c9922a" opacity=".13"/>
+  <circle cx="75" cy="1410" r="180" fill="#0f8f66" opacity=".08"/>
+
+  <g id="header" aria-label="Title and introduction">
+    <rect x="0" y="0" width="1200" height="320" fill="url(#headerGradient)"/>
+    <path d="M0 276 C280 350 870 222 1200 292 L1200 320 L0 320 Z" fill="#fdf8f0"/>
+    <g transform="translate(72 58)">
+      <rect width="178" height="42" rx="21" fill="#e8b84b"/>
+      <text x="89" y="28" text-anchor="middle" class="label" font-size="17" letter-spacing="1.7" fill="#063d2c">NOORPATH GUIDE</text>
+    </g>
+    <text x="72" y="155" class="serif" font-size="58" font-weight="700" fill="#ffffff">An adaptable Hifz</text>
+    <text x="72" y="222" class="serif" font-size="58" font-weight="700" fill="#ffffff">revision schedule</text>
+    <text x="72" y="274" class="sans" font-size="24" fill="#dfeee8">Three connected areas, guided by a teacher and shaped around the learner.</text>
+  </g>
+
+  <g id="framework" aria-label="Three-part Hifz framework">
+    <text x="72" y="384" class="label" fill="#0a6e4f">THE THREE-PART FRAMEWORK</text>
+    <text x="72" y="426" class="body">Keep all three areas visible. Their balance can change over time.</text>
+
+    <g id="sabaq" aria-label="New memorisation, Sabaq" transform="translate(72 470)" filter="url(#softShadow)">
+      <rect width="328" height="300" rx="24" fill="#ffffff" stroke="#0a6e4f" stroke-width="3"/>
+      <circle cx="52" cy="54" r="28" fill="#0a6e4f"/>
+      <text x="52" y="63" text-anchor="middle" class="sans" font-size="25" font-weight="700" fill="#ffffff">1</text>
+      <text x="30" y="112" class="serif" font-size="34" font-weight="700" fill="#063d2c">New memorisation</text>
+      <text x="30" y="151" class="sans" font-size="25" font-weight="700" fill="#c07816">Sabaq</text>
+      <line x1="30" y1="175" x2="298" y2="175" stroke="#d7e9e1" stroke-width="2"/>
+      <text x="30" y="214" class="small">
+        <tspan x="30" dy="0">Learn the next assigned</tspan>
+        <tspan x="30" dy="31">portion carefully, with</tspan>
+        <tspan x="30" dy="31">accurate recitation.</tspan>
+      </text>
+    </g>
+
+    <g id="sabqi" aria-label="Recent review, Sabqi" transform="translate(436 470)" filter="url(#softShadow)">
+      <rect width="328" height="300" rx="24" fill="#ffffff" stroke="#c9922a" stroke-width="3"/>
+      <circle cx="52" cy="54" r="28" fill="#c9922a"/>
+      <text x="52" y="63" text-anchor="middle" class="sans" font-size="25" font-weight="700" fill="#ffffff">2</text>
+      <text x="30" y="112" class="serif" font-size="34" font-weight="700" fill="#063d2c">Recent review</text>
+      <text x="30" y="151" class="sans" font-size="25" font-weight="700" fill="#c07816">Sabqi</text>
+      <line x1="30" y1="175" x2="298" y2="175" stroke="#eee0c1" stroke-width="2"/>
+      <text x="30" y="214" class="small">
+        <tspan x="30" dy="0">Revisit recently learned</tspan>
+        <tspan x="30" dy="31">passages before small</tspan>
+        <tspan x="30" dy="31">errors settle in.</tspan>
+      </text>
+    </g>
+
+    <g id="manzil" aria-label="Long-term review, Manzil" transform="translate(800 470)" filter="url(#softShadow)">
+      <rect width="328" height="300" rx="24" fill="#ffffff" stroke="#0f8f66" stroke-width="3"/>
+      <circle cx="52" cy="54" r="28" fill="#0f8f66"/>
+      <text x="52" y="63" text-anchor="middle" class="sans" font-size="25" font-weight="700" fill="#ffffff">3</text>
+      <text x="30" y="112" class="serif" font-size="34" font-weight="700" fill="#063d2c">Long-term review</text>
+      <text x="30" y="151" class="sans" font-size="25" font-weight="700" fill="#c07816">Manzil</text>
+      <line x1="30" y1="175" x2="298" y2="175" stroke="#d7e9e1" stroke-width="2"/>
+      <text x="30" y="214" class="small">
+        <tspan x="30" dy="0">Cycle through older</tspan>
+        <tspan x="30" dy="31">memorisation to keep it</tspan>
+        <tspan x="30" dy="31">active and connected.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <g id="daily-flow" aria-label="Daily Hifz practice flow">
+    <rect x="72" y="824" width="1056" height="386" rx="28" fill="#063d2c"/>
+    <text x="112" y="886" class="label" fill="#e8b84b">A SIMPLE DAILY FLOW</text>
+    <text x="112" y="928" class="sans" font-size="24" fill="#dfeee8">Use the same careful loop across Sabaq, Sabqi and Manzil.</text>
+
+    <g transform="translate(112 984)">
+      <g id="prepare" aria-label="Prepare">
+        <circle cx="70" cy="70" r="58" fill="#fdf8f0"/>
+        <text x="70" y="80" text-anchor="middle" class="serif" font-size="38" font-weight="700" fill="#0a6e4f">1</text>
+        <text x="70" y="157" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#ffffff">Prepare</text>
+      </g>
+      <path d="M138 70 H190" stroke="#e8b84b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M180 60 L192 70 L180 80" fill="none" stroke="#e8b84b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="listen" aria-label="Listen" transform="translate(198)">
+        <circle cx="70" cy="70" r="58" fill="#fdf8f0"/>
+        <text x="70" y="80" text-anchor="middle" class="serif" font-size="38" font-weight="700" fill="#0a6e4f">2</text>
+        <text x="70" y="157" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#ffffff">Listen</text>
+      </g>
+      <path d="M336 70 H388" stroke="#e8b84b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M378 60 L390 70 L378 80" fill="none" stroke="#e8b84b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="recall" aria-label="Recall" transform="translate(396)">
+        <circle cx="70" cy="70" r="58" fill="#fdf8f0"/>
+        <text x="70" y="80" text-anchor="middle" class="serif" font-size="38" font-weight="700" fill="#0a6e4f">3</text>
+        <text x="70" y="157" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#ffffff">Recall</text>
+      </g>
+      <path d="M534 70 H586" stroke="#e8b84b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M576 60 L588 70 L576 80" fill="none" stroke="#e8b84b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="correct" aria-label="Correct" transform="translate(594)">
+        <circle cx="70" cy="70" r="58" fill="#fdf8f0"/>
+        <text x="70" y="80" text-anchor="middle" class="serif" font-size="38" font-weight="700" fill="#0a6e4f">4</text>
+        <text x="70" y="157" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#ffffff">Correct</text>
+      </g>
+      <path d="M732 70 H784" stroke="#e8b84b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M774 60 L786 70 L774 80" fill="none" stroke="#e8b84b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="record" aria-label="Record" transform="translate(792)">
+        <circle cx="70" cy="70" r="58" fill="#e8b84b"/>
+        <text x="70" y="80" text-anchor="middle" class="serif" font-size="38" font-weight="700" fill="#063d2c">5</text>
+        <text x="70" y="157" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#ffffff">Record</text>
+      </g>
+    </g>
+    <text x="600" y="1180" text-anchor="middle" class="sans" font-size="20" fill="#bdd8cd">Note what needs another look and take it to the next teacher check-in.</text>
+  </g>
+
+  <g id="guidance" aria-label="Important guidance and disclaimer">
+    <rect x="72" y="1252" width="1056" height="144" rx="22" fill="#f7f2e8" stroke="#c9922a" stroke-width="3"/>
+    <circle cx="116" cy="1300" r="20" fill="#c9922a"/>
+    <text x="116" y="1308" text-anchor="middle" class="sans" font-size="24" font-weight="700" fill="#ffffff">i</text>
+    <text x="152" y="1308" class="sans" font-size="24" font-weight="700" fill="#063d2c">Teacher-guided and adaptable</text>
+    <text x="112" y="1351" class="small" font-size="19">
+      <tspan x="112" dy="0">Illustrative framework &#8212; adjust with the learner&#8217;s teacher.</tspan>
+      <tspan x="112" dy="28">No fixed ratio guarantees retention.</tspan>
+    </text>
+  </g>
+
+  <g id="credit" aria-label="Source credit">
+    <line x1="72" y1="1433" x2="1128" y2="1433" stroke="#0a6e4f" stroke-opacity=".22" stroke-width="2"/>
+    <text x="72" y="1471" class="sans" font-size="19" fill="#0a6e4f" font-weight="700">NOORPATH</text>
+    <text x="1128" y="1471" text-anchor="end" class="sans" font-size="18" fill="#6b7280">Source: noorpath.online/blog/hifz-revision-schedule</text>
+  </g>
+</svg>

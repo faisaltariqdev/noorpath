@@ -8,12 +8,12 @@ import { FAMILY_DISCOUNTS, SERVICE_FACTS } from "@/lib/academyFacts";
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "About NoorPath Academy — Online Quran Education for Families | Since 2018" },
+  title: { absolute: "About NoorPath Academy — Online Quran Education for Families" },
   description:
     "NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes with a free 30-minute trial.",
   keywords: [
-    "about noorpath academy", "online quran academy", "certified quran tutors", "ijazah certified online quran",
-    "quran academy since 2018", "noorpath quran", "online islamic education", "quran school online",
+    "about noorpath academy", "online quran academy", "online quran tutors", "quran tutor matching",
+    "noorpath quran", "online islamic education", "quran school online",
     "online quran academy for families", "quran academy for kids and adults",
   ],
   alternates: { canonical: "https://www.noorpath.online/about" },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { q: "When was NoorPath Academy founded?", a: "NoorPath Academy was founded in 2018 by Faisal Tariq with the mission of making online Quran education more accessible to Muslim families." },
+  { q: "Who leads NoorPath Academy?", a: "NoorPath Academy is founder-led by Faisal Tariq. His profile and role are published on the founder page." },
   { q: "How are NoorPath tutors qualified?", a: "Qualifications vary by tutor and teaching focus. Before enrolment, NoorPath confirms the proposed tutor's relevant credentials and experience for the requested subject." },
   { q: "What age groups does NoorPath Academy teach?", a: "NoorPath offers tutor matching for children and adults across Quran reading, Tajweed, Hifz, Arabic, and related learning goals." },
   { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led and provides live 1-to-1 lessons. Matching considers the learner's level, goals, timezone, and male or female tutor preference; availability is confirmed after each request." },
@@ -74,7 +74,6 @@ const stats = [
   { icon: <CheckCircle size={28} />, num: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
   { icon: <Globe size={28} />, num: SERVICE_FACTS[3].value, label: SERVICE_FACTS[3].label },
   { icon: <Heart size={28} />, num: `Up to ${FAMILY_DISCOUNTS[2].discountPercent}%`, label: "Sibling Discount" },
-  { icon: <GraduationCap size={28} />, num: "2018", label: "Founded" },
 ];
 
 export default function AboutPage() {
@@ -92,7 +91,7 @@ export default function AboutPage() {
           </nav>
           <h1>About NoorPath Academy</h1>
           <p>
-            Illuminating hearts through the teachings of the Holy Quran since 2018, with live 1-to-1 online classes for children and adults.
+            Founder-led live one-to-one online Quran classes for children and adults.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
@@ -104,7 +103,7 @@ export default function AboutPage() {
       {/* Stats */}
       <section style={{ background: "var(--ivory)", padding: "48px 0", borderBottom: "1px solid var(--border)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
             {stats.map((s) => (
               <div key={s.label}>
                 <div style={{ color: "var(--emerald)", marginBottom: 8, display: "flex", justifyContent: "center" }}>{s.icon}</div>
@@ -128,7 +127,7 @@ export default function AboutPage() {
           <div className="content-card" style={{ marginBottom: 24 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.15rem", color: "var(--charcoal)", marginBottom: 14 }}>Who We Are</h3>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-              <strong>NoorPath Academy</strong> is a founder-led <Link href="/online-quran-academy" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> established in 2018 with one goal: to give every Muslim family access to high-quality, personalised Quran and Islamic education — regardless of their location.
+              <strong>NoorPath Academy</strong> is a founder-led <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> offering live one-to-one Quran and Islamic education for children and adults in multiple timezones.
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
               Our curriculum spans <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link> to <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz programs</Link> for children and adults. Tutor matching considers subject, level, schedule, and tutor preference.

@@ -1,5 +1,6 @@
 import type { Location } from "./locations";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { getCurrencyNote, getPriorityContent, getPriorityMarket } from "@/lib/geoSeo";
 
 const starterPlan = PRICING_PLANS[0];
 const familyDiscountSummary = FAMILY_DISCOUNTS.map(
@@ -8,6 +9,8 @@ const familyDiscountSummary = FAMILY_DISCOUNTS.map(
 
 export function getLocationFaqs(loc: Location) {
   const primaryCity = loc.cities.split(",")[0].trim();
+  const currencyNote = getCurrencyNote(loc.slug);
+  const market = getPriorityMarket(loc.slug);
   return [
     {
       q: `How do online Quran classes work in ${loc.country}?`,
@@ -19,11 +22,12 @@ export function getLocationFaqs(loc: Location) {
     },
     {
       q: `How much do online Quran classes cost in ${loc.country}?`,
-      a: `The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd}/month for ${starterPlan.sessionsPerMonth} ${starterPlan.sessionMinutes}-minute sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} with no credit card required. Published family discounts are ${familyDiscountSummary}.`,
+      a: `The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd} USD per month for ${starterPlan.sessionsPerMonth} ${starterPlan.sessionMinutes}-minute sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} USD with no credit card required. Published family discounts are ${familyDiscountSummary}. ${currencyNote}`,
     },
     {
       q: `What time are the Quran classes held in ${loc.country}?`,
-      a: `You can request morning, afternoon, evening, or weekend lessons in ${loc.timezone}. Exact times are subject to tutor matching and are confirmed after your request.`,
+      a: market?.schedulingGuidance ??
+        `You can request morning, afternoon, evening, or weekend lessons in ${loc.timezone}. Exact times are subject to tutor matching and are confirmed after your request.`,
     },
     {
       q: `Can kids learn Quran online in ${loc.country}?`,
@@ -46,18 +50,28 @@ export function getLocationFaqs(loc: Location) {
 
 export function getLocationSeoParagraphs(loc: Location): string[] {
   const primaryCity = loc.cities.split(",")[0].trim();
+  const priorityContent = getPriorityContent(loc.slug);
+  const market = getPriorityMarket(loc.slug);
   return [
-    `Looking for online Quran classes in ${loc.country}? NoorPath Academy offers live 1-on-1 Quran tutoring online for learners in ${primaryCity}, ${loc.cities.split(",").slice(1, 3).map((c) => c.trim()).join(", ")}, and other areas. Whether you want to learn from scratch, improve Tajweed, start Hifz, or enrol your children, you can request a tutor and schedule in the ${loc.timezone} timezone.`,
+    priorityContent?.introduction ??
+      `NoorPath Academy offers live one-to-one Quran tutoring online for learners in ${primaryCity}, ${loc.cities.split(",").slice(1, 3).map((c) => c.trim()).join(", ")}, and other areas of ${loc.country}. Learners can request support with Qaida, Tajweed, Hifz, or general Quran reading in ${loc.timezone}.`,
     loc.localContext,
-    `NoorPath offers Noorani Qaida, Tajweed, Quran memorization (Hifz), Arabic language, Islamic studies, and daily duas through online lessons. The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd}/month, and the ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} with no credit card required. Morning, afternoon, evening, and weekend preferences in ${loc.timezone} are subject to tutor matching.`,
-    `Learners in ${loc.country} can request female tutor options, one-to-one lessons, and family pricing. Published sibling discounts are ${familyDiscountSummary}. NoorPath operates online and does not imply a physical branch in ${loc.country}.`,
+    priorityContent?.localPlanning ??
+      `Request a suitable morning, after-school, evening, or weekend window in ${loc.timezone}. Exact tutor and recurring-time availability is confirmed after matching.`,
+    market?.schedulingGuidance ??
+      `Scheduling requests are handled in ${loc.timezone}, with exact availability confirmed after matching.`,
+    `NoorPath offers Noorani Qaida, Tajweed, Quran memorisation (Hifz), Arabic language, Islamic studies, and daily duas through online lessons. The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd} USD per month, and the ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} USD with no credit card required.`,
+    getCurrencyNote(loc.slug),
+    `Learners in ${loc.country} can request female tutor options, one-to-one lessons, and family pricing. Published sibling discounts are ${familyDiscountSummary}. NoorPath operates online and does not imply a physical branch or established local customer base in ${loc.country}.`,
   ];
 }
 
 export function getLocationKeywords(loc: Location): string[] {
   const country = loc.country.toLowerCase();
   const short = country.replace("united ", "").replace(" ", "");
+  const priorityKeywords = getPriorityMarket(loc.slug)?.keywordClusters ?? [];
   return [
+    ...priorityKeywords,
     ...loc.keywords,
     `learn quran online ${short}`,
     `online quran academy ${short}`,
