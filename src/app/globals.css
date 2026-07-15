@@ -103,8 +103,6 @@ table.responsive-table {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-.article-body table > thead,
-.article-body table > tbody,
 .np-table > thead, .np-table > tbody,
 .name-table > thead, .name-table > tbody,
 .dream-table > thead, .dream-table > tbody,
@@ -114,8 +112,7 @@ table.responsive-table {
 table.responsive-table > thead,
 table.responsive-table > tbody {
   display: table;
-  width: 100%;
-  min-width: 100%;
+  min-width: max-content;
 }
 
 /* Table-of-contents lists in the long-form guide components (2 columns
@@ -554,8 +551,8 @@ footer {
 .footer-bottom a { color: rgba(255,255,255,.3); text-decoration: none; }
 .footer-bottom a:hover { color: var(--gold-lt); }
 .social-btn {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 10px;
   background: rgba(255,255,255,.07);
   color: rgba(255,255,255,.65);
@@ -731,7 +728,7 @@ footer {
 .article-body ul, .article-body ol { margin-bottom: 18px; padding-left: 24px; }
 .article-body li { margin-bottom: 8px; }
 .article-body strong { color: var(--charcoal); }
-.article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+.article-body table { border-collapse: collapse; margin: 24px 0; }
 .article-body th { background: var(--emerald); color: #fff; padding: 10px 16px; text-align: left; font-size: .85rem; }
 .article-body td { padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: .88rem; vertical-align: top; }
 .article-body tr:nth-child(even) td { background: var(--ivory); }

@@ -309,14 +309,14 @@ export default function Footer() {
                 Deploy {getBuildLabel()}
               </div>
             </div>
-            <div className="flex gap-5">
+            <nav aria-label="Legal links" className="flex flex-wrap gap-x-5 gap-y-2">
               <Link href="/contact">Contact</Link>
               <Link href="/safeguarding">Safeguarding</Link>
               <Link href="/editorial-policy">Editorial Policy</Link>
               <Link href="/accessibility-statement">Accessibility</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/terms-of-service">Terms of Service</Link>
-            </div>
+            </nav>
           </div>
         </div>
       </footer>

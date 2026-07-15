@@ -231,6 +231,7 @@ export default function OnlineQuranClassesGuide() {
           into a recitation lesson without a plan.
         </p>
 
+        <div style={{ overflowX: "auto" }}>
         <table>
           <thead>
             <tr>
@@ -273,6 +274,7 @@ export default function OnlineQuranClassesGuide() {
             </tr>
           </tbody>
         </table>
+        </div>
       </section>
 
       <section id="kids-and-adults">
@@ -453,6 +455,7 @@ export default function OnlineQuranClassesGuide() {
           learning is universally better; it is whether it provides the feedback, consistency and
           safety your learner needs.
         </p>
+        <div style={{ overflowX: "auto" }}>
         <table>
           <thead>
             <tr>
@@ -501,6 +504,7 @@ export default function OnlineQuranClassesGuide() {
             </tr>
           </tbody>
         </table>
+        </div>
         <p>
           A blended approach often works well: live lessons for instruction and correction, plus
           a Mushaf, Qaida, audio and carefully selected digital tools for home practice. The tool
