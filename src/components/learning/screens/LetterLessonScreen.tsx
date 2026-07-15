@@ -13,6 +13,9 @@ import StarRating from "@/components/learning/ui/StarRating";
 import ActivityBox from "@/components/learning/ui/ActivityBox";
 import ConfettiBlast from "@/components/learning/ui/ConfettiBlast";
 import Flashcard3D from "@/components/learning/ui/Flashcard3D";
+import MemoryGame from "@/components/learning/games/MemoryGame";
+import BubblePopGame from "@/components/learning/games/BubblePopGame";
+import LetterMatchGame from "@/components/learning/games/LetterMatchGame";
 import type { ScreenId, Letter } from "@/data/learning/types";
 
 interface Props {
@@ -196,6 +199,43 @@ export default function LetterLessonScreen({ letterId, onNavigate, done, markDon
           <li>Find {lt.name} in the word: <span style={{ fontFamily: "'Amiri', serif", fontSize: "1.3rem" }}>{lt.word}</span></li>
         </ol>
       </ActivityBox>
+
+      {/* 🎮 Mini Games Section */}
+      <div style={{ marginTop: 20, marginBottom: 8 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
+          <span style={{ fontSize: "1.5rem" }}>🎮</span>
+          <div>
+            <div style={{ fontWeight: 900, fontSize: "1rem", color: "#FFD700" }}>Fun Learning Games</div>
+            <div style={{ fontSize: ".75rem", color: "rgba(255,255,255,.5)" }}>Practice {lt.name} through play!</div>
+          </div>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 14 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            style={{ background: "linear-gradient(135deg,rgba(27,107,58,.9),rgba(13,61,30,.95))", borderRadius: 20, padding: "16px", border: "1px solid rgba(255,215,0,.2)" }}
+          >
+            <div style={{ fontWeight: 800, color: "#FFD700", fontSize: ".88rem", marginBottom: 10 }}>🫧 Bubble Pop</div>
+            <BubblePopGame targetLetterId={lt.id} />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+            style={{ background: "linear-gradient(135deg,rgba(27,107,58,.9),rgba(13,61,30,.95))", borderRadius: 20, padding: "16px", border: "1px solid rgba(255,215,0,.2)" }}
+          >
+            <div style={{ fontWeight: 800, color: "#FFD700", fontSize: ".88rem", marginBottom: 10 }}>🔤 Letter Match</div>
+            <LetterMatchGame letterId={lt.id} />
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
+          style={{ background: "linear-gradient(135deg,rgba(27,107,58,.9),rgba(13,61,30,.95))", borderRadius: 20, padding: "16px", border: "1px solid rgba(255,215,0,.2)", marginTop: 14 }}
+        >
+          <div style={{ fontWeight: 800, color: "#FFD700", fontSize: ".88rem", marginBottom: 10 }}>🃏 Memory Cards</div>
+          <MemoryGame />
+        </motion.div>
+      </div>
 
       {/* Navigation */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10, marginTop: 16 }}>

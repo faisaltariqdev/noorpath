@@ -1094,3 +1094,41 @@ footer {
   word-break: break-word;
 }
 pre { max-width: 100%; }
+
+/* ===== Noorani Qaida Animation Utilities ===== */
+@keyframes sparkle {
+  0%   { opacity: 0.8; transform: scale(0.8) rotate(0deg); }
+  50%  { opacity: 1;   transform: scale(1.2) rotate(10deg); }
+  100% { opacity: 0.8; transform: scale(0.8) rotate(0deg); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(255,215,0,.3)); }
+  50%       { filter: drop-shadow(0 0 16px rgba(255,215,0,.7)); }
+}
+
+@keyframes breath {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
+}
+
+@keyframes coin-spin {
+  0%   { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+/* GPU-accelerated animations for Qaida module */
+.qaida-float   { animation: float-gentle 3s ease-in-out infinite; will-change: transform; }
+.qaida-glow    { animation: glow-pulse 2.5s ease-in-out infinite; will-change: filter; }
+.qaida-breath  { animation: breath 4s ease-in-out infinite; will-change: transform; }
+.qaida-sparkle { animation: sparkle 2s ease-in-out infinite; will-change: transform, opacity; }
+
+/* Reduced motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  .qaida-float, .qaida-glow, .qaida-breath, .qaida-sparkle { animation: none; }
+}
