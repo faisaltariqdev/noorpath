@@ -274,20 +274,29 @@ export default function InteractiveNooraniQaidaSection() {
             </div>
 
             <figure className="qaida-screenshot qaida-screenshot--video">
-              <video
-                src="/marketing/noorani-qaida/noorani-qaida-platform-preview.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="none"
-                aria-label="Interactive Noorani Qaida platform preview — Arabic letter learning with audio, tracing, games and progress for children"
-                title="NoorPath Interactive Noorani Qaida — live platform preview"
-                className="qaida-preview-video"
-                poster="/marketing/noorani-qaida/alif-pronunciation-tracing-lesson.png"
+              <a
+                href={NOORANI_QAIDA_LIVE_PREVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="qaida-video-link"
+                aria-label="Open the interactive Noorani Qaida lesson preview — click to try the Alif lesson"
               >
-                Your browser does not support video playback.
-              </video>
+                <video
+                  src="/marketing/noorani-qaida/noorani-qaida-platform-preview.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="none"
+                  aria-hidden="true"
+                  className="qaida-preview-video"
+                  poster="/marketing/noorani-qaida/alif-pronunciation-tracing-lesson.png"
+                />
+                <span className="qaida-video-play-hint" aria-hidden="true">
+                  <span className="qaida-video-play-icon">▶</span>
+                  Try the live lesson
+                </span>
+              </a>
               <figcaption>
                 NoorPath learning platform: one Arabic letter, multiple practice modes, and
                 visible progress — a practical Noorani Qaida PDF alternative for families.
