@@ -12,7 +12,6 @@ import {
   Users,
   Video,
 } from "lucide-react";
-import { TRIAL } from "@/lib/academyFacts";
 import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 import { serializeJsonLd } from "@/lib/jsonLd";
 
@@ -32,10 +31,8 @@ const trustBadges = [
 
 const conversionBadges = [
   "No Credit Card Required",
-  `Free ${TRIAL.durationMinutes}-Min Trial`,
   "Qualified Tutors",
   "Kids Ages 3–12",
-  "One-to-One Classes",
   "Flexible Timings",
 ] as const;
 
@@ -206,24 +203,26 @@ export default function InteractiveNooraniQaidaSection() {
                   <strong>Makharij</strong> cues — then move through Harakaat, joining, and early
                   word reading without relying on a static PDF alone.
                 </p>
-                <p>
-                  Think of it as a structured <strong>interactive ebook</strong> and{" "}
-                  <strong>Arabic learning app experience</strong> on the web: listen, trace,
-                  repeat, play memory games, and review progress in one place. Parents and
-                  teachers see why each activity exists, while children build{" "}
-                  <strong>letter recognition</strong>, <strong>Arabic pronunciation</strong>, and
-                  <strong> Arabic writing practice</strong> at a calm pace.
-                </p>
-                <p>
-                  The 11-module journey supports <strong>Quran reading for beginners</strong> and
-                  <strong> kids Quran learning</strong> before live correction. When you need a
-                  teacher, pair the platform with{" "}
-                  <Link href="/courses/noorani-qaida-online">Noorani Qaida online classes</Link>,{" "}
-                  <Link href="/online-quran-classes-for-kids">Quran classes for kids</Link>, or{" "}
-                  <Link href="/quran-teacher-online">online Quran tutor</Link> support — including{" "}
-                  <Link href="/courses/arabic-language-online">Arabic classes</Link> for vocabulary
-                  and grammar later on.
-                </p>
+                <details className="home-qaida-more">
+                  <summary>How the 11-module learning journey works</summary>
+                  <p>
+                    Think of it as a structured <strong>interactive ebook</strong> and{" "}
+                    <strong>Arabic learning app experience</strong> on the web: listen, trace,
+                    repeat, play memory games, and review progress in one place. Parents and
+                    teachers see why each activity exists, while children build{" "}
+                    <strong>letter recognition</strong>, <strong>Arabic pronunciation</strong>, and
+                    <strong> Arabic writing practice</strong> at a calm pace.
+                  </p>
+                  <p>
+                    The 11-module journey supports <strong>Quran reading for beginners</strong> and
+                    <strong> kids Quran learning</strong> before live correction. Families can pair
+                    it with{" "}
+                    <Link href="/courses/noorani-qaida-online">Noorani Qaida online classes</Link>,{" "}
+                    <Link href="/online-quran-classes-for-kids">Quran classes for kids</Link>,{" "}
+                    <Link href="/quran-teacher-online">an online Quran tutor</Link>, or{" "}
+                    <Link href="/courses/arabic-language-online">Arabic classes</Link>.
+                  </p>
+                </details>
               </div>
 
               <h3 className="home-qaida-subheading">What children practise in each lesson</h3>
@@ -252,22 +251,19 @@ export default function InteractiveNooraniQaidaSection() {
                 <Link href="/noorani-qaida" className="btn-primary-np">
                   Explore Interactive Noorani Qaida
                 </Link>
-                <Link href="/online-quran-classes#cta" className="btn-outline-np">
-                  Book Free Trial
-                </Link>
-                <Link href="/online-quran-classes" className="btn-outline-np">
-                  View Live Quran Classes
-                </Link>
-              </div>
-              <p className="home-qaida-live-link">
                 <a
                   href={NOORANI_QAIDA_LIVE_PREVIEW_URL}
                   rel="noopener noreferrer"
                   target="_blank"
+                  className="btn-outline-np"
+                  aria-label="Open the interactive Alif lesson live demo in a new tab"
                 >
-                  <Video size={15} aria-hidden="true" /> Open interactive lesson preview on the learning platform →
+                  <Video size={16} aria-hidden="true" /> View Live Demo
                 </a>
-              </p>
+                <Link href="/online-quran-classes" className="btn-outline-np">
+                  View Live Quran Classes
+                </Link>
+              </div>
 
               <p className="home-qaida-disclaimer">
                 Platform reference for ages 3–12. Live{" "}
@@ -306,44 +302,47 @@ export default function InteractiveNooraniQaidaSection() {
 
           <section aria-labelledby="qaida-comparison-heading" className="home-qaida-compare-wrap">
             <h3 id="qaida-comparison-heading" className="home-qaida-subheading center">
-              Traditional Noorani Qaida PDF vs NoorPath Interactive Qaida
+              Why families choose an interactive Qaida
             </h3>
             <p className="home-qaida-compare-intro">
               Many families search for a <strong>Noorani Qaida PDF</strong> or printable booklet.
               Print still has value — but interactive practice adds audio, tracing, games, and
               progress that paper alone cannot provide.
             </p>
-            <div className="home-qaida-table-scroll" role="region" aria-label="PDF versus interactive comparison" tabIndex={0}>
-              <table className="home-qaida-compare-table">
-                <caption className="sr-only">
-                  Comparison of traditional Noorani Qaida PDF and NoorPath interactive platform
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Feature</th>
-                    <th scope="col">Traditional PDF</th>
-                    <th scope="col">NoorPath Interactive</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisonRows.map((row) => (
-                    <tr key={row.feature}>
-                      <th scope="row">{row.feature}</th>
-                      <td>
-                        {typeof row.pdf === "string" ? (
-                          row.pdf
-                        ) : (
-                          <span className="home-qaida-no" aria-label="Not included">—</span>
-                        )}
-                      </td>
-                      <td>
-                        <span className="home-qaida-yes" aria-label="Included">✓</span>
-                      </td>
+            <details className="home-qaida-comparison">
+              <summary>Compare NoorPath with a traditional PDF</summary>
+              <div className="home-qaida-table-scroll" role="region" aria-label="PDF versus interactive comparison" tabIndex={0}>
+                <table className="home-qaida-compare-table">
+                  <caption className="sr-only">
+                    Comparison of traditional Noorani Qaida PDF and NoorPath interactive platform
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Feature</th>
+                      <th scope="col">Traditional PDF</th>
+                      <th scope="col">NoorPath Interactive</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                    {comparisonRows.map((row) => (
+                      <tr key={row.feature}>
+                        <th scope="row">{row.feature}</th>
+                        <td>
+                          {typeof row.pdf === "string" ? (
+                            row.pdf
+                          ) : (
+                            <span className="home-qaida-no" aria-label="Not included">—</span>
+                          )}
+                        </td>
+                        <td>
+                          <span className="home-qaida-yes" aria-label="Included">✓</span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </details>
           </section>
 
           <aside className="home-qaida-aside" aria-label="Quick links for families and teachers">
