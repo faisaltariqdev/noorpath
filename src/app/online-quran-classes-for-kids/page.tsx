@@ -329,7 +329,7 @@ export default function OnlineQuranClassesForKidsPage() {
         </div>
       </section>
 
-      <section>
+      <section style={{ padding: "72px 0" }}>
         <div className="max-w-[1200px] mx-auto px-4">
 
           {/* WHY NOORPATH */}

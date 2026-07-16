@@ -1117,7 +1117,11 @@ pre { max-width: 100%; }
 .qaida-breadcrumbs .qaida-link-inverse { color: var(--gold-lt); }
 .qaida-hero .qaida-breadcrumbs li { color: rgba(255,255,255,.66); }
 .qaida-main { padding: 64px 0 80px; }
-.qaida-section { margin: 0 auto 4rem; }
+/* Reset the global `section { padding: 88px 0 }` for qaida sub-sections.
+   .qaida-course-cta and other qaida section variants keep their own padding
+   because class selectors (0,1,0) already beat the element rule (0,0,1).
+   Only .qaida-section has no padding of its own, so we add it explicitly. */
+.qaida-section { padding: 0; margin: 0 auto 2.5rem; }
 .qaida-section > h2, .qaida-callout h2, .qaida-course-cta h2 {
   color: var(--charcoal); font: 700 clamp(1.55rem, 3vw, 2.2rem)/1.2 var(--font-playfair), Georgia, serif; margin: .55rem 0 1rem;
 }
