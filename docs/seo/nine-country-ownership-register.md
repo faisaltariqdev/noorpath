@@ -92,6 +92,15 @@ Each released city owner must link to exactly one country parent, may link to no
 
 One editorial URL must own each informational question. Before a brief is approved, record its primary question, canonical URL, primary commercial destination and two related editorial pages.
 
+Current Noorani Qaida ownership split:
+
+- Interactive curriculum and product-reference intent: `/noorani-qaida`
+- Live Noorani Qaida class and enrolment intent: `/courses/noorani-qaida-online`
+- Traditional-method editorial overview: `/blog/noorani-qaida-complete-guide`
+- Arabic alphabet editorial overview: `/blog/arabic-alphabet-for-kids`
+
+The interactive hub may link to the course and editorial owners, but it must not duplicate their full commercial or historical answer.
+
 Approved future pillar owners:
 
 - Practice and progress: `/blog/quran-practice-and-progress-guide`

@@ -1201,7 +1201,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Joining letters</strong> — connecting letters to form small words.</li>
             <li><strong>Vowels (Harakat)</strong> — Zabar (a), Zer (i), Pesh (u), then Tanween and Sukoon.</li>
           </ol>
-          <p>This is exactly the sequence taught in <a href="/courses/noorani-qaida-online">Noorani Qaida</a> — the proven primer used worldwide to prepare children to read the Quran. Learn more in our <a href="/blog/noorani-qaida-complete-guide">complete Noorani Qaida guide</a>.</p>
+          <p>This sequence is developed through Noorani Qaida. Explore NoorPath's <a href="/noorani-qaida">interactive 11-module curriculum and 28 letter guides</a>, read the <a href="/blog/noorani-qaida-complete-guide">complete method overview</a>, or view <a href="/courses/noorani-qaida-online">live Noorani Qaida classes</a>.</p>
 
           <h2 id="tips">Tips to teach the Arabic alphabet to kids</h2>
           <ul>
@@ -6505,14 +6505,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>Before your child — or you — can read a single verse of the Holy Quran correctly, there is one essential foundation to build: <strong>Noorani Qaida</strong>. It is the single most important book in Quranic education, and yet many people start without it — leading to years of mispronunciation.</p>
 
-          <p>This complete guide covers everything: what Noorani Qaida is, all its lessons, how long it takes, tips for fast completion, and how to learn it online.</p>
+          <p>This complete guide explains what Noorani Qaida is, how traditional editions organise the learning stages, why completion time varies, and how guided online learning can support practice. For NoorPath's product-reference curriculum, explore the <a href="/noorani-qaida" style="color:var(--emerald);font-weight:600;">interactive 11-module Noorani Qaida hub</a>.</p>
 
           <h2>What is Noorani Qaida?</h2>
           <p><strong>Noorani Qaida</strong> (also spelled Noorani Qaidah or Nuraani Qaidah) is an Arabic reading primer specifically designed for Quran learning. It was authored by <strong>Sheikh Noor Muhammad Haqqani</strong>, a Pakistani Islamic scholar, in the mid-20th century.</p>
           <p>The name comes from "Noor" (نور) meaning <em>light</em> and "Qaida" (قاعدة) meaning <em>rule</em> or <em>foundation</em>. It is literally the "Rules of Light" — the foundation of Quranic recitation.</p>
 
           <div class="highlight-box">
-            <strong>Why is it so important?</strong> Arabic has 29 letters, each with a specific articulation point (Makhraj) in the mouth and throat. Noorani Qaida teaches you to pronounce each letter correctly <em>before</em> you encounter them in the Quran, so you never develop bad pronunciation habits.
+            <strong>Why is it so important?</strong> NoorPath's beginner sequence presents 28 core Arabic letters, while some teaching traditions count Hamza separately. Each sound has an articulation point (Makhraj) in the mouth or throat. Noorani Qaida introduces these foundations before longer Quranic reading, with teacher correction used for uncertain pronunciation.
           </div>
 
           <h2>What You Learn in Noorani Qaida — All 17 Lessons</h2>
@@ -6535,7 +6535,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div class="lesson-card"><div class="lesson-num">15-17</div><div><strong>Practice Exercises:</strong> Reading practice with Quranic words, phrases, and short verses using everything learned — preparing for actual Quran reading.</div></div>
 
           <h2>How Long Does Noorani Qaida Take to Complete?</h2>
-          <p>The honest answer depends on age, frequency of lessons, and dedication. Here is a realistic timeline:</p>
+          <p>The honest answer depends on age, starting level, lesson frequency, attendance, and practice. The ranges below are illustrative planning examples, not completion promises; a tutor should adapt the pathway after hearing the learner read.</p>
 
           <div style="overflow-x:auto;margin:24px 0;">
             <table style="width:100%;border-collapse:collapse;font-size:.92rem;">
@@ -6560,10 +6560,10 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2>Online Noorani Qaida vs. Learning from a Book Alone</h2>
           <p>Many parents buy a Noorani Qaida book and try to teach their child themselves. While this shows dedication, there is a critical problem: <strong>Arabic pronunciation cannot be self-taught from a book.</strong></p>
-          <p>Consider this: the letters ح (Ha) and ه (Ha) look similar but come from completely different parts of the throat. Without hearing a qualified teacher pronounce these letters and correcting your errors in real time, you will almost certainly develop wrong pronunciation that is extremely hard to fix later.</p>
+          <p>Consider this: the letters ح (Haa) and ه (Ha) use different articulation points. A book can show their shapes, while an approved audible model and teacher feedback help a learner hear and correct the distinction.</p>
 
           <div class="highlight-box">
-            <strong>The solution:</strong> 1-on-1 live online Noorani Qaida classes with a certified tutor. At NoorPath Academy, our Noorani Qaida teachers are experienced in correcting Arabic pronunciation for native English speakers — in the UK, USA, Canada, Australia, India, and beyond.<br><br>
+            <strong>A guided option:</strong> 1-on-1 live online Noorani Qaida classes with a tutor matched to the learner's level, timezone, and current availability. Families can ask NoorPath to confirm the proposed tutor's relevant credentials and experience before enrolment.<br><br>
             <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Learn more about our Noorani Qaida online course →</a>
           </div>
 

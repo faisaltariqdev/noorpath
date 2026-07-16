@@ -107,19 +107,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <meta name="msapplication-TileColor" content="#0a6e4f" />
-        {/* Preconnect for faster Google Fonts DNS resolution */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* DNS prefetch */}
         <link rel="dns-prefetch" href="//wa.me" />
         <link rel="dns-prefetch" href="//formsubmit.co" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//connect.facebook.net" />
-        {/* Noorani Qaida learning module fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body>
         <PublicShell>{children}</PublicShell>

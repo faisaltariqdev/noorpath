@@ -4,6 +4,7 @@ import { CheckCircle, Users, Award } from "lucide-react";
 import { courses } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { serializeJsonLd } from "@/lib/jsonLd";
 
 export const revalidate = false;
 
@@ -125,7 +126,7 @@ const coursesJsonLd = {
 export default function CoursesPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(coursesJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(coursesJsonLd) }} />
 
       {/* Hero */}
       <div className="page-hero">

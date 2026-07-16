@@ -7,6 +7,7 @@ import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
 
 const courses = [
+  { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
   { href: "/learn-tajweed-online", label: "Tajweed Rules" },
   { href: "/hifz-quran-online", label: "Hifz Program" },
   { href: "/online-quran-classes-for-kids", label: "Kids Quran" },
@@ -30,6 +31,7 @@ const company = [
 ];
 
 const quickLinks = [
+  { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
   { href: "/learn-quran-online", label: "Learn Quran Online" },
   { href: "/online-quran-classes", label: "Online Quran Academy" },
   { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids" },

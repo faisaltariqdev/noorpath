@@ -5,6 +5,7 @@ import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
+import { serializeJsonLd } from "@/lib/jsonLd";
 
 export const revalidate = false;
 
@@ -181,7 +182,7 @@ const geoLocations = [
 export default function OnlineQuranClassesForKidsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
 
       {/* HERO */}
       <div className="page-hero">
@@ -283,6 +284,47 @@ export default function OnlineQuranClassesForKidsPage() {
                 </figcaption>
               </figure>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "linear-gradient(180deg,#f1fbf6,#fff)", padding: "64px 0" }} aria-labelledby="kids-interactive-qaida-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <span className="section-eyebrow">Learning platform support · Ages 3–12</span>
+              <h2 id="kids-interactive-qaida-heading" className="section-title">
+                Interactive Noorani Qaida Practice Between Guided Lessons
+              </h2>
+              <p className="section-desc">
+                Young learners can revisit a current Arabic letter through tracing,
+                listening prompts, visual recognition, memory, sequencing, puzzles,
+                and short quizzes. The activity changes while the learning target
+                stays clear, helping practice feel more like play without presenting
+                a game score as proof of pronunciation mastery.
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 22 }}>
+                <Link href="/noorani-qaida" className="btn-primary-np">Explore the 11-Module Qaida →</Link>
+                <Link href="/noorani-qaida/guides/for-parents" className="btn-outline-np">Read the Parent Guide</Link>
+              </div>
+              <p style={{ color: "var(--muted)", fontSize: ".78rem", lineHeight: 1.6, marginTop: 14 }}>
+                Platform reference: ages 3–12. Live one-to-one class requests remain
+                available from age 4 and are matched separately.
+              </p>
+            </div>
+            <figure className="qaida-screenshot">
+              <Image
+                src="/marketing/noorani-qaida/noorani-qaida-practice-games.png"
+                alt="NoorPath Noorani Qaida practice activities and Arabic letter games for children"
+                width={1024}
+                height={533}
+                sizes="(max-width: 1024px) 100vw, 560px"
+              />
+              <figcaption>
+                NoorPath learning platform preview: practice and game choices
+                connected to the current Arabic letter.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

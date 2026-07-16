@@ -4,6 +4,11 @@ import { courses } from "@/data/courses";
 import { locations } from "@/data/locations";
 import { cities } from "@/data/cities";
 import { backlinkAssets } from "@/data/backlinkAssets";
+import {
+  QAIDA_BASE_PATH,
+  QAIDA_CONTENT_VERSION,
+  QAIDA_INDEXABLE_PATHS,
+} from "@/data/noorani-qaida";
 
 const BASE = "https://www.noorpath.online";
 
@@ -150,5 +155,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...cityPages, ...blogPages];
+  const qaidaPages: MetadataRoute.Sitemap = QAIDA_INDEXABLE_PATHS.map((path) => ({
+    url: `${BASE}${path}`,
+    lastModified: new Date(QAIDA_CONTENT_VERSION),
+    priority: path === QAIDA_BASE_PATH ? 0.92 : path.includes("/arabic-letters/") ? 0.78 : 0.8,
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...cityPages, ...blogPages, ...qaidaPages];
 }

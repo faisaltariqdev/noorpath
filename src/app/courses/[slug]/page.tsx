@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { courses, getCourse } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
 import { FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
+import { serializeJsonLd } from "@/lib/jsonLd";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -92,7 +94,7 @@ export default async function CourseDetailPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
 
       {/* Hero */}
       <div className="page-hero">
@@ -121,6 +123,45 @@ export default async function CourseDetailPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {course.slug === "noorani-qaida-online" && (
+        <section style={{ background: "linear-gradient(180deg,#f1fbf6,#fff)", padding: "56px 0" }} aria-labelledby="course-interactive-qaida-heading">
+          <div className="max-w-[1200px] mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <span className="section-eyebrow">Course learning platform</span>
+                <h2 id="course-interactive-qaida-heading" className="section-title">
+                  See the Complete 11-Module Learning Journey
+                </h2>
+                <p className="section-desc">
+                  NoorPath’s interactive Qaida reference supports ages 3–12 with
+                  all 28 Arabic letters, Harakaat, Tanween, Sukoon, Shaddah, Madd,
+                  joining, word reading, guided Quranic practice, revision, games,
+                  rewards, and adult guidance. Live classes on this page are
+                  requested separately for ages 4+.
+                </p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 22 }}>
+                  <Link href="/noorani-qaida" className="btn-primary-np">Explore Interactive Noorani Qaida →</Link>
+                  <Link href="/noorani-qaida/guides/pronunciation" className="btn-outline-np">Pronunciation Guide</Link>
+                </div>
+              </div>
+              <figure className="qaida-screenshot">
+                <Image
+                  src="/marketing/noorani-qaida/interactive-noorani-qaida-11-module-curriculum.png"
+                  alt="NoorPath interactive Noorani Qaida 11-module curriculum and Arabic alphabet book"
+                  width={1024}
+                  height={543}
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                />
+                <figcaption>
+                  NoorPath learning platform preview: an open curriculum from
+                  Arabic letters through guided Quranic practice and final review.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section style={{ padding: "60px 0" }}>
         <div className="max-w-[1200px] mx-auto px-4">
