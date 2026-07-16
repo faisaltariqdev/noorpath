@@ -193,7 +193,7 @@ export default function OnlineQuranClassesPage() {
       </section>
 
       {/* Comprehensive pillar guide */}
-      <section style={{ background: "#fff", paddingTop: 24 }}>
+      <section className="oqc-guide-section">
         <div className="max-w-[980px] mx-auto px-4">
           <header style={{ textAlign: "center", marginBottom: 32 }}>
             <span className="section-eyebrow">Complete 2026 Global Guide</span>

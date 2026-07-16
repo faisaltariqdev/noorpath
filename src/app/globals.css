@@ -727,7 +727,11 @@ footer {
    ARTICLE BODY — base styles for blog post rendered HTML
 ══════════════════════════════════════════════════════════════ */
 .article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+/* Override the global section { padding: 88px 0 } that creates huge whitespace inside long-form guides */
+.article-body section { padding: 0; }
+.article-body section + section { margin-top: 40px; }
 .article-body h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.25rem, 3.5vw, 1.5rem); font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+.article-body h2:first-child { margin-top: 0; }
 .article-body h3 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1rem, 2.5vw, 1.1rem); font-weight: 700; color: var(--emerald); margin: 24px 0 10px; }
 .article-body p { margin-bottom: 18px; }
 .article-body ul, .article-body ol { margin-bottom: 18px; padding-left: 24px; }
@@ -1099,6 +1103,10 @@ footer {
   word-break: break-word;
 }
 pre { max-width: 100%; }
+
+/* Online Quran Classes pillar-guide wrapper */
+.oqc-guide-section { background: #fff; padding: 32px 0 64px; }
+@media (max-width: 767px) { .oqc-guide-section { padding: 24px 0 48px; } }
 
 /* Noorani Qaida SEO knowledge hub — public-site presentation only */
 .qaida-shell { background: linear-gradient(180deg, #f2fbf7 0, #fff 420px); }
