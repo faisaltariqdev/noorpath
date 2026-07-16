@@ -1,18 +1,23 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X, GraduationCap, ChevronDown, Gamepad2 } from "lucide-react";
 import { TRIAL } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 
-const navLinks = [
+/* Primary nav — kept to 5 items so the bar breathes */
+const primaryLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
-  { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
   { href: "/courses", label: "Courses" },
   { href: "/noorani-qaida", label: "Qaida" },
-  { href: "/our-tutors", label: "Our Tutors" },
   { href: "/pricing", label: "Pricing" },
   { href: "/blog", label: "Blog" },
+];
+
+/* Grouped under a "More" dropdown */
+const moreLinks = [
+  { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
+  { href: "/our-tutors", label: "Our Tutors" },
   { href: "/islamic-resources", label: "Resources" },
   { href: "/about", label: "About" },
 ];
@@ -50,7 +55,7 @@ export default function Navbar() {
         >
           🎁{" "}
           <strong style={{ fontWeight: 700 }}>Free {TRIAL.durationMinutes}-minute trial</strong>{" "}
-          — No credit card required. Tutor availability is confirmed after your request.{" "}
+          — No credit card required.{" "}
           <Link
             href="/online-quran-classes#cta"
             style={{ color: "#e8b84b", fontWeight: 700, marginLeft: 8, textDecoration: "none", whiteSpace: "nowrap" }}
@@ -103,10 +108,11 @@ export default function Navbar() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            gap: 8,
           }}
         >
           {/* Logo */}
-          <Link href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
             <div
               className="logo-glow"
               style={{
@@ -118,8 +124,7 @@ export default function Navbar() {
                 lineHeight: 1,
               }}
             >
-              Noor
-              <span style={{ color: "#d4a030" }}>Path</span>{" "}
+              Noor<span style={{ color: "#d4a030" }}>Path</span>{" "}
               <span
                 style={{
                   color: "rgba(255,255,255,.45)",
@@ -139,22 +144,24 @@ export default function Navbar() {
           {/* Desktop nav */}
           <ul
             className="nav-desktop"
-            style={{ listStyle: "none", margin: 0, padding: 0, alignItems: "center", gap: 2 }}
+            style={{ listStyle: "none", margin: 0, padding: 0, alignItems: "center", gap: 0 }}
           >
-            {navLinks.map((l) => (
+            {/* Primary links */}
+            {primaryLinks.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
                   style={{
                     color: "rgba(255,255,255,.82)",
                     fontWeight: 500,
-                    fontSize: ".875rem",
-                    padding: "7px 13px",
+                    fontSize: ".865rem",
+                    padding: "7px 11px",
                     borderRadius: 8,
                     textDecoration: "none",
                     letterSpacing: ".1px",
                     display: "block",
                     transition: "color .2s, background .2s",
+                    whiteSpace: "nowrap",
                   }}
                   className="nav-link-np"
                 >
@@ -162,6 +169,8 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
+
+            {/* More dropdown */}
             <li style={{ position: "relative" }}>
               <details>
                 <summary
@@ -169,57 +178,145 @@ export default function Navbar() {
                   style={{
                     color: "rgba(255,255,255,.82)",
                     fontWeight: 500,
-                    fontSize: ".875rem",
-                    padding: "7px 13px",
+                    fontSize: ".865rem",
+                    padding: "7px 11px",
                     borderRadius: 8,
                     cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 4,
+                    whiteSpace: "nowrap",
+                    listStyle: "none",
                   }}
                 >
-                  Countries
+                  More <ChevronDown size={13} />
                 </summary>
                 <div
                   style={{
                     position: "absolute",
                     top: "calc(100% + 10px)",
-                    right: 0,
-                    width: 240,
-                    padding: 12,
+                    left: 0,
+                    minWidth: 180,
+                    padding: 8,
                     background: "rgba(6,28,18,.99)",
                     border: "1px solid rgba(255,255,255,.12)",
                     borderRadius: 12,
                     boxShadow: "0 16px 36px rgba(0,0,0,.35)",
                   }}
                 >
-                  <Link href="/locations" style={{ display: "block", color: "#e8b84b", padding: "8px 10px", fontWeight: 700, textDecoration: "none" }}>
-                    All locations
+                  {moreLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "8px 12px", fontSize: ".84rem", textDecoration: "none", borderRadius: 8 }}
+                      className="nav-link-np"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </details>
+            </li>
+
+            {/* Countries dropdown */}
+            <li style={{ position: "relative" }}>
+              <details>
+                <summary
+                  className="nav-countries-np"
+                  style={{
+                    color: "rgba(255,255,255,.82)",
+                    fontWeight: 500,
+                    fontSize: ".865rem",
+                    padding: "7px 11px",
+                    borderRadius: 8,
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 4,
+                    whiteSpace: "nowrap",
+                    listStyle: "none",
+                  }}
+                >
+                  Countries <ChevronDown size={13} />
+                </summary>
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(100% + 10px)",
+                    right: 0,
+                    width: 220,
+                    padding: 8,
+                    background: "rgba(6,28,18,.99)",
+                    border: "1px solid rgba(255,255,255,.12)",
+                    borderRadius: 12,
+                    boxShadow: "0 16px 36px rgba(0,0,0,.35)",
+                  }}
+                >
+                  <Link href="/locations" style={{ display: "block", color: "#e8b84b", padding: "8px 12px", fontWeight: 700, textDecoration: "none", borderRadius: 8 }}>
+                    All locations →
                   </Link>
                   {priorityCountries.map((country) => (
-                    <Link key={country.href} href={country.href} style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "7px 10px", fontSize: ".84rem", textDecoration: "none" }}>
+                    <Link
+                      key={country.href}
+                      href={country.href}
+                      style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "7px 12px", fontSize: ".83rem", textDecoration: "none", borderRadius: 8 }}
+                      className="nav-link-np"
+                    >
                       {country.label}
                     </Link>
                   ))}
                 </div>
               </details>
             </li>
-            <li className="nav-cta-item-np" style={{ marginLeft: 10 }}>
+
+            {/* Try Demo CTA */}
+            <li style={{ marginLeft: 6 }}>
+              <Link
+                href="/try"
+                style={{
+                  background: "rgba(10,110,79,.25)",
+                  border: "1px solid rgba(10,110,79,.6)",
+                  color: "#4ade80",
+                  fontWeight: 700,
+                  fontSize: ".82rem",
+                  padding: "7px 16px",
+                  borderRadius: 50,
+                  textDecoration: "none",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 5,
+                  transition: "all .25s",
+                  whiteSpace: "nowrap",
+                }}
+                className="btn-nav-demo"
+              >
+                <Gamepad2 size={13} aria-hidden="true" /> Try Demo
+              </Link>
+            </li>
+
+            {/* Free Trial CTA */}
+            <li style={{ marginLeft: 4 }}>
               <Link
                 href="/online-quran-classes#cta"
                 style={{
                   background: "linear-gradient(135deg, #c9922a 0%, #d4a030 100%)",
                   color: "#1a1a2e",
                   fontWeight: 700,
-                  fontSize: ".86rem",
-                  padding: "9px 22px",
+                  fontSize: ".82rem",
+                  padding: "8px 18px",
                   borderRadius: 50,
                   textDecoration: "none",
                   letterSpacing: ".2px",
                   boxShadow: "0 4px 14px rgba(201,146,42,.35)",
-                  display: "inline-block",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 5,
                   transition: "all .25s",
+                  whiteSpace: "nowrap",
                 }}
                 className="btn-nav-cta"
               >
-                <GraduationCap size={14} style={{ display: "inline", verticalAlign: "middle", marginRight: 5 }} />Free Trial
+                <GraduationCap size={13} aria-hidden="true" /> Free Trial
               </Link>
             </li>
           </ul>
@@ -257,7 +354,7 @@ export default function Navbar() {
             className="nav-mobile-menu"
           >
             <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-              {navLinks.map((l) => (
+              {[...primaryLinks, ...moreLinks].map((l) => (
                 <li key={l.href} style={{ borderBottom: "1px solid rgba(255,255,255,.06)" }}>
                   <Link
                     href={l.href}
@@ -286,7 +383,30 @@ export default function Navbar() {
                   </div>
                 </details>
               </li>
-              <li style={{ marginTop: 14 }}>
+              <li style={{ marginTop: 10 }}>
+                <Link
+                  href="/try"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6,
+                    background: "rgba(10,110,79,.3)",
+                    border: "1px solid rgba(10,110,79,.7)",
+                    color: "#4ade80",
+                    padding: "12px",
+                    borderRadius: 10,
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    fontSize: ".92rem",
+                    marginBottom: 8,
+                  }}
+                  onClick={() => setOpen(false)}
+                >
+                  <Gamepad2 size={15} aria-hidden="true" /> Try Free Demo
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/online-quran-classes#cta"
                   style={{
