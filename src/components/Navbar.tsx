@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X, GraduationCap, ChevronDown, Gamepad2 } from "lucide-react";
+import { Menu, X, GraduationCap, ChevronDown, Video } from "lucide-react";
 import { TRIAL } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
+import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 
 /* Primary nav — kept to 5 items so the bar breathes */
 const primaryLinks = [
@@ -269,10 +270,12 @@ export default function Navbar() {
               </details>
             </li>
 
-            {/* Try Demo CTA */}
+            {/* Live demo — admin platform preview (lesson-only) */}
             <li style={{ marginLeft: 6 }}>
-              <Link
-                href="/try"
+              <a
+                href={NOORANI_QAIDA_LIVE_PREVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   background: "rgba(10,110,79,.25)",
                   border: "1px solid rgba(10,110,79,.6)",
@@ -290,8 +293,8 @@ export default function Navbar() {
                 }}
                 className="btn-nav-demo"
               >
-                <Gamepad2 size={13} aria-hidden="true" /> Try Demo
-              </Link>
+                <Video size={13} aria-hidden="true" /> Live Demo
+              </a>
             </li>
 
             {/* Free Trial CTA */}
@@ -384,8 +387,10 @@ export default function Navbar() {
                 </details>
               </li>
               <li style={{ marginTop: 10 }}>
-                <Link
-                  href="/try"
+                <a
+                  href={NOORANI_QAIDA_LIVE_PREVIEW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -403,8 +408,8 @@ export default function Navbar() {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  <Gamepad2 size={15} aria-hidden="true" /> Try Free Demo
-                </Link>
+                  <Video size={15} aria-hidden="true" /> View Live Demo
+                </a>
               </li>
               <li>
                 <Link

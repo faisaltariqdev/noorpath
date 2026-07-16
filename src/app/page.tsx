@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import CTAForm from "@/components/CTAForm";
+import InteractiveNooraniQaidaSection from "@/components/home/InteractiveNooraniQaidaSection";
 import { trustpilotReviews } from "@/data/trustpilotReviews";
 import {
   CANCELLATION_NOTICE_DAYS,
@@ -326,61 +326,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── INTERACTIVE NOORANI QAIDA ── */}
-      <section style={{ background: "linear-gradient(180deg,#f1fbf6,#fff)" }} aria-labelledby="interactive-qaida-heading">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="section-eyebrow">Interactive learning platform · Ages 3–12</span>
-              <h2 id="interactive-qaida-heading" className="section-title">
-                Noorani Qaida That Children Can <em className="accent">See, Practise and Remember</em>
-              </h2>
-              <p className="section-desc">
-                NoorPath’s 11-module interactive Noorani Qaida connects Arabic
-                letter recognition with Harakaat, joining, word reading, guided
-                pronunciation practice, tracing, games, rewards, and revision.
-                Parents and teachers can see the purpose of each activity instead
-                of relying on disconnected worksheets.
-              </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: "22px 0", display: "grid", gap: 10 }}>
-                {[
-                  "All 28 Arabic letters with English names and joining forms",
-                  "Listen, trace, repeat, play, and review lesson flow",
-                  "Seven focused games for recognition, memory, and sequencing",
-                  "Parent and teacher guidance beside the learner’s practice",
-                  "Open curriculum access with progress, badges, and rewards",
-                ].map((point) => (
-                  <li key={point} style={{ alignItems: "flex-start", color: "var(--slate)", display: "flex", gap: 10, fontSize: ".9rem", lineHeight: 1.6 }}>
-                    <CheckCircle size={18} style={{ color: "var(--emerald)", flex: "0 0 auto", marginTop: 2 }} aria-hidden="true" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-                <Link href="/noorani-qaida" className="btn-primary-np">Explore Interactive Noorani Qaida →</Link>
-                <Link href="/courses/noorani-qaida-online" className="btn-outline-np">View Live Qaida Classes</Link>
-              </div>
-              <p style={{ color: "var(--muted)", fontSize: ".76rem", lineHeight: 1.6, marginTop: 14 }}>
-                Platform reference for ages 3–12. Live class requests are accepted
-                separately for children ages 4+ and depend on tutor availability.
-              </p>
-            </div>
-            <figure className="qaida-screenshot">
-              <Image
-                src="/marketing/noorani-qaida/alif-pronunciation-tracing-lesson.png"
-                alt="NoorPath interactive Alif lesson with pronunciation guidance, tracing, games, rewards, and progress"
-                width={1024}
-                height={488}
-                sizes="(max-width: 1024px) 100vw, 560px"
-              />
-              <figcaption>
-                NoorPath learning platform preview: one focused Arabic letter,
-                multiple practice modes, and visible progress in the same lesson.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      {/* ── INTERACTIVE NOORANI QAIDA (SEO hub section) ── */}
+      <InteractiveNooraniQaidaSection />
 
       {/* ── WHY NOORPATH ── */}
       <section id="why" style={{ background: "var(--ivory)" }}>

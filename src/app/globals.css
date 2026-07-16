@@ -1192,3 +1192,69 @@ pre { max-width: 100%; }
   .qaida-cta-actions, .qaida-cta-actions a { width: 100%; }
   .qaida-cta-actions a { justify-content: center; }
 }
+
+/* Homepage — Interactive Noorani Qaida SEO section */
+.home-qaida-section { background: linear-gradient(180deg, #f1fbf6, #fff); }
+.home-qaida-section > section { padding: 0; }
+.home-qaida-panel { padding: 88px 0 56px; }
+.home-qaida-faq-section { padding: 0 0 88px; background: linear-gradient(180deg, #fff, #f8fdfa); }
+.home-qaida-prose p { margin: 0 0 1rem; line-height: 1.78; color: var(--muted); }
+.home-qaida-prose a { color: var(--emerald); font-weight: 650; text-decoration: underline; text-underline-offset: 2px; }
+.home-qaida-subheading {
+  color: var(--charcoal);
+  font: 700 clamp(1.15rem, 2.5vw, 1.45rem)/1.25 var(--font-playfair), Georgia, serif;
+  margin: 1.75rem 0 .85rem;
+}
+.home-qaida-subheading.center { text-align: center; }
+.home-qaida-checklist { display: grid; gap: .65rem; list-style: none; margin: 0 0 1.25rem; padding: 0; }
+.home-qaida-checklist li { align-items: flex-start; color: var(--slate); display: flex; font-size: .9rem; gap: .55rem; line-height: 1.6; }
+.home-qaida-checklist svg { color: var(--emerald); flex: 0 0 auto; margin-top: 2px; }
+.home-qaida-conversion-badges { display: flex; flex-wrap: wrap; gap: .45rem; list-style: none; margin: 0 0 1.25rem; padding: 0; }
+.home-qaida-conversion-badges li {
+  background: #fff; border: 1px solid var(--border); border-radius: 999px; color: var(--slate);
+  font-size: .72rem; font-weight: 700; letter-spacing: .02em; padding: .35rem .75rem;
+}
+.home-qaida-cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: .75rem; }
+.home-qaida-live-link { margin: 0 0 .75rem; }
+.home-qaida-live-link a {
+  align-items: center; color: var(--emerald); display: inline-flex; font-size: .84rem;
+  font-weight: 700; gap: .35rem; text-decoration: none;
+}
+.home-qaida-live-link a:hover { text-decoration: underline; }
+.home-qaida-disclaimer { color: var(--muted); font-size: .76rem; line-height: 1.65; margin: 0; }
+.home-qaida-disclaimer a { color: var(--emerald); font-weight: 650; }
+.home-qaida-trust-grid {
+  display: grid; gap: .65rem; grid-template-columns: repeat(2, 1fr); list-style: none;
+  margin: 2.5rem 0 0; padding: 0;
+}
+.home-qaida-trust-grid li {
+  align-items: center; background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  color: var(--slate); display: flex; font-size: .82rem; font-weight: 650; gap: .5rem; padding: .75rem .85rem;
+}
+.home-qaida-trust-grid svg { color: var(--emerald); flex-shrink: 0; }
+.home-qaida-compare-wrap { margin-top: 2.75rem; }
+.home-qaida-compare-intro { color: var(--muted); font-size: .92rem; line-height: 1.75; margin: 0 auto 1.25rem; max-width: 720px; text-align: center; }
+.home-qaida-table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.home-qaida-compare-table { background: #fff; border: 1px solid var(--border); border-collapse: collapse; border-radius: 14px; min-width: 520px; overflow: hidden; width: 100%; }
+.home-qaida-compare-table th, .home-qaida-compare-table td { border-bottom: 1px solid var(--border); font-size: .86rem; padding: .85rem 1rem; text-align: left; }
+.home-qaida-compare-table thead th { background: var(--ivory); color: var(--charcoal); font-weight: 750; }
+.home-qaida-compare-table tbody th { color: var(--slate); font-weight: 600; }
+.home-qaida-yes { color: var(--emerald); font-weight: 800; }
+.home-qaida-no { color: var(--muted); }
+.home-qaida-aside {
+  background: var(--ivory); border: 1px solid var(--border); border-radius: 16px;
+  margin-top: 2rem; padding: 1.25rem 1.35rem;
+}
+.home-qaida-aside blockquote { border-left: 3px solid var(--gold); margin: 0 0 .85rem; padding-left: 1rem; }
+.home-qaida-aside blockquote p { color: var(--slate); font-size: .92rem; font-style: italic; line-height: 1.7; margin: 0; }
+.home-qaida-aside > p { color: var(--muted); font-size: .84rem; line-height: 1.65; margin: 0; }
+.home-qaida-aside a { color: var(--emerald); font-weight: 650; }
+
+@media (min-width: 640px) {
+  .home-qaida-trust-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 767px) {
+  .home-qaida-panel { padding: 56px 0 40px; }
+  .home-qaida-faq-section { padding-bottom: 56px; }
+  .home-qaida-cta-row a { flex: 1 1 100%; justify-content: center; text-align: center; }
+}
