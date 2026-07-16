@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   BookOpen,
   CheckCircle,
@@ -274,19 +273,24 @@ export default function InteractiveNooraniQaidaSection() {
               </p>
             </div>
 
-            <figure className="qaida-screenshot">
-              <Image
-                src="/marketing/noorani-qaida/alif-pronunciation-tracing-lesson.png"
-                alt="Interactive Noorani Qaida lesson showing Arabic letter Alif with pronunciation guidance, tracing, games, rewards, and progress for children learning online"
-                title="NoorPath Interactive Noorani Qaida — Alif lesson with audio, tracing, and games"
-                width={1024}
-                height={488}
-                sizes="(max-width: 1024px) 100vw, 560px"
-                loading="lazy"
-              />
+            <figure className="qaida-screenshot qaida-screenshot--video">
+              <video
+                src="/marketing/noorani-qaida/noorani-qaida-platform-preview.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="none"
+                aria-label="Interactive Noorani Qaida platform preview — Arabic letter learning with audio, tracing, games and progress for children"
+                title="NoorPath Interactive Noorani Qaida — live platform preview"
+                className="qaida-preview-video"
+                poster="/marketing/noorani-qaida/alif-pronunciation-tracing-lesson.png"
+              >
+                Your browser does not support video playback.
+              </video>
               <figcaption>
-                NoorPath learning platform preview: one Arabic letter, multiple practice modes,
-                and visible progress — a practical Noorani Qaida PDF alternative for families.
+                NoorPath learning platform: one Arabic letter, multiple practice modes, and
+                visible progress — a practical Noorani Qaida PDF alternative for families.
               </figcaption>
             </figure>
           </div>

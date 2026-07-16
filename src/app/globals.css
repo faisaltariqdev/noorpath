@@ -1270,6 +1270,17 @@ pre { max-width: 100%; }
 .home-qaida-aside blockquote p { color: var(--slate); font-size: .86rem; font-style: italic; line-height: 1.6; margin: 0; }
 .home-qaida-aside > p { color: var(--muted); font-size: .84rem; line-height: 1.65; margin: 0; }
 .home-qaida-aside a { color: var(--emerald); font-weight: 650; }
+/* Qaida video preview */
+.qaida-screenshot--video { margin: 0; }
+.qaida-preview-video {
+  border-radius: 18px;
+  box-shadow: 0 28px 60px -18px rgba(6,78,59,.45), 0 0 0 1px rgba(10,110,79,.14);
+  display: block;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  width: 100%;
+}
 .home-qaida-faq-section .home-qaida-subheading { margin-top: 0; }
 .home-qaida-faq-list details { padding: .8rem 0; }
 .home-qaida-faq-list summary { font-size: .86rem; }
