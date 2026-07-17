@@ -8,7 +8,7 @@ export * from "./letters";
 export * from "./topics";
 export * from "./types";
 
-export const QAIDA_CONTENT_VERSION = "2026-07-16";
+export const QAIDA_CONTENT_VERSION = "2026-07-17";
 export const QAIDA_BASE_PATH = "/noorani-qaida";
 
 export const QAIDA_MODULES: QaidaModule[] = [
