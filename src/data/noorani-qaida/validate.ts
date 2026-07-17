@@ -20,9 +20,10 @@ export function validateQaidaContent(): true {
   const allEntries = [...QAIDA_LESSONS, ...QAIDA_TAJWEED_TOPICS, ...QAIDA_GUIDES];
   assertUnique(QAIDA_LETTERS.map((entry) => entry.slug), "letter slugs");
   assertUnique(allEntries.map((entry) => entry.slug), "topic and guide slugs");
+  // Include Arabic glyph so shared English names (Taa for ت/ط, Haa for ح/ه) stay valid.
   assertUnique(
     [
-      ...QAIDA_LETTERS.map((entry) => `${entry.name} Arabic Letter`),
+      ...QAIDA_LETTERS.map((entry) => `${entry.name} (${entry.arabic}) Arabic Letter`),
       ...allEntries.map((entry) => entry.title),
     ],
     "page titles",
