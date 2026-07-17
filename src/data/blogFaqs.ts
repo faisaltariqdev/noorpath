@@ -145,6 +145,234 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
   "dua-before-and-after-eating": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the dua before eating?", "acceptedAnswer": {"@type": "Answer", "text": "Say 'Bismillah' (In the name of Allah) before eating. The Prophet ﷺ instructed: mention Allah's name, eat with your right hand, and eat from what is nearest to you (Bukhari & Muslim)."}}, {"@type": "Question", "name": "What if I forget to say Bismillah before eating?", "acceptedAnswer": {"@type": "Answer", "text": "Say 'Bismillahi awwalahu wa akhirahu' (In the name of Allah, at its beginning and its end) the moment you remember, even mid-meal — the blessing then covers what passed and what remains (Tirmidhi)."}}, {"@type": "Question", "name": "What is the dua after eating?", "acceptedAnswer": {"@type": "Answer", "text": "'Alhamdulillahilladhi at'amana wa saqana wa ja'alana muslimin' — All praise is for Allah who fed us, gave us drink, and made us Muslims. A simple 'Alhamdulillah' is also authentic and beloved to Allah."}}, {"@type": "Question", "name": "How do I teach my kids the eating duas?", "acceptedAnswer": {"@type": "Answer", "text": "Make it a family rule that the youngest says Bismillah aloud for everyone, play the 'catch the forgotten Bismillah' game, and keep the after-eating dua printed at child eye-level for the first month. Live duas courses with pronunciation correction also help."}}]},
   "islamic-months-names-in-order": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the 12 Islamic months in order?", "acceptedAnswer": {"@type": "Answer", "text": "Muharram, Safar, Rabi al-Awwal, Rabi al-Thani, Jumada al-Awwal, Jumada al-Thani, Rajab, Sha'ban, Ramadan, Shawwal, Dhul Qa'dah, and Dhul Hijjah."}}, {"@type": "Question", "name": "Which are the four sacred months in Islam?", "acceptedAnswer": {"@type": "Answer", "text": "Muharram, Rajab, Dhul Qa'dah and Dhul Hijjah — declared sacred by Allah in Surah At-Tawbah 9:36. Three are consecutive around the Hajj season, while Rajab stands alone in the middle of the year."}}, {"@type": "Question", "name": "Why do Islamic months move earlier each year?", "acceptedAnswer": {"@type": "Answer", "text": "The Hijri calendar is lunar — each month starts with the new crescent and lasts 29 or 30 days, making the year about 354 days. This is roughly 11 days shorter than the solar year, so Ramadan and other months drift through all seasons over a 33-year cycle."}}, {"@type": "Question", "name": "What year does the Islamic calendar start from?", "acceptedAnswer": {"@type": "Answer", "text": "Year 1 AH corresponds to the Hijrah — the Prophet's ﷺ migration from Makkah to Madinah in 622 CE. Umar ibn al-Khattab (RA) established it as the starting point of the Muslim calendar."}}]},
   "finish-quran-in-ramadan-30-day-plan": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many pages do I need to read daily to finish the Quran in Ramadan?", "acceptedAnswer": {"@type": "Answer", "text": "The standard mushaf has 604 pages across 30 juz. Reading 20 pages per day — which equals just 4 pages after each of the five daily prayers — completes the entire Quran in exactly 30 days."}}, {"@type": "Question", "name": "What is the easiest way to complete a Khatm in Ramadan?", "acceptedAnswer": {"@type": "Answer", "text": "The 4-pages-after-each-salah method: attach reading to the five prayers you already perform. If you miss a slot, add those pages to the next prayer rather than letting a missed session become a missed day."}}, {"@type": "Question", "name": "What if I fall behind on my Ramadan Quran plan?", "acceptedAnswer": {"@type": "Answer", "text": "Don't double a full day — spread the missed juz as one extra page per salah over four days, and use the last ten nights for extra reading. A Khatm finished a few days after Eid is still a completed Khatm."}}, {"@type": "Question", "name": "Should slow readers still attempt a full Khatm?", "acceptedAnswer": {"@type": "Answer", "text": "New or slow readers often gain more from a half-Khatm (2 pages per salah) recited with correct Tajweed than a rushed full completion. Reciting with difficulty carries double reward according to the Hadith in Sahih Muslim."}}]},
+  "how-long-does-noorani-qaida-take": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long does Noorani Qaida take for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most children finish a solid Noorani Qaida foundation in about 3–9 months with 2–3 live lessons weekly and 10–15 minutes of home practice on most days. Ages 4–5 often need 8–12 months; ages 6–8 often need 4–8 months. Fluency of letters matters more than finishing the booklet quickly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a child finish Noorani Qaida in one month?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Rarely with lasting accuracy. A month of intensive work might cover early lessons for an older focused learner, but most children need months of repetition for stable pronunciation and joining. Fast finishes often need rework later.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we start the Quran mushaf before finishing Qaida?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only when a qualified tutor confirms readiness. Jumping early usually embeds guessing and wrong letter sounds. A short delay on the mushaf protects years of later reading.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many Noorani Qaida classes per week are enough?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For most kids, 2–3 live sessions weekly plus short home practice works well. One session weekly is possible but usually slower. Daily Hifz-style frequency is not required at the Qaida stage.",
+        },
+      },
+    ],
+  },
+  "parents-dont-speak-arabic-child-learn-quran": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can my child learn Quran if I don’t speak Arabic?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Non-Arabic-speaking parents succeed by booking a live tutor for pronunciation, keeping a short home practice slot, and tracking progress without pretending to teach Tajweed. Your job is consistency; the teacher’s job is accuracy.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need to learn Arabic before enrolling my child?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Enrol the child with a qualified tutor now. Optionally learn alongside them later. Delaying the child until the parent is fluent usually costs valuable early years.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I teach Noorani Qaida myself from YouTube?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Videos help familiarity, but children need live correction for letter sounds (makharij). Use videos as enrichment and keep a teacher for accuracy.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What should I ask in a free Quran trial if I don’t speak Arabic?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ask how mistakes will be explained in English, what homework you can supervise without reading Arabic, and how you will know your child is improving each month.",
+        },
+      },
+    ],
+  },
+  "child-wont-sit-for-quran-class": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What should I do if my child won’t sit for Quran class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Shorten the session (often 15–20 minutes for ages 4–6), pick a better time of day after food and rest, use one clear goal, end before meltdown, and choose a patient one-to-one tutor. Short consistent wins beat long battles.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it normal for a 5-year-old to refuse Quran class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, especially if sessions are long or the child is tired. Normalise short lessons and rebuild a positive association before increasing difficulty.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I pause Quran classes if my child refuses?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A short pause of one to two weeks can help after a harsh experience, but replace it with gentle listening or letter play so the habit does not disappear. Then restart with shorter lessons.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long should a Quran lesson be for young kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ages 4–5 often do best with 15–20 minute live lessons; ages 6–7 with 20–25 minutes; ages 8–10 with 25–35 minutes. End while the child still has a little energy left.",
+        },
+      },
+    ],
+  },
+  "quran-practice-routine-at-home-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long should kids practise Quran at home each day?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Aim for about 10–15 minutes on most days: a short warm-up, the tutor’s assigned revision, one calm listen-through, and warm praise. Predictability matters more than long sessions.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we only manage Quran practice three days a week?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Three short, calm days still help. Protect those three. Adding guilty cram sessions on tired nights often backfires.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should siblings practise Quran together at home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only if ages and levels are close. Mixed levels usually create teasing or boredom. Stagger ten-minute slots if needed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I know home Quran practice is working?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The tutor should need fewer prompts on the same errors within two to three weeks. Ask for a monthly progress note, not only general praise.",
+        },
+      },
+    ],
+  },
+  "hard-arabic-letters-for-kids-makharij": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Which Arabic letters are hardest for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non-Arabic-speaking children often struggle with ع، ح، خ، غ، ق، ص، ض، ط، ظ. Fix them early with short repeated drills and a tutor who can hear the difference — do not wait until Hifz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will my child outgrow wrong letter sounds without a teacher?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes lightly, but many errors become permanent habits, especially once memorisation starts. Early live correction is easier than unlearning later.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we pause new Qaida lessons to fix one letter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often yes for a week or two. Stabilising a letter such as ق versus ك is worth delaying the next page.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can apps detect Arabic makharij accurately for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apps can support listening and motivation. They should not be treated as final proof that a throat letter is correct. Use a human teacher for judgment calls.",
+        },
+      },
+    ],
+  },
+  "online-quran-classes-for-shy-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Are online Quran classes good for shy kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Private one-to-one online lessons often suit shy children because there is no classroom audience, a parent can stay nearby, and the tutor can use a gentle pace. Measure progress by comfort and accuracy, not volume on day one.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should shy kids start Quran in a group to build confidence?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually not at the beginning. Confidence grows from safe success. Groups can come later if the family wants social learning.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it okay if my child barely speaks in the first Quran trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. A good tutor can still assess listening, pointing to letters, and comfort. Ask for a second short session before deciding.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a shy child do Hifz later?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Many Huffaz were quiet children. Build reading trust first; memorisation intensity can wait until the child feels safe with the tutor.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

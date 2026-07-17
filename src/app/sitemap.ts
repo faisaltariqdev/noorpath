@@ -69,6 +69,12 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "online-quran-classes-usa-kids-guide",
   "how-to-choose-online-quran-teacher",
   "finish-quran-in-ramadan-30-day-plan",
+  "how-long-does-noorani-qaida-take",
+  "parents-dont-speak-arabic-child-learn-quran",
+  "child-wont-sit-for-quran-class",
+  "quran-practice-routine-at-home-kids",
+  "hard-arabic-letters-for-kids-makharij",
+  "online-quran-classes-for-shy-kids",
 ]);
 
 const BACKLINK_ASSET_SLUGS = new Set(

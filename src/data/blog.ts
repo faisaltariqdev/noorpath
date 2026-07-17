@@ -1190,6 +1190,115 @@ export const blogPosts: BlogPost[] = [
       "Muharram, Safar, Rabi al-Awwal… can you name all 12 Islamic months in order? This guide covers every Hijri month with its meaning, the four sacred months Allah mentions in the Quran, and the key worship dates every Muslim family should know.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "how-long-does-noorani-qaida-take",
+    title: "How Long Does Noorani Qaida Take for Kids? Realistic Timeline for Parents",
+    description:
+      "How long does Noorani Qaida take for kids? Realistic 3–9 month timelines by age, what “finished” should mean, weekly plans, and when to slow down so letters stay correct.",
+    category: "Parenting & Education",
+    date: "2026-07-17",
+    updatedAt: "2026-07-17",
+    readTime: "11 min",
+    keywords: [
+      "how long does noorani qaida take", "how long to learn noorani qaida", "noorani qaida duration",
+      "noorani qaida for kids timeline", "how many months noorani qaida", "finish noorani qaida",
+      "noorani qaida how long for child", "qaida course duration online",
+    ],
+    excerpt:
+      "Most children finish a solid Noorani Qaida foundation in about 3–9 months — not because of a sales promise, but with 2–3 weekly lessons and short daily practice. Here’s a realistic parent timeline by age.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "parents-dont-speak-arabic-child-learn-quran",
+    title: "Can My Child Learn Quran If I Don’t Speak Arabic? A Parent Guide",
+    description:
+      "Can my child learn Quran if I don’t speak Arabic? Yes. Learn your role vs the tutor’s, how to practise at home without Arabic, common mistakes, and tips for convert parents.",
+    category: "Parenting & Education",
+    date: "2026-07-17",
+    updatedAt: "2026-07-17",
+    readTime: "10 min",
+    keywords: [
+      "child learn quran parents dont speak arabic", "teach quran without knowing arabic",
+      "non arabic speaking parents quran", "can my child learn quran if i dont speak arabic",
+      "quran classes english speaking parents", "help child quran without arabic",
+      "convert parents teach quran kids",
+    ],
+    excerpt:
+      "You do not need to speak Arabic for your child to learn Quran correctly. Manage routine and encouragement; let a qualified tutor own pronunciation and correction.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "child-wont-sit-for-quran-class",
+    title: "My Child Won’t Sit for Quran Class — What Parents Can Do",
+    description:
+      "My child won’t sit for Quran class? Shorten lessons, fix timing, use a calm 1-on-1 tutor, and follow a 7-step playbook that rebuilds focus without pressure or guilt.",
+    category: "Kids & Parenting",
+    date: "2026-07-17",
+    updatedAt: "2026-07-17",
+    readTime: "10 min",
+    keywords: [
+      "child wont sit for quran class", "my child refuses quran class", "kids attention span quran",
+      "quran class too long for toddler", "child hates quran class", "how to make kids sit for quran",
+      "short quran lessons for kids", "restless child quran learning",
+    ],
+    excerpt:
+      "Refusal usually means the lesson is too long, too late, or too stressful — not that your child rejects Islam. Use shorter sessions, better timing, and patient 1-on-1 teaching.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-practice-routine-at-home-kids",
+    title: "Quran Practice Routine at Home for Kids — 12-Minute Daily Plan",
+    description:
+      "Build a Quran practice routine at home for kids: a 12-minute daily template, weekly school-life rhythm, level-by-level focus, and mistakes that break consistency.",
+    category: "Kids & Parenting",
+    date: "2026-07-17",
+    updatedAt: "2026-07-17",
+    readTime: "9 min",
+    keywords: [
+      "quran practice routine at home", "quran homework for kids", "daily quran practice kids",
+      "how to practise quran at home with kids", "quran revision schedule children",
+      "home quran routine between classes", "10 minute quran practice kids",
+    ],
+    excerpt:
+      "Live class alone is not enough. A predictable 10–15 minute home routine between lessons is what turns weekly tutoring into real progress for kids.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "hard-arabic-letters-for-kids-makharij",
+    title: "Hard Arabic Letters for Kids — Makharij Parents Should Watch",
+    description:
+      "Hard Arabic letters for kids explained: ع ح خ غ ق ص ض ط ظ, common mix-ups, safe home drills, and when to get a tutor before wrong sounds stick in Hifz.",
+    category: "Quran Learning",
+    date: "2026-07-17",
+    updatedAt: "2026-07-17",
+    readTime: "10 min",
+    keywords: [
+      "hard arabic letters for kids", "makharij for kids", "difficult arabic letters children",
+      "qaf vs kaf kids", "ayn pronunciation kids", "arabic throat letters children",
+      "fix arabic letter pronunciation kids", "tajweed letters for beginners kids",
+    ],
+    excerpt:
+      "Some letters need extra patience — especially throat and heavy letters. Here’s which mix-ups parents should watch and how to practise safely without locking in mistakes.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-classes-for-shy-kids",
+    title: "Online Quran Classes for Shy Kids — Private 1-on-1 Parent Guide",
+    description:
+      "Online Quran classes for shy kids: why private 1-on-1 works, a 4-week settling plan, what to tell the tutor, and how to protect confidence at home.",
+    category: "Kids & Parenting",
+    date: "2026-07-17",
+    updatedAt: "2026-07-17",
+    readTime: "9 min",
+    keywords: [
+      "online quran classes for shy kids", "shy child quran class", "quiet child learn quran online",
+      "private quran tutor for shy kids", "quran class anxiety kids", "1 on 1 quran for introverted child",
+      "female tutor shy daughter quran",
+    ],
+    excerpt:
+      "Shy children often freeze in busy halls but open up in a private online room. Here’s how to choose the format, settle in over four weeks, and protect their confidence.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

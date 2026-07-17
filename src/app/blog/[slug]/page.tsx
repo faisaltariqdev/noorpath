@@ -29,6 +29,36 @@ const supportingResourceLinks: Record<string, string[]> = {
     "tajweed-learning-format-comparison",
   ],
   "how-to-teach-quran-to-kids": ["quran-curriculum-and-lesson-planning"],
+  "how-long-does-noorani-qaida-take": [
+    "noorani-qaida-complete-guide",
+    "best-age-to-start-quran-learning",
+    "quran-practice-routine-at-home-kids",
+  ],
+  "parents-dont-speak-arabic-child-learn-quran": [
+    "how-to-teach-quran-to-kids",
+    "how-to-choose-online-quran-teacher",
+    "quran-practice-routine-at-home-kids",
+  ],
+  "child-wont-sit-for-quran-class": [
+    "online-quran-classes-for-shy-kids",
+    "best-age-to-start-quran-learning",
+    "online-quran-classes-for-kids-parent-guide",
+  ],
+  "quran-practice-routine-at-home-kids": [
+    "how-long-does-noorani-qaida-take",
+    "parents-dont-speak-arabic-child-learn-quran",
+    "online-hifz-classes-for-kids",
+  ],
+  "hard-arabic-letters-for-kids-makharij": [
+    "arabic-alphabet-for-kids",
+    "noorani-qaida-complete-guide",
+    "tajweed-rules-complete-guide",
+  ],
+  "online-quran-classes-for-shy-kids": [
+    "child-wont-sit-for-quran-class",
+    "female-quran-teacher-for-kids",
+    "online-quran-classes-for-kids-parent-guide",
+  ],
 };
 
 export const dynamicParams = false;
