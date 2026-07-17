@@ -39,7 +39,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Find the mark above the letter.", "Listen to one modelled example.", "Read three different letters with the same short vowel.", "Contrast one short sound with a Madd example."],
     parentTip: "Use one finger tap for the short sound. If the sound lasts beyond the tap, model it again rather than asking for many repetitions.",
     teacherTip: "Contrast بَ with بَا and assess vowel length separately from the consonant articulation.",
-    examples: [{ arabic: "بَ", transliteration: "ba" }, { arabic: "تَ", transliteration: "ta" }, { arabic: "جَ", transliteration: "ja" }],
+    examples: [{ arabic: "بَ", transliteration: "Baa" }, { arabic: "تَ", transliteration: "Taa" }, { arabic: "جَ", transliteration: "Jaa" }],
     nextStep: "Kasra and Damma",
   }),
   lesson({
@@ -52,7 +52,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Point below the letter.", "Say the consonant and vowel together.", "Compare بِ, تِ, and جِ.", "Find Kasra inside a short vowelled word."],
     parentTip: "Ask where the mark sits before asking for the sound; this builds visual independence.",
     teacherTip: "Contrast بِ with بِي and keep the jaw relaxed so the learner does not overproduce the vowel.",
-    examples: [{ arabic: "بِ", transliteration: "bi" }, { arabic: "تِ", transliteration: "ti" }, { arabic: "جِ", transliteration: "ji" }],
+    examples: [{ arabic: "بِ", transliteration: "Bee" }, { arabic: "تِ", transliteration: "Tee" }, { arabic: "جِ", transliteration: "Jee" }],
     nextStep: "Damma and mixed Harakaat",
   }),
   lesson({
@@ -65,7 +65,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Identify the curl above.", "Watch the teacher’s lip shape.", "Read three consonants with Damma.", "Mix Fatha, Kasra, and Damma cards."],
     parentTip: "Use a mirror for one or two examples, then remove it and check the written mark.",
     teacherTip: "Model lip rounding without elongation and contrast بُ with بُو.",
-    examples: [{ arabic: "بُ", transliteration: "bu" }, { arabic: "تُ", transliteration: "tu" }, { arabic: "جُ", transliteration: "ju" }],
+    examples: [{ arabic: "بُ", transliteration: "Boo" }, { arabic: "تُ", transliteration: "Too" }, { arabic: "جُ", transliteration: "Joo" }],
     nextStep: "Tanween",
   }),
   lesson({
@@ -78,7 +78,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Count the two marks.", "Read the short vowel.", "Add the light n ending.", "Compare a single Fatha with Fathatain."],
     parentTip: "Use one clear model and one child response; avoid spelling the hidden n as a separate letter.",
     teacherTip: "Check that the learner hears Tanween rather than searching for a written Noon.",
-    examples: [{ arabic: "بً", transliteration: "ban" }, { arabic: "كِتَابًا", transliteration: "kitāban", meaning: "a book" }],
+    examples: [{ arabic: "بً", transliteration: "Baan" }, { arabic: "كِتَابًا", transliteration: "Kitaaban", meaning: "a book" }],
     nextStep: "Kasratain and Dammatain",
   }),
   lesson({
@@ -91,7 +91,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Point below the letter.", "Read in as one compact ending.", "Compare one and two Kasra marks.", "Find Kasratain at the end of an example."],
     parentTip: "Ask ‘above or below?’ before reading to reinforce sign recognition.",
     teacherTip: "Keep both the Kasra and final n light, then place it inside a familiar word.",
-    examples: [{ arabic: "بٍ", transliteration: "bin" }, { arabic: "كِتَابٍ", transliteration: "kitābin", meaning: "a book" }],
+    examples: [{ arabic: "بٍ", transliteration: "Been" }, { arabic: "كِتَابٍ", transliteration: "Kitaabin", meaning: "a book" }],
     nextStep: "Dammatain and mixed Tanween",
   }),
   lesson({
@@ -104,7 +104,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Identify the paired curl.", "Round the lips for the short vowel.", "Add the final n.", "Mix all three Tanween cards."],
     parentTip: "Practise recognition before speed; two accurate examples are better than a long drill.",
     teacherTip: "Separate visual-sign errors from articulation errors when giving feedback.",
-    examples: [{ arabic: "بٌ", transliteration: "bun" }, { arabic: "كِتَابٌ", transliteration: "kitābun", meaning: "a book" }],
+    examples: [{ arabic: "بٌ", transliteration: "Boon" }, { arabic: "كِتَابٌ", transliteration: "Kitaabun", meaning: "a book" }],
     nextStep: "Sukoon",
   }),
   lesson({
@@ -117,7 +117,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
     practiceSteps: ["Find the small circle.", "Read the preceding vowel first.", "Close on the sakin letter.", "Blend the two parts without a pause."],
     parentTip: "Use slow blending such as مِ + نْ, then say مِنْ smoothly.",
     teacherTip: "Do not teach the sakin letter in isolation; assess whether the learner can close the preceding syllable.",
-    examples: [{ arabic: "أَبْ", transliteration: "ab" }, { arabic: "مِنْ", transliteration: "min", meaning: "from" }, { arabic: "قُلْ", transliteration: "qul", meaning: "say" }],
+    examples: [{ arabic: "أَبْ", transliteration: "Ab" }, { arabic: "مِنْ", transliteration: "Min", meaning: "from" }, { arabic: "قُلْ", transliteration: "Qul", meaning: "say" }],
     nextStep: "Shaddah",
   }),
   lesson({
@@ -141,7 +141,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
       mouthGuide: "Keep the mouth gently open and the sound even.",
       writingGuide: "Read the Fatha-bearing letter together with the following Alif.",
       commonMistake: "Breaking between the consonant and Alif or making the two counts uneven.",
-      examples: [{ arabic: "بَا", transliteration: "bā" }, { arabic: "قَالَ", transliteration: "qāla", meaning: "he said" }],
+      examples: [{ arabic: "بَا", transliteration: "Baa" }, { arabic: "قَالَ", transliteration: "Qaala", meaning: "he said" }],
       nextStep: "Madd Waw",
     },
     {
@@ -151,7 +151,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
       mouthGuide: "Keep the lips rounded and the sound steady for two equal counts.",
       writingGuide: "Read the Damma-bearing letter together with the following Waw.",
       commonMistake: "Giving Waw its own separate consonant sound.",
-      examples: [{ arabic: "بُو", transliteration: "bū" }, { arabic: "نُور", transliteration: "nūr", meaning: "light" }],
+      examples: [{ arabic: "بُو", transliteration: "Boo" }, { arabic: "نُور", transliteration: "Noor", meaning: "light" }],
       nextStep: "Madd Ya",
     },
     {
@@ -161,7 +161,7 @@ export const QAIDA_LESSONS: QaidaTopic[] = [
       mouthGuide: "Spread the lips slightly and hold an even sound for two counts.",
       writingGuide: "Read the Kasra-bearing letter together with the following Ya.",
       commonMistake: "Turning the long ī into the English diphthong ay.",
-      examples: [{ arabic: "بِي", transliteration: "bī" }, { arabic: "فِيل", transliteration: "fīl", meaning: "elephant" }],
+      examples: [{ arabic: "بِي", transliteration: "Bee" }, { arabic: "فِيل", transliteration: "Feel", meaning: "elephant" }],
       nextStep: "joining forms",
     },
   ] as const).map((item) => lesson({
