@@ -188,6 +188,23 @@ export const locations: Location[] = [
     keywords: ["online quran classes netherlands", "quran teacher netherlands", "learn quran online netherlands", "online quran amsterdam", "islamic classes holland"],
   },
   {
+    slug: "online-quran-classes-sweden",
+    flag: "🇸🇪",
+    country: "Sweden",
+    cities: "Stockholm, Gothenburg, Malmö, Uppsala, Västerås",
+    desc: "Online Quran classes for Muslim families in Sweden — CET timezone.",
+    timezone: "CET / CEST",
+    localContext:
+      "Sweden’s Muslim communities are centred in Stockholm, Gothenburg and Malmö. Families can request after-school or evening CET/CEST online Quran lessons (often around 4–10 PM local time), subject to tutor matching, without commuting to a physical madrasah.",
+    keywords: [
+      "online quran classes sweden",
+      "quran teacher sweden",
+      "learn quran online sweden",
+      "online quran stockholm",
+      "islamic classes sweden",
+    ],
+  },
+  {
     slug: "online-quran-classes-qatar",
     flag: "🇶🇦",
     country: "Qatar",

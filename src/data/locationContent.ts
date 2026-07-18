@@ -7,11 +7,69 @@ const familyDiscountSummary = FAMILY_DISCOUNTS.map(
   ({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`
 ).join(", ");
 
+/** Additive country-specific FAQs prepended for Europe expansion markets only. */
+const EUROPE_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
+  "online-quran-classes-france": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in France?",
+      a: "Yes. Live one-to-one online Quran and Noorani Qaida lessons can suit families in France who want structured home learning after school. NoorPath is an online academy (not a French campus). Suitability is confirmed through a free trial, language match, and a CET/CEST evening slot — commonly requested between about 4 PM and 10 PM local time.",
+    },
+    {
+      q: "Are online Quran classes legitimate and safe for children in France?",
+      a: "Online classes are a legitimate tutoring format when the academy uses known video platforms, allows parental observation, explains safeguarding expectations, and confirms the tutor before ongoing payment. Supervise young learners in a shared space and review NoorPath’s safeguarding guidance before enrolment.",
+    },
+    {
+      q: "How do euros (€) relate to NoorPath pricing for families in France?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert the live USD amount to euros (€) for your own budget using your bank’s rate; NoorPath does not publish a fixed EUR price list. ${getCurrencyNote("online-quran-classes-france")}`,
+    },
+    {
+      q: "What class times work after school in France?",
+      a: "Many families request lessons from about 4 PM to 10 PM CET or CEST, plus weekend options. Exact recurring times depend on tutor matching and are confirmed after your request.",
+    },
+  ],
+  "online-quran-classes-netherlands": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in the Netherlands?",
+      a: "Yes for households in Amsterdam, Rotterdam, The Hague and other cities that want private live Quran learning without a weekly commute. Confirm English or Arabic instruction, CET evening timing (often ~4–10 PM), and tutor fit via a free trial.",
+    },
+    {
+      q: "How safe is online Quran tutoring for children in the Netherlands?",
+      a: "Choose transparent providers, keep devices in family spaces for young children, observe early lessons, and read safeguarding policies. Confirm who teaches after the trial before paying for a continuing package.",
+    },
+    {
+      q: "How should Dutch families budget USD fees in euros (€)?",
+      a: `Use published USD plans (such as ${starterPlan.name} at $${starterPlan.monthlyPriceUsd} USD) and convert to € for household planning. Card FX fees may change the final euro amount. ${getCurrencyNote("online-quran-classes-netherlands")}`,
+    },
+    {
+      q: "Can lessons fit around Dutch school and club activities?",
+      a: "Yes — request after-school or weekend CET/CEST windows and share conflicts during matching. A sustainable weekly slot usually works better than irregular catch-up lessons.",
+    },
+  ],
+  "online-quran-classes-sweden": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in Sweden?",
+      a: "Yes. Families in Stockholm, Gothenburg, Malmö and elsewhere can use live online Quran and Noorani Qaida lessons when a CET/CEST evening or weekend slot fits Swedish school life and a trial confirms tutor rapport. NoorPath teaches online and does not claim a Swedish campus.",
+    },
+    {
+      q: "How do we evaluate legitimacy and child safety?",
+      a: "Look for clear safeguarding information, parental observation, known meeting platforms, and honest tutor matching. Supervise young learners and avoid large prepaid commitments before a successful trial.",
+    },
+    {
+      q: "How do USD prices relate to euros (€) or kronor for Sweden?",
+      a: `NoorPath publishes USD plans (for example ${starterPlan.name} at $${starterPlan.monthlyPriceUsd} USD). Convert to € for optional Europe-wide comparison or expect SEK on some card statements after FX. ${getCurrencyNote("online-quran-classes-sweden")}`,
+    },
+    {
+      q: "What times are typically requested in Sweden?",
+      a: "Many families ask for roughly 4 PM–10 PM CET/CEST after school, with weekend mornings as an alternative. Availability is confirmed during tutor matching.",
+    },
+  ],
+};
+
 export function getLocationFaqs(loc: Location) {
   const primaryCity = loc.cities.split(",")[0].trim();
   const currencyNote = getCurrencyNote(loc.slug);
   const market = getPriorityMarket(loc.slug);
-  return [
+  const standard = [
     {
       q: `How do online Quran classes work in ${loc.country}?`,
       a: `NoorPath Academy offers live 1-on-1 online Quran classes for learners in ${loc.country} via Zoom or Google Meet. Request a weekly schedule in ${loc.timezone}; tutor and time availability are confirmed after matching. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and does not require a credit card.`,
@@ -46,6 +104,8 @@ export function getLocationFaqs(loc: Location) {
       a: `Yes. Beginners start with Noorani Qaida; children who already read fluently can join structured online Hifz with the Sabaq–Sabqi–Manzil system. Book a free trial to assess the right track.`,
     },
   ];
+  const extras = EUROPE_LOCATION_FAQS[loc.slug] ?? [];
+  return [...extras, ...standard];
 }
 
 export function getLocationSeoParagraphs(loc: Location): string[] {

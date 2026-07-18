@@ -373,6 +373,158 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "raising-quran-literate-child-living-in-west": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can my child become Quran-literate if we only speak English at home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Parental Arabic fluency helps with encouragement, but live tutor correction and short daily practice matter more. Many Western children learn to read Quran accurately in English-speaking homes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many evenings per week are enough alongside Western school?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For most children, two or three live lessons plus brief home review works well. If school is intense, keep the live lessons and shorten home practice before cancelling tuition.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we wait until summer holidays to start Quran classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Starting in term time with a realistic slot usually builds stronger habits than waiting for a perfect holiday block that disappears when school returns.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if relatives push us to finish Noorani Qaida quickly?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Share a tutor-backed readiness checklist. Accurate letters protect years of later reading; speed for social approval often creates repair work.",
+        },
+      },
+    ],
+  },
+  "muslim-families-europe-balance-school-quran": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is one Quran class per week enough with European school hours?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can maintain progress for some readers, but beginners usually need two or more live touchpoints weekly. If you can only manage one live class, keep short home review on other days.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we pause Quran during exam weeks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Shorten rather than cancel when possible. A short maintenance lesson preserves the habit better than a multi-week gap that requires restarting motivation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do European families budget if they think in euros?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use published USD prices as the official reference, convert to euros for household planning, and confirm card foreign-exchange fees. Check NoorPath’s pricing page for current plans.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if clubs clash every weekday?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Try an early weekend primary slot plus one short weekday review. Consistency across the month matters more than a perfect school-night time that never happens.",
+        },
+      },
+    ],
+  },
+  "trustworthy-online-quran-teacher-live-abroad": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is an online Quran teacher safe for my child abroad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can be when you use known platforms, observe lessons, keep young learners in shared spaces, and enrol with academies that publish safeguarding expectations. Read safeguarding guidance and ask practical questions before paying.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should the trial teacher remain the permanent teacher?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ideally yes when rapport matters. Confirm this before enrolment to avoid demo bait-and-switch patterns.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I cannot verify every certificate myself?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ask for specific clarification, watch teaching quality in the trial, and use academy processes that allow you to change tutors or stop. Teaching evidence and safety habits still matter alongside paperwork.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can I learn how NoorPath matches tutors?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "See the Our Tutors page for matching principles, then validate the assigned tutor in your free trial. Also review the safeguarding page before enrolment.",
+        },
+      },
+    ],
+  },
+  "timezone-friendly-quran-classes-uk-europe": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can UK and European families really get after-school Quran slots?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many families request after-school and early-evening local windows. Availability depends on tutor matching and is confirmed after you share preferred times.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I convert everything to the tutor’s time zone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Request and confirm in your local time so the child’s routine stays stable when clocks change.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if our only free time is weekends?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Say so clearly. A solid weekend primary slot plus light weekday review can work well for busy UK and European school calendars.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where do I compare country scheduling notes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use the NoorPath locations hub to open your country page and read local planning guidance before requesting a tutor.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

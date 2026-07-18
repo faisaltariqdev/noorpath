@@ -1299,6 +1299,86 @@ export const blogPosts: BlogPost[] = [
       "Shy children often freeze in busy halls but open up in a private online room. Here’s how to choose the format, settle in over four weeks, and protect their confidence.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "raising-quran-literate-child-living-in-west",
+    title: "Raising a Quran-Literate Child While Living in the West",
+    description:
+      "How diaspora parents balance Western school life with Quran literacy — routines, identity without pressure, and when to add live kids’ classes.",
+    category: "Kids & Parenting",
+    date: "2026-07-19",
+    updatedAt: "2026-07-19",
+    readTime: "12 min",
+    keywords: [
+      "raising quran literate child in the west",
+      "muslim parenting west quran",
+      "quran learning diaspora children",
+      "balance school and quran west",
+      "online quran classes for kids west",
+    ],
+    excerpt:
+      "Quran literacy in Western homes grows from protected short practice and live correction — not guilt-driven marathon evenings. Here’s a calm blueprint for diaspora parents.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "muslim-families-europe-balance-school-quran",
+    title: "How Muslim Families in Europe Can Balance School and Quran Learning",
+    description:
+      "Practical CET/CEST scheduling for European Muslim families — homework, siblings, sustainable plans, and how to use published pricing wisely.",
+    category: "Kids & Parenting",
+    date: "2026-07-19",
+    updatedAt: "2026-07-19",
+    readTime: "11 min",
+    keywords: [
+      "balance school and quran europe",
+      "muslim families europe quran classes",
+      "after school quran europe",
+      "cet quran classes kids",
+      "online quran pricing europe parents",
+    ],
+    excerpt:
+      "European school weeks are full. Balance Quran learning with a fixed local evening slot, short micro-practice, and a monthly plan your household can actually keep.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "trustworthy-online-quran-teacher-live-abroad",
+    title: "Finding a Trustworthy Online Quran Teacher When You Live Abroad",
+    description:
+      "A diaspora parent checklist for online Quran tutor trust — safeguarding, trial evidence, matching red flags, and where to verify academy policies.",
+    category: "Quran Learning",
+    date: "2026-07-19",
+    updatedAt: "2026-07-19",
+    readTime: "11 min",
+    keywords: [
+      "trustworthy online quran teacher",
+      "safe online quran tutor abroad",
+      "how to choose quran teacher online",
+      "safeguarding online quran classes",
+      "tutor matching muslim parents abroad",
+    ],
+    excerpt:
+      "Living abroad means you need process, not hope: observe the trial, read safeguarding expectations, confirm who teaches after payment, and walk away from vague marketing.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "timezone-friendly-quran-classes-uk-europe",
+    title: "Timezone-Friendly Quran Classes for Families in the UK & Europe",
+    description:
+      "How timezone-based tutor matching works for UK GMT/BST and European CET/CEST evenings — what to request and how to keep slots stable.",
+    category: "Quran Learning",
+    date: "2026-07-19",
+    updatedAt: "2026-07-19",
+    readTime: "10 min",
+    keywords: [
+      "timezone friendly quran classes",
+      "uk europe online quran schedule",
+      "cet gmt quran classes",
+      "after school quran uk europe",
+      "tutor matching time zones quran",
+    ],
+    excerpt:
+      "Book in your local clock time, share ranked evening windows, and confirm daylight-saving behaviour in writing — that is how UK and European families keep Quran lessons steady.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

@@ -306,6 +306,99 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
         "Share school, work, and preferred prayer-aware scheduling constraints in AST. English-language tutor and recurring-slot availability are confirmed after matching.",
     },
   },
+  {
+    slug: "online-quran-classes-france",
+    country: "France",
+    flag: "🇫🇷",
+    weight: 3,
+    locale: "fr-FR",
+    openGraphLocale: "fr_FR",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Classes can be requested from about 4 PM to 10 PM CET/CEST around the French school day, plus weekend windows. Exact tutor availability is confirmed during matching.",
+    keywordClusters: [
+      "online quran classes france",
+      "cours de coran en ligne",
+      "online quran classes paris",
+      "quran teacher france",
+      "noorani qaida online france",
+      "female quran teacher france",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes France | Free Trial",
+      metadataDescription:
+        "Live 1-to-1 online Quran & Noorani Qaida for families in France. CET evenings 4–10 PM, USD pricing with € context. Free 30-min trial.",
+      heading: "Online Quran Classes in France",
+      introduction:
+        "Muslim families across France — including Paris, Marseille, Lyon, Toulouse and Lille — can request live one-to-one Quran and Noorani Qaida lessons online, with English or Arabic instruction subject to tutor matching and evening CET/CEST slots that fit after school.",
+      localPlanning:
+        "Share school finish times, preferred weekdays between roughly 4 PM and 10 PM CET, and whether weekend lessons help. NoorPath is online-only (no French campus) and confirms the recurring slot after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-netherlands",
+    country: "Netherlands",
+    flag: "🇳🇱",
+    weight: 2,
+    locale: "nl-NL",
+    openGraphLocale: "nl_NL",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request after-school or evening lessons from about 4 PM to 10 PM CET/CEST for Amsterdam, Rotterdam, The Hague and beyond. Weekend preferences are confirmed during matching.",
+    keywordClusters: [
+      "online quran classes netherlands",
+      "online quran amsterdam",
+      "quran teacher netherlands",
+      "islamic classes holland",
+      "noorani qaida online netherlands",
+      "female quran teacher netherlands",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Netherlands | Trial",
+      metadataDescription:
+        "Live online Quran classes for Dutch Muslim families. CET slots ~4–10 PM, Noorani Qaida to Hifz, USD fees with € budgeting notes. Free trial.",
+      heading: "Online Quran Classes in the Netherlands",
+      introduction:
+        "Families in the Netherlands can request live one-to-one Quran tuition online for children and adults, planned around Dutch school hours in CET/CEST — including evening windows that keep evenings predictable for homework and family time.",
+      localPlanning:
+        "Note your city (Amsterdam, Rotterdam, The Hague, Utrecht or elsewhere), preferred 4–10 PM CET evenings, and any female-tutor preference. Availability is confirmed after matching; NoorPath does not operate a Dutch branch.",
+    },
+  },
+  {
+    slug: "online-quran-classes-sweden",
+    country: "Sweden",
+    flag: "🇸🇪",
+    weight: 2,
+    locale: "sv-SE",
+    openGraphLocale: "sv_SE",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "SEK", name: "Swedish kronor" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request lessons from about 4 PM to 10 PM CET/CEST to align with Swedish school evenings, or ask for weekend mornings. Tutor and slot availability are confirmed during matching.",
+    keywordClusters: [
+      "online quran classes sweden",
+      "online quran stockholm",
+      "quran teacher sweden",
+      "learn quran online sweden",
+      "noorani qaida online sweden",
+      "islamic classes sweden",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Sweden | Free Trial",
+      metadataDescription:
+        "Live 1-to-1 online Quran for Muslim families in Sweden. CET evenings ~4–10 PM, Qaida to Hifz, USD pricing with € context. Free trial.",
+      heading: "Online Quran Classes in Sweden",
+      introduction:
+        "Muslim families in Sweden — including Stockholm, Gothenburg, Malmö and Uppsala — can request live online Quran and Noorani Qaida classes with tutors matched to the learner’s level, with evening CET/CEST times that respect Nordic school and daylight patterns.",
+      localPlanning:
+        "Share preferred after-school windows (often 4–10 PM CET), winter daylight constraints, and language preferences. Exact recurring times are confirmed only after tutor matching.",
+    },
+  },
 ] as const;
 
 const marketBySlug = new Map(PRIORITY_MARKETS.map((market) => [market.slug, market]));
