@@ -21,6 +21,7 @@ const company = [
   { href: "/about", label: "About Us" },
   { href: "/founder", label: "Founder & CEO" },
   { href: "/our-tutors", label: "Our Tutors" },
+  { href: "/#parent-portal", label: "Parent Portal" },
   { href: "/safeguarding", label: "Safeguarding" },
   { href: "/contact", label: "Contact" },
   { href: "/locations", label: "All Locations" },

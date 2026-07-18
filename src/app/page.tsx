@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import InteractiveNooraniQaidaSection from "@/components/home/InteractiveNooraniQaidaSection";
+import ParentPortalSection from "@/components/home/ParentPortalSection";
 import { trustpilotReviews } from "@/data/trustpilotReviews";
 import {
   CANCELLATION_NOTICE_DAYS,
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     absolute: "Learn Quran Online for Kids & Families — Free 30-Min Trial (2026)",
   },
   description:
-    "Live 1-on-1 online Quran classes for kids and adults — Tajweed, Hifz, Noorani Qaida and Arabic. Free 30-minute trial, no credit card.",
+    "Live 1-on-1 online Quran classes for kids and adults — Tajweed, Hifz, Noorani Qaida and Arabic. Parent Portal for homework, daily progress and attendance. Free 30-minute trial.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
@@ -73,6 +74,7 @@ const faqs = [
   { q: "Do you offer a free trial class?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class with no credit card required. Tutor availability is confirmed after the request.` },
   { q: "Are there family discount plans?", a: `Yes. Published sibling discounts are ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
   { q: "How are tutors matched?", a: "Tutor matching is based on the learner's needs, schedule, timezone, preferences, and current tutor availability." },
+  { q: "Do parents get a portal to track progress?", a: "Yes. Enrolled families receive secure Parent Portal access (admin.noorpath.online) to check homework, daily progress, quizzes, attendance, reports, and announcements for all children — on phone or computer." },
 ];
 
 const homepagePlans = PRICING_PLANS.map((plan) => ({
@@ -328,6 +330,9 @@ export default function HomePage() {
 
       {/* ── INTERACTIVE NOORANI QAIDA (SEO hub section) ── */}
       <InteractiveNooraniQaidaSection />
+
+      {/* ── PARENT PORTAL ── */}
+      <ParentPortalSection />
 
       {/* ── WHY NOORPATH ── */}
       <section id="why" style={{ background: "var(--ivory)" }}>
