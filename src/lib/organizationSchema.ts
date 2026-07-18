@@ -61,6 +61,7 @@ export function getOrganizationJsonLd() {
           "https://www.instagram.com/noorpath.online/",
           "https://www.tiktok.com/@noorpathacademy",
           "https://www.facebook.com/noorpathquranacademy",
+          "https://www.youtube.com/@NoorPath.Online",
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",

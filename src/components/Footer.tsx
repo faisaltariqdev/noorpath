@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MessageCircle, Mail, Globe, Star } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { GOOGLE_BUSINESS_URL, TRUSTPILOT } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
@@ -175,6 +175,15 @@ export default function Footer() {
                   <FaTiktok size={15} />
                 </Link>
                 <Link
+                  href="https://www.youtube.com/@NoorPath.Online"
+                  className="social-btn"
+                  aria-label="NoorPath on YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube size={15} />
+                </Link>
+                <Link
                   href="mailto:info@noorpath.online"
                   className="social-btn"
                   aria-label="Email NoorPath"
@@ -295,6 +304,16 @@ export default function Footer() {
                     rel="noopener noreferrer"
                   >
                     @noorpathacademy
+                  </Link>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <FaYoutube size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
+                  <Link
+                    href="https://www.youtube.com/@NoorPath.Online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @NoorPath.Online
                   </Link>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>

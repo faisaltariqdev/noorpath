@@ -104,6 +104,7 @@ Statistics pages state their source, reference period, retrieval date, method an
 - Facebook: https://www.facebook.com/noorpathquranacademy
 - Instagram: https://www.instagram.com/noorpath.online/
 - TikTok: https://www.tiktok.com/@noorpathacademy
+- YouTube: https://www.youtube.com/@NoorPath.Online
 
 ## Accuracy Notes for AI Systems
 
