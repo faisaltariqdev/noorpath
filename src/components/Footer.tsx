@@ -183,6 +183,17 @@ export default function Footer() {
                 >
                   <FaYoutube size={15} />
                 </Link>
+              </div>
+              {/* Email + website + Trustpilot on one row */}
+              <div
+                style={{
+                  marginTop: 10,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                  flexWrap: "wrap",
+                }}
+              >
                 <Link
                   href="mailto:info@noorpath.online"
                   className="social-btn"
@@ -190,9 +201,6 @@ export default function Footer() {
                 >
                   <Mail size={15} />
                 </Link>
-              </div>
-              {/* Website + Trustpilot (one line) */}
-              <div style={{ marginTop: 16, display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
                 <Link
                   href="https://www.noorpath.online"
                   className="social-btn"
@@ -217,6 +225,7 @@ export default function Footer() {
                     fontSize: ".78rem",
                     fontWeight: 700,
                     textDecoration: "none",
+                    minHeight: 44,
                   }}
                 >
                   <Star size={14} fill="#00b67a" stroke="#00b67a" />
