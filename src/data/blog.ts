@@ -1379,6 +1379,27 @@ export const blogPosts: BlogPost[] = [
       "Book in your local clock time, share ranked evening windows, and confirm daylight-saving behaviour in writing — that is how UK and European families keep Quran lessons steady.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "when-child-ready-qaida-to-quran",
+    title: "When Is My Child Ready to Move From Noorani Qaida to Quran?",
+    description:
+      "Clear readiness checklist for moving from Noorani Qaida to the mushaf — new-line test, 4-week bridge plan, red flags, and what to ask in a free trial.",
+    category: "Kids & Parenting",
+    date: "2026-07-20",
+    updatedAt: "2026-07-20",
+    readTime: "11 min",
+    keywords: [
+      "when is my child ready for quran after qaida",
+      "move from noorani qaida to quran",
+      "finished noorani qaida start mushaf",
+      "qaida to quran transition kids",
+      "ready to read quran from mushaf",
+      "noorani qaida to juz amma",
+    ],
+    excerpt:
+      "Don’t open the mushaf just because the booklet is finished. Use the unfamiliar-line test, a gentle bridge week plan, and tutor evidence so Quran reading starts with confidence.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

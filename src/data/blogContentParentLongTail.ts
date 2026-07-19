@@ -416,4 +416,93 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>Can a shy child do Hifz later?<span>+</span></summary><p>Yes. Many Huffaz were quiet children. Build reading trust first; memorisation intensity can wait until the child feels safe with the tutor.</p></details>
           <details class="faq-acc"><summary>What if shyness is extreme or linked to anxiety?<span>+</span></summary><p>Go slower, keep lessons very short, and consider professional support if anxiety affects wider life. Quran class should never become another source of dread.</p></details>`,
   },
+
+  "when-child-ready-qaida-to-quran": {
+    style: S,
+    content: `<p>Parents searching <strong>when is my child ready to move from Noorani Qaida to Quran</strong> usually feel two things at once: pride that the booklet is nearly finished, and fear of opening the mushaf too early. That anxiety is useful. Jumping into full Quran pages before letters and joins are stable is one of the most common reasons children freeze, guess, or quietly dislike reading.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Move to the mushaf when your child can read an <em>unfamiliar</em> Qaida line slowly and accurately — not only memorised examples — with reliable short vowels, basic joining, and fewer repeated letter mix-ups. The tutor’s readiness check matters more than the last page number in the booklet.
+          </div>
+
+          <h2 id="why-this-search-matters">Why this search has high intent</h2>
+          <p>This is a decision moment. Families are not browsing vaguely; they are choosing the next paid stage of learning. Getting the transition right protects months of Qaida work. Getting it wrong creates “we finished the book” status with weak reading that needs repair later.</p>
+          <p>If you are still early in foundations, start with the <a href="/courses/noorani-qaida-online">Noorani Qaida online course overview</a> and the interactive practice hub at <a href="/noorani-qaida">/noorani-qaida</a>. If your child is already near the end, use the checklist below before celebrating a mushaf start date.</p>
+
+          <h2 id="readiness-checklist">The readiness checklist (use with a tutor)</h2>
+          <table class="np-table">
+            <tr><th>Skill</th><th>Ready signal</th><th>Not ready yet</th></tr>
+            <tr><td>Letter recognition</td><td>Finds letters in start/middle/end shapes with few hesitations</td><td>Confuses similar shapes often (e.g. ب ت ث / ع غ)</td></tr>
+            <tr><td>Short vowels</td><td>Reads fatha/kasra/damma without guessing from memory</td><td>Changes vowel sounds when the word is unfamiliar</td></tr>
+            <tr><td>Joining</td><td>Blends two–three letter joins calmly</td><td>Spells letter-by-letter and cannot reconnect</td></tr>
+            <tr><td>Sukoon / shaddah basics</td><td>Applies simple patterns on known drills</td><td>Skips or invents doubled sounds</td></tr>
+            <tr><td>New-line test</td><td>Reads a line they have not practised this week</td><td>Only succeeds on lines they have memorised</td></tr>
+            <tr><td>Emotion</td><td>Willing to try, accepts gentle correction</td><td>Shuts down, races, or refuses the camera</td></tr>
+          </table>
+          <p>A child can “finish” a booklet while still failing the new-line test. Finishing the pages is not the same as finishing the skill.</p>
+
+          <h2 id="common-mistakes">Mistakes that hurt CTR… and children</h2>
+          <p>Marketing pages sometimes imply that mushaf reading starts on a fixed calendar date. Parents then push. The child looks busy on camera but is guessing. Common traps:</p>
+          <ul>
+            <li><strong>Relative pressure</strong> — “Your cousin already started Quran”</li>
+            <li><strong>Holiday rush</strong> — trying to finish Qaida in one week before travel</li>
+            <li><strong>Skipping hard letters</strong> — especially throat and heavy letters</li>
+            <li><strong>Opening Juz 1 first</strong> — long ayahs overwhelm new readers</li>
+            <li><strong>Parents correcting makharij without training</strong> — mixed models confuse the child</li>
+          </ul>
+          <p>For timelines that stay realistic, see <a href="/blog/how-long-does-noorani-qaida-take">how long Noorani Qaida takes</a>. Speed is not a ranking factor with Allah — accuracy is a mercy to the child.</p>
+
+          <h2 id="bridge-plan">A gentle 4-week bridge from Qaida to mushaf</h2>
+          <p>When the tutor agrees readiness is close, do not leap overnight. Use a bridge:</p>
+          <ol>
+            <li><strong>Week 1 — Mixed drills:</strong> 70% Qaida review, 30% very short known phrases from Juz Amma the child already hears in salah.</li>
+            <li><strong>Week 2 — Finger tracking:</strong> Child points under each word in a large-print mushaf while reading slowly.</li>
+            <li><strong>Week 3 — Unfamiliar short ayahs:</strong> Tutor chooses lines the child has not memorised, still short.</li>
+            <li><strong>Week 4 — Rhythm check:</strong> Slightly longer phrases only if accuracy holds; otherwise stay on short ayahs.</li>
+          </ol>
+          <div class="gold-box">
+            <p><strong>Where to start in the mushaf:</strong> Most children do better beginning with short surahs toward the end of the Quran (Juz Amma) rather than Surah Al-Baqarah. Familiar sound + short length builds confidence. Ask the tutor which surah fits your child’s current accuracy.</p>
+          </div>
+
+          <h2 id="parent-role">What parents should (and should not) do at home</h2>
+          <p>You do not need to be an Arabic teacher to support the transition. Your job is routine and calm observation:</p>
+          <ul>
+            <li>Keep home practice to the tutor’s two targets only</li>
+            <li>Listen for hesitation and guessing — report patterns to the tutor</li>
+            <li>Praise careful looking more than speed</li>
+            <li>Do not invent Tajweed lectures between lessons</li>
+            <li>Protect sleep and after-school energy so the mushaf does not become a nightly fight</li>
+          </ul>
+          <p>Parents who do not speak Arabic can still raise strong readers — see <a href="/blog/parents-dont-speak-arabic-child-learn-quran">parents who don’t speak Arabic</a> for role clarity.</p>
+
+          <h2 id="online-help">Why live online correction helps at this stage</h2>
+          <p>The Qaida-to-mushaf jump is where wrong habits become expensive. A live tutor hears every line. Apps and PDFs cannot reliably catch a soft ع or a flattened ق. One-to-one online lessons also let the tutor slow the page density when the child’s eyes overload — something group weekend classes often cannot do in two minutes of turn-taking.</p>
+          <p>If you want age-appropriate live pacing for this stage, explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> and request a placement check in the free trial: “Near end of Qaida — please test mushaf readiness.”</p>
+
+          <h2 id="red-flags">Red flags that you moved too early</h2>
+          <ul>
+            <li>Child guesses whole words from memory instead of reading letters</li>
+            <li>Same letter errors return every session with no improvement</li>
+            <li>Child asks to “just recite from memory” and avoids looking at the page</li>
+            <li>Tears or shutdown when a new ayah appears</li>
+            <li>Parents feel social pressure more than educational confidence</li>
+          </ul>
+          <p>If two or more appear, step back to a Qaida bridge week. That is progress, not failure.</p>
+
+          <h2 id="hifz-question">What about starting Hifz at the same time?</h2>
+          <p>Memorisation on top of weak reading multiplies stress. Many families do better securing calm mushaf reading first, then adding light memorisation of short surahs the child can also decode. Hifz without reading often creates beautiful audio memory with fragile independence. Discuss sequencing with the tutor rather than copying another family’s timeline.</p>
+
+          <h2 id="trial-script">What to say in a free trial (copy-paste)</h2>
+          <p>“My child is near the end of Noorani Qaida. Please test whether they can read an unfamiliar line accurately, and tell me honestly if we should bridge longer or start short Juz Amma ayahs. We prefer accuracy over finishing the booklet quickly.”</p>
+          <p>Clear briefs get clearer placement. Book via <a href="/free-quran-classes-online">free trial</a> when you are ready.</p>
+
+          <h2 id="closing">Closing</h2>
+          <p>The highest-CTR question in early Quran learning is not “How fast can we finish?” It is “Are we ready for the next page?” Use the new-line test, trust tutor evidence, bridge gently into Juz Amma, and protect your child’s love of reading. The mushaf will still be there when the foundation is honest.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>Does finishing the Noorani Qaida book mean my child should start the mushaf immediately?<span>+</span></summary><p>Not always. Finishing pages is different from reading unfamiliar lines accurately. Ask the tutor for a readiness check before switching books.</p></details>
+          <details class="faq-acc"><summary>Where should a new Quran reader start in the mushaf?<span>+</span></summary><p>Usually short surahs in Juz Amma with large clear text — not long Madinan ayahs. The tutor should choose the first surah based on the child’s accuracy.</p></details>
+          <details class="faq-acc"><summary>Can we revise a few Qaida lessons while starting Quran?<span>+</span></summary><p>Yes. A bridge period with mixed Qaida review and short mushaf lines is often the healthiest transition.</p></details>
+          <details class="faq-acc"><summary>My child memorised short surahs — does that mean they can read them?<span>+</span></summary><p>Not necessarily. Memory and decoding are different skills. Test reading with the mushaf closed first in the child’s mind, then open — and watch whether eyes track the letters.</p></details>`,
+  },
 };

@@ -525,6 +525,44 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "when-child-ready-qaida-to-quran": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does finishing the Noorani Qaida book mean my child should start the mushaf immediately?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not always. Finishing pages is different from reading unfamiliar lines accurately. Ask the tutor for a readiness check before switching books.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where should a new Quran reader start in the mushaf?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually short surahs in Juz Amma with large clear text — not long Madinan ayahs. The tutor should choose the first surah based on the child’s accuracy.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we revise a few Qaida lessons while starting Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. A bridge period with mixed Qaida review and short mushaf lines is often the healthiest transition.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "My child memorised short surahs — does that mean they can read them?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not necessarily. Memory and decoding are different skills. Test whether the child’s eyes track the letters on the page, not only whether they can recite from memory.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,
