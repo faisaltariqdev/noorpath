@@ -596,6 +596,17 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>What is the best short dua before school for kids?<span>+</span></summary><p>The Sunnah dua for leaving the house, plus Rabbi zidni ilma. Together they take under a minute and cover trust in Allah and asking for knowledge.</p></details>
           <details class="faq-acc"><summary>Can kids say dua in English if Arabic is hard?<span>+</span></summary><p>Yes. Teach a short Arabic line gradually, and let them add a personal English dua. Allah hears every language. Arabic can grow with age and practice.</p></details>
           <details class="faq-acc"><summary>Should we recite dua in the car or at the door?<span>+</span></summary><p>Either works. The door is ideal for the leaving-home dua. The car is fine for Rabbi zidni ilma and a parent’s quiet prayer if mornings are rushed.</p></details>
-          <details class="faq-acc"><summary>How do we keep the habit during exams and busy weeks?<span>+</span></summary><p>Never drop below the two core lines. Add longer adhkar only when the routine is stable. Pair school stress with calm dua, not more pressure.</p></details>`,
+          <details class="faq-acc"><summary>How do we keep the habit during exams and busy weeks?<span>+</span></summary><p>Never drop below the two core lines. Add longer adhkar only when the routine is stable. Pair school stress with calm dua, not more pressure.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
+              <li><a href="/blog/dua-entering-leaving-home" style="color:var(--emerald);font-weight:600;">Dua for Entering &amp; Leaving Home</a></li>
+              <li><a href="/blog/dua-before-and-after-eating" style="color:var(--emerald);font-weight:600;">Dua Before &amp; After Eating</a></li>
+              <li><a href="/blog/dua-before-sleeping-islam" style="color:var(--emerald);font-weight:600;">Dua Before Sleeping in Islam</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+            </ul>
+          </div>`,
   },
 };

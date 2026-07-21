@@ -499,6 +499,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <div class="highlight-box">
             <strong>Want correct pronunciation from day one?</strong> A live tutor hears and fixes each word. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
+              <li><a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">Dua Before School for Kids</a></li>
+              <li><a href="/blog/dua-before-and-after-eating" style="color:var(--emerald);font-weight:600;">Dua Before &amp; After Eating</a></li>
+              <li><a href="/blog/dua-before-sleeping-islam" style="color:var(--emerald);font-weight:600;">Dua Before Sleeping in Islam</a></li>
+              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English</a></li>
+            </ul>
           </div>`,
   },
 
@@ -595,6 +606,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <div class="gold-box">
             <strong>Test the proposed match before enrolling.</strong> Request a <a href="/online-quran-classes#cta">free 30-minute trial class</a>, ask about the tutor&apos;s relevant credentials and assess the lesson fit. No credit card is required.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
+              <li><a href="/blog/how-to-choose-online-quran-teacher" style="color:var(--emerald);font-weight:600;">How to Choose an Online Quran Teacher</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+              <li><a href="/blog/learn-quran-online-adult-beginner-guide" style="color:var(--emerald);font-weight:600;">Learn Quran Online as an Adult Beginner</a></li>
+            </ul>
           </div>`,
   },
   "learn-quran-as-an-adult-never-too-late": {
@@ -817,6 +839,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <div class="gold-box">
             <strong>Run the checklist on us.</strong> Book a <a href="/online-quran-classes#cta">free 30-minute trial</a>, use the deliberate-mistake test, ask all 7 questions — then decide. No credit card required.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
+              <li><a href="/blog/online-quran-classes-cost-pricing-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes Cost &amp; Pricing</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+              <li><a href="/blog/learn-quran-online-adult-beginner-guide" style="color:var(--emerald);font-weight:600;">Learn Quran Online as an Adult Beginner</a></li>
+            </ul>
           </div>`,
   },
   "finish-quran-in-ramadan-30-day-plan": {
@@ -1025,6 +1058,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <div class="gold-box">
             <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/online-quran-classes#cta">Book a free 30-minute trial</a> for kids or adults.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
+              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning</a></li>
+              <li><a href="/blog/dua-for-parents-rabbirhamhuma" style="color:var(--emerald);font-weight:600;">Dua for Parents — Rabbirhamhuma</a></li>
+            </ul>
           </div>`,
   },
   "dua-before-and-after-eating": {
@@ -1082,6 +1126,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <div class="gold-box">
             <strong>Want a tutor to teach your child all the daily duas with correct Arabic?</strong> Ages 4+ welcome. <a href="/online-quran-classes-for-kids">Book a free 30-minute kids trial</a> — no credit card needed.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
+              <li><a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">Dua Before School for Kids</a></li>
+              <li><a href="/blog/dua-before-sleeping-islam" style="color:var(--emerald);font-weight:600;">Dua Before Sleeping in Islam</a></li>
+              <li><a href="/blog/dua-entering-leaving-home" style="color:var(--emerald);font-weight:600;">Dua for Entering &amp; Leaving Home</a></li>
+              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English</a></li>
+            </ul>
           </div>`,
   },
   "islamic-months-names-in-order": {

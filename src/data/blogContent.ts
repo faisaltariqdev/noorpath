@@ -108,6 +108,17 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box">
             <strong>Want your child to learn Allahu Akbar, Salah and daily dhikr with correct pronunciation?</strong> NoorPath Academy teaches Islamic phrases, Noorani Qaida and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory Be to Allah</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning in English</a></li>
+              <li><a href="/blog/la-ilaha-illallah-meaning" style="color:var(--emerald);font-weight:600;">La Ilaha Illallah Meaning — First Kalima</a></li>
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
+            </ul>
           </div>`,
   },
   "la-ilaha-illallah-meaning": {
@@ -168,9 +179,11 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2 id="related">Related guides</h2>
           <ul>
+            <li><a href="/blog/islamic-phrases-meaning">30 Islamic Phrases — Meanings &amp; When to Say</a></li>
+            <li><a href="/blog/allahu-akbar-meaning-in-english">Allahu Akbar Meaning in English</a></li>
+            <li><a href="/blog/alhamdulillah-meaning-in-english">Alhamdulillah Meaning in English</a></li>
             <li><a href="/blog/six-kalimas-of-islam">6 Kalimas of Islam — Full Arabic &amp; English</a></li>
             <li><a href="/blog/five-pillars-of-islam-explained">Five Pillars of Islam Explained</a></li>
-            <li><a href="/blog/islamic-phrases-meaning">30 Islamic Phrases — Meanings &amp; When to Say</a></li>
             <li><a href="/blog/surah-ikhlas-benefits">Surah Ikhlas — Pure Tawheed in 4 Verses</a></li>
           </ul>
 
@@ -266,6 +279,17 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box">
             <strong>Want your child to learn bedtime duas with correct pronunciation?</strong> NoorPath Academy teaches sleeping adhkar, daily duas and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
+              <li><a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">Dua Before School for Kids</a></li>
+              <li><a href="/blog/dua-before-and-after-eating" style="color:var(--emerald);font-weight:600;">Dua Before &amp; After Eating</a></li>
+              <li><a href="/blog/dua-entering-leaving-home" style="color:var(--emerald);font-weight:600;">Dua for Entering &amp; Leaving Home</a></li>
+              <li><a href="/blog/morning-evening-adhkar-dhikr" style="color:var(--emerald);font-weight:600;">Morning &amp; Evening Adhkar</a></li>
+            </ul>
           </div>`,
   },
   "evil-eye-dua-nazar-ruqyah": {
@@ -676,6 +700,17 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box">
             <strong>Want your child to learn Quranic duas with correct pronunciation and meaning?</strong> NoorPath Academy teaches <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>, Noorani Qaida, Quran with Tajweed and Islamic Studies in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+          </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:600;">20 Essential Duas for Kids to Memorize</a></li>
+              <li><a href="/blog/dua-before-sleeping-islam" style="color:var(--emerald);font-weight:600;">Dua Before Sleeping in Islam</a></li>
+              <li><a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">Dua Before School for Kids</a></li>
+              <li><a href="/blog/dua-entering-leaving-home" style="color:var(--emerald);font-weight:600;">Dua for Entering &amp; Leaving Home</a></li>
+              <li><a href="/blog/inna-lillahi-wa-inna-ilayhi-rajiun-meaning" style="color:var(--emerald);font-weight:600;">Inna Lillahi Meaning</a></li>
+            </ul>
           </div>`,
   },
   "surah-ikhlas-benefits": {
@@ -1773,13 +1808,17 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Explore Each Phrase in Depth</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory be to Allah</a></li>
-              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
-              <li><a href="/blog/jazakallah-khair-meaning" style="color:var(--emerald);font-weight:600;">JazakAllah Khair Meaning &amp; Response</a></li>
-              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning &amp; Evil Eye Protection</a></li>
-              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning &amp; Benefits</a></li>
-              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning &amp; Correct Usage</a></li>
               <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning — In the Name of Allah</a></li>
+              <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory be to Allah</a></li>
+              <li><a href="/blog/allahu-akbar-meaning-in-english" style="color:var(--emerald);font-weight:600;">Allahu Akbar Meaning in English</a></li>
+              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning &amp; Evil Eye Protection</a></li>
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning &amp; Correct Usage</a></li>
+              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning &amp; Benefits</a></li>
+              <li><a href="/blog/jazakallah-khair-meaning" style="color:var(--emerald);font-weight:600;">JazakAllah Khair Meaning &amp; Response</a></li>
+              <li><a href="/blog/la-ilaha-illallah-meaning" style="color:var(--emerald);font-weight:600;">La Ilaha Illallah Meaning — The First Kalima</a></li>
+              <li><a href="/blog/inna-lillahi-wa-inna-ilayhi-rajiun-meaning" style="color:var(--emerald);font-weight:600;">Inna Lillahi Meaning — Condolence Phrase</a></li>
+              <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);font-weight:600;">99 Names of Allah (Asmaul Husna)</a></li>
             </ul>
           </div>`,
   },
@@ -1863,8 +1902,10 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
               <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
               <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+              <li><a href="/blog/allahu-akbar-meaning-in-english" style="color:var(--emerald);font-weight:600;">Allahu Akbar Meaning in English</a></li>
+              <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning in English</a></li>
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
               <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning &amp; Benefits</a></li>
-              <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);font-weight:600;">99 Names of Allah — Asmaul Husna</a></li>
             </ul>
           </div>`,
   },
@@ -1942,6 +1983,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory be to Allah</a></li>
               <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning &amp; Evil Eye Protection</a></li>
               <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
+              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English</a></li>
+              <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
             </ul>
           </div>`,
   },
@@ -3430,38 +3473,16 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <a href="/blog/ayatul-kursi-arabic-english-benefits" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Ayatul Kursi — Arabic, Translation & Benefits</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="/blog/surah-yaseen-arabic-english" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Quran</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Surah Yaseen Full Arabic + Translation</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="/blog/duas-for-kids-to-memorize" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Daily Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">20 Essential Duas for Kids to Memorize</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules Complete Guide</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>`,
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+            <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning in English</a></li>
+            <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning</a></li>
+            <li><a href="/blog/allahu-akbar-meaning-in-english" style="color:var(--emerald);font-weight:600;">Allahu Akbar Meaning in English</a></li>
+            <li><a href="/blog/la-ilaha-illallah-meaning" style="color:var(--emerald);font-weight:600;">La Ilaha Illallah Meaning</a></li>
+            <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
+            <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);font-weight:600;">Ayatul Kursi — Arabic, Translation &amp; Benefits</a></li>
+          </ul>
+        </div>`,
   },
   "alhamdulillah-meaning-in-english": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -4527,22 +4548,15 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="/blog/tajweed-rules-complete-guide" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules for Beginners</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>`,
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
+            <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+            <li><a href="/blog/learn-quran-online-adult-beginner-guide" style="color:var(--emerald);font-weight:600;">Learn Quran Online as an Adult Beginner</a></li>
+            <li><a href="/blog/online-quran-classes-cost-pricing-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes Cost &amp; Pricing Guide</a></li>
+            <li><a href="/blog/how-to-choose-online-quran-teacher" style="color:var(--emerald);font-weight:600;">How to Choose an Online Quran Teacher</a></li>
+            <li><a href="/blog/tajweed-rules-complete-guide" style="color:var(--emerald);font-weight:600;">Tajweed Rules for Beginners</a></li>
+          </ul>
+        </div>`,
   },
   "best-age-to-start-quran-learning": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -5163,22 +5177,15 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <a href="/blog/how-to-teach-quran-to-kids" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">How to Teach Quran to Kids</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="/blog/best-age-to-start-quran-learning" style="text-decoration:none;">
-                <div class="blog-card">
-                  <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Parenting</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Best Age to Start Quran Learning</div></div>
-                  <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
-                </div>
-              </a>`,
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">Dua Before School for Kids — Morning Routine</a></li>
+            <li><a href="/blog/dua-before-and-after-eating" style="color:var(--emerald);font-weight:600;">Dua Before &amp; After Eating</a></li>
+            <li><a href="/blog/dua-before-sleeping-islam" style="color:var(--emerald);font-weight:600;">Dua Before Sleeping in Islam</a></li>
+            <li><a href="/blog/dua-entering-leaving-home" style="color:var(--emerald);font-weight:600;">Dua for Entering &amp; Leaving Home</a></li>
+            <li><a href="/blog/dua-for-parents-rabbirhamhuma" style="color:var(--emerald);font-weight:600;">Dua for Parents — Rabbirhamhuma</a></li>
+            <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids</a></li>
+          </ul>
+        </div>`,
   },
   "how-to-memorize-quran-faster": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -6484,12 +6491,15 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
         <div style="margin-top:56px;border-top:1px solid var(--border);padding-top:40px;">
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
-          <div class="row g-3">
-            <div class="col-sm-6"><a href="/blog/islamic-phrases-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Knowledge</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">30 Common Islamic Phrases & Their Meanings</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/subhanallah-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Dhikr & Duas</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Subhanallah — Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/alhamdulillah-meaning-in-english" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Alhamdulillah — Meaning & When to Say It</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/astaghfirullah-meaning" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic Phrases</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Astaghfirullah — Meaning & Benefits</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a></div>
-            <div class="col-sm-6"><a href="/blog/99-names-of-allah-asmaul-husna" style="text-decoration:none;"><div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Islamic</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">99 Names of Allah (Asmaul Husna)</div></div><div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div></div></a>`,
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+            <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
+            <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning</a></li>
+            <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning</a></li>
+            <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning</a></li>
+            <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English</a></li>
+          </ul>
+        </div>`,
   },
   "noorani-qaida-complete-guide": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -8326,6 +8336,17 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   Tutor and timezone availability are confirmed after your request.<br/><br/>
   <a href="/online-quran-classes#cta" style="display:inline-block;background:var(--emerald);color:#fff;padding:14px 32px;border-radius:50px;font-weight:700;text-decoration:none;margin-top:8px;">Book Your Free Trial Class →</a>
 </div>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
+              <li><a href="/blog/how-to-choose-online-quran-teacher" style="color:var(--emerald);font-weight:600;">How to Choose an Online Quran Teacher</a></li>
+              <li><a href="/blog/online-quran-classes-cost-pricing-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes Cost &amp; Pricing</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+              <li><a href="/blog/learn-quran-online-adult-beginner-guide" style="color:var(--emerald);font-weight:600;">Learn Quran Online as an Adult Beginner</a></li>
+            </ul>
+          </div>
     `,
   },
   "inshallah-meaning-in-english": {
@@ -8502,11 +8523,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
               <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning in English — When to Say It</a></li>
               <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — Full Guide with Benefits</a></li>
-              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English — Full Form & Arabic</a></li>
-              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning — Arabic & Daily Istighfar</a></li>
-              <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);font-weight:600;">99 Names of Allah (Asmaul Husna) — Complete List</a></li>
+              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English — Full Form &amp; Arabic</a></li>
+              <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning — Arabic &amp; Daily Istighfar</a></li>
+              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory Be to Allah</a></li>
             </ul>
           </div>`,
   },
@@ -8764,12 +8786,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Guides</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-              <li><a href="/learn-quran-online" style="color:var(--emerald);font-weight:600;">Learn Quran Online — Live 1-on-1 Classes</a></li>
-              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy (2026)</a></li>
-              <li><a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide — Start Here</a></li>
               <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
-              <li><a href="/blog/tajweed-rules-complete-guide" style="color:var(--emerald);font-weight:600;">Tajweed Rules — Complete Guide</a></li>
-              <li><a href="/blog/best-age-to-start-quran-learning" style="color:var(--emerald);font-weight:600;">Best Age to Start Quran Learning (For Your Children)</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy (2026)</a></li>
+              <li><a href="/blog/how-to-choose-online-quran-teacher" style="color:var(--emerald);font-weight:600;">How to Choose an Online Quran Teacher</a></li>
+              <li><a href="/blog/online-quran-classes-cost-pricing-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes Cost &amp; Pricing</a></li>
+              <li><a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide — Start Here</a></li>
+              <li><a href="/learn-quran-online" style="color:var(--emerald);font-weight:600;">Learn Quran Online — Live 1-on-1 Classes</a></li>
             </ul>
           </div>`,
   },
@@ -8990,10 +9012,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-              <li><a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Landing Page</a></li>
-              <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids at Home</a></li>
-              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
               <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
+              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
+              <li><a href="/blog/how-to-choose-online-quran-teacher" style="color:var(--emerald);font-weight:600;">How to Choose an Online Quran Teacher</a></li>
+              <li><a href="/blog/online-quran-classes-cost-pricing-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes Cost &amp; Pricing</a></li>
+              <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids at Home</a></li>
+              <li><a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Landing Page</a></li>
             </ul>
           </div>`,
   },
@@ -9061,10 +9085,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
               <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
               <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning</a></li>
               <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning</a></li>
-              <li><a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha — Arabic & English</a></li>
+              <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning</a></li>
+              <li><a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha — Arabic &amp; English</a></li>
             </ul>
           </div>`,
   },
