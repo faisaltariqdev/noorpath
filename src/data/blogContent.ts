@@ -8352,11 +8352,18 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .compare-roman { font-style:italic; font-size:.85rem; color:#6b7280; margin-bottom:4px; }
     .compare-when { font-size:.82rem; color:var(--charcoal); font-weight:600; }
     .mistake-box { background:#fff5f5; border-left:4px solid #ef4444; border-radius:8px; padding:18px 22px; margin:20px 0; }
+    .faq-acc { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-acc summary { padding: 16px 20px; font-weight: 700; cursor: pointer; background: var(--ivory); color: var(--charcoal); list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: .95rem; }
+    .faq-acc summary::-webkit-details-marker { display: none; }
+    .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
+    .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width:576px) { .break-grid,.compare-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
-    content: `<p><strong>Inshallah</strong> (إِنْ شَاءَ اللَّهُ) is spoken billions of times every day across the Muslim world — when making plans, sharing hopes, or answering questions about the future. Yet many people use it without knowing its full meaning, Quranic weight, and the humility it represents in Islam.</p>
+    content: `<p><strong>Inshallah meaning in English</strong> is simple and powerful: <strong>“If Allah wills”</strong> (also said as “God willing”). In Arabic it is written <strong>إِنْ شَاءَ اللَّهُ</strong> and often spelled Inshallah, In sha Allah, or Insha’Allah. Muslims say it when speaking about the future — plans, hopes, travel, exams, work, or marriage — because only Allah controls what actually happens.</p>
+
+          <p>This guide gives you the clear English meaning, word-by-word Arabic, Quranic command to say it, when to use it, how to reply, and the difference between Inshallah, Mashallah, and Alhamdulillah — so you can use it with confidence, not habit alone.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Inshallah meaning in English</strong> is "If Allah wills" or "God willing." Muslims say Inshallah when talking about future plans, hopes, or intentions — acknowledging that nothing happens without Allah's permission. It is an act of tawakkul (trust in Allah) and submission to His divine decree.
+            <strong>Quick answer:</strong> <strong>Inshallah = “If Allah wills.”</strong> Say it before future plans. It is tawakkul (trust in Allah), not an excuse to cancel. The Quran (18:23–24) teaches: do not say “I will do that tomorrow” without adding Inshallah.
           </div>
 
           <div class="word-hero">
@@ -8480,8 +8487,16 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li>Pair with other daily phrases: Bismillah (starting), Alhamdulillah (thanking), Mashallah (admiring)</li>
           </ul>
 
+          <h2 id="faq">Inshallah FAQ — People Also Ask</h2>
+          <details class="faq-acc"><summary>What does Inshallah mean in English?<span>+</span></summary><p>Inshallah (إِنْ شَاءَ اللَّهُ) means “If Allah wills” or “God willing.” It shows humility and trust that only Allah controls future outcomes.</p></details>
+          <details class="faq-acc"><summary>Is Inshallah the same as In sha Allah?<span>+</span></summary><p>Yes. They are the same Arabic phrase. “In sha Allah” separates the three words; “Inshallah” is the common one-word spelling in English.</p></details>
+          <details class="faq-acc"><summary>When should you say Inshallah?<span>+</span></summary><p>Say it for any future plan or hope — travel, exams, meetings, marriage, health, or “see you tomorrow.” Quran 18:23–24 teaches not to promise tomorrow without Inshallah.</p></details>
+          <details class="faq-acc"><summary>How do you reply when someone says Inshallah?<span>+</span></summary><p>Common replies: “Ameen,” “Inshallah,” “Allah yassir” (may Allah make it easy), or “BarakAllahu feek” when they make a kind wish for you.</p></details>
+          <details class="faq-acc"><summary>What is the difference between Inshallah and Mashallah?<span>+</span></summary><p>Inshallah is for the future (“if Allah wills”). Mashallah is for something already present that you admire (“what Allah has willed”). Do not mix them.</p></details>
+          <details class="faq-acc"><summary>Can children learn Inshallah easily?<span>+</span></summary><p>Yes. Use it in daily talk before homework, outings, and weekend plans. Pair it with Bismillah and Alhamdulillah so Islamic phrases become natural habits.</p></details>
+
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and complete Islamic education in live 1-on-1 classes for kids and adults worldwide. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free 30-minute trial class →</a>
+            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">online Quran classes for kids</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -8489,6 +8504,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
               <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning in English — When to Say It</a></li>
               <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — Full Guide with Benefits</a></li>
+              <li><a href="/blog/bismillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Bismillah Meaning in English — Full Form & Arabic</a></li>
               <li><a href="/blog/astaghfirullah-meaning" style="color:var(--emerald);font-weight:600;">Astaghfirullah Meaning — Arabic & Daily Istighfar</a></li>
               <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);font-weight:600;">99 Names of Allah (Asmaul Husna) — Complete List</a></li>
             </ul>

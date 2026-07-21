@@ -939,17 +939,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "inshallah-meaning-in-english",
     title: "Inshallah Meaning in English — In Sha Allah Explained",
-    description: "What does Inshallah mean? “If Allah wills.” Arabic (إن شاء الله), correct usage, Quran roots, response tips, and common mistakes — clear & short.",
+    description: "Inshallah meaning in English: “If Allah wills.” Arabic إن شاء الله, when to say it, how to reply, vs Mashallah, and Quran 18:23–24 — clear FAQ guide.",
     category: "Dhikr & Duas",
     date: "2026-06-24",
     updatedAt: "2026-07-21",
-    readTime: "9 min",
+    readTime: "10 min",
     keywords: [
       "inshallah meaning", "in sha allah meaning", "inshallah in english", "what does inshallah mean",
       "inshallah arabic", "inshallah response", "in sha Allah", "if Allah wills meaning",
       "inshallah pronunciation", "inshallah vs mashallah", "inshallah in quran",
     ],
-    excerpt: "Inshallah (إِنْ شَاءَ اللَّهُ) means 'If Allah wills' — a phrase of hope, humility, and trust in Allah's plan for the future. Learn when to say it, its Quranic roots, and how to respond.",
+    excerpt: "Inshallah meaning in English is “If Allah wills.” Learn Arabic spelling, Quran roots, when to say it, how to reply, and Inshallah vs Mashallah — with FAQ.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
