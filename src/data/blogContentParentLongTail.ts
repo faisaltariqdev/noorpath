@@ -505,4 +505,97 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>Can we revise a few Qaida lessons while starting Quran?<span>+</span></summary><p>Yes. A bridge period with mixed Qaida review and short mushaf lines is often the healthiest transition.</p></details>
           <details class="faq-acc"><summary>My child memorised short surahs — does that mean they can read them?<span>+</span></summary><p>Not necessarily. Memory and decoding are different skills. Test reading with the mushaf closed first in the child’s mind, then open — and watch whether eyes track the letters.</p></details>`,
   },
+
+  "dua-before-school-for-kids": {
+    style: S,
+    content: `<p>Parents searching for a <strong>dua before school for kids</strong> usually want something short, authentic, and doable on a busy morning — not a long list that never gets used. School days are noisy: bags, breakfast, shoes, and the clock. A two-minute Sunnah habit before leaving home can still fill the child’s day with protection, trust in Allah, and a calmer heart.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Teach your child the Sunnah dua for leaving the house, add <em>Rabbi zidni ilma</em> for knowledge, and keep one short personal dua in their own words. Consistency beats length. Arabic + simple English meaning helps children understand what they are asking Allah for.
+          </div>
+
+          <h2 id="why-morning-dua">Why a before-school dua matters</h2>
+          <p>Morning is when intention is set. Children step into classrooms, friendships, tests, and screens. A dua does not replace parenting, packed lunches, or sleep — it connects the school day to Allah. Many Western Muslim families already rush; the goal is a <em>tiny reliable ritual</em>, not perfection.</p>
+          <p>If you want a fuller daily dua set for children, also see our guide to <a href="/blog/duas-for-kids-to-memorize">duas for kids to memorize</a>.</p>
+
+          <h2 id="core-duas">3 core duas before school (Arabic, transliteration, English)</h2>
+
+          <h3>1) Dua for leaving the house (Sunnah)</h3>
+          <div class="gold-box">
+            <p><strong>Arabic:</strong> بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ</p>
+            <p><strong>Transliteration:</strong> Bismillahi tawakkaltu ‘ala Allah, wa la hawla wa la quwwata illa billah.</p>
+            <p style="margin-bottom:0;"><strong>English:</strong> In the name of Allah, I place my trust in Allah, and there is no might nor power except with Allah.</p>
+          </div>
+          <p>This is the classic “stepping out” dua. Say it at the door with shoes on. Parents can say it first; children repeat one phrase at a time.</p>
+
+          <h3>2) Dua for knowledge (Qur’an)</h3>
+          <div class="gold-box">
+            <p><strong>Arabic:</strong> رَبِّ زِدْنِي عِلْمًا</p>
+            <p><strong>Transliteration:</strong> Rabbi zidni ‘ilma.</p>
+            <p style="margin-bottom:0;"><strong>English:</strong> My Lord, increase me in knowledge. (Surah Taha 20:114)</p>
+          </div>
+          <p>Perfect before school or homework. It teaches that learning is an act of turning to Allah — not only chasing grades. Pair it with exam duas later in the year from our <a href="/blog/dua-for-success-exams">dua for success in exams</a> guide.</p>
+
+          <h3>3) Short protection habit (easy for young kids)</h3>
+          <p>For younger children, keep protection simple: say <strong>Bismillah</strong> clearly, and recite the three Quls when you have thirty extra seconds in the car or at the gate. A full morning adhkar set can grow later — see <a href="/blog/morning-evening-adhkar-dhikr">morning and evening adhkar</a>.</p>
+
+          <h2 id="2-minute-routine">A 2-minute before-school routine parents can keep</h2>
+          <table class="np-table">
+            <tr><th>Step</th><th>What to do</th><th>Time</th></tr>
+            <tr><td>1</td><td>Smile + “Assalamu Alaikum” at the door</td><td>10 sec</td></tr>
+            <tr><td>2</td><td>Leaving-home dua together</td><td>30–40 sec</td></tr>
+            <tr><td>3</td><td>Rabbi zidni ilma</td><td>10 sec</td></tr>
+            <tr><td>4</td><td>One personal line: “Ya Allah, help me be kind and focused today.”</td><td>15 sec</td></tr>
+            <tr><td>5</td><td>Parent dua for the child quietly</td><td>20 sec</td></tr>
+          </table>
+          <p>If the morning is chaotic, do steps 2 and 3 only. A short habit that happens four days a week beats a long habit that happens never.</p>
+
+          <h2 id="age-by-age">How to teach it by age</h2>
+          <ul>
+            <li><strong>Ages 3–5:</strong> One phrase only — “Bismillah” at the door, then parent completes the dua. Use a sticker chart for “dua before school.”</li>
+            <li><strong>Ages 6–8:</strong> Child says the leaving-home dua with help; add Rabbi zidni ilma.</li>
+            <li><strong>Ages 9–12:</strong> Child leads the door dua; parent only prompts meaning once a week.</li>
+            <li><strong>Teens:</strong> Respect privacy — offer the habit, do not force performance in front of siblings.</li>
+          </ul>
+
+          <h2 id="parent-dua">A parent dua for your child’s school day</h2>
+          <p>You can ask Allah in any sincere language. Example in English:</p>
+          <p><em>“O Allah, protect my child today in body and heart. Grant them beneficial knowledge, good friends, patience, and honesty. Keep them away from harm and bring them home safely.”</em></p>
+          <p>Make this after Fajr, in the car, or when you wave goodbye. Children notice when parents pray for them — it builds emotional safety.</p>
+
+          <h2 id="common-mistakes">Mistakes that make the habit die</h2>
+          <ul>
+            <li>Starting with ten duas on day one</li>
+            <li>Scolding when the child forgets</li>
+            <li>Racing so fast that dua feels like another chore</li>
+            <li>Never explaining the English meaning</li>
+            <li>Only using dua before exams, never on ordinary Mondays</li>
+          </ul>
+          <p>Keep the tone warm. If you miss a morning, restart tomorrow without guilt lectures.</p>
+
+          <h2 id="quran-link">Link school mornings to Quran learning</h2>
+          <p>Dua opens the heart; Quran learning builds the skill. Many families place a short Quran slot after school or in the evening, once the morning rush is over. Live 1-to-1 classes help children who need gentle correction and a fixed weekly appointment.</p>
+          <p>If you are building both habits — morning dua and Quran reading — explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> and start with a free trial when ready.</p>
+
+          <div class="gold-box">
+            <p><strong>NoorPath tip:</strong> For ages 3–6, interactive Noorani Qaida (Kids Studio style learning) can sit beside the school week so deen time feels engaging, not like another homework pile. Website: <a href="https://www.noorpath.online/">www.noorpath.online</a></p>
+          </div>
+
+          <h2 id="print-card">Printable “door card” text (copy for your fridge)</h2>
+          <ol>
+            <li>Bismillahi tawakkaltu ‘ala Allah, wa la hawla wa la quwwata illa billah.</li>
+            <li>Rabbi zidni ‘ilma.</li>
+            <li>Ya Allah, help me be kind and focused today.</li>
+          </ol>
+          <p>Laminate it near the shoes. Visual cues beat memory on school mornings.</p>
+
+          <h2 id="closing">Closing</h2>
+          <p>The best <strong>dua before school for kids</strong> is the one your family actually says. Start with the leaving-home Sunnah, add Rabbi zidni ilma, keep meaning simple, and protect the habit with kindness. Over months, your child learns to begin the day with Allah — before the classroom, the test, or the screen.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>What is the best short dua before school for kids?<span>+</span></summary><p>The Sunnah dua for leaving the house, plus Rabbi zidni ilma. Together they take under a minute and cover trust in Allah and asking for knowledge.</p></details>
+          <details class="faq-acc"><summary>Can kids say dua in English if Arabic is hard?<span>+</span></summary><p>Yes. Teach a short Arabic line gradually, and let them add a personal English dua. Allah hears every language. Arabic can grow with age and practice.</p></details>
+          <details class="faq-acc"><summary>Should we recite dua in the car or at the door?<span>+</span></summary><p>Either works. The door is ideal for the leaving-home dua. The car is fine for Rabbi zidni ilma and a parent’s quiet prayer if mornings are rushed.</p></details>
+          <details class="faq-acc"><summary>How do we keep the habit during exams and busy weeks?<span>+</span></summary><p>Never drop below the two core lines. Add longer adhkar only when the routine is stable. Pair school stress with calm dua, not more pressure.</p></details>`,
+  },
 };

@@ -563,6 +563,44 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "dua-before-school-for-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best short dua before school for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Sunnah dua for leaving the house, plus Rabbi zidni ilma. Together they take under a minute and cover trust in Allah and asking for knowledge.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can kids say dua in English if Arabic is hard?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Teach a short Arabic line gradually, and let them add a personal English dua. Allah hears every language. Arabic can grow with age and practice.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we recite dua in the car or at the door?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Either works. The door is ideal for the leaving-home dua. The car is fine for Rabbi zidni ilma and a parent’s quiet prayer if mornings are rushed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we keep the habit during exams and busy weeks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Never drop below the two core lines. Add longer adhkar only when the routine is stable. Pair school stress with calm dua, not more pressure.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

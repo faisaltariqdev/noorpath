@@ -1400,6 +1400,27 @@ export const blogPosts: BlogPost[] = [
       "Don’t open the mushaf just because the booklet is finished. Use the unfamiliar-line test, a gentle bridge week plan, and tutor evidence so Quran reading starts with confidence.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "dua-before-school-for-kids",
+    title: "Dua Before School for Kids — Short Morning Routine (Arabic & English)",
+    description:
+      "Best short dua before school for kids: leaving-home Sunnah, Rabbi zidni ilma, 2-minute morning routine, age tips, and a parent prayer for the school day.",
+    category: "Dhikr & Duas",
+    date: "2026-07-21",
+    updatedAt: "2026-07-21",
+    readTime: "10 min",
+    keywords: [
+      "dua before school for kids",
+      "morning dua for kids before school",
+      "dua for children going to school",
+      "leaving home dua for kids",
+      "rabbi zidni ilma for school",
+      "muslim kids morning dua routine",
+    ],
+    excerpt:
+      "A busy-school-morning dua plan parents can actually keep: Sunnah leaving-home dua, Rabbi zidni ilma, age-by-age tips, and a 2-minute door routine.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
