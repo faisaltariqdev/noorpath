@@ -601,6 +601,98 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "interactive-noorani-qaida-kids-studio": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "My child knows letter sounds — should we still start from Alif?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. A good tutor should assess first and begin where the child actually is — usually shapes, vowels, and joining — while patching any weak letters.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is interactive Qaida the same as Quran games with no teacher?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Apps can help review, but live correction of makharij and joining is what prevents wrong habits. Kids Studio style means interactive format plus a real tutor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we go fast if my child already memorised short surahs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can move efficiently past known sounds, but do not skip joining and decoding. Memorisation and reading are different skills.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What age works best for Kids Studio style Qaida?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often ages 4–9 with short attention spans benefit most, but older beginners who dislike dry drills also do well with the same format.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I book a level-matched free trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use the free trial form and describe exact skills and past pain points. Ask for interactive 1-on-1 pacing matched to letter sounds already known.",
+        },
+      },
+    ],
+  },
+  "islamic-knowledge-for-kids-stories-hadith": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What age should Islamic knowledge start?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "As early as 3–4 with Bismillah, kindness, and short Allah-created stories. Formal topic lessons usually work well from about age 5–6 with short sessions.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we teach hadith in Arabic or English first?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Meaning first in the language the child understands. Add a short Arabic phrase when they are ready. Behaviour matters more than perfect pronunciation at the start.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Islamic knowledge replace Noorani Qaida?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Stories build iman; Qaida builds reading. Children need both tracks. Interactive Qaida and story lessons complement each other.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long should a kids Islamic knowledge lesson be?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 10–20 minutes for ages 5–8, and up to 25–30 minutes for ages 9–12 if engagement stays high. Stop while they still want more.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child only wants stories and refuses letters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use stories as the warm-up, then a short letter block as the mission. Keep letter time short and playful. See interactive Qaida guidance if boredom is the real issue.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

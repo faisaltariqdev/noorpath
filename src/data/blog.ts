@@ -1423,6 +1423,56 @@ export const blogPosts: BlogPost[] = [
       "A busy-school-morning dua plan parents can actually keep: Sunnah leaving-home dua, Rabbi zidni ilma, age-by-age tips, and a 2-minute door routine.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "interactive-noorani-qaida-kids-studio",
+    title: "Interactive Noorani Qaida for Kids — Kids Studio Style Learning Parents Prefer",
+    description:
+      "Interactive Noorani Qaida for kids who know letter sounds but get bored by repetition. Pace tips, joined-letter readiness, Kids Studio style practice, and how to book a level-matched free trial.",
+    category: "Kids & Parenting",
+    date: "2026-07-22",
+    updatedAt: "2026-07-22",
+    readTime: "12 min",
+    keywords: [
+      "interactive noorani qaida for kids",
+      "kids studio quran learning",
+      "noorani qaida games for kids",
+      "child knows arabic letters but not joining",
+      "playful quran classes for kids",
+      "fast paced noorani qaida online",
+      "interactive qaida online kids",
+      "quran class child loses interest",
+      "noorani qaida after letter sounds",
+      "fun noorani qaida for children uk",
+    ],
+    excerpt:
+      "If your child knows Arabic letter sounds but loses interest when lessons repeat too much, interactive Noorani Qaida — Kids Studio style learning — can move faster, stay playful, and prepare them for joined letters without skipping foundations.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "islamic-knowledge-for-kids-stories-hadith",
+    title: "Islamic Knowledge for Kids — Stories, Hadith & Character Lessons Ages 3–12",
+    description:
+      "Islamic knowledge for kids beyond Qaida: who is Allah, prophets’ stories, child-friendly hadith, manners, and how interactive lessons build iman for ages 3–12 without heavy textbooks.",
+    category: "Kids & Parenting",
+    date: "2026-07-22",
+    updatedAt: "2026-07-22",
+    readTime: "11 min",
+    keywords: [
+      "islamic knowledge for kids",
+      "islam for children online",
+      "islamic stories for kids",
+      "hadith stories for children",
+      "islamic education for kids ages 3-12",
+      "teach kids about allah",
+      "islamic manners for children",
+      "kids islamic course online",
+      "interactive islamic learning for kids",
+      "prophet stories for muslim kids",
+    ],
+    excerpt:
+      "Children need more than letter practice. This parent guide covers Islamic knowledge for kids — stories, gentle hadith lessons, manners, and interactive learning that builds love for Islam from ages 3–12.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
