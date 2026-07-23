@@ -693,6 +693,144 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "quran-classes-for-autistic-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can autistic children learn Quran online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — many do well with 1-to-1 online lessons when sessions are short, predictable, and sensory-aware. Success depends on tutor fit and realistic goals, not on forcing a standard classroom model.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long should a Quran session be for an autistic child?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 10–20 minutes to start. Some children build to 25 minutes later. Stop while the child is still regulated.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do we need a specialist SEN-qualified tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Specialist training helps, but the non-negotiables are patience, flexibility, listening to parents, and refusing shame-based teaching. Brief the tutor clearly either way.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we pause Quran during meltdowns or school stress?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes yes. A short break or lighter dua-only week can protect long-term love for learning. Restart gently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we do Hifz early?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only if the child enjoys short memorisation without distress. Many families build comfort and letter skills first.",
+        },
+      },
+    ],
+  },
+  "quran-classes-for-adhd-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long should ADHD Quran classes be?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 15–20 minutes of focused work. Some children manage 25 with a mid-lesson reset. Longer is not better if attention collapses.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can kids with ADHD do Hifz?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, with shorter daily targets, strong review systems, and a tutor who designs for attention — not with shame or marathon sittings.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are group classes okay for ADHD?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes later. Many families start 1-to-1 so the child is not competing for turns or overstimulated by peers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child only wants games?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use games as the vehicle for real letter and joining goals. Play without learning targets becomes entertainment, not Quran class.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How often should ADHD kids have Quran class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Short lessons 3–4 times per week often beat one long weekly session. Consistency and calm exits matter more than marathon length.",
+        },
+      },
+    ],
+  },
+  "muslim-homeschool-quran-curriculum": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How many hours of Quran should a homeschool child do?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many families succeed with 20–40 minutes total most days for ages 7–12, mixing live lesson and review. Younger children need less. Quality and calm matter more than clocking hours.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can an online tutor count as part of our curriculum?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes as specialised instruction. Keep simple notes (date, skill, next target) for your own records or local requirements where relevant.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do we need Arabic language as a full subject too?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not at the start. Quranic reading can lead; broader Arabic can grow later if the family wants it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we fall behind the plan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Shrink the plan. Restart with review only for one week. Homeschool flexibility is the advantage — use it without guilt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should siblings share one lesson?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually no for reading skill. Separate short slots protect pace. Shared story time works well for Islamic knowledge.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

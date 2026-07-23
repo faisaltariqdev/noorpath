@@ -827,6 +827,275 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
               <li><a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to Kids</a></li>
               <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
               <li><a href="/blog/arabic-alphabet-for-kids" style="color:var(--emerald);font-weight:600;">Arabic Alphabet for Kids</a></li>
+              <li><a href="/blog/quran-classes-for-autistic-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for Autistic Kids</a></li>
+              <li><a href="/blog/muslim-homeschool-quran-curriculum" style="color:var(--emerald);font-weight:600;">Muslim Homeschool Quran Curriculum</a></li>
+            </ul>
+          </div>`,
+  },
+
+  "quran-classes-for-autistic-kids": {
+    style: S,
+    content: `<p>Parents searching for <strong>Quran classes for autistic kids</strong> are rarely looking for a louder classroom. They want a calm path: short sessions, predictable routines, a patient tutor, and progress that respects how their child processes sound, language, and social demand. This guide explains what autism-friendly online Quran learning can look like — without medical claims, and without pressure to “keep up” with cousins.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Many autistic children learn Quran best in <strong>1-to-1 online sessions</strong> of about <strong>10–20 minutes</strong>, with a quiet setup, visual structure, and a tutor briefed on sensory needs. Goals should be connection and gentle skill — not speed.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>10–20 min</strong><span>Typical calm session</span></div>
+            <div class="stat-pill"><strong>1-to-1</strong><span>Less sensory load</span></div>
+            <div class="stat-pill"><strong>Predictable</strong><span>Same tutor &amp; flow</span></div>
+            <div class="stat-pill"><strong>Parent brief</strong><span>Tutor knows needs</span></div>
+          </div>
+
+          <h2 id="why-standard-classes-fail">Why standard Quran classes often fail autistic learners</h2>
+          <p>Traditional group settings can stack hard demands: background noise, unpredictable turns, long sitting, rapid correction, and social performance. Online 1-to-1 removes some of that load — but only if the tutor adapts. A generic “kids class” on Zoom with the same pace as neurotypical peers can still overwhelm.</p>
+          <p>Related parent guides on attention and comfort: <a href="/blog/child-wont-sit-for-quran-class">my child won’t sit for Quran class</a> and <a href="/blog/online-quran-classes-for-shy-kids">online Quran classes for shy kids</a>. For ADHD-specific pacing, see <a href="/blog/quran-classes-for-adhd-kids">Quran classes for ADHD kids</a>.</p>
+
+          <h2 id="what-works">What autism-friendly Quran learning usually includes</h2>
+          <ul>
+            <li><strong>Micro-lessons</strong> — one clear target (e.g. two letter sounds), then stop while the child still feels safe</li>
+            <li><strong>Visual routine</strong> — same greeting, same order: warm-up → skill → win → goodbye</li>
+            <li><strong>Low sensory screen</strong> — quiet room, soft light, minimal background clutter for the tutor</li>
+            <li><strong>Choice within structure</strong> — “Shall we do Ba or Ta first?” can reduce resistance</li>
+            <li><strong>Parent nearby at first</strong> — co-regulation, then gradual step-back when ready</li>
+            <li><strong>No public performance</strong> — never force recitation for guests as entertainment</li>
+          </ul>
+
+          <h2 id="session-blueprint">A calm session blueprint (15 minutes)</h2>
+          <table class="np-table">
+            <tr><th>Minutes</th><th>Block</th><th>Goal</th></tr>
+            <tr><td>0–2</td><td>Predictable greeting + “today’s one job”</td><td>Safety</td></tr>
+            <tr><td>2–6</td><td>Known sound or dua the child already likes</td><td>Confidence</td></tr>
+            <tr><td>6–12</td><td>One new or review skill only</td><td>Learning</td></tr>
+            <tr><td>12–15</td><td>Celebrate + next-time preview</td><td>Positive exit</td></tr>
+          </table>
+          <p>If energy crashes early, end early. A short successful class beats a long distressed one. Interactive formats can help when attention needs variety — see <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida (Kids Studio)</a>.</p>
+
+          <h2 id="realistic-goals">Realistic goals (not Instagram speed)</h2>
+          <ul>
+            <li>Comfort sitting for the full short slot</li>
+            <li>Tolerating gentle correction without shutdown</li>
+            <li>Stable letter sounds before joining pressure</li>
+            <li>Loving a short dua or Bismillah habit</li>
+          </ul>
+          <p>Hifz intensity can wait. Reading readiness still follows foundations — <a href="/blog/when-child-ready-qaida-to-quran">when is my child ready to move from Qaida to Quran</a>.</p>
+
+          <h2 id="tutor-brief">What to write when booking a free trial</h2>
+          <div class="gold-box">
+            <p>Copy and adapt:</p>
+            <p style="margin-bottom:0;"><em>“Autistic child, age __. Prefers short sessions (10–15 min). Sensitive to loud voices / sudden changes. Knows: __. Struggles with: __. Please use calm pacing, one target per lesson, and warn before transitions. Parent will sit nearby for the first sessions.”</em></p>
+          </div>
+          <p>Book via <a href="/free-quran-classes-online">free trial</a> · explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> · product hub <a href="/noorani-qaida">Noorani Qaida</a>.</p>
+
+          <h2 id="home-supports">Home supports that protect class time</h2>
+          <ul>
+            <li>Same device seat and headphones if helpful</li>
+            <li>Snack and bathroom before class — not mid-lesson chaos</li>
+            <li>One practice cue after class, not a long homework pile</li>
+            <li>Praise effort and calm, not only perfect letters</li>
+          </ul>
+          <p>For daily practice structure: <a href="/blog/quran-practice-routine-at-home-kids">Quran practice routine at home for kids</a>.</p>
+
+          <h2 id="closing">Closing</h2>
+          <p>The best <strong>Quran classes for autistic kids</strong> are not the fastest. They are the ones your child can return to tomorrow without fear. Calm tutors, micro-goals, and parent partnership turn Quran time into a safe attachment to Allah’s Book.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>Can autistic children learn Quran online?<span>+</span></summary><p>Yes — many do well with 1-to-1 online lessons when sessions are short, predictable, and sensory-aware. Success depends on tutor fit and realistic goals, not on forcing a standard classroom model.</p></details>
+          <details class="faq-acc"><summary>How long should a Quran session be for an autistic child?<span>+</span></summary><p>Often 10–20 minutes to start. Some children build to 25 minutes later. Stop while the child is still regulated.</p></details>
+          <details class="faq-acc"><summary>Do we need a specialist SEN-qualified tutor?<span>+</span></summary><p>Specialist training helps, but the non-negotiables are patience, flexibility, listening to parents, and refusing shame-based teaching. Brief the tutor clearly either way.</p></details>
+          <details class="faq-acc"><summary>Should we pause Quran during meltdowns or school stress?<span>+</span></summary><p>Sometimes yes. A short break or lighter dua-only week can protect long-term love for learning. Restart gently.</p></details>
+          <details class="faq-acc"><summary>Can we do Hifz early?<span>+</span></summary><p>Only if the child enjoys short memorisation without distress. Many families build comfort and letter skills first.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/quran-classes-for-adhd-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for ADHD Kids</a></li>
+              <li><a href="/blog/muslim-homeschool-quran-curriculum" style="color:var(--emerald);font-weight:600;">Muslim Homeschool Quran Curriculum</a></li>
+              <li><a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">Interactive Noorani Qaida — Kids Studio</a></li>
+              <li><a href="/blog/child-wont-sit-for-quran-class" style="color:var(--emerald);font-weight:600;">My Child Won’t Sit for Quran Class</a></li>
+              <li><a href="/blog/online-quran-classes-for-shy-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Shy Kids</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+            </ul>
+          </div>`,
+  },
+
+  "quran-classes-for-adhd-kids": {
+    style: S,
+    content: `<p>Parents searching for <strong>Quran classes for ADHD kids</strong> usually already know the pattern: the child starts bright, then drifts, fidgets, argues, or shuts down when lessons feel long or repetitive. The fix is rarely “try harder.” It is better lesson design — shorter blocks, clearer targets, movement, and motivation that protects dignity.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> ADHD-friendly online Quran classes often work best as <strong>15–20 minute</strong> focused 1-to-1 sessions, 3–4 times a week if possible, with a warm-up, one skill target, a movement reset, and a visible win before goodbye.
+          </div>
+
+          <h2 id="why-attention-drops">Why attention drops in Quran class</h2>
+          <ul>
+            <li>Sessions longer than the child’s focus window</li>
+            <li>Too many corrections stacked without a win</li>
+            <li>Dry repetition with no game or variety</li>
+            <li>Late-night slots when the child is already depleted</li>
+            <li>Shame language (“why can’t you sit still?”)</li>
+          </ul>
+          <p>If sitting itself is the battle, also read <a href="/blog/child-wont-sit-for-quran-class">my child won’t sit for Quran class</a>. For autism-specific sensory needs, see <a href="/blog/quran-classes-for-autistic-kids">Quran classes for autistic kids</a>.</p>
+
+          <h2 id="lesson-structure">ADHD-friendly lesson structure</h2>
+          <table class="np-table">
+            <tr><th>Block</th><th>Time</th><th>What happens</th></tr>
+            <tr><td>Landing</td><td>2 min</td><td>Greeting + today&#39;s one mission on screen</td></tr>
+            <tr><td>Sprint</td><td>8–10 min</td><td>Active practice (point, repeat, build a word)</td></tr>
+            <tr><td>Reset</td><td>1–2 min</td><td>Stand, stretch, sip water, quick joke</td></tr>
+            <tr><td>Lock-in</td><td>3–4 min</td><td>Repeat the win; sticker or point on chart</td></tr>
+          </table>
+          <p>Interactive studio-style pacing helps many ADHD learners — explore <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida</a> and the <a href="/noorani-qaida">Noorani Qaida hub</a>.</p>
+
+          <h2 id="frequency-vs-length">Frequency beats marathon length</h2>
+          <p>Three short strong lessons usually beat one long Saturday struggle. Homeschool families can weave this into a weekly map — see <a href="/blog/muslim-homeschool-quran-curriculum">Muslim homeschool Quran curriculum</a>.</p>
+
+          <h2 id="motivation">Motivation without turning Quran into a bribe</h2>
+          <ul>
+            <li>Sticker or point for <em>effort and calm tries</em>, not only perfect letters</li>
+            <li>Privilege rewards (choose tomorrow’s story, pick the game) over constant sweets</li>
+            <li>Name the Islamic intention: “We are learning Allah’s words” — keep heart in the room</li>
+            <li>Avoid public comparison with siblings</li>
+          </ul>
+
+          <h2 id="tutor-notes">Tutor briefing notes that actually help</h2>
+          <div class="gold-box">
+            <p style="margin-bottom:0;"><em>“ADHD, age __. Best before __pm. Needs 15–20 min max, one target only, movement break mid-lesson. Responds to games and clear praise. Please avoid long lectures and stacked criticism. Parent will keep phone/toys out of reach.”</em></p>
+          </div>
+          <p><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a> · <a href="/blog/how-to-choose-online-quran-teacher">How to choose an online Quran teacher</a>.</p>
+
+          <h2 id="home-practice">Home practice that fits ADHD brains</h2>
+          <ul>
+            <li>8–12 minutes most days, same clock time</li>
+            <li>Timer visible; stop when it rings</li>
+            <li>Review yesterday’s win before anything new</li>
+            <li>Standing practice or whiteboard sometimes beats sitting still</li>
+          </ul>
+          <p>Full routine ideas: <a href="/blog/quran-practice-routine-at-home-kids">Quran practice routine at home</a>.</p>
+
+          <h2 id="closing">Closing</h2>
+          <p>Strong <strong>Quran classes for ADHD kids</strong> respect attention science and Islamic adab at once: short, lively, kind, and consistent. When the child leaves class wanting to think about Allah’s Book tomorrow, the structure is working.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>How long should ADHD Quran classes be?<span>+</span></summary><p>Often 15–20 minutes of focused work. Some children manage 25 with a mid-lesson reset. Longer is not better if attention collapses.</p></details>
+          <details class="faq-acc"><summary>Can kids with ADHD do Hifz?<span>+</span></summary><p>Yes, with shorter daily targets, strong review systems, and a tutor who designs for attention — not with shame or marathon sittings.</p></details>
+          <details class="faq-acc"><summary>Should we medicate around class times?<span>+</span></summary><p>That is a medical decision for your clinician — not a Quran teacher. Share timing only if it helps the tutor plan energy windows.</p></details>
+          <details class="faq-acc"><summary>Are group classes okay for ADHD?<span>+</span></summary><p>Sometimes later. Many families start 1-to-1 so the child is not competing for turns or overstimulated by peers.</p></details>
+          <details class="faq-acc"><summary>What if my child only wants games?<span>+</span></summary><p>Use games as the vehicle for real letter and joining goals. Play without learning targets becomes entertainment, not Quran class.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/quran-classes-for-autistic-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for Autistic Kids</a></li>
+              <li><a href="/blog/muslim-homeschool-quran-curriculum" style="color:var(--emerald);font-weight:600;">Muslim Homeschool Quran Curriculum</a></li>
+              <li><a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">Interactive Noorani Qaida — Kids Studio</a></li>
+              <li><a href="/blog/child-wont-sit-for-quran-class" style="color:var(--emerald);font-weight:600;">My Child Won’t Sit for Quran Class</a></li>
+              <li><a href="/blog/quran-practice-routine-at-home-kids" style="color:var(--emerald);font-weight:600;">Quran Practice Routine at Home</a></li>
+              <li><a href="/blog/best-age-to-start-quran-learning" style="color:var(--emerald);font-weight:600;">Best Age to Start Quran Learning</a></li>
+            </ul>
+          </div>`,
+  },
+
+  "muslim-homeschool-quran-curriculum": {
+    style: S,
+    content: `<p>Parents building a <strong>Muslim homeschool Quran curriculum</strong> usually want two things at once: a clear weekly structure, and expert help for Arabic pronunciation they may not feel confident teaching alone. This guide gives age-banded schedules, a subject map (Qaida → reading → Tajweed → light Hifz / Islamic studies), and a practical way to plug in a live online tutor without burning out the family.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Treat Quran as a daily anchor (often <strong>20–40 minutes total</strong> across live lesson + home practice for school-age kids), keep Islamic studies short and story-based, and use a live tutor for correction while parents own the routine and review.
+          </div>
+
+          <h2 id="pillars">Four pillars of a homeschool Quran week</h2>
+          <ol>
+            <li><strong>Reading skill</strong> — Noorani Qaida → mushaf fluency (<a href="/blog/noorani-qaida-complete-guide">Qaida guide</a>)</li>
+            <li><strong>Tajweed growth</strong> — rules introduced when reading is stable (<a href="/blog/tajweed-rules-complete-guide">Tajweed guide</a>)</li>
+            <li><strong>Memorisation (optional track)</strong> — small consistent targets, not racing</li>
+            <li><strong>Islamic knowledge &amp; manners</strong> — stories, duas, character (<a href="/blog/islamic-knowledge-for-kids-stories-hadith">kids Islamic knowledge</a>)</li>
+          </ol>
+
+          <h2 id="age-templates">Weekly schedule templates by age</h2>
+          <h3>Ages 4–6 (foundation)</h3>
+          <table class="np-table">
+            <tr><th>Day</th><th>Plan (about 15–25 min total)</th></tr>
+            <tr><td>Mon / Wed / Fri</td><td>Live or parent Qaida play: letters &amp; sounds</td></tr>
+            <tr><td>Tue / Thu</td><td>Dua + one Islamic story scene</td></tr>
+            <tr><td>Sat</td><td>Fun review game / interactive practice</td></tr>
+            <tr><td>Sun</td><td>Rest or soft family Qur’an listening</td></tr>
+          </table>
+
+          <h3>Ages 7–10 (building readers)</h3>
+          <table class="np-table">
+            <tr><th>Day</th><th>Plan (about 25–40 min total)</th></tr>
+            <tr><td>4–5× week</td><td>Live tutor 20–30 min OR 15 min live + 10 min review</td></tr>
+            <tr><td>Daily micro</td><td>8–12 min home review of yesterday’s line</td></tr>
+            <tr><td>2× week</td><td>Islamic studies / manners (15 min)</td></tr>
+            <tr><td>1× week</td><td>Family Surah listening or Kahf Friday habit</td></tr>
+          </table>
+
+          <h3>Ages 11–14 (fluency &amp; optional Hifz)</h3>
+          <table class="np-table">
+            <tr><th>Track</th><th>Weekly shape</th></tr>
+            <tr><td>Fluency</td><td>3–5 live reading/Tajweed lessons + independent review log</td></tr>
+            <tr><td>Light Hifz</td><td>New + recent + remote revision split (keep new tiny)</td></tr>
+            <tr><td>Knowledge</td><td>1 seerah/tafsir discussion block parents can lead</td></tr>
+          </table>
+          <p>Timelines stay honest: <a href="/blog/how-long-does-noorani-qaida-take">how long Noorani Qaida takes</a>. Transition check: <a href="/blog/when-child-ready-qaida-to-quran">Qaida to Quran readiness</a>.</p>
+
+          <h2 id="parent-vs-tutor">What parents teach vs what tutors teach</h2>
+          <table class="np-table">
+            <tr><th>Parent-owned</th><th>Tutor-owned</th></tr>
+            <tr><td>Routine, timer, calm environment</td><td>Makharij correction</td></tr>
+            <tr><td>Review reminders, sticker charts</td><td>Joining &amp; reading diagnosis</td></tr>
+            <tr><td>Stories, duas, manners modelling</td><td>Tajweed rule application</td></tr>
+            <tr><td>Portfolio notes / attendance log</td><td>Level decisions &amp; next targets</td></tr>
+          </table>
+          <p>Non-Arabic-speaking parents can still lead — see <a href="/blog/parents-dont-speak-arabic-child-learn-quran">parents who don’t speak Arabic</a>.</p>
+
+          <h2 id="neurodiversity">Homeschooling neurodivergent learners</h2>
+          <p>Shorter blocks and flexible days are a feature, not a failure. Adapt with <a href="/blog/quran-classes-for-autistic-kids">autism-friendly Quran guidance</a> and <a href="/blog/quran-classes-for-adhd-kids">ADHD Quran class structure</a>.</p>
+
+          <h2 id="uk-us-notes">UK, US, Canada, Australia notes</h2>
+          <ul>
+            <li><strong>UK:</strong> Fit around school-at-home hours; half-term intensives work well</li>
+            <li><strong>US/CA:</strong> Morning Quran block before secular subjects is popular</li>
+            <li><strong>AU:</strong> Align live tutors to after-school or weekend if parents work</li>
+            <li><strong>Gulf families abroad:</strong> Keep one “home country” evening slot for grandparents’ dua culture + tutor skill time</li>
+          </ul>
+          <p>Country-specific kids context: <a href="/blog/online-quran-classes-uk-kids-guide">UK kids guide</a> · <a href="/blog/online-quran-classes-usa-kids-guide">USA kids guide</a>.</p>
+
+          <h2 id="plug-in-tutor">How to plug NoorPath into your homeschool week</h2>
+          <div class="gold-box">
+            <p><strong>Simple model:</strong> Live 1-to-1 tutor 2–4× weekly for skill correction + parent-led micro review on other days. Mention “homeschool — need fixed weekly slots and a written target each lesson” on your trial form.</p>
+            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/online-quran-classes-for-kids">Kids classes</a> · <a href="/noorani-qaida">Interactive Noorani Qaida</a> · <a href="/pricing">Pricing</a></p>
+          </div>
+
+          <h2 id="burnout">Burnout guards</h2>
+          <ul>
+            <li>Never stack a new Hifz page on a day with meltdowns or exams</li>
+            <li>One primary skill goal per week is enough</li>
+            <li>Protect one full rest day</li>
+            <li>Measure consistency over month, not perfection over day</li>
+          </ul>
+
+          <h2 id="closing">Closing</h2>
+          <p>A strong <strong>Muslim homeschool Quran curriculum</strong> is a rhythm, not a binder of unused printables. Anchor the week, keep sessions humane, let a live tutor catch what ears at home miss, and grow your child’s relationship with the Quran for years — not one term.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>How many hours of Quran should a homeschool child do?<span>+</span></summary><p>Many families succeed with 20–40 minutes total most days for ages 7–12, mixing live lesson and review. Younger children need less. Quality and calm matter more than clocking hours.</p></details>
+          <details class="faq-acc"><summary>Can an online tutor count as part of our curriculum?<span>+</span></summary><p>Yes as specialised instruction. Keep simple notes (date, skill, next target) for your own records or local requirements where relevant.</p></details>
+          <details class="faq-acc"><summary>Do we need Arabic language as a full subject too?<span>+</span></summary><p>Not at the start. Quranic reading can lead; broader Arabic can grow later if the family wants it.</p></details>
+          <details class="faq-acc"><summary>What if we fall behind the plan?<span>+</span></summary><p>Shrink the plan. Restart with review only for one week. Homeschool flexibility is the advantage — use it without guilt.</p></details>
+          <details class="faq-acc"><summary>Should siblings share one lesson?<span>+</span></summary><p>Usually no for reading skill. Separate short slots protect pace. Shared story time works well for Islamic knowledge.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/quran-classes-for-autistic-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for Autistic Kids</a></li>
+              <li><a href="/blog/quran-classes-for-adhd-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for ADHD Kids</a></li>
+              <li><a href="/blog/how-long-does-noorani-qaida-take" style="color:var(--emerald);font-weight:600;">How Long Does Noorani Qaida Take?</a></li>
+              <li><a href="/blog/parents-dont-speak-arabic-child-learn-quran" style="color:var(--emerald);font-weight:600;">Parents Who Don’t Speak Arabic</a></li>
+              <li><a href="/blog/quran-practice-routine-at-home-kids" style="color:var(--emerald);font-weight:600;">Quran Practice Routine at Home</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
             </ul>
           </div>`,
   },

@@ -1473,6 +1473,81 @@ export const blogPosts: BlogPost[] = [
       "Children need more than letter practice. This parent guide covers Islamic knowledge for kids — stories, gentle hadith lessons, manners, and interactive learning that builds love for Islam from ages 3–12.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "quran-classes-for-autistic-kids",
+    title: "Quran Classes for Autistic Kids — Calm 1-to-1 Online Guide for Parents",
+    description:
+      "Online Quran classes for autistic kids: sensory-friendly tips, micro-lessons, tutor fit, parent co-regulation, and how to book a calm free trial without overwhelm.",
+    category: "Kids & Parenting",
+    date: "2026-07-23",
+    updatedAt: "2026-07-23",
+    readTime: "12 min",
+    keywords: [
+      "quran classes for autistic kids",
+      "online quran for autism",
+      "autism friendly quran teacher",
+      "sensory friendly islamic lessons",
+      "quran classes for autism spectrum",
+      "special needs quran classes online",
+      "autistic child learn quran",
+      "sen quran classes uk",
+      "calm quran lessons for autistic children",
+      "1 to 1 quran for autistic kids",
+    ],
+    excerpt:
+      "A calm, parent-first guide to online Quran classes for autistic children — short sensory-aware sessions, tutor briefing tips, realistic goals, and how to request a gentle free trial.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-classes-for-adhd-kids",
+    title: "Quran Classes for ADHD Kids — Short Sessions That Hold Attention",
+    description:
+      "ADHD-friendly online Quran classes: 15-minute lesson blocks, movement breaks, reward systems, tutor briefing tips, and how to keep progress without shame.",
+    category: "Kids & Parenting",
+    date: "2026-07-23",
+    updatedAt: "2026-07-23",
+    readTime: "11 min",
+    keywords: [
+      "quran classes for adhd kids",
+      "adhd quran teacher online",
+      "short quran lessons adhd",
+      "focus tips muslim parents quran",
+      "adhd friendly quran classes",
+      "online quran for adhd children",
+      "quran class attention span kids",
+      "motivate adhd child quran",
+      "interactive quran for adhd",
+      "adhd noorani qaida online",
+    ],
+    excerpt:
+      "How ADHD-friendly online Quran classes work: short focused blocks, movement breaks, clear rewards, and tutor notes that protect your child’s confidence.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "muslim-homeschool-quran-curriculum",
+    title: "Muslim Homeschool Quran Curriculum — Weekly Schedule Templates Ages 4–14",
+    description:
+      "Build a Muslim homeschool Quran curriculum: weekly schedules by age, Qaida to Tajweed map, Islamic studies balance, and how live online tutors fit your homeschool week.",
+    category: "Kids & Parenting",
+    date: "2026-07-23",
+    updatedAt: "2026-07-23",
+    readTime: "13 min",
+    keywords: [
+      "muslim homeschool quran curriculum",
+      "islamic homeschool schedule",
+      "quran for homeschoolers",
+      "online quran homeschool",
+      "homeschool quran weekly plan",
+      "muslim homeschool curriculum uk",
+      "muslim homeschool curriculum usa",
+      "quran arabic islamic studies homeschool",
+      "homeschool noorani qaida plan",
+      "live tutor for muslim homeschool",
+    ],
+    excerpt:
+      "A practical Muslim homeschool Quran curriculum with age-banded weekly templates, Qaida-to-reading progression, and how to plug in a live online tutor without burning out.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
