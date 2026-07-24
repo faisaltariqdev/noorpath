@@ -1096,6 +1096,270 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
               <li><a href="/blog/parents-dont-speak-arabic-child-learn-quran" style="color:var(--emerald);font-weight:600;">Parents Who Don’t Speak Arabic</a></li>
               <li><a href="/blog/quran-practice-routine-at-home-kids" style="color:var(--emerald);font-weight:600;">Quran Practice Routine at Home</a></li>
               <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+              <li><a href="/blog/online-summer-quran-camp-for-kids" style="color:var(--emerald);font-weight:600;">Online Summer Quran Camp for Kids</a></li>
+            </ul>
+          </div>`,
+  },
+
+  "quran-learning-speech-delay-kids": {
+    style: S,
+    content: `<p>Parents searching for <strong>Quran learning with speech delay</strong> usually carry two worries at once: “Will my child fall behind spiritually?” and “Will Arabic sounds frustrate them more?” The calm answer is that many children with speech delay can still build a loving, steady path to Quran — if goals stay realistic, practice stays short, and tutors collaborate with how the child actually communicates.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Start with comfort, listening, and a few clear sounds — not full-speed Qaida. Use short 1-to-1 sessions, celebrate effort, and never treat Quran class as speech therapy. Work alongside any speech-language support your child already has.
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-pill"><strong>Listen first</strong><span>Model before demand</span></div>
+            <div class="stat-pill"><strong>Few sounds</strong><span>Not full alphabet rush</span></div>
+            <div class="stat-pill"><strong>Short slots</strong><span>10–15 min calm</span></div>
+            <div class="stat-pill"><strong>No shame</strong><span>Effort over perfection</span></div>
+          </div>
+
+          <h2 id="what-this-is-not">What this guide is — and is not</h2>
+          <p>This is a parent education guide for Quran and Arabic <em>learning habits</em>. It is not medical advice and does not replace speech-language therapy. If your child has a care plan, share only what helps the tutor teach gently.</p>
+          <p>Related calm-learning guides: <a href="/blog/quran-classes-for-autistic-kids">Quran classes for autistic kids</a> · <a href="/blog/quran-classes-for-adhd-kids">Quran classes for ADHD kids</a> · <a href="/blog/hard-arabic-letters-for-kids-makharij">hard Arabic letters for kids</a>.</p>
+
+          <h2 id="realistic-goals">Realistic early goals</h2>
+          <ul>
+            <li>Enjoy sitting for a short, predictable lesson</li>
+            <li>Listen and imitate simple sounds when ready (Ba, Ta, not every hard letter at once)</li>
+            <li>Say Bismillah or a short dua with support</li>
+            <li>Point to a letter even if saying it is hard today</li>
+            <li>Leave class calm — not in tears</li>
+          </ul>
+          <p>Pointing, matching, and listening <em>are</em> Quran class wins. Speech clarity can grow on its own timeline.</p>
+
+          <h2 id="sound-order">A gentler sound order</h2>
+          <table class="np-table">
+            <tr><th>Stage</th><th>Focus</th><th>Avoid for now</th></tr>
+            <tr><td>1</td><td>Easy open sounds the child already approximates</td><td>Stacking 10 new letters/week</td></tr>
+            <tr><td>2</td><td>Short vowel with one stable letter</td><td>Long joining drills</td></tr>
+            <tr><td>3</td><td>Two-letter joins when mouth comfort allows</td><td>Hard letters ع ح ق ص under pressure</td></tr>
+            <tr><td>4</td><td>Harder makharij slowly, one at a time</td><td>Comparing to siblings’ speed</td></tr>
+          </table>
+          <p>Letter shapes and interactive practice can support without forcing speech — see <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a> and <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida</a>.</p>
+
+          <h2 id="session-plan">A 12-minute session plan</h2>
+          <ol>
+            <li><strong>2 min</strong> — warm greeting + today’s one sound on screen</li>
+            <li><strong>4 min</strong> — tutor models; child listens / hums / whispers / points</li>
+            <li><strong>4 min</strong> — one playful try (copy game, not test)</li>
+            <li><strong>2 min</strong> — praise specific effort + next-time preview</li>
+          </ol>
+
+          <h2 id="tutor-brief">What to tell the tutor</h2>
+          <div class="gold-box">
+            <p style="margin-bottom:0;"><em>“Speech delay, age __. Understands more than they can say. Please model slowly, accept pointing/whispering, one sound target only, no rushing hard letters. We celebrate attempts. Parent will sit nearby.”</em></p>
+          </div>
+          <p><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a> · <a href="/noorani-qaida">Noorani Qaida hub</a>.</p>
+
+          <h2 id="home">Home practice that does not overwhelm</h2>
+          <ul>
+            <li>5–8 minutes most days — stop early if frustration rises</li>
+            <li>Listen to a short recitation together without “say it correctly”</li>
+            <li>Mirror play: parent says Ba, child copies any way they can</li>
+            <li>If letters keep slipping from memory, use <a href="/blog/child-forgets-arabic-letters">my child forgets Arabic letters</a></li>
+          </ul>
+
+          <h2 id="closing">Closing</h2>
+          <p>The best <strong>Quran learning path with speech delay</strong> is patient and proud of small steps. Allah sees the effort. Protect love for the Book first; clarity of sound can grow with time, support, and kindness.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>Should a child with speech delay start Quran?<span>+</span></summary><p>Yes, with gentle goals. Listening, pointing, short duas, and a few sounds are valid starts. Pace must match the child, not a standard class timetable.</p></details>
+          <details class="faq-acc"><summary>Will Quran class fix speech delay?<span>+</span></summary><p>Quran class is not speech therapy. It can offer calm practice with sounds, but clinical goals belong with qualified speech professionals.</p></details>
+          <details class="faq-acc"><summary>What if my child refuses to speak in class?<span>+</span></summary><p>Allow pointing, whispering, or “listen-only” days. Pressure often increases shutdown. Brief the tutor to accept non-verbal participation.</p></details>
+          <details class="faq-acc"><summary>Should we avoid hard Arabic letters?<span>+</span></summary><p>Delay them until easier sounds feel safer. Introduce hard letters one at a time with a patient tutor — never as a test in front of relatives.</p></details>
+          <details class="faq-acc"><summary>How do we book a suitable trial?<span>+</span></summary><p>Use the free trial form and write “speech delay — gentle pacing, one sound target.” Ask for a calm 1-to-1 tutor.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/quran-classes-for-autistic-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for Autistic Kids</a></li>
+              <li><a href="/blog/quran-classes-for-adhd-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for ADHD Kids</a></li>
+              <li><a href="/blog/child-forgets-arabic-letters" style="color:var(--emerald);font-weight:600;">My Child Forgets Arabic Letters</a></li>
+              <li><a href="/blog/hard-arabic-letters-for-kids-makharij" style="color:var(--emerald);font-weight:600;">Hard Arabic Letters for Kids</a></li>
+              <li><a href="/blog/online-summer-quran-camp-for-kids" style="color:var(--emerald);font-weight:600;">Online Summer Quran Camp for Kids</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+            </ul>
+          </div>`,
+  },
+
+  "online-summer-quran-camp-for-kids": {
+    style: S,
+    content: `<p>Parents searching for an <strong>online summer Quran camp for kids</strong> want the holidays to feel useful — without turning July into another school term. A good online camp keeps energy playful, sessions short enough for summer brains, and progress real: letters, joining, short surahs, duas, and Islamic stories that children look forward to.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Online summer Quran camps work best as a <strong>3–6 week</strong> intensive with <strong>3–5 short live lessons per week</strong>, a clear weekly theme, and lighter home practice. Book early for UK/US daytime slots while school is off.
+          </div>
+
+          <h2 id="why-summer">Why summer is a high-value Quran window</h2>
+          <ul>
+            <li>More flexible daytime hours for live 1-to-1</li>
+            <li>Chance to catch up on Qaida joins before autumn term</li>
+            <li>Space for stories and manners — not only drills</li>
+            <li>Less homework conflict than term time</li>
+          </ul>
+          <p>Busy holiday weeks still happen — keep a backup plan if travel weeks empty the calendar. Soft restart beats guilt.</p>
+
+          <h2 id="what-good-looks-like">What a strong online summer camp includes</h2>
+          <table class="np-table">
+            <tr><th>Block</th><th>Focus</th></tr>
+            <tr><td>Qaida / reading sprint</td><td>Letters, harakat, joining — level-matched</td></tr>
+            <tr><td>Interactive practice</td><td>Games, short wins (Kids Studio style)</td></tr>
+            <tr><td>Islamic knowledge</td><td>Prophet stories, manners, short hadith habits</td></tr>
+            <tr><td>Dua &amp; adab</td><td>Morning/eating/sleep duas they can use daily</td></tr>
+            <tr><td>Parent note</td><td>One home cue — not a holiday homework mountain</td></tr>
+          </table>
+          <p>Deepen the skill track with <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida</a> and the heart track with <a href="/blog/islamic-knowledge-for-kids-stories-hadith">Islamic knowledge for kids</a>.</p>
+
+          <h2 id="sample-week">Sample summer week (ages 6–10)</h2>
+          <table class="np-table">
+            <tr><th>Day</th><th>Live lesson</th><th>Home (optional)</th></tr>
+            <tr><td>Mon</td><td>25 min Qaida / joining</td><td>8 min review game</td></tr>
+            <tr><td>Tue</td><td>20 min stories + manners</td><td>One dua together</td></tr>
+            <tr><td>Wed</td><td>25 min reading sprint</td><td>8 min review</td></tr>
+            <tr><td>Thu</td><td>Off / family day</td><td>—</td></tr>
+            <tr><td>Fri</td><td>20 min fun review + short Surah listening</td><td>Family Kahf clip optional</td></tr>
+          </table>
+          <p>Homeschool-style families can expand this into a fuller map: <a href="/blog/muslim-homeschool-quran-curriculum">Muslim homeschool Quran curriculum</a>.</p>
+
+          <h2 id="age-bands">Age bands</h2>
+          <ul>
+            <li><strong>4–6:</strong> Play-based letters, duas, very short slots</li>
+            <li><strong>7–10:</strong> Joining / early mushaf readiness + stories</li>
+            <li><strong>11–14:</strong> Fluency, light Tajweed, optional summer Hifz boost with tiny targets</li>
+          </ul>
+          <p>Neurodivergent learners may need shorter camp blocks — see <a href="/blog/quran-classes-for-adhd-kids">ADHD</a> and <a href="/blog/quran-classes-for-autistic-kids">autism</a> guides.</p>
+
+          <h2 id="uk-us-slots">UK &amp; US timezone tips</h2>
+          <ul>
+            <li><strong>UK summer:</strong> late morning or early afternoon often beats late evening</li>
+            <li><strong>US East/Central:</strong> morning intensives before outings</li>
+            <li><strong>Travel weeks:</strong> pause or keep one short “maintenance” class</li>
+          </ul>
+          <p>More UK/US context: <a href="/blog/online-quran-classes-uk-kids-guide">UK kids guide</a> · <a href="/blog/online-quran-classes-usa-kids-guide">USA kids guide</a>.</p>
+
+          <h2 id="enrol">How to enrol without overwhelm</h2>
+          <div class="gold-box">
+            <p><strong>Trial note example:</strong> <em>“Summer holiday intensive — ages __, level (letters / joining / reading). Prefer playful short lessons 3–4× weekly for 4 weeks. UK/US time window: __.”</em></p>
+            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/online-quran-classes-for-kids">Kids classes</a> · <a href="/pricing">Pricing</a> · <a href="/noorani-qaida">Noorani Qaida</a></p>
+          </div>
+
+          <h2 id="avoid">Holiday mistakes to avoid</h2>
+          <ul>
+            <li>Packing 2-hour daily drills that kill summer joy</li>
+            <li>Starting a huge Hifz target then abandoning it mid-trip</li>
+            <li>Zero structure until September panic</li>
+            <li>Comparing your child’s camp to a cousin’s “finished Qaida” story</li>
+          </ul>
+
+          <h2 id="closing">Closing</h2>
+          <p>A good <strong>online summer Quran camp for kids</strong> feels like a bright holiday habit: short, warm, and memorable. Children return to school with stronger letters — and a happier heart toward the Quran.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>Are online summer Quran camps worth it?<span>+</span></summary><p>Yes when they are level-matched, short, and consistent for a few weeks. Random one-off classes help less than a clear 3–6 week plan.</p></details>
+          <details class="faq-acc"><summary>What age is best for a summer Quran camp?<span>+</span></summary><p>Ages 5–12 benefit most. Younger children need play-based micro sessions; teens can use summer for fluency or light Hifz boosts.</p></details>
+          <details class="faq-acc"><summary>How many lessons per week?<span>+</span></summary><p>Often 3–5 short live lessons. Families travelling may drop to 2 maintenance classes some weeks.</p></details>
+          <details class="faq-acc"><summary>Can we join mid-summer?<span>+</span></summary><p>Yes. A good academy assesses level and builds a shortened intensive instead of forcing a missed week-one syllabus.</p></details>
+          <details class="faq-acc"><summary>Is this the same as term-time weekly class?<span>+</span></summary><p>Similar tutors, tighter holiday schedule and often more interactive variety so summer attention stays high.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">Interactive Noorani Qaida — Kids Studio</a></li>
+              <li><a href="/blog/muslim-homeschool-quran-curriculum" style="color:var(--emerald);font-weight:600;">Muslim Homeschool Quran Curriculum</a></li>
+              <li><a href="/blog/how-long-does-noorani-qaida-take" style="color:var(--emerald);font-weight:600;">How Long Does Noorani Qaida Take?</a></li>
+              <li><a href="/blog/child-forgets-arabic-letters" style="color:var(--emerald);font-weight:600;">My Child Forgets Arabic Letters</a></li>
+              <li><a href="/blog/quran-practice-routine-at-home-kids" style="color:var(--emerald);font-weight:600;">Quran Practice Routine at Home</a></li>
+              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
+            </ul>
+          </div>`,
+  },
+
+  "child-forgets-arabic-letters": {
+    style: S,
+    content: `<p>Parents typing <strong>my child forgets Arabic letters</strong> are usually not starting from zero — they are stuck in a loop. Monday’s lesson looks fine; by Thursday the same letters have vanished. Panic says “restart the whole alphabet.” Better teaching says: review first, shrink new work, and rebuild memory with short spaced practice.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Forgetting between classes is common. Pause new letters for a few days, run a <strong>7-day review recovery</strong>, use short daily drills (5–10 minutes), and ask the tutor to test recognition — not only memorised page order.
+          </div>
+
+          <h2 id="why-forgetting">Why kids forget Arabic letters</h2>
+          <ul>
+            <li>New letters added faster than old ones are reviewed</li>
+            <li>Practice only happens in class — zero home touchpoints</li>
+            <li>Child memorised a page sequence, not true letter recognition</li>
+            <li>Long gaps (travel, illness, summer unstructured weeks)</li>
+            <li>Stress or shame when corrected, so the brain “checks out”</li>
+          </ul>
+          <p>If attention or sensory load is the real issue, also read <a href="/blog/quran-classes-for-adhd-kids">ADHD Quran classes</a> and <a href="/blog/child-wont-sit-for-quran-class">won’t sit for Quran class</a>.</p>
+
+          <h2 id="do-not-restart">Do not restart from Alif in panic</h2>
+          <p>Full restarts often waste the letters the child still owns and hurt confidence. Instead:</p>
+          <ol>
+            <li>Quick assessment: which letters are solid / shaky / gone?</li>
+            <li>Park brand-new letters for 3–7 days</li>
+            <li>Rebuild shaky letters with games</li>
+            <li>Re-introduce new letters only when review feels easy again</li>
+          </ol>
+          <p>Interactive review helps: <a href="/blog/interactive-noorani-qaida-kids-studio">Kids Studio style Qaida</a> · <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a>.</p>
+
+          <h2 id="7-day-plan">7-day letter recovery plan</h2>
+          <table class="np-table">
+            <tr><th>Day</th><th>10 minutes or less</th></tr>
+            <tr><td>1</td><td>Sort letters into “I know” / “I mix” / “I forgot” piles (cards or screen)</td></tr>
+            <tr><td>2</td><td>Only “I mix” letters — 3 rounds of point-and-say</td></tr>
+            <tr><td>3</td><td>Add 2 “I forgot” letters + review yesterday’s mix set</td></tr>
+            <tr><td>4</td><td>Mini game: parent says sound, child finds letter</td></tr>
+            <tr><td>5</td><td>Same as day 4 with time pressure off — accuracy only</td></tr>
+            <tr><td>6</td><td>Tutor lesson focused 100% on recovery set</td></tr>
+            <tr><td>7</td><td>Re-test; unlock one new letter only if recovery set is stable</td></tr>
+          </table>
+
+          <h2 id="spaced-repetition">Spaced repetition parents can actually keep</h2>
+          <ul>
+            <li>Touch yesterday’s letters before anything new</li>
+            <li>Two short sessions beat one long cram</li>
+            <li>Mix order — never only Alif-to-Ya song order</li>
+            <li>Include start/middle/end shapes when the child is ready</li>
+          </ul>
+          <p>Home rhythm ideas: <a href="/blog/quran-practice-routine-at-home-kids">Quran practice routine at home</a>. Summer catch-up: <a href="/blog/online-summer-quran-camp-for-kids">online summer Quran camp</a>.</p>
+
+          <h2 id="tutor-ask">What to ask the tutor</h2>
+          <div class="gold-box">
+            <p style="margin-bottom:0;"><em>“Letters fade between classes. Please assess recognition out of order, pause new letters this week, and send 5–8 home review letters only. No shame language if they mix lookalikes.”</em></p>
+          </div>
+          <p><a href="/free-quran-classes-online">Book a level-check trial</a> · <a href="/noorani-qaida">Noorani Qaida</a> · <a href="/online-quran-classes-for-kids">Kids classes</a>.</p>
+
+          <h2 id="lookalikes">Common mix-ups to expect</h2>
+          <ul>
+            <li>ب ت ث — dot counts</li>
+            <li>ج ح خ — dot and shape family</li>
+            <li>د ذ / ر ز — similar forms</li>
+            <li>س ش / ص ض — look and sound pressure</li>
+          </ul>
+          <p>For pronunciation of hard letters specifically: <a href="/blog/hard-arabic-letters-for-kids-makharij">hard Arabic letters for kids</a>. Speech-related pacing: <a href="/blog/quran-learning-speech-delay-kids">Quran learning with speech delay</a>.</p>
+
+          <h2 id="closing">Closing</h2>
+          <p>When a <strong>child forgets Arabic letters</strong>, the fix is almost never “start the book again from page one.” It is calmer review, smaller targets, and a tutor who measures real recognition. Consistency over two weeks usually beats a dramatic restart.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>Is it normal for kids to forget Arabic letters?<span>+</span></summary><p>Yes, especially with gaps between practice or when new letters are added too quickly. Review systems fix most cases.</p></details>
+          <details class="faq-acc"><summary>Should we stop the class until they remember everything?<span>+</span></summary><p>No. Keep short classes but switch the goal to recovery review for a week instead of pushing new pages.</p></details>
+          <details class="faq-acc"><summary>How many letters should we review daily?<span>+</span></summary><p>Often 4–8 letters in under 10 minutes. More than that turns into fatigue and new forgetting.</p></details>
+          <details class="faq-acc"><summary>What if they only remember the alphabet song order?<span>+</span></summary><p>Practice out of order with flashcards or pointing games. True reading needs recognition, not only sequence memory.</p></details>
+          <details class="faq-acc"><summary>Can summer holidays cause this?<span>+</span></summary><p>Yes. A short summer intensive or fixed review habit prevents September panic — see the online summer Quran camp guide.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/quran-learning-speech-delay-kids" style="color:var(--emerald);font-weight:600;">Quran Learning with Speech Delay</a></li>
+              <li><a href="/blog/online-summer-quran-camp-for-kids" style="color:var(--emerald);font-weight:600;">Online Summer Quran Camp for Kids</a></li>
+              <li><a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">Interactive Noorani Qaida — Kids Studio</a></li>
+              <li><a href="/blog/arabic-alphabet-for-kids" style="color:var(--emerald);font-weight:600;">Arabic Alphabet for Kids</a></li>
+              <li><a href="/blog/how-long-does-noorani-qaida-take" style="color:var(--emerald);font-weight:600;">How Long Does Noorani Qaida Take?</a></li>
+              <li><a href="/blog/quran-practice-routine-at-home-kids" style="color:var(--emerald);font-weight:600;">Quran Practice Routine at Home</a></li>
             </ul>
           </div>`,
   },

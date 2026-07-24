@@ -831,6 +831,144 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "quran-learning-speech-delay-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should a child with speech delay start Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, with gentle goals. Listening, pointing, short duas, and a few sounds are valid starts. Pace must match the child, not a standard class timetable.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will Quran class fix speech delay?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Quran class is not speech therapy. It can offer calm practice with sounds, but clinical goals belong with qualified speech professionals.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child refuses to speak in class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Allow pointing, whispering, or listen-only days. Pressure often increases shutdown. Brief the tutor to accept non-verbal participation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we avoid hard Arabic letters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Delay them until easier sounds feel safer. Introduce hard letters one at a time with a patient tutor — never as a test in front of relatives.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we book a suitable trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use the free trial form and write speech delay — gentle pacing, one sound target. Ask for a calm 1-to-1 tutor.",
+        },
+      },
+    ],
+  },
+  "online-summer-quran-camp-for-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Are online summer Quran camps worth it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes when they are level-matched, short, and consistent for a few weeks. Random one-off classes help less than a clear 3–6 week plan.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What age is best for a summer Quran camp?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ages 5–12 benefit most. Younger children need play-based micro sessions; teens can use summer for fluency or light Hifz boosts.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many lessons per week?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 3–5 short live lessons. Families travelling may drop to 2 maintenance classes some weeks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we join mid-summer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. A good academy assesses level and builds a shortened intensive instead of forcing a missed week-one syllabus.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this the same as term-time weekly class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Similar tutors, tighter holiday schedule and often more interactive variety so summer attention stays high.",
+        },
+      },
+    ],
+  },
+  "child-forgets-arabic-letters": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is it normal for kids to forget Arabic letters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, especially with gaps between practice or when new letters are added too quickly. Review systems fix most cases.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we stop the class until they remember everything?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Keep short classes but switch the goal to recovery review for a week instead of pushing new pages.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many letters should we review daily?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 4–8 letters in under 10 minutes. More than that turns into fatigue and new forgetting.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if they only remember the alphabet song order?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Practice out of order with flashcards or pointing games. True reading needs recognition, not only sequence memory.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can summer holidays cause this?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. A short summer intensive or fixed review habit prevents September panic. See the online summer Quran camp guide.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

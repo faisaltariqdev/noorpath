@@ -1548,6 +1548,81 @@ export const blogPosts: BlogPost[] = [
       "A practical Muslim homeschool Quran curriculum with age-banded weekly templates, Qaida-to-reading progression, and how to plug in a live online tutor without burning out.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "quran-learning-speech-delay-kids",
+    title: "Quran Learning with Speech Delay — Gentle Arabic Sound Practice for Kids",
+    description:
+      "Parent guide to Quran learning with speech delay: realistic goals, gentle Arabic sounds, tutor collaboration tips, and when to slow down without pressure.",
+    category: "Kids & Parenting",
+    date: "2026-07-24",
+    updatedAt: "2026-07-24",
+    readTime: "11 min",
+    keywords: [
+      "quran learning speech delay",
+      "arabic pronunciation speech delay",
+      "speech delay muslim child quran",
+      "quran classes speech delay kids",
+      "child speech delay arabic letters",
+      "gentle quran lessons speech delay",
+      "online quran for speech delay",
+      "makharij speech delay kids",
+      "speech therapy and quran learning",
+      "slow learner quran arabic sounds",
+    ],
+    excerpt:
+      "A calm parent guide for children with speech delay starting Arabic and Quran sounds — realistic goals, short practice, tutor notes, and how to protect confidence.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-summer-quran-camp-for-kids",
+    title: "Online Summer Quran Camp for Kids — Fun Holiday Learning UK & US Timezones",
+    description:
+      "Online summer Quran camp for kids: daily structure, Qaida intensives, Islamic stories, holiday schedules for UK/US families, and how to enrol for school break learning.",
+    category: "Kids & Parenting",
+    date: "2026-07-24",
+    updatedAt: "2026-07-24",
+    readTime: "12 min",
+    keywords: [
+      "online summer quran camp for kids",
+      "summer quran classes online",
+      "islamic summer camp online",
+      "holiday quran intensive kids",
+      "summer quran classes uk",
+      "summer quran classes usa",
+      "online quran camp school holidays",
+      "kids quran summer program",
+      "half term quran intensive",
+      "fun summer islamic learning online",
+    ],
+    excerpt:
+      "Turn school holidays into gentle Quran progress: how online summer Quran camps work, sample weekly plans, age tips, and how to book a holiday intensive trial.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "child-forgets-arabic-letters",
+    title: "My Child Forgets Arabic Letters — Fix It Without Starting Over",
+    description:
+      "What to do when your child forgets Arabic letters between classes: spaced review, games, when to pause new lessons, and a 7-day recovery plan parents can follow.",
+    category: "Kids & Parenting",
+    date: "2026-07-24",
+    updatedAt: "2026-07-24",
+    readTime: "10 min",
+    keywords: [
+      "child forgets arabic letters",
+      "arabic alphabet retention kids",
+      "my child mixes arabic letters",
+      "forget arabic letters between classes",
+      "how to review arabic alphabet kids",
+      "arabic letter memory kids",
+      "noorani qaida child forgets",
+      "spaced repetition arabic kids",
+      "child confuses arabic letters",
+      "rebuild arabic alphabet kids",
+    ],
+    excerpt:
+      "If your child forgets Arabic letters between lessons, you do not need to restart from Alif in panic. Use this parent recovery plan: review first, spaced practice, and calm tutoring.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
