@@ -13,6 +13,7 @@ import {
   Users,
 } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
 import { getCityGuide } from "@/data/cityGuides";
 import {
@@ -374,7 +375,7 @@ export default function UkCityQuranPage({
                 <a href="#trial" className="btn-primary-np">
                   Request a Free Trial
                 </a>
-                <a
+                <WhatsAppLink
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -382,7 +383,7 @@ export default function UkCityQuranPage({
                   style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
                 >
                   Ask on WhatsApp
-                </a>
+                </WhatsAppLink>
               </div>
               <p style={{ color: "rgba(255,255,255,.6)", fontSize: ".75rem", lineHeight: 1.6, marginTop: 16 }}>
                 NoorPath provides remote lessons and does not claim a physical
@@ -728,7 +729,7 @@ export default function UkCityQuranPage({
             <a href="#trial" className="btn-primary-np">
               Request Free Trial
             </a>
-            <a
+            <WhatsAppLink
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -737,7 +738,7 @@ export default function UkCityQuranPage({
             >
               <MessageCircle size={17} aria-hidden="true" />
               Ask on WhatsApp
-            </a>
+            </WhatsAppLink>
           </div>
         </div>
       </section>

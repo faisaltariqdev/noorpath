@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Award, BookOpen, Users, CheckCircle } from "lucide-react";
-import { SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
+import { SERVICE_FACTS, TRIAL, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
+import { tutorCredentialStandards } from "@/data/tutors";
+import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 
 export const revalidate = false;
 
@@ -135,6 +137,51 @@ export default function OurTutorsPage() {
         </div>
       </div>
 
+      {/* Credentials — factual matching standards only */}
+      <section style={{ background: "var(--ivory)", padding: "56px 0" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
+            <span className="section-eyebrow">Credentials</span>
+            <h2 className="section-title">What We Confirm Before <em className="accent">Enrolment</em></h2>
+            <p className="section-desc center">
+              NoorPath confirms subject fit and relevant credentials for the proposed tutor. Ask for the specific details of your match — we do not invent or exaggerate qualifications.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {tutorCredentialStandards.map((c) => (
+              <div key={c.id} className="content-card">
+                <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.15rem", color: "var(--charcoal)", marginBottom: 10 }}>{c.title}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.7, marginBottom: 14 }}>{c.summary}</p>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                  {c.checks.map((item) => (
+                    <li key={item} style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: ".86rem", color: "var(--slate)" }}>
+                      <CheckCircle size={15} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} /> {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="content-card" style={{ marginTop: 28 }}>
+            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.15rem", marginBottom: 12 }}>Verified academy promises (not competitor slogans)</h3>
+            <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 14 }}>
+              We do not advertise a money-back guarantee, completion certificates, or blanket Al-Azhar status for every tutor unless separately confirmed. What we can state today:
+            </p>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 10 }}>
+              {VERIFIED_TRUST_CLAIMS.map((c) => (
+                <li key={c.id} style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: ".86rem", color: "var(--slate)" }}>
+                  <CheckCircle size={15} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} />
+                  <span><strong style={{ color: "var(--charcoal)" }}>{c.title}:</strong> {c.text}</span>
+                </li>
+              ))}
+            </ul>
+            <p style={{ marginTop: 16, fontSize: ".88rem" }}>
+              Learn more: <Link href="/blog/what-is-ijazah-in-quran-teaching" style={{ color: "var(--emerald)", fontWeight: 700 }}>What is Ijazah in Quran teaching?</Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Tutor profiles */}
       <section style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
@@ -173,6 +220,10 @@ export default function OurTutorsPage() {
               </div>
             ))}
           </div>
+          <div className="max-w-[720px] mx-auto" style={{ marginTop: 40 }}>
+            <TrustpilotSnippet count={3} title="Parents who booked a tutor match" />
+          </div>
+
           <div style={{ textAlign: "center", marginTop: 48, padding: "36px 24px", background: "var(--ivory)", borderRadius: 20, border: "1px solid var(--border)" }}>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", color: "var(--charcoal)", marginBottom: 10 }}>
               Request a Tutor Match

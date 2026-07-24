@@ -132,6 +132,25 @@ export default function OnlineQuranClassesForAdultsPage() {
             <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
+          {/* Working professionals angle (Fix 11B) */}
+          <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 12 }}>
+              Evening &amp; Weekend Options for Working Professionals
+            </h2>
+            <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 14, fontSize: ".95rem" }}>
+              Full-time work does not have to pause Quran learning. Share evening or weekend windows in your timezone;
+              NoorPath confirms tutor availability after matching. Dedicated page:{" "}
+              <Link href="/quran-classes-for-working-professionals" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Quran classes for working professionals →
+              </Link>
+              {" · "}
+              Sisters may also request a female tutor via{" "}
+              <Link href="/quran-classes-for-sisters" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Quran classes for sisters
+              </Link>.
+            </p>
+          </div>
+
           {/* Trust stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
             {[

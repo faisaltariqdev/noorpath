@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTACT } from "@/lib/academyFacts";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 export const revalidate = false;
 
@@ -143,14 +144,14 @@ export default function SafeguardingPage() {
                 {CONTACT.email}
               </Link>{" "}
               or use{" "}
-              <Link
+              <WhatsAppLink
                 href={CONTACT.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "var(--emerald)" }}
               >
                 NoorPath WhatsApp
-              </Link>
+              </WhatsAppLink>
               . Contact local emergency or child-protection services when
               immediate help is required.
             </p>

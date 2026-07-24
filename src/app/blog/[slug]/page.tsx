@@ -7,6 +7,8 @@ import { backlinkAssetContent } from "@/data/backlinkAssetContent";
 import { getBacklinkAsset } from "@/data/backlinkAssets";
 import { blogFaqs } from "@/data/blogFaqs";
 import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
+import { splitArticleHtml } from "@/lib/splitArticleHtml";
+import InlineTrialCTA from "@/components/InlineTrialCTA";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
 interface Props {
@@ -236,6 +238,9 @@ export default async function BlogPostPage({ params }: Props) {
   };
 
   const faqSchema = blogFaqs[slug];
+  const articleParts = richContent
+    ? splitArticleHtml(richContent.content, 3)
+    : { before: "", after: "" };
 
   return (
     <>
@@ -427,17 +432,32 @@ export default async function BlogPostPage({ params }: Props) {
                 )}
 
                 {richContent ? (
-                  /* Real content from original HTML */
-                  <div
-                    className="article-body"
-                    dangerouslySetInnerHTML={{ __html: richContent.content }}
-                  />
+                  <>
+                    <div
+                      className="article-body"
+                      dangerouslySetInnerHTML={{ __html: articleParts.before }}
+                    />
+                    {articleParts.after ? (
+                      <InlineTrialCTA
+                        placement="mid-article"
+                        title="Ready to practise with a live tutor?"
+                        subtitle="Book a free 30-minute trial — WhatsApp or email is enough to get started."
+                      />
+                    ) : null}
+                    {articleParts.after ? (
+                      <div
+                        className="article-body"
+                        dangerouslySetInnerHTML={{ __html: articleParts.after }}
+                      />
+                    ) : null}
+                  </>
                 ) : (
                   /* Fallback for posts without extracted content */
                   <>
                     <p style={{ fontSize: "1.05rem", color: "var(--slate)", lineHeight: 1.8, marginBottom: 24, padding: "20px 24px", background: "rgba(10,110,79,.05)", borderLeft: "4px solid var(--emerald)", borderRadius: "0 12px 12px 0" }}>
                       {post.excerpt}
                     </p>
+                    <InlineTrialCTA placement="mid-article" />
                     <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 20 }}>
                       This comprehensive guide on <strong>{post.title.split("—")[0].trim()}</strong> covers everything you need to know — from the basics to advanced concepts, with practical examples and Islamic references.
                     </p>
@@ -514,18 +534,11 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 </div>
 
-                {/* CTA box at bottom of article */}
-                <div className="np-inner-cta" style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 16, textAlign: "center", marginTop: 24 }}>
-                  <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.3rem", marginBottom: 12 }}>
-                    Want to Discuss a Learning Plan?
-                  </h3>
-                  <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20, fontSize: ".9rem" }}>
-                    Request a free 30-minute trial class to discuss the learner&apos;s level, goals and an available tutor match.
-                  </p>
-                  <Link href="/online-quran-classes#cta" className="btn-primary-np">
-                    Book Free Trial Class →
-                  </Link>
-                </div>
+                <InlineTrialCTA
+                  placement="end-article"
+                  title="Want to discuss a learning plan?"
+                  subtitle="Request a free 30-minute trial — we'll match a tutor after your request."
+                />
               </div>
 
               <Link

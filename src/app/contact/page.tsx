@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTACT } from "@/lib/academyFacts";
 import { BASE_URL, ORGANIZATION_ID, WEBSITE_ID } from "@/lib/organizationSchema";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 export const revalidate = false;
 
@@ -80,14 +81,14 @@ export default function ContactPage() {
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 28 }}>
               WhatsApp or phone:{" "}
-              <Link
+              <WhatsAppLink
                 href={CONTACT.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "var(--emerald)", fontWeight: 600 }}
               >
                 {CONTACT.phoneDisplay}
-              </Link>
+              </WhatsAppLink>
             </p>
 
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", marginBottom: 12 }}>

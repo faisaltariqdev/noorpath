@@ -5,6 +5,7 @@ import { courses } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import InlineTrialCTA from "@/components/InlineTrialCTA";
 
 export const revalidate = false;
 
@@ -213,6 +214,14 @@ export default function CoursesPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="max-w-[560px] mx-auto mb-16">
+            <InlineTrialCTA
+              placement="courses-index"
+              title="Not sure which course fits?"
+              subtitle="Book a free trial — we'll recommend a starting point after reviewing the learner's level."
+            />
           </div>
 
           {/* Who are the tutors */}

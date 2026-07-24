@@ -166,6 +166,7 @@ export default function OnlineQuranClassesPage() {
           <p>Personalised online Quran learning for kids and adults, from Noorani Qaida and Quran reading to Tajweed, Hifz and Islamic studies, with tutor matching across timezones.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/one-on-one-quran-classes" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>1-to-1 Classes</Link>
             <Link href="/online-quran-classes-for-kids" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Kids Classes</Link>
             <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View All Courses</Link>
           </div>

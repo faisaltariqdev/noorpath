@@ -7,6 +7,8 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
 import { FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import InlineTrialCTA from "@/components/InlineTrialCTA";
+import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -178,6 +180,14 @@ export default async function CourseDetailPage({ params }: Props) {
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1.05rem" }}>{course.fullDesc}</p>
               </div>
 
+              <InlineTrialCTA
+                placement="course-top"
+                title={`Try ${course.shortTitle} free`}
+                subtitle={`Book a free ${TRIAL.durationMinutes}-minute trial — name, WhatsApp or email, and preferred time.`}
+              />
+
+              <TrustpilotSnippet count={3} title={`Parents on ${course.shortTitle} & NoorPath`} />
+
               {/* What you will learn */}
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 20 }}>
@@ -304,17 +314,18 @@ export default async function CourseDetailPage({ params }: Props) {
       </section>
 
       {/* Bottom CTA */}
-      <section className="cta-section">
-        <div className="max-w-[1200px] mx-auto px-4 text-center">
-          <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
-            Ready to Start {course.shortTitle}?
-          </h2>
-          <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>
-            Request a free {TRIAL.durationMinutes}-minute trial before choosing a paid plan.
+      <section style={{ padding: "48px 0 64px", background: "var(--ivory)" }}>
+        <div className="max-w-[640px] mx-auto px-4">
+          <InlineTrialCTA
+            placement="course-bottom"
+            title={`Ready to start ${course.shortTitle}?`}
+            subtitle={`Request a free ${TRIAL.durationMinutes}-minute trial before choosing a paid plan.`}
+          />
+          <p style={{ textAlign: "center", marginTop: 8 }}>
+            <Link href="/online-quran-classes#cta" style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem" }}>
+              Or open the full booking page →
+            </Link>
           </p>
-          <Link href="/online-quran-classes#cta" className="btn-primary-np">
-            Book Free Trial Class →
-          </Link>
         </div>
       </section>
     </>

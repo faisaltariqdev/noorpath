@@ -5,12 +5,16 @@ import { FaInstagram, FaTiktok, FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { GOOGLE_BUSINESS_URL, TRUSTPILOT } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const courses = [
   { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
   { href: "/learn-tajweed-online", label: "Tajweed Rules" },
   { href: "/hifz-quran-online", label: "Hifz Program" },
   { href: "/online-quran-classes-for-kids", label: "Kids Quran" },
+  { href: "/one-on-one-quran-classes", label: "1-to-1 Quran Classes" },
+  { href: "/quran-classes-for-sisters", label: "Classes for Sisters" },
+  { href: "/quran-classes-for-working-professionals", label: "For Professionals" },
   { href: "/courses/noorani-qaida-online", label: "Noorani Qaida" },
   { href: "/courses/arabic-language-online", label: "Arabic Language" },
   { href: "/courses/islamic-studies-online", label: "Islamic Studies" },
@@ -138,7 +142,7 @@ export default function Footer() {
                 families, with live lessons and timezone-based tutor matching.
               </p>
               <div className="flex gap-2 flex-wrap items-center">
-                <Link
+                <WhatsAppLink
                   href="https://wa.me/923124877906"
                   className="social-btn"
                   aria-label="WhatsApp NoorPath"
@@ -146,7 +150,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <FaWhatsapp size={15} />
-                </Link>
+                </WhatsAppLink>
                 <Link
                   href="https://www.facebook.com/noorpathquranacademy"
                   className="social-btn"
@@ -277,13 +281,13 @@ export default function Footer() {
                 </li>
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <MessageCircle size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
-                  <Link
+                  <WhatsAppLink
                     href="https://wa.me/923124877906"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     WhatsApp: +92 312 4877906
-                  </Link>
+                  </WhatsAppLink>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <FaFacebookF size={14} style={{ flexShrink: 0, opacity: 0.7 }} />

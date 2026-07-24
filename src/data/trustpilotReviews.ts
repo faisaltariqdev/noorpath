@@ -50,3 +50,27 @@ export const trustpilotReviews: TrustpilotReview[] = [
     date: "June 2026",
   },
 ];
+
+/** Featured reviews shown on the homepage (schema must match 1:1). */
+export const featuredTrustpilotReviews = trustpilotReviews.slice(0, 4);
+
+/** Derive AggregateRating values from the local Trustpilot review dataset. */
+export function getTrustpilotAggregateFromReviews(reviews = trustpilotReviews) {
+  const reviewCount = reviews.length;
+  if (reviewCount === 0) {
+    return {
+      ratingValue: Number(TRUSTPILOT.score),
+      reviewCount: TRUSTPILOT.reviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    };
+  }
+  const sum = reviews.reduce((acc, r) => acc + r.stars, 0);
+  const ratingValue = Math.round((sum / reviewCount) * 10) / 10;
+  return {
+    ratingValue,
+    reviewCount,
+    bestRating: 5,
+    worstRating: 1,
+  };
+}

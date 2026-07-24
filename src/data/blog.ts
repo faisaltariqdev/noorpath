@@ -639,11 +639,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "alhamdulillah-meaning-in-english",
-    title: "Alhamdulillah Meaning in English — Arabic & When to Say",
-    description: "Alhamdulillah means “All praise is due to Allah.” Arabic text, pronunciation, Quran references, benefits, and when Muslims say it daily.",
+    title: "Alhamdulillah Meaning — Praise Allah (Arabic Guide)",
+    description:
+      "Alhamdulillah meaning in English: “All praise is due to Allah.” Arabic الحمد لله, when to say it, Quran references, benefits, and how to teach kids this daily dhikr.",
     category: "Dhikr & Duas",
     date: "2025-07-10",
-    updatedAt: "2026-07-21",
+    updatedAt: "2026-07-24",
     readTime: "7 min",
     keywords: ["alhamdulillah meaning","alhamdulillah in english","meaning of alhamdulillah"],
     excerpt: "Alhamdulillah (الحمد لله) translates to 'All praise is due to Allah' — one of the most powerful phrases in Islam. Learn its deep meaning and benefits.",
@@ -651,11 +652,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "astaghfirullah-meaning",
-    title: "Astaghfirullah Meaning — Arabic, English & Benefits",
-    description: "Astaghfirullah means “I seek forgiveness from Allah.” Arabic, pronunciation, Hadith benefits, and how often to say this istighfar daily.",
+    title: "Astaghfirullah Meaning — Seek Forgiveness from Allah",
+    description:
+      "Astaghfirullah meaning in English: “I seek forgiveness from Allah.” Arabic أستغفر الله, Hadith benefits, how often to say istighfar, and a simple daily forgiveness habit.",
     category: "Dhikr & Duas",
     date: "2025-07-20",
-    updatedAt: "2026-07-21",
+    updatedAt: "2026-07-24",
     readTime: "8 min",
     keywords: ["astaghfirullah meaning","astaghfirullah meaning in english","astaghfirullah arabic","astaghfirullah benefits","astaghfirullah","istighfar meaning","seeking forgiveness in islam","astaghfirullah full form","astaghfirullah means","what does astaghfirullah mean"],
     excerpt: "Astaghfirullah (أستغفر الله) means 'I seek forgiveness from Allah'. Discover when, how many times, and why this powerful dhikr should be part of your daily life.",
@@ -903,12 +905,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bismillah-meaning-in-english",
-    title: "Bismillah Meaning in English — Full Form & Arabic",
-    description: "Bismillah means “In the name of Allah.” Full form Bismillah ir-Rahman ir-Raheem, Arabic text, pronunciation, and when to say it every day.",
+    title: "Bismillah Meaning in English — Full Arabic Explained",
+    description:
+      "Bismillah meaning in English: “In the name of Allah.” Word-by-word Arabic, Bismillah ir-Rahman ir-Raheem, Surah An-Naml, when to say it, and FAQ for kids & adults.",
     category: "Dhikr & Duas",
     date: "2026-06-24",
-    updatedAt: "2026-07-21",
-    readTime: "10 min",
+    updatedAt: "2026-07-24",
+    readTime: "14 min",
     keywords: [
       "bismillah meaning", "bismillah meaning in english", "what does bismillah mean",
       "bismillah in arabic", "bismillah ir rahman ir rahim meaning", "bismillah pronunciation",
@@ -938,11 +941,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "inshallah-meaning-in-english",
-    title: "Inshallah Meaning in English — In Sha Allah Explained",
-    description: "Inshallah meaning in English: “If Allah wills.” Arabic إن شاء الله, when to say it, how to reply, vs Mashallah, and Quran 18:23–24 — clear FAQ guide.",
+    title: "Inshallah Meaning — If Allah Wills (Arabic + FAQ)",
+    description:
+      "Inshallah meaning in English is “If Allah wills.” Arabic إن شاء الله, when to say it, how to reply, vs Mashallah, Quran 18:23–24, and a clear parent-friendly FAQ.",
     category: "Dhikr & Duas",
     date: "2026-06-24",
-    updatedAt: "2026-07-21",
+    updatedAt: "2026-07-24",
     readTime: "10 min",
     keywords: [
       "inshallah meaning", "in sha allah meaning", "inshallah in english", "what does inshallah mean",
@@ -1627,6 +1631,65 @@ export const blogPosts: BlogPost[] = [
     ],
     excerpt:
       "Expanded recovery guide when a child forgets Arabic letters: assessment, 7- and 14-day plans, lookalike chart, review games, and calm tutor notes — without restarting from Alif.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "what-is-ijazah-in-quran-teaching",
+    title: "What Is Ijazah in Quran Teaching? — Meaning & How to Verify",
+    description:
+      "What is Ijazah in Quran teaching? Clear meaning, Ijazah vs Al-Azhar claims, what to ask before enrolment, and how to verify a tutor without falling for marketing slogans.",
+    category: "Online Learning",
+    date: "2026-07-24",
+    updatedAt: "2026-07-24",
+    readTime: "11 min",
+    keywords: [
+      "what is ijazah in quran teaching",
+      "ijazah certified quran teacher",
+      "al-azhar certified quran teacher online",
+      "ijazah meaning quran",
+      "how to verify quran teacher credentials",
+    ],
+    excerpt:
+      "Plain-English guide to Ijazah in Quran teaching, how it differs from Al-Azhar claims, and questions to ask before you enrol.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "is-online-quran-learning-as-effective-as-in-person",
+    title: "Is Online Quran Learning as Effective as In-Person? Honest Guide",
+    description:
+      "Is online Quran learning as effective as in-person? Compare live 1-to-1 online vs local classes for correction, schedule, cost, safeguarding, and how to test fit with a free trial.",
+    category: "Online Learning",
+    date: "2026-07-24",
+    updatedAt: "2026-07-24",
+    readTime: "10 min",
+    keywords: [
+      "is online quran learning as effective as in-person",
+      "online vs in person quran classes",
+      "are online quran classes effective",
+      "online quran classes vs madrassah",
+    ],
+    excerpt:
+      "An honest comparison of live online Quran lessons vs in-person learning — and how to test effectiveness before paying.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "difference-between-hifz-and-tajweed-classes",
+    title: "Difference Between Hifz and Tajweed Classes — Which First?",
+    description:
+      "Difference between Hifz and Tajweed classes: goals, weekly practice, who should start where, and how many lessons per week to plan — without fake completion promises.",
+    category: "Online Learning",
+    date: "2026-07-24",
+    updatedAt: "2026-07-24",
+    readTime: "10 min",
+    keywords: [
+      "difference between hifz and tajweed classes",
+      "hifz vs tajweed",
+      "how many classes per week to memorize quran",
+      "tajweed or hifz first",
+      "hifz classes online",
+    ],
+    excerpt:
+      "Clear Hifz vs Tajweed comparison so parents and adults choose the right pathway — plus frequency planning tips.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
 ];

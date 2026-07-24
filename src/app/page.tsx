@@ -4,7 +4,10 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import InteractiveNooraniQaidaSection from "@/components/home/InteractiveNooraniQaidaSection";
 import ParentPortalSection from "@/components/home/ParentPortalSection";
-import { trustpilotReviews } from "@/data/trustpilotReviews";
+import {
+  featuredTrustpilotReviews,
+  getTrustpilotAggregateFromReviews,
+} from "@/data/trustpilotReviews";
 import {
   CANCELLATION_NOTICE_DAYS,
   FAMILY_DISCOUNTS,
@@ -116,6 +119,8 @@ const jsonLd = {
 };
 
 export default function HomePage() {
+  const trustpilotAggregate = getTrustpilotAggregateFromReviews();
+
   return (
     <>
       <script
@@ -372,14 +377,14 @@ export default function HomePage() {
               rel="noopener noreferrer"
               style={{ display: "inline-flex", alignItems: "center", gap: 10, marginTop: 16, background: "#f7f9f8", border: "1px solid var(--border)", borderRadius: 12, padding: "10px 20px", textDecoration: "none" }}
             >
-              <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>★★★★</span>
-              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{TRUSTPILOT.score} TrustScore</span>
-              <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {TRUSTPILOT.reviewCount} reviews · last checked {TRUSTPILOT.lastChecked}</span>
+              <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>{"★".repeat(Math.round(trustpilotAggregate.ratingValue))}</span>
+              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{trustpilotAggregate.ratingValue} average from on-site reviews</span>
+              <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {trustpilotAggregate.reviewCount} reviews · last checked {TRUSTPILOT.lastChecked}</span>
               <span style={{ color: "#00b67a", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {trustpilotReviews.map((t) => (
+            {featuredTrustpilotReviews.map((t) => (
               <div key={t.name} className="testimonial-card">
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "#00b67a" }} />
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
@@ -654,6 +659,9 @@ export default function HomePage() {
                   ["/quran-teacher-online", "Online Quran Teacher"],
                   ["/free-quran-classes-online", "Free Quran Classes Online"],
                   ["/online-quran-for-beginners", "Online Quran for Beginners"],
+                  ["/one-on-one-quran-classes", "One-on-One Quran Classes"],
+                  ["/quran-classes-for-sisters", "Quran Classes for Sisters"],
+                  ["/quran-classes-for-working-professionals", "Classes for Working Professionals"],
                   ["/female-quran-teacher-online", "Female Quran Teacher Online"],
                   ["/online-quran-classes-for-adults", "Quran Classes for Adults"],
                   ["/online-quran-classes", "Online Quran Classes"],

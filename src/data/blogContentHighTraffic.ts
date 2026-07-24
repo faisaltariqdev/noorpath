@@ -582,10 +582,10 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <h2 id="factors">What actually changes the price</h2>
           <ul>
-            <li><strong>Tutor certification:</strong> an Ijazah-holder or Al-Azhar graduate costs more than an unverified reciter — and is worth it. See <a href="/our-tutors">how NoorPath vets tutors</a>.</li>
-            <li><strong>1-on-1 vs group:</strong> group classes look cheap, but a 1-on-1 student typically progresses 2–3× faster, so cost-per-progress is usually lower.</li>
-            <li><strong>Class length and frequency:</strong> 30 minutes is standard for kids; adults and Hifz students often need 45–60 minutes.</li>
-            <li><strong>Female tutors:</strong> demand for <a href="/female-quran-teacher-online">certified Hafiza teachers</a> is high; some academies charge extra — NoorPath does not.</li>
+            <li><strong>Tutor credentials:</strong> tutors with verifiable Ijazah or formal training often cost more than unverified reciters — ask for evidence for the proposed match. See <a href="/blog/what-is-ijazah-in-quran-teaching">what is Ijazah</a> and <a href="/our-tutors">how NoorPath confirms credentials</a>.</li>
+            <li><strong>1-on-1 vs group:</strong> group classes look cheap, but private lessons usually give more correction time per learner.</li>
+            <li><strong>Class length and frequency:</strong> 30 minutes is common for kids; adults and Hifz students often need longer or more frequent sessions.</li>
+            <li><strong>Female tutors:</strong> demand for <a href="/quran-classes-for-sisters">female tutor requests</a> is high; some academies surcharge — ask NoorPath to confirm current pricing on the <a href="/pricing">pricing page</a>.</li>
             <li><strong>Your country:</strong> academies price in USD/GBP; the tutor's location matters less than their certification.</li>
           </ul>
 
@@ -605,17 +605,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>In-person and online Quran tutoring costs vary by country, tutor, lesson length and format. Online one-to-one classes remove travel and may offer more scheduling options. Compare the current lesson frequency, duration and full monthly price before choosing — read the full comparison in <a href="/blog/benefits-of-online-quran-classes">benefits of online Quran classes</a>.</p>
 
           <div class="gold-box">
-            <strong>Test the proposed match before enrolling.</strong> Request a <a href="/online-quran-classes#cta">free 30-minute trial class</a>, ask about the tutor&apos;s relevant credentials and assess the lesson fit. No credit card is required.
+            <strong>Test the proposed match before enrolling.</strong> Request a <a href="/free-quran-classes-online">free 30-minute trial (no credit card)</a>, ask about the tutor&apos;s relevant credentials, and assess the lesson fit. See current <a href="/pricing">NoorPath pricing plans</a>.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
-              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
               <li><a href="/blog/how-to-choose-online-quran-teacher" style="color:var(--emerald);font-weight:600;">How to Choose an Online Quran Teacher</a></li>
-              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
-              <li><a href="/blog/learn-quran-online-adult-beginner-guide" style="color:var(--emerald);font-weight:600;">Learn Quran Online as an Adult Beginner</a></li>
+              <li><a href="/blog/is-online-quran-learning-as-effective-as-in-person" style="color:var(--emerald);font-weight:600;">Is Online Quran Learning as Effective as In-Person?</a></li>
+              <li><a href="/blog/difference-between-hifz-and-tajweed-classes" style="color:var(--emerald);font-weight:600;">Hifz vs Tajweed Classes</a></li>
+              <li><a href="/blog/what-is-ijazah-in-quran-teaching" style="color:var(--emerald);font-weight:600;">What Is Ijazah in Quran Teaching?</a></li>
+              <li><a href="/quran-classes-for-working-professionals" style="color:var(--emerald);font-weight:600;">Quran Classes for Working Professionals</a></li>
             </ul>
           </div>`,
   },
@@ -792,10 +792,10 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <h2 id="checklist">The 12-point checklist</h2>
           <h3>Credentials (check before the trial)</h3>
           <ol>
-            <li><strong>Ijazah or institution:</strong> ask exactly which scholar or institution certified them (e.g. Al-Azhar). Vague answers = fail. See how <a href="/our-tutors">NoorPath vets tutors</a>.</li>
+            <li><strong>Ijazah or institution:</strong> ask exactly which scholar or institution certified them, and what evidence applies to <em>this</em> tutor. Read <a href="/blog/what-is-ijazah-in-quran-teaching">what is Ijazah in Quran teaching</a>. Vague answers = fail. See how <a href="/our-tutors">NoorPath confirms credentials</a>.</li>
             <li><strong>Teaching experience with your age group:</strong> teaching a 5-year-old and a 45-year-old are different skills.</li>
             <li><strong>Language match:</strong> the tutor must explain in a language your family is comfortable with — English, Urdu, Arabic.</li>
-            <li><strong>Female tutor availability</strong> if you need one for daughters or sisters — <a href="/female-quran-teacher-online">verified Hafiza teachers</a>.</li>
+            <li><strong>Female tutor availability</strong> if you need one for daughters or sisters — <a href="/quran-classes-for-sisters">Quran classes for sisters</a> · <a href="/female-quran-teacher-online">female tutor requests</a>.</li>
           </ol>
 
           <h3>Teaching quality (test during the trial)</h3>
@@ -838,17 +838,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>An academy that answers all seven directly is worth trialling. For a full comparison framework, see <a href="/blog/best-online-quran-academy-guide">how to choose an online Quran academy</a>.</p>
 
           <div class="gold-box">
-            <strong>Run the checklist on us.</strong> Book a <a href="/online-quran-classes#cta">free 30-minute trial</a>, use the deliberate-mistake test, ask all 7 questions — then decide. No credit card required.
+            <strong>Run the checklist on us.</strong> Book a <a href="/free-quran-classes-online">free 30-minute trial (no credit card)</a>, use the deliberate-mistake test, ask all 7 questions — then decide. Compare plans on <a href="/pricing">pricing</a>.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
-              <li><a href="/blog/best-online-quran-academy-guide" style="color:var(--emerald);font-weight:600;">How to Evaluate an Online Quran Academy</a></li>
+              <li><a href="/blog/what-is-ijazah-in-quran-teaching" style="color:var(--emerald);font-weight:600;">What Is Ijazah in Quran Teaching?</a></li>
+              <li><a href="/blog/is-online-quran-learning-as-effective-as-in-person" style="color:var(--emerald);font-weight:600;">Is Online Quran Learning as Effective as In-Person?</a></li>
               <li><a href="/blog/online-quran-classes-cost-pricing-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes Cost &amp; Pricing</a></li>
-              <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
-              <li><a href="/blog/learn-quran-online-adult-beginner-guide" style="color:var(--emerald);font-weight:600;">Learn Quran Online as an Adult Beginner</a></li>
+              <li><a href="/blog/difference-between-hifz-and-tajweed-classes" style="color:var(--emerald);font-weight:600;">Hifz vs Tajweed Classes</a></li>
+              <li><a href="/blog/benefits-of-online-quran-classes" style="color:var(--emerald);font-weight:600;">15 Benefits of Online Quran Classes</a></li>
             </ul>
           </div>`,
   },

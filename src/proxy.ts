@@ -21,6 +21,27 @@ const LEGACY_PATHS: Record<string, string> = {
   "/free-resources.html": "/islamic-resources",
   "/about.html": "/about",
   "/index.html": "/",
+  // Legacy blog/*.html (audit §1.1) — also covered by generic .html strip below
+  "/blog/index.html": "/blog",
+  "/blog/index": "/blog",
+  "/blog/99-names-of-allah-asmaul-husna.html": "/blog/99-names-of-allah-asmaul-husna",
+  "/blog/alhamdulillah-meaning-in-english.html": "/blog/alhamdulillah-meaning-in-english",
+  "/blog/astaghfirullah-meaning.html": "/blog/astaghfirullah-meaning",
+  "/blog/ayatul-kursi-arabic-english-benefits.html": "/blog/ayatul-kursi-arabic-english-benefits",
+  "/blog/mashallah-meaning.html": "/blog/mashallah-meaning",
+  "/blog/noorani-qaida-complete-guide.html": "/blog/noorani-qaida-complete-guide",
+  "/blog/surah-yaseen-arabic-english.html": "/blog/surah-yaseen-arabic-english",
+  "/blog/tajweed-rules-complete-guide.html": "/blog/tajweed-rules-complete-guide",
+  "/blog/best-age-to-start-quran-learning.html": "/blog/best-age-to-start-quran-learning",
+  "/blog/how-to-memorize-quran-faster.html": "/blog/how-to-memorize-quran-faster",
+  "/blog/dua-e-qunoot-arabic-english.html": "/blog/dua-e-qunoot-arabic-english",
+  "/blog/benefits-of-online-quran-classes.html": "/blog/benefits-of-online-quran-classes",
+  "/blog/duas-for-kids-to-memorize.html": "/blog/duas-for-kids-to-memorize",
+  "/blog/how-to-teach-quran-to-kids.html": "/blog/how-to-teach-quran-to-kids",
+  "/blog/how-to-pray-salah-step-by-step.html": "/blog/how-to-pray-salah-step-by-step",
+  "/blog/islamic-baby-names-2026.html": "/blog/islamic-baby-names-2026",
+  "/blog/islamic-dream-interpretation.html": "/blog/islamic-dream-interpretation",
+  "/blog/signs-of-qiyamah.html": "/blog/signs-of-qiyamah",
 };
 
 export function proxy(request: NextRequest) {

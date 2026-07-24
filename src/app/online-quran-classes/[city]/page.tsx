@@ -10,6 +10,7 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCurrencyNote, getLocale, getOpenGraphLocale } from "@/lib/geoSeo";
 import { CheckCircle, Clock, MapPin, Shield, BookOpen, Users } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
 
 interface Props {
@@ -201,7 +202,7 @@ export default async function CityPage({ params }: Props) {
               </div>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 22 }}>
                 <a href="#trial" className="btn-primary-np">Book Free Trial →</a>
-                <a
+                <WhatsAppLink
                   href={`${CONTACT.whatsappUrl}?text=${waText}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -209,7 +210,7 @@ export default async function CityPage({ params }: Props) {
                   style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
                 >
                   WhatsApp Us
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
 
@@ -496,7 +497,7 @@ export default async function CityPage({ params }: Props) {
           </p>
           <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="#trial" className="btn-primary-np">Book Free Trial Class →</a>
-            <a
+            <WhatsAppLink
               href={`${CONTACT.whatsappUrl}?text=${waText}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -504,7 +505,7 @@ export default async function CityPage({ params }: Props) {
               style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
             >
               Chat on WhatsApp
-            </a>
+            </WhatsAppLink>
           </div>
         </div>
       </section>

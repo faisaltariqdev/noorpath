@@ -35,12 +35,14 @@ import { highTrafficBlogContent } from "./blogContentHighTraffic";
 import { priorityABlogContent } from "./blogContentPriorityA";
 import { parentLongTailBlogContent } from "./blogContentParentLongTail";
 import { diasporaEuropeBlogContent } from "./blogContentDiasporaEurope";
+import { competitorGapBlogContent } from "./blogContentCompetitorGaps";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
   ...priorityABlogContent,
   ...parentLongTailBlogContent,
   ...diasporaEuropeBlogContent,
+  ...competitorGapBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>
@@ -2555,7 +2557,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>📖 The Hadith on Asmaul Husna:</strong> The Prophet ﷺ said: <em>"Inna lillahi tis'atan wa tis'eena isma, mi'atan illa wahida, man ahsaha dakhala al-jannah."</em> — "Allah has ninety-nine names, one hundred minus one. Whoever memorizes them will enter Paradise." (Sahih Bukhari, Hadith 2736; Sahih Muslim, Hadith 2677)
           </div>
 
-          <p>Scholars explain that "memorizing" (ahsaha) means <strong>understanding, reflecting on, and living by</strong> the meanings — not just reciting the names. Each name of Allah is a doorway to deeper faith, better worship, and more sincere dua.</p>
+          <p>Scholars explain that "memorizing" (ahsaha) means <strong>understanding, reflecting on, and living by</strong> the meanings — not just reciting the names. Each name of Allah is a doorway to deeper faith, better worship, and more sincere dua. Families who want live guidance for Asmaul Husna and Quran can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a>.</p>
 
           <!-- =================== NAMES 1-10 =================== -->
           <div class="category-header">
@@ -3454,6 +3456,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Learn Islamic Studies & Quran at NoorPath Academy</strong><br>
             NoorPath offers online lessons that may cover Asmaul Husna, Quran recitation, Tajweed, daily duas and Islamic Studies for children or adults, depending on the selected course.<br><br>
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp;
             <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a> &nbsp;|&nbsp;
             <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
             <a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:700;">40+ duas for kids →</a>
@@ -3728,7 +3731,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== TEACHING KIDS =================== -->
           <h2>Teaching Children to Say Alhamdulillah</h2>
-          <p>Alhamdulillah is one of the first Islamic phrases a child should learn — even before formal Quran lessons begin. Here's how to teach it naturally:</p>
+          <p>Alhamdulillah is one of the first Islamic phrases a child should learn — even before formal Quran lessons begin. Families who want guided practice can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a>, then <a href="/pricing" style="color:var(--emerald);font-weight:600;">see our simple pricing plans</a> if they continue. Here's how to teach it naturally:</p>
           <ul>
             <li><strong>Model it constantly:</strong> Say Alhamdulillah out loud in front of your children — after eating, when something good happens, after sneezing.</li>
             <li><strong>Connect it to feelings:</strong> When your child experiences something good, prompt them: "What do we say? Alhamdulillah!"</li>
@@ -3762,7 +3765,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Teach your children the language of gratitude from day one.</strong> At NoorPath Academy, we teach Alhamdulillah, Islamic phrases, Quran, and Salah — building a complete Islamic foundation. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
+            <strong>Teach your children the language of gratitude from day one.</strong> At NoorPath Academy, we teach Alhamdulillah, Islamic phrases, Quran, and Salah — building a complete Islamic foundation. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp; <a href="/pricing" style="color:var(--emerald);font-weight:700;">See pricing plans →</a>
           </div>
         </div>
 
@@ -3917,7 +3920,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== IN THE QURAN =================== -->
           <h2>Astaghfirullah in the Quran</h2>
-          <p>Allah commands istighfar in the Quran repeatedly, and promises extraordinary rewards for those who do it:</p>
+          <p>Allah commands istighfar in the Quran repeatedly, and promises extraordinary rewards for those who do it. Parents who want children to learn istighfar, duas, and Quran with a live tutor can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a> before committing to a plan:</p>
 
           <div class="quran-ref">
             <div class="quran-ref-arabic">فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا ۝ يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا ۝ وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا</div>
@@ -4019,7 +4022,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Learn proper Quran recitation and Islamic knowledge at NoorPath Academy.</strong> Our tutors teach the correct pronunciation of all Islamic phrases including istighfar, as well as Tajweed, Islamic Studies, and Quran for all ages. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free trial →</a>
+            <strong>Learn proper Quran recitation and Islamic knowledge at NoorPath Academy.</strong> Our tutors teach the correct pronunciation of all Islamic phrases including istighfar, as well as Tajweed, Islamic Studies, and Quran for all ages. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp; <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book on the main classes page →</a>
           </div>
         </div>
 
@@ -8500,7 +8503,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p><strong>Pronunciation tip:</strong> In-SHA-ah-Llah. The "sha" is emphatic. The "in" is short. Stress the middle syllable slightly.</p>
 
           <h2>Teaching Children to Say Inshallah</h2>
-          <p>Children learn Islamic phrases best through daily repetition in context:</p>
+          <p>Children learn Islamic phrases best through daily repetition in context. If you want structured lessons later, you can <a href="/pricing" style="color:var(--emerald);font-weight:600;">see our simple pricing plans</a> after trying a class:</p>
           <ul>
             <li>Say "Inshallah" before leaving home, starting homework, or planning weekend activities</li>
             <li>When a child asks "Can we go to the park tomorrow?" — respond "Inshallah!" enthusiastically</li>
@@ -8517,7 +8520,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>Can children learn Inshallah easily?<span>+</span></summary><p>Yes. Use it in daily talk before homework, outings, and weekend plans. Pair it with Bismillah and Alhamdulillah so Islamic phrases become natural habits.</p></details>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">online Quran classes for kids</a> or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial →</a>
+            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">online Quran classes for kids</a>, <a href="/pricing" style="color:var(--emerald);font-weight:700;">see our simple pricing plans</a>, or <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">book a free trial →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9024,8 +9027,10 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   "bismillah-meaning-in-english": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
     .article-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin: 40px 0 16px; }
+    .article-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--emerald); margin: 24px 0 10px; }
     .article-body p { margin-bottom: 18px; }
     .article-body ul { margin-bottom: 18px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; }
     .highlight-box { background: rgba(10,110,79,.06); border-left: 4px solid var(--emerald); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
     .gold-box { background: rgba(232,184,75,.08); border-left: 4px solid var(--gold); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
     .word-hero { text-align:center; padding:48px 24px; background:linear-gradient(135deg,rgba(10,110,79,.04),rgba(10,110,79,.09)); border-radius:20px; margin:32px 0; border:1px solid rgba(10,110,79,.12); }
@@ -9035,11 +9040,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .break-card { background:var(--ivory); border:1px solid var(--border); border-radius:12px; padding:18px 14px; text-align:center; }
     .bc-arabic { font-family:'Amiri',serif; font-size:1.5rem; color:var(--emerald); direction:rtl; margin-bottom:6px; }
     .bc-meaning { font-weight:700; color:var(--charcoal); font-size:.85rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { padding: 16px 20px; font-weight: 700; background: var(--ivory); color: var(--charcoal); display: flex; justify-content: space-between; align-items: center; }
+    .faq-a { padding: 16px 20px; color: #374151; font-size: .95rem; line-height: 1.7; border-top: 1px solid var(--border); }
     @media (max-width:576px) { .break-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
-    content: `<p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults use it daily without knowing its full depth, Quranic roots, or the difference between the short and complete forms.</p>
+    content: `<p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults say it every day without knowing its full depth, Quranic roots, or the difference between the short and complete forms. This guide explains the <strong>Bismillah meaning in English</strong>, the word-by-word Arabic, when to say it, Surah An-Naml’s special mention, common spellings people search for, and how to teach it to kids with love — not pressure.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Bismillah meaning in English</strong> is <em>"In the name of Allah."</em> Muslims say it before eating, drinking, traveling, studying, and starting any important action — seeking Allah's blessings and help. The full form is <strong>Bismillah ir-Rahman ir-Raheem</strong> — "In the name of Allah, the Most Gracious, the Most Merciful."
+            <strong>Quick answer:</strong> <strong>Bismillah meaning in English</strong> is <em>"In the name of Allah."</em> Muslims say it before eating, drinking, traveling, studying, Quran recitation, and starting important actions — seeking Allah's blessings and help. The full form is <strong>Bismillah ir-Rahman ir-Raheem</strong> — "In the name of Allah, the Most Gracious, the Most Merciful."
           </div>
 
           <div class="word-hero">
@@ -9048,38 +9056,125 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div style="font-weight:600;color:var(--charcoal);">"In the name of Allah"</div>
           </div>
 
-          <h2>Bismillah Meaning Word by Word</h2>
+          <h2>Bismillah meaning word by word</h2>
+          <p>Understanding each piece makes the phrase feel alive — especially for children who are also learning Arabic letter sounds through <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a>.</p>
           <div class="break-grid">
             <div class="break-card"><div class="bc-arabic">بِ</div><div class="bc-meaning">Bi = In / With</div></div>
-            <div class="break-card"><div class="bc-arabic">سْمِ</div><div class="bc-meaning">Ismi = Name</div></div>
-            <div class="break-card"><div class="bc-arabic">اللَّهِ</div><div class="bc-meaning">Allah = Allah (God)</div></div>
+            <div class="break-card"><div class="bc-arabic">اسْمِ</div><div class="bc-meaning">Ism = Name</div></div>
+            <div class="break-card"><div class="bc-arabic">اللَّهِ</div><div class="bc-meaning">Allah = God</div></div>
           </div>
+          <p>Together: <em>Bi-ismi-llāh</em> — we begin by attaching the action to Allah’s name. The full basmalah adds two of Allah’s beautiful names of mercy:</p>
+          <div class="break-grid">
+            <div class="break-card"><div class="bc-arabic">الرَّحْمَٰن</div><div class="bc-meaning">Ar-Raḥmān = The Most Gracious</div></div>
+            <div class="break-card"><div class="bc-arabic">الرَّحِيم</div><div class="bc-meaning">Ar-Raḥīm = The Most Merciful</div></div>
+            <div class="break-card"><div class="bc-arabic">بِسْمِ اللَّهِ…</div><div class="bc-meaning">Full: In Allah’s name, with His mercy</div></div>
+          </div>
+          <p>Scholars often explain that <strong>Ar-Rahman</strong> points to vast, encompassing mercy, while <strong>Ar-Raheem</strong> points to special, continuing mercy for the believers — both names appear at the start of nearly every surah.</p>
 
-          <h2>Short Form vs Full Form</h2>
+          <h2>Short form vs full form (Bismillah ir-Rahman ir-Raheem)</h2>
           <div class="gold-box">
-            <strong>Short:</strong> بِسْمِ اللَّهِ — <em>Bismillah</em> — for daily actions (eating, entering home, starting homework)<br><br>
-            <strong>Full:</strong> بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — <em>Bismillah ir-Rahman ir-Raheem</em> — for Salah, Quran recitation, and formal acts. Opens every surah of the Quran except Surah At-Tawbah.
+            <strong>Short:</strong> بِسْمِ اللَّهِ — <em>Bismillah</em> — for everyday actions (eating, entering a room, starting homework)<br><br>
+            <strong>Full:</strong> بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — <em>Bismillah ir-Rahman ir-Raheem</em> / <em>Bismillahi Rahmanir Raheem</em> — for Salah, Quran recitation, and formal acts. It opens every surah of the Quran except Surah At-Tawbah.
           </div>
+          <p>People search many spellings: <em>bismillah</em>, <em>bismilla</em>, <em>bismillahi</em>, <em>bismillah hir rahman nir rahim</em>, <em>bismillahirrahmanirrahim</em>, and <em>in the name of Allah the most gracious</em>. They all point to the same blessed phrase.</p>
 
-          <h2>When Should You Say Bismillah?</h2>
+          <h2>When and why Muslims say Bismillah</h2>
+          <h3>Before meals</h3>
+          <p>The Prophet ﷺ taught: “Say Bismillah, eat with your right hand, and eat from what is nearest to you.” (Bukhari). If someone forgets at the start, scholars mention saying Bismillah when they remember during the meal. Pair this with the <a href="/blog/dua-before-and-after-eating" style="color:var(--emerald);font-weight:600;">dua before and after eating</a>.</p>
+          <h3>Before starting tasks</h3>
+          <p>Work, study, driving, cooking, opening a laptop for class — beginning “in Allah’s name” turns ordinary moments into mindful worship. Parents can model this before homework and before an online Quran lesson.</p>
+          <h3>Before Quran recitation</h3>
+          <p>Reciters say the basmalah (except where Surah At-Tawbah begins). Teaching children the full form before reading builds respect for the mushaf and links letter practice to meaning.</p>
+          <h3>Leaving home and travel</h3>
+          <p>Many combine Bismillah with tawakkul: “Bismillah, tawakkaltu ‘alallah…” See also the <a href="/blog/dua-entering-leaving-home" style="color:var(--emerald);font-weight:600;">dua for entering and leaving home</a> and <a href="/blog/safar-ki-dua-travel-dua-arabic-english" style="color:var(--emerald);font-weight:600;">travel dua</a>.</p>
+          <h3>Wudu and Salah</h3>
+          <p>Beginning purification and prayer with Allah’s name trains the heart to leave distraction behind. For prayer basics, see <a href="/blog/how-to-pray-salah-step-by-step" style="color:var(--emerald);font-weight:600;">how to pray Salah step by step</a>.</p>
+
+          <h2>Bismillah in the Quran — including Surah An-Naml</h2>
+          <p>Every surah except Surah At-Tawbah begins with Bismillah ir-Rahman ir-Raheem. The Quran opens with Surah Al-Fatiha, which starts with this phrase — making the basmalah the gateway to the Book. Read <a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha in Arabic and English</a>.</p>
+          <p>Surah An-Naml (27:30) also preserves a remarkable moment: the letter of Prophet Sulayman (Solomon) عليه السلام begins with <em>Bismillah ir-Rahman ir-Raheem</em>. That Quranic scene shows the basmalah as a dignified opening for communication and leadership — not only a private whisper before food.</p>
+          <p>When children hear that story, Bismillah stops being “just a rule” and becomes part of prophetic manners.</p>
+
+          <h2>Why saying Bismillah matters spiritually</h2>
           <ul>
-            <li><strong>Before eating or drinking</strong> — Prophet ﷺ taught: "Say Bismillah, eat with your right hand, and eat from what is nearest to you." (Bukhari)</li>
-            <li><strong>Before leaving home</strong> — "Bismillah, tawakkaltu 'alallah" — In Allah's name, I trust in Allah</li>
-            <li><strong>Before studying Quran or any knowledge</strong> — Seeking Allah's help in understanding</li>
-            <li><strong>Before starting work, travel, or marriage</strong> — Any significant new endeavour</li>
-            <li><strong>Before wudu and Salah</strong> — Beginning acts of worship</li>
+            <li><strong>Intention:</strong> You remember Who you depend on before you act</li>
+            <li><strong>Barakah:</strong> Muslims seek blessing in small and large affairs</li>
+            <li><strong>Protection of habit:</strong> A short phrase that keeps the tongue soft with Allah’s remembrance</li>
+            <li><strong>Teaching tawheed gently:</strong> Children learn that Allah’s name comes first</li>
+          </ul>
+          <p>It does not replace effort, planning, or medical care. It connects the effort to Allah.</p>
+
+          <h2>Common mistakes and gentle corrections</h2>
+          <ul>
+            <li>Rushing so fast the child never hears the words clearly</li>
+            <li>Scolding a child who forgets at the table — better to smile and say it together</li>
+            <li>Using only the short form forever and never teaching the full basmalah for Quran</li>
+            <li>Treating Bismillah as magic words instead of mindful remembrance</li>
           </ul>
 
-          <h2>Bismillah in the Quran</h2>
-          <p>Every surah of the Quran (except Surah At-Tawbah) begins with Bismillah ir-Rahman ir-Raheem. The Quran itself opens with Surah Al-Fatiha, which starts with this blessed phrase — making Bismillah the gateway to the entire Book of Allah.</p>
+          <h2>Teaching children to say Bismillah</h2>
+          <p>The best way children learn is daily repetition in context — not lectures. Say it aloud before every meal, every car journey, and every Quran lesson. When children hear parents say Bismillah naturally, they adopt it as their own habit.</p>
+          <p>For ages 3–6, one clear “Bismillah” before food is enough. For ages 7+, add the full form before Quran practice. Interactive lessons help restless learners stay engaged — explore <a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">interactive Noorani Qaida</a> and <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>.</p>
+          <p>Families who want a gentle start can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a> and ask the tutor to include Bismillah and daily manners in the first lessons.</p>
 
-          <h2>Teaching Children to Say Bismillah</h2>
-          <p>The best way children learn Bismillah is through daily repetition in context — not lectures. Say it aloud before every meal, every car journey, and every Quran lesson. When children hear parents say Bismillah naturally, they adopt it as their own habit.</p>
-          <p>Bismillah can be included in <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a> and daily Islamic manners topics in <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>, according to the selected course.</p>
+          <h2>Bismillah vs other Islamic phrases</h2>
+          <ul>
+            <li><strong>Bismillah</strong> — begin an action in Allah’s name</li>
+            <li><strong>Alhamdulillah</strong> — praise Allah after a blessing or anytime — <a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah meaning</a></li>
+            <li><strong>Inshallah</strong> — if Allah wills, for future plans — <a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah meaning</a></li>
+            <li><strong>Mashallah</strong> — appreciation without envy — <a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah meaning</a></li>
+          </ul>
+
+          <h2>Pronunciation tips for English speakers</h2>
+          <p>Break it slowly: <em>Bis — mil — lah</em>. For the full form: <em>Bis — mil — laa — hir — rah — maa — nir — ra — heem</em>. Soft “h” in Allah; do not harden it into a harsh English “Aww-lah.” A live tutor can correct mouth shape gently during 1-to-1 practice.</p>
+          <p>If your child mixes Arabic letter sounds, slow the basmalah down and point to each word. Recovery review for forgotten letters is covered in <a href="/blog/child-forgets-arabic-letters" style="color:var(--emerald);font-weight:600;">my child forgets Arabic letters</a>.</p>
+
+          <h2>A simple daily Bismillah routine for busy families</h2>
+          <ol>
+            <li><strong>Wake / breakfast:</strong> one clear Bismillah before the first bite</li>
+            <li><strong>School bag / door:</strong> Bismillah with the leaving-home dua</li>
+            <li><strong>Homework or Quran slot:</strong> full basmalah before opening the mushaf or Qaida</li>
+            <li><strong>Dinner:</strong> child leads Bismillah once a week</li>
+            <li><strong>Screens:</strong> say Bismillah before starting a lesson call so technology begins with remembrance</li>
+          </ol>
+          <p>Consistency beats length. Five calm repetitions a day build a lifelong habit faster than a once-a-week lecture. For school mornings, pair this with <a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">dua before school for kids</a>.</p>
+
+          <h2>Bismillah and online Quran learning</h2>
+          <p>Every live lesson can open with the basmalah. That tiny ritual settles shy children, signals “this time is for Allah,” and connects letter practice to worship. Parents who do not speak Arabic can still lead the English meaning while a tutor guides the Arabic sounds — see <a href="/blog/parents-dont-speak-arabic-child-learn-quran" style="color:var(--emerald);font-weight:600;">parents who don’t speak Arabic</a>.</p>
+          <p>If attention is short, keep the opening to ten seconds, then move into interactive practice. Summer holidays are a good window to lock the habit with a short intensive — <a href="/blog/online-summer-quran-camp-for-kids" style="color:var(--emerald);font-weight:600;">online summer Quran camp for kids</a>.</p>
+
+          <h2>What Bismillah is not</h2>
+          <p>Bismillah is not a substitute for effort, safety, or professional help. It does not make harmful actions good. It is a Sunnah of beginning good deeds with Allah’s name — a light for the tongue and a reminder for the heart. Teach children both the words and the manners that should follow them: honesty, kindness, and care.</p>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want your child to learn Bismillah, Quran, and Islamic manners with a certified tutor?</strong>
-            <a href="/online-quran-classes-for-kids#cta" style="color:var(--emerald);font-weight:700;display:block;margin-top:12px;">Book a free 30-minute trial class for your child →</a>
+            <strong>Want your child to learn Bismillah, Quran, and Islamic manners with a patient tutor?</strong>
+            <p style="margin:10px 0 0;">Book a calm trial, then choose a plan that fits your family — <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">free trial Quran class</a> · <a href="/pricing" style="color:var(--emerald);font-weight:700;">see simple pricing plans</a> · <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">kids Quran classes</a>.</p>
+          </div>
+
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <div class="faq-q">What does Bismillah mean in English?<span style="color:var(--emerald);">+</span></div>
+            <div class="faq-a">Bismillah (بِسْمِ اللَّهِ) means “In the name of Allah.” Muslims say it to begin actions with Allah’s remembrance and seek blessing.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">What is the full form of Bismillah?<span style="color:var(--emerald);">+</span></div>
+            <div class="faq-a">Bismillah ir-Rahman ir-Raheem (بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ) means “In the name of Allah, the Most Gracious, the Most Merciful.” Use the short form for daily acts and the full form for Salah and Quran.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">When should you say Bismillah?<span style="color:var(--emerald);">+</span></div>
+            <div class="faq-a">Before eating or drinking, leaving home, studying, Quran recitation, travel, work, and other important beginnings — anytime you want to start with Allah’s name.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Is Bismillah in every surah of the Quran?<span style="color:var(--emerald);">+</span></div>
+            <div class="faq-a">It opens every surah except Surah At-Tawbah. Surah An-Naml also mentions the basmalah in the letter of Prophet Sulayman (27:30).</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">How do I teach Bismillah to my child?<span style="color:var(--emerald);">+</span></div>
+            <div class="faq-a">Model it at meals and before Quran practice. Keep it warm, not scolding. Short form first; add the full basmalah when they start reading Quran lines.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Is Bismillah the same as “in the name of God”?<span style="color:var(--emerald);">+</span></div>
+            <div class="faq-a">In English explanation, yes — it means beginning in Allah’s name. Muslims use the Arabic wording taught in the Quran and Sunnah, while understanding the English meaning.</div>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9091,6 +9186,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning</a></li>
               <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning</a></li>
               <li><a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha — Arabic &amp; English</a></li>
+              <li><a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">Free Trial Quran Classes</a></li>
             </ul>
           </div>`,
   },

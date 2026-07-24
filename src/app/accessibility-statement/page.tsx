@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTACT } from "@/lib/academyFacts";
 import { BASE_URL, ORGANIZATION_ID, WEBSITE_ID } from "@/lib/organizationSchema";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 export const revalidate = false;
 
@@ -117,14 +118,14 @@ export default function AccessibilityStatementPage() {
                 {CONTACT.email}
               </Link>{" "}
               or contact NoorPath on{" "}
-              <Link
+              <WhatsAppLink
                 href={CONTACT.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "var(--emerald)", fontWeight: 600 }}
               >
                 {CONTACT.phoneDisplay}
-              </Link>
+              </WhatsAppLink>
               . Include the page URL, the task you were trying to complete, the
               barrier encountered and, if you choose, the device or assistive
               technology used.

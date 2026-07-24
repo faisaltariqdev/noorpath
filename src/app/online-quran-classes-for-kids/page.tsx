@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
@@ -201,7 +202,7 @@ export default function OnlineQuranClassesForKidsPage() {
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial for Your Child →</Link>
-            <a
+            <WhatsAppLink
               href={`https://wa.me/923124877906?text=${encodeURIComponent("Assalamu Alaikum, I want to book a FREE Quran trial class for my child. Please share kids class details.")}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -209,7 +210,7 @@ export default function OnlineQuranClassesForKidsPage() {
               style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
             >
               WhatsApp Us
-            </a>
+            </WhatsAppLink>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View Pricing</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
               Tutor availability confirmed after your request

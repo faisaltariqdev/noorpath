@@ -21,6 +21,25 @@ const nextConfig: NextConfig = {
     remotePatterns: [],
   },
 
+  // Belt-and-suspenders host canonicalization (also configure in Vercel → Domains).
+  // Apex → www. HTTPS is primarily enforced by Vercel + HSTS below.
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "noorpath.online" }],
+        destination: "https://www.noorpath.online/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.noorpath.online" }, { type: "header", key: "x-forwarded-proto", value: "http" }],
+        destination: "https://www.noorpath.online/:path*",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       // ── Security headers on all routes ────────────────────────────────────────

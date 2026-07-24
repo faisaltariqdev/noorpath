@@ -674,6 +674,34 @@ footer {
   transform: none;
 }
 
+/* Compact trial form on light article / course surfaces */
+.inline-trial-cta .cta-input,
+.cta-form-compact .cta-input {
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--charcoal);
+}
+.inline-trial-cta .cta-input::placeholder,
+.cta-form-compact .cta-input::placeholder {
+  color: var(--muted);
+}
+.inline-trial-cta .cta-input:focus,
+.cta-form-compact .cta-input:focus {
+  border-color: var(--emerald);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(10,110,79,.1);
+}
+.inline-trial-cta .cta-input option,
+.cta-form-compact .cta-input option {
+  background: #fff;
+  color: var(--charcoal);
+}
+.inline-trial-cta .btn-cta-submit,
+.cta-form-compact .btn-cta-submit {
+  padding: 13px;
+  font-size: .95rem;
+}
+
 .cta-form-wrap {
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(255,255,255,.12);

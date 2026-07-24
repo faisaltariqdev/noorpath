@@ -140,7 +140,7 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
+          "@type": "Question",
         name: faq.q,
         acceptedAnswer: { "@type": "Answer", text: faq.a },
       })),

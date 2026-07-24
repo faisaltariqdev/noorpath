@@ -133,7 +133,61 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
     {"@type": "Question", "name": "Do I need Tajweed before starting Hifz?", "acceptedAnswer": {"@type": "Answer", "text": "Basic Tajweed should be learned before or alongside Hifz. The problem with starting Hifz without Tajweed is that pronunciation errors get memorized and become very difficult to correct later. Students who have basic Tajweed before starting Hifz typically progress 20–30% faster and produce a much stronger, longer-lasting Hifz."}},
     {"@type": "Question", "name": "How long does online Hifz take at NoorPath Academy?", "acceptedAnswer": {"@type": "Answer", "text": "Most children at NoorPath complete Hifz in 2.5 to 4 years with 5–6 sessions per week. Adults completing part-time Hifz with 3 sessions per week typically finish in 5–7 years. Every student receives a personalized timeline assessment during their free trial session based on their current level, age, and available sessions per week."}}
   ]},
-  "bismillah-meaning-in-english": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Bismillah mean in English?", "acceptedAnswer": {"@type": "Answer", "text": "Bismillah (بِسْمِ اللَّهِ) means 'In the name of Allah' in English. Muslims say it before eating, drinking, traveling, studying, and starting any important action — seeking Allah's blessings and help in everything they do."}}, {"@type": "Question", "name": "What is the full form of Bismillah?", "acceptedAnswer": {"@type": "Answer", "text": "The full form is Bismillah ir-Rahman ir-Raheem (بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ) meaning 'In the name of Allah, the Most Gracious, the Most Merciful.' The short form Bismillah is used for everyday actions; the full form is used in Salah and Quran recitation."}}, {"@type": "Question", "name": "When should you say Bismillah?", "acceptedAnswer": {"@type": "Answer", "text": "Say Bismillah before: eating or drinking, leaving home, starting work or travel, beginning Quran study or any knowledge, performing wudu and Salah, and any significant new endeavour. The Prophet Muhammad ﷺ taught Muslims to begin all good actions with Bismillah."}}, {"@type": "Question", "name": "Is Bismillah in the Quran?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Bismillah ir-Rahman ir-Raheem opens every surah of the Quran except Surah At-Tawbah (Surah 9). It is the first phrase of Surah Al-Fatiha, making it the gateway to the entire Quran."}}, {"@type": "Question", "name": "What is the difference between Bismillah and Alhamdulillah?", "acceptedAnswer": {"@type": "Answer", "text": "Bismillah means 'In the name of Allah' — said BEFORE starting an action to seek Allah's help. Alhamdulillah means 'All praise is for Allah' — said AFTER or during an experience to thank Allah. Bismillah begins; Alhamdulillah thanks."}}]},
+  "bismillah-meaning-in-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does Bismillah mean in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bismillah (بِسْمِ اللَّهِ) means “In the name of Allah.” Muslims say it to begin actions with Allah’s remembrance and seek blessing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the full form of Bismillah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bismillah ir-Rahman ir-Raheem (بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ) means “In the name of Allah, the Most Gracious, the Most Merciful.” Use the short form for daily acts and the full form for Salah and Quran.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When should you say Bismillah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Before eating or drinking, leaving home, studying, Quran recitation, travel, work, and other important beginnings — anytime you want to start with Allah’s name.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Bismillah in every surah of the Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It opens every surah except Surah At-Tawbah. Surah An-Naml also mentions the basmalah in the letter of Prophet Sulayman (27:30).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I teach Bismillah to my child?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Model it at meals and before Quran practice. Keep it warm, not scolding. Short form first; add the full basmalah when they start reading Quran lines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Bismillah the same as “in the name of God”?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In English explanation, yes — it means beginning in Allah’s name. Muslims use the Arabic wording taught in the Quran and Sunnah, while understanding the English meaning.",
+        },
+      },
+    ],
+  },
+
   "online-quran-classes-cost-pricing-guide": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much do online Quran classes cost per month?", "acceptedAnswer": {"@type": "Answer", "text": "Most families pay $30–$80 per month for two 30-minute 1-on-1 classes per week with a certified tutor. Hifz programs cost $60–$150/month because they need 4–5 sessions weekly, while group classes can be as low as $25/month but progress is slower."}}, {"@type": "Question", "name": "How much does a Quran teacher charge per hour?", "acceptedAnswer": {"@type": "Answer", "text": "Online certified Quran teachers typically cost $8–$25 per hour depending on certification (Ijazah/Al-Azhar), course type and 1-on-1 vs group format. In-person home tutors in the UK/US charge $20–$40 per hour, roughly double the online rate."}}, {"@type": "Question", "name": "Do online Quran academies offer family discounts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — reputable academies discount siblings: typically 15% off for 2 children, 20% for 3, and 25% for 4 or more, with each child still getting their own 1-on-1 class at their own level."}}, {"@type": "Question", "name": "Are cheap Quran classes worth it?", "acceptedAnswer": {"@type": "Answer", "text": "Be cautious with very cheap offers: unverified 'certified' claims, no free trial, and $20/month Hifz programs are red flags. A fair price with a verifiable Ijazah-holding tutor and a free trial class is the better long-term value."}}]},
   "learn-quran-as-an-adult-never-too-late": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Am I too old to learn the Quran?", "acceptedAnswer": {"@type": "Answer", "text": "No. Adults at 25, 40, 60 and beyond successfully learn to read the Quran every year. Most adult beginners go from zero Arabic to reading the mushaf in 6–12 months with two 30-minute 1-on-1 classes per week plus 10 minutes of daily practice."}}, {"@type": "Question", "name": "How long does it take an adult to learn to read Quran?", "acceptedAnswer": {"@type": "Answer", "text": "Typically 6–12 months: 4–8 weeks for the Arabic letters, 2–4 months of Noorani Qaida, then 4–7 months building fluency and basic Tajweed with a live tutor correcting pronunciation."}}, {"@type": "Question", "name": "I'm embarrassed that I never learned Quran — what should I do?", "acceptedAnswer": {"@type": "Answer", "text": "Private 1-on-1 online classes solve this: no group, no audience, just one patient tutor who teaches adult beginners every day. Nobody else sees your class, and the Hadith promises double reward for the one who recites with difficulty."}}, {"@type": "Question", "name": "Can women learn Quran with a female teacher online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Certified female tutors (Hafiza) teach adult sisters in fully private one-on-one sessions, with morning, evening and weekend slots available in every timezone."}}]},
   "new-muslim-guide-to-reading-quran": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where should a new Muslim start reading the Quran?", "acceptedAnswer": {"@type": "Answer", "text": "Start with a clear English translation (such as The Clear Quran) beginning at Surah Al-Fatiha and Juz 30 — the short surahs. In parallel, begin learning the Arabic letters so you can eventually recite the original text. Understanding and recitation are two separate tracks."}}, {"@type": "Question", "name": "Which surahs should a new Muslim learn first?", "acceptedAnswer": {"@type": "Answer", "text": "Learn Surah Al-Fatiha first (required in every prayer), then Surah Al-Ikhlas and Surah An-Nas. These three short surahs are enough to pray correctly while you continue learning."}}, {"@type": "Question", "name": "How long does it take a convert to learn to read Arabic?", "acceptedAnswer": {"@type": "Answer", "text": "Most new Muslims learn the 28 Arabic letters in 4–8 weeks, complete Noorani Qaida in 2–4 months, and read directly from the mushaf within 6–12 months with two lessons per week."}}, {"@type": "Question", "name": "Are there Quran teachers who specialise in new Muslims?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Revert-friendly tutors explain everything from zero with no assumed knowledge, in private 1-on-1 classes where any question is welcome. Mention you are a new Muslim when booking a free trial and you will be matched accordingly."}}]},
@@ -1017,6 +1071,145 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+
+  "what-is-ijazah-in-quran-teaching": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is Ijazah in Quran teaching?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An Ijazah is a formal authorisation — often with a chain of transmission — to recite and/or teach a specific Quran reading after assessment by a qualified teacher. Ask what evidence applies to your proposed tutor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Ijazah the same as Al-Azhar certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Al-Azhar refers to a university or institutional pathway; Ijazah refers to authorisation in a Quran reading or teaching tradition. A person may have one, both, or neither.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should every online Quran academy claim all tutors have Ijazah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Be cautious of blanket claims. Ask for the specific tutor's credentials related to your course goal before enrolment.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I request proof before paying?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Reputable academies confirm relevant credentials for the proposed tutor before enrolment. Use a free trial to assess teaching fit as well.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can I try a class without a credit card?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NoorPath Academy offers a free 30-minute live trial with no credit card required. Tutor availability is confirmed after your request.",
+        },
+      },
+    ],
+  },
+  "is-online-quran-learning-as-effective-as-in-person": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is online Quran learning as effective as in-person?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Live one-to-one online lessons can be as effective as in-person classes for many learners when correction is live, attendance is consistent, and home practice happens. Outcomes still vary by tutor fit and effort.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are recorded Quran courses enough?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Recordings help listening models, but beginners usually need live correction for pronunciation and Tajweed mistakes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can adults learn Quran effectively online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Many adults prefer private online lessons around work, including evening or weekend schedule matching when available.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I keep a child safe in online Quran classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Parents should arrange bookings, supervise young learners, keep devices in shared spaces, and use official academy channels rather than private messaging.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much do online Quran classes cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NoorPath plans start from published monthly pricing on the pricing page. The free trial requires no credit card.",
+        },
+      },
+    ],
+  },
+  "difference-between-hifz-and-tajweed-classes": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the difference between Hifz and Tajweed classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tajweed classes focus on correct pronunciation and recitation rules. Hifz classes focus on memorisation with new lesson and revision structure. Many learners need Tajweed foundations before intensive Hifz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I take Hifz and Tajweed together?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes. A tutor may correct Tajweed inside Hifz lessons or keep separate focus blocks. Overloading beginners usually slows both goals.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many classes per week to memorize Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no universal number. Frequency depends on retention, revision quality, and practice time. Ask for a personal plan after assessment rather than relying on fixed marketing timelines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which should my child start with — Tajweed or Hifz?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If Arabic reading is weak, start with Qaida. If reading exists but errors are frequent, prioritise Tajweed. If reading is stable and the goal is memorisation, start Hifz with disciplined revision.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I start without guessing the course?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Book a free 30-minute NoorPath trial with no credit card. The tutor can recommend Qaida, Tajweed, or Hifz after hearing the learner.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,
@@ -1036,9 +1229,69 @@ const EXCLUDED_COMMERCIAL_FAQ_SCHEMAS = new Set([
   "how-to-choose-online-quran-teacher",
 ]);
 
-export const blogFaqs: Record<string, BlogFaqSchema> =
+/** Subtle commercial bridge Q&As for high-impression phrase blogs (Fix 11E). */
+const COMMERCIAL_BRIDGE_BY_SLUG: Record<
+  string,
+  { name: string; text: string }
+> = {
+  "bismillah-meaning-in-english": {
+    name: "Can my child learn Bismillah and Quran with a free trial?",
+    text: "Yes. NoorPath Academy offers a free 30-minute live trial with no credit card required. You can request a kids tutor match and practise Islamic phrases alongside Qaida or Quran reading.",
+  },
+  "inshallah-meaning-in-english": {
+    name: "Where can families practise Inshallah and Quran with a live tutor?",
+    text: "NoorPath offers live 1-to-1 online Quran classes for kids and adults. Start with a free trial, then see published pricing if you continue.",
+  },
+  "alhamdulillah-meaning-in-english": {
+    name: "How can I teach Alhamdulillah with guided Quran lessons?",
+    text: "Many families start with a free NoorPath trial class to practise pronunciation of daily Islamic phrases and begin Qaida or Quran reading with a matched tutor.",
+  },
+  "astaghfirullah-meaning": {
+    name: "Can adults learn istighfar, duas, and Quran online?",
+    text: "Yes. Adult learners can request 1-to-1 online classes, including evening or weekend preferences when available, starting with a free trial that needs no credit card.",
+  },
+  "99-names-of-allah-asmaul-husna": {
+    name: "Can children learn Asmaul Husna with online Islamic studies?",
+    text: "You can request a free trial and ask for Islamic studies or kids Quran matching. NoorPath confirms tutor fit and schedule after your request.",
+  },
+};
+
+function appendCommercialBridgeFaqs(
+  faqs: Record<string, BlogFaqSchema>,
+): Record<string, BlogFaqSchema> {
+  const next: Record<string, BlogFaqSchema> = { ...faqs };
+  for (const [slug, bridge] of Object.entries(COMMERCIAL_BRIDGE_BY_SLUG)) {
+    const schema = next[slug];
+    if (!schema || typeof schema !== "object") continue;
+    const mainEntity = (schema as { mainEntity?: unknown }).mainEntity;
+    if (!Array.isArray(mainEntity)) continue;
+    const already = mainEntity.some(
+      (item) =>
+        typeof item === "object" &&
+        item !== null &&
+        "name" in item &&
+        (item as { name?: string }).name === bridge.name,
+    );
+    if (already) continue;
+    next[slug] = {
+      ...schema,
+      mainEntity: [
+        ...mainEntity,
+        {
+          "@type": "Question",
+          name: bridge.name,
+          acceptedAnswer: { "@type": "Answer", text: bridge.text },
+        },
+      ],
+    };
+  }
+  return next;
+}
+
+export const blogFaqs: Record<string, BlogFaqSchema> = appendCommercialBridgeFaqs(
   Object.fromEntries(
     Object.entries(rawBlogFaqs).filter(
       ([slug]) => !EXCLUDED_COMMERCIAL_FAQ_SCHEMAS.has(slug),
     ),
-  );
+  ),
+);

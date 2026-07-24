@@ -16,6 +16,7 @@ import {
   Video,
 } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import UkQuranClassesGuide from "@/components/UkQuranClassesGuide";
 import {
   BASE_URL,
@@ -460,7 +461,7 @@ export default function OnlineQuranClassesUkPage() {
                 <a href="#trial" className="btn-primary-np">
                   Request a Free Trial
                 </a>
-                <a
+                <WhatsAppLink
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -471,7 +472,7 @@ export default function OnlineQuranClassesUkPage() {
                   }}
                 >
                   Ask on WhatsApp
-                </a>
+                </WhatsAppLink>
               </div>
 
               <p
@@ -1236,7 +1237,7 @@ export default function OnlineQuranClassesUkPage() {
                 the selected plan includes and how a change or concern is
                 handled.
               </p>
-              <a
+              <WhatsAppLink
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1252,7 +1253,7 @@ export default function OnlineQuranClassesUkPage() {
               >
                 <MessageCircle size={17} aria-hidden="true" />
                 Ask about UK tutor availability
-              </a>
+              </WhatsAppLink>
             </div>
           </div>
         </div>

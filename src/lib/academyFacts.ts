@@ -71,5 +71,32 @@ export const SERVICE_FACTS = [
   { value: "Flexible", label: "Tutor matching by timezone" },
 ] as const;
 
+/**
+ * Verified public trust claims only — do NOT advertise money-back,
+ * completion certificates, or blanket Al-Azhar status until confirmed.
+ */
+export const VERIFIED_TRUST_CLAIMS = [
+  {
+    id: "free-trial-no-card",
+    title: "Free trial — no credit card",
+    text: `Request a free ${TRIAL.durationMinutes}-minute live 1-to-1 trial. No credit card is required to book the trial.`,
+  },
+  {
+    id: "cancellation-notice",
+    title: `${CANCELLATION_NOTICE_DAYS}-day cancellation notice`,
+    text: `Paid plans can be cancelled with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date. This is not a money-back guarantee for fees already paid.`,
+  },
+  {
+    id: "credentials-confirmed",
+    title: "Credentials confirmed per tutor",
+    text: "Relevant qualifications (for example Ijazah or formal Islamic studies training when claimed for that tutor) are confirmed before enrolment. Ask for the proposed tutor's specific evidence — NoorPath does not claim every tutor is Al-Azhar certified.",
+  },
+  {
+    id: "one-to-one",
+    title: "Live private lessons",
+    text: "Classes are arranged as live one-to-one sessions with tutor matching by subject, age, timezone, and male or female preference.",
+  },
+] as const;
+
 export const WHATSAPP_TRIAL_MESSAGE =
   "Assalamu Alaikum. I would like to ask about a free online Quran trial class. Please share tutor availability and the next steps.";
