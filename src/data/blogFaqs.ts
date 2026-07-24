@@ -875,6 +875,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
           text: "Use the free trial form and write speech delay — gentle pacing, one sound target. Ask for a calm 1-to-1 tutor.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Can a mostly non-speaking child still benefit?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Listening, pointing, dua presence, and Islamic love are real benefits while speech grows separately.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How often should we have class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 2–4 short sessions weekly beats one long weekly struggle. Consistency and calm exits matter most.",
+        },
+      },
     ],
   },
   "online-summer-quran-camp-for-kids": {
@@ -921,6 +937,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
           text: "Similar tutors, tighter holiday schedule and often more interactive variety so summer attention stays high.",
         },
       },
+      {
+        "@type": "Question",
+        name: "What if we only have two weeks free?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Run a mini-camp: assess, seal weak letters, one joining target, celebrate. Two focused weeks beat an empty summer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can camp help if my child forgot letters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — week one should prioritise recovery review before new pages. Pair with a letter-forgetting recovery plan.",
+        },
+      },
     ],
   },
   "child-forgets-arabic-letters": {
@@ -965,6 +997,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Yes. A short summer intensive or fixed review habit prevents September panic. See the online summer Quran camp guide.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When do we add new letters again?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When the recovery set is solid out of order on two separate days, and mood stays calm. Then add one new letter at a time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we use apps only for review?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apps can help touch letters daily, but a live tutor should still check real recognition and fix mix-ups.",
         },
       },
     ],

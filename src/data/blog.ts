@@ -1552,11 +1552,11 @@ export const blogPosts: BlogPost[] = [
     slug: "quran-learning-speech-delay-kids",
     title: "Quran Learning with Speech Delay — Gentle Arabic Sound Practice for Kids",
     description:
-      "Parent guide to Quran learning with speech delay: realistic goals, gentle Arabic sounds, tutor collaboration tips, and when to slow down without pressure.",
+      "Complete parent guide to Quran learning with speech delay: age goals, 4-week sound plan, tutor scripts, home drills, when to pause, and how to book a calm free trial.",
     category: "Kids & Parenting",
     date: "2026-07-24",
     updatedAt: "2026-07-24",
-    readTime: "11 min",
+    readTime: "16 min",
     keywords: [
       "quran learning speech delay",
       "arabic pronunciation speech delay",
@@ -1568,20 +1568,22 @@ export const blogPosts: BlogPost[] = [
       "makharij speech delay kids",
       "speech therapy and quran learning",
       "slow learner quran arabic sounds",
+      "late talker quran class",
+      "non verbal child islamic learning",
     ],
     excerpt:
-      "A calm parent guide for children with speech delay starting Arabic and Quran sounds — realistic goals, short practice, tutor notes, and how to protect confidence.",
+      "An expanded calm parent guide for children with speech delay starting Arabic and Quran — age goals, 4-week plan, tutor scripts, home drills, and confidence-first progress.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "online-summer-quran-camp-for-kids",
     title: "Online Summer Quran Camp for Kids — Fun Holiday Learning UK & US Timezones",
     description:
-      "Online summer Quran camp for kids: daily structure, Qaida intensives, Islamic stories, holiday schedules for UK/US families, and how to enrol for school break learning.",
+      "Full online summer Quran camp guide: 4-week curriculum map, age tracks, UK/US/AU/Gulf slots, travel weeks, progress checklist, and how to enrol a holiday intensive.",
     category: "Kids & Parenting",
     date: "2026-07-24",
     updatedAt: "2026-07-24",
-    readTime: "12 min",
+    readTime: "16 min",
     keywords: [
       "online summer quran camp for kids",
       "summer quran classes online",
@@ -1593,20 +1595,22 @@ export const blogPosts: BlogPost[] = [
       "kids quran summer program",
       "half term quran intensive",
       "fun summer islamic learning online",
+      "summer noorani qaida intensive",
+      "quran classes during school holidays",
     ],
     excerpt:
-      "Turn school holidays into gentle Quran progress: how online summer Quran camps work, sample weekly plans, age tips, and how to book a holiday intensive trial.",
+      "A full holiday playbook for online summer Quran camp: 4-week curriculum, age tracks, timezone tips, travel weeks, progress checklist, and enrolment notes.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
     slug: "child-forgets-arabic-letters",
     title: "My Child Forgets Arabic Letters — Fix It Without Starting Over",
     description:
-      "What to do when your child forgets Arabic letters between classes: spaced review, games, when to pause new lessons, and a 7-day recovery plan parents can follow.",
+      "Complete fix when a child forgets Arabic letters: assessment script, 7- and 14-day recovery plans, lookalike chart, 8 review games, spaced repetition, and tutor briefing notes.",
     category: "Kids & Parenting",
     date: "2026-07-24",
     updatedAt: "2026-07-24",
-    readTime: "10 min",
+    readTime: "15 min",
     keywords: [
       "child forgets arabic letters",
       "arabic alphabet retention kids",
@@ -1618,9 +1622,11 @@ export const blogPosts: BlogPost[] = [
       "spaced repetition arabic kids",
       "child confuses arabic letters",
       "rebuild arabic alphabet kids",
+      "arabic flashcards for kids review",
+      "lookalike arabic letters kids",
     ],
     excerpt:
-      "If your child forgets Arabic letters between lessons, you do not need to restart from Alif in panic. Use this parent recovery plan: review first, spaced practice, and calm tutoring.",
+      "Expanded recovery guide when a child forgets Arabic letters: assessment, 7- and 14-day plans, lookalike chart, review games, and calm tutor notes — without restarting from Alif.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
 ];

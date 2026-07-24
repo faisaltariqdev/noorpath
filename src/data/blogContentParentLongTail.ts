@@ -1120,13 +1120,32 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <p>This is a parent education guide for Quran and Arabic <em>learning habits</em>. It is not medical advice and does not replace speech-language therapy. If your child has a care plan, share only what helps the tutor teach gently.</p>
           <p>Related calm-learning guides: <a href="/blog/quran-classes-for-autistic-kids">Quran classes for autistic kids</a> · <a href="/blog/quran-classes-for-adhd-kids">Quran classes for ADHD kids</a> · <a href="/blog/hard-arabic-letters-for-kids-makharij">hard Arabic letters for kids</a>.</p>
 
-          <h2 id="realistic-goals">Realistic early goals</h2>
+          <h2 id="who-this-helps">Who this guide helps</h2>
+          <ul>
+            <li>Late talkers who understand more than they can say</li>
+            <li>Children in speech therapy who still want a gentle deen path</li>
+            <li>Kids who whisper, point, or freeze when asked to “say it properly”</li>
+            <li>Parents told to “wait until speech is perfect” before Quran (you do not have to wait forever)</li>
+            <li>Families combining autism/ADHD support with speech needs</li>
+          </ul>
+
+          <h2 id="age-goals">Age-by-age realistic goals</h2>
+          <table class="np-table">
+            <tr><th>Age</th><th>Healthy Quran goals</th><th>Usually too soon</th></tr>
+            <tr><td><strong>3–4</strong></td><td>Listen, Bismillah habit, point to 2–3 letters, enjoy class presence</td><td>Full alphabet tests, hard makharij drills</td></tr>
+            <tr><td><strong>5–6</strong></td><td>Short 1-to-1, a few stable sounds, one short dua with support</td><td>Speed Qaida, sibling comparison</td></tr>
+            <tr><td><strong>7–9</strong></td><td>More sounds + early vowels; pointing still allowed on hard days</td><td>Forced public recitation for guests</td></tr>
+            <tr><td><strong>10+</strong></td><td>Joins when mouth comfort allows; parallel listening / meaning love</td><td>Shame for unclear articulation</td></tr>
+          </table>
+
+          <h2 id="realistic-goals">What counts as progress</h2>
           <ul>
             <li>Enjoy sitting for a short, predictable lesson</li>
-            <li>Listen and imitate simple sounds when ready (Ba, Ta, not every hard letter at once)</li>
+            <li>Listen and imitate simple sounds when ready (Ba, Ta — not every hard letter at once)</li>
             <li>Say Bismillah or a short dua with support</li>
             <li>Point to a letter even if saying it is hard today</li>
             <li>Leave class calm — not in tears</li>
+            <li>Tolerate gentle modelling without shutdown</li>
           </ul>
           <p>Pointing, matching, and listening <em>are</em> Quran class wins. Speech clarity can grow on its own timeline.</p>
 
@@ -1140,6 +1159,15 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           </table>
           <p>Letter shapes and interactive practice can support without forcing speech — see <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a> and <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida</a>.</p>
 
+          <h2 id="4-week-plan">4-week gentle progression plan</h2>
+          <table class="np-table">
+            <tr><th>Week</th><th>Class focus</th><th>Home (5–8 min)</th><th>Success looks like</th></tr>
+            <tr><td>1</td><td>Comfort + listen + one known sound</td><td>Mirror play / listen only</td><td>Child stays for full short slot</td></tr>
+            <tr><td>2</td><td>Same sound + point-and-match game</td><td>Parent models, child points</td><td>Fewer freezes when asked to try</td></tr>
+            <tr><td>3</td><td>Add second easy sound OR short vowel</td><td>Two-sound card game</td><td>Whisper or approximate attempt</td></tr>
+            <tr><td>4</td><td>Review both + tiny dua line</td><td>Dua listening + one try</td><td>Calm exit + wanting next class</td></tr>
+          </table>
+
           <h2 id="session-plan">A 12-minute session plan</h2>
           <ol>
             <li><strong>2 min</strong> — warm greeting + today’s one sound on screen</li>
@@ -1147,10 +1175,42 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <li><strong>4 min</strong> — one playful try (copy game, not test)</li>
             <li><strong>2 min</strong> — praise specific effort + next-time preview</li>
           </ol>
+          <p>If energy drops at minute eight, end early with a win. A short successful class beats a long distressed one.</p>
+
+          <h2 id="say-this">Parent language: say this / not that</h2>
+          <table class="np-table">
+            <tr><th>Helpful</th><th>Harmful</th></tr>
+            <tr><td>“Let’s listen together first.”</td><td>“Say it properly like your cousin.”</td></tr>
+            <tr><td>“Pointing counts — good job.”</td><td>“Why won’t you just speak?”</td></tr>
+            <tr><td>“One more gentle try, then we’re done.”</td><td>“We paid for this class — perform.”</td></tr>
+            <tr><td>“Your effort is beloved to Allah.”</td><td>“People will laugh if you sound like that.”</td></tr>
+          </table>
+
+          <h2 id="signs-too-hard">Signs the class is too hard right now</h2>
+          <ul>
+            <li>Tears, freezing, or covering the mouth every session</li>
+            <li>Stomach aches or refusal only on Quran days</li>
+            <li>Tutor stacks corrections without a win</li>
+            <li>Sessions longer than the child’s regulation window</li>
+            <li>Homework that recreates therapy pressure at home</li>
+          </ul>
+          <p>Response: shrink to listen + point + one sound, or pause new Arabic for a dua/story week. See also <a href="/blog/child-wont-sit-for-quran-class">my child won’t sit for Quran class</a>.</p>
+
+          <h2 id="slp">Working alongside speech support (without mixing roles)</h2>
+          <ul>
+            <li>Quran tutor = gentle Islamic learning + letter exposure</li>
+            <li>Speech professional = clinical articulation goals</li>
+            <li>Share only practical tips (“prefers whisper”, “tires after 10 min”)</li>
+            <li>Do not ask the Quran tutor to “fix” a diagnosis</li>
+            <li>Do not cancel speech therapy because Quran class started</li>
+          </ul>
+
+          <h2 id="parallel-path">Parallel path: dua, listening, and Islamic love</h2>
+          <p>While sounds grow slowly, keep the heart full: short duas, prophet stories, and calm listening. Guides: <a href="/blog/duas-for-kids-to-memorize">duas for kids</a> · <a href="/blog/islamic-knowledge-for-kids-stories-hadith">Islamic knowledge for kids</a> · <a href="/blog/dua-before-school-for-kids">dua before school</a>.</p>
 
           <h2 id="tutor-brief">What to tell the tutor</h2>
           <div class="gold-box">
-            <p style="margin-bottom:0;"><em>“Speech delay, age __. Understands more than they can say. Please model slowly, accept pointing/whispering, one sound target only, no rushing hard letters. We celebrate attempts. Parent will sit nearby.”</em></p>
+            <p style="margin-bottom:0;"><em>“Speech delay, age __. Understands more than they can say. Please model slowly, accept pointing/whispering, one sound target only, no rushing hard letters. We celebrate attempts. Parent will sit nearby. Avoid public performance pressure.”</em></p>
           </div>
           <p><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a> · <a href="/noorani-qaida">Noorani Qaida hub</a>.</p>
 
@@ -1159,8 +1219,12 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <li>5–8 minutes most days — stop early if frustration rises</li>
             <li>Listen to a short recitation together without “say it correctly”</li>
             <li>Mirror play: parent says Ba, child copies any way they can</li>
+            <li>Flashcard pointing before bedtime (no grading)</li>
             <li>If letters keep slipping from memory, use <a href="/blog/child-forgets-arabic-letters">my child forgets Arabic letters</a></li>
           </ul>
+
+          <h2 id="summer">Speech delay + summer holidays</h2>
+          <p>Holidays can help (more flexible short slots) or hurt (long gaps). A gentle intensive is better than silence until September — see <a href="/blog/online-summer-quran-camp-for-kids">online summer Quran camp for kids</a>.</p>
 
           <h2 id="closing">Closing</h2>
           <p>The best <strong>Quran learning path with speech delay</strong> is patient and proud of small steps. Allah sees the effort. Protect love for the Book first; clarity of sound can grow with time, support, and kindness.</p>
@@ -1171,6 +1235,9 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>What if my child refuses to speak in class?<span>+</span></summary><p>Allow pointing, whispering, or “listen-only” days. Pressure often increases shutdown. Brief the tutor to accept non-verbal participation.</p></details>
           <details class="faq-acc"><summary>Should we avoid hard Arabic letters?<span>+</span></summary><p>Delay them until easier sounds feel safer. Introduce hard letters one at a time with a patient tutor — never as a test in front of relatives.</p></details>
           <details class="faq-acc"><summary>How do we book a suitable trial?<span>+</span></summary><p>Use the free trial form and write “speech delay — gentle pacing, one sound target.” Ask for a calm 1-to-1 tutor.</p></details>
+          <details class="faq-acc"><summary>Can a mostly non-speaking child still benefit?<span>+</span></summary><p>Yes. Listening, pointing, dua presence, and Islamic love are real benefits while speech grows separately.</p></details>
+          <details class="faq-acc"><summary>Should siblings sit in the same class?<span>+</span></summary><p>Usually no for sound practice. Shared story time is fine; skill slots should stay private and pressure-free.</p></details>
+          <details class="faq-acc"><summary>How often should we have class?<span>+</span></summary><p>Often 2–4 short sessions weekly beats one long weekly struggle. Consistency and calm exits matter most.</p></details>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
@@ -1193,25 +1260,53 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <strong>Quick answer:</strong> Online summer Quran camps work best as a <strong>3–6 week</strong> intensive with <strong>3–5 short live lessons per week</strong>, a clear weekly theme, and lighter home practice. Book early for UK/US daytime slots while school is off.
           </div>
 
+          <div class="stat-row">
+            <div class="stat-pill"><strong>3–6 wks</strong><span>Typical camp length</span></div>
+            <div class="stat-pill"><strong>3–5×</strong><span>Lessons / week</span></div>
+            <div class="stat-pill"><strong>20–30 min</strong><span>Live session</span></div>
+            <div class="stat-pill"><strong>1 goal</strong><span>Per week focus</span></div>
+          </div>
+
           <h2 id="why-summer">Why summer is a high-value Quran window</h2>
           <ul>
             <li>More flexible daytime hours for live 1-to-1</li>
             <li>Chance to catch up on Qaida joins before autumn term</li>
             <li>Space for stories and manners — not only drills</li>
             <li>Less homework conflict than term time</li>
+            <li>Repair letter forgetting after a loose June (<a href="/blog/child-forgets-arabic-letters">letter recovery guide</a>)</li>
           </ul>
           <p>Busy holiday weeks still happen — keep a backup plan if travel weeks empty the calendar. Soft restart beats guilt.</p>
 
+          <h2 id="camp-vs-weekly">Summer camp vs normal weekly class</h2>
+          <table class="np-table">
+            <tr><th></th><th>Term-time weekly</th><th>Summer camp intensive</th></tr>
+            <tr><td>Frequency</td><td>Often 2–3× week</td><td>Often 3–5× week for a short block</td></tr>
+            <tr><td>Energy</td><td>Steady school-year pace</td><td>More games + themes</td></tr>
+            <tr><td>Goal</td><td>Long-term habit</td><td>Holiday boost + habit protection</td></tr>
+            <tr><td>Home practice</td><td>Regular short review</td><td>Lighter, optional micro review</td></tr>
+            <tr><td>Best for</td><td>Year-round growth</td><td>Catch-up, joining push, fun reset</td></tr>
+          </table>
+
           <h2 id="what-good-looks-like">What a strong online summer camp includes</h2>
           <table class="np-table">
-            <tr><th>Block</th><th>Focus</th></tr>
-            <tr><td>Qaida / reading sprint</td><td>Letters, harakat, joining — level-matched</td></tr>
-            <tr><td>Interactive practice</td><td>Games, short wins (Kids Studio style)</td></tr>
-            <tr><td>Islamic knowledge</td><td>Prophet stories, manners, short hadith habits</td></tr>
-            <tr><td>Dua &amp; adab</td><td>Morning/eating/sleep duas they can use daily</td></tr>
-            <tr><td>Parent note</td><td>One home cue — not a holiday homework mountain</td></tr>
+            <tr><th>Block</th><th>Focus</th><th>Example win</th></tr>
+            <tr><td>Qaida / reading sprint</td><td>Letters, harakat, joining — level-matched</td><td>Cleaner joins on 5 words</td></tr>
+            <tr><td>Interactive practice</td><td>Games, short wins (Kids Studio style)</td><td>Child asks for “one more round”</td></tr>
+            <tr><td>Islamic knowledge</td><td>Prophet stories, manners, short hadith habits</td><td>One manners action at home</td></tr>
+            <tr><td>Dua &amp; adab</td><td>Morning/eating/sleep duas</td><td>Child leads one line</td></tr>
+            <tr><td>Parent note</td><td>One home cue only</td><td>8-minute review, not worksheets pile</td></tr>
           </table>
-          <p>Deepen the skill track with <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida</a> and the heart track with <a href="/blog/islamic-knowledge-for-kids-stories-hadith">Islamic knowledge for kids</a>.</p>
+          <p>Deepen skill with <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Noorani Qaida</a> and heart with <a href="/blog/islamic-knowledge-for-kids-stories-hadith">Islamic knowledge for kids</a>.</p>
+
+          <h2 id="4-week-map">4-week summer curriculum map</h2>
+          <table class="np-table">
+            <tr><th>Week</th><th>Theme</th><th>Skill target</th><th>Heart target</th></tr>
+            <tr><td>1</td><td>Warm-up &amp; assess</td><td>Level check; seal weak letters</td><td>Bismillah habit</td></tr>
+            <tr><td>2</td><td>Build</td><td>Vowels / joining sprint</td><td>One prophet story scene</td></tr>
+            <tr><td>3</td><td>Stretch</td><td>Short unfamiliar lines</td><td>Kindness / sharing hadith habit</td></tr>
+            <tr><td>4</td><td>Lock-in</td><td>Review + celebration page</td><td>Family dua night</td></tr>
+          </table>
+          <p>Timelines stay honest: <a href="/blog/how-long-does-noorani-qaida-take">how long Noorani Qaida takes</a> — summer is a boost, not a miracle finish button.</p>
 
           <h2 id="sample-week">Sample summer week (ages 6–10)</h2>
           <table class="np-table">
@@ -1221,28 +1316,56 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <tr><td>Wed</td><td>25 min reading sprint</td><td>8 min review</td></tr>
             <tr><td>Thu</td><td>Off / family day</td><td>—</td></tr>
             <tr><td>Fri</td><td>20 min fun review + short Surah listening</td><td>Family Kahf clip optional</td></tr>
+            <tr><td>Sat</td><td>Optional catch-up if a weekday was missed</td><td>Park / outing — no guilt</td></tr>
+            <tr><td>Sun</td><td>Rest</td><td>Soft Quran listening in the car</td></tr>
           </table>
-          <p>Homeschool-style families can expand this into a fuller map: <a href="/blog/muslim-homeschool-quran-curriculum">Muslim homeschool Quran curriculum</a>.</p>
+          <p>Homeschool-style families: <a href="/blog/muslim-homeschool-quran-curriculum">Muslim homeschool Quran curriculum</a>.</p>
 
-          <h2 id="age-bands">Age bands</h2>
-          <ul>
-            <li><strong>4–6:</strong> Play-based letters, duas, very short slots</li>
-            <li><strong>7–10:</strong> Joining / early mushaf readiness + stories</li>
-            <li><strong>11–14:</strong> Fluency, light Tajweed, optional summer Hifz boost with tiny targets</li>
-          </ul>
-          <p>Neurodivergent learners may need shorter camp blocks — see <a href="/blog/quran-classes-for-adhd-kids">ADHD</a> and <a href="/blog/quran-classes-for-autistic-kids">autism</a> guides.</p>
+          <h2 id="age-bands">Age tracks (what to prioritise)</h2>
+          <table class="np-table">
+            <tr><th>Age</th><th>Camp priority</th><th>Session length</th></tr>
+            <tr><td>4–6</td><td>Play letters, duas, love of class</td><td>12–20 min</td></tr>
+            <tr><td>7–10</td><td>Joining / early mushaf readiness + stories</td><td>20–30 min</td></tr>
+            <tr><td>11–14</td><td>Fluency, light Tajweed, tiny Hifz optional</td><td>25–35 min</td></tr>
+          </table>
+          <p>Neurodivergent learners: shorter blocks — <a href="/blog/quran-classes-for-adhd-kids">ADHD</a> · <a href="/blog/quran-classes-for-autistic-kids">autism</a> · <a href="/blog/quran-learning-speech-delay-kids">speech delay</a>.</p>
 
-          <h2 id="uk-us-slots">UK &amp; US timezone tips</h2>
+          <h2 id="timezone">UK, US, Canada, Australia &amp; Gulf slots</h2>
+          <table class="np-table">
+            <tr><th>Region</th><th>Often works in summer</th><th>Watch-out</th></tr>
+            <tr><td>UK</td><td>Late morning / early afternoon</td><td>Late evening after outings</td></tr>
+            <tr><td>US East/Central</td><td>Morning before day trips</td><td>Inconsistent park days</td></tr>
+            <tr><td>US West</td><td>Late morning local</td><td>Tutor timezone match</td></tr>
+            <tr><td>Canada</td><td>Similar to US bands</td><td>Cottage / travel weeks</td></tr>
+            <tr><td>Australia</td><td>Morning local / weekend blocks</td><td>Winter school holidays timing differs</td></tr>
+            <tr><td>UAE / SA / QA</td><td>Evening family time still fine</td><td>Heat-related late nights</td></tr>
+          </table>
+          <p>More context: <a href="/blog/online-quran-classes-uk-kids-guide">UK kids guide</a> · <a href="/blog/online-quran-classes-usa-kids-guide">USA kids guide</a>.</p>
+
+          <h2 id="travel">Travel-week protocol</h2>
+          <ol>
+            <li>Tell the academy travel dates early</li>
+            <li>Keep 1 short “maintenance” class if Wi-Fi allows</li>
+            <li>Or pause cleanly — do not ghost three weeks</li>
+            <li>On return: one review week before new targets</li>
+            <li>Hotel tip: headphones + 10-minute letter game beats skipping all month</li>
+          </ol>
+
+          <h2 id="checklist">Parent progress checklist (print this)</h2>
           <ul>
-            <li><strong>UK summer:</strong> late morning or early afternoon often beats late evening</li>
-            <li><strong>US East/Central:</strong> morning intensives before outings</li>
-            <li><strong>Travel weeks:</strong> pause or keep one short “maintenance” class</li>
+            <li>Week 1 level note written (letters / joining / reading)</li>
+            <li>One weekly skill goal agreed with tutor</li>
+            <li>Attendance: at least 3 live sessions most weeks</li>
+            <li>Child still wants class (mood check)</li>
+            <li>End-of-camp: 3 wins written for September</li>
           </ul>
-          <p>More UK/US context: <a href="/blog/online-quran-classes-uk-kids-guide">UK kids guide</a> · <a href="/blog/online-quran-classes-usa-kids-guide">USA kids guide</a>.</p>
+
+          <h2 id="siblings">Siblings in summer camp</h2>
+          <p>Separate short slots protect pace. Shared story Friday can be family time. Avoid making the older child “teach” the younger every day — that creates resentment fast.</p>
 
           <h2 id="enrol">How to enrol without overwhelm</h2>
           <div class="gold-box">
-            <p><strong>Trial note example:</strong> <em>“Summer holiday intensive — ages __, level (letters / joining / reading). Prefer playful short lessons 3–4× weekly for 4 weeks. UK/US time window: __.”</em></p>
+            <p><strong>Trial note example:</strong> <em>“Summer holiday intensive — ages __, level (letters / joining / reading). Prefer playful short lessons 3–4× weekly for 4 weeks. Time window: __. Travel weeks: __.”</em></p>
             <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/online-quran-classes-for-kids">Kids classes</a> · <a href="/pricing">Pricing</a> · <a href="/noorani-qaida">Noorani Qaida</a></p>
           </div>
 
@@ -1252,7 +1375,11 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <li>Starting a huge Hifz target then abandoning it mid-trip</li>
             <li>Zero structure until September panic</li>
             <li>Comparing your child’s camp to a cousin’s “finished Qaida” story</li>
+            <li>Booking five courses (Arabic + Hifz + Tajweed + sports + tutoring) with no rest day</li>
           </ul>
+
+          <h2 id="half-term">Half-term &amp; shorter breaks</h2>
+          <p>UK half-term can use a mini intensive: 4–6 lessons across one week focused only on weak letters or joining. Same principles, smaller footprint.</p>
 
           <h2 id="closing">Closing</h2>
           <p>A good <strong>online summer Quran camp for kids</strong> feels like a bright holiday habit: short, warm, and memorable. Children return to school with stronger letters — and a happier heart toward the Quran.</p>
@@ -1263,6 +1390,9 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>How many lessons per week?<span>+</span></summary><p>Often 3–5 short live lessons. Families travelling may drop to 2 maintenance classes some weeks.</p></details>
           <details class="faq-acc"><summary>Can we join mid-summer?<span>+</span></summary><p>Yes. A good academy assesses level and builds a shortened intensive instead of forcing a missed week-one syllabus.</p></details>
           <details class="faq-acc"><summary>Is this the same as term-time weekly class?<span>+</span></summary><p>Similar tutors, tighter holiday schedule and often more interactive variety so summer attention stays high.</p></details>
+          <details class="faq-acc"><summary>What if we only have two weeks free?<span>+</span></summary><p>Run a mini-camp: assess, seal weak letters, one joining target, celebrate. Two focused weeks beat an empty summer.</p></details>
+          <details class="faq-acc"><summary>Should we continue into September on the same plan?<span>+</span></summary><p>Usually drop to a sustainable term-time rhythm after camp so the child does not burn out.</p></details>
+          <details class="faq-acc"><summary>Can camp help if my child forgot letters?<span>+</span></summary><p>Yes — week one should prioritise recovery review before new pages. Pair with the letter forgetting guide.</p></details>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
@@ -1285,6 +1415,13 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <strong>Quick answer:</strong> Forgetting between classes is common. Pause new letters for a few days, run a <strong>7-day review recovery</strong>, use short daily drills (5–10 minutes), and ask the tutor to test recognition — not only memorised page order.
           </div>
 
+          <div class="stat-row">
+            <div class="stat-pill"><strong>Review first</strong><span>Before new pages</span></div>
+            <div class="stat-pill"><strong>5–10 min</strong><span>Daily home touch</span></div>
+            <div class="stat-pill"><strong>Out of order</strong><span>Real recognition</span></div>
+            <div class="stat-pill"><strong>7–14 days</strong><span>Typical rebuild</span></div>
+          </div>
+
           <h2 id="why-forgetting">Why kids forget Arabic letters</h2>
           <ul>
             <li>New letters added faster than old ones are reviewed</li>
@@ -1292,54 +1429,110 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <li>Child memorised a page sequence, not true letter recognition</li>
             <li>Long gaps (travel, illness, summer unstructured weeks)</li>
             <li>Stress or shame when corrected, so the brain “checks out”</li>
+            <li>Lookalike families never drilled separately (ب ت ث, etc.)</li>
           </ul>
-          <p>If attention or sensory load is the real issue, also read <a href="/blog/quran-classes-for-adhd-kids">ADHD Quran classes</a> and <a href="/blog/child-wont-sit-for-quran-class">won’t sit for Quran class</a>.</p>
+          <p>If attention or sensory load is the real issue: <a href="/blog/quran-classes-for-adhd-kids">ADHD Quran classes</a> · <a href="/blog/child-wont-sit-for-quran-class">won’t sit for Quran class</a>. Speech pacing: <a href="/blog/quran-learning-speech-delay-kids">speech delay guide</a>.</p>
+
+          <h2 id="assessment">5-minute parent assessment script</h2>
+          <ol>
+            <li>Show letters <strong>out of alphabet order</strong></li>
+            <li>Ask for sound (or point if speech is hard)</li>
+            <li>Mark each as <strong>Solid</strong> / <strong>Mix</strong> / <strong>Forgot</strong></li>
+            <li>Note lookalike pairs that collide</li>
+            <li>Share the three piles with the tutor — do not restart the whole book yet</li>
+          </ol>
+          <table class="np-table">
+            <tr><th>Pile</th><th>Meaning</th><th>Action</th></tr>
+            <tr><td>Solid</td><td>Fast, confident, out of order</td><td>Light weekly touch only</td></tr>
+            <tr><td>Mix</td><td>Sometimes right, often swaps</td><td>Daily short drills (priority)</td></tr>
+            <tr><td>Forgot</td><td>Blank or random guess</td><td>Re-teach with games, then mix pile</td></tr>
+          </table>
 
           <h2 id="do-not-restart">Do not restart from Alif in panic</h2>
           <p>Full restarts often waste the letters the child still owns and hurt confidence. Instead:</p>
           <ol>
-            <li>Quick assessment: which letters are solid / shaky / gone?</li>
+            <li>Quick assessment: solid / mix / forgot</li>
             <li>Park brand-new letters for 3–7 days</li>
-            <li>Rebuild shaky letters with games</li>
+            <li>Rebuild mix + forgot with games</li>
             <li>Re-introduce new letters only when review feels easy again</li>
           </ol>
-          <p>Interactive review helps: <a href="/blog/interactive-noorani-qaida-kids-studio">Kids Studio style Qaida</a> · <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a>.</p>
+          <p>Interactive review: <a href="/blog/interactive-noorani-qaida-kids-studio">Kids Studio style Qaida</a> · <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a>.</p>
 
           <h2 id="7-day-plan">7-day letter recovery plan</h2>
           <table class="np-table">
             <tr><th>Day</th><th>10 minutes or less</th></tr>
-            <tr><td>1</td><td>Sort letters into “I know” / “I mix” / “I forgot” piles (cards or screen)</td></tr>
+            <tr><td>1</td><td>Sort letters into “I know” / “I mix” / “I forgot” piles</td></tr>
             <tr><td>2</td><td>Only “I mix” letters — 3 rounds of point-and-say</td></tr>
             <tr><td>3</td><td>Add 2 “I forgot” letters + review yesterday’s mix set</td></tr>
             <tr><td>4</td><td>Mini game: parent says sound, child finds letter</td></tr>
-            <tr><td>5</td><td>Same as day 4 with time pressure off — accuracy only</td></tr>
+            <tr><td>5</td><td>Same game, accuracy only — no speed pressure</td></tr>
             <tr><td>6</td><td>Tutor lesson focused 100% on recovery set</td></tr>
             <tr><td>7</td><td>Re-test; unlock one new letter only if recovery set is stable</td></tr>
           </table>
 
-          <h2 id="spaced-repetition">Spaced repetition parents can actually keep</h2>
+          <h2 id="14-day-plan">If still shaky: days 8–14</h2>
+          <table class="np-table">
+            <tr><th>Day</th><th>Focus</th></tr>
+            <tr><td>8–9</td><td>Only the worst lookalike pair (e.g. ب vs ت)</td></tr>
+            <tr><td>10–11</td><td>Add start/middle/end shapes for solid letters</td></tr>
+            <tr><td>12</td><td>Mix old recovery set + 1 new letter max</td></tr>
+            <tr><td>13</td><td>Tutor re-assess out of order</td></tr>
+            <tr><td>14</td><td>Write a “keep list” of 8 letters for daily micro review</td></tr>
+          </table>
+
+          <h2 id="games">8 quick review games (under 5 minutes)</h2>
+          <ol>
+            <li><strong>Find it:</strong> say a sound; child slaps the card</li>
+            <li><strong>Odd one out:</strong> three cards, one different family</li>
+            <li><strong>Memory match:</strong> letter ↔ simple picture cue</li>
+            <li><strong>Teacher swap:</strong> child “teaches” you one letter</li>
+            <li><strong>Doorway drill:</strong> one letter every time they enter the room</li>
+            <li><strong>Whisper race:</strong> soft voice only — lowers performance anxiety</li>
+            <li><strong>Shape hunt:</strong> find middle-shape on a Qaida line</li>
+            <li><strong>Error treasure:</strong> celebrate catching their own mix-up</li>
+          </ol>
+
+          <h2 id="spaced-repetition">Spaced repetition parents can keep</h2>
           <ul>
             <li>Touch yesterday’s letters before anything new</li>
             <li>Two short sessions beat one long cram</li>
             <li>Mix order — never only Alif-to-Ya song order</li>
-            <li>Include start/middle/end shapes when the child is ready</li>
+            <li>Include start/middle/end shapes when ready</li>
+            <li>Sunday = review-only day (no new letters)</li>
           </ul>
-          <p>Home rhythm ideas: <a href="/blog/quran-practice-routine-at-home-kids">Quran practice routine at home</a>. Summer catch-up: <a href="/blog/online-summer-quran-camp-for-kids">online summer Quran camp</a>.</p>
+          <p>Home rhythm: <a href="/blog/quran-practice-routine-at-home-kids">Quran practice routine at home</a>. Summer catch-up: <a href="/blog/online-summer-quran-camp-for-kids">online summer Quran camp</a>.</p>
+
+          <h2 id="lookalikes">Lookalike families (drill these in pairs)</h2>
+          <table class="np-table">
+            <tr><th>Family</th><th>Letters</th><th>Parent tip</th></tr>
+            <tr><td>Dots</td><td>ب ت ث / ن ي</td><td>Count dots out loud before the sound</td></tr>
+            <tr><td>Loop family</td><td>ج ح خ</td><td>Exaggerate the dot story for ج vs خ</td></tr>
+            <tr><td>Tooth letters</td><td>س ش / ص ض</td><td>Separate “look” day and “sound” day</td></tr>
+            <tr><td>Dal / Ra line</td><td>د ذ ر ز</td><td>Slow finger trace of the curve</td></tr>
+            <tr><td>Taa open/closed</td><td>ط ظ / ت</td><td>Do not rush; these need calm reps</td></tr>
+          </table>
+          <p>Hard makharij depth: <a href="/blog/hard-arabic-letters-for-kids-makharij">hard Arabic letters for kids</a>.</p>
+
+          <h2 id="not-memory">When it is not “forgetting” — it is joining</h2>
+          <p>Some children “know” isolated letters but freeze on words. That is a joining / vowel skill gap, not alphabet amnesia. Keep letter review light and shift the tutor toward joins — see <a href="/blog/interactive-noorani-qaida-kids-studio">interactive Qaida</a> and <a href="/blog/when-child-ready-qaida-to-quran">Qaida to Quran readiness</a>.</p>
+
+          <h2 id="tracker">Weekly tracker (copy for fridge)</h2>
+          <table class="np-table">
+            <tr><th>Day</th><th>Minutes</th><th>Letters touched</th><th>Mood (1–5)</th></tr>
+            <tr><td>Mon</td><td></td><td></td><td></td></tr>
+            <tr><td>Tue</td><td></td><td></td><td></td></tr>
+            <tr><td>Wed</td><td></td><td></td><td></td></tr>
+            <tr><td>Thu</td><td></td><td></td><td></td></tr>
+            <tr><td>Fri</td><td></td><td></td><td></td></tr>
+            <tr><td>Sat</td><td></td><td></td><td></td></tr>
+            <tr><td>Sun</td><td>Review only</td><td></td><td></td></tr>
+          </table>
 
           <h2 id="tutor-ask">What to ask the tutor</h2>
           <div class="gold-box">
-            <p style="margin-bottom:0;"><em>“Letters fade between classes. Please assess recognition out of order, pause new letters this week, and send 5–8 home review letters only. No shame language if they mix lookalikes.”</em></p>
+            <p style="margin-bottom:0;"><em>“Letters fade between classes. Please assess recognition out of order, pause new letters this week, and send 5–8 home review letters only. Drill lookalikes in pairs. No shame language if they mix.”</em></p>
           </div>
           <p><a href="/free-quran-classes-online">Book a level-check trial</a> · <a href="/noorani-qaida">Noorani Qaida</a> · <a href="/online-quran-classes-for-kids">Kids classes</a>.</p>
-
-          <h2 id="lookalikes">Common mix-ups to expect</h2>
-          <ul>
-            <li>ب ت ث — dot counts</li>
-            <li>ج ح خ — dot and shape family</li>
-            <li>د ذ / ر ز — similar forms</li>
-            <li>س ش / ص ض — look and sound pressure</li>
-          </ul>
-          <p>For pronunciation of hard letters specifically: <a href="/blog/hard-arabic-letters-for-kids-makharij">hard Arabic letters for kids</a>. Speech-related pacing: <a href="/blog/quran-learning-speech-delay-kids">Quran learning with speech delay</a>.</p>
 
           <h2 id="closing">Closing</h2>
           <p>When a <strong>child forgets Arabic letters</strong>, the fix is almost never “start the book again from page one.” It is calmer review, smaller targets, and a tutor who measures real recognition. Consistency over two weeks usually beats a dramatic restart.</p>
@@ -1350,6 +1543,9 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>How many letters should we review daily?<span>+</span></summary><p>Often 4–8 letters in under 10 minutes. More than that turns into fatigue and new forgetting.</p></details>
           <details class="faq-acc"><summary>What if they only remember the alphabet song order?<span>+</span></summary><p>Practice out of order with flashcards or pointing games. True reading needs recognition, not only sequence memory.</p></details>
           <details class="faq-acc"><summary>Can summer holidays cause this?<span>+</span></summary><p>Yes. A short summer intensive or fixed review habit prevents September panic — see the online summer Quran camp guide.</p></details>
+          <details class="faq-acc"><summary>Should we use apps only for review?<span>+</span></summary><p>Apps can help touch letters daily, but a live tutor should still check real recognition and fix mix-ups. Apps alone rarely rebuild joining readiness.</p></details>
+          <details class="faq-acc"><summary>My child remembers English letters fine — why not Arabic?<span>+</span></summary><p>Arabic adds new shapes, directions, and lookalike families. More spaced review is normal — it is not a sign your child “cannot learn Quran.”</p></details>
+          <details class="faq-acc"><summary>When do we add new letters again?<span>+</span></summary><p>When the recovery set is solid out of order on two separate days, and mood stays calm. Then add one new letter at a time.</p></details>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
