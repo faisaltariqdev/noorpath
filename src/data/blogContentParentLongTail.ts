@@ -85,7 +85,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <tr><th>Day</th><th>Focus</th><th>Time</th></tr>
             <tr><td>Mon / Wed / Fri</td><td>Live 1-on-1 lesson with tutor</td><td>20–30 min (age-dependent)</td></tr>
             <tr><td>Tue / Thu</td><td>Home review of yesterday’s letters / joins</td><td>10–15 min</td></tr>
-            <tr><td>Sat</td><td>Fun revision — letter games, tracing, or <a href="/noorani-qaida">interactive Noorani Qaida demo</a></td><td>10–20 min</td></tr>
+            <tr><td>Sat</td><td>Fun revision — <a href="/noorani-qaida/games">free Noorani Qaida games</a>, tracing, or <a href="/noorani-qaida">interactive hub</a></td><td>10–20 min</td></tr>
             <tr><td>Sun</td><td>Rest or light listening only</td><td>Optional</td></tr>
           </table>
           <p>For a home routine between classes, use <a href="/blog/quran-practice-routine-at-home-kids">Quran practice routine at home for kids</a>.</p>
@@ -101,7 +101,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
           <div class="gold-box">
             <p><strong>Want a personalised timeline?</strong> Book a free 30-minute trial. The tutor listens to your child, places them on the right Qaida stage, and estimates a realistic months range — no credit card required.</p>
-            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/courses/noorani-qaida-online">Noorani Qaida course</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a></p>
+            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/noorani-qaida/games">Free Qaida games</a> · <a href="/courses/noorani-qaida-online">Noorani Qaida course</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a></p>
           </div>
 
           <h2 id="faq">FAQs — how long Noorani Qaida takes</h2>
@@ -739,7 +739,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <li><strong>Tiny review:</strong> one line the child can “own” before class ends</li>
             <li><strong>Parent note:</strong> one home practice cue — not a homework essay</li>
           </ul>
-          <p>Explore NoorPath’s interactive curriculum hub at <a href="/noorani-qaida">Noorani Qaida</a> and live classes under <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+          <p>Explore NoorPath’s interactive curriculum hub at <a href="/noorani-qaida">Noorani Qaida</a>, free playable practice at <a href="/noorani-qaida/games">Noorani Qaida games</a> (letter matching, harakat quiz, progress checklist), and live classes under <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <h2 id="pace-without-skipping">How to go faster without skipping foundations</h2>
           <p>“Fast” should mean <em>efficient</em>, not careless. Enterprise-quality teaching still refuses to skip makharij of hard letters (ع، ح، ق، ص، ض) just to finish a booklet. What can move faster:</p>
@@ -787,7 +787,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>My child knows letter sounds — should we still start from Alif?<span>+</span></summary><p>No. A good tutor should assess first and begin where the child actually is — usually shapes, vowels, and joining — while patching any weak letters.</p></details>
-          <details class="faq-acc"><summary>Is interactive Qaida the same as Quran games with no teacher?<span>+</span></summary><p>No. Apps can help review, but live correction of makharij and joining is what prevents wrong habits. Kids Studio style means interactive format + a real tutor.</p></details>
+          <details class="faq-acc"><summary>Is interactive Qaida the same as Quran games with no teacher?<span>+</span></summary><p>No. Free browser games (like <a href="/noorani-qaida/games">NoorPath’s letter matching and harakat quiz</a>) help review recognition between lessons, but live correction of makharij and joining is what prevents wrong habits. Kids Studio style means interactive format + a real tutor.</p></details>
           <details class="faq-acc"><summary>Can we go fast if my child already memorised short surahs?<span>+</span></summary><p>You can move efficiently past known sounds, but do not skip joining and decoding. Memorisation and reading are different skills.</p></details>
           <details class="faq-acc"><summary>What age works best for Kids Studio style Qaida?<span>+</span></summary><p>Often ages 4–9 with short attention spans benefit most, but older beginners who dislike dry drills also do well with the same format.</p></details>
           <details class="faq-acc"><summary>How do I book a level-matched free trial?<span>+</span></summary><p>Use the free trial form and describe exact skills and past pain points. Ask for interactive 1-on-1 pacing matched to letter sounds already known.</p></details>
@@ -795,6 +795,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/noorani-qaida/games" style="color:var(--emerald);font-weight:600;">Free Noorani Qaida Games for Kids</a></li>
               <li><a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida Complete Guide</a></li>
               <li><a href="/blog/how-long-does-noorani-qaida-take" style="color:var(--emerald);font-weight:600;">How Long Does Noorani Qaida Take?</a></li>
               <li><a href="/blog/when-child-ready-qaida-to-quran" style="color:var(--emerald);font-weight:600;">When Is My Child Ready for Quran?</a></li>

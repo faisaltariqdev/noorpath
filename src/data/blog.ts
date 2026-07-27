@@ -1434,12 +1434,14 @@ export const blogPosts: BlogPost[] = [
       "Interactive Noorani Qaida for kids who know letter sounds but get bored by repetition. Pace tips, joined-letter readiness, Kids Studio style practice, and how to book a level-matched free trial.",
     category: "Kids & Parenting",
     date: "2026-07-22",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-07-27",
     readTime: "12 min",
     keywords: [
       "interactive noorani qaida for kids",
       "kids studio quran learning",
       "noorani qaida games for kids",
+      "free noorani qaida games online",
+      "noorani qaida letter game",
       "child knows arabic letters but not joining",
       "playful quran classes for kids",
       "fast paced noorani qaida online",
@@ -1449,7 +1451,7 @@ export const blogPosts: BlogPost[] = [
       "fun noorani qaida for children uk",
     ],
     excerpt:
-      "If your child knows Arabic letter sounds but loses interest when lessons repeat too much, interactive Noorani Qaida — Kids Studio style learning — can move faster, stay playful, and prepare them for joined letters without skipping foundations.",
+      "If your child knows Arabic letter sounds but loses interest when lessons repeat too much, interactive Noorani Qaida — Kids Studio style learning — can move faster, stay playful, and prepare them for joined letters without skipping foundations. Pair lessons with free letter and harakat games between classes.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {

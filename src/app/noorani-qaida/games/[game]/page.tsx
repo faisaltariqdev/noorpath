@@ -11,6 +11,7 @@ import {
   QaidaBreadcrumbs,
   QaidaCallout,
   QaidaCourseCta,
+  QaidaFaqs,
   QaidaRelatedLinks,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
 import { serializeJsonLd } from "@/lib/jsonLd";
@@ -47,6 +48,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         height: 350,
         alt: game.title,
       }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: game.metaTitle,
+      description: game.description,
+      images: ["/marketing/noorani-qaida/arabic-letter-bubble-pop-game.png"],
     },
   };
 }
@@ -88,8 +95,27 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
         learningResourceType: "Interactive practice",
         educationalLevel: "Beginner",
         typicalAgeRange: "3-12",
+        teaches: game.skillFocus,
         isPartOf: { "@id": `${QAIDA_BASE_URL}#learning-resource` },
         inLanguage: ["en", "ar"],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: game.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      },
+      {
+        "@type": "HowTo",
+        name: `How to use the ${game.title}`,
+        description: game.seoIntro,
+        step: game.howToUse.map((text, index) => ({
+          "@type": "HowToStep",
+          position: index + 1,
+          text,
+        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -118,9 +144,9 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
               { label: game.title },
             ]}
           />
-          <span className="qaida-eyebrow">Free interactive practice</span>
+          <span className="qaida-eyebrow">Free interactive practice · Mobile-friendly</span>
           <h1 style={{ maxWidth: 820 }}>{game.title}</h1>
-          <p>{game.summary}</p>
+          <p>{game.seoIntro}</p>
         </div>
       </header>
 
@@ -137,12 +163,40 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
             </div>
           </section>
 
-          <QaidaCallout title="How to use this with a child" tone="blue">
+          <section className="qaida-section" aria-labelledby="skills-heading">
+            <span className="qaida-eyebrow">Learning focus</span>
+            <h2 id="skills-heading">Skills this {game.title.toLowerCase()} builds</h2>
+            <ul className="qaida-practice-steps">
+              {game.skillFocus.map((skill, index) => (
+                <li key={skill}>
+                  <span aria-hidden="true">{index + 1}</span>
+                  <p>{skill}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="qaida-section" aria-labelledby="howto-heading">
+            <span className="qaida-eyebrow">Parent & teacher routine</span>
+            <h2 id="howto-heading">How to use this game well</h2>
+            <ol className="qaida-practice-steps">
+              {game.howToUse.map((step, index) => (
+                <li key={step}>
+                  <span aria-hidden="true">{index + 1}</span>
+                  <p>{step}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <QaidaCallout title="Honest practice boundary" tone="blue">
             <p>
-              Model the skill once, then let the child try a few rounds. Pause if guessing starts.
-              These games check recognition and recall — not Tajweed mastery.
+              This activity supports recognition and recall. It does not grade Tajweed, unlock a certificate,
+              or replace live correction for uncertain Arabic sounds.
             </p>
           </QaidaCallout>
+
+          <QaidaFaqs faqs={game.faqs} />
 
           <section className="qaida-section" aria-labelledby="share-heading">
             <span className="qaida-eyebrow">Share a useful link</span>
@@ -162,6 +216,7 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
               { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida hub", description: "Return to the full curriculum map." },
               ...related,
               { href: `${QAIDA_BASE_PATH}/games`, label: "All free games", description: "Browse letter, harakat, and progress tools." },
+              { href: "/blog/interactive-noorani-qaida-kids-studio", label: "Kids Studio interactive Qaida guide", description: "Parent tips when letter sounds are known but joining stalls." },
             ]}
           />
 
@@ -169,7 +224,7 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
             <Link href={`${QAIDA_BASE_PATH}/guides/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
               Read the games teaching guide
             </Link>
-            {" "}for how Bubble Pop–style activities fit after modelling.
+            {" "}for how platform-style activities fit after modelling.
           </p>
 
           <QaidaCourseCta />
