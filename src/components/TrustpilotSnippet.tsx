@@ -76,9 +76,9 @@ export default function TrustpilotSnippet({
             <p style={{ color: "var(--slate)", fontSize: ".86rem", lineHeight: 1.65, margin: "0 0 10px", fontStyle: "italic" }}>
               &ldquo;{t.text.length > 180 ? `${t.text.slice(0, 180)}…` : t.text}&rdquo;
             </p>
-            <footer style={{ fontSize: ".8rem", color: "var(--muted)" }}>
+            <p style={{ fontSize: ".8rem", color: "var(--muted)", margin: 0 }}>
               <strong style={{ color: "var(--charcoal)" }}>{t.name}</strong> · {t.country} · {t.date}
-            </footer>
+            </p>
           </blockquote>
         ))}
       </div>

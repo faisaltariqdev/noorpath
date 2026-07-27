@@ -519,9 +519,9 @@ section { padding: 88px 0; }
 @media (max-width:420px) { .page-hero { padding: 100px 0 48px; } }
 
 /* ══════════════════════════════════════════════════════════════
-   FOOTER
+   FOOTER (site chrome only — do not target nested <footer> tags)
 ══════════════════════════════════════════════════════════════ */
-footer {
+footer.site-footer {
   background: linear-gradient(135deg, #0a1f16 0%, #071510 100%);
   padding: 72px 0 0;
   color: rgba(255,255,255,.65);

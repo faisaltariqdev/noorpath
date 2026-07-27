@@ -110,7 +110,7 @@ export default function Footer() {
         </div>
       </section>
 
-      <footer>
+      <footer className="site-footer">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Brand */}
