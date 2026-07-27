@@ -1,4 +1,36 @@
+import { locations } from "@/data/locations";
+
 const SITE_URL = "https://www.noorpath.online";
+
+/**
+ * BCP 47 hreflang tags for English-language country hubs.
+ * All location pages share one reciprocal cluster (self + every other hub + x-default).
+ */
+export const LOCATION_HREFLANG_BY_SLUG: Record<string, string> = {
+  "online-quran-classes-usa": "en-US",
+  "online-quran-classes-uk": "en-GB",
+  "online-quran-classes-canada": "en-CA",
+  "online-quran-classes-australia": "en-AU",
+  "online-quran-classes-uae": "en-AE",
+  "online-quran-classes-saudi-arabia": "en-SA",
+  "online-quran-classes-germany": "en-DE",
+  "online-quran-classes-malaysia": "en-MY",
+  "online-quran-classes-pakistan": "en-PK",
+  "online-quran-classes-bangladesh": "en-BD",
+  "online-quran-classes-south-africa": "en-ZA",
+  "online-quran-classes-indonesia": "en-ID",
+  "online-quran-classes-india": "en-IN",
+  "online-quran-classes-nigeria": "en-NG",
+  "online-quran-classes-france": "en-FR",
+  "online-quran-classes-netherlands": "en-NL",
+  "online-quran-classes-sweden": "en-SE",
+  "online-quran-classes-qatar": "en-QA",
+  "online-quran-classes-kuwait": "en-KW",
+  "online-quran-classes-singapore": "en-SG",
+  "online-quran-classes-ireland": "en-IE",
+  "online-quran-classes-new-zealand": "en-NZ",
+  "online-quran-classes-turkey": "en-TR",
+};
 
 export type EnglishStyle = "British English" | "American English" | "Natural English";
 
@@ -423,14 +455,66 @@ export function orderByMarketPriority<T extends { slug: string }>(items: readonl
   });
 }
 
+/**
+ * Full reciprocal hreflang cluster for every `/locations/{slug}` country hub.
+ * Same map is returned for every page (includes self-reference for each hub).
+ * x-default → main commercial hub `/online-quran-classes`.
+ */
 export function getCountryHubHreflang(): Record<string, string> {
-  return Object.fromEntries([
-    ...PRIORITY_MARKETS.map((market) => [
-      market.locale,
-      `${SITE_URL}/locations/${market.slug}`,
-    ]),
-    ["x-default", `${SITE_URL}/online-quran-classes`],
-  ]);
+  const entries: [string, string][] = locations.map((loc) => {
+    const code = LOCATION_HREFLANG_BY_SLUG[loc.slug];
+    if (!code) {
+      throw new Error(`Missing LOCATION_HREFLANG_BY_SLUG for ${loc.slug}`);
+    }
+    return [code, `${SITE_URL}/locations/${loc.slug}`];
+  });
+  entries.push(["x-default", `${SITE_URL}/online-quran-classes`]);
+  return Object.fromEntries(entries);
+}
+
+/** Programmatic integrity check — reciprocal cluster, self URLs, x-default. */
+export function verifyLocationHreflangCluster(): { ok: boolean; errors: string[] } {
+  const errors: string[] = [];
+  const cluster = getCountryHubHreflang();
+  const expectedCodes = new Set<string>(["x-default"]);
+
+  for (const loc of locations) {
+    const code = LOCATION_HREFLANG_BY_SLUG[loc.slug];
+    if (!code) {
+      errors.push(`No hreflang code mapped for ${loc.slug}`);
+      continue;
+    }
+    expectedCodes.add(code);
+    const url = cluster[code];
+    const expectedUrl = `${SITE_URL}/locations/${loc.slug}`;
+    if (url !== expectedUrl) {
+      errors.push(`Wrong URL for ${code}: got ${url}, expected ${expectedUrl}`);
+    }
+  }
+
+  if (cluster["x-default"] !== `${SITE_URL}/online-quran-classes`) {
+    errors.push(`x-default must point to ${SITE_URL}/online-quran-classes`);
+  }
+
+  for (const code of Object.keys(cluster)) {
+    if (!expectedCodes.has(code)) {
+      errors.push(`Unexpected hreflang code in cluster: ${code}`);
+    }
+  }
+  for (const code of expectedCodes) {
+    if (!(code in cluster)) {
+      errors.push(`Missing hreflang code in cluster: ${code}`);
+    }
+  }
+
+  // Reciprocity: every location slug's code must appear; cluster size = locations + x-default
+  if (Object.keys(cluster).length !== locations.length + 1) {
+    errors.push(
+      `Cluster size ${Object.keys(cluster).length} !== locations (${locations.length}) + x-default`,
+    );
+  }
+
+  return { ok: errors.length === 0, errors };
 }
 
 export function getCurrencyNote(slug: string): string {

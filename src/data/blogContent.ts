@@ -36,6 +36,7 @@ import { priorityABlogContent } from "./blogContentPriorityA";
 import { parentLongTailBlogContent } from "./blogContentParentLongTail";
 import { diasporaEuropeBlogContent } from "./blogContentDiasporaEurope";
 import { competitorGapBlogContent } from "./blogContentCompetitorGaps";
+import { prayerRecitationBlogContent } from "./blogContentPrayerRecitation";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
@@ -43,6 +44,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...parentLongTailBlogContent,
   ...diasporaEuropeBlogContent,
   ...competitorGapBlogContent,
+  ...prayerRecitationBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>
@@ -1452,7 +1454,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box">
             <strong>Ready to help your child learn the Kalimas?</strong> NoorPath Academy offers live 1-on-1 lessons covering the Six Kalimas, Noorani Qaida and Quran recitation. Tutor preference and class time are confirmed after matching. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial class</a> — no credit card required.
-          </div>`,
+          </div><p>New Muslims learning kalimas often continue into reading foundations via <a href="/online-quran-for-beginners">online Quran for beginners</a>.</p>
+          `,
   },
   "online-quran-classes-uk-kids-guide": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -2425,6 +2428,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== FAQ =================== -->
+          <p>Many adults combine dua practice with steady Quran lessons for calm routine — start with <a href="/online-quran-classes-for-adults">adult Quran classes</a> if you want live guidance.</p>
           <h2>Frequently Asked Questions</h2>
 
           <details class="faq-acc">
@@ -3741,6 +3745,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <!-- =================== FAQ =================== -->
+          <p>Want to strengthen Quran reading alongside daily dhikr? Explore <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
           <h2>Frequently Asked Questions</h2>
 
           <div class="faq-item">
@@ -4003,6 +4008,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== FAQ =================== -->
+          <p>Adults building a daily istighfar habit often pair it with live recitation practice — <a href="/online-quran-classes-for-adults">online Quran classes for adults</a> can help if you want tutor feedback on Quran reading too.</p>
           <h2>Frequently Asked Questions</h2>
           <div class="faq-item">
             <div class="faq-q"><span>What does Astaghfirullah mean in English?</span> <i class="fas fa-chevron-down"></i></div>
@@ -5565,6 +5571,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>If you are a parent, teach prayer gradually. Start with love, repetition, and routine. Let children copy the movements, hear the adhan, memorize short duas, and build emotional connection to the masjid and the prayer mat. A child who loves Salah before mastering it is already on the right path.</p>
           <p>For a fuller parenting approach, read our guide on <a href="/blog/how-to-teach-quran-to-kids" style="color:var(--emerald);font-weight:700;">how to teach Quran to kids</a> and combine Quran learning with daily prayer training.</p>
 
+          <p>To fix Salah surahs and pronunciation with a teacher, book <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
           <h2 id="faq">Frequently Asked Questions</h2>
           <div class="faq-item">
             <div class="faq-q">How do beginners pray Salah step by step?</div>
@@ -6615,7 +6622,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
                   <div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Tajweed</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Tajweed Rules: The Complete Guide</div></div>
                   <div class="blog-card-body"><span class="read-more">Read <i class="fas fa-arrow-right ms-1"></i></span></div>
                 </div>
-              </a>`,
+              </a><p>Absolute beginners can also start from the hub page <a href="/online-quran-for-beginners">online Quran for beginners</a>.</p>
+          `,
   },
   "signs-of-qiyamah": {
     style: `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -8159,7 +8167,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   Enroll in our <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">Islamic Studies Online Course</a> — structured lessons on Aqeedah, Fiqh, Seerah, and Islamic practice. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a>
 </div>
 
-<h2>Frequently Asked Questions</h2>
+<p>If Salah is already part of your life and you want stronger Quran recitation as an adult learner, see <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
+          <h2>Frequently Asked Questions</h2>
 <h3>Are the Five Pillars mentioned in the Quran?</h3>
 <p>Yes. Shahada (belief in Allah and the Prophet) is mentioned throughout the Quran. Salah is mentioned over 700 times. Zakat is mentioned together with Salah 32 times. Sawm is detailed in Surah Al-Baqarah (2:183-185). Hajj is described in Surah Al-Imran (3:97) and Surah Al-Hajj.</p>
 
@@ -8773,6 +8782,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li>Free trial before any financial commitment</li>
           </ul>
 
+          <p>Ready for a structured zero-to-reading path? Visit <a href="/online-quran-for-beginners">online Quran for beginners</a>.</p>
           <h2>Frequently Asked Questions — Learn Quran Online as an Adult</h2>
           <div class="highlight-box"><strong>Can I learn Quran online if I never studied as a child?</strong><br>Yes. A beginner can request a level assessment and may start with Noorani Qaida when appropriate. No prior Arabic knowledge is required for that beginner pathway.</div>
           <div class="highlight-box"><strong>How long until I can read Surah Al-Fatiha in Salah?</strong><br>There is no universal timeline. A tutor should assess current reading, pronunciation, lesson frequency, and practice, then adjust the plan without guaranteeing a completion date.</div>
@@ -9151,6 +9161,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p style="margin:10px 0 0;">Book a calm trial, then choose a plan that fits your family — <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">free trial Quran class</a> · <a href="/pricing" style="color:var(--emerald);font-weight:700;">see simple pricing plans</a> · <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">kids Quran classes</a>.</p>
           </div>
 
+          <p>After learning daily phrases, beginners can start Arabic reading at <a href="/online-quran-for-beginners">online Quran for beginners</a>.</p>
           <h2>Frequently Asked Questions</h2>
           <div class="faq-item">
             <div class="faq-q">What does Bismillah mean in English?<span style="color:var(--emerald);">+</span></div>

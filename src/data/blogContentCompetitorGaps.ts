@@ -128,6 +128,7 @@ export const competitorGapBlogContent: Record<string, { style: string; content: 
             <strong>Ready to compare with a live lesson?</strong> <a href="/free-quran-classes-online">Start with a free trial class</a> · <a href="/one-on-one-quran-classes">see 1-to-1 Quran classes</a> · <a href="/blog/how-to-choose-online-quran-teacher">how to choose a teacher</a>.
           </div>
 
+          <p>Adults comparing formats can test fit via a free trial on <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
           <h2>Frequently Asked Questions</h2>
           <div class="faq-item"><div class="faq-q">Is online Quran learning as effective as in-person?</div><div class="faq-a">It can be, when lessons are live 1-to-1 with real correction, consistent attendance, and home practice. Outcomes still vary by learner and tutor fit.</div></div>
           <div class="faq-item"><div class="faq-q">Are recorded Quran courses enough?</div><div class="faq-a">Recordings help listening, but beginners usually need live correction for makharij and Tajweed mistakes.</div></div>
@@ -191,6 +192,7 @@ export const competitorGapBlogContent: Record<string, { style: string; content: 
             <strong>Related commercial pages:</strong> <a href="/one-on-one-quran-classes">1-to-1 Quran classes</a> · <a href="/online-quran-classes-for-kids">kids classes</a> · <a href="/quran-classes-for-working-professionals">evening classes for professionals</a>.
           </div>
 
+          <p>If you are still at letter/Qaida stage, start with <a href="/online-quran-for-beginners">online Quran for beginners</a> before choosing Hifz or Tajweed tracks.</p>
           <h2>Frequently Asked Questions</h2>
           <div class="faq-item"><div class="faq-q">What is the difference between Hifz and Tajweed classes?</div><div class="faq-a">Tajweed trains correct recitation rules; Hifz trains memorisation with structured revision. Many students need Tajweed foundations before heavy Hifz.</div></div>
           <div class="faq-item"><div class="faq-q">Can I take both together?</div><div class="faq-a">Sometimes. A tutor may correct Tajweed inside Hifz lessons, or keep separate focus blocks. Overloading beginners usually slows both goals.</div></div>

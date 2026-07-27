@@ -166,6 +166,75 @@ export default function OnlineQuranClassesForAdultsPage() {
             ))}
           </div>
 
+          {/* Unique depth: adult learning paths */}
+          <div style={{ maxWidth: 860, margin: "0 auto 48px" }}>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.55rem", marginBottom: 16, color: "var(--charcoal)" }}>
+              Adult learning paths — pick the honest starting point
+            </h2>
+            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16, fontSize: ".95rem" }}>
+              Online Quran classes for adults work best when the first month matches your real level — not a marketing label.
+              Most adult learners fall into one of four starting points. Your free trial is for identifying which path fits,
+              not for promising a fixed graduation date.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
+              {[
+                {
+                  title: "Complete beginner / new Muslim",
+                  body: "Start with letter recognition and short vowels (often via Noorani Qaida), then move into simple Quran words. No prior Arabic is required. Ask for patient pacing and English explanations.",
+                },
+                {
+                  title: "Can read slowly, wants fluency",
+                  body: "Focus on joining, rhythm, and stopping/starting rules with live correction. Apps alone rarely catch the letter habits adults accidentally keep for years.",
+                },
+                {
+                  title: "Reads but wants Tajweed precision",
+                  body: "Request Tajweed-focused matching. Expect targeted drills on heavy letters, madd, and common salah surah corrections rather than racing new pages.",
+                },
+                {
+                  title: "Memorisation (Hifz) goals",
+                  body: "Adults can pursue Hifz with a revision-first plan. Progress depends on available practice time; ask for a realistic weekly load after assessment — not a guaranteed completion calendar.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="content-card" style={{ textAlign: "left" }}>
+                  <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.05rem", marginBottom: 8 }}>{item.title}</h3>
+                  <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, margin: 0 }}>{item.body}</p>
+                </div>
+              ))}
+            </div>
+
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.55rem", marginBottom: 16, color: "var(--charcoal)" }}>
+              What the first month usually looks like
+            </h2>
+            <ol style={{ color: "var(--muted)", lineHeight: 1.85, marginBottom: 28, paddingLeft: 22, fontSize: ".95rem" }}>
+              <li style={{ marginBottom: 10 }}>
+                <strong style={{ color: "var(--charcoal)" }}>Week 1:</strong> Trial + level check. Confirm goals (reading, Tajweed, Hifz, or Islamic studies support) and preferred windows in your timezone.
+              </li>
+              <li style={{ marginBottom: 10 }}>
+                <strong style={{ color: "var(--charcoal)" }}>Weeks 2–3:</strong> Stabilise one skill track — letters, joins, or a short surah repair — instead of chasing five goals at once.
+              </li>
+              <li style={{ marginBottom: 10 }}>
+                <strong style={{ color: "var(--charcoal)" }}>Week 4:</strong> Review what stuck. Adjust session length or frequency if work stress is colliding with practice. Sustainable beats heroic.
+              </li>
+            </ol>
+
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.55rem", marginBottom: 16, color: "var(--charcoal)" }}>
+              Why live 1-to-1 still matters for adults
+            </h2>
+            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 14, fontSize: ".95rem" }}>
+              Adult learners often have strong motivation and weak feedback loops. Recordings and apps help exposure; they do not reliably judge whether ع or أ was correct.
+              Live private lessons let you ask questions without embarrassment, request a{" "}
+              <Link href="/female-quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>female tutor</Link>{" "}
+              when preferred, and keep accountability on busy weeks. If you are starting from zero, also see{" "}
+              <Link href="/online-quran-for-beginners" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran for beginners</Link>{" "}
+              and the{" "}
+              <Link href="/blog/learn-quran-online-adult-beginner-guide" style={{ color: "var(--emerald)", fontWeight: 600 }}>adult beginner guide</Link>.
+            </p>
+            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 40, fontSize: ".95rem" }}>
+              Verified basics only: free {TRIAL.durationMinutes}-minute trial with no credit card, live one-to-one matching by subject/age/timezone/gender preference,
+              and credentials confirmed per proposed tutor before enrolment. Availability is confirmed after your request.
+            </p>
+          </div>
+
           {/* Related links */}
           <div style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 24px", marginBottom: 40 }}>
             <strong style={{ color: "var(--charcoal)", fontSize: ".9rem" }}>Related pages: </strong>
@@ -175,6 +244,7 @@ export default function OnlineQuranClassesForAdultsPage() {
               ["/hifz-quran-online", "Hifz Online"],
               ["/learn-tajweed-online", "Tajweed Online"],
               ["/online-quran-classes", "All Classes"],
+              ["/online-quran-for-beginners", "Quran for Beginners"],
               ["/blog/learn-quran-online-adult-beginner-guide", "Adult Beginner Guide"],
             ].map(([href, label]) => (
               <Link key={href as string} href={href as string} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem", marginLeft: 12, textDecoration: "none" }}>

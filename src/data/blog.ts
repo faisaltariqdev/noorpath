@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     description: "Find a certified female Quran teacher for kids online — Hafiza tutors for daughters ages 4–12. Safe 1-on-1 Zoom classes, UK after-school slots, Noorani Qaida to Hifz. Free trial for parents.",
     category: "Quran Learning",
     date: "2026-07-13",
-    updatedAt: "2026-07-13",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     keywords: [
       "female quran teacher for kids", "female quran teacher for kids uk", "female quran tutor for kids",
@@ -1221,7 +1221,7 @@ export const blogPosts: BlogPost[] = [
       "Can my child learn Quran if I don’t speak Arabic? Yes. Learn your role vs the tutor’s, how to practise at home without Arabic, common mistakes, and tips for convert parents.",
     category: "Parenting & Education",
     date: "2026-07-17",
-    updatedAt: "2026-07-17",
+    updatedAt: "2026-07-27",
     readTime: "10 min",
     keywords: [
       "child learn quran parents dont speak arabic", "teach quran without knowing arabic",
@@ -1484,7 +1484,7 @@ export const blogPosts: BlogPost[] = [
       "Online Quran classes for autistic kids: sensory-friendly tips, micro-lessons, tutor fit, parent co-regulation, and how to book a calm free trial without overwhelm.",
     category: "Kids & Parenting",
     date: "2026-07-23",
-    updatedAt: "2026-07-23",
+    updatedAt: "2026-07-27",
     readTime: "12 min",
     keywords: [
       "quran classes for autistic kids",
@@ -1509,7 +1509,7 @@ export const blogPosts: BlogPost[] = [
       "ADHD-friendly online Quran classes: 15-minute lesson blocks, movement breaks, reward systems, tutor briefing tips, and how to keep progress without shame.",
     category: "Kids & Parenting",
     date: "2026-07-23",
-    updatedAt: "2026-07-23",
+    updatedAt: "2026-07-27",
     readTime: "11 min",
     keywords: [
       "quran classes for adhd kids",
@@ -1559,7 +1559,7 @@ export const blogPosts: BlogPost[] = [
       "Complete parent guide to Quran learning with speech delay: age goals, 4-week sound plan, tutor scripts, home drills, when to pause, and how to book a calm free trial.",
     category: "Kids & Parenting",
     date: "2026-07-24",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-07-27",
     readTime: "16 min",
     keywords: [
       "quran learning speech delay",
@@ -1586,7 +1586,7 @@ export const blogPosts: BlogPost[] = [
       "Full online summer Quran camp guide: 4-week curriculum map, age tracks, UK/US/AU/Gulf slots, travel weeks, progress checklist, and how to enrol a holiday intensive.",
     category: "Kids & Parenting",
     date: "2026-07-24",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-07-27",
     readTime: "16 min",
     keywords: [
       "online summer quran camp for kids",
@@ -1613,7 +1613,7 @@ export const blogPosts: BlogPost[] = [
       "Complete fix when a child forgets Arabic letters: assessment script, 7- and 14-day recovery plans, lookalike chart, 8 review games, spaced repetition, and tutor briefing notes.",
     category: "Kids & Parenting",
     date: "2026-07-24",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-07-27",
     readTime: "15 min",
     keywords: [
       "child forgets arabic letters",
@@ -1631,6 +1631,197 @@ export const blogPosts: BlogPost[] = [
     ],
     excerpt:
       "Expanded recovery guide when a child forgets Arabic letters: assessment, 7- and 14-day plans, lookalike chart, review games, and calm tutor notes — without restarting from Alif.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-teach-surah-al-fatiha-to-kids",
+    title: "Teach Surah Al-Fatiha to Kids — Step-by-Step Guide",
+    description:
+      "Teach Surah Al-Fatiha to kids with Arabic, transliteration, and meaning — a step-by-step parent guide for clear pronunciation and Salah-ready memorisation.",
+    category: "Kids & Parenting",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "12 min",
+    keywords: [
+      "how to teach surah al fatiha to kids",
+      "surah al fatiha for kids",
+      "teach surah fatiha children",
+      "surah al fatiha transliteration",
+      "surah fatiha meaning for kids",
+      "umm al kitab",
+      "al fatiha memorization kids",
+      "teach quran to kids fatiha",
+    ],
+    excerpt:
+      "A parent-focused guide to teaching Surah Al-Fatiha: verse-by-verse Arabic, transliteration, meaning, word-by-word help, and a practical step-by-step method for Salah-ready memorisation.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-classes-for-shy-or-anxious-kids",
+    title: "Quran Classes for Shy or Anxious Kids — Calm Parent Guide",
+    description:
+      "Quran classes for shy or anxious kids: a gentle 4-week settling plan, tutor briefing scripts, and home habits that reduce fear of mistakes in live lessons.",
+    category: "Kids & Parenting",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "11 min",
+    keywords: [
+      "quran classes for shy kids",
+      "anxious child quran class",
+      "shy kids online quran",
+      "child afraid of quran teacher",
+      "quran classes for anxious kids",
+      "nervous child learn quran",
+    ],
+    excerpt:
+      "A calm parent guide for shy or anxious Quran learners: why kids freeze, a four-week settling plan, tutor scripts, and home habits that protect confidence.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "bilingual-kids-learning-quran-arabic",
+    title: "Bilingual Kids Learning Quran Arabic — Parent Guide",
+    description:
+      "Bilingual kids learning Quran Arabic in English-first homes: makharij priorities, transliteration limits, home echo routines, and tutor briefing tips.",
+    category: "Kids & Parenting",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "11 min",
+    keywords: [
+      "bilingual kids learning quran",
+      "english speaking kids learn quran",
+      "non arabic speaking child quran",
+      "quran for bilingual children",
+      "learn quran english home",
+      "arabic for bilingual muslim kids",
+    ],
+    excerpt:
+      "Practical guide for English-first and bilingual homes teaching kids Quran Arabic: sounds to prioritise, transliteration limits, and tutor-ready home systems.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "single-parent-flexible-quran-classes-for-kids",
+    title: "Single-Parent Flexible Quran Classes for Kids Guide",
+    description:
+      "Single-parent flexible Quran classes for kids: realistic schedules, chaos-week protocols, timezone matching tips, and sustainable weekly plans that last.",
+    category: "Kids & Parenting",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "11 min",
+    keywords: [
+      "single parent quran classes",
+      "flexible quran classes for kids",
+      "busy parent online quran",
+      "quran classes flexible schedule",
+      "single mum quran tutor",
+      "online quran classes for working parents",
+    ],
+    excerpt:
+      "A realistic scheduling guide for single parents: flexible online Quran options, chaos-week minimums, booking scripts, and sustainable weekly plans.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-e-masura-arabic-english",
+    title: "Dua-e-Masura Arabic & English — After Tashahhud Guide",
+    description:
+      "Dua-e-Masura in Arabic with transliteration and English — the post-Tashahhud Salah dua, word-by-word meaning, and calm memorisation tips for all ages.",
+    category: "Dhikr & Duas",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "10 min",
+    keywords: [
+      "dua e masura",
+      "dua masura arabic",
+      "dua after attahiyat",
+      "dua after tashahhud",
+      "allahumma inni zalamtu nafsi",
+      "masura dua english",
+    ],
+    excerpt:
+      "Full Dua-e-Masura Arabic text with transliteration, English meaning, word-by-word help, and a calm plan to memorise it after Attahiyat.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "salatul-janazah-funeral-prayer-guide",
+    title: "Salat al-Janazah Guide — Funeral Prayer Steps & Dua",
+    description:
+      "Salat al-Janazah (funeral prayer) step-by-step: four takbirs, Al-Fatiha, salawat, dua for the deceased, etiquette, and FAQs for confident participation.",
+    category: "Islamic Knowledge",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "11 min",
+    keywords: [
+      "salatul janazah",
+      "salat al janazah",
+      "funeral prayer islam",
+      "janazah prayer steps",
+      "how to pray janazah",
+      "dua for deceased islam",
+    ],
+    excerpt:
+      "A clear Salat al-Janazah guide: four takbirs, core Arabic texts with transliteration, etiquette, and FAQs for following the imam with confidence.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "sajdah-tilawat-dua-arabic-english",
+    title: "Sajdah Tilawat Dua — Arabic, Transliteration, Meaning",
+    description:
+      "Sajdah tilawat dua in Arabic with transliteration and English meaning — when sajdah of recitation is made, how to perform it, and how to memorise the dua.",
+    category: "Dhikr & Duas",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "10 min",
+    keywords: [
+      "sajdah tilawat dua",
+      "sajda tilawat",
+      "prostration of recitation",
+      "sajdah tilawah dua arabic",
+      "sajada wajhiya",
+      "ayat e sajdah",
+    ],
+    excerpt:
+      "Sajdah tilawat dua with Arabic, transliteration, and English meaning — plus a careful outline of when and how the prostration of recitation is performed.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-for-muslims-living-abroad",
+    title: "Dua for Muslims Living Abroad — Practical Faith Toolkit",
+    description:
+      "Practical duas and routines for Muslims living abroad: travel remembrance, homesickness anchors, child identity tips, and calm habits that survive relocation.",
+    category: "Dhikr & Duas",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "10 min",
+    keywords: [
+      "dua for muslims living abroad",
+      "dua for expats",
+      "islamic dua for diaspora",
+      "muslim living overseas dua",
+      "travel dua for expats",
+      "faith tips muslims abroad",
+    ],
+    excerpt:
+      "A practical toolkit of duas and routines for Muslims living abroad — travel remembrance, homesickness anchors, and habits that survive relocation.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-classes-for-expat-families",
+    title: "Quran Classes for Expat Families — Online Parent Guide",
+    description:
+      "Quran classes for expat families: timezone-aware online 1-to-1 lessons, travel-week protocols, Gulf starting points (UAE & Qatar), and a free trial path.",
+    category: "Kids & Parenting",
+    date: "2026-07-27",
+    updatedAt: "2026-07-27",
+    readTime: "11 min",
+    keywords: [
+      "quran classes for expat families",
+      "online quran for expats",
+      "quran classes uae expats",
+      "expat muslim quran tutor",
+      "quran classes for diaspora families",
+      "online quran timezone matching",
+    ],
+    excerpt:
+      "How expat families keep Quran learning stable online: timezone matching, travel-week protocols, Gulf location starting points, and a free trial.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {

@@ -1072,6 +1072,429 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
     ],
   },
 
+  "how-to-teach-surah-al-fatiha-to-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "At what age should a child start learning Surah Al-Fatiha?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many families begin listening exposure around ages 3–4 and more formal echo practice around ages 4–6, depending on attention and speech readiness. There is no single required age — start when short, happy sessions are possible.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it typically take a child to memorize Surah Al-Fatiha?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "With short daily practice, many children lock a stable version in about 2–8 weeks. Younger children or those still settling Arabic sounds may need longer. Consistency and review matter more than a fixed calendar promise.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why is Surah Al-Fatiha called 'Umm al-Kitab' (Mother of the Book)?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is traditionally described as Umm al-Kitab because it gathers central Quranic themes — praise of Allah, mercy, the Last Day, worship, seeking help, and asking for guidance — into seven oft-recited verses that open the Quran and open every Salah.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I teach my child Al-Fatiha without knowing Arabic myself?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, you can begin with listening, echo practice, and transliteration support. Use a reliable audio model, keep sessions short, and get periodic live correction so small pronunciation errors do not harden into habits.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between memorizing Al-Fatiha and understanding its meaning?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Memorising means the child can recite the Arabic accurately from memory. Understanding means they know the core message — praising Allah, recognising His mercy, asking for help, and seeking the straight path. Recitation is essential for Salah; meaning deepens love and focus.",
+        },
+      },
+    ],
+  },
+
+  "quran-classes-for-shy-or-anxious-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should shy kids start in a group class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often no for the first stage. Many do better privately until speaking aloud feels normal, then join groups later if desired.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it okay if my child only listens for the first lessons?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Listening is still learning. Spoken participation can grow after safety is established.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child cries when the camera turns on?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Shorten the session, keep a parent visible, and ask the tutor to begin with a known easy letter. Do not force a full lesson through tears.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a female tutor help anxious daughters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often yes for comfort. Request female matching when booking and still evaluate teaching gentleness in the trial.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long until anxiety improves in Quran class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many children settle across a few weeks of predictable, kind sessions. Watch willingness trends rather than expecting one perfect day.",
+        },
+      },
+    ],
+  },
+
+  "bilingual-kids-learning-quran-arabic": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can my child learn Quran if we only speak English at home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Many children do. You need a tutor for pronunciation judgment and a simple home echo routine.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we teach spoken Arabic before Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Helpful but not required before Qaida or Quran decoding. Some families run both lightly in parallel; do not delay Quran forever waiting for conversational Arabic.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is transliteration harmful for bilingual kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Short-term help is fine. Long-term dependence slows Arabic reading. Transition eyes to the Arabic line quickly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why does my bilingual child forget Arabic letters between classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Common in low-exposure homes. Use tiny daily review sets and out-of-order recognition practice.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can bilingual families request a female Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Share the preference when booking a trial; matching and availability are confirmed after your request.",
+        },
+      },
+    ],
+  },
+
+  "single-parent-flexible-quran-classes-for-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I change Quran lesson times if my shifts change?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Share new preferred windows with the academy. Tutor availability for a new slot is confirmed after the request — it is not an automatic guarantee.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is one Quran class per week enough for my child?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can maintain progress if short home echoes happen most days. Faster goals usually need more live lesson time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need to sit in every online Quran lesson?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For young or anxious kids, nearby presence helps early on. As independence grows, you can step back while staying available.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a single mum request a female Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. State the preference when booking. Credentials and schedule fit are confirmed for the proposed tutor before enrolment.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we miss several weeks of Quran class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Restart with review-only lessons. Do not leap to new pages. A short recovery plan prevents shame spirals.",
+        },
+      },
+    ],
+  },
+
+  "dua-e-masura-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Dua-e-Masura the only dua after Attahiyat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Several authentic duas are taught for the final sitting. Stick to one complete version your teacher prefers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I recite Dua-e-Masura in every prayer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many Muslims recite a dua after Tashahhud in the final sitting of each obligatory prayer. Follow your school's guidance on what is required versus recommended.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can children learn Dua-e-Masura before perfect Tajweed?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Start with listening and clear chunks, then refine sounds with a tutor over time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I learn Attahiyat before Dua-e-Masura?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Learn Tashahhud first, then Salawat, then this dua, so the sitting sequence feels natural.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can I get live help with Salah duas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Book a free trial for live one-to-one correction and mention you want Salah duas checked.",
+        },
+      },
+    ],
+  },
+
+  "salatul-janazah-funeral-prayer-guide": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is there ruku or sujood in Janazah prayer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The funeral prayer is performed standing with takbirs; it does not include bowing or prostration like the daily prayers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many takbirs are in Salat al-Janazah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The common practice is four takbirs. Follow the imam leading the prayer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I do not memorise the long Janazah dua?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Join the congregation, say the takbirs, and make a sincere short dua for the deceased. Learn a standard text when you can.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Janazah prayer obligatory on every individual?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is widely described as a communal obligation (fard kifayah): if some of the community perform it, the duty is fulfilled for the rest. Ask a local scholar for personal circumstances.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I learn funeral prayer texts online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes as preparation — but when attending, follow the imam. Live tutors can also help you memorise Fatiha and salawat clearly beforehand.",
+        },
+      },
+    ],
+  },
+
+  "sajdah-tilawat-dua-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is sajdah tilawah the same as sajdah in normal Salah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is also a prostration, but it is tied to specific Quran verses of tilawah. The dua commonly taught for it can differ from the usual Subhana rabbiyal-a'la alone.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I do not know the special sajdah tilawat dua?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ask your teacher what to say. Many begin by using the familiar sajdah dhikr while they memorise the longer tilawah dua.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need wudu for sajdah tilawah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Purity rules can depend on whether you are in Salah and on your school's guidance. Learn this from a qualified teacher rather than from a short article alone.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many sajdah verses are in the Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Classical works list a set of sajdah verses; counts and emphasis can vary slightly by school. Use a mushaf that marks them and confirm with a teacher.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I practise sajdah tilawat with an online tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. A tutor can help you recognise sajdah markings and recite the dua clearly during Quran reading lessons.",
+        },
+      },
+    ],
+  },
+
+  "dua-for-muslims-living-abroad": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is there one special dua only for expats?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no single exclusive expat-only dua required of every Muslim abroad. Travellers use the travel dua; everyone benefits from daily protection duas, istighfar, and Quran.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I miss prayers while travelling across time zones?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Learn the rules of combining or shortening travel prayers from a qualified teacher for your school of law. Plan prayer windows before long-haul flights.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I keep my child's Quran going during relocation?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Keep the same short daily slot even in temporary housing. Online one-to-one lessons can bridge mosque gaps — request timezone matching when you book.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I recite duas in English if my Arabic is weak?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Learn short Arabic texts gradually. Sincere dua in the language you understand is widely taught as valid; still aim to add authentic Arabic phrases over time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where should Gulf-based families start for Quran classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Begin with the UAE or Qatar location pages for local scheduling context, then request a free trial and state your city and preferred evening windows.",
+        },
+      },
+    ],
+  },
+
+  "quran-classes-for-expat-families": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can we keep the same Quran tutor when we change countries?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often yes if the new timezone still fits. Share the move early so matching can adjust. Availability for a new window is confirmed after the request.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is one class a week enough for an expat child?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can maintain progress with short daily home echoes. Faster goals usually need more live time — choose the lightest plan you can sustain.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you guarantee evening Quran slots in the UAE?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No honest academy can guarantee every preferred minute. Share preferred GST windows; confirmation happens after tutor matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can expat families request a female Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. State the preference when booking. Relevant credentials for the proposed tutor are confirmed before enrolment.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if our child falls behind after summer travel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Restart with review-only lessons for one to two weeks. Do not leap to new pages out of guilt.",
+        },
+      },
+    ],
+  },
+
   "what-is-ijazah-in-quran-teaching": {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -1253,6 +1676,10 @@ const COMMERCIAL_BRIDGE_BY_SLUG: Record<
   "99-names-of-allah-asmaul-husna": {
     name: "Can children learn Asmaul Husna with online Islamic studies?",
     text: "You can request a free trial and ask for Islamic studies or kids Quran matching. NoorPath confirms tutor fit and schedule after your request.",
+  },
+  "how-to-teach-surah-al-fatiha-to-kids": {
+    name: "Do I need a tutor to teach my child Surah Al-Fatiha correctly?",
+    text: "Not always — many parents successfully start at home with listening and repetition. A tutor becomes especially helpful when hard letters keep slipping, the child freezes in Salah, or you want Tajweed-aware correction early. NoorPath offers live online Quran classes for kids; you can request a free trial and ask for Al-Fatiha pronunciation feedback.",
   },
 };
 

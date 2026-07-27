@@ -37,7 +37,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const loc = getLocation(slug);
   if (!loc) return {};
-  const market = getPriorityMarket(slug);
   const content = getPriorityContent(slug);
   const description =
     content?.metadataDescription ??
@@ -49,7 +48,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: getLocationKeywords(loc),
     alternates: {
       canonical,
-      ...(market ? { languages: getCountryHubHreflang() } : {}),
+      // Full reciprocal en-{region} cluster for every country hub (self + all peers + x-default)
+      languages: getCountryHubHreflang(),
     },
     openGraph: {
       title: `Online Quran Classes in ${loc.country} | NoorPath Academy`,
