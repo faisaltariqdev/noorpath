@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, Gamepad2, Headphones, Users } from "lucide-react";
 import {
   QAIDA_BASE_PATH,
+  QAIDA_GAMES,
   QAIDA_GUIDES,
   QAIDA_LESSONS,
   QAIDA_LETTERS,
@@ -10,6 +11,7 @@ import {
   QAIDA_TAJWEED_TOPICS,
 } from "@/data/noorani-qaida";
 import { validateQaidaContent } from "@/data/noorani-qaida/validate";
+import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -168,8 +170,8 @@ export default function NooraniQaidaHubPage() {
               <Link href="#curriculum" className="btn-primary-np">
                 <BookOpen size={17} aria-hidden="true" /> Explore the Curriculum
               </Link>
-              <Link href={`${QAIDA_BASE_PATH}/guides/games`} className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
-                <Gamepad2 size={17} aria-hidden="true" /> See How Practice Works
+              <Link href={`${QAIDA_BASE_PATH}/games`} className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
+                <Gamepad2 size={17} aria-hidden="true" /> Free Interactive Games
               </Link>
             </div>
           </div>
@@ -277,6 +279,46 @@ export default function NooraniQaidaHubPage() {
                 </Link>
               ))}
             </div>
+          </section>
+
+          <section id="free-games" className="qaida-section" aria-labelledby="games-hub-heading">
+            <span className="qaida-eyebrow">Ranking practice asset</span>
+            <h2 id="games-hub-heading">Free Interactive Noorani Qaida Games for Kids</h2>
+            <p>
+              Play letter matching, a harakat quiz, and a parent progress checklist on your phone.
+              No account is required. These activities reinforce recognition after a clear model.
+            </p>
+            <div className="qaida-grid qaida-grid-topics" style={{ marginTop: "1.5rem" }}>
+              {QAIDA_GAMES.map((game) => (
+                <Link key={game.slug} href={game.href} className="qaida-card">
+                  <Gamepad2 size={18} aria-hidden="true" style={{ color: "var(--emerald)" }} />
+                  <h3>{game.title}</h3>
+                  <p>{game.summary}</p>
+                  <span style={{ color: "var(--emerald)", display: "inline-flex", alignItems: "center", gap: ".3rem", fontSize: ".8rem", fontWeight: 750, marginTop: ".75rem" }}>
+                    Play now <ArrowRight size={14} aria-hidden="true" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+            <p style={{ marginTop: "1.25rem" }}>
+              Prefer teaching guidance first?{" "}
+              <Link href={`${QAIDA_BASE_PATH}/guides/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                Read the Noorani Qaida games guide
+              </Link>
+              {" "}or{" "}
+              <Link href={`${QAIDA_BASE_PATH}/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                open the free games hub
+              </Link>.
+            </p>
+            <div style={{ marginTop: "1rem" }}>
+              <ParentShareButtons
+                shareText="Free Interactive Noorani Qaida Games for Kids — letter matching, harakat quiz, and a progress checklist:"
+                shareUrl={`${QAIDA_BASE_URL}/games`}
+              />
+            </div>
+            <p style={{ marginTop: "1rem", color: "var(--muted)", fontSize: ".9rem" }}>
+              Know another parent teaching their child Noorani Qaida? Share this free resource with them.
+            </p>
           </section>
 
           <section className="qaida-section" aria-labelledby="guides-heading">

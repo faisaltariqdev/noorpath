@@ -1385,3 +1385,154 @@ pre { max-width: 100%; }
   .home-qaida-faq-section { padding: 24px 0 44px; }
   .home-qaida-cta-row a { flex: 1 1 100%; justify-content: center; text-align: center; }
 }
+
+/* ── Noorani Qaida interactive practice / games ── */
+.qaida-mini-game,
+.qaida-game-board {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+  padding: 1.1rem;
+}
+.qaida-mini-game-prompt {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.qaida-mini-game-prompt p {
+  color: var(--slate);
+  font-size: .95rem;
+  margin: 0;
+}
+.qaida-mini-game-prompt .arabic {
+  color: var(--emerald);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+.qaida-mini-game-choices,
+.qaida-game-choices {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.qaida-mini-game-choice,
+.qaida-game-choice {
+  align-items: center;
+  background: var(--cream);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  justify-content: center;
+  min-height: 92px;
+  padding: .85rem;
+  transition: border-color .15s, transform .15s, background .15s;
+}
+.qaida-mini-game-choice:hover:not(:disabled),
+.qaida-game-choice:hover:not(:disabled) {
+  border-color: rgba(10,110,79,.35);
+  transform: translateY(-1px);
+}
+.qaida-mini-game-choice:disabled,
+.qaida-game-choice:disabled { cursor: default; opacity: .95; }
+.qaida-mini-game-choice .arabic,
+.qaida-game-choice .arabic {
+  color: var(--emerald-dk);
+  font-size: 2rem;
+  line-height: 1;
+}
+.qaida-mini-game-choice small,
+.qaida-game-choice small { color: var(--muted); font-size: .78rem; }
+.qaida-mini-game-choice--correct,
+.qaida-game-choice--correct {
+  background: #e8f8f1;
+  border-color: var(--emerald);
+}
+.qaida-mini-game-choice--wrong,
+.qaida-game-choice--wrong {
+  background: #fff1f0;
+  border-color: #d9655b;
+}
+.qaida-mini-game-feedback,
+.qaida-game-feedback {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+.qaida-mini-game-feedback p,
+.qaida-game-feedback p {
+  align-items: center;
+  color: var(--slate);
+  display: flex;
+  gap: .45rem;
+  margin: 0;
+}
+.qaida-share-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1rem;
+}
+.qaida-share-card {
+  background: linear-gradient(160deg, #f2fbf7, #fff8eb);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.15rem 1.2rem;
+}
+.qaida-share-card h3 {
+  color: var(--charcoal);
+  font-size: 1.15rem;
+  margin: 0 0 .4rem;
+}
+.qaida-share-card p {
+  color: var(--slate);
+  font-size: .9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+.qaida-progress-list {
+  display: grid;
+  gap: .55rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.qaida-progress-list li {
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex;
+  gap: .7rem;
+  padding: .75rem .85rem;
+}
+.qaida-progress-list label {
+  color: var(--slate);
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: .9rem;
+  gap: .2rem;
+}
+.qaida-progress-list input {
+  accent-color: var(--emerald);
+  flex: 0 0 auto;
+  height: 18px;
+  margin-top: .15rem;
+  width: 18px;
+}
+.qaida-progress-list small { color: var(--muted); font-size: .78rem; }
+
+@media (min-width: 640px) {
+  .qaida-mini-game-choices,
+  .qaida-game-choices { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import {
   QAIDA_BASE_PATH,
   QAIDA_GUIDE_BY_SLUG,
   QAIDA_GUIDES,
+  QAIDA_GAMES,
 } from "@/data/noorani-qaida";
+import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -17,6 +15,10 @@ import {
   QaidaScreenshot,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { ArrowLeft, ArrowRight, Check, Gamepad2 } from "lucide-react";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 interface Props {
   params: Promise<{ guide: string }>;
@@ -176,13 +178,39 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
               <h2 id="guide-preview-heading">See the learning approach</h2>
               <p>
                 This screenshot documents NoorPath’s learning-platform experience.
-                It is shown for educational and product context and does not link to
-                a public playable demo.
+                It is shown for educational and product context. Free playable browser
+                games are linked below separately from the platform screenshots.
               </p>
               <div style={{ marginTop: "1.5rem" }}><QaidaScreenshot kind={guide.image} /></div>
               {guide.slug === "games" && (
                 <div style={{ marginTop: "1.5rem" }}><QaidaScreenshot kind="games" /></div>
               )}
+            </section>
+          )}
+
+          {guide.slug === "games" && (
+            <section className="qaida-section" aria-labelledby="playable-games-heading">
+              <span className="qaida-eyebrow">Play on this website</span>
+              <h2 id="playable-games-heading">Free interactive Noorani Qaida games</h2>
+              <p>
+                These browser games work on phones without an account. Use them after modelling
+                a letter or vowel — not as a substitute for teacher correction.
+              </p>
+              <div className="qaida-grid qaida-grid-topics" style={{ marginTop: "1.25rem" }}>
+                {QAIDA_GAMES.map((game) => (
+                  <Link key={game.slug} href={game.href} className="qaida-card">
+                    <Gamepad2 size={18} aria-hidden="true" style={{ color: "var(--emerald)" }} />
+                    <h3>{game.title}</h3>
+                    <p>{game.summary}</p>
+                  </Link>
+                ))}
+              </div>
+              <div style={{ marginTop: "1.25rem" }}>
+                <ParentShareButtons
+                  shareText="Free interactive Noorani Qaida games for kids:"
+                  shareUrl={`${QAIDA_BASE_URL}/games`}
+                />
+              </div>
             </section>
           )}
 
@@ -215,7 +243,9 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
             title="Continue exploring"
             links={[
               { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida hub", description: "Explore the full 11-module path." },
-              { href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Start with Alif", description: "Open the first complete letter reference." },
+              ...(guide.slug === "games"
+                ? [{ href: `${QAIDA_BASE_PATH}/games`, label: "Play free Qaida games", description: "Open letter matching, harakat quiz, and progress checklist." }]
+                : [{ href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Start with Alif", description: "Open the first complete letter reference." }]),
               { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Learn Fatha", description: "See the first short-vowel lesson." },
               { href: "/blog/noorani-qaida-complete-guide", label: "Traditional Noorani Qaida guide", description: "Read the editorial overview of the method." },
             ]}

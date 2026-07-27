@@ -7,6 +7,7 @@ import {
   QAIDA_LETTER_BY_SLUG,
   QAIDA_LETTERS,
 } from "@/data/noorani-qaida";
+import LetterFindPractice from "@/components/noorani-qaida/LetterFindPractice";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -35,8 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!letter) return {};
 
   const url = `${QAIDA_BASE_URL}/arabic-letters/${letter.slug}`;
-  const title = `${letter.name} (${letter.arabic}) Arabic Letter: Sound, Forms & Pronunciation`;
-  const description = `Learn the Arabic letter ${letter.name} (${letter.arabic}): sound, four joining forms, makhraj, writing cue, example, common confusion, and practice tips for kids.`;
+  // Keep title ~50–60 chars including brand suffix added by absolute form.
+  const title = `${letter.name} (${letter.arabic}) Arabic Letter: Forms & Practice`;
+  const description = `Learn Arabic letter ${letter.name} (${letter.arabic}): joining forms, sound cue, makhraj, writing tip, examples, and a quick find-the-letter practice for kids.`.slice(0, 160);
   return {
     title: { absolute: `${title} | NoorPath` },
     description,
@@ -71,7 +73,18 @@ export default async function ArabicLetterPage({ params }: Props) {
   const index = QAIDA_LETTERS.findIndex((item) => item.slug === letter.slug);
   const previous = index > 0 ? QAIDA_LETTERS[index - 1] : null;
   const next = index < QAIDA_LETTERS.length - 1 ? QAIDA_LETTERS[index + 1] : null;
+  const contrast = letter.contrastSlug ? QAIDA_LETTER_BY_SLUG[letter.contrastSlug] : null;
   const url = `${QAIDA_BASE_URL}/arabic-letters/${letter.slug}`;
+  const practiceSteps = letter.practiceSteps ?? [
+    `Point to ${letter.name} among two familiar letters.`,
+    `Name its dots and the stable part of its shape.`,
+    `Trace the main body before adding dots.`,
+    `Find ${letter.name} in its example and one joined form.`,
+    contrast
+      ? `Compare ${letter.name} with ${contrast.name} and say which clue separates them.`
+      : `Replay the same recognition task after a short pause.`,
+  ];
+
   const faqs = [
     {
       question: `How is the Arabic letter ${letter.name} pronounced?`,
@@ -86,6 +99,24 @@ export default async function ArabicLetterPage({ params }: Props) {
       answer: letter.commonConfusion,
     },
   ];
+
+  const distractors = QAIDA_LETTERS
+    .filter((item) => item.slug !== letter.slug)
+    .filter((item) => (contrast ? item.slug === contrast.slug || item.id !== letter.id : true))
+    .slice(0, 8)
+    .map((item) => ({ slug: item.slug, arabic: item.arabic, name: item.name }));
+
+  // Prefer contrast letter + nearby alphabet neighbours as distractors.
+  const preferredDistractors = [
+    ...(contrast ? [{ slug: contrast.slug, arabic: contrast.arabic, name: contrast.name }] : []),
+    ...QAIDA_LETTERS
+      .filter((item) => item.slug !== letter.slug && item.slug !== contrast?.slug)
+      .slice(Math.max(0, index - 2), index + 3)
+      .filter((item) => item.slug !== letter.slug)
+      .map((item) => ({ slug: item.slug, arabic: item.arabic, name: item.name })),
+    ...distractors,
+  ].filter((item, itemIndex, list) => list.findIndex((entry) => entry.slug === item.slug) === itemIndex)
+    .slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -175,6 +206,7 @@ export default async function ArabicLetterPage({ params }: Props) {
             <span className="qaida-eyebrow">Recognise the shape</span>
             <h2 id="recognise-heading">What does {letter.name} look like?</h2>
             <p>{letter.shapeGuide} {letter.childPrompt}</p>
+            {letter.deepGuide && <p style={{ marginTop: "1rem" }}>{letter.deepGuide}</p>}
             <div className="qaida-forms" style={{ marginTop: "1.5rem" }} dir="rtl">
               {(["Isolated", "Initial", "Medial", "Final"] as const).map((label, formIndex) => (
                 <div className="qaida-form" key={label}>
@@ -206,7 +238,7 @@ export default async function ArabicLetterPage({ params }: Props) {
 
           <section className="qaida-section" aria-labelledby="example-heading">
             <span className="qaida-eyebrow">See it in context</span>
-            <h2 id="example-heading">{letter.name} example</h2>
+            <h2 id="example-heading">{letter.name} examples</h2>
             <div className="qaida-example-grid">
               <div className="qaida-example">
                 <span className="arabic" lang="ar" dir="rtl">{letter.example}</span>
@@ -218,6 +250,13 @@ export default async function ArabicLetterPage({ params }: Props) {
                 <strong>{letter.name}</strong>
                 <small>Approximate sound cue: {letter.sound}</small>
               </div>
+              {(letter.extraExamples ?? []).map((example) => (
+                <div className="qaida-example" key={example.arabic}>
+                  <span className="arabic" lang="ar" dir="rtl">{example.arabic}</span>
+                  <strong>{example.meaning}</strong>
+                  <small>Extra {letter.name} practice word</small>
+                </div>
+              ))}
             </div>
           </section>
 
@@ -226,12 +265,7 @@ export default async function ArabicLetterPage({ params }: Props) {
             <h2 id="writing-heading">Practise writing and finding {letter.name}</h2>
             <p><PencilLine size={18} aria-hidden="true" style={{ display: "inline", marginRight: ".4rem" }} />{letter.writingCue}</p>
             <ol className="qaida-practice-steps" style={{ marginTop: "1.5rem" }}>
-              {[
-                `Point to ${letter.name} among two familiar letters.`,
-                `Name its dots and the stable part of its shape.`,
-                `Trace the main body before adding dots.`,
-                `Find ${letter.name} in its example and one joined form.`,
-              ].map((step, stepIndex) => (
+              {practiceSteps.map((step, stepIndex) => (
                 <li key={step}>
                   <span aria-hidden="true">{stepIndex + 1}</span>
                   <p>{step}</p>
@@ -240,18 +274,31 @@ export default async function ArabicLetterPage({ params }: Props) {
             </ol>
           </section>
 
-          {letter.id === 1 && (
-            <section className="qaida-section" aria-labelledby="platform-preview-heading">
-              <span className="qaida-eyebrow">Learning platform preview</span>
-              <h2 id="platform-preview-heading">How an interactive letter lesson is organised</h2>
-              <p>
-                The NoorPath platform separates meeting the letter, hearing a model,
-                tracing, repeating, playing, and reviewing. Rewards record activity;
-                they do not lock other letters or modules.
-              </p>
-              <div style={{ marginTop: "1.5rem" }}><QaidaScreenshot kind="lesson" /></div>
-            </section>
-          )}
+          <section className="qaida-section" aria-labelledby="interactive-practice-heading">
+            <span className="qaida-eyebrow">Quick recognition practice</span>
+            <h2 id="interactive-practice-heading">Find {letter.name} among nearby letters</h2>
+            <p>
+              Tap the matching letter. This checks visual recognition only —
+              it does not grade pronunciation.
+            </p>
+            <div style={{ marginTop: "1.25rem" }}>
+              <LetterFindPractice
+                target={{ slug: letter.slug, arabic: letter.arabic, name: letter.name }}
+                distractors={preferredDistractors}
+              />
+            </div>
+          </section>
+
+          <section className="qaida-section" aria-labelledby="platform-preview-heading">
+            <span className="qaida-eyebrow">Learning platform preview</span>
+            <h2 id="platform-preview-heading">How an interactive letter lesson is organised</h2>
+            <p>
+              The NoorPath platform separates meeting the letter, hearing a model,
+              tracing, repeating, playing, and reviewing. Rewards record activity;
+              they do not lock other letters or modules.
+            </p>
+            <div style={{ marginTop: "1.5rem" }}><QaidaScreenshot kind="lesson" /></div>
+          </section>
 
           <section className="qaida-section" aria-labelledby="adult-guidance-heading">
             <span className="qaida-eyebrow">Support the learner</span>
@@ -271,10 +318,12 @@ export default async function ArabicLetterPage({ params }: Props) {
           <QaidaRelatedLinks
             title={`Continue learning after ${letter.name}`}
             links={[
+              { href: `${QAIDA_BASE_PATH}#arabic-alphabet`, label: "All 28 Arabic letters", description: "Return to the letter index on the Noorani Qaida hub." },
+              ...(previous ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/${previous.slug}`, label: `Previous letter: ${previous.name}`, description: `Review ${previous.name} before ${letter.name}.` }] : []),
               ...(next ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/${next.slug}`, label: `Next letter: ${next.name}`, description: `Compare ${letter.name} with ${next.name}.` }] : []),
+              ...(contrast ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/${contrast.slug}`, label: `Contrast with ${contrast.name}`, description: `Practise the clue that separates ${letter.name} from ${contrast.name}.` }] : []),
               { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Add Fatha", description: "See how a short vowel gives a consonant its reading sound." },
-              { href: `${QAIDA_BASE_PATH}/lessons/joining-letters`, label: "Joining Arabic letters", description: "Understand initial, medial, and final forms." },
-              { href: `${QAIDA_BASE_PATH}/guides/pronunciation`, label: "Pronunciation guide", description: "Use transliteration, audio guidance, and teacher feedback responsibly." },
+              { href: `${QAIDA_BASE_PATH}/guides/games`, label: "Noorani Qaida games", description: "See recognition games that reinforce letter practice." },
             ]}
           />
 

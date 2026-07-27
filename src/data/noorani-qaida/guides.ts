@@ -80,13 +80,13 @@ export const QAIDA_GUIDES: QaidaGuide[] = [
   {
     slug: "games",
     title: "Noorani Qaida Games and Learning Activities",
-    description: "How NoorPath’s letter games turn recognition, listening, sequencing, and recall into focused practice.",
+    description: "How NoorPath’s letter games turn recognition, listening, sequencing, and recall into focused practice — plus free playable browser games.",
     audience: "Children ages 3–12, parents, and teachers",
-    introduction: "A learning game is useful when its goal is clear. NoorPath’s platform preview shows short activities for finding a target letter, matching sound and shape, remembering pairs, ordering letters, and answering quick recognition prompts.",
+    introduction: "A learning game is useful when its goal is clear. NoorPath’s platform preview shows short activities for finding a target letter, matching sound and shape, remembering pairs, ordering letters, and answering quick recognition prompts. Families can also open free browser games on this site for letter matching, harakat recognition, and a parent progress checklist.",
     sections: [
-      { heading: "Single-letter focus games", body: "Bubble Pop, Find the Letter, and Sound Match keep one target visible while distractors test whether the learner can recognise or hear it. This is different from simply tapping every colourful object." },
+      { heading: "Single-letter focus games", body: "Bubble Pop, Find the Letter, and Sound Match keep one target visible while distractors test whether the learner can recognise or hear it. This is different from simply tapping every colourful object. Try the free letter matching game when you only need a quick recognition check on a phone." },
       { heading: "Group and sequence games", body: "Memory Match, Letter Train, Puzzle, and Quick Quiz mix familiar letters to practise retrieval, visual comparison, and order. Teachers can choose the activity that matches the lesson outcome.", points: ["Bubble Pop: selective attention", "Find Letter: visual discrimination", "Sound Match: sound-symbol mapping", "Memory: paired retrieval", "Train and Puzzle: sequence awareness", "Quick Quiz: fluent recall"] },
-      { heading: "Rewards without locking learning", body: "Stars, badges, and lesson rewards can acknowledge effort and consistency. Curriculum access remains open; rewards do not block a child from revisiting or exploring another lesson." },
+      { heading: "Rewards without locking learning", body: "Stars, badges, and lesson rewards can acknowledge effort and consistency. Curriculum access remains open; rewards do not block a child from revisiting or exploring another lesson. The free progress checklist helps parents track coverage without creating an account." },
     ],
     checklist: ["Model before playing", "Name the game’s target skill", "Use a small distractor set", "Pause after repeated guessing", "Review the same skill away from the game"],
     keywords: ["Noorani Qaida games", "Arabic alphabet games for kids", "interactive Quran learning games"],

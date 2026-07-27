@@ -44,8 +44,128 @@ const seeds: LetterSeed[] = [
   ["ya", "ي", "Yaa", "Yaa", ["ي", "يـ", "ـيـ", "ـي"], "يَد", "hand", "Middle of the tongue rises toward the palate", "A curved form with two dots below; final Yaa has a long tail.", "Check whether Yaa is a consonant or Madd letter, and keep its two dots distinct in standard teaching text."],
 ];
 
+/** Contrast pairs used for related links and recognition practice. */
+const CONTRAST_BY_SLUG: Record<string, string> = {
+  alif: "ain",
+  ba: "ta",
+  ta: "tha",
+  tha: "ta",
+  jeem: "haa",
+  haa: "kha",
+  kha: "haa",
+  dal: "dhal",
+  dhal: "dal",
+  ra: "zain",
+  zain: "ra",
+  seen: "saad",
+  sheen: "seen",
+  saad: "seen",
+  daad: "dal",
+  taa: "ta",
+  dhaa: "dhal",
+  ain: "ghain",
+  ghain: "ain",
+  fa: "qaf",
+  qaf: "kaf",
+  kaf: "qaf",
+  lam: "alif",
+  meem: "noon",
+  noon: "ba",
+  ha: "haa",
+  waw: "ya",
+  ya: "waw",
+};
+
+/**
+ * Extra depth for letter pages that underperform in search despite the shared template.
+ * Keep claims educational only — no fabricated usage stats.
+ */
+const LETTER_ENRICHMENT: Partial<
+  Record<
+    string,
+    Pick<QaidaLetter, "deepGuide" | "practiceSteps" | "extraExamples">
+  >
+> = {
+  zain: {
+    deepGuide:
+      "Zay sits in the Raa family: the same descending curve, with one distinguishing upper dot. Because both letters break the joining line on the left, children often recognise the curve but miss the dot when reading quickly. Practise Zay by pairing it with Raa in isolated and final forms before introducing new vocabulary.",
+    practiceSteps: [
+      "Point to Zay beside Raa and name which letter has the upper dot.",
+      "Trace the descending curve once, then add the single upper dot.",
+      "Say the Zay sound after a clear model; keep it voiced and light.",
+      "Find ز in زَهْرَة and compare a final ـز with a final ـر.",
+      "Mix Zay with two familiar letters and ask the child to find only Zay.",
+    ],
+    extraExamples: [
+      { arabic: "زَيْت", meaning: "oil" },
+      { arabic: "مَوْز", meaning: "banana" },
+    ],
+  },
+  saad: {
+    deepGuide:
+      "Saad is an emphatic letter: the tongue body rises while the tip forms a heavier counterpart to Seen. Visual recognition is usually easier than sound quality. Teach the broad loop and deep bowl first, then contrast Saad with Seen so the learner hears fullness without adding an extra vowel after the consonant.",
+    practiceSteps: [
+      "Compare ص and س side by side and describe the broader Saad bowl.",
+      "Trace the Saad loop before joining practice.",
+      "Listen to a model of صَ and contrast it with سَ without forcing the throat.",
+      "Find Saad in صَبْر and read it only after naming the letter.",
+      "Review one initial and one medial Saad form on a calm second pass.",
+    ],
+    extraExamples: [
+      { arabic: "صَلَاة", meaning: "prayer" },
+      { arabic: "عَصِير", meaning: "juice" },
+    ],
+  },
+  daad: {
+    deepGuide:
+      "Daad needs careful modelling: the side of the tongue meets the upper molars, producing a sound English does not share. Parents should not invent an English substitute. Start with shape recognition (Saad’s body plus one upper dot), then short listen-and-point drills, and leave fine articulation correction to a teacher.",
+    practiceSteps: [
+      "Identify Daad by its Saad-shaped body and single upper dot.",
+      "Point to ض among ص and د without saying the sound yet.",
+      "Listen once to an approved model, then repeat only if the child is relaxed.",
+      "Find Daad in ضَوْء and pause on the letter before finishing the word.",
+      "Ask a teacher to check any uncertain Daad attempts before home drilling.",
+    ],
+    extraExamples: [
+      { arabic: "أَرْض", meaning: "earth" },
+      { arabic: "رِضَا", meaning: "contentment" },
+    ],
+  },
+  noon: {
+    deepGuide:
+      "Noon is easy to confuse in joined text because its medial form resembles the Baa-family bowl. The single upper dot is the reliable clue. Teach recognition in isolation first, then in medial position next to Baa, Taa, and Thaa so the child tracks dots rather than guessing from word meaning.",
+    practiceSteps: [
+      "Name Noon’s single upper dot before saying the sound.",
+      "Compare نـ with بـ and تـ in a short three-letter row.",
+      "Trace the Noon bowl, then place the dot above.",
+      "Find Noon in نَجْم and in one medial ـنـ example.",
+      "Play a find-Noon round among two Baa-family distractors.",
+    ],
+    extraExamples: [
+      { arabic: "نُور", meaning: "light" },
+      { arabic: "بِنْت", meaning: "girl" },
+    ],
+  },
+  qaf: {
+    deepGuide:
+      "Qaaf is deeper than Kaaf: the back of the tongue rises near the soft palate. Visually, Qaaf has two upper dots and a deep final bowl, while Kaaf uses a different body. Separate shape practice from sound practice so a child who confuses ق and ك can show whether the problem is recognition or articulation.",
+    practiceSteps: [
+      "Count Qaaf’s two upper dots and compare them with Faa’s one dot.",
+      "Place ق beside ك and describe which shape is Qaaf before speaking.",
+      "Listen to a deep Qaaf model and a lighter Kaaf model once each.",
+      "Find ق in قَمَر, then point to a final ـق bowl.",
+      "Retry recognition only; save uncertain pronunciation for the teacher.",
+    ],
+    extraExamples: [
+      { arabic: "قَلْب", meaning: "heart" },
+      { arabic: "حَقّ", meaning: "truth" },
+    ],
+  },
+};
+
 export const QAIDA_LETTERS: QaidaLetter[] = seeds.map((seed, index) => {
   const [slug, arabic, name, sound, forms, example, exampleMeaning, makhraj, shapeGuide, commonConfusion] = seed;
+  const enrichment = LETTER_ENRICHMENT[slug];
   return {
     id: index + 1,
     slug,
@@ -68,6 +188,8 @@ export const QAIDA_LETTERS: QaidaLetter[] = seeds.map((seed, index) => {
       `${name.toLowerCase()} letter for kids`,
       `learn ${arabic} online`,
     ],
+    contrastSlug: CONTRAST_BY_SLUG[slug],
+    ...enrichment,
   };
 });
 

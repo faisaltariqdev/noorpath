@@ -1,8 +1,10 @@
+import { QAIDA_GAMES } from "./games";
 import { QAIDA_GUIDES } from "./guides";
 import { QAIDA_LETTERS } from "./letters";
 import { QAIDA_LESSONS, QAIDA_TAJWEED_TOPICS } from "./topics";
 import type { QaidaModule } from "./types";
 
+export * from "./games";
 export * from "./guides";
 export * from "./letters";
 export * from "./topics";
@@ -62,4 +64,6 @@ export const QAIDA_INDEXABLE_PATHS = [
   ...QAIDA_LESSONS.map((topic) => `${QAIDA_BASE_PATH}/lessons/${topic.slug}`),
   ...QAIDA_TAJWEED_TOPICS.map((topic) => `${QAIDA_BASE_PATH}/tajweed/${topic.slug}`),
   ...QAIDA_GUIDES.map((guide) => `${QAIDA_BASE_PATH}/guides/${guide.slug}`),
+  `${QAIDA_BASE_PATH}/games`,
+  ...QAIDA_GAMES.map((game) => game.href),
 ];

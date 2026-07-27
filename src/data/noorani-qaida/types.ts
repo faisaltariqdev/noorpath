@@ -20,6 +20,12 @@ export interface QaidaLetter {
   parentTip: string;
   teacherTip: string;
   keywords: string[];
+  /** Optional deep guide used to lift thinner/weaker letter pages to hub parity. */
+  deepGuide?: string;
+  practiceSteps?: string[];
+  /** Slug of a visually or phonetically similar letter for contrast practice. */
+  contrastSlug?: string;
+  extraExamples?: Array<{ arabic: string; meaning: string }>;
 }
 
 export interface QaidaExample {

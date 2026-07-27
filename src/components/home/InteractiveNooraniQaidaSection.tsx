@@ -202,6 +202,13 @@ export default function InteractiveNooraniQaidaSection() {
                   <strong>Makharij</strong> cues — then move through Harakaat, joining, and early
                   word reading without relying on a static PDF alone.
                 </p>
+                <p>
+                  New on the free practice hub:{" "}
+                  <Link href="/noorani-qaida/games">interactive letter matching</Link>, a{" "}
+                  <Link href="/noorani-qaida/games/harakat-quiz">harakat quiz</Link>, and a{" "}
+                  <Link href="/noorani-qaida/games/progress-checklist">parent progress checklist</Link>{" "}
+                  you can share with another parent — no account required.
+                </p>
                 <details className="home-qaida-more">
                   <summary>How the 11-module learning journey works</summary>
                   <p>
@@ -249,6 +256,9 @@ export default function InteractiveNooraniQaidaSection() {
               <div className="home-qaida-cta-row">
                 <Link href="/noorani-qaida" className="btn-primary-np">
                   Explore Interactive Noorani Qaida
+                </Link>
+                <Link href="/noorani-qaida/games" className="btn-outline-np">
+                  <Gamepad2 size={16} aria-hidden="true" /> Free Interactive Noorani Qaida Games for Kids
                 </Link>
                 <a
                   href={NOORANI_QAIDA_LIVE_PREVIEW_URL}
@@ -368,8 +378,9 @@ export default function InteractiveNooraniQaidaSection() {
             <p>
               Explore the full hub:{" "}
               <Link href="/noorani-qaida">Noorani Qaida curriculum</Link> ·{" "}
+              <Link href="/noorani-qaida/games">Free Interactive Noorani Qaida Games for Kids</Link> ·{" "}
+              <Link href="/noorani-qaida/guides/games">Practice games guide</Link> ·{" "}
               <Link href="/noorani-qaida/guides/for-parents">Parent guide</Link> ·{" "}
-              <Link href="/noorani-qaida/guides/games">Practice games</Link> ·{" "}
               <Link href="/islamic-resources">Islamic resources</Link>
             </p>
           </aside>
