@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BASE_URL, ORGANIZATION_ID } from "@/lib/organizationSchema";
+import { absolutePageTitle } from "@/lib/pageTitle";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
+  title: absolutePageTitle("Faisal Tariq — Founder & CEO of NoorPath Academy"),
   description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
   alternates: { canonical: "https://www.noorpath.online/founder" },
   openGraph: {

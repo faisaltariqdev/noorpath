@@ -5,6 +5,7 @@ import OnlineQuranClassesGuide from "@/components/OnlineQuranClassesGuide";
 import { BASE_URL, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCountryHubHreflang, PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
+import { TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
     "quran tutor online", "live quran classes", "quran classes for kids", "online quran teacher",
     "best online quran classes", "quran learning online", "1 on 1 quran classes", "free quran trial",
     "tajweed classes online", "noorani qaida online", "hifz program online", "islamic classes online",
+    "one-to-one quran classes", "one to one quran classes",
+    "online quran classes after school", "after school quran classes online",
+    "quran lessons for busy families",
   ],
   alternates: {
     canonical: "https://www.noorpath.online/online-quran-classes",
@@ -42,11 +46,11 @@ export const metadata: Metadata = {
 
 const features = [
   { icon: <Award size={22} />, title: "Tutor Matching", desc: "Request a tutor by learner level, goals, timezone and male or female preference. Available tutor details are confirmed before enrolment." },
-  { icon: <Users size={22} />, title: "1-on-1 Private Sessions", desc: "Each live class is arranged for one learner and one tutor, rather than a group." },
-  { icon: <Clock size={22} />, title: "Timezone-Based Scheduling", desc: "Request morning, evening or weekend windows in your timezone. The recurring time is confirmed after matching." },
+  { icon: <Users size={22} />, title: "1-on-1 Private Sessions", desc: "Each live class is arranged as one-to-one Quran classes for one learner and one tutor, rather than a group — clearer correction for busy family schedules." },
+  { icon: <Clock size={22} />, title: "Timezone-Based Scheduling", desc: "Request online Quran classes after school, or evening or weekend windows in your timezone — including for families abroad. The recurring time is confirmed after matching; tutor availability is confirmed after your request." },
   { icon: <Shield size={22} />, title: "Female Tutor Requests", desc: "Request a female tutor for sisters or daughters. NoorPath confirms a suitable match based on current availability." },
   { icon: <Video size={22} />, title: "Live Video Lessons", desc: "Sessions use an agreed online meeting platform and lesson materials suited to the learning goal." },
-  { icon: <CheckCircle size={22} />, title: "Clear Learning Goals", desc: "Tutors set lesson goals according to the learner's assessed level, pace and selected course." },
+  { icon: <CheckCircle size={22} />, title: "Clear Learning Goals", desc: "Tutors set lesson goals according to the learner's assessed level, pace and selected course. Language of instruction preferences are recorded where available during matching." },
 ];
 
 const classFaqs = [
@@ -65,6 +69,11 @@ const classFaqs = [
   { q: "What happens in a free trial Quran class?", a: "At NoorPath, the trial introduces the tutor, checks the student's current level, includes a short sample lesson and recommends a suitable course. It is free and does not require a credit card." },
   { q: "How much do online Quran classes cost?", a: "Fees vary by lesson length, weekly frequency, teacher level and course. NoorPath publishes current options on its pricing page so families can compare total teaching time and included support." },
   { q: "Can online Quran classes work across countries?", a: "Yes. Virtual classes can serve learners in different countries when the academy can match a tutor to the learner's timezone, language needs and schedule." },
+  { q: "Can we book online Quran classes after school?", a: "Yes. Many families request after-school or early-evening windows in their local timezone. Exact recurring times are confirmed after tutor matching." },
+  { q: "Are Quran lessons suitable for busy families?", a: "Short, recurring one-to-one lessons with a fixed weekly slot usually fit busy households better than irregular intensives. Choose the lightest published plan you can keep, then adjust after the trial." },
+  { q: "What are one-to-one Quran classes?", a: "One-to-one Quran classes mean one learner and one tutor in a live session — not a large group. That format supports real-time correction for reading, Tajweed and Hifz." },
+  { q: "Do you have Quran teachers available in different timezones for families abroad?", a: `Yes. Matching considers your timezone and preferred lesson windows. ${TRIAL.availabilityNote} Preferred minutes are not guaranteed in advance.` },
+  { q: "Can we request English-language instruction for online Quran classes?", a: "Language of instruction preferences are recorded where available during matching and confirmed for the proposed tutor before enrolment. NoorPath does not publish a fixed worldwide language-coverage list." },
   { q: "How do I choose between an online academy and an independent tutor?", a: "An academy may provide teacher vetting, curriculum, support, progress records and replacement cover. In either case, verify qualifications, safeguarding, communication and the teaching match before committing." },
 ];
 
@@ -163,7 +172,10 @@ export default function OnlineQuranClassesPage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Online Quran Classes</span>
           </nav>
           <h1>Online Quran Classes — Live One-to-One Lessons</h1>
-          <p>Personalised online Quran learning for kids and adults, from Noorani Qaida and Quran reading to Tajweed, Hifz and Islamic studies, with tutor matching across timezones.</p>
+          <p>
+            Personalised one-to-one Quran classes for kids and adults — from Noorani Qaida and Quran reading to Tajweed, Hifz and Islamic studies.
+            Request online Quran classes after school or at another window that fits busy families, with tutor matching across timezones.
+          </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
             <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/one-on-one-quran-classes" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>1-to-1 Classes</Link>

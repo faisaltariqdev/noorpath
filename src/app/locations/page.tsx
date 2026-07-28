@@ -15,8 +15,7 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: { absolute: "Online Quran Classes by Country | NoorPath" },
-  description:
-    "Explore online Quran class guides for nine priority markets and other existing countries. Request live one-to-one lessons in your local timezone.",
+  description: `Explore online Quran class guides for ${PRIORITY_MARKETS.length} priority markets and ${locations.length} country hubs. Request live one-to-one lessons in your local timezone.`,
   keywords: [
     "online quran classes usa", "online quran classes uk", "online quran classes canada",
     "online quran classes australia", "learn quran online worldwide", "quran teacher online",

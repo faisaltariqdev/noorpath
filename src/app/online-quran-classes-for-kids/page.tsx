@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     "online quran classes for kids",
     "quran classes for kids online",
     "learn quran online for kids",
-    "online quran classes for kids",
     "online quran for children",
     "quran teacher for kids online",
     "kids quran classes",
@@ -29,19 +28,22 @@ export const metadata: Metadata = {
     "quran learning for kids online",
     "noorani qaida for kids online",
     "tajweed classes for kids",
+    "online tajweed classes for children",
+    "online islamic classes for children",
     "safe online quran classes",
     "free quran trial for kids",
-            "online quran classes for kids uk",
-            "online quran classes for kids usa",
-            "online quran classes for kids canada",
-            "online quran classes for kids australia",
-            "female quran teacher for kids",
-            "quran classes for children ages 4 to 12",
-            "after school quran classes online",
-            "one to one quran classes for kids",
-            "online noorani qaida for kids",
-            "online hifz classes for kids",
-          ],
+    "online quran classes for kids uk",
+    "online quran classes for kids usa",
+    "online quran classes for kids canada",
+    "online quran classes for kids australia",
+    "female quran teacher for kids",
+    "quran classes for children ages 4 to 12",
+    "after school quran classes online",
+    "online quran classes after school",
+    "one to one quran classes for kids",
+    "online noorani qaida for kids",
+    "online hifz classes for kids",
+  ],
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes-for-kids" },
   openGraph: {
     title: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial",
@@ -197,7 +199,9 @@ export default function OnlineQuranClassesForKidsPage() {
           </nav>
           <h1>Online Quran Classes for Kids</h1>
           <p>
-            Live 1-on-1 Quran classes for children ages 4–12, with matching for Quran reading, Tajweed, Hifz, and female tutor requests.{" "}
+            Live one-to-one Quran classes for children ages 4–12 — including online Islamic classes for children and online Tajweed classes for children when reading is ready —
+            with matching for Quran reading, Hifz, and female tutor requests. Book{" "}
+            <strong style={{ color: "var(--gold-lt)" }}>online Quran classes after school</strong> when that window fits.{" "}
             <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial — no credit card.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>

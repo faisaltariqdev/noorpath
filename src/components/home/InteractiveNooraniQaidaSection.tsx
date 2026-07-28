@@ -195,19 +195,32 @@ export default function InteractiveNooraniQaidaSection() {
 
               <div className="home-qaida-prose section-desc">
                 <p>
-                  NoorPath combines an <strong>interactive Noorani Qaida</strong> with{" "}
-                  <Link href="/online-quran-classes">online Quran learning</Link> for families
+                  NoorPath combines an{" "}
+                  <Link href="/noorani-qaida">
+                    <strong>Interactive Noorani Qaida</strong>
+                  </Link>{" "}
+                  with <Link href="/online-quran-classes">online Quran learning</Link> for families
                   in the UK, USA, Canada, Australia, and worldwide. Children meet each Arabic
                   letter with English names, <strong>Arabic phonics</strong>, and{" "}
                   <strong>Makharij</strong> cues — then move through Harakaat, joining, and early
                   word reading without relying on a static PDF alone.
                 </p>
                 <p>
-                  New on the free practice hub:{" "}
+                  Free{" "}
+                  <Link href="/noorani-qaida/games">
+                    <strong>Arabic Learning Games</strong>
+                  </Link>{" "}
+                  on the practice hub:{" "}
                   <Link href="/noorani-qaida/games">interactive letter matching</Link>, a{" "}
                   <Link href="/noorani-qaida/games/harakat-quiz">harakat quiz</Link>, and a{" "}
-                  <Link href="/noorani-qaida/games/progress-checklist">parent progress checklist</Link>{" "}
-                  you can share with another parent — no account required.
+                  <Link href="/noorani-qaida/games/progress-checklist">parent progress checklist</Link>
+                  — plus guides on{" "}
+                  <Link href="/noorani-qaida/guides/gamified-learning">gamified Quran learning</Link>{" "}
+                  and{" "}
+                  <Link href="/noorani-qaida/guides/arabic-alphabet-practice">
+                    Digital Qaida practice
+                  </Link>{" "}
+                  for online Arabic alphabet work. No account required.
                 </p>
                 <details className="home-qaida-more">
                   <summary>How the 11-module learning journey works</summary>
@@ -377,8 +390,12 @@ export default function InteractiveNooraniQaidaSection() {
             </blockquote>
             <p>
               Explore the full hub:{" "}
-              <Link href="/noorani-qaida">Noorani Qaida curriculum</Link> ·{" "}
-              <Link href="/noorani-qaida/games">Free Interactive Noorani Qaida Games for Kids</Link> ·{" "}
+              <Link href="/noorani-qaida">Interactive Noorani Qaida</Link> ·{" "}
+              <Link href="/noorani-qaida/games">Arabic Learning Games</Link> ·{" "}
+              <Link href="/noorani-qaida/guides/digital-quran-learning-platform">
+                Digital Quran Learning Platform
+              </Link>{" "}
+              · <Link href="/noorani-qaida/guides/with-animation">Qaida with animation</Link> ·{" "}
               <Link href="/noorani-qaida/guides/games">Practice games guide</Link> ·{" "}
               <Link href="/noorani-qaida/guides/for-parents">Parent guide</Link> ·{" "}
               <Link href="/islamic-resources">Islamic resources</Link>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTACT } from "@/lib/academyFacts";
 import { BASE_URL, ORGANIZATION_ID, WEBSITE_ID } from "@/lib/organizationSchema";
+import { absolutePageTitle } from "@/lib/pageTitle";
 import WhatsAppLink from "@/components/WhatsAppLink";
 
 export const revalidate = false;
@@ -9,7 +10,7 @@ export const revalidate = false;
 const pageUrl = `${BASE_URL}/contact`;
 
 export const metadata: Metadata = {
-  title: "Contact NoorPath Academy",
+  title: absolutePageTitle("Contact NoorPath Academy"),
   description:
     "Contact NoorPath Academy about online Quran classes, trial requests, tutor matching, scheduling or website corrections.",
   alternates: { canonical: pageUrl },

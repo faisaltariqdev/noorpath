@@ -1,6 +1,7 @@
 import type { QaidaGuide } from "./types";
+import { QAIDA_CONCEPT_GUIDES, QAIDA_EXPANDED_GUIDES } from "./conceptGuides";
 
-export const QAIDA_GUIDES: QaidaGuide[] = [
+const QAIDA_BASE_GUIDES: QaidaGuide[] = [
   {
     slug: "for-parents",
     title: "Noorani Qaida Parent Guide",
@@ -59,25 +60,6 @@ export const QAIDA_GUIDES: QaidaGuide[] = [
     image: "games",
   },
   {
-    slug: "pronunciation",
-    title: "Noorani Qaida Pronunciation Guide",
-    description: "How to use names, transliteration, mouth cues, audio guidance, and teacher feedback without learning guessed sounds.",
-    audience: "English-speaking beginners and families",
-    introduction: "English spelling can only approximate Arabic sounds. Use transliteration to remember a label, not as the final pronunciation source. Accurate learning combines the written letter, a reviewed audible model, visible mouth cues where relevant, and corrective feedback.",
-    sections: [
-      { heading: "Separate letter name and reading sound", body: "The alphabet name helps identify the symbol, while the sound in a word depends on Harakaat and reading rules. A learner who says the name correctly may still need practice reading the consonant with a vowel." },
-      { heading: "Use articulation cues safely", body: "Descriptions such as lips together or middle throat orient attention; they are not instructions to force physical movement. Stop repeated attempts if the learner becomes tense." },
-      { heading: "Treat audio as a model, not an assessor", body: "Listen-and-repeat tools provide consistency and replay. They cannot reliably judge every articulation or replace a teacher who can hear the learner’s response." },
-    ],
-    checklist: ["Look at the Arabic first", "Use transliteration as support only", "Listen before repeating", "Compare one nearby sound", "Ask a teacher about uncertainty"],
-    keywords: ["Noorani Qaida with pronunciation", "Arabic letter pronunciation for kids", "Noorani Qaida with audio"],
-    faqs: [
-      { question: "Does NoorPath claim Qari-reviewed audio?", answer: "No. Public pages do not claim reviewed recordings until specific assets have completed formal review. Live teachers remain the correction path for uncertain sounds." },
-      { question: "Why can’t English spelling show every Arabic sound?", answer: "Some Arabic articulation points and sound qualities have no direct English equivalent. Transliteration is a memory aid, not a complete acoustic model." },
-    ],
-    image: "lesson",
-  },
-  {
     slug: "games",
     title: "Noorani Qaida Games and Learning Activities",
     description: "How NoorPath’s letter games turn recognition, listening, sequencing, and recall into focused practice — plus free playable browser games.",
@@ -96,24 +78,13 @@ export const QAIDA_GUIDES: QaidaGuide[] = [
     ],
     image: "bubble",
   },
-  {
-    slug: "pdf-vs-interactive",
-    title: "Noorani Qaida PDF vs Interactive Learning",
-    description: "A balanced guide to choosing a clear Noorani Qaida book or PDF and combining it with guided online practice.",
-    audience: "Parents, teachers, and beginners comparing resources",
-    introduction: "A well-typeset Qaida page is excellent for stable reading and printing. Interactive practice adds prompts, progress, replay, and varied retrieval. The useful question is not which format wins, but whether the Arabic is accurate and the learner receives suitable correction.",
-    sections: [
-      { heading: "How to evaluate a PDF", body: "Check the publisher or institution, Arabic typesetting clarity, lesson sequence, print quality, and usage permission. Do not assume that widespread sharing proves a file is accurate or licensed.", points: ["Known source", "Clear vowel marks", "Consistent lesson order", "Readable print size", "Explicit sharing permission"] },
-      { heading: "What interactive practice adds", body: "A digital platform can focus one letter, show joining forms, present a short self-check, and return to difficult material. These features support practice but do not independently certify pronunciation." },
-      { heading: "A practical combined routine", body: "Use the book or PDF for stable page reading, the platform for focused recognition and games, and a teacher or approved recording for pronunciation verification." },
-    ],
-    checklist: ["Confirm source and permission", "Inspect Arabic at high zoom", "Use the same lesson order across formats", "Keep notes for the teacher", "Avoid downloading files from unknown mirrors"],
-    keywords: ["Noorani Qaida PDF", "Noorani Qaida PDF with audio", "interactive Noorani Qaida vs book"],
-    faqs: [
-      { question: "Can I download a Noorani Qaida PDF from NoorPath?", answer: "NoorPath does not currently publish a licensed Qaida PDF download. This guide explains how to evaluate a resource you are authorised to use." },
-      { question: "Is an interactive Qaida better than a printed book?", answer: "They support different tasks. Print provides a stable reading surface; interactive activities provide prompts and retrieval. Both still benefit from accurate modelling and feedback." },
-    ],
-  },
+];
+
+/** Base guides + expanded replacements + new concept pages (no slug overlap). */
+export const QAIDA_GUIDES: QaidaGuide[] = [
+  ...QAIDA_BASE_GUIDES,
+  ...QAIDA_EXPANDED_GUIDES,
+  ...QAIDA_CONCEPT_GUIDES,
 ];
 
 export const QAIDA_GUIDE_BY_SLUG = Object.fromEntries(

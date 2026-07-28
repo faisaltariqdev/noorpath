@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import { CONTACT, TRIAL } from "@/lib/academyFacts";
+import { absolutePageTitle } from "@/lib/pageTitle";
 import WhatsAppLink from "@/components/WhatsAppLink";
 
 export const metadata: Metadata = {
-  title: "Thank You — Trial Request Received | NoorPath Academy",
+  title: absolutePageTitle("Thank You — Trial Request Received | NoorPath Academy"),
   description: "NoorPath Academy has received your free-trial request and will contact you to confirm tutor and schedule availability.",
   robots: { index: false, follow: false },
 };

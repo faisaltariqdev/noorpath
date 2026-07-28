@@ -7,8 +7,8 @@ const familyDiscountSummary = FAMILY_DISCOUNTS.map(
   ({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`
 ).join(", ");
 
-/** Additive country-specific FAQs prepended for Europe expansion markets only. */
-const EUROPE_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
+/** Additive country-specific FAQs prepended for selected expansion markets. */
+const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
   "online-quran-classes-france": [
     {
       q: "Are online Quran classes suitable for Muslim families in France?",
@@ -45,6 +45,42 @@ const EUROPE_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       a: "Yes — request after-school or weekend CET/CEST windows and share conflicts during matching. A sustainable weekly slot usually works better than irregular catch-up lessons.",
     },
   ],
+  "online-quran-classes-ireland": [
+    {
+      q: "Are there online Quran classes in Dublin?",
+      a: "Yes. Families in Dublin can request live one-to-one online Quran and Noorani Qaida lessons with GMT or IST scheduling. NoorPath is an online academy (not a Dublin campus). Suitability and recurring times are confirmed after a free trial and tutor matching.",
+    },
+    {
+      q: "Can I find a female Quran teacher in Ireland online?",
+      a: "You can request a female Quran teacher for a learner in Ireland. Female tutor and GMT/IST availability are subject to matching and confirmed after your request. See also the female tutor request page for how preferences are handled.",
+    },
+    {
+      q: "What times work for after-school Quran classes in Ireland?",
+      a: "Many families request after-school evenings or weekend mornings in GMT or IST. Exact recurring times depend on tutor matching and are confirmed after your request.",
+    },
+  ],
+  "online-quran-classes-new-zealand": [
+    {
+      q: "Are online Quran classes suitable for kids in New Zealand?",
+      a: "Yes. Live one-to-one online Quran and Noorani Qaida lessons can suit New Zealand families who want structured home learning after school in NZST or NZDT. NoorPath is an online academy (not a New Zealand campus). Suitability is confirmed through a free trial, language preference where available, and a recurring time confirmed after tutor matching.",
+    },
+    {
+      q: "Is there a good Quran teacher option if there's no mosque near us in New Zealand?",
+      a: "When a nearby mosque or weekend madrasah is not available, many New Zealand families use live online 1-to-1 tutoring so a child still receives regular listening and correction. Request a tutor matched to the learner’s level and NZST/NZDT window; availability is confirmed after your request. Keep young learners in a family space and use free Interactive Noorani Qaida practice between lessons.",
+    },
+    {
+      q: "What class times work for online Quran classes in New Zealand?",
+      a: "Many families request after-school evenings or weekend mornings in NZST or NZDT (noting daylight saving). Exact recurring times depend on tutor matching and are confirmed after your request — not a fixed New Zealand timetable published in advance.",
+    },
+    {
+      q: "Can Auckland and smaller-town NZ families use the same online Quran service?",
+      a: "Yes. Lessons are online, so Auckland, Wellington, Christchurch, Hamilton and families further from Islamic centres can request the same trial and matching process. Share your city and preferred local times when you book.",
+    },
+    {
+      q: "Is there a Quran teacher for kids in Auckland through NoorPath?",
+      a: "Auckland families can request a live online Quran teacher for kids with NZST/NZDT matching for Qaida, Tajweed or Hifz. Availability is confirmed after your request. Classes are online — NoorPath does not claim an Auckland branch.",
+    },
+  ],
   "online-quran-classes-sweden": [
     {
       q: "Are online Quran classes suitable for Muslim families in Sweden?",
@@ -61,6 +97,191 @@ const EUROPE_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     {
       q: "What times are typically requested in Sweden?",
       a: "Many families ask for roughly 4 PM–10 PM CET/CEST after school, with weekend mornings as an alternative. Availability is confirmed during tutor matching.",
+    },
+    {
+      q: "Do you offer Quran classes in Stockholm online?",
+      a: "Yes. Stockholm families can request live one-to-one online Quran classes with CET/CEST after-school or evening windows. Share preferred weekdays when booking; tutor availability is confirmed after matching. NoorPath does not operate a Stockholm campus.",
+    },
+  ],
+  "online-quran-classes-norway": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in Norway?",
+      a: "Yes. Families in Oslo, Bergen and elsewhere can request live one-to-one online Quran and Noorani Qaida lessons with CET/CEST after-school windows. NoorPath teaches online only (not a Norwegian campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "Can I request online Tajweed classes in Norway?",
+      a: "Yes when the learner can already read Arabic letters. Beginners usually start with Noorani Qaida first. Request Tajweed-focused matching and confirm availability after your request. See also the Tajweed course page for curriculum scope.",
+    },
+    {
+      q: "Can we request a female Quran teacher for a child in Oslo?",
+      a: "You can request a female tutor for a learner in Norway, including Oslo. Female tutor and CET/CEST availability are confirmed after matching. Prefer the female tutor request page for how preferences are handled.",
+    },
+    {
+      q: "What times work for after-school Quran classes in Norway?",
+      a: "Many families request roughly 4 PM–9 PM CET/CEST after school, noting shorter winter daylight. Exact recurring times are confirmed after tutor matching.",
+    },
+  ],
+  "online-quran-classes-finland": [
+    {
+      q: "Are kids Quran classes available online in Finland?",
+      a: "Yes. Families in Helsinki, Espoo and other Finnish cities can request live one-to-one online Quran classes for children with EET/EEST scheduling. NoorPath is an online academy (not a Finnish campus). Availability is confirmed after matching.",
+    },
+    {
+      q: "What timezone do online Quran classes use for Finland?",
+      a: "Request lessons in EET or EEST (Finnish local time). Share school finish times and preferred evenings; the recurring slot is confirmed after tutor matching.",
+    },
+    {
+      q: "Can beginners start Noorani Qaida online from Finland?",
+      a: "Yes. Complete beginners typically start with Noorani Qaida. Families can also use the Interactive Noorani Qaida hub for free recognition practice between live lessons.",
+    },
+  ],
+  "online-quran-classes-denmark": [
+    {
+      q: "Are online Quran classes suitable for families in Denmark?",
+      a: "Yes. Copenhagen, Aarhus and other Danish households can request live one-to-one online Quran lessons with CET/CEST matching. NoorPath teaches online only (not a Danish campus).",
+    },
+    {
+      q: "Do you offer weekend Quran classes in Denmark?",
+      a: "Weekend mornings or afternoons in CET/CEST can be requested when weekdays are full. Exact availability is confirmed after tutor matching — not a fixed Denmark-wide weekend timetable.",
+    },
+    {
+      q: "Can we request a female Quran teacher in Denmark?",
+      a: "Yes. State a female tutor preference when booking. Availability is confirmed after your request. See the female tutor request page for how matching works.",
+    },
+  ],
+  // ── Phase B: template-heavy Asia / Africa hubs (unique EXTRA FAQs only) ──
+  "online-quran-classes-india": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in India?",
+      a: "Yes. Families in Hyderabad, Mumbai, Delhi, Bengaluru, Lucknow and elsewhere can request live one-to-one online Quran and Noorani Qaida lessons with IST scheduling. NoorPath teaches online only (not an Indian campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "What times work for after-school Quran classes in India?",
+      a: "Many families request late afternoon or evening IST windows after school, plus weekend mornings. Exact recurring times depend on tutor matching and are confirmed after your request — not a fixed India-wide timetable.",
+    },
+    {
+      q: "Can we request Urdu or English instruction for a child in India?",
+      a: "You can state a preferred language of instruction when booking. Matching depends on available tutors and is confirmed after your request. Placement should still follow the learner’s reading level, not language preference alone.",
+    },
+    {
+      q: "How should Indian families budget USD fees in INR?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to INR for household planning using your bank’s rate; NoorPath does not publish a fixed INR price list. ${getCurrencyNote("online-quran-classes-india")}`,
+    },
+  ],
+  "online-quran-classes-pakistan": [
+    {
+      q: "Are online Quran classes suitable for families in Pakistan?",
+      a: "Yes. Households in Karachi, Lahore, Islamabad, Rawalpindi and Peshawar can request live one-to-one online Quran lessons with PKT matching. Online tutoring can reduce travel while keeping regular correction. NoorPath is an online academy (not a Pakistan campus).",
+    },
+    {
+      q: "What PKT windows are commonly requested?",
+      a: "Families often request morning, after-school or evening PKT slots, including weekends. Exact availability is confirmed after tutor matching.",
+    },
+    {
+      q: "Can beginners start Noorani Qaida online from Pakistan?",
+      a: "Yes. Complete beginners typically start with Noorani Qaida. Between live lessons, families may use the Interactive Noorani Qaida hub for free recognition practice — soft support only; live teachers remain the correction path for uncertain sounds.",
+    },
+    {
+      q: "Can we request a female Quran teacher in Pakistan?",
+      a: "Yes. State a female tutor preference when booking. Female tutor and PKT availability are confirmed after matching. See the female tutor request page for how preferences are handled.",
+    },
+  ],
+  "online-quran-classes-malaysia": [
+    {
+      q: "Are online Quran classes suitable for Malaysian families?",
+      a: "Yes. Families in Kuala Lumpur, Penang, Johor Bahru, Ipoh and Shah Alam can request live one-to-one online Quran lessons with MYT scheduling. Online tutoring can add personalised Tajweed or Hifz support alongside school. NoorPath teaches online only (not a Malaysian campus).",
+    },
+    {
+      q: "What times work after school in Malaysia?",
+      a: "Many families request MYT evenings or weekend mornings after school and other activities. Exact recurring times are confirmed after tutor matching.",
+    },
+    {
+      q: "How should Malaysian families read USD prices in ringgit (MYR)?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to MYR for budgeting; NoorPath does not publish a fixed MYR price list. ${getCurrencyNote("online-quran-classes-malaysia")}`,
+    },
+  ],
+  "online-quran-classes-bangladesh": [
+    {
+      q: "Are online Quran classes suitable for families in Bangladesh?",
+      a: "Yes. Families in Dhaka, Chittagong, Sylhet, Rajshahi and Khulna can request live one-to-one online Quran lessons with BST (UTC+6) matching. Online sessions can supplement madrasa or school learning with personalised Tajweed or Hifz support. NoorPath teaches online only.",
+    },
+    {
+      q: "Can Bangla-speaking families request language support?",
+      a: "You can note Bangla or English preference when booking. Available language support depends on tutor matching and is confirmed after your request.",
+    },
+    {
+      q: "What times work for online Quran classes in Bangladesh?",
+      a: "Request after-school or evening BST windows, or weekend mornings. Exact recurring times are confirmed after tutor matching.",
+    },
+  ],
+  "online-quran-classes-indonesia": [
+    {
+      q: "Are online Quran classes suitable for Indonesian families?",
+      a: "Yes. Families in Jakarta, Surabaya, Bandung, Medan and Bekasi can request live one-to-one online Quran lessons. Share whether you need WIB or WITA local time when booking. NoorPath teaches online only (not an Indonesian campus).",
+    },
+    {
+      q: "How do WIB and WITA affect scheduling?",
+      a: "Indonesia spans multiple time zones. State your city and preferred local clock time (WIB UTC+7 or WITA UTC+8) so matching is not ambiguous. Exact recurring times are confirmed after your request.",
+    },
+    {
+      q: "Can we request Tajweed refinement online from Indonesia?",
+      a: "Yes when the learner can already read Arabic letters continuously. Beginners usually start with Noorani Qaida first. Request Tajweed-focused matching; availability is confirmed after your request.",
+    },
+  ],
+  "online-quran-classes-singapore": [
+    {
+      q: "Are online Quran classes suitable for Singaporean Muslim families?",
+      a: "Yes. Singapore families can request live one-to-one online Quran lessons with SGT scheduling around school and weekend commitments. NoorPath teaches online only (not a Singapore campus).",
+    },
+    {
+      q: "What SGT times typically work after school?",
+      a: "Many families request weekday evenings or weekend mornings in SGT. Exact availability is confirmed after tutor matching — not a fixed Singapore timetable published in advance.",
+    },
+    {
+      q: "How should Singapore families budget USD fees in SGD?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to SGD for household planning; NoorPath does not publish a fixed SGD price list. ${getCurrencyNote("online-quran-classes-singapore")}`,
+    },
+  ],
+  "online-quran-classes-turkey": [
+    {
+      q: "Are online Quran classes suitable for families in Turkey?",
+      a: "Yes. Households in Istanbul, Ankara, Izmir, Bursa and Antalya — including expats — can request live one-to-one online Quran lessons with TRT matching. NoorPath teaches online only (not a Turkish campus).",
+    },
+    {
+      q: "Can we request Arabic-focused Quran instruction in Turkey?",
+      a: "You can request Arabic or English instruction preferences when booking. Matching depends on available tutors and is confirmed after your request.",
+    },
+    {
+      q: "What TRT windows are commonly requested?",
+      a: "Many families request after-school or evening TRT slots, with weekend options. Exact recurring times are confirmed after tutor matching.",
+    },
+  ],
+  "online-quran-classes-nigeria": [
+    {
+      q: "Are online Quran classes suitable for Nigerian Muslim families?",
+      a: "Yes. Families in Lagos, Kano, Ibadan, Abuja and Kaduna can request live one-to-one online Quran lessons with WAT matching. NoorPath teaches online only (not a Nigerian campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "What WAT times work after school in Nigeria?",
+      a: "Many families request weekday evenings or weekend mornings in WAT. Exact recurring times depend on tutor matching and are confirmed after your request.",
+    },
+    {
+      q: "Can we request a female Quran teacher in Nigeria?",
+      a: "Yes. State a female tutor preference when booking. Female tutor and WAT availability are confirmed after matching.",
+    },
+  ],
+  "online-quran-classes-south-africa": [
+    {
+      q: "Are online Quran classes suitable for South African Muslim families?",
+      a: "Yes. Families in Johannesburg, Cape Town, Durban, Pretoria and Port Elizabeth can request live one-to-one online Quran lessons with SAST matching. NoorPath teaches online only (not a South African campus).",
+    },
+    {
+      q: "What SAST windows are commonly requested?",
+      a: "Many families request after-school evenings or weekend mornings in SAST. Exact recurring times are confirmed after tutor matching.",
+    },
+    {
+      q: "How should South African families budget USD fees in rand (ZAR)?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to ZAR for budgeting; NoorPath does not publish a fixed ZAR price list. ${getCurrencyNote("online-quran-classes-south-africa")}`,
     },
   ],
 };
@@ -104,7 +325,7 @@ export function getLocationFaqs(loc: Location) {
       a: `Yes. Beginners start with Noorani Qaida; children who already read fluently can join structured online Hifz with the Sabaq–Sabqi–Manzil system. Book a free trial to assess the right track.`,
     },
   ];
-  const extras = EUROPE_LOCATION_FAQS[loc.slug] ?? [];
+  const extras = EXTRA_LOCATION_FAQS[loc.slug] ?? [];
   return [...extras, ...standard];
 }
 

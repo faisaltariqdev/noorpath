@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     "Explore an interactive 11-module Noorani Qaida for ages 3–12: Arabic letters, Harakaat, pronunciation guidance, tracing, games, rewards, parent tips and teacher support.",
   keywords: [
     "interactive Noorani Qaida",
+    "Interactive Noorani Qaida online",
     "Noorani Qaida online",
     "Noorani Qaida with audio",
     "Noorani Qaida with pronunciation",
@@ -65,7 +66,11 @@ export const metadata: Metadata = {
 const hubFaqs = [
   {
     question: "What is the Interactive Noorani Qaida?",
-    answer: "It is NoorPath’s structured learning-platform experience for ages 3–12. The 11-module journey covers Arabic letters, short and double vowels, Sukoon, Shaddah, Madd, joining, word reading, guided Quranic practice, revision, and review.",
+    answer: "It is NoorPath’s structured Interactive Noorani Qaida online learning-platform experience for ages 3–12. The 11-module journey covers Arabic letters, short and double vowels, Sukoon, Shaddah, Madd, joining, word reading, guided Quranic practice, revision, and review.",
+  },
+  {
+    question: "Is Interactive Noorani Qaida online free to explore?",
+    answer: "Yes. The public hub, letter pages, and free browser games can be opened without an account. Live one-to-one classes are a separate enrolment path with tutor matching.",
   },
   {
     question: "Does the platform replace a Quran teacher?",
@@ -162,7 +167,7 @@ export default function NooraniQaidaHubPage() {
             <span className="qaida-eyebrow">Interactive Quran reading foundations · Ages 3–12</span>
             <h1>Interactive Noorani Qaida for Kids</h1>
             <p>
-              Explore a complete 11-module path from the Arabic alphabet to guided Quranic practice.
+              Use Interactive Noorani Qaida online as a complete 11-module path from the Arabic alphabet to guided Quranic practice.
               Children can meet, listen, trace, repeat, play and review, while parents and teachers
               receive practical guidance for the same learning goal.
             </p>
@@ -319,6 +324,51 @@ export default function NooraniQaidaHubPage() {
             <p style={{ marginTop: "1rem", color: "var(--muted)", fontSize: ".9rem" }}>
               Know another parent teaching their child Noorani Qaida? Share this free resource with them.
             </p>
+          </section>
+
+          <section className="qaida-section" aria-labelledby="cluster-index-heading">
+            <span className="qaida-eyebrow">SEO cluster map</span>
+            <h2 id="cluster-index-heading">Noorani Qaida cluster index</h2>
+            <p>
+              Every public guide and free games hub in this cluster — reach any URL in one or two clicks
+              from this hub. Commercial live classes stay on the course and kids class pages.
+            </p>
+            <ul
+              style={{
+                marginTop: "1.25rem",
+                padding: 0,
+                listStyle: "none",
+                display: "grid",
+                gap: ".55rem",
+                gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+              }}
+            >
+              <li>
+                <Link href={QAIDA_BASE_PATH} style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                  Interactive Noorani Qaida hub
+                </Link>
+              </li>
+              <li>
+                <Link href={`${QAIDA_BASE_PATH}/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                  Free Noorani Qaida learning games
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                  Noorani Qaida online classes
+                </Link>
+              </li>
+              {QAIDA_GUIDES.map((guide) => (
+                <li key={guide.slug}>
+                  <Link
+                    href={`${QAIDA_BASE_PATH}/guides/${guide.slug}`}
+                    style={{ color: "var(--emerald)", fontWeight: 650 }}
+                  >
+                    {guide.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <section className="qaida-section" aria-labelledby="guides-heading">

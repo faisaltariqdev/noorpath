@@ -26,6 +26,14 @@ const PRIORITY_COUNTRIES = [
   "Qatar",
   "Kuwait",
   "Saudi Arabia",
+  "Ireland",
+  "New Zealand",
+  "Norway",
+  "Finland",
+  "Denmark",
+  "France",
+  "Netherlands",
+  "Sweden",
 ] as const;
 
 export function getOrganizationJsonLd() {

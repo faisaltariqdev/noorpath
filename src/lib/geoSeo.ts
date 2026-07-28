@@ -29,6 +29,9 @@ export const LOCATION_HREFLANG_BY_SLUG: Record<string, string> = {
   "online-quran-classes-singapore": "en-SG",
   "online-quran-classes-ireland": "en-IE",
   "online-quran-classes-new-zealand": "en-NZ",
+  "online-quran-classes-norway": "en-NO",
+  "online-quran-classes-finland": "en-FI",
+  "online-quran-classes-denmark": "en-DK",
   "online-quran-classes-turkey": "en-TR",
 };
 
@@ -413,6 +416,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     schedulingGuidance:
       "Request lessons from about 4 PM to 10 PM CET/CEST to align with Swedish school evenings, or ask for weekend mornings. Tutor and slot availability are confirmed during matching.",
     keywordClusters: [
+      "quran classes in stockholm",
       "online quran classes sweden",
       "online quran stockholm",
       "quran teacher sweden",
@@ -421,14 +425,169 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "islamic classes sweden",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Sweden | Free Trial",
+      metadataTitle: "Quran Classes in Stockholm & Sweden Online | NoorPath",
       metadataDescription:
-        "Live 1-to-1 online Quran for Muslim families in Sweden. CET evenings ~4–10 PM, Qaida to Hifz, USD pricing with € context. Free trial.",
-      heading: "Online Quran Classes in Sweden",
+        "Quran classes in Stockholm and across Sweden: live 1-to-1 online Qaida, Tajweed or Hifz with CET evenings. Free trial; availability confirmed after request.",
+      heading: "Online Quran Classes in Sweden — Including Stockholm",
       introduction:
         "Muslim families in Sweden — including Stockholm, Gothenburg, Malmö and Uppsala — can request live online Quran and Noorani Qaida classes with tutors matched to the learner’s level, with evening CET/CEST times that respect Nordic school and daylight patterns.",
       localPlanning:
         "Share preferred after-school windows (often 4–10 PM CET), winter daylight constraints, and language preferences. Exact recurring times are confirmed only after tutor matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-ireland",
+    country: "Ireland",
+    flag: "🇮🇪",
+    weight: 2,
+    locale: "en-IE",
+    openGraphLocale: "en_IE",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "GMT / IST",
+    schedulingGuidance:
+      "Request an after-school, evening or weekend window in GMT or IST. Tutor availability is confirmed during matching.",
+    keywordClusters: [
+      "online quran classes ireland",
+      "female quran teacher in ireland",
+      "quran teacher ireland",
+      "learn quran online ireland",
+      "quran classes for kids ireland",
+      "after school quran classes ireland",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Dublin & Ireland | NoorPath",
+      metadataDescription:
+        "Online Quran classes in Dublin and across Ireland: live 1-to-1 Qaida, Tajweed or Hifz with GMT/IST matching. Female tutor requests welcome. Free trial.",
+      heading: "Online Quran Classes in Dublin and Ireland",
+      introduction:
+        "Families in Dublin, Cork, Limerick, Galway and elsewhere in Ireland can request live one-to-one online Quran classes when local after-school options are limited. Request a female Quran teacher in Ireland when preferred. NoorPath teaches online only and does not operate an Irish campus.",
+      localPlanning:
+        "Share your city (for example Dublin), school finish time, and preferred GMT or IST evenings or weekend mornings. Exact tutor and recurring-time availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-new-zealand",
+    country: "New Zealand",
+    flag: "🇳🇿",
+    weight: 2,
+    locale: "en-NZ",
+    openGraphLocale: "en_NZ",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "NZD", name: "New Zealand dollars" },
+    timezone: "NZST / NZDT",
+    schedulingGuidance:
+      "Request an after-school, evening, or weekend window in NZST or NZDT. Daylight-saving changes and tutor availability are confirmed during matching.",
+    keywordClusters: [
+      "online quran classes for kids in new zealand",
+      "online quran classes new zealand",
+      "quran teacher new zealand",
+      "noorani qaida online new zealand",
+      "islamic classes new zealand",
+      "learn quran online nz",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes for Kids in New Zealand | NoorPath",
+      metadataDescription:
+        "Online Quran classes for kids in New Zealand: live 1-to-1 Qaida, Tajweed or Hifz with NZST/NZDT matching. Free trial; availability confirmed after request.",
+      heading: "Online Quran Classes for Kids in New Zealand",
+      introduction:
+        "Muslim families across New Zealand — especially in Auckland, and also in Wellington, Christchurch, Hamilton and smaller towns — can request live one-to-one online Quran classes for kids when local mosque programmes or full-time Islamic schooling are limited. Lessons are online only; NoorPath does not operate a New Zealand campus.",
+      localPlanning:
+        "Share your city, school finish time, and preferred NZST or NZDT evenings or weekend mornings. Exact tutor and recurring-time availability is confirmed after matching — helpful for dispersed communities without a nearby mosque class.",
+    },
+  },
+  {
+    slug: "online-quran-classes-norway",
+    country: "Norway",
+    flag: "🇳🇴",
+    weight: 2,
+    locale: "en-NO",
+    openGraphLocale: "en_NO",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "NOK", name: "Norwegian kroner" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request an after-school, evening or weekend window in CET or CEST. Winter daylight and tutor availability are confirmed during matching.",
+    keywordClusters: [
+      "online quran classes norway",
+      "quran teacher norway",
+      "online quran oslo",
+      "learn quran online norway",
+      "noorani qaida online norway",
+      "online tajweed classes norway",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Norway | NoorPath",
+      metadataDescription:
+        "Online Quran classes in Norway: live 1-to-1 Qaida, Tajweed or Hifz with CET/CEST matching for Oslo and beyond. Free trial; availability confirmed after request.",
+      heading: "Online Quran Classes in Norway",
+      introduction:
+        "Muslim families in Norway — including Oslo, Bergen and smaller towns — can request live one-to-one online Quran classes when local children’s programmes are limited. NoorPath teaches online only and does not operate a Norwegian campus.",
+      localPlanning:
+        "Share your city, school finish time, and preferred CET/CEST evenings. Exact tutor and recurring-time availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-finland",
+    country: "Finland",
+    flag: "🇫🇮",
+    weight: 2,
+    locale: "en-FI",
+    openGraphLocale: "en_FI",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "EET / EEST",
+    schedulingGuidance:
+      "Request an after-school, evening or weekend window in EET or EEST. Tutor availability is confirmed during matching.",
+    keywordClusters: [
+      "online quran classes finland",
+      "kids quran classes finland",
+      "quran teacher finland",
+      "online quran helsinki",
+      "learn quran online finland",
+      "noorani qaida online finland",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Finland | NoorPath",
+      metadataDescription:
+        "Kids Quran classes in Finland online: live 1-to-1 Qaida, Tajweed or Hifz with EET/EEST matching for Helsinki and Espoo. Free trial; availability after request.",
+      heading: "Online Quran Classes in Finland",
+      introduction:
+        "Muslim families in Finland — including Helsinki, Espoo and other cities — can request live one-to-one online Quran classes for children and adults when local options are thin. NoorPath teaches online only and does not operate a Finnish campus.",
+      localPlanning:
+        "Share your city, school finish time, and preferred EET/EEST evenings. Exact tutor and recurring-time availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-denmark",
+    country: "Denmark",
+    flag: "🇩🇰",
+    weight: 2,
+    locale: "en-DK",
+    openGraphLocale: "en_DK",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "DKK", name: "Danish kroner" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request an after-school, evening, weekend, or Saturday morning window in CET or CEST. Tutor availability is confirmed during matching.",
+    keywordClusters: [
+      "online quran classes denmark",
+      "weekend quran classes denmark",
+      "quran teacher denmark",
+      "online quran copenhagen",
+      "learn quran online denmark",
+      "noorani qaida online denmark",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Denmark | NoorPath",
+      metadataDescription:
+        "Online Quran classes in Denmark: live 1-to-1 Qaida, Tajweed or Hifz with CET/CEST matching, including weekend windows. Free trial; availability after request.",
+      heading: "Online Quran Classes in Denmark",
+      introduction:
+        "Muslim families in Denmark — including Copenhagen, Aarhus and other cities — can request live one-to-one online Quran classes, including weekend windows when weekdays are full. NoorPath teaches online only and does not operate a Danish campus.",
+      localPlanning:
+        "Share your city, preferred weekday evenings or weekend mornings in CET/CEST, and any female-tutor preference. Exact availability is confirmed after matching.",
     },
   },
 ] as const;

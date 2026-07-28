@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "female quran teacher online", "female quran tutor", "online quran teacher for sisters",
     "hafiza tutor online", "female quran classes", "quran classes for girls online",
     "online quran for women", "female quran teacher uk", "female quran teacher usa",
+    "female quran teacher in ireland", "female quran teacher ireland",
     "quran classes for ladies", "lady quran teacher online", "female islamic teacher online",
     "online quran classes for females", "hafiza online classes", "female hifz teacher online",
     "female quran teacher for kids", "female quran teacher for kids uk",
@@ -44,6 +45,7 @@ const faqs = [
   { q: "Can adult women learn Quran online with a female teacher?", a: "Yes. Adult sisters can request a female tutor for beginner reading, Tajweed, or Hifz. Relevant adult teaching experience and availability are confirmed before enrolment." },
   { q: "How much do female Quran classes cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} class per week. The first ${TRIAL.durationMinutes}-minute lesson is free and requires no credit card.` },
   { q: "Is there a female Quran teacher available in my timezone?", a: "Share your timezone and preferred lesson windows when requesting a trial. Female tutor availability is confirmed after your request." },
+  { q: "Can I request a female Quran teacher in Ireland?", a: "Yes. Irish families — including in Dublin — can request a female tutor with GMT or IST preferences. Availability is confirmed after your request. See the Ireland location page for local scheduling context." },
   { q: "Can I request a female Hifz teacher for my daughter?", a: "Yes. You can request a female tutor for Hifz. Relevant Hifz credentials, teaching experience, and schedule availability are confirmed for the proposed tutor before enrolment." },
 ];
 
@@ -313,9 +315,11 @@ export default function FemaleQuranTeacherPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             {[
               { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "Share your GMT/BST preferences" },
+              { href: "/locations/online-quran-classes-ireland", label: "🇮🇪 Ireland", note: "Female tutor requests for Dublin & Ireland" },
               { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "Share your US timezone" },
               { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Share your Canadian timezone" },
               { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "Share your Australian timezone" },
+              { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST/NZDT kids matching" },
             ].map((l) => (
               <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
                 <div className="content-card" style={{ textAlign: "center", padding: "18px 12px" }}>

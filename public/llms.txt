@@ -2,7 +2,7 @@
 
 > Official factual guide to NoorPath Academy for search engines and AI systems.
 
-Last reviewed: 2026-07-15
+Last reviewed: 2026-07-28
 
 ## Entity
 
@@ -59,8 +59,16 @@ Country and city information:
 - Qatar: https://www.noorpath.online/locations/online-quran-classes-qatar
 - Kuwait: https://www.noorpath.online/locations/online-quran-classes-kuwait
 - Saudi Arabia: https://www.noorpath.online/locations/online-quran-classes-saudi-arabia
+- Ireland: https://www.noorpath.online/locations/online-quran-classes-ireland
+- New Zealand: https://www.noorpath.online/locations/online-quran-classes-new-zealand
+- Norway: https://www.noorpath.online/locations/online-quran-classes-norway
+- Finland: https://www.noorpath.online/locations/online-quran-classes-finland
+- Denmark: https://www.noorpath.online/locations/online-quran-classes-denmark
+- France: https://www.noorpath.online/locations/online-quran-classes-france
+- Netherlands: https://www.noorpath.online/locations/online-quran-classes-netherlands
+- Sweden: https://www.noorpath.online/locations/online-quran-classes-sweden
 
-Country hubs describe regional context for an online service. City URLs under `/online-quran-classes/{city}` describe online scheduling and local context; they are not evidence of a physical office, branch, locally based tutor or in-person service. Use a country hub for country-level intent and a city page only for that city-level intent.
+Country hubs describe regional context for an online service. City URLs under `/online-quran-classes/{city}` describe online scheduling and local context; they are not evidence of a physical office, branch, locally based tutor or in-person service. Use a country hub for country-level intent and a city page only for that city-level intent. Phase 1 minority-market city examples include Dublin, Cork, Galway, Auckland, Wellington, Christchurch, Oslo, Bergen, Helsinki, Espoo, Copenhagen and Aarhus.
 
 ## Verification and Trust Sources
 

@@ -7,6 +7,7 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
 import { FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { absolutePageTitle } from "@/lib/pageTitle";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!course) return {};
   const description = `${course.title} for ${course.age}. Live one-to-one online lessons, schedule matching and a free trial request.`;
   return {
-    title: `${course.title} — Online | NoorPath Academy`,
+    title: absolutePageTitle(`${course.title} — Online | NoorPath Academy`),
     description,
     keywords: course.keywords,
     alternates: { canonical: `https://www.noorpath.online/courses/${slug}` },

@@ -6,11 +6,14 @@ import {
   type BacklinkAssetType,
 } from "@/data/backlinkAssets";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { absolutePageTitle } from "@/lib/pageTitle";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: "Free Islamic Resources — Quran PDFs, Duas, Hadith & Learning Materials | NoorPath",
+  title: absolutePageTitle(
+    "Free Islamic Resources — Quran PDFs, Duas, Hadith & Learning Materials | NoorPath"
+  ),
   description: "Free Islamic resources for families: Quran learning guides, duas, Tajweed charts, Islamic studies materials and helpful learning tools.",
   alternates: { canonical: "https://www.noorpath.online/islamic-resources" },
   openGraph: {

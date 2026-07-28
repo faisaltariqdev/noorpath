@@ -93,10 +93,11 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
-  // ── Replace the empty string with your Google Search Console verification token ──
-  verification: {
-    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "",
-  },
+  // Emit google-site-verification only when the env token is set (empty string is invalid).
+  // Set NEXT_PUBLIC_GSC_VERIFICATION in production; confirm in GSC → Settings → Ownership.
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

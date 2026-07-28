@@ -490,9 +490,9 @@ export default function OnlineQuranTeacherGuide() {
           </table>
         </div>
         <p>
-          This single matching framework applies across all nine markets. Language preference,
-          learner level and family routine matter more than producing country-specific copies of
-          the same teacher advice.
+          This single matching framework applies across all {PRIORITY_MARKETS.length} priority
+          markets. Language preference, learner level and family routine matter more than
+          producing country-specific copies of the same teacher advice.
         </p>
       </section>
 

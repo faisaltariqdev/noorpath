@@ -13,8 +13,14 @@ import {
 const BASE = "https://www.noorpath.online";
 
 const LAUNCH = new Date("2024-01-15");
+/** Stable stamp for rarely changed commercial/legal pages (do not set to “build now”). */
 const CONTENT_UPDATE = new Date("2026-05-01");
-const NOW = new Date("2026-07-14");
+/**
+ * Honest content stamp for pages last materially updated in the minority-markets
+ * + Search Central Phase A compliance pass. Bump only when those URLs change again.
+ */
+const SITE_CONTENT_STAMP = new Date("2026-07-28");
+
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
 const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
@@ -84,11 +90,14 @@ const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)
 );
 
-/** Root-level keyword landing pages (Qutor-style commercial URLs) */
+/** Root-level keyword landing pages (commercial URL variants) */
 const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
-  { url: `${BASE}/learn-quran-online`,          priority: 0.97, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/learn-tajweed-online`,         priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
-  { url: `${BASE}/hifz-quran-online`,           priority: 0.94, changeFrequency: "weekly", lastModified: NOW },
+  { url: `${BASE}/learn-quran-online`,     priority: 0.97, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/learn-tajweed-online`,    priority: 0.94, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/hifz-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/online-quran-academy`,    priority: 0.93, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/quran-lesson-online`,     priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/studying-quran-online`,   priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
 ];
 
 const REDIRECTED_COURSE_SLUGS = new Set([
@@ -100,33 +109,33 @@ const REDIRECTED_COURSE_SLUGS = new Set([
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     // ── Tier 1: highest priority commercial pages ───────────────────────────────
-    { url: BASE,                                               priority: 1.0,  changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/online-quran-classes`,                    priority: 0.95, changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/online-quran-classes-for-kids`,          priority: 0.96, changeFrequency: "weekly",  lastModified: NOW },
+    { url: BASE,                                               priority: 1.0,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/online-quran-classes`,                    priority: 0.95, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/online-quran-classes-for-kids`,          priority: 0.96, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     // ── Tier 2: main conversion + high-traffic pages ────────────────────────────
     { url: `${BASE}/courses`,                                  priority: 0.9,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
-    { url: `${BASE}/quran-teacher-online`,                     priority: 0.9,  changeFrequency: "monthly", lastModified: NOW },
-    { url: `${BASE}/free-quran-classes-online`,                priority: 0.9,  changeFrequency: "monthly", lastModified: NOW },
-    { url: `${BASE}/online-quran-for-beginners`,               priority: 0.9,  changeFrequency: "monthly", lastModified: NOW },
-    { url: `${BASE}/blog`,                                     priority: 0.85, changeFrequency: "daily",   lastModified: NOW },
+    { url: `${BASE}/quran-teacher-online`,                     priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/free-quran-classes-online`,                priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/online-quran-for-beginners`,               priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/blog`,                                     priority: 0.85, changeFrequency: "daily",   lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/pricing`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     // ── Tier 3: supporting pages ────────────────────────────────────────────────
-    { url: `${BASE}/female-quran-teacher-online`,              priority: 0.9,  changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/one-on-one-quran-classes`,                 priority: 0.94, changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/quran-classes-for-sisters`,                priority: 0.93, changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/quran-classes-for-working-professionals`,  priority: 0.93, changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/female-quran-teacher-online`,              priority: 0.9,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/one-on-one-quran-classes`,                 priority: 0.94, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/quran-classes-for-sisters`,                priority: 0.93, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/quran-classes-for-working-professionals`,  priority: 0.93, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/about`,                                    priority: 0.75, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
-    { url: `${BASE}/contact`,                                  priority: 0.7,  changeFrequency: "yearly",  lastModified: NOW },
+    { url: `${BASE}/contact`,                                  priority: 0.7,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
     { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
-    { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: NOW },
-    { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: NOW },
-    { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: NOW },
-    { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: NOW },
-    { url: `${BASE}/accessibility-statement`,                  priority: 0.5,  changeFrequency: "yearly",  lastModified: NOW },
-    { url: `${BASE}/privacy-policy`,                           priority: 0.4,  changeFrequency: "yearly",  lastModified: NOW },
-    { url: `${BASE}/terms-of-service`,                         priority: 0.4,  changeFrequency: "yearly",  lastModified: NOW },
+    { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/accessibility-statement`,                  priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/privacy-policy`,                           priority: 0.4,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/terms-of-service`,                         priority: 0.4,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
   ];
 
   // Auto-generate from shared data (courses + country locations + cities + blogs)
@@ -141,21 +150,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = locations.map((l) => ({
     url: `${BASE}/locations/${l.slug}`,
-    lastModified: NOW,
+    lastModified: SITE_CONTENT_STAMP,
     priority: 0.88,
     changeFrequency: "weekly" as const,
   }));
 
   const cityPages: MetadataRoute.Sitemap = cities.map((c) => ({
     url: `${BASE}/online-quran-classes/${c.slug}`,
-    lastModified: NOW,
+    lastModified: SITE_CONTENT_STAMP,
     priority: 0.86,
     changeFrequency: "weekly" as const,
   }));
 
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => {
     const raw = p.updatedAt ?? p.date;
-    const lastModified = Number.isFinite(Date.parse(raw)) ? new Date(raw) : NOW;
+    const lastModified = Number.isFinite(Date.parse(raw)) ? new Date(raw) : SITE_CONTENT_STAMP;
     const isCommercial = COMMERCIAL_BLOG_SLUGS.has(p.slug);
     const isHighTraffic = HIGH_TRAFFIC_BLOG_SLUGS.has(p.slug);
     const isBacklinkAsset = BACKLINK_ASSET_SLUGS.has(p.slug);

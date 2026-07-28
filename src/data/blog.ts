@@ -1885,6 +1885,126 @@ export const blogPosts: BlogPost[] = [
       "Clear Hifz vs Tajweed comparison so parents and adults choose the right pathway — plus frequency planning tips.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "how-to-teach-quran-when-theres-no-mosque-nearby",
+    title: "How to Teach Quran When There's No Mosque Nearby",
+    description:
+      "Practical plan for teaching Quran when no mosque is nearby: home routines, free Interactive Noorani Qaida practice, online tutors, and NZ/Ireland starting points.",
+    category: "Kids & Parenting",
+    date: "2026-07-28",
+    updatedAt: "2026-07-28",
+    readTime: "12 min",
+    keywords: [
+      "how to teach quran when there's no mosque nearby",
+      "quran without mosque",
+      "online quran no local mosque",
+      "teach quran at home diaspora",
+      "quran classes rural muslim family",
+    ],
+    excerpt:
+      "A calm, practical plan for families teaching Quran when the nearest mosque is far — home routines, free practice tools, and when to add a live online tutor.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "raising-muslim-child-in-non-muslim-country",
+    title: "Raising a Muslim Child in a Non-Muslim Country",
+    description:
+      "Identity, community, and faith habits for raising a Muslim child in a non-Muslim country — distinct from literacy-only guides, with soft next steps for families.",
+    category: "Kids & Parenting",
+    date: "2026-07-28",
+    updatedAt: "2026-07-28",
+    readTime: "12 min",
+    keywords: [
+      "raising muslim child in non muslim country",
+      "muslim kids diaspora identity",
+      "raising muslim children in the west",
+      "islamic identity for kids abroad",
+      "muslim parenting minority country",
+    ],
+    excerpt:
+      "How to nurture Muslim identity, belonging, and faith habits when your child grows up as a minority — community, language, and calm Quran routines.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-classes-for-muslim-families-abroad",
+    title: "Online Quran Classes for Muslim Families Abroad",
+    description:
+      "Online Quran classes for Muslim families abroad: timezone matching, English instruction preferences, NZ and Ireland hubs, pricing clarity, and a free trial path.",
+    category: "Kids & Parenting",
+    date: "2026-07-28",
+    updatedAt: "2026-07-28",
+    readTime: "11 min",
+    keywords: [
+      "online quran classes for muslim families abroad",
+      "quran classes diaspora families",
+      "online quran for muslims overseas",
+      "timezone quran tutor abroad",
+      "muslim families abroad quran learning",
+    ],
+    excerpt:
+      "How Muslim families abroad keep Quran learning stable with live online classes — timezone matching, honest language preferences, and location starting points.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-lessons-for-busy-parents",
+    title: "Quran Lessons for Busy Parents — After-School Plan",
+    description:
+      "Quran lessons for busy parents: fixed after-school online slots, short home practice, and a free trial path — without a heroic schedule that collapses.",
+    category: "Kids & Parenting",
+    date: "2026-07-28",
+    updatedAt: "2026-07-28",
+    readTime: "10 min",
+    keywords: [
+      "quran lessons for busy parents",
+      "online quran classes after school",
+      "quran for busy families",
+      "after school quran classes online",
+      "one to one quran for busy parents",
+    ],
+    excerpt:
+      "A realistic after-school Quran plan for busy parents: one fixed live lesson, short home echoes, and a free trial before you over-commit.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-classes-for-homeschool-families",
+    title: "Online Quran Classes for Homeschool Families",
+    description:
+      "Online Quran classes for homeschool families: timetable placement, Noorani Qaida vs Tajweed fit, safeguarding at home, and minority-country starting points.",
+    category: "Kids & Parenting",
+    date: "2026-07-28",
+    updatedAt: "2026-07-28",
+    readTime: "10 min",
+    keywords: [
+      "online quran classes for homeschool families",
+      "homeschool quran classes online",
+      "quran for homeschoolers",
+      "learn quran at home online",
+      "homeschool islamic education online",
+    ],
+    excerpt:
+      "How homeschool families place live online Quran as a specialist lesson — timetable, course fit, and calm home practice.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "weekend-quran-classes-for-nordic-families",
+    title: "Weekend Quran Classes for Nordic Families",
+    description:
+      "Weekend Quran classes for Nordic families in Denmark, Norway, Finland and Sweden: CET/EET matching, city starting points, and weekday practice tips.",
+    category: "Kids & Parenting",
+    date: "2026-07-28",
+    updatedAt: "2026-07-28",
+    readTime: "9 min",
+    keywords: [
+      "weekend quran classes denmark",
+      "weekend quran classes nordic",
+      "online quran classes norway weekend",
+      "quran classes finland weekend",
+      "copenhagen weekend quran classes",
+    ],
+    excerpt:
+      "How Nordic families request weekend online Quran windows when weekday evenings are full — plus city hubs and short weekday practice.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

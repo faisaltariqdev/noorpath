@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Award, BookOpen, Users, CheckCircle } from "lucide-react";
 import { SERVICE_FACTS, TRIAL, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
+
 import { tutorCredentialStandards } from "@/data/tutors";
+import { absolutePageTitle } from "@/lib/pageTitle";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: "Our Online Quran Tutors — Tutor Matching | NoorPath Academy",
+  title: absolutePageTitle("Our Online Quran Tutors — Tutor Matching | NoorPath Academy"),
   description: "Find an online Quran tutor matched for Quran reading, Tajweed, Hifz, children, adults, or a female tutor request. Credentials are confirmed before enrolment.",
   alternates: { canonical: "https://www.noorpath.online/our-tutors" },
   openGraph: {
@@ -101,7 +103,18 @@ const qualitySteps = [
   { icon: <Award size={22} />, title: "Match the Subject", desc: "We identify the teaching focus required, such as reading, Tajweed, Hifz, children, or adult learning." },
   { icon: <CheckCircle size={22} />, title: "Confirm Credentials", desc: "Specific qualifications and relevant teaching experience are confirmed for the proposed tutor before enrolment." },
   { icon: <BookOpen size={22} />, title: "Trial the Lesson", desc: "The free 30-minute trial lets the learner and family assess teaching style, communication, and fit." },
-  { icon: <Users size={22} />, title: "Confirm Preferences", desc: "We consider level, learning goals, timezone, and male or female tutor preference when arranging a match." },
+  { icon: <Users size={22} />, title: "Confirm Preferences", desc: "We consider level, learning goals, timezone, male or female tutor preference, and language of instruction preferences where available when arranging a match. Tutor availability is confirmed after your request." },
+];
+
+const tutorFaqs = [
+  {
+    q: "Do you have Quran teachers available in different timezones for families abroad?",
+    a: `Yes — matching considers the learner’s timezone and preferred lesson windows. ${TRIAL.availabilityNote} Preferred minutes are not guaranteed in advance.`,
+  },
+  {
+    q: "Can we request English or another language of instruction?",
+    a: "Language of instruction preferences are recorded where available during matching and confirmed for the proposed tutor before enrolment. NoorPath does not publish a fixed worldwide language-coverage list.",
+  },
 ];
 
 export default function OurTutorsPage() {
@@ -229,11 +242,25 @@ export default function OurTutorsPage() {
               Request a Tutor Match
             </h3>
             <p style={{ color: "var(--muted)", maxWidth: 560, margin: "0 auto 24px", lineHeight: 1.7, fontSize: ".93rem" }}>
-              Tell us your schedule, age or learning stage, goals, and tutor preference. We will confirm a suitable tutor&apos;s availability and credentials before enrolment.
+              Tell us your schedule, age or learning stage, goals, timezone, tutor preference, and language of instruction preference where it matters for your household. We confirm a suitable tutor&apos;s availability and credentials before enrolment — including for families abroad who need timezone-aware matching.
             </p>
             <Link href="/online-quran-classes#cta" className="btn-primary-np">
               🎓 Book Your Free Trial & Get Matched →
             </Link>
+          </div>
+
+          <div style={{ marginTop: 40, maxWidth: 720, marginLeft: "auto", marginRight: "auto" }}>
+            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 16, textAlign: "center" }}>
+              Timezone &amp; language questions
+            </h3>
+            <div className="qaida-faq-list">
+              {tutorFaqs.map((faq) => (
+                <details key={faq.q}>
+                  <summary>{faq.q}</summary>
+                  <p>{faq.a}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>

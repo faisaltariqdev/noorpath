@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import { absolutePageTitle } from "@/lib/pageTitle";
 import { CheckCircle, BookOpen, Clock, Star } from "lucide-react";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: "Online Quran for Beginners — Learn from Zero | NoorPath Academy",
+  title: absolutePageTitle("Online Quran for Beginners — Learn from Zero | NoorPath Academy"),
   description: "Learn Quran online from zero through Arabic letters, Noorani Qaida and Quran recitation in live one-to-one lessons. Request a free trial.",
   keywords: ["online quran for beginners", "quran for beginners", "learn quran for beginners", "quran beginners course", "start learning quran online", "quran from scratch", "noorani qaida for beginners", "how to learn quran online", "quran learning for beginners adults", "quran basics online"],
   alternates: { canonical: "https://www.noorpath.online/online-quran-for-beginners" },

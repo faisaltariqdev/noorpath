@@ -314,6 +314,211 @@ export const cities: City[] = [
       "Doha's expat community brings together Muslim families from many backgrounds. Families can request English-language instruction or AST evening lessons after school and work, subject to tutor matching.",
     keywords: ["online quran classes doha", "quran teacher doha", "quran classes doha", "learn quran doha", "quran tutor qatar"],
   },
+  // ── Ireland (Phase 1 minority markets) ──────────────────────────
+  {
+    slug: "dublin",
+    city: "Dublin",
+    country: "Ireland",
+    countrySlug: "online-quran-classes-ireland",
+    flag: "🇮🇪",
+    timezone: "GMT / IST",
+    localContext:
+      "Dublin families often balance Irish school hours, traffic across the city, and Islamic learning. Live one-to-one online Quran classes can fit after-school GMT or IST windows without another cross-city journey. Availability is confirmed after tutor matching; NoorPath does not operate a Dublin campus.",
+    keywords: [
+      "online quran classes in dublin",
+      "online quran classes dublin",
+      "quran teacher dublin",
+      "learn quran dublin",
+      "online quran dublin",
+      "quran classes for kids dublin",
+      "female quran teacher dublin",
+    ],
+  },
+  {
+    slug: "cork",
+    city: "Cork",
+    country: "Ireland",
+    countrySlug: "online-quran-classes-ireland",
+    flag: "🇮🇪",
+    timezone: "GMT / IST",
+    localContext:
+      "Cork households may have fewer nearby children’s Quran programmes than Dublin. Online one-to-one lessons with GMT/IST preferences can keep a weekly routine without long weekend travel. Tutor availability is confirmed after matching.",
+    keywords: [
+      "online quran classes cork",
+      "quran teacher cork",
+      "learn quran cork",
+      "quran classes for kids cork",
+      "female quran teacher cork",
+    ],
+  },
+  {
+    slug: "galway",
+    city: "Galway",
+    country: "Ireland",
+    countrySlug: "online-quran-classes-ireland",
+    flag: "🇮🇪",
+    timezone: "GMT / IST",
+    localContext:
+      "Galway families outside the densest Irish Muslim centres often need flexible Islamic learning. Request after-school or weekend GMT/IST online Quran lessons; exact times are confirmed after tutor matching. Online only — no Galway branch claim.",
+    keywords: [
+      "online quran classes galway",
+      "quran teacher galway",
+      "learn quran galway",
+      "quran classes for kids galway",
+    ],
+  },
+  // ── New Zealand ─────────────────────────────────────────────────
+  {
+    slug: "auckland",
+    city: "Auckland",
+    country: "New Zealand",
+    countrySlug: "online-quran-classes-new-zealand",
+    flag: "🇳🇿",
+    timezone: "NZST / NZDT",
+    localContext:
+      "Auckland holds New Zealand’s largest Muslim community, yet families still seek online tutors when schedules, travel, or female-tutor preferences are hard to meet locally. Request NZST/NZDT after-school windows for kids; availability is confirmed after matching. NoorPath does not operate an Auckland campus.",
+    keywords: [
+      "quran teacher for kids in auckland",
+      "online quran classes auckland",
+      "quran teacher auckland",
+      "online quran auckland",
+      "quran classes auckland kids",
+      "female quran teacher auckland",
+    ],
+  },
+  {
+    slug: "wellington",
+    city: "Wellington",
+    country: "New Zealand",
+    countrySlug: "online-quran-classes-new-zealand",
+    flag: "🇳🇿",
+    timezone: "NZST / NZDT",
+    localContext:
+      "Wellington families can request live online Quran classes around school and work in NZST or NZDT. Online delivery reduces travel on busy weekdays; recurring times are confirmed after tutor matching.",
+    keywords: [
+      "online quran wellington",
+      "online quran classes wellington",
+      "quran teacher wellington",
+      "quran classes for kids wellington",
+    ],
+  },
+  {
+    slug: "christchurch",
+    city: "Christchurch",
+    country: "New Zealand",
+    countrySlug: "online-quran-classes-new-zealand",
+    flag: "🇳🇿",
+    timezone: "NZST / NZDT",
+    localContext:
+      "Christchurch households may have fewer full-time Islamic schooling options than Auckland. Live online one-to-one Quran lessons with NZST/NZDT matching help keep children’s reading progressing from home. Availability is confirmed after your request.",
+    keywords: [
+      "online quran classes christchurch",
+      "quran teacher christchurch",
+      "learn quran christchurch",
+      "quran classes for kids christchurch",
+    ],
+  },
+  // ── Norway ──────────────────────────────────────────────────────
+  {
+    slug: "oslo",
+    city: "Oslo",
+    country: "Norway",
+    countrySlug: "online-quran-classes-norway",
+    flag: "🇳🇴",
+    timezone: "CET / CEST",
+    localContext:
+      "Oslo families can request live one-to-one online Quran classes in CET or CEST after school. Female tutor preferences are welcome subject to matching. NoorPath teaches online only — not an Oslo campus. Availability is confirmed after your request.",
+    keywords: [
+      "online quran oslo",
+      "online quran classes oslo",
+      "quran teacher oslo",
+      "female quran teacher oslo",
+      "quran classes for kids oslo",
+    ],
+  },
+  {
+    slug: "bergen",
+    city: "Bergen",
+    country: "Norway",
+    countrySlug: "online-quran-classes-norway",
+    flag: "🇳🇴",
+    timezone: "CET / CEST",
+    localContext:
+      "Bergen households outside Oslo’s denser community options can use online Quran tutoring with CET/CEST preferences. Share school finish times when booking; exact slots are confirmed after matching.",
+    keywords: [
+      "online quran classes bergen",
+      "quran teacher bergen",
+      "learn quran bergen",
+      "quran classes for kids bergen",
+    ],
+  },
+  // ── Finland ─────────────────────────────────────────────────────
+  {
+    slug: "helsinki",
+    city: "Helsinki",
+    country: "Finland",
+    countrySlug: "online-quran-classes-finland",
+    flag: "🇫🇮",
+    timezone: "EET / EEST",
+    localContext:
+      "Helsinki families seeking kids Quran classes online can request live one-to-one lessons in EET or EEST after school. NoorPath is an online academy only. Tutor availability is confirmed after matching.",
+    keywords: [
+      "online quran helsinki",
+      "online quran classes helsinki",
+      "quran teacher helsinki",
+      "quran classes for kids helsinki",
+      "kids quran classes helsinki",
+    ],
+  },
+  {
+    slug: "espoo",
+    city: "Espoo",
+    country: "Finland",
+    countrySlug: "online-quran-classes-finland",
+    flag: "🇫🇮",
+    timezone: "EET / EEST",
+    localContext:
+      "Espoo families near Helsinki can request the same live online Quran matching in EET/EEST without commuting for every lesson. Share preferred evenings when you book; confirmation follows tutor matching.",
+    keywords: [
+      "online quran classes espoo",
+      "quran teacher espoo",
+      "quran classes for kids espoo",
+    ],
+  },
+  // ── Denmark ─────────────────────────────────────────────────────
+  {
+    slug: "copenhagen",
+    city: "Copenhagen",
+    country: "Denmark",
+    countrySlug: "online-quran-classes-denmark",
+    flag: "🇩🇰",
+    timezone: "CET / CEST",
+    localContext:
+      "Copenhagen families can request weekday after-school or weekend online Quran classes in CET/CEST. Live one-to-one lessons suit busy Danish school weeks. Availability is confirmed after matching; NoorPath does not operate a Copenhagen campus.",
+    keywords: [
+      "online quran copenhagen",
+      "online quran classes copenhagen",
+      "quran teacher copenhagen",
+      "weekend quran classes copenhagen",
+      "quran classes for kids copenhagen",
+    ],
+  },
+  {
+    slug: "aarhus",
+    city: "Aarhus",
+    country: "Denmark",
+    countrySlug: "online-quran-classes-denmark",
+    flag: "🇩🇰",
+    timezone: "CET / CEST",
+    localContext:
+      "Aarhus households can request live online Quran tutoring with CET/CEST weekday or weekend preferences when local children’s options are limited. Exact recurring times are confirmed after tutor matching.",
+    keywords: [
+      "online quran classes aarhus",
+      "quran teacher aarhus",
+      "learn quran aarhus",
+      "quran classes for kids aarhus",
+    ],
+  },
 ];
 
 export function getCity(slug: string): City | undefined {

@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${QAIDA_BASE_URL}/guides/${guide.slug}`;
   return {
     title: { absolute: `${guide.title} | NoorPath` },
-    description: guide.description,
+    description: guide.description.slice(0, 160),
     keywords: guide.keywords,
     alternates: { canonical: url },
     openGraph: {
@@ -227,6 +227,16 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
             </ul>
           </section>
 
+          {guide.slug === "with-audio" && (
+            <QaidaCallout title="Product status: public audio library" tone="gold">
+              <p>
+                NoorPath does not currently publish a complete public Qari-reviewed Noorani Qaida
+                audio download library. This guide explains safe audio practice and points to live
+                teacher correction until reviewed assets are released with clear disclosure.
+              </p>
+            </QaidaCallout>
+          )}
+
           {guide.slug === "pronunciation" && (
             <QaidaCallout title="Review-status disclosure" tone="blue">
               <p>
@@ -243,11 +253,16 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
             title="Continue exploring"
             links={[
               { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida hub", description: "Explore the full 11-module path." },
-              ...(guide.slug === "games"
-                ? [{ href: `${QAIDA_BASE_PATH}/games`, label: "Play free Qaida games", description: "Open letter matching, harakat quiz, and progress checklist." }]
-                : [{ href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Start with Alif", description: "Open the first complete letter reference." }]),
+              { href: `${QAIDA_BASE_PATH}/games`, label: "Free Arabic learning games", description: "Letter matching, harakat quiz, and progress checklist." },
+              ...(guide.slug === "arabic-alphabet-practice" || guide.slug === "with-animation"
+                ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Start with Alif", description: "Open the first complete letter reference." }]
+                : [{ href: `${QAIDA_BASE_PATH}/guides/pronunciation`, label: "Pronunciation guide", description: "Use transliteration and cues responsibly." }]),
               { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Learn Fatha", description: "See the first short-vowel lesson." },
-              { href: "/blog/noorani-qaida-complete-guide", label: "Traditional Noorani Qaida guide", description: "Read the editorial overview of the method." },
+              ...(guide.slug === "with-audio"
+                ? [{ href: "/free-quran-classes-online", label: "Free trial class", description: "Request live correction when audio alone is not enough." }]
+                : guide.slug === "digital-quran-learning-platform" || guide.slug === "gamified-learning"
+                  ? [{ href: "/online-quran-classes-for-kids", label: "Quran classes for kids", description: "Live 1-to-1 lessons alongside digital practice." }]
+                  : [{ href: "/pricing", label: "Class pricing", description: "Published USD plans and family discounts." }]),
             ]}
           />
 

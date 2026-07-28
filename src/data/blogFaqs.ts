@@ -1633,6 +1633,203 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+
+  "how-to-teach-quran-when-theres-no-mosque-nearby": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can we teach Quran at home if there is no mosque nearby?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Many diaspora families run short daily home routines for letters, short surahs, and duas, then add live online tutoring when pronunciation needs a listening ear. Mosque community remains valuable when available, but distance does not have to pause Quran learning.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What free tools help when local classes are unavailable?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NoorPath’s Interactive Noorani Qaida hub and free browser games support letter recognition practice without an account. They do not replace live correction for hard sounds.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can New Zealand families start if the mosque is far?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "See the New Zealand location page for NZST/NZDT context, then request a free trial. Availability is confirmed after matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is online tutoring safe for young children without a local mosque?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use known meeting platforms, keep devices in a family space, observe early lessons, and confirm the tutor before ongoing payment. Read safeguarding guidance before enrolment.",
+        },
+      },
+    ],
+  },
+  "raising-muslim-child-in-non-muslim-country": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How do we raise a Muslim child in a non-Muslim country without isolating them?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Build belonging through home rituals, friendships with Muslim peers when possible, and calm confidence about identity at school — not through fear or constant argument. Quran literacy helps, but identity also needs community, language, and modelled manners.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this the same as teaching Quran reading only?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Quran literacy is one pillar. This guide focuses on identity, belonging, and faith habits in minority settings. Pair it with literacy resources when reading is the stuck skill.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we have almost no Muslim community nearby?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Protect Friday prayer when travel allows, keep home practices steady, use respectful online learning for Quran, and seek occasional gatherings even if they are monthly rather than weekly.",
+        },
+      },
+    ],
+  },
+  "online-quran-classes-for-muslim-families-abroad": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Do online Quran classes work for Muslim families abroad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes when lessons are live one-to-one, the tutor matches the learner’s level and timezone, and home practice stays short and consistent. Confirm availability after your request rather than assuming every preferred minute is open.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we request English-language instruction?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Language of instruction preferences are recorded where available during matching. Exact tutor language fit is confirmed for the proposed match before enrolment — NoorPath does not publish a fixed coverage list of every language.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where should New Zealand or Ireland families begin?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Open the New Zealand or Ireland location page for timezone context, compare published pricing, then book a free trial and state your city and preferred local times.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is this different from a general expat Quran guide?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "This article focuses on Muslim families abroad choosing live online classes as the primary structure — scheduling, language preference honesty, and commercial next steps — not only travel-week logistics for Gulf expats.",
+        },
+      },
+    ],
+  },
+  "quran-lessons-for-busy-parents": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Are Quran lessons suitable for busy parents?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes when the weekly slot is fixed and home practice stays short. Choose the lightest published plan you can keep for months.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is one class a week enough for a busy family?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can maintain progress with daily home echoes. Faster goals usually need more live time — pick what your calendar can repeat.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should busy parents correct every sound at home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Log unclear letters for the tutor instead of inventing sounds from English spelling.",
+        },
+      },
+    ],
+  },
+  "online-quran-classes-for-homeschool-families": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can homeschool families use the same online Quran service as school families?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Matching uses level, timezone and preferences — not school type. Share flexible daytime windows if evenings are crowded.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should the parent teach Tajweed at home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Support recognition and routine. Leave uncertain articulation to a tutor rather than inventing sounds.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we budget as a homeschool household?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Compare published USD plans and choose the lightest sustainable frequency. Sibling discounts may apply when published — ask after the trial.",
+        },
+      },
+    ],
+  },
+  "weekend-quran-classes-for-nordic-families": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Do you offer weekend Quran classes in Denmark?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Weekend CET/CEST windows can be requested. Exact availability is confirmed after tutor matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Norway or Finland families request weekend slots too?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — share Saturday or Sunday preferences in CET/CEST or EET/EEST. Confirmation follows matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is a weekend-only plan enough?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can maintain progress with short weekday home practice. Faster goals may need an extra live weekday later.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

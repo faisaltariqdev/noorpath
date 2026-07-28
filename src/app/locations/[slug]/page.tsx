@@ -17,6 +17,7 @@ import {
   getRelatedPriorityCountries,
 } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Globe } from "lucide-react";
+import { absolutePageTitle } from "@/lib/pageTitle";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
@@ -43,7 +44,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     `Online Quran classes in ${loc.country} for children and adults. Request live one-to-one Qaida, Tajweed or Hifz lessons in ${loc.timezone}, subject to tutor matching.`;
   const canonical = `https://www.noorpath.online/locations/${slug}`;
   return {
-    title: content?.metadataTitle ?? `Online Quran Classes in ${loc.country} | NoorPath`,
+    // absolute: geo titles already end with | NoorPath — avoid layout template doubling
+    title: absolutePageTitle(
+      content?.metadataTitle ?? `Online Quran Classes in ${loc.country} | NoorPath Academy`
+    ),
     description,
     keywords: getLocationKeywords(loc),
     alternates: {

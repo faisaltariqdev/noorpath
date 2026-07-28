@@ -378,7 +378,7 @@ export default function HomePage() {
               style={{ display: "inline-flex", alignItems: "center", gap: 10, marginTop: 16, background: "#f7f9f8", border: "1px solid var(--border)", borderRadius: 12, padding: "10px 20px", textDecoration: "none" }}
             >
               <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>{"★".repeat(Math.round(trustpilotAggregate.ratingValue))}</span>
-              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{trustpilotAggregate.ratingValue} average from on-site reviews</span>
+              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{trustpilotAggregate.ratingValue} Trustpilot score</span>
               <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {trustpilotAggregate.reviewCount} reviews · last checked {TRUSTPILOT.lastChecked}</span>
               <span style={{ color: "#00b67a", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
             </a>
