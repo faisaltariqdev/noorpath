@@ -2005,6 +2005,131 @@ export const blogPosts: BlogPost[] = [
       "How Nordic families request weekend online Quran windows when weekday evenings are full — plus city hubs and short weekday practice.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "after-school-quran-classes-for-kids-in-india",
+    title: "After-School Quran Classes for Kids in India — IST Parent Guide",
+    description:
+      "After-school Quran classes for kids in India: IST routines, Noorani Qaida vs Hifz placement, female tutor requests, USD/INR budgeting, and a free trial path.",
+    category: "Kids & Parenting",
+    date: "2026-07-29",
+    updatedAt: "2026-07-29",
+    readTime: "12 min",
+    keywords: [
+      "after school quran classes for kids in india",
+      "online quran classes after school india",
+      "quran classes for kids india online",
+      "noorani qaida online india",
+      "female quran teacher for kids india",
+      "ist quran classes online",
+    ],
+    excerpt:
+      "A realistic IST after-school Quran plan for Indian parents: honest placement, one fixed live slot, short home practice, and a free trial before you over-commit.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "balancing-school-and-online-quran-in-pakistan",
+    title: "Balancing School and Online Quran in Pakistan",
+    description:
+      "Balance Pakistani school hours with online Quran: PKT calendars, madrasah + online goals, female tutor preferences, safeguarding, and a free trial path.",
+    category: "Kids & Parenting",
+    date: "2026-07-29",
+    updatedAt: "2026-07-29",
+    readTime: "12 min",
+    keywords: [
+      "balancing school and online quran pakistan",
+      "online quran classes with school pakistan",
+      "after school quran pakistan",
+      "quran classes karachi lahore online",
+      "pkt online quran tutor",
+    ],
+    excerpt:
+      "How Pakistani families protect a few reliable PKT hours for live online Quran without fighting school, exams, or an existing madrasah programme.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-for-malaysian-and-singaporean-families",
+    title: "Online Quran for Malaysian and Singaporean Families",
+    description:
+      "Online Quran for Malaysian and Singaporean families: MYT/SGT evenings, course fit beside school Islamic studies, USD/MYR/SGD budgeting, and free trial steps.",
+    category: "Kids & Parenting",
+    date: "2026-07-29",
+    updatedAt: "2026-07-29",
+    readTime: "11 min",
+    keywords: [
+      "online quran for malaysian families",
+      "online quran singapore families",
+      "myt sgt quran classes online",
+      "quran classes kuala lumpur online",
+      "quran tutor singapore after school",
+    ],
+    excerpt:
+      "How Malaysian and Singaporean households add live online Quran correction beside busy school calendars — MYT/SGT slots, placement, and honest FX budgeting.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-many-quran-classes-per-week",
+    title: "How Many Quran Classes Per Week? 1×, 2× or Intensive",
+    description:
+      "How many Quran classes per week should kids take? Decision rules for 1×, 2× and intensive Hifz frequency, with published plan mapping and a free trial path.",
+    category: "Kids & Parenting",
+    date: "2026-07-29",
+    updatedAt: "2026-07-29",
+    readTime: "14 min",
+    keywords: [
+      "how many quran classes per week",
+      "how many quran classes a week",
+      "twice weekly quran classes",
+      "2x week quran progress",
+      "quran class frequency kids",
+      "how many online quran lessons per week",
+      "best quran schedule per week",
+    ],
+    excerpt:
+      "A practical decision guide for Quran class frequency: when 1×/week is smart, why 2×/week is the sweet spot, and when intensive packages actually help.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-long-should-online-quran-lessons-be",
+    title: "How Long Should Online Quran Lessons Be? By Age",
+    description:
+      "How long should online Quran lessons be for kids and adults? Age-based minute ranges, Zoom fatigue signs, published session lengths, and free trial tips.",
+    category: "Kids & Parenting",
+    date: "2026-07-29",
+    updatedAt: "2026-07-29",
+    readTime: "12 min",
+    keywords: [
+      "how long should online quran lessons be",
+      "quran lesson length kids",
+      "ideal quran class duration",
+      "30 vs 45 minute quran class",
+      "online quran session length by age",
+      "zoom fatigue quran class",
+    ],
+    excerpt:
+      "Match online Quran lesson length to attention and goal — age ranges, too-long vs too-short signs, and how to test fit in a free trial.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "what-should-my-child-learn-first-in-quran",
+    title: "What Should My Child Learn First in Quran?",
+    description:
+      "What should my child learn first in Quran? Qaida vs surahs vs Tajweed vs Hifz — a clear readiness order, age tips, and how to confirm placement in a free trial.",
+    category: "Kids & Parenting",
+    date: "2026-07-29",
+    updatedAt: "2026-07-29",
+    readTime: "13 min",
+    keywords: [
+      "what should my child learn first in quran",
+      "what should my child learn first quran",
+      "qaida or surahs first",
+      "beginner child quran curriculum order",
+      "should kids start hifz first",
+      "first quran lesson for kids",
+    ],
+    excerpt:
+      "A clear curriculum order for kids: letters and joins first, then reading, Tajweed, then Hifz — with readiness checks that resist relative pressure.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

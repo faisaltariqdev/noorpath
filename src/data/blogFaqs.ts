@@ -1830,6 +1830,234 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "after-school-quran-classes-for-kids-in-india": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Are after-school online Quran classes suitable for kids in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes when a recurring IST window fits homework and the child can focus. Suitability is confirmed through a free trial and tutor matching. NoorPath teaches online only — not an Indian campus.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should my child start Hifz after school immediately?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only if reading foundations are already stable. Many children need Noorani Qaida or fluent reading first. Ask for an honest placement in the trial.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we request a female tutor for a daughter in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. State the preference when booking. Female tutor and IST availability are confirmed after matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is one class a week enough for after-school Quran in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can maintain progress with short daily home practice. Faster goals usually need more live time — choose what your calendar can repeat for months.",
+        },
+      },
+    ],
+  },
+  "balancing-school-and-online-quran-in-pakistan": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can online Quran classes fit around Pakistani school hours?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — request morning, after-school, evening or weekend PKT windows. Exact recurring times are confirmed after tutor matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we stop the local madrasah if we go online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not automatically. Many families keep community learning and add online one-to-one for correction. Align goals so the child is not pulled in two directions.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if internet drops mid-lesson in Pakistan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Have a backup connection plan where possible and contact support through published channels. Ask about make-up rules during the trial conversation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is NoorPath a Pakistan campus?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. NoorPath is an online academy. Location pages describe timezone and scheduling context for families in Pakistan — not physical branches.",
+        },
+      },
+    ],
+  },
+  "online-quran-for-malaysian-and-singaporean-families": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can Malaysian and Singaporean families use the same online Quran service?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — matching uses level, timezone and preferences. Share MYT or SGT clearly so the recurring slot is not ambiguous.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you operate a campus in KL or Singapore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. NoorPath teaches online only. Location hubs explain scheduling context for families — not physical branches.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we drop school Islamic studies if we enrol online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not by default. Online one-to-one often complements school learning with personalised correction. Align goals with the tutor so content does not fight.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How should we read USD prices in MYR or SGD?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use published USD plans as the charge amount, then convert with your bank rate for budgeting. Card FX fees may change the final local amount.",
+        },
+      },
+    ],
+  },
+  "how-many-quran-classes-per-week": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How many Quran classes per week are enough for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most children do well with 1–2 live one-to-one lessons per week plus short daily home practice. Increase only when attendance and revision are already stable.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is twice weekly better than daily Quran classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For many families, twice weekly live lessons with daily short practice beats daily long live sessions that cause fatigue and cancellations.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many classes per week for Hifz?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hifz usually needs more live touchpoints and daily revision than reading alone — often 2–4×/week depending on load. New pages without revision capacity is the common failure mode.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we start with one Quran class per week and upgrade later?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Starting lighter is often wiser. Confirm plan-change and tutor-availability rules after your trial before you assume an instant upgrade path.",
+        },
+      },
+    ],
+  },
+  "how-long-should-online-quran-lessons-be": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long should online Quran lessons be for a 6-year-old?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often about 25–35 minutes if the child can finish calmly. Prefer finishing willing over filling a longer package.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are 60-minute Quran classes better?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only when the learner can sustain attention and the goal needs that block (often intensive Hifz). Longer is not automatically better for beginners.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we split a long Quran lesson into two shorter ones?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes two shorter weekly lessons beat one long session. Confirm frequency options on published plans and tutor matching — availability is confirmed after your request.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does Quran lesson length include settling time?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Practically yes. Device delays eat learning minutes. Prepare early so the paid block is mostly teaching.",
+        },
+      },
+    ],
+  },
+  "what-should-my-child-learn-first-in-quran": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should my child learn Juz Amma first?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Short surahs help salah, but if letter reading is weak, pair surah goals with foundations. Ear-only Juz Amma can hide reading gaps.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should Tajweed come before Noorani Qaida?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually no. Tajweed rules need a stable reading base. Beginners typically start with letters and joins first.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When should Hifz start for a child?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When reading is stable enough that memorisation does not become guessing, and the household can protect daily revision — not only new pages.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if relatives push Hifz immediately?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Share a readiness checklist and the trial tutor’s recommendation. Protect the child’s confidence over social timelines.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,
