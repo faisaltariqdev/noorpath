@@ -2058,6 +2058,234 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "questions-to-ask-before-booking-a-quran-tutor": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the most important question before booking a Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ask what the proposed tutor will teach this learner next — and why — after hearing them live. Placement honesty beats marketing labels.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I ask for Ijazah proof before booking?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ask for credentials relevant to your goal. Ijazah is one possible form of evidence, not the only one, and not a substitute for teaching skill with children.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I book a Quran tutor after a free trial without a credit card?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes with NoorPath’s published free trial — no credit card required. Use it to test fit before paying for a package.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if answers from a Quran academy are vague?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Do not enrol. Request written clarification or try another provider. Vague answers often become billing and schedule disputes later.",
+        },
+      },
+    ],
+  },
+  "live-online-quran-tutor-vs-prerecorded-courses": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is a live online Quran tutor better than YouTube?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For correction and placement, yes. YouTube can help listening exposure but cannot hear and fix your learner’s mistakes in real time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we use only pre-recorded Quran courses successfully?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Some disciplined adults manage review this way. Children and beginners usually need live listening to avoid locking in wrong sounds.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are NoorPath Quran classes live or recorded?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NoorPath’s core offering is live one-to-one online lessons. Free Interactive Noorani Qaida tools can support recognition between lessons.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we cannot afford many live Quran lessons?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Choose the lightest published live plan you can keep, maximise short home practice, and avoid stacking paid apps that replace correction.",
+        },
+      },
+    ],
+  },
+  "online-quran-class-checklist-for-parents": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Do parents need to sit in every online Quran class?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For young children, yes at the start — at least nearby. Older learners may need less observation once trust and routines are stable.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we fail the online Quran class checklist some weeks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Reset the next lesson day. Shorten home echo rather than cancelling the live habit entirely.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we record online Quran lessons?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Follow the academy’s published policy and privacy rules. Do not assume recording is allowed. Ask before any recording.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is a parent checklist enough without a Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Checklists organise the household. Live correction still needs a teacher when pronunciation accuracy matters.",
+        },
+      },
+    ],
+  },
+  "dua-for-rizq-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best dua for rizq in Islam?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A strong prophetic choice is Allahumma inni as’aluka ‘ilman nafi‘an, wa rizqan tayyiban, wa ‘amalan mutaqabbalan. Pair it with Quran 2:201 and lawful effort.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does dua for rizq replace looking for a job?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Islam teaches taking means (asbab) and placing trust in Allah. Dua and effort belong together.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I make dua for rizq in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — ask Allah in any language you understand. Learning the Arabic prophetic wording is rewarding when taught correctly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How often should I recite dua for rizq?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Daily consistency after Fajr or in sujood is better than occasional long sessions. Keep the heart present.",
+        },
+      },
+    ],
+  },
+  "how-to-memorize-juz-amma": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long does it take to memorize Juz Amma?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It varies widely by age, reading ability, and daily consistency. Many learners take months with steady revision — not a fixed guarantee. Focus on accurate retention.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can kids memorize Juz Amma by listening only?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ear memory helps salah, but without reading foundations, gaps appear later. Pair listening with reading support when possible.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should Tajweed come before Juz Amma Hifz?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Basic correct pronunciation should be taught alongside memorisation. Heavy rule theory can wait until reading is stable — but do not ignore clear letter mistakes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the best app for Juz Amma?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apps can play models. They cannot replace a live listener for correction. Use recordings as support between lessons.",
+        },
+      },
+    ],
+  },
+  "benefits-of-reading-quran-daily": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the benefits of reading Quran every day?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Daily reading brings reward for letters recited, strengthens guidance and remembrance, supports salah fluency, and builds a stable family habit — especially when paired with reflection and correct pronunciation over time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is it okay to read Quran without understanding Arabic?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — recitation is rewarded, and using a trusted translation alongside can help understanding. Improving Arabic reading with a teacher deepens the experience.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much Quran should I read daily?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The best amount is what you can keep every day. A small consistent portion beats a large burst followed by silence.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can children benefit from daily Quran reading?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Short, kind sessions build love and skill. Keep pressure low and consider live kids classes for correct pronunciation.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

@@ -40,6 +40,8 @@ import { prayerRecitationBlogContent } from "./blogContentPrayerRecitation";
 import { minorityMarketsBlogContent } from "./blogContentMinorityMarkets";
 import { asiaParentBlogContent } from "./blogContentAsiaParents";
 import { highDemandGapBlogContent } from "./blogContentHighDemandGaps";
+import { decisionGuideBlogContent } from "./blogContentDecisionGuides";
+import { searchDemandBlogContent } from "./blogContentSearchDemand";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
@@ -51,6 +53,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...minorityMarketsBlogContent,
   ...asiaParentBlogContent,
   ...highDemandGapBlogContent,
+  ...decisionGuideBlogContent,
+  ...searchDemandBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>

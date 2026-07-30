@@ -2130,6 +2130,134 @@ export const blogPosts: BlogPost[] = [
       "A clear curriculum order for kids: letters and joins first, then reading, Tajweed, then Hifz — with readiness checks that resist relative pressure.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "questions-to-ask-before-booking-a-quran-tutor",
+    title: "Questions to Ask Before Booking a Quran Tutor",
+    description:
+      "Questions to ask before booking a Quran tutor: placement, credentials, schedule, safeguarding, pricing clarity, female-tutor preferences, and trial red flags.",
+    category: "Kids & Parenting",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    readTime: "12 min",
+    keywords: [
+      "questions to ask before booking a quran tutor",
+      "questions to ask before booking quran tutor",
+      "quran tutor interview questions",
+      "parent booking checklist quran",
+      "what to ask online quran teacher",
+      "trial lesson questions quran",
+    ],
+    excerpt:
+      "A parent checklist of questions to ask before booking a Quran tutor — placement, credentials, schedule, safeguarding, pricing, and trial red flags.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "live-online-quran-tutor-vs-prerecorded-courses",
+    title: "Live Online Quran Tutor vs Pre-Recorded Courses",
+    description:
+      "Live online Quran tutor vs pre-recorded courses: correction, accountability, cost thinking, hybrid model, and when apps help between live lessons.",
+    category: "Quran Learning",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    readTime: "12 min",
+    keywords: [
+      "live online quran tutor vs prerecorded",
+      "live quran tutor vs recorded courses",
+      "live vs recorded quran classes",
+      "zoom tutor vs quran app",
+      "interactive vs video quran learning",
+    ],
+    excerpt:
+      "Compare live one-to-one Quran tutoring with pre-recorded courses — when each wins, the hybrid model that works, and how to avoid locking in wrong habits.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-class-checklist-for-parents",
+    title: "Online Quran Class Checklist for Parents",
+    description:
+      "Online Quran class checklist for parents: before the trial, lesson-day setup, during/after habits, first-month progress checks, and home-echo tips.",
+    category: "Kids & Parenting",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    readTime: "11 min",
+    keywords: [
+      "online quran class checklist for parents",
+      "online quran class checklist",
+      "quran class preparation checklist",
+      "first online quran lesson checklist",
+      "parent checklist zoom quran",
+    ],
+    excerpt:
+      "A practical parent checklist for online Quran classes — booking prep, lesson-day setup, observation tips, and a calm first-month progress list.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-for-rizq-arabic-english",
+    title: "Dua for Rizq — Arabic, English & Powerful Duas for Provision",
+    description:
+      "Best dua for rizq in Islam: prophetic morning dua, Quran 2:201 and 65:2–3, Arabic, transliteration, English meaning, when to recite, and etiquette for lawful provision.",
+    category: "Dhikr & Duas",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    readTime: "12 min",
+    keywords: [
+      "dua for rizq",
+      "dua for rizq arabic",
+      "dua for rizq english",
+      "dua for money islam",
+      "dua for provision",
+      "dua for barakah in rizq",
+      "powerful dua for rizq",
+      "allahumma inni as aluka ilman nafian",
+      "quranic dua for rizq",
+    ],
+    excerpt:
+      "Authentic duas for rizq with full Arabic, transliteration and English — prophetic morning dua, Quranic verses, when to recite, and etiquette that pairs dua with lawful effort.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-memorize-juz-amma",
+    title: "How to Memorize Juz Amma — Step-by-Step Plan for Kids & Adults",
+    description:
+      "How to memorize Juz Amma: readiness checks, small daily method, revision (Sabqi/Manzil), suggested surah order, common mistakes, and live tutor tips.",
+    category: "Quran Learning",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    readTime: "13 min",
+    keywords: [
+      "how to memorize juz amma",
+      "memorize juz amma",
+      "juz amma memorization",
+      "learn juz amma online",
+      "juz amma for kids",
+      "how to memorise juz amma",
+      "short surahs memorization plan",
+    ],
+    excerpt:
+      "A realistic Juz Amma memorisation plan: foundations first, small daily new work, daily revision, and live correction — for kids and adults.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "benefits-of-reading-quran-daily",
+    title: "Benefits of Reading Quran Daily — Guidance, Reward & Habit Tips",
+    description:
+      "Benefits of reading Quran daily from Quran and Sunnah: guidance, mercy, reward for every letter, salah fluency, and a practical micro-habit plan to start today.",
+    category: "Quran Learning",
+    date: "2026-07-30",
+    updatedAt: "2026-07-30",
+    readTime: "12 min",
+    keywords: [
+      "benefits of reading quran daily",
+      "benefits of reading quran",
+      "why read quran every day",
+      "daily quran reading benefits",
+      "rewards of reading quran",
+      "importance of reading quran daily",
+    ],
+    excerpt:
+      "What Quran and Sunnah teach about daily recitation — spiritual benefits, honest limits on worldly claims, and a small habit plan anyone can start.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

@@ -55,6 +55,8 @@ const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
   "inna-lillahi-wa-inna-ilayhi-rajiun-meaning",
   "dua-before-and-after-eating",
   "islamic-months-names-in-order",
+  "dua-for-rizq-arabic-english",
+  "benefits-of-reading-quran-daily",
 ]);
 
 /** Commercial blogs that drive student enrollment */
@@ -84,8 +86,8 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "quran-practice-routine-at-home-kids",
   "hard-arabic-letters-for-kids-makharij",
   "online-quran-classes-for-shy-kids",
+  "how-to-memorize-juz-amma",
 ]);
-
 const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)
 );
