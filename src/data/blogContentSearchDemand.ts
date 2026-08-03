@@ -285,4 +285,230 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           </details>
           <p>The Quran’s greatest benefit is the guidance it brings when it is read, lived, and returned to daily — even in small portions done with sincerity.</p>`,
   },
+
+  "dua-for-children-arabic-english": {
+    style: S,
+    content: `<p>A <strong>dua for children</strong> is how parents ask Allah for protection, righteousness, and mercy over their sons and daughters. Islam gives prophetic wording parents can teach — in Arabic with understanding — without invented “guaranteed” charms or fear-based superstition.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> A core prophetic protection dua for children is <strong>U‘eedhukumaa bi kalimaat-illaahit-taammati min kulli shaytaanin wa haammatin, wa min kulli ‘aynin laammah</strong> (Bukhari). Parents also recite Quranic duas for righteous offspring (such as 3:38 and 25:74). Teach short Arabic correctly — a <a href="/online-quran-classes-for-kids">kids trial</a> helps pronunciation.
+          </div>
+
+          <h2 id="protection">1) Prophetic protection dua for children</h2>
+          <div class="verse-card">
+            <span class="vnum">PROPHETIC DUA · Sahih al-Bukhari 3371</span>
+            <div class="arabic">أُعِيذُكُمَا بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ</div>
+            <p class="translit">U‘eedhukumaa bi kalimaat-illaahit-taammati min kulli shaytaanin wa haammatin, wa min kulli ‘aynin laammah.</p>
+            <p class="trans-en"><strong>English:</strong> I seek protection for you both in the perfect words of Allah from every devil and poisonous creature, and from every evil eye.</p>
+          </div>
+          <p>The Prophet ﷺ used this wording for Hasan and Husayn. For one child, parents commonly adjust the dual form to the singular as taught by scholars of language and fiqh in their community. Related: <a href="/blog/evil-eye-dua-nazar-ruqyah">evil eye dua &amp; ruqyah</a>.</p>
+
+          <h2 id="righteous">2) Quranic dua for righteous children</h2>
+          <div class="verse-card">
+            <span class="vnum">QURAN 25:74</span>
+            <div class="arabic">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</div>
+            <p class="translit">Rabbanaa hab lanaa min azwaajinaa wa dhurriyyatinaa qurrata a‘yunin waj‘alnaa lil-muttaqeena imaamaa.</p>
+            <p class="trans-en"><strong>English:</strong> Our Lord, grant us from our spouses and offspring comfort to our eyes, and make us leaders for the righteous.</p>
+          </div>
+
+          <div class="verse-card">
+            <span class="vnum">QURAN 3:38</span>
+            <div class="arabic">رَبِّ هَبْ لِي مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ</div>
+            <p class="translit">Rabbi hab lee mil-ladunka dhurriyyatan tayyibah. Innaka samee‘ud-du‘aa.</p>
+            <p class="trans-en"><strong>English:</strong> My Lord, grant me from Yourself good offspring. Indeed, You are the Hearer of supplication.</p>
+          </div>
+
+          <h2 id="mercy">3) Dua of mercy for parents and children</h2>
+          <div class="verse-card">
+            <span class="vnum">QURAN 17:24</span>
+            <div class="arabic">رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا</div>
+            <p class="translit">Rabbir-hamhumaa kamaa rabbayaanee sagheeraa.</p>
+            <p class="trans-en"><strong>English:</strong> My Lord, have mercy upon them as they brought me up when I was small.</p>
+          </div>
+          <p>Children can learn to make dua for their parents with this verse — full guide: <a href="/blog/dua-for-parents-rabbirhamhuma">dua for parents</a>.</p>
+
+          <h2 id="morning">4) Short morning habits with kids</h2>
+          <ul>
+            <li>Recite the protection dua after Fajr or when leaving for school</li>
+            <li>Teach <a href="/blog/dua-before-school-for-kids">dua before school</a> in small pieces</li>
+            <li>Keep <a href="/blog/duas-for-kids-to-memorize">duas for kids to memorize</a> short enough to repeat with love</li>
+            <li>Pair dua with ordinary care — sleep, food, kind words — not dua alone as a superstition substitute</li>
+          </ul>
+          <div class="gold-box">
+            <strong>Avoid:</strong> Viral “secret child protection” posts with invented rewards, paid amulets sold as guarantees, or medical claims. Stick to Quran and authentic Sunnah, and seek professional help for health or safety needs.
+          </div>
+
+          <h2 id="english">Can I make dua for my child in English?</h2>
+          <p>Yes. Ask Allah in any language you understand. Learning the Arabic prophetic wording is rewarding when sounds are taught correctly — especially the letters children often miss. Parents who do not speak Arabic can still lead the habit: <a href="/blog/parents-dont-speak-arabic-child-learn-quran">parents don’t speak Arabic</a>.</p>
+
+          <h2 id="teach">How to teach these duas with correct pronunciation</h2>
+          <ol>
+            <li>Play or recite one short line; child repeats</li>
+            <li>Correct one sound at a time — not five at once</li>
+            <li>Explain the English meaning in one sentence</li>
+            <li>Use the dua in a real moment (school run, bedtime)</li>
+            <li>Review weekly so memorisation stays alive</li>
+          </ol>
+          <p>Live listening helps when parents cannot hear their own mistakes. Book a gentle kids session: <a href="/free-quran-classes-online">free trial</a> · <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>What is the best dua for children in Islam?<span>+</span></summary>
+            <p>A primary prophetic protection dua is U‘eedhukumaa bi kalimaat-illaahit-taammati… (Bukhari). Pair it with Quranic duas for righteous offspring such as 25:74 and 3:38.</p>
+          </details>
+          <details class="faq-acc"><summary>What is the prophetic protection dua for kids?<span>+</span></summary>
+            <p>The dua the Prophet ﷺ used for Hasan and Husayn seeking protection in Allah’s perfect words from every devil, poisonous creature, and evil eye (Bukhari 3371).</p>
+          </details>
+          <details class="faq-acc"><summary>Can I make dua for my child in English?<span>+</span></summary>
+            <p>Yes — Allah hears every language. Learning authentic Arabic wording is encouraged when taught with correct pronunciation.</p>
+          </details>
+          <details class="faq-acc"><summary>How do I teach these duas with correct pronunciation?<span>+</span></summary>
+            <p>Teach one line at a time, correct one sound at a time, explain the meaning briefly, and use the dua in real daily moments. A live teacher helps when parents cannot catch errors.</p>
+          </details>
+          <p>The best dua for children is authentic, understood, and lived — protection sought from Allah, paired with merciful parenting and steady Quran learning.</p>`,
+  },
+
+  "dua-for-sick-person-arabic-english": {
+    style: S,
+    content: `<p>A <strong>dua for a sick person</strong> (dua for shifa) is among the most searched Islamic duas worldwide — families want prophetic wording they can recite at a bedside, in a hospital corridor, or over themselves. Islam pairs dua with taking means: medicine, rest, and trust in Allah as Ash-Shafi (the Healer).</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> The core prophetic healing dua is <strong>Allahumma Rabban-naas, adhhibil-ba’s, washfi antash-Shaafi…</strong> (Bukhari &amp; Muslim). Place the right hand on the area of pain when appropriate, and you may add the Mu‘awwidhat (Ikhlas, Falaq, Nas). This is not a substitute for medical care. Teach children short duas with a <a href="/online-quran-classes-for-kids">kids trial</a>.
+          </div>
+
+          <h2 id="main-dua">1) Main prophetic dua for healing (shifa)</h2>
+          <div class="verse-card">
+            <span class="vnum">PROPHETIC DUA · Bukhari 5742 · Muslim</span>
+            <div class="arabic">اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، وَاشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا</div>
+            <p class="translit">Allaahumma Rabban-naas, adhhibil-ba’s, washfi antash-Shaafi, laa shifaa’a illaa shifaa’uk, shifaa’an laa yughaadiru saqamaa.</p>
+            <p class="trans-en"><strong>English:</strong> O Allah, Lord of mankind, remove the affliction and heal — You are the Healer. There is no healing except Your healing, a healing that leaves behind no illness.</p>
+          </div>
+          <p>Aisha (RA) reported that the Prophet ﷺ would wipe with his right hand and recite this. Recite with presence of heart; many families repeat it three or seven times without turning the count into superstition.</p>
+
+          <h2 id="pain">2) Dua when placing the hand on pain</h2>
+          <div class="verse-card">
+            <span class="vnum">PROPHETIC DUA · Muslim</span>
+            <div class="arabic">بِسْمِ اللَّهِ (ثَلَاثًا)، أَعُوذُ بِعِزَّةِ اللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ (سَبْعًا)</div>
+            <p class="translit">Bismillaah (three times). A‘oodhu bi ‘izzatillaahi wa qudratihi min sharri maa ajidu wa uhaadhir (seven times).</p>
+            <p class="trans-en"><strong>English:</strong> In the name of Allah (×3). I seek refuge in the might of Allah and His power from the evil of what I feel and fear (×7).</p>
+          </div>
+
+          <h2 id="visit">3) Words when visiting the sick</h2>
+          <div class="verse-card">
+            <span class="vnum">PROPHETIC WORDS · Bukhari</span>
+            <div class="arabic">لَا بَأْسَ، طَهُورٌ إِنْ شَاءَ اللَّهُ</div>
+            <p class="translit">Laa ba’sa, tahoorun in shaa’ Allaah.</p>
+            <p class="trans-en"><strong>English:</strong> No harm — it is a purification, if Allah wills.</p>
+          </div>
+          <p>Keep visits short, hopeful, and clean of scary talk. Ask the sick person to make dua for you — their dua is valued in the Sunnah reports about visiting the ill.</p>
+
+          <h2 id="quran">4) Quran often recited for comfort and ruqyah</h2>
+          <ul>
+            <li><strong>Al-Fatihah</strong> — known in the Sunnah in the context of ruqyah/healing</li>
+            <li><strong>Ayatul Kursi</strong> — <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi guide</a></li>
+            <li><strong>Ikhlas, Falaq, Nas</strong> — <a href="/blog/4-quls">4 Quls</a> · blow lightly into hands and wipe when practising prophetic ruqyah patterns</li>
+            <li><strong>Al-Fatiha / known surahs</strong> the family already recites correctly</li>
+          </ul>
+          <div class="gold-box">
+            <strong>Avoid:</strong> Guaranteed cure claims, paid “secret shifa packages,” or skipping doctors. Weak or fabricated medical miracles online are not proof. Surah Yasin brings general Quranic blessing when recited, but do not replace authenticated healing duas with unverified viral claims — see also <a href="/blog/surah-yaseen-arabic-english">Surah Yaseen</a>.
+          </div>
+
+          <h2 id="etiquette">Etiquette with dua for the sick</h2>
+          <ol>
+            <li>Take permissible medical means</li>
+            <li>Make wudu when you can; face qibla if easy</li>
+            <li>Ask Allah with certainty and softness</li>
+            <li>Do not force long sessions on an exhausted patient</li>
+            <li>Protect privacy — illness is not content for social media without consent</li>
+          </ol>
+
+          <h2 id="kids">Teach kids a short shifa dua</h2>
+          <p>Children can learn “Allahumma Rabban-naas…” in pieces. Correct Arabic sounds matter — parents who want help can book a gentle class: <a href="/free-quran-classes-online">free trial</a> · <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>What is the best dua for a sick person in Islam?<span>+</span></summary>
+            <p>Allahumma Rabban-naas, adhhibil-ba’s, washfi antash-Shaafi… is the primary prophetic healing dua reported from Aisha (RA) in Bukhari and Muslim.</p>
+          </details>
+          <details class="faq-acc"><summary>Can I recite dua for shifa in English?<span>+</span></summary>
+            <p>Yes — ask Allah in any language you understand. Learning the Arabic prophetic wording is rewarded when taught correctly.</p>
+          </details>
+          <details class="faq-acc"><summary>Does dua replace medicine?<span>+</span></summary>
+            <p>No. The Sunnah encourages treatment. Dua and medicine belong together; healing is from Allah.</p>
+          </details>
+          <details class="faq-acc"><summary>What Quran should I read for a sick family member?<span>+</span></summary>
+            <p>Al-Fatihah, Ayatul Kursi, and the Mu‘awwidhat are commonly used in prophetic ruqyah practice. Recite what you know correctly, with a present heart.</p>
+          </details>
+          <p>The best dua for the sick is authentic, gentle, and paired with care — asking Allah for a healing that leaves no illness, while walking the means He made available.</p>`,
+  },
+
+  "barakallah-meaning": {
+    style: S,
+    content: `<p><strong>Barakallah meaning</strong> is one of the most searched Islamic Arabic phrases online — people hear it in messages, weddings, and comment sections and want the exact blessing it carries. Like <a href="/blog/mashallah-meaning">Mashallah</a> and <a href="/blog/jazakallah-khair-meaning">Jazakallah khair</a>, it is short, powerful, and easy to misuse if the meaning is unclear.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> <strong>Barakallah</strong> (بارك الله) means <strong>“May Allah bless”</strong> / “May Allah place barakah.” Common longer forms include <strong>Barakallahu feek</strong> (may Allah bless you) and <strong>Barakallahu laka</strong> / <strong>feeki</strong> depending on gender and context. Reply with warmth — often Ameen, or Jazakallah khair.
+          </div>
+
+          <h2 id="arabic">Barakallah — Arabic, transliteration, English</h2>
+          <div class="verse-card">
+            <span class="vnum">PHRASE · BLESSING</span>
+            <div class="arabic">بَارَكَ اللَّهُ</div>
+            <p class="translit">Baarakallaah.</p>
+            <p class="trans-en"><strong>English:</strong> May Allah bless. / May Allah grant barakah.</p>
+          </div>
+
+          <h2 id="forms">Common forms you will hear</h2>
+          <table class="np-table">
+            <tr><th>Phrase</th><th>Approx. meaning</th><th>Typical use</th></tr>
+            <tr><td>Barakallahu feek / feeki</td><td>May Allah bless you</td><td>Thanks, well-wishing to a person</td></tr>
+            <tr><td>Barakallahu laka / laki</td><td>May Allah bless you (for you)</td><td>Congratulating on a gift, marriage, or news</td></tr>
+            <tr><td>Allahumma barik</td><td>O Allah, bless</td><td>When seeing something admirable (often with Mashallah)</td></tr>
+            <tr><td>Barakallah</td><td>May Allah bless</td><td>Short form in texts and speech</td></tr>
+          </table>
+
+          <h2 id="vs">Barakallah vs Mashallah vs Jazakallah</h2>
+          <ul>
+            <li><strong>Mashallah</strong> — acknowledges Allah’s will when praising; helps guard against envy language</li>
+            <li><strong>Barakallah / Allahumma barik</strong> — asks Allah to place blessing in what you see or in the person</li>
+            <li><strong>Jazakallah khair</strong> — “May Allah reward you with good” — classic thanks</li>
+          </ul>
+          <p>Phrase hub: <a href="/blog/islamic-phrases-meaning">Islamic phrases meaning</a>.</p>
+
+          <h2 id="when">When to say Barakallah</h2>
+          <ul>
+            <li>After someone helps you</li>
+            <li>When congratulating a marriage, newborn, new home, or exam result</li>
+            <li>When you see a blessing in someone’s life and want good for them</li>
+            <li>In messages as a warm close — still better with sincerity than as empty slang</li>
+          </ul>
+          <div class="gold-box">
+            <strong>Etiquette:</strong> Saying Barakallah does not replace practical thanks or fairness in money matters. Barakah is asked from Allah; it is not a magic caption that fixes injustice.
+          </div>
+
+          <h2 id="reply">How to reply</h2>
+          <ul>
+            <li><strong>Ameen</strong> — accepting the dua</li>
+            <li><strong>Wa feek / wa feeki Barakallah</strong> — returning the blessing (common conversational reply)</li>
+            <li><strong>Jazakallah khair</strong> — if they helped you</li>
+          </ul>
+
+          <h2 id="kids">Teach kids the meaning, not only the sound</h2>
+          <p>Children should know they are making a dua, not copying a social-media sticker. Practise Arabic sounds kindly — <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a> · <a href="/free-quran-classes-online">free Quran trial</a>.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>What does Barakallah mean in English?<span>+</span></summary>
+            <p>It means “May Allah bless” or “May Allah place barakah.” Longer forms specify blessing upon a person or in a matter.</p>
+          </details>
+          <details class="faq-acc"><summary>What is the difference between Barakallah and Mashallah?<span>+</span></summary>
+            <p>Mashallah acknowledges Allah’s will when admiring something; Barakallah asks Allah to bless. They are often used together in good manners.</p>
+          </details>
+          <details class="faq-acc"><summary>How do you reply to Barakallahu feek?<span>+</span></summary>
+            <p>Common replies include Ameen, Wa feek Barakallah, or Jazakallah khair — depending on context.</p>
+          </details>
+          <details class="faq-acc"><summary>Is Barakallah in the Quran?<span>+</span></summary>
+            <p>The root of barakah and related blessing language appears throughout Quran and Sunnah. The everyday phrase forms are widely used Islamic speech taught from prophetic manners and Arabic usage.</p>
+          </details>
+          <p>Barakallah is a small sentence with a large heart: asking Allah to put growth, good, and permanence in what we love for others — and for ourselves.</p>`,
+  },
 };
+
+

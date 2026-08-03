@@ -57,6 +57,11 @@ const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
   "islamic-months-names-in-order",
   "dua-for-rizq-arabic-english",
   "benefits-of-reading-quran-daily",
+  "dua-for-children-arabic-english",
+  "dua-for-sick-person-arabic-english",
+  "what-breaks-wudu",
+  "how-to-do-tayammum-step-by-step",
+  "barakallah-meaning",
 ]);
 
 /** Commercial blogs that drive student enrollment */
@@ -87,6 +92,19 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "hard-arabic-letters-for-kids-makharij",
   "online-quran-classes-for-shy-kids",
   "how-to-memorize-juz-amma",
+  "questions-to-ask-before-booking-a-quran-tutor",
+  "live-online-quran-tutor-vs-prerecorded-courses",
+  "online-quran-class-checklist-for-parents",
+  "how-many-quran-classes-per-week",
+  "how-long-should-online-quran-lessons-be",
+  "what-should-my-child-learn-first-in-quran",
+  "sibling-online-quran-classes-scheduling",
+  "when-to-change-your-online-quran-tutor",
+  "online-quran-classes-for-teenagers",
+  "keeping-quran-classes-during-exams-and-holidays",
+  "after-school-quran-classes-for-gulf-families",
+  "how-to-start-hifz-for-kids",
+  "online-tajweed-classes-for-kids",
 ]);
 const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)

@@ -2258,6 +2258,260 @@ export const blogPosts: BlogPost[] = [
       "What Quran and Sunnah teach about daily recitation — spiritual benefits, honest limits on worldly claims, and a small habit plan anyone can start.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "sibling-online-quran-classes-scheduling",
+    title: "Sibling Online Quran Classes — Schedule, Discounts & Same-Tutor Tips",
+    description:
+      "Sibling online Quran classes: separate vs shared lessons, published family discounts, same-tutor decisions, back-to-back buffers, and how to book two kids cleanly.",
+    category: "Kids & Parenting",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    readTime: "12 min",
+    keywords: [
+      "sibling online quran classes",
+      "quran classes for siblings",
+      "sibling discount quran classes",
+      "two kids online quran schedule",
+      "same tutor for siblings quran",
+      "family quran class scheduling",
+    ],
+    excerpt:
+      "How to schedule sibling online Quran classes without burnout — separate lessons, published discounts, tutor matching, and a practical booking template.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "when-to-change-your-online-quran-tutor",
+    title: "When to Change Your Online Quran Tutor — Fair Trial vs Rematch",
+    description:
+      "When to change your online Quran tutor: fair wait times, rematch reasons vs impatience, progress handoff, and how to request a rematch without burning bridges.",
+    category: "Kids & Parenting",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    readTime: "11 min",
+    keywords: [
+      "when to change your online quran tutor",
+      "change quran tutor",
+      "rematch online quran teacher",
+      "switch quran teacher online",
+      "quran tutor not a good fit",
+      "request new quran tutor",
+    ],
+    excerpt:
+      "A fair parent guide to rematching an online Quran tutor — how long to wait, what counts as a real fit issue, and how to request change calmly.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-classes-for-teenagers",
+    title: "Online Quran Classes for Teenagers — Fluency, Tajweed or Light Hifz",
+    description:
+      "Online Quran classes for teenagers: what to learn first after a pause, lesson length, dignity-first restart tips, female-tutor preferences, and realistic 90-day goals.",
+    category: "Kids & Parenting",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    readTime: "12 min",
+    keywords: [
+      "online quran classes for teenagers",
+      "quran classes for teens",
+      "quran tutor for teenagers",
+      "teen quran learning",
+      "learn quran as a teenager",
+      "tajweed classes for teens",
+    ],
+    excerpt:
+      "A dignity-first path for teenage Quran learners — placement by skill, sustainable lesson length, and how to restart without shame.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "keeping-quran-classes-during-exams-and-holidays",
+    title: "Keeping Quran Classes During Exams & School Holidays",
+    description:
+      "Keeping Quran classes during exams and holidays: when to reduce vs pause, make-up questions, holiday maintenance vs intensives, and how to restart after a long break.",
+    category: "Kids & Parenting",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    readTime: "11 min",
+    keywords: [
+      "quran classes during exams",
+      "pause quran classes holidays",
+      "quran classes school holidays",
+      "keep quran routine during exams",
+      "restart quran classes after break",
+      "quran make up lessons exams",
+    ],
+    excerpt:
+      "How to protect a Quran habit through exam weeks and school holidays — lighter continuity, written make-up rules, and calm restarts.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "after-school-quran-classes-for-gulf-families",
+    title: "After-School Quran Classes for Gulf Families — UAE & Qatar Parent Guide",
+    description:
+      "After-school Quran classes for Gulf families: GST evening windows, online-only clarity, travel weeks, USD-to-AED/QAR budgeting, and how to request a trial.",
+    category: "Kids & Parenting",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    readTime: "12 min",
+    keywords: [
+      "after school quran classes gulf",
+      "after school quran classes uae",
+      "online quran classes dubai evening",
+      "quran classes qatar after school",
+      "gulf expat quran classes",
+      "gst online quran classes",
+    ],
+    excerpt:
+      "A UAE & Qatar parent guide to after-school online Quran — GST evenings, no campus confusion, travel weeks, and honest USD budgeting.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-for-children-arabic-english",
+    title: "Dua for Children — Arabic, English & Protection Duas Parents Teach",
+    description:
+      "Dua for children in Islam: prophetic protection dua (Bukhari), Quranic duas for righteous offspring, Arabic, transliteration, English, and how parents teach them correctly.",
+    category: "Dhikr & Duas",
+    date: "2026-08-02",
+    updatedAt: "2026-08-02",
+    readTime: "12 min",
+    keywords: [
+      "dua for children",
+      "dua for children arabic",
+      "dua for kids islam",
+      "protection dua for children",
+      "prophetic dua for children",
+      "dua for righteous children",
+      "u eedhukumaa bi kalimaatillah",
+    ],
+    excerpt:
+      "Authentic duas for children with Arabic, transliteration and English — prophetic protection wording, Quranic duas for offspring, and teaching tips for parents.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-for-sick-person-arabic-english",
+    title: "Dua for Sick Person — Arabic, English & Prophetic Shifa Duas",
+    description:
+      "Best dua for a sick person in Islam: Allahumma Rabban-naas shifa dua, pain dua, visiting the sick, Quran for ruqyah, Arabic, transliteration, and English meaning.",
+    category: "Dhikr & Duas",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    readTime: "12 min",
+    keywords: [
+      "dua for sick person",
+      "dua for shifa",
+      "dua for healing islam",
+      "allahumma rabban nas",
+      "dua for sick person arabic",
+      "prophetic dua for the sick",
+      "dua when visiting the sick",
+    ],
+    excerpt:
+      "Authentic prophetic duas for the sick with Arabic, transliteration and English — shifa dua, pain dua, visiting etiquette, and honest limits vs medical care.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "what-breaks-wudu",
+    title: "What Breaks Wudu? — Clear Guide to Nullifiers of Ablution",
+    description:
+      "What breaks wudu: widely agreed nullifiers, where schools differ (bleeding, sleep, touch), common myths, doubt tips, and links to wudu and tayammum guides.",
+    category: "Prayer & Worship",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    readTime: "11 min",
+    keywords: [
+      "what breaks wudu",
+      "what nullifies wudu",
+      "does sleeping break wudu",
+      "does bleeding break wudu",
+      "things that break wudu",
+      "wudu invalidators",
+    ],
+    excerpt:
+      "A clear guide to what breaks wudu — agreed nullifiers, honest madhhab differences, and calm advice when you are unsure.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-do-tayammum-step-by-step",
+    title: "How to Do Tayammum Step by Step — Dry Ablution Guide",
+    description:
+      "How to do tayammum step by step: when it is allowed, clean-earth method, what ends tayammum, illness/travel notes, and how it relates to wudu and ghusl.",
+    category: "Prayer & Worship",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    readTime: "11 min",
+    keywords: [
+      "how to do tayammum",
+      "tayammum step by step",
+      "how to perform tayammum",
+      "dry ablution islam",
+      "tayammum when no water",
+      "tayammum for sick person",
+    ],
+    excerpt:
+      "Learn tayammum step by step — when dry ablution applies, how to wipe face and hands from clean earth, and when to return to water.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "barakallah-meaning",
+    title: "Barakallah Meaning — Arabic, English & How to Reply",
+    description:
+      "Barakallah meaning in English: May Allah bless, common forms (Barakallahu feek), vs Mashallah and Jazakallah, when to say it, and how to reply.",
+    category: "Dhikr & Duas",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    readTime: "10 min",
+    keywords: [
+      "barakallah meaning",
+      "barakallah meaning in english",
+      "barakallahu feek meaning",
+      "what does barakallah mean",
+      "how to reply to barakallah",
+      "allahumma barik meaning",
+    ],
+    excerpt:
+      "What Barakallah means in English, the common forms Muslims use, how it differs from Mashallah, and simple ways to reply.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-start-hifz-for-kids",
+    title: "How to Start Hifz for Kids — Readiness, First 30 Days & Revision",
+    description:
+      "How to start Hifz for kids: readiness signs, first-30-day plan, sabaq and revision habits, weekly class rhythm, and how to book a placement trial.",
+    category: "Kids & Parenting",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    readTime: "12 min",
+    keywords: [
+      "how to start hifz for kids",
+      "start hifz for children",
+      "hifz for beginners kids",
+      "when to start quran memorization kids",
+      "kids hifz plan",
+      "begin hifz online",
+    ],
+    excerpt:
+      "A realistic parent guide to starting Hifz for kids — readiness checks, tiny first targets, revision systems, and trial-based tutor fit.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-tajweed-classes-for-kids",
+    title: "Online Tajweed Classes for Kids — What Parents Should Expect",
+    description:
+      "Online Tajweed classes for kids: why live correction matters, learning order, lesson length, home echo tips, female-tutor preference, and how to book a trial.",
+    category: "Kids & Parenting",
+    date: "2026-08-03",
+    updatedAt: "2026-08-03",
+    readTime: "12 min",
+    keywords: [
+      "online tajweed classes for kids",
+      "tajweed classes for kids online",
+      "kids tajweed tutor online",
+      "learn tajweed online for children",
+      "tajweed for kids",
+      "online quran tajweed kids",
+    ],
+    excerpt:
+      "What strong online Tajweed classes for kids look like — live listening, small goals, parent support, and an honest trial checklist.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

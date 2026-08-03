@@ -2286,6 +2286,462 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "sibling-online-quran-classes-scheduling": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should siblings share one online Quran lesson?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only if ages and levels are genuinely close and both stay engaged. Most households get better results from separate one-to-one lessons with a short buffer between them.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do sibling discounts work at NoorPath?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Published discounts apply for multi-child households: 2 siblings (15%), 3 siblings (20%), and 4+ siblings (25%). Confirm the active rate at checkout against the pricing page.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should siblings use the same Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Same tutor can simplify updates; different tutors often fit different levels better. Request what you need and confirm during matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we book two kids without back-to-back burnout?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Add a buffer, put the higher-energy child first when evenings are short, and avoid stacking two intensive plans on the same weeknight until the routine is stable.",
+        },
+      },
+    ],
+  },
+  "when-to-change-your-online-quran-tutor": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long should I wait before requesting a Quran tutor rematch?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "About 2–4 consistent lessons for ordinary rapport and pace issues, unless safety, disrespect, or clear chronic mismatch appears sooner.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are fair rematch reasons vs impatience?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Fair reasons include unchanged wrong pace after feedback, unusable language fit, fear (not ordinary nerves), reliability problems, or goal mismatch. Impatience looks like one tired lesson or cousin-comparison pressure.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will my child lose progress if the online Quran tutor changes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not if you hand over notes and allow a short placement listen. Skills live with the learner; the new tutor needs an accurate starting point.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I request a rematch without burning bridges?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use calm, dated observations, state the fit you need, ask about paid-session handling under published policy, and avoid personal attacks. Fit language is enough.",
+        },
+      },
+    ],
+  },
+  "online-quran-classes-for-teenagers": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What should a teenager learn first if they skipped Qaida years?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Start with a calm placement listen. Many teens need a compressed foundation bridge into fluency — without childish framing — before Tajweed polish or Hifz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long should online Quran lessons be for teenagers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often 45 minutes works well when attention is present. Begin with a sustainable weekly rhythm (commonly 2×) and increase only after consistency is proven.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can teens request a female Quran tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — female-tutor preference can be requested and is confirmed during matching subject to availability.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we start without embarrassing a teen who feels behind?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Call it a fit check, let them set the goal language, avoid sibling comparisons, and choose a respectful tutor style. Focus on the next skill, not years lost.",
+        },
+      },
+    ],
+  },
+  "keeping-quran-classes-during-exams-and-holidays": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should we pause Quran during exam week?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often reduce frequency or shorten sessions rather than full pause. Pause fully when the learner is overwhelmed or ill — and set a restart date in writing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What make-up rules should we ask about?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ask about notice periods, whether exam conflicts qualify, whether lessons roll or expire, and pause/cancel terms before the next billing date.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do holidays differ from a summer camp intensive?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Holidays can be gentle maintenance with the same tutor. A camp-style intensive is a planned higher-frequency window with a clear end — not accidental overbooking.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we restart after a long break without starting from zero?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Request a fresh placement listen, restart lighter than before, rebuild confidence for two weeks, then increase frequency only when the habit is stable again.",
+        },
+      },
+    ],
+  },
+  "after-school-quran-classes-for-gulf-families": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Are evening GST slots guaranteed for Gulf families?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Evening demand is high. Share two or three suitable GST windows; tutor availability is confirmed after matching.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this a UAE or Qatar campus?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. NoorPath’s provision for Gulf learners is remote-only. Location pages help with scheduling context; they are not physical branches.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we keep classes during travel weeks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often yes with a plan: pause, temporary timezone shift, or short revision sessions. Confirm make-up and pause rules in writing before travel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do we budget published USD plans from the Gulf?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Use the published USD plan on the pricing page, then convert with your payment provider’s AED/QAR rate and fees. Treat only the checkout total as binding.",
+        },
+      },
+    ],
+  },
+  "dua-for-children-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best dua for children in Islam?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A primary prophetic protection dua is U‘eedhukumaa bi kalimaat-illaahit-taammati… (Bukhari). Pair it with Quranic duas for righteous offspring such as 25:74 and 3:38.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the prophetic protection dua for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The dua the Prophet ﷺ used for Hasan and Husayn seeking protection in Allah’s perfect words from every devil, poisonous creature, and evil eye (Bukhari 3371).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I make dua for my child in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — Allah hears every language. Learning authentic Arabic wording is encouraged when taught with correct pronunciation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I teach these duas with correct pronunciation?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Teach one line at a time, correct one sound at a time, explain the meaning briefly, and use the dua in real daily moments. A live teacher helps when parents cannot catch errors.",
+        },
+      },
+    ],
+  },
+  "dua-for-sick-person-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best dua for a sick person in Islam?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Allahumma Rabban-naas, adhhibil-ba’s, washfi antash-Shaafi… is the primary prophetic healing dua reported from Aisha (RA) in Bukhari and Muslim.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I recite dua for shifa in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — ask Allah in any language you understand. Learning the Arabic prophetic wording is rewarded when taught correctly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does dua replace medicine?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The Sunnah encourages treatment. Dua and medicine belong together; healing is from Allah.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What Quran should I read for a sick family member?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Al-Fatihah, Ayatul Kursi, and the Mu‘awwidhat are commonly used in prophetic ruqyah practice. Recite what you know correctly, with a present heart.",
+        },
+      },
+    ],
+  },
+  "what-breaks-wudu": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does sleeping break wudu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Deep sleep that removes awareness is widely taught to break wudu. Light dozing while firmly seated is treated differently by schools — follow your teacher.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does bleeding break wudu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Schools differ. Do not rely on a viral one-line answer; ask a qualified local scholar for the ruling you follow.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does passing wind break wudu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — wind exiting from the back passage is a classic nullifier. Renew wudu before praying.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I cannot use water for wudu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When water is unavailable or using it would harm you, tayammum may apply. See the tayammum step-by-step guide and confirm your situation with a scholar if unsure.",
+        },
+      },
+    ],
+  },
+  "how-to-do-tayammum-step-by-step": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How do you perform tayammum step by step?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Intend purification, say Bismillah, strike clean earth with both palms, remove excess dust, wipe the face, then wipe the hands (commonly to the wrists). Follow your school for fine details.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I do tayammum if water is available but I am sick?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If using water would harm you or delay recovery, many scholars allow tayammum. Confirm your personal case with a qualified teacher.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does tayammum replace ghusl?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When ghusl is required but water cannot be used, tayammum may take its place temporarily according to fiqh rules — then perform ghusl when able.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many times do I strike the ground for tayammum?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A common teaching is one strike for face and hands. Some detailed opinions differ — follow the method your madhhab or teacher teaches consistently.",
+        },
+      },
+    ],
+  },
+  "barakallah-meaning": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does Barakallah mean in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It means “May Allah bless” or “May Allah place barakah.” Longer forms specify blessing upon a person or in a matter.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between Barakallah and Mashallah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mashallah acknowledges Allah’s will when admiring something; Barakallah asks Allah to bless. They are often used together in good manners.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you reply to Barakallahu feek?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Common replies include Ameen, Wa feek Barakallah, or Jazakallah khair — depending on context.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Barakallah in the Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The root of barakah and related blessing language appears throughout Quran and Sunnah. The everyday phrase forms are widely used Islamic speech taught from prophetic manners and Arabic usage.",
+        },
+      },
+    ],
+  },
+  "how-to-start-hifz-for-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What age should a child start Hifz?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Age alone is not enough. Start when reading fluency, emotional readiness, and a daily revision habit are realistic — often after solid Qaida or reading foundations.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should Tajweed come before Hifz?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Basic correct reading should come first. Heavy Tajweed polish can grow alongside early Hifz, but memorising major errors is expensive to undo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much should a beginner memorise daily?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Start tiny — lines that can be revised cleanly. Increase only when retention stays strong for a week or more.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can kids start Hifz online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, when lessons are live one-to-one with clear revision homework and parent support at home. Test fit with a trial before paying for intensity.",
+        },
+      },
+    ],
+  },
+  "online-tajweed-classes-for-kids": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What age can kids start online Tajweed classes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When they can sit for a short live lesson and produce letter sounds with coaching — often overlapping late Qaida or early reading. Exact age varies by child.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are online Tajweed classes effective for kids?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes when audio is clear, the tutor corrects live, and home echo is tiny and consistent. Effectiveness is proven in the trial and first month — not in ads.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should my child memorise Tajweed rule names?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Names help later. Priority one is correct sound in real recitation. Rules without application confuse many children.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can we request a female Tajweed tutor for a daughter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — request the preference when booking; matching confirms availability after your request.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,

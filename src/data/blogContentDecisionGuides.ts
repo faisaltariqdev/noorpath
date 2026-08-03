@@ -306,4 +306,84 @@ export const decisionGuideBlogContent: Record<string, { style: string; content: 
           </details>
           <p>Parents who run a simple checklist waste fewer lessons. Prepare once, protect the slot, and let consistency — not perfection — carry the month.</p>`,
   },
+
+  "when-to-change-your-online-quran-tutor": {
+    style: S,
+    content: `<p>Knowing <strong>when to change your online Quran tutor</strong> protects both the child’s love of learning and the parent’s money. Rematching too fast wastes rapport; waiting too long turns every lesson into dread. Use fair signals — not one awkward day — then request a rematch through published channels.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Give a new tutor roughly <strong>2–4 consistent lessons</strong> unless safety, disrespect, or clear level mismatch appears sooner. Document what is failing (pace, kindness, language, attendance), then request a rematch. Start fresh fit checks with a free <a href="/free-quran-classes-online">${TRIAL.durationMinutes}-minute trial</a> when needed.
+          </div>
+
+          <h2 id="fair-wait">How long should you wait before rematching?</h2>
+          <table class="np-table">
+            <tr><th>Signal</th><th>Suggested wait</th></tr>
+            <tr><td>Shyness / quiet first lesson</td><td>2–4 lessons if the tutor is kind and skilled</td></tr>
+            <tr><td>Pace slightly hard or easy</td><td>Ask for adjustment first; rematch if unchanged after ~3 lessons</td></tr>
+            <tr><td>Repeated late starts / no-shows</td><td>Escalate after the second clear miss (with notes)</td></tr>
+            <tr><td>Harshness, unsafe behaviour, or disrespect</td><td>Stop and rematch / report immediately</td></tr>
+          </table>
+          <p>Choosing well at the start still matters: <a href="/blog/how-to-choose-online-quran-teacher">how to choose an online Quran teacher</a> · <a href="/blog/questions-to-ask-before-booking-a-quran-tutor">booking questions</a>.</p>
+
+          <h2 id="fair-reasons">Fair rematch reasons vs impatience</h2>
+          <h3>Fair reasons</h3>
+          <ul>
+            <li>Teaching pace chronically wrong after you asked for adjustment</li>
+            <li>Language of instruction not usable for parent updates or child understanding</li>
+            <li>Child consistently fearful — not ordinary first-week nerves</li>
+            <li>Tutor reliability problems (late, missing, unprepared)</li>
+            <li>Goal mismatch (for example pushing Hifz when fluency is unstable)</li>
+          </ul>
+          <h3>Often impatience (try coaching first)</h3>
+          <ul>
+            <li>One boring lesson after a long school day</li>
+            <li>Child prefers games over correction (normal — keep sessions purposeful but kind)</li>
+            <li>Parent wants faster cousin-comparison progress</li>
+            <li>Accent difference that is still clear and correctable</li>
+          </ul>
+          <div class="gold-box">
+            <strong>Safety first:</strong> Anything that feels unsafe, inappropriate, or humiliating is not a “wait and see” issue. End the session, stay with your child, and contact support via published channels. Read <a href="/safeguarding">safeguarding</a>.
+          </div>
+
+          <h2 id="progress">Will my child lose progress if the tutor changes?</h2>
+          <p>Usually no — if you keep notes. Share the current page/surah, known weak letters, and last home-echo target with the new tutor. A short placement listen prevents both restarting from Alif unnecessarily and pretending the child is further ahead than they are.</p>
+          <p>Progress habits: <a href="/blog/quran-practice-and-progress-guide">Quran practice and progress guide</a> · <a href="/blog/online-quran-class-checklist-for-parents">parent checklist</a>.</p>
+
+          <h2 id="request">How to request a rematch without burning bridges</h2>
+          <ol>
+            <li>Write 3 concrete observations (dates help): what happened, what you already tried, what you need instead.</li>
+            <li>Separate the person from the fit — “not the right match for our goal” is enough.</li>
+            <li>State preferences clearly: age experience, female tutor, English instruction, calmer pace.</li>
+            <li>Ask what happens to already-paid sessions under the published policy.</li>
+            <li>Keep the recurring calendar slot if possible while the new match is arranged.</li>
+          </ol>
+          <p><em>Copy-paste:</em> “Assalamu Alaikum — after [N] lessons we need a rematch. Observations: [1][2][3]. Preference: [female/English/pace]. Please confirm next trial/match steps and how existing sessions are handled.”</p>
+
+          <h2 id="after">After the rematch</h2>
+          <ul>
+            <li>Treat lesson one as placement + rapport, not a final verdict</li>
+            <li>Keep home-echo targets tiny for one week</li>
+            <li>If two rematches fail for the same reason, revisit course level and weekly load — not only tutor personality</li>
+          </ul>
+          <p>Load helpers: <a href="/blog/how-many-quran-classes-per-week">classes per week</a> · <a href="/blog/child-wont-sit-for-quran-class">child won’t sit</a>.</p>
+
+          <h2 id="start">Need a fresh fit check?</h2>
+          <p>Request rematch support through published contact channels, or book a new trial if you are comparing providers. <a href="/free-quran-classes-online">Free ${TRIAL.durationMinutes}-minute trial</a> · <a href="/our-tutors">tutor matching</a> · <a href="/contact">contact</a>.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>How long should I wait before requesting a Quran tutor rematch?<span>+</span></summary>
+            <p>About 2–4 consistent lessons for ordinary rapport and pace issues, unless safety, disrespect, or clear chronic mismatch appears sooner.</p>
+          </details>
+          <details class="faq-acc"><summary>What are fair rematch reasons vs impatience?<span>+</span></summary>
+            <p>Fair reasons include unchanged wrong pace after feedback, unusable language fit, fear (not ordinary nerves), reliability problems, or goal mismatch. Impatience looks like one tired lesson or cousin-comparison pressure.</p>
+          </details>
+          <details class="faq-acc"><summary>Will my child lose progress if the online Quran tutor changes?<span>+</span></summary>
+            <p>Not if you hand over notes and allow a short placement listen. Skills live with the learner; the new tutor needs an accurate starting point.</p>
+          </details>
+          <details class="faq-acc"><summary>How do I request a rematch without burning bridges?<span>+</span></summary>
+            <p>Use calm, dated observations, state the fit you need, ask about paid-session handling under published policy, and avoid personal attacks. Fit language is enough.</p>
+          </details>
+          <p>A rematch is quality control, not disloyalty. Fair patience, clear notes, and safety-first decisions keep Quran class a place your child will still enter willingly.</p>`,
+  },
 };
+
