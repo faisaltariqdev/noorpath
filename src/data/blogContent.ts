@@ -32,6 +32,7 @@ const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; co
   @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } .letter-grid { grid-template-columns: repeat(3, 1fr); } }`;
 
 import { highTrafficBlogContent } from "./blogContentHighTraffic";
+import { highTrafficRefreshBlogContent } from "./blogContentHighTrafficRefresh";
 import { priorityABlogContent } from "./blogContentPriorityA";
 import { parentLongTailBlogContent } from "./blogContentParentLongTail";
 import { diasporaEuropeBlogContent } from "./blogContentDiasporaEurope";
@@ -50,6 +51,7 @@ import { wazaifDemandBlogContent } from "./blogContentWazaifDemand";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
+  ...highTrafficRefreshBlogContent,
   ...priorityABlogContent,
   ...parentLongTailBlogContent,
   ...diasporaEuropeBlogContent,
