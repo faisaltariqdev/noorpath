@@ -4,10 +4,6 @@ import {
   GOOGLE_BUSINESS_URL,
   TRUSTPILOT,
 } from "@/lib/academyFacts";
-import {
-  featuredTrustpilotReviews,
-  getTrustpilotAggregateFromReviews,
-} from "@/data/trustpilotReviews";
 
 export const BASE_URL = ACADEMY_BASE_URL;
 export const ORGANIZATION_ID = `${BASE_URL}/#organization`;
@@ -15,6 +11,13 @@ export const WEBSITE_ID = `${BASE_URL}/#website`;
 
 /** Reference global org from page-level Service/Course schema */
 export const ORGANIZATION_REF = { "@id": ORGANIZATION_ID };
+
+/**
+ * Do NOT attach Review / AggregateRating to EducationalOrganization.
+ * Google treats self-serving org reviews as ineligible for Review snippet rich
+ * results, and sitewide markup floods GSC with invalid items on every URL
+ * (including blogs). Keep Trustpilot visible in the UI and linked via sameAs.
+ */
 
 const PRIORITY_COUNTRIES = [
   "United Kingdom",
@@ -75,32 +78,6 @@ export function getOrganizationJsonLd() {
           "https://www.facebook.com/noorpathquranacademy",
           "https://www.youtube.com/@NoorPath.Online",
         ],
-        aggregateRating: (() => {
-          const agg = getTrustpilotAggregateFromReviews();
-          return {
-            "@type": "AggregateRating",
-            ratingValue: String(agg.ratingValue),
-            reviewCount: agg.reviewCount,
-            bestRating: agg.bestRating,
-            worstRating: agg.worstRating,
-          };
-        })(),
-        review: featuredTrustpilotReviews.map((r) => ({
-          "@type": "Review",
-          author: {
-            "@type": "Person",
-            name: r.name,
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: r.stars,
-            bestRating: 5,
-            worstRating: 1,
-          },
-          name: r.title,
-          reviewBody: r.text,
-          itemReviewed: { "@id": ORGANIZATION_ID },
-        })),
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Online Quran & Islamic Courses",

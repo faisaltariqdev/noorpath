@@ -55,10 +55,10 @@ export const trustpilotReviews: TrustpilotReview[] = [
 export const featuredTrustpilotReviews = trustpilotReviews.slice(0, 4);
 
 /**
- * AggregateRating for schema.org MUST match the published Trustpilot profile
- * (TRUSTPILOT.score / reviewCount), not an average of featured on-site snippets.
- * Featured reviews may all be 5★ while the public Trustpilot score is lower.
- * Google requires structured data to be accurate — see Search Central structured-data guidelines.
+ * Visible Trustpilot summary for UI only.
+ * Do not emit AggregateRating/Review JSON-LD on Organization pages — Google
+ * treats self-serving org reviews as ineligible and flags them in GSC.
+ * Score/count must still match the live Trustpilot profile when shown in UI.
  */
 export function getTrustpilotAggregateFromReviews(_reviews = trustpilotReviews) {
   return {
