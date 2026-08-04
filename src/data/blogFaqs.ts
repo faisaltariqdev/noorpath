@@ -2778,6 +2778,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
           text: "Consistency beats length. A few authentic lines every day are better than a huge list abandoned after three days.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Can I combine many wazaif at once?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can, but most people fail when the list is huge. Start with one stack, stabilise it for two weeks, then add carefully.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does a missed day cancel everything?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Return without despair. Habit continuity matters more than perfection theatre.",
+        },
+      },
     ],
   },
   "adhkar-after-salah-arabic-english": {
@@ -2814,6 +2830,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Learn one line per week. Meanwhile praise Allah in words you know, and keep practising correct Arabic with a tutor if needed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I walk away and do adhkar later?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Best is immediately after salam while still in the prayer place when possible. If you must move, complete them soon after rather than abandoning them.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need a digital counter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Fingers are enough. Tools help some people; they should not become a distraction or status item.",
         },
       },
     ],
@@ -2854,6 +2886,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
           text: "You may express the meaning in any language. Learning the Arabic Quranic wording is recommended when you can.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Is Hasbunallah the same as tawakkul?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is a Quranic expression of tawakkul — trusting Allah while still using the means He made available.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I write it and keep it with me?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many people keep a note as a reminder. The point is remembrance and trust, not treating a paper as a charm that works without belief and effort.",
+        },
+      },
     ],
   },
   "la-hawla-wa-la-quwwata-illallah-meaning": {
@@ -2890,6 +2938,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Yes — short, powerful, and practical. Teach meaning first so it does not become empty sound.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is the longer form required?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The shorter form is authentic and widely used. The longer form with al-‘Aliyy al-‘Azeem is also common. Follow what your teacher teaches; do not fight over length.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I say La hawla in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You may express the meaning in any language. Learning the Arabic wording is recommended for dhikr continuity with the Ummah.",
         },
       },
     ],
@@ -2930,6 +2994,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
           text: "Delay is not rejection. Keep asking, keep means, and ask Allah for what is best in deen and dunya — not only the exact outcome you imagined.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Should I cry in dua?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Humility helps. Tears are not required for acceptance, and dry eyes do not mean rejection.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I ask for a very specific outcome?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — name it clearly — and also ask Allah to give what is better if that outcome would harm your deen or akhirah.",
+        },
+      },
     ],
   },
   "istikhara-for-marriage-step-by-step": {
@@ -2966,6 +3046,22 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Yes if needed while learning. Aim to memorise it over time with correct pronunciation — a tutor helps.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should both the man and woman pray Istikhara?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Each person who can should seek guidance for their own decision. Parents may also make dua, but your own Istikhara still matters.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I already emotionally decided?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Still pray honestly — ask Allah to facilitate if good and turn it away if harmful. Be willing to accept a closed door.",
         },
       },
     ],

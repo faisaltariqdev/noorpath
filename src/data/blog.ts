@@ -2516,11 +2516,11 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-wazifa-in-islam",
     title: "What Is Wazifa in Islam? — Authentic Daily Practice vs Fake Guarantees",
     description:
-      "What is wazifa in Islam: meaning of daily spiritual practice, authentic Quran/Sunnah wazaif, red flags for viral guaranteed formulas, and how to keep a simple routine.",
+      "What is wazifa in Islam: meaning of daily spiritual practice, authentic Quran/Sunnah wazaif, 7-day starter routine, need-by-need map, red flags for viral guaranteed formulas.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
-    readTime: "11 min",
+    readTime: "16 min",
     keywords: [
       "what is wazifa in islam",
       "wazifa meaning",
@@ -2538,11 +2538,11 @@ export const blogPosts: BlogPost[] = [
     slug: "adhkar-after-salah-arabic-english",
     title: "Adhkar After Salah — Arabic, English & Sunnah Routine",
     description:
-      "Adhkar after salah: Astaghfirullah, Allahumma anta as-salam, Subhanallah/Alhamdulillah/Allahu Akbar 33, Ayatul Kursi and Mu‘awwidhat with Arabic and English.",
+      "Adhkar after salah: Astaghfirullah, Allahumma anta as-salam, Subhanallah/Alhamdulillah/Allahu Akbar 33, La ilaha completion, Ayatul Kursi, Mu‘awwidhat, full routine card.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
-    readTime: "12 min",
+    readTime: "15 min",
     keywords: [
       "adhkar after salah",
       "zikr after namaz",
@@ -2559,11 +2559,11 @@ export const blogPosts: BlogPost[] = [
     slug: "hasbunallahu-wa-nimal-wakeel-meaning",
     title: "Hasbunallahu Wa Ni’mal Wakeel Meaning — Arabic & When to Say It",
     description:
-      "Hasbunallahu wa ni’mal wakeel meaning in English from Quran 3:173: Allah is sufficient for us and the best Disposer of affairs — when to recite and what it is not.",
+      "Hasbunallahu wa ni’mal wakeel meaning from Quran 3:173: word-by-word English, context, when to recite, hardship stack with La hawla, and what it is not.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
-    readTime: "10 min",
+    readTime: "14 min",
     keywords: [
       "hasbunallahu wa nimal wakeel meaning",
       "hasbunallah meaning",
@@ -2579,11 +2579,11 @@ export const blogPosts: BlogPost[] = [
     slug: "la-hawla-wa-la-quwwata-illallah-meaning",
     title: "La Hawla Wa La Quwwata Illallah Meaning — Treasure of Paradise",
     description:
-      "La hawla wa la quwwata illallah meaning: there is no might nor power except with Allah — Arabic, English, when to say it, and honest limits vs fake wazifa counts.",
+      "La hawla wa la quwwata illallah meaning: Arabic, longer form, word-by-word English, when to say it, daily use ideas, and honest limits vs fake wazifa counts.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
-    readTime: "10 min",
+    readTime: "14 min",
     keywords: [
       "la hawla wa la quwwata illallah meaning",
       "la hawla meaning",
@@ -2599,11 +2599,11 @@ export const blogPosts: BlogPost[] = [
     slug: "dua-for-hajat-arabic-english",
     title: "Dua for Hajat — Arabic, English & How to Ask Allah for a Need",
     description:
-      "Dua for hajat (need): Quranic and prophetic duas, adab of asking, Salat al-Hajah notes, and warnings against guaranteed viral wazaif.",
+      "Dua for hajat: Quranic and prophetic duas (2:201, Musa, Yunus), adab of asking, Salat al-Hajah notes, need map, and warnings against guaranteed viral wazaif.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
-    readTime: "12 min",
+    readTime: "16 min",
     keywords: [
       "dua for hajat",
       "dua e hajat",
@@ -2620,11 +2620,11 @@ export const blogPosts: BlogPost[] = [
     slug: "istikhara-for-marriage-step-by-step",
     title: "Istikhara for Marriage — Step-by-Step Sunnah Guide",
     description:
-      "How to do Istikhara for marriage step by step: two rak‘ahs, authentic dua with Arabic/English, naming the proposal, dreams myth, and when to repeat.",
+      "How to do Istikhara for marriage step by step: checklist, two rak‘ahs, full dua Arabic/English, naming the proposal, dreams myth, reading ease vs difficulty.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
-    readTime: "12 min",
+    readTime: "16 min",
     keywords: [
       "istikhara for marriage",
       "how to do istikhara for marriage",
