@@ -62,6 +62,12 @@ const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
   "what-breaks-wudu",
   "how-to-do-tayammum-step-by-step",
   "barakallah-meaning",
+  "what-is-wazifa-in-islam",
+  "adhkar-after-salah-arabic-english",
+  "hasbunallahu-wa-nimal-wakeel-meaning",
+  "la-hawla-wa-la-quwwata-illallah-meaning",
+  "dua-for-hajat-arabic-english",
+  "istikhara-for-marriage-step-by-step",
 ]);
 
 /** Commercial blogs that drive student enrollment */

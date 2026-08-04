@@ -2512,6 +2512,131 @@ export const blogPosts: BlogPost[] = [
       "What strong online Tajweed classes for kids look like — live listening, small goals, parent support, and an honest trial checklist.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "what-is-wazifa-in-islam",
+    title: "What Is Wazifa in Islam? — Authentic Daily Practice vs Fake Guarantees",
+    description:
+      "What is wazifa in Islam: meaning of daily spiritual practice, authentic Quran/Sunnah wazaif, red flags for viral guaranteed formulas, and how to keep a simple routine.",
+    category: "Dhikr & Duas",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    readTime: "11 min",
+    keywords: [
+      "what is wazifa in islam",
+      "wazifa meaning",
+      "wazifa in islam",
+      "authentic wazifa",
+      "daily wazifa",
+      "islamic wazifa",
+      "best wazifa in islam",
+    ],
+    excerpt:
+      "A clear guide to wazifa in Islam — authentic adhkar and dua versus invented guaranteed formulas, with a simple daily practice plan.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "adhkar-after-salah-arabic-english",
+    title: "Adhkar After Salah — Arabic, English & Sunnah Routine",
+    description:
+      "Adhkar after salah: Astaghfirullah, Allahumma anta as-salam, Subhanallah/Alhamdulillah/Allahu Akbar 33, Ayatul Kursi and Mu‘awwidhat with Arabic and English.",
+    category: "Dhikr & Duas",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    readTime: "12 min",
+    keywords: [
+      "adhkar after salah",
+      "zikr after namaz",
+      "what to recite after salah",
+      "tasbih after prayer",
+      "subhanallah 33 after salah",
+      "dua after salah arabic english",
+    ],
+    excerpt:
+      "Complete Sunnah-style adhkar after salah with Arabic, transliteration and English — a short routine you can keep every prayer.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "hasbunallahu-wa-nimal-wakeel-meaning",
+    title: "Hasbunallahu Wa Ni’mal Wakeel Meaning — Arabic & When to Say It",
+    description:
+      "Hasbunallahu wa ni’mal wakeel meaning in English from Quran 3:173: Allah is sufficient for us and the best Disposer of affairs — when to recite and what it is not.",
+    category: "Dhikr & Duas",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    readTime: "10 min",
+    keywords: [
+      "hasbunallahu wa nimal wakeel meaning",
+      "hasbunallah meaning",
+      "hasbunallahu wa nimal wakeel",
+      "hasbunallah wa nimal wakeel in english",
+      "hasbunallah arabic",
+    ],
+    excerpt:
+      "Meaning of Hasbunallahu wa ni’mal wakeel with Arabic and English — Quranic trust for hardship, without superstition.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "la-hawla-wa-la-quwwata-illallah-meaning",
+    title: "La Hawla Wa La Quwwata Illallah Meaning — Treasure of Paradise",
+    description:
+      "La hawla wa la quwwata illallah meaning: there is no might nor power except with Allah — Arabic, English, when to say it, and honest limits vs fake wazifa counts.",
+    category: "Dhikr & Duas",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    readTime: "10 min",
+    keywords: [
+      "la hawla wa la quwwata illallah meaning",
+      "la hawla meaning",
+      "la hawla wa la quwwata illallah",
+      "la hawla illallah meaning in english",
+      "la hawla wa la quwwata arabic",
+    ],
+    excerpt:
+      "What La hawla wa la quwwata illallah means, why it is called a treasure of Paradise, and when to recite it in daily life.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "dua-for-hajat-arabic-english",
+    title: "Dua for Hajat — Arabic, English & How to Ask Allah for a Need",
+    description:
+      "Dua for hajat (need): Quranic and prophetic duas, adab of asking, Salat al-Hajah notes, and warnings against guaranteed viral wazaif.",
+    category: "Dhikr & Duas",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    readTime: "12 min",
+    keywords: [
+      "dua for hajat",
+      "dua e hajat",
+      "dua for need islam",
+      "salat al hajah",
+      "dua for hajat arabic",
+      "powerful dua for hajat",
+    ],
+    excerpt:
+      "Authentic ways to make dua for a need (hajat) with Arabic and English — plus honest guidance on Salat al-Hajah and fake wazaif.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "istikhara-for-marriage-step-by-step",
+    title: "Istikhara for Marriage — Step-by-Step Sunnah Guide",
+    description:
+      "How to do Istikhara for marriage step by step: two rak‘ahs, authentic dua with Arabic/English, naming the proposal, dreams myth, and when to repeat.",
+    category: "Dhikr & Duas",
+    date: "2026-08-04",
+    updatedAt: "2026-08-04",
+    readTime: "12 min",
+    keywords: [
+      "istikhara for marriage",
+      "how to do istikhara for marriage",
+      "istikhara dua for marriage",
+      "salatul istikhara marriage",
+      "istikhara for marriage step by step",
+      "istikhara namaz for marriage",
+    ],
+    excerpt:
+      "A clear Sunnah guide to Istikhara for marriage — steps, dua text, and what guidance really looks like without dream superstition.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

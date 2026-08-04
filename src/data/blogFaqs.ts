@@ -2742,6 +2742,234 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "what-is-wazifa-in-islam": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is wazifa allowed in Islam?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Consistent dhikr and dua from Quran and Sunnah are encouraged. Invented formulas with guaranteed outcomes are not a substitute for authentic worship.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the best wazifa for rizq?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Stick to authentic rizq duas, gratitude, charity when able, and lawful work. There is no secret paid shortcut.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I make a wazifa in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — ask Allah in any language. Learning Arabic prophetic wording is rewarding when taught correctly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long should a wazifa be?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Consistency beats length. A few authentic lines every day are better than a huge list abandoned after three days.",
+        },
+      },
+    ],
+  },
+  "adhkar-after-salah-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What should I recite after salah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A practical Sunnah set is istighfar thrice, Allahumma anta as-salam, Subhanallah/Alhamdulillah/Allahu Akbar 33 each, plus Ayatul Kursi and the Mu‘awwidhat when you can.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is 33 times required exactly?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Thirty-three is the famous count in authentic reports for these phrases after salah. Follow the wording your teacher uses; sincerity is the goal.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can women recite the same adhkar after salah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — these remembrances are for every Muslim who prays.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I forget the Arabic?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Learn one line per week. Meanwhile praise Allah in words you know, and keep practising correct Arabic with a tutor if needed.",
+        },
+      },
+    ],
+  },
+  "hasbunallahu-wa-nimal-wakeel-meaning": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does Hasbunallahu wa nimal wakeel mean?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It means Allah is enough for us, and He is the best One to entrust our affairs to.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Hasbunallah in the Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — Surah Aal Imran 3:173.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many times should I recite it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no required viral number. Recite with presence whenever fear rises; consistency and meaning matter more than invented counts.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I say it in English only?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You may express the meaning in any language. Learning the Arabic Quranic wording is recommended when you can.",
+        },
+      },
+    ],
+  },
+  "la-hawla-wa-la-quwwata-illallah-meaning": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does La hawla wa la quwwata illallah mean?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no might nor power except with Allah — no real ability to change affairs except by His help.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is La hawla a dua or dhikr?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is dhikr (remembrance) taught in the Sunnah, often used inside duas and daily routines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When did the Prophet ﷺ recommend it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Authentic reports describe it as a treasure from the treasures of Paradise; it is also part of well-known leaving-home remembrance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can children learn it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — short, powerful, and practical. Teach meaning first so it does not become empty sound.",
+        },
+      },
+    ],
+  },
+  "dua-for-hajat-arabic-english": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best dua for hajat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no single best for every need. Strong options include Quran 2:201, the dua for ease (20:25–26), and sincere personal dua after salawat — plus istikhara when choosing between paths.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is Salat al-Hajah?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It refers to voluntary prayer offered when one has a need. Details of method vary by school and narration strength — ask a qualified local scholar for the practice you follow.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I make dua for hajat in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Allah hears every language. Learn Arabic duas gradually with correct pronunciation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why is my dua not answered yet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Delay is not rejection. Keep asking, keep means, and ask Allah for what is best in deen and dunya — not only the exact outcome you imagined.",
+        },
+      },
+    ],
+  },
+  "istikhara-for-marriage-step-by-step": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How do I do Istikhara for marriage step by step?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Wudu, two rak‘ahs nafl, salawat, recite the Istikhara dua naming the proposal, then proceed with trust while watching what Allah makes easy or difficult.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can someone else pray Istikhara for me?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You should pray for yourself when able. Others may make dua for you, but outsourcing paid istikhara answers is not a substitute for your own Sunnah prayer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my family pressure conflicts with my Istikhara feeling?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Combine Istikhara with istishara (trusted advice), deen-first criteria, and calm timing. Do not treat a mood swing after one night as a fatwa.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I read Istikhara dua from my phone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes if needed while learning. Aim to memorise it over time with correct pronunciation — a tutor helps.",
+        },
+      },
+    ],
+  },
 };
 
 // These older commercial FAQ extracts contain timeframes, availability,
