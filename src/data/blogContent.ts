@@ -47,6 +47,7 @@ import { familyOpsBlogContent } from "./blogContentFamilyOps";
 import { gulfParentBlogContent } from "./blogContentGulfParents";
 import { highDemandPracticeBlogContent } from "./blogContentHighDemandPractice";
 import { commercialDemandBlogContent } from "./blogContentCommercialDemand";
+import { problemSolvingLeadsBlogContent } from "./blogContentProblemSolvingLeads";
 import { wazaifDemandBlogContent } from "./blogContentWazaifDemand";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
@@ -66,6 +67,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...gulfParentBlogContent,
   ...highDemandPracticeBlogContent,
   ...commercialDemandBlogContent,
+  ...problemSolvingLeadsBlogContent,
   ...wazaifDemandBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,

@@ -2637,6 +2637,132 @@ export const blogPosts: BlogPost[] = [
       "A clear Sunnah guide to Istikhara for marriage — steps, dua text, and what guidance really looks like without dream superstition.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "child-forgets-quran-between-classes",
+    title: "Child Forgets Quran Between Classes — Fix Retention",
+    description:
+      "Child forgets Quran between classes? Diagnose overnight Qaida loss, build a 5-minute echo system, and know when to adjust class frequency — honest parent guide.",
+    category: "Online Quran Classes",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    readTime: "15 min",
+    keywords: [
+      "child forgets quran between classes",
+      "quran retention between lessons",
+      "child forgets qaida overnight",
+      "quran memory between classes",
+      "child forgets quran lesson",
+      "qaida retention kids",
+    ],
+    excerpt:
+      "When your child forgets Quran between classes, the fix is usually spaced echo — not longer fights. Diagnosis table, micro-review steps, and when to adjust tutor frequency.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-homework-kids-wont-practice",
+    title: "Quran Homework Kids Won't Do — Calm Practice Plan",
+    description:
+      "Quran homework kids won't do? Diagnose refusal vs overload, shrink tasks to five minutes, fix timing, and know when a patient online tutor helps — no shame tactics.",
+    category: "Online Quran Classes",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    readTime: "15 min",
+    keywords: [
+      "quran homework kids won't do",
+      "child refuses quran practice",
+      "how to get kids to practise quran at home",
+      "quran practice refusal",
+      "kids won't do quran homework",
+      "child won't practice quran",
+    ],
+    excerpt:
+      "If your child refuses Quran practice, shrink homework, fix timing, and ask the tutor for a clear echo script — a calm plan without evening battles.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-to-know-if-online-quran-tutor-is-good",
+    title: "How to Know If Your Online Quran Tutor Is Good",
+    description:
+      "How to know if your Quran tutor is good: lesson checklist, 4–8 week signs, home echo test, red flags, and when to rematch — evaluation during lessons, not just hiring.",
+    category: "Online Quran Classes",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    readTime: "14 min",
+    keywords: [
+      "how to know if quran tutor is good",
+      "signs of good online quran teacher",
+      "is my quran tutor effective",
+      "evaluate online quran tutor",
+      "good quran teacher signs",
+      "quran tutor quality checklist",
+    ],
+    excerpt:
+      "Choosing a tutor is step one — evaluating effectiveness is step two. Use this during-lesson checklist and 4–8 week carry-over test to know if your online Quran tutor is good.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "adult-embarrassed-to-learn-quran-beginner",
+    title: "Embarrassed to Learn Quran as an Adult? Start Here",
+    description:
+      "Embarrassed to learn Quran as an adult? Private one-to-one online lessons, shame diagnosis, dignified first steps, and a no-judgment trial — never too late to start.",
+    category: "Online Quran Classes",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    readTime: "14 min",
+    keywords: [
+      "embarrassed to learn quran as adult",
+      "adult beginner quran shame",
+      "learn quran adult never started",
+      "ashamed to learn quran",
+      "adult quran beginner embarrassed",
+      "learn quran privately as adult",
+    ],
+    excerpt:
+      "Adult beginner Quran shame is common — and beatable with private online lessons. Diagnose the barrier, take dignified first steps, and start without a classroom audience.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-trial-what-to-expect",
+    title: "Online Quran Trial: What to Expect (Honest Guide)",
+    description:
+      "What to expect in an online Quran trial: minute-by-minute walkthrough, prep checklist, parent vs adult differences, red flags, and honest next steps — no credit card.",
+    category: "Online Quran Classes",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    readTime: "14 min",
+    keywords: [
+      "what to expect in online quran trial",
+      "free quran trial class what happens",
+      "online quran demo lesson",
+      "quran trial class guide",
+      "free quran class trial",
+      "online quran lesson trial",
+    ],
+    excerpt:
+      "An honest walkthrough of a free online Quran trial — what happens minute by minute, how to prepare, and red flags so you can test tutor fit without sales pressure.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "how-long-until-child-reads-quran",
+    title: "How Long Until a Child Can Read Quran?",
+    description:
+      "How long until a child can read Quran? Honest Qaida-to-Quran ranges by age and starting point — no fixed promises — plus milestones, home habits, and placement trial.",
+    category: "Online Quran Classes",
+    date: "2026-08-05",
+    updatedAt: "2026-08-05",
+    readTime: "16 min",
+    keywords: [
+      "how long until child can read quran",
+      "how long for kids to learn quran reading",
+      "qaida to quran how long",
+      "how long to learn quran reading kids",
+      "child quran reading timeline",
+      "qaida to quran timeline",
+    ],
+    excerpt:
+      "Honest ranges for how long kids take from Qaida to Quran reading — what speeds or slows progress, milestones to hear, and why placement beats cousin comparisons.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

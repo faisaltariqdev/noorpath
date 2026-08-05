@@ -2742,6 +2742,330 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
+  "child-forgets-quran-between-classes": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is it normal for a child to forget Qaida overnight?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes for beginners. Arabic decoding is new muscle memory. Same-day and next-morning micro-reviews usually fix this within a few weeks when done consistently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long should home echo be?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Five to ten minutes for most young learners. Stop before frustration. Two short sessions beat one long fight.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we pause classes until memory improves?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually no — pause only if every session becomes traumatic. Instead shorten home echo, increase live frequency if affordable, and fix tutor homework clarity.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does more class time guarantee retention?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No guarantee. Retention needs spaced review between classes. Intensive plans help only when daily echo already exists.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if we only have classes once a week?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Once-weekly can work for stable readers. Fragile Qaida stages often forget without a mid-week echo — parent-led or a second short live touchpoint.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When is forgetting a sign to change tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When there is no homework system, no progress notes, and the same lesson repeats monthly despite home echo. A fair rematch after 4–6 weeks is reasonable.",
+        },
+      },
+    ],
+  },
+  "quran-homework-kids-wont-practice": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should I force my child to do Quran homework?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Consistent gentle structure yes; forceful shame no. Short daily presence beats occasional forced marathons that teach hatred of the mushaf.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much Quran homework is enough for a 7-year-old?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often five to eight minutes of echo on the tutor’s assigned lines. Increase only when the child initiates or completes calmly for two weeks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child only listens to the tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Normal at early stages. Ask the tutor for a one-line parent script. Your job is to hold space and listen — not replicate full instruction.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are apps enough instead of homework?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apps can supplement letter play but rarely replace live correction. Live one-to-one tutoring remains the standard for sound accuracy.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When should we take a break from practice?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "One to two weeks after a harsh incident, replacing practice with listening to short surahs. Then restart with three-minute sessions.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does paying more fix refusal?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not automatically. Intensive plans increase live time but can overwhelm a refusing child. Match plan to attention and habit first.",
+        },
+      },
+    ],
+  },
+  "how-to-know-if-online-quran-tutor-is-good": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How many lessons before I can judge a tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Lesson 1 shows rapport and structure. By lessons 4–8 you should see homework clarity and some carry-over. Major judgments before three sessions are often premature.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child likes the tutor but does not progress?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Warmth matters but is not enough. Ask the tutor for a written four-week target. If targets are missed with compliant echo, discuss method change or rematch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is my child the problem if progress is slow?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes pace is age-appropriate. Slow progress plus chaos, no homework system, or harsh correction usually points to tutor-process issues first.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I sit in every online lesson?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Many parents observe early weeks for safeguarding and quality, then fade to earshot. Young children often need a nearby adult for tech and comfort.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a good tutor fix refusal to practice?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often partially — by shortening tasks and rebuilding trust. Combine tutor adjustments with a calm home practice plan.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do reviews prove tutor quality?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Public reviews help at academy level but do not replace observing your child’s sessions. Evaluate carry-over and correction quality in live lessons.",
+        },
+      },
+    ],
+  },
+  "adult-embarrassed-to-learn-quran-beginner": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is it shameful to learn Quran as an adult?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No — seeking Quran literacy is worship and courage. Many adults start privately after years of avoidance; online one-to-one removes the audience that triggers shame.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I learn without anyone in my family knowing?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Online lessons from home are discreet. You may later choose to share progress when confidence grows.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I join a group class to get over embarrassment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Only if you want that exposure. Many ashamed beginners need private wins first; group can come later.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I cry in the first lesson?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Adult tutors often see this. A good teacher slows down, normalises the feeling, and focuses on one letter — not performance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long until adults read Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ranges vary by starting point and practice — weeks to many months. No honest academy promises a fixed date.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I request a female tutor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — preference is noted at booking and confirmed when a matching tutor is available.",
+        },
+      },
+    ],
+  },
+  "online-quran-trial-what-to-expect": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is the online Quran trial really free?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NoorPath’s trial is 30 minutes at $0 with no credit card required. Other academies vary — always read their checkout terms.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need a credit card for the demo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not for NoorPath. No card is required for the trial.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will the same tutor continue after the trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ideally yes if you enrol and availability aligns. Confirm during booking; rematch is possible if fit is wrong.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can siblings share one trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Each learner needs placement. Sibling discounts apply on paid plans when multiple children enrol.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if my child will not talk in the trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Normal for shy kids. A patient tutor uses listening tasks and short wins rather than forcing speech.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How soon can regular classes start?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often within days once tutor availability is confirmed after your request and you choose a plan.",
+        },
+      },
+    ],
+  },
+  "how-long-until-child-reads-quran": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long until a 6-year-old can read Quran?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Often longer than older beginners because sessions stay short. Many need well over a year from zero Arabic — focus on letter mastery, not cousin timelines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is my child slow if Qaida takes a year?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not necessarily. Solid Qaida prevents painful re-learning later. Pace varies by age, frequency, and home echo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does twice-weekly classes speed reading?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Usually yes versus once-weekly with no echo, because retrieval gaps shrink. Match frequency to attention and budget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When can we start short surahs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When the tutor confirms stable joining of letters and basic stops — not when parents feel social pressure at gatherings.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do Arabic-speaking parents shorten the timeline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sometimes for vocabulary, but Quranic reading still needs Tajweed and mus-haf skills. Non-Arabic-speaking parents succeed with consistent echo too.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should we rush before Ramadan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Build sustainable pace instead of cramming. Ramadan can motivate extra listening without toxic speed promises.",
+        },
+      },
+    ],
+  },
   "what-is-wazifa-in-islam": {
     "@context": "https://schema.org",
     "@type": "FAQPage",

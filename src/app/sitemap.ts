@@ -111,6 +111,12 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "after-school-quran-classes-for-gulf-families",
   "how-to-start-hifz-for-kids",
   "online-tajweed-classes-for-kids",
+  "child-forgets-quran-between-classes",
+  "quran-homework-kids-wont-practice",
+  "how-to-know-if-online-quran-tutor-is-good",
+  "adult-embarrassed-to-learn-quran-beginner",
+  "online-quran-trial-what-to-expect",
+  "how-long-until-child-reads-quran",
 ]);
 const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)
