@@ -400,6 +400,23 @@ export default function NooraniQaidaHubPage() {
             </div>
           </section>
 
+          <section className="qaida-section" aria-labelledby="live-qaida-locations-heading">
+            <span className="qaida-eyebrow">Live lessons</span>
+            <h2 id="live-qaida-locations-heading">Ready for live Noorani Qaida with a tutor?</h2>
+            <p>
+              Free tools on this hub help with recognition between lessons. When you want a teacher to correct
+              sounds live, request{" "}
+              <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                Qaida lessons with UK schedule matching
+              </Link>{" "}
+              or{" "}
+              <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                Noorani Qaida online for USA families
+              </Link>
+              . Availability is confirmed after your trial request.
+            </p>
+          </section>
+
           <QaidaCourseCta />
         </div>
       </div>

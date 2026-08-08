@@ -507,6 +507,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           <details class="faq-acc"><summary>Is Barakallah in the Quran?<span>+</span></summary>
             <p>The root of barakah and related blessing language appears throughout Quran and Sunnah. The everyday phrase forms are widely used Islamic speech taught from prophetic manners and Arabic usage.</p>
           </details>
+          <p>If your family wants structured live tutoring after learning everyday phrases, you can request <a href="/locations/online-quran-classes-uk">live online Quran classes for families in the UK</a> or explore <a href="/locations/online-quran-classes-usa">online Quran classes for households in the USA</a> — timezone matching is confirmed after your trial request.</p>
           <p>Barakallah is a small sentence with a large heart: asking Allah to put growth, good, and permanence in what we love for others — and for ourselves.</p>`,
   },
 };

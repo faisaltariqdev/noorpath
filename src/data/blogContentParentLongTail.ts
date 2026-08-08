@@ -101,7 +101,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
           <div class="gold-box">
             <p><strong>Want a personalised timeline?</strong> Book a free 30-minute trial. The tutor listens to your child, places them on the right Qaida stage, and estimates a realistic months range — no credit card required.</p>
-            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/noorani-qaida/games">Free Qaida games</a> · <a href="/courses/noorani-qaida-online">Noorani Qaida course</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a></p>
+            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/noorani-qaida/games">Free Qaida games</a> · <a href="/courses/noorani-qaida-online">Noorani Qaida course</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a> · <a href="/locations/online-quran-classes-uk">online Qaida classes for UK families</a></p>
           </div>
 
           <h2 id="faq">FAQs — how long Noorani Qaida takes</h2>

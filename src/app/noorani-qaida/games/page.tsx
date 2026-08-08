@@ -264,6 +264,11 @@ export default function NooraniQaidaGamesHubPage() {
               { href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Start with Alif", description: "Open the first letter reference page." },
               { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Fatha lesson", description: "Review the first short vowel before the harakat quiz." },
               { href: "/courses/noorani-qaida-online", label: "Live Noorani Qaida classes", description: "Book one-to-one lessons with tutor matching." },
+              {
+                href: "/locations/online-quran-classes-uk",
+                label: "Live Qaida classes for UK families",
+                description: "After free practice games, request UK timezone tutor matching.",
+              },
             ]}
           />
 

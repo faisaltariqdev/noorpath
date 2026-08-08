@@ -311,6 +311,31 @@ export default function QuranTeacherOnlinePage() {
 
       <OnlineQuranTeacherGuide />
 
+      <section style={{ padding: "56px 0", background: "var(--ivory)", borderTop: "1px solid var(--border)" }}>
+        <div className="max-w-[800px] mx-auto px-4">
+          <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.5rem,2.5vw,1.9rem)", color: "var(--charcoal)", marginBottom: 12 }}>
+            Request a teacher by country schedule
+          </h2>
+          <p style={{ color: "var(--muted)", fontSize: ".92rem", lineHeight: 1.75, marginBottom: 18 }}>
+            Tutor matching considers your timezone and preferred lesson windows. Start from a country hub if you already know where the learner is based:
+          </p>
+          <ul style={{ margin: 0, paddingLeft: 18, color: "var(--charcoal)", fontSize: ".92rem", lineHeight: 1.9 }}>
+            <li>
+              <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Find an online Quran teacher for the UK
+              </Link>
+              {" "}— GMT/BST preferences noted in your request
+            </li>
+            <li>
+              <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Request a USA-timezone Quran tutor
+              </Link>
+              {" "}— share ET, CT, MT or PT when you book the trial
+            </li>
+          </ul>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ padding: "72px 0" }}>
         <div className="max-w-[800px] mx-auto px-4">
