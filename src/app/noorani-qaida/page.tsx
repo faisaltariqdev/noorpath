@@ -408,10 +408,14 @@ export default function NooraniQaidaHubPage() {
               sounds live, request{" "}
               <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 650 }}>
                 Qaida lessons with UK schedule matching
-              </Link>{" "}
-              or{" "}
+              </Link>
+              ,{" "}
               <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 650 }}>
                 Noorani Qaida online for USA families
+              </Link>
+              , or{" "}
+              <Link href="/locations/online-quran-classes-new-zealand" style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                live Qaida with New Zealand timezone matching
               </Link>
               . Availability is confirmed after your trial request.
             </p>

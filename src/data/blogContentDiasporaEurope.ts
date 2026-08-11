@@ -120,7 +120,7 @@ export const diasporaEuropeBlogContent: Record<string, { style: string; content:
           </ul>
 
           <h2 id="cet-rhythm">Using CET/CEST as a family rhythm</h2>
-          <p>Central European time gives a shared evening band for much of mainland Europe. That helps multi-country families and online tutors align, but daylight-saving still shifts the feel of the evening. Confirm whether your lesson stays fixed on the local clock when clocks change.</p>
+          <p>Central European time gives a shared evening band for much of mainland Europe. That helps multi-country families and online tutors align, but daylight-saving still shifts the feel of the evening. Confirm whether your lesson stays fixed on the local clock when clocks change. Families in <a href="/locations/online-quran-classes-france">France</a> can check the same CET/CEST evening logic on the country page before requesting a slot.</p>
           <p>A simple rule: book in your local time, ask for confirmation in writing, and avoid converting once and forgetting seasonal changes.</p>
 
           <h2 id="homework-first-or-quran-first">Homework first or Quran first?</h2>
@@ -263,7 +263,7 @@ export const diasporaEuropeBlogContent: Record<string, { style: string; content:
             <tr><td>France, Netherlands, Germany, Sweden (CET/CEST)</td><td>Often ~4 PM–10 PM local</td><td>Clubs, homework intensity, CEST changes</td></tr>
             <tr><td>Families split across UK &amp; EU</td><td>Overlapping early evenings</td><td>Relative visits and dual calendars</td></tr>
           </table>
-          <p>Browse country guides and hubs under <a href="/locations">/locations</a> to see how NoorPath frames local scheduling for each market, then send your real constraints in the enquiry.</p>
+          <p>Browse country guides and hubs under <a href="/locations">/locations</a> to see how NoorPath frames local scheduling for each market, then send your real constraints in the enquiry. On the CET/CEST side that usually means <a href="/locations/online-quran-classes-netherlands">online Quran classes in the Netherlands</a>, <a href="/locations/online-quran-classes-germany">Germany</a> or <a href="/locations/online-quran-classes-sweden">Sweden</a> — each page describes the local evening shape and timezone, not a physical centre.</p>
 
           <h2 id="what-to-send">What to send when you request a tutor</h2>
           <ul>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Clock, Search, X } from "lucide-react";
@@ -35,17 +35,24 @@ const CATEGORIES = [
   "Hifz & Memorization", "Prayer & Worship", "Kids & Parenting",
 ];
 
-export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
-  return (
-    <Suspense fallback={null}>
-      <BlogSearchListInner posts={posts} />
-    </Suspense>
-  );
+/**
+ * Reading `?q=` opts a subtree out of prerendering. It is isolated in its own
+ * Suspense boundary so the article grid stays in the statically rendered HTML
+ * and every post link remains crawlable without JavaScript.
+ */
+function QueryParamSync({ onQuery }: { onQuery: (value: string) => void }) {
+  const searchParams = useSearchParams();
+  const q = searchParams.get("q") ?? "";
+
+  useEffect(() => {
+    if (q) onQuery(q);
+  }, [q, onQuery]);
+
+  return null;
 }
 
-function BlogSearchListInner({ posts }: { posts: BlogListItem[] }) {
-  const searchParams = useSearchParams();
-  const [query, setQuery] = useState(searchParams.get("q") ?? "");
+export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
+  const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
 
   const filtered = useMemo(() => {
@@ -64,6 +71,10 @@ function BlogSearchListInner({ posts }: { posts: BlogListItem[] }) {
 
   return (
     <>
+      <Suspense fallback={null}>
+        <QueryParamSync onQuery={setQuery} />
+      </Suspense>
+
       {/* Search + category bar */}
       <div style={{ background: "#fff", borderBottom: "1px solid var(--border)", padding: "16px 0", position: "sticky", top: 0, zIndex: 50 }}>
         <div className="max-w-[1200px] mx-auto px-4">

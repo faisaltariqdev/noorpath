@@ -47,7 +47,7 @@ export function getOrganizationJsonLd() {
         "@type": "EducationalOrganization",
         "@id": ORGANIZATION_ID,
         name: "NoorPath Academy",
-        alternateName: "NoorPath Online Quran Academy",
+        alternateName: ["NoorPath", "NoorPath Online Quran Academy"],
         url: BASE_URL,
         logo: {
           "@type": "ImageObject",
@@ -59,7 +59,22 @@ export function getOrganizationJsonLd() {
         email: CONTACT.email,
         telephone: CONTACT.phoneE164,
         description:
-          "NoorPath Academy offers live one-to-one online Quran classes for children and adults, including Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
+          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
+        knowsAbout: [
+          "Online Quran learning",
+          "Online Quran classes",
+          "Quran classes for kids",
+          "Quran classes for adults",
+          "Quran for beginners",
+          "Noorani Qaida",
+          "Tajweed",
+          "Hifz",
+          "Quran memorization",
+          "Online Quran teacher",
+          "Female Quran teacher",
+          "Islamic studies online",
+          "Arabic language online",
+        ],
         areaServed: PRIORITY_COUNTRIES.map((name) => ({
           "@type": "Country",
           name,
@@ -82,6 +97,17 @@ export function getOrganizationJsonLd() {
           "@type": "OfferCatalog",
           name: "Online Quran & Islamic Courses",
           itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Course",
+                name: "Online Quran Classes",
+                description: "Live one-to-one online Quran classes for children and adults.",
+                provider: { "@id": ORGANIZATION_ID },
+                url: `${BASE_URL}/online-quran-classes`,
+                courseMode: "online",
+              },
+            },
             {
               "@type": "Offer",
               itemOffered: {
@@ -177,8 +203,12 @@ export function getOrganizationJsonLd() {
         "@type": "WebSite",
         "@id": WEBSITE_ID,
         url: BASE_URL,
-        name: "NoorPath Academy",
+        name: "NoorPath",
+        alternateName: ["NoorPath Academy", "NoorPath Online Quran Academy"],
+        description:
+          "Official website of NoorPath Online Quran Academy — live one-to-one online Quran learning and Quran classes.",
         publisher: { "@id": ORGANIZATION_ID },
+        about: { "@id": ORGANIZATION_ID },
         potentialAction: {
           "@type": "SearchAction",
           target: {

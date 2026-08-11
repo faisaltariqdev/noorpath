@@ -100,6 +100,12 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           <h2 id="kids">Teach kids a short rizq dua</h2>
           <p>Children can learn the morning dua in small pieces with correct Arabic sounds. Parents who do not speak Arabic can still protect a routine — see <a href="/blog/parents-dont-speak-arabic-child-learn-quran">parents don’t speak Arabic</a> and <a href="/blog/duas-for-kids-to-memorize">duas for kids to memorize</a>.</p>
 
+          <h2 id="urdu-search">Why people search “rizq ki dua”</h2>
+          <p><em>Rizq ki dua</em> is simply Urdu for “dua for provision.” The need is the same whether someone types English or mixed Urdu-English. Stick to Quranic and prophetic wordings rather than viral “guaranteed money” posts that invent rewards.</p>
+
+          <h2 id="barakah">Rizq is not only a salary</h2>
+          <p>Lawful work, a calm home, useful knowledge, and accepted worship are all part of provision. That is why the morning dua asks for beneficial knowledge and accepted deeds beside good rizq — so the heart does not chase income while neglecting everything that makes income worth having.</p>
+
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>What is the best dua for rizq in Islam?<span>+</span></summary>
             <p>A strong prophetic choice is Allahumma inni as’aluka ‘ilman nafi‘an, wa rizqan tayyiban, wa ‘amalan mutaqabbalan. Pair it with Quran 2:201 and lawful effort.</p>

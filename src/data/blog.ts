@@ -99,8 +99,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "rabbana-atina-fid-dunya",
-    title: "Rabbana Atina Fid Dunya — Arabic, English Meaning & Benefits (2:201)",
-    description: "Rabbana atina fid-dunya hasanatan (Quran 2:201) — full Arabic, transliteration, word-by-word English meaning, benefits, when to recite, and why it is one of the most powerful comprehensive duas in the Quran.",
+    title: "Rabbana Atina Fid Dunya (2:201) — Full Arabic, English & Meaning",
+    description: "Quran 2:201 Rabbana Atina Fid Dunya — Arabic, transliteration, English meaning, word-by-word explanation, and when to recite this dua.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -1103,9 +1103,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attahiyat-full-arabic-english-tashahhud",
-    title: "Attahiyat Full — Arabic Text, English Meaning & How to Recite Tashahhud",
+    title: "Attahiyat Full Arabic Text & English — How to Recite Tashahhud",
     description:
-      "Attahiyat (Tashahhud) full text in Arabic with transliteration and English meaning — the beautiful story behind it, when to recite it in salah, common mistakes, and easy tips to memorize it correctly.",
+      "Full Attahiyat (Tashahhud) in Arabic with transliteration and English meaning — when to recite it in salah and a simple way to memorise it.",
     category: "Prayer & Worship",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1765,9 +1765,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "sajdah-tilawat-dua-arabic-english",
-    title: "Sajdah Tilawat Dua — Arabic, Transliteration, Meaning",
+    title: "Sajdah Tilawat Dua — Full Arabic, English & How to Perform",
     description:
-      "Sajdah tilawat dua in Arabic with transliteration and English meaning — when sajdah of recitation is made, how to perform it, and how to memorise the dua.",
+      "Sajdah Tilawat (Tilawah) dua in Arabic with transliteration and English meaning — when it is required and how to perform the prostration of recitation.",
     category: "Dhikr & Duas",
     date: "2026-07-27",
     updatedAt: "2026-07-27",
@@ -2451,9 +2451,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallah Meaning — Arabic, English & How to Reply",
+    title: "Barakallah Meaning in English — How to Reply (Barakallahu Feek)",
     description:
-      "Barakallah meaning in English: May Allah bless, common forms (Barakallahu feek), vs Mashallah and Jazakallah, when to say it, and how to reply.",
+      "Barakallah means “May Allah bless you.” Learn Barakallahu feek, its Arabic forms, difference from Mashallah, and common replies with examples.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
     updatedAt: "2026-08-03",

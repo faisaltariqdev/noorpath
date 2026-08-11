@@ -136,13 +136,13 @@ export const countryGuidesFranceNetherlandsSweden: Record<string, CountryGuideCo
     title: "Online Quran Classes in the Netherlands: Family Planning Guide",
     description:
       "How Dutch Muslim families can plan live online Quran lessons around school, CET evenings, USD/€ costs, tutor trust and Noorani Qaida pathways.",
-    reviewedDate: "19 July 2026",
+    reviewedDate: "11 August 2026",
     sections: [
       {
         id: "netherlands-fit",
         heading: "Are online Quran classes a good fit for families in the Netherlands?",
         directAnswer:
-          "They can be a strong fit for Turkish, Moroccan, Surinamese and other Muslim households in Amsterdam, Rotterdam, The Hague, Utrecht and beyond who want structured one-to-one Quran learning without another weekly commute — provided English (or Arabic) instruction matches the learner and a CET slot is confirmed.",
+          "They can be a strong fit for Turkish, Moroccan, Surinamese and other Muslim households in Amsterdam, Rotterdam, The Hague, Utrecht and beyond who want structured one-to-one Quran learning without another weekly commute — provided English (or Arabic) instruction matches the learner and a CET slot is confirmed. NoorPath is online only: no Dutch branch or home visits.",
         paragraphs: [
           "Dutch school days, club activities and travel across cities already fill the week. Online lessons keep Islamic learning consistent while parents supervise from home. The format is especially useful for families outside large mosque programmes or those who want private pacing for a shy or beginner child.",
           "Suitability is individual. A complete beginner needs Qaida foundations; a fluent reader may need Tajweed or Hifz structure. Ask for placement based on what the learner can actually recite, not only community expectations.",
@@ -158,10 +158,10 @@ export const countryGuidesFranceNetherlandsSweden: Record<string, CountryGuideCo
         id: "dutch-school-week",
         heading: "How do online Quran classes fit the Dutch school week?",
         directAnswer:
-          "Plan lessons after school or at weekends in CET/CEST, protect homework time, and keep sessions short enough that the learner stays attentive. Recurring appointments work better than irregular catch-up classes.",
+          "The Netherlands runs on CET (UTC+1) and CEST (UTC+2). Primary finish times often leave a usable late-afternoon window; secondary students may need a later slot after homework. Ask for the appointment to stay fixed to Dutch local time across clock changes.",
         paragraphs: [
-          "Many Dutch families find midweek evenings easier than late nights. Younger children often do well soon after arriving home and having a snack; older students may need a later window after homework. If two siblings enrol, stagger times so each child gets full attention.",
-          "Public holidays and travel to family abroad can interrupt routines. Confirm make-up rules before enrolment so a missed week does not quietly erase progress.",
+          "Many Dutch families find midweek evenings easier than late nights. Younger children in the lower primary years often finish school early enough for a snack-and-settle buffer before a Quran slot; older students may need a later window. If two siblings enrol, stagger times so each child gets full attention.",
+          "Public holidays, study weeks and travel to family abroad can interrupt routines. Confirm make-up rules before enrolment so a missed week does not quietly erase progress.",
         ],
         table: {
           headers: ["Routine element", "Parent checklist"],
@@ -170,8 +170,19 @@ export const countryGuidesFranceNetherlandsSweden: Record<string, CountryGuideCo
             ["Homework load", "Will exam weeks need a temporary shorter lesson?"],
             ["Siblings", "Are lesson times staggered on shared devices?"],
             ["Weekends", "Is a Saturday or Sunday slot more reliable than weeknights?"],
+            ["Clock changes", "Will the Dutch local hour stay fixed across CET/CEST?"],
           ],
         },
+      },
+      {
+        id: "netherlands-near-me",
+        heading: "What does “Quran classes near me” mean if the academy is online?",
+        directAnswer:
+          "It means the lesson arrives by video in your home. NoorPath has no classroom in Amsterdam, Rotterdam or anywhere else in the Netherlands. A local mosque or weekend school is the right choice if you want a teacher in the room.",
+        paragraphs: [
+          "Search results for Quran classes near you mix drive-to programmes with remote academies. Read the page carefully so you know which one you opened. This hub is for families who need a recurring one-to-one slot when local group classes are full, far, or a poor fit for a shy beginner.",
+          "Where a strong local class exists, many Dutch families keep it for community and add a midweek online correction slot — especially for Tajweed sounds a large group cannot fix one child at a time.",
+        ],
       },
       {
         id: "courses-netherlands",
@@ -187,6 +198,15 @@ export const countryGuidesFranceNetherlandsSweden: Record<string, CountryGuideCo
           "Use kids’ online Quran class pages for age-band expectations.",
           "Check the pricing page for monthly USD plans and sibling discounts.",
           "Ask during trial how home practice minutes should look each week.",
+        ],
+      },
+      {
+        id: "netherlands-female-tutors",
+        heading: "Can I request a female Quran teacher in the Netherlands?",
+        directAnswer:
+          "Yes. State the preference in your first message. Availability is confirmed at matching, so raise it before a time is locked.",
+        paragraphs: [
+          "This is a frequent request for daughters and for adult women who prefer a female tutor. Offer a second acceptable hour if you can; a flexible window is usually matched faster than a single rigid preference.",
         ],
       },
       {
@@ -250,6 +270,10 @@ export const countryGuidesFranceNetherlandsSweden: Record<string, CountryGuideCo
             [
               "How do euros relate to listed prices?",
               "Plans are in USD; convert to € for budgeting and expect possible bank FX differences.",
+            ],
+            [
+              "Does NoorPath have a Dutch branch?",
+              "No. Lessons are remote only; there is no campus or home-visit service in the Netherlands.",
             ],
           ],
         },

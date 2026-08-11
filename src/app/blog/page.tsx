@@ -88,7 +88,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Searchable article list (client-side) */}
+      {/* Searchable article list — grid is prerendered, search/filter hydrate on top */}
       <BlogSearchList
         posts={sorted.map((p) => ({
           slug: p.slug, title: p.title, excerpt: p.excerpt, category: p.category,

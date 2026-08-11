@@ -136,9 +136,9 @@ export const backlinkAssets: BacklinkAsset[] = [
   },
   {
     slug: "muslim-population-statistics-uk-usa",
-    title: "Muslim Population Statistics: England, Wales and USA",
+    title: "Muslim Population UK (2021 Census) & USA — Key Figures",
     description:
-      "Compare England and Wales Census religion data with US survey-based Muslim identity data, including source and methodology differences.",
+      "England and Wales 2021 Census Muslim population figures vs US estimates — key numbers, percentages, sources, and methodology explained.",
     category: CATEGORY,
     date: DATE,
     updatedAt: DATE,

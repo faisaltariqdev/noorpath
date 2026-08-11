@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { cities, getCity, getCityKeywords } from "@/data/cities";
+import { cities, getCity, getCityKeywords, isCityIndexable } from "@/data/cities";
 import { getCityGuide } from "@/data/cityGuides";
 import { getLocation } from "@/data/locations";
 import { CONTACT, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
@@ -40,6 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     keywords: getCityKeywords(c),
     alternates: { canonical: `https://www.noorpath.online/online-quran-classes/${c.slug}` },
+    ...(isCityIndexable(c.slug)
+      ? {}
+      : { robots: { index: false, follow: true } }),
     openGraph: {
       title: `Online Quran Classes in ${c.city} | Kids & Adults | NoorPath`,
       description,

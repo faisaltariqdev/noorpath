@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import LazyPreviewVideo from "./LazyPreviewVideo";
 
 const BASE = "https://www.noorpath.online";
 const SECTION_ID = "interactive-noorani-qaida";
@@ -304,16 +305,10 @@ export default function InteractiveNooraniQaidaSection() {
                 className="qaida-video-link"
                 aria-label="Open the interactive Noorani Qaida lesson preview — click to try the Alif lesson"
               >
-                <video
+                <LazyPreviewVideo
                   src="/marketing/noorani-qaida/noorani-qaida-platform-preview.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="none"
-                  aria-hidden="true"
-                  className="qaida-preview-video"
                   poster="/marketing/noorani-qaida/alif-pronunciation-tracing-lesson.png"
+                  className="qaida-preview-video"
                 />
                 <span className="qaida-video-play-hint" aria-hidden="true">
                   <span className="qaida-video-play-icon">▶</span>

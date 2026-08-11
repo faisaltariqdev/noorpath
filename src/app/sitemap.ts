@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blog";
 import { courses } from "@/data/courses";
 import { locations } from "@/data/locations";
-import { cities } from "@/data/cities";
+import { cities, isCityIndexable } from "@/data/cities";
 import { backlinkAssets } from "@/data/backlinkAssets";
 import {
   QAIDA_BASE_PATH,
@@ -187,7 +187,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
   }));
 
-  const cityPages: MetadataRoute.Sitemap = cities.map((c) => ({
+  const cityPages: MetadataRoute.Sitemap = cities
+    .filter((c) => isCityIndexable(c.slug))
+    .map((c) => ({
     url: `${BASE}/online-quran-classes/${c.slug}`,
     lastModified: SITE_CONTENT_STAMP,
     priority: 0.86,

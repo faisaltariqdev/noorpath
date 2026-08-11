@@ -12,6 +12,40 @@ export interface City {
   keywords: string[];
 }
 
+/**
+ * Thin near-duplicate city templates (≈99% overlap after city-name normalisation).
+ * Kept live for users/internal links, but excluded from search indexing + sitemap
+ * until each page has genuine local differentiation (Google doorway / scaled-content risk).
+ */
+export const TEMPLATE_CITY_NOINDEX_SLUGS = new Set<string>([
+  "aarhus",
+  "abu-dhabi",
+  "bergen",
+  "christchurch",
+  "copenhagen",
+  "cork",
+  "doha",
+  "espoo",
+  "galway",
+  "helsinki",
+  "hyderabad",
+  "jeddah",
+  "karachi",
+  "lahore",
+  "leeds",
+  "luton",
+  "melbourne",
+  "mumbai",
+  "oslo",
+  "riyadh",
+  "sydney",
+  "wellington",
+]);
+
+export function isCityIndexable(slug: string): boolean {
+  return !TEMPLATE_CITY_NOINDEX_SLUGS.has(slug);
+}
+
 export const cities: City[] = [
   // ── United Kingdom ──────────────────────────────────────────────
   {

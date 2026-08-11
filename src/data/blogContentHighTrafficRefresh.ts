@@ -840,7 +840,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
 
           <h2 id="hanafi">Common 3-rakat method (Hanafi-style overview)</h2>
           <ol>
-            <li>Pray two rakats like a normal sunnah, with tashahhud but <strong>without salam</strong>.</li>
+            <li>Pray two rakats like a normal sunnah, with <a href="/blog/attahiyat-full-arabic-english-tashahhud">tashahhud</a> but <strong>without salam</strong>.</li>
             <li>Stand for a third rakat; recite Fatiha and a surah.</li>
             <li>Say Allahu Akbar and raise hands, then recite <strong>Dua e Qunoot</strong>.</li>
             <li>Complete ruku', sujood, tashahhud, and salam.</li>

@@ -98,6 +98,14 @@ export const metadata: Metadata = {
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
     : undefined,
+  alternates: {
+    types: {
+      "text/plain": [
+        { url: "https://www.noorpath.online/llms.txt", title: "llms.txt" },
+        { url: "https://www.noorpath.online/llms-full.txt", title: "llms-full.txt" },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -108,6 +116,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <meta name="msapplication-TileColor" content="#0a6e4f" />
+        {/* AI / LLM knowledge maps — discoverable alongside sitemap */}
+        <link rel="alternate" type="text/plain" title="llms.txt" href="https://www.noorpath.online/llms.txt" />
+        <link rel="alternate" type="text/plain" title="llms-full.txt" href="https://www.noorpath.online/llms-full.txt" />
         {/* DNS prefetch */}
         <link rel="dns-prefetch" href="//wa.me" />
         <link rel="dns-prefetch" href="//formsubmit.co" />

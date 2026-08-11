@@ -323,7 +323,7 @@ export default async function ArabicLetterPage({ params }: Props) {
               ...(next ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/${next.slug}`, label: `Next letter: ${next.name}`, description: `Compare ${letter.name} with ${next.name}.` }] : []),
               ...(contrast ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/${contrast.slug}`, label: `Contrast with ${contrast.name}`, description: `Practise the clue that separates ${letter.name} from ${contrast.name}.` }] : []),
               { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Add Fatha", description: "See how a short vowel gives a consonant its reading sound." },
-              { href: `${QAIDA_BASE_PATH}/guides/games`, label: "Noorani Qaida games", description: "See recognition games that reinforce letter practice." },
+              { href: `${QAIDA_BASE_PATH}/games`, label: "Noorani Qaida games", description: "See recognition games that reinforce letter practice." },
             ]}
           />
 

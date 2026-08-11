@@ -61,6 +61,7 @@ export const gulfParentBlogContent: Record<string, { style: string; content: str
             <li>Expect confirmation after matching — evening popularity means flexibility helps.</li>
             <li>Keep home echo to 8–12 minutes on non-lesson days so the week stays kind.</li>
           </ol>
+          <p>Not every Gulf household is on the same clock. The UAE and Qatar run on GST (UTC+4), while <a href="/locations/online-quran-classes-saudi-arabia">Saudi Arabia</a> and <a href="/locations/online-quran-classes-kuwait">Kuwait</a> sit an hour behind on AST (UTC+3). If you are in Riyadh, Jeddah or Kuwait City, write the window in your own local time so a one-hour assumption does not quietly move the lesson.</p>
           <p>Ops checklist: <a href="/blog/online-quran-class-checklist-for-parents">online Quran class checklist</a> · <a href="/blog/how-long-should-online-quran-lessons-be">lesson length</a>.</p>
 
           <h2 id="travel">Travel weeks and home leave</h2>

@@ -6,7 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seo:audit": "node scripts/seo/audit-site.mjs",
+    "seo:lighthouse": "node scripts/seo/audit-site.mjs --lighthouse",
+    "seo:mcp:check": "node scripts/seo/check-mcp-env.mjs",
+    "seo:agent": "node scripts/seo/seo-agent.mjs",
+    "seo:agent:staged": "node scripts/seo/seo-agent.mjs --staged",
+    "seo:schema": "node scripts/seo/validate-schema-inventory.mjs",
+    "seo:links": "node scripts/seo/check-internal-links.mjs",
+    "seo:hooks": "node scripts/seo/install-git-hooks.mjs",
+    "seo:gsc:enable": "node scripts/seo/enable-gsc-mcp.mjs",
+    "seo:all": "node scripts/seo/seo-agent.mjs && node scripts/seo/validate-schema-inventory.mjs && node scripts/seo/audit-site.mjs",
+    "prepare": "node scripts/seo/install-git-hooks.mjs",
+    "seo:llms": "node scripts/seo/generate-llms-txt.mjs",
+    "seo:llms:validate": "node scripts/seo/validate-llms-txt.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",
@@ -23,6 +36,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "lighthouse": "^13.4.1",
+    "playwright": "^1.62.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

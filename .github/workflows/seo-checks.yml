@@ -1,0 +1,60 @@
+name: SEO Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# Cancel superseded runs on the same ref — these jobs build the whole site.
+concurrency:
+  group: seo-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # ── Static checks (no server required) ────────────────────────────────
+      - name: Schema inventory
+        run: npm run seo:schema
+
+      - name: SEO agent
+        run: npm run seo:agent
+
+      # Orphan budget is a ratchet: lower it as orphans are fixed, never raise it.
+      # Any newly broken internal link fails regardless of this number.
+      - name: Internal link integrity
+        run: npm run seo:links -- --max-orphans=3
+
+      # ── Live checks against the production build ──────────────────────────
+      - name: Site audit
+        run: |
+          npx next start -p 3100 &
+          for i in $(seq 1 60); do
+            curl -sf -o /dev/null http://127.0.0.1:3100/ && break
+            sleep 1
+          done
+          SEO_BASE_URL=http://127.0.0.1:3100 npm run seo:audit
+
+      - name: Upload SEO reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-reports
+          path: seo-reports/
+          retention-days: 14

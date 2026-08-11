@@ -332,6 +332,12 @@ export default function QuranTeacherOnlinePage() {
               </Link>
               {" "}— share ET, CT, MT or PT when you book the trial
             </li>
+            <li>
+              <Link href="/locations/online-quran-classes-new-zealand" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Match a Quran teacher to New Zealand time
+              </Link>
+              {" "}— NZST/NZDT preferences noted in your request
+            </li>
           </ul>
         </div>
       </section>

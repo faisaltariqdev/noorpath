@@ -93,6 +93,13 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </table>
           <p>Grammatically, <em>akbar</em> is the superlative of <em>kabir</em> (great). So Allahu Akbar means Allah is greater than everything — greater than any fear, any joy, any power, any problem. When a Muslim says it, they affirm that nothing compares to Allah's greatness.</p>
 
+          <h3>"Allah is the Greatest" or "Allah is greater"?</h3>
+          <p>Both translations are correct, and the reason you see both is worth understanding. In Arabic, a comparative like <em>akbar</em> is normally followed by <em>min</em> — "greater <em>than</em>" something. In the takbir, nothing follows it. The comparison is left deliberately open, so the sense is: greater than whatever you could put in that space. Greater than the thing you are afraid of, the person you are trying to impress, the problem in front of you.</p>
+          <p>"Allah is the Greatest" captures the conclusion; "Allah is greater" captures the grammar and the lived meaning. Translators choose one or the other depending on which they want to bring out.</p>
+
+          <h3>What does "akbar" mean on its own?</h3>
+          <p>On its own, <em>akbar</em> (أَكْبَر) is an ordinary Arabic word meaning "bigger" or "greater". It comes from the root k-b-r, which gives <em>kabir</em> (big, great) and <em>kibr</em> (arrogance — thinking oneself big). It is used in everyday Arabic with no religious sense at all, in the way an English speaker would say "the bigger one". It is also a common given name across the Muslim world. The word only carries its full weight when it appears in the takbir, where the thing being described is Allah.</p>
+
           <h2 id="when">When do Muslims say Allahu Akbar?</h2>
           <table class="np-table">
             <tr><th>Occasion</th><th>How it is used</th></tr>
@@ -105,6 +112,22 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <tr><td><strong>Good news</strong></td><td>Gratitude and glorification — Allah is greater than any blessing received</td></tr>
           </table>
 
+          <h2 id="misunderstood">What Allahu Akbar is — and what it is not</h2>
+          <p>Many people who search for this phrase are not Muslim, and have encountered it mainly in news coverage of violence. That is an extremely narrow sample of a phrase used constantly and unremarkably by well over a billion people, and it leaves a false impression of what the words mean and where they belong.</p>
+          <p>In ordinary life, Allahu Akbar is closer to what an English speaker might express with "thank God" or a quiet breath of relief and awe — though it is more formal than either, because it is an act of worship rather than an exclamation. It is said by a father holding a newborn, by someone who has just been given difficult news and is steadying themselves, by a person seeing mountains or the sea for the first time. It opens every prayer and is repeated with every change of posture within it, so a Muslim praying five times a day says it dozens of times before the day is out. It is called out from every mosque in the world at each prayer time.</p>
+          <p>The words themselves make a claim about Allah and about nothing else. They name no enemy and no group. When someone says Allahu Akbar in prayer, the meaning is closer to humility than to defiance: everything they were preoccupied with a moment ago has just been placed below Allah, including themselves. That is the entire point of beginning a prayer with it.</p>
+
+          <h2 id="pronunciation">How to pronounce Allahu Akbar</h2>
+          <p>Four syllables: <strong>Al-laa-hu Ak-bar</strong>.</p>
+          <ul>
+            <li><strong>The doubled L is held.</strong> "Al-lah", not "A-lah" — the tongue rests on the l for an extra beat.</li>
+            <li><strong>The L is heavy.</strong> In Allahu the l is made with the back of the tongue raised, giving a fuller, rounder sound than an English l.</li>
+            <li><strong>The letter is a plain k, not "kh".</strong> Akbar (أكبر) is spelled with the letter kaf. This matters: <em>akhbaar</em> (أخبار), with the throaty kh, is an unrelated word meaning "news".</li>
+            <li><strong>The last syllable is short.</strong> "Ak-bar", not "ak-baar" — the a in bar is not stretched.</li>
+            <li><strong>The two words connect.</strong> The u at the end of Allahu runs straight into Akbar, so in the adhan and in prayer it is heard as one phrase rather than two separate words.</li>
+          </ul>
+          <p>Reading pronunciation notes will get you close, but the heavy l and the difference between k and kh are sounds English does not distinguish, so most people need to hear them and be corrected once or twice before they stick. Our <a href="/blog/tajweed-rules-complete-guide">complete Tajweed rules guide</a> explains these letters in detail.</p>
+
           <h2 id="hadith">Authentic hadith — reward of Allahu Akbar</h2>
           <div class="gold-box">
             <p>The Prophet ﷺ said: <em>"The most beloved words to Allah are four: <strong>Subhanallah</strong>, <strong>Alhamdulillah</strong>, <strong>La ilaha illallah</strong>, and <strong>Allahu Akbar</strong>. It does not matter with which of them you begin."</em></p>
@@ -114,6 +137,16 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2 id="salah">Allahu Akbar in Salah — the Takbir</h2>
           <p>Every prayer begins with <strong>Takbirat al-Ihram</strong> — raising the hands and saying "Allahu Akbar" to enter the state of prayer. This takbir is repeated when moving from standing to bowing (ruku), from bowing to standing, from standing to prostration (sujood), and between the two sujoods. Learn the full prayer with our <a href="/blog/how-to-pray-salah-step-by-step">step-by-step Salah guide</a>.</p>
+          <p>The opening takbir is called <em>Takbirat al-Ihram</em> because <em>ihram</em> means entering a state in which certain ordinary things become off-limits. Once those words are said, the worshipper has left everyday activity behind — no talking, no turning away — until the prayer ends with the salam. Nothing else marks the boundary; the phrase itself is the doorway.</p>
+          <p>A few related terms you will hear:</p>
+          <table class="np-table">
+            <tr><th>Term</th><th>What it refers to</th></tr>
+            <tr><td><strong>Takbir</strong></td><td>The act of saying "Allahu Akbar" — the noun for the phrase itself</td></tr>
+            <tr><td><strong>Takbirat al-Ihram</strong></td><td>The opening takbir that begins Salah</td></tr>
+            <tr><td><strong>Takbirat al-Intiqal</strong></td><td>The takbirs said while moving from one posture to the next inside prayer</td></tr>
+            <tr><td><strong>Takbirat al-Eid</strong></td><td>The takbirs recited on the days of Eid</td></tr>
+          </table>
+          <p>In the adhan the phrase does double duty: the call to prayer opens with it and returns to it near the end, just before it closes with <a href="/blog/la-ilaha-illallah-meaning">la ilaha illallah</a>. If you have ever heard the adhan and recognised only one phrase in it, this was almost certainly the one.</p>
 
           <h2 id="related-phrases">Allahu Akbar among the four pillars of dhikr</h2>
           <ul>
@@ -175,6 +208,18 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </table>
           <p>This phrase has two parts: <strong>negation</strong> (laa ilaaha — there is no god) and <strong>affirmation</strong> (illallaah — except Allah). Together they form the purest statement of Tawheed — worship belongs to Allah alone.</p>
 
+          <h3>What does "la ilaha" mean on its own?</h3>
+          <p>People often search for the first two words alone, so it is worth being precise: <em>laa ilaaha</em> means "there is no god" and nothing more. It is only half a sentence, and on its own it is a bare denial. The meaning of the phrase lives in the join — you clear the ground of everything falsely worshipped, and then you name the only One who deserves it. Muslims never say the negation without the affirmation that follows it.</p>
+          <p>The word <em>ilah</em> is also worth pausing on. It does not mean "creator"; it means the thing a person turns to, obeys and worships. That is why the usual English rendering is "there is no god <em>worthy of worship</em> except Allah" rather than a flat "there is no god". The statement is not only about who exists — it is about who deserves your devotion.</p>
+
+          <h2 id="pronunciation">How to pronounce it — and why spellings differ</h2>
+          <p>You will find this written as <em>la ilaha illallah</em>, <em>la ilaha illa Allah</em>, <em>laa ilaaha illallaah</em>, and several other ways. Nothing has changed in the Arabic; English simply has no fixed system for writing it. Two features explain most of the variation:</p>
+          <ul>
+            <li><strong>Long vowels.</strong> The <em>laa</em> and the middle of <em>ilaaha</em> are both stretched. Writers who double the vowel (laa, ilaaha) are showing that length; writers who do not are just spelling it plainly.</li>
+            <li><strong>The join at "illa Allah".</strong> In spoken Arabic the two words run together and the alif of Allah is not pronounced separately, so it comes out as one flowing <em>illallaah</em>. That is why "la ilaha illa Allah" and "la ilaha illallah" are the same phrase — one is written word by word, the other as it is actually said.</li>
+          </ul>
+          <p>One pronunciation point matters more than the rest: the <em>lam</em> in <strong>Allah</strong> here is full and heavy, made with the back of the tongue raised, because the vowel before it is a fatha. Said lightly, as in an English "l", it sounds noticeably off to an Arabic ear. This is the sort of detail that is difficult to fix from text alone and takes a few minutes of listen-and-repeat with someone who can hear you.</p>
+
           <h2 id="shahada">Connection to the Shahada (First Pillar of Islam)</h2>
           <p>The full Shahada (testimony of faith) is:</p>
           <div class="verse-card">
@@ -183,6 +228,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="trans-en"><strong>English:</strong> I bear witness that there is no god but Allah, and I bear witness that Muhammad is the Messenger of Allah.</p>
           </div>
           <p>La ilaha illallah is the first half — without it, nothing else in Islam stands. It is also the First Kalima (Kalima Tayyaba) taught to every Muslim child. See our guide to the <a href="/blog/six-kalimas-of-islam">6 Kalimas of Islam</a>.</p>
+
+          <h2 id="muhammadur-rasulullah">La ilaha illallah Muhammadur Rasulullah — meaning</h2>
+          <p>Many people learn the phrase with a second clause attached. This longer wording is the First Kalima as it is normally taught:</p>
+          <div class="verse-card">
+            <span class="vnum">KALIMA TAYYABA · FULL WORDING</span>
+            <div class="arabic">لَا إِلَٰهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ</div>
+            <p class="translit">Laa ilaaha illallaahu Muhammadur rasoolullaah.</p>
+            <p class="trans-en"><strong>English:</strong> There is no god worthy of worship except Allah; Muhammad is the Messenger of Allah.</p>
+          </div>
+          <p>The second clause names the messenger through whom that worship is known and practised. Believing that Allah alone deserves worship raises an immediate question — how do we know what He wants from us? — and the answer is the guidance brought by His Messenger ﷺ. The two halves belong together for that reason.</p>
+          <table class="np-table">
+            <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>مُحَمَّدٌ</td><td>Muhammadun</td><td>Muhammad ﷺ</td></tr>
+            <tr><td>رَسُولُ</td><td>Rasoolu</td><td>Messenger of</td></tr>
+            <tr><td>اللَّهِ</td><td>Allaah</td><td>Allah</td></tr>
+          </table>
+          <p>If you have wondered why it is written "Muhammadur rasoolullah" rather than "Muhammadun rasoolullah", the reason is a rule of recitation: the <em>-un</em> ending merges into the following <em>r</em>, so the two words are read as one connected phrase. Both spellings point to the same Arabic.</p>
+          <p>The difference between this and the Shahada is one of form. The Kalima is a statement — "there is no god except Allah". The Shahada is a testimony — "I bear witness that there is no god except Allah". A person entering Islam speaks the Shahada wording, because they are testifying to it before Allah, not merely stating a fact about the world.</p>
 
           <h2 id="benefits">Benefits and authentic hadith</h2>
           <ul>
@@ -195,6 +258,18 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2 id="tawheed">What is Tawheed?</h2>
           <p><strong>Tawheed</strong> means affirming the oneness of Allah in three ways: (1) <em>Tawheed ar-Rububiyyah</em> — Allah alone creates and sustains; (2) <em>Tawheed al-Uluhiyyah</em> — worship belongs to Allah alone; (3) <em>Tawheed al-Asma was-Sifat</em> — Allah's names and attributes are unique and perfect. La ilaha illallah captures the heart of Tawheed al-Uluhiyyah — the worship that belongs to Allah alone.</p>
+
+          <h2 id="where">Where you already say it every day</h2>
+          <p>This is not a phrase reserved for special occasions. If you pray, you say it or hear it several times a day without necessarily noticing:</p>
+          <table class="np-table">
+            <tr><th>Where</th><th>How it appears</th></tr>
+            <tr><td><strong>The adhan and iqamah</strong></td><td>The call to prayer closes with <em>laa ilaaha illallaah</em></td></tr>
+            <tr><td><strong>Tashahhud in every Salah</strong></td><td>Inside the testimony recited while sitting: <em>ash-hadu an laa ilaaha illallaah</em></td></tr>
+            <tr><td><strong>Dhikr after prayer</strong></td><td>Recited alongside <a href="/blog/subhanallah-meaning">Subhanallah</a>, Alhamdulillah and <a href="/blog/allahu-akbar-meaning-in-english">Allahu Akbar</a></td></tr>
+            <tr><td><strong>Eid takbir</strong></td><td>Sits in the middle of the takbirat: <em>Allahu Akbar, Allahu Akbar, laa ilaaha illallaah…</em></td></tr>
+            <tr><td><strong>Accepting Islam</strong></td><td>Spoken as part of the Shahada by anyone entering the faith</td></tr>
+          </table>
+          <p>Because it recurs so often, it is easy to let it pass the lips without the mind following. The practical remedy most people find useful is to slow down at the negation and the affirmation separately — a small pause where the "no" ends and the "except Allah" begins.</p>
 
           <h2 id="teach-kids">How to teach La ilaha illallah to children</h2>
           <ol>
@@ -1111,6 +1186,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2 id="what-is">What is Darood Sharif?</h2>
           <p>Darood Sharif (Arabic: <em>salawat</em>) is a dua in which we ask Allah to honour, exalt and send peace upon the Prophet Muhammad ﷺ. Allah Himself commands it in the Quran: "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace." (Surah Al-Ahzab 33:56).</p>
+          <p>The Arabic word at the centre of this is <em>salah</em> (صلاة), the same word used for the five daily prayers — but here it carries a different sense depending on who is doing it. When Allah sends <em>salah</em> upon the Prophet ﷺ, it is His praise of him and His raising of his honour. When angels and believers send <em>salah</em> upon him, it is a request — we are asking Allah to do that. So when you say "Allaahumma salli alaa Muhammad", you are not praying <em>to</em> the Prophet ﷺ; you are asking Allah to honour him.</p>
+          <p>You will see the phrase written several different ways in English — <strong>Darood Sharif</strong>, <strong>Durood Shareef</strong>, <strong>Durood Pak</strong>, or simply <strong>salawat</strong>. All refer to the same thing. "Darood" is the Persian and Urdu word for this blessing, and because Persian and Urdu vowels do not map neatly onto English, people spell it by ear. "Sharif" and "Pak" both mean noble or pure. In Arabic-speaking countries the usual term is <em>as-salatu ala an-Nabi</em> — sending prayers upon the Prophet ﷺ.</p>
 
           <h2 id="darood-ibrahim">Darood Ibrahim (recited in Salah)</h2>
           <div class="verse-card">
@@ -1121,6 +1198,22 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
           <p>This is the Darood the Prophet ﷺ taught his companions when they asked how to send blessings upon him (Sahih al-Bukhari). It is recited in the last sitting (Qa'dah) of Salah, after the Tashahhud.</p>
 
+          <h2 id="word-by-word">Darood Sharif in English — word by word</h2>
+          <p>Reading a smooth English translation tells you what the Darood says. Reading it word by word tells you what you are actually asking for, which makes it far easier to mean it in Salah rather than recite it on autopilot.</p>
+          <table class="np-table">
+            <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>اَللّٰهُمَّ</td><td>Allaahumma</td><td>O Allah — a direct call to Allah</td></tr>
+            <tr><td>صَلِّ</td><td>Salli</td><td>Send Your prayers — honour him, praise him, raise his mention</td></tr>
+            <tr><td>عَلٰى مُحَمَّدٍ</td><td>Alaa Muhammadin</td><td>Upon Muhammad ﷺ</td></tr>
+            <tr><td>وَّعَلٰى اٰلِ مُحَمَّدٍ</td><td>Wa alaa aali Muhammadin</td><td>And upon the family of Muhammad ﷺ</td></tr>
+            <tr><td>كَمَا صَلَّيْتَ</td><td>Kamaa sallayta</td><td>As You sent prayers — the request is modelled on something already granted</td></tr>
+            <tr><td>عَلٰى اِبْرَاهِيْمَ</td><td>Alaa Ibraaheema</td><td>Upon Ibrahim (Abraham), peace be upon him</td></tr>
+            <tr><td>اِنَّكَ حَمِيْدٌ</td><td>Innaka hameed</td><td>Indeed You are Praiseworthy — the One who deserves all praise</td></tr>
+            <tr><td>مَّجِيْدٌ</td><td>Majeed</td><td>Glorious — the One of highest honour and generosity</td></tr>
+            <tr><td>بَارِكْ</td><td>Baarik</td><td>Send blessing (barakah) — growth, increase and lasting good</td></tr>
+          </table>
+          <p>Notice the structure: the first half asks for <em>salah</em> and the second half asks for <em>barakah</em>, and both are phrased as "as You did for Ibrahim". That is why this Darood is named after Ibrahim (peace be upon him) even though the blessing being asked for is upon the Prophet Muhammad ﷺ.</p>
+
           <h2 id="short-darood">Short Darood Sharif</h2>
           <div class="verse-card">
             <span class="vnum">SHORT DAROOD</span>
@@ -1128,7 +1221,29 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="translit">Allaahumma salli alaa Muhammadin wa alaa aalihi wa as-haabihi wa sallim.</p>
             <p class="trans-en"><strong>English:</strong> O Allah, send blessings and peace upon Muhammad, and upon his family and his companions.</p>
           </div>
-          <p>Muslims also commonly say the short salawat <em>"Sallallahu alayhi wa sallam"</em> (may Allah's peace and blessings be upon him) whenever the Prophet's ﷺ name is mentioned.</p>
+          <p>Muslims also commonly say the short salawat <em>"Sallallahu alayhi wa sallam"</em> (may Allah's peace and blessings be upon him) whenever the Prophet's ﷺ name is mentioned. In writing, many people prefer to spell this out in full, or use the symbol ﷺ, rather than abbreviating it — an abbreviation tends to be skipped over by the eye instead of actually said.</p>
+          <p>In South Asia you will also come across much longer compositions such as Darood Taj and Darood Tanjeena. These are later compositions rather than wordings narrated from the Prophet ﷺ himself. If you want to be certain you are reciting what he taught, Darood Ibrahim and the short salawat above are the wordings to learn first.</p>
+
+          <h2 id="janazah">Darood Sharif in Salat al-Janazah</h2>
+          <p>A common question is whether the funeral prayer uses a special Darood. It does not — the Darood recited in Salat al-Janazah is the same Darood Ibrahim you already recite in your daily prayers.</p>
+          <p>Salat al-Janazah has no ruku and no sujood. It is prayed standing, with four takbirs, and each section sits between two takbirs:</p>
+          <table class="np-table">
+            <tr><th>Stage</th><th>What is recited</th></tr>
+            <tr><td>After the first takbir</td><td>Praise of Allah — practice differs between the schools of fiqh, with some reciting Surah Al-Fatiha and others the opening praise (thana)</td></tr>
+            <tr><td><strong>After the second takbir</strong></td><td><strong>Darood Ibrahim</strong> — the same wording as in Salah</td></tr>
+            <tr><td>After the third takbir</td><td>Dua for the deceased</td></tr>
+            <tr><td>After the fourth takbir</td><td>The salam, ending the prayer</td></tr>
+          </table>
+          <p>So the one part of the funeral prayer you almost certainly know already is the Darood. If you are unsure of the rest, follow the imam and recite what you know — the details of the first and third portions vary by school, and it is worth learning them the way they are prayed in your own community.</p>
+
+          <h2 id="mistakes">Common mistakes when reciting Darood</h2>
+          <ul>
+            <li><strong>Shortening "aali" to "ali".</strong> اٰلِ (aal) means family, and the alif is stretched. Clipping it changes the word — take the full two-beat length.</li>
+            <li><strong>Wondering why it sounds like "hameedum majeed".</strong> It is written <em>hameedun majeed</em>, but a tanween followed by the letter meem merges into a nasal sound. Reciting it as "hameedum-majeed" is correct, not a slip.</li>
+            <li><strong>Rushing the ending.</strong> Both halves close with <em>innaka hameedum majeed</em>, and because the phrase repeats, people speed through the second one. Give it the same weight as the first.</li>
+            <li><strong>Reciting it in the wrong place in Salah.</strong> Darood comes after the Tashahhud in the final sitting, not before it.</li>
+            <li><strong>Saying it only in prayer.</strong> The Darood is a dua you can make any time — walking, working, waiting. It does not need wudu or a particular posture.</li>
+          </ul>
 
           <h2 id="benefits">Benefits of reciting Darood Sharif</h2>
           <ul>
@@ -1166,6 +1281,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2 id="what-are">What are the 4 Quls?</h2>
           <p>Four surahs of the Quran open with the command "Qul" (Say). Muslims group them together as the "4 Quls" because they are short, easy to memorise, and carry immense benefit — especially the last three, which the Prophet ﷺ used daily for protection from all harm.</p>
+          <p>The word <em>qul</em> (قُلْ) is an instruction addressed to the Prophet ﷺ: <em>say this</em>. It is worth noticing that the command was kept in the text rather than removed. When you recite these surahs you are repeating the exact words he was told to speak, which is part of why they feel so direct compared with longer passages.</p>
+          <table class="np-table">
+            <tr><th>Surah</th><th>Number</th><th>Verses</th><th>Name means</th><th>What it does</th></tr>
+            <tr><td>Al-Kafirun</td><td>109</td><td>6</td><td>The Disbelievers</td><td>Draws a clear line between worship of Allah and everything else</td></tr>
+            <tr><td>Al-Ikhlas</td><td>112</td><td>4</td><td>Sincerity / Purity</td><td>States who Allah is, and who He is not</td></tr>
+            <tr><td>Al-Falaq</td><td>113</td><td>5</td><td>The Daybreak</td><td>Seeks refuge from harm that comes from outside a person</td></tr>
+            <tr><td>An-Nas</td><td>114</td><td>6</td><td>Mankind</td><td>Seeks refuge from harm whispered into a person</td></tr>
+          </table>
 
           <h2 id="kafirun">1. Surah Al-Kafirun</h2>
           <div class="verse-card">
@@ -1174,6 +1297,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="translit">Qul yaa ayyuhal-kaafiroon. Laa a'budu maa ta'budoon. Wa laa antum aabidoona maa a'bud. Wa laa ana aabidum-maa abadtum. Wa laa antum aabidoona maa a'bud. Lakum deenukum wa liya deen.</p>
             <p class="trans-en"><strong>English:</strong> Say: O disbelievers, I do not worship what you worship, nor do you worship what I worship. Nor will I worship what you worship, nor will you worship what I worship. For you is your religion, and for me is my religion.</p>
           </div>
+          <p>The repetition in this surah is deliberate. Read in English it can sound like the same sentence four times, but the phrasing shifts between what is worshipped now and what will be worshipped, closing the door on any compromise in either direction. The final verse — "for you is your religion, and for me is my religion" — is a statement of separation in worship, not of hostility: it settles the matter plainly rather than arguing it.</p>
 
           <h2 id="ikhlas">2. Surah Al-Ikhlas</h2>
           <div class="verse-card">
@@ -1183,6 +1307,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="trans-en"><strong>English:</strong> Say: He is Allah, [who is] One. Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.</p>
           </div>
           <p>The Prophet ﷺ said Surah Al-Ikhlas equals one-third of the Quran (Sahih al-Bukhari), because it purely describes the Oneness of Allah (Tawheed).</p>
+          <p>Four verses answer the question "who is Allah?" without a single wasted word. <em>Ahad</em> is one in a sense stronger than counting — unique, without parts. <em>As-Samad</em> describes the One everything turns to in need while He needs nothing. The third verse rules out parents and children, and the fourth rules out anything comparable at all. The name <em>Al-Ikhlas</em> means sincerity or purity, and it fits: the surah strips the idea of God down to its purest form.</p>
 
           <h2 id="falaq">3. Surah Al-Falaq</h2>
           <div class="verse-card">
@@ -1191,6 +1316,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="translit">Qul a'oodhu bi rabbil-falaq. Min sharri maa khalaq. Wa min sharri ghaasiqin idhaa waqab. Wa min sharrin-naffaathaati fil-uqad. Wa min sharri haasidin idhaa hasad.</p>
             <p class="trans-en"><strong>English:</strong> Say: I seek refuge in the Lord of daybreak, from the evil of that which He created, and from the evil of darkness when it settles, and from the evil of the blowers in knots, and from the evil of an envier when he envies.</p>
           </div>
+          <p>The surah opens with <em>Rabb al-falaq</em> — the Lord of the daybreak, the One who splits the darkness open every morning. Refuge is then sought from four things, moving from the general to the specific: everything created that can cause harm, night when it closes in, sorcery, and envy. Note the precision of the last two verses: the envier is a danger "when he envies", not simply for existing. See our guide on the <a href="/blog/evil-eye-dua-nazar-ruqyah">evil eye and ruqyah</a> for how this is put into practice.</p>
 
           <h2 id="nas">4. Surah An-Nas</h2>
           <div class="verse-card">
@@ -1199,6 +1325,13 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="translit">Qul a'oodhu bi rabbin-naas. Malikin-naas. Ilaahin-naas. Min sharril-waswaasil-khannaas. Alladhee yuwaswisu fee sudoorin-naas. Minal-jinnati wan-naas.</p>
             <p class="trans-en"><strong>English:</strong> Say: I seek refuge in the Lord of mankind, the Sovereign of mankind, the God of mankind, from the evil of the retreating whisperer, who whispers [evil] into the breasts of mankind, from among the jinn and mankind.</p>
           </div>
+          <p>Where Al-Falaq deals with harm arriving from outside, An-Nas deals with harm that gets inside. Allah is named three ways before the danger is even mentioned — Lord, Sovereign, God of mankind — which gives the short surah a rising weight. The word <em>khannaas</em> describes something that whispers and then withdraws when Allah is remembered, only to return when He is forgotten. That is a recognisable description of a persistent bad thought, and the final verse makes clear such whispering can come from people as much as from jinn.</p>
+
+          <h2 id="three-vs-four">3 Quls or 4 Quls — and are they the last four surahs?</h2>
+          <p>Two things confuse people about this group, and both have short answers.</p>
+          <p><strong>"3 Quls" and "4 Quls" are not competing lists.</strong> The three Quls are Al-Ikhlas, Al-Falaq and An-Nas — the set recited together morning and evening and before sleep. Adding Al-Kafirun, which also begins with "Qul", gives you the four. So when someone says "recite the 3 Quls" they are describing the daily protection routine; "the 4 Quls" is the complete set of surahs opening with that word.</p>
+          <p><strong>They are not simply the last four surahs of the Quran.</strong> Three of them are — Al-Ikhlas 112, Al-Falaq 113 and An-Nas 114 close the Quran. But Al-Kafirun is number 109, with Surah An-Nasr (110) and Surah Al-Masad (111) sitting in between. The grouping is based on the opening word, not on position.</p>
+          <p>You may also hear the pair Al-Falaq and An-Nas called <em>Al-Mu'awwidhatayn</em> — "the two that seek refuge" — and the three including Al-Ikhlas called <em>Al-Mu'awwidhat</em>. These are simply the Arabic names for the same groupings.</p>
 
           <h2 id="benefits">Benefits of the 4 Quls</h2>
           <ul>
@@ -1207,6 +1340,16 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Surah Al-Kafirun</strong> is a declaration of pure Tawheed and freedom from shirk; reciting it before sleep is a Sunnah.</li>
             <li>Reciting the last three Quls three times each morning and evening suffices a person against everything (Tirmidhi, Abu Dawud).</li>
           </ul>
+
+          <h2 id="how-to-recite">How to fit the Quls into your day</h2>
+          <p>The reason these four surahs are so widely known is that they are short enough to use constantly. A practical routine looks like this:</p>
+          <ul>
+            <li><strong>Morning and evening:</strong> Al-Ikhlas, Al-Falaq and An-Nas, three times each. In Quranic order, Al-Ikhlas comes first.</li>
+            <li><strong>Before sleeping:</strong> the same three, recited into cupped hands and then wiped over the body, as described above. Al-Kafirun is also recited before sleep.</li>
+            <li><strong>In Salah:</strong> any of the four can be recited after Surah Al-Fatiha. They are usually the first surahs a new Muslim or a child is able to pray with.</li>
+            <li><strong>Whenever you feel uneasy:</strong> Al-Falaq and An-Nas are for exactly that — they are seeking refuge, and there is no fixed number or time required.</li>
+          </ul>
+          <p>If you are learning them, take one surah at a time and give it a few days rather than starting all four at once. Al-Ikhlas is the shortest and the natural place to begin; An-Nas repeats the word <em>an-naas</em> five times, which makes it easier to hold than its length suggests. What most people find hardest is not the memorising but the precision — the difference between س and ص, or the stretched vowels — and that is the part worth having corrected out loud early, before it sets. Our <a href="/blog/tajweed-rules-complete-guide">Tajweed rules guide</a> covers the sounds these surahs rely on.</p>
 
           <div class="gold-box">
             <strong>Teaching the 4 Quls to kids:</strong> These four surahs are short and perfect for early memorisation. Teach one at a time, listen-and-repeat in small pieces, and revise daily. See our <a href="/blog/duas-for-kids-to-memorize">essential duas for kids</a> and the <a href="/blog/six-kalimas-of-islam">6 Kalimas guide</a> to build a strong foundation.
@@ -5545,6 +5688,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p>After the second sujood of the second rak'ah, remain seated and recite the Tashahhud:</p>
             <div class="arabic-line">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
             <div class="roman-line">At-tahiyyatu lillahi was-salawatu wat-tayyibat, as-salamu 'alayka ayyuhan-nabiyyu wa rahmatullahi wa barakatuh, as-salamu 'alayna wa 'ala 'ibadillahis-salihin, ash-hadu an la ilaha illallah wa ash-hadu anna Muhammadan 'abduhu wa rasuluh.</div>
+            <p>For the word-by-word meaning and a line-by-line way to memorise it, see <a href="/blog/attahiyat-full-arabic-english-tashahhud">Attahiyat in Arabic and English</a>.</p>
           </div>
 
           <div class="step-card">

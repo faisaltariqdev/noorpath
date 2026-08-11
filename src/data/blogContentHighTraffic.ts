@@ -431,7 +431,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
     content: `<p>A <strong>dua for forgiveness</strong> (Istighfar) is the door that never closes. Allah says He forgives all sins for those who turn to Him (Quran 39:53). The Prophet ﷺ — who was already forgiven — sought forgiveness more than seventy times a day (Bukhari 6307).</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> The best dua for forgiveness is <strong>Sayyid al-Istighfar</strong> (the Master of Seeking Forgiveness). Whoever says it with certainty in the morning and dies that day enters Paradise; same for the evening (Bukhari 6306). Full Arabic below. Also see <a href="/blog/astaghfirullah-meaning">Astaghfirullah meaning</a>.
+            <strong>Quick answer:</strong> The best known dua for forgiveness is <strong>Sayyid al-Istighfar</strong> (the Master of Seeking Forgiveness). Whoever says it with certainty in the morning and dies that day enters Paradise; the same for the evening (Bukhari 6306). Full Arabic, transliteration and English below. Also see <a href="/blog/astaghfirullah-meaning">Astaghfirullah meaning</a>.
           </div>
 
           <h2 id="sayyid">Sayyid al-Istighfar — the master dua</h2>
@@ -442,6 +442,9 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <p class="trans-en"><strong>English:</strong> O Allah, You are my Lord; there is no god but You. You created me and I am Your servant, and I uphold Your covenant and promise as much as I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favour upon me and I acknowledge my sin, so forgive me — for none forgives sins except You.</p>
           </div>
 
+          <h2 id="breakdown">What the words are doing</h2>
+          <p>Sayyid al-Istighfar is not a vague “please forgive me.” It moves in a clear order: You are my Lord; You created me; I am Your servant; I try to keep the covenant; I seek refuge from the evil of my own deeds; I admit Your favours and my sin; then I ask forgiveness because only You forgive. That order is why many teachers prefer it for morning and evening — it resets both gratitude and honesty before the day begins or ends.</p>
+
           <h2 id="short">Short daily Istighfar</h2>
           <div class="verse-card">
             <span class="vnum">ASTAGHFIRULLAH</span>
@@ -449,6 +452,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <p class="translit">Astaghfirullaaha wa atoobu ilayh.</p>
             <p class="trans-en"><strong>English:</strong> I seek Allah's forgiveness and I repent to Him.</p>
           </div>
+          <p>Use the short form between tasks, after Salah, or whenever a mistake comes to mind. Use Sayyid al-Istighfar when you can give the longer wording full attention — especially morning and evening.</p>
 
           <h2 id="yunus">Dua of Yunus (Ayat e Karima)</h2>
           <p>When feeling trapped by sin or hardship, recite the dua of Prophet Yunus — detailed in our guide to <a href="/blog/ayat-e-karima">Ayat e Karima</a>: <em>La ilaha illa anta subhanaka inni kuntu minaz-zalimin</em> (21:87).</p>
@@ -460,14 +464,33 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li>Resolve not to return.</li>
             <li>If the sin harmed others, restore their rights where possible.</li>
           </ol>
-          <p>Saying the words without these conditions is dhikr — beautiful — but complete repentance needs the heart and action too.</p>
+          <p>Saying the words without these conditions is still dhikr — beautiful — but complete repentance needs the heart and action too. Istighfar is not a shortcut past fixing what you broke.</p>
+
+          <h2 id="mistakes">Common mistakes</h2>
+          <ul>
+            <li>Racing through Sayyid al-Istighfar so fast that none of the admissions are felt.</li>
+            <li>Treating forgiveness duas as a substitute for returning someone’s right.</li>
+            <li>Waiting for a “perfect mood” instead of making a short istighfar as soon as you remember.</li>
+            <li>Confusing English search phrases (“istighfar dua”, “dua istighfar”, “dua for forgiveness”) with needing a different Arabic text — they usually point to the same need.</li>
+          </ul>
 
           <div class="gold-box">
             <strong>Best times:</strong> After Salah, last third of the night, Mondays and Thursdays, and whenever you remember a mistake. Consistency beats occasional long sessions.
           </div>
 
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is the best istighfar dua?<span>+</span></summary>
+            <p>Sayyid al-Istighfar is the best-known prophetic wording for seeking forgiveness, reported in Bukhari 6306, with a morning and evening virtue for the one who says it with certainty.</p>
+          </details>
+          <details class="faq-acc"><summary>Is Astaghfirullah enough?<span>+</span></summary>
+            <p>Yes for frequent daily use. Pair it with sincere tawbah when the sin is known, and learn Sayyid al-Istighfar for a fuller morning and evening practice.</p>
+          </details>
+          <details class="faq-acc"><summary>Can I make a dua for forgiveness in English?<span>+</span></summary>
+            <p>Yes — ask Allah in the language you understand. Learning the Arabic prophetic wording is rewarding when taught carefully.</p>
+          </details>
+
           <div class="highlight-box">
-            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. NoorPath classes include duas with Tajweed. <a href="/online-quran-classes-for-kids">Book a free trial</a>.
+            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. Correct Arabic sounds matter; a patient tutor can help. <a href="/online-quran-classes-for-kids">Kids classes</a>.
           </div>`,
   },
 
@@ -526,15 +549,15 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
   "labbaik-allahumma-labbaik": {
     style: S,
-    content: `<p><strong>Labbaik Allahumma labbaik</strong> is the Talbiyah — the pilgrim's response to Allah's call for Hajj and Umrah. Millions recite it from the moment they enter ihram until they stone the Jamaraat (Hajj) or begin tawaf (Umrah practices vary by rite).</p>
+    content: `<p><strong>Labbaik Allahumma labbaik</strong> (also searched as labbayk, labaik, or labaik allahuma labaik) is the Talbiyah — the pilgrim's spoken answer to Allah's call for Hajj and Umrah. It is recited from the moment of entering ihram and continues through the journey until the rites reach their prescribed stopping point.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Labbaik means "I am here / at Your service." The full Talbiyah affirms that all praise, blessing and dominion belong to Allah alone, with no partner. Full Arabic and English below. Teaching children the meaning builds love for Hajj long before they go — start with <a href="/online-quran-classes-for-kids">Quran classes for kids</a>.
+            <strong>Quick answer:</strong> <em>Labbaik</em> means "I am here / at Your service." The full Talbiyah affirms that praise, favour and dominion belong to Allah alone, with no partner. Full Arabic, transliteration and English follow. Teaching children the meaning builds love for Hajj long before they travel.
           </div>
 
           <h2 id="full">The complete Talbiyah</h2>
           <div class="verse-card">
-            <span class="vnum">TALBIYAH · Bukhari &amp; Muslim</span>
+            <span class="vnum">TALBIYAH · reported in Bukhari &amp; Muslim</span>
             <div class="arabic">لَبَّيْكَ اللّٰهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ</div>
             <p class="translit">Labbayk Allaahumma labbayk. Labbayka laa shareeka laka labbayk. Innal-hamda wan-ni'mata laka wal-mulk. Laa shareeka lak.</p>
             <p class="trans-en"><strong>English:</strong> Here I am, O Allah, here I am. Here I am, You have no partner, here I am. Indeed all praise, favour and dominion are Yours. You have no partner.</p>
@@ -550,20 +573,47 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <tr><td>wan-ni'mata</td><td>and all favour / blessing</td></tr>
             <tr><td>laka wal-mulk</td><td>are Yours, and the dominion</td></tr>
           </table>
+          <p>The repeated <em>labbayk</em> is not filler. Each return to the word renews the same answer: I heard the call, and I am coming. The heart of the sentence is Tawheed — no partner in worship, praise or kingship.</p>
 
           <h2 id="when">When do pilgrims recite Labbaik?</h2>
           <ul>
             <li>After entering the state of ihram.</li>
-            <li>Frequently while travelling to Makkah and during the rites.</li>
+            <li>Frequently while travelling toward Makkah and during the rites.</li>
             <li>Men raise their voices; women recite quietly (standard guidance).</li>
-            <li>It stops at prescribed points of the Hajj/Umrah (e.g. beginning of tawaf for Umrah in common practice).</li>
+            <li>It stops at prescribed points of the Hajj or Umrah (for example, commonly at the start of tawaf for Umrah — confirm the practice of your rite with a trusted teacher).</li>
           </ul>
+          <p>Outside ihram, people still learn and teach the wording so children recognise it when the family prepares for Umrah or watches Hajj broadcasts. That home teaching is valuable; it does not replace the ihram-specific practice of the pilgrimage itself.</p>
 
           <h2 id="spirit">Spiritual meaning</h2>
-          <p>Labbaik is not tourism — it is answering the call Ibrahim (عليه السلام) proclaimed (Quran 22:27). Each repetition renews Tawheed: no partner in worship, praise, or kingship.</p>
+          <p>Labbaik is not tourism language. It answers the call that Ibrahim (عليه السلام) proclaimed (Quran 22:27). Standing in ihram and saying it is a public renewal of purpose: I am not here for a holiday; I am answering my Lord.</p>
+
+          <h2 id="mistakes">Common pronunciation and usage slips</h2>
+          <ul>
+            <li>Flattening <em>labbayk</em> into "labaik" without the doubled <em>b</em> and long <em>ay</em> sound.</li>
+            <li>Rushing <em>Allaahumma</em> so the letter <em>h</em> disappears.</li>
+            <li>Stopping after the first line and never learning the praise and dominion clause that completes the meaning.</li>
+            <li>Treating the Talbiyah as a song for social media rather than a rite with a start and a stop.</li>
+          </ul>
+
+          <h2 id="teach">Teaching Labbaik to children</h2>
+          <p>Start with the meaning of one word: "I am here for You." Then add the Arabic line by line. Short daily echoes beat one long session before travel. If the child already reads Arabic, have them follow the script while listening; if not, protect the sound first and introduce letters later through <a href="/noorani-qaida">Noorani Qaida</a>.</p>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What does labbaik mean in English?<span>+</span></summary>
+            <p>It means "Here I am" or "I am at Your service" — a response to Allah's call.</p>
+          </details>
+          <details class="faq-acc"><summary>Is labbaik the same as the full Talbiyah?<span>+</span></summary>
+            <p>Labbaik is the opening word. The full Talbiyah is the complete paragraph that includes "laa shareeka lak" and the praise, favour and dominion lines.</p>
+          </details>
+          <details class="faq-acc"><summary>Can I recite Labbaik if I am not on Hajj or Umrah?<span>+</span></summary>
+            <p>Learning and remembering the wording is fine. The ritual practice of raising the voice in Talbiyah belongs to the state of ihram during pilgrimage.</p>
+          </details>
+          <details class="faq-acc"><summary>Why do search results show labaik and labbayk?<span>+</span></summary>
+            <p>They are spelling variants of the same Arabic word. The careful transliteration is closer to <em>labbayk</em>.</p>
+          </details>
 
           <div class="highlight-box">
-            <strong>Prepare hearts for Hajj with Quran.</strong> Families who recite and understand the Book feel the Talbiyah more deeply. <a href="/online-quran-classes-for-kids">Book a free kids trial</a> or <a href="/online-quran-classes-for-adults">adult class</a>.
+            <strong>Prepare hearts for Hajj with Quran.</strong> Families who recite and understand the Book feel the Talbiyah more deeply. <a href="/online-quran-classes-for-kids">Kids classes</a> and <a href="/online-quran-classes-for-adults">adult classes</a> can support that reading journey — without replacing your local pilgrimage teacher.
           </div>`,
   },
 
@@ -1062,7 +1112,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   },
   "safar-ki-dua-travel-dua-arabic-english": {
     style: S,
-    content: `<p>Whether it is the school run, a business flight or Umrah travel, the Sunnah gives us a beautiful <strong>safar ki dua (travel dua)</strong> to begin every journey — the same words the Prophet ﷺ said when he settled onto his mount. Here is the full Arabic, transliteration, English meaning, the return-journey addition, and how to teach it to children in five minutes.</p>
+    content: `<p>Whether it is the school run, a business flight or Umrah travel, the Sunnah gives us a beautiful <strong>safar ki dua (travel dua)</strong> to begin every journey — the same words the Prophet ﷺ said when he settled onto his mount. <em>Safar</em> is simply the Arabic and Urdu word for travel, which is why the same supplication is searched for as "dua safar", "safar ki dua" and "the travel dua" alike. Here is the full Arabic, a word-by-word breakdown, the longer prophetic version, the return-journey addition, the pronunciation slips to avoid, and how to teach it to children.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> The main travel dua is <em>Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun</em> — "Glory be to the One who subjected this (vehicle) for us, and we could never have done it ourselves; and indeed, to our Lord we will return." Say it when your car, plane or train starts moving.
@@ -1077,14 +1127,40 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
           <p>Before it, the Sunnah is to say <strong>Bismillah</strong> when boarding, and <strong>Allahu Akbar</strong> three times once seated (Sahih Muslim).</p>
 
+          <h2 id="breakdown">Word-by-word meaning</h2>
+          <p>Most people learn safar ki dua by sound and never find out what they are actually saying:</p>
+          <table class="np-table">
+            <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
+            <tr><td>سُبْحَانَ</td><td>Subhana</td><td>Perfect and far above any flaw is…</td></tr>
+            <tr><td>الَّذِي</td><td>alladhi</td><td>the One who</td></tr>
+            <tr><td>سَخَّرَ لَنَا هَٰذَا</td><td>sakhkhara lana hadha</td><td>harnessed <em>this</em> for us — the mount, car, train, ship or aircraft you are sitting in</td></tr>
+            <tr><td>وَمَا كُنَّا لَهُ مُقْرِنِينَ</td><td>wa ma kunna lahu muqrinin</td><td>and we were never capable of mastering it on our own</td></tr>
+            <tr><td>وَإِنَّا إِلَىٰ رَبِّنَا</td><td>wa inna ila rabbina</td><td>and indeed, to our Lord</td></tr>
+            <tr><td>لَمُنقَلِبُونَ</td><td>la-munqalibun</td><td>we are surely returning</td></tr>
+          </table>
+          <p>The last line is the heart of it. Every journey has a destination you booked, and one you did not: <em>munqalibun</em> is the same word used for returning home, and the dua quietly reminds you that the final return is to Allah.</p>
+
+          <h2 id="source">Why these exact words? (Surah Az-Zukhruf)</h2>
+          <p>This is not a phrase later scholars composed — it is the Quran telling you what to say. In Surah Az-Zukhruf, Allah mentions the ships and riding animals He created, "so that you may settle yourselves upon their backs, and then remember the favour of your Lord when you have settled upon them, and say: <em>Subhanalladhi sakhkhara lana hadha…</em>" (43:12–14). So the dua belongs to the moment you are <strong>settled in your seat</strong>, not the moment you pick up your keys — and its purpose is stated in the verse itself: remembering a favour you did not earn.</p>
+
           <h2 id="order">Step-by-step order when starting any journey</h2>
           <ol>
             <li><strong>Bismillah</strong> — while stepping into the car/plane.</li>
             <li><strong>Alhamdulillah</strong> — once seated.</li>
             <li><strong>Allahu Akbar × 3</strong>.</li>
             <li>The travel dua above.</li>
-            <li>Optional: the Prophet's ﷺ longer dua asking for righteousness in the journey and protection for the family left behind.</li>
+            <li>The Prophet's ﷺ longer travel dua below, for journeys beyond the daily commute.</li>
           </ol>
+
+          <h2 id="longer">The complete prophetic travel dua</h2>
+          <p>For a real journey — a flight, a long drive, Umrah travel — the Prophet ﷺ continued after the verse with a longer supplication covering the journey itself, the distance, and the family left at home.</p>
+          <div class="verse-card">
+            <span class="vnum">Sahih Muslim</span>
+            <p class="arabic">اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى، وَمِنَ الْعَمَلِ مَا تَرْضَى، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ وَالْخَلِيفَةُ فِي الْأَهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ وَكَآبَةِ الْمَنْظَرِ وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ</p>
+            <p class="translit">Allahumma inna nas'aluka fi safarina hadha al-birra wat-taqwa, wa minal-'amali ma tarda. Allahumma hawwin 'alayna safarana hadha watwi 'anna bu'dah. Allahumma antas-sahibu fis-safar, wal-khalifatu fil-ahl. Allahumma inni a'udhu bika min wa'tha'is-safar, wa ka'abatil-manzar, wa su'il-munqalabi fil-mali wal-ahl.</p>
+            <p class="trans-en">"O Allah, we ask You on this journey of ours for righteousness and piety, and for deeds that please You. O Allah, make this journey easy for us and fold up its distance for us. O Allah, You are the Companion on the journey and the Guardian over the family. O Allah, I seek refuge in You from the hardship of the journey, from a sight that brings grief, and from an evil return regarding wealth and family."</p>
+          </div>
+          <p>Notice what it asks for: not simply a safe arrival, but that the journey itself does not damage your religion, that Allah be your companion while you are away and your guardian over the people you left behind, and that you do not come home to bad news. Memorise one line per trip.</p>
 
           <h2 id="return">The return-journey addition</h2>
           <div class="verse-card">
@@ -1093,10 +1169,22 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <p class="translit">Ayibuna, ta'ibuna, 'abiduna, li-rabbina hamidun.</p>
             <p class="trans-en">"We return, repenting, worshipping, and praising our Lord."</p>
           </div>
-          <p>The Prophet ﷺ added these words when coming home — a reminder that every safe return is a gift.</p>
+          <p>On the way back the Prophet ﷺ repeated the same travel dua and added these words — a reminder that every safe return is a gift, and that you should arrive home a slightly better version of the person who left.</p>
+
+          <h2 id="more">Other duas the Sunnah gives a traveller</h2>
+          <p>Safar ki dua opens the journey; a few short adhkar cover the rest. When you break the journey anywhere — a service station, a hotel room, a transit stop — say:</p>
+          <div class="verse-card">
+            <span class="vnum">When you stop somewhere · Sahih Muslim</span>
+            <p class="arabic">أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ</p>
+            <p class="translit">A'udhu bi kalimatillahit-tammati min sharri ma khalaq.</p>
+            <p class="trans-en">"I seek refuge in the perfect words of Allah from the evil of what He has created."</p>
+          </div>
+          <p>On the road itself, the Companions said <strong>Allahu Akbar</strong> when climbing and <strong>Subhanallah</strong> when descending (Bukhari) — awe going up, humility coming down.</p>
+          <p>And when you are the one staying behind, the Sunnah collections narrate a farewell for the traveller: <em>Astawdi'ullaha dinaka wa amanataka wa khawatima 'amalik</em> — "I entrust to Allah your religion, your trusts, and the ends of your deeds." Note what is entrusted first: not the luggage, the <em>deen</em>.</p>
 
           <h2 id="plane">Is there a special airplane dua?</h2>
-          <p>The same dua covers every mode of transport — camel, car, ship or aircraft. "Subjected this for us" applies even more powerfully at 40,000 feet. Many travellers also recite <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the <a href="/blog/4-quls">4 Quls</a> for protection during the flight.</p>
+          <p>No — and this is the single most common question about safar ki dua. There is no separate aircraft version. The same dua covers every mode of transport: camel, car, ship or aircraft. "Subjected this for us" applies even more powerfully at 40,000 feet, where you are relying entirely on something you did not build and cannot control.</p>
+          <p>Practically, say <em>Bismillah</em> as you step onto the aircraft, then the takbir and the dua once you are in your seat — you do not need to wait for take-off, and you have not missed it if the plane is already moving. Many travellers also recite <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the <a href="/blog/4-quls">4 Quls</a> for protection during the flight. If turbulence makes you anxious, remember that a traveller is also excused certain concessions in prayer; ask a qualified teacher about how to pray on a long flight before you fly rather than guessing at 35,000 feet.</p>
 
           <h2 id="kids">Teaching kids the travel dua (5-minute method)</h2>
           <ul>
@@ -1106,10 +1194,36 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li>More kid-friendly duas: <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a> and the <a href="/courses/daily-duas-for-kids">Daily Duas course</a>.</li>
           </ul>
 
+          <h2 id="mistakes">Common mistakes in pronunciation and use</h2>
+          <p>Two of these are pronunciation errors that genuinely change the Arabic, so they are worth fixing:</p>
+          <ul>
+            <li><strong>سَخَّرَ is <em>sakhkhara</em>, not <em>sakhara</em>.</strong> The doubled <em>kh</em> (shaddah) is not decoration. With it, the word means "He subjected / harnessed". Read with a kasrah and no shaddah, <em>sakhira</em> is a different verb from the same three letters meaning "he mocked". Hold the <em>kh</em>.</li>
+            <li><strong>مُقْرِنِينَ is <em>muq-ri-nin</em>.</strong> Sukoon on the <em>qaf</em>, then a light <em>ri</em>. Many readers flatten it to "muqarinin" or slide the qaf into a k sound.</li>
+            <li><strong>Saying it before you sit down.</strong> The verse ties the words to being settled in the seat. Bismillah as you board; the dua once you are in.</li>
+            <li><strong>Hunting for a different dua per vehicle.</strong> There isn't one — car, train, plane, boat all use these words.</li>
+            <li><strong>Treating it as a charm.</strong> It is remembrance and reliance, not a guarantee against every mishap. You still wear the seatbelt and check the tyres — tying the camel and trusting Allah is the Sunnah, not one or the other.</li>
+            <li><strong>Saving it for big trips only.</strong> The school run counts. That is where children actually learn it.</li>
+          </ul>
+          <p>If you do not yet read Arabic comfortably, reciting from a clear transliteration while you learn is far better than skipping the dua — and you can make the accompanying personal dua in your own language.</p>
+
           <h2 id="traveller">Bonus: the traveller's dua is accepted</h2>
           <p>The Prophet ﷺ said three duas are not rejected — among them <strong>the dua of the traveller</strong> (Tirmidhi). Long journey ahead? That is your window: make dua for family, rizq, and guidance while you travel.</p>
 
           <p>Families based in the Emirates who want steady Quran lessons around travel and school schedules can explore <a href="/locations/online-quran-classes-uae">online Quran classes in the UAE</a> (GST matching, subject to tutor availability).</p>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is safar ki dua (the travel dua)?<span>+</span></summary>
+            <p>The travel dua is 'Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun' (Quran 43:13-14) — Glory be to the One who subjected this vehicle for us; we could never have done it ourselves, and to our Lord we will return.</p>
+          </details>
+          <details class="faq-acc"><summary>When should I say the travel dua?<span>+</span></summary>
+            <p>Say Bismillah when boarding, Alhamdulillah when seated, Allahu Akbar three times, then the travel dua as the car, plane or train starts moving. The same dua applies to every mode of transport.</p>
+          </details>
+          <details class="faq-acc"><summary>Is there a separate dua for airplane travel?<span>+</span></summary>
+            <p>No separate dua is needed — the same Sunnah travel dua covers aircraft. Many travellers also recite Ayatul Kursi and the 4 Quls for protection during flights.</p>
+          </details>
+          <details class="faq-acc"><summary>Is the dua of a traveller accepted?<span>+</span></summary>
+            <p>Yes — the Prophet ﷺ mentioned the traveller's dua among those not rejected (Tirmidhi). Long journeys are an excellent time to make dua for family, provision and guidance.</p>
+          </details>
 
           <div class="gold-box">
             <strong>Want your children to learn every daily dua with correct Arabic?</strong> The kids' programme covers travel, eating, sleeping and morning duas with a live tutor. <a href="/online-quran-classes-for-kids">Book a free 30-minute kids trial</a>.

@@ -308,6 +308,14 @@ export default function FemaleQuranTeacherPage() {
             ))}
           </div>
 
+          <p style={{ color: "var(--muted)", lineHeight: 1.7, textAlign: "center", marginBottom: 44, maxWidth: 760, marginLeft: "auto", marginRight: "auto" }}>
+            If you are an adult learner rather than a parent booking for a child, the{" "}
+            <Link href="/quran-classes-for-sisters" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+              Quran classes for sisters and ladies
+            </Link>{" "}
+            page covers the same female tutor request from an adult beginner&rsquo;s starting point.
+          </p>
+
           {/* Location links */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.5rem", textAlign: "center", marginBottom: 20 }}>
             Request Female Quran Teachers by Timezone

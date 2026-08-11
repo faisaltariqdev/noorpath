@@ -39,5 +39,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "CCBot", allow: "/" },
     ],
     sitemap: "https://www.noorpath.online/sitemap.xml",
+    host: "https://www.noorpath.online",
   };
 }
