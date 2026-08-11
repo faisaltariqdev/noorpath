@@ -33,16 +33,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description =
     guide?.description ??
     `Online Quran classes in ${c.city} for kids and adults — live ${oneToOne} Noorani Qaida, Tajweed and Hifz lessons. Request a preferred ${c.timezone} time, subject to tutor matching.`;
+  const indexable = isCityIndexable(c.slug);
+  // Thin template cities: noindex + canonical to country hub so Google consolidates signals
+  // away from near-duplicate city URLs (GSC still shows pre-noindex crawls until recrawl).
+  const canonical = indexable
+    ? `https://www.noorpath.online/online-quran-classes/${c.slug}`
+    : `https://www.noorpath.online/locations/${c.countrySlug}`;
   return {
     title: {
       absolute: `Online Quran Classes ${c.city} | Live ${oneToOne} Trial`,
     },
     description,
     keywords: getCityKeywords(c),
-    alternates: { canonical: `https://www.noorpath.online/online-quran-classes/${c.slug}` },
-    ...(isCityIndexable(c.slug)
-      ? {}
-      : { robots: { index: false, follow: true } }),
+    alternates: { canonical },
+    ...(indexable ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
       title: `Online Quran Classes in ${c.city} | Kids & Adults | NoorPath`,
       description,

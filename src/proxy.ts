@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { TEMPLATE_CITY_NOINDEX_SLUGS } from "@/data/cities";
 
 /** Old and consolidated paths → current canonical owners */
 const LEGACY_PATHS: Record<string, string> = {
@@ -55,6 +56,14 @@ export function proxy(request: NextRequest) {
     const withoutHtml = pathname.slice(0, -5);
     const target = LEGACY_PATHS[withoutHtml] ?? LEGACY_PATHS[pathname] ?? withoutHtml;
     return NextResponse.redirect(new URL(target || "/", request.url), 301);
+  }
+
+  // Stronger than meta alone: HTTP header for thin city templates excluded from indexing.
+  const cityMatch = /^\/online-quran-classes\/([^/]+)\/?$/.exec(pathname);
+  if (cityMatch && TEMPLATE_CITY_NOINDEX_SLUGS.has(cityMatch[1])) {
+    const res = NextResponse.next();
+    res.headers.set("X-Robots-Tag", "noindex, follow");
+    return res;
   }
 
   return NextResponse.next();
