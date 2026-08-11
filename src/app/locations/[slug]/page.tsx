@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
-import { getCitiesByCountrySlug } from "@/data/cities";
+import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { getCountryGuide } from "@/data/countryGuides";
 import { CONTACT, FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
@@ -86,7 +86,7 @@ export default async function LocationDetailPage({ params }: Props) {
   const related = market
     ? relatedPriority
     : locations.filter((l) => l.slug !== slug).slice(0, 4);
-  const cityPages = getCitiesByCountrySlug(slug);
+  const cityPages = getCitiesByCountrySlug(slug).filter((c) => isCityIndexable(c.slug));
   const faqs = getLocationFaqs(loc);
   const seoParagraphs = getLocationSeoParagraphs(loc);
   const locale = getLocale(slug);
@@ -383,7 +383,7 @@ export default async function LocationDetailPage({ params }: Props) {
                 </h2>
                 {cityPages.length > 0 && (
                   <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 14 }}>
-                    Explore our dedicated city guides for local timezone slots and community details:
+                    Dedicated city guides for major hubs (indexable local pages). Other cities can still request the same online service from this country page.
                   </p>
                 )}
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
@@ -402,9 +402,9 @@ export default async function LocationDetailPage({ params }: Props) {
                       </span>
                     );
                   })}
-                  <span style={{ background: "var(--ivory)", color: "var(--muted)", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 500, border: "1px solid var(--border)" }}>
-                    + Other cities online
-                  </span>
+                  <Link href="/free-quran-classes-online" style={{ background: "var(--gold)", color: "var(--charcoal)", borderRadius: 20, padding: "6px 14px", fontSize: ".85rem", fontWeight: 700, textDecoration: "none" }}>
+                    Free trial →
+                  </Link>
                 </div>
               </div>
 

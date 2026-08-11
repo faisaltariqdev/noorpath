@@ -39,10 +39,10 @@ const PAGE_URL = `${BASE_URL}/locations/online-quran-classes-uk`;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes UK | Live 1-to-1 & Free Trial",
+    absolute: "NoorPath Academy | Online Quran Classes UK — Live 1-to-1 & Free Trial",
   },
   description:
-    "Live one-to-one online Quran classes in the UK for kids and adults. Request Qaida, Tajweed, Hifz or a female tutor in GMT/BST. Free 30-minute trial.",
+    "NoorPath Academy — live one-to-one online Quran classes in the UK for kids and adults. Request Qaida, Tajweed, Hifz or a female tutor in GMT/BST. Free 30-minute trial, no credit card.",
   keywords: [
     "online quran classes uk",
     "quran classes online uk",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     languages: getCountryHubHreflang(),
   },
   openGraph: {
-    title: "Online Quran Classes UK — Live One-to-One Lessons",
+    title: "NoorPath Academy | Online Quran Classes UK — Live One-to-One Lessons",
     description:
       "UK-focused online Quran lessons for children and adults, with GMT/BST tutor matching and a free 30-minute trial request.",
     url: PAGE_URL,
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran Classes UK | NoorPath Academy",
+    title: "NoorPath Academy | Online Quran Classes UK",
     description:
       "Live one-to-one lessons for UK children and adults, with GMT/BST scheduling requests and a free trial.",
     images: ["/marketing/family-evening-quran.jpg"],

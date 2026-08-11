@@ -13,18 +13,20 @@ import {
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: "Online Quran Class Pricing — Affordable Plans for Families",
-  description: `Online Quran class pricing from $${PRICING_PLANS[0].monthlyPriceUsd}/month. Compare Starter, Standard and Intensive one-to-one lesson plans and request a free trial.`,
+  title: {
+    absolute: "NoorPath Academy | Online Quran Class Pricing — Family Plans",
+  },
+  description: `NoorPath Academy online Quran class pricing from $${PRICING_PLANS[0].monthlyPriceUsd}/month. Compare Starter, Standard and Intensive one-to-one plans and request a free trial.`,
   alternates: { canonical: "https://www.noorpath.online/pricing" },
   openGraph: {
-    title: "Online Quran Class Pricing — Affordable Family Plans | NoorPath Academy",
+    title: "NoorPath Academy | Online Quran Class Pricing — Family Plans",
     description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Starter, Standard, and Intensive plans. Family discount for 2+ siblings. Free ${TRIAL.durationMinutes}-minute trial.`,
     url: "https://www.noorpath.online/pricing",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Class Pricing — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran Class Pricing | NoorPath Academy",
+    title: "NoorPath Academy | Online Quran Class Pricing",
     description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Family discount for siblings. Free trial request.`,
     images: ["/og-image.png"],
   },

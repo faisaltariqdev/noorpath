@@ -83,9 +83,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online uk",
     ],
     content: {
-      metadataTitle: "Online Quran Classes UK — Kids & Adults | NoorPath",
+      metadataTitle: "NoorPath Academy | Online Quran Classes UK — Live 1-to-1 Trial",
       metadataDescription:
-        "Request live one-to-one online Quran classes in the UK, with GMT/BST scheduling for Qaida, Tajweed, Hifz, children and adults.",
+        "NoorPath Academy — live one-to-one online Quran classes for UK kids and adults. Request GMT/BST slots for Qaida, Tajweed or Hifz. Free 30-minute trial, no credit card.",
       heading: "Online Quran Classes in the United Kingdom",
       introduction:
         "Families across the UK can request live one-to-one Quran tuition online, with lesson planning around the school week and local GMT or BST time.",
@@ -114,9 +114,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online usa",
     ],
     content: {
-      metadataTitle: "Online Quran Classes USA — Kids & Adults | NoorPath",
+      metadataTitle: "NoorPath Academy | Online Quran Classes USA — Live 1-on-1 Trial",
       metadataDescription:
-        "Request live one-on-one online Quran classes in the USA, with ET, CT, MT, or PT scheduling for Qaida, Tajweed, Hifz, kids, and adults.",
+        "NoorPath Academy — live one-on-one online Quran classes for US kids and adults. Request ET, CT, MT or PT scheduling for Qaida, Tajweed or Hifz. Free 30-minute trial.",
       heading: "Online Quran Classes in the United States",
       introduction:
         "Families in the United States can request live one-on-one Quran lessons online without adding another commute to the school week.",
@@ -207,9 +207,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online australia",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Australia — Kids & Adults | NoorPath",
+      metadataTitle: "NoorPath Academy | Online Quran Classes Australia — Free Trial",
       metadataDescription:
-        "Request live one-to-one online Quran classes in Australia, with state-aware scheduling for Qaida, Tajweed, Hifz, children and adults.",
+        "NoorPath Academy — live one-to-one online Quran classes for Australian kids and adults. Request state-aware AEST/AEDT/AWST scheduling. Free 30-minute trial, no credit card.",
       heading: "Online Quran Classes in Australia",
       introduction:
         "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements.",

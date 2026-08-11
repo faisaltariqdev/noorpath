@@ -8,9 +8,10 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Free Quran Classes Online — Kids & Adults | No Credit Card Trial",
+    absolute: "NoorPath Academy | Free Quran Classes Online — Free Trial",
   },
-  description: "Request a free 30-minute live one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
+  description:
+    "NoorPath Academy free 30-minute live one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
   keywords: [
     "free quran classes online",
     "quran classes free trial no credit card",
@@ -26,14 +27,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.noorpath.online/free-quran-classes-online" },
   openGraph: {
-    title: "Free Quran Classes Online — Free Trial | NoorPath Academy",
+    title: "NoorPath Academy | Free Quran Classes Online — Free Trial",
     description: "Request a free 30-minute one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
     url: "https://www.noorpath.online/free-quran-classes-online",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Quran Classes Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Quran Classes Online | NoorPath Academy",
+    title: "NoorPath Academy | Free Quran Trial",
     description: "Free 30-minute one-to-one online Quran trial request. No credit card.",
     images: ["/og-image.png"],
   },

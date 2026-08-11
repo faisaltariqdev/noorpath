@@ -60,6 +60,8 @@ export function getOrganizationJsonLd() {
         telephone: CONTACT.phoneE164,
         description:
           "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
+        disambiguatingDescription:
+          "Online-only Quran academy — live remote classes worldwide. Not affiliated with noorpath.net app products. No physical campus or walk-in branches.",
         knowsAbout: [
           "Online Quran learning",
           "Online Quran classes",
@@ -203,12 +205,56 @@ export function getOrganizationJsonLd() {
         "@type": "WebSite",
         "@id": WEBSITE_ID,
         url: BASE_URL,
-        name: "NoorPath",
-        alternateName: ["NoorPath Academy", "NoorPath Online Quran Academy"],
+        // Prefer "NoorPath Academy" over bare "NoorPath" to reduce collision with
+        // unrelated noorpath.net apps (Google site-name docs: unique, concise, consistent).
+        name: "NoorPath Academy",
+        alternateName: [
+          "NoorPath",
+          "NoorPath Online Quran Academy",
+          "noorpath.online",
+        ],
         description:
-          "Official website of NoorPath Online Quran Academy — live one-to-one online Quran learning and Quran classes.",
+          "Official website of NoorPath Online Quran Academy — live one-to-one online Quran learning and Quran classes. Online only; no campus.",
         publisher: { "@id": ORGANIZATION_ID },
         about: { "@id": ORGANIZATION_ID },
+        // Primary hubs mirrored in main nav — structure signal only; sitelinks remain automated.
+        hasPart: [
+          {
+            "@type": "WebPage",
+            name: "Online Quran Classes",
+            url: `${BASE_URL}/online-quran-classes`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Courses",
+            url: `${BASE_URL}/courses`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Free Trial",
+            url: `${BASE_URL}/free-quran-classes-online`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Pricing",
+            url: `${BASE_URL}/pricing`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Blog",
+            url: `${BASE_URL}/blog`,
+          },
+          {
+            "@type": "WebPage",
+            name: "About NoorPath Academy",
+            url: `${BASE_URL}/about`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Contact",
+            url: `${BASE_URL}/contact`,
+          },
+        ],
         potentialAction: {
           "@type": "SearchAction",
           target: {

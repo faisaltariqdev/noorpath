@@ -19,7 +19,6 @@ import {
   ROOT,
   BASE,
   listBlogSlugsFromBlogTs,
-  listFaqSlugs,
   listSitemapCommercialSlugs,
   listSitemapHighTrafficSlugs,
   extractContentSlugs,
@@ -58,37 +57,22 @@ function validateRobotsSource() {
 
 function validateBlogWiring() {
   const meta = new Set(listBlogSlugsFromBlogTs());
-  const faqs = new Set(listFaqSlugs());
   const content = new Set(extractContentSlugs());
   const commercial = new Set(listSitemapCommercialSlugs());
   const high = new Set(listSitemapHighTrafficSlugs());
 
-  // Content modules don't cover every slug (legacy inline content). Only flag brand-new style misses when content file exists for batch patterns.
-  let missingFaq = 0;
-  for (const slug of meta) {
-    if (!faqs.has(slug)) {
-      // many older posts still have FAQs under different shapes; only warn for recent commercial/decision patterns
-      if (
-        slug.includes("online-") ||
-        slug.includes("how-to-") ||
-        slug.includes("dua-") ||
-        slug.includes("what-") ||
-        slug.includes("sibling") ||
-        slug.includes("teen") ||
-        slug.includes("gulf") ||
-        slug.includes("tajweed") ||
-        slug.includes("hifz") ||
-        slug.includes("tayammum") ||
-        slug.includes("wudu") ||
-        slug.includes("barakallah")
-      ) {
-        // skip if FAQ excluded intentionally
-        missingFaq++;
-        if (!faqs.has(slug)) {
-          note("warn", "faq-wiring", `Blog slug lacks FAQ schema key: ${slug}`, `Add rawBlogFaqs["${slug}"] in src/data/blogFaqs.ts`);
-        }
-      }
-    }
+  // FAQ honesty: live FAQPage JSON-LD is derived from visible `.faq-acc` HTML
+  // (src/lib/faqFromHtml.ts). Prefer visible FAQs over legacy blogFaqs.ts keys.
+  const blogPage = read("src/app/blog/[slug]/page.tsx");
+  if (!/faqPageJsonLdFromHtml|faqFromHtml/.test(blogPage)) {
+    note(
+      "fail",
+      "faq-honesty",
+      "Blog page does not derive FAQ JSON-LD from visible HTML",
+      "Wire faqPageJsonLdFromHtml(richContent.content) in src/app/blog/[slug]/page.tsx",
+    );
+  } else {
+    note("pass", "faq-honesty", "Blog FAQ JSON-LD is derived from visible .faq-acc HTML");
   }
 
   // Sitemap priority coverage recommendations for commercial-looking titles
@@ -101,8 +85,7 @@ function validateBlogWiring() {
     }
   }
 
-  note("pass", "inventory", `Blogs=${meta.size}, FAQ keys=${faqs.size}, content-module slugs=${content.size}`);
-  if (missingFaq === 0) note("pass", "faq-wiring", "No high-priority FAQ gaps flagged in heuristic set");
+  note("pass", "inventory", `Blogs=${meta.size}, content-module slugs=${content.size}`);
 }
 
 function validateHonestyGuards() {
@@ -136,7 +119,7 @@ function validateStagedSeoSurface(files) {
       if (/noindex/.test(src)) note("warn", "indexability", `${f} contains noindex`);
     }
     if (f === "src/data/blog.ts") {
-      note("warn", "blog", "blog.ts changed — ensure blogContent + blogFaqs + sitemap sets updated");
+      note("warn", "blog", "blog.ts changed — ensure blogContent + visible .faq-acc FAQs + sitemap sets updated");
     }
   }
   return seoTouch;

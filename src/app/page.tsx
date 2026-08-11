@@ -27,24 +27,27 @@ import {
 export const revalidate = false;
 
 export const metadata: Metadata = {
+  // Brand-first homepage title (Google title-link + site-name sources). Differentiates
+  // from app brand on noorpath.net; avoids year-stuffing that invites rewrite to domain.
   title: {
-    absolute: "Learn Quran Online for Kids & Families — Free 30-Min Trial (2026)",
+    absolute: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
   },
   description:
-    "Live 1-on-1 online Quran classes for kids and adults — Tajweed, Hifz, Noorani Qaida and Arabic. Parent Portal for homework, daily progress and attendance. Free 30-minute trial.",
+    "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults (Tajweed, Hifz, Noorani Qaida, Arabic). Parent Portal for homework and progress. Free 30-minute trial, no credit card.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
-    title: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
-    description: "Online Quran classes for kids and adults — Qaida, Tajweed, Hifz and Arabic. Family plans and a free 30-minute trial with no credit card.",
+    title: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
+    description: "Live online Quran classes for kids and adults — Qaida, Tajweed, Hifz and Arabic. Family plans and a free 30-minute trial with no credit card.",
     url: "https://www.noorpath.online",
     type: "website",
+    siteName: "NoorPath Academy",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Learn Quran Online | NoorPath Academy — Free Trial",
-    description: "Online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans.",
+    title: "NoorPath Academy | Online Quran Classes — Free Trial",
+    description: "Live online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans.",
     images: ["/og-image.png"],
   },
 };
@@ -186,9 +189,10 @@ export default function HomePage() {
               </div>
 
               <h1 style={{ color: "#fff", fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 700, lineHeight: 1.12, marginBottom: 18 }}>
-                Learn Quran Online<br />
-                From <em style={{ color: "var(--gold-lt)" }}>Noorani Qaida</em> to Hifz<br />
-                — For Every Age
+                NoorPath Academy<br />
+                <span style={{ fontWeight: 600, fontSize: "0.72em", display: "block", marginTop: 10, lineHeight: 1.25 }}>
+                  Learn Quran Online — From <em style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Noorani Qaida</em> to Hifz
+                </span>
               </h1>
               <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.78, marginBottom: 24, maxWidth: 520 }}>
                 Live one-to-one online Quran classes for kids, adults &amp; sisters. Start with a <strong style={{ color: "var(--gold-lt)" }}>free {TRIAL.durationMinutes}-minute trial</strong> — no credit card required.

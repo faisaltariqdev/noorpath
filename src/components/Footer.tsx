@@ -32,7 +32,7 @@ const company = [
   { href: "/blog", label: "Blog & Articles" },
   { href: "/islamic-resources", label: "Free Resources" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/online-quran-classes#cta", label: "Free Trial" },
+  { href: "/free-quran-classes-online", label: "Free Trial" },
 ];
 
 const quickLinks = [
@@ -83,7 +83,7 @@ export default function Footer() {
               </Link>
             ))}
             <Link
-              href="/online-quran-classes#cta"
+              href="/free-quran-classes-online"
               style={{
                 background: "var(--gold)",
                 borderRadius: "50px",

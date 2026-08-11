@@ -189,6 +189,37 @@ export default function CountryQuranClassesGuide({
             </div>
           )}
 
+          {section.relatedLinks && section.relatedLinks.length > 0 && (
+            <nav
+              aria-label={`${section.heading} related links`}
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 10,
+                marginTop: 18,
+              }}
+            >
+              {section.relatedLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  style={{
+                    background: "rgba(10,110,79,.08)",
+                    border: "1px solid rgba(10,110,79,.2)",
+                    borderRadius: 999,
+                    color: "var(--emerald)",
+                    fontSize: ".85rem",
+                    fontWeight: 700,
+                    padding: "7px 14px",
+                    textDecoration: "none",
+                  }}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          )}
+
           {index === 3 && (
             <p
               style={{

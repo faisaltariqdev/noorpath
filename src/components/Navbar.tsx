@@ -6,17 +6,18 @@ import { TRIAL } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 
-/* Primary nav — kept to 5 items so the bar breathes */
+/* Primary nav — brand SERP sitelink hubs (Classes, Courses, Trial, Pricing, Blog) */
 const primaryLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
   { href: "/courses", label: "Courses" },
-  { href: "/noorani-qaida", label: "Qaida" },
+  { href: "/free-quran-classes-online", label: "Free Trial" },
   { href: "/pricing", label: "Pricing" },
   { href: "/blog", label: "Blog" },
 ];
 
 /* Grouped under a "More" dropdown */
 const moreLinks = [
+  { href: "/noorani-qaida", label: "Noorani Qaida" },
   { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
   { href: "/one-on-one-quran-classes", label: "1-to-1 Classes" },
   { href: "/quran-classes-for-sisters", label: "Classes for Sisters" },
@@ -24,6 +25,7 @@ const moreLinks = [
   { href: "/our-tutors", label: "Our Tutors" },
   { href: "/islamic-resources", label: "Resources" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({
@@ -61,7 +63,7 @@ export default function Navbar() {
           <strong style={{ fontWeight: 700 }}>Free {TRIAL.durationMinutes}-minute trial</strong>{" "}
           — No credit card required.{" "}
           <Link
-            href="/online-quran-classes#cta"
+            href="/free-quran-classes-online"
             style={{ color: "#e8b84b", fontWeight: 700, marginLeft: 8, textDecoration: "none", whiteSpace: "nowrap" }}
           >
             Request Trial →
@@ -303,7 +305,7 @@ export default function Navbar() {
             {/* Free Trial CTA */}
             <li style={{ marginLeft: 4 }}>
               <Link
-                href="/online-quran-classes#cta"
+                href="/free-quran-classes-online"
                 style={{
                   background: "linear-gradient(135deg, #c9922a 0%, #d4a030 100%)",
                   color: "#1a1a2e",
@@ -416,7 +418,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/online-quran-classes#cta"
+                  href="/free-quran-classes-online"
                   style={{
                     display: "block",
                     textAlign: "center",

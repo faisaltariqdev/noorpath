@@ -1647,7 +1647,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p>If you are a Muslim parent in the UK searching for <strong>online Quran classes for your kids</strong>, live lessons can provide a travel-free option around school and family schedules in Birmingham, Bradford, London, Luton, Manchester, Leicester, and elsewhere. Tutor and GMT/BST availability should be confirmed before enrolment.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Online Quran classes can connect a child with a tutor over a live 1-on-1 video call. Compare the proposed tutor's credentials, safeguarding process, complete monthly price, lesson length and confirmed schedule before enrolling. NoorPath lets families <a href="/online-quran-classes-for-kids">request a free 30-minute trial class</a> with no credit card.
+            <strong>Quick answer:</strong> Online Quran classes can connect a child with a tutor over a live 1-on-1 video call. Compare the proposed tutor's credentials, safeguarding process, complete monthly price, lesson length and confirmed schedule before enrolling. NoorPath lets families <a href="/online-quran-classes-for-kids">request a free 30-minute trial class</a> with no credit card. Country scheduling context: <a href="/locations/online-quran-classes-uk">online Quran classes UK</a>.
           </div>
 
           <p>This guide covers everything a UK parent needs to decide: how online classes work, what they cost, how to keep your child safe, whether they are as effective as in-person madrassah, and how to choose the right teacher. Let's begin.</p>

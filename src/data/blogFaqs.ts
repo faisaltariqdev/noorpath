@@ -1,4 +1,9 @@
 // Auto-extracted FAQPage schemas from original HTML blog files
+//
+// DEPRECATED for live JSON-LD (Aug 2026):
+// Blog pages now emit FAQPage schema only from visible `.faq-acc` markup via
+// `src/lib/faqFromHtml.ts` so Google structured data matches on-page FAQs.
+// Keep this file only as a historical / migration reference until removed.
 type BlogFaqSchema = Record<string, unknown>;
 
 const rawBlogFaqs: Record<string, BlogFaqSchema> = {

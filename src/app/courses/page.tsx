@@ -10,9 +10,9 @@ import InlineTrialCTA from "@/components/InlineTrialCTA";
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Online Quran & Islamic Courses — All Programs | NoorPath Academy 2026" },
+  title: { absolute: "NoorPath Academy | Online Quran & Islamic Courses" },
   description:
-    "Browse 7 online Quran courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes and daily duas. Live 1-to-1 lessons and a free 30-minute trial.",
+    "NoorPath Academy courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes and daily duas. Live 1-to-1 lessons and a free 30-minute trial.",
   keywords: [
     "online quran courses", "quran classes online", "noorani qaida online", "tajweed classes online",
     "hifz program online", "arabic language online", "islamic studies online", "quran for kids online",
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.noorpath.online/courses" },
   openGraph: {
-    title: "Online Quran & Islamic Courses — All Programs | NoorPath Academy",
+    title: "NoorPath Academy | Online Quran & Islamic Courses",
     description: "7 online courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic Studies and more. Live 1-to-1 lessons and a free trial.",
     url: "https://www.noorpath.online/courses",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Courses — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran & Islamic Courses | NoorPath Academy",
+    title: "NoorPath Academy | Online Quran Courses",
     description: "7 courses: Qaida, Tajweed, Hifz, Arabic and Islamic Studies. Free 30-minute trial.",
     images: ["/og-image.png"],
   },

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TRIAL } from "@/lib/academyFacts";
 
 const linkStyle = { color: "var(--emerald)", fontWeight: 700 };
 
@@ -35,6 +36,8 @@ export default function UkQuranClassesGuide() {
           <li><a href="#uk-progress" style={linkStyle}>Measuring progress</a></li>
           <li><a href="#uk-pricing" style={linkStyle}>Pricing and payment questions</a></li>
           <li><a href="#uk-comparison" style={linkStyle}>Online and local options compared</a></li>
+          <li><a href="#uk-cities" style={linkStyle}>UK city guides</a></li>
+          <li><a href="#uk-next-steps" style={linkStyle}>Next steps and free trial</a></li>
         </ol>
       </nav>
 
@@ -371,6 +374,48 @@ export default function UkQuranClassesGuide() {
         </p>
       </section>
 
+      <section id="uk-cities">
+        <h2>Which UK City Guides Help with Local Scheduling Context?</h2>
+        <p>
+          NoorPath is online-only across the United Kingdom — there is no NoorPath campus or drop-off
+          centre. City guides for major hubs add GMT/BST routine context for families who want a
+          more local framing when requesting a slot. Households elsewhere in the UK should enquire
+          from this country page; the same remote one-to-one service applies.
+        </p>
+        <p style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+          <Link href="/online-quran-classes/london" style={linkStyle}>London</Link>
+          <Link href="/online-quran-classes/birmingham" style={linkStyle}>Birmingham</Link>
+          <Link href="/online-quran-classes/manchester" style={linkStyle}>Manchester</Link>
+          <Link href="/online-quran-classes/bradford" style={linkStyle}>Bradford</Link>
+          <Link href="/online-quran-classes/leicester" style={linkStyle}>Leicester</Link>
+          <Link href="/online-quran-classes/glasgow" style={linkStyle}>Glasgow</Link>
+          <Link href="/blog/online-quran-classes-uk-kids-guide" style={linkStyle}>UK kids guide</Link>
+        </p>
+      </section>
+
+      <section id="uk-next-steps">
+        <h2>What Should a UK Family Do Next?</h2>
+        <div className="highlight-box">
+          <strong>Quick answer:</strong> Request a free {TRIAL.durationMinutes}-minute trial with no credit card, share
+          your GMT or BST availability and learning goal, then review published USD pricing only
+          after a suitable tutor and recurring time are confirmed.
+        </div>
+        <p>
+          Bring a short brief: learner age, current reading ability, preferred after-school or
+          weekend window, and any female-tutor preference. Use the trial to check audio, placement
+          and teaching fit before any ongoing payment.
+        </p>
+        <p>
+          <Link href="/free-quran-classes-online" style={linkStyle}>Book a free trial</Link>
+          {" · "}
+          <Link href="/pricing" style={linkStyle}>View pricing</Link>
+          {" · "}
+          <Link href="/online-quran-classes-for-kids" style={linkStyle}>Kids classes</Link>
+          {" · "}
+          <Link href="/courses" style={linkStyle}>All courses</Link>
+        </p>
+      </section>
+
       <section aria-labelledby="uk-guide-review">
         <h2 id="uk-guide-review">Editorial Review and Corrections</h2>
         <p>
@@ -378,7 +423,7 @@ export default function UkQuranClassesGuide() {
           remain on the relevant global service pages, while city pages are limited to practical
           local context. The page follows NoorPath&apos;s{" "}
           <Link href="/editorial-policy" style={linkStyle}>editorial policy</Link> and was reviewed
-          on 15 July 2026.
+          on 12 August 2026.
         </p>
         <p>
           To report an inaccurate service, schedule, pricing or location statement, use the{" "}

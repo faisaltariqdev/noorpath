@@ -43,11 +43,11 @@ const amiri = Amiri({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noorpath.online"),
   title: {
-    default: "Learn Quran Online | NoorPath Academy — Free Trial for Kids & Families",
+    default: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
     template: "%s | NoorPath Academy",
   },
   description:
-    "Join NoorPath Academy for live 1-on-1 online Quran classes: Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Free 30-min trial.",
+    "NoorPath Academy — live 1-on-1 online Quran classes: Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Free 30-min trial.",
   keywords: [
     "learn quran online","online quran classes","quran tutor online",
     "online quran academy","quran classes for kids","tajweed classes online",
@@ -73,14 +73,14 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.noorpath.online",
     siteName: "NoorPath Academy",
-    title: "Learn Quran Online | NoorPath Academy — Free Trial",
+    title: "NoorPath Academy | Online Quran Classes — Free Trial",
     description: "Live one-to-one online Quran classes for kids and adults — Qaida, Tajweed, Hifz, Arabic and Islamic studies. Request a free 30-minute trial.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@NoorPathAcademy",
-    title: "Learn Quran Online | NoorPath Academy — Free 30-Min Trial",
+    title: "NoorPath Academy | Online Quran Classes — Free Trial",
     description: "Online Quran classes for kids and adults. Tajweed, Hifz, Qaida, Arabic, family plans and a free trial.",
     images: ["/og-image.png"],
   },

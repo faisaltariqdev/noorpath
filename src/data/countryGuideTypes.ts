@@ -10,6 +10,8 @@ export interface CountryGuideSection {
   paragraphs: string[];
   bullets?: string[];
   table?: CountryGuideTable;
+  /** Internal links rendered after bullets/table — keep to real routes only */
+  relatedLinks?: Array<{ href: string; label: string }>;
 }
 
 export interface CountryGuideContent {

@@ -6,7 +6,7 @@ export const countryGuidesUsaUae: Record<string, CountryGuideContent> = {
     title: 'Online Quran Classes in the USA: A Practical Parent Guide',
     description:
       'A detailed guide for US families comparing remote Quran learning, scheduling across American time zones, choosing a course, evaluating tutors, planning a trial, and monitoring progress.',
-    reviewedDate: '15 July 2026',
+    reviewedDate: '12 August 2026',
     sections: [
       {
         id: 'usa-online-only-scope',
@@ -26,6 +26,8 @@ export const countryGuidesUsaUae: Record<string, CountryGuideContent> = {
       {
         id: 'usa-time-zones',
         heading: 'How should US families schedule lessons across ET, CT, MT, and PT?',
+        directAnswer:
+          'State your city or time zone in the request and confirm every proposed slot in your local wall-clock time. Eastern, Central, Mountain and Pacific times are hours apart, and daylight-saving rules are not identical everywhere.',
         paragraphs: [
           'Scheduling in the United States requires more than asking whether an evening slot is available. Eastern Time, Central Time, Mountain Time, and Pacific Time are several hours apart, and a time that works after school in New York may fall during the school day in California. Families should state their city or time zone explicitly and confirm that every proposed time is shown in their own local time. This is especially useful when a parent and child are traveling or when the person arranging lessons lives elsewhere.',
           'Daylight saving time adds another practical check. Most US locations change clocks seasonally, but some do not follow the same pattern. Rather than assuming a tutor’s calendar will move automatically, confirm the local lesson time around a clock change. A recurring appointment should remain anchored to the time the learner can reliably attend. If a family relocates, spends part of the year in another state, or changes from standard time to daylight time, it is sensible to reconfirm the schedule before the next lesson.',
@@ -114,6 +116,62 @@ export const countryGuidesUsaUae: Record<string, CountryGuideContent> = {
         paragraphs: [
           'Progress in Quran learning is better tracked through specific observable skills than through a promised completion date. Depending on the course, evidence might include recognizing a set of letters accurately, reading familiar patterns with less prompting, applying a Tajweed rule in new examples, recalling assigned passages, or correcting an error after feedback. Improvement can be uneven, and attendance alone does not establish mastery.',
           'If progress appears stalled, investigate before assigning blame. The starting level may have been inaccurate, practice may be inconsistent, the schedule may be tiring, technology may impair audio, or the teaching match may need review. Share concrete examples and ask what adjustment is proposed. A responsible plan identifies the next step and a later point for reassessment; it does not promise a fixed result by a fixed date.',
+        ],
+      },
+      {
+        id: 'usa-school-year',
+        heading: 'How does a typical US school week shape a realistic lesson slot?',
+        directAnswer:
+          'Build the slot from your child’s actual dismissal, commute, homework and bedtime — not a generic “after school at 4 pm.” Public, charter, private, virtual and homeschool calendars differ by state and district.',
+        paragraphs: [
+          'Many US households look for a weekday window after school and before dinner, or a weekend morning that survives sports and family errands. Younger children often need a snack and movement before a live lesson; teenagers may need space after homework. Homeschool families can use a quieter mid-morning slot, but still benefit from treating it as a recurring appointment rather than a flexible intention.',
+          'Exam weeks, travel between households, and daylight-saving weekends are the usual points where a “permanent” time quietly fails. Decide in advance whether to pause, shorten, or keep a lighter revision session during those periods rather than dropping out and restarting cold.',
+        ],
+        table: {
+          headers: ['US week pattern', 'Planning tip'],
+          rows: [
+            ['Weekday after school', 'Leave a buffer after arrival before expecting concentration.'],
+            ['Weekend mornings', 'Confirm the slot still works during sports and mosque routines.'],
+            ['Homeschool daytime', 'Protect the hour from errands; treat it as a fixed appointment.'],
+            ['Clock-change weekends', 'Recheck the local wall-clock time in writing.'],
+          ],
+        },
+      },
+      {
+        id: 'usa-city-hubs',
+        heading: 'Which US city guides are available for local scheduling context?',
+        directAnswer:
+          'NoorPath remains online-only nationwide. City pages for major hubs add local timezone and routine context only — they are not campuses, branches or home-visit services.',
+        paragraphs: [
+          'If your household is near one of the major hubs below, the city guide can help you phrase a realistic local-time request. Families elsewhere in the United States should use this country page: the same remote one-to-one service applies, with matching based on your stated zone and availability.',
+        ],
+        relatedLinks: [
+          { href: '/online-quran-classes/new-york', label: 'New York' },
+          { href: '/online-quran-classes/houston', label: 'Houston' },
+          { href: '/online-quran-classes/chicago', label: 'Chicago' },
+          { href: '/online-quran-classes/dallas', label: 'Dallas' },
+          { href: '/online-quran-classes/los-angeles', label: 'Los Angeles' },
+          { href: '/blog/online-quran-classes-usa-kids-guide', label: 'USA kids guide' },
+        ],
+      },
+      {
+        id: 'usa-next-steps',
+        heading: 'What should a US family do next?',
+        directAnswer:
+          'Request a free 30-minute trial with no credit card, share your time zone and learning goal, then review published USD pricing only after a suitable tutor and slot are confirmed.',
+        paragraphs: [
+          'Bring a short brief to the trial: learner age, current reading ability, preferred ET/CT/MT/PT window, and any female-tutor preference. Use the session to check audio, placement and teaching fit. Enrolment decisions should follow evidence from that session, not a promised Hifz timeline.',
+        ],
+        bullets: [
+          'Starter, Standard and Intensive plans are published in USD on the pricing page.',
+          'Family discounts apply for 2, 3 and 4+ siblings at the published percentages.',
+          'Tutor availability and the recurring time are confirmed after matching — not before the request.',
+        ],
+        relatedLinks: [
+          { href: '/free-quran-classes-online', label: 'Free trial' },
+          { href: '/pricing', label: 'USD pricing' },
+          { href: '/online-quran-classes-for-kids', label: 'Kids classes' },
+          { href: '/courses', label: 'All courses' },
         ],
       },
       {

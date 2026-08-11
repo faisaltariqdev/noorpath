@@ -11,9 +11,10 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes | Live 1-to-1 Tutors & Free Trial",
+    absolute: "NoorPath Academy | Online Quran Classes — Live 1-to-1 & Free Trial",
   },
-  description: "Live one-to-one online Quran classes for kids and adults, with timezone-based tutor matching for Quran reading, Tajweed, Hifz and a free trial.",
+  description:
+    "NoorPath Academy live one-to-one online Quran classes for kids and adults, with timezone-based tutor matching for Quran reading, Tajweed, Hifz and a free trial.",
   keywords: [
     "online quran classes", "learn quran online", "quran classes online", "online quran academy",
     "quran tutor online", "live quran classes", "quran classes for kids", "online quran teacher",
@@ -28,17 +29,17 @@ export const metadata: Metadata = {
     languages: getCountryHubHreflang(),
   },
   openGraph: {
-    title: "Online Quran Classes — Live One-to-One Lessons",
+    title: "NoorPath Academy | Online Quran Classes — Live One-to-One Lessons",
     description: "Personalised Quran classes for kids and adults: Qaida, reading, Tajweed, Hifz and Islamic studies, with timezone-based matching and a free trial.",
     url: "https://www.noorpath.online/online-quran-classes",
     type: "article",
     publishedTime: "2026-07-14T00:00:00.000Z",
-    modifiedTime: "2026-07-15T00:00:00.000Z",
+    modifiedTime: "2026-08-11T00:00:00.000Z",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "A child learning Quran online with a live NoorPath tutor" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran Classes | NoorPath Academy",
+    title: "NoorPath Academy | Online Quran Classes",
     description: "Live one-to-one Quran learning for children and adults, with tutor matching by goals and timezone and a free trial request.",
     images: ["/og-image.png"],
   },

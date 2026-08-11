@@ -5,8 +5,8 @@ import { blogPosts, getBlogPost } from "@/data/blog";
 import { blogContent } from "@/data/blogContent";
 import { backlinkAssetContent } from "@/data/backlinkAssetContent";
 import { getBacklinkAsset } from "@/data/backlinkAssets";
-import { blogFaqs } from "@/data/blogFaqs";
 import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
+import { faqPageJsonLdFromHtml } from "@/lib/faqFromHtml";
 import { splitArticleHtml } from "@/lib/splitArticleHtml";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
@@ -237,7 +237,9 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  const faqSchema = blogFaqs[slug];
+  // FAQPage JSON-LD must match visible .faq-acc FAQs (Google structured-data honesty).
+  // Do not use separate blogFaqs.ts schemas — they drifted from on-page copy.
+  const faqSchema = richContent ? faqPageJsonLdFromHtml(richContent.content) : null;
   const articleParts = richContent
     ? splitArticleHtml(richContent.content, 3)
     : { before: "", after: "" };

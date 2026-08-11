@@ -166,7 +166,7 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
     title: "Online Quran Classes in Australia: A Practical Family Guide",
     description:
       "Choose remote Quran lessons around Australian time zones, state daylight-saving rules, school routines, tutor evidence, safeguarding, published USD fees and home progress.",
-    reviewedDate: "15 July 2026",
+    reviewedDate: "12 August 2026",
     sections: [
       {
         id: "australia-fit",
@@ -302,6 +302,27 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
         paragraphs: [
           "A mosque or community programme may provide face-to-face relationships and a shared learning environment, while timetables, group sizes, curriculum and travel requirements differ by location. A private local tutor may offer in-person attention if a suitable person and safe arrangement are available. Remote learning avoids travel and may broaden tutor or time choices, but relies on internet quality, screen engagement and well-defined online boundaries. The household should decide which characteristics matter most rather than treating one format as inherently superior.",
           "Make commercial comparisons on equivalent terms. Give each provider the same learner profile and requested Australian local times. Confirm whether lessons are individual or grouped, their duration and frequency, how the tutor is matched, what happens during absence and how progress is communicated. Convert USD prices cautiously and include likely provider fees, while recognising that exchange rates can move. Avoid comparing an introductory offer with a standard ongoing price or a short session with a longer one.",
+        ],
+      },
+      {
+        id: "australia-next-steps",
+        heading: "What should an Australian family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state your city or territory so the booking uses the correct AEST/AEDT/ACST/ACDT/AWST conversion, then review published USD pricing after tutor matching.",
+        paragraphs: [
+          "Use this country hub as the main enquiry page for Australia. Thin city templates are not the primary SEO owners for Australian searches — your state time zone and school routine matter more than a near-duplicate city URL. Bring a short learner brief to the trial and confirm the wall-clock time in writing around daylight-saving boundaries.",
+        ],
+        bullets: [
+          "Published plans are priced in USD; check the AUD debit your bank shows at payment.",
+          "Family discounts for siblings are listed on the pricing page.",
+          "Female tutor preferences can be requested and are confirmed after matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/pricing", label: "Pricing (USD)" },
+          { href: "/online-quran-classes-for-kids", label: "Kids classes" },
+          { href: "/locations/online-quran-classes-new-zealand", label: "New Zealand hub" },
+          { href: "/courses", label: "All courses" },
         ],
       },
       {

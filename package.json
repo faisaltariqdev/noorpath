@@ -13,6 +13,7 @@
     "seo:agent": "node scripts/seo/seo-agent.mjs",
     "seo:agent:staged": "node scripts/seo/seo-agent.mjs --staged",
     "seo:schema": "node scripts/seo/validate-schema-inventory.mjs",
+    "seo:faq-honesty": "node scripts/seo/validate-blog-faq-honesty.mjs",
     "seo:links": "node scripts/seo/check-internal-links.mjs",
     "seo:hooks": "node scripts/seo/install-git-hooks.mjs",
     "seo:gsc:enable": "node scripts/seo/enable-gsc-mcp.mjs",
