@@ -9,33 +9,50 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     country: "India",
     title: "Online Quran Classes in India: A Guide for Muslim Families",
     description:
-      "Practical guidance for families in India choosing live online Quran and Noorani Qaida lessons — IST schedules, Hyderabad and Mumbai context, safeguarding, and a free trial path.",
-    reviewedDate: "28 July 2026",
+      "Practical guidance for families in India choosing live online Quran and Noorani Qaida lessons — IST after-school planning, Hyderabad and Mumbai context, female tutor requests, safeguarding, and a free trial path.",
+    reviewedDate: "12 August 2026",
     sections: [
+      {
+        id: "india-who",
+        heading: "Who are online Quran classes in India for?",
+        directAnswer:
+          "School-age children, sisters who prefer a female tutor, adult beginners, and families living in India who want live remote tuition with a recurring IST slot. NoorPath is an online academy — not an Indian mosque or campus branch.",
+        paragraphs: [
+          "Households in Hyderabad, Mumbai, Delhi, Bengaluru, Lucknow and elsewhere often balance mainstream schooling with Islamic learning. Live one-to-one online classes keep a fixed weekly appointment without another commute across a large city.",
+          "Adult beginners and returning learners can start from letter recognition or fluent reading. Suitability still depends on attention, device access, and a confirmed tutor match after a free trial.",
+        ],
+        bullets: [
+          "School kids needing after-school IST structure",
+          "Sisters and daughters requesting a female tutor",
+          "Adult beginners rebuilding Arabic reading",
+          "Expats or relocating families who need remote continuity in India",
+        ],
+      },
       {
         id: "india-fit",
         heading: "Are online Quran classes suitable for Muslim families in India?",
         directAnswer:
-          "Yes for households that want live remote Quran tuition from home, can join with matched language support where available, and prefer a recurring IST slot. NoorPath is an online academy — not an Indian mosque branch.",
+          "Yes for households that want live remote Quran tuition from home, can join with matched language support where available, and prefer a recurring IST slot confirmed after matching.",
         paragraphs: [
-          "India has one of the world’s largest Muslim populations, with strong community roots in Hyderabad, Mumbai, Delhi, Bengaluru and Lucknow. Families often balance mainstream schooling with Islamic learning; live one-to-one online classes keep a fixed weekly appointment without another commute across a large city.",
-          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during a free trial before ongoing payment.",
+          "Treat this country page as an invitation to enquire — not as evidence of a local branch. Verify the proposed tutor, schedule and course during a free trial before ongoing payment.",
+          "Online delivery removes travel, but it does not remove the need for a quiet study space, a stable connection, and an adult nearby when supervision is appropriate for younger children.",
         ],
         bullets: [
-          "Remote-only service — no claim of a NoorPath campus in India.",
-          "Language preferences (for example English or Urdu) are recorded where available.",
-          "Children should be placed by level, not only by age.",
-          "A free trial is the correct place to test audio, rapport and placement.",
+          "Remote-only service — no NoorPath campus claim in India",
+          "Language preferences (English or Urdu) recorded where available",
+          "Children placed by reading level, not age alone",
+          "Free trial is the correct place to test audio, rapport and placement",
         ],
       },
       {
         id: "india-schedule",
-        heading: "When can families in India take online Quran classes?",
+        heading: "How do IST after-school and exam-week schedules work?",
         directAnswer:
-          "Classes are commonly requested after school in IST — late afternoon or early evening — with weekend mornings as an alternative. Exact times depend on tutor matching.",
+          "Many families request late afternoon or early evening IST after school, with weekend mornings as an alternative. Exact recurring times depend on tutor matching — not a fixed India-wide timetable.",
         paragraphs: [
           "Share school finish times, tuition conflicts and sibling schedules when you book. Younger children often focus better before late-night fatigue; older pupils may need later slots around homework.",
           "IST (UTC+5:30) does not observe daylight-saving changes, which simplifies recurring calendars compared with many diaspora markets — still confirm the local clock time in writing.",
+          "During board or school exam weeks, ask how temporary pauses or lighter loads are handled so the habit survives pressure periods rather than collapsing.",
         ],
         table: {
           headers: ["Planning factor", "What to confirm"],
@@ -44,12 +61,19 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
             ["Exam weeks", "How will board or school exams affect attendance?"],
             ["Shared devices", "Is a quiet space and stable connection available?"],
             ["Siblings", "Do two learners need separate matched slots?"],
+            ["Weekend option", "Is a Saturday or Sunday morning more reliable?"],
           ],
         },
+        relatedLinks: [
+          {
+            href: "/blog/after-school-quran-classes-for-kids-in-india",
+            label: "After-school Quran classes for kids in India",
+          },
+        ],
       },
       {
         id: "india-courses",
-        heading: "Which courses fit learners in India?",
+        heading: "Which course path fits: Qaida → reading → Tajweed → Hifz?",
         directAnswer:
           "Beginners usually start with Noorani Qaida. Children who already read may continue Quran reading, Tajweed, or Hifz. Course choice should follow assessment, not a label alone.",
         paragraphs: [
@@ -57,10 +81,38 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
           "Between live lessons, families may use the Interactive Noorani Qaida hub for free recognition practice — soft support only; live teachers remain the correction path for uncertain sounds.",
         ],
         bullets: [
-          "Start with foundations if letter recognition is still weak.",
-          "Request Tajweed when continuous reading exists.",
-          "Treat Hifz as new memorisation plus revision.",
-          "Review published USD pricing before budgeting in INR.",
+          "Noorani Qaida when letter recognition is still weak",
+          "Quran reading fluency once basics are stable",
+          "Tajweed when continuous reading exists and correction is the goal",
+          "Hifz as new memorisation plus planned revision — not speed alone",
+        ],
+        relatedLinks: [
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/learn-tajweed-online", label: "Learn Tajweed online" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
+        ],
+      },
+      {
+        id: "india-language",
+        heading: "Can families request Urdu or English instruction?",
+        directAnswer:
+          "Yes — state a preferred language of instruction when booking. Matching depends on available tutors and is confirmed after your request. Placement should still follow the learner’s reading level.",
+        paragraphs: [
+          "Some households want Urdu explanations alongside Arabic reading; others prefer English for school-age children who think in English at school. Neither preference replaces a clear description of what the learner can already recite without prompting.",
+          "If language comfort is poor in the first lessons, say so early so matching can be reviewed before you commit to a long plan.",
+        ],
+      },
+      {
+        id: "india-female-tutor",
+        heading: "Can we request a female Quran teacher in India?",
+        directAnswer:
+          "Yes. Sisters and daughters can request a female tutor for private one-to-one online lessons. Female-tutor and IST availability are confirmed after matching.",
+        paragraphs: [
+          "State the preference clearly at booking. Do not assume the tutor lives in your city — NoorPath matches remotely. Use early sessions to observe punctuality, audio clarity and the learner’s willingness to participate.",
+        ],
+        relatedLinks: [
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher online" },
+          { href: "/quran-classes-for-sisters", label: "Quran classes for sisters" },
         ],
       },
       {
@@ -72,10 +124,12 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
           "Online delivery does not remove parental responsibility. Agree household rules for cameras and chat. Prefer academies that explain safeguarding and confirm credentials for the proposed match.",
         ],
         bullets: [
-          "Observe early lessons for young children.",
-          "Confirm continuing tutor details when that matters to you.",
-          "Use published channels for billing and schedule changes.",
+          "Observe early lessons for young children",
+          "Confirm continuing tutor details when that matters to you",
+          "Use published channels for billing and schedule changes",
+          "Keep shared-home device rules clear before the first session",
         ],
+        relatedLinks: [{ href: "/safeguarding", label: "Safeguarding guidance" }],
       },
       {
         id: "india-pricing",
@@ -84,15 +138,57 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
           "NoorPath publishes and charges plans in USD. Convert to INR for household planning using your bank or card rate — not a fixed INR price list.",
         paragraphs: [
           "Compare session length, sessions per month and family discounts on the pricing page. Card foreign-transaction fees may change the final rupee amount on your statement.",
+          "Budget for a realistic weekly frequency you can sustain through exam season, not only the cheapest monthly headline.",
+        ],
+        relatedLinks: [{ href: "/pricing", label: "Published USD pricing" }],
+      },
+      {
+        id: "india-cities",
+        heading: "How should Hyderabad, Mumbai, Delhi and other cities use this hub?",
+        directAnswer:
+          "City names on this page describe household planning context for online lessons — not local campuses. Dedicated guides exist for Hyderabad and Mumbai; Delhi, Bengaluru and Lucknow can still request the same remote service from this hub.",
+        paragraphs: [
+          "Large Indian cities often mean long school days and shared devices. Online one-to-one tuition can protect a short, regular lesson without adding travel — provided the household protects the slot.",
+          "Name your city when booking so after-school timing and language notes are clearer. Indexable city guides add local planning detail; they do not create a branch office.",
+        ],
+        relatedLinks: [
+          { href: "/online-quran-classes/hyderabad", label: "Online Quran classes in Hyderabad" },
+          { href: "/online-quran-classes/mumbai", label: "Online Quran classes in Mumbai" },
         ],
       },
       {
         id: "india-start",
         heading: "How should a family in India start this week?",
         directAnswer:
-          "Note your city and preferred IST window, then request a free trial with no credit card.",
+          "Note your city and preferred IST window, request a free trial with no credit card, confirm the tutor match and recurring slot, then protect a short daily home echo between lessons.",
         paragraphs: [
-          "State Hyderabad, Mumbai, Delhi or another city clearly. Add female-tutor preference if needed. After matching, protect a short daily home echo so live lessons compound.",
+          "State Hyderabad, Mumbai, Delhi or another city clearly. Add female-tutor and language preferences if needed. After matching, keep the first month focused on habit and placement quality rather than rushing into an overloaded plan.",
+        ],
+        bullets: [
+          "Share city, IST window, learner level and tutor preference",
+          "Book a free 30-minute trial with no credit card",
+          "Confirm tutor fit, audio quality and the recurring slot in writing",
+          "Protect a short daily home practice so live lessons compound",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+          { href: "#trial", label: "Book your India IST trial" },
+        ],
+      },
+      {
+        id: "india-30-days",
+        heading: "What does “done well” look like after 30 days?",
+        directAnswer:
+          "A protected weekly slot, clearer placement, smoother lesson joins, and a short home practice habit — not a guaranteed memorisation milestone or exam result.",
+        paragraphs: [
+          "Judge the first month by attendance consistency, the learner’s willingness to open the mushaf or Qaida, and whether correction feels kind and specific. Outcomes vary by age, prior exposure and home practice.",
+          "If the match or pace is wrong, say so early. A course path change after honest feedback is better than forcing an unsuitable label for months.",
+        ],
+        bullets: [
+          "Recurring IST slot kept more often than skipped",
+          "Parent or adult can describe the current course goal in one sentence",
+          "Home echo exists even if it is only a few minutes",
+          "No invented promises of board marks or Hifz completion dates",
         ],
       },
     ],
@@ -489,37 +585,56 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
 
   "online-quran-classes-nigeria": {
     country: "Nigeria",
-    title: "Online Quran Classes in Nigeria: Family Guide",
+    title: "Online Quran Classes in Nigeria: A Guide for Muslim Families",
     description:
-      "Guidance for Nigerian Muslim families choosing live online Quran lessons — WAT schedules, Lagos and Abuja context, female tutor requests, and a free trial path.",
-    reviewedDate: "28 July 2026",
+      "Practical guidance for Nigerian families choosing live online Quran and Noorani Qaida lessons — WAT after-school planning, Lagos and Abuja context, female tutor requests, safeguarding, and a free trial path.",
+    reviewedDate: "12 August 2026",
     sections: [
+      {
+        id: "nigeria-who",
+        heading: "Who are online Quran classes in Nigeria for?",
+        directAnswer:
+          "School-age children, sisters who prefer a female tutor, adult beginners, and households that want live remote tuition with a recurring WAT slot. NoorPath is an online academy — not a Nigerian mosque or campus branch.",
+        paragraphs: [
+          "Nigeria has Africa’s largest Muslim population, with strong communities in Lagos, Kano, Ibadan, Abuja and Kaduna. Live one-to-one online classes can keep a fixed weekly appointment when travel, group size or timetable fit is difficult locally.",
+          "Adult beginners and returning learners can start from letter recognition or fluent reading. Suitability still depends on attention, device access, power/internet reliability at the agreed hour, and a confirmed tutor match after a free trial.",
+        ],
+        bullets: [
+          "School kids needing after-school WAT structure",
+          "Sisters and daughters requesting a female tutor",
+          "Adult beginners rebuilding Arabic reading",
+          "Households balancing school, work and shared devices",
+        ],
+      },
       {
         id: "nigeria-fit",
         heading: "Are online Quran classes suitable for Nigerian Muslim families?",
         directAnswer:
-          "Yes for households that want live one-to-one Quran tuition from home with a recurring WAT slot. NoorPath teaches online only — not a Nigerian campus.",
+          "Yes for households that want live one-to-one Quran tuition from home with a recurring WAT slot confirmed after matching. NoorPath teaches online only — not a Nigerian campus.",
         paragraphs: [
-          "Nigeria has Africa’s largest Muslim population, concentrated in the north and in Lagos. Families in Lagos, Kano, Ibadan, Abuja and Kaduna can request online Tajweed or Hifz support when travel or local timetable fit is difficult.",
+          "Treat this country page as an invitation to enquire — not as evidence of a local branch. Verify the proposed tutor, schedule and course during a free trial before ongoing payment.",
+          "Online delivery removes travel, but it does not remove the need for a quiet study space, a stable connection at lesson time, and an adult nearby when supervision is appropriate for younger children.",
         ],
         bullets: [
-          "Remote-only service with no Nigeria branch claim.",
-          "WAT evening and weekend preferences subject to matching.",
-          "Female tutor preferences can be stated.",
-          "Free trial before ongoing payment.",
+          "Remote-only service — no NoorPath campus claim in Nigeria",
+          "Language preferences recorded where available",
+          "Children placed by reading level, not age alone",
+          "Free trial is the correct place to test audio, rapport and placement",
         ],
       },
       {
         id: "nigeria-schedule",
-        heading: "What WAT times work after school?",
+        heading: "How do WAT after-school and weekend schedules work?",
         directAnswer:
-          "Many families request weekday evenings or weekend mornings in WAT. Exact recurring times are confirmed after matching.",
+          "Many families request weekday evenings or weekend mornings in WAT. Exact recurring times depend on tutor matching — not a fixed Nigeria-wide timetable.",
         paragraphs: [
-          "Share school finish times and power/internet constraints honestly so the proposed slot is realistic. Confirm the written local clock time.",
+          "Share school finish times, sibling schedules and power/internet constraints honestly so the proposed slot is realistic. Confirm the written local clock time.",
+          "WAT (UTC+1) does not observe daylight-saving changes, which simplifies recurring calendars — still protect a buffer if generators or network switches are part of the household routine.",
         ],
         table: {
           headers: ["Planning factor", "What to confirm"],
           rows: [
+            ["After-school window", "Is a weekday WAT evening realistic for this learner?"],
             ["Connectivity", "Is a stable connection available at the proposed hour?"],
             ["Backup plan", "What happens if power fails mid-lesson?"],
             ["Sibling share", "One device for two learners — separate slots needed?"],
@@ -529,29 +644,112 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
       },
       {
         id: "nigeria-courses",
-        heading: "Which courses fit learners in Nigeria?",
+        heading: "Which course path fits: Qaida → reading → Tajweed → Hifz?",
         directAnswer:
-          "Beginners start with Noorani Qaida; readers may continue Quran reading, Tajweed or Hifz after assessment.",
+          "Beginners usually start with Noorani Qaida. Children who already read may continue Quran reading, Tajweed, or Hifz. Course choice should follow assessment, not a label alone.",
         paragraphs: [
-          "Between live lessons, families may use the Interactive Noorani Qaida hub for free recognition practice — soft support only.",
+          "Parents searching for online Tajweed classes in Nigeria should confirm the child can already recognise letters and short vowels. If not, Qaida first prevents building rules on unstable reading.",
+          "Between live lessons, families may use the Interactive Noorani Qaida hub for free recognition practice — soft support only; live teachers remain the correction path for uncertain sounds.",
+        ],
+        bullets: [
+          "Noorani Qaida when letter recognition is still weak",
+          "Quran reading fluency once basics are stable",
+          "Tajweed when continuous reading exists and correction is the goal",
+          "Hifz as new memorisation plus planned revision — not speed alone",
+        ],
+        relatedLinks: [
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/learn-tajweed-online", label: "Learn Tajweed online" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
+        ],
+      },
+      {
+        id: "nigeria-female-tutor",
+        heading: "Can we request a female Quran teacher in Nigeria?",
+        directAnswer:
+          "Yes. Sisters and daughters can request a female tutor for private one-to-one online lessons. Female-tutor and WAT availability are confirmed after matching.",
+        paragraphs: [
+          "State the preference clearly at booking. Do not assume the tutor lives in your city — NoorPath matches remotely. Use early sessions to observe punctuality, audio clarity and the learner’s willingness to participate.",
+        ],
+        relatedLinks: [
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher online" },
+          { href: "/quran-classes-for-sisters", label: "Quran classes for sisters" },
         ],
       },
       {
         id: "nigeria-safety",
-        heading: "How do families keep online lessons safe?",
+        heading: "How do online Quran classes stay safe for families in Nigeria?",
         directAnswer:
-          "Supervise young learners, use known platforms, and confirm the tutor before continuing payment.",
+          "Use known meeting platforms, allow parental observation, confirm the tutor before ongoing payment, and keep young learners in a shared space.",
         paragraphs: [
-          "Keep devices in a family space for younger children and avoid informal payment requests outside published channels.",
+          "Online delivery does not remove parental responsibility. Agree household rules for cameras and chat. Prefer academies that explain safeguarding and confirm credentials for the proposed match. Avoid informal payment requests outside published channels.",
+        ],
+        bullets: [
+          "Observe early lessons for young children",
+          "Confirm continuing tutor details when that matters to you",
+          "Use published channels for billing and schedule changes",
+          "Keep shared-home device rules clear before the first session",
+        ],
+        relatedLinks: [{ href: "/safeguarding", label: "Safeguarding guidance" }],
+      },
+      {
+        id: "nigeria-pricing",
+        heading: "How should Nigerian families read USD prices in NGN?",
+        directAnswer:
+          "NoorPath publishes and charges plans in USD. Convert to NGN for household planning using your bank or card rate — not a fixed naira price list.",
+        paragraphs: [
+          "Compare session length, sessions per month and family discounts on the pricing page. Card foreign-transaction fees may change the final naira amount on your statement.",
+          "Budget for a realistic weekly frequency you can sustain through exam season and connectivity constraints, not only the cheapest monthly headline.",
+        ],
+        relatedLinks: [{ href: "/pricing", label: "Published USD pricing" }],
+      },
+      {
+        id: "nigeria-cities",
+        heading: "How should Lagos, Abuja, Kano and other cities use this hub?",
+        directAnswer:
+          "City names on this page describe household planning context for online lessons — not local campuses. Dedicated guides exist for Lagos and Abuja; Kano, Ibadan and Kaduna can still request the same remote service from this hub.",
+        paragraphs: [
+          "Large Nigerian cities often mean long school days and shared devices. Online one-to-one tuition can protect a short, regular lesson without adding travel — provided the household protects the slot and the connection at that hour.",
+          "Name your city when booking so after-school timing and connectivity notes are clearer. Indexable city guides add local planning detail; they do not create a branch office.",
+        ],
+        relatedLinks: [
+          { href: "/online-quran-classes/lagos", label: "Online Quran classes in Lagos" },
+          { href: "/online-quran-classes/abuja", label: "Online Quran classes in Abuja" },
         ],
       },
       {
         id: "nigeria-start",
-        heading: "How should a Nigerian family start?",
+        heading: "How should a family in Nigeria start this week?",
         directAnswer:
-          "Share city, preferred WAT window and course goal, then request a free trial.",
+          "Note your city and preferred WAT window, request a free trial with no credit card, confirm the tutor match and recurring slot, then protect a short daily home echo between lessons.",
         paragraphs: [
-          "Mention Lagos, Abuja or Kano clearly. Add female-tutor preference if needed.",
+          "State Lagos, Abuja, Kano or another city clearly. Add female-tutor preference and realistic power/internet notes if needed. After matching, keep the first month focused on habit and placement quality rather than rushing into an overloaded plan.",
+        ],
+        bullets: [
+          "Share city, WAT window, learner level and tutor preference",
+          "Book a free 30-minute trial with no credit card",
+          "Confirm tutor fit, audio quality and the recurring slot in writing",
+          "Protect a short daily home practice so live lessons compound",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+          { href: "#trial", label: "Book your Nigeria WAT trial" },
+        ],
+      },
+      {
+        id: "nigeria-30-days",
+        heading: "What does “done well” look like after 30 days?",
+        directAnswer:
+          "A protected weekly slot, clearer placement, smoother lesson joins, and a short home practice habit — not a guaranteed memorisation milestone or exam result.",
+        paragraphs: [
+          "Judge the first month by attendance consistency, the learner’s willingness to open the mushaf or Qaida, and whether correction feels kind and specific. Outcomes vary by age, prior exposure, home practice and connection reliability.",
+          "If the match or pace is wrong, say so early. A course path change after honest feedback is better than forcing an unsuitable label for months.",
+        ],
+        bullets: [
+          "Recurring WAT slot kept more often than skipped",
+          "Parent or adult can describe the current course goal in one sentence",
+          "Home echo exists even if it is only a few minutes",
+          "No invented promises of exam marks or Hifz completion dates",
         ],
       },
     ],

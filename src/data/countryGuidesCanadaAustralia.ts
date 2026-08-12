@@ -320,14 +320,20 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
         relatedLinks: [
           { href: "/free-quran-classes-online", label: "Free trial" },
           { href: "/pricing", label: "Pricing (USD)" },
-          { href: "/online-quran-classes-for-kids", label: "Kids classes" },
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/learn-tajweed-online", label: "Learn Tajweed online" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/online-quran-classes/sydney", label: "Sydney city guide" },
+          { href: "/online-quran-classes/melbourne", label: "Melbourne city guide" },
           { href: "/locations/online-quran-classes-new-zealand", label: "New Zealand hub" },
-          { href: "/courses", label: "All courses" },
         ],
       },
       {
         id: "australia-enrolment",
         heading: "What should an Australian family confirm before regular enrolment?",
+        directAnswer:
+          "Confirm learner level, correct state time zone, USD price with AUD conversion exposure, safeguarding contacts, and the written recurring slot before paying for a regular plan.",
         paragraphs: [
           "Provide a short, accurate learner profile: current reading ability, prior study, preferred explanation language, objective and any participation need relevant to teaching. Share only personal information necessary for service and safety. For a child, identify the supervising adult, parent-controlled contact and approved device account. Confirm who can request schedule, tutor or payment changes. Clear responsibility prevents administrative messages from bypassing the adult who is making safeguarding and purchasing decisions.",
           "Put the first lesson dates into a location-aware calendar and inspect them around the relevant daylight-saving boundary. Do not use “Australia time” as a substitute for the learner’s state or territory. If travel is planned between Sydney, Brisbane, Adelaide, Darwin, Perth or another locality, update the temporary time conversion. Check the published USD amount, billing frequency, renewal behaviour and the Australian-dollar debit when processed. Save the terms that applied to the transaction and ask about anything unclear before paying.",

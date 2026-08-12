@@ -190,7 +190,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     slug: "online-quran-classes-australia",
     country: "Australia",
     flag: "🇦🇺",
-    weight: 5,
+    weight: 6,
     locale: "en-AU",
     openGraphLocale: "en_AU",
     languageStyle: "Natural English",
@@ -202,19 +202,91 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "online quran classes australia",
       "online quran classes for kids australia",
       "female quran teacher australia",
+      "online quran classes sydney",
+      "online quran classes melbourne",
+      "noorani qaida online australia",
       "online tajweed classes australia",
       "online hifz classes australia",
       "quran tutor online australia",
     ],
     content: {
-      metadataTitle: "NoorPath Academy | Online Quran Classes Australia — Free Trial",
+      metadataTitle: "Online Quran Classes Australia — Kids & Adults | NoorPath",
       metadataDescription:
-        "NoorPath Academy — live one-to-one online Quran classes for Australian kids and adults. Request state-aware AEST/AEDT/AWST scheduling. Free 30-minute trial, no credit card.",
+        "Live one-to-one online Quran classes for Australian families: state-aware AEST/AEDT/AWST matching, Qaida to Hifz, female tutors on request, free trial.",
       heading: "Online Quran Classes in Australia",
       introduction:
-        "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements.",
+        "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements — from Noorani Qaida through Tajweed and Hifz.",
       localPlanning:
         "Provide your city or state when requesting a tutor because Australian time zones and daylight-saving rules vary. Exact lesson times are confirmed during matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-india",
+    country: "India",
+    flag: "🇮🇳",
+    weight: 7,
+    locale: "en-IN",
+    openGraphLocale: "en_IN",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "INR", name: "Indian rupees" },
+    timezone: "IST (UTC+5:30)",
+    schedulingGuidance:
+      "Request an after-school, evening, or weekend window in IST. Exact recurring times are confirmed during tutor matching — not a fixed India-wide timetable.",
+    keywordClusters: [
+      "online quran classes india",
+      "online quran classes for kids india",
+      "female quran teacher india",
+      "online quran classes hyderabad",
+      "online quran classes mumbai",
+      "online quran classes delhi",
+      "noorani qaida online india",
+      "online tajweed classes india",
+      "online hifz classes india",
+      "after school quran classes india",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes India — Kids & Adults | NoorPath",
+      metadataDescription:
+        "Live one-to-one online Quran classes for Indian families: IST after-school matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
+      heading: "Online Quran Classes in India",
+      introduction:
+        "Indian families can request live one-to-one online Quran lessons in IST — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
+      localPlanning:
+        "Share your city (Hyderabad, Mumbai, Delhi, Bengaluru, Lucknow, or elsewhere), school finish times, language preference, and any female-tutor request. Exact IST slots are confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-nigeria",
+    country: "Nigeria",
+    flag: "🇳🇬",
+    weight: 6,
+    locale: "en-NG",
+    openGraphLocale: "en_NG",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "NGN", name: "Nigerian naira" },
+    timezone: "WAT (UTC+1)",
+    schedulingGuidance:
+      "Request an after-school, evening, or weekend window in WAT. Exact recurring times are confirmed during tutor matching — not a fixed Nigeria-wide timetable.",
+    keywordClusters: [
+      "online quran classes nigeria",
+      "online quran classes for kids nigeria",
+      "female quran teacher nigeria",
+      "online quran classes lagos",
+      "online quran classes abuja",
+      "noorani qaida online nigeria",
+      "online tajweed classes nigeria",
+      "online hifz classes nigeria",
+      "after school quran classes nigeria",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Nigeria — Kids & Adults | NoorPath",
+      metadataDescription:
+        "Live one-to-one online Quran classes for Nigerian families: WAT after-school matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
+      heading: "Online Quran Classes in Nigeria",
+      introduction:
+        "Nigerian families can request live one-to-one online Quran lessons in WAT — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
+      localPlanning:
+        "Share your city (Lagos, Abuja, Kano, Ibadan, Kaduna, or elsewhere), school finish times, power/internet constraints, language preference, and any female-tutor request. Exact WAT slots are confirmed after matching.",
     },
   },
   {
@@ -470,31 +542,33 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     slug: "online-quran-classes-new-zealand",
     country: "New Zealand",
     flag: "🇳🇿",
-    weight: 2,
+    weight: 4,
     locale: "en-NZ",
     openGraphLocale: "en_NZ",
     languageStyle: "Natural English",
     billingCurrency: { code: "NZD", name: "New Zealand dollars" },
     timezone: "NZST / NZDT",
     schedulingGuidance:
-      "Request an after-school, evening, or weekend window in NZST or NZDT. Daylight-saving changes and tutor availability are confirmed during matching.",
+      "Request a before-school, after-school, evening, or weekend window in NZST or NZDT. Daylight-saving changes and tutor availability are confirmed during matching.",
     keywordClusters: [
       "online quran classes for kids in new zealand",
       "online quran classes new zealand",
       "quran teacher new zealand",
+      "quran teacher for kids in auckland",
+      "female quran teacher new zealand",
       "noorani qaida online new zealand",
-      "islamic classes new zealand",
+      "online tajweed classes new zealand",
       "learn quran online nz",
     ],
     content: {
-      metadataTitle: "Online Quran Classes for Kids in New Zealand | NoorPath",
+      metadataTitle: "Online Quran Classes New Zealand — Kids & Adults | NoorPath",
       metadataDescription:
-        "Online Quran classes for kids in New Zealand: live 1-to-1 Qaida, Tajweed or Hifz with NZST/NZDT matching. Free trial; availability confirmed after request.",
+        "Live one-to-one online Quran classes for NZ kids and families: NZST/NZDT matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
       heading: "Online Quran Classes for Kids in New Zealand",
       introduction:
         "Muslim families across New Zealand — especially in Auckland, and also in Wellington, Christchurch, Hamilton and smaller towns — can request live one-to-one online Quran classes for kids when local mosque programmes or full-time Islamic schooling are limited. Lessons are online only; NoorPath does not operate a New Zealand campus.",
       localPlanning:
-        "Share your city, school finish time, and preferred NZST or NZDT evenings or weekend mornings. Exact tutor and recurring-time availability is confirmed after matching — helpful for dispersed communities without a nearby mosque class.",
+        "Share your city, school finish time, and preferred NZST or NZDT mornings, evenings or weekend windows. Exact tutor and recurring-time availability is confirmed after matching — helpful for dispersed communities without a nearby mosque class.",
     },
   },
   {

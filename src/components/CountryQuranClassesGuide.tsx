@@ -13,6 +13,8 @@ export default function CountryQuranClassesGuide({
   guide,
   eyebrow = "Country learning guide",
 }: CountryQuranClassesGuideProps) {
+  const showToc = guide.sections.length >= 8;
+
   return (
     <article aria-labelledby="country-guide-title">
       <header className="content-card" style={{ marginBottom: 28 }}>
@@ -58,6 +60,71 @@ export default function CountryQuranClassesGuide({
           .
         </p>
       </header>
+
+      {showToc && (
+        <nav
+          aria-label="Guide sections"
+          className="content-card"
+          style={{
+            marginBottom: 28,
+            position: "sticky",
+            top: 88,
+            zIndex: 5,
+            background: "rgba(255,255,255,.96)",
+            backdropFilter: "blur(8px)",
+            border: "1px solid var(--border)",
+          }}
+        >
+          <p
+            style={{
+              color: "var(--emerald)",
+              fontSize: ".72rem",
+              fontWeight: 800,
+              letterSpacing: ".06em",
+              marginBottom: 10,
+              textTransform: "uppercase",
+            }}
+          >
+            On this guide
+          </p>
+          <ol
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 8,
+              listStyle: "none",
+              margin: 0,
+              padding: 0,
+            }}
+          >
+            {guide.sections.map((section, index) => {
+              const label = section.heading.replace(/\?$/, "");
+              const shortLabel = label.length > 42 ? `${label.slice(0, 40).trimEnd()}…` : label;
+              return (
+              <li key={section.id}>
+                <a
+                  href={`#${section.id}`}
+                  title={section.heading}
+                  style={{
+                    display: "inline-block",
+                    background: "rgba(10,110,79,.07)",
+                    border: "1px solid rgba(10,110,79,.16)",
+                    borderRadius: 999,
+                    color: "var(--emerald)",
+                    fontSize: ".78rem",
+                    fontWeight: 700,
+                    padding: "6px 12px",
+                    textDecoration: "none",
+                  }}
+                >
+                  {index + 1}. {shortLabel}
+                </a>
+              </li>
+              );
+            })}
+          </ol>
+        </nav>
+      )}
 
       {guide.sections.map((section, index) => (
         <section

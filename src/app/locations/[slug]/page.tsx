@@ -27,6 +27,13 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+/** Convert guide reviewedDate strings (e.g. "12 August 2026") to YYYY-MM-DD for schema. */
+function toIsoDateFromReviewed(reviewedDate: string): string {
+  const parsed = Date.parse(reviewedDate);
+  if (Number.isNaN(parsed)) return "2026-08-12";
+  return new Date(parsed).toISOString().slice(0, 10);
+}
+
 export const dynamicParams = false;
 export const revalidate = false;
 
@@ -92,19 +99,58 @@ export default async function LocationDetailPage({ params }: Props) {
   const locale = getLocale(slug);
   const currencyNote = getCurrencyNote(slug);
   const countryGuide = getCountryGuide(slug);
+  const pageUrl = `https://www.noorpath.online/locations/${slug}`;
+  const serviceId = `${pageUrl}#service`;
+  const webPageId = `${pageUrl}#webpage`;
+  const articleId = `${pageUrl}#guide`;
+  const faqId = `${pageUrl}#faq`;
+  const howToId = `${pageUrl}#howto`;
+  const guideModified = countryGuide
+    ? toIsoDateFromReviewed(countryGuide.reviewedDate)
+    : undefined;
+  const speakableSelectors = [
+    "#location-hero-title",
+    ...(countryGuide?.sections
+      .filter((section) => section.directAnswer)
+      .slice(0, 4)
+      .map((section) => `#${section.id}`) ?? []),
+  ];
+  const howToSteps = [
+    {
+      name: "Share your city and preferred lesson window",
+      text: `Note your city in ${loc.country}, preferred ${loc.timezone} window, learner level, and any female-tutor or language preference.`,
+    },
+    {
+      name: "Book a free trial",
+      text: `Request a free ${TRIAL.durationMinutes}-minute trial with no credit card using the form on this page.`,
+    },
+    {
+      name: "Confirm tutor match and recurring slot",
+      text: "Verify audio quality, rapport, course placement, and the written recurring time before ongoing payment.",
+    },
+    {
+      name: "Protect a short daily home practice",
+      text: "Keep a brief home echo between live lessons so the weekly slot compounds into a habit.",
+    },
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
+        "@id": serviceId,
         name: `Online Quran Classes in ${loc.country}`,
         description: `NoorPath Academy offers live 1-on-1 online Quran lessons for learners in ${loc.country}, including ${loc.cities}. Tutor and timezone availability are confirmed after matching.`,
         provider: ORGANIZATION_REF,
         areaServed: { "@type": "Country", name: loc.country },
         serviceType: "Online Quran Education",
         inLanguage: locale,
-        url: `https://www.noorpath.online/locations/${slug}`,
+        url: pageUrl,
+        audience: [
+          { "@type": "Audience", audienceType: "Parents" },
+          { "@type": "Audience", audienceType: "Adult learners" },
+        ],
         offers: {
           "@type": "Offer",
           price: String(TRIAL.price),
@@ -114,30 +160,52 @@ export default async function LocationDetailPage({ params }: Props) {
       },
       {
         "@type": "WebPage",
+        "@id": webPageId,
         name: priorityContent?.heading ?? `Online Quran Classes in ${loc.country}`,
-        url: `https://www.noorpath.online/locations/${slug}`,
+        url: pageUrl,
         inLanguage: locale,
+        isPartOf: { "@type": "WebSite", url: "https://www.noorpath.online" },
+        about: { "@id": serviceId },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: speakableSelectors,
+        },
+        ...(guideModified ? { dateModified: guideModified } : {}),
       },
       ...(countryGuide
         ? [
             {
               "@type": "Article",
+              "@id": articleId,
               headline: countryGuide.title,
               description: countryGuide.description,
-              mainEntityOfPage: `https://www.noorpath.online/locations/${slug}`,
+              mainEntityOfPage: { "@id": webPageId },
               author: ORGANIZATION_REF,
               publisher: ORGANIZATION_REF,
-              dateModified: "2026-07-15",
+              dateModified: guideModified,
               inLanguage: locale,
-              about: {
-                "@type": "Service",
-                name: `Online Quran Classes in ${loc.country}`,
-              },
+              about: { "@id": serviceId },
+            },
+            {
+              "@type": "HowTo",
+              "@id": howToId,
+              name: `Book a ${loc.country} trial class`,
+              description: `Steps to request a live online Quran trial for learners in ${loc.country}, with ${loc.timezone} scheduling confirmed after tutor matching.`,
+              inLanguage: locale,
+              totalTime: "PT30M",
+              step: howToSteps.map((step, index) => ({
+                "@type": "HowToStep",
+                position: index + 1,
+                name: step.name,
+                text: step.text,
+                url: `${pageUrl}#trial-start-steps`,
+              })),
             },
           ]
         : []),
       {
         "@type": "FAQPage",
+        "@id": faqId,
         inLanguage: locale,
         mainEntity: faqs.map((f) => ({
           "@type": "Question",
@@ -150,7 +218,7 @@ export default async function LocationDetailPage({ params }: Props) {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
           { "@type": "ListItem", position: 2, name: "Locations", item: "https://www.noorpath.online/locations" },
-          { "@type": "ListItem", position: 3, name: loc.country, item: `https://www.noorpath.online/locations/${slug}` },
+          { "@type": "ListItem", position: 3, name: loc.country, item: pageUrl },
         ],
       },
     ],
@@ -175,8 +243,12 @@ export default async function LocationDetailPage({ params }: Props) {
             {/* Left — pitch */}
             <div>
               <div style={{ fontSize: "3rem", marginBottom: 10 }}>{loc.flag}</div>
-              <h1>Online Quran Classes in {loc.country}</h1>
-              <p style={{ maxWidth: 560, marginBottom: 22 }}>{loc.desc}</p>
+              <h1 id="location-hero-title">
+                {priorityContent?.heading ?? `Online Quran Classes in ${loc.country}`}
+              </h1>
+              <p style={{ maxWidth: 560, marginBottom: 22 }}>
+                {priorityContent?.introduction ?? loc.desc}
+              </p>
 
               <div style={{ display: "flex", flexDirection: "column", gap: 11, marginBottom: 22 }}>
                 {[
@@ -191,6 +263,50 @@ export default async function LocationDetailPage({ params }: Props) {
                   </div>
                 ))}
               </div>
+
+              {market && (
+                <div
+                  style={{
+                    display: "grid",
+                    gap: 8,
+                    marginBottom: 18,
+                    padding: "14px 16px",
+                    borderRadius: 14,
+                    background: "rgba(255,255,255,.08)",
+                    border: "1px solid rgba(255,255,255,.14)",
+                  }}
+                >
+                  <div style={{ color: "var(--gold-lt)", fontSize: ".78rem", fontWeight: 800, letterSpacing: ".04em", textTransform: "uppercase" }}>
+                    {loc.timezone} planning
+                  </div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                    {[
+                      { icon: <Clock size={14} />, label: loc.timezone },
+                      { icon: "📚", label: "After-school windows on request" },
+                      { icon: "🗓️", label: "Weekend matching available" },
+                    ].map((item) => (
+                      <div
+                        key={item.label}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 6,
+                          background: "rgba(255,255,255,.1)",
+                          borderRadius: 20,
+                          padding: "6px 12px",
+                          fontSize: ".8rem",
+                          color: "rgba(255,255,255,.92)",
+                        }}
+                      >
+                        <span style={{ display: "inline-flex" }}>{item.icon}</span> {item.label}
+                      </div>
+                    ))}
+                  </div>
+                  <p style={{ margin: 0, color: "rgba(255,255,255,.75)", fontSize: ".82rem", lineHeight: 1.55 }}>
+                    Exact recurring times are confirmed after tutor matching — not a guaranteed fixed timetable.
+                  </p>
+                </div>
+              )}
 
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 18 }}>
                 {[
@@ -277,10 +393,11 @@ export default async function LocationDetailPage({ params }: Props) {
                   {priorityContent?.heading ?? `Online Quran Classes for ${loc.country} Families`}
                 </h2>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginBottom: 16 }}>
-                  NoorPath Academy offers live online Quran education for learners in {loc.country}, including {loc.cities}. Lessons are delivered remotely; NoorPath does not claim a physical branch in these cities.
+                  {priorityContent?.introduction ??
+                    `NoorPath Academy offers live online Quran education for learners in ${loc.country}, including ${loc.cities}. Lessons are delivered remotely; NoorPath does not claim a physical branch in these cities.`}
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem" }}>
-                  You can request Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), or Islamic studies in {loc.timezone}. Tutor and schedule availability are confirmed after matching.
+                  You can request Noorani Qaida for beginners, Tajweed classes, Quran memorization (Hifz), or Islamic studies in {loc.timezone}. Tutor and schedule availability are confirmed after matching. Parents and adult learners can both enquire for a matched one-to-one path.
                 </p>
                 {seoParagraphs.map((para) => (
                   <p key={para.slice(0, 40)} style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: "1rem", marginTop: 16 }}>
@@ -297,9 +414,40 @@ export default async function LocationDetailPage({ params }: Props) {
                   <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", marginBottom: 12 }}>
                     {market.schedulingGuidance}
                   </p>
+                  {priorityContent?.localPlanning && (
+                    <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", marginBottom: 12 }}>
+                      {priorityContent.localPlanning}
+                    </p>
+                  )}
                   <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", margin: 0 }}>
                     {currencyNote}
                   </p>
+                </div>
+              )}
+
+              {countryGuide && (
+                <div
+                  id="trial-start-steps"
+                  className="content-card"
+                  style={{ marginBottom: 28, borderTop: "3px solid var(--gold)" }}
+                >
+                  <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 12 }}>
+                    How to start a {loc.country} trial this week
+                  </h2>
+                  <ol style={{ margin: 0, paddingLeft: 22, color: "var(--slate)", lineHeight: 1.75, display: "grid", gap: 10 }}>
+                    {howToSteps.map((step) => (
+                      <li key={step.name}>
+                        <strong style={{ color: "var(--charcoal)" }}>{step.name}.</strong>{" "}
+                        <span style={{ color: "var(--muted)" }}>{step.text}</span>
+                      </li>
+                    ))}
+                  </ol>
+                  <Link
+                    href="#trial"
+                    style={{ display: "inline-block", marginTop: 16, color: "var(--emerald)", fontWeight: 700, fontSize: ".9rem" }}
+                  >
+                    → Book your free trial
+                  </Link>
                 </div>
               )}
 
@@ -346,11 +494,13 @@ export default async function LocationDetailPage({ params }: Props) {
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[
                     { href: "/online-quran-classes", label: "Online Quran Classes — Global lesson guide" },
-                    { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online — Learn Arabic letters from scratch" },
+                    { href: "/noorani-qaida", label: "Noorani Qaida — Interactive letter practice hub" },
+                    { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online — Live beginner path" },
                     { href: "/learn-tajweed-online", label: "Learn Tajweed Online — Recitation support" },
                     { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids — Age-appropriate lessons" },
                     { href: "/hifz-quran-online", label: "Hifz Quran Online — Quran memorisation" },
                     { href: "/female-quran-teacher-online", label: "Female Quran Teacher Online — For sisters & daughters" },
+                    { href: "/free-quran-classes-online", label: "Free Quran Classes Online — Trial details" },
                   ].map((c) => (
                     <Link key={c.href} href={c.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
                       → {c.label}

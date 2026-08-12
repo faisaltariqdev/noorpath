@@ -146,7 +146,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
     title: "Online Quran Classes for Kids in New Zealand: Family Guide",
     description:
       "Practical guidance for New Zealand families choosing live online Quran and Noorani Qaida lessons — NZST/NZDT schedules, Auckland and smaller-town context, and a free trial path.",
-    reviewedDate: "11 August 2026",
+    reviewedDate: "12 August 2026",
     sections: [
       {
         id: "nz-fit",
@@ -220,6 +220,11 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
           "Treat Hifz as new memorisation plus revision.",
           "Review published USD pricing before budgeting in NZD.",
         ],
+        relatedLinks: [
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/learn-tajweed-online", label: "Learn Tajweed online" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
+        ],
       },
       {
         id: "nz-near-me",
@@ -272,6 +277,29 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
         paragraphs: [
           "Offering two windows rather than one makes matching considerably faster across a twelve-hour gap. Give a real account of reading level too: knows a few letters, sounds out slowly with mistakes, and reads fluently but without Tajweed are three different starting points, and a trial spent discovering which one you have is half a trial wasted.",
           "Once matched, protect five or ten minutes on the days between lessons for the child to repeat what was corrected. That short daily echo is what turns a weekly call into progress. Without it, every lesson starts by repairing the last one.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/online-quran-classes/auckland", label: "Auckland city guide" },
+          { href: "/online-quran-classes/wellington", label: "Wellington city guide" },
+          { href: "#trial", label: "Book your NZ trial" },
+        ],
+      },
+      {
+        id: "nz-30-days",
+        heading: "What does “done well” look like after 30 days?",
+        directAnswer:
+          "A protected weekly NZST/NZDT slot, clearer placement, smoother lesson joins, and a short home practice habit — not a guaranteed memorisation milestone or NCEA-related outcome.",
+        paragraphs: [
+          "Judge the first month by attendance consistency, the learner’s willingness to open the mushaf or Qaida, and whether correction feels kind and specific. Outcomes vary by age, prior exposure and home practice.",
+          "If the match or pace is wrong, say so early. A course path change after honest feedback is better than forcing an unsuitable label for months.",
+        ],
+        bullets: [
+          "Recurring local-time slot kept more often than skipped",
+          "Parent or adult can describe the current course goal in one sentence",
+          "Home echo exists even if it is only a few minutes",
+          "No invented promises of Hifz completion dates",
         ],
       },
     ],

@@ -28,18 +28,13 @@ export const TEMPLATE_CITY_NOINDEX_SLUGS = new Set<string>([
   "espoo",
   "galway",
   "helsinki",
-  "hyderabad",
   "jeddah",
   "karachi",
   "lahore",
   "leeds",
   "luton",
-  "melbourne",
-  "mumbai",
   "oslo",
   "riyadh",
-  "sydney",
-  "wellington",
 ]);
 
 export function isCityIndexable(slug: string): boolean {
@@ -230,8 +225,15 @@ export const cities: City[] = [
     flag: "🇦🇺",
     timezone: "AEST / AEDT",
     localContext:
-      "Sydney is home to Australia's largest Muslim community, particularly in western suburbs such as Lakemba, Auburn and Bankstown. AEST or AEDT early-morning and evening lesson preferences are subject to tutor matching.",
-    keywords: ["online quran classes sydney", "quran teacher sydney", "quran classes sydney", "learn quran sydney", "quran tutor sydney"],
+      "Sydney families — including western suburbs such as Lakemba, Auburn and Bankstown — can request live online Qaida, Tajweed or Hifz around AEST/AEDT school hours. Daylight saving applies in NSW. Exact times are confirmed after tutor matching. NoorPath teaches online only (no Sydney campus).",
+    keywords: [
+      "online quran classes sydney",
+      "quran teacher sydney",
+      "quran classes sydney",
+      "female quran teacher sydney",
+      "noorani qaida online sydney",
+      "after school quran classes sydney",
+    ],
   },
   {
     slug: "melbourne",
@@ -241,8 +243,15 @@ export const cities: City[] = [
     flag: "🇦🇺",
     timezone: "AEST / AEDT",
     localContext:
-      "Melbourne's Muslim community includes northern and western suburbs such as Broadmeadows, Coburg and Werribee. Families can request online Qaida, Tajweed or Hifz lessons in AEST or AEDT, subject to tutor matching.",
-    keywords: ["online quran classes melbourne", "quran teacher melbourne", "quran classes melbourne", "learn quran melbourne", "quran tutor melbourne"],
+      "Melbourne households in northern and western suburbs such as Broadmeadows, Coburg and Werribee can request online Quran lessons with AEST/AEDT matching. Victoria for Victorian daylight saving when booking. NoorPath is online only — not a Melbourne branch.",
+    keywords: [
+      "online quran classes melbourne",
+      "quran teacher melbourne",
+      "quran classes melbourne",
+      "female quran teacher melbourne",
+      "noorani qaida online melbourne",
+      "after school quran classes melbourne",
+    ],
   },
   // ── UAE ─────────────────────────────────────────────────────────
   {
@@ -299,8 +308,15 @@ export const cities: City[] = [
     flag: "🇮🇳",
     timezone: "IST (UTC+5:30)",
     localContext:
-      "Hyderabad families can request online Qaida, Tajweed or Hifz lessons from home to avoid adding city travel to the school week. Morning, after-school and evening IST preferences are subject to tutor matching.",
-    keywords: ["online quran classes hyderabad", "quran teacher hyderabad", "quran classes hyderabad", "learn quran hyderabad", "quran tutor hyderabad"],
+      "Hyderabad families can request live one-to-one online Qaida, Tajweed or Hifz from home — useful when Old City or IT-corridor school runs leave little time for another commute. Morning, after-school and evening IST preferences are confirmed after tutor matching. NoorPath teaches online only (no Hyderabad campus).",
+    keywords: [
+      "online quran classes hyderabad",
+      "quran teacher hyderabad",
+      "quran classes hyderabad",
+      "learn quran hyderabad",
+      "female quran teacher hyderabad",
+      "noorani qaida online hyderabad",
+    ],
   },
   {
     slug: "mumbai",
@@ -310,8 +326,51 @@ export const cities: City[] = [
     flag: "🇮🇳",
     timezone: "IST (UTC+5:30)",
     localContext:
-      "Mumbai's Muslim community is spread across areas like Mumbra, Kurla and Bhendi Bazaar. In a city famous for long commutes and packed schedules, online Quran classes let children learn from home with a dedicated tutor, saving hours of travel each week.",
-    keywords: ["online quran classes mumbai", "quran teacher mumbai", "quran classes mumbai", "learn quran mumbai", "quran tutor mumbai"],
+      "Mumbai households across areas such as Mumbra, Kurla and Bhendi Bazaar can request online Quran lessons that fit long school-and-commute days. After-school and weekend IST windows are subject to tutor matching. NoorPath is online only — not a Mumbai branch.",
+    keywords: [
+      "online quran classes mumbai",
+      "quran teacher mumbai",
+      "quran classes mumbai",
+      "learn quran mumbai",
+      "female quran teacher mumbai",
+      "after school quran classes mumbai",
+    ],
+  },
+  // ── Nigeria ─────────────────────────────────────────────────────
+  {
+    slug: "lagos",
+    city: "Lagos",
+    country: "Nigeria",
+    countrySlug: "online-quran-classes-nigeria",
+    flag: "🇳🇬",
+    timezone: "WAT (UTC+1)",
+    localContext:
+      "Lagos families can request live one-to-one online Qaida, Tajweed or Hifz from home when school, traffic and shared devices leave little room for another commute. After-school and weekend WAT preferences are confirmed after tutor matching. Share realistic power/internet notes when booking. NoorPath teaches online only (no Lagos campus).",
+    keywords: [
+      "online quran classes lagos",
+      "quran teacher lagos",
+      "quran classes lagos",
+      "female quran teacher lagos",
+      "noorani qaida online lagos",
+      "after school quran classes lagos",
+    ],
+  },
+  {
+    slug: "abuja",
+    city: "Abuja",
+    country: "Nigeria",
+    countrySlug: "online-quran-classes-nigeria",
+    flag: "🇳🇬",
+    timezone: "WAT (UTC+1)",
+    localContext:
+      "Abuja households can request online Quran lessons around school and work in WAT. Online delivery reduces travel across the capital region; recurring times are confirmed after tutor matching. NoorPath is online only — not an Abuja branch.",
+    keywords: [
+      "online quran classes abuja",
+      "quran teacher abuja",
+      "quran classes abuja",
+      "female quran teacher abuja",
+      "learn quran abuja online",
+    ],
   },
   // ── Pakistan ────────────────────────────────────────────────────
   {
@@ -428,12 +487,13 @@ export const cities: City[] = [
     flag: "🇳🇿",
     timezone: "NZST / NZDT",
     localContext:
-      "Wellington families can request live online Quran classes around school and work in NZST or NZDT. Online delivery reduces travel on busy weekdays; recurring times are confirmed after tutor matching.",
+      "Wellington families can request live online Quran classes for kids around school and work in NZST or NZDT. Online delivery reduces windy-city travel on busy weekdays; recurring times are confirmed after tutor matching. NoorPath teaches online only (no Wellington campus).",
     keywords: [
       "online quran wellington",
       "online quran classes wellington",
       "quran teacher wellington",
       "quran classes for kids wellington",
+      "female quran teacher wellington",
     ],
   },
   {

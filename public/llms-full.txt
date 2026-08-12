@@ -183,6 +183,50 @@ Supporting resources:
 - [Auckland](https://www.noorpath.online/online-quran-classes/auckland)
 - [Dublin](https://www.noorpath.online/online-quran-classes/dublin)
 
+### India online Quran classes (IST)
+
+India hub for live one-to-one online Quran classes with IST after-school planning, Hyderabad and Mumbai city guides, and after-school parent guidance.
+
+Primary resources:
+- [India](https://www.noorpath.online/locations/online-quran-classes-india)
+
+Supporting resources:
+- [Hyderabad](https://www.noorpath.online/online-quran-classes/hyderabad)
+- [Mumbai](https://www.noorpath.online/online-quran-classes/mumbai)
+- [after school quran classes for kids in india](https://www.noorpath.online/blog/after-school-quran-classes-for-kids-in-india)
+- [Interactive Noorani Qaida Hub](https://www.noorpath.online/noorani-qaida)
+- [Female Quran Teacher Online](https://www.noorpath.online/female-quran-teacher-online)
+
+### Nigeria online Quran classes (WAT)
+
+Nigeria hub for live one-to-one online Quran classes with WAT after-school planning, Lagos and Abuja city guides, and female tutor requests.
+
+Primary resources:
+- [Nigeria](https://www.noorpath.online/locations/online-quran-classes-nigeria)
+
+Supporting resources:
+- [Lagos](https://www.noorpath.online/online-quran-classes/lagos)
+- [Abuja](https://www.noorpath.online/online-quran-classes/abuja)
+- [Interactive Noorani Qaida Hub](https://www.noorpath.online/noorani-qaida)
+- [Female Quran Teacher Online](https://www.noorpath.online/female-quran-teacher-online)
+- [Free Trial Class](https://www.noorpath.online/free-quran-classes-online)
+
+### Australia / New Zealand online Quran classes
+
+Australia and New Zealand hubs for live one-to-one online Quran classes with state/NZST-NZDT scheduling, Sydney/Melbourne/Auckland/Wellington city guides.
+
+Primary resources:
+- [Australia](https://www.noorpath.online/locations/online-quran-classes-australia)
+- [New Zealand](https://www.noorpath.online/locations/online-quran-classes-new-zealand)
+
+Supporting resources:
+- [Sydney](https://www.noorpath.online/online-quran-classes/sydney)
+- [Melbourne](https://www.noorpath.online/online-quran-classes/melbourne)
+- [Auckland](https://www.noorpath.online/online-quran-classes/auckland)
+- [Wellington](https://www.noorpath.online/online-quran-classes/wellington)
+- [Interactive Noorani Qaida Hub](https://www.noorpath.online/noorani-qaida)
+- [Female Quran Teacher Online](https://www.noorpath.online/female-quran-teacher-online)
+
 ## Core Quran learning services
 
 These URLs are the preferred owners for global service and audience questions. Country and city pages add regional scheduling context only; they do not replace these owners.
@@ -287,12 +331,36 @@ NoorPath serves students and families who prefer or need online Quran learning �
 
 - [Online Quran Classes — Australia](https://www.noorpath.online/locations/online-quran-classes-australia)
   Australia timezone scheduling context for online Quran classes.
+- [Online Quran Classes in Sydney](https://www.noorpath.online/online-quran-classes/sydney)
+  Indexable city page for online scheduling context. Not a physical branch.
+- [Online Quran Classes in Melbourne](https://www.noorpath.online/online-quran-classes/melbourne)
+  Indexable city page for online scheduling context. Not a physical branch.
+
+### India
+
+- [Online Quran Classes — India](https://www.noorpath.online/locations/online-quran-classes-india)
+  India IST after-school scheduling context for online Quran classes.
+- [Online Quran Classes in Hyderabad](https://www.noorpath.online/online-quran-classes/hyderabad)
+  Indexable city page for online scheduling context. Not a physical branch.
+- [Online Quran Classes in Mumbai](https://www.noorpath.online/online-quran-classes/mumbai)
+  Indexable city page for online scheduling context. Not a physical branch.
+
+### Nigeria
+
+- [Online Quran Classes — Nigeria](https://www.noorpath.online/locations/online-quran-classes-nigeria)
+  Nigeria WAT after-school scheduling context for online Quran classes.
+- [Online Quran Classes in Lagos](https://www.noorpath.online/online-quran-classes/lagos)
+  Indexable city page for online scheduling context. Not a physical branch.
+- [Online Quran Classes in Abuja](https://www.noorpath.online/online-quran-classes/abuja)
+  Indexable city page for online scheduling context. Not a physical branch.
 
 ### New Zealand
 
 - [Online Quran Classes — New Zealand](https://www.noorpath.online/locations/online-quran-classes-new-zealand)
   New Zealand timezone and school-year context for online Quran classes.
 - [Online Quran Classes in Auckland](https://www.noorpath.online/online-quran-classes/auckland)
+  Indexable city page for online scheduling context. Not a physical branch.
+- [Online Quran Classes in Wellington](https://www.noorpath.online/online-quran-classes/wellington)
   Indexable city page for online scheduling context. Not a physical branch.
 
 ### Ireland

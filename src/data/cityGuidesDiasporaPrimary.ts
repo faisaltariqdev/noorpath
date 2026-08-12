@@ -101,7 +101,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
     title: "Online Quran Classes in Auckland: Kids & Family Guide",
     description:
       "Practical guidance for Auckland families choosing live online Quran lessons for kids — NZST/NZDT after-school windows, female tutor requests, course fit, and a free trial.",
-    reviewedDate: "28 July 2026",
+    reviewedDate: "12 August 2026",
     sections: [
       {
         id: "auckland-how-online-works",
@@ -252,6 +252,595 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
           "Note preferred ET windows and course goal, then request a free trial with no credit card.",
         paragraphs: [
           "Mention Mississauga or other GTA suburbs if that affects after-school timing. Country-level Canada guidance remains on the Canada location hub.",
+        ],
+      },
+    ],
+  },
+
+  hyderabad: {
+    city: "Hyderabad",
+    country: "India",
+    title: "Online Quran Classes in Hyderabad: Live 1-to-1 Family Guide",
+    description:
+      "Practical guidance for Hyderabad families comparing live online Quran lessons — IST after-school scheduling, female tutor requests, Qaida-to-Hifz fit, safeguarding, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "hyderabad-how-online-works",
+        heading: "How do online Quran classes work for a Hyderabad household?",
+        directAnswer:
+          "Lessons take place by video from your home at agreed IST times. NoorPath operates online only: it has no Hyderabad branch, classroom, or home-visit service.",
+        paragraphs: [
+          "That operating model matters when comparing providers. A city page should not be read as evidence of a Hyderabad office. Ask which platform is used, how materials are shared, and whom to contact if a session does not start.",
+          "Remote study can remove Old City or IT-corridor travel after school, but it does not remove the need for a quiet household routine and a parent nearby when supervision is appropriate.",
+        ],
+        bullets: [
+          "Remote video lessons and digital materials",
+          "No Hyderabad office, branch classroom, or home visits",
+          "Enrollment and support handled online",
+          "A home device, internet connection, and suitable study space required",
+        ],
+      },
+      {
+        id: "hyderabad-schedule",
+        heading: "Which IST scheduling checks matter in Hyderabad?",
+        directAnswer:
+          "Hyderabad uses IST (UTC+5:30) without daylight-saving changes. Confirm that every displayed slot is labeled with local clock time and ask how exam weeks are handled.",
+        paragraphs: [
+          "Build the timetable around the real school week. An after-school slot should allow for dismissal, traffic, snacks, prayer, homework, and the learner’s concentration level.",
+          "Treat the first proposed schedule as a testable plan. Availability must be confirmed directly and should never be inferred from generic schedule examples.",
+        ],
+        table: {
+          headers: ["Scheduling check", "Question to ask"],
+          rows: [
+            ["Time zone", "Is this recurring time fixed to Hyderabad IST?"],
+            ["After school", "Can the lesson start after a realistic trip home?"],
+            ["Exam weeks", "How are board or school exam blocks handled?"],
+            ["Changes", "What notice and make-up rules apply?"],
+          ],
+        },
+      },
+      {
+        id: "hyderabad-course",
+        heading: "Which Quran course should a Hyderabad learner choose?",
+        directAnswer:
+          "Choose from present skill and practical goal, not age or course name alone. Request an assessment before selecting the paid plan.",
+        paragraphs: [
+          "A beginner may need Noorani Qaida; a reader may need fluency or Tajweed; a memorizer needs structured revision. Describe what the learner can do without prompting.",
+          "For children balancing school demands, a narrower plan completed consistently can be more useful than an overloaded package.",
+        ],
+        bullets: [
+          "Foundational Arabic reading for letter recognition and blending",
+          "Quran reading fluency for learners who know the basics",
+          "Tajweed instruction for applied correction",
+          "Memorization with planned new work and revision",
+        ],
+      },
+      {
+        id: "hyderabad-tutor",
+        heading: "How should Hyderabad families evaluate tutor matching?",
+        directAnswer:
+          "Ask for verifiable information relevant to the role and confirm female-tutor or language preference if needed. Do not assume a tutor lives in Hyderabad.",
+        paragraphs: [
+          "Matching depends on communication style, pacing and language comfort as well as credentials. Use early sessions to observe punctuality, audio clarity and the learner’s willingness to participate.",
+        ],
+      },
+      {
+        id: "hyderabad-trial",
+        heading: "What should happen during a trial for a Hyderabad family?",
+        directAnswer:
+          "Placement, audio quality, language comfort and a realistic IST slot before ongoing payment.",
+        paragraphs: [
+          "No credit card is required for NoorPath’s published free trial. Keep written confirmation of the proposed continuing plan and convert USD fees to INR using your bank rate for household budgeting.",
+        ],
+      },
+      {
+        id: "hyderabad-start",
+        heading: "How should a Hyderabad family start this week?",
+        directAnswer:
+          "Note preferred IST windows and course goal, then request a free trial with no credit card.",
+        paragraphs: [
+          "Mention school finish times and any female-tutor preference. Country-level India guidance remains on the India location hub.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-india", label: "India online Quran classes hub" },
+          { href: "/blog/after-school-quran-classes-for-kids-in-india", label: "After-school guide for kids in India" },
+        ],
+      },
+    ],
+  },
+
+  mumbai: {
+    city: "Mumbai",
+    country: "India",
+    title: "Online Quran Classes in Mumbai: Live 1-to-1 Family Guide",
+    description:
+      "Practical guidance for Mumbai families comparing live online Quran lessons — IST after-school and weekend planning, commute-aware routines, female tutor requests, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "mumbai-how-online-works",
+        heading: "How do online Quran classes work for a Mumbai household?",
+        directAnswer:
+          "Lessons take place by video from your home. NoorPath operates online only: it has no Mumbai branch, classroom, or home-visit service.",
+        paragraphs: [
+          "Mumbai’s long school-and-commute days make travel to a second venue hard to sustain. Online one-to-one tutoring can protect a short weekly appointment without claiming a local campus in Mumbra, Kurla, Bhendi Bazaar or elsewhere.",
+          "Confirm platform, materials, billing and support contacts before paying. Prefer a quiet space where younger children can be supervised — even in a shared flat.",
+        ],
+        bullets: [
+          "Remote video lessons only",
+          "No Mumbai office or home visits",
+          "IST preferences subject to matching",
+          "Shared-device households should lock a device for lesson time",
+        ],
+      },
+      {
+        id: "mumbai-schedule",
+        heading: "Which IST scheduling checks matter in Mumbai?",
+        directAnswer:
+          "Mumbai uses IST without daylight-saving changes. Confirm the written local clock time and build buffers for traffic and late school finishes.",
+        paragraphs: [
+          "Many families request weekday evenings after school or weekend mornings when the week is overcrowded. Exact availability is confirmed after tutor matching — not a fixed Mumbai timetable.",
+        ],
+        table: {
+          headers: ["Scheduling check", "Question to ask"],
+          rows: [
+            ["Local label", "Is the time fixed to Mumbai IST?"],
+            ["Commute buffer", "Does the slot survive a late school return?"],
+            ["Weekend option", "Is Saturday or Sunday morning more reliable?"],
+            ["Sibling share", "Do two learners need separate matched slots?"],
+          ],
+        },
+      },
+      {
+        id: "mumbai-course",
+        heading: "Which course should a Mumbai learner choose?",
+        directAnswer:
+          "Place by current skill and goal — Qaida, reading, Tajweed or Hifz — not by age alone.",
+        paragraphs: [
+          "Describe prior madrasa or school Quran exposure honestly so placement is not repeated or too advanced. Revisit placement after several lessons if the match is poor.",
+        ],
+      },
+      {
+        id: "mumbai-tutor",
+        heading: "How should Mumbai families evaluate tutor matching?",
+        directAnswer:
+          "State language preference, learner level and female-tutor preference if needed. Do not assume the tutor lives in Mumbai.",
+        paragraphs: [
+          "Evaluate early lessons for correction quality, punctuality and rapport. Ask how credentials relevant to the role are confirmed before ongoing payment.",
+        ],
+      },
+      {
+        id: "mumbai-trial",
+        heading: "What should a trial cover for Mumbai families?",
+        directAnswer:
+          "Placement, audio quality, language comfort and a realistic IST slot before ongoing payment.",
+        paragraphs: [
+          "No credit card is required for NoorPath’s published free trial. Convert USD plan prices to INR with your bank rate; NoorPath does not publish a fixed INR list.",
+        ],
+      },
+      {
+        id: "mumbai-start",
+        heading: "How should a Mumbai family start this week?",
+        directAnswer:
+          "Note preferred IST windows, language preference and course goal, then request a free trial.",
+        paragraphs: [
+          "Country-level India guidance remains on the India location hub; this page focuses on Mumbai household planning around school and commute reality.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-india", label: "India online Quran classes hub" },
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+        ],
+      },
+    ],
+  },
+
+  sydney: {
+    city: "Sydney",
+    country: "Australia",
+    title: "Online Quran Classes in Sydney: Live 1-to-1 Family Guide",
+    description:
+      "Practical guidance for Sydney families comparing live online Quran lessons — AEST/AEDT after-school scheduling, female tutor requests, course fit, safeguarding, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "sydney-how-online-works",
+        heading: "How do online Quran classes work for a Sydney household?",
+        directAnswer:
+          "Lessons take place by video from your home at agreed AEST/AEDT times. NoorPath operates online only: it has no Sydney branch, classroom, or home-visit service.",
+        paragraphs: [
+          "Western suburbs such as Lakemba, Auburn and Bankstown often balance school, traffic and weekend community activities. Online one-to-one tuition can protect a short weekly slot without claiming a local campus.",
+        ],
+        bullets: [
+          "Remote video lessons only",
+          "No Sydney office or home visits",
+          "AEST/AEDT preferences subject to matching",
+          "Female tutor preferences can be stated at booking",
+        ],
+      },
+      {
+        id: "sydney-schedule",
+        heading: "Which AEST/AEDT scheduling checks matter in Sydney?",
+        directAnswer:
+          "Sydney observes daylight saving. Confirm that recurring lessons preserve the learner’s local wall-clock time around the seasonal change.",
+        paragraphs: [
+          "Leave a buffer after school for travel and homework. Exact availability is confirmed after tutor matching — not a fixed Sydney timetable.",
+        ],
+        table: {
+          headers: ["Scheduling check", "Question to ask"],
+          rows: [
+            ["Local label", "Is the time fixed to Sydney AEST/AEDT?"],
+            ["Clock change", "What happens at daylight-saving weekends?"],
+            ["After school", "Can the lesson start after a realistic trip home?"],
+            ["Weekend option", "Is Saturday morning more reliable?"],
+          ],
+        },
+      },
+      {
+        id: "sydney-course",
+        heading: "Which course should a Sydney learner choose?",
+        directAnswer:
+          "Place by current skill — Qaida, reading, Tajweed or Hifz — not by age alone.",
+        paragraphs: [
+          "Describe prior weekend-school or madrasah exposure honestly so placement is not repeated or too advanced.",
+        ],
+      },
+      {
+        id: "sydney-tutor",
+        heading: "How should Sydney families evaluate tutor matching?",
+        directAnswer:
+          "State language preference, learner level and female-tutor preference if needed. Do not assume the tutor lives in Sydney.",
+        paragraphs: [
+          "Evaluate early lessons for correction quality, punctuality and rapport before ongoing payment.",
+        ],
+      },
+      {
+        id: "sydney-trial",
+        heading: "What should a trial cover for Sydney families?",
+        directAnswer:
+          "Placement, audio quality, language comfort and a realistic AEST/AEDT slot before ongoing payment.",
+        paragraphs: [
+          "No credit card is required for NoorPath’s published free trial. Convert USD plan prices to AUD with your bank rate.",
+        ],
+      },
+      {
+        id: "sydney-start",
+        heading: "How should a Sydney family start this week?",
+        directAnswer:
+          "Note preferred AEST/AEDT windows and course goal, then request a free trial.",
+        paragraphs: [
+          "Country-level Australia guidance remains on the Australia location hub.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-australia", label: "Australia online Quran classes hub" },
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+        ],
+      },
+    ],
+  },
+
+  melbourne: {
+    city: "Melbourne",
+    country: "Australia",
+    title: "Online Quran Classes in Melbourne: Live 1-to-1 Family Guide",
+    description:
+      "Practical guidance for Melbourne families comparing live online Quran lessons — AEST/AEDT after-school planning, female tutor requests, course fit, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "melbourne-how-online-works",
+        heading: "How do online Quran classes work for a Melbourne household?",
+        directAnswer:
+          "Lessons take place by video from your home. NoorPath operates online only: it has no Melbourne branch, classroom, or home-visit service.",
+        paragraphs: [
+          "Northern and western suburbs such as Broadmeadows, Coburg and Werribee can use online one-to-one tuition to avoid another after-school commute. A city page is not evidence of a local campus.",
+        ],
+        bullets: [
+          "Remote video lessons only",
+          "No Melbourne office or home visits",
+          "Victorian AEST/AEDT daylight saving applies",
+          "Free trial before ongoing payment",
+        ],
+      },
+      {
+        id: "melbourne-schedule",
+        heading: "Which AEST/AEDT scheduling checks matter in Melbourne?",
+        directAnswer:
+          "Confirm the written local clock time and how Victorian daylight-saving changes are handled for recurring lessons.",
+        paragraphs: [
+          "Many families request weekday evenings after school or weekend mornings. Exact availability is confirmed after tutor matching.",
+        ],
+        table: {
+          headers: ["Scheduling check", "Question to ask"],
+          rows: [
+            ["Local label", "Is the time fixed to Melbourne AEST/AEDT?"],
+            ["Clock change", "What happens at daylight-saving weekends?"],
+            ["School week", "Does the slot survive homework and sport?"],
+            ["Sibling share", "Do two learners need separate matched slots?"],
+          ],
+        },
+      },
+      {
+        id: "melbourne-course",
+        heading: "Which course should a Melbourne learner choose?",
+        directAnswer:
+          "Choose from present skill and practical goal — Qaida, reading, Tajweed or Hifz — after assessment.",
+        paragraphs: [
+          "A narrower plan completed consistently often works better than an overloaded package during term time.",
+        ],
+      },
+      {
+        id: "melbourne-tutor",
+        heading: "How should Melbourne families evaluate tutor matching?",
+        directAnswer:
+          "Ask for verifiable information relevant to the role and confirm female-tutor preference if needed. Do not assume a tutor lives in Melbourne.",
+        paragraphs: [
+          "Use early sessions to observe punctuality, audio clarity and the learner’s willingness to participate.",
+        ],
+      },
+      {
+        id: "melbourne-trial",
+        heading: "What should a trial cover for Melbourne families?",
+        directAnswer:
+          "Placement, audio quality, rapport and a realistic local slot before ongoing payment.",
+        paragraphs: [
+          "No credit card is required for NoorPath’s published free trial. Keep written confirmation of the proposed continuing plan.",
+        ],
+      },
+      {
+        id: "melbourne-start",
+        heading: "How should a Melbourne family start this week?",
+        directAnswer:
+          "Note preferred AEST/AEDT windows and course goal, then request a free trial.",
+        paragraphs: [
+          "Country-level Australia guidance remains on the Australia location hub.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-australia", label: "Australia online Quran classes hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+        ],
+      },
+    ],
+  },
+
+  lagos: {
+    city: "Lagos",
+    country: "Nigeria",
+    title: "Online Quran Classes in Lagos: Live 1-to-1 Family Guide",
+    description:
+      "Practical guidance for Lagos families comparing live online Quran lessons — WAT after-school scheduling, power/internet reality, female tutor requests, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "lagos-how-online-works",
+        heading: "How do online Quran classes work for a Lagos household?",
+        directAnswer:
+          "Lessons take place by video from your home at agreed WAT times. NoorPath operates online only: it has no Lagos branch, classroom, or home-visit service.",
+        paragraphs: [
+          "Lagos school, traffic and shared-device routines can make another commute hard to sustain. Online one-to-one tutoring can protect a short weekly appointment without claiming a local campus.",
+        ],
+        bullets: [
+          "Remote video lessons only",
+          "No Lagos office or home visits",
+          "WAT preferences subject to matching",
+          "Share realistic power/internet notes when booking",
+        ],
+      },
+      {
+        id: "lagos-schedule",
+        heading: "Which WAT scheduling checks matter in Lagos?",
+        directAnswer:
+          "Lagos uses WAT without daylight-saving changes. Confirm the written local clock time and whether the proposed hour has a stable connection.",
+        paragraphs: [
+          "Many families request weekday evenings or weekend mornings. Exact availability is confirmed after tutor matching — not a fixed Lagos timetable.",
+        ],
+        table: {
+          headers: ["Scheduling check", "Question to ask"],
+          rows: [
+            ["Local label", "Is the time fixed to Lagos WAT?"],
+            ["Connectivity", "Is the connection reliable at that hour?"],
+            ["Backup plan", "What happens if power fails mid-lesson?"],
+            ["Weekend option", "Is Saturday morning more reliable?"],
+          ],
+        },
+      },
+      {
+        id: "lagos-course",
+        heading: "Which course should a Lagos learner choose?",
+        directAnswer:
+          "Place by current skill — Qaida, reading, Tajweed or Hifz — not by age alone.",
+        paragraphs: [
+          "Describe prior madrasah or school Quran exposure honestly so placement is not repeated or too advanced.",
+        ],
+      },
+      {
+        id: "lagos-tutor",
+        heading: "How should Lagos families evaluate tutor matching?",
+        directAnswer:
+          "State language preference, learner level and female-tutor preference if needed. Do not assume the tutor lives in Lagos.",
+        paragraphs: [
+          "Evaluate early lessons for correction quality, punctuality and rapport before ongoing payment.",
+        ],
+      },
+      {
+        id: "lagos-trial",
+        heading: "What should a trial cover for Lagos families?",
+        directAnswer:
+          "Placement, audio quality, language comfort and a realistic WAT slot before ongoing payment.",
+        paragraphs: [
+          "No credit card is required for NoorPath’s published free trial. Convert USD plan prices to NGN with your bank rate.",
+        ],
+      },
+      {
+        id: "lagos-start",
+        heading: "How should a Lagos family start this week?",
+        directAnswer:
+          "Note preferred WAT windows, connectivity constraints and course goal, then request a free trial.",
+        paragraphs: [
+          "Country-level Nigeria guidance remains on the Nigeria location hub.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-nigeria", label: "Nigeria online Quran classes hub" },
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+        ],
+      },
+    ],
+  },
+
+  abuja: {
+    city: "Abuja",
+    country: "Nigeria",
+    title: "Online Quran Classes in Abuja: Live 1-to-1 Family Guide",
+    description:
+      "Practical guidance for Abuja families comparing live online Quran lessons — WAT scheduling, school-week routines, female tutor requests, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "abuja-how-online-works",
+        heading: "How do online Quran classes work for an Abuja household?",
+        directAnswer:
+          "Lessons take place by video from your home. NoorPath operates online only: it has no Abuja branch, classroom, or home-visit service.",
+        paragraphs: [
+          "Online one-to-one tutoring can reduce travel across the capital region while keeping regular listening and correction. Confirm platform, materials and support contacts before paying.",
+        ],
+        bullets: [
+          "Remote video lessons only",
+          "No Abuja office or home visits",
+          "WAT preferences subject to matching",
+          "Free trial before ongoing payment",
+        ],
+      },
+      {
+        id: "abuja-schedule",
+        heading: "Which WAT scheduling checks matter in Abuja?",
+        directAnswer:
+          "Confirm the written WAT clock time and whether after-school or weekend windows fit the household more reliably.",
+        paragraphs: [
+          "Share school finish times and any power/internet constraints. Exact availability is confirmed after tutor matching.",
+        ],
+      },
+      {
+        id: "abuja-course",
+        heading: "Which course should an Abuja learner choose?",
+        directAnswer:
+          "Choose from present skill and practical goal — Qaida, reading, Tajweed or Hifz — after assessment.",
+        paragraphs: [
+          "Between live lessons, families may use the Interactive Noorani Qaida hub for free recognition practice — soft support only.",
+        ],
+      },
+      {
+        id: "abuja-tutor",
+        heading: "How should Abuja families evaluate tutor matching?",
+        directAnswer:
+          "State learner level, language preference and female-tutor preference if needed. Do not assume the tutor lives in Abuja.",
+        paragraphs: [
+          "Use early sessions to observe punctuality, audio clarity and the learner’s willingness to participate.",
+        ],
+      },
+      {
+        id: "abuja-trial",
+        heading: "What should a trial cover for Abuja families?",
+        directAnswer:
+          "Placement, audio quality, rapport and a realistic WAT slot before ongoing payment.",
+        paragraphs: [
+          "No credit card is required for NoorPath’s published free trial.",
+        ],
+      },
+      {
+        id: "abuja-start",
+        heading: "How should an Abuja family start this week?",
+        directAnswer:
+          "Note preferred WAT windows and course goal, then request a free trial.",
+        paragraphs: [
+          "Country-level Nigeria guidance remains on the Nigeria location hub.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-nigeria", label: "Nigeria online Quran classes hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+        ],
+      },
+    ],
+  },
+
+  wellington: {
+    city: "Wellington",
+    country: "New Zealand",
+    title: "Online Quran Classes in Wellington: Kids & Family Guide",
+    description:
+      "Practical guidance for Wellington families choosing live online Quran lessons for kids — NZST/NZDT scheduling, travel-aware routines, female tutor requests, and a free trial.",
+    reviewedDate: "12 August 2026",
+    sections: [
+      {
+        id: "wellington-how-online-works",
+        heading: "How do online Quran classes work for a Wellington household?",
+        directAnswer:
+          "Lessons take place by video from your home. NoorPath operates online only: it has no Wellington branch, classroom, or home-visit service.",
+        paragraphs: [
+          "Wellington families may choose online tuition to avoid another after-school trip across the city, or because a preferred tutor window is easier to match remotely. A city page is not evidence of a local campus.",
+        ],
+        bullets: [
+          "Remote video lessons only",
+          "No Wellington campus or home visits",
+          "NZST/NZDT preferences subject to matching",
+          "Free trial before ongoing payment",
+        ],
+      },
+      {
+        id: "wellington-schedule",
+        heading: "Which NZST/NZDT checks matter in Wellington?",
+        directAnswer:
+          "Confirm that every slot is labeled with New Zealand local time and ask how NZST/NZDT clock changes are handled.",
+        paragraphs: [
+          "Because New Zealand sits far ahead of many tutor time zones, share preferred before-school or after-school windows clearly. Exact availability is confirmed after matching.",
+        ],
+        table: {
+          headers: ["Scheduling check", "Question to ask"],
+          rows: [
+            ["Local label", "Is the time fixed to Wellington NZST/NZDT?"],
+            ["Clock change", "What happens at daylight-saving weekends?"],
+            ["Before school", "Is a 6–8 am window easier to match?"],
+            ["School week", "Does the slot survive homework and clubs?"],
+          ],
+        },
+      },
+      {
+        id: "wellington-course",
+        heading: "Which course should a Wellington learner choose?",
+        directAnswer:
+          "Place by current skill: Qaida for beginners, reading/Tajweed for continuous readers, Hifz only with a revision plan.",
+        paragraphs: [
+          "Between live lessons, families may use the Interactive Noorani Qaida hub for free recognition practice — soft support only.",
+        ],
+      },
+      {
+        id: "wellington-tutor",
+        heading: "How should Wellington families request a tutor for kids?",
+        directAnswer:
+          "State age, level, female-tutor preference if needed, and preferred NZST/NZDT windows. Availability is confirmed after your request.",
+        paragraphs: [
+          "Do not assume the tutor lives in Wellington. Evaluate early lessons for correction quality, punctuality and the child’s comfort.",
+        ],
+      },
+      {
+        id: "wellington-trial",
+        heading: "What should a trial cover for Wellington families?",
+        directAnswer:
+          "Placement, audio quality, rapport and a realistic local slot before ongoing payment.",
+        paragraphs: [
+          "Prepare the device early and keep a parent nearby for younger learners. No credit card is required for NoorPath’s published free trial.",
+        ],
+      },
+      {
+        id: "wellington-start",
+        heading: "How should a Wellington family start this week?",
+        directAnswer:
+          "Note preferred NZST/NZDT windows and course goal, then request a free trial.",
+        paragraphs: [
+          "Country-level New Zealand guidance remains on the NZ location hub.",
+        ],
+        relatedLinks: [
+          { href: "/locations/online-quran-classes-new-zealand", label: "New Zealand online Quran classes hub" },
+          { href: "/online-quran-classes/auckland", label: "Auckland city guide" },
         ],
       },
     ],

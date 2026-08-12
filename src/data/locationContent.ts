@@ -70,7 +70,19 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     },
     {
       q: "What class times work for online Quran classes in New Zealand?",
-      a: "Many families request after-school evenings or weekend mornings in NZST or NZDT (noting daylight saving). Exact recurring times depend on tutor matching and are confirmed after your request — not a fixed New Zealand timetable published in advance.",
+      a: "Many families request before-school mornings, after-school evenings or weekend mornings in NZST or NZDT (noting daylight saving). Exact recurring times depend on tutor matching and are confirmed after your request — not a fixed New Zealand timetable published in advance.",
+    },
+    {
+      q: "How do NZST and NZDT clock changes affect a recurring lesson?",
+      a: "Ask for the recurring slot to be recorded in New Zealand local time so the hour on your clock stays the same when NZ moves between NZST and NZDT. Confirm what happens on the last Sunday in September and the first Sunday in April, and when the tutor’s own clocks change.",
+    },
+    {
+      q: "Can we request a female Quran teacher in New Zealand?",
+      a: "Yes. State a female tutor preference when booking. Female-tutor and NZST/NZDT availability are confirmed after matching. Offering a second time window often speeds placement across the long time difference.",
+    },
+    {
+      q: "How should NCEA exam weeks affect Quran lesson frequency?",
+      a: "For Years 11–13, ask for a lighter Term 4 load rather than stopping altogether. One shorter weekly session can keep recitation from going cold while protecting exam focus. Exact make-up and pause rules are confirmed with your matched tutor.",
     },
     {
       q: "Can Auckland and smaller-town NZ families use the same online Quran service?",
@@ -79,6 +91,10 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     {
       q: "Is there a Quran teacher for kids in Auckland through NoorPath?",
       a: "Auckland families can request a live online Quran teacher for kids with NZST/NZDT matching for Qaida, Tajweed or Hifz. Availability is confirmed after your request. Classes are online — NoorPath does not claim an Auckland branch.",
+    },
+    {
+      q: "How should New Zealand families budget USD fees in NZD?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to NZD for household planning using your bank’s rate; NoorPath does not publish a fixed NZD price list. ${getCurrencyNote("online-quran-classes-new-zealand")}`,
     },
   ],
   "online-quran-classes-sweden": [
@@ -160,8 +176,32 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       a: "Many families request late afternoon or evening IST windows after school, plus weekend mornings. Exact recurring times depend on tutor matching and are confirmed after your request — not a fixed India-wide timetable.",
     },
     {
+      q: "Can we request a female Quran teacher for a daughter or sister in India?",
+      a: "Yes. State a female tutor preference when booking. Female-tutor and IST availability are confirmed after matching. See the female Quran teacher page for how preferences are handled — NoorPath does not claim a local campus in every city.",
+    },
+    {
+      q: "Can siblings in India share one plan or need separate slots?",
+      a: "Each learner usually needs their own matched lesson time so pacing and attention stay appropriate. You can request nearby IST windows for siblings; published family discounts apply to eligible sibling enrolments on the pricing page. Exact availability is confirmed after matching.",
+    },
+    {
+      q: "How should we handle board exam weeks and school exams?",
+      a: "Tell the academy when exam blocks are coming so temporary lighter loads or pauses can be discussed. A protected habit that survives exam season is more useful than an overloaded timetable that collapses every term. Exact make-up rules are confirmed with your matched tutor.",
+    },
+    {
+      q: "Can adult beginners in India start Noorani Qaida online?",
+      a: "Yes. Adult beginners typically start with Noorani Qaida and progress by assessment into reading, Tajweed or further goals. Request an IST window that fits work hours; suitability is confirmed through a free trial.",
+    },
+    {
+      q: "Do weekend IST slots work if weekday evenings are busy?",
+      a: "Yes — many households request Saturday or Sunday morning IST windows when weekday evenings are crowded. Exact weekend availability still depends on tutor matching and is confirmed after your request.",
+    },
+    {
       q: "Can we request Urdu or English instruction for a child in India?",
       a: "You can state a preferred language of instruction when booking. Matching depends on available tutors and is confirmed after your request. Placement should still follow the learner’s reading level, not language preference alone.",
+    },
+    {
+      q: "What if we share one device or a busy home in India?",
+      a: "Choose a quiet corner and a device that will not be needed by someone else during the lesson. Headphones help in shared flats. Confirm camera and chat household rules before the first session, and keep young learners where an adult can observe.",
     },
     {
       q: "How should Indian families budget USD fees in INR?",
@@ -263,11 +303,69 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     },
     {
       q: "What WAT times work after school in Nigeria?",
-      a: "Many families request weekday evenings or weekend mornings in WAT. Exact recurring times depend on tutor matching and are confirmed after your request.",
+      a: "Many families request weekday evenings or weekend mornings in WAT. Exact recurring times depend on tutor matching and are confirmed after your request — not a fixed Nigeria-wide timetable.",
     },
     {
       q: "Can we request a female Quran teacher in Nigeria?",
-      a: "Yes. State a female tutor preference when booking. Female tutor and WAT availability are confirmed after matching.",
+      a: "Yes. State a female tutor preference when booking. Female tutor and WAT availability are confirmed after matching. See the female Quran teacher page for how preferences are handled.",
+    },
+    {
+      q: "Can siblings in Nigeria share one plan or need separate slots?",
+      a: "Each learner usually needs their own matched lesson time so pacing and attention stay appropriate. You can request nearby WAT windows for siblings; published family discounts apply to eligible sibling enrolments on the pricing page.",
+    },
+    {
+      q: "What if power or internet is unreliable during WAT evenings?",
+      a: "Share realistic connectivity constraints when you book so matching can favour a more reliable window (including weekend mornings). Keep a charged device and a simple backup plan. Exact make-up rules are confirmed with your matched tutor.",
+    },
+    {
+      q: "Can adult beginners in Nigeria start Noorani Qaida online?",
+      a: "Yes. Adult beginners typically start with Noorani Qaida and progress by assessment into reading, Tajweed or further goals. Request a WAT window that fits work hours; suitability is confirmed through a free trial.",
+    },
+    {
+      q: "Do weekend WAT slots work if weekday evenings are busy?",
+      a: "Yes — many households request Saturday or Sunday morning WAT windows when weekday evenings are crowded. Exact weekend availability still depends on tutor matching.",
+    },
+    {
+      q: "What if we share one device or a busy home in Nigeria?",
+      a: "Choose a quiet corner and a device that will not be needed by someone else during the lesson. Headphones help in shared homes. Confirm camera and chat household rules before the first session, and keep young learners where an adult can observe.",
+    },
+    {
+      q: "How should Nigerian families budget USD fees in NGN?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to NGN for household planning using your bank’s rate; NoorPath does not publish a fixed naira price list. ${getCurrencyNote("online-quran-classes-nigeria")}`,
+    },
+  ],
+  "online-quran-classes-australia": [
+    {
+      q: "Are online Quran classes suitable for Australian families?",
+      a: "Yes. Families in Sydney, Melbourne, Brisbane, Perth, Adelaide and elsewhere can request live one-to-one online Quran and Noorani Qaida lessons with state-aware AEST/AEDT/ACST/ACDT/AWST scheduling. NoorPath teaches online only (not an Australian campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "How do Australian time zones and daylight saving affect booking?",
+      a: "Book against the learner’s exact state or territory. Eastern, central and western labels are not interchangeable, and daylight saving is observed in some jurisdictions but not others. Confirm that recurring lessons preserve the learner’s local wall-clock time around seasonal changes.",
+    },
+    {
+      q: "What after-school times work for kids in Australia?",
+      a: "Many families request after-school evenings or weekend mornings in their state time zone. Leave a buffer after school for travel, snacks and homework. Exact recurring times depend on tutor matching.",
+    },
+    {
+      q: "Can we request a female Quran teacher in Australia?",
+      a: "Yes. State a female tutor preference when booking. Female-tutor and local-time availability are confirmed after matching.",
+    },
+    {
+      q: "Can siblings in Australia share nearby lesson times?",
+      a: "Each learner usually needs their own matched slot. You can request consecutive or nearby windows for siblings; published family discounts apply to eligible enrolments on the pricing page.",
+    },
+    {
+      q: "Can adult beginners in Australia start Noorani Qaida online?",
+      a: "Yes. Adult beginners typically start with Noorani Qaida and progress by assessment. Request a local-time window that fits work hours; suitability is confirmed through a free trial.",
+    },
+    {
+      q: "Do Sydney and Melbourne families use the same online service?",
+      a: "Yes. Lessons are online, so Sydney, Melbourne and other cities use the same trial and matching process. Share your city or state so the booking uses the correct time zone and daylight-saving rules.",
+    },
+    {
+      q: "How should Australian families budget USD fees in AUD?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to AUD for household planning using your bank’s rate; NoorPath does not publish a fixed AUD price list. ${getCurrencyNote("online-quran-classes-australia")}`,
     },
   ],
   "online-quran-classes-south-africa": [

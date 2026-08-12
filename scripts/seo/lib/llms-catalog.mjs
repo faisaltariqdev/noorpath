@@ -155,6 +155,49 @@ export const TOPIC_INTENTS = [
       "/online-quran-classes/dublin",
     ],
   },
+  {
+    topic: "India online Quran classes (IST)",
+    summary:
+      "India hub for live one-to-one online Quran classes with IST after-school planning, Hyderabad and Mumbai city guides, and after-school parent guidance.",
+    primary: ["/locations/online-quran-classes-india"],
+    supporting: [
+      "/online-quran-classes/hyderabad",
+      "/online-quran-classes/mumbai",
+      "/blog/after-school-quran-classes-for-kids-in-india",
+      "/noorani-qaida",
+      "/female-quran-teacher-online",
+    ],
+  },
+  {
+    topic: "Nigeria online Quran classes (WAT)",
+    summary:
+      "Nigeria hub for live one-to-one online Quran classes with WAT after-school planning, Lagos and Abuja city guides, and female tutor requests.",
+    primary: ["/locations/online-quran-classes-nigeria"],
+    supporting: [
+      "/online-quran-classes/lagos",
+      "/online-quran-classes/abuja",
+      "/noorani-qaida",
+      "/female-quran-teacher-online",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "Australia / New Zealand online Quran classes",
+    summary:
+      "Australia and New Zealand hubs for live one-to-one online Quran classes with state/NZST-NZDT scheduling, Sydney/Melbourne/Auckland/Wellington city guides.",
+    primary: [
+      "/locations/online-quran-classes-australia",
+      "/locations/online-quran-classes-new-zealand",
+    ],
+    supporting: [
+      "/online-quran-classes/sydney",
+      "/online-quran-classes/melbourne",
+      "/online-quran-classes/auckland",
+      "/online-quran-classes/wellington",
+      "/noorani-qaida",
+      "/female-quran-teacher-online",
+    ],
+  },
 ];
 
 /** Paths that redirect and must never appear in llms.txt */
@@ -179,6 +222,8 @@ export const PRIORITY_COUNTRIES = [
   { path: "/locations/online-quran-classes-usa", label: "United States", note: "USA timezone scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-canada", label: "Canada", note: "Canada timezone scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-australia", label: "Australia", note: "Australia timezone scheduling context for online Quran classes." },
+  { path: "/locations/online-quran-classes-india", label: "India", note: "India IST after-school scheduling context for online Quran classes." },
+  { path: "/locations/online-quran-classes-nigeria", label: "Nigeria", note: "Nigeria WAT after-school scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-new-zealand", label: "New Zealand", note: "New Zealand timezone and school-year context for online Quran classes." },
   { path: "/locations/online-quran-classes-ireland", label: "Ireland", note: "Ireland / Dublin context for online Quran classes." },
   { path: "/locations/online-quran-classes-uae", label: "United Arab Emirates", note: "UAE timezone scheduling context for online Quran classes." },
@@ -214,6 +259,13 @@ export const INDEXABLE_CITIES = [
   { path: "/online-quran-classes/dubai", label: "Dubai", country: "United Arab Emirates" },
   { path: "/online-quran-classes/dublin", label: "Dublin", country: "Ireland" },
   { path: "/online-quran-classes/auckland", label: "Auckland", country: "New Zealand" },
+  { path: "/online-quran-classes/wellington", label: "Wellington", country: "New Zealand" },
+  { path: "/online-quran-classes/sydney", label: "Sydney", country: "Australia" },
+  { path: "/online-quran-classes/melbourne", label: "Melbourne", country: "Australia" },
+  { path: "/online-quran-classes/hyderabad", label: "Hyderabad", country: "India" },
+  { path: "/online-quran-classes/mumbai", label: "Mumbai", country: "India" },
+  { path: "/online-quran-classes/lagos", label: "Lagos", country: "Nigeria" },
+  { path: "/online-quran-classes/abuja", label: "Abuja", country: "Nigeria" },
 ];
 
 /** Tier-1 core service and audience owners */
