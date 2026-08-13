@@ -4,7 +4,7 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Shield, Award, Users, BookOpen, Clock, Heart } from "lucide-react";
-import { PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
+import { PRICING_PLANS, SERVICE_FACTS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -207,6 +207,30 @@ export default function FemaleQuranTeacherPage() {
             </div>
           </div>
 
+          <div className="content-card" style={{ marginBottom: 28, borderTop: "3px solid var(--emerald)" }}>
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", marginBottom: 10 }}>
+              What we confirm before enrolment (proof, not promises)
+            </h2>
+            <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: 12, fontSize: ".9rem" }}>
+              Female tutor matching is a request process: we confirm subject fit, relevant credentials for the proposed
+              tutor, and schedule availability before you pay for a regular plan. Free trial: {TRIAL.durationMinutes}{" "}
+              minutes, no credit card. Plans start from ${PRICING_PLANS[0].monthlyPriceUsd}/month (
+              {PRICING_PLANS[0].sessionsPerWeek} class/week). Trustpilot: {TRUSTPILOT.score}/5 from{" "}
+              {TRUSTPILOT.reviewCount} reviews ({TRUSTPILOT.lastChecked}) —{" "}
+              <a href={TRUSTPILOT.url} rel="noopener noreferrer" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                read reviews
+              </a>
+              .
+            </p>
+            <p style={{ color: "var(--muted)", lineHeight: 1.7, margin: 0, fontSize: ".9rem" }}>
+              Book via the{" "}
+              <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                free Quran classes online
+              </Link>{" "}
+              trial form and state “female tutor” in your message.
+            </p>
+          </div>
+
           <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 10 }}>
               Female Quran Teacher for Kids (UK &amp; Online)
@@ -327,7 +351,9 @@ export default function FemaleQuranTeacherPage() {
               { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "Share your US timezone" },
               { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Share your Canadian timezone" },
               { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "Share your Australian timezone" },
+              { href: "/locations/online-quran-classes-singapore", label: "🇸🇬 Singapore", note: "SGT evenings & CCA windows" },
               { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST/NZDT kids matching" },
+              { href: "/free-quran-classes-online", label: "🎁 Free trial", note: "30-min live class, no card" },
             ].map((l) => (
               <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
                 <div className="content-card" style={{ textAlign: "center", padding: "18px 12px" }}>
@@ -358,11 +384,12 @@ export default function FemaleQuranTeacherPage() {
             <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", marginBottom: 14, color: "var(--charcoal)" }}>Related Pages</h3>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
               {[
+                ["/free-quran-classes-online", "Free Quran Trial"],
                 ["/online-quran-classes-for-kids", "Kids Quran Classes"],
                 ["/online-quran-classes-for-adults", "Adult Quran Classes"],
                 ["/hifz-quran-online", "Hifz Program Online"],
                 ["/learn-tajweed-online", "Learn Tajweed Online"],
-                ["/learn-quran-online", "Learn Quran Online"],
+                ["/blog/barakallah-meaning", "Barakallah meaning"],
                 ["/online-quran-classes", "All Online Classes"],
               ].map(([href, label]) => (
                 <Link key={href} href={href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem", textDecoration: "none" }}>→ {label}</Link>

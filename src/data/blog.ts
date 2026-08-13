@@ -1103,12 +1103,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attahiyat-full-arabic-english-tashahhud",
-    title: "Attahiyat Full Arabic Text & English — How to Recite Tashahhud",
+    title: "Attahiyat Full Arabic + English — How to Recite Tashahhud",
     description:
-      "Full Attahiyat (Tashahhud) in Arabic with transliteration and English meaning — when to recite it in salah and a simple way to memorise it.",
+      "Full Attahiyat (Tashahhud) Arabic text with English translation and transliteration — when to recite it in salah and how to memorise it clearly.",
     category: "Prayer & Worship",
     date: "2026-07-14",
-    updatedAt: "2026-07-14",
+    updatedAt: "2026-08-13",
     readTime: "9 min",
     keywords: [
       "attahiyat", "attahiyat full", "attahiyat in english", "attahiyat lillahi wa salawatu",
@@ -2451,12 +2451,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallah Meaning in English — How to Reply (Barakallahu Feek)",
+    title: "Barakallah Meaning: May Allah Bless You — Reply Guide",
     description:
-      "Barakallah means “May Allah bless you.” Learn Barakallahu feek, its Arabic forms, difference from Mashallah, and common replies with examples.",
+      "What Barakallah means in English, Barakallahu feek Arabic forms, how it differs from Mashallah, and the most common replies — short, clear, with examples.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
-    updatedAt: "2026-08-03",
+    updatedAt: "2026-08-13",
     readTime: "10 min",
     keywords: [
       "barakallah meaning",

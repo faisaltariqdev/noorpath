@@ -146,7 +146,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
     title: "Online Quran Classes for Kids in New Zealand: Family Guide",
     description:
       "Practical guidance for New Zealand families choosing live online Quran and Noorani Qaida lessons — NZST/NZDT schedules, Auckland and smaller-town context, and a free trial path.",
-    reviewedDate: "12 August 2026",
+    reviewedDate: "13 August 2026",
     sections: [
       {
         id: "nz-fit",
@@ -280,9 +280,13 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
         ],
         relatedLinks: [
           { href: "/free-quran-classes-online", label: "Free trial details" },
+          { href: "/pricing", label: "Pricing (USD)" },
           { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
           { href: "/online-quran-classes/auckland", label: "Auckland city guide" },
           { href: "/online-quran-classes/wellington", label: "Wellington city guide" },
+          { href: "/locations/online-quran-classes-australia", label: "Australia hub" },
           { href: "#trial", label: "Book your NZ trial" },
         ],
       },

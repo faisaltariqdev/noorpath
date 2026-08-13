@@ -1062,19 +1062,21 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   },
   "attahiyat-full-arabic-english-tashahhud": {
     style: S,
-    content: `<p>You recite <strong>Attahiyat</strong> (the Tashahhud) in every sitting of every salah — at least nine times a day in the five daily prayers. Yet many Muslims were never taught its origin: these are the words exchanged between the Prophet ﷺ and Allah on the night of <strong>Mi'raj</strong>, with the angels' reply joined at the end. Here is the full Arabic, transliteration, English meaning, and how to memorize it properly.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Attahiyat (Tashahhud) is the dua recited while sitting in salah after every two rakats. It begins <em>At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat…</em> and includes the Shahada. It is obligatory in the final sitting of every prayer.
+    content: `<div class="highlight-box">
+            <strong>Answer first:</strong> <strong>Attahiyat</strong> (Tashahhud) is the sitting dua in salah after every two rakats. Below is the <strong>full Arabic text with English meaning and transliteration</strong>, plus when to recite it and how to memorise it. It is essential in the final sitting of every prayer.
           </div>
 
-          <h2 id="full">Attahiyat full — Arabic, transliteration & English</h2>
           <div class="verse-card">
-            <span class="vnum">Tashahhud</span>
-            <p class="arabic">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
+            <span class="vnum">Full Attahiyat · Arabic + English</span>
+            <p class="arabic" style="font-size:1.65rem;line-height:2.1;">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
             <p class="translit">At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat. As-salamu 'alayka ayyuha-n-nabiyyu wa rahmatullahi wa barakatuh. As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin. Ash-hadu an la ilaha illallah, wa ash-hadu anna Muhammadan 'abduhu wa rasuluh.</p>
             <p class="trans-en">"All greetings, prayers and pure words are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that none has the right to be worshipped except Allah, and I bear witness that Muhammad is His servant and Messenger."</p>
           </div>
+
+          <p>You recite <strong>Attahiyat</strong> in every sitting of every salah. Many Muslims were never taught its origin: these are the words exchanged between the Prophet ﷺ and Allah on the night of <strong>Mi'raj</strong>, with the angels' reply joined at the end.</p>
+
+          <h2 id="full">How to recite Attahiyat — line by line</h2>
+          <p>Read the Arabic above slowly, then match each line to the transliteration. Practise one line per day before joining lines in a full sitting.</p>
 
           <h2 id="story">The beautiful story behind Attahiyat</h2>
           <p>Many scholars relate that these words echo the exchange of the Mi'raj: the Prophet ﷺ greeted Allah with <em>"At-tahiyyatu lillahi…"</em>, Allah replied with <em>"As-salamu 'alayka ayyuha-n-nabiyyu…"</em>, and the Prophet ﷺ — refusing to keep the greeting for himself alone — responded <em>"As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin"</em>, including every righteous servant until the Day of Judgment. When you sit in Tashahhud, you join that conversation.</p>
@@ -1106,9 +1108,21 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <p>UK families building Salah fluency (including Attahiyat) can request live 1-to-1 support via our <a href="/locations/online-quran-classes-uk">online Quran classes in the UK</a> page — GMT/BST matching, confirmed after your request.</p>
 
+          <h2 id="faq">Frequently asked questions</h2>
+          <details class="faq-acc"><summary>What is Attahiyat and when is it recited?<span>+</span></summary>
+            <p>Attahiyat (Tashahhud) is the dua recited while sitting in salah — after every two rakats and in the final sitting of every prayer. It begins with At-tahiyyatu lillahi… and includes the Shahada.</p>
+          </details>
+          <details class="faq-acc"><summary>Where can I find the full Arabic and English text?<span>+</span></summary>
+            <p>The full Arabic, transliteration and English meaning are at the top of this page under “Full Attahiyat · Arabic + English.”</p>
+          </details>
+          <details class="faq-acc"><summary>Is Attahiyat obligatory in salah?<span>+</span></summary>
+            <p>The final Tashahhud sitting is essential in every prayer. Follow your madhab and teacher for rulings on the first sitting in longer prayers.</p>
+          </details>
+
           <div class="gold-box">
-            <strong>Would you like help with recitation?</strong> In a requested free 30-minute trial, discuss the learner&apos;s current level and ask whether the proposed tutor can support the relevant reading goals. <a href="/online-quran-classes#cta">Request the free trial</a>; tutor availability is confirmed after matching.
-          </div>`,
+            <strong>Would you like help with recitation?</strong> In a requested free 30-minute trial, discuss the learner&apos;s current level and ask whether the proposed tutor can support the relevant reading goals. <a href="/free-quran-classes-online">Request the free trial</a>; tutor availability is confirmed after matching.
+          </div>
+          <p>Related: <a href="/blog/darood-sharif">Durood Ibrahim</a> · <a href="/blog/how-to-pray-salah-step-by-step">How to pray salah</a> · <a href="/female-quran-teacher-online">Female Quran teacher online</a></p>`,
   },
   "safar-ki-dua-travel-dua-arabic-english": {
     style: S,

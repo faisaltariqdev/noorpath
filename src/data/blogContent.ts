@@ -2152,6 +2152,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
               <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+              <li><a href="/blog/barakallah-meaning" style="color:var(--emerald);font-weight:600;">Barakallah Meaning — May Allah Bless You</a></li>
               <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning — Glory be to Allah</a></li>
               <li><a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah Meaning &amp; Evil Eye Protection</a></li>
               <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning — The Power of Gratitude</a></li>
@@ -6671,6 +6672,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:20px;">Related Articles</h3>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
             <li><a href="/blog/islamic-phrases-meaning" style="color:var(--emerald);font-weight:600;">30 Common Islamic Phrases &amp; Their Meanings</a></li>
+            <li><a href="/blog/barakallah-meaning" style="color:var(--emerald);font-weight:600;">Barakallah Meaning — May Allah Bless You</a></li>
             <li><a href="/blog/inshallah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Inshallah Meaning in English</a></li>
             <li><a href="/blog/subhanallah-meaning" style="color:var(--emerald);font-weight:600;">Subhanallah Meaning</a></li>
             <li><a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah Meaning</a></li>

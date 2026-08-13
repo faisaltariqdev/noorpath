@@ -182,6 +182,22 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
           ],
         },
       },
+      {
+        id: "new-york-next-steps",
+        heading: "What should a New York family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred Eastern Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-usa", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   houston: {
@@ -375,6 +391,22 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
           ],
         },
       },
+      {
+        id: "houston-next-steps",
+        heading: "What should a Houston family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-usa", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   dallas: {
@@ -568,6 +600,22 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
           ],
         },
       },
+      {
+        id: "dallas-next-steps",
+        heading: "What should a Dallas family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-usa", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
 };

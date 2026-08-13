@@ -151,6 +151,22 @@ export const cityGuidesUsSecondary: Record<string, CityGuideContent> = {
           'Compare current evidence, not implied locality. A Chicago name in marketing does not establish an office, branch, home-visit capability, local tutor, or local customer history. Likewise, physical proximity does not by itself establish teaching quality. Ask each provider for the actual arrangement, written commercial terms, and substantiation for credentials that matter to the family. Evaluate reviews cautiously and do not treat unsupported numbers or testimonials as decisive.',
         ],
       },
+      {
+        id: "chicago-next-steps",
+        heading: "What should a Chicago family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-usa", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   'los-angeles': {
@@ -305,6 +321,22 @@ export const cityGuidesUsSecondary: Record<string, CityGuideContent> = {
           'Use one checklist across providers: course starting point, tutor evidence, instructional format, schedule in PT, trial purpose, safeguarding process, communication, lesson duration, USD total, and written change terms. For local services, verify the actual address and in-person arrangement. For online services, verify that city wording does not imply a physical branch or home visits. Proximity and broad reach are both operational facts, not proof of teaching quality.',
         ],
       },
+      {
+        id: "los-angeles-next-steps",
+        heading: "What should a Los Angeles family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred Pacific Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-usa", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
 };

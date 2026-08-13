@@ -197,8 +197,12 @@ export const backlinkContentStatistics: Record<
   <li><a href="https://www.pewresearch.org/religion/2025/02/26/religious-landscape-study-religious-identity/" rel="noopener noreferrer">Pew Research Center — Religious Landscape Study: Religious identity</a>. Retrieved 15 July 2026.</li>
 </ol>
 
+<div class="citation-box">
+  <p><strong>Visible citations (reuse these labels):</strong> ONS — Religion, England and Wales: Census 2021 (3.9 million; 6.5%; voluntary religion question, 94.0% answered). Pew Research Center — Religious Landscape Study religious identity (2023–24; 36,908 US adults; 1.2% Muslim). Retrieved 15 July 2026. Full links are listed under Sources.</p>
+</div>
+
 <h2 id="related-resources">Related resources and services</h2>
-<p>Continue with the related data reference on <a href="/blog/internet-access-statistics-nine-markets">internet access statistics across nine markets</a>, or browse <a href="/islamic-resources">NoorPath's Islamic resources</a>. Families comparing availability by region can visit <a href="/locations">online Quran class locations</a>. For live teaching options, see <a href="/online-quran-classes">online Quran classes</a> and <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>. Commercial service pages describe NoorPath's programmes; they are not evidence for the demographic statistics above.</p>
+<p>Continue with the related data reference on <a href="/blog/internet-access-statistics-nine-markets">internet access statistics across nine markets</a>, or browse <a href="/islamic-resources">NoorPath's Islamic resources</a>. Families comparing live online teaching by market can use the <a href="/locations/online-quran-classes-uk">UK online Quran classes hub</a> and the <a href="/locations/online-quran-classes-usa">USA online Quran classes hub</a> — both describe remote scheduling only, not campuses. Wider browse: <a href="/locations">all locations</a>, <a href="/online-quran-classes">online Quran classes</a>, and <a href="/online-quran-classes-for-kids">classes for kids</a>. Commercial pages are not evidence for the demographic statistics above.</p>
 
 <p>See the <a href="/editorial-policy">NoorPath editorial policy</a> for how sources, corrections and commercial relationships are handled.</p>`,
   },

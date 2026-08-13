@@ -448,19 +448,21 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
 
   "barakallah-meaning": {
     style: S,
-    content: `<p><strong>Barakallah meaning</strong> is one of the most searched Islamic Arabic phrases online — people hear it in messages, weddings, and comment sections and want the exact blessing it carries. Like <a href="/blog/mashallah-meaning">Mashallah</a> and <a href="/blog/jazakallah-khair-meaning">Jazakallah khair</a>, it is short, powerful, and easy to misuse if the meaning is unclear.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Barakallah</strong> (بارك الله) means <strong>“May Allah bless”</strong> / “May Allah place barakah.” Common longer forms include <strong>Barakallahu feek</strong> (may Allah bless you) and <strong>Barakallahu laka</strong> / <strong>feeki</strong> depending on gender and context. Reply with warmth — often Ameen, or Jazakallah khair.
+    content: `<div class="highlight-box">
+            <strong>Answer first:</strong> <strong>Barakallah</strong> (بارك الله) means <strong>“May Allah bless”</strong> — a short dua asking Allah to place barakah. <strong>Barakallahu feek</strong> / <strong>feeki</strong> means “May Allah bless you.” Common replies: <em>Ameen</em>, <em>Wa feek Barakallah</em>, or <a href="/blog/jazakallah-khair-meaning">Jazakallah khair</a>.
           </div>
 
-          <h2 id="arabic">Barakallah — Arabic, transliteration, English</h2>
           <div class="verse-card">
             <span class="vnum">PHRASE · BLESSING</span>
             <div class="arabic">بَارَكَ اللَّهُ</div>
             <p class="translit">Baarakallaah.</p>
             <p class="trans-en"><strong>English:</strong> May Allah bless. / May Allah grant barakah.</p>
           </div>
+
+          <p><strong>Barakallah meaning</strong> is searched when people hear the phrase in messages, weddings, and comments and want the exact blessing it carries. Like <a href="/blog/mashallah-meaning">Mashallah</a>, it is short, powerful, and easy to misuse if the meaning is unclear.</p>
+
+          <h2 id="arabic">Barakallah — Arabic, transliteration, English</h2>
+          <p>The everyday short form is written above. Longer spoken forms add the person or matter you are praying for:</p>
 
           <h2 id="forms">Common forms you will hear</h2>
           <table class="np-table">
@@ -513,8 +515,15 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           <details class="faq-acc"><summary>Is Barakallah in the Quran?<span>+</span></summary>
             <p>The root of barakah and related blessing language appears throughout Quran and Sunnah. The everyday phrase forms are widely used Islamic speech taught from prophetic manners and Arabic usage.</p>
           </details>
-          <p>If your family wants structured live tutoring after learning everyday phrases, you can request <a href="/locations/online-quran-classes-uk">live online Quran classes for families in the UK</a> or explore <a href="/locations/online-quran-classes-usa">online Quran classes for households in the USA</a> — timezone matching is confirmed after your trial request.</p>
-          <p>Barakallah is a small sentence with a large heart: asking Allah to put growth, good, and permanence in what we love for others — and for ourselves.</p>`,
+          <p>If your family wants structured live tutoring after learning everyday phrases, request a <a href="/free-quran-classes-online">free 30-minute Quran trial</a>, or browse <a href="/locations/online-quran-classes-uk">UK</a> and <a href="/locations/online-quran-classes-usa">USA</a> location hubs — timezone matching is confirmed after your request.</p>
+          <p>Barakallah is a small sentence with a large heart: asking Allah to put growth, good, and permanence in what we love for others — and for ourselves.</p>
+          <h2 id="related">Related phrases</h2>
+          <ul>
+            <li><a href="/blog/mashallah-meaning">Mashallah meaning</a> — acknowledging Allah’s will when praising</li>
+            <li><a href="/blog/jazakallah-khair-meaning">Jazakallah khair meaning</a> — asking Allah to reward someone with good</li>
+            <li><a href="/blog/islamic-phrases-meaning">Islamic phrases meaning</a> — phrase hub</li>
+            <li><a href="/female-quran-teacher-online">Female Quran teacher online</a> — tutor preference requests</li>
+          </ul>`,
   },
 };
 

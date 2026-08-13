@@ -186,6 +186,22 @@ export const cityGuidesUkPrimary: Record<string, CityGuideContent> = {
           ],
         },
       },
+      {
+        id: "london-next-steps",
+        heading: "What should a London family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-uk", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   birmingham: {
@@ -375,6 +391,22 @@ export const cityGuidesUkPrimary: Record<string, CityGuideContent> = {
           ],
         },
       },
+      {
+        id: "birmingham-next-steps",
+        heading: "What should a Birmingham family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-uk", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   manchester: {
@@ -565,6 +597,22 @@ export const cityGuidesUkPrimary: Record<string, CityGuideContent> = {
           ],
         },
       },
+      {
+        id: "manchester-next-steps",
+        heading: "What should a Manchester family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-uk", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
 };

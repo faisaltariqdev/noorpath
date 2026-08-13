@@ -6,7 +6,7 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
     title: "Online Quran Classes in Canada: A Practical Family Guide",
     description:
       "Plan remote Quran learning around Canadian time zones, school routines, tutor evidence, safeguarding, course choice, published USD fees and steady progress at home.",
-    reviewedDate: "15 July 2026",
+    reviewedDate: "13 August 2026",
     sections: [
       {
         id: "canada-fit",
@@ -157,6 +157,31 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
           "Local lesson dates and time-zone behaviour are confirmed.",
           "USD billing, renewal and cancellation terms are understood.",
           "Safeguarding, technical fallback and progress review routes are known.",
+        ],
+      },
+      {
+        id: "canada-next-steps",
+        heading: "What should a Canadian family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state your province or territory so the booking uses the correct ET/CT/MT/PT/AT/NT conversion, then review published USD pricing after tutor matching.",
+        paragraphs: [
+          "Use this country hub as the main enquiry page for Canada. Mention Toronto, Vancouver, Calgary, Ottawa, Montreal or another locality only so matching understands your clock and school routine — not because NoorPath has a Canadian campus. Bring a short learner brief to the trial and confirm the wall-clock time in writing around daylight-saving boundaries, especially where provincial rules differ.",
+          "If a female tutor is preferred, state that when booking. Preferences narrow availability across Canadian zones and are confirmed at matching rather than promised in advance.",
+        ],
+        bullets: [
+          "Published plans are priced in USD; check the CAD debit your bank shows at payment.",
+          "Family discounts for siblings are listed on the pricing page.",
+          "Indexable city guidance (for example Toronto) supplements this hub — it is not a local office.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/pricing", label: "Pricing (USD)" },
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/learn-tajweed-online", label: "Learn Tajweed online" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/online-quran-classes/toronto", label: "Toronto city guide" },
+          { href: "/locations/online-quran-classes-usa", label: "USA hub" },
         ],
       },
     ],

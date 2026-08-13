@@ -148,6 +148,22 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
           'After enrolment, review whether the arrangement works in practice. Evidence can include successful independent joining where age-appropriate, audible recitation, understood corrections, completed practice and fewer preventable cancellations. If the home location is repeatedly noisy or the slot repeatedly fails after cross-city journeys, change the operational plan before increasing lesson frequency. A robust setup reduces avoidable interruption but cannot guarantee attendance, pace or educational results.',
         ],
       },
+      {
+        id: "bradford-next-steps",
+        heading: "What should a Bradford family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-uk", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   leicester: {
@@ -297,6 +313,22 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
           'Set an early review point based on lessons completed rather than a promised educational milestone. Look for usable evidence: reliable joining, intelligible audio, clear corrections, alignment with other study and practice the learner can actually complete. If the evidence shows that timing or setup is the main obstacle, address that before changing course level. If teaching fit remains weak, use the stated rematching route. Enrolment choices should remain proportionate to observed use and documented terms.',
         ],
       },
+      {
+        id: "leicester-next-steps",
+        heading: "What should a Leicester family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-uk", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
   glasgow: {
@@ -446,6 +478,22 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
           'Review the first run of lessons with practical and learning evidence. Attendance alone is insufficient: check whether sound allows precise correction, adjustments are used consistently, the learner understands feedback and assigned practice fits the term-time week. If repeated disruption stems from the chosen hour, seek a timetable change subject to availability and terms. If the access arrangement is ineffective, revisit it openly. Better planning can improve participation, but it does not promise pace, retention or outcomes.',
         ],
       },
+      {
+        id: "glasgow-next-steps",
+        heading: "What should a Glasgow family do next?",
+        directAnswer:
+          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+        paragraphs: [
+          "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial" },
+          { href: "/locations/online-quran-classes-uk", label: "Country hub" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/pricing", label: "Pricing (USD)" },
+        ],
+      },
+
     ],
   },
 };

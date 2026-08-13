@@ -259,10 +259,10 @@ export const locations: Location[] = [
     flag: "🇸🇬",
     country: "Singapore",
     cities: "Singapore (island-wide)",
-    desc: "Online Quran classes for Singaporean Muslim families — SGT timezone.",
+    desc: "Online Quran classes for Singaporean Muslim families — SGT, CCA-aware schedules, free trial.",
     timezone: "SGT (UTC+8)",
     localContext:
-      "Singapore's Malay-Muslim community balances school schedules with Islamic learning. SGT evening and weekend preferences for one-to-one online lessons are subject to tutor matching.",
+      "Singapore's Malay-Muslim community balances school, CCA and tuition with Islamic learning. SGT evening and weekend preferences for one-to-one online lessons are subject to tutor matching. NoorPath teaches online only — not a Singapore campus.",
     keywords: ["online quran classes singapore", "quran teacher singapore", "learn quran online singapore", "islamic classes singapore", "quran tutor singapore"],
   },
   {

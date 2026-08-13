@@ -441,7 +441,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
     title: "Online Quran Classes in Sydney: Live 1-to-1 Family Guide",
     description:
       "Practical guidance for Sydney families comparing live online Quran lessons — AEST/AEDT after-school scheduling, female tutor requests, course fit, safeguarding, and a free trial.",
-    reviewedDate: "12 August 2026",
+    reviewedDate: "13 August 2026",
     sections: [
       {
         id: "sydney-how-online-works",
@@ -450,6 +450,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
           "Lessons take place by video from your home at agreed AEST/AEDT times. NoorPath operates online only: it has no Sydney branch, classroom, or home-visit service.",
         paragraphs: [
           "Western suburbs such as Lakemba, Auburn and Bankstown often balance school, traffic and weekend community activities. Online one-to-one tuition can protect a short weekly slot without claiming a local campus.",
+          "Sydney planning differs from Melbourne’s: New South Wales school-term dates, longer cross-suburban M4/M5 journeys after school, and denser weekend mosque programmes in the west change which after-school buffers families need — still confirm AEST/AEDT wall-clock times in writing.",
         ],
         bullets: [
           "Remote video lessons only",
@@ -514,6 +515,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
         relatedLinks: [
           { href: "/locations/online-quran-classes-australia", label: "Australia online Quran classes hub" },
           { href: "/free-quran-classes-online", label: "Free trial details" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
         ],
       },
     ],
@@ -525,7 +527,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
     title: "Online Quran Classes in Melbourne: Live 1-to-1 Family Guide",
     description:
       "Practical guidance for Melbourne families comparing live online Quran lessons — AEST/AEDT after-school planning, female tutor requests, course fit, and a free trial.",
-    reviewedDate: "12 August 2026",
+    reviewedDate: "13 August 2026",
     sections: [
       {
         id: "melbourne-how-online-works",
@@ -534,6 +536,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
           "Lessons take place by video from your home. NoorPath operates online only: it has no Melbourne branch, classroom, or home-visit service.",
         paragraphs: [
           "Northern and western suburbs such as Broadmeadows, Coburg and Werribee can use online one-to-one tuition to avoid another after-school commute. A city page is not evidence of a local campus.",
+          "Melbourne planning differs from Sydney’s: Victorian term calendars, tram-and-freeway mixes in the north-west, and cooler evening starts in winter change when children are ready to recite — still treat this as remote scheduling help, not a local office.",
         ],
         bullets: [
           "Remote video lessons only",
@@ -597,6 +600,7 @@ export const cityGuidesDiasporaPrimary: Record<string, CityGuideContent> = {
         ],
         relatedLinks: [
           { href: "/locations/online-quran-classes-australia", label: "Australia online Quran classes hub" },
+          { href: "/free-quran-classes-online", label: "Free trial" },
           { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
         ],
       },

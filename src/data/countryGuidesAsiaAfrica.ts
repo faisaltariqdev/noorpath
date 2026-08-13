@@ -463,60 +463,114 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
 
   "online-quran-classes-singapore": {
     country: "Singapore",
-    title: "Online Quran Classes in Singapore: Family Guide",
+    title: "Online Quran Classes in Singapore: School, CCA & SGT Family Guide",
     description:
-      "Guidance for Singaporean Muslim families choosing live online Quran lessons — SGT schedules, school-balance tips, USD/SGD budgeting, and a free trial path.",
-    reviewedDate: "28 July 2026",
+      "Practical guidance for Singaporean Muslim families choosing live online Quran lessons — SGT schedules around CCA and tuition, course fit, USD/SGD budgeting, female tutor requests, and a free trial.",
+    reviewedDate: "13 August 2026",
     sections: [
       {
         id: "singapore-fit",
         heading: "Are online Quran classes suitable for Singaporean families?",
         directAnswer:
-          "Yes when households want live one-to-one Quran learning around dense school schedules. NoorPath teaches online only — not a Singapore campus.",
+          "Yes when a household can protect one recurring SGT slot and sit the learner in front of a screen with an adult nearby when needed. NoorPath teaches online only — there is no Singapore campus, branch classroom or home-visit service.",
         paragraphs: [
-          "Singapore’s Malay-Muslim community balances academic demands with Islamic learning. A recurring SGT evening or weekend lesson can fit without another long journey across the island.",
+          "Singapore’s Malay-Muslim community balances dense school calendars, CCA and tuition with Islamic learning. Many families already have weekend or school-linked options; online one-to-one tutoring is useful when a child needs individual correction, when traffic across the island makes another trip costly, or when an adult wants discreet beginner lessons after work.",
+          "Online tuition is not a community substitute. It does not replace mosque friendships or a local teacher who knows the family. It does provide weekly live listening and correction when that is the scarce resource. A free 30-minute trial is the honest way to test fit — no credit card is required.",
         ],
         bullets: [
-          "Remote-only service with no Singapore branch claim.",
-          "SGT windows subject to tutor matching.",
-          "Placement by readiness, not birthday alone.",
-          "Free trial before ongoing payment.",
+          "Remote-only service — no Singapore branch or campus claim.",
+          "SGT windows are subject to tutor matching.",
+          "Placement follows reading readiness, not birthday or school year alone.",
+          "Female tutor preferences can be stated and are confirmed at matching.",
         ],
       },
       {
         id: "singapore-schedule",
-        heading: "What SGT times typically work?",
+        heading: "Which SGT windows survive CCA, tuition and exams?",
         directAnswer:
-          "Many families request weekday evenings or weekend mornings in SGT. Exact availability is confirmed after matching.",
+          "Many families request weekday evenings after CCA or weekend mornings in SGT. Share conflicts up front; exact availability is confirmed after matching. SGT (UTC+8) does not observe daylight saving — still confirm the written local clock time.",
         paragraphs: [
-          "Share CCA and tuition conflicts. SGT (UTC+8) does not observe daylight saving — still confirm the written local clock time.",
+          "Treat the first proposed slot as a testable plan. A 7.30 pm SGT lesson that collides with CCA nights will produce absences; a Saturday morning that survives tuition is often more reliable than an ambitious weekday package. During PSLE, O-Level or A-Level stretches, ask for a lighter frequency rather than stopping entirely — short continuity beats a collapsed timetable.",
+          "Adults returning after work often prefer later evening SGT windows. State two workable options so matching can succeed across tutor-side time zones.",
+        ],
+        table: {
+          headers: ["Planning factor", "What to confirm"],
+          rows: [
+            ["Local label", "Is the recurring slot recorded in SGT?"],
+            ["CCA / tuition", "Which nights are already blocked this term?"],
+            ["Exam blocks", "Should frequency reduce rather than pause?"],
+            ["Weekend option", "Is Saturday morning more reliable than a weeknight?"],
+          ],
+        },
+      },
+      {
+        id: "singapore-school",
+        heading: "How should Quran lessons sit beside Singapore school Islamic learning?",
+        directAnswer:
+          "School or madrasah exposure is useful context, not automatic proof of makharij accuracy. Describe what the learner can decode independently so placement does not skip foundations or repeat material unnecessarily.",
+        paragraphs: [
+          "Written exam grades and memorisation by ear are different skills from decoding unfamiliar lines. Tell the tutor honestly if a child knows short surahs by listening but hesitates on new Arabic text. That honesty prevents a Tajweed label being applied where Qaida consolidation is still needed.",
+          "Siblings should not share one plan for convenience alone. Ages and skills differ; separate assessments keep one child from coasting and another from drowning.",
         ],
       },
       {
         id: "singapore-courses",
         heading: "Which courses fit learners in Singapore?",
         directAnswer:
-          "Beginners start with Noorani Qaida; readers may continue Quran reading, Tajweed or Hifz after assessment.",
+          "Beginners usually start with Noorani Qaida. Readers may continue Quran reading, Tajweed or Hifz after assessment. A narrower plan completed consistently often beats an overloaded package in exam periods.",
         paragraphs: [
-          "A narrower plan completed consistently often beats an overloaded package during exam periods. Revisit placement after several lessons if the material is poorly matched.",
+          "Between live lessons, soft recognition practice on the Interactive Noorani Qaida hub can help — live teachers remain the correction path for uncertain sounds. Hifz needs new lines plus daily revision; NoorPath does not publish a guaranteed completion timeline.",
+        ],
+        bullets: [
+          "Foundations first when letter recognition is weak.",
+          "Request Tajweed when continuous reading exists.",
+          "Treat Hifz as memorisation plus revision, not page count alone.",
+          "Revisit placement after several lessons if the material is poorly matched.",
+        ],
+        relatedLinks: [
+          { href: "/noorani-qaida", label: "Noorani Qaida hub" },
+          { href: "/learn-tajweed-online", label: "Learn Tajweed online" },
+          { href: "/hifz-quran-online", label: "Hifz Quran online" },
+          { href: "/online-quran-classes-for-adults", label: "Adults Quran classes" },
         ],
       },
       {
         id: "singapore-pricing",
         heading: "How should Singapore families read USD prices in SGD?",
         directAnswer:
-          "Plans are published and charged in USD. Convert to SGD for budgeting; NoorPath does not publish a fixed SGD list.",
+          "Plans are published and charged in USD. Convert to SGD for budgeting; NoorPath does not publish a fixed SGD list. Card FX fees may change the final SGD amount on your statement.",
         paragraphs: [
-          "Compare session length and frequency on the pricing page. Card FX fees may change the final SGD amount on your statement.",
+          "Compare session length and frequency on the pricing page. Family sibling discounts, where published, apply to ongoing plans — not as a substitute for reading the current offer terms.",
+        ],
+      },
+      {
+        id: "singapore-female",
+        heading: "Can we request a female Quran teacher in Singapore?",
+        directAnswer:
+          "Yes — state the preference when booking. A female tutor is confirmed at matching rather than promised in advance, and the preference interacts with SGT evening demand.",
+        paragraphs: [
+          "Families who can offer a second window (for example a weekend morning) are often placed more quickly. Adult sisters starting from the beginning often prefer one-to-one lessons for privacy and pace.",
+        ],
+        relatedLinks: [
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher online" },
         ],
       },
       {
         id: "singapore-start",
-        heading: "How should a Singapore family start?",
+        heading: "How should a Singapore family start this week?",
         directAnswer:
-          "Note preferred SGT window and course goal, then request a free trial with no credit card.",
+          "Note two preferred SGT windows, an honest course goal and any female-tutor preference, then request a free 30-minute trial with no credit card.",
         paragraphs: [
-          "Add female-tutor preference if needed. Protect short daily practice between live lessons.",
+          "Protect five to ten minutes on non-lesson days for a short home echo of what was corrected. Continuity across CCA weeks matters more than an intense plan that collapses in Term 3 or 4.",
+          "For Malaysia–Singapore household planning in the same UTC+8 band, the parent blog on Malaysian and Singaporean families links both country hubs without inventing campuses.",
+        ],
+        relatedLinks: [
+          { href: "/free-quran-classes-online", label: "Free trial details" },
+          { href: "/pricing", label: "Pricing (USD)" },
+          { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
+          { href: "/blog/online-quran-for-malaysian-and-singaporean-families", label: "MY & SG family guide" },
+          { href: "/locations/online-quran-classes-malaysia", label: "Malaysia hub" },
+          { href: "#trial", label: "Book your SGT trial" },
         ],
       },
     ],

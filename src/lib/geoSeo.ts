@@ -176,9 +176,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online canada",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Canada — Kids & Adults | NoorPath",
+      metadataTitle: "NoorPath Academy | Online Quran Classes Canada — Free Trial",
       metadataDescription:
-        "Request live one-to-one online Quran classes in Canada, with local time-zone scheduling for Qaida, Tajweed, Hifz, children and adults.",
+        "NoorPath Academy live one-to-one online Quran classes for Canada: provincial time-zone matching, Qaida to Hifz, female tutors on request, free 30-minute trial. Online only.",
       heading: "Online Quran Classes in Canada",
       introduction:
         "Canadian families can request online Quran lessons planned around their own provincial or territorial time zone and school-week routine.",
@@ -561,9 +561,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "learn quran online nz",
     ],
     content: {
-      metadataTitle: "Online Quran Classes New Zealand — Kids & Adults | NoorPath",
+      metadataTitle: "NoorPath Academy | Online Quran Classes New Zealand — Free Trial",
       metadataDescription:
-        "Live one-to-one online Quran classes for NZ kids and families: NZST/NZDT matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
+        "NoorPath Academy live one-to-one online Quran classes for NZ kids and families: NZST/NZDT matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
       heading: "Online Quran Classes for Kids in New Zealand",
       introduction:
         "Muslim families across New Zealand — especially in Auckland, and also in Wellington, Christchurch, Hamilton and smaller towns — can request live one-to-one online Quran classes for kids when local mosque programmes or full-time Islamic schooling are limited. Lessons are online only; NoorPath does not operate a New Zealand campus.",
