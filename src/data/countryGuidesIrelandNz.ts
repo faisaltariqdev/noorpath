@@ -286,6 +286,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
           { href: "/hifz-quran-online", label: "Hifz Quran online" },
           { href: "/online-quran-classes/auckland", label: "Auckland city guide" },
           { href: "/online-quran-classes/wellington", label: "Wellington city guide" },
+          { href: "/blog/online-quran-classes-new-zealand-for-kids", label: "NZ kids Quran blog" },
           { href: "/locations/online-quran-classes-australia", label: "Australia hub" },
           { href: "#trial", label: "Book your NZ trial" },
         ],

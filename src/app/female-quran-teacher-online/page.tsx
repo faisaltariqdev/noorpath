@@ -385,11 +385,13 @@ export default function FemaleQuranTeacherPage() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
               {[
                 ["/free-quran-classes-online", "Free Quran Trial"],
+                ["/blog/online-quran-classes-canada-for-kids", "Canada kids Quran guide"],
+                ["/blog/female-quran-teacher-online-canada", "Female teacher Canada"],
+                ["/blog/quran-classes-for-adults-in-singapore", "Singapore adults Quran"],
                 ["/online-quran-classes-for-kids", "Kids Quran Classes"],
                 ["/online-quran-classes-for-adults", "Adult Quran Classes"],
                 ["/hifz-quran-online", "Hifz Program Online"],
                 ["/learn-tajweed-online", "Learn Tajweed Online"],
-                ["/blog/barakallah-meaning", "Barakallah meaning"],
                 ["/online-quran-classes", "All Online Classes"],
               ].map(([href, label]) => (
                 <Link key={href} href={href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem", textDecoration: "none" }}>→ {label}</Link>

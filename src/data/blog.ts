@@ -2763,6 +2763,112 @@ export const blogPosts: BlogPost[] = [
       "Honest ranges for how long kids take from Qaida to Quran reading — what speeds or slows progress, milestones to hear, and why placement beats cousin comparisons.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
+  {
+    slug: "online-quran-classes-canada-for-kids",
+    title: "Online Quran Classes Canada for Kids — Time Zones & Free Trial",
+    description:
+      "Online Quran classes Canada for kids: ET/CT/MT/PT scheduling, after-school routines, Toronto context, female tutor requests, USD→CAD tips, and a free 30-minute trial. Online only.",
+    category: "Kids & Parenting",
+    date: "2026-08-14",
+    updatedAt: "2026-08-14",
+    readTime: "12 min",
+    keywords: [
+      "online quran classes canada",
+      "online quran classes canada for kids",
+      "quran classes for kids canada",
+      "online quran toronto",
+      "quran tutor canada online",
+      "after school quran classes canada",
+      "female quran teacher canada",
+    ],
+    excerpt:
+      "How Canadian families book live online Quran for kids across provincial time zones — placement, after-school routines, and an honest free trial path.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-classes-for-adults-in-singapore",
+    title: "Quran Classes for Adults in Singapore — SGT Online Guide",
+    description:
+      "Quran classes for adults in Singapore: discreet SGT evening slots, beginner-honest placement, female tutor requests, USD→SGD budgeting, and a free trial. Online only — not a campus.",
+    category: "Quran Learning",
+    date: "2026-08-14",
+    updatedAt: "2026-08-14",
+    readTime: "11 min",
+    keywords: [
+      "quran classes for adults singapore",
+      "online quran classes singapore adults",
+      "iqra classes singapore",
+      "learn quran online singapore adults",
+      "quran tutor singapore after work",
+      "quran courses singapore online",
+    ],
+    excerpt:
+      "Adult-focused online Quran learning in Singapore — SGT overtime-friendly windows, honest Qaida placement, and a free trial without a local campus claim.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "online-quran-classes-new-zealand-for-kids",
+    title: "Online Quran Classes New Zealand for Kids — NZST Guide",
+    description:
+      "Online Quran classes New Zealand for kids: NZST/NZDT matching, Auckland & smaller-town context, female tutors on request, free trial. Online only — no NZ campus.",
+    category: "Kids & Parenting",
+    date: "2026-08-14",
+    updatedAt: "2026-08-14",
+    readTime: "12 min",
+    keywords: [
+      "online quran classes new zealand",
+      "online quran classes for kids in new zealand",
+      "quran teacher auckland online",
+      "quran classes wellington online",
+      "learn quran online nz",
+      "female quran teacher new zealand",
+    ],
+    excerpt:
+      "Practical NZ guide for kids’ live online Quran — clock changes, Auckland vs smaller towns, and a free trial path without inventing a campus.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "after-school-quran-classes-australia-for-kids",
+    title: "After-School Quran Classes Australia for Kids — AEST Guide",
+    description:
+      "After-school Quran classes Australia for kids: AEST/AEDT/ACST/AWST scheduling, Sydney & Melbourne online guides, course fit, free trial. Online only — no Australian campus.",
+    category: "Kids & Parenting",
+    date: "2026-08-14",
+    updatedAt: "2026-08-14",
+    readTime: "12 min",
+    keywords: [
+      "after school quran classes australia",
+      "online quran classes australia for kids",
+      "best quran classes for kids in australia",
+      "online tajweed classes australia",
+      "quran classes sydney online",
+      "quran classes melbourne online",
+    ],
+    excerpt:
+      "Australian after-school Quran online: state time zones, Sydney/Melbourne scheduling context, honest “best” criteria, and a free trial.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "female-quran-teacher-online-canada",
+    title: "Female Quran Teacher Online Canada — Tutor Requests & Trial",
+    description:
+      "Request a female Quran teacher online in Canada for daughters or sisters. Live 1-to-1 classes, provincial time-zone matching, free 30-minute trial. Online only.",
+    category: "Quran Learning",
+    date: "2026-08-14",
+    updatedAt: "2026-08-14",
+    readTime: "10 min",
+    keywords: [
+      "female quran teacher canada",
+      "female quran teacher online canada",
+      "female quran tutor toronto",
+      "online female quran teacher canada",
+      "hafiza tutor canada online",
+      "quran teacher for girls canada",
+    ],
+    excerpt:
+      "How Canadian families request a female online Quran tutor — matching process, time-zone tips, safeguarding, and a free trial.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

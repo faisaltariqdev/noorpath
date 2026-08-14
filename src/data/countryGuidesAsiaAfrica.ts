@@ -569,6 +569,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
           { href: "/pricing", label: "Pricing (USD)" },
           { href: "/female-quran-teacher-online", label: "Female Quran teacher" },
           { href: "/blog/online-quran-for-malaysian-and-singaporean-families", label: "MY & SG family guide" },
+          { href: "/blog/quran-classes-for-adults-in-singapore", label: "Singapore adults Quran blog" },
           { href: "/locations/online-quran-classes-malaysia", label: "Malaysia hub" },
           { href: "#trial", label: "Book your SGT trial" },
         ],

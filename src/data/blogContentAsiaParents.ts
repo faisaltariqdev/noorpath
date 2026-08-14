@@ -205,7 +205,7 @@ export const asiaParentBlogContent: Record<string, { style: string; content: str
             <li>Revisit placement after several lessons if material is too easy or too hard</li>
             <li>Convert USD fees to SGD for household planning; NoorPath does not publish a fixed SGD list</li>
           </ul>
-          <p>Adults in Singapore who want discreet one-to-one lessons can request evening windows after work. Placement still follows ability — a busy professional who never learned letters needs Qaida honesty, not a Tajweed label for social comfort. See <a href="/online-quran-classes-for-adults">online Quran classes for adults</a> when the learner is not a child.</p>
+          <p>Adults in Singapore who want discreet one-to-one lessons can request evening windows after work. Placement still follows ability — a busy professional who never learned letters needs Qaida honesty, not a Tajweed label for social comfort. See <a href="/online-quran-classes-for-adults">online Quran classes for adults</a> and the dedicated <a href="/blog/quran-classes-for-adults-in-singapore">Quran classes for adults in Singapore</a> guide when the learner is not a child.</p>
 
           <h2 id="placement-sea">Shared placement mistakes in both countries</h2>
           <p>Parents sometimes enrol siblings on the same plan for convenience. Ages and skills differ. Separate assessments prevent one child coasting and the other drowning. Another common mistake is treating school Islamic studies grades as proof of makharij accuracy — written exams do not replace live listening.</p>

@@ -117,6 +117,11 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "adult-embarrassed-to-learn-quran-beginner",
   "online-quran-trial-what-to-expect",
   "how-long-until-child-reads-quran",
+  "online-quran-classes-canada-for-kids",
+  "quran-classes-for-adults-in-singapore",
+  "online-quran-classes-new-zealand-for-kids",
+  "after-school-quran-classes-australia-for-kids",
+  "female-quran-teacher-online-canada",
 ]);
 const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)
