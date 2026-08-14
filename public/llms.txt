@@ -2,7 +2,7 @@
 
 > NoorPath Online Quran Academy provides live one-to-one online Quran learning and Quran classes for children, adults, beginners and families — including Noorani Qaida, Quran reading, Tajweed, Hifz (memorization), Arabic and Islamic studies.
 
-Last reviewed: 2026-08-11
+Last reviewed: 2026-08-14
 
 ## Brand identity
 
@@ -132,6 +132,7 @@ Primary resources:
 
 Also useful:
 - [Female Quran teacher for kids](https://www.noorpath.online/blog/female-quran-teacher-for-kids)
+- [Female Quran teacher online Canada](https://www.noorpath.online/blog/female-quran-teacher-online-canada)
 
 ### Learning Quran with limited local access
 
@@ -158,6 +159,28 @@ Primary resources:
 Also useful:
 - [UK kids Quran classes guide](https://www.noorpath.online/blog/online-quran-classes-uk-kids-guide)
 - [USA kids Quran classes guide](https://www.noorpath.online/blog/online-quran-classes-usa-kids-guide)
+
+### Canada online Quran classes
+
+Canada hub for live one-to-one online Quran classes with provincial time-zone planning, Toronto city guide, kids after-school guidance and female tutor requests.
+
+Primary resources:
+- [Canada](https://www.noorpath.online/locations/online-quran-classes-canada)
+
+Also useful:
+- [Toronto](https://www.noorpath.online/online-quran-classes/toronto)
+- [Canada kids online Quran classes guide](https://www.noorpath.online/blog/online-quran-classes-canada-for-kids)
+
+### Singapore online Quran classes (SGT)
+
+Singapore hub for live one-to-one online Quran classes with SGT evenings, adult beginner honesty, and family CCA planning — online only, not a campus.
+
+Primary resources:
+- [Singapore](https://www.noorpath.online/locations/online-quran-classes-singapore)
+
+Also useful:
+- [Quran classes for adults in Singapore (SGT)](https://www.noorpath.online/blog/quran-classes-for-adults-in-singapore)
+- [Online Quran for Malaysian and Singaporean families](https://www.noorpath.online/blog/online-quran-for-malaysian-and-singaporean-families)
 
 ### India online Quran classes (IST)
 
@@ -190,8 +213,8 @@ Primary resources:
 - [New Zealand](https://www.noorpath.online/locations/online-quran-classes-new-zealand)
 
 Also useful:
-- [Sydney](https://www.noorpath.online/online-quran-classes/sydney)
-- [Melbourne](https://www.noorpath.online/online-quran-classes/melbourne)
+- [Australia after-school Quran classes for kids](https://www.noorpath.online/blog/after-school-quran-classes-australia-for-kids)
+- [New Zealand kids online Quran classes guide](https://www.noorpath.online/blog/online-quran-classes-new-zealand-for-kids)
 
 ## Core Quran learning services
 
@@ -302,6 +325,11 @@ NoorPath serves students and families who prefer or need online Quran learning �
 - [Online Quran Classes in Melbourne](https://www.noorpath.online/online-quran-classes/melbourne)
   Indexable city page for online scheduling context. Not a physical branch.
 
+### Singapore
+
+- [Online Quran Classes — Singapore](https://www.noorpath.online/locations/online-quran-classes-singapore)
+  Singapore SGT scheduling context for online Quran classes (online only).
+
 ### India
 
 - [Online Quran Classes — India](https://www.noorpath.online/locations/online-quran-classes-india)
@@ -404,6 +432,15 @@ NoorPath serves students and families who prefer or need online Quran learning �
 ## Quran learning knowledge map
 
 Selected high-value articles. For the fuller guide set, see llms-full.txt. Individual articles carry their own dates and sources.
+
+### Country & timezone family guides
+
+- [Canada kids online Quran classes guide](https://www.noorpath.online/blog/online-quran-classes-canada-for-kids)
+- [Female Quran teacher online Canada](https://www.noorpath.online/blog/female-quran-teacher-online-canada)
+- [Quran classes for adults in Singapore (SGT)](https://www.noorpath.online/blog/quran-classes-for-adults-in-singapore)
+- [Australia after-school Quran classes for kids](https://www.noorpath.online/blog/after-school-quran-classes-australia-for-kids)
+- [New Zealand kids online Quran classes guide](https://www.noorpath.online/blog/online-quran-classes-new-zealand-for-kids)
+- [Online Quran for Malaysian and Singaporean families](https://www.noorpath.online/blog/online-quran-for-malaysian-and-singaporean-families)
 
 ### Online Quran Learning Guides
 

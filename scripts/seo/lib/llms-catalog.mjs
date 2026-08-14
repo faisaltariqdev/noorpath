@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-08-11";
+export const REVIEWED = "2026-08-14";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -125,7 +125,10 @@ export const TOPIC_INTENTS = [
     summary:
       "Female tutor requests for daughters, sisters and adult women.",
     primary: ["/female-quran-teacher-online", "/quran-classes-for-sisters"],
-    supporting: ["/blog/female-quran-teacher-for-kids"],
+    supporting: [
+      "/blog/female-quran-teacher-for-kids",
+      "/blog/female-quran-teacher-online-canada",
+    ],
   },
   {
     topic: "Learning Quran with limited local access",
@@ -150,9 +153,38 @@ export const TOPIC_INTENTS = [
     supporting: [
       "/blog/online-quran-classes-uk-kids-guide",
       "/blog/online-quran-classes-usa-kids-guide",
+      "/blog/online-quran-classes-new-zealand-for-kids",
       "/online-quran-classes/london",
       "/online-quran-classes/auckland",
       "/online-quran-classes/dublin",
+    ],
+  },
+  {
+    topic: "Canada online Quran classes",
+    summary:
+      "Canada hub for live one-to-one online Quran classes with provincial time-zone planning, Toronto city guide, kids after-school guidance and female tutor requests.",
+    primary: ["/locations/online-quran-classes-canada"],
+    supporting: [
+      "/online-quran-classes/toronto",
+      "/blog/online-quran-classes-canada-for-kids",
+      "/blog/female-quran-teacher-online-canada",
+      "/noorani-qaida",
+      "/female-quran-teacher-online",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "Singapore online Quran classes (SGT)",
+    summary:
+      "Singapore hub for live one-to-one online Quran classes with SGT evenings, adult beginner honesty, and family CCA planning — online only, not a campus.",
+    primary: ["/locations/online-quran-classes-singapore"],
+    supporting: [
+      "/blog/quran-classes-for-adults-in-singapore",
+      "/blog/online-quran-for-malaysian-and-singaporean-families",
+      "/online-quran-classes-for-adults",
+      "/noorani-qaida",
+      "/female-quran-teacher-online",
+      "/free-quran-classes-online",
     ],
   },
   {
@@ -190,6 +222,8 @@ export const TOPIC_INTENTS = [
       "/locations/online-quran-classes-new-zealand",
     ],
     supporting: [
+      "/blog/after-school-quran-classes-australia-for-kids",
+      "/blog/online-quran-classes-new-zealand-for-kids",
       "/online-quran-classes/sydney",
       "/online-quran-classes/melbourne",
       "/online-quran-classes/auckland",
@@ -222,6 +256,7 @@ export const PRIORITY_COUNTRIES = [
   { path: "/locations/online-quran-classes-usa", label: "United States", note: "USA timezone scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-canada", label: "Canada", note: "Canada timezone scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-australia", label: "Australia", note: "Australia timezone scheduling context for online Quran classes." },
+  { path: "/locations/online-quran-classes-singapore", label: "Singapore", note: "Singapore SGT scheduling context for online Quran classes (online only)." },
   { path: "/locations/online-quran-classes-india", label: "India", note: "India IST after-school scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-nigeria", label: "Nigeria", note: "Nigeria WAT after-school scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-new-zealand", label: "New Zealand", note: "New Zealand timezone and school-year context for online Quran classes." },
@@ -316,6 +351,17 @@ export const ABOUT_TRUST = [
  * Paths are /blog/{slug}. Keep this list short and high-value.
  */
 export const BLOG_CLUSTERS = [
+  {
+    heading: "Country & timezone family guides",
+    items: [
+      { slug: "online-quran-classes-canada-for-kids", label: "Canada kids online Quran classes guide" },
+      { slug: "female-quran-teacher-online-canada", label: "Female Quran teacher online Canada" },
+      { slug: "quran-classes-for-adults-in-singapore", label: "Quran classes for adults in Singapore (SGT)" },
+      { slug: "after-school-quran-classes-australia-for-kids", label: "Australia after-school Quran classes for kids" },
+      { slug: "online-quran-classes-new-zealand-for-kids", label: "New Zealand kids online Quran classes guide" },
+      { slug: "online-quran-for-malaysian-and-singaporean-families", label: "Online Quran for Malaysian and Singaporean families" },
+    ],
+  },
   {
     heading: "Online Quran Learning Guides",
     items: [

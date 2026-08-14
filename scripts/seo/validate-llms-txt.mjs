@@ -203,12 +203,15 @@ async function main() {
   mkdirSync(dirname(REPORT), { recursive: true });
   writeFileSync(REPORT, JSON.stringify(report, null, 2));
 
+  // Live HEAD checks are authoritative for deployed URLs; stale local .next
+  // should not block when --live already proved the pages respond.
+  const failPrerender = !live && report.missingFromPrerender.length > 0;
   const fail =
     report.broken.length > 0 ||
     report.forbiddenRedirectPaths.length > 0 ||
     report.nonCanonicalHost.length > 0 ||
     report.catalogMismatch.length > 0 ||
-    report.missingFromPrerender.length > 0;
+    failPrerender;
 
   console.log("llms.txt + llms-full.txt validation");
   console.log(`  Total URLs (union): ${report.totalUrls}`);
