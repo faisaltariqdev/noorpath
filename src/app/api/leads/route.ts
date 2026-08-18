@@ -106,12 +106,24 @@ export async function POST(request: Request) {
   form.set("_template", "table");
   form.set("_captcha", "false");
 
+  // FormSubmit rejects server posts without a site Origin/Referer
+  // ("browsed as HTML files"). Forward the validated browser origin.
+  const formsubmitOrigin =
+    origin && allowedOrigin(origin, host) ? origin : "https://www.noorpath.online";
+  const formsubmitReferer = landingPage.startsWith("http")
+    ? landingPage
+    : `${formsubmitOrigin}/`;
+
   let formsubmit = "failed";
   try {
     const res = await fetch(FORMSUBMIT, {
       method: "POST",
       body: form,
-      headers: { Accept: "application/json" },
+      headers: {
+        Accept: "application/json",
+        Origin: formsubmitOrigin,
+        Referer: formsubmitReferer,
+      },
     });
     const data = (await res.json().catch(() => null)) as { success?: boolean | string } | null;
     if (data?.success === true || data?.success === "true") formsubmit = "ok";
