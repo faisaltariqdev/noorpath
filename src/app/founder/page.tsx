@@ -1,31 +1,38 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { BASE_URL, ORGANIZATION_ID } from "@/lib/organizationSchema";
+import { BASE_URL, FOUNDER_PERSON_ID, ORGANIZATION_ID } from "@/lib/organizationSchema";
 import { absolutePageTitle } from "@/lib/pageTitle";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: absolutePageTitle("Faisal Tariq — Founder & CEO of NoorPath Academy"),
-  description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
+  description:
+    "Faisal Tariq is Founder and CEO of NoorPath Academy (www.noorpath.online) — live one-to-one online Quran classes for children and families.",
+  keywords: [
+    "faisal tariq noorpath",
+    "noorpath academy founder",
+    "noorpath.online founder",
+  ],
   alternates: { canonical: "https://www.noorpath.online/founder" },
   openGraph: {
     title: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-    description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
+    description:
+      "Founder and CEO of NoorPath Academy at www.noorpath.online — online-only Quran academy.",
     url: "https://www.noorpath.online/founder",
     images: [{ url: "/assets/faisal-tariq-founder.png", width: 500, height: 500, alt: "Faisal Tariq — Founder & CEO, NoorPath Academy" }],
   },
   twitter: {
     card: "summary",
     title: "Faisal Tariq — Founder & CEO | NoorPath Academy",
-    description: "Founder and CEO of NoorPath Academy.",
+    description: "Founder and CEO of NoorPath Academy (www.noorpath.online).",
     images: ["/assets/faisal-tariq-founder.png"],
   },
 };
 
 const profileUrl = `${BASE_URL}/founder`;
-const personId = `${profileUrl}#person`;
+const personId = FOUNDER_PERSON_ID;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -34,7 +41,8 @@ const jsonLd = {
       "@type": "ProfilePage",
       "@id": profileUrl,
       name: "Faisal Tariq — Founder & CEO of NoorPath Academy",
-      description: "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy.",
+      description:
+        "Profile of Faisal Tariq, Founder and CEO of NoorPath Academy (www.noorpath.online).",
       url: profileUrl,
       mainEntity: { "@id": personId },
       isPartOf: { "@id": `${BASE_URL}/#website` },
@@ -47,6 +55,8 @@ const jsonLd = {
       url: profileUrl,
       image: `${BASE_URL}/assets/faisal-tariq-founder.png`,
       worksFor: { "@id": ORGANIZATION_ID },
+      description:
+        "Faisal Tariq is the Founder and CEO of NoorPath Academy, the online-only Quran academy at www.noorpath.online.",
     },
     {
       "@type": "BreadcrumbList",
@@ -99,7 +109,11 @@ export default function FounderPage() {
               <div className="content-card">
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.2rem", color: "var(--charcoal)", marginBottom: 16 }}>The Story Behind NoorPath</h3>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-                  Faisal Tariq is the Founder and CEO of NoorPath Academy. NoorPath provides online Quran learning for children, adults and families.
+                  Faisal Tariq is the Founder and CEO of NoorPath Academy. The official website is{" "}
+                  <a href="https://www.noorpath.online" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+                    www.noorpath.online
+                  </a>
+                  . NoorPath provides live one-to-one online Quran learning for children, adults and families — online only, with no campus.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
                   NoorPath offers live one-to-one lessons and matches learners with tutors according to their learning goals, schedule and stated preferences.

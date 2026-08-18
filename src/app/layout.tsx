@@ -49,6 +49,7 @@ export const metadata: Metadata = {
   description:
     "NoorPath Academy — live 1-on-1 online Quran classes: Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Free 30-min trial.",
   keywords: [
+    "noorpath","noor path","noorpath academy","noor path academy","noorpath.online",
     "learn quran online","online quran classes","quran tutor online",
     "online quran academy","quran classes for kids","tajweed classes online",
     "hifz program online","noorani qaida online","arabic language online",
@@ -79,7 +80,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@NoorPathAcademy",
     title: "NoorPath Academy | Online Quran Classes — Free Trial",
     description: "Online Quran classes for kids and adults. Tajweed, Hifz, Qaida, Arabic, family plans and a free trial.",
     images: ["/og-image.png"],

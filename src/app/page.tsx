@@ -75,6 +75,10 @@ const whyPoints = [
 ];
 
 const faqs = [
+  {
+    q: "What is the official NoorPath Academy website?",
+    a: "The official website is https://www.noorpath.online. NoorPath Academy provides live one-to-one online Quran classes. It is not affiliated with noor-path.com or noorpath.net apps.",
+  },
   { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with an assigned tutor. A schedule is confirmed based on your timezone and current tutor availability, with no pre-recorded lessons." },
   { q: "What age groups do you accept?", a: "NoorPath accepts trial requests for children from age 4, teenagers and adults. Tutor matching considers the learner's age, current level and lesson goals." },
   { q: "Do you offer a free trial class?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class with no credit card required. Tutor availability is confirmed after the request.` },

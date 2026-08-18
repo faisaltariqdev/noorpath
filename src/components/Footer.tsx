@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MessageCircle, Mail, Globe, Star } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram, FaTiktok, FaFacebookF, FaYoutube } from "react-icons/fa6";
-import { GOOGLE_BUSINESS_URL, TRUSTPILOT } from "@/lib/academyFacts";
+import { GOOGLE_BUSINESS_URL, SOCIAL_PROFILES, TRUSTPILOT } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
 import WhatsAppLink from "@/components/WhatsAppLink";
@@ -137,9 +137,9 @@ export default function Footer() {
                 </div>
               </div>
               <p className="footer-desc">
-                Illuminating hearts through the teachings of the Holy Quran.
-                Founder-led online Quran education for children, adults and
-                families, with live lessons and timezone-based tutor matching.
+                Official site: www.noorpath.online. Founder-led online Quran
+                education for children, adults and families — live one-to-one
+                lessons with timezone-based tutor matching. Online only; no campus.
               </p>
               <div className="flex gap-2 flex-wrap items-center">
                 <WhatsAppLink
@@ -152,7 +152,7 @@ export default function Footer() {
                   <FaWhatsapp size={15} />
                 </WhatsAppLink>
                 <Link
-                  href="https://www.facebook.com/noorpathquranacademy"
+                  href={SOCIAL_PROFILES.facebook}
                   className="social-btn"
                   aria-label="NoorPath on Facebook"
                   target="_blank"
@@ -161,7 +161,7 @@ export default function Footer() {
                   <FaFacebookF size={15} />
                 </Link>
                 <Link
-                  href="https://www.instagram.com/noorpath.online/"
+                  href={SOCIAL_PROFILES.instagram}
                   className="social-btn"
                   aria-label="NoorPath on Instagram"
                   target="_blank"
@@ -170,7 +170,7 @@ export default function Footer() {
                   <FaInstagram size={15} />
                 </Link>
                 <Link
-                  href="https://www.tiktok.com/@noorpathacademy"
+                  href={SOCIAL_PROFILES.tiktok}
                   className="social-btn"
                   aria-label="NoorPath on TikTok"
                   target="_blank"
@@ -179,7 +179,7 @@ export default function Footer() {
                   <FaTiktok size={15} />
                 </Link>
                 <Link
-                  href="https://www.youtube.com/@NoorPath.Online"
+                  href={SOCIAL_PROFILES.youtube}
                   className="social-btn"
                   aria-label="NoorPath on YouTube"
                   target="_blank"
@@ -292,7 +292,7 @@ export default function Footer() {
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <FaFacebookF size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <Link
-                    href="https://www.facebook.com/noorpathquranacademy"
+                    href={SOCIAL_PROFILES.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -302,7 +302,7 @@ export default function Footer() {
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <FaInstagram size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <Link
-                    href="https://www.instagram.com/noorpath.online/"
+                    href={SOCIAL_PROFILES.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -312,7 +312,7 @@ export default function Footer() {
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <FaTiktok size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <Link
-                    href="https://www.tiktok.com/@noorpathacademy"
+                    href={SOCIAL_PROFILES.tiktok}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -322,7 +322,7 @@ export default function Footer() {
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <FaYoutube size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <Link
-                    href="https://www.youtube.com/@NoorPath.Online"
+                    href={SOCIAL_PROFILES.youtube}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

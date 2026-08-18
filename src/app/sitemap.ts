@@ -12,9 +12,10 @@ import {
 
 const BASE = "https://www.noorpath.online";
 
-const LAUNCH = new Date("2024-01-15");
 /** Stable stamp for rarely changed commercial/legal pages (do not set to “build now”). */
 const CONTENT_UPDATE = new Date("2026-05-01");
+/** Honest stamp for brand-entity pages updated in the brand visibility pass. */
+const BRAND_ENTITY_UPDATE = new Date("2026-08-18");
 /**
  * Honest content stamp for pages last materially updated in the minority-markets
  * + Search Central Phase A compliance pass. Bump only when those URLs change again.
@@ -163,9 +164,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/quran-classes-for-working-professionals`,  priority: 0.93, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/about`,                                    priority: 0.75, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
-    { url: `${BASE}/contact`,                                  priority: 0.7,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
-    { url: `${BASE}/founder`,                                  priority: 0.7,  changeFrequency: "monthly", lastModified: LAUNCH },
+    { url: `${BASE}/about`,                                    priority: 0.9,  changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
+    { url: `${BASE}/contact`,                                  priority: 0.85, changeFrequency: "yearly",  lastModified: BRAND_ENTITY_UPDATE },
+    { url: `${BASE}/founder`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },

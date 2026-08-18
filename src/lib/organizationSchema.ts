@@ -2,12 +2,14 @@ import {
   BASE_URL as ACADEMY_BASE_URL,
   CONTACT,
   GOOGLE_BUSINESS_URL,
+  SOCIAL_PROFILE_URLS,
   TRUSTPILOT,
 } from "@/lib/academyFacts";
 
 export const BASE_URL = ACADEMY_BASE_URL;
 export const ORGANIZATION_ID = `${BASE_URL}/#organization`;
 export const WEBSITE_ID = `${BASE_URL}/#website`;
+export const FOUNDER_PERSON_ID = `${BASE_URL}/founder#person`;
 
 /** Reference global org from page-level Service/Course schema */
 export const ORGANIZATION_REF = { "@id": ORGANIZATION_ID };
@@ -47,11 +49,18 @@ export function getOrganizationJsonLd() {
         "@type": "EducationalOrganization",
         "@id": ORGANIZATION_ID,
         name: "NoorPath Academy",
-        alternateName: ["NoorPath", "NoorPath Online Quran Academy"],
+        alternateName: [
+          "NoorPath",
+          "Noor Path",
+          "Noor Path Academy",
+          "NoorPath Online Quran Academy",
+          "noorpath",
+          "noorpath.online",
+        ],
         url: BASE_URL,
         logo: {
           "@type": "ImageObject",
-          url: `${BASE_URL}/favicon.svg`,
+          url: `${BASE_URL}/icon-512.png`,
           width: 512,
           height: 512,
         },
@@ -59,9 +68,10 @@ export function getOrganizationJsonLd() {
         email: CONTACT.email,
         telephone: CONTACT.phoneE164,
         description:
-          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies.",
+          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Official website: https://www.noorpath.online.",
         disambiguatingDescription:
-          "Online-only Quran academy — live remote classes worldwide. Not affiliated with noorpath.net app products. No physical campus or walk-in branches.",
+          "Official site: www.noorpath.online. Online-only Quran academy with live remote classes worldwide. Not affiliated with noor-path.com, noorpath.net app products, or other similarly named academies. No physical campus or walk-in branches.",
+        founder: { "@id": FOUNDER_PERSON_ID },
         knowsAbout: [
           "Online Quran learning",
           "Online Quran classes",
@@ -86,15 +96,9 @@ export function getOrganizationJsonLd() {
           telephone: CONTACT.phoneE164,
           email: CONTACT.email,
           contactType: "customer service",
+          url: `${BASE_URL}/contact`,
         },
-        sameAs: [
-          TRUSTPILOT.url,
-          GOOGLE_BUSINESS_URL,
-          "https://www.instagram.com/noorpath.online/",
-          "https://www.tiktok.com/@noorpathacademy",
-          "https://www.facebook.com/noorpathquranacademy",
-          "https://www.youtube.com/@NoorPath.Online",
-        ],
+        sameAs: [TRUSTPILOT.url, GOOGLE_BUSINESS_URL, ...SOCIAL_PROFILE_URLS],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Online Quran & Islamic Courses",
@@ -210,11 +214,13 @@ export function getOrganizationJsonLd() {
         name: "NoorPath Academy",
         alternateName: [
           "NoorPath",
+          "Noor Path",
+          "Noor Path Academy",
           "NoorPath Online Quran Academy",
           "noorpath.online",
         ],
         description:
-          "Official website of NoorPath Online Quran Academy — live one-to-one online Quran learning and Quran classes. Online only; no campus.",
+          "Official website of NoorPath Online Quran Academy (www.noorpath.online) — live one-to-one online Quran learning and Quran classes. Online only; no campus. Not affiliated with noor-path.com.",
         publisher: { "@id": ORGANIZATION_ID },
         about: { "@id": ORGANIZATION_ID },
         // Primary hubs mirrored in main nav — structure signal only; sitelinks remain automated.
@@ -255,14 +261,7 @@ export function getOrganizationJsonLd() {
             url: `${BASE_URL}/contact`,
           },
         ],
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
+        // No SearchAction — the site has no public on-site search endpoint.
       },
     ],
   };

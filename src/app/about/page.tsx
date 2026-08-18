@@ -12,9 +12,11 @@ export const metadata: Metadata = {
   description:
     "NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes with a free 30-minute trial.",
   keywords: [
-    "about noorpath academy", "online quran academy", "online quran tutors", "quran tutor matching",
+    "about noorpath academy", "noorpath", "noor path", "noorpath academy",
+    "noor path academy", "online quran academy", "online quran tutors", "quran tutor matching",
     "noorpath quran", "online islamic education", "quran school online",
     "online quran academy for families", "quran academy for kids and adults",
+    "www.noorpath.online",
   ],
   alternates: { canonical: "https://www.noorpath.online/about" },
   openGraph: {
@@ -32,12 +34,16 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    q: "What is the official NoorPath Academy website?",
+    a: "The official website is https://www.noorpath.online. NoorPath Academy (also written NoorPath or Noor Path Academy) is an online-only Quran academy. It is not affiliated with noor-path.com, noorpath.net apps, or other similarly named websites.",
+  },
   { q: "Who leads NoorPath Academy?", a: "NoorPath Academy is founder-led by Faisal Tariq. His profile and role are published on the founder page." },
   { q: "How are NoorPath tutors qualified?", a: "Qualifications vary by tutor and teaching focus. Before enrolment, NoorPath confirms the proposed tutor's relevant credentials and experience for the requested subject." },
   { q: "What age groups does NoorPath Academy teach?", a: "NoorPath offers tutor matching for children and adults across Quran reading, Tajweed, Hifz, Arabic, and related learning goals." },
-  { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led and provides live 1-to-1 lessons. Matching considers the learner's level, goals, timezone, and male or female tutor preference; availability is confirmed after each request." },
+  { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led and provides live 1-to-1 lessons at www.noorpath.online. Matching considers the learner's level, goals, timezone, and male or female tutor preference; availability is confirmed after each request." },
   { q: "Is NoorPath Academy accredited?", a: "NoorPath Academy does not present a blanket accreditation claim. Tutor qualifications vary, and specific credentials relevant to the proposed tutor are confirmed before enrolment." },
-  { q: "Where are classes available?", a: "Classes are online. Share your timezone and preferred lesson windows when requesting a trial, and NoorPath will confirm tutor availability." },
+  { q: "Where are classes available?", a: "Classes are online only — there is no campus or walk-in branch. Share your timezone and preferred lesson windows when requesting a trial, and NoorPath will confirm tutor availability." },
 ];
 
 const jsonLd = {
@@ -127,7 +133,9 @@ export default function AboutPage() {
           <div className="content-card" style={{ marginBottom: 24 }}>
             <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.15rem", color: "var(--charcoal)", marginBottom: 14 }}>Who We Are</h3>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-              <strong>NoorPath Academy</strong> is a founder-led <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> offering live one-to-one Quran and Islamic education for children and adults in multiple timezones.
+              <strong>NoorPath Academy</strong> is a founder-led <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> offering live one-to-one Quran and Islamic education for children and adults in multiple timezones. The official website is{" "}
+              <a href="https://www.noorpath.online" style={{ color: "var(--emerald)", fontWeight: 600 }}>www.noorpath.online</a>
+              {" "}(also searched as NoorPath or Noor Path Academy). Classes are online only — there is no campus. NoorPath Academy is not affiliated with noor-path.com or noorpath.net app products.
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
               Our curriculum spans <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link> to <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz programs</Link> for children and adults. Tutor matching considers subject, level, schedule, and tutor preference.

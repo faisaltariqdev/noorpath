@@ -18,6 +18,16 @@ export const TRUSTPILOT = {
 export const GOOGLE_BUSINESS_URL =
   "https://www.google.com/maps?kgmid=/g/11npsdjwdh";
 
+/** Official public profiles — feed Organization sameAs + Footer. */
+export const SOCIAL_PROFILES = {
+  facebook: "https://www.facebook.com/noorpathquranacademy",
+  instagram: "https://www.instagram.com/noorpath.online/",
+  tiktok: "https://www.tiktok.com/@noorpathacademy",
+  youtube: "https://www.youtube.com/@NoorPath.Online",
+} as const;
+
+export const SOCIAL_PROFILE_URLS = Object.values(SOCIAL_PROFILES);
+
 export const TRIAL = {
   durationMinutes: 30,
   price: 0,
