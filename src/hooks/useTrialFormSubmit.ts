@@ -63,24 +63,39 @@ export function useTrialFormSubmit(options: Options = {}) {
       }
 
       const { email, phone } = splitContactField(contactRaw);
-      // FormSubmit expects an email field; use a routing alias when WhatsApp-only.
-      fd.set("email", email || "leads+whatsapp@noorpath.online");
-      fd.set("phone", phone || (email ? "Contact via email" : ""));
-      fd.set("contact", contactRaw);
-      fd.set("family_plan", familyPlan ? "Yes — family plan" : "No");
-      fd.set("source_page", window.location.href);
-      fd.set("referrer", document.referrer || "Direct");
-      fd.set("form_variant", formVariant);
+      const params = new URLSearchParams(window.location.search);
+      const consent = String(fd.get("contact_consent") || "").trim();
+      if (!consent) {
+        setStatus("error");
+        setMsg("Please agree to be contacted about this trial request.");
+        return;
+      }
 
       setStatus("loading");
       try {
-        const res = await fetch("https://formsubmit.co/ajax/info@noorpath.online", {
+        const res = await fetch("/api/leads", {
           method: "POST",
-          body: fd,
-          headers: { Accept: "application/json" },
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            name: String(fd.get("name") || "").trim(),
+            contact: contactRaw,
+            country: String(fd.get("country") || "").trim(),
+            course: String(fd.get("course") || "").trim(),
+            preferred_class_time: String(fd.get("preferred_class_time") || "").trim(),
+            family_plan: familyPlan ? "Yes — family plan" : "No",
+            form_variant: formVariant,
+            source_page: window.location.href,
+            referrer: document.referrer || "Direct",
+            contact_consent: consent,
+            consent_timestamp: new Date().toISOString(),
+            _honey: String(fd.get("_honey") || ""),
+            utm_source: params.get("utm_source") || "",
+            utm_medium: params.get("utm_medium") || "",
+            utm_campaign: params.get("utm_campaign") || "",
+          }),
         });
-        const data = await res.json();
-        if (data.success === true || data.success === "true") {
+        const data = await res.json().catch(() => null);
+        if (data?.ok === true) {
           const fullName = String(fd.get("name") || "").trim();
           const nameParts = fullName.split(/\s+/);
           const firstName = nameParts[0] || undefined;
@@ -109,7 +124,7 @@ export function useTrialFormSubmit(options: Options = {}) {
           window.location.href = "/thank-you?submitted=1";
         } else {
           setStatus("error");
-          setMsg(data.message || "Could not send. Please WhatsApp us.");
+          setMsg(data?.error === "consent_required" ? "Please agree to be contacted about this trial request." : "Could not send. Please WhatsApp us.");
         }
       } catch {
         setStatus("error");

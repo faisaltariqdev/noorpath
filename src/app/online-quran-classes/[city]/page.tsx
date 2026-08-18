@@ -244,6 +244,32 @@ export default async function CityPage({ params }: Props) {
                 Tell us the learner&apos;s level and preferred {c.timezone} time. Availability is confirmed after tutor matching.
               </p>
               <CTAForm />
+              <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "16px 0 12px" }}>
+                <span style={{ flex: 1, height: 1, background: "rgba(255,255,255,.18)" }} />
+                <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".78rem", fontWeight: 600 }}>OR</span>
+                <span style={{ flex: 1, height: 1, background: "rgba(255,255,255,.18)" }} />
+              </div>
+              <WhatsAppLink
+                href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want a free Quran trial for ${c.city}. Please share tutor availability.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 10,
+                  width: "100%",
+                  background: "#25D366",
+                  color: "#0b3d2e",
+                  padding: "13px",
+                  borderRadius: 12,
+                  fontWeight: 800,
+                  fontSize: ".95rem",
+                  textDecoration: "none",
+                }}
+              >
+                WhatsApp us now — faster reply
+              </WhatsAppLink>
             </div>
           </div>
         </div>
