@@ -86,6 +86,8 @@ export async function POST(request: Request) {
 
   const { email, phone } = splitContact(contact);
   const country = String(body.country || "").trim();
+  const childName = String(body.child_name || "").trim();
+  const childAge = String(body.child_age || "").trim();
   const course = String(body.course || "").trim();
   const preferredTime = String(body.preferred_class_time || body.preferred_time || "").trim();
   const formVariant = String(body.form_variant || "standard");
@@ -93,6 +95,10 @@ export async function POST(request: Request) {
   const source = String(body.utm_source || body.source || formVariant || "website");
   const medium = String(body.utm_medium || body.medium || "website");
   const campaign = String(body.utm_campaign || body.campaign || "").trim();
+  const learnerNote =
+    childName || childAge
+      ? `Child: ${childName || "n/a"}${childAge ? `, age ${childAge}` : ""}`
+      : "";
 
   let intelligence = "skipped";
   const ingestUrl = process.env.INTELLIGENCE_INGEST_URL || "";
@@ -110,7 +116,9 @@ export async function POST(request: Request) {
           email: email || undefined,
           whatsapp: phone || undefined,
           country: country || undefined,
-          quran_level: course || undefined,
+          child_name: childName || undefined,
+          child_age: childAge || undefined,
+          quran_level: [course, learnerNote].filter(Boolean).join(" — ") || undefined,
           preferred_time: preferredTime || undefined,
           contact_method: email ? "email" : "whatsapp",
           consent_status: "granted",

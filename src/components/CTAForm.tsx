@@ -4,6 +4,31 @@ import { CONTACT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
 import { useTrialFormSubmit } from "@/hooks/useTrialFormSubmit";
 import WhatsAppLink from "@/components/WhatsAppLink";
 
+const countries = [
+  "United Kingdom",
+  "United States",
+  "United Arab Emirates",
+  "Canada",
+  "Australia",
+  "Germany",
+  "Qatar",
+  "Kuwait",
+  "Saudi Arabia",
+  "Pakistan",
+  "France",
+  "Malaysia",
+  "Indonesia",
+  "Turkey",
+  "South Africa",
+  "India",
+  "Bangladesh",
+  "Ireland",
+  "Netherlands",
+  "New Zealand",
+  "Singapore",
+  "Other",
+];
+
 type Props = {
   /** Visual variant for compact embeds */
   compact?: boolean;
@@ -30,13 +55,13 @@ export default function CTAForm({ compact = false, formVariant = "standard", idP
       />
       <input type="hidden" name="course" value={compact ? "Trial — from article/course CTA" : "Free trial class"} />
 
-      <label className="sr-only" htmlFor={id("name")}>Your full name</label>
+      <label className="sr-only" htmlFor={id("name")}>Parent / your full name</label>
       <input
         className="cta-input"
         type="text"
         name="name"
         id={id("name")}
-        placeholder="Your full name"
+        placeholder="Parent / your full name"
         required
         autoComplete="name"
       />
@@ -51,6 +76,49 @@ export default function CTAForm({ compact = false, formVariant = "standard", idP
         required
         autoComplete="tel"
         inputMode="text"
+      />
+
+      <label className="sr-only" htmlFor={id("country")}>Country</label>
+      <select
+        className="cta-input"
+        name="country"
+        id={id("country")}
+        required
+        style={{ cursor: "pointer" }}
+        defaultValue=""
+      >
+        <option value="" disabled>
+          Select your country
+        </option>
+        {countries.map((c) => (
+          <option key={c} value={c}>
+            {c}
+          </option>
+        ))}
+      </select>
+
+      <label className="sr-only" htmlFor={id("childName")}>Child&apos;s name</label>
+      <input
+        className="cta-input"
+        type="text"
+        name="child_name"
+        id={id("childName")}
+        placeholder="Child's name"
+        required
+        autoComplete="off"
+      />
+
+      <label className="sr-only" htmlFor={id("childAge")}>Child&apos;s age</label>
+      <input
+        className="cta-input"
+        type="number"
+        name="child_age"
+        id={id("childAge")}
+        placeholder="Child's age"
+        required
+        min={3}
+        max={80}
+        inputMode="numeric"
       />
 
       <label

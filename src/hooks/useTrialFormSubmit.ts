@@ -72,7 +72,15 @@ export function useTrialFormSubmit(options: Options = {}) {
 
       const { email, phone } = splitContactField(contactRaw);
       const name = String(fd.get("name") || "").trim();
+      const country = String(fd.get("country") || "").trim();
+      const childName = String(fd.get("child_name") || "").trim();
+      const childAge = String(fd.get("child_age") || "").trim();
       const course = String(fd.get("course") || "Free trial class").trim();
+      if (!country || !childName || !childAge) {
+        setStatus("error");
+        setMsg("Please add country, child's name, and age.");
+        return;
+      }
       const consentTimestamp = new Date().toISOString();
       const sourcePage = window.location.href;
       const referrer = document.referrer || "Direct";
@@ -86,6 +94,9 @@ export function useTrialFormSubmit(options: Options = {}) {
         mailFd.set("email", email || "leads+whatsapp@noorpath.online");
         mailFd.set("phone", phone || (email ? "Contact via email" : ""));
         mailFd.set("contact", contactRaw);
+        mailFd.set("country", country);
+        mailFd.set("child_name", childName);
+        mailFd.set("child_age", childAge);
         mailFd.set("course", course);
         mailFd.set("source_page", sourcePage);
         mailFd.set("referrer", referrer);
@@ -115,6 +126,9 @@ export function useTrialFormSubmit(options: Options = {}) {
           body: JSON.stringify({
             name,
             contact: contactRaw,
+            country,
+            child_name: childName,
+            child_age: childAge,
             course,
             form_variant: formVariant,
             source_page: sourcePage,
