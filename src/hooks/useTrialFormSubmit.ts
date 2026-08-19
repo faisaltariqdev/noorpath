@@ -6,6 +6,8 @@ import { hasAnalyticsConsent } from "@/components/TrackingConsent";
 
 export type TrialFormStatus = "idle" | "loading" | "success" | "error";
 
+const FORMSUBMIT = "https://formsubmit.co/ajax/info@noorpath.online";
+
 /** Split a single contact field into email and/or phone for tracking + CRM. */
 export function splitContactField(contact: string): { email: string; phone: string } {
   const value = contact.trim();
@@ -25,12 +27,11 @@ export function isValidContact(contact: string): boolean {
 }
 
 type Options = {
-  familyPlan?: boolean;
   formVariant?: string;
 };
 
 export function useTrialFormSubmit(options: Options = {}) {
-  const { familyPlan = false, formVariant = "standard" } = options;
+  const { formVariant = "standard" } = options;
   const [status, setStatus] = useState<TrialFormStatus>("idle");
   const [msg, setMsg] = useState("");
 
@@ -62,8 +63,6 @@ export function useTrialFormSubmit(options: Options = {}) {
         return;
       }
 
-      const { email, phone } = splitContactField(contactRaw);
-      const params = new URLSearchParams(window.location.search);
       const consent = String(fd.get("contact_consent") || "").trim();
       if (!consent) {
         setStatus("error");
@@ -71,67 +70,92 @@ export function useTrialFormSubmit(options: Options = {}) {
         return;
       }
 
+      const { email, phone } = splitContactField(contactRaw);
+      const name = String(fd.get("name") || "").trim();
+      const course = String(fd.get("course") || "Free trial class").trim();
+      const consentTimestamp = new Date().toISOString();
+      const sourcePage = window.location.href;
+      const referrer = document.referrer || "Direct";
+      const params = new URLSearchParams(window.location.search);
+
       setStatus("loading");
       try {
-        const res = await fetch("/api/leads", {
+        // Browser → FormSubmit (Vercel server IPs are blocked by Cloudflare).
+        const mailFd = new FormData();
+        mailFd.set("name", name);
+        mailFd.set("email", email || "leads+whatsapp@noorpath.online");
+        mailFd.set("phone", phone || (email ? "Contact via email" : ""));
+        mailFd.set("contact", contactRaw);
+        mailFd.set("course", course);
+        mailFd.set("source_page", sourcePage);
+        mailFd.set("referrer", referrer);
+        mailFd.set("form_variant", formVariant);
+        mailFd.set("_template", "table");
+        mailFd.set("_captcha", "false");
+
+        const mailRes = await fetch(FORMSUBMIT, {
+          method: "POST",
+          body: mailFd,
+          headers: { Accept: "application/json" },
+        });
+        const mailData = (await mailRes.json().catch(() => null)) as
+          | { success?: boolean | string }
+          | null;
+        const mailOk = mailData?.success === true || mailData?.success === "true";
+        if (!mailOk) {
+          setStatus("error");
+          setMsg("Could not send. Please WhatsApp us.");
+          return;
+        }
+
+        // Best-effort CRM / consent log (does not send the lead email).
+        await fetch("/api/leads", {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
-            name: String(fd.get("name") || "").trim(),
+            name,
             contact: contactRaw,
-            country: String(fd.get("country") || "").trim(),
-            course: String(fd.get("course") || "").trim(),
-            preferred_class_time: String(fd.get("preferred_class_time") || "").trim(),
-            family_plan: familyPlan ? "Yes — family plan" : "No",
+            course,
             form_variant: formVariant,
-            source_page: window.location.href,
-            referrer: document.referrer || "Direct",
+            source_page: sourcePage,
+            referrer,
             contact_consent: consent,
-            consent_timestamp: new Date().toISOString(),
+            consent_timestamp: consentTimestamp,
             _honey: String(fd.get("_honey") || ""),
             utm_source: params.get("utm_source") || "",
             utm_medium: params.get("utm_medium") || "",
             utm_campaign: params.get("utm_campaign") || "",
           }),
-        });
-        const data = await res.json().catch(() => null);
-        if (data?.ok === true) {
-          const fullName = String(fd.get("name") || "").trim();
-          const nameParts = fullName.split(/\s+/);
-          const firstName = nameParts[0] || undefined;
-          const lastName = nameParts.length > 1 ? nameParts.slice(1).join(" ") : undefined;
+        }).catch(() => null);
 
-          if (hasAnalyticsConsent()) {
-            track({
-              eventName: "Lead",
-              emails: email ? [email] : undefined,
-              phones: phone ? [phone] : undefined,
-              firstName,
-              lastName,
-              data: {
-                content_name: "Free Trial Booking",
-                content_category: String(fd.get("course") || "trial"),
-                status: true,
-              },
-              apiRoute: "/api/fb-events",
-            });
-          }
-
-          form.reset();
-          if (hasAnalyticsConsent()) {
-            await new Promise((r) => setTimeout(r, 300));
-          }
-          window.location.href = "/thank-you?submitted=1";
-        } else {
-          setStatus("error");
-          setMsg(data?.error === "consent_required" ? "Please agree to be contacted about this trial request." : "Could not send. Please WhatsApp us.");
+        const nameParts = name.split(/\s+/);
+        if (hasAnalyticsConsent()) {
+          track({
+            eventName: "Lead",
+            emails: email ? [email] : undefined,
+            phones: phone ? [phone] : undefined,
+            firstName: nameParts[0] || undefined,
+            lastName: nameParts.length > 1 ? nameParts.slice(1).join(" ") : undefined,
+            data: {
+              content_name: "Free Trial Booking",
+              content_category: course || "trial",
+              status: true,
+            },
+            apiRoute: "/api/fb-events",
+          });
         }
+
+        form.reset();
+        if (hasAnalyticsConsent()) {
+          await new Promise((r) => setTimeout(r, 300));
+        }
+        window.location.href = "/thank-you?submitted=1";
       } catch {
         setStatus("error");
         setMsg("Network error. Please WhatsApp us directly.");
       }
     },
-    [familyPlan, formVariant],
+    [formVariant],
   );
 
   return { status, msg, handleSubmit };

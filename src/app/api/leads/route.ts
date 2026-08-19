@@ -1,46 +1,8 @@
-import https from "node:https";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
-const FORMSUBMIT_HOST = "formsubmit.co";
-const FORMSUBMIT_PATH = "/ajax/info@noorpath.online";
 const buckets = new Map<string, { count: number; reset: number }>();
-
-/** Post via node:https so Origin/Referer are not stripped (undici fetch forbids them). */
-function postFormSubmit(
-  fields: Record<string, string>,
-  formsubmitOrigin: string,
-  formsubmitReferer: string,
-): Promise<{ ok: boolean; body: string }> {
-  const body = new URLSearchParams(fields).toString();
-  return new Promise((resolve, reject) => {
-    const req = https.request(
-      {
-        hostname: FORMSUBMIT_HOST,
-        path: FORMSUBMIT_PATH,
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/x-www-form-urlencoded",
-          "Content-Length": Buffer.byteLength(body),
-          Origin: formsubmitOrigin,
-          Referer: formsubmitReferer,
-        },
-      },
-      (res) => {
-        const chunks: Buffer[] = [];
-        res.on("data", (c) => chunks.push(Buffer.isBuffer(c) ? c : Buffer.from(c)));
-        res.on("end", () => {
-          resolve({ ok: (res.statusCode || 0) >= 200 && (res.statusCode || 0) < 300, body: Buffer.concat(chunks).toString("utf8") });
-        });
-      },
-    );
-    req.on("error", reject);
-    req.write(body);
-    req.end();
-  });
-}
 
 function rateLimit(ip: string, limit = 20, windowMs = 60_000) {
   const now = Date.now();
@@ -82,6 +44,11 @@ function isValidContact(contact: string): boolean {
   return digits.length >= 7 && digits.length <= 15;
 }
 
+/**
+ * Validates trial leads + optional Intelligence CRM ingest.
+ * Email delivery is done from the browser via FormSubmit (Cloudflare blocks
+ * server-side posts from Vercel).
+ */
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
   const host = request.headers.get("host");
@@ -121,47 +88,11 @@ export async function POST(request: Request) {
   const country = String(body.country || "").trim();
   const course = String(body.course || "").trim();
   const preferredTime = String(body.preferred_class_time || body.preferred_time || "").trim();
-  const familyPlan = String(body.family_plan || "");
   const formVariant = String(body.form_variant || "standard");
   const landingPage = String(body.source_page || body.landing_page || "").trim();
   const source = String(body.utm_source || body.source || formVariant || "website");
   const medium = String(body.utm_medium || body.medium || "website");
   const campaign = String(body.utm_campaign || body.campaign || "").trim();
-
-  // FormSubmit rejects server posts without a site Origin/Referer
-  // ("browsed as HTML files"). Forward via node:https so headers stick.
-  const formsubmitOrigin =
-    origin && allowedOrigin(origin, host) ? origin : "https://www.noorpath.online";
-  const formsubmitReferer = landingPage.startsWith("http")
-    ? landingPage
-    : `${formsubmitOrigin}/`;
-
-  const fields: Record<string, string> = {
-    name,
-    email: email || "leads+whatsapp@noorpath.online",
-    phone: phone || (email ? "Contact via email" : ""),
-    contact,
-    family_plan: familyPlan,
-    source_page: landingPage,
-    referrer: String(body.referrer || "Direct"),
-    form_variant: formVariant,
-    preferred_class_time: preferredTime,
-    _template: "table",
-    _captcha: "false",
-  };
-  if (country) fields.country = country;
-  if (course) fields.course = course;
-
-  let formsubmit = "failed";
-  let formsubmitDetail = "";
-  try {
-    const res = await postFormSubmit(fields, formsubmitOrigin, formsubmitReferer);
-    formsubmitDetail = res.body.slice(0, 240);
-    const data = JSON.parse(res.body || "{}") as { success?: boolean | string };
-    if (data?.success === true || data?.success === "true") formsubmit = "ok";
-  } catch {
-    formsubmit = "failed";
-  }
 
   let intelligence = "skipped";
   const ingestUrl = process.env.INTELLIGENCE_INGEST_URL || "";
@@ -199,22 +130,9 @@ export async function POST(request: Request) {
     }
   }
 
-  if (formsubmit !== "ok" && intelligence !== "ok") {
-    return NextResponse.json(
-      {
-        ok: false,
-        error: "submit_failed",
-        formsubmit,
-        intelligence,
-        ...(formsubmitDetail ? { formsubmit_detail: formsubmitDetail } : {}),
-      },
-      { status: 502 },
-    );
-  }
-
   return NextResponse.json({
     ok: true,
-    formsubmit,
+    formsubmit: "browser",
     intelligence,
   });
 }
