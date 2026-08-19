@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, GraduationCap, ChevronDown, Video } from "lucide-react";
 import { TRIAL } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
@@ -33,16 +34,33 @@ const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({
   label: country,
 }));
 
+function closeParentDetails(e: React.MouseEvent<HTMLElement>) {
+  const details = e.currentTarget.closest("details");
+  if (details) details.open = false;
+}
+
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [promoVisible, setPromoVisible] = useState(true);
+  const moreDetailsRef = useRef<HTMLDetailsElement>(null);
+  const countriesDetailsRef = useRef<HTMLDetailsElement>(null);
+  const mobileCountriesRef = useRef<HTMLDetailsElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Client-side navigations do not remount the header — close native <details> menus.
+  useEffect(() => {
+    if (moreDetailsRef.current) moreDetailsRef.current.open = false;
+    if (countriesDetailsRef.current) countriesDetailsRef.current.open = false;
+    if (mobileCountriesRef.current) mobileCountriesRef.current.open = false;
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1050 }}>
@@ -178,7 +196,7 @@ export default function Navbar() {
 
             {/* More dropdown */}
             <li style={{ position: "relative" }}>
-              <details>
+              <details ref={moreDetailsRef}>
                 <summary
                   className="nav-countries-np"
                   style={{
@@ -214,6 +232,7 @@ export default function Navbar() {
                     <Link
                       key={link.href}
                       href={link.href}
+                      onClick={closeParentDetails}
                       style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "8px 12px", fontSize: ".84rem", textDecoration: "none", borderRadius: 8 }}
                       className="nav-link-np"
                     >
@@ -226,7 +245,7 @@ export default function Navbar() {
 
             {/* Countries dropdown */}
             <li style={{ position: "relative" }}>
-              <details>
+              <details ref={countriesDetailsRef}>
                 <summary
                   className="nav-countries-np"
                   style={{
@@ -258,13 +277,18 @@ export default function Navbar() {
                     boxShadow: "0 16px 36px rgba(0,0,0,.35)",
                   }}
                 >
-                  <Link href="/locations" style={{ display: "block", color: "#e8b84b", padding: "8px 12px", fontWeight: 700, textDecoration: "none", borderRadius: 8 }}>
+                  <Link
+                    href="/locations"
+                    onClick={closeParentDetails}
+                    style={{ display: "block", color: "#e8b84b", padding: "8px 12px", fontWeight: 700, textDecoration: "none", borderRadius: 8 }}
+                  >
                     All locations →
                   </Link>
                   {priorityCountries.map((country) => (
                     <Link
                       key={country.href}
                       href={country.href}
+                      onClick={closeParentDetails}
                       style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "7px 12px", fontSize: ".83rem", textDecoration: "none", borderRadius: 8 }}
                       className="nav-link-np"
                     >
@@ -375,16 +399,31 @@ export default function Navbar() {
                 </li>
               ))}
               <li style={{ borderBottom: "1px solid rgba(255,255,255,.06)", padding: "8px" }}>
-                <details>
+                <details ref={mobileCountriesRef}>
                   <summary style={{ color: "rgba(255,255,255,.85)", padding: "5px 0", fontWeight: 600, cursor: "pointer" }}>
                     Priority countries
                   </summary>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 4, paddingTop: 8 }}>
-                    <Link href="/locations" onClick={() => setOpen(false)} style={{ color: "#e8b84b", padding: "6px 0", fontSize: ".84rem" }}>
+                    <Link
+                      href="/locations"
+                      onClick={(e) => {
+                        closeParentDetails(e);
+                        setOpen(false);
+                      }}
+                      style={{ color: "#e8b84b", padding: "6px 0", fontSize: ".84rem" }}
+                    >
                       All locations
                     </Link>
                     {priorityCountries.map((country) => (
-                      <Link key={country.href} href={country.href} onClick={() => setOpen(false)} style={{ color: "rgba(255,255,255,.78)", padding: "6px 0", fontSize: ".84rem" }}>
+                      <Link
+                        key={country.href}
+                        href={country.href}
+                        onClick={(e) => {
+                          closeParentDetails(e);
+                          setOpen(false);
+                        }}
+                        style={{ color: "rgba(255,255,255,.78)", padding: "6px 0", fontSize: ".84rem" }}
+                      >
                         {country.label}
                       </Link>
                     ))}
