@@ -143,7 +143,7 @@ export default function CoursesPage() {
             <strong style={{ color: "var(--gold-lt)" }}>First class is free.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 20, alignItems: "center" }}>
-            <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
               Tutor credentials and availability confirmed before enrolment
             </span>
@@ -208,7 +208,7 @@ export default function CoursesPage() {
                   <Link href={`/courses/${c.slug}`} style={{ flex: 1, textAlign: "center", background: "var(--emerald)", color: "#fff", padding: "11px 0", borderRadius: 10, fontWeight: 700, textDecoration: "none", fontSize: ".88rem" }}>
                     Learn More
                   </Link>
-                  <Link href="/online-quran-classes#cta" style={{ flex: 1, textAlign: "center", background: "var(--gold)", color: "var(--charcoal)", padding: "11px 0", borderRadius: 10, fontWeight: 700, textDecoration: "none", fontSize: ".88rem" }}>
+                  <Link href="/free-quran-classes-online" style={{ flex: 1, textAlign: "center", background: "var(--gold)", color: "var(--charcoal)", padding: "11px 0", borderRadius: 10, fontWeight: 700, textDecoration: "none", fontSize: ".88rem" }}>
                     Free Trial →
                   </Link>
                 </div>

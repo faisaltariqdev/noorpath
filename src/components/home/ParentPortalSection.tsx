@@ -154,7 +154,7 @@ export default function ParentPortalSection() {
               >
                 Open Parent Portal →
               </a>
-              <Link href="/online-quran-classes#cta" className="btn-outline-np">
+              <Link href="/free-quran-classes-online" className="btn-outline-np">
                 Start Free Trial
               </Link>
             </div>

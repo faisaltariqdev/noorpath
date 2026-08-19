@@ -131,7 +131,7 @@ export default function QuranClassesForSistersPage() {
             Free {TRIAL.durationMinutes}-minute trial — no credit card.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
-            <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/female-quran-teacher-online" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>
               Female Tutor Hub
             </Link>
@@ -148,7 +148,7 @@ export default function QuranClassesForSistersPage() {
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             Sisters and ladies can request a <strong>female Quran teacher online</strong> for private 1-to-1 lessons.
             Credentials and schedule are confirmed for the proposed tutor before enrolment.{" "}
-            <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+            <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

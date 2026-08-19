@@ -100,7 +100,7 @@ export default function AboutPage() {
             Founder-led live one-to-one online Quran classes for children and adults.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
-            <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/founder" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Meet the Founder</Link>
           </div>
         </div>
@@ -273,7 +273,7 @@ export default function AboutPage() {
               Start with a free 30-minute trial. No credit card is required, and tutor availability is confirmed after your request.
             </p>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/online-quran-classes#cta" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>Book Free Trial →</Link>
+              <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>Book Free Trial →</Link>
               <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Browse All Courses</Link>
             </div>
           </div>

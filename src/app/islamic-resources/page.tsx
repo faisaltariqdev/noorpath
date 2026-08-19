@@ -350,7 +350,7 @@ export default function IslamicResourcesPage() {
               </p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              <Link href="/online-quran-classes#cta" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "13px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap", textAlign: "center" }}>
+              <Link href="/free-quran-classes-online" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "13px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap", textAlign: "center" }}>
                 🎓 Book a Free Quran Class →
               </Link>
               <Link href="/blog" style={{ display: "inline-block", background: "rgba(255,255,255,.1)", color: "#fff", fontWeight: 600, padding: "13px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", textAlign: "center", border: "1px solid rgba(255,255,255,.2)" }}>

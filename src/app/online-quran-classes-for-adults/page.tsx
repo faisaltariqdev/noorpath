@@ -98,7 +98,7 @@ export default function OnlineQuranClassesForAdultsPage() {
           <h1>Online Quran Classes for Adults</h1>
           <p>It is never too late to learn the Quran. Private 1-on-1 classes can be matched for complete beginners, Tajweed, or Hifz. Relevant tutor credentials are confirmed before enrolment.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
-            <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View All Courses</Link>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function OnlineQuranClassesForAdultsPage() {
           <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 40, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             Yes — it is never too late to start. Depending on your current level, you may begin with <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida</Link>, Quran reading, or <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed</Link>. Progress varies, and the first lesson is free.{" "}
-            <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+            <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
           {/* Working professionals angle (Fix 11B) */}

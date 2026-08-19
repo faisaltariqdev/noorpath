@@ -123,7 +123,7 @@ export default function FemaleQuranTeacherPage() {
           <h1>Female Quran Teacher Online</h1>
           <p>Request a female Quran tutor for a sister or daughter. Live <strong style={{ color: "var(--gold-lt)" }}>1-on-1 online Quran classes</strong> can be matched for reading, Tajweed, Hifz, children, or adults. <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial, no credit card.</strong></p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/online-quran-classes" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>All Classes</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
               Availability confirmed after your request
@@ -139,7 +139,7 @@ export default function FemaleQuranTeacherPage() {
           <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             You can <strong>request a female Quran teacher</strong> for a sister or daughter. Classes are live and 1-to-1; relevant credentials and availability are confirmed before enrolment. The first 30-minute lesson is free.{" "}
-            <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+            <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">

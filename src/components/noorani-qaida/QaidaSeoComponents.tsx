@@ -91,7 +91,7 @@ export function QaidaCourseCta({
         <Link href="/courses/noorani-qaida-online" className="btn-primary-np">
           <BookOpen size={17} aria-hidden="true" /> View Online Qaida Classes
         </Link>
-        <Link href="/online-quran-classes#cta" className="btn-outline-np">
+        <Link href="/free-quran-classes-online" className="btn-outline-np">
           <GraduationCap size={17} aria-hidden="true" /> Request a Free Trial
         </Link>
       </div>

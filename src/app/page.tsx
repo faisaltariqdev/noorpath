@@ -211,7 +211,7 @@ export default function HomePage() {
               </div>
 
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 28 }}>
-                <Link href="#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "16px 34px", borderRadius: 50, textDecoration: "none", fontSize: ".96rem", boxShadow: "0 8px 28px rgba(201,146,42,.45)", letterSpacing: ".2px" }}>
+                <Link href="/free-quran-classes-online" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "16px 34px", borderRadius: 50, textDecoration: "none", fontSize: ".96rem", boxShadow: "0 8px 28px rgba(201,146,42,.45)", letterSpacing: ".2px" }}>
                   <PlayCircle size={18} /> Book Free Trial Now
                 </Link>
                 <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "16px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
@@ -355,7 +355,7 @@ export default function HomePage() {
               <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> Why Choose Us</span>
               <h2 className="section-title">Why Families Choose <em className="accent">NoorPath</em></h2>
               <p className="section-desc">We combine live one-to-one teaching, structured learning paths, flexible tutor matching, and family plan options.</p>
-              <Link href="/online-quran-classes#cta" className="btn-primary-np">Start Free Trial →</Link>
+              <Link href="/free-quran-classes-online" className="btn-primary-np">Start Free Trial →</Link>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {whyPoints.map((w, i) => (
@@ -474,7 +474,7 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/online-quran-classes#cta" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem", textAlign: "center", letterSpacing: ".2px" }}>
+                <Link href="/free-quran-classes-online" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem", textAlign: "center", letterSpacing: ".2px" }}>
                   Start Free Trial →
                 </Link>
                 <div style={{ color: p.highlight ? "rgba(255,255,255,.4)" : "var(--muted)", fontSize: ".73rem", marginTop: 10 }}>{TRIAL.durationMinutes}-minute free trial · No credit card</div>
@@ -499,7 +499,7 @@ export default function HomePage() {
               </p>
             </div>
             <div style={{ flexShrink: 0 }}>
-              <Link href="/online-quran-classes#cta" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "14px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap" }}>
+              <Link href="/free-quran-classes-online" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "14px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap" }}>
                 <GraduationCap size={16} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Book Free Trial →
               </Link>
             </div>
@@ -552,7 +552,7 @@ export default function HomePage() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 36 }}>
-            <Link href="/online-quran-classes#cta" className="btn-primary-np">Still have questions? Book a free call →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Still have questions? Book a free call →</Link>
           </div>
         </div>
       </section>
@@ -708,7 +708,7 @@ export default function HomePage() {
                   {index < priorityCountries.length - 2 ? ", " : index === priorityCountries.length - 2 ? " and " : ". "}
                 </React.Fragment>
               ))}
-              <Link href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your free Quran class today →</Link>
+              <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your free Quran class today →</Link>
             </p>
           </div>
         </div>

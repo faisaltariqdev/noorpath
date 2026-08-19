@@ -115,7 +115,7 @@ export default function OnlineQuranBeginnersPage() {
             Learn to read the Holy Quran from scratch — Arabic letters, Noorani Qaida, and Tajweed — in 1-on-1 live classes for children and adults. Schedule matching depends on tutor availability.
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
-            <Link href="/online-quran-classes#cta" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 28px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
+            <Link href="/free-quran-classes-online" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 28px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
               Request Free Trial →
             </Link>
             <Link href="/courses/noorani-qaida-online" style={{ background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 600, textDecoration: "none", fontSize: "1rem" }}>
@@ -165,7 +165,7 @@ export default function OnlineQuranBeginnersPage() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 40 }}>
-            <Link href="/online-quran-classes#cta" style={{ display: "inline-block", background: "var(--emerald)", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem" }}>
+            <Link href="/free-quran-classes-online" style={{ display: "inline-block", background: "var(--emerald)", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem" }}>
               Start Your Journey — Free Trial →
             </Link>
           </div>
@@ -217,7 +217,7 @@ export default function OnlineQuranBeginnersPage() {
                   </div>
                 </div>
               ))}
-              <Link href="/online-quran-classes#cta" style={{ display: "block", textAlign: "center", background: "var(--emerald)", color: "#fff", padding: "13px", borderRadius: 10, fontWeight: 700, textDecoration: "none", marginTop: 20, fontSize: ".95rem" }}>
+              <Link href="/free-quran-classes-online" style={{ display: "block", textAlign: "center", background: "var(--emerald)", color: "#fff", padding: "13px", borderRadius: 10, fontWeight: 700, textDecoration: "none", marginTop: 20, fontSize: ".95rem" }}>
                 Start Your Journey Free →
               </Link>
             </div>
@@ -258,7 +258,7 @@ export default function OnlineQuranBeginnersPage() {
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28, maxWidth: 520, margin: "0 auto 28px" }}>
             Start from your current level with a live one-to-one lesson. Request a free trial before choosing a paid plan.
           </p>
-          <Link href="/online-quran-classes#cta" className="btn-primary-np">
+          <Link href="/free-quran-classes-online" className="btn-primary-np">
             Book Free Trial Class →
           </Link>
         </div>

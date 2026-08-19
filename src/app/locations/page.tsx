@@ -118,7 +118,7 @@ export default function LocationsPage() {
             Explore <strong style={{ color: "var(--gold-lt)" }}>live 1-on-1 online Quran classes</strong> by country and request a tutor for your timezone. Scheduling is subject to tutor matching.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 20, alignItems: "center" }}>
-            <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
               <Clock size={14} color="var(--gold)" /> Availability confirmed after matching
             </span>
@@ -165,7 +165,7 @@ export default function LocationsPage() {
                   <Link href={`/locations/${l.slug}`} style={{ flex: 1, textAlign: "center", background: "var(--emerald)", color: "#fff", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
                     Learn More →
                   </Link>
-                  <Link href="/online-quran-classes#cta" style={{ flex: 1, textAlign: "center", background: "var(--gold)", color: "var(--charcoal)", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
+                  <Link href="/free-quran-classes-online" style={{ flex: 1, textAlign: "center", background: "var(--gold)", color: "var(--charcoal)", padding: "9px 18px", borderRadius: 10, fontSize: ".83rem", fontWeight: 600, textDecoration: "none" }}>
                     Free Trial →
                   </Link>
                 </div>
@@ -280,7 +280,7 @@ export default function LocationsPage() {
             <p style={{ color: "rgba(255,255,255,.8)", marginBottom: 24 }}>
               {TRIAL.durationMinutes}-minute trial for ${TRIAL.price}; no credit card required. {TRIAL.availabilityNote}
             </p>
-            <Link href="/online-quran-classes#cta" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>
+            <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>
               Book Free Trial →
             </Link>
           </div>

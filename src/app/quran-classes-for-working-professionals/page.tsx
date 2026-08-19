@@ -130,7 +130,7 @@ export default function QuranClassesForWorkingProfessionalsPage() {
             for busy adults who cannot attend daytime madrassah. Free {TRIAL.durationMinutes}-minute trial, no credit card.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
-            <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/online-quran-classes-for-adults" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>
               All Adult Classes
             </Link>
@@ -147,7 +147,7 @@ export default function QuranClassesForWorkingProfessionalsPage() {
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             Working professionals can request <strong>online Quran classes</strong> around evening or weekend availability.
             Tutor and schedule are confirmed after your request — not every slot is available in every timezone.{" "}
-            <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+            <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

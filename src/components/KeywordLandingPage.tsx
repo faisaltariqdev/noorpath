@@ -145,7 +145,7 @@ export default function KeywordLandingPage({
           price: String(TRIAL.price),
           priceCurrency: TRIAL.priceCurrency,
           description: `Free ${TRIAL.durationMinutes}-minute trial class`,
-          url: `${url}#cta`,
+          url: `https://www.noorpath.online/free-quran-classes-online`,
         },
       },
       {
@@ -192,7 +192,7 @@ export default function KeywordLandingPage({
           <h1>{h1}</h1>
           <p dangerouslySetInnerHTML={{ __html: heroText }} />
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="#cta" className="btn-primary-np">
+            <Link href="/free-quran-classes-online" className="btn-primary-np">
               Book Free Trial →
             </Link>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>
@@ -385,7 +385,7 @@ export default function KeywordLandingPage({
                 No credit card for the trial. Family discounts: {FAMILY_DISCOUNTS.map((item) => `${item.siblings} ${item.discountPercent}% off`).join(" · ")}. Cancel with {CANCELLATION_NOTICE_DAYS} days&apos; notice before the next billing date.
               </p>
             </div>
-            <Link href="#cta" className="btn-primary-np" style={{ whiteSpace: "nowrap" }}>
+            <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ whiteSpace: "nowrap" }}>
               Book Free Trial →
             </Link>
           </div>

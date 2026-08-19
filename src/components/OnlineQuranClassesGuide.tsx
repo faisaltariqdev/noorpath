@@ -823,7 +823,7 @@ export default function OnlineQuranClassesGuide() {
             Meet a tutor, receive a level assessment and experience a real one-to-one lesson.
             No credit card and no obligation.
           </p>
-          <Link href="#cta" className="btn-primary-np">
+          <Link href="/free-quran-classes-online" className="btn-primary-np">
             Book Your Free Quran Class →
           </Link>
         </div>

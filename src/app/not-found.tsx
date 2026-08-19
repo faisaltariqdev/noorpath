@@ -14,7 +14,7 @@ const quickLinks = [
   { href: "/courses", label: "📚 All Courses" },
   { href: "/blog", label: "✍️ Blog" },
   { href: "/pricing", label: "💰 Pricing" },
-  { href: "/online-quran-classes#cta", label: "🎓 Free Trial Class" },
+  { href: "/free-quran-classes-online", label: "🎓 Free Trial Class" },
 ];
 
 export default function NotFound() {
@@ -104,7 +104,7 @@ export default function NotFound() {
         </div>
 
         <Link
-          href="/online-quran-classes#cta"
+          href="/free-quran-classes-online"
           style={{
             display: "inline-flex",
             alignItems: "center",

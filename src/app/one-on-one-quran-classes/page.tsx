@@ -136,7 +136,7 @@ export default function OneOnOneQuranClassesPage() {
             <strong style={{ color: "var(--gold-lt)" }}>Free {TRIAL.durationMinutes}-minute trial, no credit card.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="#cta" className="btn-primary-np">Book Free Trial →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>
               See Pricing
             </Link>
@@ -153,7 +153,7 @@ export default function OneOnOneQuranClassesPage() {
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             NoorPath offers <strong>one-on-one Quran classes</strong> (private 1-to-1 online tutoring). Lessons are live,
             tutor-matched, and start with a free trial so you can assess the fit before choosing a plan.{" "}
-            <a href="#cta" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+            <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">

@@ -133,7 +133,7 @@ export default function PricingPage() {
                     </li>
                   ))}
                 </ul>
-                <Link href="#cta" style={{ display: "block", textAlign: "center", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem" }}>
+                <Link href="/free-quran-classes-online" style={{ display: "block", textAlign: "center", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem" }}>
                   {p.cta}
                 </Link>
               </div>

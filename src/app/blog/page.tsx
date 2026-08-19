@@ -106,7 +106,7 @@ export default function BlogPage() {
             Ready to Start Learning the Quran?
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>Explore live one-to-one Quran classes and request a free 30-minute trial before enrolment.</p>
-          <Link href="/online-quran-classes#cta" className="btn-primary-np">Book Free Trial Class →</Link>
+          <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial Class →</Link>
         </div>
       </section>
     </>

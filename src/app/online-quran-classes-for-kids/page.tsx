@@ -125,7 +125,7 @@ const jsonLd = {
         price: "0",
         priceCurrency: "USD",
         description: "Free 30-minute trial class — no credit card required",
-        url: `${PAGE_URL}#cta`,
+        url: `https://www.noorpath.online/free-quran-classes-online`,
       },
     },
     {
@@ -143,7 +143,7 @@ const jsonLd = {
         price: "0",
         priceCurrency: "USD",
         description: "Free 30-minute trial class",
-        url: `${PAGE_URL}#cta`,
+        url: `https://www.noorpath.online/free-quran-classes-online`,
       },
     },
     {
@@ -205,7 +205,7 @@ export default function OnlineQuranClassesForKidsPage() {
             <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial — no credit card.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="#cta" className="btn-primary-np">Book Free Trial for Your Child →</Link>
+            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial for Your Child →</Link>
             <WhatsAppLink
               href={`https://wa.me/923124877906?text=${encodeURIComponent("Assalamu Alaikum, I want to book a FREE Quran trial class for my child. Please share kids class details.")}`}
               target="_blank"

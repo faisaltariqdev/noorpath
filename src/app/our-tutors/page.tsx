@@ -226,7 +226,7 @@ export default function OurTutorsPage() {
 
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderTop: "1px solid var(--border)", paddingTop: 14 }}>
                   <span style={{ color: "var(--muted)", fontSize: ".78rem" }}>Availability confirmed after request</span>
-                  <Link href="/online-quran-classes#cta" style={{ background: "var(--emerald)", color: "#fff", padding: "8px 18px", borderRadius: 10, fontSize: ".82rem", fontWeight: 600, textDecoration: "none" }}>
+                  <Link href="/free-quran-classes-online" style={{ background: "var(--emerald)", color: "#fff", padding: "8px 18px", borderRadius: 10, fontSize: ".82rem", fontWeight: 600, textDecoration: "none" }}>
                     Book Trial →
                   </Link>
                 </div>
@@ -244,7 +244,7 @@ export default function OurTutorsPage() {
             <p style={{ color: "var(--muted)", maxWidth: 560, margin: "0 auto 24px", lineHeight: 1.7, fontSize: ".93rem" }}>
               Tell us your schedule, age or learning stage, goals, timezone, tutor preference, and language of instruction preference where it matters for your household. We confirm a suitable tutor&apos;s availability and credentials before enrolment — including for families abroad who need timezone-aware matching.
             </p>
-            <Link href="/online-quran-classes#cta" className="btn-primary-np">
+            <Link href="/free-quran-classes-online" className="btn-primary-np">
               🎓 Book Your Free Trial & Get Matched →
             </Link>
           </div>
@@ -296,7 +296,7 @@ export default function OurTutorsPage() {
             Start with a free {TRIAL.durationMinutes}-minute trial. No credit card is required, and tutor availability is confirmed after your request.
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
-            <Link href="/online-quran-classes#cta" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "15px 32px", borderRadius: 50, textDecoration: "none", fontSize: ".95rem" }}>
+            <Link href="/free-quran-classes-online" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "15px 32px", borderRadius: 50, textDecoration: "none", fontSize: ".95rem" }}>
               🎓 Book Free Trial Now
             </Link>
             <Link href="/female-quran-teacher-online" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "15px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem" }}>

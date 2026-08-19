@@ -302,7 +302,7 @@ export default async function CourseDetailPage({ params }: Props) {
                     <div key={p} style={{ color: "rgba(255,255,255,.85)", fontSize: ".82rem", textAlign: "left" }}>{p}</div>
                   ))}
                 </div>
-                <Link href="/online-quran-classes#cta" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "13px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem", marginTop: 4 }}>
+                <Link href="/free-quran-classes-online" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "13px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem", marginTop: 4 }}>
                   Book Free Trial Class →
                 </Link>
                 <div style={{ marginTop: 16, color: "rgba(255,255,255,.5)", fontSize: ".75rem" }}>
@@ -323,7 +323,7 @@ export default async function CourseDetailPage({ params }: Props) {
             subtitle={`Request a free ${TRIAL.durationMinutes}-minute trial before choosing a paid plan.`}
           />
           <p style={{ textAlign: "center", marginTop: 8 }}>
-            <Link href="/online-quran-classes#cta" style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem" }}>
+            <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem" }}>
               Or open the full booking page →
             </Link>
           </p>

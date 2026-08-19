@@ -95,7 +95,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
 
           <div class="highlight-box">
-            <strong>Ready to meet a Hafiza tutor?</strong> <a href="/female-quran-teacher-online#cta">Book a free female-teacher trial</a> or message us on WhatsApp from any kids class page.
+            <strong>Ready to meet a Hafiza tutor?</strong> <a href="/free-quran-classes-online">Book a free female-teacher trial</a> or message us on WhatsApp from any kids class page.
           </div>
           <h2 id="comfort-and-focus">Comfort, focus, and why gender matching matters for some kids</h2>
           <p>A <strong>female Quran teacher for kids</strong> is not only a preference for older daughters. Younger children sometimes settle faster with a calm female voice, especially if they are shy, new to screens, or anxious about making mistakes. The goal is a learning relationship where the child feels safe enough to try aloud — because Quran reading improves through spoken practice, not silent watching.</p>
@@ -268,7 +268,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
 
           <div class="highlight-box">
-            <strong>Is your child ready for Hifz?</strong> Book a free assessment lesson — the tutor checks reading level and recommends a realistic timeline. <a href="/online-quran-classes-for-kids#cta">Start free trial</a>.
+            <strong>Is your child ready for Hifz?</strong> Book a free assessment lesson — the tutor checks reading level and recommends a realistic timeline. <a href="/free-quran-classes-online">Start free trial</a>.
           </div>`,
   },
   "dua-for-success-exams": {
@@ -939,7 +939,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
     content: `<p>Online academies may use phrases such as "certified tutors" and "best Quran teachers" without showing evidence for the specific tutor offered. This <strong>12-point checklist</strong> explains how to ask for relevant credentials, what to assess in a trial class, and which pricing or safeguarding gaps need clarification.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> A good online Quran teacher has (1) verifiable certification, (2) teaches 1-on-1 with live correction, (3) offers a free trial, (4) sends written progress reports, and (5) works under an academy with clear safety rules. Test all five in one <a href="/online-quran-classes#cta">free trial class</a> before paying anyone.
+            <strong>Quick answer:</strong> A good online Quran teacher has (1) verifiable certification, (2) teaches 1-on-1 with live correction, (3) offers a free trial, (4) sends written progress reports, and (5) works under an academy with clear safety rules. Test all five in one <a href="/free-quran-classes-online">free trial class</a> before paying anyone.
           </div>
 
           <h2 id="checklist">The 12-point checklist</h2>
@@ -1057,7 +1057,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ul>
 
           <div class="gold-box">
-            <strong>Reading slowly or with mistakes?</strong> A live tutor can listen to your recitation and discuss suitable fluency or Tajweed goals. <a href="/online-quran-classes#cta">Request a free 30-minute trial</a> for a child or adult; timezone availability is confirmed after matching.
+            <strong>Reading slowly or with mistakes?</strong> A live tutor can listen to your recitation and discuss suitable fluency or Tajweed goals. <a href="/free-quran-classes-online">Request a free 30-minute trial</a> for a child or adult; timezone availability is confirmed after matching.
           </div>`,
   },
   "attahiyat-full-arabic-english-tashahhud": {
@@ -1292,7 +1292,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>Children repeat this phrase at funerals without understanding. Explain it simply: <em>"Everything belongs to Allah — He lent it to us, and He takes it back to Himself."</em> This one sentence builds resilience rooted in aqeedah. Structured Islamic education for kids — including duas and their meanings — is part of the <a href="/courses/islamic-studies-online">Islamic Studies course</a>.</p>
 
           <div class="gold-box">
-            <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/online-quran-classes#cta">Book a free 30-minute trial</a> for kids or adults.
+            <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/free-quran-classes-online">Book a free 30-minute trial</a> for kids or adults.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">

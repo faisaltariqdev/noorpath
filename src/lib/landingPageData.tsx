@@ -33,7 +33,7 @@ export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & 
   sectionSubtitle:
     "Learn Quran online from home through live one-to-one lessons, tutor matching by timezone, and a structured curriculum from Qaida to Hifz.",
   quickAnswer:
-    `One way to <strong>learn Quran online</strong> is through live <strong>1-on-1 classes</strong> with a tutor — starting with Noorani Qaida, then Quran reading, then Tajweed. NoorPath offers a free ${TRIAL.durationMinutes}-minute trial with no credit card. <a href="/online-quran-classes#cta" style="color:var(--emerald);font-weight:700;">Book your free class →</a>`,
+    `One way to <strong>learn Quran online</strong> is through live <strong>1-on-1 classes</strong> with a tutor — starting with Noorani Qaida, then Quran reading, then Tajweed. NoorPath offers a free ${TRIAL.durationMinutes}-minute trial with no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your free class →</a>`,
   seoIntro:
     'Whether you are a parent searching for your child, an adult returning to Quran, or a complete beginner, <strong>learning Quran online</strong> can provide access to live one-to-one teaching from home. NoorPath Academy matches learners with tutors by needs, timezone, preferences, and availability. Unlike self-directed recordings, a live tutor can listen to Makharij (pronunciation) and provide feedback in real time.',
   phases: [
@@ -91,7 +91,7 @@ export const onlineQuranAcademy: Omit<KeywordLandingPageProps, "canonicalPath"> 
   sectionSubtitle:
     "NoorPath is a dedicated Quran academy with live one-to-one lessons, structured programmes, and tutor matching based on learner needs and availability.",
   quickAnswer:
-    `An <strong>online Quran academy</strong> offers structured Quran learning through online lessons. NoorPath Academy provides live 1-on-1 classes and a free ${TRIAL.durationMinutes}-minute trial with no credit card required. <a href="#cta" style="color:var(--emerald);font-weight:700;">Book free trial →</a>`,
+    `An <strong>online Quran academy</strong> offers structured Quran learning through online lessons. NoorPath Academy provides live 1-on-1 classes and a free ${TRIAL.durationMinutes}-minute trial with no credit card required. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free trial →</a>`,
   seoIntro:
     'When comparing an <strong>online Quran academy</strong>, families may consider lesson format, curriculum, scheduling, and pricing. NoorPath Academy offers live one-to-one lessons, a structured Noorani Qaida-to-Hifz curriculum, family plans, and tutor matching based on timezone and current availability.',
   phases: [
@@ -151,7 +151,7 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
   sectionTitle: <>Master Tajweed <em className="accent">Online</em></>,
   sectionSubtitle: "Tajweed covers Quran recitation rules such as Noon Sakinah, Madd, Ghunna, and Qalqalah, practised using Quran verses.",
   quickAnswer:
-    `To <strong>learn Tajweed online</strong>, live video lessons allow a tutor to listen to your recitation and provide feedback. NoorPath offers Tajweed programmes for different levels, with a free ${TRIAL.durationMinutes}-minute trial available. <a href="#cta" style="color:var(--emerald);font-weight:700;">Book free Tajweed lesson →</a>`,
+    `To <strong>learn Tajweed online</strong>, live video lessons allow a tutor to listen to your recitation and provide feedback. NoorPath offers Tajweed programmes for different levels, with a free ${TRIAL.durationMinutes}-minute trial available. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free Tajweed lesson →</a>`,
   seoIntro:
     '<strong>Learning Tajweed online</strong> gives learners access to live recitation feedback when local lessons are not practical. The programme covers Makharij, Noon Sakinah, Madd, Qalqalah, and Ghunna using Quran verses. It is intended for learners who can already read basic Quran and for advanced students preparing for further study.',
   phases: [
@@ -204,7 +204,7 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
   sectionTitle: <>Online Hifz Program with <em className="accent">Live Tutoring</em></>,
   sectionSubtitle: "Our Hifz program uses the Sabaq–Sabqi–Manzil approach — new memorization plus structured revision to support retention.",
   quickAnswer:
-    '<strong>Hifz Quran online</strong> uses live tutor guidance for memorization and revision. NoorPath offers a Sabaq-Sabqi-Manzil-based programme for kids and adults. <a href="#cta" style="color:var(--emerald);font-weight:700;">Book free Hifz trial →</a>',
+    '<strong>Hifz Quran online</strong> uses live tutor guidance for memorization and revision. NoorPath offers a Sabaq-Sabqi-Manzil-based programme for kids and adults. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free Hifz trial →</a>',
   seoIntro:
     'Studying <strong>Hifz Quran online</strong> involves consistent practice, live tutor guidance, and structured revision. NoorPath\'s online Hifz programme uses Sabaq (new), Sabqi (recent revision), and Manzil (older revision) as a framework for Juz-by-Juz memorization from home.',
   phases: [
@@ -257,7 +257,7 @@ export const quranLessonOnline: Omit<KeywordLandingPageProps, "canonicalPath"> &
   sectionTitle: <>Live Quran Lessons <em className="accent">Tailored to You</em></>,
   sectionSubtitle: "Lessons are adapted to your level — whether you're learning your first Arabic letter or developing advanced Tajweed.",
   quickAnswer:
-    `A <strong>Quran lesson online</strong> is a live 1-on-1 video session in which a tutor teaches, listens to recitation, and provides feedback in real time. New learners can request a free ${TRIAL.durationMinutes}-minute trial at NoorPath. <a href="#cta" style="color:var(--emerald);font-weight:700;">Book free lesson →</a>`,
+    `A <strong>Quran lesson online</strong> is a live 1-on-1 video session in which a tutor teaches, listens to recitation, and provides feedback in real time. New learners can request a free ${TRIAL.durationMinutes}-minute trial at NoorPath. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free lesson →</a>`,
   seoIntro:
     'Live one-to-one <strong>Quran lessons online</strong> give the learner direct tutor attention during the scheduled session. Lesson content is adapted to recitation, pace, and goals. Programmes are available for children ages 4+, teens, and adults from complete beginner to advanced Hifz study.',
   phases: [
@@ -310,7 +310,7 @@ export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath">
   sectionTitle: <>A Structured Way to <em className="accent">Study Quran Online</em></>,
   sectionSubtitle: "Live online study gives a tutor the opportunity to guide recitation, review practice, and support a consistent routine.",
   quickAnswer:
-    '<strong>Studying Quran online</strong> can combine live weekly sessions with self-practice between lessons. A tutor can support accountability and provide pronunciation feedback that self-directed recordings do not provide. <a href="#cta" style="color:var(--emerald);font-weight:700;">Start free trial →</a>',
+    '<strong>Studying Quran online</strong> can combine live weekly sessions with self-practice between lessons. A tutor can support accountability and provide pronunciation feedback that self-directed recordings do not provide. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start free trial →</a>',
   seoIntro:
     '<strong>Studying the Quran online</strong> is an option for Muslim families who cannot access suitable local lessons. NoorPath offers structured Quran study through live one-to-one classes, with tutor matching based on learner needs, timezone, preferences, and availability. Programmes include Noorani Qaida, Quran reading, Tajweed, and Hifz.',
   phases: [

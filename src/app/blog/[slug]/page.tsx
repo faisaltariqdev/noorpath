@@ -563,7 +563,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Free 30-minute trial request. No credit card required. Tutor availability is confirmed after your request.
                 </p>
                 <Link
-                  href="/online-quran-classes#cta"
+                  href="/free-quran-classes-online"
                   style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "11px", borderRadius: 10, fontWeight: 700, textDecoration: "none", fontSize: ".88rem" }}
                 >
                   Book Free Trial →

@@ -101,7 +101,7 @@ export default function FounderPage() {
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 4 }}>Faisal Tariq</h2>
               <div style={{ color: "var(--emerald)", fontWeight: 600, marginBottom: 16 }}>Founder & CEO</div>
-              <Link href="/online-quran-classes#cta" className="btn-primary-np" style={{ fontSize: ".85rem" }}>Book Free Trial →</Link>
+              <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ fontSize: ".85rem" }}>Book Free Trial →</Link>
             </div>
 
             {/* Bio */}
