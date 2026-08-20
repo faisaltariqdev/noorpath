@@ -173,7 +173,9 @@ export default function PricingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "clamp(1.6rem, 4.5vw, 2.2rem)", marginBottom: 16 }}>Start With a Free Trial — No Credit Card</h2>
-              <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>Experience NoorPath before you commit. Get a free 30-minute class with a certified tutor.</p>
+              <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
+                Experience NoorPath before you commit. Request a free {TRIAL.durationMinutes}-minute class with a tutor matched to the learner&apos;s needs and current availability.
+              </p>
             </div>
             <div className="cta-form-wrap">
               <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>Book Your Free Trial Class</h3>

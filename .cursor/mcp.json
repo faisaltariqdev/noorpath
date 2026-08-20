@@ -1,0 +1,110 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "playwright": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--browser",
+        "chrome"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "lighthouse": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "lighthouse-mcp"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "filesystem": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/mac/Downloads/noorpath"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "git": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache",
+        "GIT_MCP_BASE_DIR": "/Users/mac/Downloads/noorpath"
+      }
+    },
+    "context7": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "sequential-thinking": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "duckduckgo": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "duckduckgo-mcp-server"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache"
+      }
+    },
+    "gsc": {
+      "command": "/Users/mac/.nvm/versions/node/v20.20.2/bin/npx",
+      "args": [
+        "-y",
+        "suganthan-gsc-mcp"
+      ],
+      "env": {
+        "PATH": "/Users/mac/.nvm/versions/node/v20.20.2/bin:/usr/local/bin:/usr/bin:/bin",
+        "npm_config_cache": "/Users/mac/Downloads/noorpath/.npm-cache",
+        "GSC_SITE_URL": "sc-domain:noorpath.online",
+        "GSC_AUTH_MODE": "oauth",
+        "GSC_OAUTH_SECRETS_FILE": "/Users/mac/Downloads/noorpath/.credentials/gsc-oauth-client.json"
+      }
+    }
+  }
+}

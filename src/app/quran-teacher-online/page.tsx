@@ -9,6 +9,7 @@ import {
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Star, Shield, Clock, Users, Award } from "lucide-react";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import CTAForm from "@/components/CTAForm";
 
 export const revalidate = false;
 
@@ -176,26 +177,36 @@ export default function QuranTeacherOnlinePage() {
             <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Online Quran Teacher</span>
           </nav>
-          <span style={{ display: "inline-block", background: "rgba(232,184,75,.15)", border: "1px solid rgba(232,184,75,.3)", color: "var(--gold-lt)", borderRadius: 50, padding: "5px 16px", fontSize: ".8rem", fontWeight: 700, marginBottom: 16, letterSpacing: ".5px" }}>
-            Tutor Matching · Availability Confirmed After Request
-          </span>
-          <h1>Online Quran Teacher<br /><em style={{ color: "var(--gold-lt)" }}>Matched to Your Learning Goal</em></h1>
-          <p style={{ maxWidth: 600 }}>
-            Connect with an online Quran teacher for 1-on-1 live classes for a child or adult. We match by level, subject, schedule, and tutor preference, then confirm credentials and availability.
-          </p>
-          <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
-            <Link href="/free-quran-classes-online" style={{ background: "var(--gold)", color: "var(--charcoal)", padding: "14px 28px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
-              Book Free Trial →
-            </Link>
-            <Link href="/courses" style={{ background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 600, textDecoration: "none", fontSize: "1rem" }}>
-              View All Courses
-            </Link>
-          </div>
-          {/* Trust bar */}
-          <div style={{ display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap" }}>
-            {["✅ 1-to-1 Lessons", `✅ ${TRIAL.durationMinutes}-Minute Free Trial`, "✅ Female Tutor Requests", "✅ Kids & Adults", "✅ Timezone Matching"].map((t) => (
-              <span key={t} style={{ color: "rgba(255,255,255,.8)", fontSize: ".83rem" }}>{t}</span>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <span style={{ display: "inline-block", background: "rgba(232,184,75,.15)", border: "1px solid rgba(232,184,75,.3)", color: "var(--gold-lt)", borderRadius: 50, padding: "5px 16px", fontSize: ".8rem", fontWeight: 700, marginBottom: 16, letterSpacing: ".5px" }}>
+                Tutor Matching · Availability Confirmed After Request
+              </span>
+              <h1>Online Quran Teacher<br /><em style={{ color: "var(--gold-lt)" }}>Matched to Your Learning Goal</em></h1>
+              <p style={{ maxWidth: 600 }}>
+                Connect with an online Quran teacher for 1-on-1 live classes for a child or adult. We match by level, subject, schedule, and tutor preference, then confirm relevant credentials and availability.
+              </p>
+              <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
+                <Link href="/courses" style={{ background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 600, textDecoration: "none", fontSize: "1rem" }}>
+                  View All Courses
+                </Link>
+              </div>
+              {/* Trust bar */}
+              <div style={{ display: "flex", gap: 24, marginTop: 32, flexWrap: "wrap" }}>
+                {["✅ 1-to-1 Lessons", `✅ ${TRIAL.durationMinutes}-Minute Free Trial`, "✅ Female Tutor Requests", "✅ Kids & Adults", "✅ Timezone Matching"].map((t) => (
+                  <span key={t} style={{ color: "rgba(255,255,255,.8)", fontSize: ".83rem" }}>{t}</span>
+                ))}
+              </div>
+            </div>
+            <div className="cta-form-wrap">
+              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.35rem", marginBottom: 6, textAlign: "center" }}>
+                Request Your Free Trial
+              </h2>
+              <p style={{ color: "rgba(255,255,255,.72)", fontSize: ".82rem", textAlign: "center", marginBottom: 16 }}>
+                Share the learner and scheduling preferences; availability is confirmed after matching.
+              </p>
+              <CTAForm formVariant="quran-teacher-hero" idPrefix="quran-teacher-hero" />
+            </div>
           </div>
         </div>
       </div>

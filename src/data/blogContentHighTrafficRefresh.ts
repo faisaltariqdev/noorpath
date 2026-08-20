@@ -261,7 +261,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </details>
 
           <div class="highlight-box">
-            <strong>Building a Quran-centred family starts before nikah.</strong> NoorPath helps parents raise kids with Qaida, Tajweed and Islamic manners — live 1-on-1. <a href="/online-quran-classes-for-kids">Book a free trial</a>.
+            <strong>Building a Quran-centred family starts before nikah.</strong> NoorPath helps parents raise kids with Qaida, Tajweed and Islamic manners — live 1-on-1. <a href="/online-quran-classes-for-kids">Start our free trial for kids' Quran classes</a> · <a href="/learn-tajweed-online">explore our Tajweed course</a>.
           </div>`,
   },
 
@@ -369,7 +369,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </details>
 
           <div class="highlight-box">
-            <strong>Memorise it with correct Tajweed.</strong> NoorPath tutors teach Quranic duas and Surah Al-Baqarah passages live 1-on-1. <a href="/online-quran-classes-for-kids">Book a free trial</a> for your child or <a href="/online-quran-classes-for-adults">yourself</a>.
+            <strong>Memorise this dua with correct Tajweed.</strong> NoorPath tutors teach Quranic duas and Surah Al-Baqarah passages live 1-on-1. <a href="/online-quran-classes-for-kids">Book a free Quran trial for your child</a> or <a href="/online-quran-classes-for-adults">start an adult Quran course</a> · <a href="/learn-tajweed-online">learn Tajweed pronunciation online</a>.
           </div>`,
   },
 
@@ -467,7 +467,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </details>
 
           <div class="highlight-box">
-            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. NoorPath classes include duas with Tajweed. <a href="/online-quran-classes-for-kids">Book a free trial</a>.
+            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. NoorPath classes include duas with Tajweed. <a href="/online-quran-classes-for-kids">Book a free trial for online Quran classes for kids</a> · <a href="/learn-tajweed-online">or start our online Tajweed course</a> for correct Arabic pronunciation.
           </div>`,
   },
 

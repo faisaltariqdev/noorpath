@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, Globe, CheckCircle, MapPin } from "lucide-react";
 import { locations } from "@/data/locations";
-import { cities } from "@/data/cities";
+import { cities, isCityIndexable } from "@/data/cities";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
@@ -205,7 +205,7 @@ export default function LocationsPage() {
             </p>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 64 }}>
-            {cities.map((c) => (
+            {cities.filter((c) => isCityIndexable(c.slug)).map((c) => (
               <Link key={c.slug} href={`/online-quran-classes/${c.slug}`} style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 6, padding: "9px 16px", background: "#fff", border: "1px solid var(--border)", borderRadius: 12, fontSize: ".85rem", color: "var(--charcoal)", fontWeight: 600 }}>
                 {c.flag} Quran Classes in {c.city}
               </Link>

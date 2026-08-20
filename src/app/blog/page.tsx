@@ -7,20 +7,20 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "NoorPath Academy Blog | Quran Learning, Duas & Islamic Guides",
+    absolute: "Islamic Blog 2026 — Quran Learning, Duas & Parent Guides",
   },
   description:
-    "NoorPath Academy Islamic blog — Quran learning, Tajweed, duas for kids, Islamic parenting, and guides for Muslim families worldwide.",
+    "✓ Expert Islamic blog for Muslim families ✓ Quran learning tips, authentic duas for kids, Tajweed guides & Islamic parenting. 100+ articles by Faisal Tariq.",
   alternates: { canonical: "https://www.noorpath.online/blog" },
   openGraph: {
-    title: "NoorPath Academy Blog | Quran Learning, Duas & Islamic Guides",
-    description: "Expert-written Islamic articles on Quran learning, Tajweed, duas for kids, and Islamic parenting for families worldwide.",
+    title: "Islamic Blog 2026 — Quran Learning & Islamic Guides | NoorPath",
+    description: "✓ Expert-written Islamic articles on Quran learning, Tajweed, duas for kids, and Islamic parenting for families worldwide.",
     url: "https://www.noorpath.online/blog",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy Islamic Blog" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NoorPath Academy Blog | Quran & Islamic Guides",
+    title: "Islamic Blog 2026 — Quran & Islamic Guides",
     description: "Quran learning guides, duas for kids, Tajweed tips, Islamic parenting and more.",
     images: ["/og-image.png"],
   },

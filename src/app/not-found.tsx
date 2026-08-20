@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CONTACT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
 
 export const metadata: Metadata = {
   title: "404 — Page Not Found",
@@ -18,6 +19,8 @@ const quickLinks = [
 ];
 
 export default function NotFound() {
+  const waUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_TRIAL_MESSAGE)}`;
+
   return (
     <div
       style={{
@@ -103,23 +106,45 @@ export default function NotFound() {
           ))}
         </div>
 
-        <Link
-          href="/free-quran-classes-online"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 8,
-            background: "var(--gold)",
-            color: "var(--charcoal)",
-            fontWeight: 700,
-            padding: "14px 28px",
-            borderRadius: 50,
-            textDecoration: "none",
-            fontSize: ".95rem",
-          }}
-        >
-          Book a Free Trial Class →
-        </Link>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
+          <Link
+            href="/free-quran-classes-online"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              background: "var(--gold)",
+              color: "var(--charcoal)",
+              fontWeight: 700,
+              padding: "14px 28px",
+              borderRadius: 50,
+              textDecoration: "none",
+              fontSize: ".95rem",
+            }}
+          >
+            Book a Free Trial Class →
+          </Link>
+          
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              background: "#25D366",
+              color: "#fff",
+              fontWeight: 700,
+              padding: "14px 28px",
+              borderRadius: 50,
+              textDecoration: "none",
+              fontSize: ".95rem",
+            }}
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   );

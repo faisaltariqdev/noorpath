@@ -5,7 +5,7 @@ import { locations, getLocation } from "@/data/locations";
 import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { getCountryGuide } from "@/data/countryGuides";
-import { CONTACT, FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
+import { CONTACT, ENROLLED_STUDENTS_DISPLAY, FAMILY_DISCOUNTS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   getCountryHubHreflang,
@@ -320,8 +320,22 @@ export default async function LocationDetailPage({ params }: Props) {
                 ))}
               </div>
 
-              <div style={{ color: "var(--gold-lt)", fontSize: ".9rem", fontWeight: 700 }}>
-                Online lessons · Tutor availability confirmed after matching
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center", marginTop: 18 }}>
+                <a
+                  href="#trial"
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: 7,
+                    background: "linear-gradient(135deg,#c9922a,#d4a030)",
+                    color: "#1a1a2e", fontWeight: 800, padding: "13px 28px",
+                    borderRadius: 50, textDecoration: "none", fontSize: ".92rem",
+                    boxShadow: "0 8px 24px rgba(201,146,42,.4)",
+                  }}
+                >
+                  ▶ Book Free Trial →
+                </a>
+                <span style={{ color: "rgba(255,255,255,.55)", fontSize: ".75rem", fontWeight: 600 }}>
+                  {ENROLLED_STUDENTS_DISPLAY} students enrolled · No card required
+                </span>
               </div>
             </div>
 
@@ -338,18 +352,43 @@ export default async function LocationDetailPage({ params }: Props) {
                 scrollMarginTop: 90,
               }}
             >
-              <div style={{ textAlign: "center", marginBottom: 6 }}>
-                <span style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 800, fontSize: ".72rem", letterSpacing: ".5px", padding: "4px 12px", borderRadius: 20, textTransform: "uppercase" }}>
-                  {`$${TRIAL.price} Trial · No card needed`}
+              <div style={{ textAlign: "center", marginBottom: 8 }}>
+                <span style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 800, fontSize: ".7rem", letterSpacing: ".5px", padding: "4px 14px", borderRadius: 20, textTransform: "uppercase" }}>
+                  {`Free ${TRIAL.durationMinutes}-Min Trial · No Card`}
                 </span>
               </div>
-              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.5rem", textAlign: "center", marginBottom: 4 }}>
-                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Trial</span> Class
+              <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.45rem", textAlign: "center", marginBottom: 4, lineHeight: 1.25 }}>
+                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Free</span> Trial Class
               </h2>
-              <p style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", textAlign: "center", marginBottom: 18 }}>
-                {TRIAL.durationMinutes}-minute 1-on-1 session · Request a preferred time
+              <p style={{ color: "rgba(255,255,255,.68)", fontSize: ".82rem", textAlign: "center", marginBottom: 10 }}>
+                Live 1-on-1 · {loc.timezone} scheduling · Tutor confirmed after matching
               </p>
-              <CTAForm />
+
+              {/* Trust micro-copy */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6, justifyContent: "center", marginBottom: 18 }}>
+                {[
+                  `✓ Join ${ENROLLED_STUDENTS_DISPLAY} students`,
+                  "✓ No credit card",
+                  `★ ${TRUSTPILOT.score}/5 Trustpilot`,
+                ].map((item) => (
+                  <span
+                    key={item}
+                    style={{
+                      fontSize: ".7rem",
+                      fontWeight: 700,
+                      color: "rgba(255,255,255,.72)",
+                      background: "rgba(255,255,255,.07)",
+                      border: "1px solid rgba(255,255,255,.14)",
+                      borderRadius: 50,
+                      padding: "3px 10px",
+                    }}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <CTAForm defaultCountry={loc.country} />
 
               {/* Divider */}
               <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "18px 0 14px" }}>

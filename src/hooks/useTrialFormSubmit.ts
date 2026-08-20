@@ -75,10 +75,13 @@ export function useTrialFormSubmit(options: Options = {}) {
       const country = String(fd.get("country") || "").trim();
       const childName = String(fd.get("child_name") || "").trim();
       const childAge = String(fd.get("child_age") || "").trim();
+      const learnerType = String(fd.get("learner_type") || "").trim();
+      const preferredTime = String(fd.get("preferred_class_time") || "").trim();
+      const tutorPreference = String(fd.get("tutor_preference") || "").trim();
       const course = String(fd.get("course") || "Free trial class").trim();
-      if (!country || !childName || !childAge) {
+      if (!country || !learnerType || !childName || !childAge) {
         setStatus("error");
-        setMsg("Please add country, child's name, and age.");
+        setMsg("Please add the country and learner details.");
         return;
       }
       const consentTimestamp = new Date().toISOString();
@@ -88,47 +91,18 @@ export function useTrialFormSubmit(options: Options = {}) {
 
       setStatus("loading");
       try {
-        // Browser → FormSubmit (Vercel server IPs are blocked by Cloudflare).
-        const mailFd = new FormData();
-        mailFd.set("name", name);
-        mailFd.set("email", email || "leads+whatsapp@noorpath.online");
-        mailFd.set("phone", phone || (email ? "Contact via email" : ""));
-        mailFd.set("contact", contactRaw);
-        mailFd.set("country", country);
-        mailFd.set("child_name", childName);
-        mailFd.set("child_age", childAge);
-        mailFd.set("course", course);
-        mailFd.set("source_page", sourcePage);
-        mailFd.set("referrer", referrer);
-        mailFd.set("form_variant", formVariant);
-        mailFd.set("_template", "table");
-        mailFd.set("_captcha", "false");
-
-        const mailRes = await fetch(FORMSUBMIT, {
-          method: "POST",
-          body: mailFd,
-          headers: { Accept: "application/json" },
-        });
-        const mailData = (await mailRes.json().catch(() => null)) as
-          | { success?: boolean | string }
-          | null;
-        const mailOk = mailData?.success === true || mailData?.success === "true";
-        if (!mailOk) {
-          setStatus("error");
-          setMsg("Could not send. Please WhatsApp us.");
-          return;
-        }
-
-        // Best-effort CRM / consent log (does not send the lead email).
-        await fetch("/api/leads", {
+        const leadRes = await fetch("/api/leads", {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
             name,
             contact: contactRaw,
             country,
+            learner_type: learnerType,
             child_name: childName,
             child_age: childAge,
+            preferred_class_time: preferredTime,
+            tutor_preference: tutorPreference,
             course,
             form_variant: formVariant,
             source_page: sourcePage,
@@ -140,7 +114,58 @@ export function useTrialFormSubmit(options: Options = {}) {
             utm_medium: params.get("utm_medium") || "",
             utm_campaign: params.get("utm_campaign") || "",
           }),
-        }).catch(() => null);
+        });
+        const leadData = (await leadRes.json().catch(() => null)) as
+          | {
+              ok?: boolean;
+              email_delivery?: "sent" | "not_configured" | "failed";
+              formsubmit_fallback_required?: boolean;
+            }
+          | null;
+
+        if (!leadRes.ok || !leadData?.ok) {
+          setStatus("error");
+          setMsg("Could not save your request. Please WhatsApp us.");
+          return;
+        }
+
+        let mailOk = leadData.email_delivery === "sent";
+        if (!mailOk && leadData.formsubmit_fallback_required) {
+          // Temporary fallback until the owned transactional email provider is configured.
+          const mailFd = new FormData();
+          mailFd.set("name", name);
+          mailFd.set("email", email || "leads+whatsapp@noorpath.online");
+          mailFd.set("phone", phone || (email ? "Contact via email" : ""));
+          mailFd.set("contact", contactRaw);
+          mailFd.set("country", country);
+          mailFd.set("learner_type", learnerType);
+          mailFd.set("child_name", childName);
+          mailFd.set("child_age", childAge);
+          mailFd.set("preferred_class_time", preferredTime || "Not specified");
+          mailFd.set("tutor_preference", tutorPreference || "Not specified");
+          mailFd.set("course", course);
+          mailFd.set("source_page", sourcePage);
+          mailFd.set("referrer", referrer);
+          mailFd.set("form_variant", formVariant);
+          mailFd.set("_template", "table");
+          mailFd.set("_captcha", "false");
+          mailFd.set("_honey", String(fd.get("_honey") || ""));
+
+          const mailRes = await fetch(FORMSUBMIT, {
+            method: "POST",
+            body: mailFd,
+            headers: { Accept: "application/json" },
+          });
+          const mailData = (await mailRes.json().catch(() => null)) as
+            | { success?: boolean | string }
+            | null;
+          mailOk = mailData?.success === true || mailData?.success === "true";
+        }
+        if (!mailOk) {
+          setStatus("error");
+          setMsg("Could not send the email. Please WhatsApp us.");
+          return;
+        }
 
         const nameParts = name.split(/\s+/);
         if (hasAnalyticsConsent()) {
@@ -159,10 +184,10 @@ export function useTrialFormSubmit(options: Options = {}) {
           });
         }
 
+        setStatus("success");
+        setMsg("JazakAllah Khair! Your trial request has been received. We'll confirm your tutor and class time via WhatsApp or email shortly — usually within 24 hours. BarakAllahu Feekum!");
         form.reset();
-        if (hasAnalyticsConsent()) {
-          await new Promise((r) => setTimeout(r, 300));
-        }
+        await new Promise((r) => setTimeout(r, hasAnalyticsConsent() ? 1800 : 1500));
         window.location.href = "/thank-you?submitted=1";
       } catch {
         setStatus("error");

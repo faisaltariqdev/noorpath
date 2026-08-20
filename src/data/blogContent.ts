@@ -50,6 +50,7 @@ import { commercialDemandBlogContent } from "./blogContentCommercialDemand";
 import { problemSolvingLeadsBlogContent } from "./blogContentProblemSolvingLeads";
 import { wazaifDemandBlogContent } from "./blogContentWazaifDemand";
 import { geoCommercialBlogContent } from "./blogContentGeoCommercial";
+import { brandingVisibilityBlogContent } from "./blogContentBranding";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
@@ -58,6 +59,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...parentLongTailBlogContent,
   ...diasporaEuropeBlogContent,
   ...competitorGapBlogContent,
+  ...brandingVisibilityBlogContent,
   ...prayerRecitationBlogContent,
   ...minorityMarketsBlogContent,
   ...asiaParentBlogContent,
@@ -71,6 +73,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...problemSolvingLeadsBlogContent,
   ...wazaifDemandBlogContent,
   ...geoCommercialBlogContent,
+  ...brandingVisibilityBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
     content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>
@@ -907,7 +910,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Ready to help your child memorise Surah Ikhlas with guided Tajweed practice?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults. You can request a male or female tutor, subject to availability. <a href="/online-quran-classes-for-kids">Request a free trial class</a> — no credit card required.
+            <strong>Ready to help your child memorise Surah Ikhlas with guided Tajweed?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults. <a href="/learn-tajweed-online">Start our online Tajweed course</a> · <a href="/hifz-quran-online">or join our Hifz memorisation program</a> · <a href="/online-quran-classes-for-kids">book a free kids Quran trial</a> — no credit card required.
           </div>`,
   },
   "dua-e-istikhara": {
@@ -1106,7 +1109,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Surah Waqiah contains many similar-sounding words where Tajweed matters. If you or your child cannot yet read the Quran fluently, start with <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> — the step-by-step primer that takes you from the alphabet to fluent Quran reading.</p>
 
           <div class="highlight-box">
-            <strong>Want to practise Surah Waqiah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults — from Qaida to continued recitation practice. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Want to practise Surah Waqiah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults — from Qaida to continued recitation practice. <a href="/learn-tajweed-online">Start our online Tajweed course</a> · <a href="/online-quran-classes-for-kids">book a free Quran trial for kids</a> · <a href="/online-quran-classes-for-adults">or start adult Quran classes</a>.
           </div>`,
   },
   "surah-rahman-benefits": {
@@ -1175,7 +1178,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Because of its repetition and rhythm, Surah Rahman is often a child's favourite long surah. Start with correct letter sounds through the <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet</a> and <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a>, then progress to recitation with a live tutor correcting Tajweed in real time.</p>
 
           <div class="highlight-box">
-            <strong>Want your child to practise this Surah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for children and adults. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to recite Surah Rahman with correct Tajweed?</strong> NoorPath Academy offers live 1-on-1 Quran classes for children and adults. <a href="/learn-tajweed-online">Start our online Tajweed course</a> · <a href="/online-quran-classes-for-kids">book a free kids Quran trial</a> — no credit card required.
           </div>`,
   },
   "darood-sharif": {
@@ -1358,7 +1361,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Help your child memorise the 4 Quls with guided Tajweed practice.</strong> NoorPath Academy offers live 1-on-1 Quran classes. You can request a male or female tutor, subject to availability. <a href="/online-quran-classes-for-kids">Request a free trial</a> — no credit card required.
+            <strong>Help your child memorise the 4 Quls with correct Tajweed.</strong> NoorPath Academy offers live 1-on-1 Quran classes. <a href="/learn-tajweed-online">Explore our Tajweed course for correct letter pronunciation</a> · <a href="/hifz-quran-online">or start our Hifz memorisation program</a> · <a href="/online-quran-classes-for-kids">book a free kids Quran trial</a> — no credit card required.
           </div>`,
   },
   "arabic-alphabet-for-kids": {
@@ -4576,9 +4579,15 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div class="faq-a">Children can begin learning Ayatul Kursi when they can engage with short, guided repetition. Memorisation time varies by learner; focus on accurate pronunciation and steady revision rather than a promised timeline.</div>
           </div>
 
-          <div class="highlight-box" style="margin-top:40px;">
-            <strong>Want your child to memorize Ayatul Kursi correctly?</strong><br>
-            NoorPath offers live 1-on-1 lessons covering Ayatul Kursi, Quran recitation, Tajweed, and Islamic Studies. Tutor availability is confirmed after matching. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your free trial class →</a>
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;margin:40px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.4rem;margin-bottom:10px;">Learn to Recite Ayatul Kursi with Correct Tajweed</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:20px;line-height:1.7;">Live 1-on-1 lessons for kids and adults. Our tutors correct pronunciation from Makharij up — so Ayatul Kursi is memorised right the first time.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="/learn-tajweed-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:12px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;">Start our Tajweed Course →</a>
+              <a href="/online-quran-classes-for-kids" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.3);">Kids Quran Classes — Free Trial</a>
+              <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.3);">Hifz Memorisation Program</a>
+            </div>
+            <p style="color:rgba(255,255,255,.65);font-size:.8rem;margin-top:14px;margin-bottom:0;">See <a href="/pricing" style="color:rgba(255,255,255,.9);font-weight:600;">pricing plans</a> — or <a href="/free-quran-classes-online" style="color:rgba(255,255,255,.9);font-weight:600;">book a free 30-minute trial</a> with no card required.</p>
           </div>
         </div>
 
@@ -5509,7 +5518,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">View our Online Hifz Program →</a> or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">request a free trial class</a>.
+            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Explore our Online Hifz Memorisation Program →</a> · <a href="/pricing" style="color:var(--emerald);font-weight:600;">view Hifz lesson plans &amp; pricing</a> · or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">request a free trial class</a>.
           </div>
         </div>
 
@@ -7804,9 +7813,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div class="faq-a">Surah Yaseen is a Makki surah — it was revealed in Mecca before the Hijra (migration to Medina). This is the scholarly consensus, with a small minority view that a few verses were revealed in Medina.</div>
           </div>
 
-          <div class="highlight-box" style="margin-top:40px;">
-            <strong>Want to learn Quran recitation properly?</strong><br>
-            At NoorPath Academy, live one-to-one lessons can include Tajweed guidance for Surah Yaseen and continued Quran recitation. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request a free trial class →</a>
+          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.5rem;margin-bottom:12px;">Recite Surah Yaseen with Correct Tajweed</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:520px;margin-left:auto;margin-right:auto;">Live one-to-one lessons for kids and adults — Tajweed correction, Quran recitation, and optional Hifz. Free 30-minute trial, no credit card.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="/learn-tajweed-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Explore our Tajweed Course →</a>
+              <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Memorise Surah Yaseen — Hifz Program</a>
+            </div>
+            <p style="color:rgba(255,255,255,.65);font-size:.82rem;margin-top:16px;margin-bottom:0;">Or <a href="/free-quran-classes-online" style="color:rgba(255,255,255,.9);font-weight:600;">book a free trial class</a> and tell us your current level.</p>
           </div>
         </div>
 
@@ -7967,7 +7981,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            Ready to master Tajweed with a certified tutor? <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:700;">Book your free Tajweed trial class</a> at NoorPath Academy — no payment required.
+            Ready to master Tajweed with a certified tutor? <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:700;">Start our online Tajweed course</a> at NoorPath Academy — free 30-minute trial, no payment required. See <a href="/pricing" style="color:var(--emerald);font-weight:600;">lesson plans and pricing</a>.
           </div>
         </div>
 

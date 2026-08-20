@@ -274,7 +274,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           </ul>
 
           <h2 id="start">Start today</h2>
-          <p>Open the mushaf for five minutes. Recite what you can. Ask Allah for consistency. If you want structured live help, book a trial: <a href="/learn-quran-online">learn Quran online</a> · <a href="/online-quran-classes">online Quran classes</a> · <a href="/pricing">pricing</a>.</p>
+          <p>Open the mushaf for five minutes. Recite what you can. Ask Allah for consistency. If you want structured live help, book a trial: <a href="/learn-quran-online">learn Quran online</a> · <a href="/learn-tajweed-online">improve your Tajweed recitation</a> · <a href="/online-quran-classes">online Quran classes</a> · <a href="/pricing">view lesson plans and pricing</a>.</p>
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>What are the benefits of reading Quran every day?<span>+</span></summary>

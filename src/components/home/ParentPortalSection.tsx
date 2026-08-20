@@ -189,6 +189,7 @@ export default function ParentPortalSection() {
                 width={1600}
                 height={1066}
                 sizes="(max-width: 1024px) 100vw, 560px"
+                loading="lazy"
                 style={{ width: "100%", height: "auto", display: "block" }}
               />
             </div>

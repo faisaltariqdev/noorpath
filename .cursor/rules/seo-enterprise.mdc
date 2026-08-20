@@ -1,0 +1,30 @@
+---
+description: Enterprise SEO standards for NoorPath (Google Search Essentials, CWV, schema honesty, AI search)
+alwaysApply: true
+---
+
+# NoorPath Enterprise SEO Rules
+
+Follow Google SEO Starter Guide, Search Essentials, Core Web Vitals, Schema.org, and helpful-content practices.
+
+## Hard constraints
+- Online-only academy — never invent campuses, branches, or local visit claims.
+- Do not invent stats, review counts, certificates, or guaranteed Hifz timelines.
+- Trustpilot claims only from `TRUSTPILOT` in `src/lib/academyFacts.ts` (truthful score/count).
+- Trial/pricing copy must use `TRIAL` / `PRICING_PLANS` / `FAMILY_DISCOUNTS` from academyFacts.
+- FAQPage JSON-LD must match visible FAQ answers.
+- Prefer people-first content; avoid doorway/scaled thin geo spam.
+- Phase 2/3 city factory expansion stays frozen unless explicitly requested.
+
+## When auditing or changing SEO
+1. Run `npm run seo:audit` (and `seo:lighthouse` when Node ≥ 20 + Chrome available).
+2. Validate robots + sitemap + canonicals + metadata + OG/Twitter + JSON-LD.
+3. Keep internal links to real routes only; no orphan commercial pages.
+4. For AI Overview / AI search: clear answer-first sections, honest citations, no keyword stuffing.
+5. Use MCP tools when enabled: Chrome DevTools (`lighthouse_audit`), Playwright, Lighthouse MCP; Firecrawl/GSC only after credentials.
+
+## Next.js specifics
+- Metadata via App Router `metadata` / `generateMetadata`.
+- Titles: avoid doubling with layout template (`absolutePageTitle` pattern where used).
+- Sitemap `lastModified` must be honest — do not fake freshness.
+- Commercial blogs → `COMMERCIAL_BLOG_SLUGS`; high-traffic Islamic → `HIGH_TRAFFIC_BLOG_SLUGS`.

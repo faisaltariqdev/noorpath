@@ -15,12 +15,11 @@ const BASE = "https://www.noorpath.online";
 /** Stable stamp for rarely changed commercial/legal pages (do not set to “build now”). */
 const CONTENT_UPDATE = new Date("2026-05-01");
 /** Honest stamp for brand-entity pages updated in the brand visibility pass. */
-const BRAND_ENTITY_UPDATE = new Date("2026-08-18");
+const BRAND_ENTITY_UPDATE = new Date("2026-08-20");
 /**
- * Honest content stamp for pages last materially updated in the minority-markets
- * + Search Central Phase A compliance pass. Bump only when those URLs change again.
+ * Honest content stamp for pages last materially updated in the enterprise overhaul.
  */
-const SITE_CONTENT_STAMP = new Date("2026-07-28");
+const SITE_CONTENT_STAMP = new Date("2026-08-20");
 
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
@@ -103,6 +102,7 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "live-online-quran-tutor-vs-prerecorded-courses",
   "online-quran-class-checklist-for-parents",
   "how-many-quran-classes-per-week",
+  "noorpath-academy-vision-online-quran-education",
   "how-long-should-online-quran-lessons-be",
   "what-should-my-child-learn-first-in-quran",
   "sibling-online-quran-classes-scheduling",

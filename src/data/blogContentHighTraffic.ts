@@ -268,7 +268,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
 
           <div class="highlight-box">
-            <strong>Is your child ready for Hifz?</strong> Book a free assessment lesson — the tutor checks reading level and recommends a realistic timeline. <a href="/free-quran-classes-online">Start free trial</a>.
+            <strong>Is your child ready for Hifz?</strong> Book a free assessment lesson — the tutor checks reading level and recommends a realistic timeline. <a href="/hifz-quran-online">Explore our online Hifz memorisation program</a> · <a href="/pricing">see Hifz lesson plans &amp; pricing</a> · or <a href="/free-quran-classes-online">book a free Hifz readiness trial</a>.
           </div>`,
   },
   "dua-for-success-exams": {
@@ -490,7 +490,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </details>
 
           <div class="highlight-box">
-            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. Correct Arabic sounds matter; a patient tutor can help. <a href="/online-quran-classes-for-kids">Kids classes</a>.
+            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. Correct Arabic pronunciation matters; a live tutor catches errors that go unnoticed at home. <a href="/online-quran-classes-for-kids">Explore online Quran classes for kids</a> · <a href="/learn-tajweed-online">or start our Tajweed course</a> for accurate pronunciation.
           </div>`,
   },
 
@@ -613,7 +613,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </details>
 
           <div class="highlight-box">
-            <strong>Prepare hearts for Hajj with Quran.</strong> Families who recite and understand the Book feel the Talbiyah more deeply. <a href="/online-quran-classes-for-kids">Kids classes</a> and <a href="/online-quran-classes-for-adults">adult classes</a> can support that reading journey — without replacing your local pilgrimage teacher.
+            <strong>Prepare hearts for Hajj with Quran.</strong> Families who recite and understand the Book feel the Talbiyah more deeply. <a href="/online-quran-classes-for-kids">Book a free trial for kids' Quran classes</a> and <a href="/online-quran-classes-for-adults">adult Quran classes</a> can support that reading journey — without replacing your local pilgrimage teacher.
           </div>`,
   },
 

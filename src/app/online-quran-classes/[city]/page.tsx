@@ -41,23 +41,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `https://www.noorpath.online/locations/${c.countrySlug}`;
   return {
     title: {
-      absolute: `Online Quran Classes ${c.city} | Live ${oneToOne} Trial`,
+      absolute: `Online Quran Classes in ${c.city} 2026 — Live 1-on-1 | Free Trial`,
     },
-    description,
+    description: `✓ Live 1-on-1 online Quran classes in ${c.city} from $29/mo ✓ ${c.timezone} slots for kids & adults ✓ Free 30-min trial — no card required. Book now!`,
     keywords: getCityKeywords(c),
     alternates: { canonical },
     ...(indexable ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
-      title: `Online Quran Classes in ${c.city} | Kids & Adults | NoorPath`,
-      description,
+      title: `Online Quran Classes in ${c.city} 2026 — Live 1-on-1 | Free Trial`,
+      description: `✓ Live 1-on-1 online Quran classes in ${c.city} from $29/mo ✓ ${c.timezone} slots for kids & adults ✓ Free 30-min trial — no card required.`,
       url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
       locale: getOpenGraphLocale(c.countrySlug),
       images: [{ url: "/marketing/family-evening-quran.jpg", width: 1200, height: 800, alt: `Online Quran Classes ${c.city}` }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `Online Quran Classes in ${c.city} | NoorPath`,
-      description: `Request live 1-on-1 online Quran lessons in ${c.city}. Tutor availability is confirmed after matching.`,
+      title: `Online Quran Classes in ${c.city} 2026 — Live 1-on-1`,
+      description: `Request live 1-on-1 online Quran lessons in ${c.city} starting from $29/mo. Free 30-min trial, no credit card required.`,
       images: ["/marketing/family-evening-quran.jpg"],
     },
   };
@@ -70,8 +70,14 @@ export default async function CityPage({ params }: Props) {
 
   const country = getLocation(c.countrySlug);
   const siblingCities = cities
-    .filter((x) => x.countrySlug === c.countrySlug && x.slug !== c.slug)
+    .filter(
+      (x) =>
+        x.countrySlug === c.countrySlug &&
+        x.slug !== c.slug &&
+        isCityIndexable(x.slug),
+    )
     .slice(0, 2);
+  const indexable = isCityIndexable(c.slug);
   const locale = getLocale(c.countrySlug);
   const currencyNote = getCurrencyNote(c.countrySlug);
   const cityGuide = getCityGuide(c.slug);
@@ -173,7 +179,9 @@ export default async function CityPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {indexable && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      )}
 
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
@@ -193,9 +201,18 @@ export default async function CityPage({ params }: Props) {
               <h1 style={{ marginBottom: 12 }}>Online Quran Classes in {c.city}</h1>
               <p style={{ maxWidth: 560, marginBottom: 0 }}>
                 Live 1-on-1 Quran tutors for kids &amp; adults in {c.city} — Noorani Qaida, Tajweed, Hifz and female teachers,
-                with {c.timezone} scheduling subject to tutor matching.{" "}
-                <strong style={{ color: "var(--gold-lt)" }}>{TRIAL.durationMinutes}-minute trial for ${TRIAL.price} — no credit card.</strong>
+                with {c.timezone} scheduling subject to tutor matching.
               </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 16 }}>
+                {[
+                  "✓ Live 1-on-1 classes from $29/mo",
+                  "✓ Free 30-min trial — no credit card required",
+                  "✓ Parent Portal to track homework & progress",
+                  "✓ Top-rated tutors (4.0 Trustpilot score)",
+                ].map((b) => (
+                  <div key={b} style={{ color: "#fff", fontSize: ".92rem", fontWeight: 500 }}>{b}</div>
+                ))}
+              </div>
               <div style={{ display: "flex", gap: 10, marginTop: 18, flexWrap: "wrap" }}>
                 {[
                   { icon: "🕐", label: c.timezone },

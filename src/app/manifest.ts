@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "NoorPath Academy — Online Quran Classes",
     short_name: "NoorPath",
     description:
-      "Certified 1-on-1 online Quran classes for kids & families. Tajweed, Hifz, Noorani Qaida, Arabic. Free 30-min trial.",
+      "Live 1-on-1 online Quran classes for kids & families. Tajweed, Hifz, Noorani Qaida, Arabic. Free 30-min trial.",
     start_url: "/",
     display: "standalone",
     background_color: "#041f14",

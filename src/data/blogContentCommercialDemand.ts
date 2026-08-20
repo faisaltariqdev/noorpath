@@ -75,7 +75,7 @@ export const commercialDemandBlogContent: Record<string, { style: string; conten
           </ul>
 
           <h2 id="start">Start with a placement trial</h2>
-          <p>Tell the academy the child’s reading level and that you want a Hifz-readiness check, not a sales pitch. Trial is ${TRIAL.durationMinutes} minutes with no credit card. <a href="/free-quran-classes-online">Book a free trial</a> · <a href="/courses/hifz-program-online">Hifz pathway</a> · <a href="/online-quran-classes-for-kids">kids classes</a>.</p>
+          <p>Tell the academy the child’s reading level and that you want a Hifz-readiness check, not a sales pitch. Trial is ${TRIAL.durationMinutes} minutes with no credit card. <a href="/free-quran-classes-online">Book a free Hifz readiness trial</a> · <a href="/hifz-quran-online">explore our online Hifz memorisation program</a> · <a href="/online-quran-classes-for-kids">view kids Quran courses</a>.</p>
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>What age should a child start Hifz?<span>+</span></summary>
@@ -143,7 +143,7 @@ export const commercialDemandBlogContent: Record<string, { style: string; conten
           </div>
 
           <h2 id="start">Book a Tajweed-focused trial</h2>
-          <p>Write: child age, current reading level, and “please assess Tajweed priorities.” Trial is ${TRIAL.durationMinutes} minutes with no credit card. <a href="/free-quran-classes-online">Free trial</a> · <a href="/learn-tajweed-online">learn Tajweed online</a> · <a href="/online-quran-classes-for-kids">kids classes</a>.</p>
+          <p>Write: child age, current reading level, and “please assess Tajweed priorities.” Trial is ${TRIAL.durationMinutes} minutes with no credit card. <a href="/free-quran-classes-online">Book a free Tajweed assessment trial</a> · <a href="/learn-tajweed-online">explore our online Tajweed course</a> · <a href="/online-quran-classes-for-kids">view kids Quran courses</a>.</p>
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>What age can kids start online Tajweed classes?<span>+</span></summary>

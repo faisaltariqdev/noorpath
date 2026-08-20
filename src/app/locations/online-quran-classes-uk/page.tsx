@@ -538,7 +538,11 @@ export default function OnlineQuranClassesUkPage() {
                   Share your GMT/BST lesson preferences and learning goal.
                 </p>
               </div>
-              <CTAForm />
+              <CTAForm
+                defaultCountry="United Kingdom"
+                idPrefix="uk-hero-trial"
+                formVariant="uk-hero"
+              />
             </div>
           </div>
         </div>
@@ -1380,7 +1384,11 @@ export default function OnlineQuranClassesUkPage() {
               >
                 Request Your Free Trial
               </h3>
-              <CTAForm />
+              <CTAForm
+                defaultCountry="United Kingdom"
+                idPrefix="uk-bottom-trial"
+                formVariant="uk-bottom"
+              />
             </div>
           </div>
         </div>

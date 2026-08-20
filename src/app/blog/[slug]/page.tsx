@@ -11,6 +11,16 @@ import { splitArticleHtml } from "@/lib/splitArticleHtml";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
+function extractHeadings(html: string): { id: string; text: string }[] {
+  const headingRegex = /<h2 id="([^"]+)">([^<]+)<\/h2>/gi;
+  const headings: { id: string; text: string }[] = [];
+  let match;
+  while ((match = headingRegex.exec(html)) !== null) {
+    headings.push({ id: match[1], text: match[2].replace(/&amp;/g, "&") });
+  }
+  return headings;
+}
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -240,6 +250,7 @@ export default async function BlogPostPage({ params }: Props) {
   // FAQPage JSON-LD must match visible .faq-acc FAQs (Google structured-data honesty).
   // Do not use separate blogFaqs.ts schemas — they drifted from on-page copy.
   const faqSchema = richContent ? faqPageJsonLdFromHtml(richContent.content) : null;
+  const headings = richContent ? extractHeadings(richContent.content) : [];
   const articleParts = richContent
     ? splitArticleHtml(richContent.content, 3)
     : { before: "", after: "" };
@@ -284,7 +295,8 @@ export default async function BlogPostPage({ params }: Props) {
             <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,.55)", fontSize: ".82rem", marginLeft: "auto" }}>
               <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <BookOpen size={13} />{" "}
-                {new Date(post.date).toLocaleDateString(post.inLanguage ?? "en-US", { year: "numeric", month: "long", day: "numeric" })}
+                {post.updatedAt && post.updatedAt !== post.date ? "Updated: " : "Published: "}
+                {new Date(post.updatedAt ?? post.date).toLocaleDateString(post.inLanguage ?? "en-US", { year: "numeric", month: "long", day: "numeric" })}
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <Clock size={13} /> {post.readTime} read
@@ -301,6 +313,42 @@ export default async function BlogPostPage({ params }: Props) {
             {/* ── Main content ─────────────────────────────────── */}
             <div className="lg:col-span-2">
               <div className="px-4 py-7 sm:px-8 sm:py-9" style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 20 }}>
+
+                {headings.length > 2 && (
+                  <nav
+                    aria-label="Table of contents"
+                    style={{
+                      background: "rgba(10,110,79,.05)",
+                      border: "1px solid rgba(10,110,79,.1)",
+                      borderRadius: 14,
+                      marginBottom: 32,
+                      padding: "20px 24px",
+                    }}
+                  >
+                    <div style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".9rem", marginBottom: 14, textTransform: "uppercase", letterSpacing: ".05em" }}>
+                      In this article
+                    </div>
+                    <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 10 }}>
+                      {headings.map((h) => (
+                        <li key={h.id}>
+                          <a
+                            href={`#${h.id}`}
+                            style={{
+                              color: "var(--emerald)",
+                              fontSize: ".95rem",
+                              fontWeight: 600,
+                              textDecoration: "none",
+                              display: "flex",
+                              gap: 8,
+                            }}
+                          >
+                            <span style={{ opacity: .4 }}>•</span> {h.text}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
+                )}
 
                 {asset && (
                   <aside

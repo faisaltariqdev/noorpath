@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": ".cursor/hooks/seo-pre-commit-gate.sh",
+        "matcher": "git commit",
+        "timeout": 120
+      }
+    ]
+  }
+}

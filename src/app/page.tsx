@@ -10,6 +10,7 @@ import {
 } from "@/data/trustpilotReviews";
 import {
   CANCELLATION_NOTICE_DAYS,
+  ENROLLED_STUDENTS_DISPLAY,
   FAMILY_DISCOUNTS,
   PRICING_PLANS,
   SERVICE_FACTS,
@@ -27,18 +28,17 @@ import {
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  // Brand-first homepage title (Google title-link + site-name sources). Differentiates
-  // from app brand on noorpath.net; avoids year-stuffing that invites rewrite to domain.
+  // CTR-optimized homepage title - keyword-first, under 60 chars
   title: {
-    absolute: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
+    absolute: "Online Quran Classes 2026 — Live Tutors | Free Trial",
   },
   description:
-    "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults (Tajweed, Hifz, Noorani Qaida, Arabic). Parent Portal for homework and progress. Free 30-minute trial, no credit card.",
+    "✓ Live 1-on-1 Quran classes for kids & adults ✓ $29/mo plans ✓ Free 30-min trial — no card required. Noorani Qaida, Tajweed, Hifz & Arabic. Book now!",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
-    title: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
-    description: "Live online Quran classes for kids and adults — Qaida, Tajweed, Hifz and Arabic. Family plans and a free 30-minute trial with no credit card.",
+    title: "Online Quran Classes 2026 — Live Tutors | Free Trial",
+    description: "Live 1-on-1 Quran classes for kids & adults. $29/mo plans with free 30-min trial, no card. Noorani Qaida, Tajweed, Hifz.",
     url: "https://www.noorpath.online",
     type: "website",
     siteName: "NoorPath Academy",
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NoorPath Academy | Online Quran Classes — Free Trial",
-    description: "Live online Quran classes for kids & adults. Tajweed, Hifz, Qaida, Arabic. Family plans.",
+    title: "Online Quran Classes 2026 — Live Tutors | Free Trial",
+    description: "Live Quran classes for kids & adults. $29/mo plans with free trial. Noorani Qaida, Tajweed, Hifz.",
     images: ["/og-image.png"],
   },
 };
@@ -80,10 +80,13 @@ const faqs = [
     a: "The official website is https://www.noorpath.online. NoorPath Academy provides live one-to-one online Quran classes. It is not affiliated with noor-path.com or noorpath.net apps.",
   },
   { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with an assigned tutor. A schedule is confirmed based on your timezone and current tutor availability, with no pre-recorded lessons." },
-  { q: "What age groups do you accept?", a: "NoorPath accepts trial requests for children from age 4, teenagers and adults. Tutor matching considers the learner's age, current level and lesson goals." },
+  { q: "What age groups do you accept?", a: "NoorPath accepts trial requests for children from age 4, teenagers, adults and older learners. Tutor matching considers the learner's age, current level and lesson goals." },
   { q: "Do you offer a free trial class?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class with no credit card required. Tutor availability is confirmed after the request.` },
   { q: "Are there family discount plans?", a: `Yes. Published sibling discounts are ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
   { q: "How are tutors matched?", a: "Tutor matching is based on the learner's needs, schedule, timezone, preferences, and current tutor availability." },
+  { q: "Can I request a female Quran teacher?", a: "Yes. Add the preference when requesting a trial. NoorPath confirms a suitable female tutor based on the learner's needs, schedule, and current availability." },
+  { q: "What equipment do I need?", a: "A smartphone, tablet, or computer with a stable internet connection is enough. Lessons use an agreed video platform such as Zoom or Google Meet, and learning material can be shared on screen." },
+  { q: "How long does it take to complete Noorani Qaida?", a: "Completion time is individual and depends on the learner's starting level, lesson frequency, practice, and pace. The tutor can suggest an illustrative learning path after assessing the learner." },
   { q: "Do parents get a portal to track progress?", a: "Yes. Enrolled families receive secure Parent Portal access (admin.noorpath.online) to check homework, daily progress, quizzes, attendance, reports, and announcements for all children — on phone or computer." },
 ];
 
@@ -152,10 +155,11 @@ export default function HomePage() {
           overflow: "hidden",
         }}
       >
-        {/* Background glow orbs */}
-        <div style={{ position:"absolute", top:"8%", left:"10%", width:420, height:420, borderRadius:"50%", background:"#0f8f66", opacity:.2, filter:"blur(80px)", pointerEvents:"none" }} />
-        <div style={{ position:"absolute", top:"60%", right:"5%", width:300, height:300, borderRadius:"50%", background:"#c9922a", opacity:.15, filter:"blur(70px)", pointerEvents:"none" }} />
-        <div style={{ position:"absolute", top:"30%", left:"55%", width:260, height:260, borderRadius:"50%", background:"#14b882", opacity:.12, filter:"blur(70px)", pointerEvents:"none" }} />
+        {/* Background glow orbs — promoted to their own compositor layer so the
+            blur filter doesn't re-trigger a full-page repaint on every frame. */}
+        <div style={{ position:"absolute", top:"8%", left:"10%", width:420, height:420, borderRadius:"50%", background:"#0f8f66", opacity:.2, filter:"blur(80px)", pointerEvents:"none", willChange:"transform", contain:"strict" }} />
+        <div style={{ position:"absolute", top:"60%", right:"5%", width:300, height:300, borderRadius:"50%", background:"#c9922a", opacity:.15, filter:"blur(70px)", pointerEvents:"none", willChange:"transform", contain:"strict" }} />
+        <div style={{ position:"absolute", top:"30%", left:"55%", width:260, height:260, borderRadius:"50%", background:"#14b882", opacity:.12, filter:"blur(70px)", pointerEvents:"none", willChange:"transform", contain:"strict" }} />
 
         <div className="max-w-[1200px] mx-auto px-4 w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -198,8 +202,14 @@ export default function HomePage() {
                   Learn Quran Online — From <em style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Noorani Qaida</em> to Hifz
                 </span>
               </h1>
-              <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.78, marginBottom: 24, maxWidth: 520 }}>
-                Live one-to-one online Quran classes for kids, adults &amp; sisters. Start with a <strong style={{ color: "var(--gold-lt)" }}>free {TRIAL.durationMinutes}-minute trial</strong> — no credit card required.
+              
+              {/* Answer-First Entity Definition for AI Visibility (GEO) */}
+              <p style={{ color: "rgba(255,255,255,.95)", fontSize: "1.08rem", lineHeight: 1.75, marginBottom: 16, maxWidth: 560, fontWeight: 500 }}>
+                <strong style={{ color: "var(--gold-lt)" }}>According to NoorPath Academy&#39;s service model</strong>, we are an online-only Quran learning platform providing live one-to-one Quran classes via video call for children (age 4+), adults, and families worldwide—with no physical campuses or branches.
+              </p>
+              
+              <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.78, marginBottom: 24, maxWidth: 540 }}>
+                Our curriculum includes Noorani Qaida for beginners, Quran reading with proper pronunciation, Tajweed (recitation rules), Hifz (memorization), Arabic language, and Islamic studies. Start with a <strong style={{ color: "var(--gold-lt)" }}>free {TRIAL.durationMinutes}-minute trial</strong> — no credit card required.
               </p>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 24 }}>
@@ -210,13 +220,27 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 28 }}>
+              <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 12 }}>
                 <Link href="/free-quran-classes-online" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "16px 34px", borderRadius: 50, textDecoration: "none", fontSize: ".96rem", boxShadow: "0 8px 28px rgba(201,146,42,.45)", letterSpacing: ".2px" }}>
                   <PlayCircle size={18} /> Book Free Trial Now
                 </Link>
                 <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "16px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
                   <MapPin size={16} /> View Courses
                 </Link>
+              </div>
+
+              {/* Hero trust micro-copy strip */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 16px", marginBottom: 28 }}>
+                {[
+                  `✓ Join ${ENROLLED_STUDENTS_DISPLAY} students`,
+                  "✓ No credit card required",
+                  `✓ Free ${TRIAL.durationMinutes}-min class`,
+                  `★ ${TRUSTPILOT.score}/5 on Trustpilot`,
+                ].map((item) => (
+                  <span key={item} style={{ color: "rgba(255,255,255,.72)", fontSize: ".78rem", fontWeight: 600 }}>
+                    {item}
+                  </span>
+                ))}
               </div>
 
               {/* Stats */}
@@ -315,8 +339,8 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Layers size={13} /> Learning Paths</span>
-            <h2 className="section-title">Complete <em className="accent">Quran & Islamic</em> Curriculum</h2>
-            <p className="section-desc center">From the Arabic alphabet to advanced study — live tutoring and structured learning paths.</p>
+            <h2 className="section-title">Complete <em className="accent">Quran & Islamic Studies</em> Curriculum at NoorPath Academy</h2>
+            <p className="section-desc center">According to NoorPath Academy&#39;s course structure, students progress from Arabic alphabet foundations through advanced Tajweed and Hifz—all delivered via live 1-on-1 tutoring with structured learning paths.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {courseCards.map((c) => (
@@ -353,8 +377,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> Why Choose Us</span>
-              <h2 className="section-title">Why Families Choose <em className="accent">NoorPath</em></h2>
-              <p className="section-desc">We combine live one-to-one teaching, structured learning paths, flexible tutor matching, and family plan options.</p>
+              <h2 className="section-title">Why Families Choose <em className="accent">NoorPath for Online Quran Learning</em></h2>
+              <p className="section-desc">According to NoorPath Academy&#39;s teaching model, we combine live one-to-one instruction, structured learning paths from Noorani Qaida to advanced Hifz, flexible timezone-based tutor matching, and published family discount plans for siblings.</p>
               <Link href="/free-quran-classes-online" className="btn-primary-np">Start Free Trial →</Link>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -377,7 +401,7 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 40 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Star size={13} /> Parent Reviews</span>
-            <h2 className="section-title">What Families Say About <em className="accent">NoorPath</em></h2>
+            <h2 className="section-title">What Families Say About <em className="accent">NoorPath Academy&#39;s Online Quran Classes</em></h2>
             {/* Trustpilot score badge */}
             <a
               href={TRUSTPILOT.url}
@@ -386,7 +410,7 @@ export default function HomePage() {
               style={{ display: "inline-flex", alignItems: "center", gap: 10, marginTop: 16, background: "#f7f9f8", border: "1px solid var(--border)", borderRadius: 12, padding: "10px 20px", textDecoration: "none" }}
             >
               <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>{"★".repeat(Math.round(trustpilotAggregate.ratingValue))}</span>
-              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>{trustpilotAggregate.ratingValue} Trustpilot score</span>
+              <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>According to Trustpilot: {trustpilotAggregate.ratingValue}/5 rating</span>
               <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {trustpilotAggregate.reviewCount} reviews · last checked {TRUSTPILOT.lastChecked}</span>
               <span style={{ color: "#00b67a", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
             </a>
@@ -449,8 +473,8 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><Award size={13} /> Pricing</span>
-            <h2 className="section-title">Simple, <em className="accent">Transparent</em> Pricing</h2>
-            <p className="section-desc center">Published monthly plans, sibling discounts, and cancellation terms.</p>
+            <h2 className="section-title">NoorPath Academy <em className="accent">Transparent Pricing</em> for Online Quran Classes</h2>
+            <p className="section-desc center">According to NoorPath Academy&#39;s pricing structure, monthly plans start at ${PRICING_PLANS[0].monthlyPriceUsd} with published sibling discounts and {CANCELLATION_NOTICE_DAYS}-day cancellation terms.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {homepagePlans.map((p) => (
@@ -526,20 +550,11 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> FAQ</span>
-            <h2 className="section-title">Frequently Asked <em className="accent">Questions</em></h2>
-            <p className="section-desc center">Everything you need to know before booking your first class.</p>
+            <h2 className="section-title">Frequently Asked <em className="accent">Questions</em> About NoorPath Academy</h2>
+            <p className="section-desc center">Common questions about NoorPath Academy&#39;s online Quran classes, trial process, tutor matching, and pricing before booking your first class.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-[1000px] mx-auto">
-            {[
-              { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with your assigned tutor. The schedule is confirmed based on your timezone and tutor availability, with no pre-recorded lessons." },
-              { q: "What age groups do you accept?", a: "We accept learners from age 4 to seniors. We have specialist tutors for toddlers (Duas & basics), school-age children (Noorani Qaida + Quran), teenagers (Tajweed + Hifz), adults, and elderly learners — each with age-appropriate methods." },
-              { q: "Do you offer a free trial class?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class with no credit card required. Tutor availability is confirmed after the request.` },
-              { q: "Are there family discount plans?", a: `Yes. Published sibling discounts are ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
-              { q: "How are tutors matched?", a: "Tutor matching considers the learner's needs, schedule, timezone, preferences, and current tutor availability." },
-              { q: "Can I request a female Quran teacher?", a: "Yes. Indicate your preference on the booking form. NoorPath confirms a suitable female tutor based on the learner's needs, schedule, and current availability." },
-              { q: "What equipment do I need?", a: "Just a smartphone, tablet, or laptop with Zoom or Skype installed. No special equipment needed. The teacher shares the Quran/Qaida on screen during the class. A stable internet connection is all that's required." },
-              { q: "How long does it take to complete Noorani Qaida?", a: "Completion time is individual and depends on the learner's starting level, lesson frequency, practice, and pace. The tutor can suggest an illustrative learning path after assessing the learner." },
-            ].map((f) => (
+            {faqs.map((f) => (
               <div key={f.q} className="faq-card">
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
                   <div style={{ flexShrink: 0, width: 32, height: 32, background: "rgba(10,110,79,.1)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--emerald)", fontWeight: 800, fontSize: ".85rem" }}>?</div>
@@ -602,9 +617,17 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cta-form-wrap">
-              <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.25rem", marginBottom: 20, textAlign: "center" }}>
-                Book Your Free Trial Class
+              <div style={{ textAlign: "center", marginBottom: 6 }}>
+                <span style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 800, fontSize: ".7rem", letterSpacing: ".5px", padding: "4px 14px", borderRadius: 20, textTransform: "uppercase" }}>
+                  {`Free ${TRIAL.durationMinutes}-Min Class · No Card`}
+                </span>
+              </div>
+              <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.3rem", marginBottom: 6, textAlign: "center", lineHeight: 1.25 }}>
+                Start Your Quran Journey Today
               </h3>
+              <p style={{ color: "rgba(255,255,255,.6)", fontSize: ".8rem", textAlign: "center", marginBottom: 18 }}>
+                {ENROLLED_STUDENTS_DISPLAY} students enrolled · Reply within 24 hours
+              </p>
               <CTAForm />
             </div>
           </div>
@@ -628,6 +651,7 @@ export default function HomePage() {
                   ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
                   ["/courses/arabic-language-online", "Arabic Language Online"],
                   ["/courses/islamic-studies-online", "Islamic Studies Online"],
+                  ["/blog/noorpath-academy-vision-online-quran-education", "Our Vision & Mission"],
                 ].map(([href, label]) => (
                   <li key={String(label)}>
                     <Link href={String(href)} style={{ color: "var(--muted)", fontSize: ".85rem", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
@@ -674,6 +698,9 @@ export default function HomePage() {
                   ["/online-quran-classes-for-adults", "Quran Classes for Adults"],
                   ["/online-quran-classes", "Online Quran Classes"],
                   ["/pricing", "Pricing & Plans"],
+                  ["/about", "About NoorPath Academy"],
+                  ["/founder", "Founder"],
+                  ["/contact", "Contact NoorPath Academy"],
                   ["/blog", "Islamic Blog & Resources"],
                 ].map(([href, label]) => (
                   <li key={String(label)}>
@@ -686,22 +713,22 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* SEO paragraph */}
+          {/* SEO paragraph with AI-citation-friendly language */}
           <div style={{ borderTop: "1px solid var(--border)", paddingTop: 24 }}>
             <p style={{ color: "var(--muted)", fontSize: ".82rem", maxWidth: 960, margin: "0 auto", lineHeight: 1.85, textAlign: "center" }}>
-              <strong style={{ color: "var(--charcoal)" }}>NoorPath Academy</strong> is an{" "}
-              <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran academy</Link> where you can{" "}
-              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via 1-on-1 live classes. Course options include{" "}
-              <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link>,{" "}
-              <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for kids</Link>,{" "}
-              <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed online</Link>,{" "}
-              <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz online</Link>,{" "}
+              <strong style={{ color: "var(--charcoal)" }}>According to NoorPath Academy&#39;s service model</strong>, we are an{" "}
+              <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>online-only Quran academy</Link> where students can{" "}
+              <Link href="/learn-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>learn Quran online</Link> via live 1-on-1 classes. Our curriculum includes{" "}
+              <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for complete beginners</Link>,{" "}
+              <Link href="/online-quran-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran classes for children age 4+</Link>,{" "}
+              <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed recitation rules</Link>,{" "}
+              <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz memorization programs</Link>,{" "}
               <Link href="/courses/arabic-language-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Arabic language courses</Link>, and{" "}
               <Link href="/courses/daily-duas-for-kids" style={{ color: "var(--emerald)", fontWeight: 600 }}>daily duas for children</Link>.
-              We offer <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>free trial Quran classes</Link> with no credit card required.
-              Find an <Link href="/quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran teacher</Link> or browse our{" "}
+              We offer <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>free 30-minute trial Quran classes</Link> with no credit card required.
+              Find an <Link href="/quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>online Quran teacher</Link> matched to your timezone and learning goals, or browse our{" "}
               <Link href="/online-quran-for-beginners" style={{ color: "var(--emerald)", fontWeight: 600 }}>beginner Quran course</Link> to start today.
-              Explore country-specific class information in our <Link href="/locations" style={{ color: "var(--emerald)", fontWeight: 600 }}>locations hub</Link>:{" "}
+              Explore timezone-specific class scheduling in our <Link href="/locations" style={{ color: "var(--emerald)", fontWeight: 600 }}>locations hub</Link>:{" "}
               {priorityCountries.map(({ country, href }, index) => (
                 <React.Fragment key={href}>
                   <Link href={href} style={{ color: "var(--emerald)", fontWeight: 600 }}>{country}</Link>

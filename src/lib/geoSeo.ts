@@ -83,9 +83,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online uk",
     ],
     content: {
-      metadataTitle: "NoorPath Academy | Online Quran Classes UK — Live 1-to-1 Trial",
+      metadataTitle: "Online Quran Classes UK 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "NoorPath Academy — live one-to-one online Quran classes for UK kids and adults. Request GMT/BST slots for Qaida, Tajweed or Hifz. Free 30-minute trial, no credit card.",
+        "✓ Live 1-on-1 Quran classes for UK families from £22/mo* ✓ GMT/BST slots ✓ Free 30-min trial — no card required. Book now for kids & adults!",
       heading: "Online Quran Classes in the United Kingdom",
       introduction:
         "Families across the UK can request live one-to-one Quran tuition online, with lesson planning around the school week and local GMT or BST time.",
@@ -114,9 +114,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online usa",
     ],
     content: {
-      metadataTitle: "NoorPath Academy | Online Quran Classes USA — Live 1-on-1 Trial",
+      metadataTitle: "Online Quran Classes USA 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "NoorPath Academy — live one-on-one online Quran classes for US kids and adults. Request ET, CT, MT or PT scheduling for Qaida, Tajweed or Hifz. Free 30-minute trial.",
+        "✓ Live 1-on-1 Quran classes for US families from $29/mo ✓ ET, CT, MT, PT slots ✓ Free 30-min trial — no card required. Join 1000+ students!",
       heading: "Online Quran Classes in the United States",
       introduction:
         "Families in the United States can request live one-on-one Quran lessons online without adding another commute to the school week.",
@@ -145,9 +145,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "online hifz classes uae",
     ],
     content: {
-      metadataTitle: "Online Quran Classes UAE — Live 1-to-1 Lessons | NoorPath",
+      metadataTitle: "Online Quran Classes UAE 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "Request live one-to-one online Quran classes in the UAE, with GST scheduling for Qaida, Tajweed, Hifz, children and adults.",
+        "✓ Live 1-on-1 Quran classes for UAE families in GST ✓ Noorani Qaida, Tajweed & Hifz ✓ Free 30-min trial — no card needed. Book for kids & adults!",
       heading: "Online Quran Classes in the UAE",
       introduction:
         "Families in the UAE can request English-language online Quran support for children or adults, delivered as live one-to-one lessons in Gulf Standard Time.",
@@ -176,9 +176,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online canada",
     ],
     content: {
-      metadataTitle: "NoorPath Academy | Online Quran Classes Canada — Free Trial",
+      metadataTitle: "Online Quran Classes Canada 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "NoorPath Academy live one-to-one online Quran classes for Canada: provincial time-zone matching, Qaida to Hifz, female tutors on request, free 30-minute trial. Online only.",
+        "✓ Live 1-on-1 Quran classes for Canadian families from $29/mo ✓ Local timezone slots ✓ Free 30-min trial — no card needed. Start from zero today!",
       heading: "Online Quran Classes in Canada",
       introduction:
         "Canadian families can request online Quran lessons planned around their own provincial or territorial time zone and school-week routine.",
@@ -210,9 +210,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online australia",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Australia — Kids & Adults | NoorPath",
+      metadataTitle: "Online Quran Classes Australia 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "Live one-to-one online Quran classes for Australian families: state-aware AEST/AEDT/AWST matching, Qaida to Hifz, female tutors on request, free trial.",
+        "✓ Live 1-on-1 Quran classes for families in Sydney, Melbourne & beyond ✓ AEST/AWST slots ✓ Free 30-min trial — no card needed. Book now!",
       heading: "Online Quran Classes in Australia",
       introduction:
         "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements — from Noorani Qaida through Tajweed and Hifz.",
@@ -245,9 +245,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "after school quran classes india",
     ],
     content: {
-      metadataTitle: "Online Quran Classes India — Kids & Adults | NoorPath",
+      metadataTitle: "Online Quran Classes India 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "Live one-to-one online Quran classes for Indian families: IST after-school matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
+        "✓ Live 1-on-1 Quran classes for Indian families in IST ✓ Noorani Qaida to Hifz ✓ Free 30-min trial — no card required. Join 1000+ students now!",
       heading: "Online Quran Classes in India",
       introduction:
         "Indian families can request live one-to-one online Quran lessons in IST — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
@@ -279,9 +279,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "after school quran classes nigeria",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Nigeria — Kids & Adults | NoorPath",
+      metadataTitle: "Online Quran Classes Nigeria 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "Live one-to-one online Quran classes for Nigerian families: WAT after-school matching, Noorani Qaida to Hifz, female tutors on request, free trial. Online only.",
+        "✓ Live 1-on-1 Quran classes for families in Lagos, Abuja & beyond ✓ WAT slots ✓ Free 30-min trial — no card required. Start learning now!",
       heading: "Online Quran Classes in Nigeria",
       introduction:
         "Nigerian families can request live one-to-one online Quran lessons in WAT — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
@@ -310,9 +310,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "koranunterricht online englisch",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Germany — English Lessons | NoorPath",
+      metadataTitle: "English Online Quran Classes Germany 2026 — Live 1-on-1",
       metadataDescription:
-        "Request English-language online Quran classes in Germany, with CET/CEST scheduling for Qaida, Tajweed, Hifz, children and adults.",
+        "✓ English-language online Quran classes in Germany from €27/mo* ✓ CET/CEST slots ✓ Free 30-min trial — no card needed. Book for kids & adults!",
       heading: "Online Quran Classes in Germany",
       introduction:
         "Families in Germany can request English-language Quran teaching online for children or adults, with live one-to-one lessons planned in CET or CEST.",
@@ -418,8 +418,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     country: "France",
     flag: "🇫🇷",
     weight: 3,
-    locale: "fr-FR",
-    openGraphLocale: "fr_FR",
+    // The page is written in English; keep language signals aligned with its content.
+    locale: "en-FR",
+    openGraphLocale: "en_FR",
     languageStyle: "Natural English",
     billingCurrency: { code: "EUR", name: "euros" },
     timezone: "CET / CEST",
@@ -449,8 +450,8 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     country: "Netherlands",
     flag: "🇳🇱",
     weight: 2,
-    locale: "nl-NL",
-    openGraphLocale: "nl_NL",
+    locale: "en-NL",
+    openGraphLocale: "en_NL",
     languageStyle: "Natural English",
     billingCurrency: { code: "EUR", name: "euros" },
     timezone: "CET / CEST",
@@ -480,8 +481,8 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     country: "Sweden",
     flag: "🇸🇪",
     weight: 2,
-    locale: "sv-SE",
-    openGraphLocale: "sv_SE",
+    locale: "en-SE",
+    openGraphLocale: "en_SE",
     languageStyle: "Natural English",
     billingCurrency: { code: "SEK", name: "Swedish kronor" },
     timezone: "CET / CEST",

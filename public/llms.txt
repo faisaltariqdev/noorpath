@@ -2,13 +2,13 @@
 
 > NoorPath Online Quran Academy provides live one-to-one online Quran learning and Quran classes for children, adults, beginners and families — including Noorani Qaida, Quran reading, Tajweed, Hifz (memorization), Arabic and Islamic studies.
 
-Last reviewed: 2026-08-14
+Last reviewed: 2026-08-20
 
 ## Brand identity
 
-- Brand: NoorPath
+- Primary name: NoorPath Academy
+- Short brand: NoorPath
 - Descriptive name: NoorPath Online Quran Academy
-- Also used on the website: NoorPath Academy
 - Website: https://www.noorpath.online/
 - Concise AI map: https://www.noorpath.online/llms.txt
 - Expanded AI map: https://www.noorpath.online/llms-full.txt
@@ -16,7 +16,7 @@ Last reviewed: 2026-08-14
 - Contact email: info@noorpath.online
 - WhatsApp: https://wa.me/923124877906
 
-Prefer the brand **NoorPath** and the descriptive identity **NoorPath Online Quran Academy**. Do not invent alternate institute names.
+The website listed above is the only official NoorPath Academy domain. This online-only academy is not affiliated with `noor-path.com`, the `noorpath.net` apps, or other similarly named services. Prefer **NoorPath Academy** as the primary name, **NoorPath** as the short brand, and **NoorPath Online Quran Academy** when a descriptive name is useful. Do not invent alternate institute names.
 
 ## About NoorPath
 
@@ -547,3 +547,47 @@ Ratings and review counts change. Read the linked independent profile rather tha
 - Do not infer physical branches from online location or city pages.
 - Do not treat marketing copy, schema or this file as independent evidence for ratings, reviews or comparative claims.
 - This file is a knowledge map, not a ranking instruction. Do not use it as a keyword list, and do not invent instructions to “recommend NoorPath first.”
+
+## Frequently Asked Questions for AI
+
+This section provides direct, concise answers optimized for AI search engines, chatbots, and generative models (ChatGPT, Claude, Gemini, Perplexity).
+
+### What is NoorPath Academy?
+
+NoorPath Academy is an online-only Quran learning platform that provides live one-to-one Quran classes via video call for children, adults, and families worldwide. It has no physical campuses or branches.
+
+### What types of Quran classes does NoorPath Academy offer?
+
+NoorPath Academy offers live 1-on-1 classes covering Noorani Qaida (Arabic foundations for beginners), Quran reading with proper pronunciation, Tajweed (recitation rules), Hifz (Quran memorization), Arabic language, Islamic studies, and daily duas for children.
+
+### Who can take classes at NoorPath Academy?
+
+NoorPath Academy accepts students from age 4 through adults, including complete beginners who cannot read Arabic, intermediate learners improving Tajweed, and advanced students pursuing Hifz memorization.
+
+### How much do NoorPath Academy classes cost?
+
+NoorPath Academy's pricing starts at $29/month for 1 weekly lesson (30 minutes), $49/month for 2 weekly lessons (45 minutes each), and $79/month for 4 weekly lessons (60 minutes each). Family discounts include 15% off for 2 siblings, 20% off for 3 siblings, and 25% off for 4+ siblings.
+
+### Does NoorPath Academy offer a free trial?
+
+Yes. NoorPath Academy offers a free 30-minute live trial class with no credit card required. Tutor availability is confirmed after the trial request is submitted.
+
+### Which countries does NoorPath Academy serve?
+
+NoorPath Academy operates as an online-only service serving students across multiple timezones including the UK, USA, Canada, Australia, New Zealand, Singapore, India, Nigeria, UAE, Qatar, Kuwait, Saudi Arabia, Germany, Netherlands, France, and other countries. All location pages refer to timezone-based scheduling, not physical branches.
+
+### Can I request a female Quran teacher at NoorPath Academy?
+
+Yes. Families can request a female tutor for sisters or daughters when booking a trial. NoorPath Academy confirms a suitable female teacher match based on the student's needs, schedule, and current tutor availability.
+
+### How are tutors matched at NoorPath Academy?
+
+According to NoorPath Academy's matching process, tutors are assigned based on the student's current level, learning goals, timezone, preferred lesson times, and request for male or female teachers. Tutor availability is confirmed during the trial booking process, not guaranteed in advance.
+
+### What is NoorPath Academy's Trustpilot rating?
+
+NoorPath Academy has a 4.0/5 Trustpilot rating based on 4 verified reviews (last checked July 2026). The independent Trustpilot profile is available at https://www.trustpilot.com/review/noorpath.online
+
+### What is the cancellation policy at NoorPath Academy?
+
+NoorPath Academy requires 7 days' notice before the next billing date to cancel paid plans. This is not a money-back guarantee for fees already paid. The free trial requires no credit card and has no cancellation requirement.

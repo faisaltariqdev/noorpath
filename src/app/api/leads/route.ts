@@ -44,10 +44,69 @@ function isValidContact(contact: string): boolean {
   return digits.length >= 7 && digits.length <= 15;
 }
 
+type LeadEmail = {
+  name: string;
+  contact: string;
+  country: string;
+  learnerType: string;
+  learnerName: string;
+  learnerAge: string;
+  course: string;
+  preferredTime: string;
+  tutorPreference: string;
+  landingPage: string;
+  referrer: string;
+  formVariant: string;
+};
+
+async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured" | "failed"> {
+  const apiKey = process.env.RESEND_API_KEY || "";
+  const from = process.env.LEAD_FROM_EMAIL || "";
+  const to = process.env.LEAD_TO_EMAIL || "info@noorpath.online";
+  if (!apiKey || !from || !to) return "not_configured";
+
+  const text = [
+    "New NoorPath trial request",
+    "",
+    `Parent / contact name: ${lead.name}`,
+    `Contact: ${lead.contact}`,
+    `Country: ${lead.country}`,
+    `Learner type: ${lead.learnerType}`,
+    `Learner name: ${lead.learnerName}`,
+    `Learner age: ${lead.learnerAge}`,
+    `Course: ${lead.course || "Free trial class"}`,
+    `Preferred time: ${lead.preferredTime || "Not specified"}`,
+    `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
+    `Form: ${lead.formVariant}`,
+    `Landing page: ${lead.landingPage || "Not provided"}`,
+    `Referrer: ${lead.referrer || "Direct"}`,
+  ].join("\n");
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to: [to],
+        reply_to: lead.contact.includes("@") ? lead.contact : undefined,
+        subject: `Trial request — ${lead.country} — ${lead.name}`,
+        text,
+      }),
+      signal: AbortSignal.timeout(8_000),
+    });
+    return res.ok ? "sent" : "failed";
+  } catch {
+    return "failed";
+  }
+}
+
 /**
- * Validates trial leads + optional Intelligence CRM ingest.
- * Email delivery is done from the browser via FormSubmit (Cloudflare blocks
- * server-side posts from Vercel).
+ * Validates trial leads, sends an owned transactional notification when
+ * configured, and performs optional Intelligence CRM ingest.
  */
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
@@ -86,19 +145,40 @@ export async function POST(request: Request) {
 
   const { email, phone } = splitContact(contact);
   const country = String(body.country || "").trim();
+  const learnerType = String(body.learner_type || "").trim();
   const childName = String(body.child_name || "").trim();
   const childAge = String(body.child_age || "").trim();
   const course = String(body.course || "").trim();
   const preferredTime = String(body.preferred_class_time || body.preferred_time || "").trim();
+  const tutorPreference = String(body.tutor_preference || "").trim();
+  if (!country || !learnerType || !childName || !childAge) {
+    return NextResponse.json({ ok: false, error: "learner_details_required" }, { status: 400 });
+  }
   const formVariant = String(body.form_variant || "standard");
   const landingPage = String(body.source_page || body.landing_page || "").trim();
+  const referrer = String(body.referrer || "").trim();
   const source = String(body.utm_source || body.source || formVariant || "website");
   const medium = String(body.utm_medium || body.medium || "website");
   const campaign = String(body.utm_campaign || body.campaign || "").trim();
   const learnerNote =
     childName || childAge
-      ? `Child: ${childName || "n/a"}${childAge ? `, age ${childAge}` : ""}`
+      ? `Learner: ${childName || "n/a"}${childAge ? `, age ${childAge}` : ""} (${learnerType})`
       : "";
+
+  const emailDeliveryPromise = sendLeadEmail({
+    name,
+    contact,
+    country,
+    learnerType,
+    learnerName: childName,
+    learnerAge: childAge,
+    course,
+    preferredTime,
+    tutorPreference,
+    landingPage,
+    referrer,
+    formVariant,
+  });
 
   let intelligence = "skipped";
   const ingestUrl = process.env.INTELLIGENCE_INGEST_URL || "";
@@ -111,6 +191,7 @@ export async function POST(request: Request) {
           Authorization: `Bearer ${secret}`,
           "Content-Type": "application/json",
         },
+        signal: AbortSignal.timeout(5_000),
         body: JSON.stringify({
           parent_name: name,
           email: email || undefined,
@@ -118,7 +199,8 @@ export async function POST(request: Request) {
           country: country || undefined,
           child_name: childName || undefined,
           child_age: childAge || undefined,
-          quran_level: [course, learnerNote].filter(Boolean).join(" — ") || undefined,
+          quran_level:
+            [course, learnerNote, tutorPreference].filter(Boolean).join(" — ") || undefined,
           preferred_time: preferredTime || undefined,
           contact_method: email ? "email" : "whatsapp",
           consent_status: "granted",
@@ -138,9 +220,11 @@ export async function POST(request: Request) {
     }
   }
 
+  const emailDelivery = await emailDeliveryPromise;
   return NextResponse.json({
     ok: true,
-    formsubmit: "browser",
+    email_delivery: emailDelivery,
+    formsubmit_fallback_required: emailDelivery !== "sent",
     intelligence,
   });
 }

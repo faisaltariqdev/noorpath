@@ -3,9 +3,16 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * `autoPlay` forces a download no matter what `preload` says, so the source is
- * attached only once the element is near the viewport. The poster renders
- * immediately either way, so the section never looks empty.
+ * Lazy-loads both the video source AND starts with shouldLoad=false on both
+ * server and client to prevent a hydration mismatch.
+ *
+ * Previously, the initialiser `() => typeof IntersectionObserver === "undefined"`
+ * evaluated to `true` on the server (Node has no IntersectionObserver), so the
+ * SSR HTML included `src="..."` — causing every browser to immediately fetch the
+ * full MP4 (~2.3 MB) on page load before any interaction.
+ *
+ * Fix: always start false; set true inside useEffect (client-only).
+ * The poster PNG renders immediately so the section never looks empty.
  */
 export default function LazyPreviewVideo({
   src,
@@ -17,15 +24,18 @@ export default function LazyPreviewVideo({
   className?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
-  const [shouldLoad, setShouldLoad] = useState(
-    () => typeof IntersectionObserver === "undefined"
-  );
+  // Always false on first render (server + client) — no hydration mismatch.
+  const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    if (shouldLoad) return;
-
     const el = ref.current;
     if (!el) return;
+
+    // Fallback for environments without IntersectionObserver.
+    if (typeof IntersectionObserver === "undefined") {
+      setShouldLoad(true);
+      return;
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -39,7 +49,8 @@ export default function LazyPreviewVideo({
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [shouldLoad]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (!shouldLoad) return;

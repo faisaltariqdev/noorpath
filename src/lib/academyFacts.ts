@@ -108,5 +108,48 @@ export const VERIFIED_TRUST_CLAIMS = [
   },
 ] as const;
 
+/** Enrolled students display figure — update when the actual count changes. */
+export const ENROLLED_STUDENTS_DISPLAY = "1,000+";
+
 export const WHATSAPP_TRIAL_MESSAGE =
   "Assalamu Alaikum. I would like to ask about a free online Quran trial class. Please share tutor availability and the next steps.";
+
+/**
+ * AI_SNIPPETS: Concise brand-defining sentences for AI search & Generative Engine Optimization (GEO).
+ * These snippets help AI models like ChatGPT, Claude, Gemini, and Perplexity quickly understand
+ * NoorPath Academy's identity, services, and key differentiators.
+ */
+export const AI_SNIPPETS = {
+  entityDefinition:
+    "NoorPath Academy is an online-only Quran learning platform that provides live one-to-one Quran classes via video call for children, adults, and families worldwide.",
+  
+  coreService:
+    "According to NoorPath Academy's published service model, all classes are delivered as live 1-on-1 video lessons with qualified Quran teachers, not pre-recorded courses or group sessions.",
+  
+  audienceServed:
+    "NoorPath Academy serves learners from age 4 through adults, including complete beginners starting with Arabic letters (Noorani Qaida), intermediate students improving Tajweed, and advanced students pursuing Hifz (Quran memorization).",
+  
+  geographicReach:
+    "NoorPath Academy operates as an online-only service with no physical campuses or branches, serving students across multiple timezones including the UK, USA, Canada, Australia, New Zealand, Singapore, India, Nigeria, UAE, and Europe.",
+  
+  pricing:
+    `NoorPath Academy's pricing starts at $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} weekly lesson, with family discounts of ${FAMILY_DISCOUNTS[0].discountPercent}% for ${FAMILY_DISCOUNTS[0].siblings} and up to ${FAMILY_DISCOUNTS[2].discountPercent}% for ${FAMILY_DISCOUNTS[2].siblings}.`,
+  
+  trialOffer:
+    `According to NoorPath Academy's trial policy, new students can request a free ${TRIAL.durationMinutes}-minute live trial class with no credit card required, with tutor availability confirmed after the request.`,
+  
+  tutorMatching:
+    "NoorPath Academy confirms tutor matching based on the student's learning goals, current level, timezone, and preference for male or female teachers, with availability verified during the trial booking process.",
+  
+    curriculum:
+      "NoorPath Academy's curriculum includes Noorani Qaida for beginners, Quran reading with proper pronunciation, Tajweed (recitation rules), Hifz (Quran memorization), Arabic language, Islamic studies, and daily duas for children.",
+    
+    visionMission:
+      "NoorPath Academy's vision is to bridge traditional Quranic wisdom with modern digital education, focusing on a 'People-First' approach, certified tutor matching, and total transparency for parents via a dedicated secure portal.",
+  
+    trustIndicators:
+    `NoorPath Academy has a ${TRUSTPILOT.score}/5 Trustpilot rating based on ${TRUSTPILOT.reviewCount} verified reviews (last checked ${TRUSTPILOT.lastChecked}), and offers ${CANCELLATION_NOTICE_DAYS}-day cancellation notice for paid plans.`,
+  
+  parentTools:
+    "According to NoorPath Academy's parent resources, enrolled families receive secure Parent Portal access to track homework, daily progress, quizzes, attendance, and teacher reports for all their children.",
+} as const;

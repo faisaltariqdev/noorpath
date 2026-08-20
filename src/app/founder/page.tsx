@@ -109,27 +109,45 @@ export default function FounderPage() {
               <div className="content-card">
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.2rem", color: "var(--charcoal)", marginBottom: 16 }}>The Story Behind NoorPath</h3>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-                  Faisal Tariq is the Founder and CEO of NoorPath Academy. The official website is{" "}
-                  <a href="https://www.noorpath.online" style={{ color: "var(--emerald)", fontWeight: 600 }}>
-                    www.noorpath.online
-                  </a>
-                  . NoorPath provides live one-to-one online Quran learning for children, adults and families — online only, with no campus.
+                  Faisal Tariq is an <strong>Islamic Education Specialist</strong> and the Founder of NoorPath Academy. 
+                  With over <strong>8 years of experience</strong> in digital Islamic education, Faisal has dedicated 
+                  his career to making high-quality, authentic Quran learning accessible to Muslim families worldwide.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-                  NoorPath offers live one-to-one lessons and matches learners with tutors according to their learning goals, schedule and stated preferences.
+                  Under his leadership, NoorPath has grown into a trusted platform where students from the UK, USA, 
+                  Canada, and beyond connect with certified tutors. His approach focuses on <strong>"People-First Content"</strong> 
+                  and pedagogical excellence, ensuring that every learner — from a 4-year-old child starting 
+                  Noorani Qaida to an adult returning to the Quran — receives personalized, effective instruction.
                 </p>
                 <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 24 }}>
-                  Available learning routes include Noorani Qaida, Quran reading, Tajweed, Hifz, Arabic and Islamic studies. Tutor details and availability are confirmed during the enquiry and enrolment process.
+                  NoorPath provides live one-to-one online Quran learning through a model that emphasizes 
+                  safety, progress tracking via a dedicated Parent Portal, and a curriculum rooted in authentic 
+                  Islamic principles.
                 </p>
+
+                <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.1rem", color: "var(--charcoal)", marginBottom: 12 }}>Expertise & Leadership</h3>
+                <ul style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 24, paddingLeft: 20 }}>
+                  <li>Curriculum Development for Noorani Qaida & Tajweed</li>
+                  <li>Islamic Education Pedagogy for Children & Teenagers</li>
+                  <li>Digital Transformation of Traditional Islamic Learning</li>
+                  <li>Safeguarding & Quality Assurance in Online Tutoring</li>
+                </ul>
 
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.1rem", color: "var(--charcoal)", marginBottom: 12 }}>Learn More</h3>
                 <div style={{ background: "rgba(10,110,79,.06)", border: "1px solid rgba(10,110,79,.15)", borderRadius: 12, padding: 20 }}>
                   <p style={{ color: "var(--emerald)", margin: 0, lineHeight: 1.75, fontFamily: "'Playfair Display',serif", fontSize: "1.05rem" }}>
                     Read about NoorPath&apos;s services, tutor matching and approach on the{" "}
-                    <Link href="/about" style={{ color: "var(--emerald)", fontWeight: 700 }}>
-                      About page
-                    </Link>
-                    .
+                  <Link href="/founder" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                    About page
+                  </Link>
+                  . Read our new article on the{" "}
+                  <Link href="/blog/noorpath-academy-vision-online-quran-education" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                    Vision for Modern Online Quran Education
+                  </Link>{" "}
+                  to learn about our mission. For content standards and accuracy, please see our{" "}
+                  <Link href="/editorial-policy" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                    Editorial Policy
+                  </Link>.
                   </p>
                 </div>
               </div>

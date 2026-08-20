@@ -265,7 +265,7 @@ export default function AboutPage() {
           </div>
 
           {/* CTA */}
-          <div className="np-inner-cta" style={{ background: "linear-gradient(135deg, var(--emerald-dk) 0%, var(--emerald) 100%)", borderRadius: 20, textAlign: "center", marginBottom: 48 }}>
+          <div className="np-inner-cta" style={{ background: "linear-gradient(135deg, var(--emerald-dk) 0%, var(--emerald) 100%)", borderRadius: 20, textAlign: "center", marginBottom: 32 }}>
             <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.8rem", marginBottom: 12 }}>
               Ready to Start Your <em style={{ color: "var(--gold-lt)" }}>Quran Journey?</em>
             </h2>
@@ -276,6 +276,12 @@ export default function AboutPage() {
               <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>Book Free Trial →</Link>
               <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Browse All Courses</Link>
             </div>
+          </div>
+
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <p style={{ color: "var(--muted)", fontSize: ".85rem" }}>
+              Read our <Link href="/editorial-policy" style={{ color: "var(--emerald)", fontWeight: 600 }}>Editorial Policy</Link> to learn about our content standards and accuracy.
+            </p>
           </div>
         </div>
       </section>
