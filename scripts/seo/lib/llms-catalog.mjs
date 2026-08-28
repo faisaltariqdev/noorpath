@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-08-14";
+export const REVIEWED = "2026-08-28";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -446,6 +446,9 @@ export const BLOG_CLUSTERS = [
       { slug: "sajdah-tilawat-dua-arabic-english", label: "Sajdah Tilawat dua" },
       { slug: "rabbana-atina-fid-dunya", label: "Rabbana Atina Fid Dunya" },
       { slug: "dua-for-forgiveness-istighfar", label: "Dua for forgiveness (Istighfar)" },
+      { slug: "sayyidul-istighfar-arabic-english", label: "Sayyidul Istighfar (Arabic & English)" },
+      { slug: "manzil-dua-protection-ruqyah", label: "Manzil dua for protection and ruqyah" },
+      { slug: "ayat-al-shifa-quranic-verses-of-healing", label: "Ayat al-Shifa (verses of healing)" },
       { slug: "labbaik-allahumma-labbaik", label: "Labbaik Allahumma Labbaik" },
       { slug: "safar-ki-dua-travel-dua-arabic-english", label: "Safar ki dua (travel dua)" },
     ],

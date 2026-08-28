@@ -68,6 +68,9 @@ const HIGH_TRAFFIC_BLOG_SLUGS = new Set([
   "la-hawla-wa-la-quwwata-illallah-meaning",
   "dua-for-hajat-arabic-english",
   "istikhara-for-marriage-step-by-step",
+  "sayyidul-istighfar-arabic-english",
+  "manzil-dua-protection-ruqyah",
+  "ayat-al-shifa-quranic-verses-of-healing",
 ]);
 
 /** Commercial blogs that drive student enrollment */

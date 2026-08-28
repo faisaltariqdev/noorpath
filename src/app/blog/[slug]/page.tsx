@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts, getBlogPost } from "@/data/blog";
 import { blogContent } from "@/data/blogContent";
 import { backlinkAssetContent } from "@/data/backlinkAssetContent";
@@ -314,6 +315,24 @@ export default async function BlogPostPage({ params }: Props) {
             {/* ── Main content ─────────────────────────────────── */}
             <div className="lg:col-span-2">
               <div className="px-4 py-7 sm:px-8 sm:py-9" style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 20 }}>
+
+                {post.coverImage && (
+                  <Image
+                    src={post.coverImage}
+                    alt={post.title}
+                    width={1200}
+                    height={675}
+                    priority
+                    sizes="(max-width: 900px) 100vw, 760px"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      borderRadius: 14,
+                      marginBottom: 28,
+                      objectFit: "cover",
+                    }}
+                  />
+                )}
 
                 {headings.length > 2 && (
                   <nav

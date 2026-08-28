@@ -41,6 +41,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Sayyidul Istighfar is the 'master of seeking forgiveness' — a short, complete dua from Sahih al-Bukhari. Here is the full Arabic, transliteration, English meaning, its authentic virtue, and how to make it a daily morning and evening habit.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+    coverImage: "/marketing/sayyidul-istighfar-cover.jpg",
   },
   {
     slug: "manzil-dua-protection-ruqyah",
@@ -58,6 +59,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "The Manzil is a well-known collection of 33 verses from the Quran, recited for protection and ruqyah. This guide explains what it is, the verses it contains, how and when to recite it, and the right belief to hold while using the Quran for protection.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+    coverImage: "/marketing/manzil-dua-cover.jpg",
   },
   {
     slug: "ayat-al-shifa-quranic-verses-of-healing",
@@ -75,6 +77,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Ayat al-Shifa are six verses of the Quran in which Allah mentions healing (shifa). Here are all six with Arabic, transliteration and English meaning, guidance on reciting them for healing, and the correct belief that the true Healer is Allah.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+    coverImage: "/marketing/ayat-al-shifa-cover.jpg",
   },
   {
     slug: "noorpath-academy-vision-online-quran-education",
