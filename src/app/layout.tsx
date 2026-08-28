@@ -116,6 +116,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <meta name="msapplication-TileColor" content="#0a6e4f" />
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6872180310891209"
+          crossOrigin="anonymous"
+        />
         {/* AI / LLM knowledge maps — discoverable alongside sitemap */}
         <link rel="alternate" type="text/plain" title="llms.txt" href="https://www.noorpath.online/llms.txt" />
         <link rel="alternate" type="text/plain" title="llms-full.txt" href="https://www.noorpath.online/llms-full.txt" />
