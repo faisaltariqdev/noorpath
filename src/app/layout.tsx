@@ -119,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google AdSense */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6872180310891209"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6672180310891209"
           crossOrigin="anonymous"
         />
         {/* AI / LLM knowledge maps — discoverable alongside sitemap */}
