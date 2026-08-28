@@ -9,6 +9,7 @@ import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { faqPageJsonLdFromHtml } from "@/lib/faqFromHtml";
 import { splitArticleHtml } from "@/lib/splitArticleHtml";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
+import AdUnit from "@/components/AdUnit";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
 function extractHeadings(html: string): { id: string; text: string }[] {
@@ -487,6 +488,8 @@ export default async function BlogPostPage({ params }: Props) {
                       className="article-body"
                       dangerouslySetInnerHTML={{ __html: articleParts.before }}
                     />
+                    {/* In-article ad — blog pages only */}
+                    <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_TOP} />
                     {articleParts.after ? (
                       <InlineTrialCTA
                         placement="mid-article"
@@ -583,6 +586,9 @@ export default async function BlogPostPage({ params }: Props) {
                     </p>
                   </div>
                 </div>
+
+                {/* End-of-article ad — blog pages only */}
+                <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM} />
 
                 <InlineTrialCTA
                   placement="end-article"

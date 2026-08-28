@@ -25,6 +25,58 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "sayyidul-istighfar-arabic-english",
+    title: "Sayyidul Istighfar — Arabic, Transliteration, English & Virtue",
+    description:
+      "Sayyidul Istighfar, the master dua of seeking forgiveness from Sahih al-Bukhari — full Arabic, easy transliteration, English meaning, its authentic reward, and a simple daily routine.",
+    category: "Dhikr & Duas",
+    date: "2026-08-28",
+    readTime: "9 min",
+    keywords: [
+      "sayyidul istighfar", "sayyidul istighfar arabic", "sayyidul istighfar english",
+      "master of seeking forgiveness", "best istighfar dua", "sayyid ul istighfar transliteration",
+      "sayyidul istighfar benefits", "morning evening dua forgiveness", "allahumma anta rabbi",
+      "dua for forgiveness bukhari",
+    ],
+    excerpt:
+      "Sayyidul Istighfar is the 'master of seeking forgiveness' — a short, complete dua from Sahih al-Bukhari. Here is the full Arabic, transliteration, English meaning, its authentic virtue, and how to make it a daily morning and evening habit.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "manzil-dua-protection-ruqyah",
+    title: "Manzil Dua — Quranic Verses for Protection & Ruqyah",
+    description:
+      "The Manzil is a compilation of 33 Quranic verses for protection and ruqyah. Learn which verses it contains, how and when to recite it, and the correct belief while seeking protection through the Quran.",
+    category: "Dhikr & Duas",
+    date: "2026-08-28",
+    readTime: "10 min",
+    keywords: [
+      "manzil dua", "manzil", "manzil dua for protection", "manzil ruqyah",
+      "quran verses for protection", "protection from evil eye quran", "manzil verses list",
+      "ruqyah verses", "ayatul kursi protection", "dua for protection from harm",
+    ],
+    excerpt:
+      "The Manzil is a well-known collection of 33 verses from the Quran, recited for protection and ruqyah. This guide explains what it is, the verses it contains, how and when to recite it, and the right belief to hold while using the Quran for protection.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "ayat-al-shifa-quranic-verses-of-healing",
+    title: "Ayat al-Shifa — 6 Quranic Verses of Healing (Arabic & English)",
+    description:
+      "Ayat al-Shifa are the six verses of the Quran that mention healing. Read all six with Arabic, transliteration and English meaning, how to recite them for healing, and the correct belief while seeking cure.",
+    category: "Dhikr & Duas",
+    date: "2026-08-28",
+    readTime: "9 min",
+    keywords: [
+      "ayat al shifa", "ayat e shifa", "verses of healing quran", "quran verses for healing",
+      "ayat shifa arabic english", "shifa verses", "dua for healing quran",
+      "ruqyah for sickness", "quran healing verses", "six healing verses quran",
+    ],
+    excerpt:
+      "Ayat al-Shifa are six verses of the Quran in which Allah mentions healing (shifa). Here are all six with Arabic, transliteration and English meaning, guidance on reciting them for healing, and the correct belief that the true Healer is Allah.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
     slug: "noorpath-academy-vision-online-quran-education",
     title: "NoorPath Academy — The Vision for Modern Online Quran Education",
     description: "✓ Learn about NoorPath Academy's mission, certified tutors, and People-First approach ✓ Online Quran classes for kids & adults ✓ Free 30-min trial, no card.",
