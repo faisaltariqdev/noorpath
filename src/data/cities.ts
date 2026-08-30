@@ -345,7 +345,7 @@ export const cities: City[] = [
     flag: "🇳🇬",
     timezone: "WAT (UTC+1)",
     localContext:
-      "Lagos families can request live one-to-one online Qaida, Tajweed or Hifz from home when school, traffic and shared devices leave little room for another commute. After-school and weekend WAT preferences are confirmed after tutor matching. Share realistic power/internet notes when booking. NoorPath teaches online only (no Lagos campus).",
+      "Lagos families in Lekki, Victoria Island, Ikoyi, Ikeja GRA and across the metro can request live one-to-one online Qaida, Tajweed or Hifz from home when school, traffic and shared devices leave little room for another commute. After-school and weekend WAT preferences are confirmed after tutor matching. Share realistic power/internet notes when booking. NoorPath teaches online only (no Lagos campus).",
     keywords: [
       "online quran classes lagos",
       "quran teacher lagos",
@@ -353,6 +353,9 @@ export const cities: City[] = [
       "female quran teacher lagos",
       "noorani qaida online lagos",
       "after school quran classes lagos",
+      "online quran classes lekki",
+      "quran teacher victoria island",
+      "online quran classes ikeja",
     ],
   },
   {
@@ -363,13 +366,52 @@ export const cities: City[] = [
     flag: "🇳🇬",
     timezone: "WAT (UTC+1)",
     localContext:
-      "Abuja households can request online Quran lessons around school and work in WAT. Online delivery reduces travel across the capital region; recurring times are confirmed after tutor matching. NoorPath is online only — not an Abuja branch.",
+      "Abuja households in Maitama, Asokoro, Wuse 2, Gwarinpa and across the FCT can request online Quran lessons around school and work in WAT. Online delivery reduces travel across the capital region; recurring times are confirmed after tutor matching. NoorPath is online only — not an Abuja branch.",
     keywords: [
       "online quran classes abuja",
       "quran teacher abuja",
       "quran classes abuja",
       "female quran teacher abuja",
       "learn quran abuja online",
+      "online quran classes maitama",
+      "quran teacher asokoro",
+    ],
+  },
+  {
+    slug: "port-harcourt",
+    city: "Port Harcourt",
+    country: "Nigeria",
+    countrySlug: "online-quran-classes-nigeria",
+    flag: "🇳🇬",
+    timezone: "WAT (UTC+1)",
+    localContext:
+      "Port Harcourt families — including Old GRA and New GRA households — can request live one-to-one online Qaida, Tajweed or Hifz around WAT school and work hours. Shift-based schedules often fit weekend mornings better than rushed weekday evenings. Recurring times are confirmed after tutor matching. NoorPath teaches online only (no Port Harcourt campus).",
+    keywords: [
+      "online quran classes port harcourt",
+      "quran teacher port harcourt",
+      "quran classes port harcourt",
+      "female quran teacher port harcourt",
+      "online quran classes rivers state",
+      "noorani qaida online port harcourt",
+      "after school quran classes port harcourt",
+    ],
+  },
+  {
+    slug: "kano",
+    city: "Kano",
+    country: "Nigeria",
+    countrySlug: "online-quran-classes-nigeria",
+    flag: "🇳🇬",
+    timezone: "WAT (UTC+1)",
+    localContext:
+      "Kano families can request private one-to-one online Quran lessons in WAT when they want a female tutor, a fixed weekly slot, or extra correction alongside local study. Share school-finish and power/internet notes when booking. NoorPath is online only — not a Kano campus.",
+    keywords: [
+      "online quran classes kano",
+      "quran teacher kano",
+      "quran classes kano",
+      "female quran teacher kano",
+      "noorani qaida online kano",
+      "learn quran kano online",
     ],
   },
   // ── Pakistan ────────────────────────────────────────────────────

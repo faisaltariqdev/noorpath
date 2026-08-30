@@ -273,6 +273,8 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "female quran teacher nigeria",
       "online quran classes lagos",
       "online quran classes abuja",
+      "online quran classes port harcourt",
+      "online quran classes kano",
       "noorani qaida online nigeria",
       "online tajweed classes nigeria",
       "online hifz classes nigeria",
@@ -281,12 +283,12 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     content: {
       metadataTitle: "Online Quran Classes Nigeria 2026 — Live 1-on-1 | Free Trial",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for families in Lagos, Abuja & beyond ✓ WAT slots ✓ Free 30-min trial — no card required. Start learning now!",
+        "✓ Live 1-on-1 Quran classes for families in Lagos, Abuja, Port Harcourt & Kano ✓ WAT slots ✓ Free 30-min trial — no card required. Start learning now!",
       heading: "Online Quran Classes in Nigeria",
       introduction:
         "Nigerian families can request live one-to-one online Quran lessons in WAT — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
       localPlanning:
-        "Share your city (Lagos, Abuja, Kano, Ibadan, Kaduna, or elsewhere), school finish times, power/internet constraints, language preference, and any female-tutor request. Exact WAT slots are confirmed after matching.",
+        "Share your city (Lagos, Abuja, Port Harcourt, Kano, Ibadan, Kaduna, or elsewhere), school finish times, power/internet constraints, language preference, and any female-tutor request. Exact WAT slots are confirmed after matching.",
     },
   },
   {

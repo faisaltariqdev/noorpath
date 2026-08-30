@@ -249,6 +249,10 @@ export default function FemaleQuranTeacherPage() {
                 ["/online-quran-classes/bradford", "Bradford"],
                 ["/online-quran-classes/manchester", "Manchester"],
                 ["/locations/online-quran-classes-uk", "All UK"],
+                ["/online-quran-classes/lagos", "Lagos"],
+                ["/online-quran-classes/abuja", "Abuja"],
+                ["/online-quran-classes/port-harcourt", "Port Harcourt"],
+                ["/locations/online-quran-classes-nigeria", "All Nigeria"],
               ].map(([href, label]) => (
                 <Link key={href} href={href} style={{ fontSize: ".8rem", fontWeight: 600, color: "var(--emerald)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: 20, padding: "5px 12px", background: "#fff" }}>
                   {label}

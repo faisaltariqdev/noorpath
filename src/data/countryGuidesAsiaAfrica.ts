@@ -651,7 +651,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         directAnswer:
           "School-age children, sisters who prefer a female tutor, adult beginners, and households that want live remote tuition with a recurring WAT slot. NoorPath is an online academy — not a Nigerian mosque or campus branch.",
         paragraphs: [
-          "Nigeria has Africa’s largest Muslim population, with strong communities in Lagos, Kano, Ibadan, Abuja and Kaduna. Live one-to-one online classes can keep a fixed weekly appointment when travel, group size or timetable fit is difficult locally.",
+          "Nigeria has Africa’s largest Muslim population, with strong communities in Lagos, Abuja, Port Harcourt, Kano, Ibadan and Kaduna. Live one-to-one online classes can keep a fixed weekly appointment when travel, group size or timetable fit is difficult locally.",
           "Adult beginners and returning learners can start from letter recognition or fluent reading. Suitability still depends on attention, device access, power/internet reliability at the agreed hour, and a confirmed tutor match after a free trial.",
         ],
         bullets: [
@@ -760,9 +760,9 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
       },
       {
         id: "nigeria-cities",
-        heading: "How should Lagos, Abuja, Kano and other cities use this hub?",
+        heading: "How should Lagos, Abuja, Port Harcourt, Kano and other cities use this hub?",
         directAnswer:
-          "City names on this page describe household planning context for online lessons — not local campuses. Dedicated guides exist for Lagos and Abuja; Kano, Ibadan and Kaduna can still request the same remote service from this hub.",
+          "City names on this page describe household planning context for online lessons — not local campuses. Dedicated guides exist for Lagos, Abuja, Port Harcourt and Kano; Ibadan and Kaduna can still request the same remote service from this hub.",
         paragraphs: [
           "Large Nigerian cities often mean long school days and shared devices. Online one-to-one tuition can protect a short, regular lesson without adding travel — provided the household protects the slot and the connection at that hour.",
           "Name your city when booking so after-school timing and connectivity notes are clearer. Indexable city guides add local planning detail; they do not create a branch office.",
@@ -770,6 +770,8 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         relatedLinks: [
           { href: "/online-quran-classes/lagos", label: "Online Quran classes in Lagos" },
           { href: "/online-quran-classes/abuja", label: "Online Quran classes in Abuja" },
+          { href: "/online-quran-classes/port-harcourt", label: "Online Quran classes in Port Harcourt" },
+          { href: "/online-quran-classes/kano", label: "Online Quran classes in Kano" },
         ],
       },
       {
@@ -778,7 +780,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         directAnswer:
           "Note your city and preferred WAT window, request a free trial with no credit card, confirm the tutor match and recurring slot, then protect a short daily home echo between lessons.",
         paragraphs: [
-          "State Lagos, Abuja, Kano or another city clearly. Add female-tutor preference and realistic power/internet notes if needed. After matching, keep the first month focused on habit and placement quality rather than rushing into an overloaded plan.",
+          "State Lagos, Abuja, Port Harcourt, Kano or another city clearly. Add female-tutor preference and realistic power/internet notes if needed. After matching, keep the first month focused on habit and placement quality rather than rushing into an overloaded plan.",
         ],
         bullets: [
           "Share city, WAT window, learner level and tutor preference",

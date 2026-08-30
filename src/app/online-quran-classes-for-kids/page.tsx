@@ -179,7 +179,7 @@ const geoLocations = [
   { country: "🇨🇦 Canada", detail: "Share your Canadian timezone and preferred lesson windows." },
   { country: "🇦🇺 Australia", detail: "Share your AEST or AEDT lesson preferences." },
   { country: "🇦🇪 Gulf (UAE/KSA)", detail: "Share your GST or AST lesson preferences." },
-  { country: "🇩🇪 Europe", detail: "Share your European timezone and language preferences." },
+  { country: "🇳🇬 Nigeria", detail: "Share your WAT window — Lagos, Abuja, Port Harcourt or Kano." },
 ];
 
 export default function OnlineQuranClassesForKidsPage() {
@@ -505,6 +505,10 @@ export default function OnlineQuranClassesForKidsPage() {
                 ["/online-quran-classes/birmingham", "Kids Classes Birmingham"],
                 ["/online-quran-classes/bradford", "Kids Classes Bradford"],
                 ["/online-quran-classes/manchester", "Kids Classes Manchester"],
+                ["/locations/online-quran-classes-nigeria", "Quran Classes Nigeria"],
+                ["/online-quran-classes/lagos", "Kids Classes Lagos"],
+                ["/online-quran-classes/abuja", "Kids Classes Abuja"],
+                ["/online-quran-classes/port-harcourt", "Kids Classes Port Harcourt"],
                 ["/female-quran-teacher-online", "Female Teacher for Girls"],
               ].map(([href, label]) => (
                 <Link key={href} href={href} style={{

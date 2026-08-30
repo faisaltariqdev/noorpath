@@ -299,7 +299,7 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
   "online-quran-classes-nigeria": [
     {
       q: "Are online Quran classes suitable for Nigerian Muslim families?",
-      a: "Yes. Families in Lagos, Kano, Ibadan, Abuja and Kaduna can request live one-to-one online Quran lessons with WAT matching. NoorPath teaches online only (not a Nigerian campus). Suitability is confirmed through a free trial and tutor matching.",
+      a: "Yes. Families in Lagos, Abuja, Port Harcourt, Kano, Ibadan and Kaduna can request live one-to-one online Quran lessons with WAT matching. NoorPath teaches online only (not a Nigerian campus). Suitability is confirmed through a free trial and tutor matching.",
     },
     {
       q: "What WAT times work after school in Nigeria?",
