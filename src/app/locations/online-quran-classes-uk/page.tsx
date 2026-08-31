@@ -37,6 +37,17 @@ export const revalidate = false;
 
 const PAGE_URL = `${BASE_URL}/locations/online-quran-classes-uk`;
 
+/**
+ * Weekly live-lesson minutes as an ISO 8601 duration for CourseInstance.courseWorkload,
+ * which Google requires on hasCourseInstance for the Course info rich result.
+ */
+function toWeeklyWorkload(sessionsPerWeek: number, sessionMinutes: number): string {
+  const totalMinutes = sessionsPerWeek * sessionMinutes;
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  return `PT${hours > 0 ? `${hours}H` : ""}${minutes > 0 ? `${minutes}M` : ""}`;
+}
+
 export const metadata: Metadata = {
   title: {
     absolute: "NoorPath Academy | Online Quran Classes UK — Live 1-to-1 & Free Trial",
@@ -274,12 +285,104 @@ const jsonLd = {
       about: { "@id": `${PAGE_URL}#service` },
       inLanguage: "en-GB",
       breadcrumb: { "@id": `${PAGE_URL}#breadcrumb` },
+      mainEntity: { "@id": `${PAGE_URL}#course` },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["#uk-hero-title", "#uk-trial-steps-heading"],
+      },
       primaryImageOfPage: {
         "@type": "ImageObject",
         url: `${BASE_URL}/marketing/family-evening-quran.jpg`,
         width: 1024,
         height: 683,
       },
+    },
+    {
+      // Course info rich-result eligibility for the highest-weight market. Instances and
+      // offers stay derived from PRICING_PLANS so the SERP price never drifts from /pricing.
+      "@type": "Course",
+      "@id": `${PAGE_URL}#course`,
+      name: "Online Quran Classes UK",
+      description:
+        "Live one-to-one online Quran lessons for UK children and adults: Noorani Qaida for beginners, Quran reading, Tajweed, Hifz and Arabic, scheduled in GMT or BST with tutor matching confirmed after the request.",
+      url: PAGE_URL,
+      provider: ORGANIZATION_REF,
+      inLanguage: "en-GB",
+      courseMode: "online",
+      isAccessibleForFree: false,
+      teaches: [
+        "Noorani Qaida",
+        "Quran reading",
+        "Tajweed rules",
+        "Hifz (Quran memorisation)",
+        "Arabic language",
+      ],
+      audience: [
+        {
+          "@type": "PeopleAudience",
+          audienceType: "Children learning Quran online in the UK",
+        },
+        {
+          "@type": "PeopleAudience",
+          audienceType: "Adult Quran learners in the UK",
+        },
+      ],
+      hasCourseInstance: PRICING_PLANS.map((plan) => ({
+        "@type": "CourseInstance",
+        name: `${plan.name} — ${plan.sessionsPerWeek}x ${plan.sessionMinutes} min per week`,
+        description: plan.description,
+        courseMode: "online",
+        courseWorkload: toWeeklyWorkload(plan.sessionsPerWeek, plan.sessionMinutes),
+        instructor: ORGANIZATION_REF,
+        inLanguage: "en-GB",
+        location: { "@type": "VirtualLocation", url: PAGE_URL },
+        offers: {
+          "@type": "Offer",
+          price: String(plan.monthlyPriceUsd),
+          priceCurrency: "USD",
+          category: "Subscription",
+          url: `${BASE_URL}/pricing`,
+          availability: "https://schema.org/InStock",
+        },
+      })),
+      offers: [
+        {
+          "@type": "Offer",
+          name: `Free ${TRIAL.durationMinutes}-minute trial`,
+          price: String(TRIAL.price),
+          priceCurrency: TRIAL.priceCurrency,
+          category: "Free trial",
+          description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
+          url: `${PAGE_URL}#trial`,
+          availability: "https://schema.org/InStock",
+        },
+        ...PRICING_PLANS.map((plan) => ({
+          "@type": "Offer",
+          name: `${plan.name} plan`,
+          price: String(plan.monthlyPriceUsd),
+          priceCurrency: "USD",
+          category: "Subscription",
+          url: `${BASE_URL}/pricing`,
+          availability: "https://schema.org/InStock",
+        })),
+      ],
+    },
+    {
+      // Mirrors the visible "How UK online Quran classes begin" steps — keep the two in sync.
+      "@type": "HowTo",
+      "@id": `${PAGE_URL}#howto`,
+      name: "How to book a UK online Quran trial class",
+      description:
+        "Steps to request a live one-to-one online Quran trial for a learner in the United Kingdom, with GMT or BST scheduling confirmed after tutor matching.",
+      inLanguage: "en-GB",
+      totalTime: `PT${TRIAL.durationMinutes}M`,
+      step: processSteps.map((step, index) => ({
+        "@type": "HowToStep",
+        position: index + 1,
+        name: step.title,
+        text: step.description,
+        url: `${PAGE_URL}#uk-trial-steps`,
+      })),
     },
     {
       "@type": "Article",
@@ -409,7 +512,7 @@ export default function OnlineQuranClassesUkPage() {
               >
                 <span aria-hidden="true">🇬🇧</span> UK online Quran learning
               </span>
-              <h1>Online Quran Classes UK</h1>
+              <h1 id="uk-hero-title">Online Quran Classes UK</h1>
               <p style={{ maxWidth: 610, marginBottom: 24 }}>
                 Live one-to-one Quran lessons for children and adults across
                 the United Kingdom. Request Noorani Qaida, Quran reading,
@@ -744,11 +847,11 @@ export default function OnlineQuranClassesUkPage() {
         </div>
       </section>
 
-      <section>
+      <section id="uk-trial-steps">
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 42 }}>
             <span className="section-eyebrow">A transparent process</span>
-            <h2 className="section-title">
+            <h2 className="section-title" id="uk-trial-steps-heading">
               How UK online Quran classes <em className="accent">begin</em>
             </h2>
           </div>

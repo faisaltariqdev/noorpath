@@ -5,7 +5,7 @@ import { locations, getLocation } from "@/data/locations";
 import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { getCountryGuide } from "@/data/countryGuides";
-import { CONTACT, ENROLLED_STUDENTS_DISPLAY, FAMILY_DISCOUNTS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import { CONTACT, ENROLLED_STUDENTS_DISPLAY, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   getCountryHubHreflang,
@@ -32,6 +32,19 @@ function toIsoDateFromReviewed(reviewedDate: string): string {
   const parsed = Date.parse(reviewedDate);
   if (Number.isNaN(parsed)) return "2026-08-12";
   return new Date(parsed).toISOString().slice(0, 10);
+}
+
+/**
+ * Weekly live-lesson minutes as an ISO 8601 duration for CourseInstance.courseWorkload.
+ * Google requires courseWorkload (or courseSchedule) on hasCourseInstance for the
+ * Course info rich result, so this must stay derived from PRICING_PLANS rather than
+ * hardcoded — the published plans are the only truthful source for lesson time.
+ */
+function toWeeklyWorkload(sessionsPerWeek: number, sessionMinutes: number): string {
+  const totalMinutes = sessionsPerWeek * sessionMinutes;
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  return `PT${hours > 0 ? `${hours}H` : ""}${minutes > 0 ? `${minutes}M` : ""}`;
 }
 
 export const dynamicParams = false;
@@ -105,6 +118,7 @@ export default async function LocationDetailPage({ params }: Props) {
   const articleId = `${pageUrl}#guide`;
   const faqId = `${pageUrl}#faq`;
   const howToId = `${pageUrl}#howto`;
+  const courseId = `${pageUrl}#course`;
   const guideModified = countryGuide
     ? toIsoDateFromReviewed(countryGuide.reviewedDate)
     : undefined;
@@ -159,6 +173,70 @@ export default async function LocationDetailPage({ params }: Props) {
         },
       },
       {
+        // Page-level Course + hasCourseInstance makes each country hub eligible for
+        // Google's Course info rich result. The Service node above describes the
+        // offering; this node describes the teachable programme and its real price
+        // points, which is what the Course result surfaces.
+        "@type": "Course",
+        "@id": courseId,
+        name: `Online Quran Classes in ${loc.country}`,
+        description: `Live one-to-one online Quran lessons for learners in ${loc.country}: Noorani Qaida for beginners, Tajweed, Hifz and Arabic. Lessons run remotely in ${loc.timezone} with tutor matching confirmed after the request.`,
+        url: pageUrl,
+        provider: ORGANIZATION_REF,
+        inLanguage: locale,
+        courseMode: "online",
+        isAccessibleForFree: false,
+        teaches: [
+          "Noorani Qaida",
+          "Quran reading",
+          "Tajweed rules",
+          "Hifz (Quran memorisation)",
+          "Arabic language",
+        ],
+        audience: [
+          { "@type": "Audience", audienceType: "Parents" },
+          { "@type": "Audience", audienceType: "Adult learners" },
+        ],
+        hasCourseInstance: PRICING_PLANS.map((plan) => ({
+          "@type": "CourseInstance",
+          name: `${plan.name} — ${plan.sessionsPerWeek}x ${plan.sessionMinutes} min per week`,
+          description: plan.description,
+          courseMode: "online",
+          courseWorkload: toWeeklyWorkload(plan.sessionsPerWeek, plan.sessionMinutes),
+          instructor: ORGANIZATION_REF,
+          inLanguage: locale,
+          location: { "@type": "VirtualLocation", url: pageUrl },
+          offers: {
+            "@type": "Offer",
+            price: String(plan.monthlyPriceUsd),
+            priceCurrency: "USD",
+            category: "Subscription",
+            url: "https://www.noorpath.online/pricing",
+            availability: "https://schema.org/InStock",
+          },
+        })),
+        offers: [
+          {
+            "@type": "Offer",
+            name: `Free ${TRIAL.durationMinutes}-minute trial`,
+            price: String(TRIAL.price),
+            priceCurrency: TRIAL.priceCurrency,
+            category: "Free trial",
+            description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
+            availability: "https://schema.org/InStock",
+          },
+          ...PRICING_PLANS.map((plan) => ({
+            "@type": "Offer",
+            name: `${plan.name} plan`,
+            price: String(plan.monthlyPriceUsd),
+            priceCurrency: "USD",
+            category: "Subscription",
+            url: "https://www.noorpath.online/pricing",
+            availability: "https://schema.org/InStock",
+          })),
+        ],
+      },
+      {
         "@type": "WebPage",
         "@id": webPageId,
         name: priorityContent?.heading ?? `Online Quran Classes in ${loc.country}`,
@@ -166,6 +244,7 @@ export default async function LocationDetailPage({ params }: Props) {
         inLanguage: locale,
         isPartOf: { "@type": "WebSite", url: "https://www.noorpath.online" },
         about: { "@id": serviceId },
+        mainEntity: { "@id": courseId },
         speakable: {
           "@type": "SpeakableSpecification",
           cssSelector: speakableSelectors,
