@@ -1,0 +1,26 @@
+import type { Metadata } from "next";
+import KeywordLandingPage from "@/components/KeywordLandingPage";
+import { noMasjidNearby } from "@/lib/landingPageData";
+
+export const revalidate = false;
+
+const PATH = "/online-quran-classes-no-masjid-nearby";
+const { metaTitle, metaDescription, keywords, ...props } = noMasjidNearby;
+
+export const metadata: Metadata = {
+  title: { absolute: metaTitle },
+  description: metaDescription,
+  keywords,
+  alternates: { canonical: `https://www.noorpath.online${PATH}` },
+  openGraph: {
+    title: metaTitle,
+    description: metaDescription,
+    url: `https://www.noorpath.online${PATH}`,
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: metaTitle }],
+  },
+  twitter: { card: "summary_large_image", title: metaTitle, description: metaDescription, images: ["/og-image.png"] },
+};
+
+export default function NoMasjidNearbyPage() {
+  return <KeywordLandingPage canonicalPath={PATH} {...props} />;
+}

@@ -704,6 +704,7 @@ export default function HomePage() {
                   ["/online-quran-academy", "Online Quran Academy"],
                   ["/quran-lesson-online", "Quran Lesson Online"],
                   ["/studying-quran-online", "Studying Quran Online"],
+                  ["/online-quran-classes-no-masjid-nearby", "No Masjid Nearby? Learn Online"],
                   ["/pricing", "Pricing & Plans"],
                   ["/about", "About NoorPath Academy"],
                   ["/founder", "Founder"],

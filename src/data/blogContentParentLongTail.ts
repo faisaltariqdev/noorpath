@@ -2756,7 +2756,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
     content: `<p>Searching <strong>how to teach Quran when there's no mosque nearby</strong> usually means your family is not rejecting community — the nearest mosque, weekend madrasah, or reliable local teacher is simply too far, too full, or not available for your child’s age. Distance does not cancel the duty to learn. It does require a clearer home plan than families who can drive ten minutes to a weekly class.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Build a short daily home routine (letters or short surah review), use honest free recognition tools such as the <a href="/noorani-qaida">Interactive Noorani Qaida</a> hub, and add a live online tutor when sounds need correction. Mosque visits remain valuable when possible — online learning fills the week between them, not a permanent substitute for ummah life.
+            <strong>Quick answer:</strong> Build a short daily home routine (letters or short surah review), use honest free recognition tools such as the <a href="/noorani-qaida">Interactive Noorani Qaida</a> hub, and add <a href="/online-quran-classes-no-masjid-nearby">live online Quran classes for families with no masjid nearby</a> when sounds need correction. Mosque visits remain valuable when possible — online learning fills the week between them, not a permanent substitute for ummah life.
           </div>
 
           <h2 id="diagnose">First diagnose the real gap</h2>

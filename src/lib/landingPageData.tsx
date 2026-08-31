@@ -1,4 +1,4 @@
-import { Award, BookOpen, CheckCircle, Clock, Music, Brain, Users, Video, Shield } from "lucide-react";
+import { Award, BookOpen, CheckCircle, Clock, Home, Music, Brain, Users, Video, Shield } from "lucide-react";
 import type { KeywordLandingPageProps } from "@/components/KeywordLandingPage";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 
@@ -343,5 +343,100 @@ export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath">
     { href: "/online-quran-classes", label: "Online Quran Academy" },
     { href: "/online-quran-for-beginners", label: "Quran for Beginners" },
     { href: "/blog/benefits-of-online-quran-classes", label: "Benefits of Online Classes" },
+  ],
+};
+
+/**
+ * Pillar for the "no local masjid / Muslim-minority area" cluster.
+ *
+ * This intent is problem-based, not geo-based: these families search "no mosque near me
+ * quran classes", not "quran classes in <town>". It is therefore deliberately served by
+ * one substantive page plus the existing minority-country hubs, rather than by new city
+ * pages — the site already carries noindexed thin city URLs from an earlier expansion.
+ *
+ * Kept distinct from the blog "How to Teach Quran When There's No Mosque Nearby", which
+ * is DIY guidance for parents teaching alone; this page is the tutor-matching service.
+ */
+export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
+  metaTitle: "Online Quran Classes With No Masjid Nearby | NoorPath Academy",
+  metaDescription:
+    "No masjid or Quran teacher near you? NoorPath Academy matches families in Muslim-minority areas with live 1-on-1 online tutors who teach in English. Free 30-minute trial, no credit card.",
+  keywords: [
+    "online quran classes no masjid nearby",
+    "quran classes no mosque near me",
+    "online quran teacher rural area",
+    "quran classes for muslim minority countries",
+    "learn quran at home no masjid",
+    "online quran classes small town",
+    "quran teacher for kids no local madrasa",
+    "online quran classes for isolated muslim families",
+    "quran classes english speaking tutor",
+    "online madrasa alternative",
+  ],
+  serviceName: "Online Quran Classes for Families With No Local Masjid",
+  serviceDescription:
+    "Live one-to-one online Quran lessons for families who have no masjid, madrasa or Quran teacher within reach — with English-speaking tutors and timezone-based matching.",
+  audience: "Muslim families in areas with no nearby masjid or Quran teacher",
+  h1: "Online Quran Classes When There Is No Masjid Nearby",
+  eyebrow: "For families far from a masjid",
+  heroText:
+    `If the nearest masjid is an hour away — or there isn't one — your child can still learn to read Quran properly. <strong style="color:var(--gold-lt)">Live 1-on-1 lessons</strong> with tutors who teach in English, at a time that fits your week. <strong style="color:var(--gold-lt)">Free ${TRIAL.durationMinutes}-minute trial — no credit card.</strong>`,
+  sectionTitle: <>When There Is No Masjid, the <em className="accent">Teacher Comes to You</em></>,
+  sectionSubtitle:
+    "Distance is the single biggest reason children in Muslim-minority areas stop learning Quran. A live online tutor removes the drive without removing the teacher.",
+  quickAnswer:
+    `Families with <strong>no masjid or madrasa nearby</strong> can learn Quran through live <strong>one-to-one online lessons</strong>. A tutor listens to the child read and corrects pronunciation in real time, so no parent needs to already know Arabic. NoorPath Academy matches tutors by timezone and language preference, and offers a free ${TRIAL.durationMinutes}-minute trial with no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial →</a>`,
+  seoIntro:
+    'In many towns and rural areas there is no masjid, no madrasa, and no Quran teacher within a reasonable drive. Weekend classes, where they exist at all, can mean an hour in the car each way — and that is the point at which most families quietly give up. <strong>Online Quran classes</strong> change what is being asked of you: instead of moving the child to the teacher, the lesson happens at your kitchen table. NoorPath Academy is an online-only academy, so this is not a fallback version of a local service — it is how every lesson is taught. Tutors are matched by the learner\'s level, timezone, and language of instruction, which matters when a child speaks English or a local language but not Urdu or Arabic.',
+  steps: [
+    { title: "Tell us what is around you", desc: "Share the learner's age and level, your timezone, and whether you need instruction in English. If there is no local teacher at all, say so — it changes the starting plan." },
+    { title: "Meet a matched tutor free", desc: `A free ${TRIAL.durationMinutes}-minute live lesson so you can hear how the tutor speaks to your child and check the audio works from your home. No credit card.` },
+    { title: "Fix a weekly slot that survives", desc: "Choose a recurring time that fits school and daylight hours in your area. A slot you can actually keep beats an ambitious one you cannot." },
+    { title: "Keep a short daily echo at home", desc: "Five to ten minutes of repeating the lesson between sessions. This is what replaces the daily reinforcement a local madrasa would have given." },
+  ],
+  compareRows: [
+    { method: "1-on-1 live online tutor (NoorPath)", verdict: "Teacher at home", note: "Real-time correction with no travel; requires stable internet and a fixed weekly slot" },
+    { method: "Driving to a distant weekend madrasa", verdict: "In person, high cost", note: "Community contact and peer group, but travel time and tiredness often end it within a year" },
+    { method: "Parent teaching alone", verdict: "Free, but limited", note: "Workable for routine and revision; hard to correct Makharij if the parent does not read Arabic" },
+    { method: "Apps and YouTube only", verdict: "Self-directed", note: "Good for practice between lessons; nothing listens back or corrects a mistake being repeated" },
+  ],
+  features: [
+    { icon: <Home size={22} />, title: "No Travel At All", desc: "The lesson happens wherever your laptop is. No weekend drive, no winter roads, no dropping out because the journey got too hard." },
+    { icon: <Users size={22} />, title: "English-Speaking Tutors", desc: "You can request a tutor who instructs in English, so a child who does not speak Urdu or Arabic still understands the explanation." },
+    { icon: <BookOpen size={22} />, title: "Start From the Alphabet", desc: "Beginners start at Noorani Qaida — Arabic letters and sounds. No prior exposure to a madrasa is assumed." },
+    { icon: <Clock size={22} />, title: "Your Timezone, Not Ours", desc: "Tutor matching works around your school day and daylight hours, which matters in far-northern and remote regions." },
+    { icon: <Shield size={22} />, title: "Vetted Without a Local Reference", desc: "Families with no local community cannot ask around about a teacher. Our safeguarding policy and the free trial let you judge the tutor yourself first." },
+    { icon: <Video size={22} />, title: "Parents Can Watch", desc: "Sit in on lessons whenever you like, and track homework and attendance in the Parent Portal — useful when you have no local teacher to ask." },
+  ],
+  faqs: [
+    { q: "There is no masjid or madrasa near us at all. Can my child still learn to read Quran?", a: "Yes. Live one-to-one online lessons cover the same ground a beginner madrasa would: Arabic letters, vowel signs, joining, then Quran reading and Tajweed. Because the tutor hears the child read aloud each lesson, pronunciation is corrected as it develops rather than after a habit forms." },
+    { q: "I do not read Arabic myself. Can I still support my child?", a: "Yes, and most parents in this situation do not read Arabic. Your role is to protect the weekly slot and a short daily practice, not to teach. The tutor handles correction, and you can watch any lesson and see homework in the Parent Portal." },
+    { q: "Our child only speaks English. Will the tutor be able to teach them?", a: "You can request instruction in English when booking. Tutor and language availability are confirmed during matching, and you can hear how the tutor explains things in the free trial before committing." },
+    { q: "How do I know an online tutor is safe when I have no local community to ask?", a: "This is a fair concern when there is no one nearby to vouch for a teacher. Read the safeguarding policy first, use the free trial to observe a full lesson yourself, keep communication on official channels, and stay present for a child's early lessons." },
+    { q: "We live somewhere with very long or very short daylight. Can lessons still be scheduled?", a: "Yes. Share your timezone and the windows that actually work across the year when you request a trial. A recurring time is confirmed after a suitable tutor is matched, and it can be revisited when the season changes." },
+    { q: "Is online learning worse than a local madrasa for my child?", a: "The formats trade off differently. A madrasa offers in-person contact and a peer group, which online lessons do not replace. One-to-one online lessons offer undivided tutor attention and no travel. For families where the realistic alternative is no lessons at all, the comparison is with nothing rather than with a madrasa." },
+    { q: "My child is the only Muslim in their class. Does that change how you teach?", a: "It often changes motivation more than method. Tell the tutor during matching — knowing a child has no Muslim peers helps them pace expectations and keep lessons encouraging rather than pressured." },
+    { q: "How much does it cost and can we try it first?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and needs no credit card, so you can judge the fit before paying anything.` },
+  ],
+  locations: [
+    { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST — small, spread-out communities" },
+    { href: "/locations/online-quran-classes-ireland", label: "🇮🇪 Ireland", note: "GMT/IST — limited outside Dublin" },
+    { href: "/locations/online-quran-classes-norway", label: "🇳🇴 Norway", note: "CET — long-daylight scheduling" },
+    { href: "/locations/online-quran-classes-finland", label: "🇫🇮 Finland", note: "EET — remote-region friendly" },
+    { href: "/locations/online-quran-classes-denmark", label: "🇩🇰 Denmark", note: "CET — evening and weekend windows" },
+    { href: "/locations/online-quran-classes-sweden", label: "🇸🇪 Sweden", note: "CET — outside the main cities too" },
+  ],
+  breadcrumbs: [...BASE_CRUMB, { label: "No Masjid Nearby" }],
+  ctaHeadline: <>No Masjid Nearby? <em style={{ color: "var(--gold-lt)" }}>Start This Week</em></>,
+  ctaSubtext: "Book a free trial lesson from home — meet the tutor, check the audio, and see how your child responds before you decide anything.",
+  relatedLinks: [
+    { href: "/blog/how-to-teach-quran-when-theres-no-mosque-nearby", label: "How to Teach Quran When There's No Mosque Nearby" },
+    { href: "/blog/raising-muslim-child-in-non-muslim-country", label: "Raising a Muslim Child in a Non-Muslim Country" },
+    { href: "/blog/online-quran-classes-for-muslim-families-abroad", label: "Quran Classes for Muslim Families Abroad" },
+    { href: "/blog/online-quran-classes-for-homeschool-families", label: "Quran Classes for Homeschool Families" },
+    { href: "/blog/quran-classes-for-expat-families", label: "Quran Classes for Expat Families" },
+    { href: "/blog/weekend-quran-classes-for-nordic-families", label: "Weekend Quran Classes for Nordic Families" },
+    { href: "/blog/trustworthy-online-quran-teacher-live-abroad", label: "Finding a Trustworthy Tutor Abroad" },
+    { href: "/safeguarding", label: "Safeguarding for Online Lessons" },
   ],
 };

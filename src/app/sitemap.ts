@@ -105,6 +105,16 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "live-online-quran-tutor-vs-prerecorded-courses",
   "online-quran-class-checklist-for-parents",
   "how-many-quran-classes-per-week",
+  // "No local masjid / Muslim-minority area" cluster, supporting the pillar at
+  // /online-quran-classes-no-masjid-nearby. These convert like commercial guides
+  // rather than general reading, which is why the audit kept flagging them.
+  "how-to-teach-quran-when-theres-no-mosque-nearby",
+  "raising-muslim-child-in-non-muslim-country",
+  "online-quran-classes-for-muslim-families-abroad",
+  "online-quran-classes-for-homeschool-families",
+  "quran-classes-for-expat-families",
+  "weekend-quran-classes-for-nordic-families",
+  "trustworthy-online-quran-teacher-live-abroad",
   "noorpath-academy-vision-online-quran-education",
   "how-long-should-online-quran-lessons-be",
   "what-should-my-child-learn-first-in-quran",
@@ -139,6 +149,7 @@ const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/online-quran-academy`,    priority: 0.93, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/quran-lesson-online`,     priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/studying-quran-online`,   priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/online-quran-classes-no-masjid-nearby`, priority: 0.9, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
 ];
 
 const REDIRECTED_COURSE_SLUGS = new Set([
