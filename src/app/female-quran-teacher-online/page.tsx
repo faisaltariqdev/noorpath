@@ -9,7 +9,7 @@ import { PRICING_PLANS, SERVICE_FACTS, TRIAL, TRUSTPILOT } from "@/lib/academyFa
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Female Quran Teacher Online — Tutor Requests for Sisters & Kids | Free Trial" },
+  title: { absolute: "Female Quran Teacher Online — Sisters & Kids | NoorPath Academy" },
   description:
     "Request a female Quran teacher online for sisters, daughters and girls. Live 1-to-1 classes for Quran reading, Tajweed or Hifz, with a free 30-minute trial.",
   keywords: [

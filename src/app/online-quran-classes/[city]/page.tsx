@@ -41,23 +41,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `https://www.noorpath.online/locations/${c.countrySlug}`;
   return {
     title: {
-      absolute: `Online Quran Classes in ${c.city} 2026 — Live 1-on-1 | Free Trial`,
+      absolute: `Online Quran Classes in ${c.city} — Live 1-on-1 | NoorPath`,
     },
-    description: `✓ Live 1-on-1 online Quran classes in ${c.city} from $29/mo ✓ ${c.timezone} slots for kids & adults ✓ Free 30-min trial — no card required. Book now!`,
+    description: `Live 1-on-1 online Quran classes for families in ${c.city} with NoorPath Academy. ${c.timezone} lesson windows for kids and adults, plus a free 30-minute trial with no credit card required.`,
     keywords: getCityKeywords(c),
     alternates: { canonical },
     ...(indexable ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
-      title: `Online Quran Classes in ${c.city} 2026 — Live 1-on-1 | Free Trial`,
-      description: `✓ Live 1-on-1 online Quran classes in ${c.city} from $29/mo ✓ ${c.timezone} slots for kids & adults ✓ Free 30-min trial — no card required.`,
+      title: `Online Quran Classes in ${c.city} — Live 1-on-1 | NoorPath Academy`,
+      description: `Live 1-on-1 online Quran classes for families in ${c.city} with NoorPath Academy. ${c.timezone} lesson windows for kids and adults, plus a free 30-minute trial.`,
       url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
       locale: getOpenGraphLocale(c.countrySlug),
       images: [{ url: "/marketing/family-evening-quran.jpg", width: 1200, height: 800, alt: `Online Quran Classes ${c.city}` }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `Online Quran Classes in ${c.city} 2026 — Live 1-on-1`,
-      description: `Request live 1-on-1 online Quran lessons in ${c.city} starting from $29/mo. Free 30-min trial, no credit card required.`,
+      title: `Online Quran Classes in ${c.city} | NoorPath Academy`,
+      description: `Request live 1-on-1 online Quran lessons in ${c.city} with NoorPath Academy. Free 30-minute trial, no credit card required.`,
       images: ["/marketing/family-evening-quran.jpg"],
     },
   };

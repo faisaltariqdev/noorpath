@@ -28,17 +28,21 @@ import {
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  // CTR-optimized homepage title - keyword-first, under 60 chars
+  // Brand-first homepage title. The brand token MUST lead here: this is the primary
+  // title-link + site-name source for brand queries ("noorpath", "noorpath academy")
+  // and it competes with the unrelated noorpath.net app brand. Do not replace with a
+  // keyword-only or year-stamped string — that removes the brand from the SERP result
+  // and invites a Google title rewrite toward the bare domain.
   title: {
-    absolute: "Online Quran Classes 2026 — Live Tutors | Free Trial",
+    absolute: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
   },
   description:
-    "✓ Live 1-on-1 Quran classes for kids & adults ✓ $29/mo plans ✓ Free 30-min trial — no card required. Noorani Qaida, Tajweed, Hifz & Arabic. Book now!",
+    "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic. Parent Portal for homework and progress. Free 30-minute trial, no credit card.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
-    title: "Online Quran Classes 2026 — Live Tutors | Free Trial",
-    description: "Live 1-on-1 Quran classes for kids & adults. $29/mo plans with free 30-min trial, no card. Noorani Qaida, Tajweed, Hifz.",
+    title: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
+    description: "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz and Arabic, with a free 30-minute trial and no credit card required.",
     url: "https://www.noorpath.online",
     type: "website",
     siteName: "NoorPath Academy",
@@ -46,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran Classes 2026 — Live Tutors | Free Trial",
-    description: "Live Quran classes for kids & adults. $29/mo plans with free trial. Noorani Qaida, Tajweed, Hifz.",
+    title: "NoorPath Academy | Online Quran Classes — Free Trial",
+    description: "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz and Arabic, with a free 30-minute trial.",
     images: ["/og-image.png"],
   },
 };

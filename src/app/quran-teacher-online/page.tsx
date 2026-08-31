@@ -17,7 +17,7 @@ const PAGE_URL = `${BASE_URL}/quran-teacher-online`;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Teacher | 1-to-1 Tutor Matching",
+    absolute: "Online Quran Teacher — 1-to-1 Tutor Matching | NoorPath Academy",
   },
   description:
     "Request an online Quran teacher for a child or adult. Compare tutor fit for Qaida, Tajweed or Hifz, verify relevant credentials and book a free trial.",

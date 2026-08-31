@@ -13,8 +13,8 @@
  */
 
 import { spawnSync } from "node:child_process";
-import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
+import { mkdirSync, writeFileSync, readFileSync, existsSync, readdirSync } from "node:fs";
+import { join, relative } from "node:path";
 import {
   ROOT,
   BASE,
@@ -53,6 +53,83 @@ function validateRobotsSource() {
   if (!/disallow:\s*\["\/api\/"\]/.test(src) && !/disallow:\s*\[?"\/api\//.test(src)) {
     note("warn", "robots", "Confirm /api/ remains disallowed");
   } else note("pass", "robots", "/api/ disallow present");
+}
+
+/** Repo-relative paths of files under `dir` whose basename matches `match`. */
+function listFilesUnder(dir, match) {
+  const abs = join(ROOT, dir);
+  if (!existsSync(abs)) return [];
+  const out = [];
+  const walk = (current) => {
+    for (const entry of readdirSync(current, { withFileTypes: true })) {
+      const full = join(current, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (match.test(entry.name)) out.push(relative(ROOT, full));
+    }
+  };
+  walk(abs);
+  return out;
+}
+
+/**
+ * Brand-token guard for title tags.
+ *
+ * `title: { absolute: "..." }` bypasses the root layout template `%s | NoorPath Academy`,
+ * so an absolute title without the brand ships a title tag containing no brand token at
+ * all. That previously removed NoorPath from the homepage SERP result and cost the brand
+ * queries ("noorpath", "noorpath academy"). Fail the build rather than let it recur.
+ */
+function validateBrandInTitles() {
+  const BRAND = /NoorPath/i;
+  // Files whose absolute titles are built from a variable defined elsewhere; the
+  // brand is asserted on the source constant instead (see metaTitle checks below).
+  const INDIRECT = /absolute:\s*(metaTitle|`\$\{)/;
+
+  const sources = [
+    ...listFilesUnder("src/app", /page\.tsx$/),
+    "src/components/UkCityQuranPage.tsx",
+    "src/lib/landingPageData.tsx",
+    "src/lib/geoSeo.ts",
+  ];
+
+  const offenders = [];
+  let checked = 0;
+  for (const rel of sources) {
+    const src = read(rel);
+    if (!src) continue;
+    // Literal absolute titles + the metaTitle/metadataTitle constants that feed them.
+    const patterns = [
+      /absolute:\s*"([^"]+)"/g,
+      /absolute:\s*`([^`]+)`/g,
+      /\bmetaTitle:\s*"([^"]+)"/g,
+      /\bmetadataTitle:\s*"([^"]+)"/g,
+    ];
+    for (const re of patterns) {
+      let m;
+      while ((m = re.exec(src)) !== null) {
+        const title = m[1];
+        if (INDIRECT.test(m[0]) && !title) continue;
+        checked += 1;
+        if (!BRAND.test(title)) offenders.push({ rel, title });
+      }
+    }
+  }
+
+  if (offenders.length) {
+    for (const { rel, title } of offenders) {
+      note(
+        "fail",
+        "brand-title",
+        `Title has no NoorPath brand token: ${rel} → "${title}"`,
+        "Add '| NoorPath' or '| NoorPath Academy', or drop `absolute` so the layout template appends the brand",
+      );
+    }
+  } else if (checked === 0) {
+    // Guard the guard: a silent extraction break would otherwise pass vacuously.
+    note("fail", "brand-title", "Brand-title guard matched 0 titles — extraction patterns are broken");
+  } else {
+    note("pass", "brand-title", `All ${checked} absolute/meta titles contain the NoorPath brand token`);
+  }
 }
 
 function validateBlogWiring() {
@@ -220,6 +297,7 @@ async function main() {
     validateStagedSeoSurface(files);
   }
   validateRobotsSource();
+  validateBrandInTitles();
   validateBlogWiring();
   validateHonestyGuards();
   validateKeywordCannibalization();

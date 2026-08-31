@@ -15,7 +15,7 @@ const DEFAULT_COMPARE = [
 ];
 
 export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Learn Quran Online — 1-on-1 Live Classes | Free Trial 2026",
+  metaTitle: "Learn Quran Online — Live 1-on-1 Classes | NoorPath Academy",
   metaDescription:
     "Learn Quran online from zero with live tutors. Noorani Qaida, Tajweed, Hifz and Arabic — 1-on-1 online classes for kids and adults. Free 30-min trial, no credit card.",
   keywords: [
@@ -73,7 +73,7 @@ export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & 
 };
 
 export const onlineQuranAcademy: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Online Quran Academy — Live 1-on-1 Tutors | Free Trial 2026",
+  metaTitle: "Online Quran Academy — Live 1-on-1 Tutors | NoorPath",
   metaDescription:
     "NoorPath Online Quran Academy — live 1-on-1 classes for kids and adults. Noorani Qaida, Tajweed, Hifz and Arabic. Free 30-minute trial.",
   keywords: [
@@ -135,7 +135,7 @@ export const onlineQuranAcademy: Omit<KeywordLandingPageProps, "canonicalPath"> 
 };
 
 export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Learn Tajweed Online — Live 1-on-1 Tutors | Free Trial 2026",
+  metaTitle: "Learn Tajweed Online — Live 1-on-1 Tutors | NoorPath Academy",
   metaDescription:
     "Learn Tajweed online through live 1-on-1 classes covering Makharij, Madd, Ghunna and Qalqalah. Free 30-minute trial with no credit card.",
   keywords: [
@@ -188,7 +188,7 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
 };
 
 export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Hifz Quran Online — Memorization Program | Free Trial 2026",
+  metaTitle: "Hifz Quran Online — Memorization Program | NoorPath Academy",
   metaDescription:
     "Hifz Quran online with live one-to-one tutoring. Structured Juz-by-Juz memorization and Sabaq-Sabqi-Manzil revision for kids and adults. Free trial.",
   keywords: [
@@ -241,7 +241,7 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
 };
 
 export const quranLessonOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Quran Lesson Online — Live 1-on-1 Classes | Free Trial 2026",
+  metaTitle: "Quran Lesson Online — Live 1-on-1 Classes | NoorPath Academy",
   metaDescription:
     "Book live Quran lessons online. 1-on-1 sessions for Qaida, reading, Tajweed and Hifz. Kids and adults. Free 30-minute trial lesson.",
   keywords: [
@@ -294,7 +294,7 @@ export const quranLessonOnline: Omit<KeywordLandingPageProps, "canonicalPath"> &
 };
 
 export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Studying Quran Online — Live Classes for Kids & Adults | Free Trial",
+  metaTitle: "Studying Quran Online — Live Classes | NoorPath Academy",
   metaDescription:
     "Study Quran online through structured 1-on-1 classes for Qaida, reading, Tajweed and Hifz. Flexible tutor matching and a free trial.",
   keywords: [

@@ -13,7 +13,7 @@ const pageUrl = "https://www.noorpath.online/quran-classes-for-sisters";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Quran Classes for Sisters & Ladies Online — Female Tutor | Free Trial",
+    absolute: "Quran Classes for Sisters Online — Female Tutor | NoorPath Academy",
   },
   description:
     "Online Quran classes for sisters and ladies with a female tutor request. Live 1-to-1 Qaida, Tajweed or Hifz lessons — free 30-minute trial, no credit card.",

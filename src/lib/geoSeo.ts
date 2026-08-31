@@ -83,9 +83,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online uk",
     ],
     content: {
-      metadataTitle: "Online Quran Classes UK 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes UK — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for UK families from £22/mo* ✓ GMT/BST slots ✓ Free 30-min trial — no card required. Book now for kids & adults!",
+        "NoorPath Academy live 1-on-1 online Quran classes for UK families, with GMT or BST lesson windows for kids and adults and a free 30-minute trial, no card required.",
       heading: "Online Quran Classes in the United Kingdom",
       introduction:
         "Families across the UK can request live one-to-one Quran tuition online, with lesson planning around the school week and local GMT or BST time.",
@@ -114,9 +114,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online usa",
     ],
     content: {
-      metadataTitle: "Online Quran Classes USA 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes USA — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for US families from $29/mo ✓ ET, CT, MT, PT slots ✓ Free 30-min trial — no card required. Join 1000+ students!",
+        "NoorPath Academy live 1-on-1 online Quran classes for US families, with ET, CT, MT and PT lesson windows for kids and adults and a free 30-minute trial, no card required.",
       heading: "Online Quran Classes in the United States",
       introduction:
         "Families in the United States can request live one-on-one Quran lessons online without adding another commute to the school week.",
@@ -145,9 +145,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "online hifz classes uae",
     ],
     content: {
-      metadataTitle: "Online Quran Classes UAE 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes UAE — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for UAE families in GST ✓ Noorani Qaida, Tajweed & Hifz ✓ Free 30-min trial — no card needed. Book for kids & adults!",
+        "NoorPath Academy live 1-on-1 online Quran classes for UAE families in GST — Noorani Qaida, Tajweed and Hifz for kids and adults, with a free 30-minute trial.",
       heading: "Online Quran Classes in the UAE",
       introduction:
         "Families in the UAE can request English-language online Quran support for children or adults, delivered as live one-to-one lessons in Gulf Standard Time.",
@@ -176,9 +176,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online canada",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Canada 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes Canada — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for Canadian families from $29/mo ✓ Local timezone slots ✓ Free 30-min trial — no card needed. Start from zero today!",
+        "NoorPath Academy live 1-on-1 online Quran classes for Canadian families, with local timezone lesson windows for kids and adults and a free 30-minute trial, no card required.",
       heading: "Online Quran Classes in Canada",
       introduction:
         "Canadian families can request online Quran lessons planned around their own provincial or territorial time zone and school-week routine.",
@@ -210,9 +210,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online australia",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Australia 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes Australia — Live 1-on-1 | NoorPath",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for families in Sydney, Melbourne & beyond ✓ AEST/AWST slots ✓ Free 30-min trial — no card needed. Book now!",
+        "NoorPath Academy live 1-on-1 online Quran classes for families in Sydney, Melbourne and beyond, with AEST or AWST lesson windows and a free 30-minute trial.",
       heading: "Online Quran Classes in Australia",
       introduction:
         "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements — from Noorani Qaida through Tajweed and Hifz.",
@@ -245,9 +245,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "after school quran classes india",
     ],
     content: {
-      metadataTitle: "Online Quran Classes India 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes India — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for Indian families in IST ✓ Noorani Qaida to Hifz ✓ Free 30-min trial — no card required. Join 1000+ students now!",
+        "NoorPath Academy live 1-on-1 online Quran classes for Indian families in IST — Noorani Qaida through to Hifz, with a free 30-minute trial and no card required.",
       heading: "Online Quran Classes in India",
       introduction:
         "Indian families can request live one-to-one online Quran lessons in IST — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
@@ -281,9 +281,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "after school quran classes nigeria",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Nigeria 2026 — Live 1-on-1 | Free Trial",
+      metadataTitle: "Online Quran Classes Nigeria — Live 1-on-1 | NoorPath",
       metadataDescription:
-        "✓ Live 1-on-1 Quran classes for families in Lagos, Abuja, Port Harcourt & Kano ✓ WAT slots ✓ Free 30-min trial — no card required. Start learning now!",
+        "NoorPath Academy live 1-on-1 online Quran classes for families in Lagos, Abuja, Port Harcourt and Kano, with WAT lesson windows and a free 30-minute trial.",
       heading: "Online Quran Classes in Nigeria",
       introduction:
         "Nigerian families can request live one-to-one online Quran lessons in WAT — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
@@ -312,9 +312,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "koranunterricht online englisch",
     ],
     content: {
-      metadataTitle: "English Online Quran Classes Germany 2026 — Live 1-on-1",
+      metadataTitle: "English Online Quran Classes Germany | NoorPath Academy",
       metadataDescription:
-        "✓ English-language online Quran classes in Germany from €27/mo* ✓ CET/CEST slots ✓ Free 30-min trial — no card needed. Book for kids & adults!",
+        "NoorPath Academy English-language online Quran classes in Germany, with CET or CEST lesson windows for kids and adults and a free 30-minute trial, no card required.",
       heading: "Online Quran Classes in Germany",
       introduction:
         "Families in Germany can request English-language Quran teaching online for children or adults, with live one-to-one lessons planned in CET or CEST.",
@@ -437,7 +437,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "female quran teacher france",
     ],
     content: {
-      metadataTitle: "Online Quran Classes France | Free Trial",
+      metadataTitle: "Online Quran Classes France | NoorPath Academy",
       metadataDescription:
         "Live 1-to-1 online Quran & Noorani Qaida for families in France. CET evenings 4–10 PM, USD pricing with € context. Free 30-min trial.",
       heading: "Online Quran Classes in France",
@@ -468,7 +468,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "female quran teacher netherlands",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Netherlands | Trial",
+      metadataTitle: "Online Quran Classes Netherlands | NoorPath Academy",
       metadataDescription:
         "Live online Quran classes for Dutch Muslim families. CET slots ~4–10 PM, Noorani Qaida to Hifz, USD fees with € budgeting notes. Free trial.",
       heading: "Online Quran Classes in the Netherlands",

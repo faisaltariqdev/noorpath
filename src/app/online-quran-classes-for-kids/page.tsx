@@ -12,7 +12,7 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial 2026",
+    absolute: "Online Quran Classes for Kids — Live 1-on-1 | NoorPath Academy",
   },
   description:
     "Online Quran classes for kids ages 4–12. Live 1-on-1 Noorani Qaida, Tajweed and Hifz lessons with tutor matching and a free 30-minute trial.",

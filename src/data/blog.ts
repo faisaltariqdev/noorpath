@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "noorpath-academy-vision-online-quran-education",
     title: "NoorPath Academy — The Vision for Modern Online Quran Education",
-    description: "✓ Learn about NoorPath Academy's mission, certified tutors, and People-First approach ✓ Online Quran classes for kids & adults ✓ Free 30-min trial, no card.",
+    description: "How NoorPath Academy approaches online Quran education: our mission, tutor vetting, the Parent Portal and a people-first teaching model for kids and adults.",
     category: "About NoorPath",
     date: "2026-08-20",
     readTime: "8 min",
@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "female-quran-teacher-for-kids",
     title: "Female Quran Teacher for Kids — Safe Hafiza Tutors Online",
-    description: "✓ Find a certified female Quran teacher for kids online ✓ Hafiza tutors for daughters (ages 4–12) ✓ Safe 1-on-1 Zoom classes ✓ Free trial class available. Book now!",
+    description: "How to find a female Quran teacher for kids online: what Hafiza tutors cover for daughters aged 4–12, how safe 1-on-1 video lessons work, and how to book a free trial.",
     category: "Quran Learning",
     date: "2026-07-13",
     updatedAt: "2026-07-27",
@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "online-hifz-classes-for-kids",
     title: "Online Hifz Classes for Kids — 2026 Guide & Free Trial",
-    description: "✓ Start your child's Hifz journey online ✓ Expert Hafiz tutors ✓ Sabaq-Sabqi-Manzil system ✓ Best age to start & schedules explained. Book a free 30-min trial today!",
+    description: "A parent guide to online Hifz classes for kids: the Sabaq–Sabqi–Manzil revision system, the best age to start, realistic daily targets and how to choose a Hafiz tutor.",
     category: "Quran Learning",
     date: "2026-07-13",
     updatedAt: "2026-07-13",
@@ -136,7 +136,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-for-success-exams",
     title: "Dua for Success & Exams — Powerful Duas from Quran & Sunnah",
-    description: "✓ Best dua for success in exams, studies & life ✓ Arabic, English & Transliteration ✓ Rabbir zidni ilma & more ✓ Pre-exam routine for students. Read the full guide!",
+    description: "Authentic duas for success in exams, studies and life from the Quran and Sunnah — including Rabbir zidni ilma — with full Arabic, transliteration, English meaning and a pre-exam routine.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-for-marriage",
     title: "Dua for Marriage — Arabic, English & Istikhara for Nikah",
-    description: "✓ Powerful duas for marriage & righteous spouse ✓ Authentic Quranic & Prophetic duas ✓ How to make Istikhara for nikah ✓ Etiquettes of making dua. Find your partner now!",
+    description: "Authentic duas for marriage and a righteous spouse from the Quran and Sunnah, with full Arabic, transliteration and English meaning, plus how to make Istikhara for nikah.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -861,7 +861,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "noorani-qaida-complete-guide",
     title: "Noorani Qaida Complete Guide 2026 — Learn Arabic Reading Online",
-    description: "✓ Master Noorani Qaida online ✓ Proven method for Arabic pronunciation ✓ Step-by-step beginner guide ✓ Join 1000+ students. Book a free 30-min trial now!",
+    description: "A complete beginner guide to Noorani Qaida online: how the lessons are sequenced, how Arabic pronunciation is taught step by step, and what to expect at each stage.",
     category: "Quran Learning",
     date: "2026-01-10",
     readTime: "11 min",
@@ -894,7 +894,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tajweed-rules-complete-guide",
     title: "Tajweed Rules Complete Guide — Learn Quran Recitation Online",
-    description: "✓ Master Tajweed rules for beginners ✓ Arabic examples & pronunciation tips ✓ Complete guide to correct Quran recitation. Start learning with expert tutors today!",
+    description: "A complete guide to Tajweed rules for beginners, with Arabic examples, pronunciation tips and practical explanations for correct Quran recitation.",
     category: "Tajweed",
     date: "2026-02-15",
     readTime: "16 min",
@@ -960,7 +960,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "online-quran-classes-for-kids-parent-guide",
     title: "Best Online Quran Classes for Kids — 2026 Parent Guide",
-    description: "✓ Expert guide to choosing online Quran classes for kids ✓ Safety checklist ✓ Tutor vetting ✓ Monthly costs & curriculum. Book a free trial for your family today!",
+    description: "A parent guide to choosing online Quran classes for kids: a safety checklist, how to vet tutors, what monthly costs typically cover and how to judge the curriculum.",
     category: "Online Learning",
     date: "2026-06-24",
     readTime: "20 min",

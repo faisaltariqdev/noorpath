@@ -13,7 +13,7 @@ const pageUrl = "https://www.noorpath.online/one-on-one-quran-classes";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "One-on-One Quran Classes Online — Private 1-to-1 Tutor | Free Trial",
+    absolute: "One-on-One Quran Classes Online — Private Tutor | NoorPath Academy",
   },
   description:
     "Private one-on-one Quran classes online with a live tutor. 1-to-1 Qaida, Tajweed and Hifz lessons for kids and adults — free 30-minute trial, no credit card.",

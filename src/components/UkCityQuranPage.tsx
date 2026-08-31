@@ -49,13 +49,13 @@ export function createUkCityMetadata(config: UkCityPageConfig): Metadata {
   const pageUrl = `${BASE_URL}/online-quran-classes/${config.slug}`;
   return {
     title: {
-      absolute: `Online Quran Classes ${config.city} | Live 1-to-1 & Free Trial`,
+      absolute: `Online Quran Classes ${config.city} — Live 1-to-1 | NoorPath`,
     },
     description: config.description,
     keywords: config.keywords,
     alternates: { canonical: pageUrl },
     openGraph: {
-      title: `Online Quran Classes ${config.city} — Live One-to-One Lessons`,
+      title: `Online Quran Classes ${config.city} — Live One-to-One | NoorPath Academy`,
       description: config.description,
       url: pageUrl,
       type: "website",

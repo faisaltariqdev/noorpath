@@ -13,7 +13,7 @@ const pageUrl = "https://www.noorpath.online/quran-classes-for-working-professio
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Quran Classes for Working Professionals — Evening & Weekend Online",
+    absolute: "Quran Classes for Working Professionals | NoorPath Academy",
   },
   description:
     "Online Quran classes for working professionals with evening and weekend schedule matching. Live 1-to-1 lessons — free 30-minute trial, no credit card.",
