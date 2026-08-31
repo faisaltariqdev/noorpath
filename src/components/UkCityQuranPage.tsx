@@ -28,6 +28,7 @@ import {
   ORGANIZATION_REF,
   WEBSITE_ID,
 } from "@/lib/organizationSchema";
+import { toWeeklyWorkload } from "@/lib/jsonLd";
 
 export interface UkCityPageConfig {
   city: string;
@@ -245,6 +246,80 @@ export default function UkCityQuranPage({
         about: { "@id": `${pageUrl}#service` },
         inLanguage: "en-GB",
         breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+        mainEntity: { "@id": `${pageUrl}#course` },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["#uk-city-hero-title"],
+        },
+      },
+      {
+        // Course info rich-result eligibility. Instances and offers derive from
+        // PRICING_PLANS so the SERP price never drifts from /pricing.
+        "@type": "Course",
+        "@id": `${pageUrl}#course`,
+        name: `Online Quran Classes ${config.city}`,
+        description: config.description,
+        url: pageUrl,
+        provider: ORGANIZATION_REF,
+        inLanguage: "en-GB",
+        courseMode: "online",
+        isAccessibleForFree: false,
+        teaches: [
+          "Noorani Qaida",
+          "Quran reading",
+          "Tajweed rules",
+          "Hifz (Quran memorisation)",
+          "Arabic language",
+        ],
+        audience: [
+          {
+            "@type": "PeopleAudience",
+            audienceType: `Children learning Quran online in ${config.city}`,
+          },
+          {
+            "@type": "PeopleAudience",
+            audienceType: `Adult Quran learners in ${config.city}`,
+          },
+        ],
+        hasCourseInstance: PRICING_PLANS.map((plan) => ({
+          "@type": "CourseInstance",
+          name: `${plan.name} — ${plan.sessionsPerWeek}x ${plan.sessionMinutes} min per week`,
+          description: plan.description,
+          courseMode: "online",
+          courseWorkload: toWeeklyWorkload(plan.sessionsPerWeek, plan.sessionMinutes),
+          instructor: ORGANIZATION_REF,
+          inLanguage: "en-GB",
+          location: { "@type": "VirtualLocation", url: pageUrl },
+          offers: {
+            "@type": "Offer",
+            price: String(plan.monthlyPriceUsd),
+            priceCurrency: "USD",
+            category: "Subscription",
+            url: `${BASE_URL}/pricing`,
+            availability: "https://schema.org/InStock",
+          },
+        })),
+        offers: [
+          {
+            "@type": "Offer",
+            name: `Free ${TRIAL.durationMinutes}-minute trial`,
+            price: String(TRIAL.price),
+            priceCurrency: TRIAL.priceCurrency,
+            category: "Free trial",
+            description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
+            url: `${pageUrl}#trial`,
+            availability: "https://schema.org/InStock",
+          },
+          ...PRICING_PLANS.map((plan) => ({
+            "@type": "Offer",
+            name: `${plan.name} plan`,
+            price: String(plan.monthlyPriceUsd),
+            priceCurrency: "USD",
+            category: "Subscription",
+            url: `${BASE_URL}/pricing`,
+            availability: "https://schema.org/InStock",
+          })),
+        ],
       },
       ...(cityGuide
         ? [
@@ -350,7 +425,7 @@ export default function UkCityQuranPage({
               >
                 <span aria-hidden="true">🇬🇧</span> Remote lessons · GMT/BST
               </span>
-              <h1>Online Quran Classes {config.city}</h1>
+              <h1 id="uk-city-hero-title">Online Quran Classes {config.city}</h1>
               <p style={{ maxWidth: 600, marginBottom: 22 }}>{config.heroCopy}</p>
               <div style={{ display: "grid", gap: 10, marginBottom: 24 }}>
                 {[

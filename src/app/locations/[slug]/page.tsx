@@ -18,6 +18,7 @@ import {
 } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Globe } from "lucide-react";
 import { absolutePageTitle } from "@/lib/pageTitle";
+import { toWeeklyWorkload } from "@/lib/jsonLd";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
@@ -34,18 +35,6 @@ function toIsoDateFromReviewed(reviewedDate: string): string {
   return new Date(parsed).toISOString().slice(0, 10);
 }
 
-/**
- * Weekly live-lesson minutes as an ISO 8601 duration for CourseInstance.courseWorkload.
- * Google requires courseWorkload (or courseSchedule) on hasCourseInstance for the
- * Course info rich result, so this must stay derived from PRICING_PLANS rather than
- * hardcoded — the published plans are the only truthful source for lesson time.
- */
-function toWeeklyWorkload(sessionsPerWeek: number, sessionMinutes: number): string {
-  const totalMinutes = sessionsPerWeek * sessionMinutes;
-  const hours = Math.floor(totalMinutes / 60);
-  const minutes = totalMinutes % 60;
-  return `PT${hours > 0 ? `${hours}H` : ""}${minutes > 0 ? `${minutes}M` : ""}`;
-}
 
 export const dynamicParams = false;
 export const revalidate = false;

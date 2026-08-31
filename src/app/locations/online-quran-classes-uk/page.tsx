@@ -32,21 +32,11 @@ import {
   WEBSITE_ID,
 } from "@/lib/organizationSchema";
 import { getCountryHubHreflang } from "@/lib/geoSeo";
+import { toWeeklyWorkload } from "@/lib/jsonLd";
 
 export const revalidate = false;
 
 const PAGE_URL = `${BASE_URL}/locations/online-quran-classes-uk`;
-
-/**
- * Weekly live-lesson minutes as an ISO 8601 duration for CourseInstance.courseWorkload,
- * which Google requires on hasCourseInstance for the Course info rich result.
- */
-function toWeeklyWorkload(sessionsPerWeek: number, sessionMinutes: number): string {
-  const totalMinutes = sessionsPerWeek * sessionMinutes;
-  const hours = Math.floor(totalMinutes / 60);
-  const minutes = totalMinutes % 60;
-  return `PT${hours > 0 ? `${hours}H` : ""}${minutes > 0 ? `${minutes}M` : ""}`;
-}
 
 export const metadata: Metadata = {
   title: {

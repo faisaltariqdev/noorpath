@@ -8,6 +8,7 @@ import { getLocation } from "@/data/locations";
 import { CONTACT, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCurrencyNote, getLocale, getOpenGraphLocale } from "@/lib/geoSeo";
+import { toWeeklyWorkload } from "@/lib/jsonLd";
 import { CheckCircle, Clock, MapPin, Shield, BookOpen, Users } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
@@ -113,6 +114,9 @@ export default async function CityPage({ params }: Props) {
     },
   ];
 
+  const pageUrl = `https://www.noorpath.online/online-quran-classes/${c.slug}`;
+  const courseId = `${pageUrl}#course`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -132,11 +136,88 @@ export default async function CityPage({ params }: Props) {
           description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
         },
       },
+      // Page-level Course is emitted only for indexable cities. Thin template cities are
+      // noindex + canonicalised to the country hub, so giving them their own Course entity
+      // would scale near-duplicate markup across URLs that should not rank on their own.
+      ...(indexable
+        ? [
+            {
+              "@type": "Course",
+              "@id": courseId,
+              name: `Online Quran Classes in ${c.city}`,
+              description: `Live 1-on-1 online Quran lessons for learners in ${c.city}, ${c.country}: Noorani Qaida for beginners, Quran reading, Tajweed, Hifz and Arabic, scheduled in ${c.timezone} with tutor matching confirmed after the request.`,
+              url: pageUrl,
+              provider: ORGANIZATION_REF,
+              inLanguage: locale,
+              courseMode: "online",
+              isAccessibleForFree: false,
+              teaches: [
+                "Noorani Qaida",
+                "Quran reading",
+                "Tajweed rules",
+                `Hifz (Quran ${memorisation})`,
+                "Arabic language",
+              ],
+              audience: [
+                { "@type": "Audience", audienceType: "Parents" },
+                { "@type": "Audience", audienceType: "Adult learners" },
+              ],
+              hasCourseInstance: PRICING_PLANS.map((plan) => ({
+                "@type": "CourseInstance",
+                name: `${plan.name} — ${plan.sessionsPerWeek}x ${plan.sessionMinutes} min per week`,
+                description: plan.description,
+                courseMode: "online",
+                courseWorkload: toWeeklyWorkload(plan.sessionsPerWeek, plan.sessionMinutes),
+                instructor: ORGANIZATION_REF,
+                inLanguage: locale,
+                location: { "@type": "VirtualLocation", url: pageUrl },
+                offers: {
+                  "@type": "Offer",
+                  price: String(plan.monthlyPriceUsd),
+                  priceCurrency: "USD",
+                  category: "Subscription",
+                  url: "https://www.noorpath.online/pricing",
+                  availability: "https://schema.org/InStock",
+                },
+              })),
+              offers: [
+                {
+                  "@type": "Offer",
+                  name: `Free ${TRIAL.durationMinutes}-minute trial`,
+                  price: String(TRIAL.price),
+                  priceCurrency: TRIAL.priceCurrency,
+                  category: "Free trial",
+                  description: `${TRIAL.durationMinutes}-minute trial; no credit card required`,
+                  availability: "https://schema.org/InStock",
+                },
+                ...PRICING_PLANS.map((plan) => ({
+                  "@type": "Offer",
+                  name: `${plan.name} plan`,
+                  price: String(plan.monthlyPriceUsd),
+                  priceCurrency: "USD",
+                  category: "Subscription",
+                  url: "https://www.noorpath.online/pricing",
+                  availability: "https://schema.org/InStock",
+                })),
+              ],
+            },
+          ]
+        : []),
       {
         "@type": "WebPage",
         name: `Online Quran Classes in ${c.city}`,
-        url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
+        url: pageUrl,
         inLanguage: locale,
+        isPartOf: { "@type": "WebSite", url: "https://www.noorpath.online" },
+        ...(indexable
+          ? {
+              mainEntity: { "@id": courseId },
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["#city-hero-title"],
+              },
+            }
+          : {}),
       },
       ...(cityGuide
         ? [
@@ -198,7 +279,7 @@ export default async function CityPage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div>
               <div style={{ fontSize: "2.8rem", marginBottom: 8 }}>{c.flag}</div>
-              <h1 style={{ marginBottom: 12 }}>Online Quran Classes in {c.city}</h1>
+              <h1 id="city-hero-title" style={{ marginBottom: 12 }}>Online Quran Classes in {c.city}</h1>
               <p style={{ maxWidth: 560, marginBottom: 0 }}>
                 Live 1-on-1 Quran tutors for kids &amp; adults in {c.city} — Noorani Qaida, Tajweed, Hifz and female teachers,
                 with {c.timezone} scheduling subject to tutor matching.
