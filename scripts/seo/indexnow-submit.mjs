@@ -14,7 +14,7 @@ import { BASE, allCatalogPaths } from "./lib/llms-catalog.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "../..");
 
-const KEY = "9f4c3a6b8e2d41579201f78ca135d94e";
+const KEY = "6dcf3b1e7a904120ae7f77878c28b506";
 const HOST = "www.noorpath.online";
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
