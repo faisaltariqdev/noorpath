@@ -136,6 +136,17 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "online-quran-classes-new-zealand-for-kids",
   "after-school-quran-classes-australia-for-kids",
   "female-quran-teacher-online-canada",
+  "timezone-friendly-quran-classes-uk-europe",
+  "muslim-families-europe-balance-school-quran",
+  "after-school-quran-classes-for-kids-in-india",
+  "balancing-school-and-online-quran-in-pakistan",
+  "online-quran-for-malaysian-and-singaporean-families",
+  "tajweed-rules-complete-guide",
+  "quran-classes-for-autistic-kids",
+  "quran-classes-for-adhd-kids",
+  "online-summer-quran-camp-for-kids",
+  "quran-classes-for-shy-or-anxious-kids",
+  "single-parent-flexible-quran-classes-for-kids",
 ]);
 const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)

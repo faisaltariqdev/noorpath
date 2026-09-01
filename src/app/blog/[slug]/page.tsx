@@ -183,6 +183,17 @@ export default async function BlogPostPage({ params }: Props) {
         articleSection: post.category,
         inLanguage: post.inLanguage ?? "en",
         isAccessibleForFree: true,
+        about: ORGANIZATION_REF,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [
+            "#blog-hero-title",
+            ".highlight-box",
+            ".quick-answer",
+            ".article-takeaway",
+            ".faq-acc",
+          ],
+        },
         ...(asset?.sourceUrls.length
           ? { citation: asset.sourceUrls }
           : {}),
@@ -282,7 +293,7 @@ export default async function BlogPostPage({ params }: Props) {
           <span className="blog-tag" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)" }}>
             {post.category}
           </span>
-          <h1 style={{ marginTop: 12, maxWidth: 820 }}>{post.title}</h1>
+          <h1 id="blog-hero-title" style={{ marginTop: 12, maxWidth: 820 }}>{post.title}</h1>
           {/* Author + date + read time row */}
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 16, marginTop: 18, paddingTop: 18, borderTop: "1px solid rgba(255,255,255,.1)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
