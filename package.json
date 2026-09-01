@@ -20,7 +20,8 @@
     "seo:all": "node scripts/seo/seo-agent.mjs && node scripts/seo/validate-schema-inventory.mjs && node scripts/seo/audit-site.mjs",
     "prepare": "node scripts/seo/install-git-hooks.mjs",
     "seo:llms": "node scripts/seo/generate-llms-txt.mjs",
-    "seo:llms:validate": "node scripts/seo/validate-llms-txt.mjs"
+    "seo:llms:validate": "node scripts/seo/validate-llms-txt.mjs",
+    "seo:indexnow": "node scripts/seo/indexnow-submit.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",
