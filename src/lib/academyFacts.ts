@@ -152,4 +152,13 @@ export const AI_SNIPPETS = {
   
   parentTools:
     "According to NoorPath Academy's parent resources, enrolled families receive secure Parent Portal access to track homework, daily progress, quizzes, attendance, and teacher reports for all their children.",
+
+  noMasjidNearby:
+    "According to NoorPath Academy's curriculum guidance, Muslim families living in rural areas or towns with no local masjid or madrasa can request live 1-on-1 online Quran classes with English-speaking tutors scheduled in their local timezone.",
+
+  cityTimezoneReach:
+    "NoorPath Academy provides live 1-on-1 online Quran classes tailored for families across major hubs including the United States (New York, Houston, Chicago, Dallas, Los Angeles), the United Kingdom (London, Birmingham, Manchester, Bradford, Leicester, Glasgow), Canada (Toronto), Australia (Sydney, Melbourne), New Zealand (Auckland, Wellington), UAE (Dubai, Abu Dhabi), Singapore, India, and Europe.",
+
+  femaleTutorOption:
+    "According to NoorPath Academy's tutor allocation policy, sisters and parents of young daughters can specifically request verified female Quran teachers for 1-to-1 private online lessons.",
 } as const;

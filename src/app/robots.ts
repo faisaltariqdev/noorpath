@@ -33,10 +33,20 @@ export default function robots(): MetadataRoute.Robots {
       // Microsoft Copilot / Bing
       { userAgent: "bingbot", allow: "/" },
       { userAgent: "BingPreview", allow: "/" },
-      // Other AI tools
+      // Other AI search & retrieval bots
       { userAgent: "YouBot", allow: "/" },
       { userAgent: "Cohere-ai", allow: "/" },
       { userAgent: "CCBot", allow: "/" },
+      // Kimi / Moonshot AI
+      { userAgent: "KimiBot", allow: "/" },
+      { userAgent: "MoonshotBot", allow: "/" },
+      // Apple Intelligence
+      { userAgent: "Applebot", allow: "/" },
+      { userAgent: "Applebot-Extended", allow: "/" },
+      // DuckDuckGo AI / ByteDance / Amazon
+      { userAgent: "DuckAssistBot", allow: "/" },
+      { userAgent: "Bytespider", allow: "/" },
+      { userAgent: "Amazonbot", allow: "/" },
     ],
     sitemap: "https://www.noorpath.online/sitemap.xml",
     host: "https://www.noorpath.online",

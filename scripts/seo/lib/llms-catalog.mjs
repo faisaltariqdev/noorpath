@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-08-28";
+export const REVIEWED = "2026-09-01";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -131,36 +131,68 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
-    topic: "Learning Quran with limited local access",
+    topic: "Online Quran classes with no masjid nearby / Muslim-minority areas",
     summary:
-      "Families and students who prefer or need online Quran learning when a suitable local class is hard to reach.",
+      "Families in rural areas or towns with no local masjid or madrasa who prefer live 1-on-1 online Quran classes with English-speaking tutors.",
     primary: [
+      "/online-quran-classes-no-masjid-nearby",
       "/online-quran-classes",
-      "/blog/how-to-teach-quran-when-theres-no-mosque-nearby",
-    ],
-    supporting: ["/locations", "/quran-teacher-online"],
-  },
-  {
-    topic: "UK / USA / New Zealand / Ireland online Quran classes",
-    summary:
-      "Country-specific scheduling and school-life context for online Quran classes (online-only service).",
-    primary: [
-      "/locations/online-quran-classes-uk",
-      "/locations/online-quran-classes-usa",
-      "/locations/online-quran-classes-new-zealand",
-      "/locations/online-quran-classes-ireland",
     ],
     supporting: [
-      "/blog/online-quran-classes-uk-kids-guide",
-      "/blog/online-quran-classes-usa-kids-guide",
-      "/blog/online-quran-classes-new-zealand-for-kids",
-      "/online-quran-classes/london",
-      "/online-quran-classes/auckland",
-      "/online-quran-classes/dublin",
+      "/blog/how-to-teach-quran-when-theres-no-mosque-nearby",
+      "/blog/raising-muslim-child-in-non-muslim-country",
+      "/blog/online-quran-classes-for-muslim-families-abroad",
+      "/blog/online-quran-classes-for-homeschool-families",
+      "/blog/quran-classes-for-expat-families",
+      "/blog/weekend-quran-classes-for-nordic-families",
+      "/blog/trustworthy-online-quran-teacher-live-abroad",
+      "/locations/online-quran-classes-new-zealand",
+      "/locations/online-quran-classes-ireland",
+      "/locations/online-quran-classes-norway",
+      "/locations/online-quran-classes-finland",
+      "/locations/online-quran-classes-denmark",
+      "/locations/online-quran-classes-sweden",
     ],
   },
   {
-    topic: "Canada online Quran classes",
+    topic: "United Kingdom online Quran classes (London, Birmingham, Manchester, Bradford, Leicester, Glasgow)",
+    summary:
+      "Live 1-on-1 online Quran classes for UK families with GMT/BST after-school scheduling and dedicated city guides.",
+    primary: [
+      "/locations/online-quran-classes-uk",
+      "/online-quran-classes/london",
+      "/online-quran-classes/birmingham",
+    ],
+    supporting: [
+      "/online-quran-classes/manchester",
+      "/online-quran-classes/bradford",
+      "/online-quran-classes/leicester",
+      "/online-quran-classes/glasgow",
+      "/blog/online-quran-classes-uk-kids-guide",
+      "/female-quran-teacher-online",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "United States online Quran classes (New York, Houston, Chicago, Dallas, Los Angeles)",
+    summary:
+      "Live 1-on-1 online Quran classes for USA families across ET, CT, MT and PT time zones with dedicated city guides.",
+    primary: [
+      "/locations/online-quran-classes-usa",
+      "/online-quran-classes/new-york",
+      "/online-quran-classes/houston",
+    ],
+    supporting: [
+      "/online-quran-classes/chicago",
+      "/online-quran-classes/dallas",
+      "/online-quran-classes/los-angeles",
+      "/blog/online-quran-classes-usa-kids-guide",
+      "/female-quran-teacher-online",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "Canada online Quran classes (Toronto & provinces)",
     summary:
       "Canada hub for live one-to-one online Quran classes with provincial time-zone planning, Toronto city guide, kids after-school guidance and female tutor requests.",
     primary: ["/locations/online-quran-classes-canada"],
@@ -170,6 +202,42 @@ export const TOPIC_INTENTS = [
       "/blog/female-quran-teacher-online-canada",
       "/noorani-qaida",
       "/female-quran-teacher-online",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "European online Quran classes (Germany, France, Netherlands, Sweden, Norway, Finland, Denmark, Ireland)",
+    summary:
+      "Live 1-on-1 online Quran classes across Europe with CET, EET, and GMT scheduling, Dublin guide, and winter-daylight planning.",
+    primary: [
+      "/locations/online-quran-classes-germany",
+      "/locations/online-quran-classes-france",
+      "/locations/online-quran-classes-netherlands",
+      "/locations/online-quran-classes-ireland",
+    ],
+    supporting: [
+      "/locations/online-quran-classes-sweden",
+      "/locations/online-quran-classes-norway",
+      "/locations/online-quran-classes-finland",
+      "/locations/online-quran-classes-denmark",
+      "/online-quran-classes/dublin",
+      "/blog/weekend-quran-classes-for-nordic-families",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "Gulf & Middle East online Quran classes (UAE, Qatar, Kuwait, Saudi Arabia)",
+    summary:
+      "Live 1-on-1 online Quran classes across the Gulf in GST and AST, with Dubai city guide and expat family support.",
+    primary: [
+      "/locations/online-quran-classes-uae",
+      "/locations/online-quran-classes-saudi-arabia",
+    ],
+    supporting: [
+      "/locations/online-quran-classes-qatar",
+      "/locations/online-quran-classes-kuwait",
+      "/online-quran-classes/dubai",
+      "/blog/quran-classes-for-expat-families",
       "/free-quran-classes-online",
     ],
   },
@@ -316,6 +384,7 @@ export const CORE_SERVICES = [
   { path: "/one-on-one-quran-classes", label: "One-on-One Quran Classes", note: "Private live lesson format explanation." },
   { path: "/quran-classes-for-working-professionals", label: "Quran Classes for Working Professionals", note: "Online Quran learning around busy work schedules." },
   { path: "/free-quran-classes-online", label: "Free Trial Class", note: "Free 30-minute live trial information (no credit card to book)." },
+  { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
 ];
 
@@ -360,6 +429,11 @@ export const BLOG_CLUSTERS = [
       { slug: "after-school-quran-classes-australia-for-kids", label: "Australia after-school Quran classes for kids" },
       { slug: "online-quran-classes-new-zealand-for-kids", label: "New Zealand kids online Quran classes guide" },
       { slug: "online-quran-for-malaysian-and-singaporean-families", label: "Online Quran for Malaysian and Singaporean families" },
+      { slug: "weekend-quran-classes-for-nordic-families", label: "Weekend Quran classes for Nordic families" },
+      { slug: "quran-classes-for-expat-families", label: "Quran classes for expat families" },
+      { slug: "online-quran-classes-for-muslim-families-abroad", label: "Online Quran classes for Muslim families abroad" },
+      { slug: "raising-muslim-child-in-non-muslim-country", label: "Raising a Muslim child in a non-Muslim country" },
+      { slug: "online-quran-classes-for-homeschool-families", label: "Online Quran classes for homeschool families" },
     ],
   },
   {
@@ -369,6 +443,7 @@ export const BLOG_CLUSTERS = [
       { slug: "is-online-quran-learning-as-effective-as-in-person", label: "Online vs in-person Quran learning" },
       { slug: "how-to-choose-online-quran-teacher", label: "How to choose an online Quran teacher" },
       { slug: "questions-to-ask-before-booking-a-quran-tutor", label: "Questions before booking a Quran tutor" },
+      { slug: "trustworthy-online-quran-teacher-live-abroad", label: "Finding a trustworthy online Quran teacher abroad" },
       { slug: "live-online-quran-tutor-vs-prerecorded-courses", label: "Live tutor vs pre-recorded courses" },
       { slug: "online-quran-classes-cost-pricing-guide", label: "Online Quran classes cost guide" },
       { slug: "how-to-teach-quran-when-theres-no-mosque-nearby", label: "Learning Quran when local access is limited" },
