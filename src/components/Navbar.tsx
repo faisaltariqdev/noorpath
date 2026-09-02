@@ -24,6 +24,7 @@ const moreLinks = [
   { href: "/quran-classes-for-sisters", label: "Classes for Sisters" },
   { href: "/quran-classes-for-working-professionals", label: "For Professionals" },
   { href: "/our-tutors", label: "Our Tutors" },
+  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
   { href: "/islamic-resources", label: "Resources" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -59,7 +60,9 @@ export default function Navbar() {
     if (moreDetailsRef.current) moreDetailsRef.current.open = false;
     if (countriesDetailsRef.current) countriesDetailsRef.current.open = false;
     if (mobileCountriesRef.current) mobileCountriesRef.current.open = false;
-    setOpen(false);
+    // Deferred so the state update is not synchronous inside the effect body.
+    const timer = setTimeout(() => setOpen(false), 0);
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   return (

@@ -113,13 +113,51 @@ function Field({
   );
 }
 
-function Card({ title, emoji, children }: { title: string; emoji: string; children: React.ReactNode }) {
+function Card({
+  step,
+  title,
+  emoji,
+  subtotal,
+  children,
+}: {
+  step: number;
+  title: string;
+  emoji: string;
+  subtotal?: string;
+  children: React.ReactNode;
+}) {
   return (
     <div style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 16, padding: "22px 20px", boxShadow: "var(--shadow-sm)" }}>
-      <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.05rem", color: "var(--charcoal)", margin: "0 0 16px" }}>
-        <span aria-hidden style={{ marginRight: 8 }}>{emoji}</span>
-        {title}
-      </h3>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, marginBottom: 16, flexWrap: "wrap" }}>
+        <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.05rem", color: "var(--charcoal)", margin: 0, display: "flex", alignItems: "center", gap: 10 }}>
+          <span
+            aria-hidden
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 26,
+              height: 26,
+              borderRadius: "50%",
+              background: "var(--emerald)",
+              color: "#fff",
+              fontSize: ".78rem",
+              fontWeight: 800,
+              fontFamily: "var(--font-jakarta, sans-serif)",
+              flexShrink: 0,
+            }}
+          >
+            {step}
+          </span>
+          <span aria-hidden>{emoji}</span>
+          {title}
+        </h3>
+        {subtotal ? (
+          <span style={{ fontSize: ".78rem", fontWeight: 800, color: "var(--emerald)", background: "rgba(10,110,79,.08)", padding: "4px 12px", borderRadius: 50, whiteSpace: "nowrap" }}>
+            {subtotal}
+          </span>
+        ) : null}
+      </div>
       <div style={{ display: "grid", gap: 14 }}>{children}</div>
     </div>
   );
@@ -221,6 +259,17 @@ export default function ZakatCalculator() {
 
   const displayCurrency = effectivePrices.currency;
   const priceReady = effectivePrices.goldPerGram > 0 && effectivePrices.silverPerGram > 0;
+  const hasEntries = result.totalAssets > 0 || result.deductions > 0;
+
+  /** Live subtotal chip for a group of result lines (only once something is entered). */
+  const subtotalFor = (...keys: string[]) => {
+    const sum = result.lines.filter((l) => keys.includes(l.key)).reduce((s, l) => s + l.amount, 0);
+    return sum > 0 ? formatMoney(sum, displayCurrency) : undefined;
+  };
+
+  const nisabProgress = priceReady && result.nisabUsed > 0
+    ? Math.min((result.netZakatable / result.nisabUsed) * 100, 100)
+    : 0;
 
   return (
     <div>
@@ -291,10 +340,15 @@ export default function ZakatCalculator() {
         )}
       </div>
 
+      <p style={{ margin: "0 0 18px", fontSize: ".88rem", color: "var(--slate)", lineHeight: 1.6 }}>
+        <strong>Fill in only what applies to you</strong> — leave everything else blank. Your zakat updates instantly as
+        you type, and nothing you enter leaves this device.
+      </p>
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" style={{ alignItems: "start" }}>
         {/* Inputs */}
         <div className="lg:col-span-2" style={{ display: "grid", gap: 20 }}>
-          <Card title="Cash & bank" emoji="💵">
+          <Card step={1} title="Cash & bank" emoji="💵" subtotal={subtotalFor("cash", "bank")}>
             <Field label={`Cash in hand (${displayCurrency})`} value={inputs.cashInHand} onChange={set("cashInHand")} />
             <Field
               label={`Bank accounts & savings (${displayCurrency})`}
@@ -304,7 +358,7 @@ export default function ZakatCalculator() {
             />
           </Card>
 
-          <Card title="Gold & silver" emoji="🥇">
+          <Card step={2} title="Gold & silver" emoji="🥇" subtotal={subtotalFor("gold", "silver")}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
               <Field label="Gold owned (grams)" value={inputs.goldGrams} onChange={set("goldGrams")} />
               <Field label={`…or gold value (${displayCurrency})`} value={inputs.goldValueDirect} onChange={set("goldValueDirect")} />
@@ -318,7 +372,7 @@ export default function ZakatCalculator() {
             </p>
           </Card>
 
-          <Card title="Investments" emoji="📈">
+          <Card step={3} title="Investments" emoji="📈" subtotal={subtotalFor("stocks", "crypto", "rsu")}>
             <Field
               label={`Shares, funds & ETFs — current market value (${displayCurrency})`}
               value={inputs.stocksValue}
@@ -338,7 +392,7 @@ export default function ZakatCalculator() {
             />
           </Card>
 
-          <Card title="Retirement accounts (401k / IRA / pension)" emoji="🏦">
+          <Card step={4} title="Retirement accounts (401k / IRA / pension)" emoji="🏦" subtotal={subtotalFor("retirement")}>
             <div>
               <span style={labelStyle}>Scholarly position to apply</span>
               <div style={{ display: "grid", gap: 8 }}>
@@ -371,7 +425,7 @@ export default function ZakatCalculator() {
             ) : null}
           </Card>
 
-          <Card title="Business, receivables & debts" emoji="🧾">
+          <Card step={5} title="Business, receivables & debts" emoji="🧾" subtotal={subtotalFor("business", "owed")}>
             <Field
               label={`Business cash, inventory & receivables (${displayCurrency})`}
               value={inputs.businessAssets}
@@ -421,10 +475,38 @@ export default function ZakatCalculator() {
               </div>
             </dl>
 
+            {/* Nisab progress bar — how close net wealth is to the threshold */}
+            {priceReady && hasEntries ? (
+              <div style={{ marginTop: 16 }} aria-hidden>
+                <div style={{ height: 8, borderRadius: 50, background: "rgba(255,255,255,.14)", overflow: "hidden" }}>
+                  <div
+                    style={{
+                      width: `${nisabProgress}%`,
+                      height: "100%",
+                      borderRadius: 50,
+                      background: result.meetsNisab
+                        ? "linear-gradient(90deg, #c9922a, #e8b84b)"
+                        : "rgba(255,255,255,.45)",
+                      transition: "width .35s ease",
+                    }}
+                  />
+                </div>
+                <p style={{ margin: "6px 0 0", fontSize: ".7rem", color: "rgba(255,255,255,.55)" }}>
+                  {result.meetsNisab
+                    ? "Your wealth is above the nisab — zakat is due"
+                    : `${Math.round(nisabProgress)}% of the nisab threshold`}
+                </p>
+              </div>
+            ) : null}
+
             <div style={{ marginTop: 20, padding: "18px 16px", borderRadius: 14, background: "rgba(255,255,255,.08)", textAlign: "center" }}>
               {!priceReady ? (
                 <p style={{ margin: 0, fontSize: ".85rem", color: "rgba(255,255,255,.8)" }}>
                   Waiting for metal prices to determine the nisab…
+                </p>
+              ) : !hasEntries ? (
+                <p style={{ margin: 0, fontSize: ".85rem", color: "rgba(255,255,255,.85)", lineHeight: 1.6 }}>
+                  👋 Start by entering what you own in the steps on the left — your zakat will appear here instantly.
                 </p>
               ) : result.meetsNisab ? (
                 <>
@@ -463,6 +545,37 @@ export default function ZakatCalculator() {
               Everything you enter stays on this device. Amounts are never sent to our servers.
             </p>
           </div>
+
+          {/* Mobile sticky result — keeps the answer visible while filling the form */}
+          {priceReady && hasEntries ? (
+            <div
+              className="lg:hidden no-print"
+              // left: 68 clears the floating cookie-settings button; right margin clears the WhatsApp float.
+              style={{ position: "fixed", left: 68, bottom: 14, zIndex: 900, maxWidth: "calc(100vw - 160px)" }}
+            >
+              <div
+                style={{
+                  background: "linear-gradient(135deg, #041f14, #0a3d28)",
+                  border: "1px solid rgba(232,184,75,.4)",
+                  borderRadius: 50,
+                  padding: "10px 18px",
+                  boxShadow: "0 8px 24px rgba(0,0,0,.35)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                }}
+              >
+                <span style={{ fontSize: ".72rem", color: "rgba(255,255,255,.7)", fontWeight: 600, whiteSpace: "nowrap" }}>
+                  {result.meetsNisab ? "Zakat due:" : "Below nisab"}
+                </span>
+                {result.meetsNisab ? (
+                  <strong style={{ fontSize: ".95rem", color: "var(--gold-lt)", whiteSpace: "nowrap" }}>
+                    {formatMoney(result.zakatDue, displayCurrency)}
+                  </strong>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
 
           {/* Breakdown */}
           <div style={{ marginTop: 20, background: "#fff", border: "1px solid var(--border)", borderRadius: 16, padding: "20px 18px" }}>
