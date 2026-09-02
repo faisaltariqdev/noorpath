@@ -1,19 +1,33 @@
 import Link from "next/link";
-import { featuredTrustpilotReviews } from "@/data/trustpilotReviews";
+import { featuredTrustpilotReviews, trustpilotReviews } from "@/data/trustpilotReviews";
 import { TRUSTPILOT } from "@/lib/academyFacts";
 
 type Props = {
   /** How many reviews to show (2–3 recommended on course/location pages) */
   count?: number;
   title?: string;
+  /** Optional country filter e.g. "UK", "UAE", "Pakistan" to prioritize relevant local social proof */
+  country?: string;
 };
 
 /** Compact Trustpilot reviews for course and location templates. */
 export default function TrustpilotSnippet({
   count = 3,
   title = "What parents say on Trustpilot",
+  country,
 }: Props) {
-  const reviews = featuredTrustpilotReviews.slice(0, Math.min(count, 3));
+  // If a country filter is passed, prioritize reviews from that country
+  const sortedReviews = country
+    ? [...trustpilotReviews].sort((a, b) => {
+        const aMatches = a.country.toLowerCase().includes(country.toLowerCase());
+        const bMatches = b.country.toLowerCase().includes(country.toLowerCase());
+        if (aMatches && !bMatches) return -1;
+        if (!aMatches && bMatches) return 1;
+        return 0;
+      })
+    : featuredTrustpilotReviews;
+
+  const reviews = sortedReviews.slice(0, Math.min(count, 4));
 
   return (
     <aside

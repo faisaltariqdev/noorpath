@@ -713,7 +713,7 @@ export default async function LocationDetailPage({ params }: Props) {
                 </div>
               </div>
 
-              <TrustpilotSnippet count={3} title={`Families learning from ${loc.country}`} />
+              <TrustpilotSnippet count={3} title={`Families learning from ${loc.country}`} country={loc.country} />
 
               {/* FAQ */}
               <div className="content-card" style={{ marginBottom: 28 }}>

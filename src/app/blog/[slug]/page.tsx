@@ -10,6 +10,7 @@ import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { faqPageJsonLdFromHtml } from "@/lib/faqFromHtml";
 import { splitArticleHtml } from "@/lib/splitArticleHtml";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
+import BlogAeoQuickSummary from "@/components/BlogAeoQuickSummary";
 import AdUnit from "@/components/AdUnit";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
@@ -342,6 +343,16 @@ export default async function BlogPostPage({ params }: Props) {
                       marginBottom: 28,
                       objectFit: "cover",
                     }}
+                  />
+                )}
+
+                {/* AEO Quick Summary & Direct Answer Key Takeaways for Readers & AI Search */}
+                {post.excerpt && (
+                  <BlogAeoQuickSummary
+                    title={post.title}
+                    excerpt={post.excerpt}
+                    category={post.category}
+                    readTime={post.readTime}
                   />
                 )}
 

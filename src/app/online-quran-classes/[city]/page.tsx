@@ -13,6 +13,7 @@ import { CheckCircle, Clock, MapPin, Shield, BookOpen, Users } from "lucide-reac
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
+import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -544,6 +545,8 @@ export default async function CityPage({ params }: Props) {
                   ))}
                 </div>
               </div>
+
+              <TrustpilotSnippet count={2} title={`Verified Reviews for ${c.city} & ${c.country} Families`} country={c.country} />
 
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 16 }}>

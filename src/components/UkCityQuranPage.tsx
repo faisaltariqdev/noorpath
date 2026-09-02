@@ -15,6 +15,7 @@ import {
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
+import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 import { getCityGuide } from "@/data/cityGuides";
 import {
   BASE_URL,
@@ -731,6 +732,8 @@ export default function UkCityQuranPage({
             {FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(" · ")}{" "}
             · <Link href="/pricing" style={{ fontWeight: 700 }}>View full pricing</Link>
           </p>
+
+          <TrustpilotSnippet count={2} title={`UK Parent Reviews on Trustpilot`} country="UK" />
         </div>
       </section>
 
