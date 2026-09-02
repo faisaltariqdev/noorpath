@@ -114,14 +114,14 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online usa",
     ],
     content: {
-      metadataTitle: "Online Quran Classes USA — Live 1-on-1 | NoorPath Academy",
+      metadataTitle: "Online Quran Classes USA — Free 30-Min Trial | NoorPath",
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for US families, with ET, CT, MT and PT lesson windows for kids and adults and a free 30-minute trial, no card required.",
+        "Live 1-on-1 online Quran classes for US families in ET, CT, MT or PT — Noorani Qaida, Tajweed and Hifz for kids and adults. Free 30-minute trial, no credit card.",
       heading: "Online Quran Classes in the United States",
       introduction:
-        "Families in the United States can request live one-on-one Quran lessons online without adding another commute to the school week.",
+        "Families in the United States can request live one-on-one Quran lessons online without adding another commute to the school week — before-school mornings, after-school evenings or weekend windows in the learner's own time zone, from Noorani Qaida through Tajweed and Hifz.",
       localPlanning:
-        "Include your state or time zone, school-day constraints, and preferred weekend windows in the request. Matching uses the learner’s local time rather than a single nationwide schedule.",
+        "Include your state or time zone, school-day constraints, and preferred weekend windows in the request. Many households pair a weekend Islamic-school routine with one or two weekday online lessons for individual recitation correction. Matching uses the learner’s local time rather than a single nationwide schedule, and daylight-saving changes are handled when the recurring slot is agreed.",
     },
   },
   {
@@ -176,14 +176,14 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online canada",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Canada — Live 1-on-1 | NoorPath Academy",
+      metadataTitle: "Online Quran Classes Canada — Free 30-Min Trial | NoorPath",
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for Canadian families, with local timezone lesson windows for kids and adults and a free 30-minute trial, no card required.",
+        "Live 1-on-1 online Quran classes for Canadian families in their own provincial time zone — Qaida, Tajweed and Hifz for kids and adults. Free 30-minute trial, no card.",
       heading: "Online Quran Classes in Canada",
       introduction:
-        "Canadian families can request online Quran lessons planned around their own provincial or territorial time zone and school-week routine.",
+        "Canadian families — from Toronto and Ottawa to Calgary and Vancouver — can request live online Quran lessons planned around their own provincial or territorial time zone and school-week routine, with no winter commute to a weekend class.",
       localPlanning:
-        "Include your city and time zone in the request, especially where the local clock differs from Eastern Time. Winter and summer clock changes are handled when a recurring slot is agreed.",
+        "Include your city and time zone in the request, especially where the local clock differs from Eastern Time — Canada spans six time zones and a Vancouver evening is not a Toronto evening. Winter and summer clock changes are handled when a recurring slot is agreed, so the hour on your own clock stays the same.",
     },
   },
   {
@@ -210,9 +210,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online australia",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Australia — Live 1-on-1 | NoorPath",
+      metadataTitle: "Online Quran Classes Australia — Free Trial | NoorPath",
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for families in Sydney, Melbourne and beyond, with AEST or AWST lesson windows and a free 30-minute trial.",
+        "Live 1-on-1 online Quran classes for families in Sydney, Melbourne, Brisbane and Perth — state-aware AEST/AWST scheduling. Free 30-minute trial, no credit card.",
       heading: "Online Quran Classes in Australia",
       introduction:
         "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements — from Noorani Qaida through Tajweed and Hifz.",
@@ -343,9 +343,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "online hifz classes qatar",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Qatar — Live 1-to-1 Lessons | NoorPath",
+      metadataTitle: "Online Quran Classes Qatar — Free Trial | NoorPath",
       metadataDescription:
-        "Request live one-to-one online Quran classes in Qatar, with AST scheduling and English-language options for children and adults.",
+        "Live 1-to-1 online Quran classes for Doha and Qatar families — AST evenings around school and work, English-language options. Free 30-minute trial, no credit card.",
       heading: "Online Quran Classes in Qatar",
       introduction:
         "Families in Qatar can request live one-to-one Quran lessons online, including English-language support for learners in international-school routines.",
@@ -374,9 +374,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "online hifz classes kuwait",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Kuwait — Live 1-to-1 Lessons | NoorPath",
+      metadataTitle: "Online Quran Classes Kuwait — Free Trial | NoorPath",
       metadataDescription:
-        "Request live one-to-one online Quran classes in Kuwait, with AST scheduling and English-language options for children and adults.",
+        "Live 1-to-1 online Quran classes for Kuwait families — AST evenings and Friday–Saturday weekend windows, English-language options. Free 30-minute trial, no card.",
       heading: "Online Quran Classes in Kuwait",
       introduction:
         "Families in Kuwait can request live online Quran tuition for children or adults, with one-to-one teaching planned in Arabia Standard Time.",
@@ -468,9 +468,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "female quran teacher netherlands",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Netherlands | NoorPath Academy",
+      metadataTitle: "Online Quran Classes Netherlands — Free Trial | NoorPath",
       metadataDescription:
-        "Live online Quran classes for Dutch Muslim families. CET slots ~4–10 PM, Noorani Qaida to Hifz, USD fees with € budgeting notes. Free trial.",
+        "Live 1-to-1 online Quran classes for Dutch Muslim families — CET evenings around school, Noorani Qaida to Hifz. Free 30-minute trial, no credit card required.",
       heading: "Online Quran Classes in the Netherlands",
       introduction:
         "Families in the Netherlands can request live one-to-one Quran tuition online for children and adults, planned around Dutch school hours in CET/CEST — including evening windows that keep evenings predictable for homework and family time.",
@@ -500,9 +500,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "islamic classes sweden",
     ],
     content: {
-      metadataTitle: "Quran Classes in Stockholm & Sweden Online | NoorPath",
+      metadataTitle: "Quran Classes in Stockholm & Sweden — Free Trial | NoorPath",
       metadataDescription:
-        "Quran classes in Stockholm and across Sweden: live 1-to-1 online Qaida, Tajweed or Hifz with CET evenings. Free trial; availability confirmed after request.",
+        "Quran classes in Stockholm and across Sweden: live 1-to-1 online Qaida, Tajweed or Hifz with CET evenings. Free 30-minute trial, no credit card required.",
       heading: "Online Quran Classes in Sweden — Including Stockholm",
       introduction:
         "Muslim families in Sweden — including Stockholm, Gothenburg, Malmö and Uppsala — can request live online Quran and Noorani Qaida classes with tutors matched to the learner’s level, with evening CET/CEST times that respect Nordic school and daylight patterns.",
@@ -626,9 +626,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online finland",
     ],
     content: {
-      metadataTitle: "Online Quran Classes in Finland | NoorPath",
+      metadataTitle: "Online Quran Classes Finland — Kids & Free Trial | NoorPath",
       metadataDescription:
-        "Kids Quran classes in Finland online: live 1-to-1 Qaida, Tajweed or Hifz with EET/EEST matching for Helsinki and Espoo. Free trial; availability after request.",
+        "Kids Quran classes in Finland online: live 1-to-1 Qaida, Tajweed or Hifz with EET evenings for Helsinki and Espoo. Free 30-minute trial, no credit card required.",
       heading: "Online Quran Classes in Finland",
       introduction:
         "Muslim families in Finland — including Helsinki, Espoo and other cities — can request live one-to-one online Quran classes for children and adults when local options are thin. NoorPath teaches online only and does not operate a Finnish campus.",
@@ -657,9 +657,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online denmark",
     ],
     content: {
-      metadataTitle: "Online Quran Classes in Denmark | NoorPath",
+      metadataTitle: "Online Quran Classes Denmark — Free Trial | NoorPath",
       metadataDescription:
-        "Online Quran classes in Denmark: live 1-to-1 Qaida, Tajweed or Hifz with CET/CEST matching, including weekend windows. Free trial; availability after request.",
+        "Online Quran classes in Denmark: live 1-to-1 Qaida, Tajweed or Hifz with CET evenings and weekend windows for Copenhagen and Aarhus. Free 30-minute trial, no card.",
       heading: "Online Quran Classes in Denmark",
       introduction:
         "Muslim families in Denmark — including Copenhagen, Aarhus and other cities — can request live one-to-one online Quran classes, including weekend windows when weekdays are full. NoorPath teaches online only and does not operate a Danish campus.",

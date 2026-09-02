@@ -131,6 +131,13 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
+    topic: "Zakat calculation / free zakat calculator",
+    summary:
+      "Free in-browser zakat calculator with live gold/silver nisab covering cash, gold, stocks, crypto, vested RSUs and 401k/pension with documented scholarly positions (majority view and Fiqh Council of North America). All amounts stay on the user's device.",
+    primary: ["/tools/zakat-calculator"],
+    supporting: ["/islamic-resources"],
+  },
+  {
     topic: "Online Quran classes with no masjid nearby / Muslim-minority areas",
     summary:
       "Families in rural areas or towns with no local masjid or madrasa who prefer live 1-on-1 online Quran classes with English-speaking tutors.",

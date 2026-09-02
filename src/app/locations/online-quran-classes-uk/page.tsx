@@ -40,10 +40,10 @@ const PAGE_URL = `${BASE_URL}/locations/online-quran-classes-uk`;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "NoorPath Academy | Online Quran Classes UK — Live 1-to-1 & Free Trial",
+    absolute: "Online Quran Classes UK — Free 30-Min Trial | NoorPath",
   },
   description:
-    "NoorPath Academy — live one-to-one online Quran classes in the UK for kids and adults. Request Qaida, Tajweed, Hifz or a female tutor in GMT/BST. Free 30-minute trial, no credit card.",
+    "Live one-to-one online Quran classes in the UK for kids and adults — Qaida, Tajweed, Hifz and female tutor requests in GMT/BST. Free 30-minute trial, no credit card.",
   keywords: [
     "online quran classes uk",
     "quran classes online uk",
@@ -226,6 +226,16 @@ const faqs = [
     question: "Does NoorPath have physical branches in UK cities?",
     answer:
       "NoorPath provides remote online lessons and does not claim physical branches in London, Birmingham, Manchester, Bradford, Leeds, Leicester or Luton.",
+  },
+  {
+    question: "What after-school times do UK families usually request?",
+    answer:
+      "Many UK households ask for weekday windows between roughly 4 PM and 8 PM GMT or BST, after school and before bedtime, with weekend mornings as an alternative when weekday evenings are full of clubs and homework. Exact recurring times depend on tutor matching and are confirmed after your request.",
+  },
+  {
+    question: "Can online lessons replace or support a local madrasah?",
+    answer:
+      "They solve different problems. A mosque madrasah offers community and group learning, while a live one-to-one online lesson gives a child individual recitation time and correction. Some families use online lessons because after-school travel is difficult; others keep both routines side by side. NoorPath does not present online lessons as a replacement for local community learning.",
   },
 ];
 

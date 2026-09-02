@@ -44,6 +44,10 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       q: "Can lessons fit around Dutch school and club activities?",
       a: "Yes — request after-school or weekend CET/CEST windows and share conflicts during matching. A sustainable weekly slot usually works better than irregular catch-up lessons.",
     },
+    {
+      q: "What language of instruction can Dutch families request?",
+      a: "You can note an English or Arabic instruction preference when booking — helpful for households where children study in Dutch at school but learn Quran in another language at home. Language and tutor availability are confirmed after your request, not promised in advance.",
+    },
   ],
   "online-quran-classes-ireland": [
     {
@@ -150,6 +154,14 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       q: "Can beginners start Noorani Qaida online from Finland?",
       a: "Yes. Complete beginners typically start with Noorani Qaida. Families can also use the Interactive Noorani Qaida hub for free recognition practice between live lessons.",
     },
+    {
+      q: "Can we request a female Quran teacher in Finland?",
+      a: "Yes. State a female tutor preference when booking — common for daughters and adult sisters. Female-tutor and EET/EEST availability are confirmed after matching.",
+    },
+    {
+      q: "Do weekend lessons work when Finnish weekday evenings are dark and full?",
+      a: "Weekend morning or afternoon EET/EEST windows can be requested when after-school evenings are taken up by homework and activities, or when short winter daylight makes late slots tiring for a child. Exact weekend availability is confirmed after tutor matching.",
+    },
   ],
   "online-quran-classes-denmark": [
     {
@@ -163,6 +175,102 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     {
       q: "Can we request a female Quran teacher in Denmark?",
       a: "Yes. State a female tutor preference when booking. Availability is confirmed after your request. See the female tutor request page for how matching works.",
+    },
+    {
+      q: "What language of instruction can families in Denmark request?",
+      a: "You can note an English or Arabic instruction preference when booking — useful when children study in Danish at school but the family prefers another language for Quran learning. Language and tutor availability are confirmed after your request.",
+    },
+    {
+      q: "Can beginners in Denmark start with Noorani Qaida online?",
+      a: "Yes. Complete beginners typically start with Noorani Qaida before moving to Quran reading or Tajweed by assessment. Families can also use the free Interactive Noorani Qaida hub for recognition practice between live lessons.",
+    },
+  ],
+  "online-quran-classes-kuwait": [
+    {
+      q: "Are online Quran classes suitable for families in Kuwait?",
+      a: "Yes. Households in Kuwait City, Hawalli, Salmiya and Jahra can request live one-to-one online Quran lessons with AST (UTC+3) scheduling around school, work and prayer commitments. NoorPath teaches online only (not a Kuwait campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "What AST times work around the Kuwait school and work week?",
+      a: "Many families request weekday evenings after school or work, or Friday–Saturday weekend windows in AST. Kuwait does not observe daylight saving, so a recurring slot stays fixed on your clock even when a tutor's own country changes clocks. Exact availability is confirmed after tutor matching.",
+    },
+    {
+      q: "Can expat families in Kuwait request English-language instruction?",
+      a: "Yes. State an English-language preference when booking — common for families with children in international schools. Language and tutor availability are confirmed after your request, not promised in advance.",
+    },
+    {
+      q: "How should Kuwait families budget USD fees in KWD?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to Kuwaiti dinars for household planning using your bank’s rate; NoorPath does not publish a fixed KWD price list. ${getCurrencyNote("online-quran-classes-kuwait")}`,
+    },
+  ],
+  "online-quran-classes-qatar": [
+    {
+      q: "Are online Quran classes suitable for families in Doha and Qatar?",
+      a: "Yes. Families in Doha, Al Rayyan, Al Wakrah and Lusail — Qatari households and expats alike — can request live one-to-one online Quran lessons with AST (UTC+3) scheduling. NoorPath teaches online only (not a Doha campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "What lesson times fit Qatar's school and work routines?",
+      a: "Many families request weekday evenings after international-school hours or work, plus Friday–Saturday weekend windows in AST. Qatar does not change clocks seasonally, so ask for the recurring slot to be recorded in Qatar local time. Exact availability is confirmed after tutor matching.",
+    },
+    {
+      q: "Can expat families in Qatar request English-language instruction?",
+      a: "Yes. Note an English-language preference when booking — useful for learners in international-school routines. Language and tutor availability are confirmed after your request.",
+    },
+    {
+      q: "How should Qatar families budget USD fees in QAR?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to Qatari riyals for household planning using your bank’s rate; NoorPath does not publish a fixed QAR price list. ${getCurrencyNote("online-quran-classes-qatar")}`,
+    },
+  ],
+  "online-quran-classes-usa": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in the USA?",
+      a: "Yes. Families in New York, Houston, Chicago, Dallas, Los Angeles and across the United States can request live one-to-one online Quran and Noorani Qaida lessons scheduled in their own time zone. NoorPath teaches online only (not a US campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "Which US time zones do online Quran classes support?",
+      a: "Lessons can be requested in ET, CT, MT or PT — state your city or time zone so every proposed slot is shown in your local wall-clock time. Ask for the recurring time to be anchored to your own clock around daylight-saving changes. Exact availability is confirmed after tutor matching.",
+    },
+    {
+      q: "Do before-school morning Quran classes work in the USA?",
+      a: "Early-morning windows before school can be requested alongside the more common 4–8 PM after-school and weekend slots. Because tutors teach from multiple regions, a US morning is often a workable teaching hour elsewhere. Availability is still confirmed after your request — not guaranteed in advance.",
+    },
+    {
+      q: "Should we choose online Quran classes or weekend Islamic school?",
+      a: "They solve different problems, and many families keep both: weekend Islamic school provides community and group learning, while a one-to-one online lesson gives the child individual recitation time and correction that a large class cannot. Neither is presented as a replacement for the other.",
+    },
+    {
+      q: "Can we request a female Quran teacher in the USA?",
+      a: "Yes. State a female tutor preference when booking — common for daughters and adult sisters. Female-tutor and local-time availability are confirmed after matching. See the female Quran teacher page for how preferences are handled.",
+    },
+    {
+      q: "Can siblings in the USA share one plan or lesson slot?",
+      a: "Each learner usually needs their own matched lesson time so pacing and attention stay appropriate. You can request consecutive or nearby windows for siblings; published family discounts apply to eligible sibling enrolments on the pricing page.",
+    },
+  ],
+  "online-quran-classes-canada": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in Canada?",
+      a: "Yes. Families in Toronto, Vancouver, Calgary, Ottawa, Montreal and across Canada can request live one-to-one online Quran and Noorani Qaida lessons scheduled in their own provincial time zone. NoorPath teaches online only (not a Canadian campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "How do Canada's time zones affect booking a Quran class?",
+      a: "Canada spans six time zones, so always state your city or province — an Eastern-Time evening is mid-afternoon in Vancouver. Every proposed slot should be confirmed in your local wall-clock time, and exact recurring times are confirmed after tutor matching.",
+    },
+    {
+      q: "What happens to a recurring lesson at the winter clock change?",
+      a: "Ask for the recurring slot to be recorded in your Canadian local time so the hour on your clock stays the same when clocks change in November and March, even if the tutor's own country changes on different dates. Confirm this in writing when the schedule is agreed.",
+    },
+    {
+      q: "Do after-school and weekend slots work for Canadian kids?",
+      a: "Many families request after-school windows before dinner, or weekend mornings when weekday evenings are full of activities. Online lessons also remove the winter commute to a weekend class. Exact availability depends on tutor matching and is confirmed after your request.",
+    },
+    {
+      q: "Can we request a female Quran teacher in Canada?",
+      a: "Yes. State a female tutor preference when booking. Female-tutor and local-time availability are confirmed after matching. See the female Quran teacher page for how preferences are handled.",
+    },
+    {
+      q: "How should Canadian families budget USD fees in CAD?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to Canadian dollars for household planning using your bank’s rate; NoorPath does not publish a fixed CAD price list. ${getCurrencyNote("online-quran-classes-canada")}`,
     },
   ],
   // ── Phase B: template-heavy Asia / Africa hubs (unique EXTRA FAQs only) ──

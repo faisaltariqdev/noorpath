@@ -1536,3 +1536,13 @@ pre { max-width: 100%; }
   .qaida-mini-game-choices,
   .qaida-game-choices { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* ─── Print: clean records (zakat calculations, guides) without site chrome ─── */
+@media print {
+  header,
+  footer,
+  .whatsapp-float,
+  .skip-to-content,
+  .no-print { display: none !important; }
+  main { padding-top: 0 !important; }
+}

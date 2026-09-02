@@ -19,7 +19,7 @@ export const locations: Location[] = [
     desc: "Live online Quran classes for Muslim families across the USA, with timezone-based tutor matching.",
     timezone: "ET / CT / MT / PT",
     localContext:
-      "Families should include their state or time zone when requesting lessons because the United States spans several local schedules. ET, CT, MT and PT after-school or weekend preferences are subject to tutor matching.",
+      "Families should include their state or time zone when requesting lessons because the United States spans several local schedules — a 5 PM slot in New York is 2 PM in Los Angeles. Before-school mornings, 4–8 PM after-school evenings and weekend windows in ET, CT, MT or PT can all be requested, and many households pair weekend Islamic school with a weekday online lesson for individual recitation time. NoorPath teaches online only (no US campus); exact recurring times are confirmed after tutor matching.",
     keywords: ["online quran classes usa", "quran teacher usa", "online quran usa", "islamic classes usa", "learn quran online usa"],
   },
   {
@@ -41,7 +41,7 @@ export const locations: Location[] = [
     desc: "Live online Quran classes for Canadian Muslim families across multiple timezones.",
     timezone: "ET / CT / MT / PT / AT / NT",
     localContext:
-      "Canada spans several time zones, so families should include their city or province when requesting a tutor. Local after-school, evening and weekend preferences are subject to matching.",
+      "Canada spans six time zones from Newfoundland to the Pacific, so families should include their city or province when requesting a tutor — an Eastern-Time evening lands mid-afternoon in Vancouver. Online lessons also remove the winter commute to a weekend class, and the recurring slot can be anchored to your Canadian local time across the November and March clock changes. NoorPath teaches online only (no Canadian campus); after-school, evening and weekend preferences are confirmed after matching.",
     keywords: ["online quran classes canada", "quran teacher canada", "online quran canada", "learn quran online canada", "islamic classes canada"],
   },
   {
@@ -242,7 +242,7 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Qatar families and expats — AST timezone.",
     timezone: "AST (UTC+3)",
     localContext:
-      "Families in Qatar can request English-language instruction in AST around work and international-school hours. Evening and weekend availability is confirmed after tutor matching.",
+      "Families in Doha, Al Rayyan, Al Wakrah and Lusail can request English-language instruction in AST around work and international-school hours — a common need for Qatar's large expat community. Qatar keeps one clock year-round, so a recurring lesson stays fixed locally even when a tutor's own country changes clocks. Weekday evenings and Friday–Saturday weekend availability are confirmed after tutor matching; NoorPath teaches online only (no Doha campus).",
     keywords: ["online quran classes qatar", "quran teacher qatar", "learn quran online qatar", "online quran doha", "islamic classes qatar"],
   },
   {
@@ -253,7 +253,7 @@ export const locations: Location[] = [
     desc: "Online Quran classes for Kuwaiti families and expats — AST timezone.",
     timezone: "AST (UTC+3)",
     localContext:
-      "Families in Kuwait can request one-to-one online Tajweed or Hifz lessons in AST around school, work and prayer commitments. Evening and weekend preferences are subject to tutor matching.",
+      "Families in Kuwait City, Hawalli, Salmiya and Jahra — Kuwaiti households and expats alike — can request one-to-one online Tajweed or Hifz lessons in AST around school, work and prayer commitments. Kuwait does not observe daylight saving, so a recurring slot stays fixed on the local clock, and English-language instruction can be requested for children in international schools. Weekday evenings and Friday–Saturday weekend preferences are subject to tutor matching; NoorPath teaches online only (no Kuwait campus).",
     keywords: ["online quran classes kuwait", "quran teacher kuwait", "learn quran online kuwait", "online quran kuwait city", "islamic classes kuwait"],
   },
   {

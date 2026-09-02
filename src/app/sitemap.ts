@@ -20,6 +20,25 @@ const BRAND_ENTITY_UPDATE = new Date("2026-08-20");
  * Honest content stamp for pages last materially updated in the enterprise overhaul.
  */
 const SITE_CONTENT_STAMP = new Date("2026-08-20");
+/** Launch stamp for the free tools cluster (zakat calculator shipped 2026-09-02). */
+const TOOLS_LAUNCH_STAMP = new Date("2026-09-02");
+/**
+ * Honest stamp for country hubs materially updated in the GSC-driven location
+ * refresh (titles, descriptions, country FAQs, local context) on 2026-09-02.
+ */
+const LOCATION_REFRESH_STAMP = new Date("2026-09-02");
+const LOCATION_REFRESH_SLUGS = new Set([
+  "online-quran-classes-uk",
+  "online-quran-classes-usa",
+  "online-quran-classes-canada",
+  "online-quran-classes-australia",
+  "online-quran-classes-netherlands",
+  "online-quran-classes-kuwait",
+  "online-quran-classes-qatar",
+  "online-quran-classes-sweden",
+  "online-quran-classes-denmark",
+  "online-quran-classes-finland",
+]);
 
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
@@ -193,7 +212,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`,                                  priority: 0.85, changeFrequency: "yearly",  lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/founder`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
+    { url: `${BASE}/tools/zakat-calculator`,                   priority: 0.9,  changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
     { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
     { url: `${BASE}/accessibility-statement`,                  priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
@@ -213,7 +233,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = locations.map((l) => ({
     url: `${BASE}/locations/${l.slug}`,
-    lastModified: SITE_CONTENT_STAMP,
+    lastModified: LOCATION_REFRESH_SLUGS.has(l.slug) ? LOCATION_REFRESH_STAMP : SITE_CONTENT_STAMP,
     priority: 0.88,
     changeFrequency: "weekly" as const,
   }));

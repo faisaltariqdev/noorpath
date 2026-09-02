@@ -128,6 +128,7 @@ const resourceCategories = [
       { title: "How to Do Wudu — Step by Step", desc: "Complete guide with duas and common mistakes", href: "/blog/how-to-do-wudu-step-by-step", type: "Article" },
       { title: "Five Pillars of Islam — Full Guide", desc: "Shahada, Salah, Zakat, Sawm, Hajj with Quran evidence", href: "/blog/five-pillars-of-islam-explained", type: "Article" },
       { title: "99 Names of Allah — Full Guide", desc: "Arabic text, meanings and memorization tips", href: "/blog/99-names-of-allah-asmaul-husna", type: "Article" },
+      { title: "Zakat Calculator — Live Nisab", desc: "Free private calculator for cash, gold, stocks, crypto & 401k", href: "/tools/zakat-calculator", type: "Free Tool" },
     ],
   },
   {
