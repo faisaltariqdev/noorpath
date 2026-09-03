@@ -131,11 +131,18 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
-    topic: "Zakat calculation / free zakat calculator",
+    topic: "Islamic tools and calculators / free productivity suite",
     summary:
-      "Free in-browser zakat calculator with live gold/silver nisab covering cash, gold, stocks, crypto, vested RSUs and 401k/pension with documented scholarly positions (majority view and Fiqh Council of North America). All amounts stay on the user's device.",
-    primary: ["/tools/zakat-calculator"],
-    supporting: ["/islamic-resources"],
+      "Free privacy-focused Islamic tools suite: Zakat Calculator with live Nisab, Quran Hifz & Completion Planner (Sabaq-Sabqi-Manzil), Hijri Date Converter with moon-sighting adjustments, Digital Tasbeeh Counter with haptic/audio feedback, and Islamic Inheritance (Miras) Calculator (Surah An-Nisa 4:11-12).",
+    primary: [
+      "/tools",
+      "/tools/zakat-calculator",
+      "/tools/hifz-calculator",
+      "/tools/hijri-date-converter",
+      "/tools/tasbeeh-counter",
+      "/tools/inheritance-calculator",
+    ],
+    supporting: ["/islamic-resources", "/hifz-quran-online"],
   },
   {
     topic: "Online Quran classes with no masjid nearby / Muslim-minority areas",

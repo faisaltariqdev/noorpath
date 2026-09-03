@@ -31,19 +31,29 @@ const company = [
   { href: "/locations", label: "All Locations" },
   { href: "/blog", label: "Blog & Articles" },
   { href: "/islamic-resources", label: "Free Resources" },
+  { href: "/tools", label: "🧮 Islamic Tools Hub" },
+  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
+  { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },
+  { href: "/tools/hijri-date-converter", label: "📅 Hijri Converter" },
+  { href: "/tools/tasbeeh-counter", label: "📿 Digital Tasbeeh" },
+  { href: "/tools/inheritance-calculator", label: "⚖️ Inheritance Calculator" },
   { href: "/pricing", label: "Pricing" },
   { href: "/free-quran-classes-online", label: "Free Trial" },
 ];
 
 const quickLinks = [
+  { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
+  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
+  { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },
+  { href: "/tools/hijri-date-converter", label: "📅 Hijri Date Converter" },
+  { href: "/tools/tasbeeh-counter", label: "📿 Digital Tasbeeh" },
+  { href: "/tools/inheritance-calculator", label: "⚖️ Miras Calculator" },
   { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
   { href: "/learn-quran-online", label: "Learn Quran Online" },
   { href: "/online-quran-classes", label: "Online Quran Academy" },
   { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids" },
   { href: "/learn-tajweed-online", label: "Learn Tajweed Online" },
   { href: "/hifz-quran-online", label: "Hifz Quran Online" },
-  { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online" },
-  { href: "/courses/arabic-language-online", label: "Arabic Language" },
 ];
 
 const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({

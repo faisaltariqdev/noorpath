@@ -1,5 +1,6 @@
 export const ACADEMY_NAME = "NoorPath Academy";
 export const BASE_URL = "https://www.noorpath.online";
+export const SITE_URL = BASE_URL;
 
 export const CONTACT = {
   email: "info@noorpath.online",

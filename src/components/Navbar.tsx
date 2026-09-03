@@ -18,13 +18,13 @@ const primaryLinks = [
 
 /* Grouped under a "More" dropdown */
 const moreLinks = [
+  { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
   { href: "/noorani-qaida", label: "Noorani Qaida" },
   { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
   { href: "/one-on-one-quran-classes", label: "1-to-1 Classes" },
   { href: "/quran-classes-for-sisters", label: "Classes for Sisters" },
   { href: "/quran-classes-for-working-professionals", label: "For Professionals" },
   { href: "/our-tutors", label: "Our Tutors" },
-  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
   { href: "/islamic-resources", label: "Resources" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

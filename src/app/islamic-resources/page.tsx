@@ -82,6 +82,19 @@ const backlinkAssetCategories = (
 
 const resourceCategories = [
   {
+    icon: "🧮",
+    title: "Islamic Tools & Calculators",
+    color: "#0a6e4f",
+    resources: [
+      { title: "Islamic Tools & Calculators Directory", desc: "All-in-one suite of free Shariah-compliant tools", href: "/tools", type: "Hub" },
+      { title: "Zakat Calculator — Live Nisab", desc: "Free private calculator for cash, gold, stocks, crypto & 401k", href: "/tools/zakat-calculator", type: "Free Tool" },
+      { title: "Quran Hifz & Completion Planner", desc: "Calculate completion dates, daily Sabaq & Sabqi-Manzil timetables", href: "/tools/hifz-calculator", type: "Free Tool" },
+      { title: "Islamic Hijri Date Converter & Calendar", desc: "Convert Gregorian to Hijri with moon sighting adjustments & holiday countdowns", href: "/tools/hijri-date-converter", type: "Free Tool" },
+      { title: "Digital Tasbeeh & Dhikr Counter", desc: "Online counter with vibration, click sounds & authentic Sunnah Adhkar", href: "/tools/tasbeeh-counter", type: "Free Tool" },
+      { title: "Islamic Inheritance (Miras) Calculator", desc: "Shariah estate division based on Surah An-Nisa (4:11–12) with debts & Wasiyyah", href: "/tools/inheritance-calculator", type: "Free Tool" },
+    ],
+  },
+  {
     icon: "📖",
     title: "Quran Learning Guides",
     color: "#0a6e4f",

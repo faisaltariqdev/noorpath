@@ -155,15 +155,21 @@ Supporting resources:
 - [Female Quran teacher for kids](https://www.noorpath.online/blog/female-quran-teacher-for-kids)
 - [Female Quran teacher online Canada](https://www.noorpath.online/blog/female-quran-teacher-online-canada)
 
-### Zakat calculation / free zakat calculator
+### Islamic tools and calculators / free productivity suite
 
-Free in-browser zakat calculator with live gold/silver nisab covering cash, gold, stocks, crypto, vested RSUs and 401k/pension with documented scholarly positions (majority view and Fiqh Council of North America). All amounts stay on the user's device.
+Free privacy-focused Islamic tools suite: Zakat Calculator with live Nisab, Quran Hifz & Completion Planner (Sabaq-Sabqi-Manzil), Hijri Date Converter with moon-sighting adjustments, Digital Tasbeeh Counter with haptic/audio feedback, and Islamic Inheritance (Miras) Calculator (Surah An-Nisa 4:11-12).
 
 Primary resources:
+- [/tools](https://www.noorpath.online/tools)
 - [/tools/zakat-calculator](https://www.noorpath.online/tools/zakat-calculator)
+- [/tools/hifz-calculator](https://www.noorpath.online/tools/hifz-calculator)
+- [/tools/hijri-date-converter](https://www.noorpath.online/tools/hijri-date-converter)
+- [/tools/tasbeeh-counter](https://www.noorpath.online/tools/tasbeeh-counter)
+- [/tools/inheritance-calculator](https://www.noorpath.online/tools/inheritance-calculator)
 
 Supporting resources:
 - [Islamic Resources](https://www.noorpath.online/islamic-resources)
+- [Hifz Quran Online](https://www.noorpath.online/hifz-quran-online)
 
 ### Online Quran classes with no masjid nearby / Muslim-minority areas
 

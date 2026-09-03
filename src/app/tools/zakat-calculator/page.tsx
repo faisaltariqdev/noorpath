@@ -4,6 +4,7 @@ import ZakatCalculator from "@/components/tools/ZakatCalculator";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import { NISAB_GRAMS } from "@/lib/zakat/engine";
+import { ShieldCheck, Sparkles, Scale, BookOpen, Clock, HeartHandshake } from "lucide-react";
 
 export const revalidate = false;
 
@@ -110,45 +111,146 @@ export default function ZakatCalculatorPage() {
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
 
-      {/* Hero — answer-first */}
-      <section style={{ background: "linear-gradient(135deg, #041f14, #0a3d28)", padding: "72px 0 56px" }}>
-        <div className="max-w-[1200px] mx-auto px-4" style={{ textAlign: "center" }}>
-          <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "var(--gold-lt)" }}>
-            🕌 Free Tool — No Sign-Up
-          </span>
-          <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(2rem,4.5vw,3rem)", color: "#fff", margin: "16px 0" }}>
-            Zakat Calculator
+      {/* Hero Section */}
+      <section className="relative overflow-hidden pt-16 pb-14 bg-gradient-to-br from-[#041f14] via-[#083422] to-[#0a3d28] text-white">
+        <div
+          className="absolute inset-0 opacity-10 pointer-events-none"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 20% 30%, rgba(201, 146, 42, 0.4) 0%, transparent 60%), radial-gradient(circle at 80% 70%, rgba(20, 184, 130, 0.3) 0%, transparent 60%)",
+          }}
+        />
+
+        <div className="max-w-[1200px] mx-auto px-4 relative z-10 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-bold text-[var(--gold-lt)] mb-4 backdrop-blur-sm">
+            <Sparkles size={14} className="text-[var(--gold)]" />
+            <span>Islamic Finance Tool · 100% Client-Side Privacy</span>
+          </div>
+
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+            Comprehensive <span className="text-[var(--gold-lt)] italic">Zakat</span> Calculator
           </h1>
-          <p style={{ color: "rgba(255,255,255,.78)", maxWidth: 720, margin: "0 auto", lineHeight: 1.8, fontSize: ".98rem" }}>
-            Zakat is <strong style={{ color: "var(--gold-lt)" }}>2.5% of your net zakatable wealth</strong> — cash, gold and
-            silver, investments and business assets minus debts due — once it reaches the nisab threshold and has been held
-            for one lunar year. This calculator uses live gold and silver prices, covers modern assets like stocks, crypto,
-            vested RSUs and 401k/pension accounts, and runs entirely in your browser: the amounts you enter never leave your
-            device.
+
+          <p className="text-white/80 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base mb-8">
+            Zakat is <strong className="text-[var(--gold-lt)]">2.5% of your net zakatable wealth</strong> — cash, gold &amp;
+            silver, investments, crypto, and business assets minus deductible debts — once it reaches the nisab threshold and has
+            been held for one lunar year. Runs entirely in your browser with live market prices.
           </p>
+
+          {/* Trust Pillars */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto text-left">
+            <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <ShieldCheck size={18} className="text-[var(--gold-lt)] shrink-0 mt-0.5" />
+              <div>
+                <div className="text-xs font-bold text-white">100% Private &amp; Secure</div>
+                <div className="text-[0.72rem] text-white/60">No financial data is ever sent to our servers.</div>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <Scale size={18} className="text-[var(--emerald-lt)] shrink-0 mt-0.5" />
+              <div>
+                <div className="text-xs font-bold text-white">Live Spot Nisab Rates</div>
+                <div className="text-[0.72rem] text-white/60">Real-time gold &amp; silver valuation across 20 currencies.</div>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <BookOpen size={18} className="text-[var(--gold-lt)] shrink-0 mt-0.5" />
+              <div>
+                <div className="text-xs font-bold text-white">Documented Scholarly Fiqh</div>
+                <div className="text-[0.72rem] text-white/60">Transparent positions for 401k, RSUs &amp; modern assets.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Calculator */}
-      <section style={{ background: "var(--cream)", padding: "48px 0 64px" }}>
+      {/* Calculator Section */}
+      <section className="bg-[var(--cream)] py-12 sm:py-16">
         <div className="max-w-[1200px] mx-auto px-4">
           <ZakatCalculator />
-          <p style={{ marginTop: 28, fontSize: ".78rem", color: "var(--muted)", lineHeight: 1.7, maxWidth: 860 }}>
-            <strong>Please note:</strong> this calculator is an educational aid, not a fatwa. Asset treatment — especially
-            retirement accounts, long-term investments and business holdings — involves genuine scholarly difference. For
-            complex situations, confirm your calculation with a qualified scholar.
-          </p>
+
+          {/* Disclaimer */}
+          <div className="mt-8 p-4 sm:p-5 rounded-2xl bg-[var(--ivory)] border border-[var(--border)] text-xs text-[var(--muted)] leading-relaxed max-w-4xl">
+            <strong className="text-[var(--charcoal)]">Educational Aid Notice:</strong> This calculator is designed as an
+            informative calculation aid based on recognized scholarly frameworks (including National Zakat Foundation,
+            Islamic Relief, and the Fiqh Council of North America). Certain modern assets — specifically retirement accounts,
+            private equity, and long-term business assets — involve legitimate scholarly differences of opinion. For complex
+            financial estates, please consult a qualified scholar.
+          </div>
         </div>
       </section>
 
-      {/* Methodology */}
-      <section style={{ background: "#fff", padding: "56px 0" }}>
+      {/* Islamic Pillars of Zakat */}
+      <section className="bg-white py-14 sm:py-16 border-t border-[var(--border)]">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div style={{ textAlign: "center", marginBottom: 36 }}>
+          <div className="text-center mb-10">
+            <span className="section-eyebrow">🕌 Fundamentals</span>
+            <h2 className="section-title">Essential Zakat <em className="accent">Principles</em></h2>
+            <p className="section-desc center">
+              Understanding the religious pillars that govern how Zakat is determined and distributed.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-[var(--ivory)] rounded-2xl p-6 border border-[var(--border)] flex flex-col justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-[rgba(10,110,79,0.1)] text-[var(--emerald)] flex items-center justify-center font-bold mb-4">
+                  <Scale size={20} />
+                </div>
+                <h3 className="font-serif text-lg font-bold text-[var(--charcoal)] mb-2">
+                  The Nisab Threshold
+                </h3>
+                <p className="text-xs text-[var(--muted)] leading-relaxed">
+                  The nisab is the minimum net qualifying wealth a Muslim must own before Zakat becomes mandatory. It equals
+                  either <strong>{NISAB_GRAMS.silver} grams of pure silver</strong> (standard for mixed wealth) or{" "}
+                  <strong>{NISAB_GRAMS.gold} grams of pure gold</strong> at current spot prices.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[var(--ivory)] rounded-2xl p-6 border border-[var(--border)] flex flex-col justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-[rgba(201,146,42,0.12)] text-[var(--gold)] flex items-center justify-center font-bold mb-4">
+                  <Clock size={20} />
+                </div>
+                <h3 className="font-serif text-lg font-bold text-[var(--charcoal)] mb-2">
+                  The Hawl (1 Lunar Year)
+                </h3>
+                <p className="text-xs text-[var(--muted)] leading-relaxed">
+                  Zakat is due once one full Islamic lunar year (354 days) has passed while your net wealth remained at or
+                  above the nisab. Many Muslims set an annual anniversary (such as Ramadan or 1st of Muharram) as their fixed
+                  Hawl calculation date.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[var(--ivory)] rounded-2xl p-6 border border-[var(--border)] flex flex-col justify-between">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-[rgba(10,110,79,0.1)] text-[var(--emerald)] flex items-center justify-center font-bold mb-4">
+                  <HeartHandshake size={20} />
+                </div>
+                <h3 className="font-serif text-lg font-bold text-[var(--charcoal)] mb-2">
+                  Eligible Recipients (Masarif)
+                </h3>
+                <p className="text-xs text-[var(--muted)] leading-relaxed">
+                  Surah At-Tawbah (9:60) specifies the 8 valid categories of recipients: the poor (Fuqara), the needy
+                  (Masakin), zakat administrators, those whose hearts are to be reconciled, freeing captives, those in debt,
+                  in the cause of Allah, and stranded travelers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Methodology Section */}
+      <section className="bg-[var(--cream)] py-14 sm:py-16">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="text-center mb-10">
             <span className="section-eyebrow">📚 Methodology</span>
             <h2 className="section-title">How This Calculator <em className="accent">Works</em></h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ maxWidth: 1000, margin: "0 auto" }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
                 title: "Nisab from live prices",
@@ -156,34 +258,34 @@ export default function ZakatCalculatorPage() {
               },
               {
                 title: "Documented positions, not one hidden opinion",
-                body: "Where scholars genuinely differ — most importantly on 401k/IRA/pension accounts — the calculator presents both documented positions (the majority \u201cexcluded until accessible\u201d view and the Fiqh Council of North America\u2019s net-withdrawable method) and lets you choose, instead of silently deciding for you.",
+                body: "Where scholars genuinely differ — most importantly on 401k/IRA/pension accounts — the calculator presents both documented positions (the majority “excluded until accessible” view and the Fiqh Council of North America’s net-withdrawable method) and lets you choose, instead of silently deciding for you.",
               },
               {
                 title: "Private by design",
                 body: "The full calculation runs in your browser. Your figures are saved only on your own device so you can return to them, and can be printed for your records or your scholar. Our server only ever receives a currency code to fetch metal prices.",
               },
             ].map((item) => (
-              <div key={item.title} style={{ background: "var(--ivory)", borderRadius: 16, padding: "26px 22px", border: "1px solid var(--border)" }}>
-                <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.02rem", color: "var(--charcoal)", margin: "0 0 10px" }}>{item.title}</h3>
-                <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.7, margin: 0 }}>{item.body}</p>
+              <div key={item.title} className="bg-white rounded-2xl p-6 border border-[var(--border)] shadow-sm">
+                <h3 className="font-serif text-base font-bold text-[var(--charcoal)] mb-2.5">{item.title}</h3>
+                <p className="text-xs text-[var(--muted)] leading-relaxed m-0">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section style={{ background: "var(--ivory)", padding: "56px 0" }}>
+      {/* FAQ Section */}
+      <section className="bg-white py-14 sm:py-16 border-t border-[var(--border)]">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div style={{ textAlign: "center", marginBottom: 32 }}>
+          <div className="text-center mb-10">
             <span className="section-eyebrow">❓ Common Questions</span>
             <h2 className="section-title">Zakat Questions, <em className="accent">Answered</em></h2>
           </div>
-          <div className="qaida-faq-list" style={{ maxWidth: 860, margin: "0 auto" }}>
+          <div className="qaida-faq-list max-w-3xl mx-auto space-y-3">
             {ZAKAT_FAQS.map((faq) => (
-              <details key={faq.q}>
-                <summary>{faq.q}</summary>
-                <p>{faq.a}</p>
+              <details key={faq.q} className="bg-[var(--ivory)] border border-[var(--border)] rounded-xl p-4 transition-all">
+                <summary className="font-bold text-sm text-[var(--charcoal)] cursor-pointer select-none">{faq.q}</summary>
+                <p className="text-xs text-[var(--slate)] leading-relaxed mt-2.5 pt-2.5 border-t border-[rgba(0,0,0,0.06)]">{faq.a}</p>
               </details>
             ))}
           </div>
@@ -191,20 +293,26 @@ export default function ZakatCalculatorPage() {
       </section>
 
       {/* Cross-links + CTA */}
-      <section style={{ background: "#fff", padding: "56px 0 72px" }}>
-        <div className="max-w-[1200px] mx-auto px-4" style={{ textAlign: "center" }}>
-          <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.5rem,3vw,2rem)", color: "var(--charcoal)", marginBottom: 14 }}>
-            Keep Learning With <em style={{ color: "var(--emerald)" }}>NoorPath</em>
+      <section className="bg-[var(--cream)] py-14 sm:py-16 border-t border-[var(--border)]">
+        <div className="max-w-[1200px] mx-auto px-4 text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3.5">
+            Keep Learning With <em className="text-[var(--emerald)] not-italic">NoorPath</em>
           </h2>
-          <p style={{ color: "var(--muted)", maxWidth: 640, margin: "0 auto 28px", lineHeight: 1.75, fontSize: ".92rem" }}>
+          <p className="text-xs sm:text-sm text-[var(--muted)] max-w-2xl mx-auto mb-7 leading-relaxed">
             NoorPath Academy teaches Quran reading, Tajweed and Hifz in live one-to-one online classes for children and
             adults. Explore our free resources, or meet a teacher in a free trial lesson.
           </p>
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center" }}>
-            <Link href="/islamic-resources" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--emerald)", color: "#fff", fontWeight: 700, padding: "13px 26px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem" }}>
+          <div className="flex gap-3.5 flex-wrap justify-center">
+            <Link
+              href="/islamic-resources"
+              className="inline-flex items-center gap-2 bg-[var(--emerald)] text-white font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:bg-[var(--emerald-dk)] transition-colors"
+            >
               📖 Free Islamic Resources
             </Link>
-            <Link href="/free-quran-classes-online" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "13px 26px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem" }}>
+            <Link
+              href="/free-quran-classes-online"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--gold)] to-[var(--gold-lt)] text-[var(--charcoal)] font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:opacity-95 transition-opacity"
+            >
               🎓 Book a Free Trial Class
             </Link>
           </div>
