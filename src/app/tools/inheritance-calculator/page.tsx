@@ -112,7 +112,7 @@ export default function InheritanceCalculatorPage() {
       <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
         {/* Hero Section */}
         <header
-          className="relative overflow-hidden text-white pt-12 pb-16 px-4 sm:px-6"
+          className="relative overflow-hidden text-white pt-28 sm:pt-32 pb-16 px-4 sm:px-6"
           style={{
             background: "linear-gradient(135deg, #021a11 0%, #063824 60%, #0b5336 100%)",
           }}
@@ -184,14 +184,16 @@ export default function InheritanceCalculatorPage() {
                 <div className="pt-2 flex flex-wrap items-center gap-3">
                   <Link
                     href="/free-quran-classes-online"
-                    className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] text-[var(--charcoal)] font-bold text-sm transition-all shadow-md"
+                    className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] font-bold text-sm transition-all shadow-md"
+                    style={{ color: "var(--charcoal)" }}
                   >
                     <span>Book Free Trial Lesson</span>
                     <span>→</span>
                   </Link>
                   <Link
                     href="/courses"
-                    className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/20"
+                    className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 !text-white font-semibold text-sm transition-colors border border-white/25"
+                      style={{ color: "#ffffff" }}
                   >
                     <span>Browse All Courses</span>
                   </Link>

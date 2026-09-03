@@ -139,7 +139,13 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.2;
 }
 
-a { color: var(--emerald); }
+/* Keep default link color in @layer base so Tailwind text-* utilities win on buttons/CTAs.
+   Unlayered `a { color }` previously overrode `text-white` → emerald-on-emerald invisible labels. */
+@layer base {
+  a {
+    color: var(--emerald);
+  }
+}
 .arabic { font-family: var(--font-amiri), 'Amiri', serif; direction: rtl; }
 
 /* Scrollbar */
@@ -1196,7 +1202,30 @@ pre { max-width: 100%; }
 .qaida-practice-steps p { color: var(--slate); line-height: 1.55; margin: 0; }
 .qaida-faq-list { border-top: 1px solid var(--border); }
 .qaida-faq-list details { border-bottom: 1px solid var(--border); padding: 1rem 0; }
-.qaida-faq-list summary { color: var(--charcoal); cursor: pointer; font-weight: 750; line-height: 1.45; }
+/* Tools FAQ cards: keep readable padding (override list-style 1rem 0 rule) */
+.qaida-faq-list details.tools-faq-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 16px;
+  margin: 0;
+}
+.qaida-faq-list:has(.tools-faq-item) {
+  border-top: none;
+}
+.qaida-faq-list details.tools-faq-item summary {
+  min-height: 44px;
+  align-items: center;
+}
+.qaida-faq-list summary {
+  color: var(--charcoal);
+  cursor: pointer;
+  font-weight: 750;
+  line-height: 1.45;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .qaida-faq-list p { color: var(--muted); line-height: 1.75; margin: .75rem 0 0; max-width: 850px; }
 .qaida-related-grid { display: grid; gap: .75rem; }
 .qaida-related-grid > a { align-items: center; background: #fff; border: 1px solid var(--border); border-radius: 14px; color: var(--emerald); display: flex; gap: .8rem; padding: 1rem; text-decoration: none; }

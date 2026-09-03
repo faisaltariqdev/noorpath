@@ -463,13 +463,15 @@ Generated privately via https://www.noorpath.online/tools/hifz-calculator`;
             <div className="pt-3 border-t border-[rgba(0,0,0,0.06)] flex flex-col sm:flex-row gap-2">
               <Link
                 href="/hifz-quran-online"
-                className="flex-1 text-center py-2 px-3 rounded-xl bg-[var(--emerald)] hover:bg-[var(--emerald-dk)] text-white text-xs font-bold transition-colors"
+                className="flex-1 text-center py-2.5 px-3 rounded-xl bg-[var(--emerald)] hover:bg-[var(--emerald-dk)] !text-white text-xs font-bold transition-colors"
+                style={{ color: "#ffffff" }}
               >
                 Explore Hifz Program →
               </Link>
               <Link
                 href="/free-quran-classes-online"
-                className="flex-1 text-center py-2 px-3 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] text-[var(--charcoal)] text-xs font-bold transition-colors"
+                className="flex-1 text-center py-2.5 px-3 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] text-[var(--charcoal)] text-xs font-bold transition-colors"
+                style={{ color: "var(--charcoal)" }}
               >
                 Book Free Trial Class
               </Link>

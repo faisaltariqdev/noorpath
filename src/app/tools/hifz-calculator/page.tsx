@@ -120,7 +120,7 @@ export default function HifzCalculatorPage() {
       <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
         {/* Hero Section */}
         <header
-          className="relative overflow-hidden text-white pt-12 pb-16 px-4 sm:px-6"
+          className="relative overflow-hidden text-white pt-28 sm:pt-32 pb-16 px-4 sm:px-6"
           style={{
             background: "linear-gradient(135deg, #021a11 0%, #063824 60%, #0b5336 100%)",
           }}
@@ -151,11 +151,11 @@ export default function HifzCalculatorPage() {
               <span>Standard 604-Page Medina Mushaf Schedule</span>
             </div>
 
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight pt-2">
               Quran Hifz &amp; Completion Planner
             </h1>
 
-            <p className="max-w-2xl mx-auto text-sm sm:text-base text-white/80 leading-relaxed">
+            <p className="max-w-2xl mx-auto text-sm sm:text-base text-white/80 leading-relaxed" style={{ lineHeight: 1.75 }}>
               Calculate your exact graduation date, daily Sabaq pace, and structured revision timetables based on the
               authentic 3-tier madrasa methodology.
             </p>
@@ -264,25 +264,27 @@ export default function HifzCalculatorPage() {
                   <GraduationCap size={15} />
                   <span>NoorPath 1-on-1 Online Hifz Program</span>
                 </div>
-                <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-white">
-                  Achieve Your Hifz Goal with a Dedicated Sanad-Certified Hafiz
+                <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-white leading-snug">
+                  Achieve Your Hifz Goal with a Dedicated Matched Tutor
                 </h3>
-                <p className="text-sm text-white/85 leading-relaxed">
-                  Join hundreds of students from the UK, USA, Canada, and UAE. Flexible 1-on-1 live lessons, female
-                  Huffaz available for sisters and daughters, personalized daily Sabaq-Sabqi tracker, and Ijazah
-                  certification.
+                <p className="text-sm text-white/85 leading-relaxed max-w-2xl" style={{ lineHeight: 1.75 }}>
+                  Flexible 1-on-1 live Hifz lessons with matched tutors. Female Huffaz available for sisters and
+                  daughters on request. Personalized daily Sabaq–Sabqi tracking and an assessment-led study path.
+                  Tutor availability is confirmed after matching.
                 </p>
                 <div className="pt-2 flex flex-wrap items-center gap-3">
                   <Link
                     href="/free-quran-classes-online"
-                    className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] text-[var(--charcoal)] font-bold text-sm transition-all shadow-md"
+                    className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] font-bold text-sm transition-all shadow-md"
+                    style={{ color: "var(--charcoal)" }}
                   >
                     <span>Book 30-Min Free Evaluation</span>
                     <span>→</span>
                   </Link>
                   <Link
                     href="/hifz-quran-online"
-                    className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/20"
+                    className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 !text-white font-semibold text-sm transition-colors border border-white/25"
+                    style={{ color: "#ffffff" }}
                   >
                     <span>View Hifz Curriculum</span>
                   </Link>
@@ -297,15 +299,15 @@ export default function HifzCalculatorPage() {
                 <span>Frequently Asked Questions about Quran Memorization</span>
               </h2>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {HIFZ_FAQS.map((faq, idx) => (
                   <details
                     key={idx}
-                    className="group border border-[var(--border)] rounded-2xl p-4 bg-[var(--ivory)] open:bg-white transition-colors"
+                    className="group border border-[var(--border)] rounded-2xl px-4 py-3.5 bg-[var(--ivory)] open:bg-white transition-colors"
                   >
-                    <summary className="font-serif font-bold text-sm text-[var(--charcoal)] cursor-pointer list-none flex justify-between items-center">
-                      <span>{faq.q}</span>
-                      <span className="text-[var(--emerald)] group-open:rotate-180 transition-transform font-bold text-base">
+                    <summary className="font-serif font-bold text-sm text-[var(--charcoal)] cursor-pointer list-none flex justify-between items-center gap-3 min-h-0">
+                      <span className="leading-snug">{faq.q}</span>
+                      <span className="text-[var(--emerald)] group-open:rotate-180 transition-transform font-bold text-base shrink-0">
                         ↓
                       </span>
                     </summary>

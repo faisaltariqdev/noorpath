@@ -127,7 +127,7 @@ export default function ToolsHubPage() {
       <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
         {/* Hero Section */}
         <header
-          className="relative overflow-hidden text-white pt-14 pb-16 px-4 sm:px-6"
+          className="relative overflow-hidden text-white pt-28 sm:pt-32 pb-16 px-4 sm:px-6"
           style={{
             background: "linear-gradient(135deg, #021a11 0%, #063824 60%, #0b5336 100%)",
           }}
@@ -154,11 +154,11 @@ export default function ToolsHubPage() {
               <span>100% Free • Private • Shariah-Compliant</span>
             </div>
 
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight pt-2">
               Islamic Calculators &amp; Productivity Tools
             </h1>
 
-            <p className="max-w-2xl mx-auto text-sm sm:text-base text-white/80 leading-relaxed">
+            <p className="max-w-2xl mx-auto text-sm sm:text-base text-white/80 leading-relaxed" style={{ lineHeight: 1.75 }}>
               Empowering Muslims worldwide with verified tools for Zakat calculation, Quran memorization planning,
               calendar conversion, daily Dhikr tracking, and Shariah estate distribution.
             </p>
@@ -227,14 +227,16 @@ export default function ToolsHubPage() {
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <Link
                   href="/free-quran-classes-online"
-                  className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] text-[var(--charcoal)] font-bold text-sm transition-all shadow-md"
+                  className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] font-bold text-sm transition-all shadow-md"
+                  style={{ color: "var(--charcoal)" }}
                 >
                   <span>Book Free 1-on-1 Trial Class</span>
                   <span>→</span>
                 </Link>
                 <Link
                   href="/courses"
-                  className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/20"
+                  className="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-white/10 hover:bg-white/20 !text-white font-semibold text-sm transition-colors border border-white/25"
+                  style={{ color: "#ffffff" }}
                 >
                   <span>View All Courses</span>
                 </Link>

@@ -112,7 +112,7 @@ export default function ZakatCalculatorPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-14 bg-gradient-to-br from-[#041f14] via-[#083422] to-[#0a3d28] text-white">
+      <section className="relative overflow-hidden pt-28 sm:pt-32 pb-14 bg-gradient-to-br from-[#041f14] via-[#083422] to-[#0a3d28] text-white">
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
           style={{
@@ -281,11 +281,15 @@ export default function ZakatCalculatorPage() {
             <span className="section-eyebrow">❓ Common Questions</span>
             <h2 className="section-title">Zakat Questions, <em className="accent">Answered</em></h2>
           </div>
-          <div className="qaida-faq-list max-w-3xl mx-auto space-y-3">
+          <div className="qaida-faq-list max-w-3xl mx-auto space-y-3" style={{ borderTop: "none" }}>
             {ZAKAT_FAQS.map((faq) => (
-              <details key={faq.q} className="bg-[var(--ivory)] border border-[var(--border)] rounded-xl p-4 transition-all">
-                <summary className="font-bold text-sm text-[var(--charcoal)] cursor-pointer select-none">{faq.q}</summary>
-                <p className="text-xs text-[var(--slate)] leading-relaxed mt-2.5 pt-2.5 border-t border-[rgba(0,0,0,0.06)]">{faq.a}</p>
+              <details key={faq.q} className="tools-faq-item bg-[var(--ivory)] transition-all open:bg-white">
+                <summary className="font-bold text-sm text-[var(--charcoal)] cursor-pointer select-none list-none">
+                  {faq.q}
+                </summary>
+                <p className="text-xs text-[var(--slate)] leading-relaxed mt-2.5 pt-2.5 border-t border-[rgba(0,0,0,0.06)]">
+                  {faq.a}
+                </p>
               </details>
             ))}
           </div>
@@ -305,13 +309,15 @@ export default function ZakatCalculatorPage() {
           <div className="flex gap-3.5 flex-wrap justify-center">
             <Link
               href="/islamic-resources"
-              className="inline-flex items-center gap-2 bg-[var(--emerald)] text-white font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:bg-[var(--emerald-dk)] transition-colors"
+              className="inline-flex items-center gap-2 bg-[var(--emerald)] font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:bg-[var(--emerald-dk)] transition-colors"
+              style={{ color: "#ffffff" }}
             >
               📖 Free Islamic Resources
             </Link>
             <Link
               href="/free-quran-classes-online"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--gold)] to-[var(--gold-lt)] text-[var(--charcoal)] font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:opacity-95 transition-opacity"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--gold)] to-[var(--gold-lt)] font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:opacity-95 transition-opacity"
+              style={{ color: "var(--charcoal)" }}
             >
               🎓 Book a Free Trial Class
             </Link>
