@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-09-01";
+export const REVIEWED = "2026-09-06";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -82,6 +82,19 @@ export const TOPIC_INTENTS = [
       "/blog/how-to-know-if-online-quran-tutor-is-good",
       "/blog/when-to-change-your-online-quran-tutor",
       "/our-tutors",
+    ],
+  },
+  {
+    topic: "Read Holy Quran online / Surah and Para reader",
+    summary:
+      "Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account.",
+    primary: ["/holy-quran", "/holy-quran/surah/ya-sin"],
+    supporting: [
+      "/holy-quran/surah/al-fatiha",
+      "/holy-quran/surah/al-mulk",
+      "/holy-quran/surah/al-kahf",
+      "/holy-quran/para/30",
+      "/blog/surah-yaseen-arabic-english",
     ],
   },
   {
@@ -417,6 +430,9 @@ export const CORE_SERVICES = [
 
 /** Course / subject owners (canonical destinations after redirects) */
 export const COURSES = [
+  { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
+  { path: "/holy-quran/surah/ya-sin", label: "Surah Yaseen (Ya-Sin)", note: "Canonical public reader page for Surah Yaseen / Yasin." },
+  { path: "/holy-quran/para/30", label: "Para 30 / Juz Amma", note: "Canonical public reader page for Juz Amma." },
   { path: "/noorani-qaida", label: "Interactive Noorani Qaida Hub", note: "Free interactive Noorani Qaida reference modules, letters, lessons and games." },
   { path: "/courses/noorani-qaida-online", label: "Noorani Qaida Online Course", note: "Live Noorani Qaida course page for beginners." },
   { path: "/learn-tajweed-online", label: "Learn Tajweed Online", note: "Canonical Tajweed classes owner (not /courses/tajweed-classes-online)." },

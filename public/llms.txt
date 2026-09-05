@@ -2,7 +2,7 @@
 
 > NoorPath Online Quran Academy provides live one-to-one online Quran learning and Quran classes for children, adults, beginners and families — including Noorani Qaida, Quran reading, Tajweed, Hifz (memorization), Arabic and Islamic studies.
 
-Last reviewed: 2026-09-01
+Last reviewed: 2026-09-06
 
 ## Brand identity
 
@@ -87,6 +87,18 @@ Primary resources:
 Also useful:
 - [How to choose an online Quran teacher](https://www.noorpath.online/blog/how-to-choose-online-quran-teacher)
 - [Questions before booking a Quran tutor](https://www.noorpath.online/blog/questions-to-ask-before-booking-a-quran-tutor)
+
+### Read Holy Quran online / Surah and Para reader
+
+Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account.
+
+Primary resources:
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+- [Surah Yaseen (Ya-Sin)](https://www.noorpath.online/holy-quran/surah/ya-sin)
+
+Also useful:
+- [/holy-quran/surah/al-fatiha](https://www.noorpath.online/holy-quran/surah/al-fatiha)
+- [/holy-quran/surah/al-mulk](https://www.noorpath.online/holy-quran/surah/al-mulk)
 
 ### Noorani Qaida / Arabic reading foundations
 
@@ -305,6 +317,12 @@ These URLs are the preferred owners for global service and audience questions. C
 
 ## Quran courses and subjects
 
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+  Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login.
+- [Surah Yaseen (Ya-Sin)](https://www.noorpath.online/holy-quran/surah/ya-sin)
+  Canonical public reader page for Surah Yaseen / Yasin.
+- [Para 30 / Juz Amma](https://www.noorpath.online/holy-quran/para/30)
+  Canonical public reader page for Juz Amma.
 - [Interactive Noorani Qaida Hub](https://www.noorpath.online/noorani-qaida)
   Free interactive Noorani Qaida reference modules, letters, lessons and games.
 - [Noorani Qaida Online Course](https://www.noorpath.online/courses/noorani-qaida-online)

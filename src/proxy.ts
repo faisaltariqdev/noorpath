@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { TEMPLATE_CITY_NOINDEX_SLUGS } from "@/data/cities";
+import { holyQuranRedirects } from "@/data/holy-quran";
+
+const HOLY_QURAN_PATHS = holyQuranRedirects();
 
 /** Old and consolidated paths → current canonical owners */
 const LEGACY_PATHS: Record<string, string> = {
@@ -47,6 +50,10 @@ const LEGACY_PATHS: Record<string, string> = {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (HOLY_QURAN_PATHS[pathname]) {
+    return NextResponse.redirect(new URL(HOLY_QURAN_PATHS[pathname], request.url), 301);
+  }
 
   if (LEGACY_PATHS[pathname]) {
     return NextResponse.redirect(new URL(LEGACY_PATHS[pathname], request.url), 301);

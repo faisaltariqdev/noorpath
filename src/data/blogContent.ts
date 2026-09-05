@@ -7206,6 +7206,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p><strong>Surah Yaseen</strong> (also written Surah Yasin, سورة يس) is the <strong>36th chapter of the Holy Quran</strong>, containing 83 verses. The Prophet Muhammad ﷺ called it the <em>"Heart of the Quran"</em> — and for 1,400 years, Muslims around the world have recited it daily for blessings, forgiveness, and closeness to Allah.</p>
 
           <p>This page contains the <strong>complete Surah Yaseen in Arabic</strong> with full English translation and transliteration — so you can read, understand, learn, and teach it to your family.</p>
+          <p><a href="/holy-quran/surah/ya-sin" style="color:var(--emerald);font-weight:700;">Read Surah Yaseen in the free NoorPath Uthmani reader</a> — no login required. This article keeps translation and notes; the reader is the Arabic reading page.</p>
 
           <div class="surah-stats">
             <div class="stat-item"><span class="stat-num">36</span><span class="stat-label">Surah Number</span></div>

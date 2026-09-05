@@ -99,6 +99,7 @@ const resourceCategories = [
     title: "Quran Learning Guides",
     color: "#0a6e4f",
     resources: [
+      { title: "Holy Quran Reader — All Surahs & Paras", desc: "Free Uthmani Arabic reader. Open Yaseen, any Surah, or any Para with no login", href: "/holy-quran", type: "Free Reader" },
       { title: "Interactive Noorani Qaida Hub", desc: "11-module curriculum, 28 letter guides, practice and adult support", href: "/noorani-qaida", type: "Interactive Guide" },
       { title: "Noorani Qaida Complete Guide", desc: "Step-by-step guide from Arabic letters to Quran reading", href: "/blog/noorani-qaida-complete-guide", type: "Article" },
       { title: "Tajweed Rules for Beginners", desc: "All major Tajweed rules with Arabic examples", href: "/blog/tajweed-rules-complete-guide", type: "Article" },
@@ -126,6 +127,7 @@ const resourceCategories = [
     title: "Quran Surahs",
     color: "#6366f1",
     resources: [
+      { title: "Read Surah Yaseen online", desc: "Verified Uthmani Arabic, free, no account", href: "/holy-quran/surah/ya-sin", type: "Free Reader" },
       { title: "Surah Al-Fatiha — Arabic & English", desc: "Full text, word-by-word translation, tafsir", href: "/blog/surah-al-fatiha-arabic-english", type: "Article" },
       { title: "Surah Al-Kahf — Arabic & English", desc: "Full text + why to read on Fridays", href: "/blog/surah-al-kahf-arabic-english-friday", type: "Article" },
       { title: "Surah Yaseen — Arabic & English", desc: "Full text with translation and benefits", href: "/blog/surah-yaseen-arabic-english", type: "Article" },

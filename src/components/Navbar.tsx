@@ -18,6 +18,7 @@ const primaryLinks = [
 
 /* Grouped under a "More" dropdown */
 const moreLinks = [
+  { href: "/holy-quran", label: "📖 Holy Quran Reader" },
   { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
   { href: "/noorani-qaida", label: "Noorani Qaida" },
   { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
