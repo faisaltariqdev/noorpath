@@ -99,7 +99,7 @@ const resourceCategories = [
     title: "Quran Learning Guides",
     color: "#0a6e4f",
     resources: [
-      { title: "Holy Quran Reader — All Surahs & Paras", desc: "Free Uthmani Arabic reader. Open Yaseen, any Surah, or any Para with no login", href: "/holy-quran", type: "Free Reader" },
+      { title: "Holy Quran Reader — All Surahs & Paras", desc: "Free Uthmani Arabic reader. Open Yaseen, any Surah, or any Para with no login", href: "/holy-quran/para/1", type: "Free Reader" },
       { title: "Interactive Noorani Qaida Hub", desc: "11-module curriculum, 28 letter guides, practice and adult support", href: "/noorani-qaida", type: "Interactive Guide" },
       { title: "Noorani Qaida Complete Guide", desc: "Step-by-step guide from Arabic letters to Quran reading", href: "/blog/noorani-qaida-complete-guide", type: "Article" },
       { title: "Tajweed Rules for Beginners", desc: "All major Tajweed rules with Arabic examples", href: "/blog/tajweed-rules-complete-guide", type: "Article" },

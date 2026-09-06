@@ -28,4 +28,16 @@ export {
   surahPath,
   toSurahSlug,
 } from "./slugs";
+export {
+  faqJsonLd,
+  holyQuranBreadcrumbs,
+  holyQuranSitemapEntries,
+  paraFaqs,
+  quranBookJsonLd,
+  surahDisplayName,
+  surahFaqs,
+  HOLY_QURAN_SITEMAP_PATH,
+  HOLY_QURAN_SITEMAP_STAMP,
+} from "./seo";
+export type { HolyQuranFaq } from "./seo";
 export type { ParaFile, ParaMeta, QuranAyah, QuranSearchHit } from "./types";

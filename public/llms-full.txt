@@ -105,18 +105,73 @@ Supporting resources:
 
 ### Read Holy Quran online / Surah and Para reader
 
-Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account.
+Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account. Arabic is Tanzil Uthmani via Al Quran Cloud. This is a reading text, not a substitute for a teacher.
 
 Primary resources:
 - [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+- [Holy Quran · Para 1](https://www.noorpath.online/holy-quran/para/1)
+
+Supporting resources:
+- [Surah Yaseen (Ya-Sin)](https://www.noorpath.online/holy-quran/surah/ya-sin)
+- [Surah Al-Fatiha](https://www.noorpath.online/holy-quran/surah/al-fatiha)
+- [Surah Al-Mulk](https://www.noorpath.online/holy-quran/surah/al-mulk)
+- [Surah Al-Kahf](https://www.noorpath.online/holy-quran/surah/al-kahf)
+- [Para 30 / Juz Amma](https://www.noorpath.online/holy-quran/para/30)
+- [Surah Yaseen Arabic & English](https://www.noorpath.online/blog/surah-yaseen-arabic-english)
+- [Benefits of reading Quran daily](https://www.noorpath.online/blog/benefits-of-reading-quran-daily)
+- [Quran Hifz Planner](https://www.noorpath.online/tools/hifz-calculator)
+
+### Read Surah Yaseen / Ya-Sin online
+
+Free Uthmani Arabic page for Surah Yaseen (Ya-Sin, chapter 36, 83 ayahs). No account required. Translation notes live on a separate blog page.
+
+Primary resources:
 - [Surah Yaseen (Ya-Sin)](https://www.noorpath.online/holy-quran/surah/ya-sin)
 
 Supporting resources:
-- [/holy-quran/surah/al-fatiha](https://www.noorpath.online/holy-quran/surah/al-fatiha)
-- [/holy-quran/surah/al-mulk](https://www.noorpath.online/holy-quran/surah/al-mulk)
-- [/holy-quran/surah/al-kahf](https://www.noorpath.online/holy-quran/surah/al-kahf)
-- [Para 30 / Juz Amma](https://www.noorpath.online/holy-quran/para/30)
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
 - [Surah Yaseen Arabic & English](https://www.noorpath.online/blog/surah-yaseen-arabic-english)
+- [/holy-quran/para/22](https://www.noorpath.online/holy-quran/para/22)
+- [/holy-quran/para/23](https://www.noorpath.online/holy-quran/para/23)
+
+### Read Juz Amma / Para 30 online
+
+Free Uthmani Arabic page for Para 30 (Juz Amma), plus short Surahs such as An-Naba, Al-Qadr, Al-Kawthar and Al-Ikhlas. No account required.
+
+Primary resources:
+- [Para 30 / Juz Amma](https://www.noorpath.online/holy-quran/para/30)
+
+Supporting resources:
+- [/holy-quran/surah/an-naba](https://www.noorpath.online/holy-quran/surah/an-naba)
+- [/holy-quran/surah/al-qadr](https://www.noorpath.online/holy-quran/surah/al-qadr)
+- [/holy-quran/surah/al-kawthar](https://www.noorpath.online/holy-quran/surah/al-kawthar)
+- [Surah Al-Ikhlas](https://www.noorpath.online/holy-quran/surah/al-ikhlas)
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+- [How to memorize Juz Amma](https://www.noorpath.online/blog/how-to-memorize-juz-amma)
+
+### Zakat calculator / calculate zakat online
+
+Free Zakat calculator with published method notes. It is a planning aid, not a fatwa or a substitute for a scholar.
+
+Primary resources:
+- [Zakat Calculator](https://www.noorpath.online/tools/zakat-calculator)
+
+Supporting resources:
+- [Islamic Tools & Calculators](https://www.noorpath.online/tools)
+- [Islamic Resources](https://www.noorpath.online/islamic-resources)
+
+### Hifz planner / Quran memorization calculator
+
+Free planner for daily sabaq and a Sabaq-Sabqi-Manzil revision layout. Progress depends on practice time — NoorPath does not guarantee a completion date.
+
+Primary resources:
+- [Quran Hifz Planner](https://www.noorpath.online/tools/hifz-calculator)
+
+Supporting resources:
+- [Hifz Quran Online](https://www.noorpath.online/hifz-quran-online)
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+- [How long to memorize Quran](https://www.noorpath.online/blog/how-long-to-memorize-quran)
+- [Hifz revision schedule](https://www.noorpath.online/blog/hifz-revision-schedule)
 
 ### Noorani Qaida / Arabic reading foundations
 
@@ -175,12 +230,12 @@ Supporting resources:
 Free privacy-focused Islamic tools suite: Zakat Calculator with live Nisab, Quran Hifz & Completion Planner (Sabaq-Sabqi-Manzil), Hijri Date Converter with moon-sighting adjustments, Digital Tasbeeh Counter with haptic/audio feedback, and Islamic Inheritance (Miras) Calculator (Surah An-Nisa 4:11-12).
 
 Primary resources:
-- [/tools](https://www.noorpath.online/tools)
-- [/tools/zakat-calculator](https://www.noorpath.online/tools/zakat-calculator)
-- [/tools/hifz-calculator](https://www.noorpath.online/tools/hifz-calculator)
-- [/tools/hijri-date-converter](https://www.noorpath.online/tools/hijri-date-converter)
-- [/tools/tasbeeh-counter](https://www.noorpath.online/tools/tasbeeh-counter)
-- [/tools/inheritance-calculator](https://www.noorpath.online/tools/inheritance-calculator)
+- [Islamic Tools & Calculators](https://www.noorpath.online/tools)
+- [Zakat Calculator](https://www.noorpath.online/tools/zakat-calculator)
+- [Quran Hifz Planner](https://www.noorpath.online/tools/hifz-calculator)
+- [Hijri Date Converter](https://www.noorpath.online/tools/hijri-date-converter)
+- [Digital Tasbeeh Counter](https://www.noorpath.online/tools/tasbeeh-counter)
+- [Islamic Inheritance Calculator](https://www.noorpath.online/tools/inheritance-calculator)
 
 Supporting resources:
 - [Islamic Resources](https://www.noorpath.online/islamic-resources)
@@ -389,6 +444,10 @@ These URLs are the preferred owners for global service and audience questions. C
   Free 30-minute live trial information (no credit card to book).
 - [No Masjid Nearby Quran Classes](https://www.noorpath.online/online-quran-classes-no-masjid-nearby)
   Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa.
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+  Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login.
+- [Islamic Tools & Calculators](https://www.noorpath.online/tools)
+  Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance.
 - [Pricing](https://www.noorpath.online/pricing)
   Published USD plans and family discount rules.
 
@@ -396,10 +455,34 @@ These URLs are the preferred owners for global service and audience questions. C
 
 - [Holy Quran Reader](https://www.noorpath.online/holy-quran)
   Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login.
+- [Holy Quran · Para 1](https://www.noorpath.online/holy-quran/para/1)
+  Public reader start page for Para 1 to 30 navigation.
 - [Surah Yaseen (Ya-Sin)](https://www.noorpath.online/holy-quran/surah/ya-sin)
   Canonical public reader page for Surah Yaseen / Yasin.
+- [Surah Al-Fatiha](https://www.noorpath.online/holy-quran/surah/al-fatiha)
+  Canonical public reader page for Surah Al-Fatiha.
+- [Surah Al-Kahf](https://www.noorpath.online/holy-quran/surah/al-kahf)
+  Canonical public reader page for Surah Al-Kahf.
+- [Surah Al-Mulk](https://www.noorpath.online/holy-quran/surah/al-mulk)
+  Canonical public reader page for Surah Al-Mulk.
+- [Surah Ar-Rahman](https://www.noorpath.online/holy-quran/surah/ar-rahman)
+  Canonical public reader page for Surah Ar-Rahman.
+- [Surah Al-Ikhlas](https://www.noorpath.online/holy-quran/surah/al-ikhlas)
+  Canonical public reader page for Surah Al-Ikhlas.
 - [Para 30 / Juz Amma](https://www.noorpath.online/holy-quran/para/30)
   Canonical public reader page for Juz Amma.
+- [Islamic Tools & Calculators](https://www.noorpath.online/tools)
+  Free public tools hub.
+- [Zakat Calculator](https://www.noorpath.online/tools/zakat-calculator)
+  Free Zakat calculator. Planning aid, not a fatwa.
+- [Quran Hifz Planner](https://www.noorpath.online/tools/hifz-calculator)
+  Free Hifz and completion planner. No guaranteed timeline.
+- [Hijri Date Converter](https://www.noorpath.online/tools/hijri-date-converter)
+  Gregorian ↔ Hijri conversion with moon-sighting adjustment notes.
+- [Digital Tasbeeh Counter](https://www.noorpath.online/tools/tasbeeh-counter)
+  Free dhikr counter.
+- [Islamic Inheritance Calculator](https://www.noorpath.online/tools/inheritance-calculator)
+  Miras planning aid based on Surah An-Nisa 4:11–12. Not a legal ruling.
 - [Interactive Noorani Qaida Hub](https://www.noorpath.online/noorani-qaida)
   Free interactive Noorani Qaida reference modules, letters, lessons and games.
 - [Noorani Qaida Online Course](https://www.noorpath.online/courses/noorani-qaida-online)
@@ -669,6 +752,7 @@ Expanded guide set for deeper AI retrieval. Individual articles carry their own 
 - [Online Tajweed classes for kids](https://www.noorpath.online/blog/online-tajweed-classes-for-kids)
 - [Tajweed learning format comparison](https://www.noorpath.online/blog/tajweed-learning-format-comparison)
 - [How to improve Quran recitation](https://www.noorpath.online/blog/how-to-improve-quran-recitation)
+- [Benefits of reading Quran daily](https://www.noorpath.online/blog/benefits-of-reading-quran-daily)
 - [Hard Arabic letters (makharij) for kids](https://www.noorpath.online/blog/hard-arabic-letters-for-kids-makharij)
 - [Quran pronunciation troubleshooting](https://www.noorpath.online/blog/quran-pronunciation-troubleshooting)
 - [Difference between Hifz and Tajweed classes](https://www.noorpath.online/blog/difference-between-hifz-and-tajweed-classes)
@@ -745,6 +829,8 @@ Expanded guide set for deeper AI retrieval. Individual articles carry their own 
 - [All Locations](https://www.noorpath.online/locations)
 - [Blog](https://www.noorpath.online/blog)
 - [Islamic Resources](https://www.noorpath.online/islamic-resources)
+- [Islamic Tools](https://www.noorpath.online/tools)
+- [Holy Quran Reader](https://www.noorpath.online/holy-quran)
 - Trustpilot profile: https://www.trustpilot.com/review/noorpath.online
 - Google Business Profile: https://www.google.com/maps?kgmid=/g/11npsdjwdh
 

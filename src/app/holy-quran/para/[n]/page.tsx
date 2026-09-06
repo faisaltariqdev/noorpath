@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import HolyQuranAyahs from "@/components/holy-quran/HolyQuranAyahs";
-import HolyQuranListen from "@/components/holy-quran/HolyQuranListen";
+import HolyQuranFaqs from "@/components/holy-quran/HolyQuranFaqs";
+import HolyQuranPublicReader from "@/components/holy-quran/HolyQuranPublicReader";
 import { QaidaBreadcrumbs } from "@/components/noorani-qaida/QaidaSeoComponents";
 import {
   HOLY_QURAN_BASE_URL,
   PARAS,
+  faqJsonLd,
   getPara,
+  holyQuranBreadcrumbs,
   loadPara,
   paraEndLabel,
+  paraFaqs,
   paraPath,
   paraStartLabel,
+  quranBookJsonLd,
   surahPath,
 } from "@/data/holy-quran";
 import { serializeJsonLd } from "@/lib/jsonLd";
@@ -72,26 +76,33 @@ export default async function HolyQuranParaPage({ params }: Props) {
   const next = getPara(para.number + 1);
   const url = `${HOLY_QURAN_BASE_URL}/para/${para.number}`;
   const amma = para.number === 30 ? " (Juz Amma)" : "";
+  const faqs = paraFaqs(para);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
+      quranBookJsonLd(),
       {
         "@type": "WebPage",
         "@id": `${url}#page`,
-        name: `Para ${para.number} · ${para.name}`,
+        name: `Para ${para.number} · ${para.name}${amma}`,
         url,
         inLanguage: ["ar", "en"],
+        isAccessibleForFree: true,
         isPartOf: { "@id": "https://www.noorpath.online/#website" },
+        about: {
+          "@type": "CreativeWork",
+          name: `Para ${para.number} (${para.name}${amma})`,
+          inLanguage: "ar",
+          isPartOf: { "@id": `${HOLY_QURAN_BASE_URL}#quran` },
+        },
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-          { "@type": "ListItem", position: 2, name: "Holy Quran", item: HOLY_QURAN_BASE_URL },
-          { "@type": "ListItem", position: 3, name: `Para ${para.number}`, item: url },
-        ],
-      },
+      holyQuranBreadcrumbs([
+        { name: "Home", item: "https://www.noorpath.online" },
+        { name: "Holy Quran", item: HOLY_QURAN_BASE_URL },
+        { name: `Para ${para.number}`, item: url },
+      ]),
+      faqJsonLd(faqs),
     ],
   };
 
@@ -117,10 +128,9 @@ export default async function HolyQuranParaPage({ params }: Props) {
               in Tanzil Uthmani Arabic. Free to read worldwide, no account required.
             </p>
           </div>
-          <HolyQuranListen ayahs={file.ayahs} />
         </div>
 
-        <HolyQuranAyahs ayahs={file.ayahs} />
+        <HolyQuranPublicReader ayahs={file.ayahs} currentPara={para.number} />
 
         <div className="hq-nav-row">
           {previous ? (
@@ -141,7 +151,10 @@ export default async function HolyQuranParaPage({ params }: Props) {
           Ends in <Link href={surahPath(para.endSurah)}>Surah {para.endSurah}</Link>
           {" · "}
           <Link href="/holy-quran">All Surahs and Paras</Link>
+          {" · "}
+          <Link href="/tools/hifz-calculator">Hifz planner</Link>
         </p>
+        <HolyQuranFaqs faqs={faqs} />
       </div>
     </div>
   );

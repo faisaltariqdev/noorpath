@@ -3,6 +3,7 @@ import Link from "next/link";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import { BASE_URL } from "@/lib/academyFacts";
+import { TOOLS_HUB_FAQS } from "@/data/tools";
 import {
   BookOpen,
   Calendar,
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
     siteName: "NoorPath",
     type: "website",
     locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Islamic Tools & Calculators | NoorPath Academy",
+    description:
+      "Free Zakat, Hifz planner, Hijri converter, Tasbeeh, and inheritance calculators. No account required.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -109,9 +117,29 @@ const jsonLd = {
       "@id": URL,
       name: "NoorPath Islamic Calculators & Tools Suite",
       url: URL,
+      isAccessibleForFree: true,
       description:
         "Free privacy-focused online Islamic tools suite: Zakat Calculator, Quran Hifz Planner, Hijri Date Converter, Digital Tasbeeh, and Islamic Inheritance Calculator.",
       publisher: { "@type": "Organization", name: "NoorPath Academy", url: BASE_URL },
+    },
+    {
+      "@type": "ItemList",
+      name: "NoorPath Islamic tools",
+      numberOfItems: TOOLS.length,
+      itemListElement: TOOLS.map((tool, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: tool.title,
+        url: `${BASE_URL}${tool.slug}`,
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: TOOLS_HUB_FAQS.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      })),
     },
   ],
 };
@@ -203,6 +231,30 @@ export default function ToolsHubPage() {
               </Link>
             ))}
           </div>
+
+          <section className="mt-14 max-w-3xl mx-auto" aria-labelledby="tools-faq-heading">
+            <h2 id="tools-faq-heading" className="font-serif text-2xl font-bold text-[var(--charcoal)] mb-4">
+              Frequently asked questions
+            </h2>
+            <div className="space-y-3">
+              {TOOLS_HUB_FAQS.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="rounded-2xl border border-[var(--border)] bg-white px-5 py-4"
+                >
+                  <summary className="cursor-pointer font-semibold text-[var(--charcoal)]">
+                    {faq.question}
+                  </summary>
+                  <p className="mt-2 text-sm text-[var(--slate)] leading-relaxed">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+            <p className="mt-4 text-sm text-[var(--slate)]">
+              Read the <Link href="/holy-quran/para/1" className="font-semibold text-[var(--emerald)]">Holy Quran reader</Link>
+              {" · "}
+              <Link href="/islamic-resources" className="font-semibold text-[var(--emerald)]">Islamic resources</Link>
+            </p>
+          </section>
 
           {/* NoorPath Free Trial CTA */}
           <div

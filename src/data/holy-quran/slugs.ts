@@ -7,7 +7,9 @@ export const HOLY_QURAN_BASE_URL = "https://www.noorpath.online/holy-quran";
 export const HOLY_QURAN_CONTENT_VERSION = "2026-09-06";
 
 /** High-intent public reader pages (people search these names most often). */
-export const HIGH_TRAFFIC_SURAH_NUMBERS = new Set([1, 2, 18, 36, 55, 56, 67, 112, 113, 114]);
+export const HIGH_TRAFFIC_SURAH_NUMBERS = new Set([
+  1, 2, 18, 36, 55, 56, 67, 78, 97, 108, 112, 113, 114,
+]);
 
 export function toSurahSlug(name: string): string {
   return name

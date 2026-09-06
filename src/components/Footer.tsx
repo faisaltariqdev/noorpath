@@ -8,7 +8,7 @@ import { getBuildLabel } from "@/lib/siteVersion";
 import WhatsAppLink from "@/components/WhatsAppLink";
 
 const courses = [
-  { href: "/holy-quran", label: "Holy Quran Reader" },
+  { href: "/holy-quran/para/1", label: "Holy Quran Reader" },
   { href: "/holy-quran/surah/ya-sin", label: "Surah Yaseen" },
   { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
   { href: "/learn-tajweed-online", label: "Tajweed Rules" },
@@ -44,7 +44,7 @@ const company = [
 ];
 
 const quickLinks = [
-  { href: "/holy-quran", label: "📖 Holy Quran Reader" },
+  { href: "/holy-quran/para/1", label: "📖 Holy Quran Reader" },
   { href: "/holy-quran/surah/ya-sin", label: "📖 Surah Yaseen" },
   { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
   { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },

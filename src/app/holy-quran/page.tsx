@@ -10,9 +10,12 @@ import {
   TOTAL_AYAHS,
   TOTAL_PARAS,
   TOTAL_SURAHS,
+  faqJsonLd,
+  holyQuranBreadcrumbs,
   paraEndLabel,
   paraPath,
   paraStartLabel,
+  quranBookJsonLd,
   revelationLabel,
   surahPath,
 } from "@/data/holy-quran";
@@ -93,6 +96,7 @@ const popular = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    quranBookJsonLd(),
     {
       "@type": "CollectionPage",
       "@id": `${HOLY_QURAN_BASE_URL}#page`,
@@ -100,24 +104,26 @@ const jsonLd = {
       description,
       url: HOLY_QURAN_BASE_URL,
       inLanguage: ["en", "ar"],
+      isAccessibleForFree: true,
       isPartOf: { "@id": "https://www.noorpath.online/#website" },
-      about: ["Holy Quran", "Surah", "Juz", "Uthmani Arabic"],
+      about: { "@id": `${HOLY_QURAN_BASE_URL}#quran` },
+      numberOfItems: TOTAL_SURAHS + TOTAL_PARAS,
     },
     {
-      "@type": "FAQPage",
-      mainEntity: hubFaqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      "@type": "ItemList",
+      name: "Popular Surahs and Paras",
+      itemListElement: popular.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.label,
+        url: `https://www.noorpath.online${item.href}`,
       })),
     },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-        { "@type": "ListItem", position: 2, name: "Holy Quran", item: HOLY_QURAN_BASE_URL },
-      ],
-    },
+    faqJsonLd(hubFaqs),
+    holyQuranBreadcrumbs([
+      { name: "Home", item: "https://www.noorpath.online" },
+      { name: "Holy Quran", item: HOLY_QURAN_BASE_URL },
+    ]),
   ],
 };
 
@@ -142,6 +148,14 @@ export default function HolyQuranHubPage() {
             <span className="hq-fact">Tanzil Uthmani</span>
           </div>
           <HolyQuranSearch />
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap", margin: "16px 0 8px" }}>
+            <Link href="/holy-quran/para/1" className="btn-primary-np">
+              <BookOpen size={16} aria-hidden="true" /> Open reader · Para 1 to 30
+            </Link>
+            <Link href="/tools" className="btn-outline-np">
+              Islamic tools
+            </Link>
+          </div>
           <div className="hq-pills" style={{ marginTop: 16 }}>
             {popular.map((item) => (
               <Link key={item.href} href={item.href} className="hq-pill">
@@ -206,6 +220,9 @@ export default function HolyQuranHubPage() {
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 12 }}>
             <Link href="/learn-quran-online" className="btn-primary-np">
               <BookOpen size={16} aria-hidden="true" /> Learn Quran online
+            </Link>
+            <Link href="/tools/hifz-calculator" className="btn-outline-np">
+              Hifz planner
             </Link>
             <Link href="/free-quran-classes-online" className="btn-outline-np">
               <GraduationCap size={16} aria-hidden="true" /> Request a free trial

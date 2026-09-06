@@ -25,8 +25,16 @@ const SAMPLE_PATHS = [
   "/online-quran-classes-for-kids",
   "/pricing",
   "/free-quran-classes-online",
+  "/holy-quran",
+  "/holy-quran/surah/ya-sin",
+  "/holy-quran/para/1",
+  "/tools",
+  "/tools/zakat-calculator",
   "/sitemap.xml",
+  "/holy-quran/sitemap.xml",
+  "/tools/sitemap.xml",
   "/robots.txt",
+  "/llms.txt",
 ];
 
 const findings = [];

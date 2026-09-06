@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import HolyQuranAyahs from "@/components/holy-quran/HolyQuranAyahs";
-import HolyQuranListen from "@/components/holy-quran/HolyQuranListen";
+import HolyQuranFaqs from "@/components/holy-quran/HolyQuranFaqs";
+import HolyQuranPublicReader from "@/components/holy-quran/HolyQuranPublicReader";
 import { QaidaBreadcrumbs } from "@/components/noorani-qaida/QaidaSeoComponents";
 import {
   HOLY_QURAN_BASE_URL,
   SURAHS,
+  faqJsonLd,
+  holyQuranBreadcrumbs,
   loadSurahAyahs,
   paraPath,
   parasForSurah,
+  quranBookJsonLd,
   revelationLabel,
   surahBySlug,
+  surahDisplayName,
+  surahFaqs,
   surahPath,
   toSurahSlug,
 } from "@/data/holy-quran";
@@ -84,32 +89,35 @@ export default async function HolyQuranSurahPage({ params }: Props) {
   const next = index < SURAHS.length - 1 ? SURAHS[index + 1] : null;
   const url = `${HOLY_QURAN_BASE_URL}/surah/${toSurahSlug(surah.name)}`;
   const related = RELATED_BLOG[surah.number];
-  const displayName = surah.number === 36 ? "Yaseen (Ya-Sin)" : surah.name;
+  const displayName = surahDisplayName(surah);
+  const faqs = surahFaqs(surah, juzs);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
+      quranBookJsonLd(),
       {
         "@type": "WebPage",
         "@id": `${url}#page`,
-        name: `Surah ${surah.name}`,
+        name: `Surah ${displayName}`,
         url,
         inLanguage: ["ar", "en"],
+        isAccessibleForFree: true,
         isPartOf: { "@id": "https://www.noorpath.online/#website" },
         about: {
           "@type": "CreativeWork",
           name: `Surah ${surah.name}`,
           inLanguage: "ar",
+          position: surah.number,
+          isPartOf: { "@id": `${HOLY_QURAN_BASE_URL}#quran` },
         },
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-          { "@type": "ListItem", position: 2, name: "Holy Quran", item: HOLY_QURAN_BASE_URL },
-          { "@type": "ListItem", position: 3, name: `Surah ${surah.name}`, item: url },
-        ],
-      },
+      holyQuranBreadcrumbs([
+        { name: "Home", item: "https://www.noorpath.online" },
+        { name: "Holy Quran", item: HOLY_QURAN_BASE_URL },
+        { name: `Surah ${surah.name}`, item: url },
+      ]),
+      faqJsonLd(faqs),
     ],
   };
 
@@ -138,10 +146,9 @@ export default async function HolyQuranSurahPage({ params }: Props) {
               Arabic below is Tanzil Uthmani. Free to read, no account required.
             </p>
           </div>
-          <HolyQuranListen ayahs={ayahs} />
         </div>
 
-        <HolyQuranAyahs ayahs={ayahs} />
+        <HolyQuranPublicReader ayahs={ayahs} currentPara={juzs[0]} />
 
         <div className="hq-nav-row">
           {previous ? (
@@ -171,8 +178,11 @@ export default async function HolyQuranSurahPage({ params }: Props) {
             </>
           )}
           {" · "}
+          <Link href="/tools/hifz-calculator">Hifz planner</Link>
+          {" · "}
           <Link href="/learn-quran-online">Learn with a teacher</Link>
         </p>
+        <HolyQuranFaqs faqs={faqs} />
       </div>
     </div>
   );

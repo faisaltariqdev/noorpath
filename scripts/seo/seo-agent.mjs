@@ -47,9 +47,15 @@ function stagedFiles() {
 function validateRobotsSource() {
   const src = read("src/app/robots.ts");
   if (!src) return note("fail", "robots", "src/app/robots.ts missing");
-  if (!/sitemap:\s*"https:\/\/www\.noorpath\.online\/sitemap\.xml"/.test(src)) {
-    note("fail", "robots", "Sitemap URL missing or incorrect in robots.ts", "Set sitemap to https://www.noorpath.online/sitemap.xml");
-  } else note("pass", "robots", "Sitemap directive present in robots.ts");
+  if (!src.includes("https://www.noorpath.online/sitemap.xml")) {
+    note("fail", "robots", "Sitemap URL missing or incorrect in robots.ts", "Keep https://www.noorpath.online/sitemap.xml in robots.ts");
+  } else note("pass", "robots", "Root sitemap directive present in robots.ts");
+  if (!src.includes("https://www.noorpath.online/holy-quran/sitemap.xml")) {
+    note("warn", "robots", "Holy Quran child sitemap not listed in robots.ts");
+  } else note("pass", "robots", "Holy Quran sitemap listed in robots.ts");
+  if (!src.includes("https://www.noorpath.online/tools/sitemap.xml")) {
+    note("warn", "robots", "Tools child sitemap not listed in robots.ts");
+  } else note("pass", "robots", "Tools sitemap listed in robots.ts");
   if (!/disallow:\s*\["\/api\/"\]/.test(src) && !/disallow:\s*\[?"\/api\//.test(src)) {
     note("warn", "robots", "Confirm /api/ remains disallowed");
   } else note("pass", "robots", "/api/ disallow present");

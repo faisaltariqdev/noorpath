@@ -87,14 +87,62 @@ export const TOPIC_INTENTS = [
   {
     topic: "Read Holy Quran online / Surah and Para reader",
     summary:
-      "Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account.",
-    primary: ["/holy-quran", "/holy-quran/surah/ya-sin"],
+      "Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account. Arabic is Tanzil Uthmani via Al Quran Cloud. This is a reading text, not a substitute for a teacher.",
+    primary: ["/holy-quran", "/holy-quran/para/1"],
     supporting: [
+      "/holy-quran/surah/ya-sin",
       "/holy-quran/surah/al-fatiha",
       "/holy-quran/surah/al-mulk",
       "/holy-quran/surah/al-kahf",
       "/holy-quran/para/30",
       "/blog/surah-yaseen-arabic-english",
+      "/blog/benefits-of-reading-quran-daily",
+      "/tools/hifz-calculator",
+    ],
+  },
+  {
+    topic: "Read Surah Yaseen / Ya-Sin online",
+    summary:
+      "Free Uthmani Arabic page for Surah Yaseen (Ya-Sin, chapter 36, 83 ayahs). No account required. Translation notes live on a separate blog page.",
+    primary: ["/holy-quran/surah/ya-sin"],
+    supporting: [
+      "/holy-quran",
+      "/blog/surah-yaseen-arabic-english",
+      "/holy-quran/para/22",
+      "/holy-quran/para/23",
+    ],
+  },
+  {
+    topic: "Read Juz Amma / Para 30 online",
+    summary:
+      "Free Uthmani Arabic page for Para 30 (Juz Amma), plus short Surahs such as An-Naba, Al-Qadr, Al-Kawthar and Al-Ikhlas. No account required.",
+    primary: ["/holy-quran/para/30"],
+    supporting: [
+      "/holy-quran/surah/an-naba",
+      "/holy-quran/surah/al-qadr",
+      "/holy-quran/surah/al-kawthar",
+      "/holy-quran/surah/al-ikhlas",
+      "/holy-quran",
+      "/blog/how-to-memorize-juz-amma",
+    ],
+  },
+  {
+    topic: "Zakat calculator / calculate zakat online",
+    summary:
+      "Free Zakat calculator with published method notes. It is a planning aid, not a fatwa or a substitute for a scholar.",
+    primary: ["/tools/zakat-calculator"],
+    supporting: ["/tools", "/islamic-resources"],
+  },
+  {
+    topic: "Hifz planner / Quran memorization calculator",
+    summary:
+      "Free planner for daily sabaq and a Sabaq-Sabqi-Manzil revision layout. Progress depends on practice time — NoorPath does not guarantee a completion date.",
+    primary: ["/tools/hifz-calculator"],
+    supporting: [
+      "/hifz-quran-online",
+      "/holy-quran",
+      "/blog/how-long-to-memorize-quran",
+      "/blog/hifz-revision-schedule",
     ],
   },
   {
@@ -425,14 +473,28 @@ export const CORE_SERVICES = [
   { path: "/quran-classes-for-working-professionals", label: "Quran Classes for Working Professionals", note: "Online Quran learning around busy work schedules." },
   { path: "/free-quran-classes-online", label: "Free Trial Class", note: "Free 30-minute live trial information (no credit card to book)." },
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
+  { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
+  { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
 ];
 
 /** Course / subject owners (canonical destinations after redirects) */
 export const COURSES = [
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
+  { path: "/holy-quran/para/1", label: "Holy Quran · Para 1", note: "Public reader start page for Para 1 to 30 navigation." },
   { path: "/holy-quran/surah/ya-sin", label: "Surah Yaseen (Ya-Sin)", note: "Canonical public reader page for Surah Yaseen / Yasin." },
+  { path: "/holy-quran/surah/al-fatiha", label: "Surah Al-Fatiha", note: "Canonical public reader page for Surah Al-Fatiha." },
+  { path: "/holy-quran/surah/al-kahf", label: "Surah Al-Kahf", note: "Canonical public reader page for Surah Al-Kahf." },
+  { path: "/holy-quran/surah/al-mulk", label: "Surah Al-Mulk", note: "Canonical public reader page for Surah Al-Mulk." },
+  { path: "/holy-quran/surah/ar-rahman", label: "Surah Ar-Rahman", note: "Canonical public reader page for Surah Ar-Rahman." },
+  { path: "/holy-quran/surah/al-ikhlas", label: "Surah Al-Ikhlas", note: "Canonical public reader page for Surah Al-Ikhlas." },
   { path: "/holy-quran/para/30", label: "Para 30 / Juz Amma", note: "Canonical public reader page for Juz Amma." },
+  { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub." },
+  { path: "/tools/zakat-calculator", label: "Zakat Calculator", note: "Free Zakat calculator. Planning aid, not a fatwa." },
+  { path: "/tools/hifz-calculator", label: "Quran Hifz Planner", note: "Free Hifz and completion planner. No guaranteed timeline." },
+  { path: "/tools/hijri-date-converter", label: "Hijri Date Converter", note: "Gregorian ↔ Hijri conversion with moon-sighting adjustment notes." },
+  { path: "/tools/tasbeeh-counter", label: "Digital Tasbeeh Counter", note: "Free dhikr counter." },
+  { path: "/tools/inheritance-calculator", label: "Islamic Inheritance Calculator", note: "Miras planning aid based on Surah An-Nisa 4:11–12. Not a legal ruling." },
   { path: "/noorani-qaida", label: "Interactive Noorani Qaida Hub", note: "Free interactive Noorani Qaida reference modules, letters, lessons and games." },
   { path: "/courses/noorani-qaida-online", label: "Noorani Qaida Online Course", note: "Live Noorani Qaida course page for beginners." },
   { path: "/learn-tajweed-online", label: "Learn Tajweed Online", note: "Canonical Tajweed classes owner (not /courses/tajweed-classes-online)." },
@@ -456,6 +518,8 @@ export const ABOUT_TRUST = [
   { path: "/locations", label: "All Locations" },
   { path: "/blog", label: "Blog" },
   { path: "/islamic-resources", label: "Islamic Resources" },
+  { path: "/tools", label: "Islamic Tools" },
+  { path: "/holy-quran", label: "Holy Quran Reader" },
 ];
 
 /**
@@ -545,6 +609,7 @@ export const BLOG_CLUSTERS = [
       { slug: "online-tajweed-classes-for-kids", label: "Online Tajweed classes for kids" },
       { slug: "tajweed-learning-format-comparison", label: "Tajweed learning format comparison" },
       { slug: "how-to-improve-quran-recitation", label: "How to improve Quran recitation" },
+      { slug: "benefits-of-reading-quran-daily", label: "Benefits of reading Quran daily" },
       { slug: "hard-arabic-letters-for-kids-makharij", label: "Hard Arabic letters (makharij) for kids" },
       { slug: "quran-pronunciation-troubleshooting", label: "Quran pronunciation troubleshooting" },
       { slug: "difference-between-hifz-and-tajweed-classes", label: "Difference between Hifz and Tajweed classes" },

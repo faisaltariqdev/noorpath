@@ -9,14 +9,8 @@ import {
   QAIDA_CONTENT_VERSION,
   QAIDA_INDEXABLE_PATHS,
 } from "@/data/noorani-qaida";
-import {
-  HIGH_TRAFFIC_SURAH_NUMBERS,
-  HOLY_QURAN_BASE_PATH,
-  HOLY_QURAN_CONTENT_VERSION,
-  HOLY_QURAN_INDEXABLE_PATHS,
-  SURAHS,
-  toSurahSlug,
-} from "@/data/holy-quran";
+import { holyQuranSitemapEntries } from "@/data/holy-quran";
+import { toolsSitemapEntries } from "@/data/tools";
 
 const BASE = "https://www.noorpath.online";
 
@@ -30,8 +24,6 @@ const BRAND_ENTITY_UPDATE = new Date("2026-08-20");
 const SITE_CONTENT_STAMP = new Date("2026-08-20");
 /** Launch stamp for the free tools cluster (zakat calculator shipped 2026-09-02). */
 const TOOLS_LAUNCH_STAMP = new Date("2026-09-02");
-/** Honest launch stamp for the public Holy Quran reader. */
-const HOLY_QURAN_STAMP = new Date(HOLY_QURAN_CONTENT_VERSION);
 /**
  * Honest stamp for country hubs materially updated in the GSC-driven location
  * refresh (titles, descriptions, country FAQs, local context) on 2026-09-02.
@@ -223,12 +215,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/founder`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
-    { url: `${BASE}/tools`,                                    priority: 0.92, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
-    { url: `${BASE}/tools/zakat-calculator`,                   priority: 0.92, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
-    { url: `${BASE}/tools/hifz-calculator`,                    priority: 0.92, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
-    { url: `${BASE}/tools/hijri-date-converter`,               priority: 0.90, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
-    { url: `${BASE}/tools/tasbeeh-counter`,                    priority: 0.90, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
-    { url: `${BASE}/tools/inheritance-calculator`,             priority: 0.90, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
+    ...toolsSitemapEntries(BASE),
     { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
     { url: `${BASE}/accessibility-statement`,                  priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },
@@ -283,23 +270,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
   }));
 
-  const highTrafficSlugs = new Set(
-    SURAHS.filter((surah) => HIGH_TRAFFIC_SURAH_NUMBERS.has(surah.number)).map((surah) => toSurahSlug(surah.name)),
-  );
-
-  const holyQuranPages: MetadataRoute.Sitemap = HOLY_QURAN_INDEXABLE_PATHS.map((path) => {
-    const isHub = path === HOLY_QURAN_BASE_PATH;
-    const isYaseen = path.endsWith("/surah/ya-sin");
-    const isAmma = path.endsWith("/para/30");
-    const surahSlug = path.split("/surah/")[1];
-    const isHighTrafficSurah = Boolean(surahSlug && highTrafficSlugs.has(surahSlug));
-    return {
-      url: `${BASE}${path}`,
-      lastModified: HOLY_QURAN_STAMP,
-      priority: isHub ? 0.95 : isYaseen ? 0.9 : isAmma || isHighTrafficSurah ? 0.86 : 0.8,
-      changeFrequency: "monthly" as const,
-    };
-  });
-
-  return [...staticPages, ...KEYWORD_LANDING_PAGES, ...coursePages, ...locationPages, ...cityPages, ...blogPages, ...qaidaPages, ...holyQuranPages];
+  return [
+    ...staticPages,
+    ...KEYWORD_LANDING_PAGES,
+    ...coursePages,
+    ...locationPages,
+    ...cityPages,
+    ...blogPages,
+    ...qaidaPages,
+    ...holyQuranSitemapEntries(BASE),
+  ];
 }

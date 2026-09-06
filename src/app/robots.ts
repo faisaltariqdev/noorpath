@@ -48,7 +48,11 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Bytespider", allow: "/" },
       { userAgent: "Amazonbot", allow: "/" },
     ],
-    sitemap: "https://www.noorpath.online/sitemap.xml",
+    sitemap: [
+      "https://www.noorpath.online/sitemap.xml",
+      "https://www.noorpath.online/holy-quran/sitemap.xml",
+      "https://www.noorpath.online/tools/sitemap.xml",
+    ],
     host: "https://www.noorpath.online",
   };
 }

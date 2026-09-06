@@ -30,7 +30,7 @@ export default function HolyQuranPublicSection() {
             </Link>
           ))}
         </div>
-        <Link href="/holy-quran" className="btn-primary-np">
+        <Link href="/holy-quran/para/1" className="btn-primary-np">
           <BookOpen size={16} aria-hidden="true" /> Open Holy Quran reader
         </Link>
       </div>
