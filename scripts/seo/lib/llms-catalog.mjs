@@ -199,6 +199,27 @@ export const TOPIC_INTENTS = [
     supporting: ["/contact"],
   },
   {
+    topic: "Website design and development",
+    summary:
+      "NoorPath builds marketing, institutional, and product websites. Pages, forms, and the content model are confirmed in a written proposal. Online delivery only — no campus.",
+    primary: ["/software-services"],
+    supporting: ["/contact"],
+  },
+  {
+    topic: "Mobile application development / iOS / Android",
+    summary:
+      "NoorPath builds iOS and Android applications for customers or internal teams. Screens, accounts, and API connections are scoped before build work starts. Online delivery only — no campus.",
+    primary: ["/software-services"],
+    supporting: ["/contact"],
+  },
+  {
+    topic: "Enterprise software / admin dashboards",
+    summary:
+      "NoorPath builds admin panels, staff tools, and management dashboards so a business can assign access, review activity, and run operations from one place. Scope is confirmed in writing.",
+    primary: ["/software-services"],
+    supporting: ["/contact"],
+  },
+  {
     topic: "Islamic tools and calculators / free productivity suite",
     summary:
       "Free privacy-focused Islamic tools suite: Zakat Calculator with live Nisab, Quran Hifz & Completion Planner (Sabaq-Sabqi-Manzil), Hijri Date Converter with moon-sighting adjustments, Digital Tasbeeh Counter with haptic/audio feedback, and Islamic Inheritance (Miras) Calculator (Surah An-Nisa 4:11-12).",
@@ -482,8 +503,12 @@ export const CORE_SERVICES = [
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
-  { path: "/software-services", label: "Software & Digital Services", note: "Custom software, websites, and mobile apps. Scoped in writing." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
+];
+
+/** Software-house service owner — keep out of CORE_SERVICES so AI maps do not bury it under Quran classes. */
+export const DIGITAL_SERVICES = [
+  { path: "/software-services", label: "Software & Digital Services", note: "Custom software, websites, mobile applications, and enterprise systems. Scoped in writing. Quoted after the brief." },
 ];
 
 /** Course / subject owners (canonical destinations after redirects) */
@@ -709,6 +734,7 @@ export function abs(path) {
 export function allCatalogPaths() {
   const paths = new Set(["/"]);
   for (const x of CORE_SERVICES) paths.add(x.path);
+  for (const x of DIGITAL_SERVICES) paths.add(x.path);
   for (const x of COURSES) paths.add(x.path);
   for (const x of ABOUT_TRUST) paths.add(x.path);
   for (const x of PRIORITY_COUNTRIES) paths.add(x.path);

@@ -68,7 +68,7 @@ export function getOrganizationJsonLd() {
         email: CONTACT.email,
         telephone: CONTACT.phoneE164,
         description:
-          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Official website: https://www.noorpath.online.",
+          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Official website: https://www.noorpath.online. NoorPath also publishes software and digital services at https://www.noorpath.online/software-services.",
         disambiguatingDescription:
           "Official site: www.noorpath.online. Online-only Quran academy with live remote classes worldwide. Not affiliated with noor-path.com, noorpath.net app products, or other similarly named academies. No physical campus or walk-in branches.",
         founder: { "@id": FOUNDER_PERSON_ID },
@@ -103,10 +103,11 @@ export function getOrganizationJsonLd() {
           url: `${BASE_URL}/contact`,
         },
         sameAs: [TRUSTPILOT.url, GOOGLE_BUSINESS_URL, ...SOCIAL_PROFILE_URLS],
-        hasOfferCatalog: {
-          "@type": "OfferCatalog",
-          name: "Online Quran & Islamic Courses",
-          itemListElement: [
+        hasOfferCatalog: [
+          {
+            "@type": "OfferCatalog",
+            name: "Online Quran & Islamic Courses",
+            itemListElement: [
             {
               "@type": "Offer",
               itemOffered: {
@@ -207,7 +208,55 @@ export function getOrganizationJsonLd() {
               },
             },
           ],
-        },
+          },
+          {
+            "@type": "OfferCatalog",
+            name: "Software & Digital Services",
+            url: `${BASE_URL}/software-services`,
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Custom software development",
+                  description: "Purpose-built web and backend systems scoped in writing.",
+                  provider: { "@id": ORGANIZATION_ID },
+                  url: `${BASE_URL}/software-services`,
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Website design and development",
+                  description: "Marketing, institutional, and product websites scoped in writing.",
+                  provider: { "@id": ORGANIZATION_ID },
+                  url: `${BASE_URL}/software-services`,
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Mobile application development",
+                  description: "iOS and Android applications scoped in writing.",
+                  provider: { "@id": ORGANIZATION_ID },
+                  url: `${BASE_URL}/software-services`,
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Enterprise systems and dashboards",
+                  description: "Admin panels, staff tools, and management dashboards scoped in writing.",
+                  provider: { "@id": ORGANIZATION_ID },
+                  url: `${BASE_URL}/software-services`,
+                },
+              },
+            ],
+          },
+        ],
       },
       {
         "@type": "WebSite",
@@ -263,6 +312,11 @@ export function getOrganizationJsonLd() {
             "@type": "WebPage",
             name: "Contact",
             url: `${BASE_URL}/contact`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Software Services",
+            url: `${BASE_URL}/software-services`,
           },
         ],
         // No SearchAction — the site has no public on-site search endpoint.

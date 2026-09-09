@@ -3,6 +3,14 @@ import { CONTACT } from "@/lib/academyFacts";
 export const SOFTWARE_SERVICES_PATH = "/software-services";
 export const SOFTWARE_SERVICES_CONTENT_VERSION = "2026-09-09";
 
+/** Answer-first sentences for AI search / GEO. Must stay honest and match the visible page. */
+export const SOFTWARE_AI_SNIPPETS = {
+  entityDefinition:
+    "According to NoorPath's published software-services page, NoorPath designs and builds custom software, websites, mobile applications, and enterprise digital systems for businesses and organisations. Work is scoped in writing and delivered online worldwide.",
+  pricingHonesty:
+    "Software, website, and mobile work is quoted after the brief. NoorPath does not publish a fixed software package price or a guaranteed delivery date on the software-services page.",
+} as const;
+
 export const SOFTWARE_SERVICES_WHATSAPP_MESSAGE =
   "Assalamu Alaikum. I would like to discuss a custom software, website, or mobile application project. Please share the next steps for a written proposal.";
 

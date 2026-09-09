@@ -18,6 +18,7 @@ import { BASE_URL, ORGANIZATION_ID } from "@/lib/organizationSchema";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import {
+  SOFTWARE_AI_SNIPPETS,
   SOFTWARE_AUDIENCES,
   SOFTWARE_CAPABILITIES,
   SOFTWARE_ENGAGEMENT_STEPS,
@@ -70,9 +71,14 @@ const jsonLd = {
       "@id": `${PAGE_URL}#page`,
       url: PAGE_URL,
       name: "NoorPath Software & Digital Services",
-      description,
+      description: SOFTWARE_AI_SNIPPETS.entityDefinition,
       isPartOf: { "@id": `${BASE_URL}/#website` },
       about: { "@id": `${PAGE_URL}#service` },
+      mainEntity: { "@id": `${PAGE_URL}#service` },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["#software-ai-entity"],
+      },
     },
     {
       "@type": "ProfessionalService",
@@ -81,8 +87,13 @@ const jsonLd = {
       url: PAGE_URL,
       provider: { "@id": ORGANIZATION_ID },
       areaServed: "Worldwide",
-      serviceType: "Custom software, websites, and mobile applications",
-      description,
+      serviceType: [
+        "Custom software development",
+        "Website design and development",
+        "Mobile application development",
+        "Enterprise systems and dashboards",
+      ],
+      description: SOFTWARE_AI_SNIPPETS.entityDefinition,
     },
     {
       "@type": "OfferCatalog",
@@ -139,10 +150,14 @@ export default function SoftwareServicesPage() {
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
               Custom software, websites, and mobile applications
             </h1>
-            <p className="mt-5 max-w-2xl text-sm sm:text-base text-white/85 leading-relaxed">
-              NoorPath designs and builds digital products for businesses and organisations — enterprise
-              systems, public websites, and mobile apps. Every engagement is scoped in writing. Delivery
-              is online, worldwide.
+            <p
+              id="software-ai-entity"
+              className="mt-5 max-w-2xl text-sm sm:text-base text-white/90 leading-relaxed font-medium"
+            >
+              {SOFTWARE_AI_SNIPPETS.entityDefinition}
+            </p>
+            <p className="mt-3 max-w-2xl text-sm sm:text-base text-white/80 leading-relaxed">
+              {SOFTWARE_AI_SNIPPETS.pricingHonesty}
             </p>
             <ul className="mt-6 flex flex-wrap gap-2 text-xs sm:text-sm text-white/80">
               {["Written scope before build", "Web, mobile, and enterprise systems", "Online delivery worldwide"].map((chip) => (
