@@ -192,9 +192,9 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
-    topic: "Custom software / institute operations systems",
+    topic: "Custom software / websites / mobile applications",
     summary:
-      "NoorPath builds scoped custom software for operational problems such as printing-credit control, admin user management, and usage history. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.",
+      "NoorPath offers software-house services: custom software, website development, mobile applications, and enterprise digital systems. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.",
     primary: ["/software-services"],
     supporting: ["/contact", "/about", "/tools"],
   },
@@ -482,7 +482,7 @@ export const CORE_SERVICES = [
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
-  { path: "/software-services", label: "Software & Digital Services", note: "Custom operational software for institutes. Scoped in writing. Separate from Quran class pricing." },
+  { path: "/software-services", label: "Software & Digital Services", note: "Custom software, websites, and mobile apps. Scoped in writing. Separate from Quran class pricing." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
 ];
 

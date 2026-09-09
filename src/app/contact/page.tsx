@@ -96,12 +96,11 @@ export default function ContactPage() {
               Software and digital-service enquiries
             </h2>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 20 }}>
-              For custom institute software — such as printing-credit control or an admin system —
-              use the{" "}
+              For custom software, websites, mobile applications, or an enterprise system, use the{" "}
               <Link href="/software-services" style={{ color: "var(--emerald)", fontWeight: 600 }}>
                 software services
               </Link>{" "}
-              page. Describe the process, who will administer it, and the current environment.
+              page. Describe the product, who will use it, and the outcome you need.
               Class trial pricing does not apply.
             </p>
 

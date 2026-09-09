@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Building2,
-  ClipboardList,
-  Gauge,
+  Code2,
   Globe,
+  LayoutDashboard,
   Mail,
-  ShieldCheck,
-  Workflow,
+  MonitorSmartphone,
+  Palette,
+  Rocket,
+  Smartphone,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import WhatsAppLink from "@/components/WhatsAppLink";
@@ -16,6 +18,8 @@ import { BASE_URL, ORGANIZATION_ID } from "@/lib/organizationSchema";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import {
+  SOFTWARE_AUDIENCES,
+  SOFTWARE_CAPABILITIES,
   SOFTWARE_ENGAGEMENT_STEPS,
   SOFTWARE_SERVICE_OFFERINGS,
   SOFTWARE_SERVICES_FAQS,
@@ -28,20 +32,21 @@ export const revalidate = false;
 const PAGE_URL = `${BASE_URL}${SOFTWARE_SERVICES_PATH}`;
 
 const description =
-  "NoorPath builds custom software for institute operations — admin control, credits and quotas, activity history, and handover. Scoped in writing. Online delivery worldwide.";
+  "NoorPath delivers custom software, websites, mobile applications, and enterprise digital systems. Scoped in writing. Online delivery worldwide.";
 
 export const metadata: Metadata = {
-  title: absolutePageTitle("Custom Software Services for Institutes | NoorPath"),
+  title: absolutePageTitle("Custom Software, Websites & Mobile Apps | NoorPath"),
   description,
   keywords: [
-    "custom software for institutes",
-    "printing credit management system",
-    "institute admin panel software",
+    "custom software development",
+    "website development",
+    "mobile app development",
+    "enterprise software solutions",
     "NoorPath software services",
   ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Custom Software Services for Institutes | NoorPath",
+    title: "Custom Software, Websites & Mobile Apps | NoorPath",
     description,
     url: PAGE_URL,
     siteName: "NoorPath",
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Software Services | NoorPath",
+    title: "Custom Software, Websites & Mobile Apps | NoorPath",
     description,
     images: ["/og-image.png"],
   },
@@ -76,7 +81,7 @@ const jsonLd = {
       url: PAGE_URL,
       provider: { "@id": ORGANIZATION_ID },
       areaServed: "Worldwide",
-      serviceType: "Custom operational software for institutes",
+      serviceType: "Custom software, websites, and mobile applications",
       description,
     },
     {
@@ -110,14 +115,14 @@ const jsonLd = {
   ],
 };
 
-const icons = [Building2, Gauge, ShieldCheck, Workflow];
+const icons = [Code2, Globe, Smartphone, LayoutDashboard, Palette, Rocket];
 
 export default function SoftwareServicesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
 
-      <main>
+      <div>
         <header
           className="relative overflow-hidden text-white pt-28 sm:pt-32 pb-16 px-4 sm:px-6"
           style={{ background: "linear-gradient(135deg, #021a11 0%, #063824 60%, #0b5336 100%)" }}
@@ -129,16 +134,23 @@ export default function SoftwareServicesPage() {
               <span className="text-[var(--gold-lt)]">Software services</span>
             </nav>
             <p className="text-xs font-bold tracking-[0.14em] uppercase text-[var(--gold-lt)] mb-3">
-              Software &amp; digital services
+              Software house · Digital services
             </p>
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
-              Custom software that controls a real operational problem
+              Custom software, websites, and mobile applications
             </h1>
             <p className="mt-5 max-w-2xl text-sm sm:text-base text-white/85 leading-relaxed">
-              NoorPath builds scoped systems for institutes and organisations that need admin control,
-              usage rules, and a clean handover. This is separate from live Quran classes, the public
-              Holy Quran reader, and the free Islamic tools.
+              NoorPath designs and builds digital products for businesses and organisations — enterprise
+              systems, public websites, and mobile apps. Every engagement is scoped in writing. Delivery
+              is online, worldwide. This service line is separate from live Quran classes.
             </p>
+            <ul className="mt-6 flex flex-wrap gap-2 text-xs sm:text-sm text-white/80">
+              {["Written scope before build", "Web, mobile, and enterprise systems", "Online delivery worldwide"].map((chip) => (
+                <li key={chip} className="rounded-full border border-white/20 bg-white/5 px-3 py-1.5">
+                  {chip}
+                </li>
+              ))}
+            </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`mailto:${CONTACT.email}?subject=Software%20services%20enquiry`}
@@ -160,16 +172,16 @@ export default function SoftwareServicesPage() {
 
         <section className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3">
-            What this service is
+            Software-house services
           </h2>
           <p className="text-[var(--slate)] leading-relaxed max-w-3xl mb-10">
-            You describe a process that is leaking time, paper, or control. We confirm whether it fits a
-            custom admin system. If it does, you get a written proposal for that scope only — not a
-            generic “enterprise package” with invented client counts or a guaranteed go-live date.
+            You describe the product. We confirm whether it fits a custom build. If it does, you get a
+            written proposal for that website, application, or system — not a generic package with
+            invented client counts or a guaranteed go-live date.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {SOFTWARE_SERVICE_OFFERINGS.map((item, index) => {
-              const Icon = icons[index] ?? ClipboardList;
+              const Icon = icons[index] ?? MonitorSmartphone;
               return (
                 <article
                   key={item.title}
@@ -187,23 +199,14 @@ export default function SoftwareServicesPage() {
         <section className="bg-[var(--ivory)] py-14">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3">
-              Example: printing credit management
+              What a typical engagement can include
             </h2>
             <p className="text-[var(--slate)] leading-relaxed max-w-3xl mb-6">
-              A typical institute brief is a printing-credit system. The administrator manages students
-              and teachers, assigns credits, and reviews history. Each printed page consumes one credit.
-              When the balance reaches zero, printing is blocked until the administrator recharges the
-              account. Hardware and third-party fees stay outside the build unless the proposal lists them.
+              These are the kinds of work a software house scopes after the brief. The exact list is
+              written into your proposal.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-[var(--slate)]">
-              {[
-                "Add, edit, activate, or deactivate users",
-                "Assign and recharge printing credits",
-                "Deduct one credit per printed page",
-                "Automatic block when credits are exhausted",
-                "Printing history with date and status",
-                "Dashboard for assigned, used, and remaining credits",
-              ].map((line) => (
+              {SOFTWARE_CAPABILITIES.map((line) => (
                 <li key={line} className="rounded-2xl bg-white border border-[var(--border)] px-4 py-3">
                   {line}
                 </li>
@@ -213,47 +216,69 @@ export default function SoftwareServicesPage() {
         </section>
 
         <section className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-8">
-            How an engagement works
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3">
+            Who this is for
           </h2>
-          <ol className="space-y-5">
-            {SOFTWARE_ENGAGEMENT_STEPS.map((step, index) => (
-              <li key={step.title} className="flex gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--emerald)] text-white font-bold">
-                  {index + 1}
-                </span>
-                <div>
-                  <h3 className="font-bold text-[var(--charcoal)]">{step.title}</h3>
-                  <p className="text-sm text-[var(--slate)] leading-relaxed mt-1">{step.detail}</p>
-                </div>
-              </li>
+          <p className="text-[var(--slate)] leading-relaxed max-w-3xl mb-8">
+            We work with organisations that need a digital product built and handed over — not a
+            named client roster on this page, and not a walk-in office.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {SOFTWARE_AUDIENCES.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-3xl border border-[var(--border)] bg-white p-6 shadow-sm"
+              >
+                <Building2 className="text-[var(--emerald)] mb-3" size={22} aria-hidden="true" />
+                <h3 className="font-serif text-lg font-bold text-[var(--charcoal)] mb-2">{item.title}</h3>
+                <p className="text-sm text-[var(--slate)] leading-relaxed">{item.summary}</p>
+              </article>
             ))}
-          </ol>
+          </div>
         </section>
 
         <section className="bg-[var(--ivory)] py-14">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3">
-              Related NoorPath products
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-8">
+              How an engagement works
             </h2>
-            <p className="text-[var(--slate)] leading-relaxed max-w-3xl mb-6">
-              These public products show how NoorPath already ships web software. They are not substitutes
-              for a custom institute system, and they do not prove a named client list.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link href="/holy-quran" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-                Holy Quran reader
-              </Link>
-              <Link href="/tools" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-                Islamic tools
-              </Link>
-              <Link href="/online-quran-classes" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-                Live Quran classes
-              </Link>
-              <Link href="/contact" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-                Contact
-              </Link>
-            </div>
+            <ol className="space-y-5">
+              {SOFTWARE_ENGAGEMENT_STEPS.map((step, index) => (
+                <li key={step.title} className="flex gap-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--emerald)] text-white font-bold">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-bold text-[var(--charcoal)]">{step.title}</h3>
+                    <p className="text-sm text-[var(--slate)] leading-relaxed mt-1">{step.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3">
+            Separate from Quran class pricing
+          </h2>
+          <p className="text-[var(--slate)] leading-relaxed max-w-3xl mb-6">
+            Live classes, the public Holy Quran reader, and the free Islamic tools stay on their own
+            pages. Software work is quoted on its own brief.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/holy-quran" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
+              Holy Quran reader
+            </Link>
+            <Link href="/tools" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
+              Islamic tools
+            </Link>
+            <Link href="/online-quran-classes" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
+              Live Quran classes
+            </Link>
+            <Link href="/contact" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
+              Contact
+            </Link>
           </div>
         </section>
 
@@ -280,8 +305,8 @@ export default function SoftwareServicesPage() {
             <h2 className="font-serif text-2xl sm:text-3xl font-extrabold mb-3">Start with a written brief</h2>
             <p className="text-sm text-white/85 leading-relaxed max-w-2xl mb-6">
               Online delivery worldwide. Email {CONTACT.email} or WhatsApp {CONTACT.phoneDisplay}.
-              Include the process, the administrator, and the current environment. Next steps are
-              confirmed after we read that request.
+              Include the product you need — software, website, or mobile app — who will use it, and
+              the outcome. Next steps are confirmed after we read that request.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -299,7 +324,7 @@ export default function SoftwareServicesPage() {
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -190,9 +190,9 @@ Also useful:
 - [Female Quran teacher for kids](https://www.noorpath.online/blog/female-quran-teacher-for-kids)
 - [Female Quran teacher online Canada](https://www.noorpath.online/blog/female-quran-teacher-online-canada)
 
-### Custom software / institute operations systems
+### Custom software / websites / mobile applications
 
-NoorPath builds scoped custom software for operational problems such as printing-credit control, admin user management, and usage history. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.
+NoorPath offers software-house services: custom software, website development, mobile applications, and enterprise digital systems. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.
 
 Primary resources:
 - [Software & Digital Services](https://www.noorpath.online/software-services)
@@ -372,7 +372,7 @@ These URLs are the preferred owners for global service and audience questions. C
 - [Islamic Tools & Calculators](https://www.noorpath.online/tools)
   Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance.
 - [Software & Digital Services](https://www.noorpath.online/software-services)
-  Custom operational software for institutes. Scoped in writing. Separate from Quran class pricing.
+  Custom software, websites, and mobile apps. Scoped in writing. Separate from Quran class pricing.
 - [Pricing](https://www.noorpath.online/pricing)
   Published USD plans and family discount rules.
 
