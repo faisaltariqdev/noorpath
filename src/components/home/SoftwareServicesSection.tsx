@@ -12,8 +12,8 @@ export default function SoftwareServicesSection() {
           Custom software, websites, and <em className="accent">mobile apps</em>
         </h2>
         <p className="section-desc" style={{ maxWidth: 720 }}>
-          Separate from Quran classes and the free tools: enterprise systems, public websites, and
-          mobile applications, scoped in writing and delivered online. No invented client list or campus visit.
+          Enterprise systems, public websites, and mobile applications — scoped in writing and
+          delivered online. No invented client list or campus visit.
         </p>
         <Link href="/software-services" className="btn-primary-np">
           View software services

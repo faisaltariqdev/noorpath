@@ -86,7 +86,7 @@ const resourceCategories = [
     title: "Software & Digital Services",
     color: "#0f3d2c",
     resources: [
-      { title: "Custom software, websites & mobile apps", desc: "Enterprise digital services, scoped in writing — separate from Quran classes", href: "/software-services", type: "Services" },
+      { title: "Custom software, websites & mobile apps", desc: "Enterprise digital services, scoped in writing", href: "/software-services", type: "Services" },
     ],
   },
   {

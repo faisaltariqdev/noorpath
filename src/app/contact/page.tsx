@@ -101,7 +101,6 @@ export default function ContactPage() {
                 software services
               </Link>{" "}
               page. Describe the product, who will use it, and the outcome you need.
-              Class trial pricing does not apply.
             </p>
 
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", marginBottom: 12 }}>

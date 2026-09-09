@@ -142,7 +142,7 @@ export default function SoftwareServicesPage() {
             <p className="mt-5 max-w-2xl text-sm sm:text-base text-white/85 leading-relaxed">
               NoorPath designs and builds digital products for businesses and organisations — enterprise
               systems, public websites, and mobile apps. Every engagement is scoped in writing. Delivery
-              is online, worldwide. This service line is separate from live Quran classes.
+              is online, worldwide.
             </p>
             <ul className="mt-6 flex flex-wrap gap-2 text-xs sm:text-sm text-white/80">
               {["Written scope before build", "Web, mobile, and enterprise systems", "Online delivery worldwide"].map((chip) => (
@@ -255,30 +255,6 @@ export default function SoftwareServicesPage() {
                 </li>
               ))}
             </ol>
-          </div>
-        </section>
-
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--charcoal)] mb-3">
-            Separate from Quran class pricing
-          </h2>
-          <p className="text-[var(--slate)] leading-relaxed max-w-3xl mb-6">
-            Live classes, the public Holy Quran reader, and the free Islamic tools stay on their own
-            pages. Software work is quoted on its own brief.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/holy-quran" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-              Holy Quran reader
-            </Link>
-            <Link href="/tools" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-              Islamic tools
-            </Link>
-            <Link href="/online-quran-classes" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-              Live Quran classes
-            </Link>
-            <Link href="/contact" className="rounded-xl bg-white border border-[var(--border)] px-4 py-3 font-semibold text-[var(--emerald)]">
-              Contact
-            </Link>
           </div>
         </section>
 

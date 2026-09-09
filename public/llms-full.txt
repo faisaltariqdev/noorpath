@@ -227,15 +227,13 @@ Supporting resources:
 
 ### Custom software / websites / mobile applications
 
-NoorPath offers software-house services: custom software, website development, mobile applications, and enterprise digital systems. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.
+NoorPath offers software-house services: custom software, website development, mobile applications, and enterprise digital systems. Work is quoted after the brief. Online delivery only — no campus.
 
 Primary resources:
 - [Software & Digital Services](https://www.noorpath.online/software-services)
 
 Supporting resources:
 - [Contact](https://www.noorpath.online/contact)
-- [About NoorPath](https://www.noorpath.online/about)
-- [Islamic Tools & Calculators](https://www.noorpath.online/tools)
 
 ### Islamic tools and calculators / free productivity suite
 
@@ -461,7 +459,7 @@ These URLs are the preferred owners for global service and audience questions. C
 - [Islamic Tools & Calculators](https://www.noorpath.online/tools)
   Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance.
 - [Software & Digital Services](https://www.noorpath.online/software-services)
-  Custom software, websites, and mobile apps. Scoped in writing. Separate from Quran class pricing.
+  Custom software, websites, and mobile apps. Scoped in writing.
 - [Pricing](https://www.noorpath.online/pricing)
   Published USD plans and family discount rules.
 

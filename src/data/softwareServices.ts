@@ -100,9 +100,9 @@ export const SOFTWARE_ENGAGEMENT_STEPS = [
 
 export const SOFTWARE_SERVICES_FAQS = [
   {
-    question: "Does NoorPath only teach Quran, or do you also build software?",
+    question: "Who is this software service for?",
     answer:
-      "NoorPath Academy remains an online Quran academy with live classes, a public Holy Quran reader, and free Islamic tools. NoorPath also operates a separate software-services line: custom software, websites, mobile applications, and enterprise digital systems. Published Quran class prices do not apply to software projects.",
+      "Businesses, organisations, and product teams that need custom software, a website, a mobile application, or an enterprise dashboard. We confirm the exact product in a written proposal.",
   },
   {
     question: "What kind of digital work do you take on?",
