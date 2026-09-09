@@ -86,6 +86,8 @@ export function getOrganizationJsonLd() {
           "Female Quran teacher",
           "Islamic studies online",
           "Arabic language online",
+          "Custom software for institutes",
+          "Printing credit management systems",
         ],
         areaServed: PRIORITY_COUNTRIES.map((name) => ({
           "@type": "Country",

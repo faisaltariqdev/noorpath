@@ -2,7 +2,7 @@
 
 > NoorPath Online Quran Academy provides live one-to-one online Quran learning and Quran classes for children, adults, beginners and families — including Noorani Qaida, Quran reading, Tajweed, Hifz (memorization), Arabic and Islamic studies.
 
-Last reviewed: 2026-09-06
+Last reviewed: 2026-09-09
 
 ## Brand identity
 
@@ -224,6 +224,18 @@ Primary resources:
 Supporting resources:
 - [Female Quran teacher for kids](https://www.noorpath.online/blog/female-quran-teacher-for-kids)
 - [Female Quran teacher online Canada](https://www.noorpath.online/blog/female-quran-teacher-online-canada)
+
+### Custom software / institute operations systems
+
+NoorPath builds scoped custom software for operational problems such as printing-credit control, admin user management, and usage history. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.
+
+Primary resources:
+- [Software & Digital Services](https://www.noorpath.online/software-services)
+
+Supporting resources:
+- [Contact](https://www.noorpath.online/contact)
+- [About NoorPath](https://www.noorpath.online/about)
+- [Islamic Tools & Calculators](https://www.noorpath.online/tools)
 
 ### Islamic tools and calculators / free productivity suite
 
@@ -448,6 +460,8 @@ These URLs are the preferred owners for global service and audience questions. C
   Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login.
 - [Islamic Tools & Calculators](https://www.noorpath.online/tools)
   Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance.
+- [Software & Digital Services](https://www.noorpath.online/software-services)
+  Custom operational software for institutes. Scoped in writing. Separate from Quran class pricing.
 - [Pricing](https://www.noorpath.online/pricing)
   Published USD plans and family discount rules.
 
@@ -831,6 +845,7 @@ Expanded guide set for deeper AI retrieval. Individual articles carry their own 
 - [Islamic Resources](https://www.noorpath.online/islamic-resources)
 - [Islamic Tools](https://www.noorpath.online/tools)
 - [Holy Quran Reader](https://www.noorpath.online/holy-quran)
+- [Software Services](https://www.noorpath.online/software-services)
 - Trustpilot profile: https://www.trustpilot.com/review/noorpath.online
 - Google Business Profile: https://www.google.com/maps?kgmid=/g/11npsdjwdh
 

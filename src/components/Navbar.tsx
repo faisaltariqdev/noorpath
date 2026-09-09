@@ -20,6 +20,7 @@ const primaryLinks = [
 const moreLinks = [
   { href: "/holy-quran/para/1", label: "📖 Holy Quran Reader" },
   { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
+  { href: "/software-services", label: "Software Services" },
   { href: "/noorani-qaida", label: "Noorani Qaida" },
   { href: "/online-quran-classes-for-kids", label: "Kids Classes" },
   { href: "/one-on-one-quran-classes", label: "1-to-1 Classes" },

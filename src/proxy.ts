@@ -21,6 +21,8 @@ const LEGACY_PATHS: Record<string, string> = {
   "/online-quran-for-kids": "/online-quran-classes-for-kids",
   "/quran-classes-for-kids": "/online-quran-classes-for-kids",
   "/online-quran-teaching-jobs": "/our-tutors",
+  "/services": "/software-services",
+  "/custom-software": "/software-services",
   "/free-resources": "/islamic-resources",
   "/free-resources.html": "/islamic-resources",
   "/about.html": "/about",

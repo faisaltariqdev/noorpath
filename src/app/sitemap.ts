@@ -24,6 +24,8 @@ const BRAND_ENTITY_UPDATE = new Date("2026-08-20");
 const SITE_CONTENT_STAMP = new Date("2026-08-20");
 /** Launch stamp for the free tools cluster (zakat calculator shipped 2026-09-02). */
 const TOOLS_LAUNCH_STAMP = new Date("2026-09-02");
+/** Honest launch stamp for the public software-services page. */
+const SOFTWARE_SERVICES_STAMP = new Date("2026-09-09");
 /**
  * Honest stamp for country hubs materially updated in the GSC-driven location
  * refresh (titles, descriptions, country FAQs, local context) on 2026-09-02.
@@ -215,6 +217,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/founder`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
+    { url: `${BASE}/software-services`,                        priority: 0.88, changeFrequency: "monthly", lastModified: SOFTWARE_SERVICES_STAMP },
     ...toolsSitemapEntries(BASE),
     { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },

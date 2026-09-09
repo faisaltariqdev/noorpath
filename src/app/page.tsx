@@ -4,6 +4,7 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import InteractiveNooraniQaidaSection from "@/components/home/InteractiveNooraniQaidaSection";
 import HolyQuranPublicSection from "@/components/home/HolyQuranPublicSection";
+import SoftwareServicesSection from "@/components/home/SoftwareServicesSection";
 import ParentPortalSection from "@/components/home/ParentPortalSection";
 import {
   featuredTrustpilotReviews,
@@ -373,6 +374,7 @@ export default function HomePage() {
       {/* ── INTERACTIVE NOORANI QAIDA (SEO hub section) ── */}
       <InteractiveNooraniQaidaSection />
       <HolyQuranPublicSection />
+      <SoftwareServicesSection />
 
       {/* ── PARENT PORTAL ── */}
       <ParentPortalSection />

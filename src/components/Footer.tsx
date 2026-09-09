@@ -33,6 +33,7 @@ const company = [
   { href: "/locations", label: "All Locations" },
   { href: "/blog", label: "Blog & Articles" },
   { href: "/islamic-resources", label: "Free Resources" },
+  { href: "/software-services", label: "Software Services" },
   { href: "/tools", label: "🧮 Islamic Tools Hub" },
   { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
   { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },
@@ -46,6 +47,7 @@ const company = [
 const quickLinks = [
   { href: "/holy-quran/para/1", label: "📖 Holy Quran Reader" },
   { href: "/holy-quran/surah/ya-sin", label: "📖 Surah Yaseen" },
+  { href: "/software-services", label: "Software Services" },
   { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
   { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
   { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },

@@ -30,6 +30,7 @@ const SAMPLE_PATHS = [
   "/holy-quran/para/1",
   "/tools",
   "/tools/zakat-calculator",
+  "/software-services",
   "/sitemap.xml",
   "/holy-quran/sitemap.xml",
   "/tools/sitemap.xml",

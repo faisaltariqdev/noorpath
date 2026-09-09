@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-09-06";
+export const REVIEWED = "2026-09-09";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -190,6 +190,13 @@ export const TOPIC_INTENTS = [
       "/blog/female-quran-teacher-for-kids",
       "/blog/female-quran-teacher-online-canada",
     ],
+  },
+  {
+    topic: "Custom software / institute operations systems",
+    summary:
+      "NoorPath builds scoped custom software for operational problems such as printing-credit control, admin user management, and usage history. Work is quoted after the brief. This is separate from live Quran classes. Online delivery only — no campus.",
+    primary: ["/software-services"],
+    supporting: ["/contact", "/about", "/tools"],
   },
   {
     topic: "Islamic tools and calculators / free productivity suite",
@@ -475,6 +482,7 @@ export const CORE_SERVICES = [
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
+  { path: "/software-services", label: "Software & Digital Services", note: "Custom operational software for institutes. Scoped in writing. Separate from Quran class pricing." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
 ];
 
@@ -520,6 +528,7 @@ export const ABOUT_TRUST = [
   { path: "/islamic-resources", label: "Islamic Resources" },
   { path: "/tools", label: "Islamic Tools" },
   { path: "/holy-quran", label: "Holy Quran Reader" },
+  { path: "/software-services", label: "Software Services" },
 ];
 
 /**

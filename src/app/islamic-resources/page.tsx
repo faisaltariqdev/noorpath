@@ -82,6 +82,14 @@ const backlinkAssetCategories = (
 
 const resourceCategories = [
   {
+    icon: "💻",
+    title: "Software & Digital Services",
+    color: "#0f3d2c",
+    resources: [
+      { title: "Custom software for institutes", desc: "Scoped admin systems, credits and quotas, written proposals — separate from Quran classes", href: "/software-services", type: "Services" },
+    ],
+  },
+  {
     icon: "🧮",
     title: "Islamic Tools & Calculators",
     color: "#0a6e4f",
