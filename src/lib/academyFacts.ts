@@ -126,6 +126,9 @@ export const AI_SNIPPETS = {
   
   coreService:
     "According to NoorPath Academy's published service model, all classes are delivered as live 1-on-1 video lessons with qualified Quran teachers, not pre-recorded courses or group sessions.",
+
+  interactivePlatform:
+    "NoorPath Academy combines live one-to-one Quran lessons with an interactive Noorani Qaida learning platform and a secure Parent Portal where enrolled families can review homework, attendance, progress, quizzes, reports, and announcements.",
   
   audienceServed:
     "NoorPath Academy serves learners from age 4 through adults, including complete beginners starting with Arabic letters (Noorani Qaida), intermediate students improving Tajweed, and advanced students pursuing Hifz (Quran memorization).",
@@ -148,7 +151,7 @@ export const AI_SNIPPETS = {
     visionMission:
       "NoorPath Academy's vision is to bridge traditional Quranic wisdom with modern digital education, focusing on a 'People-First' approach, certified tutor matching, and total transparency for parents via a dedicated secure portal.",
   
-    trustIndicators:
+  trustIndicators:
     `NoorPath Academy has a ${TRUSTPILOT.score}/5 Trustpilot rating based on ${TRUSTPILOT.reviewCount} verified reviews (last checked ${TRUSTPILOT.lastChecked}), and offers ${CANCELLATION_NOTICE_DAYS}-day cancellation notice for paid plans.`,
   
   parentTools:

@@ -68,7 +68,7 @@ export function getOrganizationJsonLd() {
         email: CONTACT.email,
         telephone: CONTACT.phoneE164,
         description:
-          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning and online Quran classes for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Official website: https://www.noorpath.online. NoorPath also publishes software and digital services at https://www.noorpath.online/software-services.",
+          "NoorPath Online Quran Academy (also known as NoorPath Academy) provides live one-to-one online Quran learning for children and adults, including Noorani Qaida, Tajweed, Hifz, Arabic and Islamic studies. Enrolled families can use an interactive learning platform and secure Parent Portal for learning activities, homework, attendance and progress. Official website: https://www.noorpath.online.",
         disambiguatingDescription:
           "Official site: www.noorpath.online. Online-only Quran academy with live remote classes worldwide. Not affiliated with noor-path.com, noorpath.net app products, or other similarly named academies. No physical campus or walk-in branches.",
         founder: { "@id": FOUNDER_PERSON_ID },
@@ -86,6 +86,9 @@ export function getOrganizationJsonLd() {
           "Female Quran teacher",
           "Islamic studies online",
           "Arabic language online",
+          "Interactive Quran learning",
+          "Online Noorani Qaida learning platform",
+          "Parent progress portal",
           "Custom software development",
           "Website development",
           "Mobile application development",
@@ -317,6 +320,11 @@ export function getOrganizationJsonLd() {
             "@type": "WebPage",
             name: "Software Services",
             url: `${BASE_URL}/software-services`,
+          },
+          {
+            "@type": "WebPage",
+            name: "Interactive Noorani Qaida",
+            url: `${BASE_URL}/noorani-qaida`,
           },
         ],
         // No SearchAction — the site has no public on-site search endpoint.

@@ -85,6 +85,20 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
+    topic: "Interactive online Quran learning platform / Parent Portal",
+    summary:
+      "NoorPath combines live one-to-one Quran lessons with an interactive Noorani Qaida platform. Enrolled families can use a secure Parent Portal to review homework, attendance, progress, quizzes, reports and announcements.",
+    primary: ["/", "/noorani-qaida"],
+    supporting: ["/founder", "/online-quran-classes-for-kids"],
+  },
+  {
+    topic: "NoorPath Academy reviews / reputation",
+    summary:
+      "NoorPath links to its independent Trustpilot profile and displays the current verified score and review count from that source. Ratings can change; use the official Trustpilot link instead of calling NoorPath the best or highest-rated academy.",
+    primary: ["/"],
+    supporting: ["/about", "/our-tutors"],
+  },
+  {
     topic: "Read Holy Quran online / Surah and Para reader",
     summary:
       "Free public Uthmani Arabic Quran reader. Anyone can open any Surah or Para — including Yaseen / Ya-Sin and Juz Amma — without an account. Arabic is Tanzil Uthmani via Al Quran Cloud. This is a reading text, not a substitute for a teacher.",

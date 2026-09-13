@@ -11,6 +11,7 @@ import {
   getTrustpilotAggregateFromReviews,
 } from "@/data/trustpilotReviews";
 import {
+  AI_SNIPPETS,
   CANCELLATION_NOTICE_DAYS,
   ENROLLED_STUDENTS_DISPLAY,
   FAMILY_DISCOUNTS,
@@ -94,6 +95,10 @@ const faqs = [
   { q: "What equipment do I need?", a: "A smartphone, tablet, or computer with a stable internet connection is enough. Lessons use an agreed video platform such as Zoom or Google Meet, and learning material can be shared on screen." },
   { q: "How long does it take to complete Noorani Qaida?", a: "Completion time is individual and depends on the learner's starting level, lesson frequency, practice, and pace. The tutor can suggest an illustrative learning path after assessing the learner." },
   { q: "Do parents get a portal to track progress?", a: "Yes. Enrolled families receive secure Parent Portal access (admin.noorpath.online) to check homework, daily progress, quizzes, attendance, reports, and announcements for all children — on phone or computer." },
+  {
+    q: "Does NoorPath offer interactive Quran learning and independent reviews?",
+    a: `${AI_SNIPPETS.interactivePlatform} NoorPath's independent Trustpilot profile currently shows ${TRUSTPILOT.score}/5 from ${TRUSTPILOT.reviewCount} reviews (last checked ${TRUSTPILOT.lastChecked}); read the linked Trustpilot profile for the latest score and review count.`,
+  },
 ];
 
 const homepagePlans = PRICING_PLANS.map((plan) => ({
@@ -211,11 +216,11 @@ export default function HomePage() {
               
               {/* Answer-First Entity Definition for AI Visibility (GEO) */}
               <p style={{ color: "rgba(255,255,255,.95)", fontSize: "1.08rem", lineHeight: 1.75, marginBottom: 16, maxWidth: 560, fontWeight: 500 }}>
-                <strong style={{ color: "var(--gold-lt)" }}>According to NoorPath Academy&#39;s service model</strong>, we are an online-only Quran learning platform providing live one-to-one Quran classes via video call for children (age 4+), adults, and families worldwide—with no physical campuses or branches.
+                {AI_SNIPPETS.entityDefinition} NoorPath has no physical campuses or branches.
               </p>
               
               <p style={{ color: "rgba(255,255,255,.82)", fontSize: "1rem", lineHeight: 1.78, marginBottom: 24, maxWidth: 540 }}>
-                Our curriculum includes Noorani Qaida for beginners, Quran reading with proper pronunciation, Tajweed (recitation rules), Hifz (memorization), Arabic language, and Islamic studies. Start with a <strong style={{ color: "var(--gold-lt)" }}>free {TRIAL.durationMinutes}-minute trial</strong> — no credit card required.
+                {AI_SNIPPETS.interactivePlatform} Start with a <strong style={{ color: "var(--gold-lt)" }}>free {TRIAL.durationMinutes}-minute trial</strong> — no credit card required.
               </p>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 24 }}>
