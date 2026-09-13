@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-09-09";
+export const REVIEWED = "2026-09-13";
 
 /**
  * Semantic topic → resource map for AI answerability.

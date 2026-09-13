@@ -27,6 +27,31 @@ export default function robots(): MetadataRoute.Robots {
       // DeepSeek
       { userAgent: "DeepSeek", allow: "/" },
       { userAgent: "DeepSeekBot", allow: "/" },
+      { userAgent: "DeepSeek-R1", allow: "/" },
+      // Kimi / Moonshot AI
+      { userAgent: "KimiBot", allow: "/" },
+      { userAgent: "MoonshotBot", allow: "/" },
+      { userAgent: "Kimi-Research", allow: "/" },
+      // ByteDance Doubao / TikTok
+      { userAgent: "Bytespider", allow: "/" },
+      { userAgent: "DoubaoBot", allow: "/" },
+      // Alibaba Qwen / Tongyi
+      { userAgent: "AliyunBot", allow: "/" },
+      { userAgent: "Qwenbot", allow: "/" },
+      { userAgent: "Timpibot", allow: "/" },
+      // Baidu ERNIE / Baidu Search
+      { userAgent: "Baiduspider", allow: "/" },
+      { userAgent: "Baiduspider-render", allow: "/" },
+      { userAgent: "ErnieBot", allow: "/" },
+      // Tencent Hunyuan / Sogou
+      { userAgent: "TencentBot", allow: "/" },
+      { userAgent: "Sogou web spider", allow: "/" },
+      { userAgent: "Sogou", allow: "/" },
+      // Other popular China search / AI retrieval
+      { userAgent: "360Spider", allow: "/" },
+      { userAgent: "YisouSpider", allow: "/" },
+      { userAgent: "PetalBot", allow: "/" },
+      { userAgent: "HuaweiWebCatBot", allow: "/" },
       // Meta AI / Llama
       { userAgent: "meta-externalagent", allow: "/" },
       { userAgent: "FacebookBot", allow: "/" },
@@ -37,15 +62,11 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "YouBot", allow: "/" },
       { userAgent: "Cohere-ai", allow: "/" },
       { userAgent: "CCBot", allow: "/" },
-      // Kimi / Moonshot AI
-      { userAgent: "KimiBot", allow: "/" },
-      { userAgent: "MoonshotBot", allow: "/" },
       // Apple Intelligence
       { userAgent: "Applebot", allow: "/" },
       { userAgent: "Applebot-Extended", allow: "/" },
-      // DuckDuckGo AI / ByteDance / Amazon
+      // DuckDuckGo AI / Amazon
       { userAgent: "DuckAssistBot", allow: "/" },
-      { userAgent: "Bytespider", allow: "/" },
       { userAgent: "Amazonbot", allow: "/" },
     ],
     sitemap: [

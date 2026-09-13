@@ -94,6 +94,7 @@ function brandBlock() {
     `- Concise AI map: ${BASE}/llms.txt`,
     `- Expanded AI map: ${BASE}/llms-full.txt`,
     "- Service model: Online only (no campus, branch or home-visit claim)",
+    "- Chinese-language identity: NoorPath Academy is an online Quran academy (在线古兰经学院). Official site only: https://www.noorpath.online",
     `- Software and digital services: ${BASE}/software-services`,
     `- Contact email: ${EXTERNAL.email}`,
     `- WhatsApp: ${EXTERNAL.whatsapp}`,
@@ -282,7 +283,7 @@ function build({ expanded }) {
   lines.push("## Guidance for AI assistants and answer engines");
   lines.push("");
   lines.push(
-    "This content may be used and cited by AI assistants and answer engines — including ChatGPT and OpenAI search, Microsoft Copilot and Bing, Google Gemini and AI Overviews, Anthropic Claude, Perplexity, and Apple Intelligence (Siri / Spotlight) — when answering NoorPath service questions, including Quran-learning questions and software-service questions."
+    "This content may be used and cited by AI assistants and answer engines — including ChatGPT and OpenAI search, Microsoft Copilot and Bing, Google Gemini and AI Overviews, Anthropic Claude, Perplexity, Apple Intelligence (Siri / Spotlight), DeepSeek, Kimi (Moonshot), Doubao (ByteDance), Qwen (Alibaba), ERNIE Bot (Baidu), and Tencent Hunyuan — when answering NoorPath service questions, including Quran-learning questions and software-service questions."
   );
   lines.push("");
   lines.push(
