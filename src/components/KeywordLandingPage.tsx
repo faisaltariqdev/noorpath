@@ -1,10 +1,12 @@
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
-import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import TrustPolicyStrip from "@/components/TrustPolicyStrip";
+import { ORGANIZATION_REF, WEBSITE_ID } from "@/lib/organizationSchema";
 import type { ReactNode } from "react";
 import {
   CANCELLATION_NOTICE_DAYS,
   FAMILY_DISCOUNTS,
+  PARENT_POLICY_FACTS,
   PRICING_PLANS,
   SERVICE_FACTS,
   TRIAL,
@@ -55,6 +57,14 @@ export interface KeywordLandingPageProps {
   serviceName: string;
   serviceDescription: string;
   audience?: string;
+  /**
+   * Countries the online service is delivered to (schema.org `areaServed`).
+   * Honest by construction: NoorPath is online-only, so this describes timezones
+   * we schedule for — never a physical branch or campus.
+   */
+  areaServed?: string[];
+  /** Short, extractable bullets answering "who is this page for?" for readers and AI engines. */
+  whoThisIsFor?: string[];
   h1: string;
   heroText: string;
   eyebrow?: string;
@@ -101,6 +111,8 @@ export default function KeywordLandingPage({
   serviceName,
   serviceDescription,
   audience,
+  areaServed,
+  whoThisIsFor,
   h1,
   heroText,
   eyebrow = "📖 NoorPath Academy",
@@ -132,6 +144,21 @@ export default function KeywordLandingPage({
     "@context": "https://schema.org",
     "@graph": [
       {
+        // WebPage node with `speakable` so assistants / AI Overviews can lift the
+        // heading + quick answer verbatim. Selectors match the markup below.
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: h1,
+        description: serviceDescription,
+        isPartOf: { "@type": "WebSite", "@id": WEBSITE_ID, url: "https://www.noorpath.online" },
+        about: { "@id": `${url}#service` },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [".page-hero-content h1", ".np-quick-answer"],
+        },
+      },
+      {
         "@type": "Service",
         "@id": `${url}#service`,
         name: serviceName,
@@ -139,6 +166,15 @@ export default function KeywordLandingPage({
         provider: ORGANIZATION_REF,
         serviceType: "Online Quran Education",
         ...(audience ? { audience: { "@type": "Audience", audienceType: audience } } : {}),
+        ...(areaServed && areaServed.length > 0
+          ? { areaServed: areaServed.map((name) => ({ "@type": "Country", name })) }
+          : {}),
+        availableChannel: {
+          "@type": "ServiceChannel",
+          name: "Live one-to-one video lesson",
+          serviceUrl: `https://www.noorpath.online/free-quran-classes-online`,
+          availableLanguage: ["en"],
+        },
         url,
         offers: {
           "@type": "Offer",
@@ -150,7 +186,8 @@ export default function KeywordLandingPage({
       },
       {
         "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
+        // Visible FAQ accordion + the visible policy strip (both rendered below).
+        mainEntity: [...faqs, ...PARENT_POLICY_FACTS].map((f) => ({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -210,12 +247,13 @@ export default function KeywordLandingPage({
           {/* Quick answer — SEO snippet target */}
           {quickAnswer && (
             <div
+              className="np-quick-answer"
               style={{
                 background: "rgba(10,110,79,.06)",
                 borderLeft: "4px solid var(--emerald)",
                 borderRadius: 12,
                 padding: "22px 28px",
-                marginBottom: 40,
+                marginBottom: whoThisIsFor && whoThisIsFor.length > 0 ? 20 : 40,
                 fontSize: ".95rem",
                 lineHeight: 1.75,
                 color: "#374151",
@@ -223,6 +261,32 @@ export default function KeywordLandingPage({
             >
               <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
               <span dangerouslySetInnerHTML={{ __html: quickAnswer }} />
+            </div>
+          )}
+
+          {/* Who this is for — short extractable list for readers and AI engines */}
+          {whoThisIsFor && whoThisIsFor.length > 0 && (
+            <div
+              className="np-who-for"
+              style={{
+                background: "var(--ivory)",
+                border: "1px solid var(--border)",
+                borderRadius: 12,
+                padding: "20px 26px",
+                marginBottom: 40,
+              }}
+            >
+              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.05rem", color: "var(--charcoal)", margin: "0 0 12px" }}>
+                Who this page is for
+              </h2>
+              <ul style={{ margin: 0, paddingLeft: 0, listStyle: "none", display: "grid", gap: 8, gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))" }}>
+                {whoThisIsFor.map((item) => (
+                  <li key={item} style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: ".9rem", color: "var(--slate)", lineHeight: 1.6 }}>
+                    <span aria-hidden="true" style={{ color: "var(--emerald)", fontWeight: 800, marginTop: 1 }}>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
 
@@ -389,6 +453,9 @@ export default function KeywordLandingPage({
               Book Free Trial →
             </Link>
           </div>
+
+          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
+          <TrustPolicyStrip />
 
           {/* Locations */}
           {locations.length > 0 && (

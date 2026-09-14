@@ -607,6 +607,8 @@ export default async function LocationDetailPage({ params }: Props) {
                     { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids — Age-appropriate lessons" },
                     { href: "/hifz-quran-online", label: "Hifz Quran Online — Quran memorisation" },
                     { href: "/female-quran-teacher-online", label: "Female Quran Teacher Online — For sisters & daughters" },
+                    { href: "/quran-classes-near-me", label: `“Quran classes near me” in ${loc.country} — What online actually means` },
+                    { href: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby — Lessons for Muslim-minority areas" },
                     { href: "/free-quran-classes-online", label: "Free Quran Classes Online — Trial details" },
                   ].map((c) => (
                     <Link key={c.href} href={c.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>

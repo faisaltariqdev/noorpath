@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { CheckCircle2, RotateCcw } from "lucide-react";
+import QaidaMilestoneCta from "@/components/noorani-qaida/QaidaMilestoneCta";
 
 const HARAKAT = [
   {
@@ -114,6 +115,11 @@ export default function HarakatQuizGame() {
           </button>
         </div>
       )}
+      <QaidaMilestoneCta
+        show={round >= 5}
+        headline={`${round} rounds of harakat practice — that is real effort.`}
+        body="A quiz can check which mark your child sees. It cannot hear whether the Fatha, Kasra and Damma actually sound right when they read aloud — a live tutor can, in the first lesson."
+      />
     </div>
   );
 }

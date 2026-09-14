@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
-import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import TrustPolicyStrip from "@/components/TrustPolicyStrip";
+import { ORGANIZATION_REF, WEBSITE_ID } from "@/lib/organizationSchema";
 import { CheckCircle, Shield, Award, Users, BookOpen, Clock, Heart } from "lucide-react";
 import { PRICING_PLANS, SERVICE_FACTS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
 
@@ -47,6 +48,8 @@ const faqs = [
   { q: "Is there a female Quran teacher available in my timezone?", a: "Share your timezone and preferred lesson windows when requesting a trial. Female tutor availability is confirmed after your request." },
   { q: "Can I request a female Quran teacher in Ireland?", a: "Yes. Irish families — including in Dublin — can request a female tutor with GMT or IST preferences. Availability is confirmed after your request. See the Ireland location page for local scheduling context." },
   { q: "Can I request a female Hifz teacher for my daughter?", a: "Yes. You can request a female tutor for Hifz. Relevant Hifz credentials, teaching experience, and schedule availability are confirmed for the proposed tutor before enrolment." },
+  { q: "We live in an area with very few Muslims and no local female teacher. Can we still get one online?", a: "Yes. Because NoorPath is online-only, a female tutor request works the same from a small town in Norway, a suburb in Texas or a village in Ireland as it does from London. Share your timezone and preferred windows; availability is confirmed after the request, and the free trial lets you meet the tutor before paying anything." },
+  { q: "How flexible is the timing with a female tutor?", a: "Lessons are one-to-one, so the slot is arranged around your week — evenings after work, weekend mornings, or before school — in your own timezone. A recurring time is confirmed once a suitable female tutor is matched, and it can be revisited when school terms or work shifts change. Very specific windows are confirmed at booking rather than guaranteed in advance." },
 ];
 
 const features = [
@@ -69,19 +72,49 @@ const courses = [
   { name: "Quran for Adults", href: "/learn-quran-online", desc: "Adult-specific curriculum from zero to fluency" },
 ];
 
+const PAGE_URL = "https://www.noorpath.online/female-quran-teacher-online";
+
+const AREA_SERVED = [
+  "United Kingdom", "United States", "Canada", "Australia", "New Zealand", "Ireland",
+  "Germany", "France", "Netherlands", "Sweden", "Norway", "Denmark", "Finland",
+  "Singapore", "Malaysia", "United Arab Emirates", "Saudi Arabia", "Qatar", "Kuwait",
+  "India", "Pakistan", "Nigeria", "South Africa",
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": `${PAGE_URL}#webpage`,
+      url: PAGE_URL,
+      name: "Female Quran Teacher Online",
+      description:
+        "Request a female Quran teacher online for sisters, daughters and girls. Live 1-to-1 classes with flexible timing in the learner's timezone and a free 30-minute trial.",
+      isPartOf: { "@type": "WebSite", "@id": WEBSITE_ID, url: "https://www.noorpath.online" },
+      about: { "@id": `${PAGE_URL}#service` },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".page-hero-content h1", ".np-quick-answer"],
+      },
+    },
+    {
       "@type": "Service",
-      "@id": "https://www.noorpath.online/female-quran-teacher-online#service",
+      "@id": `${PAGE_URL}#service`,
       name: "Female Quran Teacher Online — Tutor Requests",
       description:
-        "Female Quran tutor requests for sisters and daughters. Live 1-on-1 classes may cover Qaida, Tajweed, Hifz, or Arabic, subject to confirmed availability.",
+        "Female Quran tutor requests for sisters and daughters. Live 1-on-1 classes may cover Qaida, Tajweed, Hifz, or Arabic, subject to confirmed availability. Online-only; scheduled in the learner's timezone.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education",
       audience: { "@type": "Audience", audienceType: "Female Muslim learners — ages 4 to senior" },
-      url: "https://www.noorpath.online/female-quran-teacher-online",
+      areaServed: AREA_SERVED.map((name) => ({ "@type": "Country", name })),
+      availableChannel: {
+        "@type": "ServiceChannel",
+        name: "Live one-to-one video lesson",
+        serviceUrl: "https://www.noorpath.online/free-quran-classes-online",
+        availableLanguage: ["en"],
+      },
+      url: PAGE_URL,
       offers: {
         "@type": "Offer",
         price: String(PRICING_PLANS[0].monthlyPriceUsd),
@@ -136,9 +169,9 @@ export default function FemaleQuranTeacherPage() {
         <div className="max-w-[1200px] mx-auto px-4">
 
           {/* Quick Answer */}
-          <div style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
+          <div className="np-quick-answer" style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
-            You can <strong>request a female Quran teacher</strong> for a sister or daughter. Classes are live and 1-to-1; relevant credentials and availability are confirmed before enrolment. The first 30-minute lesson is free.{" "}
+            You can <strong>request a female Quran teacher</strong> for a sister or daughter from any country — NoorPath is online-only, so it works the same in a Muslim-minority town as in a big city. Classes are live and 1-to-1 with <strong>flexible timing in your own timezone</strong>; relevant credentials and availability are confirmed before enrolment. The first 30-minute lesson is free.{" "}
             <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
@@ -368,6 +401,9 @@ export default function FemaleQuranTeacherPage() {
             ))}
           </div>
 
+          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
+          <TrustPolicyStrip />
+
           {/* FAQ */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
             Frequently Asked Questions
@@ -389,6 +425,9 @@ export default function FemaleQuranTeacherPage() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
               {[
                 ["/free-quran-classes-online", "Free Quran Trial"],
+                ["/quran-classes-near-me", "“Quran classes near me” — online alternative"],
+                ["/online-quran-classes-no-masjid-nearby", "No masjid nearby? Learn online"],
+                ["/quran-classes-for-working-professionals", "Flexible timing for working adults"],
                 ["/blog/online-quran-classes-canada-for-kids", "Canada kids Quran guide"],
                 ["/blog/female-quran-teacher-online-canada", "Female teacher Canada"],
                 ["/blog/quran-classes-for-adults-in-singapore", "Singapore adults Quran"],

@@ -645,8 +645,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "jazakallah-khair-meaning",
-    title: "JazakAllah Khair Meaning — English, Arabic, Response & When to Say It",
-    description: "JazakAllah Khair (جزاك الله خيرا) means 'May Allah reward you with good.' Learn the meaning, correct response, when to say it, and the difference from shukran.",
+    title: "JazakAllah Khair Meaning (جزاك الله خيرا): How to Reply 'Wa Iyyakum', Khair vs Khairan",
+    description: "JazakAllah Khair means 'May Allah reward you with good' — the Sunnah way to say thank you. Get the exact reply (Wa iyyak / Wa iyyakum), Khair vs Khairan, when to use it, and why it says more than shukran.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
     updatedAt: "2026-07-03",
@@ -1175,9 +1175,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attahiyat-full-arabic-english-tashahhud",
-    title: "Attahiyat Full Arabic + English — How to Recite Tashahhud",
+    title: "Attahiyat Full Dua — Arabic Text, Transliteration & English Meaning (Tashahhud)",
     description:
-      "Full Attahiyat (Tashahhud) Arabic text with English translation and transliteration — when to recite it in salah and how to memorise it clearly.",
+      "The full Attahiyat (Tashahhud) dua: Arabic text, line-by-line transliteration and English meaning, when to recite it in salah, what it means, and a simple way to memorise it.",
     category: "Prayer & Worship",
     date: "2026-07-14",
     updatedAt: "2026-08-13",
@@ -2523,9 +2523,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallah Meaning: May Allah Bless You — Reply Guide",
+    title: "Barakallah Meaning (بارك الله): Feek vs Feeki, Mashallah Difference & How to Reply",
     description:
-      "What Barakallah means in English, Barakallahu feek Arabic forms, how it differs from Mashallah, and the most common replies — short, clear, with examples.",
+      "Barakallah means 'may Allah bless you'. Learn when to say Barakallahu feek (to a man) vs feeki (to a woman), how it differs from Mashallah, and the correct reply — Wa feeka barakallah — with Arabic text and examples.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
     updatedAt: "2026-08-13",

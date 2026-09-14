@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
+import QaidaMilestoneCta from "@/components/noorani-qaida/QaidaMilestoneCta";
 
 const CHECKLIST = [
   { id: "letters-1-7", label: "Letters Alif to Khaa", detail: "Recognises shapes and dots for the first group." },
@@ -81,6 +82,11 @@ export default function ProgressChecklistGame() {
           />
         </div>
       )}
+      <QaidaMilestoneCta
+        show={completed >= 7}
+        headline={`${completed} of ${total} foundation skills ticked.`}
+        body="A checklist records what you have seen at home. A tutor hears the sounds, catches the letters that are 'nearly right', and plans the next step — in one free live lesson, no card needed."
+      />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
+import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award } from "lucide-react";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
@@ -41,6 +42,8 @@ const faqs = [
   { q: "How much do online Quran classes for adults cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.durationMinutes}-minute trial is free and requires no credit card.` },
   { q: "What timezone do you teach in?", a: "Share your timezone and preferred lesson windows when booking. Tutor availability is confirmed after your request." },
   { q: "What is the first step for an adult beginner?", a: "Book a free 30-minute trial. The tutor can assess your current level and recommend either starting with Noorani Qaida or another suitable point if you have prior knowledge." },
+  { q: "I'm an adult and I can't read Quran at all. Is it embarrassing to start now?", a: "It is the most common adult starting point, and tutors who teach adults expect it. Lessons are private one-to-one video calls — no children's class, no group — beginning with the Arabic letters and sounds. Nobody is surprised that you are 25, 40 or 60; the only thing that matters is the first lesson." },
+  { q: "I'm a new Muslim (revert) with no Arabic background. Can I learn to read Quran online?", a: "Yes. Lessons start from the alphabet in English, privately, with no Muslim family or masjid needed. If your faith is not yet known to everyone around you, share the hours that are private for you and lessons are scheduled within them. See the dedicated page for reverts for the full path from letters to Surah Al-Fatiha." },
 ];
 
 const jsonLd = {
@@ -131,6 +134,48 @@ export default function OnlineQuranClassesForAdultsPage() {
             Yes — it is never too late to start. Depending on your current level, you may begin with <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida</Link>, Quran reading, or <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Tajweed</Link>. Progress varies, and the first lesson is free.{" "}
             <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
+
+          {/* "I'm an adult and I can't read Quran" — the exact search, answered honestly */}
+          <section aria-labelledby="adult-cant-read-heading" className="content-card" style={{ marginBottom: 40, borderLeft: "4px solid var(--gold)" }}>
+            <span className="section-eyebrow">The question people are afraid to ask</span>
+            <h2 id="adult-cant-read-heading" style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.4rem", margin: "6px 0 12px" }}>
+              &ldquo;I&rsquo;m an adult and I can&rsquo;t read Quran. Where do I even start?&rdquo;
+            </h2>
+            <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", marginBottom: 12 }}>
+              You start at the alphabet, privately, with someone who expects exactly that. Whether you grew up Muslim and it never
+              happened, learned as a child and lost it, or became Muslim last year &mdash; the first lesson is the same: a few Arabic
+              letters, their sounds, and a tutor listening so the pronunciation forms correctly from day one. Nobody in a NoorPath
+              lesson is surprised that you are 25, 40 or 60. There is no children&rsquo;s class to sit in and no group to read in front of.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" style={{ marginBottom: 14 }}>
+              {[
+                { t: "Grew up Muslim, never learned", d: "The most common adult starting point. Nothing to explain; the tutor begins at Noorani Qaida and moves at your pace." },
+                { t: "Learned as a child, forgot", d: "Usually faster than you fear — letters return quickly, and the tutor rebuilds vowels and joining before Quran reading." },
+                { t: "New Muslim / revert", d: "No Arabic background assumed and no Muslim family needed. Private lessons in English, from the first letter.", href: "/learn-quran-as-a-revert" },
+              ].map((c) => (
+                <div key={c.t} style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, padding: "14px 16px" }}>
+                  <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".92rem", marginBottom: 6 }}>{c.t}</div>
+                  <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.6, margin: 0 }}>{c.d}</p>
+                  {c.href && (
+                    <Link href={c.href} style={{ display: "inline-block", marginTop: 8, color: "var(--emerald)", fontWeight: 700, fontSize: ".85rem" }}>
+                      Lessons for reverts →
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+            <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.7, margin: 0 }}>
+              Feeling embarrassed is the most common reason adults delay by years. Two honest reads before you book:{" "}
+              <Link href="/blog/adult-embarrassed-to-learn-quran-beginner" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Embarrassed to learn Quran as an adult?
+              </Link>{" "}
+              and{" "}
+              <Link href="/blog/learn-quran-as-an-adult-never-too-late" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                Learning Quran as an adult — never too late
+              </Link>
+              .
+            </p>
+          </section>
 
           {/* Working professionals angle (Fix 11B) */}
           <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>
@@ -252,6 +297,9 @@ export default function OnlineQuranClassesForAdultsPage() {
               </Link>
             ))}
           </div>
+
+          {/* Trust policy — who teaches, missed class, switch tutor, cancel */}
+          <TrustPolicyStrip />
 
           {/* FAQ */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
+import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { Gift } from "lucide-react";
 import { PRICING_PLANS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
@@ -547,6 +548,9 @@ export default function FreeQuranClassesPage() {
               </div>
             ))}
           </div>
+
+          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
+          <TrustPolicyStrip heading="What happens after the trial — four straight answers" className="mt-10" />
         </div>
       </section>
 

@@ -240,6 +240,27 @@ function build({ expanded }) {
   );
   lines.push("");
 
+  lines.push("## Parent policies (from the published Terms of Service)");
+  lines.push("");
+  lines.push(link("Terms of Service", "/terms-of-service"));
+  lines.push(link("Safeguarding policy", "/safeguarding"));
+  lines.push(
+    "- Who teaches: the family meets the matched tutor in the free live trial before paying; relevant credentials for that tutor are confirmed before enrolment."
+  );
+  lines.push(
+    "- Missed or moved class: at least 24 hours' notice; rescheduling depends on tutor availability and is agreed directly with NoorPath."
+  );
+  lines.push(
+    "- Tutor not the right fit: contact NoorPath to discuss another available tutor. A tutor preference (female, English-speaking) is a request confirmed at matching, not a guarantee."
+  );
+  lines.push(
+    "- Cancelling: at least 7 days' notice before the next billing date; no cancellation fee; partial-month payments are not refunded but remaining paid sessions may be used."
+  );
+  lines.push(
+    "- Do not state a 'same tutor guaranteed', refund, certificate or completion-date promise — none is published."
+  );
+  lines.push("");
+
   lines.push("## Quran learning knowledge map");
   lines.push("");
   lines.push(

@@ -27,6 +27,12 @@ const TOOLS_LAUNCH_STAMP = new Date("2026-09-02");
 /** Honest launch stamp for the public software-services page. */
 const SOFTWARE_SERVICES_STAMP = new Date("2026-09-09");
 /**
+ * Honest stamp for the "near me" / Muslim-minority AEO pass (2026-09-14):
+ * new /quran-classes-near-me pillar, plus material FAQ/schema updates to the
+ * no-masjid pillar, female tutor page and locations index.
+ */
+const NEAR_ME_CLUSTER_STAMP = new Date("2026-09-14");
+/**
  * Honest stamp for country hubs materially updated in the GSC-driven location
  * refresh (titles, descriptions, country FAQs, local context) on 2026-09-02.
  */
@@ -183,7 +189,9 @@ const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/online-quran-academy`,    priority: 0.93, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/quran-lesson-online`,     priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/studying-quran-online`,   priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
-  { url: `${BASE}/online-quran-classes-no-masjid-nearby`, priority: 0.9, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
+  { url: `${BASE}/online-quran-classes-no-masjid-nearby`, priority: 0.9, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
+  { url: `${BASE}/quran-classes-near-me`,   priority: 0.92, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
+  { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
 ];
 
 const REDIRECTED_COURSE_SLUGS = new Set([
@@ -197,21 +205,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── Tier 1: highest priority commercial pages ───────────────────────────────
     { url: BASE,                                               priority: 1.0,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/online-quran-classes`,                    priority: 0.95, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/online-quran-classes-for-kids`,          priority: 0.96, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/online-quran-classes-for-kids`,          priority: 0.96, changeFrequency: "weekly",  lastModified: NEAR_ME_CLUSTER_STAMP },
     // ── Tier 2: main conversion + high-traffic pages ────────────────────────────
     { url: `${BASE}/courses`,                                  priority: 0.9,  changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/quran-teacher-online`,                     priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/free-quran-classes-online`,                priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/free-quran-classes-online`,                priority: 0.9,  changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
     { url: `${BASE}/online-quran-for-beginners`,               priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/blog`,                                     priority: 0.85, changeFrequency: "daily",   lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/pricing`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
+    { url: `${BASE}/pricing`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
     // ── Tier 3: supporting pages ────────────────────────────────────────────────
-    { url: `${BASE}/female-quran-teacher-online`,              priority: 0.9,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/female-quran-teacher-online`,              priority: 0.9,  changeFrequency: "weekly",  lastModified: NEAR_ME_CLUSTER_STAMP },
     { url: `${BASE}/one-on-one-quran-classes`,                 priority: 0.94, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/quran-classes-for-sisters`,                priority: 0.93, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/quran-classes-for-working-professionals`,  priority: 0.93, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
-    { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
+    { url: `${BASE}/online-quran-classes-for-adults`,          priority: 0.9,  changeFrequency: "weekly",  lastModified: NEAR_ME_CLUSTER_STAMP },
+    { url: `${BASE}/locations`,                                priority: 0.8,  changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
     { url: `${BASE}/about`,                                    priority: 0.9,  changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/contact`,                                  priority: 0.85, changeFrequency: "yearly",  lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/founder`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },

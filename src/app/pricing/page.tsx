@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
+import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   CANCELLATION_NOTICE_DAYS,
@@ -153,6 +154,9 @@ export default function PricingPage() {
               ))}
             </div>
           </div>
+
+          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
+          <TrustPolicyStrip heading="Before you pay — four straight answers" />
 
           {/* FAQ */}
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.8rem", color: "var(--charcoal)", textAlign: "center", marginBottom: 28 }}>Pricing FAQs</h2>

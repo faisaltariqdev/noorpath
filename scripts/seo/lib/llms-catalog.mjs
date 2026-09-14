@@ -60,16 +60,51 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
-    topic: "Quran classes for adults / adult beginners",
+    topic: "Child won't sit / resists Quran class / ADHD, autistic, shy or anxious kids",
     summary:
-      "Adult and returning learners starting or restarting Quran reading online.",
+      "Parent-facing diagnosis pages for children who refuse Quran class, won't do homework, forget letters, or need ADHD-, autism- or anxiety-aware pacing. The consistent answer is shorter one-to-one lessons, a teacher whose manner suits the child (checked in the free trial), and 5-minute daily echoes at home — not pushing harder. No clinical or outcome claims.",
+    primary: ["/online-quran-classes-for-kids"],
+    supporting: [
+      "/blog/child-wont-sit-for-quran-class",
+      "/blog/quran-homework-kids-wont-practice",
+      "/blog/child-forgets-arabic-letters",
+      "/blog/quran-classes-for-adhd-kids",
+      "/blog/quran-classes-for-shy-or-anxious-kids",
+      "/blog/quran-classes-for-autistic-kids",
+    ],
+  },
+  {
+    topic: "Quran classes for adults / adult beginners / 'I'm an adult and can't read Quran'",
+    summary:
+      "Adult and returning learners starting or restarting Quran reading online. Adults who never learned, learned as children and forgot, or are new Muslims all begin privately at the Arabic alphabet (Noorani Qaida) in one-to-one lessons — no children's class, no group. Embarrassment is addressed directly; no completion timeline is promised.",
     primary: ["/online-quran-classes-for-adults", "/online-quran-for-beginners"],
     supporting: [
+      "/learn-quran-as-a-revert",
       "/blog/learn-quran-online-adult-beginner-guide",
       "/blog/learn-quran-as-an-adult-never-too-late",
       "/blog/adult-embarrassed-to-learn-quran-beginner",
       "/blog/new-muslim-guide-to-reading-quran",
     ],
+  },
+  {
+    topic: "Learn Quran as a revert / new Muslim / convert",
+    summary:
+      "For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male or female tutor on request; free 30-minute trial; no fluency date promised.",
+    primary: ["/learn-quran-as-a-revert"],
+    supporting: [
+      "/online-quran-for-beginners",
+      "/online-quran-classes-for-adults",
+      "/blog/new-muslim-guide-to-reading-quran",
+      "/blog/adult-embarrassed-to-learn-quran-beginner",
+      "/noorani-qaida",
+    ],
+  },
+  {
+    topic: "NoorPath policies: missed classes, tutor switch, cancellation, who teaches",
+    summary:
+      "Published parent policies: meet the matched tutor in the free trial before paying; 24 hours' notice to move a class (subject to tutor availability); another available tutor is discussed if the fit is wrong; cancel with 7 days' notice before the next billing date with no fee. Source: Terms of Service. No same-tutor guarantee, refund or certificate is published.",
+    primary: ["/terms-of-service", "/pricing"],
+    supporting: ["/free-quran-classes-online", "/safeguarding", "/online-quran-classes-for-kids"],
   },
   {
     topic: "Online Quran teacher / tutor matching",
@@ -198,9 +233,11 @@ export const TOPIC_INTENTS = [
   {
     topic: "Female Quran teacher / sisters",
     summary:
-      "Female tutor requests for daughters, sisters and adult women.",
+      "Female tutor requests for daughters, sisters and adult women — works from any country because NoorPath is online-only; credentials and availability are confirmed before enrolment, with flexible timing in the learner's timezone.",
     primary: ["/female-quran-teacher-online", "/quran-classes-for-sisters"],
     supporting: [
+      "/quran-classes-near-me",
+      "/online-quran-classes-no-masjid-nearby",
       "/blog/female-quran-teacher-for-kids",
       "/blog/female-quran-teacher-online-canada",
     ],
@@ -248,14 +285,41 @@ export const TOPIC_INTENTS = [
     supporting: ["/islamic-resources", "/hifz-quran-online"],
   },
   {
+    topic: "Quran classes near me / Quran teacher near me (online-only answer)",
+    summary:
+      "NoorPath is online-only with no premises in any country. For a “near me” search, “near” means a live one-to-one video lesson at home, scheduled in the learner's own timezone, with English-speaking and female tutors available on request. Written for searchers in Muslim-minority towns, rural areas and expat families whose local result list was empty or unusable (fixed timetable, no female tutor).",
+    primary: ["/quran-classes-near-me", "/online-quran-classes-no-masjid-nearby"],
+    supporting: [
+      "/female-quran-teacher-online",
+      "/quran-classes-for-working-professionals",
+      "/locations",
+      "/online-quran-classes-for-kids",
+      "/online-quran-classes-for-adults",
+    ],
+  },
+  {
+    topic: "Flexible timing Quran classes / evening, weekend and shift-friendly lessons",
+    summary:
+      "All lessons are one-to-one, so the recurring slot is arranged around the learner's evenings, weekends, school terms or shift pattern in their own timezone and confirmed after tutor matching (not guaranteed in advance).",
+    primary: ["/quran-classes-for-working-professionals", "/quran-classes-near-me"],
+    supporting: [
+      "/online-quran-classes-no-masjid-nearby",
+      "/female-quran-teacher-online",
+      "/blog/single-parent-flexible-quran-classes-for-kids",
+      "/blog/timezone-friendly-quran-classes-uk-europe",
+    ],
+  },
+  {
     topic: "Online Quran classes with no masjid nearby / Muslim-minority areas",
     summary:
-      "Families in rural areas or towns with no local masjid or madrasa who prefer live 1-on-1 online Quran classes with English-speaking tutors.",
+      "Families in rural areas or towns with no local masjid or madrasa who prefer live 1-on-1 online Quran classes with English-speaking tutors — flexible timing in their timezone and female tutor requests included.",
     primary: [
       "/online-quran-classes-no-masjid-nearby",
+      "/quran-classes-near-me",
       "/online-quran-classes",
     ],
     supporting: [
+      "/female-quran-teacher-online",
       "/blog/how-to-teach-quran-when-theres-no-mosque-nearby",
       "/blog/raising-muslim-child-in-non-muslim-country",
       "/blog/online-quran-classes-for-muslim-families-abroad",
@@ -515,6 +579,7 @@ export const CORE_SERVICES = [
   { path: "/quran-classes-for-working-professionals", label: "Quran Classes for Working Professionals", note: "Online Quran learning around busy work schedules." },
   { path: "/free-quran-classes-online", label: "Free Trial Class", note: "Free 30-minute live trial information (no credit card to book)." },
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
+  { path: "/quran-classes-near-me", label: "Quran Classes Near Me (Online-Only Answer)", note: "Honest answer to the “near me” search: no premises anywhere; live 1-on-1 video lessons in the learner's timezone, female and English-speaking tutors on request." },
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },

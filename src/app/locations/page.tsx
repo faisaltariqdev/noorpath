@@ -212,6 +212,41 @@ export default function LocationsPage() {
             ))}
           </div>
 
+          {/* No local option? — routes "near me" / Muslim-minority intent to the honest pillars */}
+          <div
+            style={{
+              background: "linear-gradient(135deg, rgba(10,110,79,.07), rgba(232,184,75,.08))",
+              border: "1px solid rgba(10,110,79,.18)",
+              borderRadius: 16,
+              padding: "26px 28px",
+              marginBottom: 64,
+              display: "grid",
+              gap: 18,
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", margin: "0 0 8px" }}>
+                Your town or country is not listed — or there is no class near you?
+              </h2>
+              <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.7, margin: 0 }}>
+                NoorPath is online-only with no premises anywhere, so the lesson format is identical in a village with no masjid and a capital city. Lessons are one-to-one, scheduled in your own timezone, and a female or English-speaking tutor can be requested.
+              </p>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              <Link href="/quran-classes-near-me" style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid var(--border)", borderRadius: 12, padding: "12px 16px", textDecoration: "none", color: "var(--charcoal)", fontWeight: 700, fontSize: ".9rem" }}>
+                <MapPin size={16} style={{ color: "var(--emerald)", flexShrink: 0 }} /> Searched “Quran classes near me”? Start here →
+              </Link>
+              <Link href="/online-quran-classes-no-masjid-nearby" style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid var(--border)", borderRadius: 12, padding: "12px 16px", textDecoration: "none", color: "var(--charcoal)", fontWeight: 700, fontSize: ".9rem" }}>
+                <Globe size={16} style={{ color: "var(--emerald)", flexShrink: 0 }} /> No masjid or madrasa nearby →
+              </Link>
+              <Link href="/female-quran-teacher-online" style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid var(--border)", borderRadius: 12, padding: "12px 16px", textDecoration: "none", color: "var(--charcoal)", fontWeight: 700, fontSize: ".9rem" }}>
+                <CheckCircle size={16} style={{ color: "var(--emerald)", flexShrink: 0 }} /> Request a female Quran teacher →
+              </Link>
+            </div>
+          </div>
+
           {/* Timezone guide */}
           <div style={{ textAlign: "center", marginBottom: 32 }}>
             <span className="section-eyebrow"><Clock size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 4 }} /> Scheduling</span>

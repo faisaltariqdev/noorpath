@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
+import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
@@ -518,6 +519,42 @@ export default function OnlineQuranClassesForKidsPage() {
               ))}
             </div>
           </div>
+
+          {/* STRUGGLING? — the questions parents search at 11pm, answered on this site */}
+          <section aria-labelledby="kids-struggling-heading" style={{ marginBottom: 48 }}>
+            <div style={{ textAlign: "center", marginBottom: 22 }}>
+              <span className="section-eyebrow">Is it not going well right now?</span>
+              <h2 id="kids-struggling-heading" className="section-title">
+                Your Child Won&apos;t Sit, Forgets, or <em className="accent">Hates Quran Class?</em>
+              </h2>
+              <p className="section-desc center">
+                Resistance is almost never laziness — it is usually timing, session length, a teacher mismatch, or a child protecting themselves from repeated struggle. These guides diagnose the cause before anyone pushes harder.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: "/blog/child-wont-sit-for-quran-class", title: "My child won't sit for Quran class", desc: "Why 10 calm minutes beat 40 tearful ones, and how to reset the routine." },
+                { href: "/blog/quran-homework-kids-wont-practice", title: "They won't do the Quran homework", desc: "Turning between-lesson practice into a 5-minute echo instead of a battle." },
+                { href: "/blog/child-forgets-arabic-letters", title: "They keep forgetting the letters", desc: "What forgetting actually signals and the revision rhythm that fixes it." },
+                { href: "/blog/quran-classes-for-adhd-kids", title: "Quran classes for a child with ADHD", desc: "Short bursts, movement breaks, and pacing that a one-to-one tutor can adapt." },
+                { href: "/blog/quran-classes-for-shy-or-anxious-kids", title: "Shy or anxious about reading aloud", desc: "How a private lesson removes the audience — and what to tell the tutor." },
+                { href: "/blog/quran-classes-for-autistic-kids", title: "Quran classes for an autistic child", desc: "Predictable structure, sensory-aware sessions, and honest expectations." },
+              ].map((g) => (
+                <Link key={g.href} href={g.href} style={{ textDecoration: "none" }}>
+                  <div className="content-card" style={{ height: "100%", borderTop: "3px solid var(--emerald)" }}>
+                    <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 6, fontSize: ".95rem" }}>{g.title}</div>
+                    <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.6, margin: 0 }}>{g.desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <p style={{ textAlign: "center", color: "var(--muted)", fontSize: ".9rem", marginTop: 18, lineHeight: 1.7 }}>
+              Often the fastest fix is a different teacher, not a different child. The free trial lets you watch how a tutor speaks to your child before you decide anything.
+            </p>
+          </section>
+
+          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
+          <TrustPolicyStrip />
 
           {/* INTERNAL LINKS */}
           <div style={{ background: "var(--ivory)", borderRadius: 16, padding: "28px 32px", marginBottom: 48, border: "1px solid var(--border)" }}>

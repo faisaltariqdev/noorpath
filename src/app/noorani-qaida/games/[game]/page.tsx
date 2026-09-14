@@ -227,7 +227,10 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
             {" "}for how platform-style activities fit after modelling.
           </p>
 
-          <QaidaCourseCta />
+          <QaidaCourseCta
+            title="Ready for a real teacher to hear them read?"
+            description="Games build recognition. Pronunciation needs someone listening. Book a free 30-minute one-to-one lesson — no credit card — and hear how a patient tutor works with your child at their level, in your timezone."
+          />
         </div>
       </div>
     </article>

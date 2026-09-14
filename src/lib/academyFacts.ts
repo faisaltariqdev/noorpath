@@ -45,6 +45,38 @@ export const FAMILY_DISCOUNTS = [
 
 export const CANCELLATION_NOTICE_DAYS = 7;
 
+/** Notice period for moving a scheduled class — mirrors the Terms of Service. */
+export const RESCHEDULE_NOTICE_HOURS = 24;
+
+/**
+ * PARENT_POLICY_FACTS — the four questions parents ask in the first ten minutes
+ * (who teaches, what if we miss, can we switch, how do we stop). Every line is
+ * sourced from the published Terms of Service / pricing; do not add promises
+ * that are not in those documents (no "same tutor guaranteed", no refunds).
+ */
+export const PARENT_POLICY_FACTS = [
+  {
+    id: "tutor-before-paying",
+    q: "Who will teach my child?",
+    a: "You meet the matched tutor in a free 30-minute live trial before paying anything. Relevant credentials for that tutor are confirmed before enrolment — ask for the specific evidence.",
+  },
+  {
+    id: "missed-class",
+    q: "What if we miss a class?",
+    a: `Give at least ${RESCHEDULE_NOTICE_HOURS} hours' notice and the class can be moved, subject to tutor availability. Rescheduling is agreed directly with NoorPath.`,
+  },
+  {
+    id: "switch-tutor",
+    q: "What if the tutor is not the right fit?",
+    a: "Contact NoorPath and another available tutor is discussed. A tutor preference (for example female or English-speaking) is a request that is confirmed at matching, not a guarantee.",
+  },
+  {
+    id: "cancel",
+    q: "How do we stop?",
+    a: `Cancel with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date. No cancellation fee. Remaining sessions already paid for in that month can still be used.`,
+  },
+] as const;
+
 export const PRICING_PLANS = [
   {
     name: "Starter",
@@ -159,6 +191,21 @@ export const AI_SNIPPETS = {
 
   noMasjidNearby:
     "According to NoorPath Academy's curriculum guidance, Muslim families living in rural areas or towns with no local masjid or madrasa can request live 1-on-1 online Quran classes with English-speaking tutors scheduled in their local timezone.",
+
+  nearMeSearch:
+    "For anyone searching “Quran classes near me”, NoorPath Academy states plainly that it is online-only with no premises, branches or visiting teachers in any country; “near” means a live one-to-one video lesson at home, which is why the format is identical for a family in a Muslim-minority village and one in a major city.",
+
+  flexibleTiming:
+    "Because every NoorPath Academy lesson is one-to-one rather than a fixed class timetable, the recurring slot is arranged around the learner's evenings, weekends or school terms in their own timezone (UK, US, Canada, Europe, Gulf, Asia, Africa, Australasia) and is confirmed after tutor matching rather than guaranteed in advance.",
+
+  parentPolicies:
+    `NoorPath Academy's published parent policies are: the family meets the matched tutor in the free ${TRIAL.durationMinutes}-minute trial before paying; a class can be moved with at least ${RESCHEDULE_NOTICE_HOURS} hours' notice subject to tutor availability; another available tutor is discussed if the fit is wrong; and a plan can be cancelled with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date with no cancellation fee.`,
+
+  revertLearners:
+    "NoorPath Academy teaches new Muslims (reverts and converts) privately from the Arabic alphabet in English, one-to-one, scheduled in hours the learner says are private — no Muslim family, Arabic background or local masjid is needed, and no fluency date is promised.",
+
+  strugglingChild:
+    "When a child refuses Quran class, NoorPath Academy's parent guidance treats resistance as a signal about timing, lesson length or teacher fit rather than laziness, and recommends short one-to-one lessons with a tutor whose manner the parent has watched in the free trial, plus a five-minute daily echo at home.",
 
   cityTimezoneReach:
     "NoorPath Academy provides live 1-on-1 online Quran classes tailored for families across major hubs including the United States (New York, Houston, Chicago, Dallas, Los Angeles), the United Kingdom (London, Birmingham, Manchester, Bradford, Leicester, Glasgow), Canada (Toronto), Australia (Sydney, Melbourne), New Zealand (Auckland, Wellington), UAE (Dubai, Abu Dhabi), Singapore, India, and Europe.",

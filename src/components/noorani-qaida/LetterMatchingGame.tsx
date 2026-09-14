@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { CheckCircle2, RotateCcw } from "lucide-react";
 import { QAIDA_LETTERS } from "@/data/noorani-qaida";
+import QaidaMilestoneCta from "@/components/noorani-qaida/QaidaMilestoneCta";
 
 function pickRound(seed: number) {
   const target = QAIDA_LETTERS[seed % QAIDA_LETTERS.length];
@@ -87,6 +88,11 @@ export default function LetterMatchingGame() {
           </button>
         </div>
       )}
+      <QaidaMilestoneCta
+        show={round >= 6}
+        headline={`${round} letters matched — your child is recognising the alphabet.`}
+        body="Recognising a letter on screen and pronouncing it from the right place in the mouth are two different skills. The second one needs someone listening — that is what the free live lesson is for."
+      />
     </div>
   );
 }
