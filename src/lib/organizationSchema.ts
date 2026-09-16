@@ -107,7 +107,22 @@ export function getOrganizationJsonLd() {
           email: CONTACT.email,
           contactType: "customer service",
           url: `${BASE_URL}/contact`,
+          availableLanguage: ["English", "Arabic", "Urdu"],
+          areaServed: PRIORITY_COUNTRIES.map((name) => ({
+            "@type": "Country",
+            name,
+          })),
         },
+        hasCourse: [
+          { "@type": "Course", name: "Noorani Qaida Online", url: `${BASE_URL}/courses/noorani-qaida-online` },
+          { "@type": "Course", name: "Learn Tajweed Online", url: `${BASE_URL}/learn-tajweed-online` },
+          { "@type": "Course", name: "Hifz Quran Online", url: `${BASE_URL}/hifz-quran-online` },
+          { "@type": "Course", name: "Online Quran Classes for Kids", url: `${BASE_URL}/online-quran-classes-for-kids` },
+          { "@type": "Course", name: "Online Quran Classes for Adults", url: `${BASE_URL}/online-quran-classes-for-adults` },
+          { "@type": "Course", name: "Arabic Language Online", url: `${BASE_URL}/courses/arabic-language-online` },
+          { "@type": "Course", name: "Islamic Studies Online", url: `${BASE_URL}/courses/islamic-studies-online` },
+          { "@type": "Course", name: "Daily Duas for Kids", url: `${BASE_URL}/courses/daily-duas-for-kids` },
+        ],
         sameAs: [TRUSTPILOT.url, GOOGLE_BUSINESS_URL, ...SOCIAL_PROFILE_URLS],
         hasOfferCatalog: [
           {

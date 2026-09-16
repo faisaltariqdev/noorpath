@@ -12,7 +12,7 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: absolutePageTitle(
-    "Free Islamic Resources — Quran PDFs, Duas, Hadith & Learning Materials | NoorPath"
+    "Free Islamic Resources: Quran PDFs, Duas & Charts | NoorPath"
   ),
   description: "Free Islamic resources for families: Quran learning guides, duas, Tajweed charts, Islamic studies materials and helpful learning tools.",
   alternates: { canonical: "https://www.noorpath.online/islamic-resources" },

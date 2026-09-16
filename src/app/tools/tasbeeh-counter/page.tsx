@@ -20,7 +20,7 @@ const URL = `${BASE_URL}/tools/tasbeeh-counter`;
 export const metadata: Metadata = {
   title: absolutePageTitle("Online Digital Tasbeeh & Dhikr Counter | NoorPath Academy"),
   description:
-    "Free interactive online digital Tasbeeh counter. Count daily Adhkar, Tasbeeh Fatimah, Istighfar, and Salawat with sound, haptic vibration feedback, and authentic Hadith virtues.",
+    "Free online digital Tasbeeh counter. Count daily Adhkar, Tasbeeh Fatimah, Istighfar, and Salawat with sound, haptic vibration, and authentic Hadith virtues.",
   keywords: [
     "digital tasbeeh counter",
     "online tasbeeh",
@@ -34,18 +34,20 @@ export const metadata: Metadata = {
     canonical: URL,
   },
   openGraph: {
-    title: "Online Digital Tasbeeh & Dhikr Counter | NoorPath",
+    title: "Online Digital Tasbeeh & Dhikr Counter | NoorPath Academy",
     description:
       "Interactive Digital Tasbih with vibration, click sounds, lap counters, and authentic morning/evening Sunnah Adhkar.",
     url: URL,
-    siteName: "NoorPath",
+    siteName: "NoorPath Academy",
     type: "website",
     locale: "en_GB",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Digital Tasbeeh & Dhikr Counter — NoorPath" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Digital Tasbeeh & Dhikr Counter | NoorPath",
     description: "Free interactive digital Tasbih counter with sound, haptic feedback, and authentic Sunnah Dhikr presets.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -86,6 +88,14 @@ const jsonLd = {
       url: URL,
       applicationCategory: "LifestyleApplication",
       operatingSystem: "Any (web browser)",
+      browserRequirements: "Requires modern web browser with JavaScript enabled",
+      isAccessibleForFree: true,
+      featureList: [
+        "Interactive bead & digital clicker counter with audio and haptic feedback",
+        "Built-in Sunnah Adhkar presets (Tasbeeh Fatimah 33-33-34, Istighfar 100, Ayatul Kursi)",
+        "Lap counting and completion alerts",
+        "Authentic Hadith virtues for each Dhikr",
+      ],
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
         "Free online digital Tasbeeh counter with sound effects, haptic vibration, and authentic Sunnah Dhikr presets.",

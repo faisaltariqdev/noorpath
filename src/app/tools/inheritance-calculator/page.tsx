@@ -19,7 +19,7 @@ const URL = `${BASE_URL}/tools/inheritance-calculator`;
 export const metadata: Metadata = {
   title: absolutePageTitle("Islamic Inheritance (Miras) Calculator | NoorPath Academy"),
   description:
-    "Free Islamic Inheritance (Miras & Faraid) Calculator. Calculate Shariah estate distribution according to Quran (Surah An-Nisa 4:11-12) for spouses, children, and parents with debt and Wasiyyah deductions.",
+    "Free Islamic inheritance (Miras & Faraid) calculator based on Surah An-Nisa (4:11-12). Calculate Shariah estate shares with debt and Wasiyyah deductions.",
   keywords: [
     "Islamic inheritance calculator",
     "Miras calculator",
@@ -37,14 +37,16 @@ export const metadata: Metadata = {
     description:
       "Accurate Islamic Inheritance Calculator based on Surah An-Nisa (4:11-12). Free estate distribution ledger with debts and Wasiyyah limits.",
     url: URL,
-    siteName: "NoorPath",
+    siteName: "NoorPath Academy",
     type: "website",
     locale: "en_GB",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Islamic Inheritance Calculator — NoorPath" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Islamic Inheritance (Miras) Calculator | NoorPath",
     description: "Free interactive Shariah estate distribution calculator based on authentic Quran and Sunnah rules.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -85,6 +87,14 @@ const jsonLd = {
       url: URL,
       applicationCategory: "FinanceApplication",
       operatingSystem: "Any (web browser)",
+      browserRequirements: "Requires modern web browser with JavaScript enabled",
+      isAccessibleForFree: true,
+      featureList: [
+        "Estate ledger with Funeral (Tajheez), Debt (Dayn), and Wasiyyah deductions",
+        "Calculates primary Quranic shares (Ashab al-Furood) and residuary heirs ('Asabah)",
+        "Handles complex jurisprudence edge cases: 'Awl (proportionate reduction) and Radd (return)",
+        "Surah An-Nisa (4:11-12) citations for every distributed share",
+      ],
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
         "Accurate Shariah inheritance calculator implementing Quranic shares (Surah An-Nisa 4:11-12) with debt and Wasiyyah deductions.",

@@ -41,14 +41,16 @@ export const metadata: Metadata = {
     description:
       "Plan your full Quran memorization timeline or reading khatmah with realistic daily targets and structured madrasa revision cycles.",
     url: URL,
-    siteName: "NoorPath",
+    siteName: "NoorPath Academy",
     type: "website",
     locale: "en_GB",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Quran Hifz & Completion Calculator — NoorPath" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Quran Hifz & Completion Calculator | NoorPath",
     description: "Free interactive Quran memorization timeline and revision planner for adults and kids.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -93,6 +95,14 @@ const jsonLd = {
       url: URL,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any (web browser)",
+      browserRequirements: "Requires modern web browser with JavaScript enabled",
+      isAccessibleForFree: true,
+      featureList: [
+        "Interactive completion timeline estimation for 604 Medina Mushaf pages",
+        "Sabaq (new lesson), Sabqi (recent revision), and Manzil (old revision) timetable generation",
+        "Pace presets for busy working adults, school children, and intensive students",
+        "100% private in-browser calculation",
+      ],
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
         "Free online calculator to plan Quran memorization timelines, daily page targets, and Sabaq-Sabqi-Manzil revision timetables.",

@@ -9,9 +9,9 @@ import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Online Quran Classes for Adults — Any Age | NoorPath Academy" },
+  title: { absolute: "Online Quran Classes for Adults — Any Age | NoorPath" },
   description:
-    `Online Quran classes for adults: complete beginners, Tajweed and Hifz. Live 1-on-1 tutor matching, female tutor requests, plans from $${PRICING_PLANS[0].monthlyPriceUsd}/month and a free trial.`,
+    "Online Quran classes for adults: complete beginners, Tajweed & Hifz. Live 1-on-1 tutor matching, female tutor options, and a free 30-min trial.",
   keywords: [
     "online quran classes for adults", "quran for adults online", "learn quran as an adult",
     "adult quran classes", "quran classes beginners adults", "tajweed for adults online",

@@ -19,7 +19,7 @@ const URL = `${BASE_URL}/tools/hijri-date-converter`;
 export const metadata: Metadata = {
   title: absolutePageTitle("Islamic Hijri Date Converter & Calendar 1447-1448 AH | NoorPath"),
   description:
-    "Free accurate Islamic Hijri date converter. Convert Gregorian to Hijri and Hijri to Gregorian dates, view today's Islamic date, moon sighting adjustments, and upcoming Eid & Ramadan countdowns.",
+    "Free Islamic Hijri date converter. Convert Gregorian to Hijri dates, view today's Islamic date, moon sighting adjustments, and Ramadan & Eid countdowns.",
   keywords: [
     "Islamic date converter",
     "Hijri date today",
@@ -38,14 +38,16 @@ export const metadata: Metadata = {
     description:
       "Accurate Islamic date converter with local moon-sighting adjustments, live today's Hijri date widget, and countdown to Ramadan and Eid.",
     url: URL,
-    siteName: "NoorPath",
+    siteName: "NoorPath Academy",
     type: "website",
     locale: "en_GB",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Islamic Hijri Date Converter & Calendar — NoorPath" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Islamic Hijri Date Converter & Calendar | NoorPath",
     description: "Free interactive Hijri to Gregorian date converter with upcoming Islamic holidays countdown.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -90,6 +92,14 @@ const jsonLd = {
       url: URL,
       applicationCategory: "UtilityApplication",
       operatingSystem: "Any (web browser)",
+      browserRequirements: "Requires modern web browser with JavaScript enabled",
+      isAccessibleForFree: true,
+      featureList: [
+        "Two-way Gregorian to Hijri and Hijri to Gregorian date conversion",
+        "Live today's Hijri date calculation with manual ±1–2 day moon sighting offset",
+        "Live countdown timers for Ramadan, Eid al-Fitr, Day of Arafah, and Eid al-Adha",
+        "Authentic information on the four Sacred Months in Islam",
+      ],
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
         "Accurate two-way Gregorian to Hijri date converter with live moon sighting adjustments and Islamic holiday countdowns.",

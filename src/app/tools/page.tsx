@@ -18,7 +18,7 @@ const URL = `${BASE_URL}/tools`;
 export const metadata: Metadata = {
   title: absolutePageTitle("Free Islamic Tools & Calculators | NoorPath Academy"),
   description:
-    "Explore NoorPath's suite of free, private, and authentic Islamic tools: Zakat Calculator, Quran Hifz Planner, Hijri Date Converter, Digital Tasbeeh Counter, and Islamic Inheritance Calculator.",
+    "Explore free, privacy-focused Islamic tools: live Zakat calculator, Quran Hifz planner, Hijri calendar, digital Tasbeeh counter, and inheritance calculator.",
   keywords: [
     "Islamic tools online",
     "Islamic calculators",
@@ -36,9 +36,10 @@ export const metadata: Metadata = {
     description:
       "Suite of free, privacy-focused Islamic tools for daily worship, Quran study, and financial duties.",
     url: URL,
-    siteName: "NoorPath",
+    siteName: "NoorPath Academy",
     type: "website",
     locale: "en_GB",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Islamic Tools & Calculators — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",

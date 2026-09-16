@@ -6,68 +6,47 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/thank-you"],
       },
-      // ChatGPT / OpenAI
-      { userAgent: "GPTBot", allow: "/" },
-      { userAgent: "ChatGPT-User", allow: "/" },
+      // ── Real-Time AI Search Engines & Answer Attribution Bots (Priority Allow) ──
+      // ChatGPT / OpenAI Search
       { userAgent: "OAI-SearchBot", allow: "/" },
-      // Google Gemini / Bard
-      { userAgent: "Google-Extended", allow: "/" },
-      { userAgent: "Googlebot", allow: "/" },
+      { userAgent: "ChatGPT-User", allow: "/" },
+      { userAgent: "GPTBot", allow: "/" },
       // Anthropic Claude
-      { userAgent: "anthropic-ai", allow: "/" },
       { userAgent: "ClaudeBot", allow: "/" },
       { userAgent: "Claude-Web", allow: "/" },
+      { userAgent: "anthropic-ai", allow: "/" },
       // Perplexity AI
       { userAgent: "PerplexityBot", allow: "/" },
-      // Grok (xAI)
-      { userAgent: "Grok", allow: "/" },
-      { userAgent: "xAI-Bot", allow: "/" },
-      // DeepSeek
-      { userAgent: "DeepSeek", allow: "/" },
-      { userAgent: "DeepSeekBot", allow: "/" },
-      { userAgent: "DeepSeek-R1", allow: "/" },
-      // Kimi / Moonshot AI
-      { userAgent: "KimiBot", allow: "/" },
-      { userAgent: "MoonshotBot", allow: "/" },
-      { userAgent: "Kimi-Research", allow: "/" },
-      // ByteDance Doubao / TikTok
-      { userAgent: "Bytespider", allow: "/" },
-      { userAgent: "DoubaoBot", allow: "/" },
-      // Alibaba Qwen / Tongyi
-      { userAgent: "AliyunBot", allow: "/" },
-      { userAgent: "Qwenbot", allow: "/" },
-      { userAgent: "Timpibot", allow: "/" },
-      // Baidu ERNIE / Baidu Search
-      { userAgent: "Baiduspider", allow: "/" },
-      { userAgent: "Baiduspider-render", allow: "/" },
-      { userAgent: "ErnieBot", allow: "/" },
-      // Tencent Hunyuan / Sogou
-      { userAgent: "TencentBot", allow: "/" },
-      { userAgent: "Sogou web spider", allow: "/" },
-      { userAgent: "Sogou", allow: "/" },
-      // Other popular China search / AI retrieval
-      { userAgent: "360Spider", allow: "/" },
-      { userAgent: "YisouSpider", allow: "/" },
-      { userAgent: "PetalBot", allow: "/" },
-      { userAgent: "HuaweiWebCatBot", allow: "/" },
-      // Meta AI / Llama
-      { userAgent: "meta-externalagent", allow: "/" },
-      { userAgent: "FacebookBot", allow: "/" },
-      // Microsoft Copilot / Bing
-      { userAgent: "bingbot", allow: "/" },
-      { userAgent: "BingPreview", allow: "/" },
-      // Other AI search & retrieval bots
-      { userAgent: "YouBot", allow: "/" },
-      { userAgent: "Cohere-ai", allow: "/" },
-      { userAgent: "CCBot", allow: "/" },
-      // Apple Intelligence
+      // Google Search & Gemini
+      { userAgent: "Googlebot", allow: "/" },
+      { userAgent: "Google-Extended", allow: "/" },
+      // Apple Intelligence & Siri
       { userAgent: "Applebot", allow: "/" },
       { userAgent: "Applebot-Extended", allow: "/" },
-      // DuckDuckGo AI / Amazon
+      // Microsoft Copilot & Bing
+      { userAgent: "bingbot", allow: "/" },
+      { userAgent: "BingPreview", allow: "/" },
+      // Meta AI Search
+      { userAgent: "meta-externalagent", allow: "/" },
+      { userAgent: "FacebookBot", allow: "/" },
+      // Other AI Search & Answers
+      { userAgent: "Bravebot", allow: "/" },
       { userAgent: "DuckAssistBot", allow: "/" },
+      { userAgent: "YouBot", allow: "/" },
+      { userAgent: "Cohere-ai", allow: "/" },
       { userAgent: "Amazonbot", allow: "/" },
+      // Regional AI Retrieval Engines
+      { userAgent: "DeepSeekBot", allow: "/" },
+      { userAgent: "DeepSeek-R1", allow: "/" },
+      { userAgent: "KimiBot", allow: "/" },
+      { userAgent: "MoonshotBot", allow: "/" },
+      { userAgent: "Qwenbot", allow: "/" },
+      // ── Aggressive Unattributed Training Scrapers (Disallowed) ──
+      { userAgent: "CCBot", disallow: "/" },
+      { userAgent: "Bytespider", disallow: "/" },
+      { userAgent: "Diffbot", disallow: "/" },
     ],
     sitemap: [
       "https://www.noorpath.online/sitemap.xml",

@@ -285,6 +285,28 @@ export const TOPIC_INTENTS = [
     supporting: ["/islamic-resources", "/hifz-quran-online"],
   },
   {
+    topic: "How to pray Salah / Namaz step-by-step & daily prayer guides",
+    summary:
+      "Complete instructional guides for performing obligatory daily prayers (Salah/Namaz), Witr prayer, Tahajjud, Janazah, and preliminary purification (Wudu & Ghusl) with Arabic recitation, transliteration, and English translations.",
+    primary: ["/blog/how-to-pray-salah-step-by-step", "/blog/how-to-do-wudu-step-by-step"],
+    supporting: [
+      "/blog/how-to-pray-witr",
+      "/blog/how-to-do-ghusl-step-by-step",
+      "/blog/tahajjud-prayer",
+      "/blog/salatul-janazah-funeral-prayer-guide",
+    ],
+  },
+  {
+    topic: "Six Kalimas of Islam / Core Islamic Creeds",
+    summary:
+      "Full Arabic text, transliteration, and English meanings for all Six Kalimas (Kalima Tayyibah, Shahadah, Tamjeed, Tawheed, Astaghfar, Radde Kufr) for beginners and children.",
+    primary: ["/blog/six-kalimas-of-islam"],
+    supporting: [
+      "/blog/la-ilaha-illallah-meaning",
+      "/courses/daily-duas-for-kids",
+    ],
+  },
+  {
     topic: "Quran classes near me / Quran teacher near me (online-only answer)",
     summary:
       "NoorPath is online-only with no premises in any country. For a “near me” search, “near” means a live one-to-one video lesson at home, scheduled in the learner's own timezone, with English-speaking and female tutors available on request. Written for searchers in Muslim-minority towns, rural areas and expat families whose local result list was empty or unusable (fixed timetable, no female tutor).",

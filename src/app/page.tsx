@@ -37,15 +37,15 @@ export const metadata: Metadata = {
   // keyword-only or year-stamped string — that removes the brand from the SERP result
   // and invites a Google title rewrite toward the bare domain.
   title: {
-    absolute: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
+    absolute: "NoorPath Academy | Online Quran Classes for Kids & Adults",
   },
   description:
-    "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic. Parent Portal for homework and progress. Free 30-minute trial, no credit card.",
+    "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz & Arabic. Parent Portal for progress. Free 30-min trial, no card needed.",
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
-    title: "NoorPath Academy | Online Quran Classes for Kids & Families — Free Trial",
-    description: "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz and Arabic, with a free 30-minute trial and no credit card required.",
+    title: "NoorPath Academy | Online Quran Classes for Kids & Adults",
+    description: "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz & Arabic. Free 30-min trial with certified tutors.",
     url: "https://www.noorpath.online",
     type: "website",
     siteName: "NoorPath Academy",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "NoorPath Academy | Online Quran Classes — Free Trial",
-    description: "NoorPath Academy — live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz and Arabic, with a free 30-minute trial.",
+    description: "Live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz & Arabic. Free 30-minute trial.",
     images: ["/og-image.png"],
   },
 };
@@ -116,6 +116,18 @@ const homepagePlans = PRICING_PLANS.map((plan) => ({
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.noorpath.online/#webpage",
+      url: "https://www.noorpath.online",
+      name: "NoorPath Academy | Online Quran Classes for Kids & Adults",
+      isPartOf: { "@type": "WebSite", "@id": "https://www.noorpath.online/#website", url: "https://www.noorpath.online" },
+      about: { "@id": "https://www.noorpath.online/#organization" },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".hero h1", ".hero-sub", ".np-quick-answer"],
+      },
+    },
     {
       "@type": "FAQPage",
       mainEntity: faqs.map((f) => ({

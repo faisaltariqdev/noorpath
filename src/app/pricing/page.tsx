@@ -15,19 +15,19 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "NoorPath Academy | Online Quran Class Pricing — Family Plans",
+    absolute: "Online Quran Class Pricing & Family Plans | NoorPath",
   },
   description: `NoorPath Academy online Quran class pricing from $${PRICING_PLANS[0].monthlyPriceUsd}/month. Compare Starter, Standard and Intensive one-to-one plans and request a free trial.`,
   alternates: { canonical: "https://www.noorpath.online/pricing" },
   openGraph: {
-    title: "NoorPath Academy | Online Quran Class Pricing — Family Plans",
+    title: "Online Quran Class Pricing & Family Plans | NoorPath",
     description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Starter, Standard, and Intensive plans. Family discount for 2+ siblings. Free ${TRIAL.durationMinutes}-minute trial.`,
     url: "https://www.noorpath.online/pricing",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Class Pricing — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NoorPath Academy | Online Quran Class Pricing",
+    title: "Online Quran Class Pricing | NoorPath",
     description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Family discount for siblings. Free trial request.`,
     images: ["/og-image.png"],
   },
@@ -61,6 +61,19 @@ const faqs = [
 const pricingJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.noorpath.online/pricing#webpage",
+      url: "https://www.noorpath.online/pricing",
+      name: "Online Quran Class Pricing & Family Plans",
+      description: "Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with a free trial class.",
+      isPartOf: { "@type": "WebSite", "@id": "https://www.noorpath.online/#website", url: "https://www.noorpath.online" },
+      about: { "@id": "https://www.noorpath.online/pricing#service" },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".page-hero-content h1", ".np-quick-answer"],
+      },
+    },
     {
       "@type": "Service",
       "@id": "https://www.noorpath.online/pricing#service",
@@ -115,6 +128,23 @@ export default function PricingPage() {
 
       <section>
         <div className="max-w-[1200px] mx-auto px-4">
+          {/* AEO Quick Pricing Answer */}
+          <div
+            className="np-quick-answer max-w-[1000px] mx-auto mb-10 p-5 rounded-2xl"
+            style={{
+              background: "rgba(10,110,79,0.05)",
+              borderLeft: "4px solid var(--emerald)",
+              fontSize: "0.95rem",
+              lineHeight: 1.7,
+              color: "var(--charcoal)",
+            }}
+          >
+            <strong style={{ color: "var(--emerald)" }}>Quick pricing summary: </strong>
+            <span>
+              NoorPath Quran classes start at <strong>${PRICING_PLANS[0].monthlyPriceUsd}/month</strong> for weekly 1-on-1 live lessons ({PRICING_PLANS[0].sessionMinutes} mins/session). Family sibling discounts range from 10% to 25% off. Every new student receives a <strong>free 30-minute trial class</strong> with no credit card or setup fees.
+            </span>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {plans.map((p) => (
               <div key={p.name} style={{ background: p.highlight ? "var(--emerald)" : "#fff", border: p.highlight ? "none" : "2px solid var(--border)", borderRadius: 24, padding: "32px 28px", position: "relative" }}>

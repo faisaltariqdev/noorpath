@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: {
       absolute: `Online Quran Classes in ${c.city} — Live 1-on-1 | NoorPath`,
     },
-    description: `Live 1-on-1 online Quran classes for families in ${c.city} with NoorPath Academy. ${c.timezone} lesson windows for kids and adults, plus a free 30-minute trial with no credit card required.`,
+    description: `Live 1-on-1 online Quran classes in ${c.city}. ${c.timezone} lesson windows for kids & adults, plus a free 30-min trial with no credit card.`,
     keywords: getCityKeywords(c),
     alternates: { canonical },
     ...(indexable ? {} : { robots: { index: false, follow: true } }),

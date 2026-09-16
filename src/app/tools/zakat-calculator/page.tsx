@@ -77,7 +77,8 @@ const jsonLd = {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-        { "@type": "ListItem", position: 2, name: "Zakat Calculator", item: URL },
+        { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.noorpath.online/tools" },
+        { "@type": "ListItem", position: 3, name: "Zakat Calculator", item: URL },
       ],
     },
     {
@@ -87,6 +88,14 @@ const jsonLd = {
       url: URL,
       applicationCategory: "FinanceApplication",
       operatingSystem: "Any (web browser)",
+      browserRequirements: "Requires modern web browser with JavaScript enabled",
+      isAccessibleForFree: true,
+      featureList: [
+        "Live Nisab spot rates for Gold and Silver in 20+ currencies",
+        "Covers Cash, Shares, Cryptocurrency, RSUs, 401k/Retirement, and Business Assets",
+        "100% Client-Side Privacy (no financial data transmitted to servers)",
+        "Documented Fiqh references across major scholarly councils",
+      ],
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
         "Free in-browser zakat calculator covering cash, gold, silver, shares, cryptocurrency, vested RSUs, business assets and retirement accounts, with live nisab thresholds.",
@@ -122,9 +131,18 @@ export default function ZakatCalculatorPage() {
         />
 
         <div className="max-w-[1200px] mx-auto px-4 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-bold text-[var(--gold-lt)] mb-4 backdrop-blur-sm">
-            <Sparkles size={14} className="text-[var(--gold)]" />
-            <span>Islamic Finance Tool · 100% Client-Side Privacy</span>
+          <nav aria-label="Breadcrumb" className="inline-flex items-center gap-1.5 text-xs text-white/70 mb-4">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/tools" className="hover:text-white transition-colors">Tools</Link>
+            <span>/</span>
+            <span className="text-[var(--gold-lt)]">Zakat Calculator</span>
+          </nav>
+          <div>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-bold text-[var(--gold-lt)] mb-4 backdrop-blur-sm">
+              <Sparkles size={14} className="text-[var(--gold)]" />
+              <span>Islamic Finance Tool · 100% Client-Side Privacy</span>
+            </div>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">

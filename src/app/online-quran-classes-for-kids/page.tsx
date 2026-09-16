@@ -13,7 +13,7 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes for Kids — Live 1-on-1 | NoorPath Academy",
+    absolute: "Online Quran Classes for Kids — Live 1-on-1 | NoorPath",
   },
   description:
     "Online Quran classes for kids ages 4–12. Live 1-on-1 Noorani Qaida, Tajweed and Hifz lessons with tutor matching and a free 30-minute trial.",
@@ -109,6 +109,19 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${PAGE_URL}#webpage`,
+      url: PAGE_URL,
+      name: "Online Quran Classes for Kids",
+      description: "Live 1-on-1 online Quran classes for kids ages 4–12: Noorani Qaida, Tajweed, Hifz, and daily duas.",
+      isPartOf: { "@type": "WebSite", "@id": `${BASE_URL}/#website`, url: BASE_URL },
+      about: { "@id": `${PAGE_URL}#course` },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".page-hero h1", ".np-quick-answer"],
+      },
+    },
     {
       "@type": "Course",
       "@id": `${PAGE_URL}#course`,
@@ -237,6 +250,29 @@ export default function OnlineQuranClassesForKidsPage() {
           </div>
         </div>
       </div>
+
+      {/* AEO Quick Answer Block for Google AI Overviews & Perplexity */}
+      <section className="py-6 bg-[rgba(10,110,79,0.03)] border-b border-[var(--border)]">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div
+            className="np-quick-answer"
+            style={{
+              background: "rgba(10,110,79,0.05)",
+              borderLeft: "4px solid var(--emerald)",
+              borderRadius: 12,
+              padding: "18px 22px",
+              fontSize: "0.95rem",
+              lineHeight: 1.7,
+              color: "var(--charcoal)",
+            }}
+          >
+            <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
+            <span>
+              Online Quran classes for kids connect children ages 4–12 with certified 1-on-1 tutors via live video. Lessons cover Noorani Qaida, Tajweed, daily duas, and Hifz at the child&apos;s individual pace. Parents choose after-school or weekend lesson slots in their local timezone with male or female tutors. NoorPath offers a free 30-minute trial with no credit card required.
+            </span>
+          </div>
+        </div>
+      </section>
 
       {/* Hero visual + snapshot */}
       <section style={{ padding: "40px 0 0" }}>

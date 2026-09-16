@@ -66,12 +66,24 @@ export default async function CourseDetailPage({ params }: Props) {
         educationalLevel: course.level,
         typicalAgeRange: course.age,
         courseMode: "online",
+        inLanguage: ["en", "ar"],
         teaches: course.features.join(", "),
+        hasCourseInstance: {
+          "@type": "CourseInstance",
+          courseMode: "online",
+          courseWorkload: "PT30M",
+          instructor: {
+            "@type": "Person",
+            name: "Assigned Quran Tutor",
+            description: "Qualified Quran tutor matched by timezone, student goals, and background.",
+          },
+        },
         offers: {
           "@type": "Offer",
           price: "0",
           priceCurrency: "USD",
           description: `Free ${TRIAL.durationMinutes}-minute trial class request`,
+          url: "https://www.noorpath.online/free-quran-classes-online",
         },
       },
       {
