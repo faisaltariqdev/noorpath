@@ -1814,7 +1814,7 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         name: "Do you offer weekend Quran classes in Denmark?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Weekend CET/CEST windows can be requested. Exact availability is confirmed after tutor matching.",
+          text: "Weekend CET/CEST windows can be requested for families in Copenhagen, Aarhus, Odense and across Denmark. Exact availability is confirmed after tutor matching.",
         },
       },
       {
@@ -1822,7 +1822,7 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         name: "Can Norway or Finland families request weekend slots too?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — share Saturday or Sunday preferences in CET/CEST or EET/EEST. Confirmation follows matching.",
+          text: "Yes — share Saturday or Sunday preferences in CET/CEST or EET/EEST (Helsinki time). Confirmation follows tutor matching.",
         },
       },
       {
@@ -1830,7 +1830,15 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         name: "Is a weekend-only plan enough?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "It can maintain progress with short weekday home practice. Faster goals may need an extra live weekday later.",
+          text: "It can maintain solid progress when paired with short 10-minute weekday home practice on our interactive app. Faster goals may add an extra live weekday later.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What language of instruction is used for children in Denmark and Finland?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Classes are taught in clear, friendly English, which fits Nordic-born children attending local schools. Arabic or Urdu instruction can also be requested upon registration.",
         },
       },
     ],

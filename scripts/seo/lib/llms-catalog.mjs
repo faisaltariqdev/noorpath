@@ -409,7 +409,26 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
-    topic: "European online Quran classes (Germany, France, Netherlands, Sweden, Norway, Finland, Denmark, Ireland)",
+    topic: "Nordic online Quran classes (Finland, Denmark, Norway, Sweden)",
+    summary:
+      "Live 1-on-1 online Quran classes for Muslim families in Finland (Helsinki, Espoo in EET/EEST) and Denmark (Copenhagen, Aarhus in CET/CEST): flexible after-school and weekend morning windows, English-speaking tutors for bilingual children, female teacher options for daughters, Noorani Qaida, Daily Duas, and a free 30-minute trial.",
+    primary: [
+      "/locations/online-quran-classes-finland",
+      "/locations/online-quran-classes-denmark",
+      "/locations/online-quran-classes-norway",
+      "/locations/online-quran-classes-sweden",
+    ],
+    supporting: [
+      "/blog/weekend-quran-classes-for-nordic-families",
+      "/blog/timezone-friendly-quran-classes-uk-europe",
+      "/blog/muslim-families-europe-balance-school-quran",
+      "/female-quran-teacher-online",
+      "/noorani-qaida",
+      "/free-quran-classes-online",
+    ],
+  },
+  {
+    topic: "European online Quran classes (Germany, France, Netherlands, Ireland, UK)",
     summary:
       "Live 1-on-1 online Quran classes across Europe with CET, EET, and GMT scheduling, Dublin guide, and winter-daylight planning.",
     primary: [
@@ -419,14 +438,9 @@ export const TOPIC_INTENTS = [
       "/locations/online-quran-classes-ireland",
     ],
     supporting: [
-      "/locations/online-quran-classes-sweden",
-      "/locations/online-quran-classes-norway",
-      "/locations/online-quran-classes-finland",
-      "/locations/online-quran-classes-denmark",
       "/online-quran-classes/dublin",
       "/blog/timezone-friendly-quran-classes-uk-europe",
       "/blog/muslim-families-europe-balance-school-quran",
-      "/blog/weekend-quran-classes-for-nordic-families",
       "/free-quran-classes-online",
     ],
   },
@@ -554,8 +568,8 @@ export const PRIORITY_COUNTRIES = [
   { path: "/locations/online-quran-classes-france", label: "France", note: "France CET/CEST scheduling context." },
   { path: "/locations/online-quran-classes-sweden", label: "Sweden", note: "Sweden scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-norway", label: "Norway", note: "Norway CET/CEST and winter-daylight scheduling context." },
-  { path: "/locations/online-quran-classes-finland", label: "Finland", note: "Finland EET/EEST scheduling context." },
-  { path: "/locations/online-quran-classes-denmark", label: "Denmark", note: "Denmark scheduling context for online Quran classes." },
+  { path: "/locations/online-quran-classes-finland", label: "Finland", note: "Finland EET/EEST scheduling context for Helsinki, Espoo & Vantaa families, female tutor options, dark winter afternoon flexibility, and bilingual English instruction." },
+  { path: "/locations/online-quran-classes-denmark", label: "Denmark", note: "Denmark CET/CEST scheduling context for Copenhagen, Aarhus & Odense families, weekday evening & weekend class windows, female tutors, and folkeskole sports balance." },
 ];
 
 /**

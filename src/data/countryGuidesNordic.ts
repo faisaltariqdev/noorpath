@@ -121,69 +121,92 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
     country: "Finland",
     title: "Online Quran Classes in Finland: Kids & Family Guide",
     description:
-      "Kids Quran classes in Finland online — EET scheduling, Helsinki and Espoo context, Noorani Qaida foundations, safeguarding, and a free trial path.",
-    reviewedDate: "28 July 2026",
+      "Kids Quran classes in Finland online — EET/EEST scheduling, Helsinki, Espoo & Vantaa context, female tutors, Noorani Qaida foundations, safeguarding, and a free trial path.",
+    reviewedDate: "17 September 2026",
     sections: [
       {
         id: "finland-fit",
         heading: "Are kids Quran classes available online in Finland?",
         directAnswer:
-          "Yes. Families in Helsinki, Espoo and other Finnish cities can request live one-to-one online Quran classes for children and adults. NoorPath teaches online only — not a Finnish campus.",
+          "Yes. Families in Helsinki, Espoo, Vantaa, Tampere and other Finnish cities can request live one-to-one online Quran classes for children and adults. NoorPath teaches online only — not a Finnish campus.",
         paragraphs: [
-          "Finland’s Muslim community is relatively small compared with larger European markets, so parents often search online when local children’s programmes are limited. A recurring EET/EEST lesson can fit after Finnish school hours without another long journey.",
+          "Finland’s Muslim community is relatively small compared with larger European markets, so parents often search online when local children’s mosque programmes are limited or located far from home. A recurring EET/EEST lesson fits neatly after Finnish school hours without requiring long commutes in freezing weather.",
           "Suitability depends on the child’s attention span, language comfort, and confirmed tutor availability after a free trial — not on marketing promises of instant fluency.",
         ],
         bullets: [
-          "Remote-only service with no Finnish branch claim.",
-          "Kids placement by readiness, not birthday alone.",
-          "Female tutor preferences can be requested.",
-          "Free trial before ongoing payment.",
+          "Remote-only service with no Finnish physical branch claim.",
+          "Kids placement by actual reading readiness, not age alone.",
+          "Female Quran tutor preferences can be requested for daughters and sisters.",
+          "Free 30-minute trial class before ongoing payment.",
         ],
       },
       {
         id: "finland-schedule",
         heading: "What times work for online Quran classes in Finland?",
         directAnswer:
-          "Request after-school or evening windows in EET or EEST. Exact recurring times are confirmed after tutor matching.",
+          "Request after-school, late afternoon, or weekend morning windows in EET or EEST. Exact recurring times are confirmed after tutor matching.",
         paragraphs: [
-          "Share school finish times and weekend conflicts. Younger children often focus better in late afternoon; older pupils may need later slots around homework.",
+          "Finnish comprehensive schools typically end between 13:00 and 15:30. Many families request classes between 16:00 and 20:00 EET on weekdays, or weekend mornings when after-school sports and football practices fill weekday evenings.",
+          "During Finnish dark winters, having 1-on-1 classes right at home eliminates cold evening travel while giving children a consistent, warm Islamic routine.",
         ],
         table: {
           headers: ["Planning factor", "What to confirm"],
           rows: [
-            ["Timezone", "EET / EEST local clock — not another country’s slot"],
-            ["School load", "Exam weeks and holidays"],
-            ["Sibling devices", "Shared laptop conflicts"],
-            ["Parent presence", "Supervision for younger learners"],
+            ["Timezone", "EET / EEST Finnish clock — matched directly with your schedule"],
+            ["School load", "Early finish days vs exam weeks"],
+            ["Extracurriculars", "Sports/football training days vs free evenings"],
+            ["Sibling devices", "Separate laptops/tablets or back-to-back lessons"],
+            ["Parent presence", "Supervision and quiet space for younger learners"],
           ],
         },
       },
       {
-        id: "finland-courses",
-        heading: "Which courses fit children in Finland?",
+        id: "finland-language",
+        heading: "Language of instruction & bilingual learners in Finland",
         directAnswer:
-          "Most beginners start with Noorani Qaida. Readers may progress to Quran reading, Tajweed, or structured Hifz after assessment.",
+          "Tutors teach in clear, fluent English, which works seamlessly for Finnish-born Muslim youth who attend Finnish or bilingual schools.",
         paragraphs: [
-          "Link practice between lessons with calm recognition tools on the Interactive Noorani Qaida hub. Live classes remain the place for Makharij and Tajweed correction.",
-          "Islamic studies for children can be requested as a separate or combined track when families want faith basics alongside reading.",
+          "Children growing up in Finland usually learn Finnish or Swedish at school and English from an early age. Our tutors use friendly, accessible English to explain pronunciation rules (Tajweed), letter shapes, and the meanings of daily duas and short Surahs.",
+          "Parents who prefer Arabic or Urdu explanations for specific cultural or linguistic comfort can also request that during trial registration.",
+        ],
+      },
+      {
+        id: "finland-female-tutors",
+        heading: "Female Quran teachers for daughters and sisters in Finland",
+        directAnswer:
+          "Families can specifically request a qualified female Quran teacher for daughters, young children, or adult female learners in Finland.",
+        paragraphs: [
+          "Many Muslim mothers in Finland prefer female tutors for their daughters. NoorPath has dedicated female Islamic scholars and Tajweed certified teachers available across EET/EEST-friendly time slots.",
+          "State your female tutor preference on the trial booking form; matching is confirmed before the trial takes place.",
+        ],
+      },
+      {
+        id: "finland-courses",
+        heading: "Which courses fit children and adults in Finland?",
+        directAnswer:
+          "Most beginners start with Noorani Qaida. Readers progress to fluent Quran recitation with Tajweed, daily duas, Namaz, or structured Hifz after assessment.",
+        paragraphs: [
+          "Students use the free Interactive Noorani Qaida, Daily Duas, and Six Kalimas modules for recognition and audio practice between live lessons, while the tutor focuses on live Makharaj correction and personal feedback.",
+          "Islamic studies for kids covers the pillars of Islam, stories of the Prophets, and character building alongside Quran reading.",
         ],
       },
       {
         id: "finland-safety",
-        heading: "Safeguarding expectations for Finnish households",
+        heading: "Safeguarding and parent oversight for Finnish households",
         directAnswer:
-          "Keep devices in family spaces, observe early lessons, and confirm tutor details before enrolment.",
+          "Keep devices in family living areas, observe early lessons, and confirm tutor details before enrolment.",
         paragraphs: [
-          "Prefer transparent academies with published pricing and trial paths. Avoid large prepaid commitments before hearing the child with a real tutor.",
+          "We encourage parents to sit in on early sessions to observe the teacher's methodology and child rapport. Transparent communication and regular progress updates ensure parents always know what their child is learning.",
+          "Avoid unregulated platforms that do not vet their tutors or demand large non-refundable upfront fees before hearing your child read.",
         ],
       },
       {
         id: "finland-start",
-        heading: "How to start from Helsinki or Espoo this week",
+        heading: "How to start from Helsinki, Espoo or Vantaa this week",
         directAnswer:
-          "Request a free trial, state your city and EET/EEST preference, and compare published USD pricing for household budgeting in euros.",
+          "Request a free 30-minute trial, state your Finnish city and EET/EEST time preferences, and test the 1-on-1 experience with zero commitment.",
         paragraphs: [
-          "After matching, protect one short home practice most days. Consistency beats intensity in minority settings.",
+          "After the trial, choose a sustainable weekly plan (2, 3, 4, or 5 days per week). Consistent 30-minute lessons coupled with short daily practice build lifelong Quran reading skills.",
         ],
       },
     ],
@@ -192,68 +215,91 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
     country: "Denmark",
     title: "Online Quran Classes in Denmark: Weekday & Weekend Guide",
     description:
-      "Online Quran classes in Denmark for Copenhagen and Aarhus families — CET schedules, weekend windows, safeguarding, and a free trial path.",
-    reviewedDate: "28 July 2026",
+      "Online Quran classes in Denmark for Copenhagen, Aarhus & Odense families — CET schedules, weekend windows, female teachers, safeguarding, and a free trial path.",
+    reviewedDate: "17 September 2026",
     sections: [
       {
         id: "denmark-fit",
         heading: "Are online Quran classes suitable for families in Denmark?",
         directAnswer:
-          "Yes for households that want live one-to-one Quran tuition online with CET/CEST matching. NoorPath is an online academy — not a Danish campus.",
+          "Yes. Households in Copenhagen, Aarhus, Odense, Aalborg and across Denmark can request live one-to-one Quran tuition with CET/CEST matching. NoorPath is an online academy — not a Danish campus.",
         paragraphs: [
-          "Muslim families around Copenhagen and Aarhus often balance Danish schooling, clubs and Islamic learning. Online lessons remove an extra journey while keeping a serious weekly appointment.",
-          "Weekend Quran class windows matter when weekday evenings are full — request Saturday or Sunday CET/CEST slots and confirm availability after matching.",
+          "Muslim families in Denmark balance Danish schooling (folkeskole), sports clubs, and family life. Online 1-on-1 lessons remove the stress of commuting to distant weekend schools while providing individual attention that group madrasahs cannot match.",
+          "Weekend Quran class windows matter when weekday evenings are full — request Saturday or Sunday CET/CEST slots and confirm availability after tutor matching.",
         ],
         bullets: [
-          "Remote-only — no Copenhagen branch claim.",
-          "Weekday and weekend preferences can be stated.",
-          "Female tutor requests are welcome subject to matching.",
-          "Free trial before ongoing payment.",
+          "Remote-only — no Copenhagen physical campus claim.",
+          "Flexible weekday afternoon, evening and weekend CET/CEST preferences.",
+          "Female Quran teacher requests are welcome for daughters and sisters.",
+          "Free 30-minute trial class with no credit card required.",
         ],
       },
       {
         id: "denmark-weekend",
-        heading: "Weekend Quran classes in Denmark",
+        heading: "Weekend Quran classes and weekday evening schedules in Denmark",
         directAnswer:
-          "Weekend mornings or afternoons can be requested in CET/CEST. Exact slots are confirmed after tutor matching — not a published Denmark-wide weekend grid.",
+          "Weekend mornings (Saturday or Sunday CET/CEST) and weekday after-school slots can be selected to fit your household routine.",
         paragraphs: [
-          "Choose the lightest sustainable rhythm: one strong weekend lesson plus short weekday home practice often beats irregular intensives.",
+          "Danish school days often conclude between 14:00 and 15:30. Many families choose 2 or 3 weekday slots (e.g., Monday and Wednesday at 17:00 CET), while others whose children have weekday sports prefer weekend morning lessons.",
+          "A consistent weekend lesson paired with 10 minutes of self-paced practice on the interactive web platform keeps learning enjoyable without overburdening the child.",
         ],
         table: {
-          headers: ["Option", "When it helps"],
+          headers: ["Option", "When it helps Danish families"],
           rows: [
-            ["Weekday after school", "Stable school-week routine"],
-            ["Saturday morning", "Clubs fill weekday evenings"],
-            ["Sunday afternoon", "Family Friday commitments"],
-            ["Mixed plan", "Only if the household can keep both"],
+            ["Weekday after school (16:00–19:00 CET)", "Stable Monday–Thursday routine after folkeskole"],
+            ["Saturday or Sunday morning (09:00–12:00 CET)", "When weekday sports or clubs take up evenings"],
+            ["Mixed weekday + weekend plan", "For active students wanting steady 3-day weekly progress"],
+            ["Custom slot arrangement", "Tailored to family work schedules and shift work"],
           ],
         },
       },
       {
-        id: "denmark-courses",
-        heading: "Courses for learners in Denmark",
+        id: "denmark-language",
+        heading: "Language of instruction for Danish-speaking children",
         directAnswer:
-          "Noorani Qaida for beginners; Quran reading, Tajweed, Hifz or Islamic studies after assessment.",
+          "Classes are taught in clear, fluent English, allowing children growing up in Denmark to easily follow explanations and pronunciation guidance.",
         paragraphs: [
-          "Soft-link free Interactive Noorani Qaida practice between live sessions. Keep commercial enrolment on trial and pricing pages.",
+          "Most Danish schoolchildren develop strong English conversational skills early. Our tutors use encouraging, age-appropriate English to teach Arabic letters, Tajweed rules, and Islamic basics.",
+          "If the family prefers Arabic or Urdu instruction for home cultural continuity, tutors fluent in those languages can also be assigned.",
+        ],
+      },
+      {
+        id: "denmark-female-tutors",
+        heading: "Female Quran teachers for sisters and young daughters in Denmark",
+        directAnswer:
+          "Parents in Denmark can specifically request qualified female Quran teachers for young girls, female teenagers, and adult sisters.",
+        paragraphs: [
+          "We offer experienced, patient female Quran teachers who specialize in teaching children and female adults in a safe, encouraging 1-on-1 environment.",
+          "Simply note your female teacher preference on the booking form, and we will match you with an EET/CET compatible female tutor.",
+        ],
+      },
+      {
+        id: "denmark-courses",
+        heading: "Courses for learners in Denmark: Qaida to Tajweed & Hifz",
+        directAnswer:
+          "Noorani Qaida for beginners; Quran reading with Tajweed, memorisation (Hifz), Daily Duas, and Namaz / Salah step-by-step for advancing learners.",
+        paragraphs: [
+          "Between live 1-on-1 lessons, students have free access to NoorPath's Interactive Noorani Qaida, audio recitation tools, and quiz modules to reinforce their learning interactively at home.",
+          "Adult learners in Denmark can also join tailored beginner or Tajweed improvement tracks with flexible evening hours.",
         ],
       },
       {
         id: "denmark-safety",
-        heading: "Safety and legitimacy",
+        heading: "Safety, legitimacy and progress tracking",
         directAnswer:
-          "Use known platforms, parental observation, and confirmed tutor details before continuing payment.",
+          "Safe online lessons with vetted tutors, parent supervision welcome at any time, and regular progress reports.",
         paragraphs: [
-          "Online Islamic education is legitimate when transparent. Avoid services that refuse to explain who teaches after payment.",
+          "All tutors are background checked and trained in child pedagogy. Parents can observe lessons directly from their living room, ensuring complete peace of mind.",
+          "Subscription billing is transparent in USD with no lock-in contracts or cancellation penalties.",
         ],
       },
       {
         id: "denmark-start",
-        heading: "Start this week from Copenhagen or Aarhus",
+        heading: "Start this week from Copenhagen, Aarhus or Odense",
         directAnswer:
-          "Request a free trial, state city and weekday or weekend CET/CEST preference, then protect a short home echo after matching.",
+          "Book a free 30-minute trial, state your Danish city and preferred CET/CEST time window, and start learning with no card required.",
         paragraphs: [
-          "Budget using published USD plans and your own DKK conversion estimate — NoorPath does not publish a fixed DKK price list.",
+          "Compare published plans at USD pricing and estimate your monthly DKK budget. Sibling discounts are available when enrolling two or more children.",
         ],
       },
     ],

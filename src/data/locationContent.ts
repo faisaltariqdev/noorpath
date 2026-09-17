@@ -144,7 +144,7 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
   "online-quran-classes-finland": [
     {
       q: "Are kids Quran classes available online in Finland?",
-      a: "Yes. Families in Helsinki, Espoo and other Finnish cities can request live one-to-one online Quran classes for children with EET/EEST scheduling. NoorPath is an online academy (not a Finnish campus). Availability is confirmed after matching.",
+      a: "Yes. Families in Helsinki, Espoo, Vantaa, Tampere and other Finnish cities can request live one-to-one online Quran classes for children with EET/EEST scheduling. NoorPath is an online academy (not a Finnish campus). Availability is confirmed after matching.",
     },
     {
       q: "What timezone do online Quran classes use for Finland?",
@@ -162,11 +162,15 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       q: "Do weekend lessons work when Finnish weekday evenings are dark and full?",
       a: "Weekend morning or afternoon EET/EEST windows can be requested when after-school evenings are taken up by homework and activities, or when short winter daylight makes late slots tiring for a child. Exact weekend availability is confirmed after tutor matching.",
     },
+    {
+      q: "Can children who speak Finnish or English study with English-speaking Quran teachers?",
+      a: "Yes. Tutors teach in clear, fluent English, which suits Finnish-born Muslim children and international expat families in Finland. You can also request Urdu or Arabic support if preferred.",
+    },
   ],
   "online-quran-classes-denmark": [
     {
       q: "Are online Quran classes suitable for families in Denmark?",
-      a: "Yes. Copenhagen, Aarhus and other Danish households can request live one-to-one online Quran lessons with CET/CEST matching. NoorPath teaches online only (not a Danish campus).",
+      a: "Yes. Copenhagen, Aarhus, Odense, Aalborg and other Danish households can request live one-to-one online Quran lessons with CET/CEST matching. NoorPath teaches online only (not a Danish campus).",
     },
     {
       q: "Do you offer weekend Quran classes in Denmark?",
@@ -183,6 +187,10 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     {
       q: "Can beginners in Denmark start with Noorani Qaida online?",
       a: "Yes. Complete beginners typically start with Noorani Qaida before moving to Quran reading or Tajweed by assessment. Families can also use the free Interactive Noorani Qaida hub for recognition practice between live lessons.",
+    },
+    {
+      q: "How do Danish families balance school, sports clubs, and online Quran classes?",
+      a: "Because classes are 1-on-1 and 30 minutes long, you can choose 2 to 4 sessions per week on specific days that fit around sports, clubs, and folkeskole hours, or schedule weekend morning slots in CET/CEST.",
     },
   ],
   "online-quran-classes-kuwait": [

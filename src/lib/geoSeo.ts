@@ -622,18 +622,21 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "kids quran classes finland",
       "quran teacher finland",
       "online quran helsinki",
+      "quran classes espoo",
       "learn quran online finland",
       "noorani qaida online finland",
+      "female quran teacher finland",
+      "weekend quran classes finland",
     ],
     content: {
       metadataTitle: "Online Quran Classes Finland — Kids & Free Trial | NoorPath",
       metadataDescription:
-        "Kids Quran classes in Finland online: live 1-to-1 Qaida, Tajweed or Hifz with EET evenings for Helsinki and Espoo. Free 30-minute trial, no credit card required.",
+        "Live 1-to-1 online Quran classes in Finland for kids & adults. EET evenings & weekend slots for Helsinki & Espoo. Free 30-min trial, no card required.",
       heading: "Online Quran Classes in Finland",
       introduction:
-        "Muslim families in Finland — including Helsinki, Espoo and other cities — can request live one-to-one online Quran classes for children and adults when local options are thin. NoorPath teaches online only and does not operate a Finnish campus.",
+        "Muslim families in Finland — including Helsinki, Espoo, Vantaa and other cities — can request live one-to-one online Quran classes for children and adults when local options are thin. NoorPath teaches online only and does not operate a Finnish campus.",
       localPlanning:
-        "Share your city, school finish time, and preferred EET/EEST evenings. Exact tutor and recurring-time availability is confirmed after matching.",
+        "Share your city, school finish time, and preferred EET/EEST evenings or weekend windows. Exact tutor and recurring-time availability is confirmed after matching.",
     },
   },
   {
@@ -653,16 +656,19 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "weekend quran classes denmark",
       "quran teacher denmark",
       "online quran copenhagen",
+      "quran classes aarhus",
       "learn quran online denmark",
       "noorani qaida online denmark",
+      "female quran teacher denmark",
+      "kids quran classes denmark",
     ],
     content: {
       metadataTitle: "Online Quran Classes Denmark — Free Trial | NoorPath",
       metadataDescription:
-        "Online Quran classes in Denmark: live 1-to-1 Qaida, Tajweed or Hifz with CET evenings and weekend windows for Copenhagen and Aarhus. Free 30-minute trial, no card.",
+        "Live 1-to-1 online Quran classes in Denmark for kids & adults. CET evenings & weekend slots for Copenhagen & Aarhus. Free 30-min trial, no card required.",
       heading: "Online Quran Classes in Denmark",
       introduction:
-        "Muslim families in Denmark — including Copenhagen, Aarhus and other cities — can request live one-to-one online Quran classes, including weekend windows when weekdays are full. NoorPath teaches online only and does not operate a Danish campus.",
+        "Muslim families in Denmark — including Copenhagen, Aarhus, Odense and other cities — can request live one-to-one online Quran classes, including weekend windows when weekdays are full. NoorPath teaches online only and does not operate a Danish campus.",
       localPlanning:
         "Share your city, preferred weekday evenings or weekend mornings in CET/CEST, and any female-tutor preference. Exact availability is confirmed after matching.",
     },

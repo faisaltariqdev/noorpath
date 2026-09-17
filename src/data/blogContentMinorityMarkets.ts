@@ -105,33 +105,36 @@ export const minorityMarketsBlogContent: Record<string, { style: string; content
   },
   "weekend-quran-classes-for-nordic-families": {
     style: S,
-    content: `<p><strong>Weekend Quran classes for Nordic families</strong> help when weekday evenings are full of school, clubs and early darkness in winter. The honest approach is to request a Saturday or Sunday CET/CEST (or EET) window and confirm availability after matching — not to expect a fixed Nordic weekend timetable published in advance.</p>
+    content: `<p><strong>Weekend Quran classes for Nordic families</strong> help when weekday evenings are full of school, sports clubs, homework, and early darkness in winter. The honest approach is to request a Saturday or Sunday CET/CEST (or EET/EEST) window and confirm availability after matching — not to expect a fixed Nordic weekend timetable published in advance.</p>
 
           <div class="highlight-box">
-            <strong>Where to start:</strong> <a href="/locations/online-quran-classes-denmark">Denmark</a> (weekend FAQs), <a href="/locations/online-quran-classes-norway">Norway</a>, <a href="/locations/online-quran-classes-finland">Finland</a>, and <a href="/locations/online-quran-classes-sweden">Sweden</a> for country context. Then book a <a href="/free-quran-classes-online">free trial</a>.
+            <strong>Where to start:</strong> <a href="/locations/online-quran-classes-denmark">Denmark</a> (Copenhagen & Aarhus), <a href="/locations/online-quran-classes-finland">Finland</a> (Helsinki & Espoo), <a href="/locations/online-quran-classes-norway">Norway</a>, and <a href="/locations/online-quran-classes-sweden">Sweden</a> for country context. Then book a <a href="/free-quran-classes-online">free 30-minute trial</a>.
           </div>
 
           <h2 id="why-weekend">Why weekends matter in Nordic calendars</h2>
-          <p>After-school slots compete with homework and activities. A weekend morning lesson can feel calmer for younger children. Pair it with two or three tiny weekday echoes so the gap between live sessions stays short.</p>
+          <p>After-school weekday slots often compete with extracurricular activities such as football training, swimming, and homework. In winter, late afternoons get dark early across Scandinavia and Finland. A weekend morning lesson (09:00–12:00 CET/EET) feels calmer and more focused for children. Pair it with two or three 10-minute weekday echoes on the interactive portal so the gap between live sessions stays short.</p>
 
-          <h2 id="cities">City starting points</h2>
-          <p>Explore city pages when relevant: <a href="/online-quran-classes/copenhagen">Copenhagen</a>, <a href="/online-quran-classes/oslo">Oslo</a>, <a href="/online-quran-classes/helsinki">Helsinki</a>. City pages describe online scheduling context — not physical branches.</p>
+          <h2 id="cities">Nordic country & city starting points</h2>
+          <p>Explore dedicated country hubs and scheduling guides: <a href="/locations/online-quran-classes-denmark">Online Quran Classes Denmark</a>, <a href="/locations/online-quran-classes-finland">Online Quran Classes Finland</a>, <a href="/online-quran-classes/copenhagen">Copenhagen</a>, <a href="/online-quran-classes/oslo">Oslo</a>, and <a href="/online-quran-classes/helsinki">Helsinki</a>. These pages describe remote 1-on-1 online scheduling context — not physical local branches.</p>
 
           <h2 id="female">Female tutor requests</h2>
-          <p>State female-tutor preference when booking. For how matching works, see <a href="/female-quran-teacher-online">female Quran teacher online</a>. Oslo and other city FAQs also answer female-tutor questions and link back to the hub.</p>
+          <p>Parents can state a female tutor preference when booking — particularly popular for daughters, young children, and adult sisters across Denmark and Finland. For how matching works, see <a href="/female-quran-teacher-online">female Quran teacher online</a>.</p>
 
           <h2 id="practice">Weekday practice without burnout</h2>
-          <p>Ten minutes of recognition on the <a href="/noorani-qaida">Interactive Noorani Qaida</a> hub beats a long Sunday cram. Log unclear letters for the tutor instead of correcting guesses.</p>
+          <p>Ten minutes of recognition and audio practice on the <a href="/noorani-qaida">Interactive Noorani Qaida</a> and Daily Duas hubs beats a long Sunday cram. Log unclear letters for the tutor instead of correcting guesses.</p>
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>Do you offer weekend Quran classes in Denmark?<span>+</span></summary>
-            <p>Weekend CET/CEST windows can be requested. Exact availability is confirmed after tutor matching.</p>
+            <p>Weekend CET/CEST windows can be requested for families in Copenhagen, Aarhus, Odense and across Denmark. Exact availability is confirmed after tutor matching.</p>
           </details>
           <details class="faq-acc"><summary>Can Norway or Finland families request weekend slots too?<span>+</span></summary>
-            <p>Yes — share Saturday or Sunday preferences in CET/CEST or EET/EEST. Confirmation follows matching.</p>
+            <p>Yes — share Saturday or Sunday preferences in CET/CEST or EET/EEST (Helsinki time). Confirmation follows tutor matching.</p>
           </details>
           <details class="faq-acc"><summary>Is a weekend-only plan enough?<span>+</span></summary>
-            <p>It can maintain progress with short weekday home practice. Faster goals may need an extra live weekday later.</p>
+            <p>It can maintain solid progress when paired with short 10-minute weekday home practice on our interactive app. Faster goals may add an extra live weekday later.</p>
+          </details>
+          <details class="faq-acc"><summary>What language of instruction is used for children in Denmark and Finland?<span>+</span></summary>
+            <p>Classes are taught in clear, friendly English, which fits Nordic-born children attending local schools. Arabic or Urdu instruction can also be requested upon registration.</p>
           </details>
           <p>Nordic weekend Quran plans work when the household protects one calm live slot and a few tiny weekday echoes. Request the trial, name your city, and keep expectations kind through dark winters and busy club seasons.</p>
           <p>Compare <a href="/pricing">pricing</a> before committing, and prefer the lightest rhythm you can repeat for a full term.</p>`,
