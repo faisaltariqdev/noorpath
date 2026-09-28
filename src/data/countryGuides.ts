@@ -5,6 +5,8 @@ import { countryGuidesKuwaitSaudi } from "@/data/countryGuidesKuwaitSaudi";
 import { countryGuidesNordic } from "@/data/countryGuidesNordic";
 import { countryGuidesAsiaAfrica } from "@/data/countryGuidesAsiaAfrica";
 import { countryGuidesIrelandNz } from "@/data/countryGuidesIrelandNz";
+import { countryGuidesSpainHongKong } from "@/data/countryGuidesSpainHongKong";
+import { countryGuidesEuropeOman } from "@/data/countryGuidesEuropeOman";
 import { countryGuidesUsaUae } from "@/data/countryGuidesUsaUae";
 import type { CountryGuideContent } from "@/data/countryGuideTypes";
 
@@ -17,6 +19,8 @@ const COUNTRY_GUIDES: Record<string, CountryGuideContent> = {
   ...countryGuidesNordic,
   ...countryGuidesAsiaAfrica,
   ...countryGuidesIrelandNz,
+  ...countryGuidesSpainHongKong,
+  ...countryGuidesEuropeOman,
 };
 
 export function getCountryGuide(slug: string): CountryGuideContent | undefined {

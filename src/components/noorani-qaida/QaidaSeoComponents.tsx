@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight, BookOpen, CheckCircle, GraduationCap } from "lucide-react";
 import { QAIDA_SCREENSHOTS } from "@/data/noorani-qaida";
+import WhatsAppLink from "@/components/WhatsAppLink";
+import { CONTACT } from "@/lib/academyFacts";
 
 export const QAIDA_BASE_URL = "https://www.noorpath.online/noorani-qaida";
 
@@ -94,6 +96,15 @@ export function QaidaCourseCta({
         <Link href="/free-quran-classes-online" className="btn-outline-np">
           <GraduationCap size={17} aria-hidden="true" /> Request a Free Trial
         </Link>
+        <WhatsAppLink
+          href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent("Assalamu Alaikum, I am practicing Noorani Qaida with my child and would like to ask about a free 30-minute 1-on-1 trial class.")}`}
+          className="btn-outline-np"
+          style={{ display: "inline-flex", alignItems: "center", gap: 6, borderColor: "#25D366", color: "#0a6e4f", fontWeight: 700 }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>💬 Chat on WhatsApp</span>
+        </WhatsAppLink>
       </div>
     </section>
   );

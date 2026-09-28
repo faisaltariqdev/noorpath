@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import OnlineQuranClassesGuide from "@/components/OnlineQuranClassesGuide";
+import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
 import { BASE_URL, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCountryHubHreflang, PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
@@ -185,6 +186,11 @@ export default function OnlineQuranClassesPage() {
           </div>
         </div>
       </div>
+
+      {/* AI Search / GEO Direct Answer Box */}
+      <section style={{ maxWidth: 1200, margin: "32px auto 0", padding: "0 16px" }}>
+        <AiDirectAnswerBox country="Worldwide" timezone="Your Local Time" />
+      </section>
 
       {/* Features */}
       <section>

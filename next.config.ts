@@ -37,6 +37,21 @@ const nextConfig: NextConfig = {
         destination: "https://www.noorpath.online/:path*",
         permanent: true,
       },
+      {
+        source: "/software-services",
+        destination: "/courses",
+        permanent: true,
+      },
+      {
+        source: "/services",
+        destination: "/courses",
+        permanent: true,
+      },
+      {
+        source: "/custom-software",
+        destination: "/courses",
+        permanent: true,
+      },
     ];
   },
 

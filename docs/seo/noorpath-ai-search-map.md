@@ -176,6 +176,18 @@ copy is table stakes and will not differentiate.
 This tempers the brief's framing. The New Zealand opportunity is real but it is a **quality** opportunity,
 not an empty-field opportunity.
 
+### Tier-B hubs added 28 September 2026 (Spain & Hong Kong)
+
+Explicit ADD of country hubs (not city factory). Same Job B pattern: answer-first parent problem-solving,
+timezone honesty, female-tutor path, USD budgeting, online-only disclaimers.
+
+| Market | Hub | Primary problems answered |
+|---|---|---|
+| Spain | `/locations/online-quran-classes-spain` | CET/CEST after-school fit, Madrid/Barcelona vs smaller towns, female tutors, Spanish-school language of instruction, “near me” honesty |
+| Hong Kong | `/locations/online-quran-classes-hong-kong` | HKT dense school/activity calendars, expat English instruction, female tutors, USD→HKD budgeting, UTC+8 peer context with SG/MY |
+
+Also wired into `public/llms.txt` via `scripts/seo/lib/llms-catalog.mjs`, organization `areaServed`, reciprocal hreflang cluster, and FAQPage-matching EXTRA FAQs.
+
 ---
 
 ## Answer-block structure

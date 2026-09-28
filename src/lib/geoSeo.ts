@@ -33,6 +33,12 @@ export const LOCATION_HREFLANG_BY_SLUG: Record<string, string> = {
   "online-quran-classes-finland": "en-FI",
   "online-quran-classes-denmark": "en-DK",
   "online-quran-classes-turkey": "en-TR",
+  "online-quran-classes-spain": "en-ES",
+  "online-quran-classes-hong-kong": "en-HK",
+  "online-quran-classes-italy": "en-IT",
+  "online-quran-classes-belgium": "en-BE",
+  "online-quran-classes-switzerland": "en-CH",
+  "online-quran-classes-oman": "en-OM",
 };
 
 export type EnglishStyle = "British English" | "American English" | "Natural English";
@@ -671,6 +677,430 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
         "Muslim families in Denmark — including Copenhagen, Aarhus, Odense and other cities — can request live one-to-one online Quran classes, including weekend windows when weekdays are full. NoorPath teaches online only and does not operate a Danish campus.",
       localPlanning:
         "Share your city, preferred weekday evenings or weekend mornings in CET/CEST, and any female-tutor preference. Exact availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-spain",
+    country: "Spain",
+    flag: "🇪🇸",
+    weight: 2,
+    locale: "en-ES",
+    openGraphLocale: "en_ES",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request an after-school, evening or weekend window in CET or CEST. Clock changes and tutor availability are confirmed during matching.",
+    keywordClusters: [
+      "online quran classes spain",
+      "quran classes madrid",
+      "online quran barcelona",
+      "quran teacher spain",
+      "female quran teacher spain",
+      "learn quran online spain",
+      "noorani qaida online spain",
+      "islamic classes spain",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Spain — Free Trial | NoorPath",
+      metadataDescription:
+        "Online Quran classes in Spain: live 1-to-1 Qaida, Tajweed or Hifz with CET/CEST matching for Madrid, Barcelona and beyond. Female tutors on request. Free 30-min trial.",
+      heading: "Online Quran Classes in Spain",
+      introduction:
+        "Muslim families in Spain — including Madrid, Barcelona, Valencia, Seville and Málaga — can request live one-to-one online Quran classes when local after-school options are limited or travel is hard. Request a female Quran teacher when preferred. NoorPath teaches online only and does not operate a Spanish campus.",
+      localPlanning:
+        "Share your city, school finish time, and preferred CET/CEST evenings or weekend mornings. Exact tutor and recurring-time availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-hong-kong",
+    country: "Hong Kong",
+    flag: "🇭🇰",
+    weight: 2,
+    locale: "en-HK",
+    openGraphLocale: "en_HK",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "HKD", name: "Hong Kong dollars" },
+    timezone: "HKT (UTC+8)",
+    schedulingGuidance:
+      "Request an after-school, evening or weekend window in HKT. Tutor availability is confirmed during matching. HKT does not observe daylight saving.",
+    keywordClusters: [
+      "online quran classes hong kong",
+      "quran teacher hong kong",
+      "quran classes for kids hong kong",
+      "female quran teacher hong kong",
+      "learn quran online hong kong",
+      "noorani qaida online hong kong",
+      "islamic classes hong kong",
+      "online quran tutor hong kong",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Hong Kong — Free Trial | NoorPath",
+      metadataDescription:
+        "Online Quran classes in Hong Kong: live 1-to-1 Qaida, Tajweed or Hifz with HKT matching for families and expats. Female tutors on request. Free 30-min trial, no card.",
+      heading: "Online Quran Classes in Hong Kong",
+      introduction:
+        "Muslim families and expats across Hong Kong Island, Kowloon and the New Territories can request live one-to-one online Quran classes around school, activities and work. NoorPath teaches online only and does not operate a Hong Kong campus.",
+      localPlanning:
+        "Share your district, preferred HKT evenings or weekend mornings, and any female-tutor or English-instruction preference. Exact availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-south-africa",
+    country: "South Africa",
+    flag: "🇿🇦",
+    weight: 6,
+    locale: "en-ZA",
+    openGraphLocale: "en_ZA",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "ZAR", name: "South African rand" },
+    timezone: "SAST (UTC+2)",
+    schedulingGuidance:
+      "Request an after-school, evening, or weekend window in SAST (UTC+2). Durban, Cape Town, Johannesburg and Pretoria families can request female or male tutors.",
+    keywordClusters: [
+      "online quran classes south africa",
+      "quran teacher south africa",
+      "online quran classes durban",
+      "online quran classes cape town",
+      "online quran classes johannesburg",
+      "female quran teacher south africa",
+      "noorani qaida online south africa",
+      "online tajweed classes south africa",
+      "learn quran online south africa",
+    ],
+    content: {
+      metadataTitle: "Top 1-on-1 Online Quran Classes South Africa — Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes in South Africa for kids & adults. SAST evening & weekend slots for Durban, Cape Town & Johannesburg. Free 30-min trial.",
+      heading: "Online Quran Classes in South Africa",
+      introduction:
+        "Muslim families across South Africa — from Durban and Cape Town to Johannesburg and Pretoria — can request live one-to-one Quran and Noorani Qaida lessons with SAST evening and weekend slots tailored around school hours.",
+      localPlanning:
+        "Share your city (Durban, Cape Town, Johannesburg, Pretoria or elsewhere), preferred SAST after-school slots, and any female tutor request. NoorPath teaches online only; recurring slots are confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-singapore",
+    country: "Singapore",
+    flag: "🇸🇬",
+    weight: 5,
+    locale: "en-SG",
+    openGraphLocale: "en_SG",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "SGD", name: "Singapore dollars" },
+    timezone: "SGT (UTC+8)",
+    schedulingGuidance:
+      "Request after-school, evening or weekend slots in SGT. NoorPath matches tutors for kids, adult beginners, and sisters in Singapore.",
+    keywordClusters: [
+      "online quran classes singapore",
+      "quran tutor singapore",
+      "female quran teacher singapore",
+      "quran classes for adults singapore",
+      "noorani qaida singapore",
+      "online tajweed classes singapore",
+      "learn quran online singapore",
+      "quran home tuition singapore",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Singapore — Kids & Adults Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-to-1 online Quran classes in Singapore for children and adult beginners: Noorani Qaida, Tajweed & Hifz in SGT. Free 30-min trial, no card needed.",
+      heading: "Online Quran Classes in Singapore",
+      introduction:
+        "Muslim families in Singapore can request live one-to-one online Quran tuition planned around busy school and madrasah schedules, with evening and weekend SGT slots.",
+      localPlanning:
+        "Share preferred SGT weekday evenings or weekend mornings, whether lessons are for kids or adult learners, and any female tutor preference. Slots are confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-indonesia",
+    country: "Indonesia",
+    flag: "🇮🇩",
+    weight: 4,
+    locale: "en-ID",
+    openGraphLocale: "en_ID",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "IDR", name: "Indonesian rupiah" },
+    timezone: "WIB (UTC+7) / WITA (UTC+8)",
+    schedulingGuidance:
+      "Request lessons in your Indonesian local time (WIB/WITA). English-instruction tutors available for international school students.",
+    keywordClusters: [
+      "online quran classes indonesia",
+      "kursus quran online indonesia",
+      "english quran teacher indonesia",
+      "online quran jakarta",
+      "belajar mengaji online indonesia",
+      "tajweed online indonesia",
+      "female quran teacher indonesia",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Indonesia — English Tutors & Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-to-1 online Quran classes for Indonesian families and international school students in Jakarta & beyond — WIB/WITA times. Free 30-minute trial.",
+      heading: "Online Quran Classes in Indonesia",
+      introduction:
+        "Families and international school students across Indonesia — including Jakarta, Surabaya and Bandung — can request live 1-to-1 Quran lessons with English-speaking tutors.",
+      localPlanning:
+        "Share your timezone (WIB, WITA, or WIT), school hours, and whether English or Arabic instruction is preferred. Availability is confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-turkey",
+    country: "Turkey",
+    flag: "🇹🇷",
+    weight: 4,
+    locale: "en-TR",
+    openGraphLocale: "en_TR",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "TRY", name: "Turkish liras" },
+    timezone: "TRT (UTC+3)",
+    schedulingGuidance:
+      "Request an after-school, evening or weekend window in TRT (UTC+3). English and Arabic instruction available for expats and Turkish families.",
+    keywordClusters: [
+      "online quran classes turkey",
+      "english quran teacher istanbul",
+      "online kuran dersi turkiye",
+      "female quran teacher turkey",
+      "online quran istanbul",
+      "learn quran online turkey",
+      "tajweed lessons turkey",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Turkey — Expat & Kids Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran & Tajweed classes in Turkey for expat and local families in Istanbul, Ankara & Izmir — TRT evening slots. Free 30-minute trial.",
+      heading: "Online Quran Classes in Turkey",
+      introduction:
+        "Muslim families and expats in Turkey — including Istanbul, Ankara and Izmir — can request live one-to-one Quran and Tajweed classes in TRT timezone.",
+      localPlanning:
+        "Share your city, preferred TRT evening or weekend times, and whether English or Urdu/Arabic instruction is preferred. Tutors confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-malaysia",
+    country: "Malaysia",
+    flag: "🇲🇾",
+    weight: 5,
+    locale: "en-MY",
+    openGraphLocale: "en_MY",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "MYR", name: "Malaysian ringgit" },
+    timezone: "MYT (UTC+8)",
+    schedulingGuidance:
+      "Request an after-school or weekend window in MYT. English-speaking male and female tutors available for Malaysian families and expats.",
+    keywordClusters: [
+      "online quran classes malaysia",
+      "quran tutor kuala lumpur",
+      "online tajweed classes malaysia",
+      "female quran teacher malaysia",
+      "kelas quran online malaysia",
+      "learn quran online malaysia",
+      "noorani qaida online malaysia",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Malaysia — Live 1-on-1 Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes in Malaysia for kids & adults — Noorani Qaida, Tajweed & Hifz in MYT. English-speaking tutors. Free 30-min trial.",
+      heading: "Online Quran Classes in Malaysia",
+      introduction:
+        "Families across Malaysia — including Kuala Lumpur, Penang and Johor Bahru — can request private 1-on-1 online Quran classes with English-speaking tutors in MYT.",
+      localPlanning:
+        "Share your preferred MYT evening or weekend slots, school finish times, and tutor preferences. Recurring slots confirmed after trial matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-pakistan",
+    country: "Pakistan",
+    flag: "🇵🇰",
+    weight: 4,
+    locale: "en-PK",
+    openGraphLocale: "en_PK",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "PKR", name: "Pakistani rupees" },
+    timezone: "PKT (UTC+5)",
+    schedulingGuidance:
+      "Request evening or weekend lessons in PKT. Qualified male and female teachers with Ijazah and Wifaq-ul-Madaris certification.",
+    keywordClusters: [
+      "online quran classes pakistan",
+      "quran tutor pakistan",
+      "female quran teacher lahore karachi",
+      "hifz quran online pakistan",
+      "tajweed course online pakistan",
+      "noorani qaida classes pakistan",
+      "quran teacher islamabad",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Pakistan — Certified Tutors & Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes in Pakistan: Noorani Qaida, Tajweed and Hifz with certified Huffaz and female teachers in PKT. Free 30-minute trial.",
+      heading: "Online Quran Classes in Pakistan",
+      introduction:
+        "Families in Lahore, Karachi, Islamabad, Rawalpindi and across Pakistan can request live 1-to-1 Quran tuition with qualified Huffaz and Tajweed teachers.",
+      localPlanning:
+        "Share school or college hours, preferred PKT evening slots, and female tutor preferences. Recurring schedule confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-bangladesh",
+    country: "Bangladesh",
+    flag: "🇧🇩",
+    weight: 4,
+    locale: "en-BD",
+    openGraphLocale: "en_BD",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "BDT", name: "Bangladeshi taka" },
+    timezone: "BST (UTC+6)",
+    schedulingGuidance:
+      "Request after-school, evening or weekend lesson times in BST (UTC+6). English and Bengali guidance available where matched.",
+    keywordClusters: [
+      "online quran classes bangladesh",
+      "quran tutor dhaka",
+      "online quran classes for kids bangladesh",
+      "female quran teacher bangladesh",
+      "tajweed course online bangladesh",
+      "learn quran online bangladesh",
+      "quran classes chittagong",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Bangladesh — Live 1-on-1 | NoorPath Academy",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes for kids and adults in Bangladesh: Noorani Qaida, Tajweed and Hifz in BST (UTC+6). Free 30-minute trial, no card needed.",
+      heading: "Online Quran Classes in Bangladesh",
+      introduction:
+        "Families in Dhaka, Chittagong, Sylhet and across Bangladesh can request private one-to-one online Quran classes in Bangladesh Standard Time.",
+      localPlanning:
+        "Share your city, preferred BST evening or weekend slots, and tutor preferences. Exact schedule confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-italy",
+    country: "Italy",
+    flag: "🇮🇹",
+    weight: 3,
+    locale: "en-IT",
+    openGraphLocale: "en_IT",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request an after-school or evening window from ~4 PM to 9 PM CET/CEST, or weekend mornings. Tutor matching supports English, Urdu, or Arabic instruction.",
+    keywordClusters: [
+      "online quran classes italy",
+      "corsi di corano online italia",
+      "quran teacher italy",
+      "female quran teacher italy",
+      "online quran milan",
+      "online quran rome",
+      "learn quran online italy",
+      "noorani qaida online italy",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Italy (Rome, Milan) — Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes in Italy for kids & adults — Noorani Qaida, Tajweed & Hifz in CET/CEST. Rome & Milan slots. Free 30-min trial, no card.",
+      heading: "Online Quran Classes in Italy",
+      introduction:
+        "Muslim families across Italy — including Rome, Milan, Turin, Florence and Bologna — can request live one-to-one online Quran lessons with convenient CET/CEST after-school windows.",
+      localPlanning:
+        "Share your city (Rome, Milan, Turin, Florence or elsewhere), preferred CET evening slots, and any female tutor or language preference. Exact recurring times confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-belgium",
+    country: "Belgium",
+    flag: "🇧🇪",
+    weight: 3,
+    locale: "en-BE",
+    openGraphLocale: "en_BE",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "EUR", name: "euros" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request after-school or weekend lesson times in CET or CEST. English and French-compatible tutoring options available.",
+    keywordClusters: [
+      "online quran classes belgium",
+      "cours de coran en ligne belgique",
+      "quran teacher belgium",
+      "female quran teacher belgium",
+      "online quran brussels",
+      "online quran antwerp",
+      "learn quran online belgium",
+      "noorani qaida online belgium",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Belgium (Brussels, Antwerp) — Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes in Belgium for kids & adults — Noorani Qaida, Tajweed & Hifz in CET. Brussels & Antwerp slots. Free 30-minute trial.",
+      heading: "Online Quran Classes in Belgium",
+      introduction:
+        "Families across Belgium — including Brussels, Antwerp, Ghent and Liège — can request private one-to-one online Quran tuition planned around local school schedules in CET/CEST.",
+      localPlanning:
+        "Share preferred weekday evening slots (often 4–9 PM CET) or weekend mornings, and tutor preferences. Recurring slot confirmed after matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-switzerland",
+    country: "Switzerland",
+    flag: "🇨🇭",
+    weight: 3,
+    locale: "en-CH",
+    openGraphLocale: "en_CH",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "CHF", name: "Swiss francs" },
+    timezone: "CET / CEST",
+    schedulingGuidance:
+      "Request after-school or weekend windows in CET/CEST. English-medium live 1-on-1 tuition for Swiss Muslim families and expats.",
+    keywordClusters: [
+      "online quran classes switzerland",
+      "quran teacher switzerland",
+      "online quran zurich",
+      "online quran geneva",
+      "female quran teacher switzerland",
+      "learn quran online switzerland",
+      "noorani qaida switzerland",
+      "islamic classes switzerland",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes Switzerland (Zurich, Geneva) — Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-to-1 online Quran classes in Switzerland for kids & adults: Noorani Qaida, Tajweed & Hifz in CET. Zurich & Geneva slots. Free 30-min trial, no card.",
+      heading: "Online Quran Classes in Switzerland",
+      introduction:
+        "Muslim families and expats in Zurich, Geneva, Basel, Lausanne and Bern can request live private one-to-one online Quran classes with English-speaking certified tutors in CET/CEST.",
+      localPlanning:
+        "Share preferred CET/CEST evening windows, school schedules, and tutor preferences. Exact recurring appointments confirmed after trial matching.",
+    },
+  },
+  {
+    slug: "online-quran-classes-oman",
+    country: "Oman",
+    flag: "🇴🇲",
+    weight: 2,
+    locale: "en-OM",
+    openGraphLocale: "en_OM",
+    languageStyle: "Natural English",
+    billingCurrency: { code: "OMR", name: "Omani rials" },
+    timezone: "GST (UTC+4)",
+    schedulingGuidance:
+      "Request evening or weekend slots in Gulf Standard Time (UTC+4). English-speaking tutors for international school pupils and female tutors on request.",
+    keywordClusters: [
+      "online quran classes oman",
+      "quran teacher oman",
+      "online quran muscat",
+      "female quran teacher oman",
+      "learn quran online oman",
+      "noorani qaida online oman",
+      "tajweed classes oman",
+    ],
+    content: {
+      metadataTitle: "Online Quran Classes in Oman (Muscat) — Free Trial | NoorPath",
+      metadataDescription:
+        "Live 1-on-1 online Quran classes for families and expats in Oman — GST evening slots for Muscat & beyond. Noorani Qaida to Hifz. Free 30-min trial.",
+      heading: "Online Quran Classes in Oman",
+      introduction:
+        "Families and international school expats across Oman — including Muscat, Salalah and Sohar — can request live one-to-one online Quran lessons in Gulf Standard Time (UTC+4).",
+      localPlanning:
+        "Share school finish times, prayer schedules, and preferred evening GST windows. Recurring slot confirmed after tutor matching.",
     },
   },
 ] as const;

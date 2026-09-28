@@ -18,6 +18,7 @@ import {
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import UkQuranClassesGuide from "@/components/UkQuranClassesGuide";
+import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
 import {
   BASE_URL,
   CONTACT,
@@ -680,6 +681,7 @@ export default function OnlineQuranClassesUkPage() {
 
       <section>
         <div className="max-w-[1200px] mx-auto px-4">
+          <AiDirectAnswerBox country="United Kingdom" timezone="GMT / BST" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="section-eyebrow">Built around UK family life</span>

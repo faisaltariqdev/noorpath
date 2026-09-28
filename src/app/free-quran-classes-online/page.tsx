@@ -490,6 +490,8 @@ export default function FreeQuranClassesPage() {
               ["/locations/online-quran-classes-canada", "Canada"],
               ["/locations/online-quran-classes-australia", "Australia"],
               ["/locations/online-quran-classes-singapore", "Singapore"],
+              ["/locations/online-quran-classes-hong-kong", "Hong Kong"],
+              ["/locations/online-quran-classes-spain", "Spain"],
               ["/locations/online-quran-classes-new-zealand", "New Zealand"],
             ].map(([href, label]) => (
               <Link

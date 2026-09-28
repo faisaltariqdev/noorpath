@@ -93,17 +93,6 @@ export default function ContactPage() {
             </p>
 
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", marginBottom: 12 }}>
-              Software and digital-service enquiries
-            </h2>
-            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 20 }}>
-              For custom software, websites, mobile applications, or an enterprise system, use the{" "}
-              <Link href="/software-services" style={{ color: "var(--emerald)", fontWeight: 600 }}>
-                software services
-              </Link>{" "}
-              page. Describe the product, who will use it, and the outcome you need.
-            </p>
-
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", marginBottom: 12 }}>
               Corrections and policy questions
             </h2>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 12 }}>

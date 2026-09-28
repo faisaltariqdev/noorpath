@@ -31,6 +31,12 @@ const countries = [
   "Denmark",
   "New Zealand",
   "Singapore",
+  "Spain",
+  "Hong Kong",
+  "Italy",
+  "Belgium",
+  "Switzerland",
+  "Oman",
   "Other",
 ];
 

@@ -243,34 +243,6 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
-    topic: "Custom software / websites / mobile applications",
-    summary:
-      "NoorPath offers software-house services: custom software, website development, mobile applications, and enterprise digital systems. Work is quoted after the brief. Online delivery only — no campus.",
-    primary: ["/software-services"],
-    supporting: ["/contact"],
-  },
-  {
-    topic: "Website design and development",
-    summary:
-      "NoorPath builds marketing, institutional, and product websites. Pages, forms, and the content model are confirmed in a written proposal. Online delivery only — no campus.",
-    primary: ["/software-services"],
-    supporting: ["/contact"],
-  },
-  {
-    topic: "Mobile application development / iOS / Android",
-    summary:
-      "NoorPath builds iOS and Android applications for customers or internal teams. Screens, accounts, and API connections are scoped before build work starts. Online delivery only — no campus.",
-    primary: ["/software-services"],
-    supporting: ["/contact"],
-  },
-  {
-    topic: "Enterprise software / admin dashboards",
-    summary:
-      "NoorPath builds admin panels, staff tools, and management dashboards so a business can assign access, review activity, and run operations from one place. Scope is confirmed in writing.",
-    primary: ["/software-services"],
-    supporting: ["/contact"],
-  },
-  {
     topic: "Islamic tools and calculators / free productivity suite",
     summary:
       "Free privacy-focused Islamic tools suite: Zakat Calculator with live Nisab, Quran Hifz & Completion Planner (Sabaq-Sabqi-Manzil), Hijri Date Converter with moon-sighting adjustments, Digital Tasbeeh Counter with haptic/audio feedback, and Islamic Inheritance (Miras) Calculator (Surah An-Nisa 4:11-12).",
@@ -570,6 +542,16 @@ export const PRIORITY_COUNTRIES = [
   { path: "/locations/online-quran-classes-norway", label: "Norway", note: "Norway CET/CEST and winter-daylight scheduling context." },
   { path: "/locations/online-quran-classes-finland", label: "Finland", note: "Finland EET/EEST scheduling context for Helsinki, Espoo & Vantaa families, female tutor options, dark winter afternoon flexibility, and bilingual English instruction." },
   { path: "/locations/online-quran-classes-denmark", label: "Denmark", note: "Denmark CET/CEST scheduling context for Copenhagen, Aarhus & Odense families, weekday evening & weekend class windows, female tutors, and folkeskole sports balance." },
+  { path: "/locations/online-quran-classes-spain", label: "Spain", note: "Spain CET/CEST scheduling context for Madrid, Barcelona & Valencia families — after-school windows, female tutor requests, and parent problem-solving for thin local classes (online only)." },
+  { path: "/locations/online-quran-classes-hong-kong", label: "Hong Kong", note: "Hong Kong HKT (UTC+8) scheduling context for families and expats — school/activity calendars, female tutors, USD/HKD budgeting (online only)." },
+  { path: "/locations/online-quran-classes-italy", label: "Italy", note: "Italy CET/CEST scheduling context for Rome, Milan, Turin & Florence families — after-school windows, female tutor requests (online only)." },
+  { path: "/locations/online-quran-classes-belgium", label: "Belgium", note: "Belgium CET/CEST scheduling context for Brussels, Antwerp & Ghent families — Wednesday afternoon & weekend windows (online only)." },
+  { path: "/locations/online-quran-classes-switzerland", label: "Switzerland", note: "Switzerland CET/CEST scheduling context for Zurich, Geneva & Basel families — flexible multilingual tutoring (online only)." },
+  { path: "/locations/online-quran-classes-oman", label: "Oman", note: "Oman GST (UTC+4) scheduling context for Muscat, Salalah & expat families — year-round fixed local timings (online only)." },
+  { path: "/locations/online-quran-classes-south-africa", label: "South Africa", note: "South Africa SAST scheduling context for Johannesburg, Cape Town & Durban families (online only)." },
+  { path: "/locations/online-quran-classes-indonesia", label: "Indonesia", note: "Indonesia WIB scheduling context for Jakarta, Surabaya & Bandung families (online only)." },
+  { path: "/locations/online-quran-classes-turkey", label: "Turkey", note: "Turkey TRT (UTC+3) scheduling context for Istanbul & Ankara diaspora families (online only)." },
+  { path: "/locations/online-quran-classes-bangladesh", label: "Bangladesh", note: "Bangladesh BST (UTC+6) scheduling context for Dhaka & Chittagong families (online only)." },
 ];
 
 /**
@@ -621,11 +603,6 @@ export const CORE_SERVICES = [
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
 ];
 
-/** Software-house service owner — keep out of CORE_SERVICES so AI maps do not bury it under Quran classes. */
-export const DIGITAL_SERVICES = [
-  { path: "/software-services", label: "Software & Digital Services", note: "Custom software, websites, mobile applications, and enterprise systems. Scoped in writing. Quoted after the brief." },
-];
-
 /** Course / subject owners (canonical destinations after redirects) */
 export const COURSES = [
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
@@ -668,7 +645,6 @@ export const ABOUT_TRUST = [
   { path: "/islamic-resources", label: "Islamic Resources" },
   { path: "/tools", label: "Islamic Tools" },
   { path: "/holy-quran", label: "Holy Quran Reader" },
-  { path: "/software-services", label: "Software Services" },
 ];
 
 /**
@@ -849,7 +825,6 @@ export function abs(path) {
 export function allCatalogPaths() {
   const paths = new Set(["/"]);
   for (const x of CORE_SERVICES) paths.add(x.path);
-  for (const x of DIGITAL_SERVICES) paths.add(x.path);
   for (const x of COURSES) paths.add(x.path);
   for (const x of ABOUT_TRUST) paths.add(x.path);
   for (const x of PRIORITY_COUNTRIES) paths.add(x.path);

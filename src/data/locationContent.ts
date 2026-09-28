@@ -412,6 +412,70 @@ const EXTRA_LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       a: "Many families request after-school or evening TRT slots, with weekend options. Exact recurring times are confirmed after tutor matching.",
     },
   ],
+  "online-quran-classes-spain": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in Spain?",
+      a: "Yes. Families in Madrid, Barcelona, Valencia, Seville, Málaga and elsewhere can request live one-to-one online Quran and Noorani Qaida lessons with CET/CEST after-school windows. NoorPath teaches online only (not a Spanish campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "Do you offer Quran classes in Madrid or Barcelona online?",
+      a: "Yes. Madrid and Barcelona families can request live one-to-one online Quran classes with CET/CEST matching. Share preferred weekdays when booking; tutor availability is confirmed after matching. NoorPath does not operate a Madrid or Barcelona campus.",
+    },
+    {
+      q: "Can I request a female Quran teacher in Spain?",
+      a: "Yes. State a female tutor preference when booking — common for daughters and adult sisters. Female-tutor and CET/CEST availability are confirmed after matching. See the female tutor request page for how preferences are handled.",
+    },
+    {
+      q: "What times work for after-school Quran classes in Spain?",
+      a: "Many families request late-afternoon or early-evening weekday slots in CET or CEST, with weekend mornings as an alternative when clubs fill weeknights. Exact recurring times are confirmed after tutor matching.",
+    },
+    {
+      q: "How do CET and CEST clock changes affect a recurring lesson?",
+      a: "Ask for the recurring slot to be recorded in Spanish local time so the hour on your clock stays the same when Spain moves between CET and CEST. Confirm what happens on the last Sunday in March and the last Sunday in October.",
+    },
+    {
+      q: "My child studies in Spanish at school. Can they still learn Quran online?",
+      a: "Yes. You can request English or Arabic instruction when booking so explanations match what the child understands. Language and tutor availability are confirmed after your request. Placement still follows reading ability, not school language alone.",
+    },
+    {
+      q: "What if there is no mosque class near us in Spain?",
+      a: "When a nearby mosque or weekend class is not available, live online 1-to-1 tutoring can provide regular listening and correction from home. Request a tutor matched to the learner’s level and CET/CEST window; availability is confirmed after your request. Keep young learners in a family space.",
+    },
+    {
+      q: "How should Spanish families budget USD fees in euros (€)?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to euros (€) for household planning using your bank’s rate; NoorPath does not publish a fixed EUR price list. ${getCurrencyNote("online-quran-classes-spain")}`,
+    },
+  ],
+  "online-quran-classes-hong-kong": [
+    {
+      q: "Are online Quran classes suitable for Muslim families in Hong Kong?",
+      a: "Yes. Families and expats across Hong Kong Island, Kowloon and the New Territories can request live one-to-one online Quran and Noorani Qaida lessons with HKT scheduling. NoorPath teaches online only (not a Hong Kong campus). Suitability is confirmed through a free trial and tutor matching.",
+    },
+    {
+      q: "What HKT times work around Hong Kong school and activities?",
+      a: "Many families request weekday evenings after school or weekend mornings in HKT. HKT (UTC+8) does not observe daylight saving, so a recurring slot stays fixed on your clock. Exact availability is confirmed after tutor matching.",
+    },
+    {
+      q: "Can we request a female Quran teacher in Hong Kong?",
+      a: "Yes. State a female tutor preference when booking. Female-tutor and HKT availability are confirmed after matching. Offering a second time window often speeds placement.",
+    },
+    {
+      q: "Can children who study in English at international schools learn with English-speaking Quran teachers?",
+      a: "Yes. You can note an English-instruction preference when booking — useful for international-school and expat households. Language and tutor availability are confirmed after your request.",
+    },
+    {
+      q: "Can beginners in Hong Kong start Noorani Qaida online?",
+      a: "Yes. Complete beginners typically start with Noorani Qaida before moving to Quran reading or Tajweed by assessment. Families can also use the free Interactive Noorani Qaida hub for recognition practice between live lessons.",
+    },
+    {
+      q: "What does “Quran classes near me” mean if NoorPath is online-only in Hong Kong?",
+      a: "It means live video lessons at home in HKT — not a drop-off centre or home visit. NoorPath has no Hong Kong premises. If you need an in-person teacher, use a local mosque or community class; many families combine both.",
+    },
+    {
+      q: "How should Hong Kong families budget USD fees in HKD?",
+      a: `Plans are published and charged in USD (for example the ${starterPlan.name} plan at $${starterPlan.monthlyPriceUsd} USD). Convert to HKD for household planning using your bank’s rate; NoorPath does not publish a fixed HKD price list. ${getCurrencyNote("online-quran-classes-hong-kong")}`,
+    },
+  ],
   "online-quran-classes-nigeria": [
     {
       q: "Are online Quran classes suitable for Nigerian Muslim families?",

@@ -4,8 +4,8 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import InteractiveNooraniQaidaSection from "@/components/home/InteractiveNooraniQaidaSection";
 import HolyQuranPublicSection from "@/components/home/HolyQuranPublicSection";
-import SoftwareServicesSection from "@/components/home/SoftwareServicesSection";
 import ParentPortalSection from "@/components/home/ParentPortalSection";
+import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
 import {
   featuredTrustpilotReviews,
   getTrustpilotAggregateFromReviews,
@@ -391,7 +391,6 @@ export default function HomePage() {
       {/* ── INTERACTIVE NOORANI QAIDA (SEO hub section) ── */}
       <InteractiveNooraniQaidaSection />
       <HolyQuranPublicSection />
-      <SoftwareServicesSection />
 
       {/* ── PARENT PORTAL ── */}
       <ParentPortalSection />
@@ -399,6 +398,7 @@ export default function HomePage() {
       {/* ── WHY NOORPATH ── */}
       <section id="why" style={{ background: "var(--ivory)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
+          <AiDirectAnswerBox country="Worldwide" timezone="Your Local Timezone" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="section-eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><CheckCircle size={13} /> Why Choose Us</span>

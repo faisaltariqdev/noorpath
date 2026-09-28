@@ -39,6 +39,21 @@ const PRIORITY_COUNTRIES = [
   "France",
   "Netherlands",
   "Sweden",
+  "Spain",
+  "Hong Kong",
+  "South Africa",
+  "Singapore",
+  "Indonesia",
+  "Turkey",
+  "Malaysia",
+  "Pakistan",
+  "Bangladesh",
+  "India",
+  "Nigeria",
+  "Italy",
+  "Belgium",
+  "Switzerland",
+  "Oman",
 ] as const;
 
 export function getOrganizationJsonLd() {
@@ -92,10 +107,6 @@ export function getOrganizationJsonLd() {
           "Quran classes for reverts and new Muslims",
           "Quran lessons for children with ADHD, autism or anxiety",
           "Flexible-timing one-to-one Quran lessons across timezones",
-          "Custom software development",
-          "Website development",
-          "Mobile application development",
-          "Enterprise digital solutions",
         ],
         areaServed: PRIORITY_COUNTRIES.map((name) => ({
           "@type": "Country",
@@ -229,58 +240,11 @@ export function getOrganizationJsonLd() {
               },
             },
           ],
-          },
-          {
-            "@type": "OfferCatalog",
-            name: "Software & Digital Services",
-            url: `${BASE_URL}/software-services`,
-            itemListElement: [
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Custom software development",
-                  description: "Purpose-built web and backend systems scoped in writing.",
-                  provider: { "@id": ORGANIZATION_ID },
-                  url: `${BASE_URL}/software-services`,
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Website design and development",
-                  description: "Marketing, institutional, and product websites scoped in writing.",
-                  provider: { "@id": ORGANIZATION_ID },
-                  url: `${BASE_URL}/software-services`,
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Mobile application development",
-                  description: "iOS and Android applications scoped in writing.",
-                  provider: { "@id": ORGANIZATION_ID },
-                  url: `${BASE_URL}/software-services`,
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Enterprise systems and dashboards",
-                  description: "Admin panels, staff tools, and management dashboards scoped in writing.",
-                  provider: { "@id": ORGANIZATION_ID },
-                  url: `${BASE_URL}/software-services`,
-                },
-              },
-            ],
-          },
-        ],
-      },
-      {
-        "@type": "WebSite",
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
         "@id": WEBSITE_ID,
         url: BASE_URL,
         // Prefer "NoorPath Academy" over bare "NoorPath" to reduce collision with
@@ -333,11 +297,6 @@ export function getOrganizationJsonLd() {
             "@type": "WebPage",
             name: "Contact",
             url: `${BASE_URL}/contact`,
-          },
-          {
-            "@type": "WebPage",
-            name: "Software Services",
-            url: `${BASE_URL}/software-services`,
           },
           {
             "@type": "WebPage",

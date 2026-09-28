@@ -389,6 +389,8 @@ export default function FemaleQuranTeacherPage() {
               { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Share your Canadian timezone" },
               { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "Share your Australian timezone" },
               { href: "/locations/online-quran-classes-singapore", label: "🇸🇬 Singapore", note: "SGT evenings & CCA windows" },
+              { href: "/locations/online-quran-classes-hong-kong", label: "🇭🇰 Hong Kong", note: "HKT evenings & weekend windows" },
+              { href: "/locations/online-quran-classes-spain", label: "🇪🇸 Spain", note: "CET/CEST — Madrid & Barcelona" },
               { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST/NZDT kids matching" },
               { href: "/free-quran-classes-online", label: "🎁 Free trial", note: "30-min live class, no card" },
             ].map((l) => (

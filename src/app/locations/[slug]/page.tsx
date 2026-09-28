@@ -23,6 +23,7 @@ import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
+import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -493,6 +494,9 @@ export default async function LocationDetailPage({ params }: Props) {
 
             {/* Main content */}
             <div className="lg:col-span-2">
+
+              {/* AI Search & Parent Fact Summary Box */}
+              <AiDirectAnswerBox country={loc.country} timezone={loc.timezone} />
 
               {/* About */}
               <div className="content-card" style={{ marginBottom: 28 }}>

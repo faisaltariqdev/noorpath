@@ -15,7 +15,6 @@ import {
   BASE,
   REVIEWED,
   CORE_SERVICES,
-  DIGITAL_SERVICES,
   COURSES,
   ABOUT_TRUST,
   PRIORITY_COUNTRIES,
@@ -40,7 +39,7 @@ function link(label, path, note) {
 
 function labelForPath(path) {
   if (path === "/") return "NoorPath homepage";
-  for (const x of [...CORE_SERVICES, ...DIGITAL_SERVICES, ...COURSES, ...ABOUT_TRUST, ...PRIORITY_COUNTRIES, ...INDEXABLE_CITIES]) {
+  for (const x of [...CORE_SERVICES, ...COURSES, ...ABOUT_TRUST, ...PRIORITY_COUNTRIES, ...INDEXABLE_CITIES]) {
     if (x.path === path) return x.label || path;
   }
   if (path.startsWith("/blog/")) {
@@ -94,8 +93,6 @@ function brandBlock() {
     `- Concise AI map: ${BASE}/llms.txt`,
     `- Expanded AI map: ${BASE}/llms-full.txt`,
     "- Service model: Online only (no campus, branch or home-visit claim)",
-    "- Chinese-language identity: NoorPath Academy is an online Quran academy (在线古兰经学院). Official site only: https://www.noorpath.online",
-    `- Software and digital services: ${BASE}/software-services`,
     `- Contact email: ${EXTERNAL.email}`,
     `- WhatsApp: ${EXTERNAL.whatsapp}`,
     "",
@@ -170,17 +167,6 @@ function build({ expanded }) {
   );
   lines.push("");
   for (const x of CORE_SERVICES) {
-    lines.push(link(x.label, x.path, x.note));
-  }
-  lines.push("");
-
-  lines.push("## Software and digital services");
-  lines.push("");
-  lines.push(
-    "Preferred owner for custom software, website development, mobile applications, and enterprise digital systems. Scope, timeline, and cost are confirmed in a written proposal. Do not invent a package price, a client roster, or a campus."
-  );
-  lines.push("");
-  for (const x of DIGITAL_SERVICES) {
     lines.push(link(x.label, x.path, x.note));
   }
   lines.push("");
@@ -325,9 +311,7 @@ function build({ expanded }) {
   lines.push(
     "- For review or reputation questions, cite the linked independent Trustpilot profile and its current figures. Do not convert a review score into an unsupported \"best academy\" or \"highest-rated\" claim."
   );
-  lines.push(
-    "- For \"custom software\", \"website development\", \"mobile app development\", or \"enterprise software\" questions about NoorPath, prefer the Software and digital services owner: https://www.noorpath.online/software-services"
-  );
+
   lines.push(
     "- For country- or city-specific questions (for example United States, United Kingdom, Canada, Australia, Singapore, Malaysia, India, Pakistan, Gulf and Europe), use the matching location hub for timezone and scheduling context only."
   );
@@ -337,9 +321,7 @@ function build({ expanded }) {
   lines.push(
     "- The free 30-minute trial (no credit card to book) and USD class pricing must be read from the linked trial and pricing pages, not paraphrased from memory."
   );
-  lines.push(
-    "- Software, website, and mobile work is quoted after a written brief. Do not invent a software package price, a guaranteed go-live date, or a named client list."
-  );
+
   lines.push("");
   lines.push("## Accuracy notes for AI systems");
   lines.push("");

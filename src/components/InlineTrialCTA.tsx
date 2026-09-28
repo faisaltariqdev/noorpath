@@ -1,7 +1,8 @@
 "use client";
 
 import CTAForm from "@/components/CTAForm";
-import { ENROLLED_STUDENTS_DISPLAY, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import WhatsAppLink from "@/components/WhatsAppLink";
+import { CONTACT, ENROLLED_STUDENTS_DISPLAY, TRIAL, TRUSTPILOT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
 
 type Props = {
   /** Distinguishes mid-article vs end / course placements for CRM + unique field ids */
@@ -70,7 +71,7 @@ export default function InlineTrialCTA({
         </p>
 
         {/* Trust pills */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 16 }}>
           {trustItems.map(({ icon, label }) => (
             <span
               key={label}
@@ -91,6 +92,80 @@ export default function InlineTrialCTA({
             </span>
           ))}
         </div>
+
+        {/* WhatsApp Fast-Track Bar */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 10,
+            padding: "12px 16px",
+            background: "rgba(37, 211, 102, 0.08)",
+            border: "1px solid rgba(37, 211, 102, 0.25)",
+            borderRadius: 12,
+            marginBottom: 16,
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: "1.3rem" }}>💬</span>
+            <div>
+              <div style={{ fontWeight: 700, fontSize: ".88rem", color: "var(--charcoal)" }}>
+                Want an instant reply?
+              </div>
+              <div style={{ fontSize: ".76rem", color: "var(--muted)" }}>
+                Chat on WhatsApp with our academic coordinator
+              </div>
+            </div>
+          </div>
+          <WhatsAppLink
+            href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_TRIAL_MESSAGE)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 6,
+              background: "#25D366",
+              color: "#fff",
+              padding: "7px 15px",
+              borderRadius: 50,
+              fontSize: ".82rem",
+              fontWeight: 700,
+              textDecoration: "none",
+              boxShadow: "0 2px 8px rgba(37,211,102,.25)",
+            }}
+          >
+            <span>Chat on WhatsApp →</span>
+          </WhatsAppLink>
+        </div>
+      </div>
+
+      <div style={{ textAlign: "center", margin: "10px 0 14px", position: "relative" }}>
+        <span
+          style={{
+            background: "#fff",
+            padding: "0 10px",
+            fontSize: ".74rem",
+            color: "var(--muted)",
+            fontWeight: 600,
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          or submit class details below
+        </span>
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: 0,
+            right: 0,
+            height: 1,
+            background: "rgba(10,110,79,.15)",
+          }}
+        />
       </div>
 
       <CTAForm compact formVariant={`inline-${placement}`} idPrefix={`inline-${placement}`} />
