@@ -125,46 +125,40 @@ export function useTrialFormSubmit(options: Options = {}) {
 
         if (!leadRes.ok || !leadData?.ok) {
           setStatus("error");
-          setMsg("Could not save your request. Please WhatsApp us.");
+          setMsg("Could not save your request right now. Please message us directly on WhatsApp.");
           return;
         }
 
-        let mailOk = leadData.email_delivery === "sent";
-        if (!mailOk && leadData.formsubmit_fallback_required) {
-          // Temporary fallback until the owned transactional email provider is configured.
-          const mailFd = new FormData();
-          mailFd.set("name", name);
-          mailFd.set("email", email || "leads+whatsapp@noorpath.online");
-          mailFd.set("phone", phone || (email ? "Contact via email" : ""));
-          mailFd.set("contact", contactRaw);
-          mailFd.set("country", country);
-          mailFd.set("learner_type", learnerType);
-          mailFd.set("child_name", childName);
-          mailFd.set("child_age", childAge);
-          mailFd.set("preferred_class_time", preferredTime || "Not specified");
-          mailFd.set("tutor_preference", tutorPreference || "Not specified");
-          mailFd.set("course", course);
-          mailFd.set("source_page", sourcePage);
-          mailFd.set("referrer", referrer);
-          mailFd.set("form_variant", formVariant);
-          mailFd.set("_template", "table");
-          mailFd.set("_captcha", "false");
-          mailFd.set("_honey", String(fd.get("_honey") || ""));
+        // Attempt secondary client-side email fallback if server indicated email provider was unconfigured
+        if (leadData.email_delivery !== "sent" && leadData.formsubmit_fallback_required) {
+          try {
+            const mailFd = new FormData();
+            mailFd.set("name", name);
+            mailFd.set("email", email || "leads+whatsapp@noorpath.online");
+            mailFd.set("phone", phone || (email ? "Contact via email" : ""));
+            mailFd.set("contact", contactRaw);
+            mailFd.set("country", country);
+            mailFd.set("learner_type", learnerType);
+            mailFd.set("child_name", childName);
+            mailFd.set("child_age", childAge);
+            mailFd.set("preferred_class_time", preferredTime || "Not specified");
+            mailFd.set("tutor_preference", tutorPreference || "Not specified");
+            mailFd.set("course", course);
+            mailFd.set("source_page", sourcePage);
+            mailFd.set("referrer", referrer);
+            mailFd.set("form_variant", formVariant);
+            mailFd.set("_template", "table");
+            mailFd.set("_captcha", "false");
+            mailFd.set("_honey", String(fd.get("_honey") || ""));
 
-          const mailRes = await fetch(FORMSUBMIT, {
-            method: "POST",
-            body: mailFd,
-            headers: { Accept: "application/json" },
-          });
-          const mailData = (await mailRes.json().catch(() => null)) as
-            | { success?: boolean | string }
-            | null;
-          mailOk = mailData?.success === true || mailData?.success === "true";
-        }
-        if (!mailOk) {
-          setStatus("error");
-          setMsg("Could not send the email. Please WhatsApp us.");
-          return;
+            fetch(FORMSUBMIT, {
+              method: "POST",
+              body: mailFd,
+              headers: { Accept: "application/json" },
+            }).catch(() => null);
+          } catch {
+            // Ignore secondary fallback errors — lead is already saved server-side
+          }
         }
 
         const nameParts = name.split(/\s+/);
@@ -187,8 +181,15 @@ export function useTrialFormSubmit(options: Options = {}) {
         setStatus("success");
         setMsg("JazakAllah Khair! Your trial request has been received. We'll confirm your tutor and class time via WhatsApp or email shortly — usually within 24 hours. BarakAllahu Feekum!");
         form.reset();
-        await new Promise((r) => setTimeout(r, hasAnalyticsConsent() ? 1800 : 1500));
-        window.location.href = "/thank-you?submitted=1";
+        await new Promise((r) => setTimeout(r, hasAnalyticsConsent() ? 1200 : 800));
+
+        const targetUrl = new URL("/thank-you", window.location.origin);
+        targetUrl.searchParams.set("submitted", "1");
+        targetUrl.searchParams.set("name", name);
+        targetUrl.searchParams.set("child", childName);
+        targetUrl.searchParams.set("course", course);
+        targetUrl.searchParams.set("country", country);
+        window.location.href = targetUrl.toString();
       } catch {
         setStatus("error");
         setMsg("Network error. Please WhatsApp us directly.");

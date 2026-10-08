@@ -48,6 +48,7 @@ const company = [
 ];
 
 const quickLinks = [
+  { href: "/holy-quran", label: "📖 Holy Quran (114 Surahs & 30 Paras)" },
   { href: "/holy-quran/para/1", label: "📖 Holy Quran Reader" },
   { href: "/holy-quran/surah/ya-sin", label: "📖 Surah Yaseen" },
   { href: "/tools", label: "🧮 Islamic Tools & Calculators" },

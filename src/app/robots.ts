@@ -37,7 +37,9 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "YouBot", allow: "/" },
       { userAgent: "Cohere-ai", allow: "/" },
       { userAgent: "Amazonbot", allow: "/" },
-      // Regional AI Retrieval Engines
+      // Regional & Specialised AI Retrieval Engines
+      { userAgent: "GrokBot", allow: "/" },
+      { userAgent: "xAI", allow: "/" },
       { userAgent: "DeepSeekBot", allow: "/" },
       { userAgent: "DeepSeek-R1", allow: "/" },
       { userAgent: "KimiBot", allow: "/" },

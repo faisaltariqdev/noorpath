@@ -11,7 +11,8 @@
 
 .hq-hero,
 .hq-reader-page {
-  padding: 132px 0 36px;
+  padding: 100px 0 36px;
+  width: 100%;
 }
 
 .hq-kicker {
@@ -27,13 +28,13 @@
 .hq-reader-head h1 {
   margin: 0 0 12px;
   font-family: var(--font-playfair), Georgia, serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   line-height: 1.2;
   color: #0f3d2c;
 }
 
 .hq-lead {
-  max-width: 720px;
+  max-width: 1000px;
   margin: 0 0 18px;
   font-size: 1.05rem;
   line-height: 1.7;
@@ -397,9 +398,26 @@
 }
 
 @media (max-width: 860px) {
+  .hq-hero,
+  .hq-reader-page {
+    padding: 85px 0 28px;
+  }
+
   .hq-live-tools {
-    padding-bottom: 16px;
-    margin-bottom: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+  }
+
+  .hq-para-strip {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+  }
+
+  .hq-para-strip a {
+    flex-shrink: 0;
   }
 
   .hq-live-reader.is-compact {
@@ -426,5 +444,31 @@
     padding: 10px 0 calc(10px + env(safe-area-inset-bottom, 0px));
     background: var(--ivory, #f7f2e8);
     border-top: 1px solid var(--hq-line);
+  }
+}
+
+@media (max-width: 640px) {
+  .hq-ayahs {
+    padding: 20px 14px 24px;
+    border-radius: 18px;
+  }
+
+  .hq-mushaf {
+    font-size: 1.35rem;
+    line-height: 2.2;
+    text-align: right;
+  }
+
+  .hq-mushaf-wrap {
+    padding-bottom: 16px;
+  }
+
+  .hq-ayah-text {
+    font-size: 1.35rem;
+    line-height: 2;
+  }
+
+  .hq-card {
+    padding: 12px 14px;
   }
 }

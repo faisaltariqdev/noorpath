@@ -6,6 +6,9 @@ import InteractiveNooraniQaidaSection from "@/components/home/InteractiveNoorani
 import HolyQuranPublicSection from "@/components/home/HolyQuranPublicSection";
 import ParentPortalSection from "@/components/home/ParentPortalSection";
 import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
+import MadrasahVsOnlineComparison from "@/components/MadrasahVsOnlineComparison";
+import TripleGuaranteeBadge from "@/components/TripleGuaranteeBadge";
+import FreeResourceLeadMagnet from "@/components/FreeResourceLeadMagnet";
 import {
   featuredTrustpilotReviews,
   getTrustpilotAggregateFromReviews,
@@ -596,6 +599,17 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── MADRASAH VS ONLINE COMPARISON ── */}
+      <MadrasahVsOnlineComparison />
+
+      {/* ── TRIPLE GUARANTEE ── */}
+      <div className="max-w-[1200px] mx-auto px-4">
+        <TripleGuaranteeBadge />
+      </div>
+
+      {/* ── FREE LEAD MAGNET DOWNLOAD ── */}
+      <FreeResourceLeadMagnet />
 
       {/* ── CTA ── */}
       <section className="cta-section" id="cta">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, GraduationCap } from "lucide-react";
 import HolyQuranSearch from "@/components/holy-quran/HolyQuranSearch";
+import QuranCountryStudentCTA from "@/components/holy-quran/QuranCountryStudentCTA";
 import { QaidaBreadcrumbs } from "@/components/noorani-qaida/QaidaSeoComponents";
 import {
   HOLY_QURAN_BASE_URL,
@@ -132,7 +133,7 @@ export default function HolyQuranHubPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
       <header className="hq-hero">
-        <div className="max-w-[1100px] mx-auto px-4">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <QaidaBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Holy Quran" }]} />
           <p className="hq-kicker">Free public reader · No login</p>
           <h1>Read the Holy Quran online</h1>
@@ -166,7 +167,7 @@ export default function HolyQuranHubPage() {
         </div>
       </header>
 
-      <div className="max-w-[1100px] mx-auto px-4">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <section className="hq-section" aria-labelledby="surahs-heading">
           <h2 id="surahs-heading">All 114 Surahs</h2>
           <div className="hq-grid">
@@ -200,6 +201,12 @@ export default function HolyQuranHubPage() {
             ))}
           </div>
         </section>
+
+        {/* High-Converting Country & City Student Recruitment Section */}
+        <QuranCountryStudentCTA
+          title="Master Holy Quran Recitation Online with Certified Live Teachers"
+          contextName="Holy Quran Reader"
+        />
 
         <section className="hq-section hq-faq" aria-labelledby="hq-faq-heading">
           <h2 id="hq-faq-heading">Frequently asked questions</h2>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import HolyQuranFaqs from "@/components/holy-quran/HolyQuranFaqs";
 import HolyQuranPublicReader from "@/components/holy-quran/HolyQuranPublicReader";
+import QuranCountryStudentCTA from "@/components/holy-quran/QuranCountryStudentCTA";
 import { QaidaBreadcrumbs } from "@/components/noorani-qaida/QaidaSeoComponents";
 import {
   HOLY_QURAN_BASE_URL,
@@ -109,7 +110,7 @@ export default async function HolyQuranParaPage({ params }: Props) {
   return (
     <div className="hq-reader-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
-      <div className="max-w-[860px] mx-auto px-4">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="hq-reader-toolbar">
           <div>
             <QaidaBreadcrumbs
@@ -154,6 +155,13 @@ export default async function HolyQuranParaPage({ params }: Props) {
           {" · "}
           <Link href="/tools/hifz-calculator">Hifz planner</Link>
         </p>
+
+        {/* High-Converting Country & City Student Recruitment Block */}
+        <QuranCountryStudentCTA
+          title={`Learn Para ${para.number} (${para.name}) Recitation Live 1-on-1`}
+          contextName={`Para ${para.number} (${para.name})`}
+        />
+
         <HolyQuranFaqs faqs={faqs} />
       </div>
     </div>

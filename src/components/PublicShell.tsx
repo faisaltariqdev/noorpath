@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WhatsAppFloat from "./WhatsAppFloat";
+import MobileStickyActionBar from "./MobileStickyActionBar";
 import TrackingConsent from "./TrackingConsent";
 import OrganizationJsonLd from "./OrganizationJsonLd";
 
@@ -13,6 +14,7 @@ export default function PublicShell({ children }: { children: React.ReactNode })
       <main id="main-content" style={{ paddingTop: 0 }}>{children}</main>
       <Footer />
       <WhatsAppFloat />
+      <MobileStickyActionBar />
       <TrackingConsent />
     </>
   );

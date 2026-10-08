@@ -7,10 +7,11 @@ import { TRIAL } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 
-/* Primary nav — brand SERP sitelink hubs (Classes, Courses, Trial, Pricing, Blog) */
+/* Primary nav — brand SERP sitelink hubs (Classes, Courses, Holy Quran, Trial, Pricing, Blog) */
 const primaryLinks = [
   { href: "/online-quran-classes", label: "Online Classes" },
   { href: "/courses", label: "Courses" },
+  { href: "/holy-quran", label: "Holy Quran" },
   { href: "/free-quran-classes-online", label: "Free Trial" },
   { href: "/pricing", label: "Pricing" },
   { href: "/blog", label: "Blog" },

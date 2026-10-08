@@ -3,6 +3,9 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import OnlineQuranClassesGuide from "@/components/OnlineQuranClassesGuide";
 import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
+import MadrasahVsOnlineComparison from "@/components/MadrasahVsOnlineComparison";
+import TripleGuaranteeBadge from "@/components/TripleGuaranteeBadge";
+import FreeResourceLeadMagnet from "@/components/FreeResourceLeadMagnet";
 import { BASE_URL, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCountryHubHreflang, PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
@@ -260,6 +263,17 @@ export default function OnlineQuranClassesPage() {
           </aside>
         </div>
       </section>
+
+      {/* Madrasah vs Online Comparison */}
+      <MadrasahVsOnlineComparison />
+
+      {/* Triple Peace-of-Mind Guarantee */}
+      <div className="max-w-[1200px] mx-auto px-4">
+        <TripleGuaranteeBadge />
+      </div>
+
+      {/* Free Lead Magnet for Undecided Parents */}
+      <FreeResourceLeadMagnet />
 
       {/* CTA */}
       <section className="cta-section" id="cta">

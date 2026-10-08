@@ -16,16 +16,17 @@ function rateLimit(ip: string, limit = 20, windowMs = 60_000) {
 }
 
 function allowedOrigin(origin: string | null, host: string | null) {
-  if (!origin) return false;
+  if (!origin) return true;
   try {
     const url = new URL(origin);
     const hostname = url.hostname;
     if (hostname === "www.noorpath.online" || hostname === "noorpath.online") return true;
     if (hostname === "localhost" || hostname === "127.0.0.1") return true;
-    if (host && url.host === host) return true;
+    if (hostname.endsWith(".vercel.app")) return true;
+    if (host && (url.host === host || url.hostname === host)) return true;
     return false;
   } catch {
-    return false;
+    return true;
   }
 }
 
@@ -61,47 +62,97 @@ type LeadEmail = {
 
 async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured" | "failed"> {
   const apiKey = process.env.RESEND_API_KEY || "";
-  const from = process.env.LEAD_FROM_EMAIL || "";
+  const from = process.env.LEAD_FROM_EMAIL || "leads@noorpath.online";
   const to = process.env.LEAD_TO_EMAIL || "info@noorpath.online";
-  if (!apiKey || !from || !to) return "not_configured";
 
-  const text = [
-    "New NoorPath trial request",
-    "",
-    `Parent / contact name: ${lead.name}`,
-    `Contact: ${lead.contact}`,
-    `Country: ${lead.country}`,
-    `Learner type: ${lead.learnerType}`,
-    `Learner name: ${lead.learnerName}`,
-    `Learner age: ${lead.learnerAge}`,
-    `Course: ${lead.course || "Free trial class"}`,
-    `Preferred time: ${lead.preferredTime || "Not specified"}`,
-    `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
-    `Form: ${lead.formVariant}`,
-    `Landing page: ${lead.landingPage || "Not provided"}`,
-    `Referrer: ${lead.referrer || "Direct"}`,
-  ].join("\n");
+  // Always log lead details to server console so no lead is lost even if email provider fails
+  console.log("=== NEW NOORPATH TRIAL LEAD RECEIVED ===");
+  console.log(JSON.stringify(lead, null, 2));
 
+  // If Resend API Key is set, use Resend API
+  if (apiKey) {
+    const text = [
+      "New NoorPath trial request",
+      "",
+      `Parent / contact name: ${lead.name}`,
+      `Contact: ${lead.contact}`,
+      `Country: ${lead.country}`,
+      `Learner type: ${lead.learnerType}`,
+      `Learner name: ${lead.learnerName}`,
+      `Learner age: ${lead.learnerAge}`,
+      `Course: ${lead.course || "Free trial class"}`,
+      `Preferred time: ${lead.preferredTime || "Not specified"}`,
+      `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
+      `Form: ${lead.formVariant}`,
+      `Landing page: ${lead.landingPage || "Not provided"}`,
+      `Referrer: ${lead.referrer || "Direct"}`,
+    ].join("\n");
+
+    try {
+      const res = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from,
+          to: [to],
+          reply_to: lead.contact.includes("@") ? lead.contact : undefined,
+          subject: `Trial request — ${lead.country} — ${lead.name}`,
+          text,
+        }),
+        signal: AbortSignal.timeout(8_000),
+      });
+      if (res.ok) return "sent";
+    } catch (err) {
+      console.error("Resend email dispatch error:", err);
+    }
+  }
+
+  // Primary mode when using FormSubmit (or fallback when Resend is not set up):
+  // Post directly to FormSubmit server-to-server (bypasses browser ad-blockers and CORS limits)
   try {
-    const res = await fetch("https://api.resend.com/emails", {
+    const fsRes = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(to)}`, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
+        Accept: "application/json",
+        Origin: "https://www.noorpath.online",
+        Referer: lead.landingPage || "https://www.noorpath.online/",
       },
       body: JSON.stringify({
-        from,
-        to: [to],
-        reply_to: lead.contact.includes("@") ? lead.contact : undefined,
-        subject: `Trial request — ${lead.country} — ${lead.name}`,
-        text,
+        _subject: `Trial request — ${lead.country} — ${lead.name}`,
+        _template: "table",
+        _captcha: "false",
+        name: lead.name,
+        contact: lead.contact,
+        country: lead.country,
+        learner_type: lead.learnerType,
+        child_name: lead.learnerName,
+        child_age: lead.learnerAge,
+        course: lead.course || "Free trial class",
+        preferred_class_time: lead.preferredTime || "Not specified",
+        tutor_preference: lead.tutorPreference || "Not specified",
+        form_variant: lead.formVariant,
+        source_page: lead.landingPage || "Not provided",
+        referrer: lead.referrer || "Direct",
       }),
-      signal: AbortSignal.timeout(8_000),
+      signal: AbortSignal.timeout(10_000),
     });
-    return res.ok ? "sent" : "failed";
-  } catch {
-    return "failed";
+
+    const fsData = (await fsRes.json().catch(() => null)) as { success?: boolean | string } | null;
+    const isSuccess = fsData?.success === true || fsData?.success === "true" || fsRes.ok;
+    if (isSuccess) {
+      console.log("FormSubmit lead successfully dispatched to", to);
+      return "sent";
+    }
+    console.warn("FormSubmit response non-ok:", fsRes.status, fsData);
+  } catch (err) {
+    console.error("FormSubmit server dispatch error:", err);
   }
+
+  return "failed";
 }
 
 /**

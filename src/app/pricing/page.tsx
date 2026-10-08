@@ -3,6 +3,9 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 import CTAForm from "@/components/CTAForm";
 import TrustPolicyStrip from "@/components/TrustPolicyStrip";
+import TripleGuaranteeBadge from "@/components/TripleGuaranteeBadge";
+import MadrasahVsOnlineComparison from "@/components/MadrasahVsOnlineComparison";
+import FreeResourceLeadMagnet from "@/components/FreeResourceLeadMagnet";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   CANCELLATION_NOTICE_DAYS,
@@ -171,6 +174,9 @@ export default function PricingPage() {
             ))}
           </div>
 
+          {/* Triple Peace of Mind Guarantee */}
+          <TripleGuaranteeBadge />
+
           {/* Family discount */}
           <div className="px-5 py-8 sm:px-9" style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 20, textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.5rem", color: "var(--charcoal)", marginBottom: 12 }}>👨‍👩‍👧‍👦 Family Sibling Discount</h2>
@@ -185,8 +191,14 @@ export default function PricingPage() {
             </div>
           </div>
 
+          {/* Madrasah vs Online Comparison */}
+          <MadrasahVsOnlineComparison />
+
           {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
           <TrustPolicyStrip heading="Before you pay — four straight answers" />
+
+          {/* Free Resource Lead Magnet for Undecided Parents */}
+          <FreeResourceLeadMagnet />
 
           {/* FAQ */}
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.8rem", color: "var(--charcoal)", textAlign: "center", marginBottom: 28 }}>Pricing FAQs</h2>

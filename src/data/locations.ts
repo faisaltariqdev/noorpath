@@ -94,7 +94,19 @@ export const locations: Location[] = [
     timezone: "CET / CEST",
     localContext:
       "Families in Germany can request English-language Quran instruction in CET or CEST. Share the learner's language needs and after-school or weekend availability when requesting a tutor.",
-    keywords: ["online quran classes germany", "quran teacher germany", "online quran berlin", "learn quran germany", "islamic classes germany"],
+    keywords: [
+      "online quran classes germany",
+      "online quran academy germany",
+      "quran teacher germany",
+      "online quran berlin",
+      "learn quran germany",
+      "islamic classes germany",
+      "online quran classes for kids germany",
+      "female quran teacher germany",
+      "noorani qaida online germany",
+      "quran teacher munich",
+      "quran classes frankfurt",
+    ],
   },
   {
     slug: "online-quran-classes-malaysia",
@@ -202,7 +214,19 @@ export const locations: Location[] = [
     timezone: "CET / CEST",
     localContext:
       "France is home to Western Europe's largest Muslim community, with strong North African roots in Paris, Marseille and Lyon. Families can request English- or Arabic-language instruction for beginner Quran reading, subject to tutor matching.",
-    keywords: ["online quran classes france", "quran teacher france", "learn quran online france", "online quran paris", "cours de coran en ligne"],
+    keywords: [
+      "online quran classes france",
+      "online quran academy france",
+      "quran teacher france",
+      "learn quran online france",
+      "online quran paris",
+      "cours de coran en ligne",
+      "online quran classes for kids france",
+      "female quran teacher france",
+      "noorani qaida online france",
+      "quran teacher lyon",
+      "quran teacher marseille",
+    ],
   },
   {
     slug: "online-quran-classes-netherlands",
@@ -333,11 +357,14 @@ export const locations: Location[] = [
       "Finland’s Muslim community is relatively small and centred around Helsinki and Espoo, with families also in other cities. Parents searching for kids Quran classes in Finland often want structured home learning after school in EET or EEST. NoorPath teaches online only (not a Finnish campus). Availability is confirmed after tutor matching.",
     keywords: [
       "online quran classes finland",
+      "online quran academy finland",
       "kids quran classes finland",
+      "female quran teacher finland",
       "quran teacher finland",
       "learn quran online finland",
       "noorani qaida online finland",
       "islamic classes finland",
+      "quran teacher helsinki",
     ],
   },
   {
@@ -351,11 +378,14 @@ export const locations: Location[] = [
       "Denmark’s Muslim families are concentrated around Copenhagen, with households also in Aarhus and other cities. Weekday evenings and weekend Quran class windows in CET or CEST are commonly requested when school and activities fill the week. NoorPath teaches online only (not a Danish campus). Exact recurring times are confirmed after tutor matching.",
     keywords: [
       "online quran classes denmark",
+      "online quran academy denmark",
       "weekend quran classes denmark",
+      "female quran teacher denmark",
       "quran teacher denmark",
       "learn quran online denmark",
       "noorani qaida online denmark",
       "islamic classes denmark",
+      "quran teacher copenhagen",
     ],
   },
   {
