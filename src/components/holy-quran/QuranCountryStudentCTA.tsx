@@ -30,10 +30,10 @@ const topCities = [
   { name: "London", href: "/online-quran-classes/london" },
   { name: "Birmingham", href: "/online-quran-classes/birmingham" },
   { name: "Manchester", href: "/online-quran-classes/manchester" },
-  { name: "New York", href: "/online-quran-classes-usa" },
-  { name: "Houston", href: "/online-quran-classes-usa" },
-  { name: "Toronto", href: "/online-quran-classes-canada" },
-  { name: "Sydney", href: "/online-quran-classes-australia" },
+  { name: "New York", href: "/locations/online-quran-classes-usa" },
+  { name: "Houston", href: "/locations/online-quran-classes-usa" },
+  { name: "Toronto", href: "/locations/online-quran-classes-canada" },
+  { name: "Sydney", href: "/locations/online-quran-classes-australia" },
 ];
 
 type Props = {

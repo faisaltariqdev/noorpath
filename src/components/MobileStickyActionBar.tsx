@@ -1,13 +1,41 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { CONTACT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import { Sparkles } from "lucide-react";
 
 export default function MobileStickyActionBar() {
+  const router = useRouter();
   const whatsappUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_TRIAL_MESSAGE)}`;
+
+  const handleTrialClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    // 1. Look for form or CTA section on current page
+    const targetElement = document.querySelector(
+      "#cta, #trial-form, #quran-trial-form, .cta-section, .cta-form-wrap, form"
+    );
+
+    if (targetElement) {
+      // Smoothly scroll straight down to the form
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      // Automatically focus the first input inside the form so keyboard pops up for user
+      setTimeout(() => {
+        const input = targetElement.querySelector<HTMLInputElement>(
+          "input:not([type='hidden']), select"
+        );
+        if (input) {
+          input.focus();
+        }
+      }, 500);
+    } else {
+      // 2. If no form on the current page, navigate directly to trial page with anchor
+      router.push("/free-quran-classes-online#cta");
+    }
+  };
 
   return (
     <aside
@@ -48,13 +76,14 @@ export default function MobileStickyActionBar() {
             <span>WhatsApp</span>
           </WhatsAppLink>
 
-          <Link
-            href="/free-quran-classes-online"
+          <button
+            type="button"
+            onClick={handleTrialClick}
             className="mobile-sticky-btn mobile-sticky-trial"
-            aria-label="Book free trial class"
+            aria-label="Navigate to booking trial form"
           >
             <span>⚡ Book Free Trial</span>
-          </Link>
+          </button>
         </div>
       </div>
     </aside>

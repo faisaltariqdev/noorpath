@@ -685,6 +685,10 @@ footer.site-footer {
     font-size: 0.82rem;
     font-weight: 700;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
     transition: all 0.2s ease;
   }
   .mobile-sticky-whatsapp {
