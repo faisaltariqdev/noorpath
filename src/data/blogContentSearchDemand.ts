@@ -515,7 +515,22 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           <details class="faq-acc"><summary>Is Barakallah in the Quran?<span>+</span></summary>
             <p>The root of barakah and related blessing language appears throughout Quran and Sunnah. The everyday phrase forms are widely used Islamic speech taught from prophetic manners and Arabic usage.</p>
           </details>
-          <p>If your family wants structured live tutoring after learning everyday phrases, request a <a href="/free-quran-classes-online">free 30-minute Quran trial</a>, or browse <a href="/locations/online-quran-classes-uk">UK</a> and <a href="/locations/online-quran-classes-usa">USA</a> location hubs — timezone matching is confirmed after your request.</p>
+          <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
+            <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Quran Classes</div>
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Master Daily Duas, Tajweed &amp; Quran Fluency from Home</h3>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">NoorPath Academy matches children and adults with certified native tutors. Learn correct pronunciation, Noorani Qaida, and everyday Islamic etiquette. Request a free 30-minute trial class.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book Free 30-Min Trial →</a>
+              <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Male &amp; female tutors</span>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:14px;font-size:.82rem;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:16px;">
+              <span>Explore local country hubs:</span>
+              <a href="/locations/online-quran-classes-usa" style="color:var(--gold);text-decoration:underline;font-weight:600;">USA Classes</a>
+              <a href="/locations/online-quran-classes-uk" style="color:var(--gold);text-decoration:underline;font-weight:600;">UK Classes</a>
+              <a href="/locations/online-quran-classes-canada" style="color:var(--gold);text-decoration:underline;font-weight:600;">Canada Classes</a>
+              <a href="/locations/online-quran-classes-australia" style="color:var(--gold);text-decoration:underline;font-weight:600;">Australia Classes</a>
+            </div>
+          </div>
           <p>Barakallah is a small sentence with a large heart: asking Allah to put growth, good, and permanence in what we love for others — and for ourselves.</p>
           <h2 id="related">Related phrases</h2>
           <ul>

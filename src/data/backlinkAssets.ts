@@ -136,12 +136,12 @@ export const backlinkAssets: BacklinkAsset[] = [
   },
   {
     slug: "muslim-population-statistics-uk-usa",
-    title: "Muslim Population: England & Wales Census 2021 vs US Adults (Pew)",
+    title: "Muslim Population in UK & USA: Official 2021 Census & Pew Research Data",
     description:
-      "ONS Census 2021 Muslim population for England and Wales vs Pew US adult survey share — sources, scope limits, and why the figures are not equivalent.",
+      "Official Muslim population statistics for the UK (England & Wales 2021 Census) and USA (Pew Research): demographic share, verified growth figures & analysis.",
     category: CATEGORY,
     date: DATE,
-    updatedAt: "2026-08-13",
+    updatedAt: "2026-10-12",
     readTime: "10 min",
     keywords: [
       "muslim population statistics uk usa",

@@ -1106,7 +1106,22 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li>Have a teacher listen once for pronunciation before it becomes habit — <a href="/online-quran-classes-for-kids">kids classes</a> and <a href="/online-quran-classes-for-adults">adult classes</a> both cover salah recitation with live correction.</li>
           </ol>
 
-          <p>UK families building Salah fluency (including Attahiyat) can request live 1-to-1 support via our <a href="/locations/online-quran-classes-uk">online Quran classes in the UK</a> page — GMT/BST matching, confirmed after your request.</p>
+          <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
+            <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Salah &amp; Quran Tutoring</div>
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Build Salah Fluency &amp; Quran Pronunciation for Your Family</h3>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">Reciting Attahiyat, Tashahhud, and Surahs correctly is a lifelong foundation. NoorPath Academy provides certified native tutors for kids and adults with live pronunciation correction. Book a free 30-minute trial class.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book Free 30-Min Trial →</a>
+              <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Flexible timezone slots</span>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:14px;font-size:.82rem;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:16px;">
+              <span>Explore local country hubs:</span>
+              <a href="/locations/online-quran-classes-usa" style="color:var(--gold);text-decoration:underline;font-weight:600;">USA Classes</a>
+              <a href="/locations/online-quran-classes-uk" style="color:var(--gold);text-decoration:underline;font-weight:600;">UK Classes</a>
+              <a href="/locations/online-quran-classes-canada" style="color:var(--gold);text-decoration:underline;font-weight:600;">Canada Classes</a>
+              <a href="/locations/online-quran-classes-australia" style="color:var(--gold);text-decoration:underline;font-weight:600;">Australia Classes</a>
+            </div>
+          </div>
 
           <h2 id="faq">Frequently asked questions</h2>
           <details class="faq-acc"><summary>What is Attahiyat and when is it recited?<span>+</span></summary>
@@ -1119,9 +1134,6 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <p>The final Tashahhud sitting is essential in every prayer. Follow your madhab and teacher for rulings on the first sitting in longer prayers.</p>
           </details>
 
-          <div class="gold-box">
-            <strong>Would you like help with recitation?</strong> In a requested free 30-minute trial, discuss the learner&apos;s current level and ask whether the proposed tutor can support the relevant reading goals. <a href="/free-quran-classes-online">Request the free trial</a>; tutor availability is confirmed after matching.
-          </div>
           <p>Related: <a href="/blog/darood-sharif">Durood Ibrahim</a> · <a href="/blog/how-to-pray-salah-step-by-step">How to pray salah</a> · <a href="/female-quran-teacher-online">Female Quran teacher online</a></p>`,
   },
   "safar-ki-dua-travel-dua-arabic-english": {

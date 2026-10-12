@@ -645,11 +645,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "jazakallah-khair-meaning",
-    title: "JazakAllah Khair Meaning (جزاك الله خيرا): How to Reply 'Wa Iyyakum', Khair vs Khairan",
-    description: "JazakAllah Khair means 'May Allah reward you with good' — the Sunnah way to say thank you. Get the exact reply (Wa iyyak / Wa iyyakum), Khair vs Khairan, when to use it, and why it says more than shukran.",
+    title: "JazakAllah Khair Meaning (جزاك الله خيرا): Correct Reply Guide, Grammar & Pronunciation",
+    description: "Master the authentic Sunnah replies to JazakAllah Khair (Wa Iyyak vs Wa Iyyakum chart), female & male grammar rules, when to say it instead of Shukran, and audio.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
-    updatedAt: "2026-07-03",
+    updatedAt: "2026-10-12",
     readTime: "7 min",
     keywords: [
       "jazakallah khair meaning", "jazakallah meaning", "jazakallah khair", "jazakallahu khairan meaning",
@@ -1175,12 +1175,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attahiyat-full-arabic-english-tashahhud",
-    title: "Attahiyat Full Dua — Arabic Text, Transliteration & English Meaning (Tashahhud)",
+    title: "Attahiyat Full Dua (Tashahhud) — Arabic Text, Word-by-Word Translation & Salah Rules",
     description:
-      "The full Attahiyat (Tashahhud) dua: Arabic text, line-by-line transliteration and English meaning, when to recite it in salah, what it means, and a simple way to memorise it.",
+      "Learn the complete Attahiyat (Tashahhud) for salah: line-by-line Arabic text, slow audio recitation, English word breakdown, and common recitation mistakes to avoid.",
     category: "Prayer & Worship",
     date: "2026-07-14",
-    updatedAt: "2026-08-13",
+    updatedAt: "2026-10-12",
     readTime: "9 min",
     keywords: [
       "attahiyat", "attahiyat full", "attahiyat in english", "attahiyat lillahi wa salawatu",
@@ -1194,12 +1194,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "safar-ki-dua-travel-dua-arabic-english",
-    title: "Safar Ki Dua (Travel Dua) — Arabic, English & Transliteration + Airplane Dua",
+    title: "Full Safar Ki Dua (Travel Dua) — Arabic Text, Audio & English Meaning",
     description:
-      "Safar ki dua (dua for travelling) — Subhanalladhi sakhkhara lana hadha — full Arabic text, transliteration, English meaning, when to recite it, the return-journey addition, and short duas kids can memorize before any trip.",
+      "Complete Safar ki dua (Subhanalladhi sakhkhara lana hadha): full Arabic text, slow audio recitation, transliteration, return-journey dua & airplane travel etiquette.",
     category: "Dhikr & Duas",
     date: "2026-07-14",
-    updatedAt: "2026-07-14",
+    updatedAt: "2026-10-12",
     readTime: "8 min",
     keywords: [
       "safar ki dua", "travel dua", "dua for travelling", "dua for journey",
@@ -1795,12 +1795,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-e-masura-arabic-english",
-    title: "Dua-e-Masura Arabic & English — After Tashahhud Guide",
+    title: "Full Dua e Masura (Allahumma Inni Zalamtu) — Arabic Text, Audio & Meaning",
     description:
-      "Dua-e-Masura in Arabic with transliteration and English — the post-Tashahhud Salah dua, word-by-word meaning, and calm memorisation tips for all ages.",
+      "Complete Dua-e-Masura recited after Tashahhud in Salah: line-by-line Arabic text, slow audio pronunciation, word-by-word English translation & rules.",
     category: "Dhikr & Duas",
     date: "2026-07-27",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-10-12",
     readTime: "10 min",
     keywords: [
       "dua e masura",
@@ -2523,12 +2523,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallah Meaning (بارك الله): Feek vs Feeki, Mashallah Difference & How to Reply",
+    title: "Barakallahu Feek Meaning (بارك الله فيك): Feek vs Feeki, Sunnah Replies & When to Say It",
     description:
-      "Barakallah means 'may Allah bless you'. Learn when to say Barakallahu feek (to a man) vs feeki (to a woman), how it differs from Mashallah, and the correct reply — Wa feeka barakallah — with Arabic text and examples.",
+      "Understand Barakallah: exact Sunnah replies (Wa feek / Wa feeka), how it differs from Mashallah to prevent Hasad, female vs male grammar, and audio pronunciation.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
-    updatedAt: "2026-08-13",
+    updatedAt: "2026-10-12",
     readTime: "10 min",
     keywords: [
       "barakallah meaning",
@@ -2586,12 +2586,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-is-wazifa-in-islam",
-    title: "What Is Wazifa in Islam? — Authentic Daily Practice vs Fake Guarantees",
+    title: "What Is a Wazifa in Islam? Meaning, Authentic Sunnah Practices & Rules",
     description:
-      "What is wazifa in Islam: meaning of daily spiritual practice, authentic Quran/Sunnah wazaif, 7-day starter routine, need-by-need map, red flags for viral guaranteed formulas.",
+      "Discover the true meaning of Wazifa in Islam: authentic daily Quran & Sunnah dhikr routines, permissible practices, and red flags for fake guaranteed formulas.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-10-12",
     readTime: "16 min",
     keywords: [
       "what is wazifa in islam",
@@ -2629,12 +2629,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "hasbunallahu-wa-nimal-wakeel-meaning",
-    title: "Hasbunallahu Wa Ni’mal Wakeel Meaning — Arabic & When to Say It",
+    title: "Hasbunallahu Wa Ni'mal Wakeel Meaning: 7 Virtues & When to Recite (Quran 3:173)",
     description:
-      "Hasbunallahu wa ni’mal wakeel meaning from Quran 3:173: word-by-word English, context, when to recite, hardship stack with La hawla, and what it is not.",
+      "Full meaning of Hasbunallahu wa ni'mal wakeel: Arabic text, correct pronunciation, prophetic context in times of hardship, and daily spiritual benefits.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-10-12",
     readTime: "14 min",
     keywords: [
       "hasbunallahu wa nimal wakeel meaning",

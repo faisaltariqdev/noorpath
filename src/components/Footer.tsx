@@ -116,13 +116,37 @@ export default function Footer() {
               Free Trial Class
             </Link>
           </div>
-          <nav aria-label="Priority country locations" className="flex flex-wrap gap-3 justify-center">
+          <nav aria-label="Priority country locations" className="flex flex-wrap gap-3 justify-center mb-3">
             <Link href="/locations" style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".8rem" }}>
               All locations
             </Link>
             {priorityCountries.map((country) => (
               <Link key={country.href} href={country.href} style={{ color: "var(--muted)", fontWeight: 600, fontSize: ".8rem" }}>
                 {country.label}
+              </Link>
+            ))}
+          </nav>
+          <nav aria-label="Popular city Quran classes" className="flex flex-wrap gap-x-4 gap-y-2 justify-center pt-3 border-t border-[rgba(10,110,79,.1)]">
+            <span style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".78rem" }}>
+              Popular City Classes:
+            </span>
+            {[
+              { href: "/online-quran-classes/london", label: "🇬🇧 London" },
+              { href: "/online-quran-classes/birmingham", label: "🇬🇧 Birmingham" },
+              { href: "/online-quran-classes/manchester", label: "🇬🇧 Manchester" },
+              { href: "/online-quran-classes/new-york", label: "🇺🇸 New York" },
+              { href: "/online-quran-classes/houston", label: "🇺🇸 Houston" },
+              { href: "/online-quran-classes/dallas", label: "🇺🇸 Dallas" },
+              { href: "/online-quran-classes/toronto", label: "🇨🇦 Toronto" },
+              { href: "/online-quran-classes/sydney", label: "🇦🇺 Sydney" },
+              { href: "/online-quran-classes/melbourne", label: "🇦🇺 Melbourne" },
+              { href: "/online-quran-classes/doha", label: "🇶🇦 Doha" },
+              { href: "/online-quran-classes/mumbai", label: "🇮🇳 Mumbai" },
+              { href: "/online-quran-classes/dublin", label: "🇮🇪 Dublin" },
+              { href: "/online-quran-classes/auckland", label: "🇳🇿 Auckland" },
+            ].map((city) => (
+              <Link key={city.href} href={city.href} style={{ color: "var(--charcoal)", fontWeight: 500, fontSize: ".78rem", textDecoration: "none" }}>
+                {city.label}
               </Link>
             ))}
           </nav>

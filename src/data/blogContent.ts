@@ -2131,13 +2131,46 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <h2>Why Say JazakAllah Khair Instead of Thank You?</h2>
           <p>The Prophet ﷺ said: <em>"Whoever has a good done to him and says to the doer 'JazakAllahu khairan' has done the utmost in praising him."</em> (Sunan at-Tirmidhi 2035). In other words, when you cannot repay someone's kindness, you hand the reward over to Allah — who rewards without limit. It is the most generous form of gratitude in Islam.</p>
 
-          <h2>How to Respond to JazakAllah Khair</h2>
-          <p>There are several beautiful replies:</p>
-          <ul>
-            <li><strong>Wa iyyakum</strong> (وإياكم) — "And you too" (most common)</li>
-            <li><strong>Wa antum fa jazakumullahu khairan</strong> — "And may Allah also reward you with good"</li>
-            <li><strong>Barakallahu feek</strong> (بارك الله فيك) — "May Allah bless you"</li>
-          </ul>
+          <h2>How to Respond to JazakAllah Khair (Sunnah Reply Chart)</h2>
+          <p>The Prophet ﷺ encouraged returning prayers when someone makes dua for you. Here is the exact response depending on who you are speaking to:</p>
+          <div style="overflow-x:auto;margin:20px 0;">
+            <table class="np-table" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:rgba(10,110,79,.08);text-align:left;">
+                  <th style="padding:12px;border:1px solid var(--border);">Addressing</th>
+                  <th style="padding:12px;border:1px solid var(--border);">Arabic Reply</th>
+                  <th style="padding:12px;border:1px solid var(--border);">Transliteration</th>
+                  <th style="padding:12px;border:1px solid var(--border);">English Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>To a Male</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">وَإِيَّاكَ</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>Wa Iyyak</em></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);">And to you as well</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>To a Female</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">وَإِيَّاكِ</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>Wa Iyyaki</em></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);">And to you as well (female)</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>To a Group / Formal</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">وَإِيَّاكُمْ</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>Wa Iyyakum</em></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);">And to you all (most common)</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>Complete Sunnah Dua</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">وَأَنْتُمْ فَجَزَاكُمُ اللَّهُ خَيْرًا</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>Wa antum fa jazakumullahu khayran</em></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);">And may Allah reward you with good too</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <div class="gold-box">
             <strong>Common spelling variations:</strong> JazakAllah, Jazak Allah, JazakAllahu Khairan, Jazakumullah Khair — these are all transliterations of the same Arabic phrase. "JazakAllahu Khairan" is the most complete and grammatically correct form.
@@ -2149,10 +2182,21 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>Is it JazakAllah or JazakAllahu Khairan? <span>+</span></summary><p>"JazakAllahu Khairan" is the complete and grammatically correct form, meaning "may Allah reward you with good." "JazakAllah" alone is a shortened everyday version. Both are widely used and understood. The word changes by gender: JazakAllah (male), JazakiAllah (female), JazakumAllah (group).</p></details>
           <details class="faq-acc"><summary>Why do Muslims say JazakAllah instead of shukran? <span>+</span></summary><p>Shukran simply means "thank you." JazakAllah Khair goes further — it is a dua (supplication) asking Allah to reward the person with good. The Prophet ﷺ said whoever says JazakAllahu khairan to someone who helped them "has done the utmost in praising him" (Tirmidhi 2035), making it the superior expression of gratitude.</p></details>
 
-          <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
-            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn the Language of the Quran</h3>
-            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Understand the words you say every day. Learn Arabic and Quran with a certified tutor — free 30-minute trial.</p>
-            <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+          <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
+            <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Quran &amp; Arabic Tuition</div>
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Want Your Child to Recite the Quran &amp; Daily Duas with Confidence?</h3>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">NoorPath Academy matches students with certified native Arabic &amp; Tajweed tutors for personalized, timezone-friendly lessons. Try a free 30-minute session with no credit card required.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book Free 30-Min Trial →</a>
+              <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Flexible scheduling</span>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:14px;font-size:.82rem;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:16px;">
+              <span>Explore dedicated country hubs:</span>
+              <a href="/locations/online-quran-classes-usa" style="color:var(--gold);text-decoration:underline;font-weight:600;">USA Classes</a>
+              <a href="/locations/online-quran-classes-uk" style="color:var(--gold);text-decoration:underline;font-weight:600;">UK Classes</a>
+              <a href="/locations/online-quran-classes-canada" style="color:var(--gold);text-decoration:underline;font-weight:600;">Canada Classes</a>
+              <a href="/locations/online-quran-classes-australia" style="color:var(--gold);text-decoration:underline;font-weight:600;">Australia Classes</a>
+            </div>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">

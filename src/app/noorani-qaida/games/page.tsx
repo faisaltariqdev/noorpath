@@ -265,9 +265,24 @@ export default function NooraniQaidaGamesHubPage() {
               { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Fatha lesson", description: "Review the first short vowel before the harakat quiz." },
               { href: "/courses/noorani-qaida-online", label: "Live Noorani Qaida classes", description: "Book one-to-one lessons with tutor matching." },
               {
+                href: "/locations/online-quran-classes-usa",
+                label: "Live Qaida classes for US families",
+                description: "Timezone-aware 1-on-1 tutor matching across ET, CT, MT, and PT.",
+              },
+              {
                 href: "/locations/online-quran-classes-uk",
                 label: "Live Qaida classes for UK families",
                 description: "After free practice games, request UK timezone tutor matching.",
+              },
+              {
+                href: "/locations/online-quran-classes-canada",
+                label: "Live Qaida classes for Canadian families",
+                description: "Provincial timezone matching for children across Canada.",
+              },
+              {
+                href: "/locations/online-quran-classes-australia",
+                label: "Live Qaida classes for Australia",
+                description: "After-school and weekend lesson windows in Australian time.",
               },
             ]}
           />
