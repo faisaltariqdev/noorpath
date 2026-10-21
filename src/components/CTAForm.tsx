@@ -288,7 +288,7 @@ export default function CTAForm({
         {[
           `✓ Join ${ENROLLED_STUDENTS_DISPLAY} students`,
           "✓ No credit card required",
-          `✓ Free ${TRIAL.durationMinutes}-min class`,
+          `✓ ${TRIAL.classes} free classes`,
         ].map((item) => (
           <span
             key={item}

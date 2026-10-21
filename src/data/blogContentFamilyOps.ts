@@ -172,7 +172,7 @@ export const familyOpsBlogContent: Record<string, { style: string; content: stri
             <p>Often 45 minutes works well when attention is present. Begin with a sustainable weekly rhythm (commonly 2×) and increase only after consistency is proven.</p>
           </details>
           <details class="faq-acc"><summary>Can teens request a female Quran tutor?<span>+</span></summary>
-            <p>Yes — female-tutor preference can be requested and is confirmed during matching subject to availability.</p>
+            <p>Yes — female tutors are available. Choose a female tutor when you book the free trial.</p>
           </details>
           <details class="faq-acc"><summary>How do we start without embarrassing a teen who feels behind?<span>+</span></summary>
             <p>Call it a fit check, let them set the goal language, avoid sibling comparisons, and choose a respectful tutor style. Focus on the next skill, not years “lost.”</p>

@@ -466,11 +466,13 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
 
           <h2 id="forms">Common forms you will hear</h2>
           <table class="np-table">
-            <tr><th>Phrase</th><th>Approx. meaning</th><th>Typical use</th></tr>
-            <tr><td>Barakallahu feek / feeki</td><td>May Allah bless you</td><td>Thanks, well-wishing to a person</td></tr>
-            <tr><td>Barakallahu laka / laki</td><td>May Allah bless you (for you)</td><td>Congratulating on a gift, marriage, or news</td></tr>
-            <tr><td>Allahumma barik</td><td>O Allah, bless</td><td>When seeing something admirable (often with Mashallah)</td></tr>
-            <tr><td>Barakallah</td><td>May Allah bless</td><td>Short form in texts and speech</td></tr>
+            <tr><th>Phrase</th><th>Arabic</th><th>Approx. meaning</th><th>Typical use</th></tr>
+            <tr><td>Barakallahu feek (to a male)</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ فِيكَ</td><td>May Allah bless you</td><td>Thanks, well-wishing to a person</td></tr>
+            <tr><td>Barakallahu feeki (to a female)</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ فِيكِ</td><td>May Allah bless you</td><td>Thanks, well-wishing to a person</td></tr>
+            <tr><td>Barakallahu feekum (to a group)</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ فِيكُمْ</td><td>May Allah bless you all</td><td>Thanking a family, class or group</td></tr>
+            <tr><td>Barakallahu laka / laki</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ لَكَ / لَكِ</td><td>May Allah bless you (for you)</td><td>Congratulating on a gift, marriage, or news</td></tr>
+            <tr><td>Allahumma barik</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">اللَّهُمَّ بَارِكْ</td><td>O Allah, bless</td><td>When seeing something admirable (often with Mashallah)</td></tr>
+            <tr><td>Barakallah</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ</td><td>May Allah bless</td><td>Short form in texts and speech</td></tr>
           </table>
 
           <h2 id="vs">Barakallah vs Mashallah vs Jazakallah</h2>
@@ -493,9 +495,15 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           </div>
 
           <h2 id="reply">How to reply</h2>
+          <p>Return the blessing to the person who said it. The ending changes with who you are replying to:</p>
+          <table class="np-table">
+            <tr><th>Replying to</th><th>Arabic</th><th>Transliteration</th></tr>
+            <tr><td>A male</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">وَفِيكَ بَارَكَ اللَّهُ</td><td>Wa feek, Barakallah</td></tr>
+            <tr><td>A female</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">وَفِيكِ بَارَكَ اللَّهُ</td><td>Wa feeki, Barakallah</td></tr>
+            <tr><td>A group</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">وَفِيكُمْ بَارَكَ اللَّهُ</td><td>Wa feekum, Barakallah</td></tr>
+          </table>
           <ul>
             <li><strong>Ameen</strong> — accepting the dua</li>
-            <li><strong>Wa feek / wa feeki Barakallah</strong> — returning the blessing (common conversational reply)</li>
             <li><strong>Jazakallah khair</strong> — if they helped you</li>
           </ul>
 
@@ -518,9 +526,9 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
             <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Quran Classes</div>
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Master Daily Duas, Tajweed &amp; Quran Fluency from Home</h3>
-            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">NoorPath Academy matches children and adults with certified native tutors. Learn correct pronunciation, Noorani Qaida, and everyday Islamic etiquette. Request a free 30-minute trial class.</p>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">NoorPath Academy matches children and adults with certified Quran tutors. Learn correct pronunciation, Noorani Qaida, and everyday Islamic etiquette. Request a free 30-minute trial class.</p>
             <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
-              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book Free 30-Min Trial →</a>
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book 3 Free Classes →</a>
               <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Male &amp; female tutors</span>
             </div>
             <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:14px;font-size:.82rem;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:16px;">

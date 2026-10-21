@@ -1434,7 +1434,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Ready to introduce your child to the Arabic alphabet?</strong> NoorPath Academy offers live 1-on-1 Arabic alphabet and Noorani Qaida lessons. You can request a male or female tutor, subject to availability. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Ready to introduce your child to the Arabic alphabet?</strong> NoorPath Academy offers live 1-on-1 Arabic alphabet and Noorani Qaida lessons. Male and female tutors are available. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
           </div>`,
   },
   "ayat-e-karima": {
@@ -2126,7 +2126,35 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Allahu (الله)</strong> — "Allah"</li>
             <li><strong>Khairan (خيرا)</strong> — "with good"</li>
           </ul>
-          <p>Note: "Jazak" changes based on who you address — <em>JazakAllah</em> (to a male), <em>JazakiAllah</em> (to a female), and <em>JazakumAllah</em> (to a group). Adding <em>Khair</em> completes the beautiful meaning "may Allah reward you with good."</p>
+          <p>"Jazak" changes based on who you are thanking. Adding <em>Khair</em> completes the meaning "may Allah reward you with good."</p>
+          <div style="overflow-x:auto;margin:20px 0;">
+            <table class="np-table" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:rgba(10,110,79,.08);text-align:left;">
+                  <th style="padding:12px;border:1px solid var(--border);">Saying it to</th>
+                  <th style="padding:12px;border:1px solid var(--border);">Arabic</th>
+                  <th style="padding:12px;border:1px solid var(--border);">Transliteration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>A male</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">جَزَاكَ اللَّهُ خَيْرًا</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>JazakAllahu Khairan</em></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>A female</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">جَزَاكِ اللَّهُ خَيْرًا</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>JazakiAllahu Khairan</em></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><strong>A group</strong></td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);font-family:'Amiri',serif;direction:rtl;font-size:1.2rem;">جَزَاكُمُ اللَّهُ خَيْرًا</td>
+                  <td style="padding:10px 12px;border:1px solid var(--border);"><em>JazakumAllahu Khairan</em></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2>Why Say JazakAllah Khair Instead of Thank You?</h2>
           <p>The Prophet ﷺ said: <em>"Whoever has a good done to him and says to the doer 'JazakAllahu khairan' has done the utmost in praising him."</em> (Sunan at-Tirmidhi 2035). In other words, when you cannot repay someone's kindness, you hand the reward over to Allah — who rewards without limit. It is the most generous form of gratitude in Islam.</p>
@@ -2185,9 +2213,9 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
             <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Quran &amp; Arabic Tuition</div>
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Want Your Child to Recite the Quran &amp; Daily Duas with Confidence?</h3>
-            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">NoorPath Academy matches students with certified native Arabic &amp; Tajweed tutors for personalized, timezone-friendly lessons. Try a free 30-minute session with no credit card required.</p>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">NoorPath Academy matches students with certified Quran &amp; Tajweed tutors for personalized, timezone-friendly lessons. Try 3 free 30-minute classes with no credit card required.</p>
             <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
-              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book Free 30-Min Trial →</a>
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book 3 Free Classes →</a>
               <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Flexible scheduling</span>
             </div>
             <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:14px;font-size:.82rem;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:16px;">

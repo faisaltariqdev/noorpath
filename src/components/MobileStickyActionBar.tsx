@@ -47,7 +47,7 @@ export default function MobileStickyActionBar() {
         <div className="mobile-sticky-top-pill">
           <span className="mobile-sticky-badge">
             <Sparkles size={11} className="inline mr-1 text-[#f59e0b]" />
-            Free 30-Min Trial • No Card Needed
+            3 Free Trial Classes • No Card Needed
           </span>
           <span className="mobile-sticky-subtext">
             1-on-1 Live Quran Tutoring

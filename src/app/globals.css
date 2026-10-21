@@ -1332,6 +1332,9 @@ pre { max-width: 100%; }
 .qaida-course-cta p { line-height: 1.7; margin: 0; max-width: 670px; opacity: .8; }
 .qaida-course-cta .qaida-eyebrow { color: var(--gold-lt); }
 .qaida-course-cta .btn-outline-np { border-color: rgba(255,255,255,.5); color: #fff; }
+.qaida-course-cta-copy { flex: 1 1 320px; }
+.qaida-course-cta-form { background: #fff; border-radius: 18px; flex: 1 1 340px; max-width: 480px; padding: 1.25rem; }
+.qaida-course-cta-form p { color: var(--muted); opacity: 1; }
 .qaida-note-grid { display: grid; gap: 1rem; }
 
 @media (min-width: 640px) {

@@ -184,7 +184,7 @@ export default function QuranTeacherOnlinePage() {
               </span>
               <h1>Online Quran Teacher<br /><em style={{ color: "var(--gold-lt)" }}>Matched to Your Learning Goal</em></h1>
               <p style={{ maxWidth: 600 }}>
-                Connect with an online Quran teacher for 1-on-1 live classes for a child or adult. We match by level, subject, schedule, and tutor preference, then confirm relevant credentials and availability.
+                Connect with an online Quran teacher for 1-on-1 live classes for a child or adult. We match by level, subject, schedule, and male or female preference. Every tutor holds an Ijazah or a Quran teaching certificate.
               </p>
               <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
                 <Link href="/courses" style={{ background: "rgba(255,255,255,.1)", border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 28px", borderRadius: 12, fontWeight: 600, textDecoration: "none", fontSize: "1rem" }}>
@@ -222,7 +222,7 @@ export default function QuranTeacherOnlinePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: <Award size={28} />, title: "Credentials Confirmed", desc: "The proposed tutor's relevant qualifications and teaching experience are confirmed before enrolment." },
+              { icon: <Award size={28} />, title: "Certified Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Not comfortable? We change the tutor immediately." },
               { icon: <Shield size={28} />, title: "Clear Tutor Details", desc: "Ask about the proposed tutor's background, subject focus, and teaching approach before choosing a plan." },
               { icon: <Users size={28} />, title: "Female Tutor Requests", desc: "Sisters and families may request a female Quran teacher. Matching is subject to the requested subject and schedule." },
               { icon: <Clock size={28} />, title: "Timezone Matching", desc: "Share your timezone and preferred lesson windows; available options are confirmed after your request." },
@@ -246,7 +246,7 @@ export default function QuranTeacherOnlinePage() {
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(1.8rem,3.5vw,2.3rem)", color: "var(--charcoal)" }}>
               Choose a Teacher Matching Category
             </h2>
-            <p style={{ color: "var(--muted)", marginTop: 10 }}>These are role-based matching options, not individual tutor profiles. Specific credentials are confirmed before enrolment.</p>
+            <p style={{ color: "var(--muted)", marginTop: 10 }}>These are role-based matching options, not individual tutor profiles. Every tutor holds an Ijazah or a Quran teaching certificate.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {tutorProfiles.map((t) => (
@@ -261,7 +261,7 @@ export default function QuranTeacherOnlinePage() {
             ))}
           </div>
           <p style={{ textAlign: "center", color: "var(--muted)", marginTop: 24, fontSize: ".9rem" }}>
-            Tutor availability and relevant credentials are confirmed after you submit your preferences.
+            Tutor availability is confirmed after you submit your preferences.
           </p>
         </div>
       </section>

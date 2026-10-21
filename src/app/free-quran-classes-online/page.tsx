@@ -4,7 +4,7 @@ import CTAForm from "@/components/CTAForm";
 import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { Gift } from "lucide-react";
-import { PRICING_PLANS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import { PRICING_PLANS, REFUND_WINDOW_DAYS, TRIAL, TRIAL_OFFER, TRUSTPILOT } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "NoorPath Academy | Free Quran Classes Online — Free Trial",
   },
   description:
-    "NoorPath Academy free 30-minute live one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
+    "NoorPath Academy: 3 free 30-minute live one-to-one online Quran trial classes for kids or adults. No credit card; tutor and schedule availability are confirmed.",
   keywords: [
     "free quran classes online",
     "quran classes free trial no credit card",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NoorPath Academy | Free Quran Classes Online — Free Trial",
     description:
-      "Request a free 30-minute one-to-one online Quran trial for kids or adults. No credit card; tutor and schedule availability are confirmed.",
+      "Book 3 free 30-minute one-to-one online Quran trial classes for kids or adults. No credit card; tutor and schedule availability are confirmed.",
     url: "https://www.noorpath.online/free-quran-classes-online",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Free Quran Classes Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "NoorPath Academy | Free Quran Trial",
-    description: "Free 30-minute one-to-one online Quran trial request. No credit card.",
+    description: "3 free 30-minute one-to-one online Quran trial classes. No credit card.",
     images: ["/og-image.png"],
   },
 };
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Is the free Quran class really free?",
-    a: `Yes. NoorPath Academy offers a free ${TRIAL.durationMinutes}-minute live trial class. No credit card is required and there is no automatic paid enrolment. ${TRIAL.availabilityNote}`,
+    a: `Yes. NoorPath Academy offers ${TRIAL_OFFER}, live and one-to-one. No credit card is required and there is no automatic paid enrolment. ${TRIAL.availabilityNote}`,
   },
   {
     q: "What happens in the free trial Quran class?",
@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     q: "What happens after the free trial?",
-    a: `If you continue, published plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} class per week. You only pay if you choose a plan — see the pricing page for current USD amounts.`,
+    a: `If you continue, published plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} class per week. You only pay if you choose a plan, and you get a full refund if you ask within ${REFUND_WINDOW_DAYS} days of your first paid class — see the pricing page for current USD amounts.`,
   },
 ];
 
@@ -73,14 +73,14 @@ const jsonLd = {
       "@type": "Service",
       name: "Free Online Quran Classes — Trial",
       description:
-        "NoorPath Academy offers new learners a free 30-minute one-to-one online Quran trial request with no credit card required.",
+        `NoorPath Academy offers new learners ${TRIAL_OFFER}, one-to-one and online, with no credit card required.`,
       provider: ORGANIZATION_REF,
       serviceType: "Free Online Quran Trial Class",
       offers: {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        name: "Free 30-Minute Trial Quran Class",
+        name: `${TRIAL.classes} Free ${TRIAL.durationMinutes}-Minute Trial Quran Classes`,
         description: "No credit card required. Tutor availability is confirmed after your request.",
       },
       url: "https://www.noorpath.online/free-quran-classes-online",
@@ -136,16 +136,16 @@ export default function FreeQuranClassesPage() {
           >
             <Gift size={16} style={{ color: "var(--gold-lt)" }} />
             <span style={{ color: "var(--gold-lt)", fontSize: ".82rem", fontWeight: 700 }}>
-              FREE {TRIAL.durationMinutes}-MIN TRIAL — No credit card
+              {TRIAL.classes} FREE TRIAL CLASSES — No credit card
             </span>
           </div>
           <h1>
             Free Online Quran Classes
             <br />
-            <em style={{ color: "var(--gold-lt)" }}>{TRIAL.durationMinutes}-Minute Live Trial</em>
+            <em style={{ color: "var(--gold-lt)" }}>{TRIAL.classes} Free Live Trial Classes</em>
           </h1>
           <p style={{ maxWidth: 580 }}>
-            Request a free live 1-to-1 Quran class for a child or adult. NoorPath confirms an available tutor and
+            Book {TRIAL_OFFER}, live and 1-to-1, for a child or adult. NoorPath confirms an available tutor and
             suitable time after you submit the form — online only, no campus or home visit.
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
@@ -208,7 +208,7 @@ export default function FreeQuranClassesPage() {
             }}
           >
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
-            “Free Quran classes online” at NoorPath means a free {TRIAL.durationMinutes}-minute live one-to-one trial —
+            “Free Quran classes online” at NoorPath means {TRIAL_OFFER}, live and one-to-one —
             not an unlimited free course. After the trial, paid plans are published in USD on the{" "}
             <Link href="/pricing" style={{ color: "var(--emerald)", fontWeight: 700 }}>
               pricing page
@@ -231,7 +231,7 @@ export default function FreeQuranClassesPage() {
               What is included in the free trial?
             </h2>
             <p style={{ color: "var(--muted)", marginTop: 10 }}>
-              A real live 1-to-1 session — not a recording or group webinar.
+              {TRIAL.classes} real live 1-to-1 sessions — not a recording or group webinar.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -242,7 +242,7 @@ export default function FreeQuranClassesPage() {
               },
               {
                 title: "Live 1-to-1 teaching",
-                desc: `${TRIAL.durationMinutes} minutes of live instruction shaped to age, goals and ability — not a generic recording.`,
+                desc: `${TRIAL.classes} classes of ${TRIAL.durationMinutes} minutes, shaped to age, goals and ability — not a generic recording.`,
               },
               {
                 title: "Honest next steps",
@@ -571,7 +571,7 @@ export default function FreeQuranClassesPage() {
                 Book your free Quran class
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", lineHeight: 1.7 }}>
-                {TRIAL.durationMinutes} minutes. Live. 1-to-1. Tutor match confirmed. No credit card.
+                {TRIAL.classes} classes, {TRIAL.durationMinutes} minutes each. Live. 1-to-1. Tutor match confirmed. No credit card.
               </p>
             </div>
             <div className="cta-form-wrap">

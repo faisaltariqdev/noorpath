@@ -1,13 +1,13 @@
 import React from "react";
 import { ShieldCheck, RefreshCw, CalendarX2, Award } from "lucide-react";
-import { TRIAL, CANCELLATION_NOTICE_DAYS } from "@/lib/academyFacts";
+import { TRIAL, TRIAL_OFFER, CANCELLATION_NOTICE_DAYS, REFUND_WINDOW_DAYS, TUTOR_FACTS } from "@/lib/academyFacts";
 
 export default function TripleGuaranteeBadge() {
   const guarantees = [
     {
       icon: ShieldCheck,
-      title: "100% Free 30-Minute Trial",
-      desc: `Test our live 1-on-1 teaching before paying a single dollar. No credit card required, zero obligation.`,
+      title: `${TRIAL.classes} Free Trial Classes`,
+      desc: `Take ${TRIAL_OFFER} before paying a single dollar. No credit card required, zero obligation.`,
       badge: "Risk-Free",
     },
     {
@@ -18,14 +18,14 @@ export default function TripleGuaranteeBadge() {
     },
     {
       icon: CalendarX2,
-      title: "No Long-Term Contracts",
-      desc: `Month-to-month flexibility. Pause for vacations or cancel with simple ${CANCELLATION_NOTICE_DAYS} days notice.`,
+      title: `${REFUND_WINDOW_DAYS}-Day Full Refund`,
+      desc: `Full refund if you ask within ${REFUND_WINDOW_DAYS} days of your first paid class. Month-to-month, cancel with ${CANCELLATION_NOTICE_DAYS} days' notice.`,
       badge: "Flexible Billing",
     },
     {
       icon: Award,
-      title: "Vetted & Certified Tutors",
-      desc: "Native Arabic and English-speaking tutors with verified Tajweed, Ijazah, and child-friendly pedagogy.",
+      title: "Certified Tutors",
+      desc: TUTOR_FACTS.credentials,
       badge: "Verified Quality",
     },
   ];

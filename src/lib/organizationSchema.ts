@@ -156,7 +156,7 @@ export function getOrganizationJsonLd() {
               itemOffered: {
                 "@type": "Course",
                 name: "Learn Quran Online",
-                description: "Live one-to-one online Quran classes for children and adults, with a free trial request.",
+                description: "Live one-to-one online Quran classes for children and adults, with 3 free trial classes.",
                 provider: { "@id": ORGANIZATION_ID },
                 url: `${BASE_URL}/learn-quran-online`,
                 courseMode: "online",

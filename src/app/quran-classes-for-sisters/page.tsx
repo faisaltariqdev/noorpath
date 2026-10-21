@@ -71,7 +71,7 @@ const benefits = [
   { icon: <BookOpen size={22} />, title: "Beginner to Hifz", desc: "Qaida, Quran reading, Tajweed, or memorisation — matched after assessing your level." },
   { icon: <Clock size={22} />, title: "Schedule matching", desc: "Share morning, evening, or weekend preferences in your timezone." },
   { icon: <Users size={22} />, title: "Mothers & adult sisters", desc: "Adult-aware pacing for beginners and returning learners." },
-  { icon: <CheckCircle size={22} />, title: "Credentials confirmed", desc: "Relevant credentials for the proposed tutor are confirmed before enrolment." },
+  { icon: <CheckCircle size={22} />, title: "Certified female tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate, and female tutors are available." },
 ];
 
 const jsonLd = {

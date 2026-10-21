@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ArrowRight, BookOpen, CheckCircle, GraduationCap } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle } from "lucide-react";
 import { QAIDA_SCREENSHOTS } from "@/data/noorani-qaida";
+import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
-import { CONTACT } from "@/lib/academyFacts";
+import { CONTACT, TRIAL } from "@/lib/academyFacts";
 
 export const QAIDA_BASE_URL = "https://www.noorpath.online/noorani-qaida";
 
@@ -77,34 +78,34 @@ export function QaidaCallout({
 
 export function QaidaCourseCta({
   title = "Want guided Noorani Qaida lessons?",
-  description = "Explore live one-to-one classes for ages 4+, with tutor matching based on learner needs, timezone, and availability.",
+  description = `Book a free ${TRIAL.durationMinutes}-minute live 1-to-1 Qaida class for ages 4+ with a certified tutor. Female tutors available, no credit card.`,
 }: {
   title?: string;
   description?: string;
 }) {
   return (
-    <section className="qaida-course-cta" aria-labelledby="qaida-course-cta-title">
-      <div>
-        <span className="qaida-eyebrow">Live class pathway</span>
+    <section id="qaida-trial" className="qaida-course-cta" aria-labelledby="qaida-course-cta-title">
+      <div className="qaida-course-cta-copy">
+        <span className="qaida-eyebrow">Free live trial class</span>
         <h2 id="qaida-course-cta-title">{title}</h2>
         <p>{description}</p>
+        <div className="qaida-cta-actions">
+          <WhatsAppLink
+            href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I am practicing Noorani Qaida with my child and would like to book a free ${TRIAL.durationMinutes}-minute 1-on-1 trial class.`)}`}
+            className="btn-outline-np"
+            style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#25D366", borderColor: "#25D366", color: "#fff", fontWeight: 700 }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>💬 Book on WhatsApp</span>
+          </WhatsAppLink>
+          <Link href="/courses/noorani-qaida-online" className="btn-outline-np">
+            <BookOpen size={17} aria-hidden="true" /> View Online Qaida Classes
+          </Link>
+        </div>
       </div>
-      <div className="qaida-cta-actions">
-        <Link href="/courses/noorani-qaida-online" className="btn-primary-np">
-          <BookOpen size={17} aria-hidden="true" /> View Online Qaida Classes
-        </Link>
-        <Link href="/free-quran-classes-online" className="btn-outline-np">
-          <GraduationCap size={17} aria-hidden="true" /> Request a Free Trial
-        </Link>
-        <WhatsAppLink
-          href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent("Assalamu Alaikum, I am practicing Noorani Qaida with my child and would like to ask about a free 30-minute 1-on-1 trial class.")}`}
-          className="btn-outline-np"
-          style={{ display: "inline-flex", alignItems: "center", gap: 6, borderColor: "#25D366", color: "#0a6e4f", fontWeight: 700 }}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>💬 Chat on WhatsApp</span>
-        </WhatsAppLink>
+      <div className="qaida-course-cta-form">
+        <CTAForm compact formVariant="qaida" idPrefix="qaida" />
       </div>
     </section>
   );

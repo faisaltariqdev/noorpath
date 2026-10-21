@@ -6,17 +6,16 @@ import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
-import { FAMILY_DISCOUNTS, PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, REFUND_WINDOW_DAYS, SERVICE_FACTS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes for Kids — Live 1-on-1 | NoorPath",
+    absolute: "Online Quran Classes for Kids (Ages 4–12) — Free Trial | NoorPath",
   },
-  description:
-    "Online Quran classes for kids ages 4–12. Live 1-on-1 Noorani Qaida, Tajweed and Hifz lessons with tutor matching and a free 30-minute trial.",
+  description: `Live 1-on-1 online Quran classes for kids ages 4–12 from $${PRICING_PLANS[0].monthlyPriceUsd}/mo. Noorani Qaida, Tajweed & Hifz, female tutors available. ${TRIAL.classes} free trial classes, no credit card.`,
   keywords: [
     "online quran classes for kids",
     "quran classes for kids online",
@@ -70,11 +69,11 @@ const faqs = [
   },
   {
     q: "Are online Quran classes safe for children?",
-    a: "Classes are live and 1-to-1. Parents can discuss supervision preferences before lessons begin and ask for the proposed tutor's relevant credentials and experience before enrolment.",
+    a: "Classes are live and 1-to-1, and parents are welcome to sit in. Every NoorPath tutor holds an Ijazah or a Quran teaching certificate, and if your child is not comfortable with the tutor we change the tutor immediately.",
   },
   {
     q: "How much do online Quran classes for kids cost?",
-    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. The ${TRIAL.durationMinutes}-minute trial is free and requires no credit card. Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% for two siblings to ${FAMILY_DISCOUNTS[2].discountPercent}% for four or more.`,
+    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. The first ${TRIAL.classes} trial classes (${TRIAL.durationMinutes} minutes each) are free and need no credit card, and there is a full refund if you ask within ${REFUND_WINDOW_DAYS} days of the first paid class. Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% for two siblings to ${FAMILY_DISCOUNTS[2].discountPercent}% for four or more.`,
   },
   {
     q: "How long should a Quran class be for a child?",
@@ -82,7 +81,7 @@ const faqs = [
   },
   {
     q: "Can my child learn with a female Quran teacher?",
-    a: "You can request a female Quran teacher when booking. Subject and schedule availability, along with relevant credentials, are confirmed before enrolment.",
+    a: "Yes. Female Quran teachers are available — choose a female tutor when you book the free trial.",
   },
   {
     q: "What will my child learn first?",
@@ -94,7 +93,7 @@ const faqs = [
   },
   {
     q: "Is the free trial really free?",
-    a: "Yes. The live 30-minute 1-on-1 trial costs $0 and requires no credit card. Tutor availability is confirmed after your request.",
+    a: `Yes. ${TRIAL_OFFER}, live and 1-on-1, cost $0 and need no credit card. Tutor availability is confirmed after your request.`,
   },
   {
     q: "What is Noorani Qaida and why do kids start with it?",
@@ -138,7 +137,7 @@ const jsonLd = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        description: "Free 30-minute trial class — no credit card required",
+        description: `${TRIAL_OFFER} — no credit card required`,
         url: `https://www.noorpath.online/free-quran-classes-online`,
       },
     },
@@ -156,7 +155,7 @@ const jsonLd = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        description: "Free 30-minute trial class",
+        description: TRIAL_OFFER,
         url: `https://www.noorpath.online/free-quran-classes-online`,
       },
     },
@@ -184,7 +183,7 @@ const trustStats = [
   { value: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
   { value: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
   { value: SERVICE_FACTS[3].value, label: SERVICE_FACTS[3].label },
-  { value: "By request", label: "Female Tutor Matching" },
+  { value: "Available", label: "Female Quran Tutors" },
 ];
 
 const geoLocations = [
@@ -216,7 +215,7 @@ export default function OnlineQuranClassesForKidsPage() {
             Live one-to-one Quran classes for children ages 4–12 — including online Islamic classes for children and online Tajweed classes for children when reading is ready —
             with matching for Quran reading, Hifz, and female tutor requests. Book{" "}
             <strong style={{ color: "var(--gold-lt)" }}>online Quran classes after school</strong> when that window fits.{" "}
-            <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial — no credit card.</strong>
+            <strong style={{ color: "var(--gold-lt)" }}>{TRIAL.classes} free trial classes — no credit card.</strong>
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
             <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial for Your Child →</Link>
@@ -268,7 +267,7 @@ export default function OnlineQuranClassesForKidsPage() {
           >
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             <span>
-              Online Quran classes for kids connect children ages 4–12 with certified 1-on-1 tutors via live video. Lessons cover Noorani Qaida, Tajweed, daily duas, and Hifz at the child&apos;s individual pace. Parents choose after-school or weekend lesson slots in their local timezone with male or female tutors. NoorPath offers a free 30-minute trial with no credit card required.
+              Online Quran classes for kids connect children ages 4–12 with certified 1-on-1 tutors via live video. Lessons cover Noorani Qaida, Tajweed, daily duas, and Hifz at the child&apos;s individual pace. Parents choose after-school or weekend lesson slots in their local timezone with male or female tutors. NoorPath offers {TRIAL_OFFER} with no credit card required.
             </span>
           </div>
         </div>
@@ -300,7 +299,7 @@ export default function OnlineQuranClassesForKidsPage() {
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { v: "1-to-1", l: "Live online lesson" },
-                  { v: "30 min", l: "Free trial class" },
+                  { v: `${TRIAL.classes} free`, l: "Trial classes" },
                   { v: "Flexible", l: "Tutor matching" },
                   { v: "No card", l: "Needed for trial" },
                 ].map((x) => (
@@ -387,7 +386,7 @@ export default function OnlineQuranClassesForKidsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {[
               [<Users size={22} key="u" />, "1-on-1 Attention", "The tutor can adapt reading practice, correction, and lesson pace to the individual learner."],
-              [<Award size={22} key="a" />, "Credentials Confirmed", "Relevant qualifications and experience teaching children are confirmed for the proposed tutor before enrolment."],
+              [<Award size={22} key="a" />, "Certified Tutors", "Every tutor holds an Ijazah or a Quran teaching certificate. Not comfortable with the tutor? We change the tutor immediately."],
               [<Shield size={22} key="s" />, "Parent-Aware Lessons", "Parents can discuss supervision and communication preferences before lessons begin."],
               [<Clock size={22} key="c" />, "Timezone Matching", "Share your timezone and preferred lesson windows; availability is confirmed after your request."],
               [<BookOpen size={22} key="b" />, "Kids Learning Subjects", "Request Noorani Qaida, Quran reading, Tajweed, Hifz, duas, or Islamic studies."],
@@ -429,7 +428,7 @@ export default function OnlineQuranClassesForKidsPage() {
                 ["Fixed weekly slot", "Same days/times — kids learn by habit"],
                 ["Quiet corner", "Tablet + headphones beat a noisy living room"],
                 ["Short home practice", "5–10 minutes on off-days beats cramming"],
-                ["Female tutor if preferred", "Request on the trial form for daughters"],
+                ["Female tutors available", "Choose a female tutor on the trial form"],
                 ["Review lesson notes", "Ask the tutor clarifying questions when needed"],
                 ["Sibling plan", `Discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%`],
               ].map(([t, d]) => (
@@ -637,14 +636,14 @@ export default function OnlineQuranClassesForKidsPage() {
                 Book Your Child&apos;s<br /><em style={{ color: "var(--gold-lt)" }}>Free Quran Trial Class</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 16, lineHeight: 1.7 }}>
-                30 minutes. One live 1-to-1 trial. No credit card required. Tutor availability is confirmed after your request.
+                {TRIAL.classes} live 1-to-1 trial classes, {TRIAL.durationMinutes} minutes each. No credit card required. Tutor availability is confirmed after your request.
               </p>
               <ul style={{ color: "rgba(255,255,255,.8)", fontSize: ".9rem", lineHeight: 2, paddingLeft: 20 }}>
                 <li>✓ Ages 4–12 welcome</li>
                 <li>✓ Male or female tutor requests</li>
                 <li>✓ Timezone preferences considered</li>
                 <li>✓ Sibling discounts up to {FAMILY_DISCOUNTS[2].discountPercent}%</li>
-                <li>✓ Credentials confirmed before enrolment</li>
+                <li>✓ Ijazah or certified tutors — changed immediately if needed</li>
                 <li>✓ Free trial with no credit card</li>
               </ul>
             </div>

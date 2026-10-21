@@ -231,7 +231,7 @@ export default function CoursesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {[
-              { icon: <Award size={22} />, title: "Relevant Credentials", desc: "Specific qualifications and teaching experience are confirmed for the proposed tutor before enrolment." },
+              { icon: <Award size={22} />, title: "Certified Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Male and female tutors are available." },
               { icon: <Users size={22} />, title: "Female Tutor Requests", desc: "Sisters and families may request a female tutor; subject and schedule availability are confirmed after enquiry." },
               { icon: <CheckCircle size={22} />, title: "Trial Before Enrolment", desc: "Use the free 30-minute trial to assess lesson fit before selecting a monthly plan." },
             ].map((f) => (

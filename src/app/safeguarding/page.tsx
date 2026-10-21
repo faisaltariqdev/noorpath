@@ -35,7 +35,7 @@ const practices = [
   },
   {
     title: "Tutor changes",
-    text: "If a parent or learner is uncomfortable with a match, they should pause the session and contact NoorPath to discuss another available tutor.",
+    text: "If a parent or learner is uncomfortable with a match, they should pause the session and contact NoorPath, and the tutor will be changed immediately.",
   },
 ];
 

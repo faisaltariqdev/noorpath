@@ -178,6 +178,9 @@ export default function NooraniQaidaHubPage() {
               <Link href={`${QAIDA_BASE_PATH}/games`} className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
                 <Gamepad2 size={17} aria-hidden="true" /> Free Interactive Games
               </Link>
+              <Link href="#qaida-trial" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
+                <Users size={17} aria-hidden="true" /> Free Live Trial Class
+              </Link>
             </div>
           </div>
           <QaidaScreenshot kind="curriculum" priority />

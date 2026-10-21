@@ -1111,7 +1111,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Build Salah Fluency &amp; Quran Pronunciation for Your Family</h3>
             <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">Reciting Attahiyat, Tashahhud, and Surahs correctly is a lifelong foundation. NoorPath Academy provides certified native tutors for kids and adults with live pronunciation correction. Book a free 30-minute trial class.</p>
             <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
-              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book Free 30-Min Trial →</a>
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book 3 Free Classes →</a>
               <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Flexible timezone slots</span>
             </div>
             <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:14px;font-size:.82rem;color:rgba(255,255,255,.8);display:flex;flex-wrap:wrap;gap:16px;">

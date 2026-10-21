@@ -105,6 +105,7 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
         signal: AbortSignal.timeout(8_000),
       });
       if (res.ok) return "sent";
+      console.error("Resend email dispatch failed:", res.status, await res.text().catch(() => ""));
     } catch (err) {
       console.error("Resend email dispatch error:", err);
     }
@@ -142,7 +143,8 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
     });
 
     const fsData = (await fsRes.json().catch(() => null)) as { success?: boolean | string } | null;
-    const isSuccess = fsData?.success === true || fsData?.success === "true" || fsRes.ok;
+    // FormSubmit answers HTTP 200 with success:"false" when it rejects a submission.
+    const isSuccess = fsData?.success === true || fsData?.success === "true";
     if (isSuccess) {
       console.log("FormSubmit lead successfully dispatched to", to);
       return "sent";

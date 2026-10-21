@@ -645,8 +645,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "jazakallah-khair-meaning",
-    title: "JazakAllah Khair Meaning (جزاك الله خيرا): Correct Reply Guide, Grammar & Pronunciation",
-    description: "Master the authentic Sunnah replies to JazakAllah Khair (Wa Iyyak vs Wa Iyyakum chart), female & male grammar rules, when to say it instead of Shukran, and audio.",
+    title: "JazakAllah Khair Meaning & Reply (Male/Female Chart + Arabic)",
+    description: "What does JazakAllah Khair mean & how to reply? See the Wa Iyyak / Wa Iyyaki / Wa Iyyakum chart for male & female, Arabic text (جزاك الله خيرا) & pronunciation.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
     updatedAt: "2026-10-12",
@@ -1061,9 +1061,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "online-quran-classes-cost-pricing-guide",
-    title: "How Much Do Online Quran Classes Cost? — Real Prices Per Hour & Month (2026)",
+    title: "Online Quran Classes Cost in 2026: Monthly & Hourly Price Guide",
     description:
-      "Online Quran classes cost $4–$25 per class depending on tutor, country and plan. Full 2026 price breakdown — per hour, per month, kids vs adults, Hifz vs Tajweed, family discounts, and how to avoid overpaying.",
+      "Online Quran classes typically cost $4–$25 per class. 2026 breakdown per hour and per month, kids vs adults, Hifz vs Tajweed, sibling discounts and free trials.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1080,9 +1080,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "learn-quran-as-an-adult-never-too-late",
-    title: "Learning Quran as an Adult — Why It's Never Too Late (Start at 25, 40 or 60)",
+    title: "Learning Quran as an Adult Beginner (Start Privately at Any Age)",
     description:
-      "Think you're too old to learn Quran? Explore a learner-paced adult beginner route from Arabic letters to guided reading, with private one-to-one lessons and a free trial request.",
+      "Starting Quran from zero at 25, 40 or 60? A step-by-step adult beginner route from Arabic letters (Qaida) to guided reading, in private 1-to-1 lessons.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1177,7 +1177,7 @@ export const blogPosts: BlogPost[] = [
     slug: "attahiyat-full-arabic-english-tashahhud",
     title: "Attahiyat Full Dua (Tashahhud) — Arabic Text, Word-by-Word Translation & Salah Rules",
     description:
-      "Learn the complete Attahiyat (Tashahhud) for salah: line-by-line Arabic text, slow audio recitation, English word breakdown, and common recitation mistakes to avoid.",
+      "Learn the complete Attahiyat (Tashahhud) for salah: line-by-line Arabic text, transliteration, English word breakdown, when to recite it, and common mistakes to avoid.",
     category: "Prayer & Worship",
     date: "2026-07-14",
     updatedAt: "2026-10-12",
@@ -1194,9 +1194,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "safar-ki-dua-travel-dua-arabic-english",
-    title: "Full Safar Ki Dua (Travel Dua) — Arabic Text, Audio & English Meaning",
+    title: "Full Safar Ki Dua (Travel Dua) — Arabic Text, Transliteration & English Meaning",
     description:
-      "Complete Safar ki dua (Subhanalladhi sakhkhara lana hadha): full Arabic text, slow audio recitation, transliteration, return-journey dua & airplane travel etiquette.",
+      "Complete Safar ki dua (Subhanalladhi sakhkhara lana hadha): full Arabic text, transliteration, word-by-word English meaning, return-journey dua & airplane travel etiquette.",
     category: "Dhikr & Duas",
     date: "2026-07-14",
     updatedAt: "2026-10-12",
@@ -1795,9 +1795,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-e-masura-arabic-english",
-    title: "Full Dua e Masura (Allahumma Inni Zalamtu) — Arabic Text, Audio & Meaning",
+    title: "Full Dua e Masura (Allahumma Inni Zalamtu) — Arabic Text, Transliteration & Meaning",
     description:
-      "Complete Dua-e-Masura recited after Tashahhud in Salah: line-by-line Arabic text, slow audio pronunciation, word-by-word English translation & rules.",
+      "Complete Dua-e-Masura recited after Tashahhud in Salah: line-by-line Arabic text, transliteration, word-by-word English translation & rules.",
     category: "Dhikr & Duas",
     date: "2026-07-27",
     updatedAt: "2026-10-12",
@@ -2523,9 +2523,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallahu Feek Meaning (بارك الله فيك): Feek vs Feeki, Sunnah Replies & When to Say It",
+    title: "Barakallah Meaning & Reply (Wa Feek vs Wa Feeki Chart + Arabic)",
     description:
-      "Understand Barakallah: exact Sunnah replies (Wa feek / Wa feeka), how it differs from Mashallah to prevent Hasad, female vs male grammar, and audio pronunciation.",
+      "What does Barakallahu Feek (بارك الله فيك) mean and how do you reply? See when to say Wa Feek or Wa Feeki (male/female), and how it differs from Mashallah.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
     updatedAt: "2026-10-12",
@@ -2629,7 +2629,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "hasbunallahu-wa-nimal-wakeel-meaning",
-    title: "Hasbunallahu Wa Ni'mal Wakeel Meaning: 7 Virtues & When to Recite (Quran 3:173)",
+    title: "Hasbunallahu Wa Ni'mal Wakeel Meaning — Arabic, Word-by-Word & When to Recite (Quran 3:173)",
     description:
       "Full meaning of Hasbunallahu wa ni'mal wakeel: Arabic text, correct pronunciation, prophetic context in times of hardship, and daily spiritual benefits.",
     category: "Dhikr & Duas",

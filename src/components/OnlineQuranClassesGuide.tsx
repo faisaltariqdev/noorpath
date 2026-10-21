@@ -12,8 +12,8 @@ export default function OnlineQuranClassesGuide() {
         teacher through a video platform. The most effective programmes combine one-to-one
         teaching, an initial level assessment, real-time recitation correction, a clear curriculum,
         regular practice and clear learning goals. NoorPath Online Quran Academy offers a free
-        trial so children and adults can experience a lesson and request a male or female tutor
-        before choosing a plan, subject to availability.
+        trial so children and adults can experience a lesson with a male or female tutor
+        before choosing a plan.
       </div>
 
       <nav

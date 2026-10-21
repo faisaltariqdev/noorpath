@@ -2742,7 +2742,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <p>No honest academy can guarantee every preferred minute. Share preferred GST windows; confirmation happens after tutor matching.</p>
           </details>
           <details class="faq-acc"><summary>Can we request a female tutor for our daughter?<span>+</span></summary>
-            <p>Yes. State the preference when booking. Relevant credentials for the proposed tutor are confirmed before enrolment.</p>
+            <p>Yes. Female tutors are available — state the preference when booking. Every NoorPath tutor holds an Ijazah or a Quran teaching certificate.</p>
           </details>
           <details class="faq-acc"><summary>What if our child falls behind after summer travel?<span>+</span></summary>
             <p>Restart with review-only lessons for one to two weeks. Do not leap to new pages out of guilt.</p>

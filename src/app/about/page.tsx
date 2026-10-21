@@ -39,10 +39,10 @@ const faqs = [
     a: "The official website is https://www.noorpath.online. NoorPath Academy (also written NoorPath or Noor Path Academy) is an online-only Quran academy. It is not affiliated with noor-path.com, noorpath.net apps, or other similarly named websites.",
   },
   { q: "Who leads NoorPath Academy?", a: "NoorPath Academy is founder-led by Faisal Tariq. His profile and role are published on the founder page." },
-  { q: "How are NoorPath tutors qualified?", a: "Qualifications vary by tutor and teaching focus. Before enrolment, NoorPath confirms the proposed tutor's relevant credentials and experience for the requested subject." },
+  { q: "How are NoorPath tutors qualified?", a: "Every NoorPath tutor holds an Ijazah or a Quran teaching certificate, and parents can ask to see it. Female tutors are available, and the tutor is changed immediately if a family is not comfortable." },
   { q: "What age groups does NoorPath Academy teach?", a: "NoorPath offers tutor matching for children and adults across Quran reading, Tajweed, Hifz, Arabic, and related learning goals." },
   { q: "How is NoorPath different from other online Quran academies?", a: "NoorPath is founder-led and provides live 1-to-1 lessons at www.noorpath.online. Matching considers the learner's level, goals, timezone, and male or female tutor preference; availability is confirmed after each request." },
-  { q: "Is NoorPath Academy accredited?", a: "NoorPath Academy does not present a blanket accreditation claim. Tutor qualifications vary, and specific credentials relevant to the proposed tutor are confirmed before enrolment." },
+  { q: "Is NoorPath Academy accredited?", a: "NoorPath Academy does not claim institutional accreditation. Every NoorPath tutor holds an Ijazah or a Quran teaching certificate, and parents can ask to see it." },
   { q: "Where are classes available?", a: "Classes are online only — there is no campus or walk-in branch. Share your timezone and preferred lesson windows when requesting a trial, and NoorPath will confirm tutor availability." },
 ];
 
@@ -141,7 +141,7 @@ export default function AboutPage() {
               Our curriculum spans <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Noorani Qaida for beginners</Link> to <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>Hifz programs</Link> for children and adults. Tutor matching considers subject, level, schedule, and tutor preference.
             </p>
             <p style={{ color: "var(--muted)", lineHeight: 1.8 }}>
-              NoorPath is founder-led and focused on 1-to-1 teaching. Before enrolment, families can ask about the proposed tutor&apos;s relevant qualifications and experience, then use the free trial to assess lesson fit.
+              NoorPath is founder-led and focused on 1-to-1 teaching. Every tutor holds an Ijazah or a Quran teaching certificate, and families use the free trial to meet the tutor before paying.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function AboutPage() {
           <div className="content-card" style={{ marginBottom: 24 }}>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 20 }}>
               {([
-                [<Sprout size={20} key="s" />, "Quality Teaching", "We match by teaching focus and confirm the proposed tutor's relevant credentials and experience before enrolment."],
+                [<Sprout size={20} key="s" />, "Quality Teaching", "We match by teaching focus, and every tutor holds an Ijazah or a Quran teaching certificate."],
                 [<Users size={20} key="u" />, "Family First", `Family plans support multiple siblings with verified discounts from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%. Female tutor requests are welcome.`],
                 [<Globe size={20} key="g" />, "Online Accessibility", "Share your timezone and preferred lesson windows, and we will confirm tutor availability after your request."],
                 [<TrendingUp size={20} key="t" />, "Individual Learning", "Live 1-to-1 lessons allow the teaching focus and pace to be adapted to the learner's current level and goals."],
@@ -180,7 +180,7 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {[
-              { icon: <Award size={22} />, title: "Relevant Credentials", desc: "Ask about Ijazah, Hifz, academic, or other qualifications relevant to your requested subject. Specific credentials are confirmed before enrolment." },
+              { icon: <Award size={22} />, title: "Certified Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Ask to see your tutor's credentials." },
               { icon: <GraduationCap size={22} />, title: "Teaching Experience", desc: "The proposed tutor's experience with the learner's age group and subject is considered during matching." },
               { icon: <CheckCircle size={22} />, title: "Details Before Enrolment", desc: "Families can review the proposed tutor's relevant qualifications and teaching focus before choosing a paid plan." },
               { icon: <Clock size={22} />, title: "Trial Lesson", desc: "The free 30-minute trial provides a practical opportunity to assess communication, pace, and lesson fit." },

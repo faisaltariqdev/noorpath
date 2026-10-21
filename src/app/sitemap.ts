@@ -185,14 +185,11 @@ const BACKLINK_ASSET_SLUGS = new Set(
   backlinkAssets.map((asset) => asset.slug)
 );
 
-/** Root-level keyword landing pages (commercial URL variants) */
+/** Root-level keyword landing pages (commercial URL variants; excludes 301-redirected legacy paths in src/proxy.ts) */
 const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/learn-quran-online`,     priority: 0.97, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/learn-tajweed-online`,    priority: 0.94, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/hifz-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
-  { url: `${BASE}/online-quran-academy`,    priority: 0.93, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
-  { url: `${BASE}/quran-lesson-online`,     priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
-  { url: `${BASE}/studying-quran-online`,   priority: 0.92, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/online-quran-classes-no-masjid-nearby`, priority: 0.9, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
   { url: `${BASE}/quran-classes-near-me`,   priority: 0.92, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
   { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },

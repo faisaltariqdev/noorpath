@@ -15,12 +15,12 @@ const trustItems = [
   { icon: "👨‍👩‍👧", label: `${ENROLLED_STUDENTS_DISPLAY} students` },
   { icon: "✓", label: "No credit card" },
   { icon: "★", label: `${TRUSTPILOT.score}/5 Trustpilot` },
-  { icon: "⏱", label: `${TRIAL.durationMinutes}-min free class` },
+  { icon: "⏱", label: `${TRIAL.classes} free classes` },
 ];
 
 export default function InlineTrialCTA({
   placement = "end-article",
-  title = "Book a free 30-minute trial",
+  title = `Book ${TRIAL.classes} free trial classes`,
   subtitle = "Live 1-on-1 lesson — no credit card, no commitment.",
 }: Props) {
   return (

@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   CANCELLATION_NOTICE_DAYS,
   CONTACT,
+  REFUND_WINDOW_DAYS,
   TRIAL,
 } from "@/lib/academyFacts";
 
@@ -33,7 +34,7 @@ export default function TermsPage() {
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <h1>Terms of Service</h1>
-          <p>Last updated: 14 July 2026</p>
+          <p>Last updated: 20 October 2026</p>
         </div>
       </div>
       <section>
@@ -47,8 +48,9 @@ export default function TermsPage() {
 
             <h2 style={sectionStyle}>Trial requests</h2>
             <p style={paragraphStyle}>
-              New learners may request a free {TRIAL.durationMinutes}-minute
-              trial without providing a credit card. A requested date, time or
+              New learners may take {TRIAL.classes} free{" "}
+              {TRIAL.durationMinutes}-minute trial classes without providing a
+              credit card. A requested date, time or
               tutor is not confirmed until NoorPath contacts you. Trials are
               subject to tutor and schedule availability.
             </p>
@@ -57,9 +59,10 @@ export default function TermsPage() {
             <p style={paragraphStyle}>
               Classes are delivered online using an agreed meeting platform.
               NoorPath matches learners according to course needs, tutor
-              preference, timezone and current availability. A tutor preference
-              is a request rather than a guarantee. If a match is unsuitable,
-              contact NoorPath to discuss another available tutor.
+              preference, timezone and current availability. Male and female
+              tutors are available. If you or your child are not comfortable with
+              the tutor, contact NoorPath and the tutor will be changed
+              immediately.
             </p>
             <p style={paragraphStyle}>
               Learning progress differs by starting level, attendance, lesson
@@ -92,9 +95,11 @@ export default function TermsPage() {
             <p style={paragraphStyle}>
               You may cancel with at least {CANCELLATION_NOTICE_DAYS} days&apos;
               notice before the next billing date. NoorPath does not charge a
-              cancellation fee. Payments already made for a partial month are
-              not refundable, but remaining scheduled sessions in that paid
-              period may be used. This policy does not limit any non-waivable
+              cancellation fee. If you ask within {REFUND_WINDOW_DAYS} days of
+              your first paid class, NoorPath refunds the fees you paid in
+              full. After {REFUND_WINDOW_DAYS} days, fees already paid are not
+              refundable, but remaining scheduled sessions in that paid period
+              may be used. This policy does not limit any non-waivable
               rights available under applicable consumer law.
             </p>
 

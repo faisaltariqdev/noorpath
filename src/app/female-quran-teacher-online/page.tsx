@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { q: "Can my daughter learn Quran with a female teacher online?", a: "You can request a female teacher for a daughter or adult sister. Lessons are live and 1-to-1; subject and schedule availability are confirmed after your request." },
-  { q: "Are the female tutors at NoorPath qualified?", a: "Qualifications vary by tutor and teaching focus. NoorPath confirms the proposed tutor's relevant credentials and experience before enrolment." },
+  { q: "Are the female tutors at NoorPath qualified?", a: "Yes. Every NoorPath tutor, including every female tutor, holds an Ijazah or a Quran teaching certificate, and you can ask to see it." },
   { q: "What courses can my daughter study with a female teacher?", a: "Female tutor requests may include Noorani Qaida, Quran recitation, Tajweed, Hifz, Arabic, Islamic studies, or daily duas. Availability is confirmed for the requested subject and schedule." },
   { q: "How do online Quran classes work for sisters?", a: "Classes are live and 1-to-1. Share the learner's level, subject, timezone, and preferred schedule, and NoorPath will confirm a suitable female tutor option." },
   { q: "Can adult women learn Quran online with a female teacher?", a: "Yes. Adult sisters can request a female tutor for beginner reading, Tajweed, or Hifz. Relevant adult teaching experience and availability are confirmed before enrolment." },
@@ -54,7 +54,7 @@ const faqs = [
 
 const features = [
   { icon: <Shield size={22} />, title: "Private 1-to-1 Lessons", desc: "Female tutor requests are arranged as live 1-to-1 lessons for sisters and daughters." },
-  { icon: <Award size={22} />, title: "Credentials Confirmed", desc: "Relevant Hifz, Ijazah, academic, or teaching credentials are confirmed for the proposed tutor before enrolment." },
+  { icon: <Award size={22} />, title: "Certified Female Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Not comfortable with your tutor? We change the tutor immediately." },
   { icon: <Users size={22} />, title: "Children & Adults", desc: "Matching considers whether the learner is a child, teenager, or adult and the teaching approach requested." },
   { icon: <BookOpen size={22} />, title: "Subject-Based Matching", desc: "Request support for Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, or daily duas." },
   { icon: <Clock size={22} />, title: "Timezone Matching", desc: "Share preferred lesson windows; available female tutor options are confirmed after the request." },
@@ -171,7 +171,7 @@ export default function FemaleQuranTeacherPage() {
           {/* Quick Answer */}
           <div className="np-quick-answer" style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
-            You can <strong>request a female Quran teacher</strong> for a sister or daughter from any country — NoorPath is online-only, so it works the same in a Muslim-minority town as in a big city. Classes are live and 1-to-1 with <strong>flexible timing in your own timezone</strong>; relevant credentials and availability are confirmed before enrolment. The first 30-minute lesson is free.{" "}
+            Yes — NoorPath has <strong>certified female Quran teachers</strong> for sisters and daughters in any country. NoorPath is online-only, so it works the same in a Muslim-minority town as in a big city. Classes are live and 1-to-1 with <strong>flexible timing in your own timezone</strong>, and every tutor holds an Ijazah or a Quran teaching certificate. The first {TRIAL.durationMinutes}-minute lesson is free.{" "}
             <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
           </div>
 
@@ -192,11 +192,11 @@ export default function FemaleQuranTeacherPage() {
                 A comfortable 1-to-1 learning option
               </h2>
               <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 14 }}>
-                Request a female tutor for a daughter, teenage girl, or adult sister. We confirm the proposed tutor&apos;s subject fit, relevant credentials, and schedule before enrolment.
+                Choose a female tutor for a daughter, teenage girl, or adult sister. Every tutor holds an Ijazah or a Quran teaching certificate, and we change the tutor immediately if the fit is not right.
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
-                  "Relevant credentials confirmed before enrolment",
+                  "Ijazah or certified female tutors",
                   "Parents can discuss lesson supervision",
                   "Timezone preferences included in matching",
                   "Reading, Tajweed, or Hifz tutor requests",
@@ -245,8 +245,8 @@ export default function FemaleQuranTeacherPage() {
               What we confirm before enrolment (proof, not promises)
             </h2>
             <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: 12, fontSize: ".9rem" }}>
-              Female tutor matching is a request process: we confirm subject fit, relevant credentials for the proposed
-              tutor, and schedule availability before you pay for a regular plan. Free trial: {TRIAL.durationMinutes}{" "}
+              Female tutors are available, every tutor holds an Ijazah or a Quran teaching certificate, and you meet
+              your tutor in the trial before you pay for a regular plan. Free trial: {TRIAL.durationMinutes}{" "}
               minutes, no credit card. Plans start from ${PRICING_PLANS[0].monthlyPriceUsd}/month (
               {PRICING_PLANS[0].sessionsPerWeek} class/week). Trustpilot: {TRUSTPILOT.score}/5 from{" "}
               {TRUSTPILOT.reviewCount} reviews ({TRUSTPILOT.lastChecked}) —{" "}
@@ -300,7 +300,7 @@ export default function FemaleQuranTeacherPage() {
               { value: SERVICE_FACTS[0].value, label: SERVICE_FACTS[0].label },
               { value: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
               { value: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
-              { value: "By request", label: "Female tutor matching" },
+              { value: "Available", label: "Certified female tutors" },
             ].map((s) => (
               <div key={s.label} style={{ textAlign: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "22px 12px" }}>
                 <div style={{ fontSize: "1.55rem", fontWeight: 800, color: "var(--emerald)", lineHeight: 1.2 }}>{s.value}</div>
@@ -314,7 +314,7 @@ export default function FemaleQuranTeacherPage() {
             <span className="section-eyebrow">👩‍🏫 Female Tutor Requests</span>
             <h2 className="section-title">Why Families Choose Our <em className="accent">Female Teachers</em></h2>
             <p className="section-desc center">
-              At NoorPath Academy, we understand that modesty and comfort matter in Islamic learning. Request a female tutor, and we will confirm relevant credentials and availability before enrolment.
+              At NoorPath Academy, we understand that modesty and comfort matter in Islamic learning. Female tutors are available, every tutor is certified, and the tutor is changed immediately if you are not comfortable.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -458,7 +458,7 @@ export default function FemaleQuranTeacherPage() {
                 No credit card required. Request a free 30-minute class with a female tutor and assess whether the match is right for your daughter or yourself.
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                {["Free 30-min trial — no credit card", "Female tutor requested", "Timezone availability confirmed after enquiry", "Credentials confirmed before enrolment"].map((b) => (
+                {["Free 30-min trial — no credit card", "Certified female tutor", "Timezone availability confirmed after enquiry", "Tutor changed immediately if needed"].map((b) => (
                   <li key={b} style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,.8)", fontSize: ".9rem" }}>
                     <CheckCircle size={15} style={{ color: "var(--gold)", flexShrink: 0 }} /> {b}
                   </li>

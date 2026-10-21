@@ -246,7 +246,7 @@ export default async function CourseDetailPage({ params }: Props) {
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                   {[
-                    { emoji: "👩‍🏫", title: "Tutor Matching", desc: "Request a tutor by learner level, course goal, timezone and male or female preference. Available tutor details are confirmed before enrolment." },
+                    { emoji: "👩‍🏫", title: "Tutor Matching", desc: "Matched by learner level, course goal, timezone and male or female preference. Every tutor holds an Ijazah or a Quran teaching certificate." },
                     { emoji: "💻", title: "Live One-to-One Lessons", desc: "Lessons take place online with the assigned tutor rather than through pre-recorded videos." },
                     { emoji: "⏰", title: "Schedule Matching", desc: "NoorPath checks current tutor availability against the learner's timezone and preferred class time." },
                     { emoji: "👨‍👩‍👧‍👦", title: "Family Plans Available", desc: `Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}%, depending on the number enrolled.` },

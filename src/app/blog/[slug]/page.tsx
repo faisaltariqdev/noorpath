@@ -9,6 +9,7 @@ import { getBacklinkAsset } from "@/data/backlinkAssets";
 import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { faqPageJsonLdFromHtml } from "@/lib/faqFromHtml";
 import { splitArticleHtml } from "@/lib/splitArticleHtml";
+import { TRIAL_OFFER } from "@/lib/academyFacts";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import BlogAeoQuickSummary from "@/components/BlogAeoQuickSummary";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
@@ -348,7 +349,6 @@ export default async function BlogPostPage({ params }: Props) {
                 {/* AEO Quick Summary & Direct Answer Key Takeaways for Readers & AI Search */}
                 {post.excerpt && (
                   <BlogAeoQuickSummary
-                    title={post.title}
                     excerpt={post.excerpt}
                     category={post.category}
                     readTime={post.readTime}
@@ -529,11 +529,29 @@ export default async function BlogPostPage({ params }: Props) {
                       dangerouslySetInnerHTML={{ __html: articleParts.before }}
                     />
                     {articleParts.after ? (
-                      <InlineTrialCTA
-                        placement="mid-article"
-                        title="Ready to practise with a live tutor?"
-                        subtitle="Book a free 30-minute trial — WhatsApp or email is enough to get started."
-                      />
+                      <aside
+                        aria-label="Free trial classes"
+                        style={{
+                          alignItems: "center",
+                          background: "rgba(10,110,79,.06)",
+                          border: "1px solid rgba(10,110,79,.18)",
+                          borderRadius: 14,
+                          display: "flex",
+                          flexWrap: "wrap",
+                          gap: "10px 16px",
+                          justifyContent: "space-between",
+                          margin: "28px 0",
+                          padding: "14px 18px",
+                        }}
+                      >
+                        <span style={{ color: "var(--charcoal)", fontSize: ".92rem", lineHeight: 1.5 }}>
+                          <strong>Want to read Arabic like this yourself, or teach your child?</strong>{" "}
+                          {TRIAL_OFFER} with a certified tutor — no card.
+                        </span>
+                        <a href="#book-trial" style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".9rem", textDecoration: "none", whiteSpace: "nowrap" }}>
+                          Book free classes →
+                        </a>
+                      </aside>
                     ) : null}
                     {articleParts.after ? (
                       <div
@@ -625,11 +643,13 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                 </div>
 
-                <InlineTrialCTA
-                  placement="end-article"
-                  title="Want to discuss a learning plan?"
-                  subtitle="Request a free 30-minute trial — we'll match a tutor after your request."
-                />
+                <div id="book-trial" style={{ scrollMarginTop: 90 }}>
+                  <InlineTrialCTA
+                    placement="end-article"
+                    title="Want to discuss a learning plan?"
+                    subtitle={`Book ${TRIAL_OFFER} — we'll match a tutor after your request.`}
+                  />
+                </div>
               </div>
 
               <Link

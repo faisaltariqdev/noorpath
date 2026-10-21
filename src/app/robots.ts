@@ -1,50 +1,53 @@
 import type { MetadataRoute } from "next";
 
+// A crawler obeys only its most specific group, so every named group repeats these.
+const PRIVATE_PATHS = ["/api/", "/thank-you"];
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/thank-you"],
+        disallow: PRIVATE_PATHS,
       },
       // ── Real-Time AI Search Engines & Answer Attribution Bots (Priority Allow) ──
       // ChatGPT / OpenAI Search
-      { userAgent: "OAI-SearchBot", allow: "/" },
-      { userAgent: "ChatGPT-User", allow: "/" },
-      { userAgent: "GPTBot", allow: "/" },
+      { userAgent: "OAI-SearchBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "ChatGPT-User", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "GPTBot", allow: "/", disallow: PRIVATE_PATHS },
       // Anthropic Claude
-      { userAgent: "ClaudeBot", allow: "/" },
-      { userAgent: "Claude-Web", allow: "/" },
-      { userAgent: "anthropic-ai", allow: "/" },
+      { userAgent: "ClaudeBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Claude-Web", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "anthropic-ai", allow: "/", disallow: PRIVATE_PATHS },
       // Perplexity AI
-      { userAgent: "PerplexityBot", allow: "/" },
+      { userAgent: "PerplexityBot", allow: "/", disallow: PRIVATE_PATHS },
       // Google Search & Gemini
-      { userAgent: "Googlebot", allow: "/" },
-      { userAgent: "Google-Extended", allow: "/" },
+      { userAgent: "Googlebot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Google-Extended", allow: "/", disallow: PRIVATE_PATHS },
       // Apple Intelligence & Siri
-      { userAgent: "Applebot", allow: "/" },
-      { userAgent: "Applebot-Extended", allow: "/" },
+      { userAgent: "Applebot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Applebot-Extended", allow: "/", disallow: PRIVATE_PATHS },
       // Microsoft Copilot & Bing
-      { userAgent: "bingbot", allow: "/" },
-      { userAgent: "BingPreview", allow: "/" },
+      { userAgent: "bingbot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "BingPreview", allow: "/", disallow: PRIVATE_PATHS },
       // Meta AI Search
-      { userAgent: "meta-externalagent", allow: "/" },
-      { userAgent: "FacebookBot", allow: "/" },
+      { userAgent: "meta-externalagent", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "FacebookBot", allow: "/", disallow: PRIVATE_PATHS },
       // Other AI Search & Answers
-      { userAgent: "Bravebot", allow: "/" },
-      { userAgent: "DuckAssistBot", allow: "/" },
-      { userAgent: "YouBot", allow: "/" },
-      { userAgent: "Cohere-ai", allow: "/" },
-      { userAgent: "Amazonbot", allow: "/" },
+      { userAgent: "Bravebot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "DuckAssistBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "YouBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Cohere-ai", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Amazonbot", allow: "/", disallow: PRIVATE_PATHS },
       // Regional & Specialised AI Retrieval Engines
-      { userAgent: "GrokBot", allow: "/" },
-      { userAgent: "xAI", allow: "/" },
-      { userAgent: "DeepSeekBot", allow: "/" },
-      { userAgent: "DeepSeek-R1", allow: "/" },
-      { userAgent: "KimiBot", allow: "/" },
-      { userAgent: "MoonshotBot", allow: "/" },
-      { userAgent: "Qwenbot", allow: "/" },
+      { userAgent: "GrokBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "xAI", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "DeepSeekBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "DeepSeek-R1", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "KimiBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "MoonshotBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Qwenbot", allow: "/", disallow: PRIVATE_PATHS },
       // ── Aggressive Unattributed Training Scrapers (Disallowed) ──
       { userAgent: "CCBot", disallow: "/" },
       { userAgent: "Bytespider", disallow: "/" },

@@ -1486,7 +1486,7 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         name: "Can expat families request a female Quran tutor?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. State the preference when booking. Relevant credentials for the proposed tutor are confirmed before enrolment.",
+          text: "Yes. Female tutors are available — state the preference when booking. Every NoorPath tutor holds an Ijazah or a Quran teaching certificate.",
         },
       },
       {
@@ -2400,7 +2400,7 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
         name: "Can teens request a female Quran tutor?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — female-tutor preference can be requested and is confirmed during matching subject to availability.",
+          text: "Yes — female tutors are available. Choose a female tutor when you book the free trial.",
         },
       },
       {

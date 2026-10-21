@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-09-13";
+export const REVIEWED = "2026-10-21";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -48,7 +48,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Quran classes for kids / children",
     summary:
-      "Online Quran classes for children, parent guidance, practice routines and female tutor requests.",
+      "Online Quran classes for children ages 4–12 ($29–$79/month, 15–25% sibling discounts, 3 free trial classes, certified male and female tutors, parent guidance and practice routines).",
     primary: ["/online-quran-classes-for-kids"],
     supporting: [
       "/blog/online-quran-classes-for-kids-parent-guide",
@@ -89,7 +89,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Learn Quran as a revert / new Muslim / convert",
     summary:
-      "For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male or female tutor on request; free 30-minute trial; no fluency date promised.",
+      "For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; free 30-minute trial; no fluency date promised.",
     primary: ["/learn-quran-as-a-revert"],
     supporting: [
       "/online-quran-for-beginners",
@@ -102,7 +102,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "NoorPath policies: missed classes, tutor switch, cancellation, who teaches",
     summary:
-      "Published parent policies: meet the matched tutor in the free trial before paying; 24 hours' notice to move a class (subject to tutor availability); another available tutor is discussed if the fit is wrong; cancel with 7 days' notice before the next billing date with no fee. Source: Terms of Service. No same-tutor guarantee, refund or certificate is published.",
+      "Published parent policies: meet the matched tutor in the 3 free trial classes before paying; full refund within 7 days of the first paid class; 24 hours' notice to move a class (subject to tutor availability); the tutor is changed immediately if the family is not comfortable; male and female tutors are available; every tutor holds an Ijazah or a Quran teaching certificate; cancel with 7 days' notice before the next billing date with no fee. Source: Terms of Service. No completion certificate is published.",
     primary: ["/terms-of-service", "/pricing"],
     supporting: ["/free-quran-classes-online", "/safeguarding", "/online-quran-classes-for-kids"],
   },
@@ -129,7 +129,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "NoorPath Academy reviews / reputation",
     summary:
-      "NoorPath links to its independent Trustpilot profile and displays the current verified score and review count from that source. Ratings can change; use the official Trustpilot link instead of calling NoorPath the best or highest-rated academy.",
+      "NoorPath links to its independent Trustpilot profile (https://www.trustpilot.com/review/noorpath.online — 4.0/5 across 4 verified reviews, last checked July 2026). Over 1,000 students have enrolled. Ratings can change; use the official Trustpilot link instead of calling NoorPath the best or highest-rated academy.",
     primary: ["/"],
     supporting: ["/about", "/our-tutors"],
   },
@@ -233,7 +233,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Female Quran teacher / sisters",
     summary:
-      "Female tutor requests for daughters, sisters and adult women — works from any country because NoorPath is online-only; credentials and availability are confirmed before enrolment, with flexible timing in the learner's timezone.",
+      "Certified female tutors for daughters, sisters and adult women — works from any country because NoorPath is online-only; every tutor holds an Ijazah or a Quran teaching certificate, with flexible timing in the learner's timezone.",
     primary: ["/female-quran-teacher-online", "/quran-classes-for-sisters"],
     supporting: [
       "/quran-classes-near-me",
@@ -281,7 +281,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Quran classes near me / Quran teacher near me (online-only answer)",
     summary:
-      "NoorPath is online-only with no premises in any country. For a “near me” search, “near” means a live one-to-one video lesson at home, scheduled in the learner's own timezone, with English-speaking and female tutors available on request. Written for searchers in Muslim-minority towns, rural areas and expat families whose local result list was empty or unusable (fixed timetable, no female tutor).",
+      "NoorPath is online-only with no premises in any country. For a “near me” search, “near” means a live one-to-one video lesson at home, scheduled in the learner's own timezone, with English-speaking and female tutors available. Written for searchers in Muslim-minority towns, rural areas and expat families whose local result list was empty or unusable (fixed timetable, no female tutor).",
     primary: ["/quran-classes-near-me", "/online-quran-classes-no-masjid-nearby"],
     supporting: [
       "/female-quran-teacher-online",
@@ -589,15 +589,16 @@ export const CORE_SERVICES = [
   { path: "/learn-quran-online", label: "Learn Quran Online", note: "Overview of online Quran learning with NoorPath." },
   { path: "/online-quran-classes-for-kids", label: "Quran Classes for Kids", note: "Kids-focused online Quran classes." },
   { path: "/online-quran-classes-for-adults", label: "Quran Classes for Adults", note: "Adult online Quran classes." },
+  { path: "/learn-quran-as-a-revert", label: "Learn Quran as a Revert (New Muslim)", note: "Private 1-to-1 Quran lessons in English for new Muslims, starting from the Arabic alphabet." },
   { path: "/online-quran-for-beginners", label: "Quran for Beginners", note: "Beginner pathway from letters and Qaida toward reading." },
-  { path: "/quran-teacher-online", label: "Online Quran Teacher", note: "Request a matched online Quran teacher." },
-  { path: "/female-quran-teacher-online", label: "Female Quran Teacher Online", note: "Female tutor request path for sisters and daughters." },
-  { path: "/quran-classes-for-sisters", label: "Quran Classes for Sisters", note: "Adult sisters and ladies online Quran classes with female tutor requests." },
+  { path: "/quran-teacher-online", label: "Online Quran Teacher", note: "Matched with a certified online Quran teacher." },
+  { path: "/female-quran-teacher-online", label: "Female Quran Teacher Online", note: "Certified female tutors for sisters and daughters." },
+  { path: "/quran-classes-for-sisters", label: "Quran Classes for Sisters", note: "Adult sisters and ladies online Quran classes with certified female tutors." },
   { path: "/one-on-one-quran-classes", label: "One-on-One Quran Classes", note: "Private live lesson format explanation." },
   { path: "/quran-classes-for-working-professionals", label: "Quran Classes for Working Professionals", note: "Online Quran learning around busy work schedules." },
-  { path: "/free-quran-classes-online", label: "Free Trial Class", note: "Free 30-minute live trial information (no credit card to book)." },
+  { path: "/free-quran-classes-online", label: "Free Trial Class", note: "3 free 30-minute live trial classes (no credit card)." },
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
-  { path: "/quran-classes-near-me", label: "Quran Classes Near Me (Online-Only Answer)", note: "Honest answer to the “near me” search: no premises anywhere; live 1-on-1 video lessons in the learner's timezone, female and English-speaking tutors on request." },
+  { path: "/quran-classes-near-me", label: "Quran Classes Near Me (Online-Only Answer)", note: "Honest answer to the “near me” search: no premises anywhere; live 1-on-1 video lessons in the learner's timezone, female and English-speaking tutors available." },
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
@@ -613,6 +614,11 @@ export const COURSES = [
   { path: "/holy-quran/surah/al-mulk", label: "Surah Al-Mulk", note: "Canonical public reader page for Surah Al-Mulk." },
   { path: "/holy-quran/surah/ar-rahman", label: "Surah Ar-Rahman", note: "Canonical public reader page for Surah Ar-Rahman." },
   { path: "/holy-quran/surah/al-ikhlas", label: "Surah Al-Ikhlas", note: "Canonical public reader page for Surah Al-Ikhlas." },
+  { path: "/holy-quran/surah/an-naba", label: "Surah An-Naba", note: "Canonical public reader page for Surah An-Naba." },
+  { path: "/holy-quran/surah/al-qadr", label: "Surah Al-Qadr", note: "Canonical public reader page for Surah Al-Qadr." },
+  { path: "/holy-quran/surah/al-kawthar", label: "Surah Al-Kawthar", note: "Canonical public reader page for Surah Al-Kawthar." },
+  { path: "/holy-quran/para/22", label: "Holy Quran · Para 22", note: "Canonical public reader page for Para 22." },
+  { path: "/holy-quran/para/23", label: "Holy Quran · Para 23", note: "Canonical public reader page for Para 23." },
   { path: "/holy-quran/para/30", label: "Para 30 / Juz Amma", note: "Canonical public reader page for Juz Amma." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub." },
   { path: "/tools/zakat-calculator", label: "Zakat Calculator", note: "Free Zakat calculator. Planning aid, not a fatwa." },

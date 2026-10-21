@@ -74,7 +74,7 @@ const benefits = [
   { icon: <UserCheck size={22} />, title: "Undivided tutor attention", desc: "Every correction and tip is for your learner — not split across a group." },
   { icon: <Clock size={22} />, title: "Schedule matching", desc: "Share preferred windows; available tutor options are confirmed after your request." },
   { icon: <BookOpen size={22} />, title: "Personal learning plan", desc: "Qaida, Tajweed, or Hifz focus is set after assessing the learner's starting level." },
-  { icon: <Award size={22} />, title: "Credentials confirmed", desc: "Relevant teaching experience and credentials for the proposed tutor are confirmed before enrolment." },
+  { icon: <Award size={22} />, title: "Certified tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Not comfortable? We change the tutor immediately." },
   { icon: <Video size={22} />, title: "Live online lessons", desc: "Interactive video lessons — not pre-recorded courses alone." },
   { icon: <Users size={22} />, title: "Kids and adults", desc: "Matching considers age, confidence, and whether you prefer a male or female tutor." },
 ];
@@ -267,7 +267,7 @@ export default function OneOnOneQuranClassesPage() {
                 No credit card required. Request a free {TRIAL.durationMinutes}-minute one-on-one Quran class and assess tutor fit before choosing a plan.
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                {["Private 1-to-1 lesson format", "Timezone & schedule matching", "Male or female tutor requests", "Credentials confirmed before enrolment"].map((b) => (
+                {["Private 1-to-1 lesson format", "Timezone & schedule matching", "Male or female tutors available", "Ijazah or certified tutors"].map((b) => (
                   <li key={b} style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,.8)", fontSize: ".9rem" }}>
                     <CheckCircle size={15} style={{ color: "var(--gold)", flexShrink: 0 }} /> {b}
                   </li>

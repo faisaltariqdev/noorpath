@@ -151,13 +151,18 @@ export function useTrialFormSubmit(options: Options = {}) {
             mailFd.set("_captcha", "false");
             mailFd.set("_honey", String(fd.get("_honey") || ""));
 
-            fetch(FORMSUBMIT, {
-              method: "POST",
-              body: mailFd,
-              headers: { Accept: "application/json" },
-            }).catch(() => null);
+            // Must finish before the thank-you redirect, or the browser cancels it.
+            await Promise.race([
+              fetch(FORMSUBMIT, {
+                method: "POST",
+                body: mailFd,
+                headers: { Accept: "application/json" },
+                keepalive: true,
+              }).catch(() => null),
+              new Promise((r) => setTimeout(r, 6000)),
+            ]);
           } catch {
-            // Ignore secondary fallback errors — lead is already saved server-side
+            // Ignore secondary fallback errors
           }
         }
 

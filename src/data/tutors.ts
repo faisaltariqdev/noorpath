@@ -86,7 +86,7 @@ export const tutorMatchingRoles = [
   },
   {
     id: "female",
-    name: "Female Tutor Request",
-    focus: "Sisters and daughters — subject to availability",
+    name: "Female Tutors",
+    focus: "Certified female tutors for sisters and daughters",
   },
 ] as const;

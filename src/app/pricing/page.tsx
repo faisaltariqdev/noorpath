@@ -11,27 +11,31 @@ import {
   CANCELLATION_NOTICE_DAYS,
   FAMILY_DISCOUNTS,
   PRICING_PLANS,
+  REFUND_POLICY,
+  REFUND_WINDOW_DAYS,
   TRIAL,
+  TRIAL_OFFER,
+  TUTOR_FACTS,
 } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Class Pricing & Family Plans | NoorPath",
+    absolute: `Online Quran Class Pricing ($${PRICING_PLANS[0].monthlyPriceUsd}–$${PRICING_PLANS[PRICING_PLANS.length - 1].monthlyPriceUsd}/mo) & Family Discounts | NoorPath`,
   },
-  description: `NoorPath Academy online Quran class pricing from $${PRICING_PLANS[0].monthlyPriceUsd}/month. Compare Starter, Standard and Intensive one-to-one plans and request a free trial.`,
+  description: `1-to-1 online Quran class pricing: ${PRICING_PLANS.map((plan) => `$${plan.monthlyPriceUsd}`).join(", ")}/month, ${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}% sibling discounts, ${TRIAL_OFFER} with no credit card, and a ${REFUND_WINDOW_DAYS}-day refund.`,
   alternates: { canonical: "https://www.noorpath.online/pricing" },
   openGraph: {
     title: "Online Quran Class Pricing & Family Plans | NoorPath",
-    description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Starter, Standard, and Intensive plans. Family discount for 2+ siblings. Free ${TRIAL.durationMinutes}-minute trial.`,
+    description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Starter, Standard, and Intensive plans. Family discount for 2+ siblings. ${TRIAL.classes} free trial classes.`,
     url: "https://www.noorpath.online/pricing",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Class Pricing — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Class Pricing | NoorPath",
-    description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Family discount for siblings. Free trial request.`,
+    description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Family discount for siblings. ${TRIAL.classes} free trial classes.`,
     images: ["/og-image.png"],
   },
 };
@@ -54,11 +58,12 @@ const plans = PRICING_PLANS.map((plan) => ({
 }));
 
 const faqs = [
-  { q: "Is there a free trial?", a: `Yes. New learners can request a free ${TRIAL.durationMinutes}-minute trial class. No credit card is required. Tutor availability is confirmed after the request.` },
+  { q: "Is there a free trial?", a: `Yes. New learners get ${TRIAL_OFFER}, live and 1-to-1. No credit card is required. Tutor availability is confirmed after the request.` },
   { q: "Do you have family discounts?", a: `Yes — ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
   { q: "Can I change my plan later?", a: "Absolutely. You can upgrade or downgrade your plan at any time. Changes take effect from the next billing cycle." },
-  { q: "What if I need to cancel?", a: `You can cancel with ${CANCELLATION_NOTICE_DAYS} days' notice before your next billing date. Payments already made for a partial month are not refundable, and remaining scheduled sessions may still be used.` },
-  { q: "Are female tutors available?", a: "You can request a female tutor. NoorPath confirms a suitable match based on the learner's needs, schedule and current tutor availability." },
+  { q: "Do you offer refunds?", a: `Yes. ${REFUND_POLICY}` },
+  { q: "What if I need to cancel?", a: `You can cancel with ${CANCELLATION_NOTICE_DAYS} days' notice before your next billing date, with no cancellation fee. Remaining scheduled sessions in a paid month may still be used.` },
+  { q: "Are female tutors available?", a: `Yes. ${TUTOR_FACTS.femaleTutors} ${TUTOR_FACTS.credentials}` },
 ];
 
 const pricingJsonLd = {
@@ -69,7 +74,7 @@ const pricingJsonLd = {
       "@id": "https://www.noorpath.online/pricing#webpage",
       url: "https://www.noorpath.online/pricing",
       name: "Online Quran Class Pricing & Family Plans",
-      description: "Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with a free trial class.",
+      description: `Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with ${TRIAL.classes} free trial classes.`,
       isPartOf: { "@type": "WebSite", "@id": "https://www.noorpath.online/#website", url: "https://www.noorpath.online" },
       about: { "@id": "https://www.noorpath.online/pricing#service" },
       speakable: {
@@ -81,7 +86,7 @@ const pricingJsonLd = {
       "@type": "Service",
       "@id": "https://www.noorpath.online/pricing#service",
       name: "Online Quran Class Pricing",
-      description: "Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with a free trial class.",
+      description: `Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with ${TRIAL.classes} free trial classes.`,
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education",
       areaServed: "Worldwide",
@@ -125,7 +130,7 @@ export default function PricingPage() {
             <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Pricing</span>
           </nav>
           <h1>Simple, Transparent Pricing</h1>
-          <p>No hidden fees. No long-term contracts. Family discounts for multiple siblings. Start with a free trial.</p>
+          <p>No hidden fees. No long-term contracts. Family discounts for multiple siblings. Start with {TRIAL_OFFER}.</p>
         </div>
       </div>
 
@@ -144,7 +149,7 @@ export default function PricingPage() {
           >
             <strong style={{ color: "var(--emerald)" }}>Quick pricing summary: </strong>
             <span>
-              NoorPath Quran classes start at <strong>${PRICING_PLANS[0].monthlyPriceUsd}/month</strong> for weekly 1-on-1 live lessons ({PRICING_PLANS[0].sessionMinutes} mins/session). Family sibling discounts range from 10% to 25% off. Every new student receives a <strong>free 30-minute trial class</strong> with no credit card or setup fees.
+              NoorPath Quran classes start at <strong>${PRICING_PLANS[0].monthlyPriceUsd}/month</strong> for weekly 1-on-1 live lessons ({PRICING_PLANS[0].sessionMinutes} mins/session). Family sibling discounts range from {FAMILY_DISCOUNTS[0].discountPercent}% to {FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}% off. Every new student gets <strong>{TRIAL_OFFER}</strong> with no credit card or setup fees, and a full refund if they ask within {REFUND_WINDOW_DAYS} days of the first paid class.
             </span>
           </div>
 
@@ -220,7 +225,7 @@ export default function PricingPage() {
             <div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "clamp(1.6rem, 4.5vw, 2.2rem)", marginBottom: 16 }}>Start With a Free Trial — No Credit Card</h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
-                Experience NoorPath before you commit. Request a free {TRIAL.durationMinutes}-minute class with a tutor matched to the learner&apos;s needs and current availability.
+                Experience NoorPath before you commit. Take {TRIAL_OFFER} with a tutor matched to the learner&apos;s needs and current availability.
               </p>
             </div>
             <div className="cta-form-wrap">

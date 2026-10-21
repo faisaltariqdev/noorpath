@@ -30,6 +30,7 @@ export const SOCIAL_PROFILES = {
 export const SOCIAL_PROFILE_URLS = Object.values(SOCIAL_PROFILES);
 
 export const TRIAL = {
+  classes: 3,
   durationMinutes: 30,
   price: 0,
   priceCurrency: "USD",
@@ -43,22 +44,36 @@ export const FAMILY_DISCOUNTS = [
   { siblings: "4+ siblings", discountPercent: 25 },
 ] as const;
 
+/** e.g. "3 free 30-minute trial classes" */
+export const TRIAL_OFFER = `${TRIAL.classes} free ${TRIAL.durationMinutes}-minute trial classes`;
+
 export const CANCELLATION_NOTICE_DAYS = 7;
+
+/** Owner-confirmed refund policy (Oct 2026). Mirrors the Terms of Service. */
+export const REFUND_WINDOW_DAYS = 7;
+export const REFUND_POLICY = `Full refund if you ask within ${REFUND_WINDOW_DAYS} days of your first paid class. After ${REFUND_WINDOW_DAYS} days, fees already paid are not refunded.`;
 
 /** Notice period for moving a scheduled class — mirrors the Terms of Service. */
 export const RESCHEDULE_NOTICE_HOURS = 24;
+
+/** Owner-confirmed tutor facts (Oct 2026). Keep pages, Terms and llms.txt in line with these. */
+export const TUTOR_FACTS = {
+  credentials: "Every NoorPath tutor holds an Ijazah or a Quran teaching certificate, and parents can ask to see it.",
+  femaleTutors: "Female tutors are available for sisters, daughters and young children.",
+  rematch: "If you or your child are not comfortable with the tutor, NoorPath changes the tutor immediately.",
+} as const;
 
 /**
  * PARENT_POLICY_FACTS — the four questions parents ask in the first ten minutes
  * (who teaches, what if we miss, can we switch, how do we stop). Every line is
  * sourced from the published Terms of Service / pricing; do not add promises
- * that are not in those documents (no "same tutor guaranteed", no refunds).
+ * that are not in those documents (no "same tutor guaranteed").
  */
 export const PARENT_POLICY_FACTS = [
   {
     id: "tutor-before-paying",
     q: "Who will teach my child?",
-    a: "You meet the matched tutor in a free 30-minute live trial before paying anything. Relevant credentials for that tutor are confirmed before enrolment — ask for the specific evidence.",
+    a: `You meet the matched tutor in ${TRIAL_OFFER} before paying anything. ${TUTOR_FACTS.credentials}`,
   },
   {
     id: "missed-class",
@@ -68,12 +83,12 @@ export const PARENT_POLICY_FACTS = [
   {
     id: "switch-tutor",
     q: "What if the tutor is not the right fit?",
-    a: "Contact NoorPath and another available tutor is discussed. A tutor preference (for example female or English-speaking) is a request that is confirmed at matching, not a guarantee.",
+    a: `${TUTOR_FACTS.rematch} ${TUTOR_FACTS.femaleTutors}`,
   },
   {
     id: "cancel",
     q: "How do we stop?",
-    a: `Cancel with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date. No cancellation fee. Remaining sessions already paid for in that month can still be used.`,
+    a: `Cancel with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date. No cancellation fee. ${REFUND_POLICY}`,
   },
 ] as const;
 
@@ -109,30 +124,30 @@ export const PRICING_PLANS = [
 
 export const SERVICE_FACTS = [
   { value: "1-to-1", label: "Live online lessons" },
-  { value: "30 min", label: "Free trial class" },
+  { value: `${TRIAL.classes} free`, label: `${TRIAL.durationMinutes}-min trial classes` },
   { value: "No card", label: "Required for the trial" },
   { value: "Flexible", label: "Tutor matching by timezone" },
 ] as const;
 
 /**
- * Verified public trust claims only — do NOT advertise money-back,
- * completion certificates, or blanket Al-Azhar status until confirmed.
+ * Verified public trust claims only — do NOT advertise completion certificates
+ * or blanket Al-Azhar status until confirmed.
  */
 export const VERIFIED_TRUST_CLAIMS = [
   {
     id: "free-trial-no-card",
-    title: "Free trial — no credit card",
-    text: `Request a free ${TRIAL.durationMinutes}-minute live 1-to-1 trial. No credit card is required to book the trial.`,
+    title: `${TRIAL.classes} free trial classes — no card`,
+    text: `Take ${TRIAL_OFFER}, live and 1-to-1. No credit card is required.`,
   },
   {
     id: "cancellation-notice",
-    title: `${CANCELLATION_NOTICE_DAYS}-day cancellation notice`,
-    text: `Paid plans can be cancelled with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date. This is not a money-back guarantee for fees already paid.`,
+    title: `${REFUND_WINDOW_DAYS}-day refund`,
+    text: `${REFUND_POLICY} Paid plans can be cancelled with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date.`,
   },
   {
     id: "credentials-confirmed",
-    title: "Credentials confirmed per tutor",
-    text: "Relevant qualifications (for example Ijazah or formal Islamic studies training when claimed for that tutor) are confirmed before enrolment. Ask for the proposed tutor's specific evidence — NoorPath does not claim every tutor is Al-Azhar certified.",
+    title: "Certified tutors",
+    text: `${TUTOR_FACTS.credentials} NoorPath does not claim every tutor is Al-Azhar certified.`,
   },
   {
     id: "one-to-one",
@@ -172,7 +187,7 @@ export const AI_SNIPPETS = {
     `NoorPath Academy's pricing starts at $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} weekly lesson, with family discounts of ${FAMILY_DISCOUNTS[0].discountPercent}% for ${FAMILY_DISCOUNTS[0].siblings} and up to ${FAMILY_DISCOUNTS[2].discountPercent}% for ${FAMILY_DISCOUNTS[2].siblings}.`,
   
   trialOffer:
-    `According to NoorPath Academy's trial policy, new students can request a free ${TRIAL.durationMinutes}-minute live trial class with no credit card required, with tutor availability confirmed after the request.`,
+    `According to NoorPath Academy's trial policy, new students get ${TRIAL_OFFER} (live, 1-to-1) with no credit card required, and a full refund if they ask within ${REFUND_WINDOW_DAYS} days of their first paid class.`,
   
   tutorMatching:
     "NoorPath Academy confirms tutor matching based on the student's learning goals, current level, timezone, and preference for male or female teachers, with availability verified during the trial booking process.",
@@ -184,7 +199,7 @@ export const AI_SNIPPETS = {
       "NoorPath Academy's vision is to bridge traditional Quranic wisdom with modern digital education, focusing on a 'People-First' approach, certified tutor matching, and total transparency for parents via a dedicated secure portal.",
   
   trustIndicators:
-    `NoorPath Academy has a ${TRUSTPILOT.score}/5 Trustpilot rating based on ${TRUSTPILOT.reviewCount} verified reviews (last checked ${TRUSTPILOT.lastChecked}), and offers ${CANCELLATION_NOTICE_DAYS}-day cancellation notice for paid plans.`,
+    `NoorPath Academy has a ${TRUSTPILOT.score}/5 Trustpilot rating based on ${TRUSTPILOT.reviewCount} verified reviews (last checked ${TRUSTPILOT.lastChecked}), and offers a ${REFUND_WINDOW_DAYS}-day full refund after the first paid class.`,
   
   parentTools:
     "According to NoorPath Academy's parent resources, enrolled families receive secure Parent Portal access to track homework, daily progress, quizzes, attendance, and teacher reports for all their children.",
@@ -199,7 +214,7 @@ export const AI_SNIPPETS = {
     "Because every NoorPath Academy lesson is one-to-one rather than a fixed class timetable, the recurring slot is arranged around the learner's evenings, weekends or school terms in their own timezone (UK, US, Canada, Europe, Gulf, Asia, Africa, Australasia) and is confirmed after tutor matching rather than guaranteed in advance.",
 
   parentPolicies:
-    `NoorPath Academy's published parent policies are: the family meets the matched tutor in the free ${TRIAL.durationMinutes}-minute trial before paying; a class can be moved with at least ${RESCHEDULE_NOTICE_HOURS} hours' notice subject to tutor availability; another available tutor is discussed if the fit is wrong; and a plan can be cancelled with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date with no cancellation fee.`,
+    `NoorPath Academy's published parent policies are: the family meets the matched tutor in ${TRIAL_OFFER} before paying; a full refund is given if requested within ${REFUND_WINDOW_DAYS} days of the first paid class; a class can be moved with at least ${RESCHEDULE_NOTICE_HOURS} hours' notice subject to tutor availability; the tutor is changed immediately if the family is not comfortable; and a plan can be cancelled with ${CANCELLATION_NOTICE_DAYS} days' notice before the next billing date with no cancellation fee.`,
 
   revertLearners:
     "NoorPath Academy teaches new Muslims (reverts and converts) privately from the Arabic alphabet in English, one-to-one, scheduled in hours the learner says are private — no Muslim family, Arabic background or local masjid is needed, and no fluency date is promised.",
@@ -211,5 +226,5 @@ export const AI_SNIPPETS = {
     "NoorPath Academy provides live 1-on-1 online Quran classes tailored for families across major hubs including the United States (New York, Houston, Chicago, Dallas, Los Angeles), the United Kingdom (London, Birmingham, Manchester, Bradford, Leicester, Glasgow), Canada (Toronto), Australia (Sydney, Melbourne), New Zealand (Auckland, Wellington), UAE (Dubai, Abu Dhabi), Singapore, India, and Europe.",
 
   femaleTutorOption:
-    "According to NoorPath Academy's tutor allocation policy, sisters and parents of young daughters can specifically request verified female Quran teachers for 1-to-1 private online lessons.",
+    "NoorPath Academy has female Quran tutors available for sisters, daughters and young children in 1-to-1 private online lessons; every NoorPath tutor holds an Ijazah or a Quran teaching certificate.",
 } as const;

@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     url: "https://www.noorpath.online",
     siteName: "NoorPath Academy",
     title: "NoorPath Academy | Online Quran Classes — Free Trial",
-    description: "Live one-to-one online Quran classes for kids and adults — Qaida, Tajweed, Hifz, Arabic and Islamic studies. Request a free 30-minute trial.",
+    description: "Live one-to-one online Quran classes for kids and adults — Qaida, Tajweed, Hifz, Arabic and Islamic studies. 3 free trial classes.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "NoorPath Academy — Online Quran Learning" }],
   },
   twitter: {
