@@ -13,10 +13,10 @@ const pageUrl = "https://www.noorpath.online/quran-classes-for-sisters";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Quran Classes for Sisters Online — Female Tutor | NoorPath Academy",
+    absolute: `Quran Classes for Sisters — Female Tutors Online | NoorPath`,
   },
   description:
-    "Online Quran classes for sisters and ladies with a female tutor request. Live 1-to-1 Qaida, Tajweed or Hifz lessons — free 30-minute trial, no credit card.",
+    `Private Quran lessons for sisters with certified female tutors. Learn from home with full privacy. ${TRIAL.classes} free trial classes. Book yours today.`,
   keywords: [
     "quran classes for sisters",
     "quran classes for ladies online",
@@ -28,16 +28,16 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: "Quran Classes for Sisters Online | NoorPath Academy",
+    title: `Quran Classes for Sisters — Female Tutors Online | NoorPath`,
     description:
-      "Request a female Quran tutor for sisters and ladies. Live 1-to-1 lessons and a free trial with no credit card.",
+      `Private Quran lessons for sisters with certified female tutors. Learn from home with full privacy. ${TRIAL.classes} free trial classes. Book yours today.`,
     url: pageUrl,
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Quran Classes for Sisters — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quran Classes for Sisters | NoorPath Academy",
-    description: "Female tutor requests for sisters and ladies. Free 30-minute trial.",
+    title: `Quran Classes for Sisters — Female Tutors Online | NoorPath`,
+    description: `Private Quran lessons for sisters with certified female tutors. Learn from home with full privacy. ${TRIAL.classes} free trial classes. Book yours today.`,
     images: ["/og-image.png"],
   },
 };

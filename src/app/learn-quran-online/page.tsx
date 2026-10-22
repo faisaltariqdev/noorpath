@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import KeywordLandingPage from "@/components/KeywordLandingPage";
 import { learnQuranOnline } from "@/lib/landingPageData";
+import {
+  buildCourseItemListJsonLd,
+  PRICED_COURSE_CATEGORIES,
+} from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
 const PATH = "/learn-quran-online";
 const { metaTitle, metaDescription, keywords, ...props } = learnQuranOnline;
+
+const pageUrl = `https://www.noorpath.online${PATH}`;
+const courseListJsonLd = buildCourseItemListJsonLd(pageUrl, PRICED_COURSE_CATEGORIES);
 
 export const metadata: Metadata = {
   title: { absolute: metaTitle },
@@ -22,5 +29,13 @@ export const metadata: Metadata = {
 };
 
 export default function LearnQuranOnlinePage() {
-  return <KeywordLandingPage canonicalPath={PATH} {...props} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseListJsonLd) }}
+      />
+      <KeywordLandingPage canonicalPath={PATH} {...props} />
+    </>
+  );
 }

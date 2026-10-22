@@ -14,6 +14,9 @@ import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import LocationConversionBar from "@/components/LocationConversionBar";
+import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -239,15 +242,6 @@ export default async function CityPage({ params }: Props) {
           ]
         : []),
       {
-        "@type": "FAQPage",
-        inLanguage: locale,
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      },
-      {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
@@ -317,6 +311,11 @@ export default async function CityPage({ params }: Props) {
                 >
                   WhatsApp Us
                 </WhatsAppLink>
+              </div>
+              <div style={{ marginTop: 22 }}>
+                <LocationHeroCtaCard
+                  whatsappText={`Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
+                />
               </div>
             </div>
 
@@ -548,6 +547,7 @@ export default async function CityPage({ params }: Props) {
 
               <TrustpilotSnippet count={2} title={`Verified Reviews for ${c.city} & ${c.country} Families`} country={c.country} />
 
+              <FaqJsonLd faqs={faqs} pageUrl={pageUrl} />
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", color: "var(--charcoal)", marginBottom: 16 }}>
                   FAQs — Quran Classes in {c.city}
@@ -643,6 +643,10 @@ export default async function CityPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <LocationConversionBar
+        whatsappText={`Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
+      />
     </>
   );
 }

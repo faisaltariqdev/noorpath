@@ -7,7 +7,9 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
 import { FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 
@@ -54,37 +56,60 @@ export default async function CourseDetailPage({ params }: Props) {
 
   const related = courses.filter((c) => c.slug !== slug).slice(0, 3);
 
+  const courseUrl = `https://www.noorpath.online/courses/${slug}`;
+  const isPricedQuranCourse =
+    slug === "noorani-qaida-online" ||
+    slug === "tajweed-classes-online" ||
+    slug === "hifz-program-online" ||
+    slug === "quran-classes-for-kids";
+
+  const pricedCourseJsonLd = isPricedQuranCourse
+    ? buildCourseWithPricingJsonLd({
+        name: course.title,
+        description: course.fullDesc,
+        url: courseUrl,
+      })
+    : null;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Course",
+        "@id": `${courseUrl}#course`,
         name: course.title,
         description: course.fullDesc,
-        url: `https://www.noorpath.online/courses/${slug}`,
+        url: courseUrl,
         provider: ORGANIZATION_REF,
         educationalLevel: course.level,
         typicalAgeRange: course.age,
         courseMode: "online",
         inLanguage: ["en", "ar"],
         teaches: course.features.join(", "),
-        hasCourseInstance: {
-          "@type": "CourseInstance",
-          courseMode: "online",
-          courseWorkload: "PT30M",
-          instructor: {
-            "@type": "Person",
-            name: "Assigned Quran Tutor",
-            description: "Qualified Quran tutor matched by timezone, student goals, and background.",
-          },
-        },
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          description: `Free ${TRIAL.durationMinutes}-minute trial class request`,
-          url: "https://www.noorpath.online/free-quran-classes-online",
-        },
+        ...(pricedCourseJsonLd
+          ? {
+              hasCourseInstance: pricedCourseJsonLd.hasCourseInstance,
+              offers: pricedCourseJsonLd.offers,
+            }
+          : {
+              hasCourseInstance: {
+                "@type": "CourseInstance",
+                courseMode: "online",
+                courseWorkload: "PT30M",
+                instructor: {
+                  "@type": "Person",
+                  name: "Assigned Quran Tutor",
+                  description: "Qualified Quran tutor matched by timezone, student goals, and background.",
+                },
+              },
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+                description: `Free ${TRIAL.durationMinutes}-minute trial class request`,
+                url: "https://www.noorpath.online/free-quran-classes-online",
+              },
+            }),
       },
       {
         "@type": "BreadcrumbList",
@@ -94,16 +119,6 @@ export default async function CourseDetailPage({ params }: Props) {
           { "@type": "ListItem", position: 3, name: course.title, item: `https://www.noorpath.online/courses/${slug}` },
         ],
       },
-      ...(course.faqs && course.faqs.length > 0
-        ? [{
-            "@type": "FAQPage",
-            mainEntity: course.faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }]
-        : []),
     ],
   };
 
@@ -265,10 +280,12 @@ export default async function CourseDetailPage({ params }: Props) {
 
               {/* FAQ section */}
               {course.faqs && course.faqs.length > 0 && (
-                <div className="content-card" style={{ marginTop: 28 }}>
-                  <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 20 }}>
-                    Frequently Asked Questions
-                  </h2>
+                <>
+                  <FaqJsonLd faqs={course.faqs} pageUrl={courseUrl} />
+                  <div className="content-card" style={{ marginTop: 28 }}>
+                    <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 20 }}>
+                      Frequently Asked Questions
+                    </h2>
                   {course.faqs.map((f, i) => (
                     <details key={i} style={{ borderBottom: "1px solid var(--border)", padding: "16px 0" }}>
                       <summary style={{ fontWeight: 600, color: "var(--charcoal)", cursor: "pointer", fontSize: ".92rem", listStyle: "none", display: "flex", justifyContent: "space-between" }}>
@@ -277,7 +294,8 @@ export default async function CourseDetailPage({ params }: Props) {
                       <p style={{ color: "var(--muted)", marginTop: 10, lineHeight: 1.75, fontSize: ".88rem" }}>{f.a}</p>
                     </details>
                   ))}
-                </div>
+                  </div>
+                </>
               )}
 
               {/* Related courses */}

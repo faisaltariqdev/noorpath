@@ -1,4 +1,5 @@
 import { locations } from "@/data/locations";
+import { TRIAL } from "@/lib/academyFacts";
 
 const SITE_URL = "https://www.noorpath.online";
 
@@ -89,9 +90,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online uk",
     ],
     content: {
-      metadataTitle: "Online Quran Classes UK — Live 1-on-1 | NoorPath Academy",
+      metadataTitle: `Online Quran Classes UK — ${TRIAL.classes} Free Trials | NoorPath Academy`,
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for UK families, with GMT or BST lesson windows for kids and adults and a free 30-minute trial, no card required.",
+        `Live 1-on-1 Quran classes for UK families. GMT/BST-friendly times, certified tutors, from ≈£23/mo. ${TRIAL.classes} free ${TRIAL.durationMinutes}-min trial classes, no credit card.`,
       heading: "Online Quran Classes in the United Kingdom",
       introduction:
         "Families across the UK can request live one-to-one Quran tuition online, with lesson planning around the school week and local GMT or BST time.",
@@ -120,9 +121,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online usa",
     ],
     content: {
-      metadataTitle: "Online Quran Classes USA — Free 30-Min Trial | NoorPath",
+      metadataTitle: `Online Quran Classes USA — ${TRIAL.classes} Free Trials | NoorPath Academy`,
       metadataDescription:
-        "Live 1-on-1 online Quran classes for US families in ET, CT, MT or PT — Noorani Qaida, Tajweed and Hifz for kids and adults. Free 30-minute trial, no credit card.",
+        `One-on-one online Quran classes for American kids & adults. After-school & weekend slots, certified tutors. ${TRIAL.classes} free trials, no credit card.`,
       heading: "Online Quran Classes in the United States",
       introduction:
         "Families in the United States can request live one-on-one Quran lessons online without adding another commute to the school week — before-school mornings, after-school evenings or weekend windows in the learner's own time zone, from Noorani Qaida through Tajweed and Hifz.",
@@ -182,9 +183,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online canada",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Canada — Free 30-Min Trial | NoorPath",
+      metadataTitle: `Online Quran Classes Canada — ${TRIAL.classes} Free Trials | NoorPath`,
       metadataDescription:
-        "Live 1-on-1 online Quran classes for Canadian families in their own provincial time zone — Qaida, Tajweed and Hifz for kids and adults. Free 30-minute trial, no card.",
+        `Private online Quran lessons for Canadian families. Flexible evenings & weekends, male/female tutors. ${TRIAL.classes} free trial classes, no credit card.`,
       heading: "Online Quran Classes in Canada",
       introduction:
         "Canadian families — from Toronto and Ottawa to Calgary and Vancouver — can request live online Quran lessons planned around their own provincial or territorial time zone and school-week routine, with no winter commute to a weekend class.",
@@ -216,9 +217,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "quran tutor online australia",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Australia — Free Trial | NoorPath",
+      metadataTitle: `Online Quran Classes Australia — ${TRIAL.classes} Free Trials | NoorPath`,
       metadataDescription:
-        "Live 1-on-1 online Quran classes for families in Sydney, Melbourne, Brisbane and Perth — state-aware AEST/AWST scheduling. Free 30-minute trial, no credit card.",
+        `1-on-1 live Quran classes for Australian kids & adults. AEST-friendly scheduling, certified tutors. Start with ${TRIAL.classes} free trial classes.`,
       heading: "Online Quran Classes in Australia",
       introduction:
         "Families in Australia can request live online Quran tuition planned around their state’s time zone, school hours, and daylight-saving arrangements — from Noorani Qaida through Tajweed and Hifz.",
@@ -635,9 +636,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "weekend quran classes finland",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Finland — Kids & Free Trial | NoorPath",
+      metadataTitle: `Online Quran Classes Finland — ${TRIAL.classes} Free Trials | NoorPath`,
       metadataDescription:
-        "Live 1-to-1 online Quran classes in Finland for kids & adults. EET evenings & weekend slots for Helsinki & Espoo. Free 30-min trial, no card required.",
+        `Live 1-on-1 Quran classes for Finnish kids & adults. EET/EEST evenings & weekends, certified tutors. ${TRIAL.classes} free trial classes, no credit card.`,
       heading: "Online Quran Classes in Finland",
       introduction:
         "Muslim families in Finland — including Helsinki, Espoo, Vantaa and other cities — can request live one-to-one online Quran classes for children and adults when local options are thin. NoorPath teaches online only and does not operate a Finnish campus.",
@@ -669,9 +670,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "kids quran classes denmark",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Denmark — Free Trial | NoorPath",
+      metadataTitle: `Online Quran Classes Denmark — ${TRIAL.classes} Free Trials | NoorPath`,
       metadataDescription:
-        "Live 1-to-1 online Quran classes in Denmark for kids & adults. CET evenings & weekend slots for Copenhagen & Aarhus. Free 30-min trial, no card required.",
+        `Live 1-on-1 Quran classes for Danish kids & adults. CET/CEST evenings & weekends, certified tutors. ${TRIAL.classes} free trial classes, no credit card.`,
       heading: "Online Quran Classes in Denmark",
       introduction:
         "Muslim families in Denmark — including Copenhagen, Aarhus, Odense and other cities — can request live one-to-one online Quran classes, including weekend windows when weekdays are full. NoorPath teaches online only and does not operate a Danish campus.",
@@ -702,9 +703,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "islamic classes spain",
     ],
     content: {
-      metadataTitle: "Online Quran Classes in Spain — Free Trial | NoorPath",
+      metadataTitle: `Online Quran Classes Spain — ${TRIAL.classes} Free Trials | NoorPath`,
       metadataDescription:
-        "Online Quran classes in Spain: live 1-to-1 Qaida, Tajweed or Hifz with CET/CEST matching for Madrid, Barcelona and beyond. Female tutors on request. Free 30-min trial.",
+        `Live 1-on-1 Quran classes for Spanish families. CET/CEST evenings & weekends, certified tutors. ${TRIAL.classes} free trial classes, no credit card.`,
       heading: "Online Quran Classes in Spain",
       introduction:
         "Muslim families in Spain — including Madrid, Barcelona, Valencia, Seville and Málaga — can request live one-to-one online Quran classes when local after-school options are limited or travel is hard. Request a female Quran teacher when preferred. NoorPath teaches online only and does not operate a Spanish campus.",
@@ -995,9 +996,9 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
       "noorani qaida online italy",
     ],
     content: {
-      metadataTitle: "Online Quran Classes Italy (Rome, Milan) — Free Trial | NoorPath",
+      metadataTitle: `Online Quran Classes Italy — ${TRIAL.classes} Free Trials | NoorPath`,
       metadataDescription:
-        "Live 1-on-1 online Quran classes in Italy for kids & adults — Noorani Qaida, Tajweed & Hifz in CET/CEST. Rome & Milan slots. Free 30-min trial, no card.",
+        `Live 1-on-1 Quran classes for Italian families. CET/CEST evenings & weekends, Rome & Milan slots. ${TRIAL.classes} free trial classes, no credit card.`,
       heading: "Online Quran Classes in Italy",
       introduction:
         "Muslim families across Italy — including Rome, Milan, Turin, Florence and Bologna — can request live one-to-one online Quran lessons with convenient CET/CEST after-school windows.",
@@ -1198,6 +1199,32 @@ export function getCurrencyNote(slug: string): string {
     return "NoorPath publishes and charges its current lesson prices in U.S. dollars (USD).";
   }
   return `NoorPath publishes and charges its current lesson prices in U.S. dollars (USD), not ${market.billingCurrency.name} (${market.billingCurrency.code}). Your bank or payment provider may convert the charge and apply its own rate or fees; NoorPath does not publish an exchange rate.`;
+}
+
+/**
+ * Indicative local-currency plan captions for priority country hubs.
+ * These are displayed as a muted caption alongside USD prices; actual
+ * billing remains in USD and the local figure is approximate.
+ */
+const LOCAL_PRICING_CAPTIONS: Record<string, string> = {
+  "online-quran-classes-uk": "approx. £23/month — approx. £39/month — approx. £63/month",
+  "online-quran-classes-canada": "approx. CA$40/month — approx. CA$67/month — approx. CA$109/month",
+  "online-quran-classes-australia": "approx. AU$44/month — approx. AU$75/month — approx. AU$120/month",
+  "online-quran-classes-uae": "approx. AED 107/month — approx. AED 180/month — approx. AED 290/month",
+  "online-quran-classes-saudi-arabia": "approx. SAR 109/month — approx. SAR 184/month — approx. SAR 296/month",
+  "online-quran-classes-qatar": "approx. QAR 106/month — approx. QAR 178/month — approx. QAR 288/month",
+  "online-quran-classes-kuwait": "approx. KWD 8.9/month — approx. KWD 15/month — approx. KWD 24/month",
+  "online-quran-classes-pakistan": "approx. PKR 8,100/month — approx. PKR 13,700/month — approx. PKR 22,000/month",
+  "online-quran-classes-malaysia": "approx. RM 128/month — approx. RM 216/month — approx. RM 348/month",
+  "online-quran-classes-indonesia": "approx. IDR 460,000/month — approx. IDR 777,000/month — approx. IDR 1,250,000/month",
+  "online-quran-classes-nigeria": "approx. ₦44,000/month — approx. ₦75,000/month — approx. ₦120,000/month",
+  "online-quran-classes-germany": "approx. €27/month — approx. €45/month — approx. €73/month",
+  "online-quran-classes-france": "approx. €27/month — approx. €45/month — approx. €73/month",
+  "online-quran-classes-india": "approx. ₹2,450/month — approx. ₹4,140/month — approx. ₹6,680/month",
+};
+
+export function getLocalPricingCaption(slug: string): string | null {
+  return LOCAL_PRICING_CAPTIONS[slug] ?? null;
 }
 
 export function getRelatedPriorityCountries(slug: string, limit = 4): PriorityMarket[] {

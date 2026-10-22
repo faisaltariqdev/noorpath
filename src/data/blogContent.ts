@@ -78,7 +78,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...earningPillarBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em></p>
+    content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em> Children can learn Allahu Akbar and its place in Salah through <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> Allahu Akbar (الله أكبر) means <strong>"Allah is the Greatest"</strong> — declaring that nothing and no one is greater than Allah. Muslims say it in the Adhan, Salah, Eid Takbir, and moments of awe, gratitude or need. It is one of the four most beloved words to Allah (Sahih Muslim 2137).
@@ -191,7 +191,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "la-ilaha-illallah-meaning": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>La ilaha illallah</strong> (لا إله إلا الله) is the declaration that defines Islam itself. Every Muslim child learns it as the First Kalima; every convert speaks it to enter the faith; and the Prophet ﷺ called it the best dhikr. Here is the complete <strong>La ilaha illallah meaning in English</strong>, with Arabic, transliteration, and why it is the most important sentence a Muslim ever speaks.</p>
+    content: `<p><strong>La ilaha illallah</strong> (لا إله إلا الله) is the declaration that defines Islam itself. Every Muslim child learns it as the First Kalima; every convert speaks it to enter the faith; and the Prophet ﷺ called it the best dhikr. Here is the complete <strong>La ilaha illallah meaning in English</strong>, with Arabic, transliteration, and why it is the most important sentence a Muslim ever speaks. The meaning of Tawheed can be taught gently to children in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> La ilaha illallah means <strong>"There is no god worthy of worship except Allah."</strong> It is the core of Tawheed (monotheism), the first part of the Shahada, and the First Kalima (Kalima Tayyaba). The Prophet ﷺ said the best dhikr is La ilaha illallah (Tirmidhi 3383).
@@ -314,7 +314,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "dua-before-sleeping-islam": {
     style: ISLAMIC_STYLE,
-    content: `<p>Before closing your eyes each night, the Prophet Muhammad ﷺ taught a complete routine of <strong>dua before sleeping</strong> — words that bring protection, forgiveness and peace until Fajr. This guide covers every authentic sleeping dua in Islam: Arabic, transliteration, English meaning, and the exact Sunnah order.</p>
+    content: `<p>Before closing your eyes each night, the Prophet Muhammad ﷺ taught a complete routine of <strong>dua before sleeping</strong> — words that bring protection, forgiveness and peace until Fajr. This guide covers every authentic sleeping dua in Islam: Arabic, transliteration, English meaning, and the exact Sunnah order. A tutor can help children memorise bedtime duas so they become a calm nightly routine — see <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> The Sunnah bedtime routine: (1) Wudu, (2) lie on your right side, (3) recite <strong>Bismika Allahumma amutu wa ahya</strong>, (4) <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a>, (5) <a href="/blog/last-two-ayahs-surah-baqarah">last 2 ayats of Surah Baqarah</a>, (6) the <a href="/blog/4-quls">3 Quls</a> blown into the hands and wiped over the body. Full text below.
@@ -693,7 +693,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "dua-for-parents-rabbirhamhuma": {
     style: ISLAMIC_STYLE,
-    content: `<p>Parents are among the greatest blessings Allah gives us. Islam places them right after worship of Allah Himself — and one of the most powerful ways to honour them is through <strong>dua for parents</strong>. The Quran teaches a short, unforgettable supplication that millions of Muslims recite daily: <strong>Rabbirhamhuma kama rabbayani saghira</strong>.</p>
+    content: `<p>Parents are among the greatest blessings Allah gives us. Islam places them right after worship of Allah Himself — and one of the most powerful ways to honour them is through <strong>dua for parents</strong>. The Quran teaches a short, unforgettable supplication that millions of Muslims recite daily: <strong>Rabbirhamhuma kama rabbayani saghira</strong>. Children can learn this dua for parents and its meaning with a live tutor in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> The best dua for parents in the Quran is from Surah Al-Isra (17:24): <em>"My Lord, have mercy upon them as they raised me when I was small."</em> Recite it after every Salah, in sujood, and whenever you think of your parents — whether they are alive or have passed away. Full Arabic, transliteration and meaning below.
@@ -917,7 +917,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "dua-e-istikhara": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>Dua e Istikhara</strong> is the supplication of seeking guidance from Allah before any important decision — marriage, a job offer, moving abroad, choosing a school, or any matter where the heart hesitates. The Prophet ﷺ taught this dua to his companions "as he would teach them a surah of the Quran" (Sahih al-Bukhari 1162) — showing how central it is to a Muslim's life.</p>
+    content: `<p><strong>Dua e Istikhara</strong> is the supplication of seeking guidance from Allah before any important decision — marriage, a job offer, moving abroad, choosing a school, or any matter where the heart hesitates. The Prophet ﷺ taught this dua to his companions "as he would teach them a surah of the Quran" (Sahih al-Bukhari 1162) — showing how central it is to a Muslim's life. Children learning to make decisions can be taught Istikhara step by step in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> Istikhara means "seeking the best (khayr) from Allah." You pray <strong>2 rakats of voluntary prayer</strong>, then recite the Istikhara dua, mentioning your specific need. The answer comes as ease or difficulty in the matter — <em>not necessarily a dream</em>. The full dua with Arabic, transliteration and English is below. Want to learn duas and Salah with a live tutor? <a href="/online-quran-classes-for-kids">Book a free trial class</a>.
@@ -1280,7 +1280,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "4-quls": {
     style: ISLAMIC_STYLE,
-    content: `<p>The <strong>4 Quls</strong> (Four Quls) are four short surahs of the Quran that each begin with the word <em>"Qul"</em> — meaning "Say". They are among the most recited surahs in Islam, memorised early by children, and known for their powerful protection. The Four Quls are <strong>Surah Al-Kafirun, Surah Al-Ikhlas, Surah Al-Falaq and Surah An-Nas</strong>.</p>
+    content: `<p>The <strong>4 Quls</strong> (Four Quls) are four short surahs of the Quran that each begin with the word <em>"Qul"</em> — meaning "Say". They are among the most recited surahs in Islam, memorised early by children, and known for their powerful protection. The Four Quls are <strong>Surah Al-Kafirun, Surah Al-Ikhlas, Surah Al-Falaq and Surah An-Nas</strong>. The 4 Quls are often the first surahs children memorise, and <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> help with Tajweed and understanding.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> The 4 Quls are Surah Al-Kafirun (109), Al-Ikhlas (112), Al-Falaq (113) and An-Nas (114). The last three are recited for protection every morning and evening and before sleep. Read them all below with Arabic, transliteration and English. Want your child to memorise the 4 Quls correctly? <a href="/online-quran-classes-for-kids">Book a free trial</a>.
@@ -1871,7 +1871,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
     .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width: 576px) { .phrase-grid { grid-template-columns: 1fr; } }`,
-    content: `<p>Every day, Muslims around the world use beautiful Arabic phrases — to praise Allah, express gratitude, greet one another, and remember Him in moments of joy and difficulty. If you have ever wondered what <strong>Alhamdulillah</strong>, <strong>Subhanallah</strong> or <strong>JazakAllah Khair</strong> actually mean, this is your complete reference.</p>
+    content: `<p>Every day, Muslims around the world use beautiful Arabic phrases — to praise Allah, express gratitude, greet one another, and remember Him in moments of joy and difficulty. If you have ever wondered what <strong>Alhamdulillah</strong>, <strong>Subhanallah</strong> or <strong>JazakAllah Khair</strong> actually mean, this is your complete reference. For a structured way to teach children all of these phrases, explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> The most common Islamic phrases are <strong>Bismillah</strong> (in the name of Allah), <strong>Alhamdulillah</strong> (all praise to Allah), <strong>Subhanallah</strong> (glory be to Allah), <strong>Allahu Akbar</strong> (Allah is the Greatest), <strong>Mashallah</strong> (what Allah has willed), <strong>Inshallah</strong> (if Allah wills), and <strong>JazakAllah Khair</strong> (may Allah reward you). Below are 30 phrases with Arabic, meaning and when to say each.</p>
@@ -2025,7 +2025,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
     .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width: 576px) { .word-arabic-hero { font-size: 2.5rem; } }`,
-    content: `<p><strong>Subhanallah</strong> (سبحان الله) is one of the most beloved phrases to Allah and one of the most frequently said words by Muslims worldwide. It is a declaration of Allah's absolute perfection — a way of glorifying Him and declaring Him free from every fault, partner, and imperfection.</p>
+    content: `<p><strong>Subhanallah</strong> (سبحان الله) is one of the most beloved phrases to Allah and one of the most frequently said words by Muslims worldwide. It is a declaration of Allah's absolute perfection — a way of glorifying Him and declaring Him free from every fault, partner, and imperfection. To help children practice Subhanallah and other dhikr with correct Tajweed, consider <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> <strong>Subhanallah meaning in English</strong> is "Glory be to Allah" or "Allah is free from all imperfection." In Arabic it is written <strong>سُبْحَانَ اللَّهِ</strong>. Muslims say it in awe of Allah's creation, in wonder, in prayer, and as daily dhikr — declaring that Allah is perfect and above any flaw.
@@ -2108,7 +2108,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
     .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width: 576px) { .word-arabic-hero { font-size: 2.1rem; } }`,
-    content: `<p><strong>JazakAllah Khair</strong> (جزاك الله خيرا) is how Muslims say "thank you" — but it means far more than a simple thanks. Instead of thanking someone yourself, you are asking <strong>Allah to reward them with good</strong>, which is the greatest gift you could ever give in return.</p>
+    content: `<p><strong>JazakAllah Khair</strong> (جزاك الله خيرا) is how Muslims say "thank you" — but it means far more than a simple thanks. Instead of thanking someone yourself, you are asking <strong>Allah to reward them with good</strong>, which is the greatest gift you could ever give in return. Kids can learn the meaning and reply of JazakAllah Khair naturally in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> <strong>JazakAllah Khair meaning in English</strong> is "May Allah reward you with good." In Arabic it is written <strong>جَزَاكَ اللَّهُ خَيْرًا</strong>. Muslims say it instead of "thank you" — because rather than thanking a person with words, you ask Allah (who can reward infinitely) to reward them. The proper response is "Wa iyyakum" (and you too).
@@ -3791,7 +3791,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
       .word-break-grid { grid-template-columns: repeat(2, 1fr); }
       .four-dhikr { grid-template-columns: 1fr; }
     }`,
-    content: `<p><strong>Alhamdulillah</strong> (الحمد لله) is one of the most important and most spoken phrases in Islam. A Muslim says it dozens of times a day — after sneezing, after eating, after prayer, when asked how they are, and at every moment of gratitude. But what does it actually mean, and why is it so powerful?</p>
+    content: `<p><strong>Alhamdulillah</strong> (الحمد لله) is one of the most important and most spoken phrases in Islam. A Muslim says it dozens of times a day — after sneezing, after eating, after prayer, when asked how they are, and at every moment of gratitude. But what does it actually mean, and why is it so powerful? If you want your child to learn these phrases as part of daily Islamic life, explore our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="word-hero">
             <div class="word-arabic-hero">الحَمْدُ لِلَّهِ</div>
@@ -4098,7 +4098,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
       .word-arabic-hero { font-size: 2.5rem; }
       .break-grid { grid-template-columns: 1fr 1fr; }
     }`,
-    content: `<p><strong>Astaghfirullah</strong> (أستغفر الله) — "I seek forgiveness from Allah" — is one of the most powerful and important phrases in Islam. The Prophet Muhammad ﷺ, despite being the most beloved creation of Allah and free of major sin, would say it a <strong>minimum of 70–100 times every single day</strong>. This tells us everything about how important istighfar (seeking forgiveness) should be in our lives.</p>
+    content: `<p><strong>Astaghfirullah</strong> (أستغفر الله) — "I seek forgiveness from Allah" — is one of the most powerful and important phrases in Islam. The Prophet Muhammad ﷺ, despite being the most beloved creation of Allah and free of major sin, would say it a <strong>minimum of 70–100 times every single day</strong>. This tells us everything about how important istighfar (seeking forgiveness) should be in our lives. For children learning to build a daily dhikr habit, live <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> can help with pronunciation and meaning.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> <strong>Astaghfirullah meaning in English</strong> is "I seek forgiveness from Allah." In Arabic it is written <strong>أَسْتَغْفِرُ اللَّهَ</strong>. Muslims say Astaghfirullah after mistakes, after every Salah, during stress, and as daily dhikr to ask Allah to forgive, cover, and remove sins.
@@ -5034,7 +5034,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
       .dua-arabic { font-size: 1.5rem; }
       .phrase-table tr td:first-child { width: 40%; }
     }`,
-    content: `<p><strong>Dua e Qunoot</strong> (دعاء القنوت) is one of the most important duas in a Muslim's daily prayer life. It is the supplication recited in the <strong>Witr prayer</strong> — the final prayer of the night — and is a direct teaching from the Prophet Muhammad ﷺ to his beloved grandson Hasan ibn Ali (رضي الله عنهما).</p>
+    content: `<p><strong>Dua e Qunoot</strong> (دعاء القنوت) is one of the most important duas in a Muslim's daily prayer life. It is the supplication recited in the <strong>Witr prayer</strong> — the final prayer of the night — and is a direct teaching from the Prophet Muhammad ﷺ to his beloved grandson Hasan ibn Ali (رضي الله عنهما). Dua e Qunoot becomes much easier for children when they learn it line by line in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <p>In this complete guide, you will find the <strong>full Arabic text, transliteration, and English translation</strong> of Dua e Qunoot — plus when to recite it, how it differs across the four madhabs, and how to teach it to children.</p>
 
@@ -5293,7 +5293,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .dua-transliteration { font-style: italic; color: var(--emerald); font-weight: 600; margin-bottom: 6px; font-size: .95rem; }
     .dua-meaning { color: var(--muted); font-size: .92rem; }
     .dua-when { display:inline-block; background: rgba(10,110,79,.1); color: var(--emerald); border-radius: 20px; padding: 3px 12px; font-size: .82rem; font-weight: 600; margin-bottom: 12px; }`,
-    content: `<p>Teaching children daily duas is one of the most practical and impactful forms of Islamic parenting. When a child learns to say <em>Bismillah</em> before eating, <em>Alhamdulillah</em> in gratitude, and duas before sleeping and waking — <strong>they grow up with Allah in their everyday life.</strong></p>
+    content: `<p>Teaching children daily duas is one of the most practical and impactful forms of Islamic parenting. When a child learns to say <em>Bismillah</em> before eating, <em>Alhamdulillah</em> in gratitude, and duas before sleeping and waking — <strong>they grow up with Allah in their everyday life.</strong> For structured daily dua practice with a live tutor, explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
           <p>This guide contains <strong>20 essential daily duas</strong> — with full Arabic text, easy transliteration, and English meaning — organized by when they are recited. Perfect for children aged 3–12.</p>
 
           <div class="highlight-box">
@@ -6632,7 +6632,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-q { padding:16px 20px; font-weight:700; background:var(--ivory); color:var(--charcoal); display:flex; justify-content:space-between; align-items:center; }
     .faq-a { padding:16px 20px; color:#374151; font-size:.95rem; line-height:1.7; border-top:1px solid var(--border); }
     @media (max-width:576px) { .break-grid,.compare-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
-    content: `<p><strong>Mashallah</strong> (ما شاء الله) is one of the most commonly spoken phrases in the Muslim world — heard everywhere from family gatherings to social media captions. But many people use it as a habit without fully understanding its profound meaning and purpose in Islam.</p>
+    content: `<p><strong>Mashallah</strong> (ما شاء الله) is one of the most commonly spoken phrases in the Muslim world — heard everywhere from family gatherings to social media captions. But many people use it as a habit without fully understanding its profound meaning and purpose in Islam. Our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> help children understand when and why to say Mashallah.</p>
           <div class="highlight-box">
             <strong>Quick answer:</strong> <strong>MashaAllah / Mashallah meaning in English</strong> is "What Allah has willed" or "Allah has willed it." Muslims say Mashallah when praising a blessing, a child, success, beauty, or good news while acknowledging that every blessing comes from Allah and seeking protection from the evil eye.
           </div>
@@ -8652,7 +8652,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
     .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width:576px) { .break-grid,.compare-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
-    content: `<p><strong>Inshallah meaning in English</strong> is simple and powerful: <strong>“If Allah wills”</strong> (also said as “God willing”). In Arabic it is written <strong>إِنْ شَاءَ اللَّهُ</strong> and often spelled Inshallah, In sha Allah, or Insha’Allah. Muslims say it when speaking about the future — plans, hopes, travel, exams, work, or marriage — because only Allah controls what actually happens.</p>
+    content: `<p><strong>Inshallah meaning in English</strong> is simple and powerful: <strong>“If Allah wills”</strong> (also said as “God willing”). In Arabic it is written <strong>إِنْ شَاءَ اللَّهُ</strong> and often spelled Inshallah, In sha Allah, or Insha’Allah. Muslims say it when speaking about the future — plans, hopes, travel, exams, work, or marriage — because only Allah controls what actually happens. If you'd like your child to understand phrases like Inshallah in context, our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> teach them through conversation.</p>
 
           <p>This guide gives you the clear English meaning, word-by-word Arabic, Quranic command to say it, when to use it, how to reply, and the difference between Inshallah, Mashallah, and Alhamdulillah — so you can use it with confidence, not habit alone.</p>
 
@@ -9315,7 +9315,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-q { padding: 16px 20px; font-weight: 700; background: var(--ivory); color: var(--charcoal); display: flex; justify-content: space-between; align-items: center; }
     .faq-a { padding: 16px 20px; color: #374151; font-size: .95rem; line-height: 1.7; border-top: 1px solid var(--border); }
     @media (max-width:576px) { .break-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
-    content: `<p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults say it every day without knowing its full depth, Quranic roots, or the difference between the short and complete forms. This guide explains the <strong>Bismillah meaning in English</strong>, the word-by-word Arabic, when to say it, Surah An-Naml’s special mention, common spellings people search for, and how to teach it to kids with love — not pressure.</p>
+    content: `<p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults say it every day without knowing its full depth, Quranic roots, or the difference between the short and complete forms. This guide explains the <strong>Bismillah meaning in English</strong>, the word-by-word Arabic, when to say it, Surah An-Naml’s special mention, common spellings people search for, and how to teach it to kids with love — not pressure. A live tutor can help children say Bismillah correctly from the start — see our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> <strong>Bismillah meaning in English</strong> is <em>"In the name of Allah."</em> Muslims say it before eating, drinking, traveling, studying, Quran recitation, and starting important actions — seeking Allah's blessings and help. The full form is <strong>Bismillah ir-Rahman ir-Raheem</strong> — "In the name of Allah, the Most Gracious, the Most Merciful."

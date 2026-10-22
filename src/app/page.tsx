@@ -9,6 +9,7 @@ import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
 import MadrasahVsOnlineComparison from "@/components/MadrasahVsOnlineComparison";
 import TripleGuaranteeBadge from "@/components/TripleGuaranteeBadge";
 import FreeResourceLeadMagnet from "@/components/FreeResourceLeadMagnet";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import {
   featuredTrustpilotReviews,
   getTrustpilotAggregateFromReviews,
@@ -37,21 +38,19 @@ import {
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  // Brand-first homepage title. The brand token MUST lead here: this is the primary
-  // title-link + site-name source for brand queries ("noorpath", "noorpath academy")
-  // and it competes with the unrelated noorpath.net app brand. Do not replace with a
-  // keyword-only or year-stamped string — that removes the brand from the SERP result
-  // and invites a Google title rewrite toward the bare domain.
+  // Keyword-first homepage title with brand preserved at the end. The brand is still
+  // present in the SERP title-link and site-name sources; the leading keyword phrase
+  // targets commercial queries while the pipe keeps NoorPath visible.
   title: {
-    absolute: "NoorPath Academy | Online Quran Classes for Kids & Adults",
+    absolute: "Online Quran Classes for Kids & Adults — 3 Trials | NoorPath",
   },
   description:
-    "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz & Arabic. Parent Portal for progress. 3 free trial classes, no card needed.",
+    `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial classes, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
-    title: "NoorPath Academy | Online Quran Classes for Kids & Adults",
-    description: "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz & Arabic. 3 free trial classes with certified tutors.",
+    title: "Online Quran Classes for Kids & Adults — 3 Trials | NoorPath",
+    description: `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial classes, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
     url: "https://www.noorpath.online",
     type: "website",
     siteName: "NoorPath Academy",
@@ -133,14 +132,6 @@ const jsonLd = {
         "@type": "SpeakableSpecification",
         cssSelector: [".hero h1", ".hero-sub", ".np-quick-answer"],
       },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
     },
     {
       "@type": "ItemList",
@@ -577,6 +568,7 @@ export default function HomePage() {
       </section>
 
       {/* ── FAQ ── */}
+      <FaqJsonLd faqs={faqs} pageUrl="https://www.noorpath.online" />
       <section id="faq" style={{ background: "#fff" }}>
         <div className="max-w-[1200px] mx-auto px-4">
           <div style={{ textAlign: "center", marginBottom: 48 }}>

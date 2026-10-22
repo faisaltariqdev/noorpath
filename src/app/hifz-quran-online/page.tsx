@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import KeywordLandingPage from "@/components/KeywordLandingPage";
 import { hifzQuranOnline } from "@/lib/landingPageData";
+import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
 const PATH = "/hifz-quran-online";
 const { metaTitle, metaDescription, keywords, ...props } = hifzQuranOnline;
+
+const hifzCourseJsonLd = buildCourseWithPricingJsonLd({
+  name: "Hifz Online",
+  description:
+    "Structured Quran memorisation programme with new lesson planning, ongoing revision, and one-to-one tutor support.",
+  url: "https://www.noorpath.online/hifz-quran-online",
+});
 
 export const metadata: Metadata = {
   title: { absolute: metaTitle },
@@ -24,10 +32,15 @@ export const metadata: Metadata = {
 
 export default function HifzQuranOnlinePage() {
   return (
-    <KeywordLandingPage
-      canonicalPath={PATH}
-      {...props}
-      extraContent={
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hifzCourseJsonLd) }}
+      />
+      <KeywordLandingPage
+        canonicalPath={PATH}
+        {...props}
+        extraContent={
         <aside
           aria-labelledby="free-hifz-resources"
           style={{
@@ -63,5 +76,6 @@ export default function HifzQuranOnlinePage() {
         </aside>
       }
     />
+    </>
   );
 }

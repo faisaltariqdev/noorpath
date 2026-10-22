@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import TrustPolicyStrip from "@/components/TrustPolicyStrip";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award } from "lucide-react";
 import { PRICING_PLANS, REFUND_WINDOW_DAYS, TRIAL, TRIAL_OFFER, TUTOR_FACTS } from "@/lib/academyFacts";
+import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
@@ -46,9 +48,22 @@ const faqs = [
   { q: "I'm a new Muslim (revert) with no Arabic background. Can I learn to read Quran online?", a: "Yes. Lessons start from the alphabet in English, privately, with no Muslim family or masjid needed. If your faith is not yet known to everyone around you, share the hours that are private for you and lessons are scheduled within them. See the dedicated page for reverts for the full path from letters to Surah Al-Fatiha." },
 ];
 
+const adultsCourseJsonLd = buildCourseWithPricingJsonLd({
+  name: "Online Quran Classes for Adults",
+  description:
+    "Private one-to-one online Quran classes for adult learners of all levels — Qaida, Tajweed, Hifz, Arabic, and Islamic studies.",
+  url: "https://www.noorpath.online/online-quran-classes-for-adults",
+});
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      ...adultsCourseJsonLd,
+      educationalLevel: "Beginner to Advanced",
+      typicalAgeRange: "18+",
+      inLanguage: ["en", "ar", "ur"],
+    },
     {
       "@type": "Service",
       "@id": "https://www.noorpath.online/online-quran-classes-for-adults#service",
@@ -64,14 +79,6 @@ const jsonLd = {
         priceCurrency: "USD",
         description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. ${TRIAL_OFFER}.`,
       },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
     },
     {
       "@type": "BreadcrumbList",
@@ -302,6 +309,7 @@ export default function OnlineQuranClassesForAdultsPage() {
           <TrustPolicyStrip />
 
           {/* FAQ */}
+          <FaqJsonLd faqs={faqs} pageUrl="https://www.noorpath.online/online-quran-classes-for-adults" />
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
             Common Questions from Adult Learners
           </h2>

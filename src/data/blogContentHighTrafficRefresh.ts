@@ -39,7 +39,7 @@ const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151
 export const highTrafficRefreshBlogContent: Record<string, { style: string; content: string }> = {
   "dua-for-success-exams": {
     style: S,
-    content: `<p>A <strong>dua for success</strong> is one of the most searched Islamic duas worldwide — especially before exams, job interviews, and life goals. Islam does not separate effort from tawakkul: you study hard, then ask Allah to open what you cannot open alone. This expanded guide gathers the most authentic Quranic and prophetic duas for students, with practical routines, common mistakes, and how parents can teach children without turning exams into anxiety.</p>
+    content: `<p>A <strong>dua for success</strong> is one of the most searched Islamic duas worldwide — especially before exams, job interviews, and life goals. Islam does not separate effort from tawakkul: you study hard, then ask Allah to open what you cannot open alone. This expanded guide gathers the most authentic Quranic and prophetic duas for students, with practical routines, common mistakes, and how parents can teach children without turning exams into anxiety. Parents who want their children to memorise these duas correctly can explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> The best short dua for success and ease is <strong>Allahumma la sahla illa ma ja'altahu sahla</strong>. For knowledge, recite <strong>Rabbi zidni 'ilma</strong> (Quran 20:114). Combine both before exams with <a href="/blog/bismillah-meaning-in-english">Bismillah</a> and sincere effort. Want your child to memorise these correctly? <a href="/online-quran-classes-for-kids">Book a free trial</a>.
@@ -580,7 +580,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
 
   "labbaik-allahumma-labbaik": {
     style: S,
-    content: `<p><strong>Labbaik Allahumma labbaik</strong> is the Talbiyah — the pilgrim's response to Allah's call for Hajj and Umrah. Millions recite it from the moment they enter ihram until they stone the Jamaraat (Hajj) or begin tawaf (Umrah practices vary by rite). This guide explains the full Arabic, spiritual meaning, when to recite, and how families can teach children the words before they ever travel.</p>
+    content: `<p><strong>Labbaik Allahumma labbaik</strong> is the Talbiyah — the pilgrim's response to Allah's call for Hajj and Umrah. Millions recite it from the moment they enter ihram until they stone the Jamaraat (Hajj) or begin tawaf (Umrah practices vary by rite). This guide explains the full Arabic, spiritual meaning, when to recite, and how families can teach children the words before they ever travel. Families preparing children for pilgrimage can build Arabic confidence through <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> Labbaik means "I am here / at Your service." The full Talbiyah affirms that all praise, blessing and dominion belong to Allah alone, with no partner. Full Arabic and English below. Teaching children the meaning builds love for Hajj long before they go — start with <a href="/online-quran-classes-for-kids">Quran classes for kids</a>.
@@ -685,7 +685,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
 
   "dua-entering-leaving-home": {
     style: S,
-    content: `<p>Two short prophetic duas protect the Muslim when <strong>leaving home</strong> and when <strong>entering home</strong>. They take seconds, shield from Shaytan, and bring barakah into the house — ideal habits for children. This expanded guide adds daily routines, the meaning of each phrase, related adhkar, and a simple family teaching plan.</p>
+    content: `<p>Two short prophetic duas protect the Muslim when <strong>leaving home</strong> and when <strong>entering home</strong>. They take seconds, shield from Shaytan, and bring barakah into the house — ideal habits for children. This expanded guide adds daily routines, the meaning of each phrase, related adhkar, and a simple family teaching plan. Turning these door duas into a habit is easier with a tutor — explore <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> Leaving: <em>Bismillahi tawakkaltu 'alallah…</em> — then it is said you are guided, sufficed and protected, and Shaytan turns away (Abu Dawud, Tirmidhi). Entering: say salaam and <em>Bismillah</em>, and recite the entering dua below. Teach kids with our <a href="/blog/duas-for-kids-to-memorize">kids duas list</a>.

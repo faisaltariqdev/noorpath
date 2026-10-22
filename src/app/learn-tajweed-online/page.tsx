@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import KeywordLandingPage from "@/components/KeywordLandingPage";
 import { learnTajweedOnline } from "@/lib/landingPageData";
+import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
 const PATH = "/learn-tajweed-online";
 const { metaTitle, metaDescription, keywords, ...props } = learnTajweedOnline;
+
+const tajweedCourseJsonLd = buildCourseWithPricingJsonLd({
+  name: "Tajweed Online",
+  description:
+    "Study and practise Tajweed rules with live recitation correction and feedback from a qualified Quran tutor.",
+  url: "https://www.noorpath.online/learn-tajweed-online",
+});
 
 export const metadata: Metadata = {
   title: { absolute: metaTitle },
@@ -24,10 +32,15 @@ export const metadata: Metadata = {
 
 export default function LearnTajweedOnlinePage() {
   return (
-    <KeywordLandingPage
-      canonicalPath={PATH}
-      {...props}
-      extraContent={
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tajweedCourseJsonLd) }}
+      />
+      <KeywordLandingPage
+        canonicalPath={PATH}
+        {...props}
+        extraContent={
         <aside
           aria-labelledby="tajweed-resources-heading"
           style={{
@@ -67,5 +80,6 @@ export default function LearnTajweedOnlinePage() {
         </aside>
       }
     />
+    </>
   );
 }

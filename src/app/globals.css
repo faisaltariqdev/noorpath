@@ -714,6 +714,226 @@ footer.site-footer {
 }
 
 /* ══════════════════════════════════════════════════════════════
+   LOCATION CONVERSION BAR (replaces global bars on location/city pages)
+══════════════════════════════════════════════════════════════ */
+.location-conversion-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body.has-location-conversion-bar {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body.has-location-conversion-bar .mobile-sticky-action-bar,
+  body.has-location-conversion-bar .whatsapp-float {
+    display: none !important;
+  }
+
+  .location-conversion-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(10, 110, 79, 0.15);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .location-conversion-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  .location-conversion-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 46px;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+
+  .location-conversion-trial {
+    background: linear-gradient(135deg, var(--emerald) 0%, #0d7f5c 100%);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(10, 110, 79, 0.3);
+  }
+  .location-conversion-trial:hover,
+  .location-conversion-trial:active {
+    background: #085a40;
+    color: #fff;
+  }
+
+  .location-conversion-whatsapp {
+    background: #25d366;
+    color: #0b3d2e;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+  }
+  .location-conversion-whatsapp:hover,
+  .location-conversion-whatsapp:active {
+    background: #20ba5a;
+    color: #0b3d2e;
+  }
+}
+
+@media (min-width: 769px) {
+  body.has-location-conversion-bar {
+    padding-bottom: 120px;
+  }
+
+  body.has-location-conversion-bar .whatsapp-float {
+    display: none !important;
+  }
+
+  .location-conversion-bar {
+    display: block;
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+  }
+
+  .location-conversion-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .location-conversion-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+  }
+
+  .location-conversion-trial {
+    background: linear-gradient(135deg, var(--emerald) 0%, #0d7f5c 100%);
+    color: #fff;
+  }
+  .location-conversion-trial:hover,
+  .location-conversion-trial:active {
+    background: #085a40;
+    color: #fff;
+  }
+
+  .location-conversion-whatsapp {
+    background: #25d366;
+    color: #0b3d2e;
+  }
+  .location-conversion-whatsapp:hover,
+  .location-conversion-whatsapp:active {
+    background: #20ba5a;
+    color: #0b3d2e;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LOCATION HERO CTA CARD
+══════════════════════════════════════════════════════════════ */
+.location-hero-cta-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 18px 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  max-width: 600px;
+}
+
+.location-hero-cta-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.84rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.location-hero-cta-pill {
+  background: var(--gold);
+  color: var(--charcoal);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.location-hero-cta-divider {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.location-hero-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.location-hero-cta-buttons .btn-primary-np,
+.location-hero-cta-buttons .btn-outline-np {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+}
+
+.location-hero-cta-whatsapp {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 640px) {
+  .location-hero-cta-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .location-hero-cta-text {
+    justify-content: center;
+  }
+  .location-hero-cta-buttons {
+    justify-content: center;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
    CTA SECTION
 ══════════════════════════════════════════════════════════════ */
 .cta-section {

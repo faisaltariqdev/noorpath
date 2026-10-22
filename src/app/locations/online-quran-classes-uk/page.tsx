@@ -19,6 +19,9 @@ import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import UkQuranClassesGuide from "@/components/UkQuranClassesGuide";
 import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
+import LocationConversionBar from "@/components/LocationConversionBar";
+import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import {
   BASE_URL,
   CONTACT,
@@ -41,10 +44,10 @@ const PAGE_URL = `${BASE_URL}/locations/online-quran-classes-uk`;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes UK — Free 30-Min Trial | NoorPath",
+    absolute: `Online Quran Classes UK — ${TRIAL.classes} Free Trials | NoorPath Academy`,
   },
   description:
-    "Live one-to-one online Quran classes in the UK for kids and adults — Qaida, Tajweed, Hifz and female tutor requests in GMT/BST. Free 30-minute trial, no credit card.",
+    `Live 1-on-1 Quran classes for UK families. GMT/BST-friendly times, certified tutors, from ≈£23/mo. ${TRIAL.classes} free ${TRIAL.durationMinutes}-min trial classes, no credit card.`,
   keywords: [
     "online quran classes uk",
     "quran classes online uk",
@@ -67,9 +70,9 @@ export const metadata: Metadata = {
     languages: getCountryHubHreflang(),
   },
   openGraph: {
-    title: "NoorPath Academy | Online Quran Classes UK — Live One-to-One Lessons",
+    title: `Online Quran Classes UK — ${TRIAL.classes} Free Trials | NoorPath Academy`,
     description:
-      "UK-focused online Quran lessons for children and adults, with GMT/BST tutor matching and a free 30-minute trial request.",
+      `Live 1-on-1 Quran classes for UK families. GMT/BST-friendly times, certified tutors, from ≈£23/mo. ${TRIAL.classes} free ${TRIAL.durationMinutes}-min trial classes, no credit card.`,
     url: PAGE_URL,
     type: "website",
     locale: "en_GB",
@@ -84,9 +87,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NoorPath Academy | Online Quran Classes UK",
+    title: `Online Quran Classes UK — ${TRIAL.classes} Free Trials | NoorPath Academy`,
     description:
-      "Live one-to-one lessons for UK children and adults, with GMT/BST scheduling requests and a free trial.",
+      `Live 1-on-1 Quran classes for UK families. GMT/BST-friendly times, certified tutors, from ≈£23/mo. ${TRIAL.classes} free ${TRIAL.durationMinutes}-min trial classes, no credit card.`,
     images: ["/marketing/family-evening-quran.jpg"],
   },
 };
@@ -206,7 +209,7 @@ const faqs = [
   },
   {
     question: "How much do online Quran classes cost?",
-    answer: `Published plans currently start at $${PRICING_PLANS[0].monthlyPriceUsd} per month. NoorPath publishes prices in USD; UK families should confirm payment details before enrolling. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and requires no credit card.`,
+    answer: `NoorPath publishes prices in USD and bills in USD. UK families can expect indicative costs of $29/month (≈ £23), $49/month (≈ £39) and $79/month (≈ £63). Your bank or card provider may apply its own exchange rate and fees. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and requires no credit card.`,
   },
   {
     question: "What happens in the free trial?",
@@ -403,19 +406,6 @@ const jsonLd = {
       inLanguage: "en-GB",
     },
     {
-      "@type": "FAQPage",
-      "@id": `${PAGE_URL}#faq`,
-      inLanguage: "en-GB",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
-        },
-      })),
-    },
-    {
       "@type": "BreadcrumbList",
       "@id": `${PAGE_URL}#breadcrumb`,
       itemListElement: [
@@ -577,6 +567,9 @@ export default function OnlineQuranClassesUkPage() {
                 >
                   Ask on WhatsApp
                 </WhatsAppLink>
+              </div>
+              <div style={{ marginTop: 22 }}>
+                <LocationHeroCtaCard whatsappText="Assalamu Alaikum, I would like to request a free online Quran trial class in the UK. Please share GMT/BST tutor availability and the next steps." />
               </div>
 
               <p
@@ -1079,9 +1072,9 @@ export default function OnlineQuranClassesUkPage() {
               <em className="accent">teaching time</em>
             </h2>
             <p className="section-desc center">
-              NoorPath currently publishes plans in USD. UK families should
-              confirm payment details before enrolling rather than relying on
-              an estimated currency conversion.
+              NoorPath publishes and charges in USD. UK families can use the
+              indicative GBP figures below for planning; the actual charge
+              depends on your bank or card provider&apos;s rate and any fees.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -1105,7 +1098,7 @@ export default function OnlineQuranClassesUkPage() {
                     color: "var(--charcoal)",
                     fontWeight: 700,
                     fontSize: "2rem",
-                    marginBottom: 12,
+                    marginBottom: 4,
                   }}
                 >
                   ${plan.monthlyPriceUsd}
@@ -1120,6 +1113,16 @@ export default function OnlineQuranClassesUkPage() {
                     {" "}
                     / month
                   </span>
+                </div>
+                <div
+                  style={{
+                    color: "var(--muted)",
+                    fontSize: ".82rem",
+                    fontWeight: 500,
+                    marginBottom: 12,
+                  }}
+                >
+                  approx. {plan.monthlyPriceUsd === 29 ? "£23" : plan.monthlyPriceUsd === 49 ? "£39" : "£63"} / month — card charges may apply at your bank&apos;s rate
                 </div>
                 <div style={{ display: "grid", gap: 8, marginBottom: 15 }}>
                   {[
@@ -1376,6 +1379,10 @@ export default function OnlineQuranClassesUkPage() {
               Frequently asked <em className="accent">questions</em>
             </h2>
           </div>
+          <FaqJsonLd
+            faqs={faqs.map((faq) => ({ q: faq.question, a: faq.answer }))}
+            pageUrl={PAGE_URL}
+          />
           <div style={{ display: "grid", gap: 13 }}>
             {faqs.map((faq) => (
               <details
@@ -1498,6 +1505,8 @@ export default function OnlineQuranClassesUkPage() {
           </div>
         </div>
       </section>
+
+      <LocationConversionBar whatsappText="Assalamu Alaikum, I would like to request a free online Quran trial class in the UK. Please share GMT/BST tutor availability and the next steps." />
     </>
   );
 }

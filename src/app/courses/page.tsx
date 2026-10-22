@@ -5,7 +5,9 @@ import { courses } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
+import FaqJsonLd from "@/components/FaqJsonLd";
 
 export const revalidate = false;
 
@@ -90,29 +92,38 @@ const coursesJsonLd = {
       description: "Complete list of online Quran and Islamic studies courses offered by NoorPath Academy.",
       url: "https://www.noorpath.online/courses",
       numberOfItems: courses.length,
-      itemListElement: courses.map((c, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        item: {
-          "@type": "Course",
-          name: c.title,
-          description: courseTrustCopy[c.slug].desc,
-          url: `https://www.noorpath.online/courses/${c.slug}`,
-          provider: ORGANIZATION_REF,
-          educationalLevel: c.level,
-          typicalAgeRange: courseTrustCopy[c.slug].audience,
-          courseMode: "online",
-          teaches: courseTrustCopy[c.slug].features.join(", "),
-        },
-      })),
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
+      itemListElement: courses.map((c, i) => {
+        const courseUrl = `https://www.noorpath.online/courses/${c.slug}`;
+        const isPricedQuranCourse =
+          c.slug === "noorani-qaida-online" ||
+          c.slug === "tajweed-classes-online" ||
+          c.slug === "hifz-program-online" ||
+          c.slug === "quran-classes-for-kids";
+        const baseCourse = isPricedQuranCourse
+          ? buildCourseWithPricingJsonLd({
+              name: c.title,
+              description: courseTrustCopy[c.slug].desc,
+              url: courseUrl,
+            })
+          : {
+              "@type": "Course",
+              name: c.title,
+              description: courseTrustCopy[c.slug].desc,
+              url: courseUrl,
+              provider: ORGANIZATION_REF,
+              courseMode: "online",
+            };
+        return {
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            ...baseCourse,
+            educationalLevel: c.level,
+            typicalAgeRange: courseTrustCopy[c.slug].audience,
+            teaches: courseTrustCopy[c.slug].features.join(", "),
+          },
+        };
+      }),
     },
     {
       "@type": "BreadcrumbList",
@@ -244,6 +255,7 @@ export default function CoursesPage() {
           </div>
 
           {/* FAQ */}
+          <FaqJsonLd faqs={faqs} pageUrl="https://www.noorpath.online/courses" />
           <div style={{ textAlign: "center", marginBottom: 32 }}>
             <span className="section-eyebrow">❓ FAQ</span>
             <h2 className="section-title">Course <em className="accent">Questions Answered</em></h2>

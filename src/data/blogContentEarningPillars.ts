@@ -34,7 +34,7 @@ const ctaButton = `<p style="text-align: center; margin-top: 32px;">
 export const earningPillarBlogContent: Record<string, { style: string; content: string }> = {
   "sayyidul-istighfar-arabic-english": {
     style: STYLE,
-    content: `<p><strong>Sayyidul Istighfar</strong> (سيّد الاستغفار) means "the master of seeking forgiveness." It is a short, complete supplication in which the Prophet Muhammad ﷺ gathered the most beautiful ways of turning back to Allah — acknowledging Him as our Lord, admitting our own weakness, thanking Him for His favours, and asking sincerely for forgiveness.</p>
+    content: `<p><strong>Sayyidul Istighfar</strong> (سيّد الاستغفار) means "the master of seeking forgiveness." It is a short, complete supplication in which the Prophet Muhammad ﷺ gathered the most beautiful ways of turning back to Allah — acknowledging Him as our Lord, admitting our own weakness, thanking Him for His favours, and asking sincerely for forgiveness. Children can memorise Sayyidul Istighfar with correct pronunciation through <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
     <p>Many Muslims search for a single, authentic dua they can hold onto every morning and evening. This is that dua. It is reported in <em>Sahih al-Bukhari</em>, and the Prophet ﷺ described a remarkable reward for the one who recites it with certainty of faith.</p>
 

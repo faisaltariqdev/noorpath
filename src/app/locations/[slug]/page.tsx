@@ -10,6 +10,7 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   getCountryHubHreflang,
   getCurrencyNote,
+  getLocalPricingCaption,
   getLocale,
   getOpenGraphLocale,
   getPriorityContent,
@@ -21,6 +22,9 @@ import { absolutePageTitle } from "@/lib/pageTitle";
 import { toWeeklyWorkload } from "@/lib/jsonLd";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import LocationConversionBar from "@/components/LocationConversionBar";
+import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
 import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
 import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
@@ -101,12 +105,12 @@ export default async function LocationDetailPage({ params }: Props) {
   const seoParagraphs = getLocationSeoParagraphs(loc);
   const locale = getLocale(slug);
   const currencyNote = getCurrencyNote(slug);
+  const localPricingCaption = getLocalPricingCaption(slug);
   const countryGuide = getCountryGuide(slug);
   const pageUrl = `https://www.noorpath.online/locations/${slug}`;
   const serviceId = `${pageUrl}#service`;
   const webPageId = `${pageUrl}#webpage`;
   const articleId = `${pageUrl}#guide`;
-  const faqId = `${pageUrl}#faq`;
   const howToId = `${pageUrl}#howto`;
   const courseId = `${pageUrl}#course`;
   const guideModified = countryGuide
@@ -273,16 +277,6 @@ export default async function LocationDetailPage({ params }: Props) {
           ]
         : []),
       {
-        "@type": "FAQPage",
-        "@id": faqId,
-        inLanguage: locale,
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      },
-      {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
@@ -405,6 +399,11 @@ export default async function LocationDetailPage({ params }: Props) {
                 <span style={{ color: "rgba(255,255,255,.55)", fontSize: ".75rem", fontWeight: 600 }}>
                   {ENROLLED_STUDENTS_DISPLAY} students enrolled · No card required
                 </span>
+              </div>
+              <div style={{ marginTop: 22 }}>
+                <LocationHeroCtaCard
+                  whatsappText={`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`}
+                />
               </div>
             </div>
 
@@ -533,6 +532,21 @@ export default async function LocationDetailPage({ params }: Props) {
                   <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: ".95rem", margin: 0 }}>
                     {currencyNote}
                   </p>
+                  {localPricingCaption && (
+                    <p
+                      style={{
+                        color: "var(--muted)",
+                        lineHeight: 1.7,
+                        fontSize: ".86rem",
+                        margin: "10px 0 0",
+                        padding: "10px 12px",
+                        background: "rgba(10,110,79,.05)",
+                        borderRadius: 10,
+                      }}
+                    >
+                      <strong>Indicative local cost:</strong> {localPricingCaption} (card charges may apply at your bank&apos;s rate).
+                    </p>
+                  )}
                 </div>
               )}
 
@@ -722,6 +736,7 @@ export default async function LocationDetailPage({ params }: Props) {
               <TrustpilotSnippet count={3} title={`Families learning from ${loc.country}`} country={loc.country} />
 
               {/* FAQ */}
+              <FaqJsonLd faqs={faqs} pageUrl={pageUrl} />
               <div className="content-card" style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.3rem", color: "var(--charcoal)", marginBottom: 16 }}>
                   Frequently Asked Questions — Online Quran Classes {loc.country}
@@ -826,6 +841,10 @@ export default async function LocationDetailPage({ params }: Props) {
           </a>
         </div>
       </section>
+
+      <LocationConversionBar
+        whatsappText={`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`}
+      />
     </>
   );
 }

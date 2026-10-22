@@ -730,6 +730,39 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* End-of-post conversion banner — shown on informational/educational posts only */}
+      {!["About NoorPath", "Online Learning"].includes(post.category) && (
+        <section className="cta-section" aria-label="Start your child's Quran journey">
+          <div className="max-w-[1200px] mx-auto px-4 text-center">
+            <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "clamp(1.6rem, 4vw, 2.2rem)", marginBottom: 14, lineHeight: 1.25 }}>
+              Start Your Child&apos;s Quran Journey
+            </h2>
+            <p style={{ color: "rgba(255,255,255,.78)", fontSize: "1.05rem", marginBottom: 28, lineHeight: 1.65 }}>
+              3 free 30-minute trial classes · No credit card · Live one-to-one lessons with certified tutors
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: 14 }}>
+              <Link href="/free-quran-classes-online" className="btn-primary-np">
+                Book Free Trial →
+              </Link>
+              <Link
+                href="/pricing"
+                style={{
+                  color: "#fff",
+                  fontWeight: 600,
+                  fontSize: ".97rem",
+                  textDecoration: "none",
+                  borderBottom: "2px solid rgba(255,255,255,.35)",
+                  paddingBottom: 2,
+                  transition: "border-color .2s",
+                }}
+              >
+                See pricing →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

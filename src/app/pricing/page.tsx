@@ -5,8 +5,13 @@ import CTAForm from "@/components/CTAForm";
 import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import TripleGuaranteeBadge from "@/components/TripleGuaranteeBadge";
 import MadrasahVsOnlineComparison from "@/components/MadrasahVsOnlineComparison";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import FreeResourceLeadMagnet from "@/components/FreeResourceLeadMagnet";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import {
+  buildCourseItemListJsonLd,
+  PRICED_COURSE_CATEGORIES,
+} from "@/lib/courseJsonLd";
 import {
   CANCELLATION_NOTICE_DAYS,
   FAMILY_DISCOUNTS,
@@ -22,20 +27,20 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Online Quran Class Pricing ($${PRICING_PLANS[0].monthlyPriceUsd}–$${PRICING_PLANS[PRICING_PLANS.length - 1].monthlyPriceUsd}/mo) & Family Discounts | NoorPath`,
+    absolute: `Quran Class Pricing — From $${PRICING_PLANS[0].monthlyPriceUsd}/Month | NoorPath Academy`,
   },
-  description: `1-to-1 online Quran class pricing: ${PRICING_PLANS.map((plan) => `$${plan.monthlyPriceUsd}`).join(", ")}/month, ${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}% sibling discounts, ${TRIAL_OFFER} with no credit card, and a ${REFUND_WINDOW_DAYS}-day refund.`,
+  description: `Transparent pricing: $${PRICING_PLANS[0].monthlyPriceUsd}, $${PRICING_PLANS[1].monthlyPriceUsd} & $${PRICING_PLANS[2].monthlyPriceUsd} monthly plans. Sibling discounts ${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}%, ${REFUND_WINDOW_DAYS}-day refund after first class. ${TRIAL.classes} free trials, no credit card.`,
   alternates: { canonical: "https://www.noorpath.online/pricing" },
   openGraph: {
-    title: "Online Quran Class Pricing & Family Plans | NoorPath",
-    description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Starter, Standard, and Intensive plans. Family discount for 2+ siblings. ${TRIAL.classes} free trial classes.`,
+    title: `Quran Class Pricing — From $${PRICING_PLANS[0].monthlyPriceUsd}/Month | NoorPath Academy`,
+    description: `Transparent pricing: $${PRICING_PLANS[0].monthlyPriceUsd}, $${PRICING_PLANS[1].monthlyPriceUsd} & $${PRICING_PLANS[2].monthlyPriceUsd} monthly plans. Sibling discounts ${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}%, ${REFUND_WINDOW_DAYS}-day refund after first class. ${TRIAL.classes} free trials, no credit card.`,
     url: "https://www.noorpath.online/pricing",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Online Quran Class Pricing — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran Class Pricing | NoorPath",
-    description: `From $${PRICING_PLANS[0].monthlyPriceUsd}/month. Family discount for siblings. ${TRIAL.classes} free trial classes.`,
+    title: `Quran Class Pricing — From $${PRICING_PLANS[0].monthlyPriceUsd}/Month | NoorPath Academy`,
+    description: `Transparent pricing: $${PRICING_PLANS[0].monthlyPriceUsd}, $${PRICING_PLANS[1].monthlyPriceUsd} & $${PRICING_PLANS[2].monthlyPriceUsd} monthly plans. Sibling discounts ${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}%, ${REFUND_WINDOW_DAYS}-day refund after first class. ${TRIAL.classes} free trials, no credit card.`,
     images: ["/og-image.png"],
   },
 };
@@ -66,6 +71,11 @@ const faqs = [
   { q: "Are female tutors available?", a: `Yes. ${TUTOR_FACTS.femaleTutors} ${TUTOR_FACTS.credentials}` },
 ];
 
+const courseListJsonLd = buildCourseItemListJsonLd(
+  "https://www.noorpath.online/pricing",
+  PRICED_COURSE_CATEGORIES,
+);
+
 const pricingJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -77,11 +87,13 @@ const pricingJsonLd = {
       description: `Affordable online Quran class plans for kids, adults and families. Starter, Standard and Intensive plans with ${TRIAL.classes} free trial classes.`,
       isPartOf: { "@type": "WebSite", "@id": "https://www.noorpath.online/#website", url: "https://www.noorpath.online" },
       about: { "@id": "https://www.noorpath.online/pricing#service" },
+      mainEntity: { "@id": `${courseListJsonLd["@id"]}` },
       speakable: {
         "@type": "SpeakableSpecification",
         cssSelector: [".page-hero-content h1", ".np-quick-answer"],
       },
     },
+    courseListJsonLd,
     {
       "@type": "Service",
       "@id": "https://www.noorpath.online/pricing#service",
@@ -97,14 +109,6 @@ const pricingJsonLd = {
         priceCurrency: "USD",
         description: `${plan.sessionsPerWeekLabel}. ${plan.description}`,
         url: "https://www.noorpath.online/pricing",
-      })),
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.q,
-        acceptedAnswer: { "@type": "Answer", text: faq.a },
       })),
     },
     {
@@ -206,6 +210,7 @@ export default function PricingPage() {
           <FreeResourceLeadMagnet />
 
           {/* FAQ */}
+          <FaqJsonLd faqs={faqs} pageUrl="https://www.noorpath.online/pricing" />
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.8rem", color: "var(--charcoal)", textAlign: "center", marginBottom: 28 }}>Pricing FAQs</h2>
           <div className="max-w-[700px] mx-auto" style={{ marginBottom: 48 }}>
             {faqs.map((f, i) => (

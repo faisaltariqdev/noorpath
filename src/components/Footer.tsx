@@ -383,6 +383,9 @@ export default function Footer() {
           <div className="footer-bottom">
             <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <div>© 2026 NoorPath Academy. All rights reserved.</div>
+              <div style={{ fontSize: ".78rem", color: "rgba(255,255,255,.55)", lineHeight: 1.5 }}>
+                Official NoorPath Academy — www.noorpath.online only. We are not affiliated with noor-path.com or noorpath.net.
+              </div>
               <div style={{ fontSize: ".72rem", color: "rgba(255,255,255,.45)", fontFamily: "monospace" }}>
                 Deploy {getBuildLabel()}
               </div>

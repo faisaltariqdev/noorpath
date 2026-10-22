@@ -4,18 +4,20 @@ import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import WhatsAppLink from "@/components/WhatsAppLink";
-import { ORGANIZATION_ID, ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import { ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, REFUND_WINDOW_DAYS, SERVICE_FACTS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Quran Classes for Kids (Ages 4–12) — Free Trial | NoorPath",
+    absolute: `Online Quran Classes for Kids — ${TRIAL.classes} Free Trials | NoorPath`,
   },
-  description: `Live 1-on-1 online Quran classes for kids ages 4–12 from $${PRICING_PLANS[0].monthlyPriceUsd}/mo. Noorani Qaida, Tajweed & Hifz, female tutors available. ${TRIAL.classes} free trial classes, no credit card.`,
+  description: `Private 1-on-1 Quran classes for children ages 4+. Interactive Noorani Qaida, games & parent portal. ${TRIAL.classes} free classes, female tutors available. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
   keywords: [
     "online quran classes for kids",
     "quran classes for kids online",
@@ -46,16 +48,16 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes-for-kids" },
   openGraph: {
-    title: "Online Quran Classes for Kids — 1-on-1 Live | Free Trial",
+    title: `Online Quran Classes for Kids — ${TRIAL.classes} Free Trials | NoorPath`,
     description:
-      "Live 1-on-1 Quran classes for kids ages 4–12. Request Noorani Qaida, Tajweed, Hifz or a female tutor. Book a free trial.",
+      `Private 1-on-1 Quran classes for children ages 4+. Interactive Noorani Qaida, games & parent portal. ${TRIAL.classes} free classes, female tutors available. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
     url: "https://www.noorpath.online/online-quran-classes-for-kids",
     images: [{ url: "/marketing/kids-online-quran-class.jpg", width: 1200, height: 800, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Quran Classes for Kids — Free Trial",
-    description: "1-on-1 live Quran classes for kids ages 4–12. Tutor matching and a free trial with no credit card.",
+    title: `Online Quran Classes for Kids — ${TRIAL.classes} Free Trials | NoorPath`,
+    description: `Private 1-on-1 Quran classes for children ages 4+. Interactive Noorani Qaida, games & parent portal. ${TRIAL.classes} free classes, female tutors available. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
     images: ["/marketing/kids-online-quran-class.jpg"],
   },
 };
@@ -105,6 +107,13 @@ const faqs = [
   },
 ];
 
+const kidsCourseJsonLd = buildCourseWithPricingJsonLd({
+  name: "Online Quran Classes for Kids",
+  description:
+    "Live one-to-one online Quran classes for children ages 4–12, with tutor matching for Noorani Qaida, Tajweed, Hifz, daily duas and Islamic studies.",
+  url: PAGE_URL,
+});
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -116,30 +125,17 @@ const jsonLd = {
       description: "Live 1-on-1 online Quran classes for kids ages 4–12: Noorani Qaida, Tajweed, Hifz, and daily duas.",
       isPartOf: { "@type": "WebSite", "@id": `${BASE_URL}/#website`, url: BASE_URL },
       about: { "@id": `${PAGE_URL}#course` },
+      mainEntity: { "@id": `${PAGE_URL}#course` },
       speakable: {
         "@type": "SpeakableSpecification",
         cssSelector: [".page-hero h1", ".np-quick-answer"],
       },
     },
     {
-      "@type": "Course",
-      "@id": `${PAGE_URL}#course`,
-      name: "Online Quran Classes for Kids",
-      description:
-        "Live 1-on-1 online Quran classes for children ages 4–12, with tutor matching for Noorani Qaida, Tajweed, Hifz, daily duas and Islamic studies.",
-      provider: { "@type": "Organization", name: "NoorPath Academy", "@id": ORGANIZATION_ID },
-      url: PAGE_URL,
-      courseMode: "online",
+      ...kidsCourseJsonLd,
       educationalLevel: "Beginner to Advanced",
       typicalAgeRange: "4-12",
       inLanguage: ["en", "ar", "ur"],
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        description: `${TRIAL_OFFER} — no credit card required`,
-        url: `https://www.noorpath.online/free-quran-classes-online`,
-      },
     },
     {
       "@type": "Service",
@@ -158,14 +154,6 @@ const jsonLd = {
         description: TRIAL_OFFER,
         url: `https://www.noorpath.online/free-quran-classes-online`,
       },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
     },
     {
       "@type": "BreadcrumbList",
@@ -613,6 +601,7 @@ export default function OnlineQuranClassesForKidsPage() {
           </div>
 
           {/* FAQs */}
+          <FaqJsonLd faqs={faqs} pageUrl={PAGE_URL} />
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
             Common Questions from Parents
           </h2>

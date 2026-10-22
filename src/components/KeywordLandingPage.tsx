@@ -1,12 +1,12 @@
 import Link from "next/link";
 import CTAForm from "@/components/CTAForm";
 import TrustPolicyStrip from "@/components/TrustPolicyStrip";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { ORGANIZATION_REF, WEBSITE_ID } from "@/lib/organizationSchema";
 import type { ReactNode } from "react";
 import {
   CANCELLATION_NOTICE_DAYS,
   FAMILY_DISCOUNTS,
-  PARENT_POLICY_FACTS,
   PRICING_PLANS,
   SERVICE_FACTS,
   TRIAL,
@@ -183,15 +183,6 @@ export default function KeywordLandingPage({
           description: `Free ${TRIAL.durationMinutes}-minute trial class`,
           url: `https://www.noorpath.online/free-quran-classes-online`,
         },
-      },
-      {
-        "@type": "FAQPage",
-        // Visible FAQ accordion + the visible policy strip (both rendered below).
-        mainEntity: [...faqs, ...PARENT_POLICY_FACTS].map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -515,6 +506,7 @@ export default function KeywordLandingPage({
             </div>
           )}
 
+          <FaqJsonLd faqs={faqs} pageUrl={url} />
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
             Frequently Asked Questions
           </h2>

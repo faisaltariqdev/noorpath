@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, Globe, CheckCircle, MapPin } from "lucide-react";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import LocationConversionBar from "@/components/LocationConversionBar";
+import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
 import { locations } from "@/data/locations";
 import { cities, isCityIndexable } from "@/data/cities";
 import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
@@ -83,14 +86,6 @@ const locationsJsonLd = {
       })),
     },
     {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
-    {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
@@ -122,6 +117,9 @@ export default function LocationsPage() {
             <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
               <Clock size={14} color="var(--gold)" /> Availability confirmed after matching
             </span>
+          </div>
+          <div style={{ marginTop: 28 }}>
+            <LocationHeroCtaCard whatsappText="Assalamu Alaikum, I want to book a free Quran trial class. Please share tutor availability for my country." />
           </div>
         </div>
       </div>
@@ -292,6 +290,7 @@ export default function LocationsPage() {
           </div>
 
           {/* FAQ */}
+          <FaqJsonLd faqs={faqs} pageUrl="https://www.noorpath.online/locations" />
           <div style={{ textAlign: "center", marginBottom: 32 }}>
             <span className="section-eyebrow">❓ FAQ</span>
             <h2 className="section-title">International Students — <em className="accent">Common Questions</em></h2>
@@ -321,6 +320,8 @@ export default function LocationsPage() {
           </div>
         </div>
       </section>
+
+      <LocationConversionBar whatsappText="Assalamu Alaikum, I want to book a free Quran trial class. Please share tutor availability for my country." />
     </>
   );
 }

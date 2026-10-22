@@ -10,9 +10,9 @@ import { PRICING_PLANS, SERVICE_FACTS, TRIAL, TRUSTPILOT } from "@/lib/academyFa
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Female Quran Teacher Online — Sisters & Kids | NoorPath Academy" },
+  title: { absolute: `Female Quran Teacher Online for Sisters & Kids | NoorPath` },
   description:
-    "Request a female Quran teacher online for sisters, daughters and girls. Live 1-to-1 classes for Quran reading, Tajweed or Hifz, with a free 30-minute trial.",
+    `Certified female Quran tutors for girls, sisters & reverts. Private 1-on-1 live classes in your timezone. ${TRIAL.classes} free trial classes, no credit card required.`,
   keywords: [
     "female quran teacher online", "female quran tutor", "online quran teacher for sisters",
     "hafiza tutor online", "female quran classes", "quran classes for girls online",
@@ -25,15 +25,15 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.noorpath.online/female-quran-teacher-online" },
   openGraph: {
-    title: "Female Quran Teacher Online — Tutor Requests | NoorPath Academy",
-    description: "Request a female Quran teacher for a sister or daughter. Live 1-on-1 classes with a free 30-minute trial; availability is confirmed after enquiry.",
+    title: `Female Quran Teacher Online for Sisters & Kids | NoorPath`,
+    description: `Certified female Quran tutors for girls, sisters & reverts. Private 1-on-1 live classes in your timezone. ${TRIAL.classes} free trial classes, no credit card required.`,
     url: "https://www.noorpath.online/female-quran-teacher-online",
     images: [{ url: "/marketing/female-hafiza-tutor.jpg", width: 1200, height: 800, alt: "Female Quran Teacher Online — NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Female Quran Teacher Online | NoorPath Academy",
-    description: "Comfortable 1-on-1 Quran classes for sisters and daughters. Request a female tutor and a free trial.",
+    title: `Female Quran Teacher Online for Sisters & Kids | NoorPath`,
+    description: `Certified female Quran tutors for girls, sisters & reverts. Private 1-on-1 live classes in your timezone. ${TRIAL.classes} free trial classes, no credit card required.`,
     images: ["/marketing/female-hafiza-tutor.jpg"],
   },
 };

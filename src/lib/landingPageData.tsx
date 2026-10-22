@@ -188,9 +188,9 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
 };
 
 export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Hifz Quran Online — Memorization Program | NoorPath Academy",
+  metaTitle: "Online Hifz Program for Kids & Adults — 1-on-1 | NoorPath",
   metaDescription:
-    "Hifz Quran online with live one-to-one tutoring. Structured Juz-by-Juz memorization and Sabaq-Sabqi-Manzil revision for kids and adults. Free trial.",
+    `Structured Hifz memorization with revision goals and a personal Hafiz tutor. 1-on-1 live classes, flexible timings. Start with ${TRIAL.classes} free trial classes.`,
   keywords: [
     "hifz quran online", "hifz online", "quran memorization online", "online hifz program",
     "memorize quran online", "hifz classes online", "online hifz course", "hifz tutor online",

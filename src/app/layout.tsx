@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans, Amiri } from "next/font/google";
 import "./globals.css";
 import PublicShell from "@/components/PublicShell";
+import { SOCIAL_PROFILES, TRUSTPILOT } from "@/lib/academyFacts";
 
 // Enforce build-time prerendering across the App Router.
 // Any server-only dynamic usage will now fail fast during build.
@@ -129,6 +130,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="//formsubmit.co" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//connect.facebook.net" />
+
+        {/* Organization structured data — appears on every page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["Organization", "EducationalOrganization"],
+              name: "NoorPath Academy",
+              alternateName: "NoorPath",
+              url: "https://www.noorpath.online",
+              logo: "https://www.noorpath.online/favicon.svg",
+              description:
+                "NoorPath Academy is an online-only Quran learning platform providing live one-to-one Quran classes for kids and adults worldwide, from Noorani Qaida to Tajweed and Hifz.",
+              sameAs: [
+                TRUSTPILOT.url,
+                SOCIAL_PROFILES.facebook,
+                SOCIAL_PROFILES.instagram,
+                SOCIAL_PROFILES.tiktok,
+                SOCIAL_PROFILES.youtube,
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer service",
+                areaServed: "Worldwide",
+              },
+            }),
+          }}
+        />
       </head>
       <body>
         <PublicShell>{children}</PublicShell>

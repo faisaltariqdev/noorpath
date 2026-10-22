@@ -6,10 +6,12 @@ import AiDirectAnswerBox from "@/components/AiDirectAnswerBox";
 import MadrasahVsOnlineComparison from "@/components/MadrasahVsOnlineComparison";
 import TripleGuaranteeBadge from "@/components/TripleGuaranteeBadge";
 import FreeResourceLeadMagnet from "@/components/FreeResourceLeadMagnet";
+import LocationConversionBar from "@/components/LocationConversionBar";
+import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
 import { BASE_URL, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCountryHubHreflang, PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
-import { TRIAL } from "@/lib/academyFacts";
+import { PRICING_PLANS } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -58,30 +60,6 @@ const features = [
   { icon: <CheckCircle size={22} />, title: "Clear Learning Goals", desc: "Tutors set lesson goals according to the learner's assessed level, pace and selected course. Language of instruction preferences are recorded where available during matching." },
 ];
 
-const classFaqs = [
-  { q: "What are online Quran classes?", a: "Online Quran classes are live 1-on-1 sessions with a tutor via Zoom or Google Meet. Students can learn Noorani Qaida, Tajweed, Hifz, Arabic, or Islamic studies from home at an agreed time." },
-  { q: "Are online Quran classes effective?", a: "They can be highly effective when lessons are live, the tutor is suitable, corrections happen in real time and the student practises consistently. Effectiveness is weaker when a course relies only on recordings, has large groups or lacks a clear curriculum." },
-  { q: "Can children learn Quran online safely?", a: "Yes, with appropriate safeguards. Parents should arrange all communication, remain nearby for younger children, understand the provider's safeguarding process and know whether sessions are recorded." },
-  { q: "What age can a child start online Noorani Qaida?", a: "Many children can begin around age four or five, but readiness matters more than a fixed birthday. A child should be able to attend briefly, imitate sounds and respond to simple instructions." },
-  { q: "Can a complete beginner learn Quran online?", a: "Yes. Complete beginners generally start with Arabic letter recognition and pronunciation through Noorani Qaida. No prior Arabic knowledge is required." },
-  { q: "Can I get a female Quran teacher online?", a: "You can request a female tutor for sisters or daughters when booking a free trial. NoorPath confirms a suitable match according to learner needs, schedule and current availability." },
-  { q: "Are male Quran teachers available?", a: "Yes. Families can request a male tutor for children or adults. Matching also considers course level, teaching language, schedule and current availability." },
-  { q: "How many Quran classes should a student take each week?", a: "One to three lessons can suit general reading and Tajweed, while Hifz may require more frequent contact. The best frequency depends on age, goal and available practice time." },
-  { q: "How long does it take to learn to read Quran?", a: "There is no honest universal timeframe. Starting level, lesson frequency, age, pronunciation, attendance and home practice all matter. A tutor can provide a useful estimate after assessment." },
-  { q: "Can I learn Quran with Tajweed online?", a: "Yes. Live classes allow the tutor to demonstrate Makharij and Tajweed rules, hear the learner apply them and correct errors immediately." },
-  { q: "Can Hifz be completed through online classes?", a: "Hifz can be taught online because the essential activity is recitation to a teacher combined with structured revision. Success depends on daily independent work and realistic targets." },
-  { q: "What equipment is needed for online Quran classes?", a: "A laptop, tablet or phone with a stable internet connection, working microphone and camera is sufficient. Keep the relevant Qaida or Mushaf and a quiet, well-lit learning space ready." },
-  { q: "What happens in a free trial Quran class?", a: "At NoorPath, the trial introduces the tutor, checks the student's current level, includes a short sample lesson and recommends a suitable course. It is free and does not require a credit card." },
-  { q: "How much do online Quran classes cost?", a: "Fees vary by lesson length, weekly frequency, teacher level and course. NoorPath publishes current options on its pricing page so families can compare total teaching time and included support." },
-  { q: "Can online Quran classes work across countries?", a: "Yes. Virtual classes can serve learners in different countries when the academy can match a tutor to the learner's timezone, language needs and schedule." },
-  { q: "Can we book online Quran classes after school?", a: "Yes. Many families request after-school or early-evening windows in their local timezone. Exact recurring times are confirmed after tutor matching." },
-  { q: "Are Quran lessons suitable for busy families?", a: "Short, recurring one-to-one lessons with a fixed weekly slot usually fit busy households better than irregular intensives. Choose the lightest published plan you can keep, then adjust after the trial." },
-  { q: "What are one-to-one Quran classes?", a: "One-to-one Quran classes mean one learner and one tutor in a live session — not a large group. That format supports real-time correction for reading, Tajweed and Hifz." },
-  { q: "Do you have Quran teachers available in different timezones for families abroad?", a: `Yes. Matching considers your timezone and preferred lesson windows. ${TRIAL.availabilityNote} Preferred minutes are not guaranteed in advance.` },
-  { q: "Can we request English-language instruction for online Quran classes?", a: "Language of instruction preferences are recorded where available during matching and confirmed for the proposed tutor before enrolment. NoorPath does not publish a fixed worldwide language-coverage list." },
-  { q: "How do I choose between an online academy and an independent tutor?", a: "An academy may provide teacher vetting, curriculum, support, progress records and replacement cover. In either case, verify qualifications, safeguarding, communication and the teaching match before committing." },
-];
-
 const pageUrl = `${BASE_URL}/online-quran-classes`;
 
 const pageJsonLd = {
@@ -125,12 +103,34 @@ const pageJsonLd = {
       courseMode: "online",
       inLanguage: "en",
       educationalLevel: "Beginner to advanced",
+      category: "Quran Education",
       coursePrerequisites: "No prior Arabic or Quran reading experience is required for beginners.",
-      hasCourseInstance: {
+      hasCourseInstance: PRICING_PLANS.map((plan) => ({
         "@type": "CourseInstance",
-        courseMode: "Online",
+        name: `${plan.name} — ${plan.sessionsPerWeek}x ${plan.sessionMinutes} min per week`,
+        description: `${plan.sessionsPerWeek} live one-to-one ${plan.sessionMinutes}-minute sessions per week.`,
+        courseMode: "online",
+        courseWorkload: `PT${plan.sessionMinutes}M`,
         instructor: ORGANIZATION_REF,
-      },
+        offers: {
+          "@type": "Offer",
+          name: `${plan.name} Plan`,
+          price: String(plan.monthlyPriceUsd),
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: "https://www.noorpath.online/pricing",
+          category: "Quran Education",
+        },
+      })),
+      offers: PRICING_PLANS.map((plan) => ({
+        "@type": "Offer",
+        name: `${plan.name} Plan`,
+        price: String(plan.monthlyPriceUsd),
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        url: "https://www.noorpath.online/pricing",
+        category: "Quran Education",
+      })),
     },
     {
       "@type": "Article",
@@ -144,15 +144,6 @@ const pageJsonLd = {
       datePublished: "2026-07-14",
       dateModified: "2026-07-15",
       inLanguage: "en",
-    },
-    {
-      "@type": "FAQPage",
-      "@id": `${pageUrl}#faq`,
-      mainEntity: classFaqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
     },
     {
       "@type": "BreadcrumbList",
@@ -186,6 +177,9 @@ export default function OnlineQuranClassesPage() {
             <Link href="/one-on-one-quran-classes" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>1-to-1 Classes</Link>
             <Link href="/online-quran-classes-for-kids" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>Kids Classes</Link>
             <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View All Courses</Link>
+          </div>
+          <div style={{ marginTop: 28 }}>
+            <LocationHeroCtaCard whatsappText="Assalamu Alaikum, I want to book a free online Quran trial class. Please share tutor availability and the next steps." />
           </div>
         </div>
       </div>
@@ -305,6 +299,8 @@ export default function OnlineQuranClassesPage() {
           </div>
         </div>
       </section>
+
+      <LocationConversionBar whatsappText="Assalamu Alaikum, I want to book a free online Quran trial class. Please share tutor availability and the next steps." />
     </>
   );
 }
