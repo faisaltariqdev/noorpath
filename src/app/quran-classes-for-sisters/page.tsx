@@ -6,6 +6,7 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Heart, Shield, Clock, BookOpen, Users } from "lucide-react";
 import { PRICING_PLANS, TRIAL, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
@@ -77,6 +78,17 @@ const benefits = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    buildStandardCourseJsonLd({
+      name: "Quran Classes for Sisters Online",
+      description:
+        "Private live 1-to-1 Quran lessons for sisters with certified female tutors covering Qaida, Tajweed, and Hifz.",
+      url: pageUrl,
+      workload: "PT30M",
+      availableLanguage: ["English", "Urdu", "Arabic"],
+      price: PRICING_PLANS[0].monthlyPriceUsd,
+      priceCurrency: "USD",
+      priceUrl: "https://www.noorpath.online/pricing",
+    }),
     {
       "@type": "Service",
       "@id": `${pageUrl}#service`,

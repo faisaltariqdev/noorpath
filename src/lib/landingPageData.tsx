@@ -452,6 +452,7 @@ export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { 
     { href: "/female-quran-teacher-online", label: "Request a Female Quran Teacher" },
     { href: "/quran-classes-for-working-professionals", label: "Flexible Timing for Working Adults" },
     { href: "/blog/how-to-teach-quran-when-theres-no-mosque-nearby", label: "How to Teach Quran When There's No Mosque Nearby" },
+    { href: "/blog/dua-for-muslims-living-abroad", label: "Duas & Adhkar for Muslims Living Abroad" },
     { href: "/blog/raising-muslim-child-in-non-muslim-country", label: "Raising a Muslim Child in a Non-Muslim Country" },
     { href: "/blog/online-quran-classes-for-muslim-families-abroad", label: "Quran Classes for Muslim Families Abroad" },
     { href: "/blog/online-quran-classes-for-homeschool-families", label: "Quran Classes for Homeschool Families" },
@@ -575,6 +576,8 @@ export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> 
     "✓ Female tutor and English instruction on request",
   ],
   relatedLinks: [
+    { href: "/online-quran-classes/new-york", label: "Online Quran Classes New York (Near Me)" },
+    { href: "/locations/online-quran-classes-usa", label: "Online Quran Classes USA Hub" },
     { href: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby — Full Service Guide" },
     { href: "/female-quran-teacher-online", label: "Female Quran Teacher Online" },
     { href: "/quran-classes-for-working-professionals", label: "Flexible Classes for Working Professionals" },

@@ -31,13 +31,70 @@ const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151
 export const prayerRecitationBlogContent: Record<string, { style: string; content: string }> = {
   "dua-e-masura-arabic-english": {
     style: S,
-    content: `<p><strong>Dua-e-Masura</strong> is the familiar name many families use for a short dua often taught after the Tashahhud (Attahiyat) in Salah — especially in South Asian teaching traditions. Whether you call it Dua Masura or simply “the dua after Attahiyat,” Muslims need the Arabic text word-for-word, with clear transliteration and meaning, so they can recite calmly in the final sitting before salam.</p>
+    content: `<div class="answer-box">
+  <strong>Quick Answer:</strong> The <strong>Dua-e-Masura</strong> in Salah is: <em>اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ</em> (Allāhumma innī ẓalamtu nafsī ẓulman kathīrā...). Recite it in the final sitting of Salah after Tashahhud (Attahiyat) and Durood Ibrahim immediately before making the final Tasleem (Salam).
+</div>
+
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>Recited in the final sitting of Salah after Tashahhud and Durood Ibrahim.</li>
+    <li>Authentic supplication taught by Prophet Muhammad ﷺ to Abu Bakr As-Siddiq (Bukhari).</li>
+    <li>Expresses sincere acknowledgment of human wrongdoing and pleads for divine forgiveness.</li>
+    <li>Taught in NoorPath Academy's Tajweed and prayer courses for correct pronunciation.</li>
+  </ul>
+</div>
+
+<div class="audio-card">
+  <strong>Pronunciation &amp; Audio Guide:</strong>
+  <p>Master the exact Arabic pronunciation and Tajweed of Dua-e-Masura with native Arabic and certified Quran tutors at NoorPath Academy. Learn proper articulation of letters through <a href="/courses/tajweed-classes-online">online Tajweed classes</a>, practice reading foundations with our free <a href="/noorani-qaida/games">Noorani Qaida Games &amp; Quizzes</a>, master <a href="/noorani-qaida">Noorani Qaida</a>, and practice throat letters with our <a href="/noorani-qaida/tajweed/makharij">Makharij guide</a>.</p>
+</div>
+
+<div class="pdf-download-card">
+  <div>
+    <strong>Free Dua-e-Masura Printable Card (PDF)</strong>
+    <p>Download our pocket prayer card with full Tashahhud, Durood Ibrahim, and Dua-e-Masura with Arabic, transliteration, and English translation. Popular among Muslim families in the <a href="/locations/online-quran-classes-uk">UK</a>.</p>
+  </div>
+  <a href="/noorani-qaida" class="pdf-download-btn">Free PDF Download</a>
+</div>
+
+<h2>What are the common spelling variants of Dua-e-Masura?</h2>
+<p>You may find this prayer written in various English spellings across books and Islamic resources:</p>
+<ul>
+  <li><strong>Dua-e-Masura</strong> — Most widely recognized South Asian spelling (Urdu: دعائے ماثورہ).</li>
+  <li><strong>Dua Masura</strong> — Simplified English search term.</li>
+  <li><strong>Dua-e-Mathura</strong> — Transliteration reflecting the Arabic thāʾ (دعاء مأثورة — supplication transmitted from the Prophet ﷺ).</li>
+  <li><strong>Dua e Mashoora</strong> — Common phonetic variation.</li>
+  <li><strong>Allahumma Inni Zalamtu Nafsi</strong> — Named after its opening Arabic phrase.</li>
+</ul>
+
+<h2>When should you recite Dua-e-Masura in Salah?</h2>
+          <table class="np-table">
+            <thead>
+              <tr>
+                <th>When to Recite Dua-e-Masura</th>
+                <th>When NOT to Recite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Final Sitting of Salah (Qa'dah Akhirah):</strong> Recited immediately after Tashahhud (Attahiyat) and Durood Ibrahim, right before making Tasleem (Salam).</td>
+                <td><strong>In First Sitting of 3 or 4 Rakah Prayer (Qa'dah Ula):</strong> Do NOT recite Dua-e-Masura in the middle sitting; stand up immediately after Attahiyat.</td>
+              </tr>
+              <tr>
+                <td><strong>During Sujood (Optional Duas):</strong> Permissible in optional (Nafl / Tahajjud) prostrations when asking Allah for comprehensive forgiveness.</td>
+                <td><strong>During Ruku or Standing (Qiyam):</strong> Not permissible to recite post-Tashahhud duas during standing or bowing positions.</td>
+              </tr>
+              <tr>
+                <td><strong>Personal Supplication:</strong> Any time outside prayer when seeking sincere tawbah and forgiveness from sins.</td>
+                <td><strong>Rushing Before Tasleem:</strong> Avoid mumbling quickly; it is Sunnah to recite clearly with presence of heart.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Dua-e-Masura</strong> is the familiar name many families use for a short dua often taught after the Tashahhud (Attahiyat) in Salah — especially in South Asian teaching traditions. Whether you call it Dua Masura or simply “the dua after Attahiyat,” Muslims need the Arabic text word-for-word, with clear transliteration and meaning, so they can recite calmly in the final sitting before salam.</p>
 
           <p>This guide gives the full Arabic, transliteration, English meaning, a simple word-by-word breakdown, when it is typically recited, and how to memorise it without rushing. For the Tashahhud text that comes before it, see <a href="/blog/attahiyat-full-arabic-english-tashahhud">Attahiyat full Arabic &amp; English</a>.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> A widely taught post-Tashahhud dua begins <em>Allāhumma innī ẓalamtu nafsī…</em> — asking Allah for forgiveness and mercy. Learn it after Attahiyat and Salawat; keep pronunciation gentle and unhurried.
-          </div>
 
           <h2 id="full-text">Dua-e-Masura — Arabic, transliteration &amp; English</h2>
           <div class="verse-card">
@@ -134,6 +191,12 @@ export const prayerRecitationBlogContent: Record<string, { style: string; conten
           <p>Additional calm repetition on day 5 should focus on clarity of each word, not on increasing speed or volume.</p>
           <p>Additional calm repetition on day 6 should focus on clarity of each word, not on increasing speed or volume.</p>
           <h2 id="faq">Frequently asked questions</h2>
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Dua-e-Masura is the Sunnah supplication recited in the final sitting of Salah immediately after Tashahhud and Durood Ibrahim before making salam. Taught by the Prophet ﷺ to Abu Bakr (ra), it asks Allah for comprehensive forgiveness and mercy.</p>
+          </div>
+
+          <h2 id="faq">Frequently asked questions about Dua-e-Masura</h2>
           <details class="faq-acc"><summary>Is Dua-e-Masura the only dua after Attahiyat?<span>+</span></summary>
             <p>No. Several authentic duas are taught for the final sitting. Stick to one complete version your teacher prefers.</p>
           </details>
@@ -141,13 +204,13 @@ export const prayerRecitationBlogContent: Record<string, { style: string; conten
             <p>Many Muslims recite a dua after Tashahhud in the final sitting of each obligatory prayer. Follow your school’s guidance on what is required versus recommended.</p>
           </details>
           <details class="faq-acc"><summary>Can children learn this before perfect Tajweed?<span>+</span></summary>
-            <p>Yes — start with listening and clear chunks, then refine sounds with a tutor over time.</p>
+            <p>Yes — start with listening and clear chunks, then refine sounds with a NoorPath Academy tutor over time.</p>
           </details>
           <details class="faq-acc"><summary>Should I learn Attahiyat first?<span>+</span></summary>
             <p>Yes. Learn Tashahhud first, then Salawat, then this dua, so the sitting sequence feels natural.</p>
           </details>
           <details class="faq-acc"><summary>Where can I get live pronunciation help?<span>+</span></summary>
-            <p>Book a free trial for live 1-to-1 correction via online Quran classes — mention you want Salah duas checked.</p>
+            <p>Book a free trial for live 1-to-1 correction via online Quran classes at NoorPath Academy — mention you want Salah duas checked.</p>
           </details>`,
   },
 
@@ -256,15 +319,25 @@ export const prayerRecitationBlogContent: Record<string, { style: string; conten
 
   "sajdah-tilawat-dua-arabic-english": {
     style: S,
-    content: `<p><strong>Sajdah al-Tilawah</strong> is the prostration of recitation — a sajdah performed when certain verses of the Quran are recited or heard. Muslims often search for the <strong>sajdah tilawat dua</strong> in Arabic with transliteration and English meaning so they know what to say in that prostration.</p>
+    content: `<div class="answer-box">
+  <strong>Quick Answer:</strong> The authentic <strong>sajdah tilawat dua</strong> recited upon performing the prostration of recitation is: <em>سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ</em> (Sajada wajhiya lilladhī khalaqahu...). Recite it when reading or hearing any of the specific sajdah verses marked across the Quran, followed by takbir upon rising.
+</div>
 
-          <p>This guide covers a commonly taught dua for sajdah tilawah, when the prostration is made, and simple steps. Details of obligation versus recommendation can differ by school of jurisprudence; follow a trusted teacher for your personal practice.</p>
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>Triggered when reciting or hearing any of the 14–15 marked sajdah verses.</li>
+    <li>Main Sunnah dua proclaims devotion to the Creator who formed sight and hearing.</li>
+    <li>Requires single prostration with takbir going down and rising up.</li>
+    <li>Standard sajdah dhikr (Subhana Rabbiyal A'la) is also valid if learning.</li>
+  </ul>
+</div>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> In sajdah tilawah, many Muslims recite a dua beginning <em>Sajada wajhiya lilladhī khalaqahu…</em> (“My face has prostrated to the One who created it…”). Say <em>Allāhu Akbar</em> when going down and when rising, as your school teaches.
-          </div>
+<p><strong>Sajdah al-Tilawah</strong> is the prostration of recitation — a sajdah performed when certain verses of the Quran are recited or heard. Muslims often search for the <strong>sajdah tilawat dua</strong> in Arabic with transliteration and English meaning so they know what to say in that prostration.</p>
 
-          <h2 id="dua">Sajdah Tilawat dua — Arabic, transliteration &amp; English</h2>
+<p>This guide covers a commonly taught dua for sajdah tilawah, when the prostration is made, and simple steps. Details of obligation versus recommendation can differ by school of jurisprudence; follow a trusted teacher at <a href="/courses/noorani-qaida-online">NoorPath Academy</a> for your personal practice.</p>
+
+<h2 id="dua">What is the authentic Sajdah Tilawat dua in Arabic, transliteration, and English?</h2>
           <div class="verse-card">
             <span class="vnum">SAJDAH AL-TILAWAH · COMMON DUA</span>
             <div class="arabic">سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ</div>
@@ -347,7 +420,12 @@ export const prayerRecitationBlogContent: Record<string, { style: string; conten
           <p>Additional calm repetition on day 5 should focus on clarity of each word, not on increasing speed or volume.</p>
           <p>Additional calm repetition on day 6 should focus on clarity of each word, not on increasing speed or volume.</p>
           <p>Additional calm repetition on day 7 should focus on clarity of each word, not on increasing speed or volume.</p>
-          <h2 id="faq">Frequently asked questions</h2>
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Sajdah Tilawat is the prostration of recitation performed upon reading or hearing marked sajdah verses in the Quran. Recite 'Sajada wajhiya lilladhi khalaqahu...' or the familiar sajdah tasbeeh, expressing physical humility before Allah.</p>
+          </div>
+
+          <h2 id="faq">Frequently asked questions about Sajdah Tilawat</h2>
           <details class="faq-acc"><summary>Is sajdah tilawah the same as sajdah in normal Salah?<span>+</span></summary>
             <p>It is also a prostration, but it is tied to specific Quran verses of tilawah. The dua commonly taught for it can differ from the usual “Subhana rabbiyal-a’la” alone.</p>
           </details>
@@ -361,7 +439,7 @@ export const prayerRecitationBlogContent: Record<string, { style: string; conten
             <p>Classical works list a set of sajdah verses; counts and emphasis can vary slightly by school. Use a mushaf that marks them and confirm with a teacher.</p>
           </details>
           <details class="faq-acc"><summary>Can I practise this with an online tutor?<span>+</span></summary>
-            <p>Yes. A tutor can help you recognise sajdah markings and recite the dua clearly during Quran reading lessons.</p>
+            <p>Yes. A NoorPath Academy tutor can help you recognise sajdah markings and recite the dua clearly during live <a href="/courses/noorani-qaida-online">Noorani Qaida</a> and Quran reading lessons.</p>
           </details>`,
   },
 };

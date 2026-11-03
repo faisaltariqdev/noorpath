@@ -5,6 +5,7 @@ import {
   QAIDA_GAMES,
 } from "@/data/noorani-qaida";
 import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
+import QaidaGamesWorksheetsGrid from "@/components/noorani-qaida/QaidaGamesWorksheetsGrid";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -131,6 +132,38 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
           <span className="qaida-eyebrow">{guide.audience}</span>
           <h1 style={{ maxWidth: 850 }}>{guide.title}</h1>
           <p>{guide.description}</p>
+
+          {(guide as any).answerBox && (
+            <div
+              className="np-quick-answer"
+              style={{
+                background: "rgba(255,255,255,.08)",
+                borderLeft: "4px solid var(--gold)",
+                borderRadius: "10px",
+                padding: "16px 20px",
+                marginTop: "1.25rem",
+                fontSize: ".96rem",
+                lineHeight: 1.65,
+                color: "#ffffff",
+                maxWidth: 850,
+              }}
+            >
+              <div
+                style={{
+                  fontSize: ".76rem",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  color: "var(--gold-lt)",
+                  marginBottom: 4,
+                  letterSpacing: ".5px",
+                }}
+              >
+                Direct Answer
+              </div>
+              <p style={{ margin: 0, fontWeight: 500 }}>{(guide as any).answerBox}</p>
+            </div>
+          )}
+
           <div className="qaida-actions">
             {previous && (
               <Link href={`${QAIDA_BASE_PATH}/guides/${previous.slug}`} className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
@@ -250,23 +283,21 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
           <QaidaFaqs faqs={guide.faqs} />
 
           <QaidaRelatedLinks
-            title="Continue exploring"
+            title="Core learning links"
             links={[
-              { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida hub", description: "Explore the full 11-module path." },
-              { href: `${QAIDA_BASE_PATH}/games`, label: "Free Arabic learning games", description: "Letter matching, harakat quiz, and progress checklist." },
-              ...(guide.slug === "arabic-alphabet-practice" || guide.slug === "with-animation"
-                ? [{ href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Start with Alif", description: "Open the first complete letter reference." }]
-                : [{ href: `${QAIDA_BASE_PATH}/guides/pronunciation`, label: "Pronunciation guide", description: "Use transliteration and cues responsibly." }]),
-              { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Learn Fatha", description: "See the first short-vowel lesson." },
-              ...(guide.slug === "with-audio"
-                ? [{ href: "/free-quran-classes-online", label: "Free trial class", description: "Request live correction when audio alone is not enough." }]
-                : guide.slug === "digital-quran-learning-platform" || guide.slug === "gamified-learning"
-                  ? [{ href: "/online-quran-classes-for-kids", label: "Quran classes for kids", description: "Live 1-to-1 lessons alongside digital practice." }]
-                  : [{ href: "/pricing", label: "Class pricing", description: "Published USD plans and family discounts." }]),
+              { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida Hub", description: "Explore the full 11-module curriculum map and letter index." },
+              { href: `${QAIDA_BASE_PATH}/games/letter-matching`, label: "Arabic Letter Matching Game", description: "Practise letter recognition on your phone." },
+              { href: "/courses/noorani-qaida-online", label: "Live Noorani Qaida Online Classes", description: "1-on-1 personalized lessons with certified live tutors." },
+              { href: `${QAIDA_BASE_PATH}/games`, label: "All Free Games", description: "Browse letter, harakat, and progress quizzes." },
             ]}
           />
 
-          <QaidaCourseCta />
+          <QaidaGamesWorksheetsGrid currentHref={url} limit={6} />
+
+          <QaidaCourseCta
+            title="Practice with a live Noorani Qaida teacher — Book a free trial"
+            description="Guides establish clarity. Pronunciation needs a trained teacher listening live. Book a free 30-minute 1-on-1 trial class with a patient, certified tutor in your timezone — no credit card needed."
+          />
         </div>
       </div>
     </article>

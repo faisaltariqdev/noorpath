@@ -54,6 +54,11 @@ function QueryParamSync({ onQuery }: { onQuery: (value: string) => void }) {
 export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(36);
+
+  useEffect(() => {
+    setVisibleCount(36);
+  }, [query, category]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -68,6 +73,8 @@ export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
       );
     });
   }, [posts, query, category]);
+
+  const visiblePosts = filtered.slice(0, visibleCount);
 
   return (
     <>
@@ -137,7 +144,7 @@ export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
           )}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((post) => (
+            {visiblePosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
                 <article className="blog-card">
                   <div className="blog-card-header">
@@ -162,6 +169,19 @@ export default function BlogSearchList({ posts }: { posts: BlogListItem[] }) {
               </Link>
             ))}
           </div>
+
+          {visibleCount < filtered.length && (
+            <div style={{ textAlign: "center", marginTop: 40 }}>
+              <button
+                type="button"
+                onClick={() => setVisibleCount((prev) => prev + 36)}
+                className="btn-outline-np"
+                style={{ cursor: "pointer", background: "transparent" }}
+              >
+                Load More Articles ({filtered.length - visibleCount} remaining) →
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </>

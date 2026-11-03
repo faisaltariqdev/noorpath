@@ -8,6 +8,7 @@ import {
   QAIDA_LETTERS,
 } from "@/data/noorani-qaida";
 import LetterFindPractice from "@/components/noorani-qaida/LetterFindPractice";
+import QaidaGamesWorksheetsGrid from "@/components/noorani-qaida/QaidaGamesWorksheetsGrid";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -330,6 +331,9 @@ export default async function ArabicLetterPage({ params }: Props) {
           <QaidaCallout title="Audio and pronunciation note" tone="blue">
             <p><Volume2 size={17} aria-hidden="true" style={{ display: "inline", marginRight: ".4rem" }} />NoorPath does not label public audio as Qari-reviewed until specific files complete formal review. Live classes remain the correction route for uncertain sounds.</p>
           </QaidaCallout>
+
+          <QaidaGamesWorksheetsGrid currentHref={url} limit={6} />
+
           <QaidaCourseCta title={`Want a teacher to guide ${letter.name} pronunciation?`} />
         </div>
       </div>

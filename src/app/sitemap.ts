@@ -195,12 +195,6 @@ const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
 ];
 
-const REDIRECTED_COURSE_SLUGS = new Set([
-  "quran-classes-for-kids",
-  "tajweed-classes-online",
-  "hifz-program-online",
-]);
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     // ── Tier 1: highest priority commercial pages ───────────────────────────────
@@ -224,6 +218,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/about`,                                    priority: 0.9,  changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/contact`,                                  priority: 0.85, changeFrequency: "yearly",  lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/founder`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
+    { url: `${BASE}/author/faisal-tariq`,                      priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
     ...toolsSitemapEntries(BASE),
@@ -235,14 +230,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Auto-generate from shared data (courses + country locations + cities + blogs)
-  const coursePages: MetadataRoute.Sitemap = courses
-    .filter((c) => !REDIRECTED_COURSE_SLUGS.has(c.slug))
-    .map((c) => ({
+  const coursePages: MetadataRoute.Sitemap = courses.map((c) => ({
     url: `${BASE}/courses/${c.slug}`,
     lastModified: CONTENT_UPDATE,
     priority: 0.85,
     changeFrequency: "monthly" as const,
-    }));
+  }));
 
   const locationPages: MetadataRoute.Sitemap = locations.map((l) => ({
     url: `${BASE}/locations/${l.slug}`,
@@ -256,7 +249,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((c) => ({
     url: `${BASE}/online-quran-classes/${c.slug}`,
     lastModified: SITE_CONTENT_STAMP,
-    priority: 0.86,
+    priority: 0.7,
     changeFrequency: "weekly" as const,
   }));
 

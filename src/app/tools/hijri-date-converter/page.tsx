@@ -17,9 +17,9 @@ import {
 const URL = `${BASE_URL}/tools/hijri-date-converter`;
 
 export const metadata: Metadata = {
-  title: absolutePageTitle("Islamic Hijri Date Converter & Calendar 1447-1448 AH | NoorPath"),
+  title: absolutePageTitle("Hijri Date Converter — Gregorian to Hijri (Today's Date)"),
   description:
-    "Free Islamic Hijri date converter. Convert Gregorian to Hijri dates, view today's Islamic date, moon sighting adjustments, and Ramadan & Eid countdowns.",
+    "Hijri date converter: convert Gregorian to Islamic dates instantly. View today's date in 1447-1448 AH with local moon-sighting adjustment and holiday list.",
   keywords: [
     "Islamic date converter",
     "Hijri date today",
@@ -103,7 +103,24 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
         "Accurate two-way Gregorian to Hijri date converter with live moon sighting adjustments and Islamic holiday countdowns.",
-      publisher: { "@type": "Organization", name: "NoorPath Academy", url: BASE_URL },
+      publisher: {
+        "@type": "Organization",
+        "@id": `${BASE_URL}/#organization`,
+        name: "NoorPath Academy",
+        url: BASE_URL,
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${URL}#webpage`,
+      name: "Islamic Hijri Date Converter & Calendar",
+      url: URL,
+      description:
+        "Accurate two-way Gregorian to Hijri date converter with live moon sighting adjustments and Islamic holiday countdowns.",
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".answer-box"],
+      },
     },
     {
       "@type": "FAQPage",
@@ -162,6 +179,11 @@ export default function HijriConverterPage() {
               Islamic Hijri Date Converter &amp; Calendar
             </h1>
 
+            <div className="answer-box max-w-2xl mx-auto my-4 text-left">
+              <strong className="lead-in">Quick Answer:</strong>
+              <p>The <strong>Hijri date converter</strong> translates Gregorian calendar dates into the Islamic lunar calendar (1447–1448 AH). The Islamic day starts at Maghrib sunset, featuring a 354–355 day year. Use this tool to view today&apos;s Islamic date or calculate dates with local ±1–2 day moon-sighting adjustments.</p>
+            </div>
+
             <p className="max-w-2xl mx-auto text-sm sm:text-base text-white/80 leading-relaxed">
               Convert dates effortlessly between the Gregorian solar calendar and the Islamic lunar calendar with
               accurate moon-sighting adjustments and live holiday countdowns.
@@ -213,6 +235,69 @@ export default function HijriConverterPage() {
                   </Link>
                 </div>
               </div>
+            </div>
+
+            {/* Audio & Pronunciation Guide Card */}
+            <div className="audio-card">
+              <strong>Islamic Calendar &amp; Pronunciation Audio Guide:</strong>
+              <p>Learn the Arabic names and correct pronunciation of the 12 Hijri months with our native Quran instructors. Read our comprehensive guide to the <Link href="/blog/islamic-months-names-in-order" className="underline font-semibold text-[var(--emerald)]">12 Islamic Months in Order</Link> with spiritual virtues and Sunnah fasts, or start reading the Quran from the basics with <Link href="/noorani-qaida" className="underline font-semibold text-[var(--emerald)]">Noorani Qaida</Link>.</p>
+            </div>
+
+            {/* Free PDF Download Card */}
+            <div className="pdf-download-card">
+              <div>
+                <strong>Free Printable Hijri Calendar 1447–1448 AH (PDF)</strong>
+                <p>Download our printable yearly Islamic calendar with key dates for Ramadan, Eid al-Fitr, Day of Arafah, and Eid al-Adha. Trusted by students across the <Link href="/locations/online-quran-classes-uk" className="underline font-semibold">UK</Link>, North America, and worldwide.</p>
+              </div>
+              <Link href="/noorani-qaida" className="pdf-download-btn">Free PDF Calendar</Link>
+            </div>
+
+            {/* Common Search Terms */}
+            <div className="bg-white border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-sm">
+              <h2 className="font-serif text-xl sm:text-2xl font-bold text-[var(--charcoal)] mb-4">Common Search Terms &amp; Spelling Variants</h2>
+              <ul className="list-disc pl-5 space-y-2 text-sm text-[var(--slate)]">
+                <li><strong>Hijri Date Converter</strong> — Standard English search term for Islamic date calculation.</li>
+                <li><strong>Gregorian to Hijri</strong> — Converting Western solar dates to Islamic lunar dates.</li>
+                <li><strong>Today&apos;s Islamic Date</strong> — Current day in the Hijri calendar (AH — Anno Hegirae).</li>
+                <li><strong>Hijri Calendar 1447–1448</strong> — Active Islamic lunar years covering 2025–2027.</li>
+              </ul>
+            </div>
+
+            {/* Hijri vs Gregorian Comparison Table */}
+            <div className="bg-white border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-sm overflow-x-auto">
+              <h2 className="font-serif text-xl sm:text-2xl font-bold text-[var(--charcoal)] mb-4">Hijri Lunar Calendar vs. Gregorian Solar Calendar</h2>
+              <table className="w-full border-collapse text-sm text-left">
+                <thead>
+                  <tr className="border-b border-[var(--border)] bg-[var(--ivory)]">
+                    <th className="p-3 font-bold text-[var(--charcoal)]">Feature</th>
+                    <th className="p-3 font-bold text-[var(--charcoal)]">Islamic Hijri Calendar</th>
+                    <th className="p-3 font-bold text-[var(--charcoal)]">Gregorian Calendar</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[var(--border)] text-[var(--slate)]">
+                  <tr>
+                    <td className="p-3 font-semibold text-[var(--charcoal)]">Basis</td>
+                    <td className="p-3">Lunar (Moon phases)</td>
+                    <td className="p-3">Solar (Earth orbiting Sun)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-semibold text-[var(--charcoal)]">Year Length</td>
+                    <td className="p-3">354 or 355 days (~11 days shorter)</td>
+                    <td className="p-3">365 or 366 days</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-semibold text-[var(--charcoal)]">Day Beginning</td>
+                    <td className="p-3">Begins at sunset (Maghrib)</td>
+                    <td className="p-3">Begins at midnight (12:00 AM)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-semibold text-[var(--charcoal)]">Month Determination</td>
+                    <td className="p-3">Local crescent moon (Hilal) sighting (29 or 30 days)</td>
+                    <td className="p-3">Fixed 28, 30, or 31 days</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-xs text-[var(--slate)] mt-3">Deepen your knowledge of the Quran and sacred calendars through our <Link href="/hifz-quran-online" className="text-[var(--emerald)] font-semibold underline">Online Quran Hifz Program</Link>.</p>
             </div>
 
             {/* FAQs Accordion */}

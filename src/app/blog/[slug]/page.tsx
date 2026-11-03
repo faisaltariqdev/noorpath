@@ -76,6 +76,109 @@ const supportingResourceLinks: Record<string, string[]> = {
   ],
 };
 
+const BLOG_HOW_TO_STEPS: Record<string, { name: string; text: string }[]> = {
+  "how-to-do-ghusl-step-by-step": [
+    {
+      name: "Make your intention (Niyyah)",
+      text: "Form the intention in the heart to purify yourself for Allah to remove major impurity. There is no need to utter it aloud.",
+    },
+    {
+      name: "Say Bismillah and wash hands",
+      text: "Say Bismillah and thoroughly wash both hands up to the wrists three times.",
+    },
+    {
+      name: "Wash private parts and impurities",
+      text: "Wash the private parts and remove any physical impurity completely from the body.",
+    },
+    {
+      name: "Perform a complete Wudu",
+      text: "Perform a complete ablution (wudu) as done for daily salah. You may delay washing the feet until the end if water pools on the floor.",
+    },
+    {
+      name: "Pour water over head three times",
+      text: "Pour water over the head three times, rubbing and ensuring water penetrates through the hair to the scalp and roots.",
+    },
+    {
+      name: "Wash the entire body",
+      text: "Wash the entire right side of the body from shoulder to feet, then the left side, ensuring water reaches armpits, navel, skin folds, and between toes.",
+    },
+    {
+      name: "Wash feet",
+      text: "Step aside and wash both feet thoroughly if you delayed them during wudu.",
+    },
+  ],
+  "how-to-do-tayammum-step-by-step": [
+    {
+      name: "Make your intention (Niyyah)",
+      text: "Intend in your heart to purify for prayer using dry earth when water is unavailable, harmful, or out of reach.",
+    },
+    {
+      name: "Say Bismillah",
+      text: "Begin by saying Bismillah (in the name of Allah).",
+    },
+    {
+      name: "Strike clean earth once",
+      text: "Place both palms lightly onto clean earth, stone, or a pure dusty surface.",
+    },
+    {
+      name: "Blow or shake off excess dust",
+      text: "Gently blow on your hands or tap them together to remove excess dust so the wipe is light.",
+    },
+    {
+      name: "Wipe your face",
+      text: "Wipe your entire face once with both hands, covering the same area as in regular wudu.",
+    },
+    {
+      name: "Wipe your hands",
+      text: "Wipe your hands up to the wrists (or elbows according to your school), wiping the right hand with the left, then the left with the right.",
+    },
+  ],
+  "how-to-pray-witr": [
+    {
+      name: "Pray the first two rakats",
+      text: "Pray the first two rakats like a standard sunnah prayer, sitting for tashahhud after the second rakat without making salam.",
+    },
+    {
+      name: "Stand for the third rakat",
+      text: "Stand up for the third rakat, reciting Surah Al-Fatiha followed by another surah or verses from the Quran.",
+    },
+    {
+      name: "Say Takbir and recite Dua e Qunoot",
+      text: "Say Allahu Akbar, raise your hands to your ears as in the opening takbir, fold them, and recite Dua e Qunoot.",
+    },
+    {
+      name: "Complete ruku, sujood, and final salam",
+      text: "Bow into ruku', perform two prostrations (sujood), recite the final tashahhud and salawat, and turn your face right and left for tasleem (salam).",
+    },
+  ],
+  "istikhara-for-marriage-step-by-step": [
+    {
+      name: "Perform Wudu and find a quiet space",
+      text: "Ensure you are in a state of purity with proper wudu, in a clean, quiet space free of distractions.",
+    },
+    {
+      name: "Make sincere intention",
+      text: "Intend in your heart to pray two voluntary rak'ahs of Salatul Istikhara seeking Allah's guidance regarding a specific proposal or marriage partner.",
+    },
+    {
+      name: "Pray two voluntary rak'ahs",
+      text: "Perform two rak'ahs of voluntary prayer (nafl). It is recommended to recite Surah Al-Kafirun in the first and Surah Al-Ikhlas in the second.",
+    },
+    {
+      name: "Praise Allah and send Salawat",
+      text: "After finishing prayer, praise Allah with Hamd and send blessings (Salawat / Durood Ibrahim) upon the Prophet Muhammad ﷺ.",
+    },
+    {
+      name: "Recite the authentic Istikhara Dua",
+      text: "Recite the Prophetic Istikhara dua from Sahih Bukhari, naming the specific person or proposal when reaching 'hadhal-amr' (this matter).",
+    },
+    {
+      name: "Trust Allah and take practical steps",
+      text: "Place your trust in Allah and proceed with wise, practical decision-making. Guidance manifests through ease, clarity, or closed doors rather than dreams.",
+    },
+  ],
+};
+
 export const dynamicParams = false;
 export const revalidate = false;
 
@@ -95,10 +198,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : 800
     : 630;
   return {
-    title: post.title,
+    title: { absolute: post.title },
     description: post.description,
     keywords: post.keywords,
-    authors: [{ name: post.author, url: `https://www.noorpath.online/${post.authorSlug}` }],
+    authors: [{ name: post.author, url: "https://www.noorpath.online/author/faisal-tariq" }],
     alternates: { canonical: `https://www.noorpath.online/blog/${post.slug}` },
     openGraph: {
       title: post.title,
@@ -174,10 +277,19 @@ export default async function BlogPostPage({ params }: Props) {
           "@type": "Person",
           name: post.author,
           jobTitle: post.authorTitle,
-          url: `https://www.noorpath.online/${post.authorSlug}`,
+          url: "https://www.noorpath.online/author/faisal-tariq",
           worksFor: ORGANIZATION_REF,
         },
-        publisher: { "@id": ORGANIZATION_ID },
+        publisher: {
+          "@type": "Organization",
+          "@id": ORGANIZATION_ID,
+          name: "NoorPath Academy",
+          url: "https://www.noorpath.online",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.noorpath.online/logo.png",
+          },
+        },
         url: `https://www.noorpath.online/blog/${post.slug}`,
         mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.noorpath.online/blog/${post.slug}` },
         keywords: post.keywords.join(", "),
@@ -188,6 +300,7 @@ export default async function BlogPostPage({ params }: Props) {
         speakable: {
           "@type": "SpeakableSpecification",
           cssSelector: [
+            ".answer-box",
             "#blog-hero-title",
             ".highlight-box",
             ".quick-answer",
@@ -205,7 +318,7 @@ export default async function BlogPostPage({ params }: Props) {
               .split(/\s+/).length
           : undefined,
       },
-      ...(asset?.howToSteps
+      ...(BLOG_HOW_TO_STEPS[post.slug]
         ? [
             {
               "@type": "HowTo",
@@ -216,12 +329,12 @@ export default async function BlogPostPage({ params }: Props) {
               mainEntityOfPage: {
                 "@id": `https://www.noorpath.online/blog/${post.slug}`,
               },
-              step: asset.howToSteps.map((step, index) => ({
+              step: BLOG_HOW_TO_STEPS[post.slug].map((step, index) => ({
                 "@type": "HowToStep",
                 position: index + 1,
                 name: step.name,
                 text: step.text,
-                url: `https://www.noorpath.online/blog/${post.slug}#method`,
+                url: `https://www.noorpath.online/blog/${post.slug}#steps`,
               })),
             },
           ]
@@ -261,17 +374,48 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  // FAQPage JSON-LD must match visible .faq-acc FAQs (Google structured-data honesty).
-  // Do not use separate blogFaqs.ts schemas — they drifted from on-page copy.
+  // FAQPage JSON-LD must match visible FAQs (Google structured-data honesty).
   const faqSchema = richContent ? faqPageJsonLdFromHtml(richContent.content) : null;
   const headings = richContent ? extractHeadings(richContent.content) : [];
   const articleParts = richContent
     ? splitArticleHtml(richContent.content, 3)
     : { before: "", after: "" };
 
+  const isCtrRescuePage = [
+    "attahiyat-full-arabic-english-tashahhud",
+    "jazakallah-khair-meaning",
+    "barakallah-meaning",
+    "bismillah-meaning-in-english",
+    "what-is-wazifa-in-islam",
+    "dua-e-masura-arabic-english",
+    "safar-ki-dua-travel-dua-arabic-english",
+    "la-ilaha-illallah-meaning",
+    "muslim-population-statistics-uk-usa",
+  ].includes(slug);
+
+  const hasAnswerBox = Boolean(richContent?.content && richContent.content.includes("answer-box"));
+
+  const speakableSchema = (isCtrRescuePage || hasAnswerBox)
+    ? {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `https://www.noorpath.online/blog/${post.slug}#speakable`,
+        url: `https://www.noorpath.online/blog/${post.slug}`,
+        name: post.title,
+        description: post.description,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [".answer-box"],
+        },
+      }
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {speakableSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      )}
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
@@ -302,15 +446,15 @@ export default async function BlogPostPage({ params }: Props) {
                 FT
               </div>
               <div>
-                <div style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem" }}>{post.author}</div>
+                <Link href="/author/faisal-tariq" style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem", textDecoration: "none" }}>
+                  {post.author}
+                </Link>
                 <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".75rem" }}>{post.authorTitle}</div>
               </div>
             </div>
             <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,.55)", fontSize: ".82rem", marginLeft: "auto" }}>
-              <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
-                <BookOpen size={13} />{" "}
-                {post.updatedAt && post.updatedAt !== post.date ? "Updated: " : "Published: "}
-                {new Date(post.updatedAt ?? post.date).toLocaleDateString(post.inLanguage ?? "en-US", { year: "numeric", month: "long", day: "numeric" })}
+              <span className="last-updated-date" style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                <BookOpen size={13} /> Last updated: {new Date(post.updatedAt ?? post.date).toLocaleDateString(post.inLanguage ?? "en-US", { year: "numeric", month: "long", day: "numeric" })}
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
                 <Clock size={13} /> {post.readTime} read
@@ -629,18 +773,16 @@ export default async function BlogPostPage({ params }: Props) {
                   </aside>
                 )}
 
-                {/* Author bio box */}
-                <div className="np-author-bio" style={{ display: "flex", gap: 14, alignItems: "flex-start", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 22, marginTop: 40 }}>
-                  <div style={{ width: 50, height: 50, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: "1rem", flexShrink: 0 }}>FT</div>
-                  <div>
-                    <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".97rem", marginBottom: 2 }}>{post.author}</div>
-                    <div style={{ color: "var(--emerald)", fontSize: ".78rem", fontWeight: 600, marginBottom: 8 }}>{post.authorTitle}</div>
-                    <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.7, margin: 0 }}>
-                      Faisal Tariq is identified on NoorPath as the academy&apos;s
-                      founder. This article is published as part of NoorPath&apos;s
-                      Quran and Islamic education resource library.
-                    </p>
-                  </div>
+                {/* Author bio block */}
+                <div className="author-bio np-author-bio" style={{ display: "flex", gap: 16, alignItems: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 22, marginTop: 40 }}>
+                  <img
+                    src="/assets/faisal-tariq-founder.png"
+                    alt={post.author}
+                    style={{ width: 64, height: 64, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: "2px solid var(--emerald)" }}
+                  />
+                  <p style={{ margin: 0, color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7 }}>
+                    <strong>{post.author}</strong> is a {post.authorTitle} at NoorPath Academy with 10+ years of experience teaching Quran recitation, Tajweed, and Islamic Studies. <Link href={`/author/${post.authorSlug || "faisal-tariq"}`} style={{ color: "var(--emerald)", fontWeight: 600 }}>Read more</Link>
+                  </p>
                 </div>
 
                 <div id="book-trial" style={{ scrollMarginTop: 90 }}>

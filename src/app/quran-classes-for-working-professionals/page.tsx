@@ -6,6 +6,7 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Calendar, Briefcase, Moon, Monitor } from "lucide-react";
 import { PRICING_PLANS, TRIAL, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
@@ -76,6 +77,17 @@ const benefits = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    buildStandardCourseJsonLd({
+      name: "Quran Classes for Working Professionals",
+      description:
+        "Flexible 1-to-1 online Quran classes for busy working professionals with evening and weekend schedule options.",
+      url: pageUrl,
+      workload: "PT30M",
+      availableLanguage: ["English", "Urdu", "Arabic"],
+      price: PRICING_PLANS[0].monthlyPriceUsd,
+      priceCurrency: "USD",
+      priceUrl: "https://www.noorpath.online/pricing",
+    }),
     {
       "@type": "Service",
       "@id": `${pageUrl}#service`,

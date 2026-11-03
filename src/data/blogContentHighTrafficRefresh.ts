@@ -267,35 +267,31 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
 
   "rabbana-atina-fid-dunya": {
     style: S,
-    content: `<p><strong>Rabbana atina fid-dunya</strong> is the opening of Quran 2:201 — one of the most complete duas a Muslim can make. It asks for good in this world, good in the Hereafter, and protection from Hellfire in a single breath. This expanded guide covers the full Arabic text, word-by-word meaning, Quranic context, daily routines, and how families can memorise it with correct Tajweed.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Full dua: <em>Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina adhaban-nar</em> — "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire." (Surah Al-Baqarah 2:201). The Prophet ﷺ used to recite it often (Sahih Muslim). Teach it to your children early — <a href="/online-quran-classes-for-kids">free trial</a>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Rabbana atina fid dunya is the Quranic supplication from Surah Al-Baqarah (2:201): <em>رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</em> (<em>Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar</em>). It asks Allah for complete good in this life, eternal goodness in the Hereafter, and divine protection from Hellfire.
           </div>
 
-          <div class="toc">
-            <strong>In this guide</strong>
-            <ol>
-              <li><a href="#full">Full Arabic, transliteration &amp; English</a></li>
-              <li><a href="#word">Word-by-word meaning</a></li>
-              <li><a href="#context">Quranic context</a></li>
-              <li><a href="#when">When to recite</a></li>
-              <li><a href="#routine">Daily routine ideas</a></li>
-              <li><a href="#mistakes">Common mistakes</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ol>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Rabbana atina fid-dunya from Surah Al-Baqarah (2:201) was the most frequent supplication of the Prophet Muhammad ﷺ.</li>
+              <li>"Hasanah" in this life encompasses health, lawful provision, righteous companions, beneficial knowledge, and spiritual contentment.</li>
+              <li>It uniquely harmonizes worldly aspirations with salvation in the Hereafter and safety from Hellfire.</li>
+            </ul>
           </div>
 
-          <h2 id="full">Full Arabic, transliteration &amp; English</h2>
+          <p><strong>Rabbana atina fid-dunya</strong> is the opening of Quran 2:201 — one of the most complete duas a Muslim can make. It asks for good in this world, good in the Hereafter, and protection from Hellfire in a single breath. This expanded guide covers the full Arabic text, word-by-word meaning, Quranic context, daily routines, and how families can memorise it with correct Tajweed.</p>
+
+          <h2 id="full">What is the full Arabic text and meaning of Rabbana atina fid dunya?</h2>
           <div class="verse-card">
             <span class="vnum">SURAH AL-BAQARAH · 2:201</span>
             <div class="arabic">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</div>
             <p class="translit">Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar.</p>
             <p class="trans-en"><strong>English:</strong> Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good, and protect us from the punishment of the Fire.</p>
           </div>
-          <p>Notice the balance: dunya and akhirah together, then safety from the Fire. It is not a dua of greed — it is a dua of wholeness taught directly in the Quran.</p>
+          <p>Notice the balance: dunya and akhirah together, then safety from the Fire. It is not a dua of greed — it is a dua of wholeness taught directly in the Quran. Learn proper articulation in our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
 
-          <h2 id="word">Word-by-word meaning</h2>
+          <h2 id="word">What is the word-by-word breakdown of Rabbana atina fid dunya?</h2>
           <table class="np-table">
             <tr><th>Arabic</th><th>Meaning</th></tr>
             <tr><td>Rabbana</td><td>Our Lord</td></tr>
@@ -309,11 +305,11 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </table>
           <p>Scholars explain "hasanah in the dunya" as covering health, lawful rizq, a righteous spouse, beneficial knowledge, and peace — whatever is truly good for you, not just what you desire. "Hasanah in the akhirah" includes forgiveness, a good ending, and Paradise. "Qina adhaban-nar" keeps the heart humble — success in dunya must not make us forget the Fire.</p>
 
-          <h2 id="context">Quranic context (important)</h2>
+          <h2 id="context">What is the Quranic context of Surah Al-Baqarah 2:201?</h2>
           <p>Verse 2:200 criticises those who only ask for the dunya. Verse 2:201 praises those who ask for both worlds and safety from the Fire. This dua rebalances a heart that has become too worldly — or too neglectful of lawful worldly needs.</p>
           <p>After Hajj rites, some people would call out only for worldly gain. Allah corrected that imbalance by teaching this comprehensive wording. Whenever you feel pulled toward materialism or, conversely, toward neglecting your family's lawful needs, 2:201 recentres the ask.</p>
 
-          <h2 id="when">When to recite Rabbana atina</h2>
+          <h2 id="when">When should you recite Rabbana atina fid dunya?</h2>
           <ul>
             <li>In sujood and after tashahhud before salam.</li>
             <li>After every obligatory prayer.</li>
@@ -329,7 +325,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <tr><td>Exam season</td><td>Pairs with <a href="/blog/dua-for-success-exams">dua for success in exams</a> for balanced ambition</td></tr>
           </table>
 
-          <h2 id="routine">Daily routine ideas</h2>
+          <h2 id="routine">How can families build a daily routine with this dua?</h2>
           <ol>
             <li><strong>After one fixed salah:</strong> recite 2:201 once with presence before salam.</li>
             <li><strong>Evening:</strong> add it to <a href="/blog/morning-evening-adhkar-dhikr">morning/evening adhkar</a> if not already there.</li>
@@ -338,7 +334,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </ol>
           <p>Looking for structured Quran classes in the USA? See our <a href="/locations/online-quran-classes-usa">USA online Quran classes</a> page for timezone-aware tutor matching and a free trial request.</p>
 
-          <h2 id="mistakes">Common mistakes</h2>
+          <h2 id="mistakes">What common mistakes should you avoid when reciting this dua?</h2>
           <ul>
             <li>Reciting only the first half from memory and forgetting "wa fil-akhirati hasanatan wa qina adhaban-nar".</li>
             <li>Using the dua while pursuing clearly haram income or relationships.</li>
@@ -346,9 +342,9 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li>Rushing through Arabic without learning meaning — the heart stays distant.</li>
             <li>Separating this dua from salah — it lands deepest in sujood when the heart is humble.</li>
           </ul>
-          <p>Pair memorisation with understanding through <a href="/learn-quran-online">structured Quran learning</a> so children and adults pronounce each word with Tajweed, not guesswork from transliteration alone.</p>
+          <p>Pair memorisation with understanding through <a href="/learn-quran-online">structured Quran learning</a> at NoorPath Academy so children and adults pronounce each word with Tajweed, not guesswork from transliteration alone.</p>
 
-          <h2 id="faq">FAQ</h2>
+          <h2 id="faq">Frequently asked questions about Rabbana atina fid dunya</h2>
           <details class="faq-acc"><summary>Can I recite Rabbana atina for someone else?<span>+</span></summary>
             <p>Yes. You may include parents, spouse, children, or the ummah when saying "Rabbana" (Our Lord). Many make this dua collectively in sujood for family wellbeing in both worlds.</p>
           </details>
@@ -368,42 +364,43 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <p>No fixed count is required. Once with khushu' after salah is better than fifty rushed repetitions. Add more in Tahajjud or sujood when your heart is present.</p>
           </details>
 
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Rabbana atina fid dunya (Quran 2:201) is Islam's most comprehensive supplication, asking Allah for holistic goodness in this life, eternal Paradise in the Hereafter, and rescue from Hellfire. Recited frequently by the Prophet ﷺ, it balances worldly needs with ultimate spiritual success. NoorPath Academy provides dedicated Tajweed and Quran memorization classes to help students master Quranic prayers with authentic pronunciation.</p>
+          </div>
+
           <div class="highlight-box">
-            <strong>Memorise this dua with correct Tajweed.</strong> NoorPath tutors teach Quranic duas and Surah Al-Baqarah passages live 1-on-1. <a href="/online-quran-classes-for-kids">Book a free Quran trial for your child</a> or <a href="/online-quran-classes-for-adults">start an adult Quran course</a> · <a href="/learn-tajweed-online">learn Tajweed pronunciation online</a>.
+            <strong>Memorise this dua with correct Tajweed.</strong> NoorPath tutors teach Quranic duas and Surah Al-Baqarah passages live 1-on-1. <a href="/online-quran-classes-for-kids">Book a free Quran trial for your child</a> or <a href="/online-quran-classes-for-adults">start an adult Quran course</a> · <a href="/courses/tajweed-classes-online">learn Tajweed pronunciation online</a>.
           </div>`,
   },
 
   "dua-for-forgiveness-istighfar": {
     style: S,
-    content: `<p>A <strong>dua for forgiveness</strong> (Istighfar) is the door that never closes. Allah says He forgives all sins for those who turn to Him (Quran 39:53). The Prophet ﷺ — who was already forgiven — sought forgiveness more than seventy times a day (Bukhari 6307). This guide expands the core duas with daily routines, Tawbah conditions, and honest guidance on major sins — without invented promises.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> The best dua for forgiveness is <strong>Sayyid al-Istighfar</strong> (the Master of Seeking Forgiveness). Whoever says it with certainty in the morning and dies that day enters Paradise; same for the evening (Bukhari 6306). Full Arabic below. Also see <a href="/blog/astaghfirullah-meaning">Astaghfirullah meaning</a>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> The master dua for forgiveness is <strong>Sayyid al-Istighfar</strong>: <em>اللَّهُمَّ أَنْتَ رَبِّي لَا إِلٰهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ...</em> (<em>Allahumma anta rabbi la ilaha illa anta, khalaqtani wa ana 'abduka...</em>). The Prophet ﷺ taught that reciting it with certainty in morning or evening brings entry into Paradise (Sahih al-Bukhari 6306).
           </div>
 
-          <div class="toc">
-            <strong>In this guide</strong>
-            <ol>
-              <li><a href="#sayyid">Sayyid al-Istighfar</a></li>
-              <li><a href="#short">Short daily Istighfar</a></li>
-              <li><a href="#yunus">Dua of Yunus</a></li>
-              <li><a href="#tawbah">Conditions of sincere Tawbah</a></li>
-              <li><a href="#routine">Daily istighfar routine</a></li>
-              <li><a href="#mistakes">Common mistakes</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ol>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Sayyid al-Istighfar is the supreme prophetic supplication combining monotheism, gratitude, humility, and seeking forgiveness.</li>
+              <li>Sincere Tawbah requires four core pillars: stopping the sin, feeling remorse, resolving not to repeat, and restoring rights.</li>
+              <li>Consistent daily repentance brings divine mercy, spiritual relief, expanded provision, and inner peace.</li>
+            </ul>
           </div>
 
-          <h2 id="sayyid">Sayyid al-Istighfar — the master dua</h2>
+          <p>A <strong>dua for forgiveness</strong> (Istighfar) is the door that never closes. Allah says He forgives all sins for those who turn to Him (Quran 39:53). The Prophet ﷺ — who was already forgiven — sought forgiveness more than seventy times a day (Bukhari 6307). This guide expands the core duas with daily routines, Tawbah conditions, and honest guidance on major sins — without invented promises.</p>
+
+          <h2 id="sayyid">What is Sayyid al-Istighfar and its authentic wording?</h2>
           <div class="verse-card">
             <span class="vnum">SAYYID AL-ISTIGHFAR · Bukhari 6306</span>
             <div class="arabic">اَللّٰهُمَّ أَنْتَ رَبِّي لَا إِلٰهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</div>
             <p class="translit">Allaahumma anta rabbee laa ilaaha illaa ant, khalaqtanee wa ana 'abduk, wa ana 'alaa 'ahdika wa wa'dika mas-tata't, a'oodhu bika min sharri maa sana't, aboo'u laka bi ni'matika 'alayya wa aboo'u laka bi dhanbee faghfir lee fa innahu laa yaghfirudh-dhunooba illaa ant.</p>
             <p class="trans-en"><strong>English:</strong> O Allah, You are my Lord; there is no god but You. You created me and I am Your servant, and I uphold Your covenant and promise as much as I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favour upon me and I acknowledge my sin, so forgive me — for none forgives sins except You.</p>
           </div>
-          <p>This dua combines Tawheed, humility, gratitude, admission of sin, and a direct request for forgiveness. Learn it slowly until the heart feels each phrase — not only the tongue.</p>
+          <p>This dua combines Tawheed, humility, gratitude, admission of sin, and a direct request for forgiveness. Learn it slowly until the heart feels each phrase — not only the tongue. Master Arabic pronunciation with our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> foundation course.</p>
 
-          <h2 id="short">Short daily Istighfar</h2>
+          <h2 id="short">What short daily Istighfar phrases can you recite?</h2>
           <div class="verse-card">
             <span class="vnum">ASTAGHFIRULLAH</span>
             <div class="arabic">أَسْتَغْفِرُ اللّٰهَ وَأَتُوبُ إِلَيْهِ</div>
@@ -412,10 +409,10 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </div>
           <p>Use this between tasks, after salah, when you remember a mistake, or while walking. The Prophet ﷺ sought forgiveness abundantly — consistency matters more than one dramatic night.</p>
 
-          <h2 id="yunus">Dua of Yunus (Ayat e Karima)</h2>
+          <h2 id="yunus">Why is the dua of Prophet Yunus essential for forgiveness?</h2>
           <p>When feeling trapped by sin or hardship, recite the dua of Prophet Yunus — detailed in our guide to <a href="/blog/ayat-e-karima">Ayat e Karima</a>: <em>La ilaha illa anta subhanaka inni kuntu minaz-zalimin</em> (21:87). Yunus (عليه السلام) called upon Allah in darkness; Allah answered. It teaches that sincere turning can come even from the lowest point.</p>
 
-          <h2 id="tawbah">Conditions of sincere Tawbah</h2>
+          <h2 id="tawbah">What are the four mandatory conditions of sincere Tawbah?</h2>
           <ol>
             <li>Stop the sin immediately.</li>
             <li>Feel genuine regret.</li>
@@ -424,7 +421,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </ol>
           <p>Saying the words without these conditions is dhikr — beautiful — but complete repentance needs the heart and action too. For ongoing struggle, seek help: counselling, accountability, and removing triggers are part of taking means.</p>
 
-          <h2 id="routine">Daily istighfar routine</h2>
+          <h2 id="routine">How do you build a daily Istighfar routine?</h2>
           <table class="np-table">
             <tr><th>Time</th><th>Practice</th></tr>
             <tr><td>Morning</td><td>Sayyid al-Istighfar once with presence (Bukhari 6306 virtue)</td></tr>
@@ -437,7 +434,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <strong>Best times:</strong> After Salah, last third of the night, Mondays and Thursdays, and whenever you remember a mistake. Consistency beats occasional long sessions.
           </div>
 
-          <h2 id="mistakes">Common mistakes</h2>
+          <h2 id="mistakes">What common mistakes do people make when seeking forgiveness?</h2>
           <ul>
             <li>Repeating Astaghfirullah hundreds of times while planning to return to the same sin.</li>
             <li>Despairing and thinking your sin is too big — contradicts Quran 39:53.</li>
@@ -446,7 +443,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li>Replacing Tawbah with unverified wazifa lists from <a href="/blog/what-is-wazifa-in-islam">unclear sources</a>.</li>
           </ul>
 
-          <h2 id="faq">FAQ</h2>
+          <h2 id="faq">Frequently asked questions about dua for forgiveness and Istighfar</h2>
           <details class="faq-acc"><summary>What is the difference between Istighfar and Tawbah?<span>+</span></summary>
             <p>Istighfar is seeking forgiveness — by word and heart. Tawbah is repentance: turning back to Allah with stopping the sin, regret, and resolve not to return. Complete return includes both, plus restoring others' rights when applicable.</p>
           </details>
@@ -463,36 +460,37 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <p>You may make general dua for the deceased's forgiveness as taught in the Sunnah. Your own righteous deeds and duas can benefit them according to authentic reports — follow established prophetic wording rather than invented formulas.</p>
           </details>
           <details class="faq-acc"><summary>Should children learn Sayyid al-Istighfar?<span>+</span></summary>
-            <p>Start with short Astaghfirullah, then build up. A soft heart that knows how to return to Allah is a lifelong gift. NoorPath classes include duas with Tajweed — <a href="/online-quran-classes-for-kids">book a free trial</a>.</p>
+            <p>Start with short Astaghfirullah, then build up. A soft heart that knows how to return to Allah is a lifelong gift. NoorPath Academy classes include duas with Tajweed — <a href="/online-quran-classes-for-kids">book a free trial</a>.</p>
           </details>
 
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Seeking forgiveness through Istighfar and Sayyid al-Istighfar purifies the believer's heart and opens the doors of Allah's boundless mercy. Authentic repentance requires stopping the wrongdoing, genuine remorse, and firm resolve never to return to the sin. NoorPath Academy provides comprehensive Quran classes with Tajweed and Islamic studies for students worldwide.</p>
+          </div>
+
           <div class="highlight-box">
-            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. NoorPath classes include duas with Tajweed. <a href="/online-quran-classes-for-kids">Book a free trial for online Quran classes for kids</a> · <a href="/learn-tajweed-online">or start our online Tajweed course</a> for correct Arabic pronunciation.
+            <strong>Teach Istighfar to children early</strong> — a soft heart that knows how to return to Allah is a lifelong gift. NoorPath classes include duas with Tajweed. <a href="/online-quran-classes-for-kids">Book a free trial for online Quran classes for kids</a> · <a href="/courses/tajweed-classes-online">or start our online Tajweed course</a> for correct Arabic pronunciation.
           </div>`,
   },
 
   "how-to-do-ghusl-step-by-step": {
     style: S,
-    content: `<p><strong>Ghusl</strong> is the full-body ritual wash that removes major impurity (janabah) and is also recommended for Friday prayer, Eid, and before entering ihram. This guide follows the prophetic method in clear steps for men and women, with fard elements, madhhab notes, and common mistakes — so you can pray with confidence afterward.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Intention (niyyah) → wash hands → wash private parts → perform wudu → pour water over the head three times → wash the entire body ensuring water reaches skin and roots of hair. Without intention and complete washing of the body, ghusl is incomplete. Learn related purification: <a href="/blog/how-to-do-wudu-step-by-step">how to do wudu</a>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> How to do ghusl step by step involves making sincere intention (niyyah), washing hands and private parts, performing complete wudu, pouring water over the head three times to the roots, and washing the entire body thoroughly without leaving any dry spots. It removes major ritual impurity (janabah) so Muslims can pray Salah.
           </div>
 
-          <div class="toc">
-            <strong>In this guide</strong>
-            <ol>
-              <li><a href="#when">When is ghusl obligatory?</a></li>
-              <li><a href="#steps">Sunnah steps</a></li>
-              <li><a href="#fard">What is fard in ghusl?</a></li>
-              <li><a href="#women">Notes for women</a></li>
-              <li><a href="#shower">Shower vs traditional ghusl</a></li>
-              <li><a href="#mistakes">Common mistakes</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ol>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Ghusl is mandatory after marital intimacy, ejaculation, menstruation (hayd), and postnatal bleeding (nifas).</li>
+              <li>Core obligations require sincere intention and ensuring clean water covers every inch of skin and hair.</li>
+              <li>Following the Sunnah order with wudu allows you to pray immediately without repeating ablution.</li>
+            </ul>
           </div>
 
-          <h2 id="when">When is ghusl obligatory?</h2>
+          <p><strong>Ghusl</strong> is the full-body ritual wash that removes major impurity (janabah) and is also recommended for Friday prayer, Eid, and before entering ihram. This guide follows the prophetic method in clear steps for men and women, with fard elements, madhhab notes, and common mistakes — so you can pray with confidence afterward.</p>
+
+          <h2 id="when">When is ghusl obligatory vs. recommended?</h2>
           <ul>
             <li>After sexual intercourse or emission of semen (janabah).</li>
             <li>After menstrual period (hayd) ends — for women.</li>
@@ -508,7 +506,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <tr><td>Minor impurity only</td><td>Wudu enough</td><td>See <a href="/blog/how-to-do-wudu-step-by-step">wudu guide</a></td></tr>
           </table>
 
-          <h2 id="steps">How to do ghusl — Sunnah steps</h2>
+          <h2 id="steps">How do you perform ghusl step by step according to Sunnah?</h2>
           <ol>
             <li><strong>Intention</strong> in the heart to purify yourself for Allah (no need to say aloud).</li>
             <li><strong>Say Bismillah</strong> and wash both hands.</li>
@@ -518,9 +516,9 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li><strong>Wash the entire right side of the body</strong>, then the left, ensuring water reaches everywhere — underarms, skin folds, between toes.</li>
             <li><strong>Wash the feet</strong> if you delayed them.</li>
           </ol>
-          <p>Take your time. Rushing is a common reason water misses skin under jewellery, medical tape, or thick hair. If you use a shower, follow the same order with intention — a shower can count as ghusl when requirements are met.</p>
+          <p>Take your time. Rushing is a common reason water misses skin under jewellery, medical tape, or thick hair. If you use a shower, follow the same order with intention — a shower can count as ghusl when requirements are met. Learn proper Salah recitation in our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
 
-          <h2 id="fard">What is fard (obligatory) in ghusl?</h2>
+          <h2 id="fard">What are the obligatory fard elements of ghusl?</h2>
           <table class="np-table">
             <tr><th>Element</th><th>Requirement</th></tr>
             <tr><td>Intention</td><td>Required (majority of scholars)</td></tr>
@@ -532,7 +530,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <strong>Madhhab note:</strong> Mouth and nose rinsing in ghusl is obligatory in the Hanafi school and recommended elsewhere. If you follow a specific madhhab, ask your local teacher for your practice. This page is educational, not a personal fatwa.
           </div>
 
-          <h2 id="women">Notes for women</h2>
+          <h2 id="women">What specific ghusl rulings apply to women?</h2>
           <ul>
             <li>After menses/nifas: ensure purity has ended, then ghusl as above.</li>
             <li>Braided hair: according to many scholars, water reaching the roots is enough without undoing every braid (details vary — ask a trusted local scholar if unsure).</li>
@@ -540,10 +538,10 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li>Do not pray until you are certain hayd or nifas has ended — when in doubt, consult reliable fiqh guidance.</li>
           </ul>
 
-          <h2 id="shower">Shower vs traditional ghusl</h2>
+          <h2 id="shower">Can a modern daily shower count as valid ghusl?</h2>
           <p>A shower is permissible if you intend ghusl, ensure water reaches the whole body including hair roots, and follow the washing sequence your school teaches. Standing under water for thirty seconds without intention or without reaching hidden skin is not automatically valid ghusl. Remove rings or move jewellery briefly if water cannot reach beneath.</p>
 
-          <h2 id="mistakes">Common mistakes</h2>
+          <h2 id="mistakes">What common mistakes invalidate ghusl?</h2>
           <div class="gold-box">
             <strong>Common mistakes:</strong> skipping intention, missing skin under jewellery/watches, rushing so water does not reach the scalp, assuming a quick shower without focus is automatically ghusl. Ghusl can be a shower — if the steps and intention are fulfilled.
           </div>
@@ -553,7 +551,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li>Using impure water or water that cannot reach the body (excessive oil barriers without need).</li>
           </ul>
 
-          <h2 id="faq">FAQ</h2>
+          <h2 id="faq">Frequently asked questions about how to do ghusl</h2>
           <details class="faq-acc"><summary>Can a shower count as ghusl?<span>+</span></summary>
             <p>Yes, if you make intention, wash the body completely including hair roots, and fulfil your school's requirements (such as mouth/nose in Hanafi fiqh). A distracted quick rinse is not enough.</p>
           </details>
@@ -573,42 +571,43 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <p>Emission of fluid from janabah requires ghusl according to mainstream teaching. If you are uncertain whether ghusl is required in a specific situation, ask a qualified local scholar — do not rely on anonymous forum guesses.</p>
           </details>
 
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Ghusl is the Islamic full-body ritual purification required after major impurity such as janabah or the completion of menses before prayer is valid. Its core requirements are sincere intention and ensuring clean water reaches all parts of the body and hair roots. NoorPath Academy provides interactive Quran courses, Tajweed training, and essential Islamic fiqh guidance for learners worldwide.</p>
+          </div>
+
           <div class="highlight-box">
-            <strong>Next step after purity: Salah with confidence.</strong> Learn prayer step by step in our <a href="/blog/how-to-pray-salah-step-by-step">Salah guide</a>, or book a <a href="/online-quran-classes-for-adults">free adult trial</a> for live correction.
+            <strong>Next step after purity: Salah with confidence.</strong> Learn prayer step by step in our <a href="/blog/how-to-pray-salah-step-by-step">Salah guide</a>, or book a <a href="/online-quran-classes-for-adults">free adult trial</a> at NoorPath Academy for live correction.
           </div>`,
   },
 
   "labbaik-allahumma-labbaik": {
     style: S,
-    content: `<p><strong>Labbaik Allahumma labbaik</strong> is the Talbiyah — the pilgrim's response to Allah's call for Hajj and Umrah. Millions recite it from the moment they enter ihram until they stone the Jamaraat (Hajj) or begin tawaf (Umrah practices vary by rite). This guide explains the full Arabic, spiritual meaning, when to recite, and how families can teach children the words before they ever travel. Families preparing children for pilgrimage can build Arabic confidence through <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Labbaik means "I am here / at Your service." The full Talbiyah affirms that all praise, blessing and dominion belong to Allah alone, with no partner. Full Arabic and English below. Teaching children the meaning builds love for Hajj long before they go — start with <a href="/online-quran-classes-for-kids">Quran classes for kids</a>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Labbaik Allahumma labbaik is the opening of the sacred <strong>Talbiyah</strong>: <em>لَبَّيْكَ اللّٰهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ</em> (<em>Labbayk Allaahumma labbayk, labbayka laa shareeka laka labbayk</em>). Meaning "Here I am, O Allah, at Your service," pilgrims chant it upon entering Ihram during Hajj and Umrah to proclaim strict monotheism.
           </div>
 
-          <div class="toc">
-            <strong>In this guide</strong>
-            <ol>
-              <li><a href="#full">The complete Talbiyah</a></li>
-              <li><a href="#meaning">Word-by-word meaning</a></li>
-              <li><a href="#when">When pilgrims recite Labbaik</a></li>
-              <li><a href="#spirit">Spiritual meaning</a></li>
-              <li><a href="#teach">Teaching children</a></li>
-              <li><a href="#mistakes">Common mistakes</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ol>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>The Talbiyah is the defining anthem of Hajj and Umrah, recited continuously once entering the sacred Ihram.</li>
+              <li>"Labbaik" translates to "Here I am at Your service," directly answering the ancient call of Prophet Ibrahim (AS).</li>
+              <li>It proclaims absolute Tawheed, dedicating all praise, sovereign dominion, and divine blessings solely to Allah without partner.</li>
+            </ul>
           </div>
 
-          <h2 id="full">The complete Talbiyah</h2>
+          <p><strong>Labbaik Allahumma labbaik</strong> is the Talbiyah — the pilgrim's response to Allah's call for Hajj and Umrah. Millions recite it from the moment they enter ihram until they stone the Jamaraat (Hajj) or begin tawaf (Umrah practices vary by rite). This guide explains the full Arabic, spiritual meaning, when to recite, and how families can teach children the words before they ever travel. Families preparing children for pilgrimage can build Arabic confidence through <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+
+          <h2 id="full">What is the complete Talbiyah in Arabic and English?</h2>
           <div class="verse-card">
             <span class="vnum">TALBIYAH · Bukhari &amp; Muslim</span>
             <div class="arabic">لَبَّيْكَ اللّٰهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ</div>
             <p class="translit">Labbayk Allaahumma labbayk. Labbayka laa shareeka laka labbayk. Innal-hamda wan-ni'mata laka wal-mulk. Laa shareeka lak.</p>
             <p class="trans-en"><strong>English:</strong> Here I am, O Allah, here I am. Here I am, You have no partner, here I am. Indeed all praise, favour and dominion are Yours. You have no partner.</p>
           </div>
-          <p>Memorise the full wording before travel so your tongue is free to feel the moment. Many pilgrims listen to a reliable recitation during preparation weeks — then verify against a teacher or authentic text.</p>
+          <p>Memorise the full wording before travel so your tongue is free to feel the moment. Many pilgrims listen to a reliable recitation during preparation weeks — then verify against a teacher or authentic text. Master proper Quranic Arabic with our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
 
-          <h2 id="meaning">Word-by-word meaning</h2>
+          <h2 id="meaning">What is the word-by-word translation of the Talbiyah?</h2>
           <table class="np-table">
             <tr><th>Phrase</th><th>Meaning</th></tr>
             <tr><td>Labbayk</td><td>I am present / I respond to Your call</td></tr>
@@ -620,7 +619,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </table>
           <p>Each repetition of <em>labbayk</em> is an answer: "I am here." Each <em>laa shareeka lak</em> renews Tawheed — no partner in worship, praise, or kingship. That is why the Talbiyah shakes hearts on the road to Makkah.</p>
 
-          <h2 id="when">When do pilgrims recite Labbaik?</h2>
+          <h2 id="when">When do pilgrims start and stop reciting the Talbiyah?</h2>
           <ul>
             <li>After entering the state of ihram.</li>
             <li>Frequently while travelling to Makkah and during the rites.</li>
@@ -638,11 +637,11 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <strong>Madhhab note:</strong> Exact points where Talbiyah stops differ slightly between scholars and Hajj guides. Follow the instructions of a qualified guide for your pilgrimage type — do not debate loudly in the Haram over minor differences.
           </div>
 
-          <h2 id="spirit">Spiritual meaning</h2>
+          <h2 id="spirit">What is the profound spiritual meaning of Labbaik Allahumma labbaik?</h2>
           <p>Labbaik is not tourism — it is answering the call Ibrahim (عليه السلام) proclaimed (Quran 22:27). Each repetition renews Tawheed: no partner in worship, praise, or kingship. The pilgrim wears simple ihram, leaves luxury behind, and answers with the same words generations have answered.</p>
           <p>Even if you are not on Hajj yet, learning the Talbiyah connects you to the ummah's greatest gathering. Pair it with understanding <a href="/blog/la-hawla-wa-la-quwwata-illallah-meaning">La hawla wa la quwwata illallah</a> — both phrases centre reliance on Allah alone.</p>
 
-          <h2 id="teach">Teaching children before pilgrimage</h2>
+          <h2 id="teach">How can parents teach the Talbiyah to children before travel?</h2>
           <ol>
             <li><strong>Week 1:</strong> Listen and repeat "Labbayk Allaahumma labbayk" with correct vowels.</li>
             <li><strong>Week 2:</strong> Add "laa shareeka laka labbayk" — explain "no partner" in simple English.</li>
@@ -650,7 +649,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li><strong>Ongoing:</strong> Connect to Quran learning via <a href="/learn-quran-online">learn Quran online</a> so Arabic feels familiar.</li>
           </ol>
 
-          <h2 id="mistakes">Common mistakes</h2>
+          <h2 id="mistakes">What common mistakes should pilgrims avoid with the Talbiyah?</h2>
           <ul>
             <li>Reciting Talbiyah outside ihram as if on pilgrimage — it belongs to the ihram state.</li>
             <li>Memorising with wrong harakat that change meaning — learn with a teacher.</li>
@@ -658,7 +657,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <li>Women raising voice loudly in mixed crowds against standard modesty guidance.</li>
           </ul>
 
-          <h2 id="faq">FAQ</h2>
+          <h2 id="faq">Frequently asked questions about Labbaik Allahumma labbaik</h2>
           <details class="faq-acc"><summary>What is the difference between Hajj and Umrah Talbiyah?<span>+</span></summary>
             <p>The wording is the same. What differs is when and where you stop reciting according to each rite and madhhab. Umrah Talbiyah commonly stops at the start of tawaf; Hajj has additional stopping points — follow your qualified guide.</p>
           </details>
@@ -678,8 +677,13 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
             <p>It means "Here I am, O Allah, here I am" — answering Allah's call with the full Talbiyah affirming Tawheed, praise, favour and dominion belong to Him alone with no partner.</p>
           </details>
 
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Labbaik Allahumma labbaik is the pilgrim's devotional cry of total submission and monotheism during Hajj and Umrah. Uttered while in the state of Ihram, it responds to Allah's divine invitation and affirms that all praise, blessing, and sovereignty belong to Him alone. NoorPath Academy provides interactive online Quran classes, Noorani Qaida, and Tajweed tutoring for families preparing for pilgrimage.</p>
+          </div>
+
           <div class="highlight-box">
-            <strong>Prepare hearts for Hajj with Quran.</strong> Families who recite and understand the Book feel the Talbiyah more deeply. <a href="/online-quran-classes-for-kids">Book a free kids trial</a> or <a href="/online-quran-classes-for-adults">adult class</a>.
+            <strong>Prepare hearts for Hajj with Quran.</strong> Families who recite and understand the Book feel the Talbiyah more deeply. <a href="/online-quran-classes-for-kids">Book a free kids trial</a> or <a href="/online-quran-classes-for-adults">adult class</a> at NoorPath Academy.
           </div>`,
   },
 

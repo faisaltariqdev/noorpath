@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: absolutePageTitle("Thank You — Trial Request Received | NoorPath Academy"),
   description: "NoorPath Academy has received your free-trial request and will contact you to confirm tutor and schedule availability.",
   robots: { index: false, follow: false },
+  alternates: { canonical: "https://www.noorpath.online/thank-you" },
 };
 
 export default function ThankYouPage() {

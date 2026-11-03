@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Gamepad2, Headphones, Users } from "lucide-react";
+import { ArrowRight, BookOpen, FileDown, Gamepad2, Headphones, Users } from "lucide-react";
 import {
   QAIDA_BASE_PATH,
   QAIDA_GAMES,
@@ -10,8 +10,10 @@ import {
   QAIDA_MODULES,
   QAIDA_TAJWEED_TOPICS,
 } from "@/data/noorani-qaida";
+import { QAIDA_WORKSHEETS } from "@/data/noorani-qaida/worksheets";
 import { validateQaidaContent } from "@/data/noorani-qaida/validate";
 import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
+import QaidaGamesWorksheetsGrid from "@/components/noorani-qaida/QaidaGamesWorksheetsGrid";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -240,7 +242,7 @@ export default function NooraniQaidaHubPage() {
               confusion, writing direction, and age-appropriate home and classroom practice.
             </p>
             <div className="qaida-grid qaida-grid-letters" dir="rtl" style={{ marginTop: "1.5rem" }}>
-              {QAIDA_LETTERS.map((letter) => (
+              {QAIDA_LETTERS.slice(0, 10).map((letter) => (
                 <Link
                   key={letter.slug}
                   href={`${QAIDA_BASE_PATH}/arabic-letters/${letter.slug}`}
@@ -255,13 +257,18 @@ export default function NooraniQaidaHubPage() {
                 </Link>
               ))}
             </div>
+            <div style={{ textAlign: "center", marginTop: "1.25rem" }}>
+              <Link href={`${QAIDA_BASE_PATH}/arabic-letters/alif`} style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".95rem", textDecoration: "none" }}>
+                Start with Letter 1 (Alif) &amp; Learn All 28 Letters Step-by-Step →
+              </Link>
+            </div>
           </section>
 
           <section className="qaida-section" aria-labelledby="lessons-heading">
             <span className="qaida-eyebrow">Reading building blocks</span>
             <h2 id="lessons-heading">Harakaat, joining, and word-reading lessons</h2>
             <div className="qaida-grid qaida-grid-topics">
-              {QAIDA_LESSONS.map((topic) => (
+              {QAIDA_LESSONS.slice(0, 6).map((topic) => (
                 <Link key={topic.slug} href={`${QAIDA_BASE_PATH}/lessons/${topic.slug}`} className="qaida-card">
                   <span className="arabic" lang="ar" dir="rtl" style={{ color: "var(--emerald)", fontSize: "1.6rem" }}>{topic.arabicTitle}</span>
                   <h3>{topic.title}</h3>
@@ -269,17 +276,18 @@ export default function NooraniQaidaHubPage() {
                 </Link>
               ))}
             </div>
+            <div style={{ textAlign: "center", marginTop: "1.25rem" }}>
+              <Link href={`${QAIDA_BASE_PATH}/lessons/fatha`} style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".95rem", textDecoration: "none" }}>
+                Start Interactive Lessons Step-by-Step (Lesson 1: Fatha) →
+              </Link>
+            </div>
           </section>
 
           <section className="qaida-section" aria-labelledby="tajweed-heading">
             <span className="qaida-eyebrow">Connected next step</span>
             <h2 id="tajweed-heading">Foundational Tajweed topics</h2>
-            <p>
-              These pages build terminology and recognition. They do not claim certification
-              or replace listening to reviewed recitation and receiving teacher feedback.
-            </p>
-            <div className="qaida-grid qaida-grid-topics" style={{ marginTop: "1.5rem" }}>
-              {QAIDA_TAJWEED_TOPICS.map((topic) => (
+            <div className="qaida-grid qaida-grid-topics">
+              {QAIDA_TAJWEED_TOPICS.slice(0, 4).map((topic) => (
                 <Link key={topic.slug} href={`${QAIDA_BASE_PATH}/tajweed/${topic.slug}`} className="qaida-card">
                   <span className="arabic" lang="ar" dir="rtl" style={{ color: "var(--emerald)", fontSize: "1.5rem" }}>{topic.arabicTitle}</span>
                   <h3>{topic.title}</h3>
@@ -290,95 +298,45 @@ export default function NooraniQaidaHubPage() {
           </section>
 
           <section id="free-games" className="qaida-section" aria-labelledby="games-hub-heading">
-            <span className="qaida-eyebrow">Ranking practice asset</span>
+            <span className="qaida-eyebrow">Interactive practice</span>
             <h2 id="games-hub-heading">Free Interactive Noorani Qaida Games for Kids</h2>
-            <p>
-              Play letter matching, a harakat quiz, and a parent progress checklist on your phone.
-              No account is required. These activities reinforce recognition after a clear model.
-            </p>
-            <div className="qaida-grid qaida-grid-topics" style={{ marginTop: "1.5rem" }}>
+            <div className="qaida-grid qaida-grid-topics">
               {QAIDA_GAMES.map((game) => (
                 <Link key={game.slug} href={game.href} className="qaida-card">
                   <Gamepad2 size={18} aria-hidden="true" style={{ color: "var(--emerald)" }} />
                   <h3>{game.title}</h3>
                   <p>{game.summary}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          <section id="free-worksheets" className="qaida-section" aria-labelledby="worksheets-heading">
+            <span className="qaida-eyebrow">Free Printable Resources</span>
+            <h2 id="worksheets-heading">Noorani Qaida Printable Worksheets for Kids</h2>
+            <p>
+              Download free high-resolution A4 printable PDF worksheets for alphabet tracing, short vowels (Harakat),
+              Madd letters, and Tanween drills. No sign-up required.
+            </p>
+            <div className="qaida-grid qaida-grid-topics" style={{ marginTop: "1.5rem" }}>
+              {QAIDA_WORKSHEETS.map((ws) => (
+                <Link key={ws.slug} href={ws.href} className="qaida-card">
+                  <FileDown size={18} aria-hidden="true" style={{ color: "var(--emerald)" }} />
+                  <h3>{ws.title}</h3>
+                  <p>{ws.summary}</p>
                   <span style={{ color: "var(--emerald)", display: "inline-flex", alignItems: "center", gap: ".3rem", fontSize: ".8rem", fontWeight: 750, marginTop: ".75rem" }}>
-                    Play now <ArrowRight size={14} aria-hidden="true" />
+                    Download Printable PDF <ArrowRight size={14} aria-hidden="true" />
                   </span>
                 </Link>
               ))}
             </div>
-            <p style={{ marginTop: "1.25rem" }}>
-              Prefer teaching guidance first?{" "}
-              <Link href={`${QAIDA_BASE_PATH}/guides/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
-                Read the Noorani Qaida games guide
-              </Link>
-              {" "}or{" "}
-              <Link href={`${QAIDA_BASE_PATH}/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
-                open the free games hub
-              </Link>.
-            </p>
-            <div style={{ marginTop: "1rem" }}>
-              <ParentShareButtons
-                shareText="Free Interactive Noorani Qaida Games for Kids — letter matching, harakat quiz, and a progress checklist:"
-                shareUrl={`${QAIDA_BASE_URL}/games`}
-              />
-            </div>
-            <p style={{ marginTop: "1rem", color: "var(--muted)", fontSize: ".9rem" }}>
-              Know another parent teaching their child Noorani Qaida? Share this free resource with them.
-            </p>
-          </section>
-
-          <section className="qaida-section" aria-labelledby="cluster-index-heading">
-            <span className="qaida-eyebrow">SEO cluster map</span>
-            <h2 id="cluster-index-heading">Noorani Qaida cluster index</h2>
-            <p>
-              Every public guide and free games hub in this cluster — reach any URL in one or two clicks
-              from this hub. Commercial live classes stay on the course and kids class pages.
-            </p>
-            <ul
-              style={{
-                marginTop: "1.25rem",
-                padding: 0,
-                listStyle: "none",
-                display: "grid",
-                gap: ".55rem",
-                gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-              }}
-            >
-              <li>
-                <Link href={QAIDA_BASE_PATH} style={{ color: "var(--emerald)", fontWeight: 650 }}>
-                  Interactive Noorani Qaida hub
-                </Link>
-              </li>
-              <li>
-                <Link href={`${QAIDA_BASE_PATH}/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
-                  Free Noorani Qaida learning games
-                </Link>
-              </li>
-              <li>
-                <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 650 }}>
-                  Noorani Qaida online classes
-                </Link>
-              </li>
-              {QAIDA_GUIDES.map((guide) => (
-                <li key={guide.slug}>
-                  <Link
-                    href={`${QAIDA_BASE_PATH}/guides/${guide.slug}`}
-                    style={{ color: "var(--emerald)", fontWeight: 650 }}
-                  >
-                    {guide.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </section>
 
           <section className="qaida-section" aria-labelledby="guides-heading">
             <span className="qaida-eyebrow">Support around the learner</span>
             <h2 id="guides-heading">Guides for parents, teachers, and practice</h2>
             <div className="qaida-grid qaida-grid-topics">
-              {QAIDA_GUIDES.map((guide) => (
+              {QAIDA_GUIDES.slice(0, 6).map((guide) => (
                 <Link key={guide.slug} href={`${QAIDA_BASE_PATH}/guides/${guide.slug}`} className="qaida-card">
                   <h3>{guide.title}</h3>
                   <p>{guide.description}</p>
@@ -412,13 +370,9 @@ export default function NooraniQaidaHubPage() {
               <Link href="/locations/online-quran-classes-uk" style={{ color: "var(--emerald)", fontWeight: 650 }}>
                 Qaida lessons with UK schedule matching
               </Link>
-              ,{" "}
+              {" "}or{" "}
               <Link href="/locations/online-quran-classes-usa" style={{ color: "var(--emerald)", fontWeight: 650 }}>
                 Noorani Qaida online for USA families
-              </Link>
-              , or{" "}
-              <Link href="/locations/online-quran-classes-new-zealand" style={{ color: "var(--emerald)", fontWeight: 650 }}>
-                live Qaida with New Zealand timezone matching
               </Link>
               . Availability is confirmed after your trial request.
             </p>

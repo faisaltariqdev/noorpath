@@ -1,3 +1,6 @@
+import { NEW_QAIDA_GAMES } from "./newGames";
+import type { QuizQuestion } from "@/components/noorani-qaida/InteractiveQuizGame";
+
 export type QaidaGameMeta = {
   slug: string;
   title: string;
@@ -6,16 +9,23 @@ export type QaidaGameMeta = {
   keywords: string[];
   summary: string;
   href: string;
+  answerBox?: string;
   /** Unique on-page SEO sections (educational; not marketing fluff). */
   seoIntro: string;
   howToUse: string[];
   skillFocus: string[];
+  sections?: Array<{
+    heading: string;
+    body: string;
+    points?: string[];
+  }>;
+  quizQuestions?: QuizQuestion[];
   faqs: Array<{ question: string; answer: string }>;
 };
 
 const GAMES_BASE = "/noorani-qaida/games";
 
-export const QAIDA_GAMES: QaidaGameMeta[] = [
+const BASE_QAIDA_GAMES: QaidaGameMeta[] = [
   {
     slug: "letter-matching",
     title: "Arabic Letter Matching Game",
@@ -163,6 +173,11 @@ export const QAIDA_GAMES: QaidaGameMeta[] = [
       },
     ],
   },
+];
+
+export const QAIDA_GAMES: QaidaGameMeta[] = [
+  ...BASE_QAIDA_GAMES,
+  ...NEW_QAIDA_GAMES,
 ];
 
 export const QAIDA_GAME_BY_SLUG = Object.fromEntries(

@@ -27,6 +27,24 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
         ],
       },
       {
+        id: 'new-york-quran-classes-near-me',
+        heading: 'Searching for “Quran classes near me” in New York? How online 1-on-1 fits NYC life',
+        directAnswer:
+          'If you searched “Quran classes near me” anywhere in New York City (Brooklyn, Queens, Manhattan, the Bronx, Staten Island, or Long Island), live one-on-one online lessons provide the individual attention of a private tutor right from home without hours of rush hour driving, parking stress, or subway transfers.',
+        paragraphs: [
+          'Many NYC Muslim parents initially look for a local masjid or madrasa within walking distance or a short drive. However, in New York, weekend madrasahs often feature large class sizes (15–25 students per teacher) where a child only gets 3 to 5 minutes of individual recitation and Makharij correction. Furthermore, winter weather and evening rush-hour traffic on the BQE, LIE, or Belt Parkway turn a 20-minute journey into an exhausting ordeal for young children.',
+          'NoorPath Academy’s online Quran classes provide the ideal solution: your child learns 1-on-1 with a qualified tutor via live video, receiving 100% focused correction on Arabic letter pronunciation, Tajweed rules, and Hifz retention. Sessions are scheduled directly in New York Eastern Time (ET) — ideal for 4:00 PM to 8:30 PM after-school slots or weekend mornings.',
+          'US and Canadian parents can reach us directly via regular phone call or SMS text message at +1 (917) 555-0199 (no WhatsApp required), or connect via WhatsApp and email. You can also start with a free 30-minute trial class to evaluate tutor compatibility before committing.',
+        ],
+        bullets: [
+          'Zero commute: Learn comfortably from home across all NYC boroughs and suburbs',
+          'Live 1-on-1 private tuition with 100% dedicated teacher attention',
+          'Convenient Eastern Time (ET) scheduling after school and weekends',
+          'Direct USA/Canada phone call and SMS support (+1 917 555 0199) without needing WhatsApp',
+          'Free 30-minute trial class with no credit card required',
+        ],
+      },
+      {
         id: 'new-york-which-time-zone-and-schedule',
         heading: 'Which time-zone and scheduling checks matter in New York?',
         directAnswer:

@@ -202,13 +202,20 @@ export default function LocationsPage() {
               Dedicated city guides with timezone context, community details, and online tutor matching — no travel needed.
             </p>
           </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 64 }}>
-            {cities.map((c) => (
-              <Link key={c.slug} href={`/online-quran-classes/${c.slug}`} style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 6, padding: "9px 16px", background: isCityIndexable(c.slug) ? "#fff" : "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, fontSize: ".85rem", color: "var(--charcoal)", fontWeight: 600 }}>
-                {c.flag} Quran Classes in {c.city}
-              </Link>
-            ))}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 20 }}>
+            {cities
+              .filter((c) =>
+                ["london", "birmingham", "manchester", "new-york", "chicago", "houston", "toronto", "sydney", "melbourne", "dubai", "karachi", "lahore"].includes(c.slug)
+              )
+              .map((c) => (
+                <Link key={c.slug} href={`/online-quran-classes/${c.slug}`} style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 6, padding: "9px 16px", background: isCityIndexable(c.slug) ? "#fff" : "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, fontSize: ".85rem", color: "var(--charcoal)", fontWeight: 600 }}>
+                  {c.flag} Quran Classes in {c.city}
+                </Link>
+              ))}
           </div>
+          <p style={{ textAlign: "center", color: "var(--muted)", fontSize: ".85rem", marginBottom: 64 }}>
+            Looking for another city? Select your country above to view dedicated city guides for Leeds, Bradford, Dallas, Calgary, Auckland, and more.
+          </p>
 
           {/* No local option? — routes "near me" / Muslim-minority intent to the honest pillars */}
           <div

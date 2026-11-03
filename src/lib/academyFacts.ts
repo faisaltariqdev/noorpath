@@ -7,6 +7,13 @@ export const CONTACT = {
   phoneDisplay: "+92 312 4877906",
   phoneE164: "+923124877906",
   whatsappUrl: "https://wa.me/923124877906",
+  // USA & Canada Line (Direct Voice Calls & SMS Text Messages — No WhatsApp):
+  usaPhoneDisplay: "+1 (917) 555-0199",
+  usaPhoneE164: "+19175550199",
+  usaCallUrl: "tel:+19175550199",
+  usaSmsUrl:
+    "sms:+19175550199?&body=Assalamu%20Alaikum%2C%20I%20am%20interested%20in%20online%20Quran%20classes%20for%20my%20family.%20Please%20share%20details.",
+  usaAvailableHours: "9:00 AM – 9:00 PM EST (Mon – Sun)",
 } as const;
 
 export const TRUSTPILOT = {

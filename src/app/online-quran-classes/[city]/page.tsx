@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { cities, getCity, getCityKeywords, isCityIndexable } from "@/data/cities";
+import { getCityLandingPageData, isRebuiltCity } from "@/data/cityLandingPages";
+import RebuiltCityView from "@/components/RebuiltCityView";
 import { getCityGuide } from "@/data/cityGuides";
 import { getLocation } from "@/data/locations";
 import { CONTACT, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
@@ -33,6 +35,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city } = await params;
   const c = getCity(city);
   if (!c) return {};
+  if (isRebuiltCity(c.slug)) {
+    const rebuilt = getCityLandingPageData(c.slug)!;
+    return {
+      title: {
+        absolute: rebuilt.metaTitle,
+      },
+      description: rebuilt.metaDescription,
+      keywords: [rebuilt.primaryKeyword, ...rebuilt.secondaryKeywords, ...getCityKeywords(c)],
+      alternates: {
+        canonical: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
+      },
+      openGraph: {
+        title: rebuilt.metaTitle,
+        description: rebuilt.metaDescription,
+        url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
+        locale: getOpenGraphLocale(c.countrySlug),
+        images: [{ url: "/marketing/family-evening-quran.jpg", width: 1200, height: 800, alt: rebuilt.primaryKeyword }],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: rebuilt.metaTitle,
+        description: rebuilt.metaDescription,
+        images: ["/marketing/family-evening-quran.jpg"],
+      },
+    };
+  }
+
   const guide = getCityGuide(c.slug);
   const oneToOne = getLocale(c.countrySlug) === "en-US" ? "1-on-1" : "1-to-1";
   const description =
@@ -253,6 +282,20 @@ export default async function CityPage({ params }: Props) {
     ],
   };
 
+  const isNorthAmerica =
+    c.countrySlug === "online-quran-classes-usa" ||
+    c.countrySlug === "online-quran-classes-canada";
+
+  if (isRebuiltCity(c.slug)) {
+    const rebuilt = getCityLandingPageData(c.slug)!;
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <RebuiltCityView data={rebuilt} pageUrl={pageUrl} />
+      </>
+    );
+  }
+
   return (
     <>
       {indexable && (
@@ -300,21 +343,50 @@ export default async function CityPage({ params }: Props) {
                   </div>
                 ))}
               </div>
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 22 }}>
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22, alignItems: "center" }}>
                 <a href="#trial" className="btn-primary-np">Book Free Trial →</a>
-                <WhatsAppLink
-                  href={`${CONTACT.whatsappUrl}?text=${waText}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-outline-np"
-                  style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
-                >
-                  WhatsApp Us
-                </WhatsAppLink>
+                {isNorthAmerica ? (
+                  <>
+                    <a
+                      href={CONTACT.usaCallUrl}
+                      className="btn-outline-np"
+                      style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)", textDecoration: "none" }}
+                    >
+                      📞 Call {CONTACT.usaPhoneDisplay}
+                    </a>
+                    <a
+                      href={CONTACT.usaSmsUrl}
+                      className="btn-outline-np"
+                      style={{ color: "var(--gold-lt)", borderColor: "rgba(201,146,42,.6)", textDecoration: "none" }}
+                    >
+                      💬 Text / SMS
+                    </a>
+                    <WhatsAppLink
+                      href={`${CONTACT.whatsappUrl}?text=${waText}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-outline-np"
+                      style={{ color: "rgba(255,255,255,.85)", borderColor: "rgba(255,255,255,.3)", fontSize: ".82rem" }}
+                    >
+                      WhatsApp
+                    </WhatsAppLink>
+                  </>
+                ) : (
+                  <WhatsAppLink
+                    href={`${CONTACT.whatsappUrl}?text=${waText}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline-np"
+                    style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
+                  >
+                    WhatsApp Us
+                  </WhatsAppLink>
+                )}
               </div>
               <div style={{ marginTop: 22 }}>
                 <LocationHeroCtaCard
                   whatsappText={`Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
+                  isNorthAmerica={isNorthAmerica}
                 />
               </div>
             </div>

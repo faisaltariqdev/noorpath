@@ -169,9 +169,14 @@ export default function HolyQuranHubPage() {
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <section className="hq-section" aria-labelledby="surahs-heading">
-          <h2 id="surahs-heading">All 114 Surahs</h2>
+          <h2 id="surahs-heading">Popular &amp; Daily Recited Surahs</h2>
+          <p className="hq-note">
+            Browse essential daily Surahs below, use the search above for any of the 114 Surahs, or open any of the 30 Paras (Juz) to read complete text:
+          </p>
           <div className="hq-grid">
-            {SURAHS.map((surah) => (
+            {SURAHS.filter((s) =>
+              [1, 2, 18, 36, 55, 56, 67, 78, 87, 89, 93, 94, 95, 96, 97, 103, 108, 112, 113, 114].includes(s.number)
+            ).map((surah) => (
               <Link key={surah.number} href={surahPath(surah.number)} className="hq-card">
                 <strong>
                   {surah.number}. {surah.name}
@@ -216,6 +221,31 @@ export default function HolyQuranHubPage() {
               <p>{faq.answer}</p>
             </details>
           ))}
+        </section>
+
+        <section className="hq-section" aria-labelledby="hq-guides-heading">
+          <h2 id="hq-guides-heading">Quran Recitation Guides &amp; Etiquettes</h2>
+          <p className="hq-note">
+            Deepen your recitation with authentic guides on Quranic virtues and prostration rules:
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14, marginTop: 14 }}>
+            <Link
+              href="/blog/benefits-of-reading-quran-daily"
+              className="card-np"
+              style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 12, padding: "16px 20px", textDecoration: "none" }}
+            >
+              <strong style={{ color: "var(--charcoal)", display: "block", marginBottom: 4 }}>📖 Benefits of Reading Quran Daily</strong>
+              <span style={{ color: "var(--muted)", fontSize: ".84rem" }}>Hadith virtues, heart tranquility, and intercession on Qiyamah.</span>
+            </Link>
+            <Link
+              href="/blog/sajdah-tilawat-dua-arabic-english"
+              className="card-np"
+              style={{ background: "#fff", border: "1px solid var(--border)", borderRadius: 12, padding: "16px 20px", textDecoration: "none" }}
+            >
+              <strong style={{ color: "var(--charcoal)", display: "block", marginBottom: 4 }}>🤲 Sajdah Tilawat Dua &amp; Rules</strong>
+              <span style={{ color: "var(--muted)", fontSize: ".84rem" }}>What to say when encountering the 14 prostration verses in the Quran.</span>
+            </Link>
+          </div>
         </section>
 
         <section className="hq-section" aria-labelledby="hq-class-cta">

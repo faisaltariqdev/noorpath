@@ -1268,21 +1268,36 @@ export default function OnlineQuranClassesUkPage() {
                   </div>
                 ))}
               </div>
-              <Link
-                href="/blog/online-quran-classes-uk-kids-guide"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 4,
-                  marginTop: 18,
-                  fontWeight: 700,
-                  fontSize: ".84rem",
-                  textDecoration: "none",
-                }}
-              >
-                Read the UK parent guide
-                <ChevronRight size={15} aria-hidden="true" />
-              </Link>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginTop: 18 }}>
+                <Link
+                  href="/blog/online-quran-classes-uk-kids-guide"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 4,
+                    fontWeight: 700,
+                    fontSize: ".84rem",
+                    textDecoration: "none",
+                  }}
+                >
+                  Read the UK parent guide
+                  <ChevronRight size={15} aria-hidden="true" />
+                </Link>
+                <Link
+                  href="/blog/timezone-friendly-quran-classes-uk-europe"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 4,
+                    fontWeight: 700,
+                    fontSize: ".84rem",
+                    textDecoration: "none",
+                  }}
+                >
+                  UK &amp; Europe Timezone Guide
+                  <ChevronRight size={15} aria-hidden="true" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -5,6 +5,8 @@ import { QAIDA_BASE_PATH, QAIDA_GAME_BY_SLUG, QAIDA_GAMES } from "@/data/noorani
 import LetterMatchingGame from "@/components/noorani-qaida/LetterMatchingGame";
 import HarakatQuizGame from "@/components/noorani-qaida/HarakatQuizGame";
 import ProgressChecklistGame from "@/components/noorani-qaida/ProgressChecklistGame";
+import InteractiveQuizGame from "@/components/noorani-qaida/InteractiveQuizGame";
+import QaidaGamesWorksheetsGrid from "@/components/noorani-qaida/QaidaGamesWorksheetsGrid";
 import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
 import {
   QAIDA_BASE_URL,
@@ -64,24 +66,14 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
   if (!game) notFound();
 
   const url = `${QAIDA_BASE_URL}/games/${game.slug}`;
-  const related =
-    slug === "letter-matching"
-      ? [
-          { href: `${QAIDA_BASE_PATH}#arabic-alphabet`, label: "Arabic letters index", description: "Open all 28 letter guides from the hub." },
-          { href: `${QAIDA_BASE_PATH}/arabic-letters/alif`, label: "Alif letter page", description: "Continue with a full letter reference." },
-          { href: `${QAIDA_BASE_PATH}/games/harakat-quiz`, label: "Harakat quiz", description: "Practise Fatha, Kasra, and Damma next." },
-        ]
-      : slug === "harakat-quiz"
-        ? [
-            { href: `${QAIDA_BASE_PATH}/lessons/fatha`, label: "Fatha lesson", description: "Review the short a vowel." },
-            { href: `${QAIDA_BASE_PATH}/lessons/kasra`, label: "Kasra lesson", description: "Review the short i vowel." },
-            { href: `${QAIDA_BASE_PATH}/lessons/damma`, label: "Damma lesson", description: "Review the short u vowel." },
-          ]
-        : [
-            { href: QAIDA_BASE_PATH, label: "Noorani Qaida hub", description: "See the full 11-module learning path." },
-            { href: `${QAIDA_BASE_PATH}/guides/for-parents`, label: "Parent guide", description: "Keep home practice short and calm." },
-            { href: `${QAIDA_BASE_PATH}/games/letter-matching`, label: "Letter matching game", description: "Practise recognition after checklist review." },
-          ];
+  const relatedGameSlug = slug === "letter-matching" ? "harakat-quiz" : "letter-matching";
+  const relatedGame = QAIDA_GAME_BY_SLUG[relatedGameSlug] || QAIDA_GAMES[0];
+
+  const primaryInternalLinks = [
+    { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida Hub", description: "Explore the full 11-module curriculum map and letter index." },
+    { href: relatedGame.href, label: relatedGame.title, description: relatedGame.summary },
+    { href: "/courses/noorani-qaida-online", label: "Online Noorani Qaida Classes", description: "1-on-1 personalized lessons with certified live tutors." },
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -147,6 +139,28 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
           <span className="qaida-eyebrow">Free interactive practice · Mobile-friendly</span>
           <h1 style={{ maxWidth: 820 }}>{game.title}</h1>
           <p>{game.seoIntro}</p>
+
+          {game.answerBox && (
+            <div
+              className="np-quick-answer"
+              style={{
+                background: "rgba(255,255,255,.08)",
+                borderLeft: "4px solid var(--gold)",
+                borderRadius: "10px",
+                padding: "16px 20px",
+                marginTop: "1.25rem",
+                fontSize: ".96rem",
+                lineHeight: 1.65,
+                color: "#ffffff",
+                maxWidth: 820,
+              }}
+            >
+              <div style={{ fontSize: ".76rem", fontWeight: 700, textTransform: "uppercase", color: "var(--gold-lt)", marginBottom: 4, letterSpacing: ".5px" }}>
+                Direct Answer
+              </div>
+              <p style={{ margin: 0, fontWeight: 500 }}>{game.answerBox}</p>
+            </div>
+          )}
         </div>
       </header>
 
@@ -160,8 +174,30 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
               {slug === "letter-matching" && <LetterMatchingGame />}
               {slug === "harakat-quiz" && <HarakatQuizGame />}
               {slug === "progress-checklist" && <ProgressChecklistGame />}
+              {game.quizQuestions && (
+                <InteractiveQuizGame title={game.title} questions={game.quizQuestions} />
+              )}
             </div>
           </section>
+
+          {game.sections &&
+            game.sections.map((sec, idx) => (
+              <section className="qaida-section" key={sec.heading} aria-labelledby={`sec-${idx}`}>
+                <span className="qaida-eyebrow">Lesson Guide · Part {idx + 1}</span>
+                <h2 id={`sec-${idx}`}>{sec.heading}</h2>
+                <p>{sec.body}</p>
+                {sec.points && (
+                  <ul className="qaida-practice-steps" style={{ marginTop: "1rem" }}>
+                    {sec.points.map((pt, pIdx) => (
+                      <li key={pt}>
+                        <span aria-hidden="true">{pIdx + 1}</span>
+                        <p>{pt}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            ))}
 
           <section className="qaida-section" aria-labelledby="skills-heading">
             <span className="qaida-eyebrow">Learning focus</span>
@@ -211,14 +247,11 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
           </section>
 
           <QaidaRelatedLinks
-            title="Related lessons"
-            links={[
-              { href: QAIDA_BASE_PATH, label: "Interactive Noorani Qaida hub", description: "Return to the full curriculum map." },
-              ...related,
-              { href: `${QAIDA_BASE_PATH}/games`, label: "All free games", description: "Browse letter, harakat, and progress tools." },
-              { href: "/blog/interactive-noorani-qaida-kids-studio", label: "Kids Studio interactive Qaida guide", description: "Parent tips when letter sounds are known but joining stalls." },
-            ]}
+            title="Core learning links"
+            links={primaryInternalLinks}
           />
+
+          <QaidaGamesWorksheetsGrid currentHref={url} limit={6} />
 
           <p style={{ marginTop: "1rem" }}>
             <Link href={`${QAIDA_BASE_PATH}/guides/games`} style={{ color: "var(--emerald)", fontWeight: 650 }}>
@@ -228,8 +261,8 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
           </p>
 
           <QaidaCourseCta
-            title="Ready for a real teacher to hear them read?"
-            description="Games build recognition. Pronunciation needs someone listening. Book a free 30-minute one-to-one lesson — no credit card — and hear how a patient tutor works with your child at their level, in your timezone."
+            title="Practice with a live Noorani Qaida teacher — Book a free trial"
+            description="Games build recognition. Pronunciation needs a trained ear. Book a free 30-minute one-to-one lesson — no credit card — and hear how a patient tutor works with your child at their level, in your timezone."
           />
         </div>
       </div>

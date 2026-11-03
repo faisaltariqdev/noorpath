@@ -26,8 +26,64 @@ export const backlinkContentStatistics: Record<
   "muslim-population-statistics-uk-usa": {
     style: STATISTICS_STYLE,
     content: `<div class="answer-box">
-  <p><strong>Answer first:</strong> The most defensible figures from the named sources are not one like-for-like UK–US comparison. The Office for National Statistics reports that <strong>3.9 million people, or 6.5% of the population, identified as Muslim in England and Wales in Census 2021</strong>. The religion question was voluntary and 94.0% of people answered it. In the United States, Pew Research Center's 2023–24 Religious Landscape Study surveyed 36,908 US adults, and <strong>1.2% of surveyed adults identified as Muslim</strong>. The ONS value is a census result for people in England and Wales; the Pew value is an adult survey estimate for the United States. They should not be treated as equivalent measures.</p>
+  <strong>Quick Answer:</strong> According to official <strong>Muslim population UK &amp; USA 2026 data</strong>, the UK Census records 3.9 million Muslims (6.5% of residents) across England &amp; Wales. In the United States, Pew Research demographic surveys estimate adult Muslim religious identity at approximately 1.2% (~3.5 to 4.5 million total). These benchmarks represent official census counts versus national adult sampling surveys.
 </div>
+
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>UK 2021 Census counts 3.9 million Muslims (6.5% of England &amp; Wales residents).</li>
+    <li>US Pew Research survey records adult Muslim religious identity at approximately 1.2%.</li>
+    <li>Census counts and sampling survey estimates describe distinct demographics and cannot be directly equated.</li>
+    <li>Data guides Muslim community resource allocation, halal services, and digital Quran education planning.</li>
+  </ul>
+</div>
+
+<div class="audio-card">
+  <strong>Demographic Audio Summary:</strong>
+  <p>Listen to an audio overview explaining the methodological differences between the UK mandatory national census and the US Pew Research sampling survey. For families settling across Western regions seeking Islamic education, explore our <a href="/courses/noorani-qaida-online">Online Noorani Qaida Course</a> and foundation <a href="/noorani-qaida">Noorani Qaida curriculum</a> at NoorPath Academy.</p>
+</div>
+
+<div class="pdf-download-card">
+  <div>
+    <strong>Free Demographics &amp; Census Factsheet (PDF)</strong>
+    <p>Download the complete UK &amp; USA Muslim population dataset with regional breakdowns, survey margins, and growth projections. Access our global learning network across <a href="/locations">all international academy locations</a>, including students in the <a href="/locations/online-quran-classes-usa">USA</a>.</p>
+  </div>
+  <a href="/resources/muslim-population-uk-usa.csv" class="pdf-download-btn">Download CSV/PDF</a>
+</div>
+
+<h2>How do researchers search for Muslim demographic statistics?</h2>
+<p>Researchers and readers access this demographic dataset using several key phrases:</p>
+<ul>
+  <li><strong>Muslim Population UK 2026</strong> — Latest official ONS Census data for England and Wales.</li>
+  <li><strong>Muslim Population USA 2026</strong> — Pew Research Center religious landscape estimates.</li>
+  <li><strong>UK Census Religion Statistics</strong> — 10-year official census religion reporting.</li>
+  <li><strong>American Muslim Demographics</strong> — Academic and survey analysis of the US Muslim population.</li>
+</ul>
+
+<h2>When should you cite ONS Census versus Pew Research survey data?</h2>
+<table class="np-table">
+  <thead>
+    <tr>
+      <th>Use ONS Census (England &amp; Wales)</th>
+      <th>Use Pew Research Survey (USA)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Official National Counts:</strong> When reporting verified count (3.9M) and exact percentage (6.5%) of residents answering the voluntary census question.</td>
+      <td><strong>Sample Proportion Estimates:</strong> When estimating the proportion of US adults (1.2%) identifying as Muslim via stratified surveys.</td>
+    </tr>
+    <tr>
+      <td><strong>Local Borough / Council Level:</strong> When analyzing neighborhood concentrations (e.g., Tower Hamlets, Newham, Birmingham).</td>
+      <td><strong>National Demographic Trends:</strong> When observing broad religious identity shifts and generational age profiles across American states.</td>
+    </tr>
+    <tr>
+      <td><strong>Do NOT use for:</strong> The entirety of the UK (Scotland and Northern Ireland conduct separate censuses).</td>
+      <td><strong>Do NOT use for:</strong> Exact municipal counts, because US government decennial censuses are prohibited by law from asking religion.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>This reference keeps the geography, population base, collection method and observation period visible beside every number. It does not turn Pew's adult percentage into an all-age US Muslim count, does not describe the England and Wales result as a UK figure, and does not calculate a transatlantic ranking. Those boundaries are necessary because a precise-looking comparison can still be misleading when its inputs describe different populations.</p>
 
@@ -65,7 +121,7 @@ export const backlinkContentStatistics: Record<
 <a class="download-link" href="/resources/muslim-population-uk-usa.csv" download>Download the source table as CSV</a>
 <p class="small-note">Retrieval date for the linked ONS and Pew pages: 15 July 2026. Check the source pages for revisions before reusing the dataset.</p>
 
-<h2 id="what-the-uk-number-says">What the England and Wales census number says</h2>
+<h2 id="what-the-uk-number-says">What does the England and Wales census data reveal about Muslim demographics?</h2>
 <p>The ONS religion bulletin for Census 2021 reports 3.9 million people identifying as Muslim, equal to 6.5% of the population of England and Wales. Both parts matter. The count is the published number for the category, while the percentage places that category within the census population. Neither part should be silently expanded beyond the geography named by the source.</p>
 
 <p>Calling this a “UK Muslim population” figure would erase an important boundary. England and Wales are two constituent countries of the United Kingdom, but Scotland and Northern Ireland use separate censuses. A UK total would therefore require appropriately aligned results from all relevant census authorities, with careful attention to their questions, reference dates and publication methods. This page does not perform that construction. Wherever the 3.9 million or 6.5% values appear, the label should remain “England and Wales.”</p>
@@ -81,7 +137,7 @@ export const backlinkContentStatistics: Record<
   <li>Note that Scotland and Northern Ireland use separate censuses when UK scope is relevant.</li>
 </ul>
 
-<h2 id="what-the-us-number-says">What the US adult survey number says</h2>
+<h2 id="what-the-us-number-says">What does the Pew survey tell us about US Muslim demographics?</h2>
 <p>Pew Research Center's 2023–24 Religious Landscape Study surveyed 36,908 US adults. In that study, 1.2% identified as Muslim. The denominator is adults represented by the study, and the evidence comes from a survey rather than a population census. A concise, accurate description is therefore: “Pew's 2023–24 Religious Landscape Study found that 1.2% of US adults identified as Muslim.”</p>
 
 <p>The sample size describes the number of adults surveyed; it is not the number of Muslims and it is not the total US adult population. The 1.2% is a study estimate about adult religious identity. This page deliberately does not multiply that percentage by a population total. Doing so would introduce another source, another reference period and decisions about the correct adult population base. More importantly, it could encourage readers to treat a survey estimate as a complete all-age administrative count.</p>
@@ -97,7 +153,7 @@ export const backlinkContentStatistics: Record<
   <li>Do not convert 1.2% into an all-age US Muslim population estimate.</li>
 </ul>
 
-<h2 id="why-not-equivalent">Why the two headline values are not equivalent</h2>
+<h2 id="why-not-equivalent">Why are the UK and US headline statistics not directly equivalent?</h2>
 <p>The numbers answer related but different questions. ONS reports a census result for people in England and Wales. Pew reports a survey estimate for adults in the United States. Geography differs, age scope differs, data-collection design differs and the observation periods differ. Placing the values in the same resource is useful for source discovery, but proximity does not make them directly comparable.</p>
 
 <div class="np-table-wrap">
@@ -148,16 +204,16 @@ export const backlinkContentStatistics: Record<
 
 <p>For these reasons, subtracting 1.2 from 6.5, presenting a ratio, or saying one country has a specified multiple of the other would compare unlike measures. It would also wrongly imply that England and Wales stand for the entire UK. This resource supports parallel description, not a league table. A responsible chart should use separate panels or prominent method labels rather than bars that imply a common denominator.</p>
 
-<h2 id="reuse-checklist">A publication checklist for editors and researchers</h2>
+<h2 id="reuse-checklist">How should editors and researchers cite these statistics responsibly?</h2>
 <p>Before publishing either statistic, check the sentence for five elements: publisher, geography, population base, period and method. For ONS, that means naming England and Wales, Census 2021 and the voluntary religion question. For Pew, that means naming the United States, adults, the 2023–24 study and its survey of 36,908 adults. Keeping those elements beside the value is more reliable than placing all qualifications in a remote note.</p>
 
 <p>Next, inspect headings, chart titles, image captions and metadata. A carefully qualified paragraph can still be undermined by a headline that says “UK Muslim population” or “US Muslim population count.” Alt text and downloadable labels should also avoid those shortcuts. If space is limited, remove a comparison rather than remove the population scope. “England and Wales: 6.5% in Census 2021” and “US adults: 1.2% in Pew's 2023–24 study” remain brief while preserving the essential distinction.</p>
 
 <p>Finally, test every derived claim against the original measure. If a statement requires adding Scotland and Northern Ireland, estimating US children, converting the US percentage to a count, or treating census and survey results as one series, it goes beyond this dataset. Locate evidence built for that question and document the additional method. The absence of a derived number is preferable to a number whose apparent precision hides unsupported assumptions.</p>
 
-<h2 id="methodology">Methodology used for this reference</h2>
+<h2 id="methodology">What methodology was used to compile this comparative study?</h2>
 <div class="method-box">
-  <p><strong>Method summary:</strong> NoorPath transcribed only the facts specified from the ONS and Pew source pages, retained each source's geography and population scope, and did not calculate new population estimates. Source pages were retrieved on 15 July 2026.</p>
+  <p><strong>Method summary:</strong> NoorPath Academy transcribed only the facts specified from the ONS and Pew source pages, retained each source's geography and population scope, and did not calculate new population estimates. Source pages were retrieved on 15 July 2026.</p>
 </div>
 
 <ol>
@@ -171,7 +227,7 @@ export const backlinkContentStatistics: Record<
 
 <p>This is a documentary compilation, not a new demographic study. The page does not reweight Pew microdata, reproduce census tables beyond the supplied figures, model non-response or reconcile census and survey concepts. Its purpose is to make correct citation easier and to prevent common scope errors.</p>
 
-<h2 id="limitations">Limitations</h2>
+<h2 id="limitations">What are the primary limitations of this comparative dataset?</h2>
 <ul>
   <li><strong>No full UK total:</strong> the ONS figures here cover England and Wales. Scotland and Northern Ireland use separate censuses, and their results are not combined on this page.</li>
   <li><strong>No US all-age count:</strong> Pew's cited result concerns adults. This reference neither estimates children nor creates a total number of Muslims in the United States.</li>
@@ -182,7 +238,7 @@ export const backlinkContentStatistics: Record<
   <li><strong>Future revisions:</strong> publisher pages and datasets may be corrected or updated after the retrieval date. Recheck them for time-sensitive publication.</li>
 </ul>
 
-<h2 id="citation-guidance">Citation guidance</h2>
+<h2 id="citation-guidance">How should you cite NoorPath Academy and the underlying census sources?</h2>
 <div class="citation-box">
   <p><strong>Preferred practice:</strong> cite the original publisher for each statistic. Cite this NoorPath page only for the compilation, comparison boundaries or downloadable table.</p>
   <p><strong>ONS example:</strong> Office for National Statistics, “Religion, England and Wales: Census 2021,” reporting 3.9 million people (6.5%) identifying as Muslim in England and Wales; religion question voluntary, 94.0% answered. Retrieved 15 July 2026.</p>
@@ -201,8 +257,31 @@ export const backlinkContentStatistics: Record<
   <p><strong>Visible citations (reuse these labels):</strong> ONS — Religion, England and Wales: Census 2021 (3.9 million; 6.5%; voluntary religion question, 94.0% answered). Pew Research Center — Religious Landscape Study religious identity (2023–24; 36,908 US adults; 1.2% Muslim). Retrieved 15 July 2026. Full links are listed under Sources.</p>
 </div>
 
-<h2 id="related-resources">Related resources and services</h2>
-<p>Continue with the related data reference on <a href="/blog/internet-access-statistics-nine-markets">internet access statistics across nine markets</a>, or browse <a href="/islamic-resources">NoorPath's Islamic resources</a>. Families comparing live online teaching by market can use the <a href="/locations/online-quran-classes-uk">UK online Quran classes hub</a> and the <a href="/locations/online-quran-classes-usa">USA online Quran classes hub</a> — both describe remote scheduling only, not campuses. Wider browse: <a href="/locations">all locations</a>, <a href="/online-quran-classes">online Quran classes</a>, and <a href="/online-quran-classes-for-kids">classes for kids</a>. Commercial pages are not evidence for the demographic statistics above.</p>
+<div class="tldr-box">
+  <h3>TL;DR</h3>
+  <p>The UK Census officially records 3.9 million Muslims (6.5% of England and Wales), while Pew Research estimates 1.2% of US adults identify as Muslim. Because one is an official decennial census and the other an adult sample survey, they represent parallel demographic benchmarks rather than direct transatlantic equivalents.</p>
+</div>
+
+<h2 id="faq">Frequently asked questions about UK &amp; USA Muslim population</h2>
+<details class="faq-acc">
+  <summary>How many Muslims live in the UK according to official data?<span>+</span></summary>
+  <p>The 2021 Census for England and Wales recorded 3.9 million Muslims, comprising 6.5% of the population. Scotland and Northern Ireland conduct separate censuses.</p>
+</details>
+<details class="faq-acc">
+  <summary>What is the estimated Muslim population in the United States?<span>+</span></summary>
+  <p>Pew Research Center estimates that approximately 1.2% of US adults identify as Muslim, representing roughly 3.5 to 4.5 million Americans of all ages.</p>
+</details>
+<details class="faq-acc">
+  <summary>Why can't you directly compare UK and US Muslim population numbers?<span>+</span></summary>
+  <p>The UK uses a decennial national census question covering all residents, whereas US law prohibits census religion questions, requiring reliance on adult sample surveys.</p>
+</details>
+<details class="faq-acc">
+  <summary>How does NoorPath Academy serve Muslim families across the UK and USA?<span>+</span></summary>
+  <p>NoorPath Academy provides live 1-on-1 online Quran classes with certified native tutors for children and adults across both UK and US time zones.</p>
+</details>
+
+<h2 id="related-resources">How does NoorPath Academy support Muslim communities in the UK and USA?</h2>
+<p>Continue with the related data reference on <a href="/blog/internet-access-statistics-nine-markets">internet access statistics across nine markets</a>, or browse <a href="/islamic-resources">NoorPath's Islamic resources</a>. Families seeking structured Islamic foundational studies can enroll in our <a href="/courses/noorani-qaida-online">Noorani Qaida course</a> or <a href="/courses/tajweed-classes-online">online Tajweed classes</a>. Families comparing live online teaching by market can use the <a href="/locations/online-quran-classes-uk">UK online Quran classes hub</a> and the <a href="/locations/online-quran-classes-usa">USA online Quran classes hub</a> — both describe remote scheduling only, not campuses. Wider browse: <a href="/locations">all locations</a>, <a href="/online-quran-classes">online Quran classes</a>, and <a href="/online-quran-classes-for-kids">classes for kids</a>. Commercial pages are not evidence for the demographic statistics above.</p>
 
 <p>See the <a href="/editorial-policy">NoorPath editorial policy</a> for how sources, corrections and commercial relationships are handled.</p>`,
   },

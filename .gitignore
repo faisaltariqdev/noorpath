@@ -52,3 +52,4 @@ generate_*.py
 # local seo scratch
 scripts/seo/tmp-*.mjs
 .ik-preview/
+scratch/

@@ -18,23 +18,8 @@ export interface City {
  * until each page has genuine local differentiation (Google doorway / scaled-content risk).
  */
 export const TEMPLATE_CITY_NOINDEX_SLUGS = new Set<string>([
-  "aarhus",
-  "abu-dhabi",
-  "bergen",
-  "christchurch",
   "copenhagen",
-  "cork",
-  "doha",
   "espoo",
-  "galway",
-  "helsinki",
-  "jeddah",
-  "karachi",
-  "lahore",
-  "leeds",
-  "luton",
-  "oslo",
-  "riyadh",
 ]);
 
 export function isCityIndexable(slug: string): boolean {
@@ -157,8 +142,19 @@ export const cities: City[] = [
     flag: "🇺🇸",
     timezone: "ET",
     localContext:
-      "New York families can avoid adding cross-borough travel to school and activity schedules by requesting lessons from home. Share an ET after-school, evening, or weekend window; availability is confirmed after matching.",
-    keywords: ["online quran classes new york", "quran teacher new york", "quran classes nyc", "learn quran new york", "quran tutor nyc"],
+      "For Muslim families across New York City — Brooklyn, Queens, Manhattan, Staten Island, Bronx, and Long Island — seeking Quran classes near them, live 1-on-1 online lessons eliminate difficult cross-borough rush hour travel. Share an ET after-school (4–8 PM), evening, or weekend morning window; tutor availability is confirmed after matching.",
+    keywords: [
+      "online quran classes new york",
+      "quran classes near me new york",
+      "online quran classes near me nyc",
+      "quran teacher new york",
+      "quran classes nyc",
+      "learn quran new york",
+      "quran tutor nyc",
+      "female quran teacher new york",
+      "quran classes for kids new york",
+      "noorani qaida online new york",
+    ],
   },
   {
     slug: "houston",
@@ -303,12 +299,12 @@ export const cities: City[] = [
   {
     slug: "hyderabad",
     city: "Hyderabad",
-    country: "India",
-    countrySlug: "online-quran-classes-india",
-    flag: "🇮🇳",
-    timezone: "IST (UTC+5:30)",
+    country: "Pakistan",
+    countrySlug: "online-quran-classes-pakistan",
+    flag: "🇵🇰",
+    timezone: "PKT (UTC+5)",
     localContext:
-      "Hyderabad families can request live one-to-one online Qaida, Tajweed or Hifz from home — useful when Old City or IT-corridor school runs leave little time for another commute. Morning, after-school and evening IST preferences are confirmed after tutor matching. NoorPath teaches online only (no Hyderabad campus).",
+      "Hyderabad families in Sindh can request live one-to-one online Qaida, Tajweed or Hifz from home across Latifabad, Qasimabad and Saddar. Morning, after-school and evening PKT preferences are confirmed after tutor matching. NoorPath teaches online only (no physical campus).",
     keywords: [
       "online quran classes hyderabad",
       "quran teacher hyderabad",

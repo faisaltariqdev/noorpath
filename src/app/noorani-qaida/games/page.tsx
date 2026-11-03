@@ -7,6 +7,7 @@ import {
   QAIDA_GAMES_HUB_FAQS,
 } from "@/data/noorani-qaida";
 import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
+import QaidaGamesWorksheetsGrid from "@/components/noorani-qaida/QaidaGamesWorksheetsGrid";
 import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
@@ -286,6 +287,8 @@ export default function NooraniQaidaGamesHubPage() {
               },
             ]}
           />
+
+          <QaidaGamesWorksheetsGrid currentHref={pageUrl} limit={6} />
 
           <QaidaCourseCta />
         </div>

@@ -78,13 +78,22 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...earningPillarBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em> Children can learn Allahu Akbar and its place in Salah through <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Allahu Akbar (الله أكبر) means <strong>"Allah is the Greatest"</strong> — declaring that nothing and no one is greater than Allah. Muslims say it in the Adhan, Salah, Eid Takbir, and moments of awe, gratitude or need. It is one of the four most beloved words to Allah (Sahih Muslim 2137).
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Allahu Akbar meaning in English is <strong>"Allah is the Greatest"</strong> (<em>اللهُ أَكْبَرُ</em>). Known as the <em>Takbir</em>, this fundamental Islamic phrase declares Allah's infinite supremacy over all creation, worries, and worldly powers. It is proclaimed in the Adhan, throughout daily Salah, on Eid, and during dhikr.
           </div>
 
-          <h2 id="arabic">Allahu Akbar — Arabic, transliteration &amp; English</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Allahu Akbar (the Takbir) means "Allah is the Greatest" or "Allah is Greater than all things."</li>
+              <li>It initiates every unit of Salah (Takbirat al-Ihram) and marks transitions between prayer postures.</li>
+              <li>It ranks among the four most beloved phrases of remembrance in Islam alongside Subhanallah, Alhamdulillah, and La ilaha illallah.</li>
+            </ul>
+          </div>
+
+          <p><strong>Allahu Akbar</strong> (الله أكبر) is among the most powerful and frequently spoken phrases in Islam — heard five times a day in the Adhan, repeated throughout every Salah, and proclaimed on Eid. If you have ever wondered what <strong>Allahu Akbar meaning in English</strong> is, the answer is simple yet profound: <em>"Allah is the Greatest."</em> Children can learn Allahu Akbar and its place in Salah through our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
+
+          <h2 id="arabic">What is the Arabic text and English translation of Allahu Akbar?</h2>
           <div class="verse-card">
             <span class="vnum">TAKBIR · DECLARATION OF ALLAH'S GREATNESS</span>
             <div class="arabic">اللهُ أَكْبَرُ</div>
@@ -92,7 +101,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="trans-en"><strong>English:</strong> Allah is the Greatest. / Allah is Greater.</p>
           </div>
 
-          <h2 id="word-by-word">Word-by-word meaning</h2>
+          <h2 id="word-by-word">What is the word-by-word meaning of Allahu Akbar?</h2>
           <table class="np-table">
             <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
             <tr><td>الله</td><td>Allah</td><td>Allah — the one true God, Creator of everything</td></tr>
@@ -107,7 +116,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <h3>What does "akbar" mean on its own?</h3>
           <p>On its own, <em>akbar</em> (أَكْبَر) is an ordinary Arabic word meaning "bigger" or "greater". It comes from the root k-b-r, which gives <em>kabir</em> (big, great) and <em>kibr</em> (arrogance — thinking oneself big). It is used in everyday Arabic with no religious sense at all, in the way an English speaker would say "the bigger one". It is also a common given name across the Muslim world. The word only carries its full weight when it appears in the takbir, where the thing being described is Allah.</p>
 
-          <h2 id="when">When do Muslims say Allahu Akbar?</h2>
+          <h2 id="when">When do Muslims say Allahu Akbar in daily life?</h2>
           <table class="np-table">
             <tr><th>Occasion</th><th>How it is used</th></tr>
             <tr><td><strong>Adhan (call to prayer)</strong></td><td>Proclaimed six times — calling the community to Salah</td></tr>
@@ -119,12 +128,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <tr><td><strong>Good news</strong></td><td>Gratitude and glorification — Allah is greater than any blessing received</td></tr>
           </table>
 
-          <h2 id="misunderstood">What Allahu Akbar is — and what it is not</h2>
+          <h2 id="misunderstood">What is the true peaceful meaning of Allahu Akbar?</h2>
           <p>Many people who search for this phrase are not Muslim, and have encountered it mainly in news coverage of violence. That is an extremely narrow sample of a phrase used constantly and unremarkably by well over a billion people, and it leaves a false impression of what the words mean and where they belong.</p>
           <p>In ordinary life, Allahu Akbar is closer to what an English speaker might express with "thank God" or a quiet breath of relief and awe — though it is more formal than either, because it is an act of worship rather than an exclamation. It is said by a father holding a newborn, by someone who has just been given difficult news and is steadying themselves, by a person seeing mountains or the sea for the first time. It opens every prayer and is repeated with every change of posture within it, so a Muslim praying five times a day says it dozens of times before the day is out. It is called out from every mosque in the world at each prayer time.</p>
           <p>The words themselves make a claim about Allah and about nothing else. They name no enemy and no group. When someone says Allahu Akbar in prayer, the meaning is closer to humility than to defiance: everything they were preoccupied with a moment ago has just been placed below Allah, including themselves. That is the entire point of beginning a prayer with it.</p>
 
-          <h2 id="pronunciation">How to pronounce Allahu Akbar</h2>
+          <h2 id="pronunciation">How do you pronounce Allahu Akbar correctly with Tajweed?</h2>
           <p>Four syllables: <strong>Al-laa-hu Ak-bar</strong>.</p>
           <ul>
             <li><strong>The doubled L is held.</strong> "Al-lah", not "A-lah" — the tongue rests on the l for an extra beat.</li>
@@ -135,14 +144,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
           <p>Reading pronunciation notes will get you close, but the heavy l and the difference between k and kh are sounds English does not distinguish, so most people need to hear them and be corrected once or twice before they stick. Our <a href="/blog/tajweed-rules-complete-guide">complete Tajweed rules guide</a> explains these letters in detail.</p>
 
-          <h2 id="hadith">Authentic hadith — reward of Allahu Akbar</h2>
+          <h2 id="hadith">What are the authentic hadith on the virtues of Allahu Akbar?</h2>
           <div class="gold-box">
             <p>The Prophet ﷺ said: <em>"The most beloved words to Allah are four: <strong>Subhanallah</strong>, <strong>Alhamdulillah</strong>, <strong>La ilaha illallah</strong>, and <strong>Allahu Akbar</strong>. It does not matter with which of them you begin."</em></p>
             <p style="margin-bottom:0;"><strong>Source:</strong> Sahih Muslim 2137</p>
           </div>
           <p>These four phrases form the core of daily dhikr. After every obligatory prayer, the Sunnah is to recite Subhanallah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times — totalling 100 remembrances. The Prophet ﷺ said whoever does this, their sins will be forgiven even if they are like the foam of the sea (Sahih Muslim 597).</p>
 
-          <h2 id="salah">Allahu Akbar in Salah — the Takbir</h2>
+          <h2 id="salah">How is Allahu Akbar used throughout Salah?</h2>
           <p>Every prayer begins with <strong>Takbirat al-Ihram</strong> — raising the hands and saying "Allahu Akbar" to enter the state of prayer. This takbir is repeated when moving from standing to bowing (ruku), from bowing to standing, from standing to prostration (sujood), and between the two sujoods. Learn the full prayer with our <a href="/blog/how-to-pray-salah-step-by-step">step-by-step Salah guide</a>.</p>
           <p>The opening takbir is called <em>Takbirat al-Ihram</em> because <em>ihram</em> means entering a state in which certain ordinary things become off-limits. Once those words are said, the worshipper has left everyday activity behind — no talking, no turning away — until the prayer ends with the salam. Nothing else marks the boundary; the phrase itself is the doorway.</p>
           <p>A few related terms you will hear:</p>
@@ -155,7 +164,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </table>
           <p>In the adhan the phrase does double duty: the call to prayer opens with it and returns to it near the end, just before it closes with <a href="/blog/la-ilaha-illallah-meaning">la ilaha illallah</a>. If you have ever heard the adhan and recognised only one phrase in it, this was almost certainly the one.</p>
 
-          <h2 id="related-phrases">Allahu Akbar among the four pillars of dhikr</h2>
+          <h2 id="related-phrases">Why is Allahu Akbar one of the four pillars of dhikr?</h2>
           <ul>
             <li><a href="/blog/subhanallah-meaning">Subhanallah</a> — Glory be to Allah (declares perfection)</li>
             <li><a href="/blog/alhamdulillah-meaning-in-english">Alhamdulillah</a> — All praise to Allah (expresses gratitude)</li>
@@ -163,7 +172,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Allahu Akbar</strong> — Allah is the Greatest (declares supremacy)</li>
           </ul>
 
-          <h2 id="faq">Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions about Allahu Akbar</h2>
           <details class="faq-acc"><summary>What does Allahu Akbar mean in English?<span>+</span></summary>
             <p>It means "Allah is the Greatest" or "Allah is Greater" — declaring that Allah is greater than anything in existence: any person, power, fear, or desire.</p>
           </details>
@@ -173,6 +182,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>Is Allahu Akbar only said in prayer?<span>+</span></summary>
             <p>No. While it is central to Salah, Muslims also say it in the Adhan, on Eid, during dhikr after prayer, when seeing something amazing, and in any moment of glorifying Allah.</p>
           </details>
+          <details class="faq-acc"><summary>How can children learn daily Islamic phrases and prayers?<span>+</span></summary>
+            <p>NoorPath Academy provides interactive one-on-one classes in Noorani Qaida and Salah memorization with certified native tutors.</p>
+          </details>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Allahu Akbar translates to "Allah is the Greatest," serving as a constant reminder that the Creator is superior to every obstacle, fear, or ambition. Central to daily worship, it opens every Salah, echoes across the globe in the Adhan, and anchors daily remembrance. NoorPath Academy helps children and adult learners master Islamic prayers and Quranic recitation with certified Tajweed teachers.</p>
+          </div>
 
           <div class="highlight-box">
             <strong>Want your child to learn Allahu Akbar, Salah and daily dhikr with correct pronunciation?</strong> NoorPath Academy teaches Islamic phrases, Noorani Qaida and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
@@ -191,13 +208,69 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "la-ilaha-illallah-meaning": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>La ilaha illallah</strong> (لا إله إلا الله) is the declaration that defines Islam itself. Every Muslim child learns it as the First Kalima; every convert speaks it to enter the faith; and the Prophet ﷺ called it the best dhikr. Here is the complete <strong>La ilaha illallah meaning in English</strong>, with Arabic, transliteration, and why it is the most important sentence a Muslim ever speaks. The meaning of Tawheed can be taught gently to children in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> La ilaha illallah means <strong>"There is no god worthy of worship except Allah."</strong> It is the core of Tawheed (monotheism), the first part of the Shahada, and the First Kalima (Kalima Tayyaba). The Prophet ﷺ said the best dhikr is La ilaha illallah (Tirmidhi 3383).
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> La ilaha illallah meaning in English is <strong>"There is no deity worthy of worship except Allah"</strong> (<em>لَا إِلَٰهَ إِلَّا ٱللَّٰهُ</em>). Known as the First Kalima (Kalima Tayyaba), this foundational declaration of Tawheed negates all false gods and affirms pure devotion to Allah alone across daily prayer and dhikr.
           </div>
 
-          <h2 id="arabic">La ilaha illallah — Arabic, transliteration &amp; English</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>La ilaha illallah is the supreme declaration of Tawheed upon which the entire Islamic faith is established.</li>
+              <li>It combines total negation of false worship with absolute affirmation of devotion to Allah alone.</li>
+              <li>Authentic hadith name it the finest form of dhikr and the foundational key to Paradise.</li>
+            </ul>
+          </div>
+
+          <div class="audio-card">
+            <strong>Pronunciation &amp; Audio Guide:</strong>
+            <p>Listen to correct Arabic pronunciation of the Kalima Tayyaba with heavy and light letter distinctions. Learn foundational Islamic beliefs in our <a href="/courses/islamic-studies-online">Islamic Studies Online Course</a>, start reading Arabic with our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> course, or master Tajweed rules through <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
+          </div>
+
+          <div class="pdf-download-card">
+            <div>
+              <strong>Free 6 Kalimas &amp; Tawheed Guide (PDF)</strong>
+              <p>Download our printable study sheet featuring the Six Kalimas with full Arabic text, transliteration, and English explanations. Recommended for students across North America, including <a href="/online-quran-classes/new-york">New York</a>.</p>
+            </div>
+            <a href="/noorani-qaida" class="pdf-download-btn">Free PDF Guide</a>
+          </div>
+
+          <h2>What are the common spelling variants of La ilaha illallah?</h2>
+          <p>This fundamental declaration is written with varying transliteration styles in English:</p>
+          <ul>
+            <li><strong>La Ilaha Illallah</strong> — Most common standard transliteration in English literature.</li>
+            <li><strong>La Ilaha Illa Allah</strong> — Written with words separated to highlight individual grammar terms.</li>
+            <li><strong>Laa Ilaaha Illallaah</strong> — Transliteration emphasizing long Arabic vowel stretches (Madd).</li>
+            <li><strong>Kalima Tayyaba</strong> — The First Word / Word of Purity in South Asian Islamic curricula.</li>
+            <li><strong>First Kalima</strong> — Numbered classification representing the primary testimony of faith.</li>
+          </ul>
+
+          <h2>When should you recite La ilaha illallah in daily life?</h2>
+          <table class="np-table">
+            <thead>
+              <tr>
+                <th>Recommended Times to Recite</th>
+                <th>When NOT to Say / Common Errors</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Daily Dhikr &amp; Adhkar:</strong> Recite frequently throughout the day; the Prophet ﷺ called it the best dhikr.</td>
+                <td><strong>In Impure Places:</strong> Never utter sacred names of Allah inside bathrooms, toilets, or filthy areas.</td>
+              </tr>
+              <tr>
+                <td><strong>After the Adhan:</strong> Reciting the Shahada testimony upon hearing the call to prayer.</td>
+                <td><strong>Stopping at Negation Alone:</strong> Never say <em>"La ilaha"</em> (there is no god) alone without completing <em>"illallah"</em>.</td>
+              </tr>
+              <tr>
+                <td><strong>At the Time of Passing (Talqeen):</strong> Reminding a dying believer so their final words on earth are of Tawheed.</td>
+                <td><strong>Empty Distraction:</strong> Do not recite thoughtlessly while joking, mocking, or engaged in sinful speech.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>La ilaha illallah</strong> (لا إله إلا الله) is the declaration that defines Islam itself. Every Muslim child learns it as the First Kalima; every convert speaks it to enter the faith; and the Prophet ﷺ called it the best dhikr. Here is the complete <strong>La ilaha illallah meaning in English</strong>, with Arabic, transliteration, and why it is the most important sentence a Muslim ever speaks. The meaning of Tawheed can be taught gently to children in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+
+          <h2 id="arabic">What is the full Arabic text and translation of La ilaha illallah?</h2>
           <div class="verse-card">
             <span class="vnum">FIRST KALIMA · KALIMA TAYYABA · THE WORD OF PURITY</span>
             <div class="arabic">لَا إِلَٰهَ إِلَّا اللَّهُ</div>
@@ -205,7 +278,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="trans-en"><strong>English:</strong> There is no god worthy of worship except Allah.</p>
           </div>
 
-          <h2 id="word-by-word">Word-by-word meaning</h2>
+          <h2 id="word-by-word">What is the word-by-word meaning of La ilaha illallah?</h2>
           <table class="np-table">
             <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
             <tr><td>لَا</td><td>Laa</td><td>No — negation; rejecting all false gods</td></tr>
@@ -219,7 +292,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>People often search for the first two words alone, so it is worth being precise: <em>laa ilaaha</em> means "there is no god" and nothing more. It is only half a sentence, and on its own it is a bare denial. The meaning of the phrase lives in the join — you clear the ground of everything falsely worshipped, and then you name the only One who deserves it. Muslims never say the negation without the affirmation that follows it.</p>
           <p>The word <em>ilah</em> is also worth pausing on. It does not mean "creator"; it means the thing a person turns to, obeys and worships. That is why the usual English rendering is "there is no god <em>worthy of worship</em> except Allah" rather than a flat "there is no god". The statement is not only about who exists — it is about who deserves your devotion.</p>
 
-          <h2 id="pronunciation">How to pronounce it — and why spellings differ</h2>
+          <h2 id="pronunciation">How do you pronounce La ilaha illallah with Tajweed?</h2>
           <p>You will find this written as <em>la ilaha illallah</em>, <em>la ilaha illa Allah</em>, <em>laa ilaaha illallaah</em>, and several other ways. Nothing has changed in the Arabic; English simply has no fixed system for writing it. Two features explain most of the variation:</p>
           <ul>
             <li><strong>Long vowels.</strong> The <em>laa</em> and the middle of <em>ilaaha</em> are both stretched. Writers who double the vowel (laa, ilaaha) are showing that length; writers who do not are just spelling it plainly.</li>
@@ -227,7 +300,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
           <p>One pronunciation point matters more than the rest: the <em>lam</em> in <strong>Allah</strong> here is full and heavy, made with the back of the tongue raised, because the vowel before it is a fatha. Said lightly, as in an English "l", it sounds noticeably off to an Arabic ear. This is the sort of detail that is difficult to fix from text alone and takes a few minutes of listen-and-repeat with someone who can hear you.</p>
 
-          <h2 id="shahada">Connection to the Shahada (First Pillar of Islam)</h2>
+          <h2 id="shahada">How does La ilaha illallah connect to the Shahada?</h2>
           <p>The full Shahada (testimony of faith) is:</p>
           <div class="verse-card">
             <div class="arabic">أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ</div>
@@ -236,7 +309,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
           <p>La ilaha illallah is the first half — without it, nothing else in Islam stands. It is also the First Kalima (Kalima Tayyaba) taught to every Muslim child. See our guide to the <a href="/blog/six-kalimas-of-islam">6 Kalimas of Islam</a>.</p>
 
-          <h2 id="muhammadur-rasulullah">La ilaha illallah Muhammadur Rasulullah — meaning</h2>
+          <h2 id="muhammadur-rasulullah">What is the meaning of La ilaha illallah Muhammadur Rasulullah?</h2>
           <p>Many people learn the phrase with a second clause attached. This longer wording is the First Kalima as it is normally taught:</p>
           <div class="verse-card">
             <span class="vnum">KALIMA TAYYABA · FULL WORDING</span>
@@ -254,7 +327,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>If you have wondered why it is written "Muhammadur rasoolullah" rather than "Muhammadun rasoolullah", the reason is a rule of recitation: the <em>-un</em> ending merges into the following <em>r</em>, so the two words are read as one connected phrase. Both spellings point to the same Arabic.</p>
           <p>The difference between this and the Shahada is one of form. The Kalima is a statement — "there is no god except Allah". The Shahada is a testimony — "I bear witness that there is no god except Allah". A person entering Islam speaks the Shahada wording, because they are testifying to it before Allah, not merely stating a fact about the world.</p>
 
-          <h2 id="benefits">Benefits and authentic hadith</h2>
+          <h2 id="benefits">What are the authentic hadith and rewards of La ilaha illallah?</h2>
           <ul>
             <li><strong>Best dhikr:</strong> The Prophet ﷺ said: "The best dhikr is La ilaha illallah, and the best dua is Alhamdulillah." (Tirmidhi 3383)</li>
             <li><strong>Among the most beloved words:</strong> One of the four phrases most beloved to Allah (Sahih Muslim 2137)</li>
@@ -263,10 +336,10 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Foundation of all worship:</strong> Salah, fasting, Hajj — all depend on this belief</li>
           </ul>
 
-          <h2 id="tawheed">What is Tawheed?</h2>
+          <h2 id="tawheed">What is Tawheed and how does it relate to the First Kalima?</h2>
           <p><strong>Tawheed</strong> means affirming the oneness of Allah in three ways: (1) <em>Tawheed ar-Rububiyyah</em> — Allah alone creates and sustains; (2) <em>Tawheed al-Uluhiyyah</em> — worship belongs to Allah alone; (3) <em>Tawheed al-Asma was-Sifat</em> — Allah's names and attributes are unique and perfect. La ilaha illallah captures the heart of Tawheed al-Uluhiyyah — the worship that belongs to Allah alone.</p>
 
-          <h2 id="where">Where you already say it every day</h2>
+          <h2 id="where">Where do Muslims recite La ilaha illallah in daily prayers?</h2>
           <p>This is not a phrase reserved for special occasions. If you pray, you say it or hear it several times a day without necessarily noticing:</p>
           <table class="np-table">
             <tr><th>Where</th><th>How it appears</th></tr>
@@ -278,7 +351,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </table>
           <p>Because it recurs so often, it is easy to let it pass the lips without the mind following. The practical remedy most people find useful is to slow down at the negation and the affirmation separately — a small pause where the "no" ends and the "except Allah" begins.</p>
 
-          <h2 id="teach-kids">How to teach La ilaha illallah to children</h2>
+          <h2 id="teach-kids">How can parents teach La ilaha illallah to children?</h2>
           <ol>
             <li>Break into two parts: "Laa ilaaha" (no god) + "illallaah" (except Allah)</li>
             <li>Explain simply: "We only worship Allah — not idols, not people, not anything else"</li>
@@ -297,7 +370,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><a href="/blog/surah-ikhlas-benefits">Surah Ikhlas — Pure Tawheed in 4 Verses</a></li>
           </ul>
 
-          <h2 id="faq">Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions about La ilaha illallah</h2>
           <details class="faq-acc"><summary>What is La ilaha illallah in English?<span>+</span></summary>
             <p>"There is no god worthy of worship except Allah." It rejects all false deities and affirms that only Allah deserves worship, obedience and devotion.</p>
           </details>
@@ -307,6 +380,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>How often should you say La ilaha illallah?<span>+</span></summary>
             <p>There is no fixed limit — say it throughout the day as dhikr. It is in every Salah (Tashahhud), and many Muslims recite it frequently as remembrance of Allah.</p>
           </details>
+          <details class="faq-acc"><summary>How can students master Quran reading and Islamic studies online?<span>+</span></summary>
+            <p>NoorPath Academy provides personalized 1-on-1 online classes in Noorani Qaida, Tajweed, and Islamic studies with verified teachers.</p>
+          </details>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>La ilaha illallah translates to "There is no deity worthy of worship except Allah," representing the core pillar of Islamic monotheism. By rejecting all false deities and committing devotion solely to the Creator, it serves as the believer's greatest dhikr and gateway to salvation. NoorPath Academy provides dedicated online Quran and Islamic studies instruction to help families learn sacred words with authentic understanding.</p>
+          </div>
 
           <div class="highlight-box">
             <strong>Help your child learn the Kalimas and Shahada with correct Tajweed.</strong> NoorPath Academy teaches the 6 Kalimas, Islamic Studies and Quran in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
@@ -825,13 +906,22 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "surah-ikhlas-benefits": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>Surah Al-Ikhlas</strong> (سورة الإخلاص) — "The Sincerity" or "The Purity" — is the 112th chapter of the Quran. It has only four short verses, yet the Prophet Muhammad ﷺ said it equals <strong>one-third of the Quran</strong> in reward. It is one of the Four Quls, among the first surahs children memorise, and a cornerstone of every Muslim's daily dhikr.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Surah Ikhlas affirms pure Tawheed — that Allah is One, Eternal, and has no partner, parent or child. Recite it in Salah, morning and evening adhkar, and before sleep. The Prophet ﷺ said whoever loves it will enter Paradise. Want your child to memorise Surah Ikhlas with correct Tajweed? <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Surah Ikhlas benefits center upon its pure declaration of Tawheed (monotheism): <em>قُلْ هُوَ ٱللَّهُ أَحَدٌ</em> (<em>Qul huwa Allahu ahad</em>). Equal to one-third of the Quran in spiritual reward (Sahih al-Bukhari 5015), authentic hadiths confirm that loving and reciting it regularly grants divine protection, forgiveness, and entry into Paradise.
           </div>
 
-          <h2 id="full-text">Surah Ikhlas — full Arabic, transliteration &amp; English</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Surah Al-Ikhlas is the 112th chapter of the Quran, delivering the definitive theological definition of Allah's absolute Oneness.</li>
+              <li>Its recitation carries the divine reward equivalent to reciting one-third of the entire Holy Quran.</li>
+              <li>Prophetic Sunnah prescribes reciting it thrice alongside Al-Falaq and An-Nas every morning, evening, and before sleeping.</li>
+            </ul>
+          </div>
+
+          <p><strong>Surah Al-Ikhlas</strong> (سورة الإخلاص) — "The Sincerity" or "The Purity" — is the 112th chapter of the Quran. It has only four short verses, yet the Prophet Muhammad ﷺ said it equals <strong>one-third of the Quran</strong> in reward. It is one of the Four Quls, among the first surahs children memorise, and a cornerstone of every Muslim's daily dhikr.</p>
+
+          <h2 id="full-text">What is the full Arabic text, transliteration, and translation of Surah Ikhlas?</h2>
           <div class="verse-card">
             <span class="vnum">SURAH AL-IKHLAS · 112:1–4 · Juz 30</span>
             <div class="arabic">قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝ ٱللَّهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ</div>
@@ -839,7 +929,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="trans-en"><strong>English:</strong> Say: He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born. And there is none comparable to Him.</p>
           </div>
 
-          <h2 id="verse-by-verse">Verse-by-verse meaning</h2>
+          <h2 id="verse-by-verse">What is the verse-by-verse meaning of Surah Ikhlas?</h2>
           <table class="np-table">
             <tr><th>Verse</th><th>Arabic</th><th>Meaning</th></tr>
             <tr><td>1</td><td>قُلْ هُوَ ٱللَّهُ أَحَدٌ</td><td><strong>Say: He is Allah, the One</strong> — absolute Oneness (Tawheed). Allah is unique; nothing shares His essence or attributes.</td></tr>
@@ -848,7 +938,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <tr><td>4</td><td>وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ</td><td><strong>And there is none comparable to Him</strong> — nothing equals Allah in any way.</td></tr>
           </table>
 
-          <h2 id="why-one-third">Why does Surah Ikhlas equal one-third of the Quran?</h2>
+          <h2 id="why-one-third">Why does reciting Surah Ikhlas equal one-third of the Quran in reward?</h2>
           <p>Abu Sa'id al-Khudri (رضي الله عنه) reported that the Prophet ﷺ said to his companions: "Is any one of you unable to recite one-third of the Quran in a night?" They found it hard. He said: <strong>"Qul huwa Allahu ahad is one-third of the Quran."</strong> (Sahih al-Bukhari 5015)</p>
           <p>Scholars explain that the Quran's message centres on three themes: (1) Tawheed — the Oneness of Allah, (2) rulings and laws, and (3) stories and news. Surah Ikhlas captures the entire theme of Tawheed in four verses — so its reward is like one-third of the Quran.</p>
 
@@ -856,7 +946,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>Important:</strong> This means the <em>reward</em> of reciting Surah Ikhlas is like one-third of the Quran — it does not replace reading the rest of the Quran. Keep reciting the whole Book, and add Surah Ikhlas abundantly for extra reward.
           </div>
 
-          <h2 id="benefits">Benefits of Surah Ikhlas</h2>
+          <h2 id="benefits">What are the authentic benefits and rewards of reciting Surah Ikhlas?</h2>
           <ul>
             <li><strong>Equals one-third of the Quran</strong> in reward (Sahih al-Bukhari 5015).</li>
             <li><strong>Love of this surah leads to Paradise</strong> — a man loved to recite it in every prayer; the Prophet ﷺ said: "Your love for it will admit you to Paradise." (Sahih al-Bukhari 774)</li>
@@ -866,7 +956,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Strengthens Tawheed</strong> — it protects belief from shirk and clarifies who Allah truly is.</li>
           </ul>
 
-          <h2 id="when">When should you recite Surah Ikhlas?</h2>
+          <h2 id="when">When should you recite Surah Ikhlas in your daily life?</h2>
           <ul>
             <li><strong>In Salah</strong> — after Surah Al-Fatiha in any rakat.</li>
             <li><strong>Morning and evening</strong> — three times with Al-Falaq and An-Nas.</li>
@@ -875,7 +965,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Anytime you want reward</strong> — because of its immense virtue, recite it often throughout the day.</li>
           </ul>
 
-          <h2 id="kids">How to teach Surah Ikhlas to kids</h2>
+          <h2 id="kids">How can parents teach and help children memorize Surah Ikhlas?</h2>
           <p>Surah Ikhlas is ideal for children because it is short, rhythmic and full of meaning:</p>
           <ol>
             <li><strong>Listen first</strong> — play a clear Qari (e.g. Mishary or Al-Husary) and let your child hear it daily.</li>
@@ -884,9 +974,9 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Use it in Salah</strong> — once memorised, let them recite it after Al-Fatiha in prayer.</li>
             <li><strong>Correct Tajweed early</strong> — letters like ح in "Ahad" and ص in "As-Samad" need a live ear. A tutor prevents mistakes that stick for years.</li>
           </ol>
-          <p>Memorisation time varies by age, familiarity, pronunciation, and practice. Teach Surah Ikhlas in short sections and revise before adding more. Pair it with the other <a href="/blog/4-quls">4 Quls</a> when the learner is ready.</p>
+          <p>Memorisation time varies by age, familiarity, pronunciation, and practice. Teach Surah Ikhlas in short sections and revise before adding more. Explore foundation learning with our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> course and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
 
-          <h2 id="facts">Key facts about Surah Ikhlas</h2>
+          <h2 id="facts">What are the key facts and revelation details of Surah Ikhlas?</h2>
           <table class="np-table">
             <tr><th>Detail</th><th>Info</th></tr>
             <tr><td>Chapter number</td><td>112</td></tr>
@@ -897,7 +987,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <tr><td>Opens with</td><td>قُلْ (Qul — "Say")</td></tr>
           </table>
 
-          <h2 id="faq">Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions about Surah Ikhlas</h2>
           <details class="faq-acc"><summary>What is Surah Ikhlas about?<span>+</span></summary>
             <p>Surah Ikhlas is entirely about Tawheed — the Oneness of Allah. It teaches that Allah is One, Eternal, without parents or children, and that nothing is comparable to Him. It is the clearest short summary of Islamic belief in the Quran.</p>
           </details>
@@ -911,8 +1001,13 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p>Yes. Live 1-on-1 online classes are ideal because a tutor corrects pronunciation in real time. NoorPath Academy teaches Surah Ikhlas, the 4 Quls, Noorani Qaida and Quran with Tajweed — with a free 30-minute trial.</p>
           </details>
 
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Surah Al-Ikhlas encapsulates the core doctrine of Islamic monotheism across four concise, rhythmic verses that reject all forms of polytheism and partnership with Allah. Awarded the spiritual merit of one-third of the Quran, it offers daily divine protection and eternal salvation when recited with sincerity. NoorPath Academy provides interactive Noorani Qaida, Tajweed, and Hifz courses to help learners master Surah Ikhlas and the 4 Quls.</p>
+          </div>
+
           <div class="highlight-box">
-            <strong>Ready to help your child memorise Surah Ikhlas with guided Tajweed?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults. <a href="/learn-tajweed-online">Start our online Tajweed course</a> · <a href="/hifz-quran-online">or join our Hifz memorisation program</a> · <a href="/online-quran-classes-for-kids">book a free kids Quran trial</a> — no credit card required.
+            <strong>Ready to help your child memorise Surah Ikhlas with guided Tajweed?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults. <a href="/courses/tajweed-classes-online">Start our online Tajweed course</a> · <a href="/hifz-quran-online">or join our Hifz memorisation program</a> · <a href="/online-quran-classes-for-kids">book a free kids Quran trial</a> — no credit card required.
           </div>`,
   },
   "dua-e-istikhara": {
@@ -1048,13 +1143,29 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
   "surah-waqiah-benefits": {
     style: ISLAMIC_STYLE,
-    content: `<p><strong>Surah Al-Waqiah</strong> (سورة الواقعة — "The Inevitable Event") is the 56th chapter of the Quran with 96 verses, revealed in Makkah. It takes its name from its opening word describing the Day of Judgment — the event that will certainly occur. It is one of the most-recited surahs in Muslim homes, famously associated with <strong>rizq (provision) and protection from poverty</strong>.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Surah Waqiah is chapter 56 of the Quran (para/juz 27). It describes the three groups of people on the Day of Judgment and is widely recited <strong>every night</strong> based on the narration: "Whoever recites Surah Al-Waqiah every night will never be afflicted by poverty." Read its themes, key verses and authentic benefits below. Want to read the Quran fluently? <a href="/courses/noorani-qaida-online">Start with Noorani Qaida</a>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Surah Waqiah benefits center on spiritual protection from poverty, abundance in lawful provision (rizq), and deep reflection on the Day of Judgment. Chapter 56 (سورة الواقعة — Sūrat al-Wāqi‘ah) contains 96 verses describing the three groups of humanity. Reciting it nightly builds profound reliance on Allah as the sole Sustainer.
           </div>
 
-          <h2 id="facts">Surah Waqiah at a glance</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Chapter 56 of the Quran consists of 96 verses revealed in Makkah within Juz 27.</li>
+              <li>Reciting it nightly is a cherished Sunnah practice linked to protection from financial poverty.</li>
+              <li>Categorizes all humanity on Judgment Day into the Foremost, the Righteous, and the Deniers.</li>
+              <li>Highlights four cosmic signs proving Allah alone creates life, crops, water, and fire.</li>
+              <li>NoorPath Academy offers structured 1-on-1 Tajweed classes to recite Surah Waqiah with proper pronunciation.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Surah Al-Waqiah (Chapter 56) is renowned for fostering financial barakah, safeguarding against hardship, and detailing the reality of the Akhirah. Reciting its 96 verses every night after Maghrib or Isha trains the believer's heart in genuine tawakkul. Study its verses and master correct tajweed with expert tutors at NoorPath Academy.</p>
+          </div>
+
+          <p><strong>Surah Al-Waqiah</strong> (سورة الواقعة — "The Inevitable Event") is the 56th chapter of the Quran with 96 verses, revealed in Makkah. It takes its name from its opening word describing the Day of Judgment — the event that will certainly occur. It is one of the most-recited surahs in Muslim homes, famously associated with <strong>rizq (provision) and protection from poverty</strong>.</p>
+
+          <h2 id="facts">What are the key facts about Surah Waqiah at a glance?</h2>
           <table class="np-table">
             <tr><th>Detail</th><th>Answer</th></tr>
             <tr><td>Chapter number</td><td>56</td></tr>
@@ -1065,7 +1176,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <tr><td>Famous for</td><td>Rizq (provision), protection from poverty, vivid description of the Hereafter</td></tr>
           </table>
 
-          <h2 id="themes">What is Surah Waqiah about?</h2>
+          <h2 id="themes">What is Surah Waqiah about and who are the three groups?</h2>
           <p>The surah opens with the moment the Day of Judgment strikes — when the earth is shaken and mountains crumble to scattered dust — and then divides all of humanity into <strong>three groups</strong>:</p>
           <ul>
             <li><strong>As-Sabiqun (The Foremost):</strong> those nearest to Allah, rewarded with the highest gardens.</li>
@@ -1074,7 +1185,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
           <p>The middle of the surah presents four powerful proofs of Allah's power that we witness daily — the creation of man, the seed the farmer sows, the water we drink, and the fire we kindle — each followed by the question: could <em>you</em> create this?</p>
 
-          <h2 id="verses">Key verses with Arabic and English</h2>
+          <h2 id="verses">What are the key verses of Surah Waqiah in Arabic and English?</h2>
           <div class="verse-card">
             <span class="vnum">SURAH AL-WAQIAH · 56:1–3</span>
             <div class="arabic">إِذَا وَقَعَتِ الْوَاقِعَةُ ۝ لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ ۝ خَافِضَةٌ رَّافِعَةٌ</div>
@@ -1088,7 +1199,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p class="trans-en"><strong>English:</strong> Have you seen what you sow? Is it you who make it grow, or are We the Grower?</p>
           </div>
 
-          <h2 id="benefits">Benefits of Surah Waqiah</h2>
+          <h2 id="benefits">What are the authentic benefits of reciting Surah Waqiah?</h2>
           <ul>
             <li><strong>Protection from poverty:</strong> Ibn Mas'ud (رضي الله عنه) narrated that the Prophet ﷺ said: "Whoever recites Surah Al-Waqiah every night will never be afflicted by poverty." (Recorded by al-Bayhaqi in Shu'ab al-Iman; scholars grade its chain as weak, but many — including Ibn Kathir — mention the widespread practice of the righteous acting upon it as encouragement.)</li>
             <li><strong>Certainty about the Hereafter:</strong> its vivid imagery strengthens iman and softens the heart.</li>
@@ -1100,18 +1211,42 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>Honest note on the hadith:</strong> The famous "never afflicted by poverty" narration has a weak chain according to hadith scholars. However, reciting Surah Waqiah remains rewarding like all Quran recitation — every letter carries ten rewards (Tirmidhi 2910) — and its message itself builds the mindset of trusting Allah as Ar-Razzaq (The Provider). Recite it for reward and reflection, and trust Allah for provision.
           </div>
 
-          <h2 id="when">When to recite Surah Waqiah</h2>
+          <h2 id="when">When is the best time to recite Surah Waqiah?</h2>
           <ul>
             <li><strong>Every night</strong> — the practice narrated from the salaf, often after Maghrib or Isha.</li>
             <li>Alongside Surah Mulk before sleeping.</li>
             <li>In times of financial difficulty — combined with Istighfar, which the Quran links to rizq (Surah Nuh 71:10–12), and practical effort.</li>
           </ul>
 
-          <h2 id="learn">Learn to recite Surah Waqiah correctly</h2>
-          <p>Surah Waqiah contains many similar-sounding words where Tajweed matters. If you or your child cannot yet read the Quran fluently, start with <a href="/blog/noorani-qaida-complete-guide">Noorani Qaida</a> — the step-by-step primer that takes you from the alphabet to fluent Quran reading.</p>
+          <h2 id="learn">How can you learn to recite Surah Waqiah with Tajweed?</h2>
+          <p>Surah Waqiah contains many intricate phonetic rules where Tajweed matters. If you or your child cannot yet read the Quran fluently, start with the <a href="/courses/noorani-qaida-online">Noorani Qaida online course</a> at NoorPath Academy — the foundational primer that takes students from Arabic letters to confident Quranic recitation.</p>
 
           <div class="highlight-box">
-            <strong>Want to practise Surah Waqiah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults — from Qaida to continued recitation practice. <a href="/learn-tajweed-online">Start our online Tajweed course</a> · <a href="/online-quran-classes-for-kids">book a free Quran trial for kids</a> · <a href="/online-quran-classes-for-adults">or start adult Quran classes</a>.
+            <strong>Want to practise Surah Waqiah with Tajweed guidance?</strong> NoorPath Academy offers live 1-on-1 Quran classes for kids and adults — from Qaida to advanced memorization and recitation. Explore our <a href="/courses/tajweed-classes-online">online Tajweed classes</a>, enroll in <a href="/hifz-quran-online">online Quran memorization (Hifz)</a>, or request a free 30-minute evaluation today.
+          </div>
+
+          <h2 id="faqs">Frequently asked questions about Surah Waqiah</h2>
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What are the primary benefits of reciting Surah Waqiah?</summary>
+              <p>Reciting Surah Waqiah cultivates strong reliance on Allah as the true Provider, protects the reciter from spiritual and material poverty, and reminds the believer of the Day of Judgment.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>When is the best time to recite Surah Waqiah daily?</summary>
+              <p>The best time to recite Surah Waqiah is every evening or night, particularly after Maghrib or Isha prayer before going to sleep.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Is the hadith about Surah Waqiah preventing poverty authentic?</summary>
+              <p>The hadith attributed to Abdullah ibn Mas'ud has a weak chain of transmission, but scholars permit acting upon it for virtuous deeds alongside general Quranic rewards.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Why is Surah Waqiah called the Surah of Wealth?</summary>
+              <p>It is traditionally called the Surah of Wealth because it focuses the heart on divine provision (rizq) and dismantles the anxiety of material deprivation.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How can I learn to recite Surah Waqiah with proper Tajweed?</summary>
+              <p>You can master the pronunciation of Surah Waqiah through live one-on-one classes at NoorPath Academy under the guidance of certified Quran and Tajweed teachers.</p>
+            </details>
           </div>`,
   },
   "surah-rahman-benefits": {
@@ -2108,10 +2243,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-acc summary span { color: var(--emerald); margin-left: 12px; }
     .faq-acc p { padding: 16px 20px; margin: 0; color: #374151; font-size: .92rem; line-height: 1.75; border-top: 1px solid var(--border); }
     @media (max-width: 576px) { .word-arabic-hero { font-size: 2.1rem; } }`,
-    content: `<p><strong>JazakAllah Khair</strong> (جزاك الله خيرا) is how Muslims say "thank you" — but it means far more than a simple thanks. Instead of thanking someone yourself, you are asking <strong>Allah to reward them with good</strong>, which is the greatest gift you could ever give in return. Kids can learn the meaning and reply of JazakAllah Khair naturally in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> The Jazakallah Khair meaning in English is "May Allah reward you with goodness" (Arabic: جَزَاكَ ٱللَّٰهُ خَيْرًا, transliteration: Jazāk Allāhu Khayran). It serves as the ultimate Islamic expression of gratitude. To reply, say Wa Iyyak to a brother, Wa Iyyaki to a sister, or Wa Iyyakum to a group, meaning "and unto you as well."
+          </div>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>JazakAllah Khair meaning in English</strong> is "May Allah reward you with good." In Arabic it is written <strong>جَزَاكَ اللَّهُ خَيْرًا</strong>. Muslims say it instead of "thank you" — because rather than thanking a person with words, you ask Allah (who can reward infinitely) to reward them. The proper response is "Wa iyyakum" (and you too).
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Jazakallah Khair means "May Allah reward you with goodness" in Arabic supplication.</li>
+              <li>The Sunnah response is Wa Iyyak for males, Wa Iyyaki for females, and Wa Iyyakum for groups.</li>
+              <li>The Prophet ﷺ taught that saying Jazakallahu Khayran offers the highest possible praise to a benefactor.</li>
+              <li>Pronunciation rules adjust endings depending on whether you address a brother, sister, or audience.</li>
+              <li>NoorPath Academy teaches conversational Islamic phrases and Tajweed through live online classes.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Jazakallah Khair (جزاك الله خيرا) translates to "May Allah reward you with goodness" and is the highest form of Islamic gratitude. When someone thanks you with this prayer, respond with Wa Iyyak (male), Wa Iyyaki (female), or Wa Iyyakum (plural). Learn conversational Islamic etiquette and Quranic Arabic with NoorPath Academy's certified tutors.</p>
           </div>
 
           <div class="word-hero">
@@ -2120,7 +2269,41 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div class="word-meaning-hero">"May Allah reward you with good"</div>
           </div>
 
-          <h2>Word-by-Word Meaning</h2>
+          <div class="audio-card">
+            <div style="font-size:2rem;line-height:1;">🎧</div>
+            <div>
+              <strong>Audio &amp; Pronunciation:</strong> Practice saying <em>JazakAllahu Khayran</em> and <em>Wa Iyyakum</em> clearly. To build accurate letter pronunciation from the basics, start with our <a href="/courses/noorani-qaida-online">Noorani Qaida Online Course</a> or practice on our <a href="/noorani-qaida">interactive Noorani Qaida for kids</a> learning hub. You can also explore specialized <a href="/courses/tajweed-classes-online">Tajweed classes online</a> at NoorPath Academy. For broader manners, enroll in our <a href="/courses/islamic-studies-online">Islamic Studies Online course</a> for families in the <a href="/locations/online-quran-classes-usa">USA</a> and globally.
+            </div>
+          </div>
+
+          <div class="pdf-download-card">
+            <div>
+              <h3 style="margin:0 0 6px;color:var(--charcoal);">Free JazakAllah &amp; Islamic Greetings PDF Chart</h3>
+              <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free printable Islamic polite expressions reference sheet with Arabic, transliteration, and exact gender replies.</p>
+            </div>
+            <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+          </div>
+
+          <h2 id="reply-table">How do you reply to Jazakallah Khair in Arabic and English?</h2>
+          <table class="np-table">
+            <thead>
+              <tr><th>Person You Are Replying To</th><th>Arabic Response</th><th>Transliteration</th><th>English Meaning</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>To a Male</td><td>وَإِيَّاكَ</td><td>Wa Iyyak (or Wa Iyyaka)</td><td>And to you as well</td></tr>
+              <tr><td>To a Female</td><td>وَإِيَّاكِ</td><td>Wa Iyyaki</td><td>And to you as well</td></tr>
+              <tr><td>To Two People (Dual)</td><td>وَإِيَّاكُمَا</td><td>Wa Iyyakuma</td><td>And to both of you</td></tr>
+              <tr><td>To a Group / Plural</td><td>وَإِيَّاكُمْ</td><td>Wa Iyyakum</td><td>And to all of you</td></tr>
+              <tr><td>Formal Sunnah Alternative</td><td>وَأَنْتُمْ فَجَزَاكُمُ اللَّهُ خَيْرًا</td><td>Wa antum fa jazakumullahu khairan</td><td>And may Allah reward you with good too</td></tr>
+            </tbody>
+          </table>
+
+          <h2 id="variants">What are the common spelling variants of Jazakallah?</h2>
+          <p>You may see this gratitude dua written in various forms across digital searches: <strong>Jazakallah</strong>, <strong>JazakAllah</strong>, <strong>Jazak Allah</strong>, <strong>Jazakallahu Khairan</strong>, <strong>Jazak Allahu Khair</strong>, and <strong>JazakiAllah</strong> (feminine). The most complete and grammatically sunnah form is <em>JazakAllahu Khairan</em>.</p>
+
+          <p><strong>JazakAllah Khair</strong> (جزاك الله خيرا) is how Muslims say "thank you" — but it means far more than a simple thanks. Instead of thanking someone yourself, you are asking <strong>Allah to reward them with good</strong>, which is the greatest gift you could ever give in return.</p>
+
+          <h2>What is the word-by-word meaning of Jazakallahu Khair?</h2>
           <ul>
             <li><strong>Jazak (جزاك)</strong> — "may He reward you"</li>
             <li><strong>Allahu (الله)</strong> — "Allah"</li>
@@ -2156,10 +2339,10 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             </table>
           </div>
 
-          <h2>Why Say JazakAllah Khair Instead of Thank You?</h2>
+          <h2>Why should Muslims say JazakAllah Khair instead of thank you?</h2>
           <p>The Prophet ﷺ said: <em>"Whoever has a good done to him and says to the doer 'JazakAllahu khairan' has done the utmost in praising him."</em> (Sunan at-Tirmidhi 2035). In other words, when you cannot repay someone's kindness, you hand the reward over to Allah — who rewards without limit. It is the most generous form of gratitude in Islam.</p>
 
-          <h2>How to Respond to JazakAllah Khair (Sunnah Reply Chart)</h2>
+          <h2>What is the Sunnah reply chart for responding to JazakAllah Khair?</h2>
           <p>The Prophet ﷺ encouraged returning prayers when someone makes dua for you. Here is the exact response depending on who you are speaking to:</p>
           <div style="overflow-x:auto;margin:20px 0;">
             <table class="np-table" style="width:100%;border-collapse:collapse;">
@@ -2204,11 +2387,11 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>Common spelling variations:</strong> JazakAllah, Jazak Allah, JazakAllahu Khairan, Jazakumullah Khair — these are all transliterations of the same Arabic phrase. "JazakAllahu Khairan" is the most complete and grammatically correct form.
           </div>
 
-          <h2>Frequently Asked Questions</h2>
-          <details class="faq-acc"><summary>What does JazakAllah Khair mean? <span>+</span></summary><p>JazakAllah Khair (جزاك الله خيرا) means "May Allah reward you with good." It is the Islamic way of saying thank you — instead of thanking a person directly, you ask Allah to reward them, which is the greatest form of gratitude since Allah rewards without limit.</p></details>
-          <details class="faq-acc"><summary>How do you respond to JazakAllah Khair? <span>+</span></summary><p>The most common response is "Wa iyyakum" (and you too). You can also say "Wa antum fa jazakumullahu khairan" (and may Allah reward you with good too) or "Barakallahu feek" (may Allah bless you). All acknowledge the dua and return the good wish.</p></details>
-          <details class="faq-acc"><summary>Is it JazakAllah or JazakAllahu Khairan? <span>+</span></summary><p>"JazakAllahu Khairan" is the complete and grammatically correct form, meaning "may Allah reward you with good." "JazakAllah" alone is a shortened everyday version. Both are widely used and understood. The word changes by gender: JazakAllah (male), JazakiAllah (female), JazakumAllah (group).</p></details>
-          <details class="faq-acc"><summary>Why do Muslims say JazakAllah instead of shukran? <span>+</span></summary><p>Shukran simply means "thank you." JazakAllah Khair goes further — it is a dua (supplication) asking Allah to reward the person with good. The Prophet ﷺ said whoever says JazakAllahu khairan to someone who helped them "has done the utmost in praising him" (Tirmidhi 2035), making it the superior expression of gratitude.</p></details>
+          <h2>Frequently asked questions about Jazakallah Khair</h2>
+          <details class="faq-acc"><summary>What does JazakAllah Khair mean?</summary><p>JazakAllah Khair (جزاك الله خيرا) means "May Allah reward you with good." It is the Islamic way of saying thank you — instead of thanking a person directly, you ask Allah to reward them, which is the greatest form of gratitude since Allah rewards without limit.</p></details>
+          <details class="faq-acc"><summary>How do you respond to JazakAllah Khair?</summary><p>The most common response is "Wa iyyakum" (and you too). You can also say "Wa antum fa jazakumullahu khairan" (and may Allah reward you with good too) or "Barakallahu feek" (may Allah bless you). All acknowledge the dua and return the good wish.</p></details>
+          <details class="faq-acc"><summary>Is it JazakAllah or JazakAllahu Khairan?</summary><p>"JazakAllahu Khairan" is the complete and grammatically correct form, meaning "may Allah reward you with good." "JazakAllah" alone is a shortened everyday version. Both are widely used and understood. The word changes by gender: JazakAllah (male), JazakiAllah (female), JazakumAllah (group).</p></details>
+          <details class="faq-acc"><summary>Why do Muslims say JazakAllah instead of shukran?</summary><p>Shukran simply means "thank you." JazakAllah Khair goes further — it is a dua (supplication) asking Allah to reward the person with good. The Prophet ﷺ said whoever says JazakAllahu khairan to someone who helped them "has done the utmost in praising him" (Tirmidhi 2035), making it the superior expression of gratitude.</p></details>
 
           <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
             <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Quran &amp; Arabic Tuition</div>
@@ -2381,8 +2564,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>Islam does not dismiss your anxiety. The Prophet Muhammad ﷺ — the most beloved of all creation — experienced worry, grief and distress, and Allah gave him specific words to say in those moments. These are not vague affirmations. They are <strong>authentic duas for anxiety, stress and depression</strong>, taken directly from the Quran and Sahih Hadith, that millions of Muslims have turned to for over 1,400 years.</p>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> The most powerful and comprehensive <strong>dua for anxiety</strong> is the one the Prophet ﷺ taught: <em>"Allahumma inni a'udhu bika minal-hammi wal-hazan"</em> — "O Allah, I seek refuge in You from anxiety and grief." (Sahih al-Bukhari 6369). Below are <strong>15 authentic duas</strong> for worry, sadness, overthinking, fear and a broken heart — each with Arabic, transliteration, English meaning, source, and exactly when to recite it.
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> The most powerful dua for anxiety, stress, and depression is: اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ (Allahumma inni a'udhu bika minal-hammi wal-hazan) — "O Allah, I seek refuge in You from anxiety and grief" (Sahih al-Bukhari 6369). Reciting this prophetic prayer morning and evening safeguards the mind from future worries and past sorrow.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>The Prophet ﷺ taught "Allahumma inni a'udhu bika minal-hammi wal-hazan" for anxiety and grief.</li>
+              <li>"Hasbunallahu wa ni'mal-wakil" and Yunus's dua provide immediate tranquility during overwhelming panic attacks.</li>
+              <li>Combining morning and evening adhkar rewires the mind with unwavering tawakkul in Allah's decree.</li>
+              <li>Seeking medical care for chronic depression is a Sunnah practice compatible with sincere supplication.</li>
+              <li>NoorPath Academy connects students with compassionate tutors to learn Quran recitation for spiritual peace.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Islam offers comprehensive spiritual remedies for mental distress, led by the Bukhari supplication against worry (hamm) and grief (hazan). Consistently reciting Sunnah duas morning and evening shifts emotional burdens to Allah while grounding your thoughts. Connect with NoorPath Academy's certified instructors to recite the Quran with peaceful Tajweed and build lasting tranquility.</p>
           </div>
 
           <div class="toc-box">
@@ -2402,7 +2601,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== THE COMPREHENSIVE DUA =================== -->
-          <h2 id="comprehensive">The Most Powerful Dua for Anxiety &amp; Grief</h2>
+          <h2 id="comprehensive">What is the most powerful dua for anxiety and grief?</h2>
 
           <p>When the Prophet ﷺ found a companion (Abu Umamah) sitting in the mosque overwhelmed by worry and debt, he did not just comfort him — he taught him a dua to say <strong>morning and evening</strong>. Abu Umamah later said: <em>"I said it, and Allah removed my worry and paid off my debt."</em> This single dua names eight burdens of the heart in four pairs, and asks Allah for refuge from all of them.</p>
 
@@ -2423,7 +2622,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== WORRY & ANXIETY =================== -->
-          <h2 id="worry">Duas for Worry &amp; Overthinking</h2>
+          <h2 id="worry">Which authentic duas calm worry and overthinking?</h2>
 
           <p>When the mind races and you cannot stop thinking about everything that could go wrong, these short, memorable duas re-anchor the heart in tawakkul (reliance on Allah).</p>
 
@@ -2454,7 +2653,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== GRIEF & SADNESS =================== -->
-          <h2 id="grief">Duas for Grief, Sadness &amp; Depression</h2>
+          <h2 id="grief">Which Islamic duas relieve grief, sadness, and depression?</h2>
 
           <p>For the heavy, settled sadness that does not lift — the kind that feels like depression — the Prophet ﷺ gave one of the most beautiful and complete supplications ever spoken. He said whoever says it, <em>"Allah will remove their sorrow and replace their grief with joy."</em></p>
 
@@ -2485,7 +2684,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Yunus (peace be upon him) said this in the darkness of the whale's belly — trapped, alone, and in despair. The Prophet ﷺ said: <em>"No Muslim ever supplicates with these words for anything but Allah answers him."</em> (Tirmidhi). When your situation feels like a dark place you cannot escape, this is the dua.</p>
 
           <!-- =================== SEVERE DISTRESS =================== -->
-          <h2 id="distress">Duas for Severe Distress &amp; Panic</h2>
+          <h2 id="distress">Which duas should you recite during severe distress and panic?</h2>
 
           <div class="dua-card">
             <div class="dua-title"><span class="dua-num">6</span> The Dua for Moments of Distress</div>
@@ -2512,7 +2711,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== BROKEN HEART =================== -->
-          <h2 id="heart">Duas for a Broken Heart</h2>
+          <h2 id="heart">What dua heals a broken heart and emotional distress?</h2>
 
           <p>Whether it is heartbreak, loss, or a betrayal you did not deserve, these words ask Allah — the only One who fully understands your heart — to mend what is broken and replace it with something better.</p>
 
@@ -2541,7 +2740,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== SLEEP =================== -->
-          <h2 id="sleep">Duas for Sleep &amp; Night-time Anxiety</h2>
+          <h2 id="sleep">Which duas alleviate sleep troubles and night-time anxiety?</h2>
 
           <p>Anxiety often strikes hardest at night, when the world goes quiet and the mind gets loud. The Prophet ﷺ gave us a protective routine before sleep — reciting <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the last three Surahs (the Quls) — and this dua to place your heart in Allah's care.</p>
 
@@ -2570,7 +2769,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== HARDSHIP & RELIEF =================== -->
-          <h2 id="relief">Duas for Hardship &amp; Ease</h2>
+          <h2 id="relief">Which Quranic duas bring ease during difficult hardships?</h2>
 
           <div class="dua-card">
             <div class="dua-title"><span class="dua-num">12</span> Turning Hardship into Ease</div>
@@ -2623,7 +2822,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>The Prophet ﷺ called this phrase <em>"a treasure from the treasures of Paradise."</em> It is the easiest to memorise and the most calming to repeat — a single sentence that hands the entire weight of your worry back to the One who can actually carry it.</p>
 
           <!-- =================== WHY DHIKR WORKS =================== -->
-          <h2 id="why">Why Dhikr Genuinely Calms the Heart</h2>
+          <h2 id="why">Why does daily dhikr genuinely calm an anxious heart?</h2>
 
           <p>These are not just words we say out of habit. Allah tells us directly that remembrance is designed to settle the human heart:</p>
 
@@ -2636,7 +2835,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Anxiety often grows from a feeling of being <strong>out of control</strong> — carrying a future you cannot predict and a past you cannot change. Dhikr works because it moves that weight from your shoulders to Allah's decree. When you say "Hasbunallah" (Allah is enough for me), you are not denying the problem — you are correctly naming who is actually in charge of the outcome. That shift, repeated daily, rewires how the heart responds to fear.</p>
 
           <!-- =================== ROUTINE =================== -->
-          <h2 id="routine">A Simple Daily Anxiety-Relief Routine</h2>
+          <h2 id="routine">How do you practice a simple daily anxiety-relief routine?</h2>
 
           <p>Duas work best as a consistent habit, not just an emergency button. Here is a realistic routine built entirely from the Sunnah — it takes under 10 minutes a day.</p>
 
@@ -2668,7 +2867,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== SEEK HELP =================== -->
-          <h2 id="help">When to Also Seek Help</h2>
+          <h2 id="help">When should Muslims seek professional mental health support?</h2>
 
           <div class="care-box">
             <p style="margin:0;"><strong>Important:</strong> Duas and professional care are not opposites — seeking treatment is itself from the Sunnah. The Prophet ﷺ said: <em>"Allah has not sent down a disease except that He has also sent down its cure."</em> (al-Bukhari 5678). If your anxiety or depression is persistent, overwhelming, or affecting your daily life, please speak to a doctor or a qualified mental-health professional alongside your duas. Seeking help is a sign of strength and trust in Allah's wisdom — not a lack of faith.</p>
@@ -2676,7 +2875,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== FAQ =================== -->
           <p>Many adults combine dua practice with steady Quran lessons for calm routine — start with <a href="/online-quran-classes-for-adults">adult Quran classes</a> if you want live guidance.</p>
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="faqs">Frequently asked questions about dua for anxiety, stress, and depression</h2>
 
           <details class="faq-acc">
             <summary>What is the most powerful dua for anxiety? <span>+</span></summary>
@@ -2710,7 +2909,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <!-- =================== CTA =================== -->
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Find Peace Through a Deeper Connection with the Quran</h3>
-            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">The Quran is described as a healing for what is in the hearts (10:57). Learning to read and understand it — even a few minutes a day — is one of the most powerful long-term remedies for a restless heart. Start with a free 30-minute trial with a certified tutor.</p>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">The Quran is described as a healing for what is in the hearts (10:57). Learning to recite and understand it with presence is one of the most powerful long-term remedies for a restless heart. NoorPath Academy offers structured 1-on-1 classes in <a href="/courses/noorani-qaida-online" style="color:var(--gold);text-decoration:underline;font-weight:700;">Noorani Qaida online</a>, <a href="/courses/tajweed-classes-online" style="color:var(--gold);text-decoration:underline;font-weight:700;">Tajweed classes online</a>, and adult recitation. Start with a free 30-minute trial with a certified tutor.</p>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
               <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
               <a href="/online-quran-for-beginners" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Quran for Beginners</a>
@@ -2770,13 +2969,29 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>The Prophet Muhammad ﷺ said: <strong>"Allah has ninety-nine names, one hundred less one. Whoever memorizes them will enter Paradise."</strong> (Bukhari & Muslim)</p>
 
-          <div class="highlight-box">
-            <strong>Quick answer for searchers:</strong> The 99 Names of Allah are called <strong>Asmaul Husna</strong>, meaning "The Most Beautiful Names." They describe Allah's perfect attributes, including His mercy, knowledge, power, forgiveness, protection, and guidance. Below you will find the complete <strong>99 Names of Allah with Arabic text, transliteration, English meaning, benefits, and memorization tips</strong>.
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> The 99 Names of Allah, known as Asmaul Husna (الأسماء الحسنى — The Most Beautiful Names), describe the sublime divine attributes of Allah in Islam. Prophet Muhammad ﷺ stated that whoever memorizes, comprehends, and lives by these ninety-nine names will enter Paradise (Sahih al-Bukhari 2736). They guide believers in daily supplication and worship.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Asmaul Husna refers to the 99 Most Beautiful Names describing Allah's divine perfections.</li>
+              <li>Authentic hadith in Bukhari guarantees Paradise for whoever memorizes, understands, and acts upon them.</li>
+              <li>Starting with Ar-Rahman and Ar-Raheem instills love and awe in daily prayers and personal supplications.</li>
+              <li>Grouping names into thematic categories like Mercy, Majesty, and Knowledge accelerates effective memorization.</li>
+              <li>NoorPath Academy integrates Asmaul Husna study into online Quran and Islamic Studies curricula for families.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>The 99 Names of Allah (Asmaul Husna) encapsulate the Creator's supreme attributes, from all-encompassing mercy (Ar-Rahman) to absolute sovereignty (Al-Malik). Reciting and meditating upon these 99 names deepens personal spirituality and grants admission into Paradise as promised in authentic hadith. Join NoorPath Academy's interactive courses to master Arabic pronunciation and memorize the divine names systematically.</p>
           </div>
 
           <!-- Quick Reference Table -->
           <div style="background:var(--ivory);border:1px solid var(--border);border-radius:14px;padding:24px;margin:28px 0;">
-            <h2 style="font-size:1.2rem;margin:0 0 16px;color:var(--charcoal);">Quick Reference: 10 Most Important Names of Allah</h2>
+            <h2 style="font-size:1.2rem;margin:0 0 16px;color:var(--charcoal);">What is the quick reference for the 10 most important names of Allah?</h2>
             <div style="overflow-x:auto;">
               <table style="width:100%;border-collapse:collapse;font-size:.92rem;">
                 <thead>
@@ -3652,7 +3867,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             The Quran says: <em>"And to Allah belong the best names, so invoke Him by them."</em> (7:180). When making dua, call upon Allah by the name most relevant to your need: call upon Ar-Razzaq for provision, Al-Shafi for healing, Al-Ghafur for forgiveness, Al-Mujib for answered prayers.
           </div>
 
-          <h2>How to Memorize the 99 Names of Allah</h2>
+          <h2>How can you easily memorize the 99 Names of Allah?</h2>
           <ul>
             <li><strong>Learn 3–5 names at a time</strong> with their meanings before moving to the next set</li>
             <li><strong>Recite them in your morning and evening dhikr</strong> — make it a daily habit</li>
@@ -3662,55 +3877,41 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Listen to nasheed</strong> with the 99 names — music and rhythm aid memory significantly</li>
           </ul>
 
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="faqs">Frequently asked questions about the 99 Names of Allah</h2>
 
-          <div class="faq-item">
-            <div class="faq-q"><span>What does Asmaul Husna mean?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Asmaul Husna (الأسماء الحسنى) means "The Most Beautiful Names" in Arabic. It refers to the 99 divine names of Allah mentioned in the Quran and Sunnah. The word "husna" means beautiful, good, and excellent — reflecting that Allah's names are the most perfect and beautiful possible.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>What is the hadith about the 99 Names?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The Prophet Muhammad ﷺ said: "Inna lillahi tis'atan wa tis'eena isma, mi'atan illaa wahida, man ahsaha dakhala al-Jannah." — "Allah has ninety-nine names, one hundred less one. Whoever memorizes [and acts upon] them will enter Paradise." (Sahih Bukhari 2736, Sahih Muslim 2677)</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>What does "ahsaha" mean in the hadith?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Scholars explain "ahsaha" (memorizes/enumerates) to include: (1) memorizing the names accurately, (2) understanding their meanings, (3) reflecting on them deeply, and (4) worshipping Allah according to what each name implies — for example, being grateful because He is Ash-Shakur, and seeking forgiveness because He is Al-Ghafur.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>Which of the 99 Names appears most in the Quran?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The name "Allah" appears over 2,600 times in the Quran. Among the attributes, Ar-Rahman and Ar-Raheem are mentioned most frequently — they open every surah of the Quran in Bismillah except Surah At-Tawbah. Al-Alim (the All-Knowing) and Al-Hakim (the All-Wise) are among the most frequently paired names.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>Which name of Allah is for mercy?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The primary names of Allah for mercy are Ar-Rahman (الرَّحْمَنُ) — The Most Gracious — and Ar-Raheem (الرَّحِيمُ) — The Most Merciful. Ar-Rahman describes Allah's mercy that covers all of creation in this world, while Ar-Raheem refers to the special mercy reserved for believers in the Hereafter. Other mercy-related names include Al-Barr (The Source of All Good), Al-Latif (The Gentle), and Ar-Ra'uf (The Most Compassionate).</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>Are there really 99 or 100 names of Allah?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The hadith says "ninety-nine names, one hundred less one." This means there are exactly 99 names. Some searches use "100 names of Allah" but the authentic hadith (Bukhari 2736, Muslim 2677) confirms 99. Scholars note that Allah has other names not mentioned in this list — but this specific set of 99 names carries the special reward mentioned in the hadith for memorizing and acting upon them.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>What is the meaning of Asma ul Husna in English?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Asma ul Husna (الأسماء الحسنى) translates to "The Most Beautiful Names" in English. "Asma" means names, "ul" means "of the", and "Husna" means beautiful, excellent, or best. The phrase comes directly from the Quran (7:180): "And to Allah belong al-Asmaul Husna, so invoke Him by them." Every name of Allah reflects a perfect divine attribute.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>How do you teach 99 names of Allah to children?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">One way to teach Asmaul Husna to children is to start with familiar names such as Allah, Ar-Rahman and Ar-Raheem; explain simple English meanings; connect names to reliable stories; and use age-appropriate repetition. Islamic Studies lessons may also include selected names as part of an agreed curriculum. <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Learn more about online Quran and Islamic Studies classes for kids →</a></div>
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What does Asmaul Husna mean in English?</summary>
+              <p>Asmaul Husna (الأسماء الحسنى) translates to "The Most Beautiful Names" in Arabic, referring to the 99 divine attributes of Allah documented in the Quran and Sunnah.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What is the authentic hadith about the 99 Names of Allah?</summary>
+              <p>Prophet Muhammad ﷺ declared: "Allah has ninety-nine names, one hundred minus one; whoever preserves and acts upon them will enter Paradise" (Sahih al-Bukhari 2736, Sahih Muslim 2677).</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What does the term "ahsaha" signify in the hadith?</summary>
+              <p>Scholars interpret "ahsaha" as memorizing the names, understanding their deeper theological meanings, and actively implementing their moral virtues in daily worship and conduct.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Which name of Allah is mentioned most frequently in the Quran?</summary>
+              <p>The proper name "Allah" appears over 2,600 times in the Quran, followed by Ar-Rahman (The Most Compassionate) and Ar-Raheem (The Especially Merciful).</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Are there strictly 99 names of Allah or more?</summary>
+              <p>Allah possesses infinite divine attributes known only to Him, but this specific set of 99 names carries the prophetic promise of entry into Paradise.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How can parents help children memorize the 99 Names?</summary>
+              <p>Parents can introduce names in themed clusters, connect meanings to bedtime stories, and enroll students in guided online classes at NoorPath Academy.</p>
+            </details>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Learn Islamic Studies & Quran at NoorPath Academy</strong><br>
-            NoorPath offers online lessons that may cover Asmaul Husna, Quran recitation, Tajweed, daily duas and Islamic Studies for children or adults, depending on the selected course.<br><br>
+            <strong>Learn Asmaul Husna, Tajweed &amp; Quran at NoorPath Academy</strong><br>
+            NoorPath Academy matches students of all ages with certified native tutors for 1-on-1 personalized lessons. Build strong Quranic foundations in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, refine your pronunciation with <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">Tajweed classes online</a>, or explore our comprehensive <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">Islamic Studies classes</a>.<br><br>
             <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp;
-            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a> &nbsp;|&nbsp;
             <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
-            <a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);font-weight:700;">40+ duas for kids →</a>
+            <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Online Hifz program →</a>
           </div>
 
           <div style="background:var(--ivory);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin:28px 0;">
@@ -3791,7 +3992,27 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
       .word-break-grid { grid-template-columns: repeat(2, 1fr); }
       .four-dhikr { grid-template-columns: 1fr; }
     }`,
-    content: `<p><strong>Alhamdulillah</strong> (الحمد لله) is one of the most important and most spoken phrases in Islam. A Muslim says it dozens of times a day — after sneezing, after eating, after prayer, when asked how they are, and at every moment of gratitude. But what does it actually mean, and why is it so powerful? If you want your child to learn these phrases as part of daily Islamic life, explore our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> The Alhamdulillah meaning in English translates directly to "All praise and gratitude belong to Allah" (Arabic: الْحَمْدُ لِلَّهِ, transliteration: Al-ḥamdu lillāh). Muslims say it across daily life to acknowledge divine blessings, cultivate contentment, and fulfill the prophetic Sunnah after eating, sneezing, waking, and completing prayers.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Alhamdulillah means "All praise and gratitude belong to Allah" in Islamic terminology.</li>
+              <li>The Prophet ﷺ taught that saying Alhamdulillah fills the believer's scale of good deeds completely.</li>
+              <li>Uttered after eating, waking up, sneezing, and thirty-three times after obligatory Salah.</li>
+              <li>Opens Surah Al-Fatiha, anchoring the central message of praise across every rakat of prayer.</li>
+              <li>NoorPath Academy teaches conversational Islamic phrases and Quran recitation through personalized online tutoring.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Alhamdulillah (الحمد لله) is the foundational Islamic phrase expressing profound gratitude and declaring that all perfection belongs to Allah alone. It serves as a spiritual compass across moments of joy, trials, and daily routines like sneezing or finishing a meal. Discover how to pronounce and live Quranic supplications with NoorPath Academy's accredited Quran instructors.</p>
+          </div>
+
+          <p><strong>Alhamdulillah</strong> (الحمد لله) is one of the most important and most spoken phrases in Islam. A Muslim says it dozens of times a day — after sneezing, after eating, after prayer, when asked how they are, and at every moment of gratitude. But what does it actually mean, and why is it so powerful? If you want your child to learn these phrases as part of daily Islamic life, explore our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="word-hero">
             <div class="word-arabic-hero">الحَمْدُ لِلَّهِ</div>
@@ -3800,7 +4021,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== MEANING BREAKDOWN =================== -->
-          <h2>What Does Alhamdulillah Mean? (Word by Word)</h2>
+          <h2>What does Alhamdulillah mean in English word by word?</h2>
           <p>The phrase consists of three Arabic components, each with a profound meaning:</p>
 
           <div class="word-break-grid">
@@ -3829,7 +4050,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>When you say Alhamdulillah, you are declaring: <em>"Every single form of praise, gratitude, and glorification that exists — all of it belongs exclusively to Allah, not to any created thing."</em></p>
 
           <!-- =================== IN THE QURAN =================== -->
-          <h2>Alhamdulillah in the Quran</h2>
+          <h2>Where does Alhamdulillah appear in the Holy Quran?</h2>
           <p>The Quran opens with Alhamdulillah and it appears throughout in key places, showing its supreme importance:</p>
 
           <div class="quran-ref">
@@ -3857,7 +4078,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== HADITH BENEFITS =================== -->
-          <h2>The Incredible Reward of Saying Alhamdulillah</h2>
+          <h2>What is the incredible reward of saying Alhamdulillah?</h2>
 
           <div class="gold-box">
             <strong>⚖️ Hadith 1 — It Fills the Scale of Deeds:</strong><br>
@@ -3880,7 +4101,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== WHEN TO SAY =================== -->
-          <h2>When to Say Alhamdulillah — Complete Guide</h2>
+          <h2>When should Muslims say Alhamdulillah in daily life?</h2>
 
           <div class="when-grid">
             <div class="when-card">
@@ -3926,7 +4147,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== SNEEZE PROTOCOL =================== -->
-          <h2>The Complete Sunnah of Sneezing</h2>
+          <h2>What is the complete Sunnah reply when someone sneezes?</h2>
           <p>One of the most common occasions for Alhamdulillah is after sneezing. Here is the complete Sunnah exchange:</p>
 
           <div class="highlight-box" style="margin-bottom:14px;">
@@ -3950,7 +4171,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p style="font-size:.9rem;color:var(--muted);">Source: Sahih Bukhari 6224 — This is a complete Sunnah exchange that earns reward for all three parties.</p>
 
           <!-- =================== 4 DHIKR =================== -->
-          <h2>The Four Great Words of Dhikr</h2>
+          <h2>Why is Alhamdulillah one of the four greatest words of dhikr?</h2>
           <p>Alhamdulillah is one of the four most beloved words to Allah. Learn all four:</p>
 
           <div class="four-dhikr">
@@ -3981,7 +4202,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== TEACHING KIDS =================== -->
-          <h2>Teaching Children to Say Alhamdulillah</h2>
+          <h2>How can parents teach children to say Alhamdulillah?</h2>
           <p>Alhamdulillah is one of the first Islamic phrases a child should learn — even before formal Quran lessons begin. Families who want guided practice can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a>, then <a href="/pricing" style="color:var(--emerald);font-weight:600;">see our simple pricing plans</a> if they continue. Here's how to teach it naturally:</p>
           <ul>
             <li><strong>Model it constantly:</strong> Say Alhamdulillah out loud in front of your children — after eating, when something good happens, after sneezing.</li>
@@ -3993,31 +4214,33 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== FAQ =================== -->
           <p>Want to strengthen Quran reading alongside daily dhikr? Explore <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="faqs">Frequently asked questions about Alhamdulillah</h2>
 
-          <div class="faq-item">
-            <div class="faq-q"><span>What does Alhamdulillah mean in English?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Alhamdulillah (الحمد لله) means "All praise and thanks belong to Allah" in English. The phrase combines hamd (praise + gratitude + glorification) with lillah (belonging to Allah alone). It is one of the most comprehensive expressions of gratitude and worship in any language — it acknowledges that every blessing comes solely from Allah.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>Is there a difference between Alhamdulillah and Alhamdulillah Rabb il Alameen?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">"Alhamdulillah Rabb il Alameen" (الحمد لله رب العالمين) is the extended form from Surah Al-Fatiha, meaning "All praise to Allah, Lord of all the worlds." Adding "Rabb il Alameen" specifies that Allah is the Lord and Sustainer of everything in existence — every world, every dimension, every being. The shorter "Alhamdulillah" is used more broadly in daily conversation.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>Can non-Muslims say Alhamdulillah?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Any person can say Alhamdulillah — the words themselves are Arabic and can be spoken by anyone. However, the spiritual reward and the deeper meaning of praising Allah are matters of faith. When a Muslim says Alhamdulillah, it is an act of worship (ibadah) that carries immense reward from Allah.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>How do you respond when someone says Alhamdulillah?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">After a sneeze: respond with "Yarhamukallah" (may Allah have mercy on you). In general conversation, there is no required response — you may simply acknowledge or say it yourself. If someone says Alhamdulillah after good news, you can respond with "MashaAllah" or add your own Alhamdulillah in agreement.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>How many times should you say Alhamdulillah?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">There is no maximum — say it as often as you wish. Specific Sunnah occasions include: 33 times after each prayer (as post-salah dhikr), once after sneezing, and whenever you experience a blessing or gratitude. The Prophet ﷺ said it fills the entire scale of deeds — so saying it abundantly is always encouraged.</div>
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What does Alhamdulillah mean in English?</summary>
+              <p>Alhamdulillah (الحمد لله) means "All praise and thanks belong to Allah" in English, recognizing that every single blessing emanates exclusively from the Creator.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Is there a difference between Alhamdulillah and Alhamdulillah Rabb il Alameen?</summary>
+              <p>"Alhamdulillah Rabb il Alameen" is the extended Quranic formulation from Surah Al-Fatiha, specifying that praise belongs to Allah as Lord of all created worlds.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Can non-Muslims say Alhamdulillah?</summary>
+              <p>Anyone may utter the linguistic phrase, but in Islam it carries sacred spiritual reward as an intentional act of devotion (ibadah) to Allah.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How do you respond when someone says Alhamdulillah?</summary>
+              <p>If someone sneezes and says Alhamdulillah, reply with "Yarhamukallah" (may Allah have mercy on you); in general good news, answer with "MashaAllah" or "Alhamdulillah."</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How many times should Muslims recite Alhamdulillah daily?</summary>
+              <p>The prophetic Sunnah encourages reciting Alhamdulillah 33 times after each of the five daily prayers, after eating, after waking, and continually throughout the day.</p>
+            </details>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Teach your children the language of gratitude from day one.</strong> At NoorPath Academy, we teach Alhamdulillah, Islamic phrases, Quran, and Salah — building a complete Islamic foundation. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp; <a href="/pricing" style="color:var(--emerald);font-weight:700;">See pricing plans →</a>
+            <strong>Teach your children the language of gratitude from day one.</strong> At NoorPath Academy, our certified tutors teach Alhamdulillah, daily Sunnah duas, and Quran recitation with Tajweed. Build a complete foundation with our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a> or <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp; <a href="/pricing" style="color:var(--emerald);font-weight:700;">See pricing plans →</a>
           </div>
         </div>
 
@@ -4100,8 +4323,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     }`,
     content: `<p><strong>Astaghfirullah</strong> (أستغفر الله) — "I seek forgiveness from Allah" — is one of the most powerful and important phrases in Islam. The Prophet Muhammad ﷺ, despite being the most beloved creation of Allah and free of major sin, would say it a <strong>minimum of 70–100 times every single day</strong>. This tells us everything about how important istighfar (seeking forgiveness) should be in our lives. For children learning to build a daily dhikr habit, live <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> can help with pronunciation and meaning.</p>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Astaghfirullah meaning in English</strong> is "I seek forgiveness from Allah." In Arabic it is written <strong>أَسْتَغْفِرُ اللَّهَ</strong>. Muslims say Astaghfirullah after mistakes, after every Salah, during stress, and as daily dhikr to ask Allah to forgive, cover, and remove sins.
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> The Astaghfirullah meaning in English translates to "I seek forgiveness from Allah" (Arabic: أَسْتَغْفِرُ اللَّهَ, transliteration: Astaghfiru-llāh). Derived from the Arabic root "ghafara" meaning to cover and protect, Muslims recite this foundational supplication daily to erase minor sins, relieve emotional anxiety, and attain divine mercy and provision.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Astaghfirullah translates directly to "I seek forgiveness from Allah" in Arabic supplication.</li>
+              <li>Prophet Muhammad ﷺ recited istighfar at least 70 to 100 times every day.</li>
+              <li>Quran Surah Nuh links regular istighfar to abundant rain, increased wealth, and children.</li>
+              <li>Recited three times immediately following every obligatory prayer as part of prophetic Sunnah.</li>
+              <li>NoorPath Academy coaches students in correct Arabic pronunciation and daily Sunnah adhkar.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Astaghfirullah (أستغفر الله) is the essential Islamic prayer for seeking divine pardon, removing emotional guilt, and welcoming barakah into one's life. The Prophet ﷺ modeled making istighfar up to 100 times daily as a means of constant spiritual purification. Learn to pronounce and integrate authentic prophetic prayers with personalized guidance from NoorPath Academy tutors.</p>
           </div>
 
           <div class="word-hero">
@@ -4111,7 +4350,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== BREAKDOWN =================== -->
-          <h2>Astaghfirullah — Word by Word Breakdown</h2>
+          <h2>What is the word-by-word breakdown of Astaghfirullah?</h2>
 
           <div class="break-grid">
             <div class="break-card">
@@ -4136,7 +4375,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== FORMS OF ISTIGHFAR =================== -->
-          <h2>All Forms of Astaghfirullah (Istighfar)</h2>
+          <h2>What are the different forms of Astaghfirullah and Istighfar?</h2>
 
           <div class="form-card">
             <span class="form-badge">Shortest Form</span>
@@ -4171,7 +4410,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== IN THE QURAN =================== -->
-          <h2>Astaghfirullah in the Quran</h2>
+          <h2>Where is Astaghfirullah mentioned in the Quran?</h2>
           <p>Allah commands istighfar in the Quran repeatedly, and promises extraordinary rewards for those who do it. Parents who want children to learn istighfar, duas, and Quran with a live tutor can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a> before committing to a plan:</p>
 
           <div class="quran-ref">
@@ -4199,7 +4438,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== HADITH BENEFITS =================== -->
-          <h2>7 Incredible Benefits of Astaghfirullah (from Authentic Hadith)</h2>
+          <h2>What are the 7 incredible benefits of Astaghfirullah from authentic Hadith?</h2>
 
           <div class="benefit-row">
             <div class="benefit-icon-box"><i class="fas fa-door-open"></i></div>
@@ -4237,7 +4476,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== WHEN TO SAY =================== -->
-          <h2>When to Say Astaghfirullah</h2>
+          <h2>When should Muslims recite Astaghfirullah?</h2>
           <ul>
             <li><strong>After every Salah:</strong> 3 times minimum, then move to other adhkar</li>
             <li><strong>70–100 times daily:</strong> The Prophetic practice — use a tasbih (prayer beads) or count on fingers</li>
@@ -4256,26 +4495,33 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== FAQ =================== -->
           <p>Adults building a daily istighfar habit often pair it with live recitation practice — <a href="/online-quran-classes-for-adults">online Quran classes for adults</a> can help if you want tutor feedback on Quran reading too.</p>
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq-item">
-            <div class="faq-q"><span>What does Astaghfirullah mean in English?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Astaghfirullah (أستغفر الله) means "I seek forgiveness from Allah." It is derived from the root "ghafara" (to forgive/cover). When said sincerely, it is an act of worship called Istighfar — seeking Allah's forgiveness for sins, shortcomings, and imperfections. It is one of the most powerful acts of worship in Islam.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>Is Astaghfirullah only for after committing sins?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">No — the Prophet ﷺ would say Astaghfirullah 70-100 times daily even though he had no major sins. It is for: expiation of sins, gratitude for Allah's mercy, cleaning the heart, staying close to Allah, and following the Prophetic Sunnah. It should be a constant habit, not just a reaction to wrongdoing.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>What is the meaning of Astaghfirullah in Urdu/Hindi?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">In Urdu and Hindi, Astaghfirullah means "Main Allah se maafi mangta/mangti hoon" (میں اللہ سے معافی مانگتا/مانگتی ہوں) — "I seek forgiveness from Allah." It is used in South Asian Muslim culture both as a religious dhikr and sometimes colloquially to express surprise or disapproval.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>What is Sayyid al-Istighfar?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Sayyid al-Istighfar (سيد الاستغفار) means the "Master of Seeking Forgiveness" — it is the most comprehensive form of istighfar, beginning with "Allahumma anta Rabbee..." The Prophet ﷺ said whoever says it with firm faith will be from the people of Paradise, whether they die in the day or night. It is recorded in Sahih Bukhari (6306).</div>
+          <h2 id="faqs">Frequently asked questions about Astaghfirullah</h2>
+
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What does Astaghfirullah mean in English?</summary>
+              <p>Astaghfirullah (أستغفر الله) translates to "I seek forgiveness from Allah" in English, asking Allah to pardon, conceal, and protect from the consequences of shortcomings.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Is Astaghfirullah recited only after committing a sin?</summary>
+              <p>No; Prophet Muhammad ﷺ recited istighfar 70 to 100 times daily to maintain continuous spiritual purity, express gratitude, and observe humility before Allah.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What is Sayyid al-Istighfar and what is its virtue?</summary>
+              <p>Sayyid al-Istighfar is the supreme prayer for seeking forgiveness; the Prophet ﷺ taught that whoever recites it with faith day or night is guaranteed entry into Paradise (Bukhari 6306).</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How does reciting Astaghfirullah increase wealth and ease?</summary>
+              <p>Surah Nuh (71:10-12) explicitly promises that abundant istighfar brings heavy rain, financial barakah, righteous children, and ease in worldly affairs.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How many times should you recite Astaghfirullah after prayer?</summary>
+              <p>The prophetic Sunnah is to say "Astaghfirullah" three times immediately upon completing the final taslim of every obligatory Salah.</p>
+            </details>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Learn proper Quran recitation and Islamic knowledge at NoorPath Academy.</strong> Our tutors teach the correct pronunciation of all Islamic phrases including istighfar, as well as Tajweed, Islamic Studies, and Quran for all ages. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp; <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book on the main classes page →</a>
+            <strong>Learn proper Quran recitation and Islamic knowledge at NoorPath Academy.</strong> Our native tutors teach the correct pronunciation of all Islamic phrases including istighfar, as well as Tajweed, Islamic Studies, and Quran for all ages. Start your journey with our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, master rules in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or enroll in the <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">online Hifz program</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a>
           </div>
         </div>
 
@@ -4371,8 +4617,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     }`,
     content: `<p><strong>Ayatul Kursi</strong> (آية الكرسي) — the <em>"Verse of the Throne"</em> — is verse 255 of Surah Al-Baqarah, the 2nd chapter of the Holy Quran. It is universally regarded by Islamic scholars as <strong>the greatest, most powerful verse in the entire Quran</strong>.</p>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Ayatul Kursi meaning</strong> is "The Verse of the Throne." It is Quran 2:255 and describes Allah's absolute oneness, life, knowledge, authority, and power over the heavens and the earth. Muslims recite Ayatul Kursi after Salah, before sleep, and for protection because authentic hadith mention its great virtues.
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> Ayatul Kursi benefits include unmatched spiritual protection against evil, entry into Paradise upon death when recited after Salah, and a personal guardian angel through the night. Found in Surah Al-Baqarah (2:255; آية الكرسي — Āyat al-Kursī), this greatest verse of the Quran establishes Allah's absolute sovereignty, eternal life, and infinite knowledge.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Ayatul Kursi is verse 255 of Surah Al-Baqarah and the greatest verse in the Holy Quran.</li>
+              <li>Reciting it after each obligatory Salah guarantees admission to Paradise upon passing away.</li>
+              <li>Reciting it before sleeping appoints a protective angel guarding the believer from Shaytan until morning.</li>
+              <li>Demonstrates pure Islamic monotheism by describing Allah's eternal life, knowledge, and cosmic Throne.</li>
+              <li>NoorPath Academy offers 1-on-1 Tajweed and Hifz coaching to memorize Ayatul Kursi with perfection.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Ayatul Kursi (آية الكرسي — Quran 2:255) is the crowning verse of the Holy Quran, revered for detailing Allah's omnipotent majesty and offering divine sanctuary. Sincere daily recitation after each prayer and before bedtime guards believers from physical and spiritual afflictions. Master its precise tajweed rules and memorize it confidently with dedicated tutors at NoorPath Academy.</p>
           </div>
 
           <p>The Prophet Muhammad ﷺ asked his companion Abu Dharr (رضي الله عنه): <em>"Do you know which verse of Allah's Book is the greatest?"</em> He replied: "Allah and His Messenger know best." The Prophet ﷺ then said: <strong>"Ayatul Kursi."</strong> (Muslim)</p>
@@ -4385,7 +4647,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== FULL TEXT =================== -->
-          <h2>Ayatul Kursi — Complete Arabic Text</h2>
+          <h2>What is the complete Arabic text and English translation of Ayatul Kursi?</h2>
 
           <div class="ayatul-kursi-box">
             <p style="text-align:center;color:var(--muted);font-size:.85rem;margin-bottom:20px;">Surah Al-Baqarah · Verse 255 (2:255)</p>
@@ -4407,7 +4669,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== WORD BY WORD =================== -->
-          <h2>Word-by-Word Breakdown</h2>
+          <h2>What is the word-by-word meaning of Ayatul Kursi?</h2>
           <p>Understanding each word of Ayatul Kursi deepens your connection when reciting it:</p>
 
           <div class="word-grid">
@@ -4489,7 +4751,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== KEY PHRASES EXPLAINED =================== -->
-          <h2>Key Phrases Explained</h2>
+          <h2>What are the key theological phrases explained in Ayatul Kursi?</h2>
 
           <h3>1. "Al-Hayy Al-Qayyum" — The Ever-Living, The Self-Sustaining</h3>
           <p>These two names of Allah are considered the greatest pair of names. They appear together in Ayatul Kursi and in Surah Al-Imran (3:2). <strong>Al-Hayy</strong> means Allah is eternally alive without any beginning or end. <strong>Al-Qayyum</strong> means He sustains and maintains all of creation — everything depends on Him, while He depends on nothing.</p>
@@ -4504,7 +4766,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Maintaining the entire universe — every galaxy, every atom, every creature — is effortless for Allah. He does not grow tired, weary, or burdened. This should fill the believer with profound peace and trust (tawakkul) in Allah.</p>
 
           <!-- =================== BENEFITS =================== -->
-          <h2>7 Authentic Benefits of Reciting Ayatul Kursi</h2>
+          <h2>What are the 7 authentic benefits of reciting Ayatul Kursi?</h2>
 
           <div class="benefit-item">
             <div class="benefit-num">1</div>
@@ -4563,7 +4825,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== WHEN TO RECITE =================== -->
-          <h2>When to Recite Ayatul Kursi</h2>
+          <h2>When should Muslims recite Ayatul Kursi for protection?</h2>
 
           <div class="when-grid">
             <div class="when-card">
@@ -4599,7 +4861,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== HOW TO MEMORIZE =================== -->
-          <h2>How to Memorize Ayatul Kursi (Step-by-Step)</h2>
+          <h2>How can you memorize Ayatul Kursi step by step?</h2>
 
           <div class="highlight-box">
             <strong>Ayatul Kursi should be memorized at the learner's own pace</strong> with consistent practice and careful pronunciation. Here is a structured method:
@@ -4626,38 +4888,36 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <!-- =================== FAQ =================== -->
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="faqs">Frequently asked questions about Ayatul Kursi</h2>
 
-          <div class="faq-item">
-            <div class="faq-q"><span>What is Ayatul Kursi?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Ayatul Kursi (آية الكرسي, "Verse of the Throne") is verse 255 of Surah Al-Baqarah (Quran 2:255). It is declared by the Prophet Muhammad ﷺ to be the greatest verse in the entire Quran. It describes Allah's absolute sovereignty, perfect knowledge, infinite throne, and complete self-sufficiency.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>What does Ayatul Kursi mean in English?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">"Allah — there is no deity except Him, the Ever-Living, the Sustainer of existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great." [Quran 2:255]</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>What are the benefits of reciting Ayatul Kursi after Salah?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">The Prophet ﷺ said: "Whoever recites Ayatul Kursi after every obligatory prayer (Salah), nothing prevents him from entering Paradise except death." (An-Nasa'i — authenticated by Al-Albani). This makes it one of the most rewarding acts a Muslim can do — requiring only 30 seconds after each prayer.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>Is Ayatul Kursi the same as Verse of the Throne?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Yes. "Ayatul Kursi" is the Arabic name and "Verse of the Throne" is the English translation. "Kursi" (كرسي) means throne or footstool in Arabic. The verse is called this because it describes the Kursi of Allah extending over the heavens and earth — a real, immense creation of Allah that represents His absolute authority and sovereignty.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q"><span>Can children memorize Ayatul Kursi?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Children can begin learning Ayatul Kursi when they can engage with short, guided repetition. Memorisation time varies by learner; focus on accurate pronunciation and steady revision rather than a promised timeline.</div>
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What is Ayatul Kursi in the Quran?</summary>
+              <p>Ayatul Kursi (آية الكرسي) is verse 255 of Surah Al-Baqarah (Quran 2:255), celebrated as the single greatest and most powerful verse revealed in the Holy Quran.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What does Ayatul Kursi mean in English?</summary>
+              <p>It means "The Verse of the Throne," proclaiming Allah's absolute oneness, eternal life, knowledge of all creation, and supreme sovereignty over heavens and earth.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What is the virtue of reciting Ayatul Kursi after Salah?</summary>
+              <p>Prophet Muhammad ﷺ declared that whoever recites Ayatul Kursi after every obligatory prayer will face nothing stopping them from entering Paradise except death (An-Nasa'i).</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Why is it called the Verse of the Throne?</summary>
+              <p>It is called the Verse of the Throne because it mentions Allah's "Kursi" (Divine Throne/Footstool) extending over the entirety of the heavens and the earth.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How does Ayatul Kursi provide protection at night?</summary>
+              <p>Authentic hadith in Sahih al-Bukhari affirms that reciting it prior to sleep ensures Allah appoints a protective angel guarding the reciter from Satan until morning.</p>
+            </details>
           </div>
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;margin:40px 0;">
-            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.4rem;margin-bottom:10px;">Learn to Recite Ayatul Kursi with Correct Tajweed</h3>
-            <p style="color:rgba(255,255,255,.82);margin-bottom:20px;line-height:1.7;">Live 1-on-1 lessons for kids and adults. Our tutors correct pronunciation from Makharij up — so Ayatul Kursi is memorised right the first time.</p>
+            <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.4rem;margin-bottom:10px;">Learn to Recite Ayatul Kursi with Correct Tajweed at NoorPath Academy</h3>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:20px;line-height:1.7;">NoorPath Academy pairs students with certified Quran tutors for 1-on-1 personalized lessons. Learn correct letter articulation from the foundation in our <a href="/courses/noorani-qaida-online" style="color:var(--gold);text-decoration:underline;">Noorani Qaida course</a>, perfect your recitation with <a href="/courses/tajweed-classes-online" style="color:var(--gold);text-decoration:underline;">Tajweed classes online</a>, or memorize key surahs in our <a href="/hifz-quran-online" style="color:var(--gold);text-decoration:underline;">online Hifz program</a>.</p>
             <div style="display:flex;gap:12px;flex-wrap:wrap;">
-              <a href="/learn-tajweed-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:12px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;">Start our Tajweed Course →</a>
+              <a href="/courses/tajweed-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:12px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;">Start our Tajweed Course →</a>
               <a href="/online-quran-classes-for-kids" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.3);">Kids Quran Classes — Free Trial</a>
               <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.3);">Hifz Memorisation Program</a>
             </div>
@@ -5868,6 +6128,11 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               </a>
             </div>
             <div class="col-sm-6">
+              <a href="/blog/salatul-janazah-funeral-prayer-guide" style="text-decoration:none;">
+                <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Special Prayers</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Salatul Janazah — Funeral Prayer Guide</div></div><div class="blog-card-body"><span class="read-more">Read Guide <i class="fas fa-arrow-right ms-1"></i></span></div></div>
+              </a>
+            </div>
+            <div class="col-sm-6">
               <a href="/courses/islamic-studies-online" style="text-decoration:none;">
                 <div class="blog-card"><div class="blog-card-header" style="padding:20px 24px;"><span class="blog-tag">Course</span><div style="color:var(--white);font-weight:700;font-size:.95rem;margin-top:8px;">Islamic Studies Online</div></div><div class="blog-card-body"><span class="read-more">Explore <i class="fas fa-arrow-right ms-1"></i></span></div></div>
               </a>`,
@@ -6633,8 +6898,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-a { padding:16px 20px; color:#374151; font-size:.95rem; line-height:1.7; border-top:1px solid var(--border); }
     @media (max-width:576px) { .break-grid,.compare-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
     content: `<p><strong>Mashallah</strong> (ما شاء الله) is one of the most commonly spoken phrases in the Muslim world — heard everywhere from family gatherings to social media captions. But many people use it as a habit without fully understanding its profound meaning and purpose in Islam. Our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a> help children understand when and why to say Mashallah.</p>
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>MashaAllah / Mashallah meaning in English</strong> is "What Allah has willed" or "Allah has willed it." Muslims say Mashallah when praising a blessing, a child, success, beauty, or good news while acknowledging that every blessing comes from Allah and seeking protection from the evil eye.
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> The Mashallah meaning in English translates to "What Allah has willed" or "As Allah willed" (Arabic: مَا شَاءَ اللَّهُ, transliteration: Mā shā' Allāh). Muslims say it upon witnessing beauty, success, or good news to praise Allah, acknowledge divine decree, and shield individuals and blessings from the harmful evil eye (hasad).
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Mashallah translates to "What Allah has willed," acknowledging divine will behind every worldly blessing.</li>
+              <li>Directly revealed in Quran Surah Al-Kahf (18:39) regarding gratitude for gardens and material prosperity.</li>
+              <li>Uttered when admiring beauty, children, wealth, or personal achievements to ward off the evil eye.</li>
+              <li>Differs from Subhanallah (declaring divine perfection) and Inshallah (expressing future intentions under God's will).</li>
+              <li>NoorPath Academy teaches conversational Islamic phrases and Quran reading through live one-on-one sessions.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Mashallah (ما شاء الله) expresses adoration, humility, and submission to the divine will when observing joy or excellence. By uttering this phrase, Muslims attribute prosperity to Allah and deflect the spiritual harms of jealousy and the evil eye. Learn proper Quranic etiquette and Arabic recitation with expert teachers at NoorPath Academy.</p>
           </div>
           <p>This guide explains the exact Arabic meaning of Mashallah, when to say it correctly, its Quranic origin, and why scholars recommend it as protection from the evil eye.</p>
 
@@ -6644,7 +6925,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div class="word-meaning-hero">"What Allah has willed" / "Allah has willed it"</div>
           </div>
 
-          <h2>What Does Mashallah Mean? (Word by Word)</h2>
+          <h2>What does Mashallah mean in English word by word?</h2>
           <div class="break-grid">
             <div class="break-card">
               <div class="bc-arabic">مَا</div>
@@ -6667,7 +6948,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>The complete meaning:</strong> "Whatever Allah has willed has come to pass." When you say Mashallah upon seeing something wonderful, you are declaring: <em>"This beauty, talent, success, or blessing exists purely because Allah willed it — it is His decree, His gift, and His mercy."</em> It is the opposite of arrogance — it credits all good to Allah, not to the person, their effort, or coincidence alone.
           </div>
 
-          <h2>Mashallah in the Quran (Surah Al-Kahf 18:39)</h2>
+          <h2>Where does Mashallah appear in the Holy Quran?</h2>
           <p>The only direct occurrence of this phrase in the Quran is in Surah Al-Kahf, in the story of the two garden owners — and its context is profoundly instructive:</p>
 
           <div class="gold-box">
@@ -6678,7 +6959,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>Context:</strong> A wealthy man had two gardens and became arrogant about them, forgetting Allah's role. His believing friend advised him: "You should have said Mashallah — la quwwata illa billah." Instead, he was arrogant, and Allah destroyed both gardens. This verse is a powerful reminder that every blessing requires acknowledgment of Allah.
           </div>
 
-          <h2>The Complete Phrase: Mashallah, La Quwwata Illa Billah</h2>
+          <h2>What does the complete phrase Mashallah La Quwwata Illa Billah mean?</h2>
           <div class="highlight-box">
             <strong style="font-family:'Amiri',serif;font-size:1.4rem;direction:rtl;display:block;text-align:right;margin-bottom:8px;">مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ</strong>
             <strong>Maa shaa-Allahu laa quwwata illa billah</strong><br>
@@ -6686,7 +6967,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             This is the Quranic recommendation when seeing any blessing — not just "Mashallah" alone. Scholars recommend using this full phrase for maximum protection and acknowledgment.
           </div>
 
-          <h2>When to Say Mashallah</h2>
+          <h2>When should Muslims say Mashallah in daily life?</h2>
           <ul>
             <li><strong>When seeing a beautiful child:</strong> "Mashallah, what a beautiful baby!" — acknowledging Allah's gift while seeking protection from the evil eye</li>
             <li><strong>When praising someone's achievement:</strong> "Mashallah, you've done so well!" — crediting Allah for their success and ability</li>
@@ -6696,7 +6977,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>When looking at your own blessings:</strong> Your family, health, wealth — say it to yourself as gratitude</li>
           </ul>
 
-          <h2>Mashallah and the Evil Eye (Nazar)</h2>
+          <h2>How does saying Mashallah protect against the evil eye?</h2>
           <p>One of the most important reasons Muslims say Mashallah is for <strong>protection from the evil eye</strong> (al-ain). The evil eye (nazar) is real in Islam — confirmed in the Quran and multiple authentic hadith.</p>
           <p>The Prophet ﷺ said: <em>"The evil eye is real, and if anything were to overtake the divine decree, it would be the evil eye."</em> (Muslim 2188)</p>
           <p>When a person looks at something with admiration without saying Mashallah, there is a risk of inadvertently causing harm through the evil eye — even without intending to. Saying Mashallah:</p>
@@ -6706,7 +6987,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li>Removes any trace of envy (hasad) by attributing everything to Allah's will</li>
           </ul>
 
-          <h2>Mashallah vs. Subhanallah — What's the Difference?</h2>
+          <h2>What is the difference between Mashallah and Subhanallah?</h2>
           <div class="compare-grid">
             <div class="compare-card" style="border: 2px solid var(--emerald);">
               <div class="compare-arabic">مَا شَاءَ اللَّهُ</div>
@@ -6730,26 +7011,29 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             </div>
           </div>
 
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq-item">
-            <div class="faq-q"><span>What does Mashallah mean in English?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Mashallah (ما شاء الله) means "What Allah has willed" or "Allah has willed it so." It is an expression of admiration, appreciation, and submission to Allah's will when seeing something beautiful, successful, or blessed. It acknowledges that all good things come from Allah alone.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>Does saying Mashallah prevent the evil eye?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Scholars recommend saying Mashallah when admiring something as a means of seeking Allah's protection from the evil eye. The full Quranic phrase (18:39) "Mashallah, la quwwata illa billah" is recommended. However, the complete shield against evil eye includes also reciting Ayatul Kursi and Surah Al-Falaq and An-Naas regularly.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>Is Mashallah in the Quran?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Yes — the phrase "Maa shaa-Allahu" appears in the Quran in Surah Al-Kahf (18:39): "And why did you not say, when you entered your garden: 'What Allah has willed [has occurred]; there is no power except through Allah.'" This verse directly commands the use of this phrase when seeing any blessing.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q"><span>What is the correct spelling — Mashallah or MashaAllah?</span> <i class="fas fa-chevron-down"></i></div>
-            <div class="faq-a">Both "Mashallah" and "MashaAllah" are acceptable transliterations of the Arabic (ما شاء الله). Other common spellings include Masha'Allah, Masha Allah, and Ma sha Allah. The meaning remains the same regardless of the spelling in English.</div>
+          <h2 id="faqs">Frequently asked questions about Mashallah</h2>
+
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What does Mashallah mean in English?</summary>
+              <p>Mashallah (ما شاء الله) translates to "What Allah has willed" in English, used by Muslims to express admiration while attributing all goodness and success to God.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Does saying Mashallah protect against the evil eye?</summary>
+              <p>Yes; invoking Allah's name through "Mashallah" or "Barakallahu feek" acknowledges divine blessing and protects admired people or objects from unconscious jealousy (hasad).</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Where is Mashallah mentioned in the Quran?</summary>
+              <p>It is commanded in Surah Al-Kahf (18:39), where a believer advises his companion to say "Mā shā' Allāhu lā quwwata illā billāh" upon entering his prosperous garden.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>How should you respond when someone says Mashallah to you?</summary>
+              <p>You can respond warmly with "Jazakallah Khair" (May Allah reward you with goodness) or "Barakallahu feek" (May Allah bless you).</p>
+            </details>
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Teach your children to say Mashallah naturally.</strong> At NoorPath Academy, we teach Islamic phrases, manners (adab), Quran, and complete Islamic education — building genuine connection with the deen from childhood. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a>
+            <strong>Teach your children to say Mashallah naturally at NoorPath Academy.</strong> Our native tutors teach everyday Islamic phrases, manners (adab), and proper recitation. Build strong Quranic foundations in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida online course</a> or refine your pronunciation in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class today →</a>
           </div>
         </div>
 
@@ -6913,7 +7197,27 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .timeline-dot { flex-shrink: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--emerald); margin-top: 6px; }
     .timeline-content { flex: 1; }
     @media(max-width:640px){ .minor-grid{ grid-template-columns:1fr; } }`,
-    content: `<div class="highlight-box">
+    content: `<div class="answer-box">
+      <strong>Quick Answer:</strong> The signs of Qiyamah (عَلَامَاتُ يَوْمِ الْقِيَامَةِ — "Signs of the Day of Resurrection") comprise prophetic markers indicating the approach of the final Hour in Islam. Divided into minor signs (e.g., rapid passage of time, competing in tall buildings) and ten major signs (including Dajjal, the descent of Isa, and the sun rising from the west).
+    </div>
+
+    <div class="key-takeaways">
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li>Belief in Qiyamah (the Day of Judgment) is one of the six essential pillars of Islamic faith.</li>
+        <li>Minor signs encompass widespread societal, moral, and technological shifts foretold in authentic hadith.</li>
+        <li>Many minor signs have already occurred, such as the construction of tall desert towers.</li>
+        <li>Ten major signs mark the immediate onset of the Hour, beginning with Dajjal and Isa's return.</li>
+        <li>NoorPath Academy prepares students with foundational Islamic studies, Quran recitation, and spiritual resilience.</li>
+      </ul>
+    </div>
+
+    <div class="tldr-box">
+      <h3>TL;DR</h3>
+      <p>Prophet Muhammad ﷺ outlined minor and major signs of Qiyamah to guide believers and awaken spiritual consciousness before the Day of Judgment. While numerous minor signs have materialized in modern history, the ten catastrophic major signs remain pending. Strengthen your faith, Quranic literacy, and Islamic studies with verified educators at NoorPath Academy.</p>
+    </div>
+
+    <div class="highlight-box">
       <strong>Quran — Surah Al-A'raf (7:187):</strong>
       <div class="arabic-text">يَسْأَلُونَكَ عَنِ السَّاعَةِ أَيَّانَ مُرْسَاهَا ۖ قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّي</div>
       <p style="margin:0;font-style:italic;">"They ask you about the Hour: when will it arrive? Say: Knowledge of it is only with my Lord."</p>
@@ -6949,7 +7253,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     </div>
 
     <!-- SECTION 2 -->
-    <h2 id="categories">Categories of Signs of Qiyamah</h2>
+    <h2 id="categories">What are the two main categories of signs of Qiyamah?</h2>
     <p>Islamic scholars have categorized the Signs of Qiyamah into two main types:</p>
     <div class="row g-3 mb-4">
       <div class="col-md-6">
@@ -6969,7 +7273,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     </div>
 
     <!-- SECTION 3: MINOR SIGNS -->
-    <h2 id="minor-signs">The 77 Minor Signs of Qiyamah</h2>
+    <h2 id="minor-signs">What are the 77 minor signs of Qiyamah in Hadith?</h2>
     <p>Scholars have compiled 72 to 77 minor signs from authentic Hadith sources. Below are all the major documented minor signs, with their status in today's world:</p>
 
     <h3>Category 1: Signs Related to the Prophet ﷺ and Early Islam</h3>
@@ -7054,7 +7358,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     </div>
 
     <!-- SECTION 5: MAJOR SIGNS -->
-    <h2 id="major-signs">The 10 Major Signs of Qiyamah (Kubra)</h2>
+    <h2 id="major-signs">What are the 10 major signs of Qiyamah in Islam?</h2>
     <p>These are the 10 great catastrophic events confirmed in <strong>Sahih Muslim, Hadith 2901</strong>. <em>None of them have yet occurred</em>. Once they begin, they will follow one another like beads falling from a broken necklace — rapidly, one after another.</p>
 
     <div class="sign-card">
@@ -7131,7 +7435,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     </div>
 
     <!-- SECTION: DAJJAL -->
-    <h2 id="dajjal">Dajjal — Understanding the Greatest Trial</h2>
+    <h2 id="dajjal">Who is Dajjal and why is he the greatest trial?</h2>
     <p>The Prophet ﷺ warned about Dajjal more than any other sign. From Prophet Nuh ﷺ to every Prophet who came, they all warned their nations about Dajjal. Here is what we know from authentic Hadith:</p>
     <ul>
       <li><strong>Physical description:</strong> One-eyed (right eye blind), curly hair, fat body, reddish complexion. "Kafir" written between his eyes — visible to every believer.</li>
@@ -7157,7 +7461,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     </ul>
 
     <!-- SECTION: PREPARE -->
-    <h2 id="prepare">How to Prepare for Qiyamah</h2>
+    <h2 id="prepare">How should Muslims prepare for Qiyamah in daily life?</h2>
     <p>The Signs of Qiyamah are not given to create fear — they are given to motivate action. Here is how every Muslim should respond:</p>
     <div class="row g-3 mb-4">
       <div class="col-md-6">
@@ -7194,41 +7498,43 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     </ul>
 
     <!-- FAQ -->
-    <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">What are the 10 major signs of Qiyamah? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">The 10 major signs are: (1) Imam Mahdi, (2) Dajjal, (3) Descent of Prophet Isa, (4) Ya'jooj and Ma'jooj, (5) The Smoke (Dukhan), (6) The Beast of the Earth, (7) Sun rising from the West, (8) Three massive earthquakes, (9) Fire from Yemen, (10) Destruction of the Ka'bah. Confirmed in Sahih Muslim, Hadith 2901.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">Which signs of Qiyamah have already occurred? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">Over 50 minor signs have appeared: death of the Prophet ﷺ, conquest of Jerusalem, widespread alcohol and immorality, competition in building skyscrapers, increase in earthquakes, music everywhere, time passing quickly, children disobeying parents, corrupt leadership, frequent killing, and more.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">When will Qiyamah happen? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">Only Allah knows the exact time of Qiyamah. "They ask you about the Hour: when will it arrive? Say: Knowledge of it is only with my Lord." (Quran 7:187). No human — not even the Prophet ﷺ — was told the exact hour.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">Who is Dajjal and how do we protect ourselves? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">Dajjal is the Antichrist — a one-eyed man who will claim to be God. The best protection: (1) Recite the first 10 verses of Surah Al-Kahf daily, (2) Read Surah Al-Kahf every Friday, (3) Seek refuge in Allah from Dajjal in every prayer: "Allahumma inni a'udhu bika min 'adhabi jahannam wa min 'adhabi l-qabr wa min fitnatil mahya wal mamat wa min sharri fitnatil masih ad-dajjal."</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">Is Imam Mahdi alive today? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">There is no authentic Islamic evidence that Imam Mahdi has been born or is alive today. Anyone who claims to be the Mahdi is to be treated with great caution. The Mahdi will be recognized through very specific signs at a specific time — and the Muslim community will give him bay'ah in Mecca, not through social media claims.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';">What is Dukhan (the Smoke)? <i class="fas fa-chevron-down"></i></div>
-      <div class="faq-a">Dukhan is a major sign of Qiyamah — a thick, visible smoke that will cover the entire earth for 40 days. Believers will experience it like a cold or flu, while disbelievers will suffer as if intoxicated. It is mentioned in Quran 44:10: "So watch for the Day when the sky will bring a visible smoke."</div>
+    <h2 id="faq">Frequently asked questions about the signs of Qiyamah</h2>
+    <div class="faq-list">
+      <details class="faq-acc">
+        <summary>What are the 10 major signs of Qiyamah?</summary>
+        <p>The 10 major signs documented in Sahih Muslim (2901) are: Imam Mahdi, the Dajjal, the descent of Prophet Isa, Ya'jooj and Ma'jooj, the Smoke (Dukhan), the Beast of the Earth, the sun rising from the West, three massive landslides, fire from Yemen, and the destruction of the Ka'bah.</p>
+      </details>
+      <details class="faq-acc">
+        <summary>Which signs of Qiyamah have already occurred?</summary>
+        <p>Over fifty minor signs have materialized, including the passing of the Prophet ﷺ, the conquest of Jerusalem, competition in constructing skyscrapers, frequent earthquakes, and the rapid passage of time.</p>
+      </details>
+      <details class="faq-acc">
+        <summary>When will Qiyamah happen?</summary>
+        <p>Only Allah possesses knowledge of the exact Day and Hour (Quran 7:187); neither angel nor prophet was informed of its specific calendar date.</p>
+      </details>
+      <details class="faq-acc">
+        <summary>How can Muslims protect themselves from the trial of Dajjal?</summary>
+        <p>Protection comes through memorizing the first ten verses of Surah Al-Kahf, reciting Al-Kahf every Friday, and seeking refuge from the false messiah in the Tashahhud of every Salah.</p>
+      </details>
+      <details class="faq-acc">
+        <summary>Is Imam Mahdi alive today?</summary>
+        <p>There is no verified Islamic evidence establishing that Imam Mahdi is alive today; authentic hadith confirm he will emerge when Allah prepares him in a single night in Mecca.</p>
+      </details>
     </div>
 
     <!-- Internal Links -->
     <div class="highlight-box mt-5">
-      <strong>Deepen Your Islamic Knowledge at NoorPath Academy:</strong>
+      <strong>Deepen Your Islamic Knowledge at NoorPath Academy:</strong><br>
+      NoorPath Academy equips youth and adults with essential Islamic knowledge, Quran memorization, and Tajweed. Explore our structured <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, join our interactive <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or enroll in the <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">online Hifz program</a>.
       <ul style="margin:12px 0 0;padding-left:20px;">
         <li><a href="/blog/ayatul-kursi-arabic-english-benefits" style="color:var(--emerald);">Ayatul Kursi — Full Arabic, Translation &amp; 7 Benefits</a></li>
         <li><a href="/blog/99-names-of-allah-asmaul-husna" style="color:var(--emerald);">99 Names of Allah (Asmaul Husna) with Meanings</a></li>
         <li><a href="/blog/surah-yaseen-arabic-english" style="color:var(--emerald);">Surah Yaseen — Full Arabic Text &amp; Translation</a></li>
         <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);">Essential Duas for Kids to Memorize</a></li>
       </ul>
+      <div style="margin-top:16px;">
+        <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class at NoorPath Academy →</a>
+      </div>
     </div>`,
   },
   "surah-yaseen-arabic-english": {
@@ -8656,8 +8962,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>This guide gives you the clear English meaning, word-by-word Arabic, Quranic command to say it, when to use it, how to reply, and the difference between Inshallah, Mashallah, and Alhamdulillah — so you can use it with confidence, not habit alone.</p>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Inshallah = “If Allah wills.”</strong> Say it before future plans. It is tawakkul (trust in Allah), not an excuse to cancel. The Quran (18:23–24) teaches: do not say “I will do that tomorrow” without adding Inshallah.
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> The Inshallah meaning in English translates to "If Allah wills" or "God willing" (Arabic: إِنْ شَاءَ اللَّهُ, transliteration: In shā' Allāh). Muslims say it whenever discussing future events or commitments to express reliance on Allah (tawakkul) and acknowledge that human intentions only succeed by divine permission (Quran 18:23-24).
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Inshallah translates directly to "If Allah wills" or "God willing" in English.</li>
+              <li>Directly commanded in Surah Al-Kahf (18:23-24) whenever committing to future actions.</li>
+              <li>Expresses humility and tawakkul rather than an excuse to delay or break commitments.</li>
+              <li>Distinct from Mashallah (admiring existing blessings) and Alhamdulillah (giving thanks for all states).</li>
+              <li>NoorPath Academy integrates daily Islamic etiquette and vocabulary into 1-on-1 Quran lessons.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Inshallah (إِنْ شَاءَ اللَّهُ) is a fundamental Islamic phrase asserting that no future promise or ambition unfolds without Allah's sovereign decree. Derived from explicit Quranic guidance in Surah Al-Kahf, it grounds daily conversations in spiritual mindfulness and reliability. Explore conversational Islamic phrases and Tajweed recitation with NoorPath Academy's native Arabic tutors.</p>
           </div>
 
           <div class="word-hero">
@@ -8666,7 +8988,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div class="word-meaning-hero">"If Allah wills" / "God willing"</div>
           </div>
 
-          <h2>What Does Inshallah Mean? (Word by Word)</h2>
+          <h2>What does Inshallah mean in English word by word?</h2>
           <div class="break-grid">
             <div class="break-card">
               <div class="bc-arabic">إِنْ</div>
@@ -8687,7 +9009,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>The complete meaning: <em>"If Allah wills it, it will happen."</em> When you say Inshallah before a future plan, you are not being uncertain — you are expressing <strong>Islamic humility</strong>: human beings can intend and strive, but only Allah controls outcomes.</p>
 
-          <h2>Inshallah in the Quran — Used by Prophets</h2>
+          <h2>Where does Inshallah appear in the Holy Quran?</h2>
           <p>Inshallah appears directly in the Quran. One of the most famous examples is when Prophet Ibrahim (Abraham) ﷺ left his wife Hajar and infant Ismail in the desert:</p>
 
           <div class="gold-box">
@@ -8718,7 +9040,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <em>"And never say of anything, 'I will do that tomorrow,' except [when adding], 'If Allah wills.'"</em> (Surah Al-Kahf 18:23–24). This is a direct Quranic instruction — not optional etiquette, but a spiritual discipline.
           </div>
 
-          <h2>How to Respond When Someone Says Inshallah</h2>
+          <h2>How should you respond when someone says Inshallah?</h2>
           <ul>
             <li><strong>"Ameen"</strong> — "O Allah, answer this" (most common, perfect response)</li>
             <li><strong>"Inshallah, khair"</strong> — "If Allah wills, it will be good"</li>
@@ -8727,7 +9049,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Simply repeat "Inshallah"</strong> with sincerity — agreeing that Allah's will governs all outcomes</li>
           </ul>
 
-          <h2>Inshallah vs Mashallah vs Alhamdulillah</h2>
+          <h2>What is the difference between Inshallah, Mashallah, and Alhamdulillah?</h2>
           <div class="compare-grid">
             <div class="compare-card" style="border:2px solid var(--emerald);">
               <div class="compare-arabic">إِنْ شَاءَ اللَّهُ</div>
@@ -8751,7 +9073,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             </div>
           </div>
 
-          <h2>Common Mistakes with Inshallah</h2>
+          <h2>What are the common mistakes people make with Inshallah?</h2>
           <div class="mistake-box">
             <strong>❌ Using Inshallah to avoid commitment:</strong> In some cultures, "inshallah" is used sarcastically to mean "probably not." This contradicts Islamic teaching. The Prophet ﷺ said: "Whoever promises something and does not intend to fulfil it has lied." (Abu Dawud). Say Inshallah with sincere intention to act if Allah enables you.
           </div>
@@ -8762,7 +9084,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>❌ Confusing Inshallah with Mashallah:</strong> Inshallah = future ("if Allah wills"). Mashallah = present blessing ("what Allah has willed"). Using them interchangeably loses their distinct spiritual meanings.
           </div>
 
-          <h2>Correct Spelling & Pronunciation</h2>
+          <h2>What is the correct spelling and pronunciation of Inshallah?</h2>
           <p>Common English spellings — all acceptable transliterations of إِنْ شَاءَ اللَّهُ:</p>
           <ul>
             <li><strong>Inshallah</strong> — most common globally</li>
@@ -8772,7 +9094,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
           <p><strong>Pronunciation tip:</strong> In-SHA-ah-Llah. The "sha" is emphatic. The "in" is short. Stress the middle syllable slightly.</p>
 
-          <h2>Teaching Children to Say Inshallah</h2>
+          <h2>How can parents teach children to say Inshallah?</h2>
           <p>Children learn Islamic phrases best through daily repetition in context. If you want structured lessons later, you can <a href="/pricing" style="color:var(--emerald);font-weight:600;">see our simple pricing plans</a> after trying a class:</p>
           <ul>
             <li>Say "Inshallah" before leaving home, starting homework, or planning weekend activities</li>
@@ -8781,7 +9103,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li>Pair with other daily phrases: Bismillah (starting), Alhamdulillah (thanking), Mashallah (admiring)</li>
           </ul>
 
-          <h2 id="faq">Inshallah FAQ — People Also Ask</h2>
+          <h2 id="faq">Frequently asked questions about Inshallah</h2>
           <details class="faq-acc"><summary>What does Inshallah mean in English?<span>+</span></summary><p>Inshallah (إِنْ شَاءَ اللَّهُ) means “If Allah wills” or “God willing.” It shows humility and trust that only Allah controls future outcomes.</p></details>
           <details class="faq-acc"><summary>Is Inshallah the same as In sha Allah?<span>+</span></summary><p>Yes. They are the same Arabic phrase. “In sha Allah” separates the three words; “Inshallah” is the common one-word spelling in English.</p></details>
           <details class="faq-acc"><summary>When should you say Inshallah?<span>+</span></summary><p>Say it for any future plan or hope — travel, exams, meetings, marriage, health, or “see you tomorrow.” Quran 18:23–24 teaches not to promise tomorrow without Inshallah.</p></details>
@@ -8790,7 +9112,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>Can children learn Inshallah easily?<span>+</span></summary><p>Yes. Use it in daily talk before homework, outings, and weekend plans. Pair it with Bismillah and Alhamdulillah so Islamic phrases become natural habits.</p></details>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">online Quran classes for kids</a>, <a href="/pricing" style="color:var(--emerald);font-weight:700;">see our simple pricing plans</a>, or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book a free trial →</a>
+            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, enroll in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book a free trial class today →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9315,10 +9637,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-q { padding: 16px 20px; font-weight: 700; background: var(--ivory); color: var(--charcoal); display: flex; justify-content: space-between; align-items: center; }
     .faq-a { padding: 16px 20px; color: #374151; font-size: .95rem; line-height: 1.7; border-top: 1px solid var(--border); }
     @media (max-width:576px) { .break-grid { grid-template-columns:1fr; } .word-arabic-hero { font-size:2.5rem; } }`,
-    content: `<p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults say it every day without knowing its full depth, Quranic roots, or the difference between the short and complete forms. This guide explains the <strong>Bismillah meaning in English</strong>, the word-by-word Arabic, when to say it, Surah An-Naml’s special mention, common spellings people search for, and how to teach it to kids with love — not pressure. A live tutor can help children say Bismillah correctly from the start — see our <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
+    content: `          <div class="answer-box">
+            <strong>Quick Answer:</strong> The Bismillah meaning in English translates to "In the name of Allah, the Most Gracious, the Most Merciful" (Arabic: بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ, transliteration: Bismillāhir-Raḥmānir-Raḥīm). Muslims recite this opening formula before eating, drinking, working, or reciting Quran to consecrate daily activities, attain barakah, and ward off demonic distractions.
+          </div>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Bismillah meaning in English</strong> is <em>"In the name of Allah."</em> Muslims say it before eating, drinking, traveling, studying, Quran recitation, and starting important actions — seeking Allah's blessings and help. The full form is <strong>Bismillah ir-Rahman ir-Raheem</strong> — "In the name of Allah, the Most Gracious, the Most Merciful."
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Bismillah means "In the name of Allah, the Most Gracious, the Most Merciful" in English.</li>
+              <li>Recited before everyday actions like eating, drinking, reading, and performing daily tasks to invite barakah.</li>
+              <li>Opens 113 of the 114 surahs in the Quran, with Surah At-Tawbah being the only exception.</li>
+              <li>The short form is "Bismillah," while the complete formulation includes "Ar-Rahman Ar-Raheem."</li>
+              <li>NoorPath Academy teaches correct Arabic letter pronunciation and daily sunnah duas through live classes.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Bismillah (بِسْمِ اللَّهِ) is the universal Islamic opening invocation that dedicates all permissible human efforts to the Creator. Reciting it before meals, studies, or daily routines brings divine blessing (barakah) and safeguards believers from distraction. Learn authentic Arabic pronunciation and foundational Quranic skills with accredited instructors at NoorPath Academy.</p>
           </div>
 
           <div class="word-hero">
@@ -9327,7 +9663,40 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div style="font-weight:600;color:var(--charcoal);">"In the name of Allah"</div>
           </div>
 
-          <h2>Bismillah meaning word by word</h2>
+          <div class="audio-card">
+            <div style="font-size:2rem;line-height:1;">🎧</div>
+            <div>
+              <strong>Audio &amp; Pronunciation Help:</strong> Practice the correct pronunciation of the Basmalah letter by letter. Master Arabic letters from the ground up on our <a href="/noorani-qaida">Interactive Noorani Qaida</a> and learn letter shapes with the <a href="/noorani-qaida/arabic-letters/alif">Noorani Qaida Alif Lesson</a>. For structured memorization, explore our <a href="/hifz-quran-online">Hifz Quran Online Program</a> for learners in <a href="/locations/online-quran-classes-canada">Canada</a> and worldwide.
+            </div>
+          </div>
+
+          <div class="pdf-download-card">
+            <div>
+              <h3 style="margin:0 0 6px;color:var(--charcoal);">Free Printable Bismillah &amp; Daily Duas PDF</h3>
+              <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free printable daily Islamic adhkar card featuring Bismillah, morning &amp; evening duas, and eating etiquettes for children.</p>
+            </div>
+            <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+          </div>
+
+          <h2 id="variants">What are the common spelling variants of Bismillah?</h2>
+          <p>You may see this phrase transliterated in multiple ways across books and internet searches: <strong>Bismillah</strong>, <strong>Bismillāh</strong>, <strong>Bismi Allah</strong>, <strong>Bismillah ir-Rahman ir-Raheem</strong>, <strong>Bismillahi Rahmani Raheem</strong>, <strong>Basmalah</strong>, and <strong>Bismilla</strong>. All refer to the noble opening of Quranic surahs and daily Sunnah adhkar.</p>
+
+          <h2 id="rules-when">When should you say Bismillah and when should you avoid it?</h2>
+          <table class="np-table">
+            <thead>
+              <tr><th>When to Say Bismillah</th><th>When NOT to Say Bismillah</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Before eating, drinking, or taking medicine</td><td>Inside a bathroom, toilet, or impure place</td></tr>
+              <tr><td>Before starting study, driving, cooking, or work tasks</td><td>Before committing any unlawful or sinful action (Haram)</td></tr>
+              <tr><td>Before reciting any Surah of the Quran (except Surah 9)</td><td>At the start of Surah At-Tawbah (which has no Basmalah)</td></tr>
+              <tr><td>When locking doors, closing containers, or turning off lights</td><td>During Ruku, Sujood, or Tashahhud in Salah</td></tr>
+            </tbody>
+          </table>
+
+          <p><strong>Bismillah</strong> is among the first Arabic words Muslim children learn — yet many adults say it every day without knowing its full depth, Quranic roots, or the difference between the short and complete forms.</p>
+
+          <h2>What is the word-by-word meaning of Bismillah?</h2>
           <p>Understanding each piece makes the phrase feel alive — especially for children who are also learning Arabic letter sounds through <a href="/blog/noorani-qaida-complete-guide" style="color:var(--emerald);font-weight:600;">Noorani Qaida</a>.</p>
           <div class="break-grid">
             <div class="break-card"><div class="bc-arabic">بِ</div><div class="bc-meaning">Bi = In / With</div></div>
@@ -9342,14 +9711,14 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
           <p>Scholars often explain that <strong>Ar-Rahman</strong> points to vast, encompassing mercy, while <strong>Ar-Raheem</strong> points to special, continuing mercy for the believers — both names appear at the start of nearly every surah.</p>
 
-          <h2>Short form vs full form (Bismillah ir-Rahman ir-Raheem)</h2>
+          <h2>What is the difference between the short form and full form of Bismillah?</h2>
           <div class="gold-box">
             <strong>Short:</strong> بِسْمِ اللَّهِ — <em>Bismillah</em> — for everyday actions (eating, entering a room, starting homework)<br><br>
             <strong>Full:</strong> بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — <em>Bismillah ir-Rahman ir-Raheem</em> / <em>Bismillahi Rahmanir Raheem</em> — for Salah, Quran recitation, and formal acts. It opens every surah of the Quran except Surah At-Tawbah.
           </div>
           <p>People search many spellings: <em>bismillah</em>, <em>bismilla</em>, <em>bismillahi</em>, <em>bismillah hir rahman nir rahim</em>, <em>bismillahirrahmanirrahim</em>, and <em>in the name of Allah the most gracious</em>. They all point to the same blessed phrase.</p>
 
-          <h2>When and why Muslims say Bismillah</h2>
+          <h2>When and why do Muslims recite Bismillah in daily life?</h2>
           <h3>Before meals</h3>
           <p>The Prophet ﷺ taught: “Say Bismillah, eat with your right hand, and eat from what is nearest to you.” (Bukhari). If someone forgets at the start, scholars mention saying Bismillah when they remember during the meal. Pair this with the <a href="/blog/dua-before-and-after-eating" style="color:var(--emerald);font-weight:600;">dua before and after eating</a>.</p>
           <h3>Before starting tasks</h3>
@@ -9361,12 +9730,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <h3>Wudu and Salah</h3>
           <p>Beginning purification and prayer with Allah’s name trains the heart to leave distraction behind. For prayer basics, see <a href="/blog/how-to-pray-salah-step-by-step" style="color:var(--emerald);font-weight:600;">how to pray Salah step by step</a>.</p>
 
-          <h2>Bismillah in the Quran — including Surah An-Naml</h2>
+          <h2>Where does Bismillah appear in the Holy Quran?</h2>
           <p>Every surah except Surah At-Tawbah begins with Bismillah ir-Rahman ir-Raheem. The Quran opens with Surah Al-Fatiha, which starts with this phrase — making the basmalah the gateway to the Book. Read <a href="/blog/surah-al-fatiha-arabic-english" style="color:var(--emerald);font-weight:600;">Surah Al-Fatiha in Arabic and English</a>.</p>
           <p>Surah An-Naml (27:30) also preserves a remarkable moment: the letter of Prophet Sulayman (Solomon) عليه السلام begins with <em>Bismillah ir-Rahman ir-Raheem</em>. That Quranic scene shows the basmalah as a dignified opening for communication and leadership — not only a private whisper before food.</p>
           <p>When children hear that story, Bismillah stops being “just a rule” and becomes part of prophetic manners.</p>
 
-          <h2>Why saying Bismillah matters spiritually</h2>
+          <h2>Why does saying Bismillah carry immense spiritual importance?</h2>
           <ul>
             <li><strong>Intention:</strong> You remember Who you depend on before you act</li>
             <li><strong>Barakah:</strong> Muslims seek blessing in small and large affairs</li>
@@ -9375,7 +9744,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
           <p>It does not replace effort, planning, or medical care. It connects the effort to Allah.</p>
 
-          <h2>Common mistakes and gentle corrections</h2>
+          <h2>What are the common mistakes made when saying Bismillah?</h2>
           <ul>
             <li>Rushing so fast the child never hears the words clearly</li>
             <li>Scolding a child who forgets at the table — better to smile and say it together</li>
@@ -9383,12 +9752,12 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li>Treating Bismillah as magic words instead of mindful remembrance</li>
           </ul>
 
-          <h2>Teaching children to say Bismillah</h2>
+          <h2>How can parents easily teach children to say Bismillah?</h2>
           <p>The best way children learn is daily repetition in context — not lectures. Say it aloud before every meal, every car journey, and every Quran lesson. When children hear parents say Bismillah naturally, they adopt it as their own habit.</p>
           <p>For ages 3–6, one clear “Bismillah” before food is enough. For ages 7+, add the full form before Quran practice. Interactive lessons help restless learners stay engaged — explore <a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">interactive Noorani Qaida</a> and <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>.</p>
           <p>Families who want a gentle start can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a> and ask the tutor to include Bismillah and daily manners in the first lessons.</p>
 
-          <h2>Bismillah vs other Islamic phrases</h2>
+          <h2>How does Bismillah compare with other daily Islamic phrases?</h2>
           <ul>
             <li><strong>Bismillah</strong> — begin an action in Allah’s name</li>
             <li><strong>Alhamdulillah</strong> — praise Allah after a blessing or anytime — <a href="/blog/alhamdulillah-meaning-in-english" style="color:var(--emerald);font-weight:600;">Alhamdulillah meaning</a></li>
@@ -9396,11 +9765,11 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Mashallah</strong> — appreciation without envy — <a href="/blog/mashallah-meaning" style="color:var(--emerald);font-weight:600;">Mashallah meaning</a></li>
           </ul>
 
-          <h2>Pronunciation tips for English speakers</h2>
+          <h2>How can English speakers pronounce Bismillah accurately?</h2>
           <p>Break it slowly: <em>Bis — mil — lah</em>. For the full form: <em>Bis — mil — laa — hir — rah — maa — nir — ra — heem</em>. Soft “h” in Allah; do not harden it into a harsh English “Aww-lah.” A live tutor can correct mouth shape gently during 1-to-1 practice.</p>
           <p>If your child mixes Arabic letter sounds, slow the basmalah down and point to each word. Recovery review for forgotten letters is covered in <a href="/blog/child-forgets-arabic-letters" style="color:var(--emerald);font-weight:600;">my child forgets Arabic letters</a>.</p>
 
-          <h2>A simple daily Bismillah routine for busy families</h2>
+          <h2>What is a practical daily Bismillah routine for busy families?</h2>
           <ol>
             <li><strong>Wake / breakfast:</strong> one clear Bismillah before the first bite</li>
             <li><strong>School bag / door:</strong> Bismillah with the leaving-home dua</li>
@@ -9410,43 +9779,41 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ol>
           <p>Consistency beats length. Five calm repetitions a day build a lifelong habit faster than a once-a-week lecture. For school mornings, pair this with <a href="/blog/dua-before-school-for-kids" style="color:var(--emerald);font-weight:600;">dua before school for kids</a>.</p>
 
-          <h2>Bismillah and online Quran learning</h2>
+          <h2>How does Bismillah connect to online Quran learning?</h2>
           <p>Every live lesson can open with the basmalah. That tiny ritual settles shy children, signals “this time is for Allah,” and connects letter practice to worship. Parents who do not speak Arabic can still lead the English meaning while a tutor guides the Arabic sounds — see <a href="/blog/parents-dont-speak-arabic-child-learn-quran" style="color:var(--emerald);font-weight:600;">parents who don’t speak Arabic</a>.</p>
           <p>If attention is short, keep the opening to ten seconds, then move into interactive practice. Summer holidays are a good window to lock the habit with a short intensive — <a href="/blog/online-summer-quran-camp-for-kids" style="color:var(--emerald);font-weight:600;">online summer Quran camp for kids</a>.</p>
 
-          <h2>What Bismillah is not</h2>
+          <h2>What are common misconceptions about Bismillah?</h2>
           <p>Bismillah is not a substitute for effort, safety, or professional help. It does not make harmful actions good. It is a Sunnah of beginning good deeds with Allah’s name — a light for the tongue and a reminder for the heart. Teach children both the words and the manners that should follow them: honesty, kindness, and care.</p>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want your child to learn Bismillah, Quran, and Islamic manners with a patient tutor?</strong>
-            <p style="margin:10px 0 0;">Book a calm trial, then choose a plan that fits your family — <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">free trial Quran class</a> · <a href="/pricing" style="color:var(--emerald);font-weight:700;">see simple pricing plans</a> · <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">kids Quran classes</a>.</p>
+            <strong>Want your child to learn Bismillah, Quran, and Islamic manners with a patient tutor at NoorPath Academy?</strong><br>
+            NoorPath Academy matches students with native Arabic and Quran tutors for 1-on-1 personalized lessons. Learn correct pronunciation in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, master recitation in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or enroll in our <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">online Hifz program</a>.<br><br>
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial Quran class →</a> · <a href="/pricing" style="color:var(--emerald);font-weight:700;">See simple pricing plans →</a>
           </div>
 
-          <p>After learning daily phrases, beginners can start Arabic reading at <a href="/online-quran-for-beginners">online Quran for beginners</a>.</p>
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq-item">
-            <div class="faq-q">What does Bismillah mean in English?<span style="color:var(--emerald);">+</span></div>
-            <div class="faq-a">Bismillah (بِسْمِ اللَّهِ) means “In the name of Allah.” Muslims say it to begin actions with Allah’s remembrance and seek blessing.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">What is the full form of Bismillah?<span style="color:var(--emerald);">+</span></div>
-            <div class="faq-a">Bismillah ir-Rahman ir-Raheem (بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ) means “In the name of Allah, the Most Gracious, the Most Merciful.” Use the short form for daily acts and the full form for Salah and Quran.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">When should you say Bismillah?<span style="color:var(--emerald);">+</span></div>
-            <div class="faq-a">Before eating or drinking, leaving home, studying, Quran recitation, travel, work, and other important beginnings — anytime you want to start with Allah’s name.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">Is Bismillah in every surah of the Quran?<span style="color:var(--emerald);">+</span></div>
-            <div class="faq-a">It opens every surah except Surah At-Tawbah. Surah An-Naml also mentions the basmalah in the letter of Prophet Sulayman (27:30).</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">How do I teach Bismillah to my child?<span style="color:var(--emerald);">+</span></div>
-            <div class="faq-a">Model it at meals and before Quran practice. Keep it warm, not scolding. Short form first; add the full basmalah when they start reading Quran lines.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">Is Bismillah the same as “in the name of God”?<span style="color:var(--emerald);">+</span></div>
-            <div class="faq-a">In English explanation, yes — it means beginning in Allah’s name. Muslims use the Arabic wording taught in the Quran and Sunnah, while understanding the English meaning.</div>
+          <h2 id="faqs">Frequently asked questions about Bismillah</h2>
+          <div class="faq-list">
+            <details class="faq-acc">
+              <summary>What does Bismillah mean in English?</summary>
+              <p>Bismillah (بِسْمِ اللَّهِ) translates to "In the name of Allah" in English, serving as a reminder to dedicate all permissible actions to the Almighty.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What is the full form of Bismillah?</summary>
+              <p>The complete phrase is Bismillah ir-Rahman ir-Raheem (بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ), meaning "In the name of Allah, the Most Gracious, the Most Merciful."</p>
+            </details>
+            <details class="faq-acc">
+              <summary>When should Muslims say Bismillah in daily life?</summary>
+              <p>Muslims recite Bismillah before eating, drinking, starting tasks, studying, entering or leaving the home, traveling, and before reciting any Surah of the Quran.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>Which Surah of the Quran does NOT begin with Bismillah?</summary>
+              <p>Surah At-Tawbah (Chapter 9) is the only surah in the Holy Quran that does not begin with Bismillah ir-Rahman ir-Raheem.</p>
+            </details>
+            <details class="faq-acc">
+              <summary>What should you do if you forget to say Bismillah before eating?</summary>
+              <p>The prophetic Sunnah teaches that if you forget before starting your meal, say: "Bismillahi awwalahu wa akhirahu" (In the name of Allah at its beginning and end).</p>
+            </details>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9500,9 +9867,24 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     .faq-acc p { padding: 14px 20px; color: #374151; font-size: .92rem; line-height: 1.75; margin: 0; border-top: 1px solid var(--border); }
     @media (max-width: 576px) { .timeline-table { font-size: .82rem; } .cta-inline { flex-direction: column; } }`,
     content: `
-          <div class="highlight-box">
-            <strong style="color:var(--emerald);font-size:1rem;">Quick Answer:</strong>
-            <p style="margin:8px 0 0;">There is no reliable universal Hifz timeline. Starting fluency, retention, revision quality, lesson frequency, attendance, health, and available practice time all affect pace. Treat any schedule as a planning estimate, not a guaranteed outcome.</p>
+          <div class="answer-box">
+            <strong>Quick Answer:</strong> How long to memorize Quran typically takes between 2 to 5 years depending on daily consistency, starting Arabic fluency, age, and revision rigor. Memorizing one page daily allows completion in approximately two years, while half a page daily takes three to four years through the structured Sabaq, Sabqi, and Manzil method.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Full Quran memorization typically spans 2 to 4 years based on daily dedication and revision.</li>
+              <li>The traditional Sabaq (new), Sabqi (recent), and Manzil (past) cycle ensures permanent retention.</li>
+              <li>Committing to half a page daily results in completion in roughly three to four years.</li>
+              <li>Adults can successfully complete Hifz through flexible schedules and structured one-on-one online coaching.</li>
+              <li>NoorPath Academy provides certified Hafiz tutors with customized pacing and daily retention tracking.</li>
+            </ul>
+          </div>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Memorizing the entire 604-page Quran requires between two and five years of disciplined study, balancing new memorization with continuous revision. Utilizing the proven Sabaq, Sabqi, and Manzil framework prevents forgetting previous chapters. Start your journey with tailored one-on-one mentorship from certified Hafiz instructors at NoorPath Academy.</p>
           </div>
 
           <div class="stat-row">
@@ -9516,7 +9898,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>The honest answer is that pace varies materially by learner. This guide explains the workload, revision system, questions to ask, and factors to discuss before beginning.</p>
 
-          <h2>The Quran in Numbers — Understanding the Scale</h2>
+          <h2>What is the scale of the Holy Quran in numbers?</h2>
 
           <p>Before discussing timelines, let's understand what we are memorizing:</p>
           <ul>
@@ -9532,7 +9914,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>Revision matters:</strong> New memorisation should be balanced with recent and older revision. No method guarantees permanent retention; regular review and correction remain necessary.
           </div>
 
-          <h2>Factors That Affect a Hifz Plan</h2>
+          <h2>What factors affect the duration of a Quran memorization plan?</h2>
           <ul>
             <li><strong>Starting fluency:</strong> reading accuracy and Tajweed needs affect how much correction is required.</li>
             <li><strong>Retention:</strong> the amount of new material should follow observed recall, not an age-based promise.</li>
@@ -9541,7 +9923,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><strong>Wellbeing and responsibilities:</strong> school, work, health, and family commitments should shape the plan.</li>
           </ul>
 
-          <h2>The Sabaq-Sabqi-Manzil System — The Engine of Hifz</h2>
+          <h2>How does the Sabaq, Sabqi, and Manzil system accelerate Hifz?</h2>
 
           <p>Every serious Hifz program — whether in a traditional madrassa or online — is built on one system: <strong>Sabaq, Sabqi, and Manzil</strong>. Understanding this is essential before calculating your timeline.</p>
 
@@ -9568,7 +9950,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>Without the Sabaq-Sabqi-Manzil system, students forget rapidly. The brain naturally discards information not reinforced — the Quran is no exception. A certified Hafiz tutor structures each session so all three layers happen every day. This is why a <strong>qualified tutor is non-negotiable</strong> for successful Hifz — not just for teaching, but for accountability and revision scheduling.</p>
 
-          <h2>Online Hifz and Traditional Madrassa Formats</h2>
+          <h2>How does online Hifz compare to traditional madrassa formats?</h2>
 
           <table class="timeline-table">
             <thead>
@@ -9586,7 +9968,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <p>Neither format guarantees a faster or better outcome. Compare tutor fit, safeguarding, feedback, revision structure, travel, community needs, and schedule before choosing.</p>
 
-          <h2>Reviewing a Hifz Plan</h2>
+          <h2>How should teachers and parents review a student's Hifz plan?</h2>
           <p>Review the plan periodically using observed retention, correction needs, attendance, revision quality, and learner wellbeing. Adjust the new portion rather than forcing an age-based or calendar-based target.</p>
 
           <div class="gold-box">
@@ -9594,7 +9976,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             Almost every Hifz program starts with Juz 30 (the last part of the Quran — Surah An-Naas backward to An-Naba). The surahs are shorter, the student builds confidence and momentum, and many surahs are already partially known from prayer. This is the most important strategic decision in starting Hifz.
           </div>
 
-          <h2>The 7 Most Common Reasons Hifz Takes Too Long (or Fails)</h2>
+          <h2>What are the 7 most common reasons Quran memorization takes too long?</h2>
 
           <div class="mistake-card">
             <div class="mistake-num">1</div>
@@ -9625,11 +10007,11 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <div><strong>Not Using the Same Mushaf</strong> — Switching between different Mushafs (page layouts) mid-Hifz confuses visual memory. Always use the same Mushaf throughout — your brain memorizes the position of words on the page, not just the words themselves.</div>
           </div>
 
-          <h2>How to Discuss a Personal Hifz Plan</h2>
+          <h2>How should you discuss and customize a personal Hifz plan?</h2>
 
           <p>Ask how the tutor will assess reading accuracy, choose an initial portion, balance Sabaq with Sabqi and Manzil, review retention, and reduce the target when revision quality falls. Any date estimate should be treated as provisional.</p>
 
-          <h2>Tips to Memorize Quran Faster Without Sacrificing Quality</h2>
+          <h2>How can you memorize the Quran faster without sacrificing quality?</h2>
 
           <ol>
             <li><strong>Choose a sustainable time.</strong> Some learners prefer after Fajr, while others retain better at a different quiet time.</li>
@@ -9649,7 +10031,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <a href="/hifz-quran-online">Book Free Hifz Trial →</a>
           </div>
 
-          <h2>Can Adults Really Complete Hifz? (Honest Answer)</h2>
+          <h2>Can working adults successfully memorize the complete Quran?</h2>
 
           <p><strong>Yes — and more adults complete Hifz online than most people realise.</strong></p>
 
@@ -9670,7 +10052,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p style="margin:8px 0 0;font-size:.93rem;">Do not rely on unattributed student stories or templated outcomes when evaluating a programme. Ask for the curriculum, safeguarding process, tutor information, and written policies instead.</p>
           </div>
 
-          <h2>Frequently Asked Questions About Quran Memorization Time</h2>
+          <h2 id="faqs">Frequently asked questions about Quran memorization timelines</h2>
 
           <details class="faq-acc">
             <summary>How long does it take to memorize 1 Juz of the Quran? <span>+</span></summary>
@@ -9701,11 +10083,11 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p>Basic Tajweed can be learned before or alongside Hifz so pronunciation is corrected during memorisation. Ask how Tajweed feedback will be included in the proposed lesson plan; do not rely on percentage-based progress claims.</p>
           </details>
 
-          <h2>Next Steps — Start Your Hifz Journey</h2>
+          <h2>What are the next steps to start your Hifz journey?</h2>
 
           <p>Begin when the learner can commit to a sustainable routine. Ask for an assessment, an initial revision structure, and a process for adjusting targets based on observed retention.</p>
 
-          <p>At <a href="/online-quran-classes" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, you can request a Hifz tutor match and discuss a learning plan. Tutor availability is confirmed after matching, and no completion outcome is guaranteed.</p>
+          <p>At <a href="/online-quran-classes" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, you can request a Hifz tutor match and discuss a learning plan. Tutor availability is confirmed after matching, and no completion outcome is guaranteed. Before starting memorization, students can establish proper letter reading in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:600;">Noorani Qaida online course</a> or perfect articulation in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:600;">online Tajweed classes</a>.</p>
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:40px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Begin Your Hifz Journey Today</h3>

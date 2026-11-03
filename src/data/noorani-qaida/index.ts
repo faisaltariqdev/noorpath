@@ -2,6 +2,7 @@ import { QAIDA_GAMES } from "./games";
 import { QAIDA_GUIDES } from "./guides";
 import { QAIDA_LETTERS } from "./letters";
 import { QAIDA_LESSONS, QAIDA_TAJWEED_TOPICS } from "./topics";
+import { QAIDA_WORKSHEETS } from "./worksheets";
 import type { QaidaModule } from "./types";
 
 export * from "./games";
@@ -9,6 +10,7 @@ export * from "./guides";
 export * from "./letters";
 export * from "./topics";
 export * from "./types";
+export * from "./worksheets";
 
 export const QAIDA_CONTENT_VERSION = "2026-07-17";
 export const QAIDA_BASE_PATH = "/noorani-qaida";
@@ -66,4 +68,5 @@ export const QAIDA_INDEXABLE_PATHS = [
   ...QAIDA_GUIDES.map((guide) => `${QAIDA_BASE_PATH}/guides/${guide.slug}`),
   `${QAIDA_BASE_PATH}/games`,
   ...QAIDA_GAMES.map((game) => game.href),
+  ...QAIDA_WORKSHEETS.map((w) => w.href),
 ];

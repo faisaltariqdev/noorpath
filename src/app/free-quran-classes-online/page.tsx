@@ -573,6 +573,12 @@ export default function FreeQuranClassesPage() {
               <p style={{ color: "rgba(255,255,255,.75)", lineHeight: 1.7 }}>
                 {TRIAL.classes} classes, {TRIAL.durationMinutes} minutes each. Live. 1-to-1. Tutor match confirmed. No credit card.
               </p>
+              <p style={{ marginTop: 12, fontSize: ".85rem", color: "rgba(255,255,255,.7)" }}>
+                Already submitted a request? View our{" "}
+                <Link href="/thank-you" style={{ color: "var(--gold-lt)", textDecoration: "underline" }}>
+                  trial confirmation &amp; lesson preparation checklist
+                </Link>.
+              </p>
             </div>
             <div className="cta-form-wrap">
               <CTAForm />

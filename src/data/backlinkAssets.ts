@@ -136,12 +136,12 @@ export const backlinkAssets: BacklinkAsset[] = [
   },
   {
     slug: "muslim-population-statistics-uk-usa",
-    title: "Muslim Population in UK & USA: Official 2021 Census & Pew Research Data",
+    title: "Muslim Population UK & USA 2026 — Latest Census Data",
     description:
-      "Official Muslim population statistics for the UK (England & Wales 2021 Census) and USA (Pew Research): demographic share, verified growth figures & analysis.",
+      "Muslim population in UK & USA 2026 data: verified UK Census & Pew Research stats. View demographic charts, state breakdowns and download free PDF data.",
     category: CATEGORY,
     date: DATE,
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "muslim population statistics uk usa",
@@ -473,40 +473,6 @@ export const backlinkAssets: BacklinkAsset[] = [
       QURANIC_ARABIC_CORPUS_TARTIL_URL,
       EEF_FEEDBACK_GUIDANCE_URL,
       IIUM_TAJWID_GUIDE_URL,
-    ],
-    howToSteps: [
-      {
-        name: "Select a small anchor passage",
-        text: "Choose a short passage that is challenging enough to reveal one recitation issue without creating a new problem in every word.",
-      },
-      {
-        name: "Listen with a specific purpose",
-        text: "Follow the text while listening for one selected letter, rule, pause or phrase boundary.",
-      },
-      {
-        name: "Break the passage into micro-sections",
-        text: "Practise the target at word, phrase and ayah level instead of repeating the full passage with the same hidden error.",
-      },
-      {
-        name: "Practise one correction target",
-        text: "Use one active target for the practice block and record other issues for later review.",
-      },
-      {
-        name: "Recite aloud at a controlled pace",
-        text: "Read clearly enough to hear the target and slow down whenever greater speed reduces accuracy.",
-      },
-      {
-        name: "Record and compare",
-        text: "Record one short attempt, compare it with a reliable model and name the specific difference you notice.",
-      },
-      {
-        name: "Obtain feedback and repeat",
-        text: "Ask a suitable teacher to prioritise the correction, then reproduce it in the word and phrase.",
-      },
-      {
-        name: "Recheck in a new passage",
-        text: "Test the same skill in an unfamiliar passage to see whether the correction transfers beyond the anchor example.",
-      },
     ],
     schemaType: "Article",
   },

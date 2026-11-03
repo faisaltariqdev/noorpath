@@ -17,6 +17,7 @@ import {
   QaidaRelatedLinks,
   QaidaScreenshot,
 } from "./QaidaSeoComponents";
+import QaidaGamesWorksheetsGrid from "./QaidaGamesWorksheetsGrid";
 
 export default function QaidaTopicPage({ topic }: { topic: QaidaTopic }) {
   const collection = topic.category === "lesson" ? QAIDA_LESSONS : QAIDA_TAJWEED_TOPICS;
@@ -177,6 +178,8 @@ export default function QaidaTopicPage({ topic }: { topic: QaidaTopic }) {
               { href: topic.category === "tajweed" ? "/learn-tajweed-online" : `${QAIDA_BASE_PATH}/guides/pronunciation`, label: topic.category === "tajweed" ? "Live Tajweed classes" : "Pronunciation guide", description: "Know when audible modelling and teacher feedback matter." },
             ]}
           />
+
+          <QaidaGamesWorksheetsGrid currentHref={url} limit={6} />
 
           <QaidaCourseCta
             title={topic.category === "tajweed" ? "Ready for teacher-guided Tajweed?" : `Want guided help with ${topic.title}?`}

@@ -32,7 +32,7 @@ import {
   Sprout, Baby, Smile, Star, Users, PlayCircle, MapPin,
   Layers, Award, Globe, CheckCircle, Clock, Shield, Video, Lock, ChevronDown,
   GraduationCap, Heart, UserCheck, ClipboardList, Landmark,
-  BookOpen, Music, Brain, PenLine
+  BookOpen, Music, Brain, PenLine, Gamepad2
 } from "lucide-react";
 
 export const revalidate = false;
@@ -66,14 +66,14 @@ export const metadata: Metadata = {
 
 const courseCards = [
   { icon: <BookOpen size={22} />, title: "Noorani Qaida", desc: "Arabic letters, vowel signs and reading foundations", level: "Beginner", href: "/courses/noorani-qaida-online" },
-  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Guided recitation and practical rule application", level: "Beginner–Advanced", href: "/learn-tajweed-online" },
+  { icon: <Music size={22} />, title: "Tajweed Rules", desc: "Guided recitation and practical rule application", level: "Beginner–Advanced", href: "/courses/tajweed-classes-online" },
   { icon: <Brain size={22} />, title: "Hifz Program", desc: "Structured memorization and revision goals", level: "Intermediate–Advanced", href: "/hifz-quran-online" },
   { icon: <Baby size={22} />, title: "Kids All-in-One", desc: "Qaida, selected daily duas and short Hadith topics", level: "Ages 4–12", href: "/online-quran-classes-for-kids" },
   { icon: <PenLine size={22} />, title: "Arabic Language", desc: "Quranic and Modern Standard Arabic study", level: "All levels", href: "/courses/arabic-language-online" },
   { icon: <Landmark size={22} />, title: "Islamic Studies", desc: "Fiqh, Seerah, Aqeedah, morals & Islamic character", level: "All ages", href: "/courses/islamic-studies-online" },
 ];
 
-const priorityCountries = PRIORITY_MARKETS.map(({ flag, country, slug }) => ({
+const priorityCountries = PRIORITY_MARKETS.slice(0, 6).map(({ flag, country, slug }) => ({
   flag,
   country,
   href: `/locations/${slug}`,
@@ -246,6 +246,9 @@ export default function HomePage() {
                 </Link>
                 <Link href="/courses" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", color: "#fff", fontWeight: 600, padding: "16px 28px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(255,255,255,.25)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
                   <MapPin size={16} /> View Courses
+                </Link>
+                <Link href="/noorani-qaida/games" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(20,184,130,.15)", color: "#86efac", fontWeight: 600, padding: "16px 26px", borderRadius: 50, textDecoration: "none", border: "1.5px solid rgba(74,222,128,.35)", fontSize: ".93rem", backdropFilter: "blur(8px)" }}>
+                  <Gamepad2 size={18} /> Free Qaida Games
                 </Link>
               </div>
 
@@ -679,12 +682,15 @@ export default function HomePage() {
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
                 {[
-                  ["/courses/noorani-qaida-online", "Noorani Qaida Online"],
-                  ["/learn-tajweed-online", "Learn Tajweed Online"],
-                  ["/hifz-quran-online", "Hifz Quran Online"],
+                  ["/courses/noorani-qaida-online", "Learn Noorani Qaida Online"],
+                  ["/courses/tajweed-classes-online", "Online Tajweed Classes"],
+                  ["/hifz-quran-online", "Online Quran Hifz Program"],
                   ["/online-quran-classes-for-kids", "Online Quran Classes for Kids"],
-                  ["/courses/arabic-language-online", "Arabic Language Online"],
+                  ["/female-quran-teacher-online", "Female Quran Teacher Online"],
+                  ["/noorani-qaida/games", "Free Noorani Qaida Games & Quizzes"],
+                  ["/courses/arabic-language-online", "Arabic Language Course Online"],
                   ["/courses/islamic-studies-online", "Islamic Studies Online"],
+                  ["/pricing", "Quran Class Pricing & Plans"],
                   ["/blog/noorpath-academy-vision-online-quran-education", "Our Vision & Mission"],
                 ].map(([href, label]) => (
                   <li key={String(label)}>

@@ -710,11 +710,20 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   },
   "online-quran-classes-cost-pricing-guide": {
     style: S,
-    content: `<p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer in 2026: anywhere from <strong>$4 to $25 per class</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Online Quran class prices vary by lesson length, frequency, format and tutor. Compare total teaching time, payment terms and what support is included. See <a href="/pricing">NoorPath pricing</a> for its current published plans; the 30-minute trial is free and requires no card.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Online Quran classes cost between $4 and $25 per class, averaging $30 to $80 monthly for two weekly 30-minute one-on-one sessions. Pricing varies by tutor credentials, course specialization (such as Hifz or Tajweed), and lesson frequency. Quality academies provide flexible monthly billing and free trial evaluations without upfront lock-in contracts.
           </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Average classes cost $4 to $25 per session, totaling $30 to $80 monthly for standard private instruction.</li>
+              <li>Specialized tracks like Hifz and advanced Tajweed cost more due to tutor qualifications and intensive schedules.</li>
+              <li>Reputable academies offer month-to-month billing, sibling discounts, and free 30-minute trial classes without credit cards.</li>
+            </ul>
+          </div>
+
+          <p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer in 2026: anywhere from <strong>$4 to $25 per class</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
 
           <div class="stat-row">
             <div class="stat-pill"><strong>$4–25</strong><span>Per class range</span></div>
@@ -723,17 +732,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <div class="stat-pill"><strong>Free</strong><span>Trial class</span></div>
           </div>
 
-          <h2 id="table">Online Quran class prices in 2026 — the real ranges</h2>
+          <h2 id="table">How much do online Quran classes cost in 2026?</h2>
           <table class="np-table">
             <tr><th>Course type</th><th>Per 30-min class</th><th>Typical monthly (2×/week)</th><th>Notes</th></tr>
-            <tr><td>Noorani Qaida (beginners)</td><td>$4–$10</td><td>$30–$60</td><td>Best starting point for kids and adult beginners</td></tr>
+            <tr><td>Noorani Qaida (beginners)</td><td>$4–$10</td><td>$30–$60</td><td>Best starting point for kids and adult beginners — explore <a href="/courses/noorani-qaida-online">Noorani Qaida online</a></td></tr>
             <tr><td>Quran reading (Nazra)</td><td>$5–$12</td><td>$35–$70</td><td>Fluency and daily recitation</td></tr>
-            <tr><td>Tajweed course</td><td>$6–$15</td><td>$40–$90</td><td>Requires a genuinely certified tutor</td></tr>
+            <tr><td>Tajweed course</td><td>$6–$15</td><td>$40–$90</td><td>Requires a genuinely certified tutor — explore <a href="/courses/tajweed-classes-online">Tajweed classes online</a></td></tr>
             <tr><td>Hifz (memorisation)</td><td>$8–$25</td><td>$60–$150</td><td>Needs 4–5 days/week with a Hafiz — see <a href="/hifz-quran-online">Hifz online</a></td></tr>
             <tr><td>Arabic language</td><td>$7–$18</td><td>$50–$100</td><td>Grammar-based, longer sessions</td></tr>
           </table>
 
-          <h2 id="factors">What actually changes the price</h2>
+          <h2 id="factors">What factors change the price of online Quran classes?</h2>
           <ul>
             <li><strong>Tutor credentials:</strong> tutors with verifiable Ijazah or formal training often cost more than unverified reciters — ask for evidence for the proposed match. See <a href="/blog/what-is-ijazah-in-quran-teaching">what is Ijazah</a> and <a href="/our-tutors">how NoorPath confirms credentials</a>.</li>
             <li><strong>1-on-1 vs group:</strong> group classes look cheap, but private lessons usually give more correction time per learner.</li>
@@ -742,10 +751,10 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li><strong>Your country:</strong> academies price in USD/GBP; the tutor's location matters less than their certification.</li>
           </ul>
 
-          <h2 id="family">Family and sibling discounts</h2>
-          <p>If you have two or more children, ask about family pricing before paying. NoorPath's current sibling discounts and plan details are maintained on the <a href="/pricing">pricing page</a>.</p>
+          <h2 id="family">Are family and sibling discounts available?</h2>
+          <p>If you have two or more children, ask about family pricing before paying. NoorPath Academy maintains transparent sibling discounts and family packages on its published <a href="/pricing">pricing page</a>.</p>
 
-          <h2 id="redflags">Red flags — when you are overpaying (or worse)</h2>
+          <h2 id="redflags">What pricing red flags should parents watch for?</h2>
           <ol>
             <li><strong>No free trial:</strong> a serious academy lets you test the tutor first.</li>
             <li><strong>Long lock-in contracts:</strong> monthly rolling plans are the fair standard.</li>
@@ -754,8 +763,31 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li><strong>Upfront yearly payment demands:</strong> pay monthly until trust is earned.</li>
           </ol>
 
-          <h2 id="worth">Is it cheaper than a local madrasa or home tutor?</h2>
+          <h2 id="worth">Are online Quran classes cheaper than local madrasas?</h2>
           <p>In-person and online Quran tutoring costs vary by country, tutor, lesson length and format. Online one-to-one classes remove travel and may offer more scheduling options. Compare the current lesson frequency, duration and full monthly price before choosing — read the full comparison in <a href="/blog/benefits-of-online-quran-classes">benefits of online Quran classes</a>.</p>
+
+          <h2 id="faq">Frequently asked questions about online Quran class pricing</h2>
+          <details class="faq-acc">
+            <summary>How much do online Quran classes cost per month?<span>+</span></summary>
+            <p>Most families pay between $30 and $80 per month for two weekly 30-minute private lessons, depending on course level and teacher credentials.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Why do Hifz memorization classes cost more?<span>+</span></summary>
+            <p>Hifz programs require 4 to 5 weekly sessions with certified Hafiz tutors, demanding significantly more dedicated one-on-one instruction time.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Are online Quran classes cheaper than private home tutors?<span>+</span></summary>
+            <p>Yes, online tutoring eliminates travel surcharges and facility overhead, typically reducing overall monthly costs by 30% to 50%.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Does NoorPath Academy offer a free trial?<span>+</span></summary>
+            <p>Yes, NoorPath Academy provides a completely free 30-minute trial lesson with a certified tutor without requiring any credit card details.</p>
+          </details>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Online Quran classes cost between $4 and $25 per lesson, with monthly rates typically ranging from $30 to $80 for private tutoring. Costs depend on instructor certification, frequency, and whether you enroll in Noorani Qaida, Tajweed, or intensive Hifz. NoorPath Academy provides transparent monthly plans and a free 30-minute trial class.</p>
+          </div>
 
           <div class="gold-box">
             <strong>Test the proposed match before enrolling.</strong> Request a <a href="/free-quran-classes-online">free 30-minute trial (no credit card)</a>, ask about the tutor&apos;s relevant credentials, and assess the lesson fit. See current <a href="/pricing">NoorPath pricing plans</a>.
@@ -1062,8 +1094,17 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   },
   "attahiyat-full-arabic-english-tashahhud": {
     style: S,
-    content: `<div class="highlight-box">
-            <strong>Answer first:</strong> <strong>Attahiyat</strong> (Tashahhud) is the sitting dua in salah after every two rakats. Below is the <strong>full Arabic text with English meaning and transliteration</strong>, plus when to recite it and how to memorise it. It is essential in the final sitting of every prayer.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Attahiyat (Tashahhud) is the obligatory prayer recited during the sitting posture of Salah: <em>التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ</em> (<em>At-tahiyyatu lillahi wa-s-salawatu wa-t-tayyibat</em>). It praises Allah, sends peace upon the Prophet Muhammad ﷺ and righteous servants, and affirms the Shahada in every two-rakat and final sitting.
+          </div>
+
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Attahiyat is recited during the middle and final sitting postures of every obligatory and voluntary Salah.</li>
+              <li>The text originates from the sacred Mi'raj dialogue between Allah, the Prophet ﷺ, and the angels.</li>
+              <li>Pronouncing letters like heavy Taa (ط) and Saad (ص) accurately preserves the prayer's valid meaning.</li>
+            </ul>
           </div>
 
           <div class="verse-card">
@@ -1073,15 +1114,45 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <p class="trans-en">"All greetings, prayers and pure words are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that none has the right to be worshipped except Allah, and I bear witness that Muhammad is His servant and Messenger."</p>
           </div>
 
+          <div class="audio-card">
+            <div style="font-size:2rem;line-height:1;">🎧</div>
+            <div>
+              <strong>Audio &amp; Pronunciation Guide:</strong> Listen and repeat each phrase slowly to master the soft and heavy throat letters. Strengthen letter recognition with our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> foundation course, play our free <a href="/noorani-qaida/games">Noorani Qaida Games &amp; Quizzes</a> to practice letter sounds and vowels, and learn letter articulation points in the <a href="/noorani-qaida/tajweed/makharij">Makharij Pronunciation Guide</a>. For personalized feedback, explore our certified <a href="/courses/tajweed-classes-online">Tajweed classes online</a> at NoorPath Academy for families worldwide.
+            </div>
+          </div>
+
+          <div class="pdf-download-card">
+            <div>
+              <h3 style="margin:0 0 6px;color:var(--charcoal);">Free Printable Attahiyat PDF Guide</h3>
+              <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free printable Tashahhud sheet with clear Arabic script, transliteration, and English translation for kids and beginners.</p>
+            </div>
+            <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+          </div>
+
+          <h2 id="variants">What are the common spelling variants of Attahiyat?</h2>
+          <p>You may encounter this essential prayer invocation written under several spelling variants in books and searches: <strong>Attahiyat</strong>, <strong>At-Tahiyyat</strong>, <strong>At-Tahiyyaatu</strong>, <strong>Tashahhud</strong>, <strong>Tashahud</strong>, and <strong>Attahiyatu Lillahi</strong>. They all refer to the same identical Sunnah recitation recorded in Sahih al-Bukhari (831) and Sahih Muslim (402).</p>
+
+          <h2 id="rules-when">When should you recite Attahiyat in Salah?</h2>
+          <table class="np-table">
+            <thead>
+              <tr><th>When to Recite Attahiyat</th><th>When NOT to Recite Attahiyat</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Middle sitting after 2 rakats in 3 &amp; 4 rakat prayers</td><td>While standing upright in Qiyam (recite Al-Fatiha &amp; Quran)</td></tr>
+              <tr><td>Final sitting of every Salah before Durood Ibrahim</td><td>During Ruku (bowing) or Sujood (prostration)</td></tr>
+              <tr><td>All 2-rakat prayers (Fajr, Jumu'ah, Eid, Taraweeh, Sunnah)</td><td>After saying Salam (recite post-salah Sunnah adhkar instead)</td></tr>
+            </tbody>
+          </table>
+
           <p>You recite <strong>Attahiyat</strong> in every sitting of every salah. Many Muslims were never taught its origin: these are the words exchanged between the Prophet ﷺ and Allah on the night of <strong>Mi'raj</strong>, with the angels' reply joined at the end.</p>
 
-          <h2 id="full">How to recite Attahiyat — line by line</h2>
+          <h2 id="full">How do you recite Attahiyat line by line?</h2>
           <p>Read the Arabic above slowly, then match each line to the transliteration. Practise one line per day before joining lines in a full sitting.</p>
 
-          <h2 id="story">The beautiful story behind Attahiyat</h2>
+          <h2 id="story">What is the historical meaning and story of Attahiyat?</h2>
           <p>Many scholars relate that these words echo the exchange of the Mi'raj: the Prophet ﷺ greeted Allah with <em>"At-tahiyyatu lillahi…"</em>, Allah replied with <em>"As-salamu 'alayka ayyuha-n-nabiyyu…"</em>, and the Prophet ﷺ — refusing to keep the greeting for himself alone — responded <em>"As-salamu 'alayna wa 'ala 'ibadillahi-s-salihin"</em>, including every righteous servant until the Day of Judgment. When you sit in Tashahhud, you join that conversation.</p>
 
-          <h2 id="when">When exactly to recite it in salah</h2>
+          <h2 id="when">In which prayer sittings do you recite Attahiyat?</h2>
           <table class="np-table">
             <tr><th>Prayer</th><th>Sittings with Attahiyat</th></tr>
             <tr><td>Fajr (2 rakats)</td><td>1 — final sitting (+ Durood and dua)</td></tr>
@@ -1090,15 +1161,15 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </table>
           <p>In the final sitting, follow Attahiyat with <a href="/blog/darood-sharif">Durood Ibrahim</a> and a closing dua before salam. Full prayer walkthrough: <a href="/blog/how-to-pray-salah-step-by-step">how to pray salah step by step</a>.</p>
 
-          <h2 id="mistakes">Common mistakes to avoid</h2>
+          <h2 id="mistakes">What common mistakes happen when reciting Attahiyat?</h2>
           <ul>
             <li><strong>Rushing the words</strong> — Tashahhud has no time pressure; recite each phrase clearly.</li>
             <li><strong>Merging words</strong> like <em>"wasalawatu-wattayyibatu"</em> into a blur — learn word-by-word once with a teacher and it stays correct for life.</li>
             <li><strong>Skipping the finger movement</strong> — raise the index finger at <em>ash-hadu an la ilaha illallah</em> (methods vary by madhab; follow your teacher).</li>
-            <li><strong>Wrong pronunciation of ط and ص</strong> — heavy letters in <em>tayyibat</em> and <em>salawat</em> change meaning if softened. A quick <a href="/learn-tajweed-online">Tajweed session</a> fixes this permanently.</li>
+            <li><strong>Wrong pronunciation of ط and ص</strong> — heavy letters in <em>tayyibat</em> and <em>salawat</em> change meaning if softened. A quick <a href="/courses/tajweed-classes-online">Tajweed class</a> fixes this permanently.</li>
           </ul>
 
-          <h2 id="memorize">How to memorize Attahiyat (kids & new Muslims)</h2>
+          <h2 id="memorize">How can kids and beginners memorize Attahiyat easily?</h2>
           <ol>
             <li>Split it into 4 lines (greeting → salam to Prophet → salam to believers → Shahada).</li>
             <li>Learn one line per day with audio repetition — 10 minutes daily.</li>
@@ -1123,7 +1194,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             </div>
           </div>
 
-          <h2 id="faq">Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions about Attahiyat</h2>
           <details class="faq-acc"><summary>What is Attahiyat and when is it recited?<span>+</span></summary>
             <p>Attahiyat (Tashahhud) is the dua recited while sitting in salah — after every two rakats and in the final sitting of every prayer. It begins with At-tahiyyatu lillahi… and includes the Shahada.</p>
           </details>
@@ -1133,18 +1204,82 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <details class="faq-acc"><summary>Is Attahiyat obligatory in salah?<span>+</span></summary>
             <p>The final Tashahhud sitting is essential in every prayer. Follow your madhab and teacher for rulings on the first sitting in longer prayers.</p>
           </details>
+          <details class="faq-acc"><summary>How can beginners learn proper Tashahhud pronunciation?<span>+</span></summary>
+            <p>Beginners can learn proper pronunciation through certified Tajweed teachers at NoorPath Academy who provide one-on-one live feedback.</p>
+          </details>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Attahiyat, or Tashahhud, is the sacred recitation uttered while sitting in Salah that glorifies Allah and proclaims the Shahada. Originating from the Prophet's ﷺ heavenly journey, it must be recited in every two-rakat and final prayer sitting. NoorPath Academy provides certified Tajweed tutors to help students master its proper Arabic pronunciation.</p>
+          </div>
 
           <p>Related: <a href="/blog/darood-sharif">Durood Ibrahim</a> · <a href="/blog/how-to-pray-salah-step-by-step">How to pray salah</a> · <a href="/female-quran-teacher-online">Female Quran teacher online</a></p>`,
   },
   "safar-ki-dua-travel-dua-arabic-english": {
     style: S,
-    content: `<p>Whether it is the school run, a business flight or Umrah travel, the Sunnah gives us a beautiful <strong>safar ki dua (travel dua)</strong> to begin every journey — the same words the Prophet ﷺ said when he settled onto his mount. <em>Safar</em> is simply the Arabic and Urdu word for travel, which is why the same supplication is searched for as "dua safar", "safar ki dua" and "the travel dua" alike. Here is the full Arabic, a word-by-word breakdown, the longer prophetic version, the return-journey addition, the pronunciation slips to avoid, and how to teach it to children.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> The main travel dua is <em>Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun</em> — "Glory be to the One who subjected this (vehicle) for us, and we could never have done it ourselves; and indeed, to our Lord we will return." Say it when your car, plane or train starts moving.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Safar ki dua is the Sunnah travel prayer from Surah Az-Zukhruf (43:13–14): <em>سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ</em> (<em>Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun</em>). Recited upon boarding vehicles, it praises Allah for facilitating journeys and seeks safe divine passage.
           </div>
 
-          <h2 id="dua">Safar ki dua — full text</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Recite Safar ki dua after settling into your vehicle seat, preceded by Bismillah and threefold Takbir.</li>
+              <li>The Quranic verse reminds travelers that human mobility relies entirely on Allah's divine facilitation.</li>
+              <li>One authentic supplication applies equally to cars, airplanes, trains, and maritime travel.</li>
+            </ul>
+          </div>
+
+          <div class="audio-card">
+            <strong>Pronunciation &amp; Audio Guide:</strong>
+            <p>Listen and perfect your pronunciation of the Sunnah travel dua with certified Quran tutors at NoorPath Academy. Learn essential supplications with our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> course, master Tajweed rules with our <a href="/courses/tajweed-classes-online">Tajweed classes online</a>, or explore vowel rules in the <a href="/noorani-qaida/lessons/fatha">Fatha lesson guide</a>.</p>
+          </div>
+
+          <div class="pdf-download-card">
+            <div>
+              <strong>Free Printable Travel Dua Card (PDF)</strong>
+              <p>Download our printable car visor &amp; luggage tag travel dua cards with Arabic, transliteration, English translation, and return journey supplications. Trusted by thousands of families in the <a href="/locations/online-quran-classes-usa">USA</a>.</p>
+            </div>
+            <a href="/noorani-qaida" class="pdf-download-btn">Free PDF Download</a>
+          </div>
+
+          <h2>What are the common spelling variants of Safar ki dua?</h2>
+          <p>Muslims search for and write this travel supplication under several English and transliterated names:</p>
+          <ul>
+            <li><strong>Safar Ki Dua</strong> — Most popular Urdu/Hindi/English query (سفر کی دعا).</li>
+            <li><strong>Travel Dua</strong> — Standard English name for the journey supplication.</li>
+            <li><strong>Musafir Ki Dua</strong> — Supplication of the traveler.</li>
+            <li><strong>Subhanallazi Sakhara Lana Haza</strong> — Common phonetic spelling of the Quranic ayah.</li>
+            <li><strong>Dua e Safar</strong> — Classical Arabic-Urdu compound phrasing.</li>
+          </ul>
+
+          <h2>When should you recite Safar ki dua?</h2>
+          <table class="np-table">
+            <thead>
+              <tr>
+                <th>Recommended Times to Recite</th>
+                <th>When NOT to Say / Common Mistakes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Vehicle Departure:</strong> Recite once seated in a car, bus, train, or plane as movement begins.</td>
+                <td><strong>Before Proper Safety Steps:</strong> Do not recite as an excuse to skip wearing seatbelts or vehicle safety checks.</td>
+              </tr>
+              <tr>
+                <td><strong>Ascending &amp; Descending:</strong> Sunnah practice: recite <em>Allahu Akbar</em> when driving up hills or taking off, and <em>SubhanAllah</em> when descending.</td>
+                <td><strong>While Recklessly Driving:</strong> Do not distract your driving focus or look away from the road while reading text cards.</td>
+              </tr>
+              <tr>
+                <td><strong>Return from Journey:</strong> Add the Sunnah return words: <em>Ayibuna, ta'ibuna, 'abiduna, li-rabbina hamidun</em>.</td>
+                <td><strong>Impure Locations:</strong> Never recite sacred Quranic verses inside filthy or inappropriate environments.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Whether it is the school run, a business flight or Umrah travel, the Sunnah gives us a beautiful <strong>safar ki dua (travel dua)</strong> to begin every journey — the same words the Prophet ﷺ said when he settled onto his mount. <em>Safar</em> is simply the Arabic and Urdu word for travel, which is why the same supplication is searched for as "dua safar", "safar ki dua" and "the travel dua" alike. Here is the full Arabic, a word-by-word breakdown, the longer prophetic version, the return-journey addition, the pronunciation slips to avoid, and how to teach it to children.</p>
+
+          <h2 id="dua">What is the full Arabic text and translation of Safar ki dua?</h2>
           <div class="verse-card">
             <span class="vnum">Quran 43:13–14</span>
             <p class="arabic">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ</p>
@@ -1153,7 +1288,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
           <p>Before it, the Sunnah is to say <strong>Bismillah</strong> when boarding, and <strong>Allahu Akbar</strong> three times once seated (Sahih Muslim).</p>
 
-          <h2 id="breakdown">Word-by-word meaning</h2>
+          <h2 id="breakdown">What is the word-by-word meaning of Safar ki dua?</h2>
           <p>Most people learn safar ki dua by sound and never find out what they are actually saying:</p>
           <table class="np-table">
             <tr><th>Arabic</th><th>Transliteration</th><th>Meaning</th></tr>
@@ -1166,10 +1301,10 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </table>
           <p>The last line is the heart of it. Every journey has a destination you booked, and one you did not: <em>munqalibun</em> is the same word used for returning home, and the dua quietly reminds you that the final return is to Allah.</p>
 
-          <h2 id="source">Why these exact words? (Surah Az-Zukhruf)</h2>
+          <h2 id="source">Why are these exact Quranic words recited for travel?</h2>
           <p>This is not a phrase later scholars composed — it is the Quran telling you what to say. In Surah Az-Zukhruf, Allah mentions the ships and riding animals He created, "so that you may settle yourselves upon their backs, and then remember the favour of your Lord when you have settled upon them, and say: <em>Subhanalladhi sakhkhara lana hadha…</em>" (43:12–14). So the dua belongs to the moment you are <strong>settled in your seat</strong>, not the moment you pick up your keys — and its purpose is stated in the verse itself: remembering a favour you did not earn.</p>
 
-          <h2 id="order">Step-by-step order when starting any journey</h2>
+          <h2 id="order">What is the step-by-step Sunnah order when starting a journey?</h2>
           <ol>
             <li><strong>Bismillah</strong> — while stepping into the car/plane.</li>
             <li><strong>Alhamdulillah</strong> — once seated.</li>
@@ -1178,7 +1313,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li>The Prophet's ﷺ longer travel dua below, for journeys beyond the daily commute.</li>
           </ol>
 
-          <h2 id="longer">The complete prophetic travel dua</h2>
+          <h2 id="longer">What is the longer prophetic travel dua from Sahih Muslim?</h2>
           <p>For a real journey — a flight, a long drive, Umrah travel — the Prophet ﷺ continued after the verse with a longer supplication covering the journey itself, the distance, and the family left at home.</p>
           <div class="verse-card">
             <span class="vnum">Sahih Muslim</span>
@@ -1188,7 +1323,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
           <p>Notice what it asks for: not simply a safe arrival, but that the journey itself does not damage your religion, that Allah be your companion while you are away and your guardian over the people you left behind, and that you do not come home to bad news. Memorise one line per trip.</p>
 
-          <h2 id="return">The return-journey addition</h2>
+          <h2 id="return">What dua should you recite when returning from a journey?</h2>
           <div class="verse-card">
             <span class="vnum">Sahih Muslim</span>
             <p class="arabic">آيِبُونَ تَائِبُونَ عَابِدُونَ لِرَبِّنَا حَامِدُونَ</p>
@@ -1197,7 +1332,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
           <p>On the way back the Prophet ﷺ repeated the same travel dua and added these words — a reminder that every safe return is a gift, and that you should arrive home a slightly better version of the person who left.</p>
 
-          <h2 id="more">Other duas the Sunnah gives a traveller</h2>
+          <h2 id="more">What other supplications should a traveller recite?</h2>
           <p>Safar ki dua opens the journey; a few short adhkar cover the rest. When you break the journey anywhere — a service station, a hotel room, a transit stop — say:</p>
           <div class="verse-card">
             <span class="vnum">When you stop somewhere · Sahih Muslim</span>
@@ -1208,11 +1343,11 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <p>On the road itself, the Companions said <strong>Allahu Akbar</strong> when climbing and <strong>Subhanallah</strong> when descending (Bukhari) — awe going up, humility coming down.</p>
           <p>And when you are the one staying behind, the Sunnah collections narrate a farewell for the traveller: <em>Astawdi'ullaha dinaka wa amanataka wa khawatima 'amalik</em> — "I entrust to Allah your religion, your trusts, and the ends of your deeds." Note what is entrusted first: not the luggage, the <em>deen</em>.</p>
 
-          <h2 id="plane">Is there a special airplane dua?</h2>
+          <h2 id="plane">Is there a special dua for airplane travel?</h2>
           <p>No — and this is the single most common question about safar ki dua. There is no separate aircraft version. The same dua covers every mode of transport: camel, car, ship or aircraft. "Subjected this for us" applies even more powerfully at 40,000 feet, where you are relying entirely on something you did not build and cannot control.</p>
           <p>Practically, say <em>Bismillah</em> as you step onto the aircraft, then the takbir and the dua once you are in your seat — you do not need to wait for take-off, and you have not missed it if the plane is already moving. Many travellers also recite <a href="/blog/ayatul-kursi-arabic-english-benefits">Ayatul Kursi</a> and the <a href="/blog/4-quls">4 Quls</a> for protection during the flight. If turbulence makes you anxious, remember that a traveller is also excused certain concessions in prayer; ask a qualified teacher about how to pray on a long flight before you fly rather than guessing at 35,000 feet.</p>
 
-          <h2 id="kids">Teaching kids the travel dua (5-minute method)</h2>
+          <h2 id="kids">How do you teach the travel dua to children?</h2>
           <ul>
             <li><strong>Car ritual:</strong> nobody drives off until the family says the dua together — kids memorise it within two weeks of school runs.</li>
             <li><strong>One line at a time:</strong> start with just <em>Subhanalladhi sakhkhara lana hadha</em>, add the rest after a week.</li>
@@ -1220,7 +1355,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li>More kid-friendly duas: <a href="/blog/duas-for-kids-to-memorize">20 essential duas for kids</a> and the <a href="/courses/daily-duas-for-kids">Daily Duas course</a>.</li>
           </ul>
 
-          <h2 id="mistakes">Common mistakes in pronunciation and use</h2>
+          <h2 id="mistakes">What common pronunciation mistakes happen in Safar ki dua?</h2>
           <p>Two of these are pronunciation errors that genuinely change the Arabic, so they are worth fixing:</p>
           <ul>
             <li><strong>سَخَّرَ is <em>sakhkhara</em>, not <em>sakhara</em>.</strong> The doubled <em>kh</em> (shaddah) is not decoration. With it, the word means "He subjected / harnessed". Read with a kasrah and no shaddah, <em>sakhira</em> is a different verb from the same three letters meaning "he mocked". Hold the <em>kh</em>.</li>
@@ -1232,12 +1367,12 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ul>
           <p>If you do not yet read Arabic comfortably, reciting from a clear transliteration while you learn is far better than skipping the dua — and you can make the accompanying personal dua in your own language.</p>
 
-          <h2 id="traveller">Bonus: the traveller's dua is accepted</h2>
+          <h2 id="traveller">Why is the traveller's supplication answered?</h2>
           <p>The Prophet ﷺ said three duas are not rejected — among them <strong>the dua of the traveller</strong> (Tirmidhi). Long journey ahead? That is your window: make dua for family, rizq, and guidance while you travel.</p>
 
           <p>Families based in the Emirates who want steady Quran lessons around travel and school schedules can explore <a href="/locations/online-quran-classes-uae">online Quran classes in the UAE</a> (GST matching, subject to tutor availability).</p>
 
-          <h2 id="faq">Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions about Safar ki dua</h2>
           <details class="faq-acc"><summary>What is safar ki dua (the travel dua)?<span>+</span></summary>
             <p>The travel dua is 'Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun' (Quran 43:13-14) — Glory be to the One who subjected this vehicle for us; we could never have done it ourselves, and to our Lord we will return.</p>
           </details>
@@ -1251,35 +1386,49 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <p>Yes — the Prophet ﷺ mentioned the traveller's dua among those not rejected (Tirmidhi). Long journeys are an excellent time to make dua for family, provision and guidance.</p>
           </details>
 
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Safar ki dua is the prophetic supplication recited when embarking on journeys by car, plane, or train to seek Allah's divine protection. Originating from Surah Az-Zukhruf, it humbles the heart and acknowledges that our safe travel and final return belong solely to Allah. NoorPath Academy helps students master essential daily duas and Tajweed through personalized online lessons.</p>
+          </div>
+
           <div class="gold-box">
             <strong>Want your children to learn every daily dua with correct Arabic?</strong> The kids' programme covers travel, eating, sleeping and morning duas with a live tutor. <a href="/online-quran-classes-for-kids">Book a free 30-minute kids trial</a>.
           </div>`,
   },
   "inna-lillahi-wa-inna-ilayhi-rajiun-meaning": {
     style: S,
-    content: `<p><strong>Inna lillahi wa inna ilayhi rajiun</strong> — you hear it at every loss: a death, an accident, bad news. But these words are far more than a condolence formula. They are a direct quote from the Quran (2:156), Allah's own prescription for grief, and the Prophet ﷺ taught that saying them at <em>any</em> loss — even a broken sandal strap — brings reward and replacement.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> It means <strong>"Indeed, we belong to Allah, and indeed, to Him we return"</strong> (Quran 2:156). Say it upon hearing of a death or any calamity, big or small. This statement is called <em>Istirja'</em>.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> Inna lillahi wa inna ilayhi rajiun means <strong>"Indeed, we belong to Allah, and indeed, to Him we return"</strong> (<em>إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</em>). Known as <em>Istirja'</em> from Surah Al-Baqarah (2:156), Muslims recite it upon hearing of a death, tragedy, emotional grief, or any loss to affirm divine ownership and seek patience.
           </div>
 
-          <h2 id="arabic">Full Arabic, transliteration & meaning</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>Istirja' originates from Surah Al-Baqarah (2:156) as the ultimate Islamic expression of patience during grief.</li>
+              <li>Reciting it with sincerity earns three divine promises: blessings, mercy, and true spiritual guidance from Allah.</li>
+              <li>Prophetic Sunnah pairs it with asking Allah to compensate the loss with something even better.</li>
+            </ul>
+          </div>
+
+          <p><strong>Inna lillahi wa inna ilayhi rajiun</strong> — you hear it at every loss: a death, an accident, bad news. But these words are far more than a condolence formula. They are a direct quote from the Quran (2:156), Allah's own prescription for grief, and the Prophet ﷺ taught that saying them at <em>any</em> loss — even a broken sandal strap — brings reward and replacement.</p>
+
+          <h2 id="arabic">What is the Arabic text and meaning of Inna lillahi wa inna ilayhi rajiun?</h2>
           <div class="verse-card">
             <span class="vnum">Quran 2:156</span>
             <p class="arabic">إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</p>
             <p class="translit">Inna lillahi wa inna ilayhi raji'un.</p>
             <p class="trans-en">"Indeed, we belong to Allah, and indeed, to Him we return."</p>
           </div>
-          <p>The full verse: <em>"…who, when disaster strikes them, say: Indeed we belong to Allah, and indeed to Him we return. Those are the ones upon whom are blessings from their Lord, and mercy. And it is those who are guided."</em> (2:155–157). Allah attaches three gifts to these words: <strong>His blessings, His mercy, and guidance.</strong></p>
+          <p>The full verse: <em>"…who, when disaster strikes them, say: Indeed we belong to Allah, and indeed to Him we return. Those are the ones upon whom are blessings from their Lord, and mercy. And it is those who are guided."</em> (2:155–157). Allah attaches three gifts to these words: <strong>His blessings, His mercy, and guidance.</strong> Learn foundational recitation through our <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
 
-          <h2 id="when">When to say it</h2>
+          <h2 id="when">When should you recite Inna lillahi wa inna ilayhi rajiun?</h2>
           <ul>
             <li><strong>On hearing of a death</strong> — Muslim or non-Muslim relative, friend or stranger.</li>
             <li><strong>At any calamity:</strong> job loss, illness diagnosis, accident, financial loss.</li>
             <li><strong>At small losses too:</strong> the Prophet ﷺ taught it even for minor harms — it trains the heart to return everything to its Owner.</li>
           </ul>
 
-          <h2 id="umm-salamah">The dua that brings something better (Umm Salamah's story)</h2>
+          <h2 id="umm-salamah">Which dua should you pair with Istirja' for divine compensation?</h2>
           <div class="verse-card">
             <span class="vnum">Sahih Muslim</span>
             <p class="arabic">اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا</p>
@@ -1288,7 +1437,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
           <p>Umm Salamah (RA) said these words after her husband Abu Salamah died — thinking no one could be better. Allah then married her to the <strong>Prophet ﷺ himself</strong>. Say Istirja' + this dua together at every loss.</p>
 
-          <h2 id="reply">How to reply when someone shares sad news</h2>
+          <h2 id="reply">How should you reply when someone shares sad news?</h2>
           <table class="np-table">
             <tr><th>Situation</th><th>What to say</th></tr>
             <tr><td>Someone announces a death</td><td>Say "Inna lillahi wa inna ilayhi raji'un" yourself, then make dua for the deceased</td></tr>
@@ -1297,11 +1446,34 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </table>
           <p>There is no fixed "reply" to Istirja' itself — respond with dua, not formalities. Related: <a href="/blog/dua-for-parents-rabbirhamhuma">dua for parents</a> and <a href="/blog/dua-for-forgiveness-istighfar">istighfar guide</a>.</p>
 
-          <h2 id="spelling">Correct spelling (for messages)</h2>
+          <h2 id="spelling">How do you spell and write Inna lillahi wa inna ilayhi rajiun correctly?</h2>
           <p>You will see <em>innalillahiwainnailaihirojiun</em>, <em>inna lillahi wa inallah e raji un</em> and other run-together spellings. The clearest English rendering is: <strong>Inna lillahi wa inna ilayhi raji'un.</strong> When messaging condolences, adding the English meaning is a beautiful touch for younger family members who may not know it.</p>
 
-          <h2 id="teach">Teach children the meaning, not just the words</h2>
-          <p>Children repeat this phrase at funerals without understanding. Explain it simply: <em>"Everything belongs to Allah — He lent it to us, and He takes it back to Himself."</em> This one sentence builds resilience rooted in aqeedah. Structured Islamic education for kids — including duas and their meanings — is part of the <a href="/courses/islamic-studies-online">Islamic Studies course</a>.</p>
+          <h2 id="teach">How can parents teach the meaning of Istirja' to children?</h2>
+          <p>Children repeat this phrase at funerals without understanding. Explain it simply: <em>"Everything belongs to Allah — He lent it to us, and He takes it back to Himself."</em> This one sentence builds resilience rooted in aqeedah. Structured Islamic education for kids — including duas and their meanings — is part of the <a href="/courses/islamic-studies-online">Islamic Studies course</a> at NoorPath Academy.</p>
+
+          <h2 id="faq">Frequently asked questions about Inna lillahi wa inna ilayhi rajiun</h2>
+          <details class="faq-acc">
+            <summary>What does Inna lillahi wa inna ilayhi rajiun mean in English?<span>+</span></summary>
+            <p>It translates to 'Indeed, we belong to Allah, and indeed, to Him we return,' expressing submission to Allah's decree during loss.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Do you only say Istirja' when someone passes away?<span>+</span></summary>
+            <p>No, the Prophet ﷺ taught that Istirja' should be uttered for any calamity or minor loss, from health hardships to lost belongings.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>How should you respond when someone says Inna lillahi wa inna ilayhi rajiun?<span>+</span></summary>
+            <p>Repeat the phrase yourself, offer sincere condolences, and pray for Allah to grant forgiveness to the deceased and sabr to the family.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Where is Inna lillahi wa inna ilayhi rajiun mentioned in the Quran?<span>+</span></summary>
+            <p>It is found in Surah Al-Baqarah (Ayah 156), where Allah promises mercy, blessings, and guidance to those who utter it during tests.</p>
+          </details>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Inna lillahi wa inna ilayhi rajiun (Istirja') is the Quranic response to death, bereavement, and hardships, reminding believers that all life belongs to Allah. Uttering it brings divine blessings, mercy, and compensation for lost blessings. NoorPath Academy teaches students Quran recitation, Tajweed, and foundational Islamic knowledge with certified instructors.</p>
+          </div>
 
           <div class="gold-box">
             <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/free-quran-classes-online">Book a free 30-minute trial</a> for kids or adults.
@@ -1388,13 +1560,22 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   },
   "islamic-months-names-in-order": {
     style: S,
-    content: `<p>Can you name all <strong>12 Islamic months in order</strong>? Most Muslims know Ramadan and Muharram — fewer can recite the full Hijri calendar. Yet Allah says in the Quran: <em>"Indeed, the number of months with Allah is twelve months in the register of Allah from the day He created the heavens and the earth; of these, four are sacred."</em> (At-Tawbah 9:36). Here is every month, its meaning, and the key dates inside it.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> The 12 Islamic months in order: <strong>Muharram, Safar, Rabi al-Awwal, Rabi al-Thani, Jumada al-Awwal, Jumada al-Thani, Rajab, Sha'ban, Ramadan, Shawwal, Dhul Qa'dah, Dhul Hijjah.</strong> The four sacred months are Muharram, Rajab, Dhul Qa'dah and Dhul Hijjah.
+    content: `<div class="answer-box">
+            <strong>Quick Answer:</strong> The 12 Islamic months names in order are: <strong>Muharram, Safar, Rabi al-Awwal, Rabi al-Thani, Jumada al-Awwal, Jumada al-Thani, Rajab, Sha'ban, Ramadan, Shawwal, Dhul Qa'dah, and Dhul Hijjah</strong>. Based on a lunar calendar of 354 days, four months are designated as sacred in the Quran: Muharram, Rajab, Dhul Qa'dah, and Dhul Hijjah.
           </div>
 
-          <h2 id="table">All 12 Hijri months — names, meanings & key dates</h2>
+          <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li>The Islamic Hijri calendar consists of 12 lunar months totaling approximately 354 or 355 days annually.</li>
+              <li>Four sacred months (Muharram, Rajab, Dhul Qa'dah, Dhul Hijjah) prohibit warfare and multiply good deeds.</li>
+              <li>Because lunar years are ~11 days shorter than solar years, Islamic dates rotate through all four seasons.</li>
+            </ul>
+          </div>
+
+          <p>Can you name all <strong>12 Islamic months in order</strong>? Most Muslims know Ramadan and Muharram — fewer can recite the full Hijri calendar. Yet Allah says in the Quran: <em>"Indeed, the number of months with Allah is twelve months in the register of Allah from the day He created the heavens and the earth; of these, four are sacred."</em> (At-Tawbah 9:36). Here is every month, its meaning, and the key dates inside it.</p>
+
+          <h2 id="table">What are the 12 Islamic months in chronological order?</h2>
           <table class="np-table">
             <tr><th>#</th><th>Month</th><th>Meaning</th><th>Key dates & events</th></tr>
             <tr><td>1</td><td><strong>Muharram</strong> 🕌</td><td>"Forbidden" — sacred month</td><td>Islamic New Year (1st); Ashura fast (10th)</td></tr>
@@ -1411,13 +1592,13 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <tr><td>12</td><td><strong>Dhul Hijjah</strong> 🕌</td><td>"Month of pilgrimage"</td><td>Hajj (8th–13th); Day of Arafah (9th); Eid al-Adha (10th)</td></tr>
           </table>
 
-          <h2 id="sacred">The four sacred months</h2>
+          <h2 id="sacred">Which four Islamic months are sacred in Islam?</h2>
           <p><strong>Muharram, Rajab, Dhul Qa'dah and Dhul Hijjah</strong> are the months Allah declared sacred — sins weigh heavier and good deeds carry greater reward. Three are consecutive (Dhul Qa'dah → Muharram) surrounding Hajj; Rajab stands alone in the middle of the year.</p>
 
-          <h2 id="lunar">Why Islamic months move ~11 days each year</h2>
+          <h2 id="lunar">Why do Islamic months move 11 days earlier every solar year?</h2>
           <p>The Hijri calendar is <strong>lunar</strong> — each month begins with the sighting of the new crescent and lasts 29 or 30 days, giving a year of ~354 days. That is why Ramadan drifts through all seasons over a 33-year cycle: every Muslim generation experiences fasting in both summer and winter. The calendar counts from the <strong>Hijrah</strong> — the Prophet's ﷺ migration to Madinah (622 CE), chosen by Umar (RA) as year 1.</p>
 
-          <h2 id="worship">Worship calendar — what to do in which month</h2>
+          <h2 id="worship">What special worship and fasts belong to each Islamic month?</h2>
           <ul>
             <li><strong>Muharram:</strong> fast the 9th–10th (Ashura) — expiates the previous year's sins.</li>
             <li><strong>Sha'ban:</strong> increase voluntary fasting, prepare for Ramadan.</li>
@@ -1426,8 +1607,31 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             <li><strong>Dhul Hijjah:</strong> first 10 days are the best days of the year; fast Arafah (9th) if not on Hajj — see <a href="/blog/labbaik-allahumma-labbaik">Labbaik meaning</a>.</li>
           </ul>
 
-          <h2 id="memorize">Memorization trick for kids</h2>
-          <p>Group them as <strong>4-4-4</strong>: (Muharram, Safar, two Rabis) → (two Jumadas, Rajab, Sha'ban) → (Ramadan, Shawwal, two Dhuls). Sing them to a simple rhythm at bedtime for a week — most children lock all 12 in within days. Islamic calendar, duas and stories are all part of the <a href="/courses/islamic-studies-online">Islamic Studies course for kids</a>.</p>
+          <h2 id="memorize">How can children memorize the 12 Islamic months quickly?</h2>
+          <p>Group them as <strong>4-4-4</strong>: (Muharram, Safar, two Rabis) → (two Jumadas, Rajab, Sha'ban) → (Ramadan, Shawwal, two Dhuls). Sing them to a simple rhythm at bedtime for a week — most children lock all 12 in within days. Islamic calendar, duas and stories are all part of the <a href="/courses/islamic-studies-online">Islamic Studies course for kids</a> alongside foundation <a href="/courses/noorani-qaida-online">Noorani Qaida online</a>.</p>
+
+          <h2 id="faq">Frequently asked questions about the 12 Islamic months</h2>
+          <details class="faq-acc">
+            <summary>What is the first and last month of the Islamic calendar?<span>+</span></summary>
+            <p>The first month of the Islamic calendar is Muharram, and the twelfth and final month is Dhul Hijjah, the month of the Hajj pilgrimage.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>Why do Islamic months shift earlier each year?<span>+</span></summary>
+            <p>Because the Hijri calendar follows the lunar cycle of ~354 days, it is roughly 11 days shorter than the 365-day solar Gregorian calendar.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>What are the four sacred months in Islam?<span>+</span></summary>
+            <p>The four sacred months mentioned in Surah At-Tawbah (9:36) are Dhul Qa'dah, Dhul Hijjah, Muharram, and Rajab.</p>
+          </details>
+          <details class="faq-acc">
+            <summary>How can students learn Quranic Arabic and Islamic studies online?<span>+</span></summary>
+            <p>NoorPath Academy provides comprehensive 1-on-1 online classes in Noorani Qaida, Tajweed, Hifz, and Islamic studies for kids and adults.</p>
+          </details>
+
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>The Islamic calendar consists of twelve lunar months beginning with Muharram and ending with Dhul Hijjah. Because it follows the moon, the Hijri year is 11 days shorter than the solar year, causing holy observances like Ramadan and Hajj to shift annually across seasons. NoorPath Academy provides structured Islamic studies and online Quran tutoring to help students of all ages build strong spiritual literacy.</p>
+          </div>
 
           <div class="gold-box">
             <strong>Give your child a complete Islamic foundation</strong> — Quran, duas, and Islamic knowledge with a personal tutor. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial class</a>.

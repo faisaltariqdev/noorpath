@@ -375,13 +375,23 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
 
   "dua-for-sick-person-arabic-english": {
     style: S,
-    content: `<p>A <strong>dua for a sick person</strong> (dua for shifa) is among the most searched Islamic duas worldwide — families want prophetic wording they can recite at a bedside, in a hospital corridor, or over themselves. Islam pairs dua with taking means: medicine, rest, and trust in Allah as Ash-Shafi (the Healer).</p>
+    content: `<div class="answer-box">
+  <strong>Quick Answer:</strong> The primary prophetic <strong>dua for a sick person</strong> seeking healing is: <em>اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، وَاشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا</em> (Allaahumma Rabban-naas, adhhibil-ba's, washfi antash-Shaafi...). Recite it while placing the right hand on the area of pain, supplicating for recovery alongside medical treatment.
+</div>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> The core prophetic healing dua is <strong>Allahumma Rabban-naas, adhhibil-ba’s, washfi antash-Shaafi…</strong> (Bukhari &amp; Muslim). Place the right hand on the area of pain when appropriate, and you may add the Mu‘awwidhat (Ikhlas, Falaq, Nas). This is not a substitute for medical care. Teach children short duas with a <a href="/online-quran-classes-for-kids">kids trial</a>.
-          </div>
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>Authentic supplication from Sahih al-Bukhari and Muslim for illness and pain.</li>
+    <li>Proclaims Allah alone as Ash-Shafi (The Ultimate Healer).</li>
+    <li>Sunnah practice pairs prayer with proper medical treatment and rest.</li>
+    <li>Taught in NoorPath Academy's daily supplication curriculum for young learners.</li>
+  </ul>
+</div>
 
-          <h2 id="main-dua">1) Main prophetic dua for healing (shifa)</h2>
+<p>A <strong>dua for a sick person</strong> (dua for shifa) is among the most searched Islamic duas worldwide — families want prophetic wording they can recite at a bedside, in a hospital corridor, or over themselves. At <a href="/courses/noorani-qaida-online">NoorPath Academy</a>, we teach children and adults authentic Prophetic supplications with proper Tajweed. Islam pairs dua with taking means: medicine, rest, and trust in Allah as Ash-Shafi (the Healer).</p>
+
+<h2 id="main-dua">What is the main prophetic dua for a sick person?</h2>
           <div class="verse-card">
             <span class="vnum">PROPHETIC DUA · Bukhari 5742 · Muslim</span>
             <div class="arabic">اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، وَاشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا</div>
@@ -430,7 +440,12 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           <h2 id="kids">Teach kids a short shifa dua</h2>
           <p>Children can learn “Allahumma Rabban-naas…” in pieces. Correct Arabic sounds matter — parents who want help can book a gentle class: <a href="/free-quran-classes-online">free trial</a> · <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>.</p>
 
-          <h2 id="faq">FAQ</h2>
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>The authentic dua for a sick person is 'Allahumma Rabban-naas, adhhibil-ba's, washfi antash-Shaafi...' from Sahih al-Bukhari. Islam pairs sincere supplication with professional medical care, encouraging believers to seek healing from Allah.</p>
+          </div>
+
+          <h2 id="faq">Frequently asked questions about dua for the sick</h2>
           <details class="faq-acc"><summary>What is the best dua for a sick person in Islam?<span>+</span></summary>
             <p>Allahumma Rabban-naas, adhhibil-ba’s, washfi antash-Shaafi… is the primary prophetic healing dua reported from Aisha (RA) in Bukhari and Muslim.</p>
           </details>
@@ -448,23 +463,51 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
 
   "barakallah-meaning": {
     style: S,
-    content: `<div class="highlight-box">
-            <strong>Answer first:</strong> <strong>Barakallah</strong> (بارك الله) means <strong>“May Allah bless”</strong> — a short dua asking Allah to place barakah. <strong>Barakallahu feek</strong> / <strong>feeki</strong> means “May Allah bless you.” Common replies: <em>Ameen</em>, <em>Wa feek Barakallah</em>, or <a href="/blog/jazakallah-khair-meaning">Jazakallah khair</a>.
-          </div>
+    content: `<div class="answer-box">
+  <strong>Quick Answer:</strong> The <strong>Barakallah meaning</strong> in English is "May Allah bless you" or "May Allah grant barakah" (Arabic: <em>بَارَكَ ٱللَّٰهُ فِيكَ</em>, transliteration: <em>Bārakallāhu Fīk</em>). Muslims say it to express gratitude and invoke blessings upon others. <strong>How to reply:</strong> Respond with <em>Wa feeka barakallah</em> (to male) or <em>Wa feeki barakallah</em> (to female).
+</div>
 
-          <div class="verse-card">
-            <span class="vnum">PHRASE · BLESSING</span>
-            <div class="arabic">بَارَكَ اللَّهُ</div>
-            <p class="translit">Baarakallaah.</p>
-            <p class="trans-en"><strong>English:</strong> May Allah bless. / May Allah grant barakah.</p>
-          </div>
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>Means "May Allah bless you" — asking Allah to place divine barakah in someone's life.</li>
+    <li>Common forms include <em>Barakallahu feek</em> (singular) and <em>Barakallahu feekum</em> (plural).</li>
+    <li>Replied to with <em>Wa feek barakallah</em> ("and may Allah bless you too").</li>
+    <li>Taught in NoorPath Academy's Islamic etiquette and Tajweed courses for correct pronunciation.</li>
+  </ul>
+</div>
+
+<div class="verse-card">
+  <span class="vnum">PHRASE · BLESSING</span>
+  <div class="arabic">بَارَكَ اللَّهُ</div>
+  <p class="translit">Baarakallaah.</p>
+  <p class="trans-en"><strong>English:</strong> May Allah bless. / May Allah grant barakah.</p>
+</div>
+
+<div class="audio-card">
+  <div style="font-size:2rem;line-height:1;">🎧</div>
+  <div>
+    <strong>Audio &amp; Pronunciation Help:</strong> Hear the difference between <em>Bārakallāhu Fīk</em> and related expressions. Learn Arabic vowels with our <a href="/noorani-qaida/lessons/fatha">Noorani Qaida Fatha Lesson</a> and master letters on the <a href="/noorani-qaida">Interactive Noorani Qaida</a>. To learn Quranic recitation rules, enroll in our <a href="/courses/tajweed-classes-online">online Tajweed classes</a> at NoorPath Academy.
+  </div>
+</div>
+
+<div class="pdf-download-card">
+  <div>
+    <h3 style="margin:0 0 6px;color:var(--charcoal);">Free Printable Barakallah &amp; Dua Replies PDF</h3>
+    <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free, printable Islamic phrases chart with full Arabic text, transliteration, and exact gender replies.</p>
+  </div>
+  <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+</div>
+
+<h2 id="variants">What are the common spelling variants of Barakallah?</h2>
+          <p>You may encounter this Islamic blessing written across texts and online discussions as: <strong>Barakallah</strong>, <strong>BarakAllah</strong>, <strong>Barak Allah</strong>, <strong>Barakallahu Feek</strong>, <strong>Barakallahu Feekum</strong>, and <strong>Allahumma Barik</strong>. They all ask Allah to bestow His divine barakah (blessings, increase, and protection).</p>
 
           <p><strong>Barakallah meaning</strong> is searched when people hear the phrase in messages, weddings, and comments and want the exact blessing it carries. Like <a href="/blog/mashallah-meaning">Mashallah</a>, it is short, powerful, and easy to misuse if the meaning is unclear.</p>
 
           <h2 id="arabic">Barakallah — Arabic, transliteration, English</h2>
           <p>The everyday short form is written above. Longer spoken forms add the person or matter you are praying for:</p>
 
-          <h2 id="forms">Common forms you will hear</h2>
+          <h2 id="forms">What common forms of Barakallah will you hear daily?</h2>
           <table class="np-table">
             <tr><th>Phrase</th><th>Arabic</th><th>Approx. meaning</th><th>Typical use</th></tr>
             <tr><td>Barakallahu feek (to a male)</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ فِيكَ</td><td>May Allah bless you</td><td>Thanks, well-wishing to a person</td></tr>
@@ -475,7 +518,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
             <tr><td>Barakallah</td><td class="arabic" dir="rtl" lang="ar" style="font-size:1.15rem;">بَارَكَ اللَّهُ</td><td>May Allah bless</td><td>Short form in texts and speech</td></tr>
           </table>
 
-          <h2 id="vs">Barakallah vs Mashallah vs Jazakallah</h2>
+          <h2 id="vs">What is the difference between Barakallah, Mashallah, and Jazakallah?</h2>
           <ul>
             <li><strong>Mashallah</strong> — acknowledges Allah’s will when praising; helps guard against envy language</li>
             <li><strong>Barakallah / Allahumma barik</strong> — asks Allah to place blessing in what you see or in the person</li>
@@ -483,7 +526,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
           </ul>
           <p>Phrase hub: <a href="/blog/islamic-phrases-meaning">Islamic phrases meaning</a>.</p>
 
-          <h2 id="when">When to say Barakallah</h2>
+          <h2 id="when">When should you say Barakallah in daily life?</h2>
           <ul>
             <li>After someone helps you</li>
             <li>When congratulating a marriage, newborn, new home, or exam result</li>
@@ -494,7 +537,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
             <strong>Etiquette:</strong> Saying Barakallah does not replace practical thanks or fairness in money matters. Barakah is asked from Allah; it is not a magic caption that fixes injustice.
           </div>
 
-          <h2 id="reply">How to reply</h2>
+          <h2 id="reply">How do you reply to Barakallah correctly?</h2>
           <p>Return the blessing to the person who said it. The ending changes with who you are replying to:</p>
           <table class="np-table">
             <tr><th>Replying to</th><th>Arabic</th><th>Transliteration</th></tr>
@@ -507,10 +550,15 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
             <li><strong>Jazakallah khair</strong> — if they helped you</li>
           </ul>
 
-          <h2 id="kids">Teach kids the meaning, not only the sound</h2>
-          <p>Children should know they are making a dua, not copying a social-media sticker. Practise Arabic sounds kindly — <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a> · <a href="/free-quran-classes-online">free Quran trial</a>.</p>
+          <h2 id="kids">How can you teach children the meaning of Barakallah?</h2>
+          <p>Children should know they are making a dua, not copying a social-media sticker. Practise Arabic sounds kindly at NoorPath Academy — <a href="/blog/arabic-alphabet-for-kids">Arabic alphabet for kids</a> · <a href="/free-quran-classes-online">free Quran trial</a>.</p>
 
-          <h2 id="faq">FAQ</h2>
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Barakallah (بَارَكَ ٱللَّٰهُ) means 'May Allah bless you' and is used to invoke divine abundance, protection, and gratitude. Reply with 'Wa feek barakallah' to reciprocate the supplication warmly.</p>
+          </div>
+
+          <h2 id="faq">Frequently asked questions about Barakallah</h2>
           <details class="faq-acc"><summary>What does Barakallah mean in English?<span>+</span></summary>
             <p>It means “May Allah bless” or “May Allah place barakah.” Longer forms specify blessing upon a person or in a matter.</p>
           </details>

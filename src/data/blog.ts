@@ -175,7 +175,7 @@ export const blogPosts: BlogPost[] = [
     description: "Quran 2:201 Rabbana Atina Fid Dunya — Arabic, transliteration, English meaning, word-by-word explanation, and when to recite this dua.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-11-03",
     readTime: "14 min",
     keywords: [
       "rabbana atina fid dunya", "rabbana atina fid dunya hasanah", "rabbana atina meaning",
@@ -193,7 +193,7 @@ export const blogPosts: BlogPost[] = [
     description: "Best dua for forgiveness in Islam: Sayyid al-Istighfar, Astaghfirullah, and Quranic duas. Full Arabic, transliteration, English meaning, how many times to recite, and the conditions of sincere Tawbah.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-11-03",
     readTime: "15 min",
     keywords: [
       "dua for forgiveness", "istighfar dua", "sayyidul istighfar", "dua for forgiveness of sins",
@@ -211,7 +211,7 @@ export const blogPosts: BlogPost[] = [
     description: "How to perform ghusl (full body purification) step by step according to Sunnah: intention, washing order, what invalidates ghusl, differences for men and women, and common mistakes. Clear English guide with prophetic method.",
     category: "Salah & Worship",
     date: "2026-07-13",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-11-03",
     readTime: "15 min",
     keywords: [
       "how to do ghusl", "ghusl step by step", "how to perform ghusl", "ghusl for women",
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
     description: "Labbaik Allahumma labbaik meaning in English: the Talbiyah of Hajj and Umrah. Full Arabic text, transliteration, word-by-word meaning, when pilgrims recite it, and its spiritual power.",
     category: "Islamic Knowledge",
     date: "2026-07-13",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-11-03",
     readTime: "14 min",
     keywords: [
       "labbaik allahumma labbaik", "labbaik meaning", "talbiyah", "talbiyah meaning",
@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
     description: "Allahu Akbar (الله أكبر) meaning in English: 'Allah is the Greatest.' Full Arabic text, transliteration, word-by-word meaning, when Muslims say it, authentic hadith benefits, and how it is used in Salah, Adhan and daily dhikr.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
-    updatedAt: "2026-07-10",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "allahu akbar meaning", "allahu akbar meaning in english", "what does allahu akbar mean",
@@ -295,11 +295,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "la-ilaha-illallah-meaning",
-    title: "La Ilaha Illallah Meaning — Arabic, English, Shahada & Benefits",
-    description: "La ilaha illallah (لا إله إلا الله) meaning in English: 'There is no god but Allah.' Full Arabic, transliteration, word-by-word meaning, connection to the Shahada, authentic hadith benefits, and how to teach it to children.",
+    title: "La Ilaha Illallah Meaning — Arabic, English & Virtues",
+    description:
+      "La Ilaha Illallah meaning in English, Arabic text, transliteration & audio. Discover virtues, when to say it vs when not to say it + free PDF guide.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
-    updatedAt: "2026-07-10",
+    updatedAt: "2026-11-03",
     readTime: "11 min",
     keywords: [
       "la ilaha illallah meaning", "la ilaha illallah meaning in english", "la ilaha illallah arabic",
@@ -412,7 +413,7 @@ export const blogPosts: BlogPost[] = [
     description: "Surah Al-Ikhlas (chapter 112) in Arabic with English translation, transliteration, meaning and benefits. Learn why it equals one-third of the Quran, when to recite it, and how to teach it to kids.",
     category: "Quran",
     date: "2026-07-10",
-    updatedAt: "2026-07-10",
+    updatedAt: "2026-11-03",
     readTime: "9 min",
     keywords: [
       "surah ikhlas", "surah al ikhlas", "surah ikhlas benefits", "surah ikhlas english",
@@ -467,7 +468,7 @@ export const blogPosts: BlogPost[] = [
     description: "Surah Al-Waqiah (chapter 56) benefits for rizq and protection from poverty, with Arabic text of key verses, English translation, when to recite it, and what the hadith really say. Read the Surah of Wealth explained.",
     category: "Quran",
     date: "2026-07-09",
-    updatedAt: "2026-07-09",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "surah waqiah", "surah waqiah benefits", "surah al waqiah", "surah waqiah for wealth",
@@ -645,11 +646,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "jazakallah-khair-meaning",
-    title: "JazakAllah Khair Meaning & Reply (Male/Female Chart + Arabic)",
-    description: "What does JazakAllah Khair mean & how to reply? See the Wa Iyyak / Wa Iyyaki / Wa Iyyakum chart for male & female, Arabic text (جزاك الله خيرا) & pronunciation.",
+    title: "Jazakallah Khair Meaning + How to Reply (Male/Female/Group)",
+    description:
+      "Jazakallah Khair meaning in English + exact reply table for male, female & group. Includes Arabic text, transliteration, audio guide and free PDF chart.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "7 min",
     keywords: [
       "jazakallah khair meaning", "jazakallah meaning", "jazakallah khair", "jazakallahu khairan meaning",
@@ -683,7 +685,7 @@ export const blogPosts: BlogPost[] = [
     description: "15 authentic duas for anxiety, stress, depression, overthinking & a broken heart — full Arabic, transliteration, English meaning, Hadith source & when to recite.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
-    updatedAt: "2026-07-03",
+    updatedAt: "2026-11-03",
     readTime: "16 min",
     keywords: [
       "dua for anxiety", "dua for stress", "dua for depression", "dua for peace of mind",
@@ -703,7 +705,7 @@ export const blogPosts: BlogPost[] = [
     description: "Full Asmaul Husna list: 99 Names of Allah in Arabic, transliteration, and English meaning — plus benefits and easy memorization tips.",
     category: "Islamic Knowledge",
     date: "2025-06-15",
-    updatedAt: "2026-07-21",
+    updatedAt: "2026-11-03",
     readTime: "14 min",
     keywords: ["99 names of allah","99 names allah","99 names of allah with meaning","99 names of allah in english","asmaul husna","asma ul husna english","names of allah","allah names meaning","99 names of god in islam","list of 99 names of allah"],
     excerpt: "Read the complete 99 Names of Allah with Arabic text, transliteration, English meanings, benefits, duas, and memorization tips for children and adults.",
@@ -716,7 +718,7 @@ export const blogPosts: BlogPost[] = [
       "Alhamdulillah meaning in English: “All praise is due to Allah.” Arabic الحمد لله, when to say it, Quran references, benefits, and how to teach kids this daily dhikr.",
     category: "Dhikr & Duas",
     date: "2025-07-10",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-11-03",
     readTime: "7 min",
     keywords: ["alhamdulillah meaning","alhamdulillah in english","meaning of alhamdulillah"],
     excerpt: "Alhamdulillah (الحمد لله) translates to 'All praise is due to Allah' — one of the most powerful phrases in Islam. Learn its deep meaning and benefits.",
@@ -729,7 +731,7 @@ export const blogPosts: BlogPost[] = [
       "Astaghfirullah meaning in English: “I seek forgiveness from Allah.” Arabic أستغفر الله, Hadith benefits, how often to say istighfar, and a simple daily forgiveness habit.",
     category: "Dhikr & Duas",
     date: "2025-07-20",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-11-03",
     readTime: "8 min",
     keywords: ["astaghfirullah meaning","astaghfirullah meaning in english","astaghfirullah arabic","astaghfirullah benefits","astaghfirullah","istighfar meaning","seeking forgiveness in islam","astaghfirullah full form","astaghfirullah means","what does astaghfirullah mean"],
     excerpt: "Astaghfirullah (أستغفر الله) means 'I seek forgiveness from Allah'. Discover when, how many times, and why this powerful dhikr should be part of your daily life.",
@@ -741,7 +743,7 @@ export const blogPosts: BlogPost[] = [
     description: "Read Ayatul Kursi in Arabic with English translation, transliteration, meaning, word-by-word explanation, benefits and when to recite it.",
     category: "Quran",
     date: "2025-08-01",
-    updatedAt: "2026-06-23",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: ["ayatul kursi meaning","ayat al kursi meaning","ayatul kursi","ayatul kursi arabic","ayatul kursi transliteration","ayatul kursi benefits","ayatul kursi english translation","ayat al kursi"],
     excerpt: "Ayatul Kursi (Verse 2:255) is the greatest verse in the Quran. Get the full Arabic text, perfect English translation, and discover its amazing spiritual benefits.",
@@ -852,7 +854,7 @@ export const blogPosts: BlogPost[] = [
     description: "Mashallah (ما شاء الله) means 'What Allah has willed.' Complete guide: Arabic text, full meaning, when to say it, how to respond, and evil eye protection.",
     category: "Dhikr & Duas",
     date: "2025-12-10",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-11-03",
     readTime: "7 min",
     keywords: ["mashaallah meaning","mashallah meaning","masha allah meaning","mashallah in english","what does mashallah mean","mashallah response","mashallah arabic"],
     excerpt: "Mashallah (ما شاء الله) means 'What Allah has willed' — an expression of admiration and gratitude. Learn when to say it, why it protects from evil eye, and its deep meaning.",
@@ -875,6 +877,7 @@ export const blogPosts: BlogPost[] = [
     description: "Complete guide to the signs of Qiyamah — major and minor signs of the Day of Judgment from authentic Hadith and Quran, with explanations.",
     category: "Islamic Knowledge",
     date: "2026-01-20",
+    updatedAt: "2026-11-03",
     readTime: "13 min",
     keywords: ["signs of qiyamah","day of judgment signs","minor signs of qiyamah","major signs of qiyamah"],
     excerpt: "The Prophet ﷺ described many signs before the Day of Judgment. Learn the minor and major signs of Qiyamah from authentic Hadith and what they mean for Muslims today.",
@@ -977,12 +980,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bismillah-meaning-in-english",
-    title: "Bismillah Meaning in English — Full Arabic Explained",
+    title: "Bismillah Meaning in English — Translation, Arabic & Rules",
     description:
-      "Bismillah meaning in English: “In the name of Allah.” Word-by-word Arabic, Bismillah ir-Rahman ir-Raheem, Surah An-Naml, when to say it, and FAQ for kids & adults.",
+      "Bismillah meaning in English, full Arabic text, transliteration & audio. Learn when to say Bismillah and when NOT to say it. Download free PDF reference.",
     category: "Dhikr & Duas",
     date: "2026-06-24",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-11-03",
     readTime: "14 min",
     keywords: [
       "bismillah meaning", "bismillah meaning in english", "what does bismillah mean",
@@ -1018,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
       "Inshallah meaning in English is “If Allah wills.” Arabic إن شاء الله, when to say it, how to reply, vs Mashallah, Quran 18:23–24, and a clear parent-friendly FAQ.",
     category: "Dhikr & Duas",
     date: "2026-06-24",
-    updatedAt: "2026-07-24",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "inshallah meaning", "in sha allah meaning", "inshallah in english", "what does inshallah mean",
@@ -1035,7 +1038,7 @@ export const blogPosts: BlogPost[] = [
       "How long does it take to memorize the Quran? Real timelines by age, sessions/week & method. Kids: 2–4 years. Adults: 3–7 years. Full Hifz breakdown with Sabaq-Sabqi-Manzil system.",
     category: "Hifz & Memorization",
     date: "2026-07-01",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-11-03",
     readTime: "18 min",
     keywords: [
       "how long to memorize quran", "how long does it take to memorize the quran",
@@ -1066,7 +1069,7 @@ export const blogPosts: BlogPost[] = [
       "Online Quran classes typically cost $4–$25 per class. 2026 breakdown per hour and per month, kids vs adults, Hifz vs Tajweed, sibling discounts and free trials.",
     category: "Quran Learning",
     date: "2026-07-14",
-    updatedAt: "2026-07-14",
+    updatedAt: "2026-11-03",
     readTime: "11 min",
     keywords: [
       "online quran classes cost", "how much do online quran classes cost", "quran teacher price per hour",
@@ -1175,12 +1178,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attahiyat-full-arabic-english-tashahhud",
-    title: "Attahiyat Full Dua (Tashahhud) — Arabic Text, Word-by-Word Translation & Salah Rules",
+    title: "Attahiyat Full Dua: Arabic, English, Transliteration + Audio",
     description:
-      "Learn the complete Attahiyat (Tashahhud) for salah: line-by-line Arabic text, transliteration, English word breakdown, when to recite it, and common mistakes to avoid.",
+      "Learn Attahiyat full dua in Salah with Arabic text, English translation & audio pronunciation. Download the free PDF tashahhud guide for kids and adults.",
     category: "Prayer & Worship",
     date: "2026-07-14",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "9 min",
     keywords: [
       "attahiyat", "attahiyat full", "attahiyat in english", "attahiyat lillahi wa salawatu",
@@ -1194,12 +1197,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "safar-ki-dua-travel-dua-arabic-english",
-    title: "Full Safar Ki Dua (Travel Dua) — Arabic Text, Transliteration & English Meaning",
+    title: "Safar Ki Dua — Arabic, English, Transliteration for Travel",
     description:
-      "Complete Safar ki dua (Subhanalladhi sakhkhara lana hadha): full Arabic text, transliteration, word-by-word English meaning, return-journey dua & airplane travel etiquette.",
+      "Safar Ki Dua for travel: full Arabic text, English translation, transliteration & audio. Learn plane & car travel Sunnahs with our free printable PDF.",
     category: "Dhikr & Duas",
     date: "2026-07-14",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "8 min",
     keywords: [
       "safar ki dua", "travel dua", "dua for travelling", "dua for journey",
@@ -1218,7 +1221,7 @@ export const blogPosts: BlogPost[] = [
       "Inna lillahi wa inna ilayhi rajiun (إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ) means 'Indeed we belong to Allah, and to Him we return' — Quran 2:156. Full meaning, when to say it, how to reply, and the dua of Umm Salamah for loss.",
     category: "Islamic Knowledge",
     date: "2026-07-14",
-    updatedAt: "2026-07-14",
+    updatedAt: "2026-11-03",
     readTime: "9 min",
     keywords: [
       "inna lillahi wa inna ilayhi rajiun", "inna lillahi wa inallah e raji un", "inna lillahi meaning",
@@ -1256,7 +1259,7 @@ export const blogPosts: BlogPost[] = [
       "All 12 Islamic months in order — Muharram to Dhul Hijjah — with correct Arabic names, meanings, the four sacred months, and key dates: Ramadan, both Eids, Ashura, Hajj and more. Complete Hijri calendar guide.",
     category: "Islamic Knowledge",
     date: "2026-07-14",
-    updatedAt: "2026-07-14",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "islamic months", "islamic months in order", "islamic months name", "hijri calendar months",
@@ -1795,12 +1798,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-e-masura-arabic-english",
-    title: "Full Dua e Masura (Allahumma Inni Zalamtu) — Arabic Text, Transliteration & Meaning",
+    title: "Dua-e-Masura — Arabic, English, Transliteration + Audio",
     description:
-      "Complete Dua-e-Masura recited after Tashahhud in Salah: line-by-line Arabic text, transliteration, word-by-word English translation & rules.",
+      "Full Dua-e-Masura in Salah: line-by-line Arabic, transliteration, English meaning & audio. Learn when to recite it after Tashahhud. Free PDF download.",
     category: "Dhikr & Duas",
     date: "2026-07-27",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "dua e masura",
@@ -1842,7 +1845,7 @@ export const blogPosts: BlogPost[] = [
       "Sajdah Tilawat (Tilawah) dua in Arabic with transliteration and English meaning — when it is required and how to perform the prostration of recitation.",
     category: "Dhikr & Duas",
     date: "2026-07-27",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "sajdah tilawat dua",
@@ -2464,7 +2467,7 @@ export const blogPosts: BlogPost[] = [
       "Best dua for a sick person in Islam: Allahumma Rabban-naas shifa dua, pain dua, visiting the sick, Quran for ruqyah, Arabic, transliteration, and English meaning.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
-    updatedAt: "2026-08-03",
+    updatedAt: "2026-11-03",
     readTime: "12 min",
     keywords: [
       "dua for sick person",
@@ -2523,12 +2526,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallah Meaning & Reply (Wa Feek vs Wa Feeki Chart + Arabic)",
+    title: "Barakallah Meaning in English + Correct Reply (With Arabic)",
     description:
-      "What does Barakallahu Feek (بارك الله فيك) mean and how do you reply? See when to say Wa Feek or Wa Feeki (male/female), and how it differs from Mashallah.",
+      "Barakallah meaning in English & correct reply table (Wa Feek vs Wa Feeki). Includes Arabic text, transliteration, audio help & printable free PDF guide.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "10 min",
     keywords: [
       "barakallah meaning",
@@ -2586,9 +2589,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-is-wazifa-in-islam",
-    title: "What Is a Wazifa in Islam? Meaning, Authentic Sunnah Practices & Rules",
+    title: "What Is Wazifa in Islam? Meaning, Rules & Common Misuse",
     description:
-      "Discover the true meaning of Wazifa in Islam: authentic daily Quran & Sunnah dhikr routines, permissible practices, and red flags for fake guaranteed formulas.",
+      "What is Wazifa in Islam? Authentic meaning, Sunnah adhkar rules & common misuse. Learn when to recite daily wazaif and download our free PDF checklist.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-10-12",
@@ -2634,7 +2637,7 @@ export const blogPosts: BlogPost[] = [
       "Full meaning of Hasbunallahu wa ni'mal wakeel: Arabic text, correct pronunciation, prophetic context in times of hardship, and daily spiritual benefits.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
-    updatedAt: "2026-10-12",
+    updatedAt: "2026-11-03",
     readTime: "14 min",
     keywords: [
       "hasbunallahu wa nimal wakeel meaning",

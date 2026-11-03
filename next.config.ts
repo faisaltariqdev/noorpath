@@ -52,6 +52,54 @@ const nextConfig: NextConfig = {
         destination: "/courses",
         permanent: true,
       },
+      // ── Typo URL 301 redirect ───────────────────────────────────────────────
+      {
+        source: "/free-or-quran-classes-online",
+        destination: "/free-quran-classes-online",
+        permanent: true,
+      },
+      {
+        source: "/free-or-quran-classes-online.html",
+        destination: "/free-quran-classes-online",
+        permanent: true,
+      },
+      // ── Root / directory index .html redirects ──────────────────────────────
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/index",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/blog/index.html",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/index",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/courses/index.html",
+        destination: "/courses",
+        permanent: true,
+      },
+      {
+        source: "/locations/index.html",
+        destination: "/locations",
+        permanent: true,
+      },
+      // ── Global 301 redirect for all .html URLs to their clean versions ───────
+      {
+        source: "/:path*.html",
+        destination: "/:path*",
+        permanent: true,
+      },
     ];
   },
 

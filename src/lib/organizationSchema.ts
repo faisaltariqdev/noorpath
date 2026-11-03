@@ -112,18 +112,32 @@ export function getOrganizationJsonLd() {
           "@type": "Country",
           name,
         })),
-        contactPoint: {
-          "@type": "ContactPoint",
-          telephone: CONTACT.phoneE164,
-          email: CONTACT.email,
-          contactType: "customer service",
-          url: `${BASE_URL}/contact`,
-          availableLanguage: ["English", "Arabic", "Urdu"],
-          areaServed: PRIORITY_COUNTRIES.map((name) => ({
-            "@type": "Country",
-            name,
-          })),
-        },
+        contactPoint: [
+          {
+            "@type": "ContactPoint",
+            telephone: CONTACT.usaPhoneE164,
+            email: CONTACT.email,
+            contactType: "customer service",
+            url: `${BASE_URL}/contact`,
+            availableLanguage: ["English", "Arabic", "Urdu"],
+            areaServed: [
+              { "@type": "Country", name: "United States" },
+              { "@type": "Country", name: "Canada" },
+            ],
+          },
+          {
+            "@type": "ContactPoint",
+            telephone: CONTACT.phoneE164,
+            email: CONTACT.email,
+            contactType: "customer service",
+            url: `${BASE_URL}/contact`,
+            availableLanguage: ["English", "Arabic", "Urdu"],
+            areaServed: PRIORITY_COUNTRIES.map((name) => ({
+              "@type": "Country",
+              name,
+            })),
+          },
+        ],
         hasCourse: [
           { "@type": "Course", name: "Noorani Qaida Online", url: `${BASE_URL}/courses/noorani-qaida-online` },
           { "@type": "Course", name: "Learn Tajweed Online", url: `${BASE_URL}/learn-tajweed-online` },

@@ -2,18 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import KeywordLandingPage from "@/components/KeywordLandingPage";
 import { hifzQuranOnline } from "@/lib/landingPageData";
-import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
+import { PRICING_PLANS } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 const PATH = "/hifz-quran-online";
 const { metaTitle, metaDescription, keywords, ...props } = hifzQuranOnline;
 
-const hifzCourseJsonLd = buildCourseWithPricingJsonLd({
-  name: "Hifz Online",
+const hifzCourseJsonLd = buildStandardCourseJsonLd({
+  name: "Hifz Quran Online — Quran Memorization Program",
   description:
     "Structured Quran memorisation programme with new lesson planning, ongoing revision, and one-to-one tutor support.",
   url: "https://www.noorpath.online/hifz-quran-online",
+  workload: "PT30M",
+  availableLanguage: ["English", "Urdu", "Arabic"],
+  price: PRICING_PLANS[0].monthlyPriceUsd,
+  priceCurrency: "USD",
+  priceUrl: "https://www.noorpath.online/pricing",
 });
 
 export const metadata: Metadata = {

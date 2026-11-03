@@ -1,74 +1,64 @@
 import Link from "next/link";
-import { MessageCircle, Mail, Globe, Star } from "lucide-react";
+import { MessageCircle, Mail, Globe, Star, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram, FaTiktok, FaFacebookF, FaYoutube } from "react-icons/fa6";
-import { GOOGLE_BUSINESS_URL, SOCIAL_PROFILES, TRUSTPILOT } from "@/lib/academyFacts";
+import { CONTACT, GOOGLE_BUSINESS_URL, SOCIAL_PROFILES, TRUSTPILOT } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
 import WhatsAppLink from "@/components/WhatsAppLink";
 
 const courses = [
-  { href: "/holy-quran/para/1", label: "Holy Quran Reader" },
-  { href: "/holy-quran/surah/ya-sin", label: "Surah Yaseen" },
+  { href: "/holy-quran", label: "Holy Quran Reader" },
   { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
-  { href: "/learn-tajweed-online", label: "Tajweed Rules" },
+  { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online" },
+  { href: "/courses/tajweed-classes-online", label: "Tajweed Classes Online" },
   { href: "/hifz-quran-online", label: "Hifz Program" },
-  { href: "/online-quran-classes-for-kids", label: "Kids Quran" },
-  { href: "/one-on-one-quran-classes", label: "1-to-1 Quran Classes" },
-  { href: "/quran-classes-for-sisters", label: "Classes for Sisters" },
+  { href: "/online-quran-classes-for-kids", label: "Kids Quran Classes" },
   { href: "/female-quran-teacher-online", label: "Female Quran Teacher" },
-  { href: "/quran-classes-for-working-professionals", label: "For Professionals" },
-  { href: "/quran-classes-near-me", label: "Quran Classes Near Me (Online)" },
-  { href: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby?" },
-  { href: "/learn-quran-as-a-revert", label: "Quran for Reverts & New Muslims" },
-  { href: "/courses/noorani-qaida-online", label: "Noorani Qaida" },
+  { href: "/one-on-one-quran-classes", label: "1-to-1 Quran Classes" },
   { href: "/courses/arabic-language-online", label: "Arabic Language" },
   { href: "/courses/islamic-studies-online", label: "Islamic Studies" },
-  { href: "/courses/daily-duas-for-kids", label: "Daily Duas" },
 ];
 
 const company = [
   { href: "/about", label: "About Us" },
   { href: "/founder", label: "Founder & CEO" },
+  { href: "/author", label: "Editorial Team & Authors" },
   { href: "/our-tutors", label: "Our Tutors" },
-  { href: "/#parent-portal", label: "Parent Portal" },
+  { href: "/pricing", label: "Pricing & Plans" },
   { href: "/safeguarding", label: "Safeguarding" },
   { href: "/contact", label: "Contact" },
   { href: "/locations", label: "All Locations" },
   { href: "/blog", label: "Blog & Articles" },
-  { href: "/islamic-resources", label: "Free Resources" },
   { href: "/tools", label: "🧮 Islamic Tools Hub" },
-  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
-  { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },
-  { href: "/tools/hijri-date-converter", label: "📅 Hijri Converter" },
-  { href: "/tools/tasbeeh-counter", label: "📿 Digital Tasbeeh" },
-  { href: "/tools/inheritance-calculator", label: "⚖️ Inheritance Calculator" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/free-quran-classes-online", label: "Free Trial" },
 ];
 
 const quickLinks = [
-  { href: "/holy-quran", label: "📖 Holy Quran (114 Surahs & 30 Paras)" },
-  { href: "/holy-quran/para/1", label: "📖 Holy Quran Reader" },
-  { href: "/holy-quran/surah/ya-sin", label: "📖 Surah Yaseen" },
-  { href: "/tools", label: "🧮 Islamic Tools & Calculators" },
-  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
-  { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },
-  { href: "/tools/hijri-date-converter", label: "📅 Hijri Date Converter" },
-  { href: "/tools/tasbeeh-counter", label: "📿 Digital Tasbeeh" },
-  { href: "/tools/inheritance-calculator", label: "⚖️ Miras Calculator" },
+  { href: "/holy-quran", label: "📖 Holy Quran" },
   { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
-  { href: "/learn-quran-online", label: "Learn Quran Online" },
-  { href: "/online-quran-classes", label: "Online Quran Academy" },
-  { href: "/online-quran-classes-for-kids", label: "Quran Classes for Kids" },
-  { href: "/learn-tajweed-online", label: "Learn Tajweed Online" },
-  { href: "/hifz-quran-online", label: "Hifz Quran Online" },
+  { href: "/tools/hifz-calculator", label: "📖 Hifz Planner" },
+  { href: "/tools/zakat-calculator", label: "🕌 Zakat Calculator" },
+  { href: "/tools/hijri-date-converter", label: "📅 Hijri Converter" },
+  { href: "/tools/tasbeeh-counter", label: "📿 Digital Tasbeeh" },
 ];
 
-const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({
-  href: `/locations/${slug}`,
-  label: country,
-}));
+const priorityCountries = [
+  { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom" },
+  { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States" },
+  { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada" },
+  { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia" },
+  { href: "/locations/online-quran-classes-uae", label: "🇦🇪 UAE" },
+  { href: "/locations/online-quran-classes-saudi-arabia", label: "🇸🇦 Saudi Arabia" },
+];
+
+const popularCities = [
+  { href: "/online-quran-classes/london", label: "🇬🇧 London" },
+  { href: "/online-quran-classes/birmingham", label: "🇬🇧 Birmingham" },
+  { href: "/online-quran-classes/manchester", label: "🇬🇧 Manchester" },
+  { href: "/online-quran-classes/new-york", label: "🇺🇸 New York" },
+  { href: "/online-quran-classes/toronto", label: "🇨🇦 Toronto" },
+  { href: "/online-quran-classes/sydney", label: "🇦🇺 Sydney" },
+];
 
 export default function Footer() {
   return (
@@ -130,21 +120,7 @@ export default function Footer() {
             <span style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".78rem" }}>
               Popular City Classes:
             </span>
-            {[
-              { href: "/online-quran-classes/london", label: "🇬🇧 London" },
-              { href: "/online-quran-classes/birmingham", label: "🇬🇧 Birmingham" },
-              { href: "/online-quran-classes/manchester", label: "🇬🇧 Manchester" },
-              { href: "/online-quran-classes/new-york", label: "🇺🇸 New York" },
-              { href: "/online-quran-classes/houston", label: "🇺🇸 Houston" },
-              { href: "/online-quran-classes/dallas", label: "🇺🇸 Dallas" },
-              { href: "/online-quran-classes/toronto", label: "🇨🇦 Toronto" },
-              { href: "/online-quran-classes/sydney", label: "🇦🇺 Sydney" },
-              { href: "/online-quran-classes/melbourne", label: "🇦🇺 Melbourne" },
-              { href: "/online-quran-classes/doha", label: "🇶🇦 Doha" },
-              { href: "/online-quran-classes/mumbai", label: "🇮🇳 Mumbai" },
-              { href: "/online-quran-classes/dublin", label: "🇮🇪 Dublin" },
-              { href: "/online-quran-classes/auckland", label: "🇳🇿 Auckland" },
-            ].map((city) => (
+            {popularCities.map((city) => (
               <Link key={city.href} href={city.href} style={{ color: "var(--charcoal)", fontWeight: 500, fontSize: ".78rem", textDecoration: "none" }}>
                 {city.label}
               </Link>
@@ -318,19 +294,48 @@ export default function Footer() {
             <div>
               <div className="footer-heading">Contact Us</div>
               <ul className="footer-links">
-                <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <Mail size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
-                  <Link href="mailto:info@noorpath.online">info@noorpath.online</Link>
+                <li style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+                  <Phone size={14} style={{ flexShrink: 0, marginTop: 4, opacity: 0.8, color: "var(--gold)" }} />
+                  <div>
+                    <div style={{ fontSize: ".72rem", color: "rgba(255,255,255,.55)", textTransform: "uppercase", letterSpacing: ".5px" }}>
+                      🇺🇸 🇨🇦 USA &amp; Canada Line
+                    </div>
+                    <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap", marginTop: 2 }}>
+                      <a href={CONTACT.usaCallUrl} style={{ textDecoration: "none", color: "inherit", fontWeight: 600 }}>
+                        {CONTACT.usaPhoneDisplay}
+                      </a>
+                      <a
+                        href={CONTACT.usaSmsUrl}
+                        style={{
+                          background: "rgba(201,146,42,.2)",
+                          border: "1px solid rgba(201,146,42,.4)",
+                          borderRadius: 4,
+                          padding: "1px 6px",
+                          fontSize: ".68rem",
+                          color: "var(--gold)",
+                          fontWeight: 700,
+                          textDecoration: "none",
+                        }}
+                        title="Send SMS / Text Message directly"
+                      >
+                        Text / SMS
+                      </a>
+                    </div>
+                  </div>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <MessageCircle size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
+                  <MessageCircle size={14} style={{ flexShrink: 0, opacity: 0.7, color: "#25D366" }} />
                   <WhatsAppLink
-                    href="https://wa.me/923124877906"
+                    href={CONTACT.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    WhatsApp: +92 312 4877906
+                    WhatsApp: {CONTACT.phoneDisplay}
                   </WhatsAppLink>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <Mail size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
+                  <Link href={`mailto:${CONTACT.email}`}>{CONTACT.email}</Link>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <FaFacebookF size={14} style={{ flexShrink: 0, opacity: 0.7 }} />

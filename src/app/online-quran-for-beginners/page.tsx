@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ORGANIZATION_REF } from "@/lib/organizationSchema";
+import { PRICING_PLANS } from "@/lib/academyFacts";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import { CheckCircle, BookOpen, Clock, Star } from "lucide-react";
 
@@ -28,23 +29,17 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Course",
-      name: "Online Quran for Beginners — Noorani Qaida Program",
-      description: "Beginner Quran program from Arabic letters and Noorani Qaida to Quran recitation with Tajweed for children and adults.",
-      provider: ORGANIZATION_REF,
-      courseMode: "online",
-      educationalLevel: "Beginner",
-      teaches: "Arabic alphabet, Noorani Qaida, Quran recitation, basic Tajweed",
-      typicalAgeRange: "4+",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        description: "Free 30-minute trial class",
-      },
+    buildStandardCourseJsonLd({
+      name: "Online Quran for Beginners",
+      description:
+        "Beginner Quran program covering Arabic letters, Noorani Qaida, and foundational recitation with Tajweed for children and adults.",
       url: "https://www.noorpath.online/online-quran-for-beginners",
-    },
+      workload: "PT30M",
+      availableLanguage: ["English", "Urdu", "Arabic"],
+      price: PRICING_PLANS[0].monthlyPriceUsd,
+      priceCurrency: "USD",
+      priceUrl: "https://www.noorpath.online/pricing",
+    }),
     {
       "@type": "FAQPage",
       mainEntity: [

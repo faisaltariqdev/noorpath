@@ -1,8 +1,10 @@
 import {
+  QAIDA_GAMES,
   QAIDA_GUIDES,
   QAIDA_LESSONS,
   QAIDA_LETTERS,
   QAIDA_TAJWEED_TOPICS,
+  QAIDA_WORKSHEETS,
 } from "./index";
 
 function assertUnique(values: string[], label: string) {
@@ -20,11 +22,16 @@ export function validateQaidaContent(): true {
   const allEntries = [...QAIDA_LESSONS, ...QAIDA_TAJWEED_TOPICS, ...QAIDA_GUIDES];
   assertUnique(QAIDA_LETTERS.map((entry) => entry.slug), "letter slugs");
   assertUnique(allEntries.map((entry) => entry.slug), "topic and guide slugs");
+  assertUnique(QAIDA_GAMES.map((g) => g.slug), "game slugs");
+  assertUnique(QAIDA_WORKSHEETS.map((w) => w.slug), "worksheet slugs");
+
   // Include Arabic glyph so shared English names (Taa for ت/ط, Haa for ح/ه) stay valid.
   assertUnique(
     [
       ...QAIDA_LETTERS.map((entry) => `${entry.name} (${entry.arabic}) Arabic Letter`),
       ...allEntries.map((entry) => entry.title),
+      ...QAIDA_GAMES.map((g) => g.title),
+      ...QAIDA_WORKSHEETS.map((w) => w.title),
     ],
     "page titles",
   );

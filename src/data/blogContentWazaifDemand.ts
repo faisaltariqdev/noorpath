@@ -36,11 +36,59 @@ const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151
 export const wazaifDemandBlogContent: Record<string, { style: string; content: string }> = {
   "what-is-wazifa-in-islam": {
     style: S,
-    content: `<p>People searching <strong>what is wazifa in Islam</strong> usually want a daily practice that brings barakah — but the internet mixes authentic dhikr with invented “guaranteed” formulas. In clear language, a sound wazifa is simply consistent remembrance and dua from the Quran and Sunnah, done with sincerity — not a paid charm, not a secret number sheet, and not a replacement for salah or lawful effort.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> A <strong>wazifa</strong> (وظيفة) commonly means a regular spiritual assignment: Quran, adhkar, or dua you keep daily. The safest wazaif are prophetic morning/evening adhkar, istighfar, salawat, and Quranic duas. Avoid viral lists that promise money, marriage, or miracles for a secret count. Learn authentic wording with a <a href="/free-quran-classes-online">free trial</a>.
+    content: `<div class="answer-box">
+            <strong class="lead-in">Quick Answer:</strong>
+            <p><strong>What is Wazifa in Islam?</strong> A wazifa (Arabic: <em>وَظِيفَة</em>) is a structured daily spiritual assignment of authentic Quranic surahs, ayahs, or Prophetic supplications recited consistently for spiritual elevation, seeking forgiveness, or protection. <strong>Rules:</strong> It must strictly align with authentic Sunnah sources rather than superstitious, fabricated guaranteed rituals.</p>
           </div>
+
+          <div class="audio-card">
+            <strong>Pronunciation &amp; Audio Guide:</strong>
+            <p>Listen and learn correct pronunciation of daily Sunnah wazaif, Quranic ayahs, and Tajweed with our qualified Quran teachers. Practice with our <a href="/courses/daily-duas-for-kids">Daily Duas Course</a> or master foundational Arabic letters through <a href="/noorani-qaida">Noorani Qaida</a> and our <a href="/noorani-qaida/guides/practice">Qaida practice guide</a>.</p>
+          </div>
+
+          <div class="pdf-download-card">
+            <div>
+              <strong>Free Daily Authentic Wazaif Checklist (PDF)</strong>
+              <p>Download our verified Sunnah morning, evening, and after-salah adhkar chart with Arabic, transliteration, and English translation. Accessible for international families, including our students in <a href="/locations/online-quran-classes-australia">Australia</a>.</p>
+            </div>
+            <a href="/noorani-qaida" class="pdf-download-btn">Free PDF Guide</a>
+          </div>
+
+          <h2>Common Spelling Variants</h2>
+          <p>You may encounter this term written in various English spellings across books and websites:</p>
+          <ul>
+            <li><strong>Wazifa</strong> — Most common standard transliteration in English and Urdu.</li>
+            <li><strong>Wazaif</strong> — Plural form in Arabic and Urdu (meaning multiple spiritual litanies).</li>
+            <li><strong>Wazeefa</strong> — Common phonetic English spelling.</li>
+            <li><strong>Wazifah</strong> — Academic transliteration reflecting the Arabic tāʾ marbūṭah (وظيفة).</li>
+            <li><strong>Daily Wazaif</strong> — Reference to regular morning/evening litanies (Awrad).</li>
+          </ul>
+
+          <h2>When to Recite a Wazifa vs. When NOT to Recite</h2>
+          <table class="np-table">
+            <thead>
+              <tr>
+                <th>Recite Authentic Wazifa (Recommended)</th>
+                <th>When NOT to Recite / Inventions to Avoid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Morning &amp; Evening (Adhkar):</strong> Reciting Ayat al-Kursi, 3 Quls, and authentic protective supplications.</td>
+                <td><strong>In Impure Places:</strong> Never recite Quranic verses or sacred dhikr inside bathrooms or dirty environments.</td>
+              </tr>
+              <tr>
+                <td><strong>After Obligatory Salah:</strong> Standard Sunnah remembrance: 33x SubhanAllah, 33x Alhamdulillah, 34x Allahu Akbar.</td>
+                <td><strong>Invented Formulaic Counts:</strong> Reciting unverified online formulas promising wealth in 3 days with made-up numbers.</td>
+              </tr>
+              <tr>
+                <td><strong>During Trials &amp; Anxiety:</strong> Turning to Istighfar (Sayyid al-Istighfar) and HasbunAllahu wa ni'mal wakeel.</td>
+                <td><strong>As a Substitute for Action:</strong> Reciting without taking lawful practical steps (e.g., job hunting, medical care).</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>People searching <strong>what is wazifa in Islam</strong> usually want a daily practice that brings barakah — but the internet mixes authentic dhikr with invented “guaranteed” formulas. In clear language, a sound wazifa is simply consistent remembrance and dua from the Quran and Sunnah, done with sincerity — not a paid charm, not a secret number sheet, and not a replacement for salah or lawful effort.</p>
 
           <div class="toc">
             <strong>In this guide</strong>
@@ -268,11 +316,21 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
 
   "hasbunallahu-wa-nimal-wakeel-meaning": {
     style: S,
-    content: `<p><strong>Hasbunallahu wa ni‘mal wakeel</strong> is one of the most searched Islamic phrases in hardship — said when fear, pressure, or injustice rises. It is Quranic trust: Allah is enough, and He is the best Disposer of affairs. This page gives the Arabic, meaning, context, when to use it, and what it is <em>not</em>.</p>
+    content: `<div class="answer-box">
+  <strong>Quick Answer:</strong> The <strong>Hasbunallahu wa nimal wakeel meaning</strong> in English is "Allah is sufficient for us, and He is the best Disposer of affairs" (Arabic: <em>حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ</em>, transliteration: <em>Ḥasbunallāhu wa niʿmal-wakīl</em>). Recite it from Surah Aal Imran (3:173) during anxiety or hardship, placing full reliance on Allah.
+</div>
 
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> <strong>Hasbunallahu wa ni‘mal-wakeel</strong> means <strong>“Allah is sufficient for us, and He is the best Disposer of affairs.”</strong> It appears in Quran 3:173. Recite it when anxiety spikes, then take the next lawful step. Soft learning help: <a href="/free-quran-classes-online">free Quran trial</a>.
-          </div>
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>Found in Surah Aal Imran (3:173) as the believers' response to intimidating news.</li>
+    <li>Proclaims unwavering tawakkul: that Allah's guardianship is completely sufficient.</li>
+    <li>Coupled with taking lawful practical action, not passivity or superstition.</li>
+    <li>Taught in NoorPath Academy's Quran memorization and Islamic studies programs.</li>
+  </ul>
+</div>
+
+<p><strong>Hasbunallahu wa ni‘mal wakeel</strong> is one of the most searched Islamic phrases in hardship — said when fear, pressure, or injustice rises. It is Quranic trust: Allah is enough, and He is the best Disposer of affairs. At NoorPath Academy, we teach students how to recite Quranic verses with authentic Tajweed through our <a href="/courses/noorani-qaida-online">Noorani Qaida online course</a> and <a href="/courses/tajweed-classes-online">Tajweed classes online</a>.</p>
 
           <div class="toc">
             <strong>In this guide</strong>
@@ -287,7 +345,7 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
             </ol>
           </div>
 
-          <h2 id="arabic">Arabic, transliteration, English</h2>
+          <h2 id="arabic">What is the full Arabic, transliteration, and English of Hasbunallah?</h2>
           <div class="verse-card">
             <span class="vnum">QURAN 3:173</span>
             <div class="arabic">حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ</div>
@@ -295,11 +353,11 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
             <p class="trans-en"><strong>English:</strong> Allah is sufficient for us, and He is the best Disposer of affairs.</p>
           </div>
 
-          <h2 id="context">Quranic context (why the words feel so strong)</h2>
+          <h2 id="context">What is the Quranic story and context behind Hasbunallah?</h2>
           <p>In Surah Aal Imran, the believers were told that people had gathered against them to frighten them. Their response was not panic theatre — they said <em>Hasbunallahu wa ni‘mal-wakeel</em>. Allah mentions that they returned with favour and bounty, and no harm touched them, and they followed Allah’s pleasure. The lesson for us is not that hardship never comes; it is that trust is the believer’s first language when threats get loud.</p>
           <p>Read slowly with meaning. If Arabic is new, practise letter by letter with a tutor rather than mumbling: <a href="/learn-quran-online">learn Quran online</a>.</p>
 
-          <h2 id="word">Word-by-word sense</h2>
+          <h2 id="word">What does Hasbunallahu wa nimal wakeel mean word by word?</h2>
           <table class="np-table">
             <tr><th>Arabic</th><th>Sense</th></tr>
             <tr><td>Hasbuna</td><td>Sufficient for us / enough for us</td></tr>
@@ -309,7 +367,7 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
           </table>
           <p>Together: we do not need a louder human protector when Allah is enough — while still using lawful means He created.</p>
 
-          <h2 id="when">When to say Hasbunallah</h2>
+          <h2 id="when">When should you say Hasbunallahu wa nimal wakeel?</h2>
           <ul>
             <li>When fear of people or outcomes overwhelms you</li>
             <li>Before medical results, court matters, or family conflict</li>
@@ -319,7 +377,7 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
             <li>In personal dua after naming your need — <a href="/blog/dua-for-hajat-arabic-english">dua for hajat</a></li>
           </ul>
 
-          <h2 id="pair">A short hardship stack (authentic, no invented counts)</h2>
+          <h2 id="pair">How can you pair Hasbunallah with other authentic trust duas?</h2>
           <ol>
             <li>Hasbunallahu wa ni‘mal-wakeel (with presence)</li>
             <li>La hawla wa la quwwata illa billah</li>
@@ -328,15 +386,15 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
           </ol>
           <p>For anxiety-heavy seasons, also see <a href="/blog/dua-for-anxiety-stress-depression">dua for anxiety</a> and morning protection: <a href="/blog/morning-evening-adhkar-dhikr">morning &amp; evening adhkar</a>.</p>
 
-          <h2 id="not">What it is not</h2>
+          <h2 id="not">What misconceptions exist about reciting Hasbunallah?</h2>
           <div class="gold-box">
             <strong>Not a magic spell:</strong> Saying Hasbunallah does not replace medicine, legal advice, leaving a harmful situation, or reporting abuse. It is tawakkul — trust after (or while) taking means. Viral posts that say “recite 1,000 times and the enemy disappears by Thursday” are not Quranic guidance.
           </div>
 
-          <h2 id="kids">Teach children the meaning</h2>
+          <h2 id="kids">How can you teach Hasbunallah and tawakkul to children?</h2>
           <p>Explain: “We try our best, and Allah takes care of what we cannot control.” Keep pronunciation gentle — <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>. If a child is fearful at night, pair short trust phrases with a calm bedtime routine and <a href="/blog/dua-before-sleeping-islam">dua before sleeping</a>.</p>
 
-          <h2 id="mistakes">Mistakes to avoid</h2>
+          <h2 id="mistakes">What common mistakes should you avoid when reciting it?</h2>
           <ul>
             <li>Using Hasbunallah to silence someone else’s legitimate concern</li>
             <li>Chasing a “special count” sold online</li>
@@ -344,7 +402,12 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
             <li>Expecting instant worldly revenge as proof of acceptance</li>
           </ul>
 
-          <h2 id="faq">FAQ</h2>
+          <div class="tldr-box">
+            <h3>TL;DR</h3>
+            <p>Hasbunallahu wa ni'mal wakeel (Surah Aal Imran 3:173) means 'Allah is sufficient for us, and He is the best Disposer of affairs.' Recite this powerful declaration during hardship and anxiety, placing complete trust in Allah while taking lawful practical action.</p>
+          </div>
+
+          <h2 id="faq">Frequently asked questions about Hasbunallahu wa nimal wakeel</h2>
           <details class="faq-acc"><summary>What does Hasbunallahu wa nimal wakeel mean?<span>+</span></summary>
             <p>It means Allah is enough for us, and He is the best One to entrust our affairs to.</p>
           </details>
@@ -362,7 +425,9 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
           </details>
           <details class="faq-acc"><summary>Can I write it and keep it with me?<span>+</span></summary>
             <p>Many people keep a note as a reminder. The point is remembrance and trust, not treating a paper as a charm that works without belief and effort.</p>
-          </details>
+          <div class="highlight-box">
+            <p><strong>Learn Quran Recitation with Certified Tutors:</strong> If you are working on your pronunciation of Quranic phrases, start with our <a href="/noorani-qaida">interactive Noorani Qaida for kids</a> guide or explore personalized 1-on-1 tutoring via <a href="/locations/online-quran-classes-uk">online Quran classes UK</a> and <a href="/locations/online-quran-classes-usa">online Quran classes USA</a> with free trial lessons.</p>
+          </div>
           <p>Hasbunallah is the believer’s calm sentence when the world feels loud — Allah is enough.</p>`,
   },
 

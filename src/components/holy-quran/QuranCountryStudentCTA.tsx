@@ -10,31 +10,9 @@ const topLocations = [
   { flag: "🇬🇧", country: "United Kingdom", href: "/locations/online-quran-classes-uk" },
   { flag: "🇨🇦", country: "Canada", href: "/locations/online-quran-classes-canada" },
   { flag: "🇦🇺", country: "Australia", href: "/locations/online-quran-classes-australia" },
-  { flag: "🇩🇪", country: "Germany", href: "/locations/online-quran-classes-germany" },
-  { flag: "🇫🇷", country: "France", href: "/locations/online-quran-classes-france" },
-  { flag: "🇳🇿", country: "New Zealand", href: "/locations/online-quran-classes-new-zealand" },
-  { flag: "🇩🇰", country: "Denmark", href: "/locations/online-quran-classes-denmark" },
-  { flag: "🇫🇮", country: "Finland", href: "/locations/online-quran-classes-finland" },
-  { flag: "🇸🇪", country: "Sweden", href: "/locations/online-quran-classes-sweden" },
-  { flag: "🇳🇴", country: "Norway", href: "/locations/online-quran-classes-norway" },
-  { flag: "🇮🇪", country: "Ireland", href: "/locations/online-quran-classes-ireland" },
-  { flag: "🇦🇪", country: "UAE", href: "/locations/online-quran-classes-uae" },
-  { flag: "🇶🇦", country: "Qatar", href: "/locations/online-quran-classes-qatar" },
-  { flag: "🇸🇦", country: "Saudi Arabia", href: "/locations/online-quran-classes-saudi-arabia" },
-  { flag: "🇳🇱", country: "Netherlands", href: "/locations/online-quran-classes-netherlands" },
-  { flag: "🇸🇬", country: "Singapore", href: "/locations/online-quran-classes-singapore" },
-  { flag: "🇳🇬", country: "Nigeria", href: "/locations/online-quran-classes-nigeria" },
 ];
 
-const topCities = [
-  { name: "London", href: "/online-quran-classes/london" },
-  { name: "Birmingham", href: "/online-quran-classes/birmingham" },
-  { name: "Manchester", href: "/online-quran-classes/manchester" },
-  { name: "New York", href: "/locations/online-quran-classes-usa" },
-  { name: "Houston", href: "/locations/online-quran-classes-usa" },
-  { name: "Toronto", href: "/locations/online-quran-classes-canada" },
-  { name: "Sydney", href: "/locations/online-quran-classes-australia" },
-];
+const topCities: { name: string; href: string }[] = [];
 
 type Props = {
   title?: string;

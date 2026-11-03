@@ -222,7 +222,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         directAnswer:
           "Request morning, after-school, evening or weekend windows in PKT. Exact recurring times are confirmed after tutor matching.",
         paragraphs: [
-          "Share school and work conflicts clearly. A sustainable weekly slot usually works better than irregular catch-up lessons. PKT (UTC+5) does not observe daylight saving — still confirm the written local clock time.",
+          'Share school and work conflicts clearly. A sustainable weekly slot usually works better than irregular catch-up lessons. Read our guide on <a href="/blog/balancing-school-and-online-quran-in-pakistan" style="color:var(--emerald);font-weight:600;">balancing school and online Quran in Pakistan</a>. PKT (UTC+5) does not observe daylight saving — still confirm the written local clock time.',
         ],
         table: {
           headers: ["Planning factor", "What to confirm"],

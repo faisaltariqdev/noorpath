@@ -37,6 +37,20 @@ export function extractVisibleFaqsFromHtml(html: string): VisibleFaq[] {
       faqs.push({ question, answer });
     }
   }
+
+  // Also support div.faq-item with div.faq-q and div.faq-a
+  if (faqs.length === 0) {
+    const reItem =
+      /<div\b[^>]*\bclass=["'][^"']*\bfaq-item\b[^"']*["'][^>]*>[\s\S]*?<div\b[^>]*\bclass=["'][^"']*\bfaq-q\b[^"']*["'][^>]*>([\s\S]*?)<\/div>[\s\S]*?<div\b[^>]*\bclass=["'][^"']*\bfaq-a\b[^"']*["'][^>]*>([\s\S]*?)<\/div>/gi;
+    while ((match = reItem.exec(html)) !== null) {
+      const question = stripTags(match[1].replace(/<span[^>]*>\s*\+\s*<\/span>/gi, " "));
+      const answer = stripTags(match[2]);
+      if (question.length >= 8 && answer.length >= 8) {
+        faqs.push({ question, answer });
+      }
+    }
+  }
+
   return faqs;
 }
 

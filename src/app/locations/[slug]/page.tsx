@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
+import { getCountryLandingPageData, isRebuiltCountry } from "@/data/countryLandingPages";
+import RebuiltCountryView from "@/components/RebuiltCountryView";
 import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { getCountryGuide } from "@/data/countryGuides";
@@ -57,6 +59,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     content?.metadataDescription ??
     `Online Quran classes in ${loc.country} for children and adults. Request live one-to-one Qaida, Tajweed or Hifz lessons in ${loc.timezone}, subject to tutor matching.`;
   const canonical = `https://www.noorpath.online/locations/${slug}`;
+
+  if (isRebuiltCountry(slug)) {
+    const rebuilt = getCountryLandingPageData(slug)!;
+    return {
+      title: absolutePageTitle(rebuilt.metaTitle),
+      description: rebuilt.metaDescription,
+      keywords: getLocationKeywords(loc),
+      alternates: {
+        canonical,
+        languages: getCountryHubHreflang(),
+      },
+      openGraph: {
+        title: rebuilt.metaTitle,
+        description: rebuilt.metaDescription,
+        url: canonical,
+        locale: getOpenGraphLocale(slug),
+        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `Online Quran Classes ${loc.country}` }],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: rebuilt.metaTitle,
+        description: rebuilt.metaDescription,
+        images: ["/og-image.png"],
+      },
+    };
+  }
+
   return {
     // absolute: geo titles already end with | NoorPath — avoid layout template doubling
     title: absolutePageTitle(
@@ -100,7 +129,7 @@ export default async function LocationDetailPage({ params }: Props) {
   const related = market
     ? relatedPriority
     : locations.filter((l) => l.slug !== slug).slice(0, 4);
-  const cityPages = getCitiesByCountrySlug(slug).filter((c) => isCityIndexable(c.slug));
+  const cityPages = getCitiesByCountrySlug(slug);
   const faqs = getLocationFaqs(loc);
   const seoParagraphs = getLocationSeoParagraphs(loc);
   const locale = getLocale(slug);
@@ -287,6 +316,16 @@ export default async function LocationDetailPage({ params }: Props) {
     ],
   };
 
+  if (isRebuiltCountry(slug)) {
+    const rebuilt = getCountryLandingPageData(slug)!;
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <RebuiltCountryView data={rebuilt} pageUrl={pageUrl} />
+      </>
+    );
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -403,6 +442,7 @@ export default async function LocationDetailPage({ params }: Props) {
               <div style={{ marginTop: 22 }}>
                 <LocationHeroCtaCard
                   whatsappText={`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`}
+                  isNorthAmerica={slug === "online-quran-classes-usa" || slug === "online-quran-classes-canada"}
                 />
               </div>
             </div>
@@ -628,6 +668,12 @@ export default async function LocationDetailPage({ params }: Props) {
                     { href: "/quran-classes-near-me", label: `“Quran classes near me” in ${loc.country} — What online actually means` },
                     { href: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby — Lessons for Muslim-minority areas" },
                     { href: "/free-quran-classes-online", label: "Free Quran Classes Online — Trial details" },
+                    ...(slug === "online-quran-classes-germany"
+                      ? [{ href: "/blog/muslim-families-europe-balance-school-quran", label: "Guide: Balancing School & Quran in Europe" }]
+                      : []),
+                    ...(slug === "online-quran-classes-uk"
+                      ? [{ href: "/blog/timezone-friendly-quran-classes-uk-europe", label: "Guide: UK Timezone-Friendly Quran Classes" }]
+                      : []),
                   ].map((c) => (
                     <Link key={c.href} href={c.href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".9rem", textDecoration: "none" }}>
                       → {c.label}

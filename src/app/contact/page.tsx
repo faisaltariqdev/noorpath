@@ -64,36 +64,163 @@ export default function ContactPage() {
       </div>
 
       <section>
-        <div className="max-w-[760px] mx-auto px-4">
+        <div className="max-w-[820px] mx-auto px-4">
           <div className="content-card">
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.3rem", marginBottom: 12 }}>
-              Class and trial enquiries
+            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.45rem", marginBottom: 12 }}>
+              Class and Trial Enquiries
             </h2>
-            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 20 }}>
+            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 24 }}>
               Tell us the learner&apos;s age group, current level, preferred course,
               timezone, suitable lesson windows and any tutor preference. Tutor
               and schedule availability are confirmed after your request.
             </p>
-            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 12 }}>
-              Email:{" "}
-              <Link href={`mailto:${CONTACT.email}`} style={{ color: "var(--emerald)", fontWeight: 600 }}>
+
+            {/* Region Contact Channels Grid */}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16, marginBottom: 28 }}>
+              {/* USA & Canada Dedicated Call / SMS Card */}
+              <div
+                style={{
+                  background: "linear-gradient(145deg, rgba(10,110,79,.06), rgba(201,146,42,.08))",
+                  border: "1.5px solid rgba(10,110,79,.25)",
+                  borderRadius: 14,
+                  padding: "20px 18px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                  <span style={{ fontSize: "1.4rem" }}>🇺🇸 🇨🇦</span>
+                  <div>
+                    <h3 style={{ fontSize: "1rem", fontWeight: 700, margin: 0, color: "var(--charcoal)" }}>
+                      USA &amp; Canada Line
+                    </h3>
+                    <span style={{ fontSize: ".72rem", color: "var(--emerald)", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".5px" }}>
+                      Direct Call &amp; SMS (No WhatsApp needed)
+                    </span>
+                  </div>
+                </div>
+                <p style={{ fontSize: ".82rem", color: "var(--muted)", lineHeight: 1.55, marginBottom: 14 }}>
+                  Fastest response for US &amp; Canadian parents. Call or text us directly from your phone.
+                </p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
+                  <a
+                    href={CONTACT.usaCallUrl}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      background: "var(--emerald)",
+                      color: "#fff",
+                      fontSize: ".82rem",
+                      fontWeight: 700,
+                      padding: "8px 14px",
+                      borderRadius: 8,
+                      textDecoration: "none",
+                    }}
+                  >
+                    📞 Call {CONTACT.usaPhoneDisplay}
+                  </a>
+                  <a
+                    href={CONTACT.usaSmsUrl}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      background: "rgba(10,110,79,.12)",
+                      border: "1px solid var(--emerald)",
+                      color: "var(--emerald)",
+                      fontSize: ".82rem",
+                      fontWeight: 700,
+                      padding: "8px 14px",
+                      borderRadius: 8,
+                      textDecoration: "none",
+                    }}
+                  >
+                    💬 Text / SMS
+                  </a>
+                </div>
+                <div style={{ fontSize: ".75rem", color: "var(--muted)" }}>
+                  🕒 Available {CONTACT.usaAvailableHours}
+                </div>
+              </div>
+
+              {/* Global WhatsApp & Phone Card */}
+              <div
+                style={{
+                  background: "rgba(10,110,79,.04)",
+                  border: "1px solid rgba(10,110,79,.18)",
+                  borderRadius: 14,
+                  padding: "20px 18px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                  <span style={{ fontSize: "1.4rem" }}>🌍 💬</span>
+                  <div>
+                    <h3 style={{ fontSize: "1rem", fontWeight: 700, margin: 0, color: "var(--charcoal)" }}>
+                      International &amp; WhatsApp
+                    </h3>
+                    <span style={{ fontSize: ".72rem", color: "var(--muted)", fontWeight: 600 }}>
+                      UK, Europe, Gulf &amp; Worldwide
+                    </span>
+                  </div>
+                </div>
+                <p style={{ fontSize: ".82rem", color: "var(--muted)", lineHeight: 1.55, marginBottom: 14 }}>
+                  Connect instantly via WhatsApp for schedule matching, tutor clips, or queries.
+                </p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
+                  <WhatsAppLink
+                    href={CONTACT.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      background: "#25D366",
+                      color: "#fff",
+                      fontSize: ".82rem",
+                      fontWeight: 700,
+                      padding: "8px 14px",
+                      borderRadius: 8,
+                      textDecoration: "none",
+                    }}
+                  >
+                    Chat on WhatsApp
+                  </WhatsAppLink>
+                  <a
+                    href={`tel:${CONTACT.phoneE164}`}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      background: "rgba(0,0,0,.05)",
+                      color: "var(--charcoal)",
+                      fontSize: ".82rem",
+                      fontWeight: 600,
+                      padding: "8px 12px",
+                      borderRadius: 8,
+                      textDecoration: "none",
+                    }}
+                  >
+                    Call {CONTACT.phoneDisplay}
+                  </a>
+                </div>
+                <div style={{ fontSize: ".75rem", color: "var(--muted)" }}>
+                  ⚡ Typically replies within 15–30 minutes
+                </div>
+              </div>
+            </div>
+
+            {/* Email Contact */}
+            <div style={{ padding: "14px 18px", background: "var(--ivory)", borderRadius: 10, border: "1px solid var(--border)", marginBottom: 28 }}>
+              <span style={{ fontWeight: 600, fontSize: ".9rem", color: "var(--charcoal)" }}>
+                ✉️ Official Admissions &amp; Support Email:{" "}
+              </span>
+              <Link href={`mailto:${CONTACT.email}`} style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".9rem" }}>
                 {CONTACT.email}
               </Link>
-            </p>
-            <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 28 }}>
-              WhatsApp or phone:{" "}
-              <WhatsAppLink
-                href={CONTACT.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "var(--emerald)", fontWeight: 600 }}
-              >
-                {CONTACT.phoneDisplay}
-              </WhatsAppLink>
-            </p>
+            </div>
 
             <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", marginBottom: 12 }}>
-              Corrections and policy questions
+              Corrections and Policy Questions
             </h2>
             <p style={{ color: "var(--muted)", lineHeight: 1.8, marginBottom: 12 }}>
               Email us if you find an inaccurate service, pricing, tutor, location

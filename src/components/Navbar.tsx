@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, GraduationCap, ChevronDown, Video } from "lucide-react";
-import { TRIAL } from "@/lib/academyFacts";
+import { CONTACT, TRIAL } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 
@@ -32,10 +32,14 @@ const moreLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-const priorityCountries = PRIORITY_MARKETS.map(({ country, slug }) => ({
-  href: `/locations/${slug}`,
-  label: country,
-}));
+const priorityCountries = [
+  { href: "/locations/online-quran-classes-uk", label: "United Kingdom" },
+  { href: "/locations/online-quran-classes-usa", label: "United States" },
+  { href: "/locations/online-quran-classes-canada", label: "Canada" },
+  { href: "/locations/online-quran-classes-australia", label: "Australia" },
+  { href: "/locations/online-quran-classes-uae", label: "UAE" },
+  { href: "/locations/online-quran-classes-saudi-arabia", label: "Saudi Arabia" },
+];
 
 function closeParentDetails(e: React.MouseEvent<HTMLElement>) {
   const details = e.currentTarget.closest("details");
@@ -91,6 +95,32 @@ export default function Navbar() {
           >
             Request Trial →
           </Link>
+          <span style={{ margin: "0 10px", opacity: 0.5 }}>|</span>
+          <a
+            href={CONTACT.usaCallUrl}
+            style={{ color: "#fff", fontWeight: 600, textDecoration: "none", whiteSpace: "nowrap" }}
+            title="Call US & Canada Admissions Line"
+          >
+            🇺🇸 🇨🇦 <span style={{ textDecoration: "underline" }}>Call: {CONTACT.usaPhoneDisplay}</span>
+          </a>
+          <a
+            href={CONTACT.usaSmsUrl}
+            style={{
+              color: "#e8b84b",
+              fontWeight: 700,
+              fontSize: ".75rem",
+              background: "rgba(232,184,75,.2)",
+              border: "1px solid rgba(232,184,75,.45)",
+              borderRadius: 4,
+              padding: "1px 6px",
+              marginLeft: 6,
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
+            title="Send SMS / Text message"
+          >
+            Text / SMS
+          </a>
           <button
             aria-label="Close announcement"
             onClick={() => setPromoVisible(false)}

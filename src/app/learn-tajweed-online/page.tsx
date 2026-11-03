@@ -2,18 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import KeywordLandingPage from "@/components/KeywordLandingPage";
 import { learnTajweedOnline } from "@/lib/landingPageData";
-import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
+import { PRICING_PLANS } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 const PATH = "/learn-tajweed-online";
 const { metaTitle, metaDescription, keywords, ...props } = learnTajweedOnline;
 
-const tajweedCourseJsonLd = buildCourseWithPricingJsonLd({
-  name: "Tajweed Online",
+const tajweedCourseJsonLd = buildStandardCourseJsonLd({
+  name: "Learn Tajweed Online — Quran Recitation Rules",
   description:
     "Study and practise Tajweed rules with live recitation correction and feedback from a qualified Quran tutor.",
   url: "https://www.noorpath.online/learn-tajweed-online",
+  workload: "PT30M",
+  availableLanguage: ["English", "Urdu", "Arabic"],
+  price: PRICING_PLANS[0].monthlyPriceUsd,
+  priceCurrency: "USD",
+  priceUrl: "https://www.noorpath.online/pricing",
 });
 
 export const metadata: Metadata = {

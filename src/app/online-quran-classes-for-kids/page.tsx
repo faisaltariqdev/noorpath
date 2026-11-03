@@ -6,8 +6,38 @@ import TrustPolicyStrip from "@/components/TrustPolicyStrip";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import { ORGANIZATION_REF, BASE_URL } from "@/lib/organizationSchema";
-import { CheckCircle, Clock, BookOpen, Award, Shield, Users, Globe, MapPin } from "lucide-react";
-import { FAMILY_DISCOUNTS, PRICING_PLANS, REFUND_WINDOW_DAYS, SERVICE_FACTS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
+import {
+  CheckCircle,
+  Clock,
+  BookOpen,
+  Award,
+  Shield,
+  Users,
+  Globe,
+  MapPin,
+  Laptop,
+  HeartHandshake,
+  Sparkles,
+  ArrowRight,
+  GraduationCap,
+  CalendarCheck,
+  FileText,
+  UserCheck,
+  MessageCircle,
+  Check,
+  ChevronRight,
+} from "lucide-react";
+import {
+  FAMILY_DISCOUNTS,
+  PRICING_PLANS,
+  REFUND_WINDOW_DAYS,
+  SERVICE_FACTS,
+  TRIAL,
+  TRIAL_OFFER,
+  TUTOR_FACTS,
+  RESCHEDULE_NOTICE_HOURS,
+  CANCELLATION_NOTICE_DAYS,
+} from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 
@@ -15,49 +45,46 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Online Quran Classes for Kids — ${TRIAL.classes} Free Trials | NoorPath`,
+    absolute: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
   },
-  description: `Private 1-on-1 Quran classes for children ages 4+. Interactive Noorani Qaida, games & parent portal. ${TRIAL.classes} free classes, female tutors available. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
+  description:
+    "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
   keywords: [
     "online quran classes for kids",
+    "quran classes for children",
+    "online quran teacher for kids",
+    "quran lessons for beginners",
+    "kids quran classes with tajweed",
+    "one-to-one quran classes for children",
     "quran classes for kids online",
     "learn quran online for kids",
-    "online quran for children",
-    "quran teacher for kids online",
-    "kids quran classes",
-    "1 on 1 quran classes for kids",
-    "online quran academy for kids",
-    "quran learning for kids online",
+    "female quran teacher for kids",
     "noorani qaida for kids online",
-    "tajweed classes for kids",
-    "online tajweed classes for children",
-    "online islamic classes for children",
+    "hifz for kids online",
     "safe online quran classes",
     "free quran trial for kids",
-    "online quran classes for kids uk",
-    "online quran classes for kids usa",
-    "online quran classes for kids canada",
-    "online quran classes for kids australia",
-    "female quran teacher for kids",
-    "quran classes for children ages 4 to 12",
     "after school quran classes online",
-    "online quran classes after school",
-    "one to one quran classes for kids",
-    "online noorani qaida for kids",
-    "online hifz classes for kids",
   ],
   alternates: { canonical: "https://www.noorpath.online/online-quran-classes-for-kids" },
   openGraph: {
-    title: `Online Quran Classes for Kids — ${TRIAL.classes} Free Trials | NoorPath`,
+    title: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
     description:
-      `Private 1-on-1 Quran classes for children ages 4+. Interactive Noorani Qaida, games & parent portal. ${TRIAL.classes} free classes, female tutors available. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
+      "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
     url: "https://www.noorpath.online/online-quran-classes-for-kids",
-    images: [{ url: "/marketing/kids-online-quran-class.jpg", width: 1200, height: 800, alt: "Online Quran Classes for Kids — NoorPath Academy" }],
+    images: [
+      {
+        url: "/marketing/kids-online-quran-class.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Online Quran Classes for Kids — NoorPath Academy",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Online Quran Classes for Kids — ${TRIAL.classes} Free Trials | NoorPath`,
-    description: `Private 1-on-1 Quran classes for children ages 4+. Interactive Noorani Qaida, games & parent portal. ${TRIAL.classes} free classes, female tutors available. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
+    title: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
+    description:
+      "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
     images: ["/marketing/kids-online-quran-class.jpg"],
   },
 };
@@ -66,44 +93,36 @@ const PAGE_URL = `${BASE_URL}/online-quran-classes-for-kids`;
 
 const faqs = [
   {
-    q: "What age can a child start online Quran classes?",
-    a: "Children can start from age 4. The appropriate lesson length and starting material depend on attention span, prior reading experience, and the family's goals.",
+    q: "At what age can children start learning the Quran?",
+    a: "Children can start learning from age 4. For ages 4 to 6, lessons focus on gentle Arabic letter recognition, phonetics, and short oral supplications using interactive visual aids suited to young attention spans.",
   },
   {
-    q: "Are online Quran classes safe for children?",
-    a: "Classes are live and 1-to-1, and parents are welcome to sit in. Every NoorPath tutor holds an Ijazah or a Quran teaching certificate, and if your child is not comfortable with the tutor we change the tutor immediately.",
+    q: "Can complete beginners join?",
+    a: "Yes. Complete beginners start from scratch with Noorani Qaida, learning letter shapes, proper articulation points (Makharij), and vowel sounds at their own individual pace before progressing to full words.",
   },
   {
-    q: "How much do online Quran classes for kids cost?",
-    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. The first ${TRIAL.classes} trial classes (${TRIAL.durationMinutes} minutes each) are free and need no credit card, and there is a full refund if you ask within ${REFUND_WINDOW_DAYS} days of the first paid class. Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% for two siblings to ${FAMILY_DISCOUNTS[2].discountPercent}% for four or more.`,
+    q: "Are classes one-to-one?",
+    a: "Yes. Every lesson is 100% private and one-to-one with an assigned live teacher via Zoom or Google Meet. We do not conduct group webinars, ensuring your child receives undivided attention and immediate pronunciation correction.",
   },
   {
-    q: "How long should a Quran class be for a child?",
-    a: `Lesson length should reflect the child's age, attention span, goals, and selected plan. Published plan lengths are ${PRICING_PLANS.map((plan) => `${plan.sessionMinutes} minutes`).join(", ")}, and the suitable option can be discussed after the trial.`,
+    q: "Can parents request a female Quran teacher?",
+    a: "Yes. Qualified female Quran teachers holding an Ijazah or certified Islamic credentials are available upon request for daughters, sisters, and young children. You can select your preference directly on the trial request form.",
   },
   {
-    q: "Can my child learn with a female Quran teacher?",
-    a: "Yes. Female Quran teachers are available — choose a female tutor when you book the free trial.",
+    q: "Are class timings flexible for international families?",
+    a: "Yes. We coordinate lesson slots around family routines across the UK (GMT/BST), USA & Canada (EST/CST/PST), Australia (AEST), Gulf (GST/AST), and Europe. Morning, after-school, and weekend windows are confirmed after tutor matching.",
   },
   {
-    q: "What will my child learn first?",
-    a: "The tutor first considers the child's current level. A beginner may start with Arabic letters and harakat, while a reader may begin with recitation correction, Tajweed, or a suitable Hifz plan.",
+    q: "What will my child learn?",
+    a: "Depending on your child's age and starting level, they can study Noorani Qaida, fluent Quran recitation with Tajweed rules, Quran memorization (Hifz), daily Islamic duas, the 6 Kalimas, and foundational Islamic manners (Akhlaq).",
   },
   {
-    q: "Can I request classes for my timezone?",
-    a: "Yes. Share your timezone and preferred lesson windows when booking; tutor availability is confirmed after your request.",
+    q: "How can I book a trial class?",
+    a: `Fill out the free trial request form on this page with your child's age, level, preferred time window, and teacher preference. Our academic coordinator will match a suitable tutor and confirm your ${TRIAL.classes} free ${TRIAL.durationMinutes}-minute trial classes via WhatsApp or email — no credit card needed.`,
   },
   {
-    q: "Is the free trial really free?",
-    a: `Yes. ${TRIAL_OFFER}, live and 1-on-1, cost $0 and need no credit card. Tutor availability is confirmed after your request.`,
-  },
-  {
-    q: "What is Noorani Qaida and why do kids start with it?",
-    a: "Noorani Qaida is the foundational Arabic reading method used for Quran learning. It teaches letter shapes, sounds (Makharij), vowels (harakat), and letter joining rules in a step-by-step child-friendly progression. Children who master Noorani Qaida can then read the Quran fluently with correct Tajweed.",
-  },
-  {
-    q: "Can siblings share a tutor or class?",
-    a: `Lessons are offered 1-to-1. Sibling discounts are ${FAMILY_DISCOUNTS[0].discountPercent}% for two siblings, ${FAMILY_DISCOUNTS[1].discountPercent}% for three, and ${FAMILY_DISCOUNTS[2].discountPercent}% for four or more.`,
+    q: "Can parents monitor their child's progress?",
+    a: "Yes. Parents are always welcome to observe lessons at home. In addition, enrolled families receive regular tutor feedback notes and can log into the secure Parent Portal to review attendance, assigned homework, and curriculum milestone reports.",
   },
 ];
 
@@ -121,14 +140,15 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": `${PAGE_URL}#webpage`,
       url: PAGE_URL,
-      name: "Online Quran Classes for Kids",
-      description: "Live 1-on-1 online Quran classes for kids ages 4–12: Noorani Qaida, Tajweed, Hifz, and daily duas.",
+      name: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
+      description:
+        "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
       isPartOf: { "@type": "WebSite", "@id": `${BASE_URL}/#website`, url: BASE_URL },
-      about: { "@id": `${PAGE_URL}#course` },
+      about: { "@id": `${PAGE_URL}#service` },
       mainEntity: { "@id": `${PAGE_URL}#course` },
       speakable: {
         "@type": "SpeakableSpecification",
-        cssSelector: [".page-hero h1", ".np-quick-answer"],
+        cssSelector: ["#kids-hero-title", ".np-quick-answer"],
       },
     },
     {
@@ -142,17 +162,18 @@ const jsonLd = {
       "@id": `${PAGE_URL}#service`,
       name: "Online Quran Classes for Kids",
       description:
-        "Live 1-on-1 online Quran classes for children ages 4–12, with tutor matching for Noorani Qaida, Tajweed, Hifz, and Islamic studies.",
+        "Live 1-on-1 online Quran lessons for children ages 4–12 with personalized tutor matching for Noorani Qaida, Tajweed, Hifz, daily duas, and Islamic studies.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education for Children",
-      audience: { "@type": "Audience", audienceType: "Muslim children ages 4–12 and their parents" },
+      audience: { "@type": "Audience", audienceType: "Children ages 4–12 and their parents" },
       url: PAGE_URL,
       offers: {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        description: TRIAL_OFFER,
-        url: `https://www.noorpath.online/free-quran-classes-online`,
+        name: `${TRIAL.classes} Free ${TRIAL.durationMinutes}-Minute Trial Quran Classes`,
+        description: `${TRIAL_OFFER} with no credit card required. Tutor availability confirmed after request.`,
+        url: `${BASE_URL}/free-quran-classes-online`,
       },
     },
     {
@@ -160,27 +181,27 @@ const jsonLd = {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
         { "@type": "ListItem", position: 2, name: "Online Quran Classes", item: `${BASE_URL}/online-quran-classes` },
-        { "@type": "ListItem", position: 3, name: "For Kids", item: PAGE_URL },
+        { "@type": "ListItem", position: 3, name: "Online Quran Classes for Kids", item: PAGE_URL },
       ],
     },
   ],
 };
 
 const trustStats = [
-  { value: SERVICE_FACTS[0].value, label: SERVICE_FACTS[0].label },
-  { value: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
-  { value: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
-  { value: SERVICE_FACTS[3].value, label: SERVICE_FACTS[3].label },
+  { value: "1-to-1", label: "Private Live Lessons" },
+  { value: `${TRIAL.classes} Free`, label: `${TRIAL.durationMinutes}-Min Trial Classes` },
+  { value: "No Card", label: "Required for Trial" },
+  { value: "Flexible", label: "Timezone Scheduling" },
   { value: "Available", label: "Female Quran Tutors" },
 ];
 
-const geoLocations = [
-  { country: "🇬🇧 United Kingdom", detail: "Share your GMT or BST lesson preferences." },
-  { country: "🇺🇸 United States", detail: "Share your US timezone and preferred lesson windows." },
-  { country: "🇨🇦 Canada", detail: "Share your Canadian timezone and preferred lesson windows." },
-  { country: "🇦🇺 Australia", detail: "Share your AEST or AEDT lesson preferences." },
-  { country: "🇦🇪 Gulf (UAE/KSA)", detail: "Share your GST or AST lesson preferences." },
-  { country: "🇳🇬 Nigeria", detail: "Share your WAT window — Lagos, Abuja, Port Harcourt or Kano." },
+const priorityGeoTimezones = [
+  { country: "🇬🇧 United Kingdom", desc: "GMT/BST after-school and weekend lesson slots" },
+  { country: "🇺🇸 United States", desc: "EST, CST, and PST scheduling around school days" },
+  { country: "🇨🇦 Canada", desc: "EST, CST, and PST slots aligned with Canadian schools" },
+  { country: "🇦🇺 Australia", desc: "AEST/AEDT weekend and afternoon family windows" },
+  { country: "🇦🇪 Gulf (UAE / KSA)", desc: "GST/AST slots suited for international school routines" },
+  { country: "🇪🇺 Europe", desc: "CET/CEST evening windows for Muslim families across Europe" },
 ];
 
 export default function OnlineQuranClassesForKidsPage() {
@@ -188,57 +209,72 @@ export default function OnlineQuranClassesForKidsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
 
-      {/* HERO */}
-      <div className="page-hero">
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 1 — HERO
+          ══════════════════════════════════════════════════════════════ */}
+      <header className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>
             <Link href="/" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>Home</Link>
             <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
             <Link href="/online-quran-classes" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>Online Quran Classes</Link>
             <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
-            <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>For Kids</span>
+            <span style={{ color: "rgba(255,255,255,.75)", fontSize: ".85rem" }}>For Kids</span>
           </nav>
-          <h1>Online Quran Classes for Kids</h1>
-          <p>
-            Live one-to-one Quran classes for children ages 4–12 — including online Islamic classes for children and online Tajweed classes for children when reading is ready —
-            with matching for Quran reading, Hifz, and female tutor requests. Book{" "}
-            <strong style={{ color: "var(--gold-lt)" }}>online Quran classes after school</strong> when that window fits.{" "}
-            <strong style={{ color: "var(--gold-lt)" }}>{TRIAL.classes} free trial classes — no credit card.</strong>
+
+          <h1 id="kids-hero-title">
+            Online Quran Classes for Kids – Learn the Quran with Confidence
+          </h1>
+
+          <p style={{ maxWidth: 720, fontSize: "1.05rem", lineHeight: 1.8, marginBottom: 20 }}>
+            Children can learn the Quran comfortably from home through personalized one-to-one online Quran lessons.
+            With undivided individual attention, patient beginner-friendly guidance, flexible after-school and weekend
+            timings, and regular parent progress updates, your child develops accurate Arabic pronunciation and genuine love
+            for the Book of Allah. Book{" "}
+            <strong style={{ color: "var(--gold-lt)" }}>{TRIAL.classes} free {TRIAL.durationMinutes}-minute trial classes</strong> — no credit card required.
           </p>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial for Your Child →</Link>
+
+          <div style={{ display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", marginTop: 26 }}>
+            <a href="#trial-form" className="btn-primary-np" style={{ textDecoration: "none" }}>
+              Book a Free Trial →
+            </a>
             <WhatsAppLink
-              href={`https://wa.me/923124877906?text=${encodeURIComponent("Assalamu Alaikum, I want to book a FREE Quran trial class for my child. Please share kids class details.")}`}
+              href={`https://wa.me/923124877906?text=${encodeURIComponent(
+                "Assalamu Alaikum! I would like to book a free Quran trial class for my child at NoorPath Academy. Please share details."
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-np"
-              style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
+              style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}
             >
+              <MessageCircle size={17} aria-hidden="true" style={{ marginRight: 6 }} />
               WhatsApp Us
             </WhatsAppLink>
-            <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View Pricing</Link>
-            <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              Tutor availability confirmed after your request
+            <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
+              View Pricing &amp; Plans
+            </Link>
+            <span style={{ color: "rgba(255,255,255,.75)", fontSize: ".85rem", display: "inline-flex", alignItems: "center", gap: 6 }}>
+              ✓ Ages 4–12 · Female tutors available · Timezone matching
             </span>
           </div>
         </div>
-      </div>
+      </header>
 
       {/* TRUST STATS BAR */}
-      <div style={{ background: "var(--emerald)", padding: "18px 0" }}>
+      <section style={{ background: "var(--emerald)", padding: "18px 0" }} aria-label="Key Service Highlights">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "24px 40px" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px 36px" }}>
             {trustStats.map((s) => (
               <div key={s.label} style={{ textAlign: "center" }}>
                 <div style={{ color: "#fff", fontWeight: 800, fontSize: "1.15rem" }}>{s.value}</div>
-                <div style={{ color: "rgba(255,255,255,.8)", fontSize: ".75rem", fontWeight: 500 }}>{s.label}</div>
+                <div style={{ color: "rgba(255,255,255,.85)", fontSize: ".76rem", fontWeight: 500 }}>{s.label}</div>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* AEO Quick Answer Block for Google AI Overviews & Perplexity */}
+      {/* AEO QUICK ANSWER BOX */}
       <section className="py-6 bg-[rgba(10,110,79,0.03)] border-b border-[var(--border)]">
         <div className="max-w-[1200px] mx-auto px-4">
           <div
@@ -249,26 +285,29 @@ export default function OnlineQuranClassesForKidsPage() {
               borderRadius: 12,
               padding: "18px 22px",
               fontSize: "0.95rem",
-              lineHeight: 1.7,
+              lineHeight: 1.75,
               color: "var(--charcoal)",
             }}
           >
             <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
             <span>
-              Online Quran classes for kids connect children ages 4–12 with certified 1-on-1 tutors via live video. Lessons cover Noorani Qaida, Tajweed, daily duas, and Hifz at the child&apos;s individual pace. Parents choose after-school or weekend lesson slots in their local timezone with male or female tutors. NoorPath offers {TRIAL_OFFER} with no credit card required.
+              Online Quran classes for kids connect children ages 4–12 with certified teachers via live 1-on-1 video lessons.
+              Children learn from home through tailored instruction covering Noorani Qaida, Tajweed, daily duas, and Hifz.
+              Parents choose convenient lesson windows in their local timezone with male or female tutors.
+              NoorPath Academy offers {TRIAL_OFFER} with no credit card required, plus full parent portal visibility and a {REFUND_WINDOW_DAYS}-day money-back guarantee.
             </span>
           </div>
         </div>
       </section>
 
-      {/* Hero visual + snapshot */}
-      <section style={{ padding: "40px 0 0" }}>
+      {/* HERO VISUAL & CLASS SNAPSHOT */}
+      <section style={{ padding: "44px 0 20px" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
             <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid var(--border)", position: "relative" }}>
               <Image
                 src="/marketing/kids-online-quran-class.jpg"
-                alt="Child learning Quran online with a live tutor on Zoom"
+                alt="Child learning Quran online at home with a live one-to-one tutor on a tablet"
                 width={900}
                 height={600}
                 priority
@@ -277,370 +316,754 @@ export default function OnlineQuranClassesForKidsPage() {
               />
             </div>
             <div>
-              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.55rem", color: "var(--charcoal)", marginBottom: 12 }}>
-                What a kids class looks like
+              <span className="section-eyebrow">Personalized Quran Education</span>
+              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.65rem", color: "var(--charcoal)", margin: "8px 0 14px" }}>
+                What a One-to-One Kids Lesson Looks Like
               </h2>
-              <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 16 }}>
-                Your child sits at home with a Qaida or Quran, joins the live class, and practises directly with a tutor —
-                not watching a recording. Parents can discuss how they would like to supervise lessons.
+              <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 18 }}>
+                Your child logs in from home, opens their Noorani Qaida or Mushaf, and interacts directly with an attentive,
+                patient teacher. Unlike crowded weekend madrasas or pre-recorded video apps, the tutor listens to every word,
+                gently correcting tongue placement and vowel lengths while encouraging positive Quranic connection.
               </p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3 mb-6">
                 {[
-                  { v: "1-to-1", l: "Live online lesson" },
-                  { v: `${TRIAL.classes} free`, l: "Trial classes" },
-                  { v: "Flexible", l: "Tutor matching" },
-                  { v: "No card", l: "Needed for trial" },
+                  { v: "1-on-1", l: "Private live video sessions" },
+                  { v: "Interactive", l: "Visual letter games & drills" },
+                  { v: "Ages 4+", l: "Beginner-friendly progression" },
+                  { v: "No Card", l: "3 free trial classes to start" },
                 ].map((x) => (
-                  <div key={x.l} style={{ background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "14px 12px" }}>
-                    <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.1rem" }}>{x.v}</div>
-                    <div style={{ fontSize: ".75rem", color: "var(--muted)" }}>{x.l}</div>
+                  <div key={x.l} style={{ background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "12px 14px" }}>
+                    <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.05rem" }}>{x.v}</div>
+                    <div style={{ fontSize: ".76rem", color: "var(--muted)", marginTop: 2 }}>{x.l}</div>
                   </div>
                 ))}
               </div>
+              <p style={{ fontSize: ".88rem", color: "var(--muted)", margin: 0 }}>
+                Explore our wider academic curriculum in the{" "}
+                <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+                  main online Quran classes guide
+                </Link>{" "}
+                or start with our{" "}
+                <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+                  free trial class details
+                </Link>.
+              </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 2 — WHY PARENTS CHOOSE NOORPATH
+          ══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: "var(--ivory)", padding: "72px 0", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }} aria-labelledby="why-parents-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div style={{ textAlign: "center", marginBottom: 44 }}>
+            <span className="section-eyebrow">Service Transparency</span>
+            <h2 id="why-parents-heading" className="section-title">
+              Why Parents Choose NoorPath for Their Children
+            </h2>
+            <p style={{ color: "var(--muted)", maxWidth: 720, margin: "12px auto 0", lineHeight: 1.75 }}>
+              We know parents want a trusted, nurturing environment where their child receives genuine personal care.
+              Here are the honest service principles that guide every NoorPath lesson:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { src: "/marketing/female-hafiza-tutor.jpg", alt: "Female tutor teaching a girl Quran online", title: "Female tutor request", desc: "Request a female tutor for a daughter; availability is confirmed after enquiry." },
-              { src: "/marketing/kids-hifz-memorisation.jpg", alt: "Child memorising Quran at home for Hifz", title: "Hifz for kids", desc: "Sabaq–Sabqi–Manzil system once reading is fluent." },
-              { src: "/marketing/family-evening-quran.jpg", alt: "Family evening online Quran learning at home", title: "Timezone matching", desc: "Share preferred lesson windows when requesting a tutor." },
+              {
+                icon: <Users size={24} />,
+                title: "One-to-One Dedicated Attention",
+                desc: "Every lesson is 100% individual. The tutor focuses solely on your child, adapting teaching pacing, explanations, and encouragement to their unique learning personality.",
+              },
+              {
+                icon: <Sparkles size={24} />,
+                title: "Beginner-Friendly & Level-Adapted",
+                desc: "Whether your child is starting with their very first Arabic letter in Noorani Qaida or polishing advanced Tajweed recitation, lessons match their exact level without rushing.",
+              },
+              {
+                icon: <Clock size={24} />,
+                title: "Flexible Timings for Global Families",
+                desc: "Classes are arranged around your household schedule — after school, early evening, or weekends across UK, US, Canadian, Australian, and Gulf timezones.",
+              },
+              {
+                icon: <FileText size={24} />,
+                title: "Transparent Parent Progress Updates",
+                desc: "You never have to guess how your child is doing. Regular feedback notes, attendance logs, and milestone updates are shared directly with parents.",
+              },
+              {
+                icon: <Laptop size={24} />,
+                title: "Safe, Comfortable Learning from Home",
+                desc: "No stressful rush-hour madrasa drop-offs or parking headaches. Children learn in a calm, safe home environment where parents can easily listen in.",
+              },
+              {
+                icon: <UserCheck size={24} />,
+                title: "Female Quran Teacher Requests",
+                desc: (
+                  <>
+                    Parents may request a qualified{" "}
+                    <Link href="/female-quran-teacher-online" style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                      female Quran teacher online
+                    </Link>{" "}
+                    for daughters, sisters, or young boys. Every tutor holds an Ijazah or certified teaching credentials.
+                  </>
+                ),
+              },
             ].map((card) => (
-              <figure key={card.src} className="content-card" style={{ margin: 0, padding: 0, overflow: "hidden" }}>
-                <Image src={card.src} alt={card.alt} width={700} height={467} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" style={{ width: "100%", height: 160, objectFit: "cover", display: "block" }} />
-                <figcaption style={{ padding: "14px 16px" }}>
-                  <div style={{ fontWeight: 700, fontSize: ".92rem", color: "var(--charcoal)", marginBottom: 4 }}>{card.title}</div>
-                  <p style={{ fontSize: ".82rem", color: "var(--muted)", margin: 0, lineHeight: 1.5 }}>{card.desc}</p>
-                </figcaption>
-              </figure>
+              <div key={card.title} className="content-card" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+                <div style={{ color: "var(--emerald)", marginBottom: 12 }}>{card.icon}</div>
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.05rem", fontWeight: 700, marginBottom: 8, color: "var(--charcoal)" }}>
+                  {card.title}
+                </h3>
+                <div style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, margin: 0, flexGrow: 1 }}>
+                  {card.desc}
+                </div>
+              </div>
             ))}
+          </div>
+
+          <div style={{ textAlign: "center", marginTop: 32 }}>
+            <a href="#trial-form" className="btn-primary-np" style={{ textDecoration: "none" }}>
+              Request Your Child&apos;s Free Trial Class →
+            </a>
+            <p style={{ color: "var(--muted)", fontSize: ".88rem", marginTop: 14 }}>
+              Are you also looking for adult lessons? Explore our dedicated{" "}
+              <Link href="/online-quran-classes-for-adults" style={{ color: "var(--emerald)", fontWeight: 650 }}>
+                online Quran classes for adults
+              </Link>{" "}
+              tailored for mature schedules and independent pacing.
+            </p>
           </div>
         </div>
       </section>
 
-      <section style={{ background: "linear-gradient(180deg,#f1fbf6,#fff)", padding: "64px 0" }} aria-labelledby="kids-interactive-qaida-heading">
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 3 — WHAT CHILDREN CAN LEARN
+          ══════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: "72px 0" }} aria-labelledby="curriculum-heading">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <span className="section-eyebrow">Learning platform support · Ages 3–12</span>
-              <h2 id="kids-interactive-qaida-heading" className="section-title">
-                Interactive Noorani Qaida Practice Between Guided Lessons
-              </h2>
-              <p className="section-desc">
-                Young learners can revisit a current Arabic letter through tracing,
-                listening prompts, visual recognition, memory, sequencing, puzzles,
-                and short quizzes. The activity changes while the learning target
-                stays clear, helping practice feel more like play without presenting
-                a game score as proof of pronunciation mastery.
-              </p>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 22 }}>
-                <Link href="/noorani-qaida" className="btn-primary-np">Explore the 11-Module Qaida →</Link>
-                <Link href="/noorani-qaida/guides/for-parents" className="btn-outline-np">Read the Parent Guide</Link>
-              </div>
-              <p style={{ color: "var(--muted)", fontSize: ".78rem", lineHeight: 1.6, marginTop: 14 }}>
-                Platform reference: ages 3–12. Live one-to-one class requests remain
-                available from age 4 and are matched separately.
-              </p>
-            </div>
-            <figure className="qaida-screenshot">
-              <Image
-                src="/marketing/noorani-qaida/noorani-qaida-practice-games.png"
-                alt="NoorPath Noorani Qaida practice activities and Arabic letter games for children"
-                width={1024}
-                height={533}
-                sizes="(max-width: 1024px) 100vw, 560px"
-              />
-              <figcaption>
-                NoorPath learning platform preview: practice and game choices
-                connected to the current Arabic letter.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section style={{ padding: "72px 0" }}>
-        <div className="max-w-[1200px] mx-auto px-4">
-
-          {/* WHY NOORPATH */}
-          <div style={{ textAlign: "center", marginBottom: 48, marginTop: 40 }}>
-            <span className="section-eyebrow">🌙 Why Parents Choose NoorPath</span>
-            <h2 className="section-title">Online Quran Classes for <em className="accent">Kids</em> — Built for Families</h2>
-            <p style={{ color: "var(--muted)", maxWidth: 680, margin: "12px auto 0", lineHeight: 1.7 }}>
-              Not group webinars. Not pre-recorded videos. Real live teachers who know how to keep your child engaged,
-              provide live pronunciation feedback, and adapt the lesson to the child&apos;s level.
+          <div style={{ textAlign: "center", marginBottom: 44 }}>
+            <span className="section-eyebrow">Structured Curriculum</span>
+            <h2 id="curriculum-heading" className="section-title">
+              What Children Can Learn at NoorPath Academy
+            </h2>
+            <p style={{ color: "var(--muted)", maxWidth: 700, margin: "12px auto 0", lineHeight: 1.75 }}>
+              Courses are designed specifically for young minds, blending traditional Quranic scholarship with clear,
+              child-friendly pedagogical frameworks:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {[
-              [<Users size={22} key="u" />, "1-on-1 Attention", "The tutor can adapt reading practice, correction, and lesson pace to the individual learner."],
-              [<Award size={22} key="a" />, "Certified Tutors", "Every tutor holds an Ijazah or a Quran teaching certificate. Not comfortable with the tutor? We change the tutor immediately."],
-              [<Shield size={22} key="s" />, "Parent-Aware Lessons", "Parents can discuss supervision and communication preferences before lessons begin."],
-              [<Clock size={22} key="c" />, "Timezone Matching", "Share your timezone and preferred lesson windows; availability is confirmed after your request."],
-              [<BookOpen size={22} key="b" />, "Kids Learning Subjects", "Request Noorani Qaida, Quran reading, Tajweed, Hifz, duas, or Islamic studies."],
-              [<CheckCircle size={22} key="ch" />, "Trial Before Enrolment", "Use the free trial to assess communication, lesson pace, and teaching fit before choosing a plan."],
-            ].map(([icon, title, desc]) => (
-              <div key={String(title)} className="content-card">
-                <div style={{ color: "var(--emerald)", marginBottom: 12 }}>{icon}</div>
-                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: ".97rem", fontWeight: 700, marginBottom: 8 }}>{title}</h3>
-                <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.6, margin: 0 }}>{String(desc)}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {/* 1. Noorani Qaida */}
+            <div className="content-card" style={{ borderTop: "3px solid var(--emerald)", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <BookOpen size={22} color="var(--emerald)" />
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", margin: 0, color: "var(--charcoal)" }}>
+                  1. Noorani Qaida
+                </h3>
               </div>
-            ))}
-          </div>
-
-          {/* AGE GROUPS */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Quran Learning by Age — Possible Focus
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            {[
-              ["Ages 4–6", "Foundation focus", "Arabic letters, sounds, short duas, and visual activities can be selected according to attention span and current level."],
-              ["Ages 7–9", "Reading focus", "Possible topics include Noorani Qaida, short surahs, introductory Tajweed, daily duas, and Islamic manners."],
-              ["Ages 10–12", "Individual goals", "Possible topics include Quran reading, Tajweed, Hifz, Arabic vocabulary, and Islamic studies."],
-            ].map(([age, duration, desc]) => (
-              <div key={String(age)} className="content-card" style={{ borderTop: "3px solid var(--emerald)" }}>
-                <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.1rem", marginBottom: 4 }}>{age}</div>
-                <div style={{ fontSize: ".82rem", color: "var(--gold)", fontWeight: 600, marginBottom: 10 }}>{duration}</div>
-                <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, margin: 0 }}>{desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="content-card" style={{ marginBottom: 48 }}>
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 8 }}>Parent success checklist</h2>
-            <p style={{ color: "var(--muted)", fontSize: ".9rem", marginBottom: 16, lineHeight: 1.6 }}>
-              These practical steps can support a consistent learning routine without promising a fixed result or timeline.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {[
-                ["Fixed weekly slot", "Same days/times — kids learn by habit"],
-                ["Quiet corner", "Tablet + headphones beat a noisy living room"],
-                ["Short home practice", "5–10 minutes on off-days beats cramming"],
-                ["Female tutors available", "Choose a female tutor on the trial form"],
-                ["Review lesson notes", "Ask the tutor clarifying questions when needed"],
-                ["Sibling plan", `Discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%`],
-              ].map(([t, d]) => (
-                <div key={t} style={{ display: "flex", gap: 10, padding: "12px 14px", background: "rgba(10,110,79,.04)", borderRadius: 10 }}>
-                  <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} />
-                  <div>
-                    <div style={{ fontWeight: 700, fontSize: ".88rem", color: "var(--charcoal)" }}>{t}</div>
-                    <div style={{ fontSize: ".8rem", color: "var(--muted)" }}>{d}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CURRICULUM TABLE */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Kids Quran Curriculum — Learning Stages
-          </h2>
-          <div style={{ overflowX: "auto", marginBottom: 16 }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".88rem" }}>
-              <thead>
-                <tr style={{ background: "var(--emerald)", color: "#fff" }}>
-                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Stage</th>
-                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Focus Area</th>
-                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>What Your Child Learns</th>
-                  <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 700 }}>Tutor Support</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["Foundation", "Arabic Alphabet", "Letter shapes, sounds (Makharij), harakat (vowels), short duas", "Introduce and practise at the child's pace"],
-                  ["Reading Basics", "Noorani Qaida", "Letter joining, tanween, shadda, and madd exercises", "Correct reading patterns and pronunciation"],
-                  ["Quran Reading", "Guided Recitation", "Short surahs and reading practice with introductory Tajweed", "Provide live correction and suitable practice"],
-                  ["Tajweed", "Rule Application", "Qalqalah, Ghunna, Ikhfa, Iqlab, and Idgham during recitation", "Select rules appropriate to the learner's level"],
-                  ["Individual Goal", "Specialised Study", "Hifz, Arabic vocabulary, Islamic studies, or Seerah", "Agree a personalised learning focus"],
-                ].map(([stage, focus, learns, support]) => (
-                  <tr key={String(stage)} style={{ borderBottom: "1px solid var(--border)" }}>
-                    <td style={{ padding: "12px 16px", fontWeight: 700, color: "var(--emerald)", whiteSpace: "nowrap" }}>{stage}</td>
-                    <td style={{ padding: "12px 16px", fontWeight: 600 }}>{focus}</td>
-                    <td style={{ padding: "12px 16px", color: "var(--muted)" }}>{learns}</td>
-                    <td style={{ padding: "12px 16px", color: "var(--charcoal)", fontSize: ".82rem" }}>{support}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p style={{ color: "var(--muted)", fontSize: ".84rem", lineHeight: 1.65, margin: "0 0 48px" }}>
-            Parent resources: see our{" "}
-            <Link href="/blog/quran-curriculum-and-lesson-planning" style={{ color: "var(--emerald)", fontWeight: 600 }}>
-              Quran curriculum and lesson-planning guide
-            </Link>{" "}
-            and{" "}
-            <Link href="/blog/quran-practice-and-progress-guide" style={{ color: "var(--emerald)", fontWeight: 600 }}>
-              research-informed Quran practice and progress guide
-            </Link>
-            . These frameworks must be adapted to observed ability and do not guarantee learning timelines.
-          </p>
-
-          {/* HOW IT WORKS */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            How to Start — 3 Simple Steps
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            {[
-              ["1", "Book Free Trial", "Fill the form below with your child's age, level, goals, timezone, and tutor preference. We will confirm availability."],
-              ["2", "Attend First Class", "30-minute live lesson on Zoom. Your child meets their teacher and starts learning immediately. Parents welcome to join."],
-              ["3", "Choose Your Plan", `After the trial, choose a monthly plan if it fits. Sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%.`],
-            ].map(([num, title, desc]) => (
-              <div key={String(num)} style={{ textAlign: "center", padding: "24px 16px" }}>
-                <div style={{
-                  width: 48, height: 48, borderRadius: "50%", background: "var(--emerald)", color: "#fff",
-                  display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800,
-                  fontSize: "1.2rem", margin: "0 auto 16px",
-                }}>{num}</div>
-                <h3 style={{ fontWeight: 700, marginBottom: 8, fontSize: ".95rem" }}>{title}</h3>
-                <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.6, margin: 0 }}>{desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* GEO LOCATIONS */}
-          <div style={{ background: "var(--ivory)", borderRadius: 16, padding: "36px 32px", marginBottom: 48, border: "1px solid var(--border)" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
-              <Globe size={20} color="var(--emerald)" />
-              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", margin: 0 }}>
-                Request Kids Quran Classes by Timezone
-              </h2>
-            </div>
-            <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 24, lineHeight: 1.6 }}>
-              Share your timezone and preferred lesson windows. Tutor availability is confirmed after your request.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {geoLocations.map((loc) => (
-                <div key={loc.country} style={{ background: "#fff", borderRadius: 10, padding: "16px 18px", border: "1px solid var(--border)" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
-                    <MapPin size={14} color="var(--emerald)" />
-                    <span style={{ fontWeight: 700, fontSize: ".9rem" }}>{loc.country}</span>
-                  </div>
-                  <p style={{ color: "var(--muted)", fontSize: ".8rem", lineHeight: 1.55, margin: 0 }}>{loc.detail}</p>
-                </div>
-              ))}
-            </div>
-            <div style={{ marginTop: 20, display: "flex", flexWrap: "wrap", gap: 10 }}>
-              {[
-                ["/locations/online-quran-classes-uk", "Quran Classes UK"],
-                ["/locations/online-quran-classes-usa", "Quran Classes USA"],
-                ["/locations/online-quran-classes-canada", "Quran Classes Canada"],
-                ["/locations/online-quran-classes-australia", "Quran Classes Australia"],
-                ["/online-quran-classes/london", "Kids Classes London"],
-                ["/online-quran-classes/birmingham", "Kids Classes Birmingham"],
-                ["/online-quran-classes/bradford", "Kids Classes Bradford"],
-                ["/online-quran-classes/manchester", "Kids Classes Manchester"],
-                ["/locations/online-quran-classes-nigeria", "Quran Classes Nigeria"],
-                ["/online-quran-classes/lagos", "Kids Classes Lagos"],
-                ["/online-quran-classes/abuja", "Kids Classes Abuja"],
-                ["/online-quran-classes/port-harcourt", "Kids Classes Port Harcourt"],
-                ["/female-quran-teacher-online", "Female Teacher for Girls"],
-              ].map(([href, label]) => (
-                <Link key={href} href={href} style={{
-                  background: "#fff", border: "1px solid var(--emerald)", borderRadius: 50,
-                  padding: "6px 14px", fontSize: ".8rem", color: "var(--emerald)", fontWeight: 600, textDecoration: "none",
-                }}>{label}</Link>
-              ))}
-            </div>
-          </div>
-
-          {/* STRUGGLING? — the questions parents search at 11pm, answered on this site */}
-          <section aria-labelledby="kids-struggling-heading" style={{ marginBottom: 48 }}>
-            <div style={{ textAlign: "center", marginBottom: 22 }}>
-              <span className="section-eyebrow">Is it not going well right now?</span>
-              <h2 id="kids-struggling-heading" className="section-title">
-                Your Child Won&apos;t Sit, Forgets, or <em className="accent">Hates Quran Class?</em>
-              </h2>
-              <p className="section-desc center">
-                Resistance is almost never laziness — it is usually timing, session length, a teacher mismatch, or a child protecting themselves from repeated struggle. These guides diagnose the cause before anyone pushes harder.
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 16, flexGrow: 1 }}>
+                The foundational Arabic reading course. Children learn the 28 Arabic letters, articulation points (Makharij),
+                vowels (Fatha, Kasra, Damma), Tanween, Sukoon, Shaddah, and compound letter joining.
               </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                { href: "/blog/child-wont-sit-for-quran-class", title: "My child won't sit for Quran class", desc: "Why 10 calm minutes beat 40 tearful ones, and how to reset the routine." },
-                { href: "/blog/quran-homework-kids-wont-practice", title: "They won't do the Quran homework", desc: "Turning between-lesson practice into a 5-minute echo instead of a battle." },
-                { href: "/blog/child-forgets-arabic-letters", title: "They keep forgetting the letters", desc: "What forgetting actually signals and the revision rhythm that fixes it." },
-                { href: "/blog/quran-classes-for-adhd-kids", title: "Quran classes for a child with ADHD", desc: "Short bursts, movement breaks, and pacing that a one-to-one tutor can adapt." },
-                { href: "/blog/quran-classes-for-shy-or-anxious-kids", title: "Shy or anxious about reading aloud", desc: "How a private lesson removes the audience — and what to tell the tutor." },
-                { href: "/blog/quran-classes-for-autistic-kids", title: "Quran classes for an autistic child", desc: "Predictable structure, sensory-aware sessions, and honest expectations." },
-              ].map((g) => (
-                <Link key={g.href} href={g.href} style={{ textDecoration: "none" }}>
-                  <div className="content-card" style={{ height: "100%", borderTop: "3px solid var(--emerald)" }}>
-                    <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 6, fontSize: ".95rem" }}>{g.title}</div>
-                    <p style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.6, margin: 0 }}>{g.desc}</p>
-                  </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: ".85rem" }}>
+                <Link href="/noorani-qaida" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Interactive Noorani Qaida Hub
                 </Link>
-              ))}
+                <Link href="/courses/noorani-qaida-online" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Live Noorani Qaida Online Course
+                </Link>
+              </div>
             </div>
-            <p style={{ textAlign: "center", color: "var(--muted)", fontSize: ".9rem", marginTop: 18, lineHeight: 1.7 }}>
-              Often the fastest fix is a different teacher, not a different child. The free trial lets you watch how a tutor speaks to your child before you decide anything.
-            </p>
-          </section>
 
-          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
-          <TrustPolicyStrip />
+            {/* 2. Quran Reading with Tajweed */}
+            <div className="content-card" style={{ borderTop: "3px solid var(--emerald)", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <Award size={22} color="var(--emerald)" />
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", margin: 0, color: "var(--charcoal)" }}>
+                  2. Quran Reading (Nazra)
+                </h3>
+              </div>
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 16, flexGrow: 1 }}>
+                Once letter joining is sound, children graduate to reading directly from the Mushaf. Tutors provide word-by-word
+                listening and guide students through correct stopping signs (Waqf) and steady rhythmic recitation.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: ".85rem" }}>
+                <Link href="/learn-tajweed-online" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Learn Tajweed Online Guide
+                </Link>
+                <Link href="/courses/tajweed-classes-online" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Live Tajweed Classes for Children
+                </Link>
+              </div>
+            </div>
 
-          {/* INTERNAL LINKS */}
-          <div style={{ background: "var(--ivory)", borderRadius: 16, padding: "28px 32px", marginBottom: 48, border: "1px solid var(--border)" }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", marginBottom: 16 }}>Learn More Before You Book</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-              {[
-                ["/blog/online-quran-classes-for-kids-parent-guide", "Complete Parent Guide 2026"],
-                ["/blog/best-age-to-start-quran-learning", "When to Start Quran Learning"],
-                ["/blog/how-to-teach-quran-to-kids", "How to Teach Quran at Home"],
-                ["/online-quran-classes-for-kids", "Kids Quran Course Details"],
-                ["/female-quran-teacher-online", "Female Quran Teacher"],
-                ["/courses/noorani-qaida-online", "Noorani Qaida Course"],
-                ["/learn-quran-online", "Learn Quran Online"],
-              ].map(([href, label]) => (
-                <Link key={href} href={href} style={{
-                  background: "#fff", border: "1px solid var(--border)", borderRadius: 50,
-                  padding: "6px 14px", fontSize: ".8rem", color: "var(--emerald)", fontWeight: 600, textDecoration: "none",
-                }}>{label}</Link>
-              ))}
+            {/* 3. Basic Tajweed */}
+            <div className="content-card" style={{ borderTop: "3px solid var(--emerald)", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <Sparkles size={22} color="var(--emerald)" />
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", margin: 0, color: "var(--charcoal)" }}>
+                  3. Practical Tajweed Rules
+                </h3>
+              </div>
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 16, flexGrow: 1 }}>
+                Children understand practical recitation rules: Qalqalah (echoing letters), Ghunnah (nasal sounds), Noon Sakinah
+                rules (Izhar, Iqlab, Idgham, Ikhfa), and Madd elongation without complicated theoretical jargon.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: ".85rem" }}>
+                <Link href="/noorani-qaida/tajweed/makharij" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Arabic Makharij Pronunciation Guide
+                </Link>
+              </div>
+            </div>
+
+            {/* 4. Memorization (Hifz) */}
+            <div className="content-card" style={{ borderTop: "3px solid var(--emerald)", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <GraduationCap size={22} color="var(--emerald)" />
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", margin: 0, color: "var(--charcoal)" }}>
+                  4. Quran Memorization (Hifz)
+                </h3>
+              </div>
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 16, flexGrow: 1 }}>
+                For children who read fluently and wish to memorize short Surahs (Juz Amma) or the full Quran. Uses the proven
+                Sabaq (new lesson), Sabqi (recent revision), and Manzil (cumulative retention) system.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: ".85rem" }}>
+                <Link href="/hifz-quran-online" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Hifz Quran Online Program
+                </Link>
+                <Link href="/tools/hifz-calculator" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Interactive Hifz Completion Calculator
+                </Link>
+              </div>
+            </div>
+
+            {/* 5. Daily Duas and Kalmas */}
+            <div className="content-card" style={{ borderTop: "3px solid var(--emerald)", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <HeartHandshake size={22} color="var(--emerald)" />
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", margin: 0, color: "var(--charcoal)" }}>
+                  5. Daily Duas &amp; 6 Kalmas
+                </h3>
+              </div>
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 16, flexGrow: 1 }}>
+                Essential Islamic life habits. Children memorize daily Sunnah supplications (before eating, sleeping, waking,
+                entering home) along with the 6 Kalimas and their basic English meanings.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: ".85rem" }}>
+                <Link href="/blog/attahiyat-full-arabic-english-tashahhud" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Attahiyat Tashahhud in Salah
+                </Link>
+              </div>
+            </div>
+
+            {/* 6. Basic Islamic Studies */}
+            <div className="content-card" style={{ borderTop: "3px solid var(--emerald)", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <Shield size={22} color="var(--emerald)" />
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", margin: 0, color: "var(--charcoal)" }}>
+                  6. Islamic Studies &amp; Manners
+                </h3>
+              </div>
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, marginBottom: 16, flexGrow: 1 }}>
+                Practical foundation including step-by-step Wudu, Salah prayer practice, the 5 Pillars of Islam, stories
+                of the Prophets, and core Islamic character values (Akhlaq) like truthfulness and kindness.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: ".85rem" }}>
+                <Link href="/courses/islamic-studies-online" style={{ color: "var(--emerald)", fontWeight: 650, textDecoration: "none" }}>
+                  → Islamic Studies Online Course
+                </Link>
+              </div>
             </div>
           </div>
 
-          {/* FAQs */}
-          <FaqJsonLd faqs={faqs} pageUrl={PAGE_URL} />
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Common Questions from Parents
-          </h2>
-          <div className="max-w-[700px] mx-auto" style={{ marginBottom: 48 }}>
-            {faqs.map((f, i) => (
-              <details key={i} style={{ borderBottom: "1px solid var(--border)", padding: "18px 0" }}>
-                <summary style={{ fontWeight: 600, color: "var(--charcoal)", cursor: "pointer", fontSize: ".95rem" }}>{f.q}</summary>
-                <p style={{ color: "var(--muted)", marginTop: 10, lineHeight: 1.7, fontSize: ".9rem" }}>{f.a}</p>
-              </details>
-            ))}
+          {/* Interactive Qaida practice promo */}
+          <div style={{ background: "linear-gradient(135deg, rgba(10,110,79,.06), rgba(201,146,42,.08))", borderRadius: 16, padding: "28px 32px", border: "1px solid rgba(10,110,79,.15)" }}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+              <div className="md:col-span-2">
+                <span className="section-eyebrow">Between-Lesson Practice</span>
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.3rem", color: "var(--charcoal)", margin: "4px 0 10px" }}>
+                  Free Interactive Noorani Qaida Games for Kids
+                </h3>
+                <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.7, margin: 0 }}>
+                  Children retain letter sounds faster through playful repetition. We provide free mobile-friendly letter matching,
+                  harakat quizzes, and printable worksheets to reinforce learning between live teacher lessons.
+                </p>
+              </div>
+              <div style={{ textAlign: "center" }}>
+                <Link href="/noorani-qaida/games" className="btn-primary-np" style={{ textDecoration: "none", display: "inline-block" }}>
+                  Play Free Qaida Games →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="cta-section" id="cta">
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 4 — LEARNING JOURNEY
+          ══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: "var(--ivory)", padding: "72px 0", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }} aria-labelledby="journey-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div style={{ textAlign: "center", marginBottom: 44 }}>
+            <span className="section-eyebrow">Step-by-Step Pathway</span>
+            <h2 id="journey-heading" className="section-title">
+              Your Child&apos;s Learning Journey at NoorPath
+            </h2>
+            <p style={{ color: "var(--muted)", maxWidth: 720, margin: "12px auto 0", lineHeight: 1.75 }}>
+              We follow a simple, structured 5-step progression adapted to your child&apos;s individual readiness.
+              We prioritize sound understanding over rushed completion:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+            {[
+              {
+                step: "1",
+                title: "Assess Child's Level",
+                desc: "During the free trial class, the tutor listens gently to assess letter recognition, attention span, and current reading ability.",
+              },
+              {
+                step: "2",
+                title: "Start Right Lessons",
+                desc: "Beginners start with Noorani Qaida alphabet shapes; existing readers begin recitation correction or Tajweed exercises.",
+              },
+              {
+                step: "3",
+                title: "Practice & Makharij",
+                desc: "In live 1-on-1 sessions, the teacher corrects pronunciation in real-time, modeling authentic mouth and throat articulation.",
+              },
+              {
+                step: "4",
+                title: "Compound Regularity",
+                desc: "Weekly recurring lessons build consistency, helping your child form a positive daily habit and natural reading rhythm.",
+              },
+              {
+                step: "5",
+                title: "Share Parent Updates",
+                desc: "Tutors share progress remarks, homework tasks, and completed milestones directly with parents after sessions.",
+              },
+            ].map((st) => (
+              <div key={st.step} className="content-card" style={{ textAlign: "center", padding: "24px 16px" }}>
+                <div
+                  style={{
+                    width: 44,
+                    height: 44,
+                    borderRadius: "50%",
+                    background: "var(--emerald)",
+                    color: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: 800,
+                    fontSize: "1.15rem",
+                    margin: "0 auto 14px",
+                  }}
+                >
+                  {st.step}
+                </div>
+                <h3 style={{ fontSize: ".95rem", fontWeight: 700, marginBottom: 8, color: "var(--charcoal)" }}>{st.title}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".83rem", lineHeight: 1.6, margin: 0 }}>{st.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ background: "#fff", borderRadius: 12, padding: "16px 20px", border: "1px solid var(--border)", textAlign: "center", maxWidth: 800, margin: "0 auto" }}>
+            <p style={{ margin: 0, fontSize: ".86rem", color: "var(--slate)", lineHeight: 1.7 }}>
+              <strong>Honest learning timelines:</strong> Every child learns at their own pace. Progress depends on age, prior Arabic familiarity,
+              and 5 to 10 minutes of daily home practice. NoorPath never promises artificial or guaranteed completion dates.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 5 — HOW ONLINE CLASSES WORK
+          ══════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: "72px 0" }} aria-labelledby="how-it-works-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div style={{ textAlign: "center", marginBottom: 44 }}>
+            <span className="section-eyebrow">Simple &amp; Safe Process</span>
+            <h2 id="how-it-works-heading" className="section-title">
+              How Online Quran Classes Work
+            </h2>
+            <p style={{ color: "var(--muted)", maxWidth: 700, margin: "12px auto 0", lineHeight: 1.75 }}>
+              Getting started is straightforward, transparent, and completely risk-free for your family:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {[
+              {
+                num: "01",
+                title: "Submit a Free Trial Request",
+                desc: `Fill out the quick form below with your child's age, current Quran level, preferred local timezone, and male or female teacher preference. Takes less than 60 seconds.`,
+              },
+              {
+                num: "02",
+                title: "Tutor Matching & Confirmation",
+                desc: "Our academic team pairs your child with a certified tutor whose schedule and teaching style match your needs. We confirm the lesson day and meeting link via WhatsApp or email.",
+              },
+              {
+                num: "03",
+                title: "Attend the Live 1-on-1 Trial",
+                desc: `Your child connects to the ${TRIAL.durationMinutes}-minute live lesson on Zoom or Google Meet from a laptop or tablet. Parents are warmly invited to sit beside their child.`,
+              },
+              {
+                num: "04",
+                title: "Discuss Suitable Learning Plan",
+                desc: "Following the trial, the tutor shares an initial assessment and suggests the right course route (Noorani Qaida, Tajweed, or Hifz) along with recommended weekly lesson frequency.",
+              },
+              {
+                num: "05",
+                title: "Begin Ongoing Lessons (No Lock-In)",
+                desc: `If you decide to continue, choose a simple monthly plan from $${PRICING_PLANS[0].monthlyPriceUsd}/mo. Enjoy sibling discounts (${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[2].discountPercent}%) and a ${REFUND_WINDOW_DAYS}-day refund guarantee. Cancel anytime.`,
+              },
+              {
+                num: "06",
+                title: "Family Discounts for Siblings",
+                desc: `Enrolling more than one child? Published sibling discounts apply automatically: ${FAMILY_DISCOUNTS.map((d) => `${d.siblings} (${d.discountPercent}%)`).join(", ")}.`,
+              },
+            ].map((step) => (
+              <div key={step.num} className="content-card" style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ color: "var(--emerald)", fontWeight: 800, fontSize: "1.3rem", marginBottom: 8 }}>{step.num}</div>
+                <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.05rem", color: "var(--charcoal)", marginBottom: 8 }}>{step.title}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".87rem", lineHeight: 1.7, margin: 0, flexGrow: 1 }}>{step.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Timezone availability box */}
+          <div style={{ background: "var(--ivory)", borderRadius: 16, padding: "28px 32px", border: "1px solid var(--border)" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+              <Globe size={22} color="var(--emerald)" />
+              <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.2rem", margin: 0, color: "var(--charcoal)" }}>
+                Flexible Timezone Matching for Families Worldwide
+              </h3>
+            </div>
+            <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.65, marginBottom: 16 }}>
+              Whether you are looking for after-school sessions in London, weekend mornings in New York, or evening classes in Sydney,
+              we match schedules to your local clock:
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {priorityGeoTimezones.map((tz) => (
+                <div key={tz.country} style={{ background: "#fff", padding: "10px 14px", borderRadius: 8, border: "1px solid var(--border)", fontSize: ".82rem" }}>
+                  <strong style={{ color: "var(--charcoal)", display: "block" }}>{tz.country}</strong>
+                  <span style={{ color: "var(--muted)" }}>{tz.desc}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 6 — PARENT PORTAL AND PROGRESS
+          ══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: "linear-gradient(180deg, #f7faf8, #fff)", padding: "72px 0", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }} aria-labelledby="portal-heading">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
-                Book Your Child&apos;s<br /><em style={{ color: "var(--gold-lt)" }}>Free Quran Trial Class</em>
+              <span className="section-eyebrow">Full Transparency for Families</span>
+              <h2 id="portal-heading" className="section-title">
+                Parent Portal &amp; Progress Tracking
               </h2>
-              <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 16, lineHeight: 1.7 }}>
-                {TRIAL.classes} live 1-to-1 trial classes, {TRIAL.durationMinutes} minutes each. No credit card required. Tutor availability is confirmed after your request.
+              <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 20 }}>
+                We believe parents should never be left wondering how their child is progressing. NoorPath provides enrolled
+                families with a dedicated, secure Parent Portal to follow each lesson&apos;s outcome:
               </p>
-              <ul style={{ color: "rgba(255,255,255,.8)", fontSize: ".9rem", lineHeight: 2, paddingLeft: 20 }}>
-                <li>✓ Ages 4–12 welcome</li>
-                <li>✓ Male or female tutor requests</li>
-                <li>✓ Timezone preferences considered</li>
-                <li>✓ Sibling discounts up to {FAMILY_DISCOUNTS[2].discountPercent}%</li>
-                <li>✓ Ijazah or certified tutors — changed immediately if needed</li>
-                <li>✓ Free trial with no credit card</li>
-              </ul>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 24 }}>
+                {[
+                  {
+                    title: "Live Attendance Tracking",
+                    desc: "View confirmed class dates, completed sessions, and upcoming recurring slots at a glance.",
+                  },
+                  {
+                    title: "Homework & Reading Assignments",
+                    desc: "See exact Noorani Qaida pages, Surah verses, or daily duas assigned by the teacher for home review.",
+                  },
+                  {
+                    title: "Milestone & Surah Completion",
+                    desc: "Celebrate tangible progress as your child finishes Qaida modules, masters Tajweed rules, and memorizes Surahs.",
+                  },
+                  {
+                    title: "Teacher Feedback Notes",
+                    desc: "Read direct remarks from your child's tutor highlighting pronunciation accuracy, effort, and areas to reinforce.",
+                  },
+                  {
+                    title: "Straightforward Rescheduling",
+                    desc: `Need to adjust a session for a family event or doctor visit? Request a move with ${RESCHEDULE_NOTICE_HOURS} hours' notice directly through student support.`,
+                  },
+                ].map((item) => (
+                  <div key={item.title} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
+                    <div style={{ width: 22, height: 22, borderRadius: "50%", background: "rgba(10,110,79,.12)", color: "var(--emerald)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
+                      <Check size={14} />
+                    </div>
+                    <div>
+                      <strong style={{ color: "var(--charcoal)", fontSize: ".92rem", display: "block" }}>{item.title}</strong>
+                      <span style={{ color: "var(--muted)", fontSize: ".85rem", lineHeight: 1.6 }}>{item.desc}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+                <a href="#trial-form" className="btn-primary-np" style={{ textDecoration: "none" }}>
+                  Start with 3 Free Trial Classes →
+                </a>
+                <Link href="/pricing" className="btn-outline-np" style={{ textDecoration: "none" }}>
+                  View Family Pricing Plans
+                </Link>
+              </div>
             </div>
-            <div className="cta-form-wrap">
-              <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
-                Start Free Trial — Takes 30 Seconds
+
+            <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid var(--border)", boxShadow: "0 12px 36px rgba(10,110,79,.08)" }}>
+              <Image
+                src="/marketing/parent-portal-promo.jpg"
+                alt="NoorPath Academy Parent Portal preview showing student attendance, homework tasks, and progress reports"
+                width={800}
+                height={550}
+                sizes="(max-width: 1024px) 100vw, 550px"
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STRUGGLING CHILD DIAGNOSTIC RESOURCES */}
+      <section style={{ padding: "64px 0" }} aria-labelledby="kids-support-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div style={{ textAlign: "center", marginBottom: 36 }}>
+            <span className="section-eyebrow">Parent Support &amp; Problem Solving</span>
+            <h2 id="kids-support-heading" className="section-title">
+              When Quran Learning Feels Challenging at Home
+            </h2>
+            <p style={{ color: "var(--muted)", maxWidth: 720, margin: "12px auto 0", lineHeight: 1.75 }}>
+              If your child resists sitting down or struggles to remember letters, it is almost always a signal about fatigue,
+              session length, or teacher rapport — not lack of ability. Read our evidence-based family guides:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            {[
+              {
+                href: "/blog/child-wont-sit-for-quran-class",
+                title: "Child Won't Sit for Class",
+                desc: "Why 10 calm minutes beat 40 tearful ones, and how to reset your child's learning routine positively.",
+              },
+              {
+                href: "/blog/quran-homework-kids-wont-practice",
+                title: "Refusing Daily Practice",
+                desc: "How to turn homework into an easy 5-minute daily echo instead of a stressful family struggle.",
+              },
+              {
+                href: "/blog/child-forgets-arabic-letters",
+                title: "Forgetting Arabic Letters",
+                desc: "Understanding what letter confusion signals and the spaced-repetition method that cements memory.",
+              },
+              {
+                href: "/blog/quran-classes-for-adhd-kids",
+                title: "Quran Learning & ADHD",
+                desc: "Short lesson bursts, movement breaks, and how a private 1-on-1 tutor adapts pacing.",
+              },
+              {
+                href: "/blog/quran-classes-for-shy-or-anxious-kids",
+                title: "Shy or Anxious Reciters",
+                desc: "How private 1-on-1 teaching removes peer pressure and builds gentle recitation confidence.",
+              },
+              {
+                href: "/blog/bilingual-kids-learning-quran-arabic",
+                title: "Bilingual Children & Arabic",
+                desc: "How English-first and mixed-language homes build correct pronunciation without native Arabic speakers.",
+              },
+              {
+                href: "/blog/single-parent-flexible-quran-classes-for-kids",
+                title: "Flexible Family Routines",
+                desc: "How busy working parents and single caregivers coordinate dependable weekend or evening slots.",
+              },
+              {
+                href: "/blog/female-quran-teacher-online",
+                title: "Female Tutors for Daughters",
+                desc: "Finding an experienced, patient female Hafiza tutor for your daughter in a safe home setting.",
+              },
+            ].map((guide) => (
+              <Link key={guide.href} href={guide.href} style={{ textDecoration: "none" }}>
+                <div className="content-card" style={{ height: "100%", borderTop: "3px solid var(--emerald)" }}>
+                  <h3 style={{ fontSize: ".92rem", fontWeight: 700, color: "var(--charcoal)", marginBottom: 6 }}>
+                    {guide.title} →
+                  </h3>
+                  <p style={{ color: "var(--muted)", fontSize: ".82rem", lineHeight: 1.6, margin: 0 }}>
+                    {guide.desc}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Published parent trust strip */}
+          <TrustPolicyStrip />
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 7 — FAQS
+          ══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: "var(--ivory)", padding: "72px 0", borderTop: "1px solid var(--border)" }} aria-labelledby="faqs-heading">
+        <div className="max-w-[800px] mx-auto px-4">
+          <FaqJsonLd faqs={faqs} pageUrl={PAGE_URL} />
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
+            <span className="section-eyebrow">Clear Answers</span>
+            <h2 id="faqs-heading" className="section-title">
+              Frequently Asked Questions About Kids Quran Classes
+            </h2>
+            <p style={{ color: "var(--muted)", marginTop: 10, lineHeight: 1.7 }}>
+              Everything parents want to know about tutor qualifications, age readiness, and class scheduling:
+            </p>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 40 }}>
+            {faqs.map((f, i) => (
+              <details
+                key={i}
+                className="faq-acc"
+                style={{
+                  background: "#fff",
+                  border: "1px solid var(--border)",
+                  borderRadius: 12,
+                  padding: "18px 22px",
+                }}
+              >
+                <summary
+                  style={{
+                    fontWeight: 700,
+                    color: "var(--charcoal)",
+                    fontSize: ".96rem",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <span>{f.q}</span>
+                  <ChevronRight size={18} style={{ color: "var(--emerald)", flexShrink: 0, marginLeft: 10 }} />
+                </summary>
+                <p style={{ color: "var(--muted)", marginTop: 12, lineHeight: 1.75, fontSize: ".9rem", margin: "12px 0 0" }}>
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+
+          <div style={{ textAlign: "center" }}>
+            <p style={{ color: "var(--muted)", fontSize: ".9rem", marginBottom: 14 }}>
+              Have another question about matching a tutor for your child?
+            </p>
+            <WhatsAppLink
+              href={`https://wa.me/923124877906?text=${encodeURIComponent(
+                "Assalamu Alaikum! I have a question about online Quran classes for my child. Could you help me?"
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-np"
+              style={{ display: "inline-flex", alignItems: "center", gap: 8, textDecoration: "none" }}
+            >
+              <MessageCircle size={18} color="var(--emerald)" />
+              Ask Our Academic Team on WhatsApp
+            </WhatsAppLink>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 8 — FINAL CTA & TRIAL BOOKING FORM
+          ══════════════════════════════════════════════════════════════ */}
+      <section className="cta-section" id="trial-form" style={{ scrollMarginTop: 80 }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span
+                style={{
+                  color: "var(--gold-lt)",
+                  fontWeight: 800,
+                  fontSize: ".78rem",
+                  letterSpacing: "1px",
+                  textTransform: "uppercase",
+                  display: "block",
+                  marginBottom: 10,
+                }}
+              >
+                No Credit Card Required · Free 1-on-1 Trial
+              </span>
+              <h2
+                style={{
+                  fontFamily: "var(--font-playfair), serif",
+                  color: "#fff",
+                  fontSize: "clamp(1.9rem, 4vw, 2.6rem)",
+                  lineHeight: 1.25,
+                  marginBottom: 18,
+                }}
+              >
+                Give Your Child a Meaningful Quran Learning Journey
+              </h2>
+              <p style={{ color: "rgba(255,255,255,.8)", lineHeight: 1.75, marginBottom: 20, fontSize: "1rem" }}>
+                Book {TRIAL.classes} free {TRIAL.durationMinutes}-minute trial classes today. Experience our live one-to-one teaching,
+                see how your child connects with the tutor, and receive a clear personal learning recommendation before choosing any paid plan.
+              </p>
+
+              <div style={{ display: "grid", gap: 10, marginBottom: 28 }}>
+                {[
+                  `3 free 30-minute private lessons ($0 charge, no card)`,
+                  "Certified male & female Quran teachers holding an Ijazah",
+                  "Scheduled in your local timezone around school hours",
+                  `Sibling discounts from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%`,
+                  `7-day full refund guarantee after your first paid class`,
+                  "Cancel anytime with 7 days' notice before renewal",
+                ].map((item) => (
+                  <div key={item} style={{ display: "flex", alignItems: "center", gap: 10, color: "rgba(255,255,255,.9)", fontSize: ".9rem" }}>
+                    <CheckCircle size={17} style={{ color: "var(--gold-lt)", flexShrink: 0 }} />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+                <WhatsAppLink
+                  href={`https://wa.me/923124877906?text=${encodeURIComponent(
+                    "Assalamu Alaikum! I would like to book a free Quran trial class for my child. Please share available lesson times."
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline-np"
+                  style={{ color: "#fff", borderColor: "rgba(255,255,255,.6)", textDecoration: "none" }}
+                >
+                  <MessageCircle size={17} aria-hidden="true" style={{ marginRight: 6 }} />
+                  Inquire on WhatsApp
+                </WhatsAppLink>
+                <Link href="/pricing" style={{ color: "var(--gold-lt)", fontSize: ".88rem", textDecoration: "underline" }}>
+                  Compare monthly lesson plans →
+                </Link>
+              </div>
+            </div>
+
+            <div className="cta-form-wrap" id="cta">
+              <h3
+                style={{
+                  fontFamily: "var(--font-playfair), serif",
+                  color: "#fff",
+                  fontSize: "1.3rem",
+                  marginBottom: 16,
+                  textAlign: "center",
+                }}
+              >
+                Book Your Child&apos;s Free Trial Class
               </h3>
-              <CTAForm />
+              <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".82rem", textAlign: "center", margin: "-6px 0 16px" }}>
+                Takes 30 seconds · No credit card required · Tutor availability confirmed
+              </p>
+              <CTAForm idPrefix="kids-trial" formVariant="kids-bottom" />
             </div>
           </div>
         </div>

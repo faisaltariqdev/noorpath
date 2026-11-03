@@ -5,9 +5,9 @@ import Image from "next/image";
 import { courses, getCourse } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
-import { FAMILY_DISCOUNTS, TRIAL } from "@/lib/academyFacts";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
-import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
@@ -63,54 +63,21 @@ export default async function CourseDetailPage({ params }: Props) {
     slug === "hifz-program-online" ||
     slug === "quran-classes-for-kids";
 
-  const pricedCourseJsonLd = isPricedQuranCourse
-    ? buildCourseWithPricingJsonLd({
-        name: course.title,
-        description: course.fullDesc,
-        url: courseUrl,
-      })
-    : null;
+  const courseJsonLd = buildStandardCourseJsonLd({
+    name: course.title,
+    description: course.desc,
+    url: courseUrl,
+    workload: "PT30M",
+    availableLanguage: ["English", "Urdu", "Arabic"],
+    price: isPricedQuranCourse ? PRICING_PLANS[0].monthlyPriceUsd : undefined,
+    priceCurrency: "USD",
+    priceUrl: "https://www.noorpath.online/pricing",
+  });
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Course",
-        "@id": `${courseUrl}#course`,
-        name: course.title,
-        description: course.fullDesc,
-        url: courseUrl,
-        provider: ORGANIZATION_REF,
-        educationalLevel: course.level,
-        typicalAgeRange: course.age,
-        courseMode: "online",
-        inLanguage: ["en", "ar"],
-        teaches: course.features.join(", "),
-        ...(pricedCourseJsonLd
-          ? {
-              hasCourseInstance: pricedCourseJsonLd.hasCourseInstance,
-              offers: pricedCourseJsonLd.offers,
-            }
-          : {
-              hasCourseInstance: {
-                "@type": "CourseInstance",
-                courseMode: "online",
-                courseWorkload: "PT30M",
-                instructor: {
-                  "@type": "Person",
-                  name: "Assigned Quran Tutor",
-                  description: "Qualified Quran tutor matched by timezone, student goals, and background.",
-                },
-              },
-              offers: {
-                "@type": "Offer",
-                price: "0",
-                priceCurrency: "USD",
-                description: `Free ${TRIAL.durationMinutes}-minute trial class request`,
-                url: "https://www.noorpath.online/free-quran-classes-online",
-              },
-            }),
-      },
+      courseJsonLd,
       {
         "@type": "BreadcrumbList",
         itemListElement: [

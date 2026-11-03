@@ -6,6 +6,7 @@ import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Users, Clock, BookOpen, Award, Video, UserCheck } from "lucide-react";
 import { PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 
 export const revalidate = false;
 
@@ -82,6 +83,17 @@ const benefits = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    buildStandardCourseJsonLd({
+      name: "One-on-One Quran Classes Online",
+      description:
+        "Private live 1-to-1 online Quran classes for children and adults, including Qaida, Tajweed and Hifz.",
+      url: pageUrl,
+      workload: "PT30M",
+      availableLanguage: ["English", "Urdu", "Arabic"],
+      price: PRICING_PLANS[0].monthlyPriceUsd,
+      priceCurrency: "USD",
+      priceUrl: "https://www.noorpath.online/pricing",
+    }),
     {
       "@type": "Service",
       "@id": `${pageUrl}#service`,

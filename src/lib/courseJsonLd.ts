@@ -79,6 +79,67 @@ export function buildCourseWithPricingJsonLd(course: CourseDefinition) {
   };
 }
 
+export interface CourseSchemaOptions {
+  name: string;
+  description: string;
+  url: string;
+  workload?: string;
+  availableLanguage?: string[];
+  price?: number | string;
+  priceCurrency?: string;
+  priceUrl?: string;
+}
+
+export function buildStandardCourseJsonLd(options: CourseSchemaOptions) {
+  const {
+    name,
+    description,
+    url,
+    workload = "PT30M",
+    availableLanguage = ["English", "Urdu", "Arabic"],
+    price,
+    priceCurrency = "USD",
+    priceUrl = "https://www.noorpath.online/pricing",
+  } = options;
+
+  return {
+    "@type": "Course",
+    "@id": `${url}#course`,
+    name,
+    description,
+    url,
+    provider: {
+      "@type": "EducationalOrganization",
+      "@id": "https://www.noorpath.online/#organization",
+      name: "NoorPath Academy",
+      url: "https://www.noorpath.online",
+    },
+    hasCourseInstance: {
+      "@type": "CourseInstance",
+      courseMode: "Online",
+      courseWorkload: workload,
+      availableLanguage,
+      instructor: {
+        "@type": "Person",
+        name: "Qualified Quran Tutor",
+        description: "Certified Quran instructor with Ijazah or teaching credentials.",
+      },
+    },
+    ...(price
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: String(price),
+            priceCurrency,
+            availability: "https://schema.org/InStock",
+            url: priceUrl,
+            category: "Online Quran Education",
+          },
+        }
+      : {}),
+  };
+}
+
 /**
  * Build an ItemList of priced courses for a given page URL.
  * Use on /pricing and other hub pages that list multiple courses.

@@ -1,5 +1,6 @@
 import type { QaidaGuide } from "./types";
 import { QAIDA_CONCEPT_GUIDES, QAIDA_EXPANDED_GUIDES } from "./conceptGuides";
+import { NEW_QAIDA_GUIDES } from "./newGuides";
 
 const QAIDA_BASE_GUIDES: QaidaGuide[] = [
   {
@@ -85,6 +86,7 @@ export const QAIDA_GUIDES: QaidaGuide[] = [
   ...QAIDA_BASE_GUIDES,
   ...QAIDA_EXPANDED_GUIDES,
   ...QAIDA_CONCEPT_GUIDES,
+  ...NEW_QAIDA_GUIDES,
 ];
 
 export const QAIDA_GUIDE_BY_SLUG = Object.fromEntries(

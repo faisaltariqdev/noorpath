@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     "holy quran online","read quran online","quran classes usa","quran classes uk",
     "quran classes canada","quran classes australia","quran classes germany","quran classes france",
   ],
-  authors: [{ name: "Faisal Tariq", url: "https://www.noorpath.online/founder" }],
+  authors: [{ name: "Faisal Tariq", url: "https://www.noorpath.online/author/faisal-tariq" }],
   creator: "NoorPath Academy",
   publisher: "NoorPath Academy",
   robots: {
@@ -137,24 +137,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["Organization", "EducationalOrganization"],
+              "@type": "EducationalOrganization",
+              "@id": "https://www.noorpath.online/#organization",
               name: "NoorPath Academy",
-              alternateName: "NoorPath",
               url: "https://www.noorpath.online",
-              logo: "https://www.noorpath.online/favicon.svg",
+              logo: "https://www.noorpath.online/logo.png",
               description:
-                "NoorPath Academy is an online-only Quran learning platform providing live one-to-one Quran classes for kids and adults worldwide, from Noorani Qaida to Tajweed and Hifz.",
+                "Online Quran academy offering Noorani Qaida, Hifz, Tajweed and Quran reading classes for kids and adults worldwide.",
               sameAs: [
-                TRUSTPILOT.url,
                 SOCIAL_PROFILES.facebook,
                 SOCIAL_PROFILES.instagram,
                 SOCIAL_PROFILES.tiktok,
                 SOCIAL_PROFILES.youtube,
+                TRUSTPILOT.url,
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                contactType: "customer service",
-                areaServed: "Worldwide",
+                contactType: "customer support",
+                email: "support@noorpath.online",
+                availableLanguage: ["English", "Urdu", "Arabic"],
               },
             }),
           }}
