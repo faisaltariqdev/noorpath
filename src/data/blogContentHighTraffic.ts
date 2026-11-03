@@ -1126,7 +1126,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
               <h3 style="margin:0 0 6px;color:var(--charcoal);">Free Printable Attahiyat PDF Guide</h3>
               <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free printable Tashahhud sheet with clear Arabic script, transliteration, and English translation for kids and beginners.</p>
             </div>
-            <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+            <a href="/islamic-resources" class="pdf-download-btn">📥 Free PDF Download</a>
           </div>
 
           <h2 id="variants">What are the common spelling variants of Attahiyat?</h2>

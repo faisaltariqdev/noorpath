@@ -2281,7 +2281,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <h3 style="margin:0 0 6px;color:var(--charcoal);">Free JazakAllah &amp; Islamic Greetings PDF Chart</h3>
               <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free printable Islamic polite expressions reference sheet with Arabic, transliteration, and exact gender replies.</p>
             </div>
-            <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+            <a href="/islamic-resources" class="pdf-download-btn">📥 Free PDF Download</a>
           </div>
 
           <h2 id="reply-table">How do you reply to Jazakallah Khair in Arabic and English?</h2>
@@ -9675,7 +9675,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <h3 style="margin:0 0 6px;color:var(--charcoal);">Free Printable Bismillah &amp; Daily Duas PDF</h3>
               <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free printable daily Islamic adhkar card featuring Bismillah, morning &amp; evening duas, and eating etiquettes for children.</p>
             </div>
-            <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+            <a href="/islamic-resources" class="pdf-download-btn">📥 Free PDF Download</a>
           </div>
 
           <h2 id="variants">What are the common spelling variants of Bismillah?</h2>

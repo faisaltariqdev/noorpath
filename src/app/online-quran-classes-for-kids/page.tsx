@@ -885,7 +885,7 @@ export default function OnlineQuranClassesForKidsPage() {
                 desc: "How busy working parents and single caregivers coordinate dependable weekend or evening slots.",
               },
               {
-                href: "/blog/female-quran-teacher-online",
+                href: "/blog/female-quran-teacher-for-kids",
                 title: "Female Tutors for Daughters",
                 desc: "Finding an experienced, patient female Hafiza tutor for your daughter in a safe home setting.",
               },

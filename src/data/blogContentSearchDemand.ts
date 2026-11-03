@@ -496,7 +496,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
     <h3 style="margin:0 0 6px;color:var(--charcoal);">Free Printable Barakallah &amp; Dua Replies PDF</h3>
     <p style="margin:0;color:var(--muted);font-size:.9rem;">Download our free, printable Islamic phrases chart with full Arabic text, transliteration, and exact gender replies.</p>
   </div>
-  <a href="/free-resources" class="pdf-download-btn">📥 Free PDF Download</a>
+  <a href="/islamic-resources" class="pdf-download-btn">📥 Free PDF Download</a>
 </div>
 
 <h2 id="variants">What are the common spelling variants of Barakallah?</h2>
