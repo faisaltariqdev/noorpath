@@ -571,7 +571,7 @@ export function getLocationFaqs(loc: Location) {
   const standard = [
     {
       q: `How do online Quran classes work in ${loc.country}?`,
-      a: `NoorPath Academy offers live 1-on-1 online Quran classes for learners in ${loc.country} via Zoom or Google Meet. Request a weekly schedule in ${loc.timezone}; tutor and time availability are confirmed after matching. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and does not require a credit card.`,
+      a: `NoorPath Academy offers live 1-on-1 online Quran classes for learners in ${loc.country} via Zoom or Google Meet. Request a weekly schedule in ${loc.timezone}; tutor and time availability are confirmed after matching. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and do not require a credit card.`,
     },
     {
       q: `How can I choose an online Quran academy in ${loc.country}?`,
@@ -579,7 +579,7 @@ export function getLocationFaqs(loc: Location) {
     },
     {
       q: `How much do online Quran classes cost in ${loc.country}?`,
-      a: `The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd} USD per month for ${starterPlan.sessionsPerMonth} ${starterPlan.sessionMinutes}-minute sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} USD with no credit card required. Published family discounts are ${familyDiscountSummary}. ${currencyNote}`,
+      a: `The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd} USD per month for ${starterPlan.sessionsPerMonth} ${starterPlan.sessionMinutes}-minute sessions. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free, with no credit card required. Published family discounts are ${familyDiscountSummary}. ${currencyNote}`,
     },
     {
       q: `What time are the Quran classes held in ${loc.country}?`,
@@ -619,7 +619,7 @@ export function getLocationSeoParagraphs(loc: Location): string[] {
       `Request a suitable morning, after-school, evening, or weekend window in ${loc.timezone}. Exact tutor and recurring-time availability is confirmed after matching.`,
     market?.schedulingGuidance ??
       `Scheduling requests are handled in ${loc.timezone}, with exact availability confirmed after matching.`,
-    `NoorPath offers Noorani Qaida, Tajweed, Quran memorisation (Hifz), Arabic language, Islamic studies, and daily duas through online lessons. The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd} USD per month, and the ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} USD with no credit card required.`,
+    `NoorPath offers Noorani Qaida, Tajweed, Quran memorisation (Hifz), Arabic language, Islamic studies, and daily duas through online lessons. The ${starterPlan.name} plan is $${starterPlan.monthlyPriceUsd} USD per month, and the ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free, with no credit card required.`,
     getCurrencyNote(loc.slug),
     `Learners in ${loc.country} can request female tutor options, one-to-one lessons, and family pricing. Published sibling discounts are ${familyDiscountSummary}. NoorPath operates online and does not imply a physical branch or established local customer base in ${loc.country}.`,
   ];

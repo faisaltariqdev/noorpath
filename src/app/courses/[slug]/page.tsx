@@ -5,7 +5,7 @@ import Image from "next/image";
 import { courses, getCourse } from "@/data/courses";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Clock, Users, Star, BookOpen } from "lucide-react";
-import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
@@ -178,7 +178,7 @@ export default async function CourseDetailPage({ params }: Props) {
               <InlineTrialCTA
                 placement="course-top"
                 title={`Try ${course.shortTitle} free`}
-                subtitle={`Book a free ${TRIAL.durationMinutes}-minute trial — name, WhatsApp or email, and preferred time.`}
+                subtitle={`Book ${TRIAL_OFFER} — name, WhatsApp or email, and preferred time.`}
               />
 
               <TrustpilotSnippet count={3} title={`Parents on ${course.shortTitle} & NoorPath`} />
@@ -232,7 +232,7 @@ export default async function CourseDetailPage({ params }: Props) {
                     { emoji: "💻", title: "Live One-to-One Lessons", desc: "Lessons take place online with the assigned tutor rather than through pre-recorded videos." },
                     { emoji: "⏰", title: "Schedule Matching", desc: "NoorPath checks current tutor availability against the learner's timezone and preferred class time." },
                     { emoji: "👨‍👩‍👧‍👦", title: "Family Plans Available", desc: `Published sibling discounts range from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[FAMILY_DISCOUNTS.length - 1].discountPercent}%, depending on the number enrolled.` },
-                    { emoji: "🆓", title: "Free Trial Class", desc: `Request a ${TRIAL.durationMinutes}-minute trial with no credit card. Tutor availability is confirmed after the request.` },
+                    { emoji: "🆓", title: `${TRIAL.classes} Free Trial Sessions`, desc: `Request ${TRIAL_OFFER} with no credit card. Tutor availability is confirmed after the request.` },
                   ].map((item) => (
                     <div key={item.title} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                       <div style={{ fontSize: "1.6rem", flexShrink: 0 }}>{item.emoji}</div>
@@ -292,7 +292,7 @@ export default async function CourseDetailPage({ params }: Props) {
                   Start {course.shortTitle} Today
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".85rem", marginBottom: 6, lineHeight: 1.6 }}>
-                  Free {TRIAL.durationMinutes}-minute trial request. No credit card required.
+                  Request {TRIAL_OFFER}. No credit card required.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, margin: "20px 0" }}>
                   {["✓ Available tutor details confirmed", "✓ Live one-to-one session", "✓ Timezone and schedule matching", "✓ Free trial before paid enrolment"].map((p) => (
@@ -300,7 +300,7 @@ export default async function CourseDetailPage({ params }: Props) {
                   ))}
                 </div>
                 <Link href="/free-quran-classes-online" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "13px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".95rem", marginTop: 4 }}>
-                  Book Free Trial Class →
+                  Start {TRIAL.classes} Free Trial Sessions →
                 </Link>
                 <div style={{ marginTop: 16, color: "rgba(255,255,255,.5)", fontSize: ".75rem" }}>
                   ⭐ Reviewed by parents on Trustpilot
@@ -317,7 +317,7 @@ export default async function CourseDetailPage({ params }: Props) {
           <InlineTrialCTA
             placement="course-bottom"
             title={`Ready to start ${course.shortTitle}?`}
-            subtitle={`Request a free ${TRIAL.durationMinutes}-minute trial before choosing a paid plan.`}
+            subtitle={`Request ${TRIAL_OFFER} before choosing a paid plan.`}
           />
           <p style={{ textAlign: "center", marginTop: 8 }}>
             <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem" }}>

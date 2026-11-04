@@ -45,12 +45,12 @@ export const metadata: Metadata = {
     absolute: "Online Quran Classes for Kids & Adults — 3 Trials | NoorPath",
   },
   description:
-    `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial classes, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
+    `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial sessions, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
     title: "Online Quran Classes for Kids & Adults — 3 Trials | NoorPath",
-    description: `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial classes, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
+    description: `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial sessions, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
     url: "https://www.noorpath.online",
     type: "website",
     siteName: "NoorPath Academy",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "NoorPath Academy | Online Quran Classes — Free Trial",
-    description: "Live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz & Arabic. 3 free trial classes.",
+    description: "Live 1-on-1 online Quran classes for kids and adults. Noorani Qaida, Tajweed, Hifz & Arabic. 3 free trial sessions.",
     images: ["/og-image.png"],
   },
 };
@@ -93,7 +93,7 @@ const faqs = [
   },
   { q: "How do online Quran classes work?", a: "Classes are held live via Zoom or Google Meet — 1-on-1 with an assigned tutor. A schedule is confirmed based on your timezone and current tutor availability, with no pre-recorded lessons." },
   { q: "What age groups do you accept?", a: "NoorPath accepts trial requests for children from age 4, teenagers, adults and older learners. Tutor matching considers the learner's age, current level and lesson goals." },
-  { q: "Do you offer a free trial class?", a: `Yes. New learners get ${TRIAL_OFFER} with no credit card required. Tutor availability is confirmed after the request.` },
+  { q: "Do you offer free trial sessions?", a: `Yes. New learners get ${TRIAL_OFFER} with no credit card required. Tutor availability is confirmed after the request.` },
   { q: "Are there family discount plans?", a: `Yes. Published sibling discounts are ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
   { q: "How are tutors matched?", a: "Tutor matching is based on the learner's needs, schedule, timezone, preferences, and current tutor availability." },
   { q: "Can I request a female Quran teacher?", a: `Yes. ${TUTOR_FACTS.femaleTutors} Choose a female tutor when you book the free trial.` },
@@ -209,7 +209,7 @@ export default function HomePage() {
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 10, marginBottom: 22 }}>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "7px 18px", fontSize: ".79rem", color: "rgba(255,255,255,.85)", fontWeight: 600 }}>
                   <PlayCircle size={14} />
-                  {TRIAL.classes} free trial classes
+                  {TRIAL.classes} free trial sessions
                 </div>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(74,222,128,.1)", border: "1px solid rgba(74,222,128,.25)", borderRadius: 50, padding: "7px 14px", fontSize: ".79rem", color: "#86efac", fontWeight: 500 }}>
                   ✓ No credit card
@@ -298,7 +298,7 @@ export default function HomePage() {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                   {([
                     [<UserCheck size={20} key="uc" />, "1-to-1", "Live Lessons"],
-                    [<Star size={20} key="st" />, `${TRIAL.classes} free`, "Trial Classes"],
+                    [<Star size={20} key="st" />, `${TRIAL.classes} free`, "Trial Sessions"],
                     [<ClipboardList size={20} key="cl" />, "No card", "For the Trial"],
                     [<Award size={20} key="aw" />, "Flexible", "Timezone Matching"],
                   ] as [React.ReactNode, string, string][]).map(([icon, num, label]) => (
@@ -526,7 +526,7 @@ export default function HomePage() {
                 <Link href="/free-quran-classes-online" style={{ display: "block", background: p.highlight ? "var(--gold)" : "var(--emerald)", color: p.highlight ? "var(--charcoal)" : "#fff", padding: "13px 0", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: ".92rem", textAlign: "center", letterSpacing: ".2px" }}>
                   Start Free Trial →
                 </Link>
-                <div style={{ color: p.highlight ? "rgba(255,255,255,.4)" : "var(--muted)", fontSize: ".73rem", marginTop: 10 }}>{TRIAL.classes} free trial classes · No credit card</div>
+                <div style={{ color: p.highlight ? "rgba(255,255,255,.4)" : "var(--muted)", fontSize: ".73rem", marginTop: 10 }}>{TRIAL.classes} free trial sessions · No credit card</div>
               </div>
             ))}
           </div>
@@ -616,7 +616,7 @@ export default function HomePage() {
             <div>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 12, marginBottom: 20 }}>
                 <span className="section-eyebrow" style={{ background: "rgba(255,255,255,.1)", color: "rgba(255,255,255,.9)", borderColor: "rgba(255,255,255,.2)", margin: 0 }}>
-                  <GraduationCap size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 5 }} />Free Trial Class
+                  <GraduationCap size={13} style={{ display: "inline", verticalAlign: "middle", marginRight: 5 }} />{TRIAL.classes} Free Trial Sessions
                 </span>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", color: "rgba(255,255,255,.8)", fontWeight: 600 }}>
                   Tutor availability confirmed after request
@@ -645,7 +645,7 @@ export default function HomePage() {
                 </div>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
                   <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>{TRIAL.classes} free</div>
-                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Trial Classes</div>
+                  <div style={{ color: "rgba(255,255,255,.6)", fontSize: ".72rem", marginTop: 4 }}>Trial Sessions</div>
                 </div>
                 <div style={{ textAlign: "center", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 12, padding: "12px 20px" }}>
                   <div style={{ color: "var(--gold-lt)", fontWeight: 800, fontSize: "1.4rem", lineHeight: 1 }}>No card</div>

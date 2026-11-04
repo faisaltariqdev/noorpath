@@ -80,9 +80,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     h1: "Online Quran Classes in Pakistan — 1-on-1 Noorani Qaida, Hifz & Tajweed",
     metaTitle: "Online Quran Classes in Pakistan | 1-on-1 Noorani Qaida & Hifz — NoorPath",
     metaDescription:
-      "Join 1-on-1 online Quran classes in Pakistan in PKT (UTC+5). Learn Noorani Qaida, Tajweed & Hifz from PKR 8,100/mo. Book your free trial class today.",
+      "Join 1-on-1 online Quran classes in Pakistan in PKT (UTC+5). Learn Noorani Qaida, Tajweed & Hifz from PKR 8,100/mo. Book 3 free trial sessions today.",
     answerBox:
-      "NoorPath provides live one-on-one online Quran classes for children, adults, and sisters across Pakistan. Lessons focus on Noorani Qaida, Tajweed, and Hifz with flexible scheduling in PKT (UTC+5) across morning, afternoon, and evening slots. Every student begins with a 100% free trial class, requiring no upfront fees or credit card.",
+      "NoorPath provides live one-on-one online Quran classes for children, adults, and sisters across Pakistan. Lessons focus on Noorani Qaida, Tajweed, and Hifz with flexible scheduling in PKT (UTC+5) across morning, afternoon, and evening slots. Every student begins with 3 free trial sessions, requiring no upfront fees or credit card.",
     timingsSlots: [
       {
         slot: "Morning / Pre-school slot",
@@ -131,7 +131,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Public pricing converted from standard USD fees ($29, $49, $79/mo). Sibling discounts apply: 15% for 2 siblings, 20% for 3 siblings, and 25% for 4+ siblings. Includes 3 free 30-minute trial classes.",
+      "Public pricing converted from standard USD fees ($29, $49, $79/mo). Sibling discounts apply: 15% for 2 siblings, 20% for 3 siblings, and 25% for 4+ siblings. Includes 3 free 30-minute trial sessions.",
     testimonials: [
       {
         name: "Hamza Iqbal",
@@ -184,7 +184,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. NoorPath offers 3 free 30-minute trial classes with no credit card required. You can evaluate the tutor's rapport, check video/audio quality, and receive an initial student assessment before paying anything.",
+        a: "Yes. NoorPath offers 3 free 30-minute trial sessions with no credit card required. You can evaluate the tutor's rapport, check video/audio quality, and receive an initial student assessment before paying anything.",
       },
     ],
     cityLinks: [
@@ -204,9 +204,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     h1: "Online Quran Classes in United Kingdom — 1-on-1 Noorani Qaida, Hifz & Tajweed",
     metaTitle: "Online Quran Classes in United Kingdom | 1-on-1 Noorani Qaida & Hifz — NoorPath",
     metaDescription:
-      "Live 1-on-1 online Quran classes in the UK in GMT/BST. From £23/mo with certified tutors. After-school slots & free trial classes available.",
+      "Live 1-on-1 online Quran classes in the UK in GMT/BST. From £23/mo with certified tutors. After-school slots & 3 free trial sessions available.",
     answerBox:
-      "NoorPath provides live one-to-one online Quran classes for Muslim children and adults across the United Kingdom. Covering Noorani Qaida, Tajweed, and Hifz, lessons are scheduled in local GMT/BST after school and on weekends. Families can choose certified male or female tutors and start with a free trial class.",
+      "NoorPath provides live one-to-one online Quran classes for Muslim children and adults across the United Kingdom. Covering Noorani Qaida, Tajweed, and Hifz, lessons are scheduled in local GMT/BST after school and on weekends. Families can choose certified male or female tutors and start with 3 free trial sessions.",
     timingsSlots: [
       {
         slot: "After-school & evening slots",
@@ -255,7 +255,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [
       {
         name: "Ahmed",
@@ -308,7 +308,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. UK families can book a free 30-minute trial class with zero obligation and no credit card required to experience our teaching quality firsthand.",
+        a: "Yes. UK families can book 3 free 30-minute trial sessions with zero obligation and no credit card required to experience our teaching quality firsthand.",
       },
     ],
     cityLinks: [
@@ -329,7 +329,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     metaDescription:
       "Live 1-on-1 online Quran classes in the USA across ET/CT/PT timezones. From $29/mo with certified tutors. Noorani Qaida, Tajweed & free trial.",
     answerBox:
-      "NoorPath delivers live 1-on-1 online Quran classes for Muslim children, adults, and reverts throughout the United States. Spanning Noorani Qaida, Tajweed, and Hifz memorization, sessions are matched to your local timezone across ET, CT, MT, and PT. Start with a risk-free 30-minute trial class without entering credit card details.",
+      "NoorPath delivers live 1-on-1 online Quran classes for Muslim children, adults, and reverts throughout the United States. Spanning Noorani Qaida, Tajweed, and Hifz memorization, sessions are matched to your local timezone across ET, CT, MT, and PT. Start with 3 free 30-minute trial sessions without entering credit card details.",
     timingsSlots: [
       {
         slot: "After-school weekday slots",
@@ -378,7 +378,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Public pricing published on /pricing in USD. Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Public pricing published on /pricing in USD. Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [],
     hasRealTestimonials: false,
     whyChooseBullets: [
@@ -422,7 +422,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. NoorPath provides a free 30-minute 1-on-1 trial class with no credit card required so your family can test tutor compatibility and technology.",
+        a: "Yes. NoorPath provides 3 free 30-minute 1-on-1 trial sessions with no credit card required so your family can test tutor compatibility and technology.",
       },
     ],
     cityLinks: [
@@ -446,7 +446,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     metaDescription:
       "Live 1-on-1 online Quran classes in the UAE in GST (UTC+4). From AED 107/mo for expat and local families. Tajweed, Hifz & free trial.",
     answerBox:
-      "NoorPath provides live 1-on-1 online Quran classes for expat and resident families across Dubai, Abu Dhabi, and Sharjah. Offering Noorani Qaida, Tajweed, and Hifz in GST (UTC+4), classes fit seamlessly around international school timetables. Choose qualified male or female tutors and reserve a free trial class today.",
+      "NoorPath provides live 1-on-1 online Quran classes for expat and resident families across Dubai, Abu Dhabi, and Sharjah. Offering Noorani Qaida, Tajweed, and Hifz in GST (UTC+4), classes fit seamlessly around international school timetables. Choose qualified male or female tutors and reserve 3 free trial sessions today.",
     timingsSlots: [
       {
         slot: "After-school weekday slots",
@@ -495,7 +495,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [
       {
         name: "Mohammed Omer Al Amoodi",
@@ -556,7 +556,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. You can book a free 30-minute trial session with no credit card required to assess the tutor's teaching methodology and student interaction.",
+        a: "Yes. You can book 3 free 30-minute trial sessions with no credit card required to assess the tutor's teaching methodology and student interaction.",
       },
     ],
     cityLinks: [
@@ -577,7 +577,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     metaDescription:
       "1-on-1 online Quran classes in Saudi Arabia in AST (UTC+3). From SAR 109/mo with certified Ijazah tutors. Friday/Saturday weekend & free trial.",
     answerBox:
-      "NoorPath provides live 1-on-1 online Quran tuition for children and adults across the Kingdom of Saudi Arabia. Specializing in Noorani Qaida, Tajweed, and Hifz memorization in AST (UTC+3), our classes fit around local prayer times and family life. Book a free trial class with no credit card required.",
+      "NoorPath provides live 1-on-1 online Quran tuition for children and adults across the Kingdom of Saudi Arabia. Specializing in Noorani Qaida, Tajweed, and Hifz memorization in AST (UTC+3), our classes fit around local prayer times and family life. Book 3 free trial sessions with no credit card required.",
     timingsSlots: [
       {
         slot: "After-school & post-Asr slots",
@@ -626,7 +626,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [],
     hasRealTestimonials: false,
     whyChooseBullets: [
@@ -670,7 +670,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. Every family in Saudi Arabia can book a free 30-minute trial session with no credit card required to experience our teachers' recitation and pedagogy.",
+        a: "Yes. Every family in Saudi Arabia can book 3 free 30-minute trial sessions with no credit card required to experience our teachers' recitation and pedagogy.",
       },
     ],
     cityLinks: [
@@ -689,9 +689,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     h1: "Online Quran Classes in Nigeria — 1-on-1 Noorani Qaida, Hifz & Tajweed",
     metaTitle: "Online Quran Classes in Nigeria | 1-on-1 Noorani Qaida & Hifz — NoorPath",
     metaDescription:
-      "Live 1-on-1 online Quran classes in Nigeria in WAT (UTC+1). From ₦44,000/mo. Certified tutors, Noorani Qaida, Tajweed & free trial classes.",
+      "Live 1-on-1 online Quran classes in Nigeria in WAT (UTC+1). From ₦44,000/mo. Certified tutors, Noorani Qaida, Tajweed & 3 free trial sessions.",
     answerBox:
-      "NoorPath provides live one-on-one online Quran classes for Muslim children, adults, and sisters across Nigeria. Covering Noorani Qaida, Tajweed rules, and Hifz memorization in West Africa Time (WAT, UTC+1), our classes fit around Nigerian school hours. Enroll your child today with a 100% free trial class.",
+      "NoorPath provides live one-on-one online Quran classes for Muslim children, adults, and sisters across Nigeria. Covering Noorani Qaida, Tajweed rules, and Hifz memorization in West Africa Time (WAT, UTC+1), our classes fit around Nigerian school hours. Enroll your child today with 3 free trial sessions.",
     timingsSlots: [
       {
         slot: "After-school weekday slots",
@@ -740,7 +740,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [],
     hasRealTestimonials: false,
     whyChooseBullets: [
@@ -784,7 +784,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. We offer a free 30-minute trial class with no credit card required so Nigerian parents can assess tutor quality, connection stability, and teaching style.",
+        a: "Yes. We offer 3 free 30-minute trial sessions with no credit card required so Nigerian parents can assess tutor quality, connection stability, and teaching style.",
       },
     ],
     cityLinks: [
@@ -805,7 +805,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     metaDescription:
       "1-on-1 online Quran classes in Qatar in AST (UTC+3). From QAR 106/mo with certified tutors. Friday-Saturday weekend timings & free trial.",
     answerBox:
-      "NoorPath provides live one-to-one online Quran classes for Muslim children and adults residing in Qatar. Offering Noorani Qaida, Tajweed, and Hifz memorization in AST (UTC+3), lessons fit around international school hours and the Friday–Saturday weekend. Book a 100% free trial class without credit card details.",
+      "NoorPath provides live one-to-one online Quran classes for Muslim children and adults residing in Qatar. Offering Noorani Qaida, Tajweed, and Hifz memorization in AST (UTC+3), lessons fit around international school hours and the Friday–Saturday weekend. Book 3 free trial sessions without credit card details.",
     timingsSlots: [
       {
         slot: "After-school weekday sessions",
@@ -854,7 +854,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [],
     hasRealTestimonials: false,
     whyChooseBullets: [
@@ -898,7 +898,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. Families in Qatar can attend a free 30-minute trial class with no credit card required to experience the lesson format and meet their matched tutor.",
+        a: "Yes. Families in Qatar can attend 3 free 30-minute trial sessions with no credit card required to experience the lesson format and meet their matched tutor.",
       },
     ],
     cityLinks: [
@@ -919,7 +919,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
     metaDescription:
       "Live 1-on-1 online Quran classes in Canada in EST/PST. From CA$40/mo with certified tutors. Winter-friendly after-school slots & free trial.",
     answerBox:
-      "NoorPath offers live 1-on-1 online Quran classes for Muslim children, adults, and families across Canada. Covering Noorani Qaida, Tajweed, and Hifz across Eastern and Pacific time zones, our lessons eliminate winter driving to weekend madrasas. Book a free 30-minute trial class with no credit card required.",
+      "NoorPath offers live 1-on-1 online Quran classes for Muslim children, adults, and families across Canada. Covering Noorani Qaida, Tajweed, and Hifz across Eastern and Pacific time zones, our lessons eliminate winter driving to weekend madrasas. Book 3 free 30-minute trial sessions with no credit card required.",
     timingsSlots: [
       {
         slot: "After-school evening slots",
@@ -968,7 +968,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
     ],
     pricingNote:
-      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. Free 30-minute trial class with no credit card required.",
+      "Converted from public USD pricing ($29, $49, $79/mo). Sibling discounts: 15% for 2 siblings, 20% for 3, 25% for 4+. 3 free 30-minute trial sessions with no credit card required.",
     testimonials: [],
     hasRealTestimonials: false,
     whyChooseBullets: [
@@ -1012,7 +1012,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
       },
       {
         q: "Is there a free trial?",
-        a: "Yes. Canadian families can book a free 30-minute trial class with no credit card required to evaluate tutor rapport, audio quality, and learning plans.",
+        a: "Yes. Canadian families can book 3 free 30-minute trial sessions with no credit card required to evaluate tutor rapport, audio quality, and learning plans.",
       },
     ],
     cityLinks: [

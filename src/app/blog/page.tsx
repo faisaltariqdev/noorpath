@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import BlogSearchList from "@/components/BlogSearchList";
+import { TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -105,8 +106,8 @@ export default function BlogPage() {
           <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
             Ready to Start Learning the Quran?
           </h2>
-          <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>Explore live one-to-one Quran classes and request a free 30-minute trial before enrolment.</p>
-          <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial Class →</Link>
+          <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 28 }}>Explore live one-to-one Quran classes and request 3 free 30-minute trial sessions before enrolment.</p>
+          <Link href="/free-quran-classes-online" className="btn-primary-np">Start {TRIAL.classes} Free Trial Sessions →</Link>
         </div>
       </section>
     </>

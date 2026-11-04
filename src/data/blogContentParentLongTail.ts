@@ -100,7 +100,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <p>Slow down, shorten sessions, and ask the tutor for a 4-week readiness checklist. Pressure rarely produces accurate readers.</p>
 
           <div class="gold-box">
-            <p><strong>Want a personalised timeline?</strong> Book a free 30-minute trial. The tutor listens to your child, places them on the right Qaida stage, and estimates a realistic months range — no credit card required.</p>
+            <p><strong>Want a personalised timeline?</strong> Book 3 free 30-minute trial sessions. The tutor listens to your child, places them on the right Qaida stage, and estimates a realistic months range — no credit card required.</p>
             <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book a free trial</a> · <a href="/noorani-qaida/games">Free Qaida games</a> · <a href="/courses/noorani-qaida-online">Noorani Qaida course</a> · <a href="/online-quran-classes-for-kids">Kids Quran classes</a> · <a href="/locations/online-quran-classes-uk">online Qaida classes for UK families</a></p>
           </div>
 
@@ -161,7 +161,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <p>If you are learning yourself, consider a parallel adult beginner track while your child does Qaida. Families who learn in the same season often stay more consistent. Start with <a href="/blog/new-muslim-guide-to-reading-quran">new Muslim guide to reading Quran</a> or <a href="/blog/learn-quran-online-adult-beginner-guide">adult beginner guide</a>, and keep your child’s program age-appropriate.</p>
 
           <div class="gold-box">
-            <p><strong>NoorPath for families without Arabic at home:</strong> live 1-on-1 tutors explain in clear English, send simple homework, and welcome parents in the room. Book a free 30-minute trial — no credit card.</p>
+            <p><strong>NoorPath for families without Arabic at home:</strong> live 1-on-1 tutors explain in clear English, send simple homework, and welcome parents in the room. Book 3 free 30-minute trial sessions — no credit card.</p>
             <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/online-quran-classes-for-kids">Kids classes</a> · <a href="/female-quran-teacher-online">Female tutors</a></p>
           </div>
 
@@ -364,7 +364,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           </ul>
 
           <div class="gold-box">
-            <p><strong>Need a tutor who sets clear homework?</strong> NoorPath lessons end with a simple practice note parents can follow even without Arabic. Start with a free 30-minute trial.</p>
+            <p><strong>Need a tutor who sets clear homework?</strong> NoorPath lessons end with a simple practice note parents can follow even without Arabic. Start with 3 free 30-minute trial sessions.</p>
             <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/blog/parents-dont-speak-arabic-child-learn-quran">Parents who don’t speak Arabic</a></p>
           </div>
 
@@ -425,7 +425,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           </ul>
 
           <div class="gold-box">
-            <p><strong>Get an ear that can hear the difference.</strong> NoorPath tutors specialise in beginner makharij for kids in English-speaking homes. Book a free 30-minute trial and ask for a letter check.</p>
+            <p><strong>Get an ear that can hear the difference.</strong> NoorPath tutors specialise in beginner makharij for kids in English-speaking homes. Book 3 free 30-minute trial sessions and ask for a letter check.</p>
             <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/courses/noorani-qaida-online">Noorani Qaida online</a> · <a href="/learn-tajweed-online">Learn Tajweed online</a></p>
           </div>
 
@@ -2141,7 +2141,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
           <h2 id="closing">Keep Al-Fatiha a calm first victory</h2>
           <p>Teaching Surah Al-Fatiha to kids works best when you treat it as both worship and skill-building: listen, echo, chunk, review, and attach simple meaning. You do not need perfect Arabic to begin — you need consistency, kindness, and a clear sequence. When your child can recite Al-Fatiha with growing clarity, they are not just “done with a surah”; they are ready to stand in Salah with a foundation that will serve them every day.</p>
-          <p>If you want a low-pressure way to check pronunciation with a live teacher, you can also <a href="/free-quran-classes-online">book a free trial class</a> and ask specifically for Al-Fatiha correction and a home practice plan.</p>
+          <p>If you want a low-pressure way to check pronunciation with a live teacher, you can also <a href="/free-quran-classes-online">book 3 free trial sessions</a> and ask specifically for Al-Fatiha correction and a home practice plan.</p>
 
           <h2 id="faq">Frequently asked questions</h2>
           <details class="faq-acc"><summary>At what age should a child start learning Surah Al-Fatiha?<span>+</span></summary>
@@ -2305,7 +2305,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <p>Many children settle across a few weeks of predictable, kind sessions. There is no fixed promise — watch willingness trends, not one perfect day.</p>
           </details>
           <details class="faq-acc"><summary>Do you offer a free trial for anxious kids?<span>+</span></summary>
-            <p>You can request a free 30-minute live trial with no credit card. Mention anxiety needs in the notes so matching can prioritise a gentle approach.</p>
+            <p>You can request 3 free 30-minute live trial sessions with no credit card. Mention anxiety needs in the notes so matching can prioritise a gentle approach.</p>
           </details>`,
   },
   "bilingual-kids-learning-quran-arabic": {
@@ -2571,7 +2571,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <p>Restart with review-only lessons. Do not leap to new pages. A short recovery plan prevents shame spirals.</p>
           </details>
           <details class="faq-acc"><summary>How do I start without overcommitting?<span>+</span></summary>
-            <p>Book a free 30-minute trial with no credit card, explain your schedule constraints, and choose the lightest plan you can keep for a month.</p>
+            <p>Book 3 free 30-minute trial sessions with no credit card, explain your schedule constraints, and choose the lightest plan you can keep for a month.</p>
           </details>`,
   },
   "dua-for-muslims-living-abroad": {
@@ -2748,7 +2748,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <p>Restart with review-only lessons for one to two weeks. Do not leap to new pages out of guilt.</p>
           </details>
           <details class="faq-acc"><summary>How do we start this week?<span>+</span></summary>
-            <p>Open the UAE or Qatar location page for context, then request a free 30-minute trial with no credit card and note that you are an expat household.</p>
+            <p>Open the UAE or Qatar location page for context, then request 3 free 30-minute trial sessions with no credit card and note that you are an expat household.</p>
           </details>`,
   },
   "how-to-teach-quran-when-theres-no-mosque-nearby": {

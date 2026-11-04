@@ -7,7 +7,7 @@ import WhatsAppLink from "@/components/WhatsAppLink";
 
 export default function FreeResourceLeadMagnet() {
   const whatsappPdfMessage =
-    "Assalamu Alaikum, please send me the Free Color-Coded Noorani Qaida & Kids Daily Dua Tracker PDF guide, and details for booking a free 30-min trial class.";
+    "Assalamu Alaikum, please send me the Free Color-Coded Noorani Qaida & Kids Daily Dua Tracker PDF guide, and details for booking 3 free 30-minute trial sessions.";
   const whatsappUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(whatsappPdfMessage)}`;
 
   return (

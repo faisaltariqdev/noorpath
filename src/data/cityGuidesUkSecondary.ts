@@ -49,7 +49,7 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
       },
       {
         id: 'bradford-how-does-a-trial-work',
-        heading: 'How should a Bradford family use a trial lesson?',
+        heading: 'How should a Bradford family use the trial sessions?',
         directAnswer:
           'Use the trial as a two-way assessment: the tutor hears the learner, the learner experiences the teaching style, and the family checks technology, timing and communication. Before booking further lessons, confirm the recommended level, regular slot, fees, cancellation terms and process for requesting a different match.',
         paragraphs: [
@@ -152,7 +152,7 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
         id: "bradford-next-steps",
         heading: "What should a Bradford family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],
@@ -317,7 +317,7 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
         id: "leicester-next-steps",
         heading: "What should a Leicester family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],
@@ -482,7 +482,7 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
         id: "glasgow-next-steps",
         heading: "What should a Glasgow family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred GMT/BST windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],

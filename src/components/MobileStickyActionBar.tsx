@@ -60,7 +60,7 @@ export default function MobileStickyActionBar() {
             <Sparkles size={11} className="inline mr-1 text-[#f59e0b]" />
             {isNorthAmerica
               ? `🇺🇸 🇨🇦 Call & SMS: ${CONTACT.usaPhoneDisplay}`
-              : "3 Free Trial Classes • No Card Needed"}
+              : "3 Free Trial Sessions • No Card Needed"}
           </span>
           <span className="mobile-sticky-subtext">
             {isNorthAmerica ? "3 Free Classes" : "1-on-1 Live Quran Tutoring"}

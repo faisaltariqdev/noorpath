@@ -107,7 +107,7 @@ export const geoCommercialBlogContent: Record<string, { style: string; content: 
 
           <h2 id="why-adults">Why adults search this in Singapore</h2>
           <p>CCA-heavy children’s calendars are one story. Adult learners face another: late office hours, privacy, and embarrassment about restarting letters. Live one-to-one online classes let you read aloud without a room of peers — and a tutor can correct makharij in real time.</p>
-          <p>GSC-style queries such as “quran classes for adults singapore” and “iqra classes singapore” often mean the same need: structured Arabic reading with a patient teacher after work.</p>
+          <p>Searches such as “quran classes for adults singapore” and “iqra classes singapore” usually describe the same need: structured Arabic reading with a patient teacher after work.</p>
 
           <h2 id="sgt">SGT evenings that survive overtime</h2>
           <table class="np-table">

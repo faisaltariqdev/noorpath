@@ -168,6 +168,16 @@ export function useTrialFormSubmit(options: Options = {}) {
 
         const nameParts = name.split(/\s+/);
         if (hasAnalyticsConsent()) {
+          // GA4 recommended lead event; no personal data is sent.
+          try {
+            (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.("event", "generate_lead", {
+              form_variant: formVariant,
+              page_path: window.location.pathname,
+              lead_source: "trial_form",
+            });
+          } catch {
+            /* ignore */
+          }
           track({
             eventName: "Lead",
             emails: email ? [email] : undefined,

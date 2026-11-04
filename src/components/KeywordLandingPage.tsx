@@ -10,6 +10,7 @@ import {
   PRICING_PLANS,
   SERVICE_FACTS,
   TRIAL,
+  TRIAL_OFFER,
 } from "@/lib/academyFacts";
 
 export interface LandingFeature {
@@ -90,7 +91,7 @@ const DEFAULT_STATS = SERVICE_FACTS;
 const STARTING_MONTHLY_PRICE = Math.min(...PRICING_PLANS.map((plan) => plan.monthlyPriceUsd));
 
 const DEFAULT_STEPS: LandingStep[] = [
-  { title: "Request Free Trial", desc: `Fill the form to request a free ${TRIAL.durationMinutes}-minute trial. Tutor availability is confirmed after your request.` },
+  { title: "Request Free Trial", desc: `Fill the form to request ${TRIAL_OFFER}. Tutor availability is confirmed after your request.` },
   { title: "Attend Live Class", desc: `${TRIAL.durationMinutes}-minute 1-on-1 online lesson with no credit card required.` },
   { title: "Choose Your Plan", desc: `Review the monthly plans and sibling discounts. Paid plans require ${CANCELLATION_NOTICE_DAYS} days' cancellation notice before the next billing date.` },
 ];
@@ -180,7 +181,7 @@ export default function KeywordLandingPage({
           "@type": "Offer",
           price: String(TRIAL.price),
           priceCurrency: TRIAL.priceCurrency,
-          description: `Free ${TRIAL.durationMinutes}-minute trial class`,
+          description: `${TRIAL_OFFER}`,
           url: `https://www.noorpath.online/free-quran-classes-online`,
         },
       },

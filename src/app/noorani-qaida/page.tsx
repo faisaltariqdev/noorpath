@@ -21,6 +21,7 @@ import {
   QaidaScreenshot,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
 import { serializeJsonLd } from "@/lib/jsonLd";
+import { TRIAL } from "@/lib/academyFacts";
 
 validateQaidaContent();
 
@@ -181,7 +182,7 @@ export default function NooraniQaidaHubPage() {
                 <Gamepad2 size={17} aria-hidden="true" /> Free Interactive Games
               </Link>
               <Link href="#qaida-trial" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.55)" }}>
-                <Users size={17} aria-hidden="true" /> Free Live Trial Class
+                <Users size={17} aria-hidden="true" /> {TRIAL.classes} Free Live Trial Sessions
               </Link>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CONTACT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
+import { CONTACT, TRIAL, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
 
 export const metadata: Metadata = {
   title: "404 — Page Not Found",
@@ -15,7 +15,7 @@ const quickLinks = [
   { href: "/courses", label: "📚 All Courses" },
   { href: "/blog", label: "✍️ Blog" },
   { href: "/pricing", label: "💰 Pricing" },
-  { href: "/free-quran-classes-online", label: "🎓 Free Trial Class" },
+  { href: "/free-quran-classes-online", label: `🎓 ${TRIAL.classes} Free Trial Sessions` },
 ];
 
 export default function NotFound() {
@@ -122,7 +122,7 @@ export default function NotFound() {
               fontSize: ".95rem",
             }}
           >
-            Book a Free Trial Class →
+            Start {TRIAL.classes} Free Trial Sessions →
           </Link>
           
           <a

@@ -23,7 +23,7 @@ export default function QuranCountryStudentCTA({
   title = "Learn Holy Quran with Proper Tajweed & Makharij",
   contextName = "Holy Quran Reader",
 }: Props) {
-  const whatsappMsg = `Assalamu Alaikum! I am currently reading the ${contextName} on NoorPath Academy and would like to book a free 30-minute 1-on-1 trial class with a live tutor.`;
+  const whatsappMsg = `Assalamu Alaikum! I am currently reading the ${contextName} on NoorPath Academy and would like to book 3 free 30-minute 1-on-1 trial sessions with a live tutor.`;
 
   return (
     <section
@@ -85,7 +85,7 @@ export default function QuranCountryStudentCTA({
               {[
                 `👨‍👩‍👧 ${ENROLLED_STUDENTS_DISPLAY} Enrolled Students`,
                 `★ ${TRUSTPILOT.score}/5 Trustpilot Rated`,
-                `🎁 Free ${TRIAL.durationMinutes}-Min Trial Class`,
+                `🎁 ${TRIAL.classes} Free ${TRIAL.durationMinutes}-Min Trial Sessions`,
                 "✓ Male & Female Tutors",
               ].map((pill) => (
                 <span
@@ -204,7 +204,7 @@ export default function QuranCountryStudentCTA({
                 textAlign: "center",
               }}
             >
-              Book a Free 30-Min Trial Class
+              Start {TRIAL.classes} Free Trial Sessions
             </h3>
             <p style={{ color: "rgba(255,255,255,.8)", fontSize: ".84rem", textAlign: "center", margin: "0 0 16px" }}>
               No credit card required. We match your schedule in 24 hours.

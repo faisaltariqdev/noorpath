@@ -6,17 +6,71 @@ import type { CityLandingPageData } from "@/data/cityLandingPages";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import FaqJsonLd from "@/components/FaqJsonLd";
-import { CONTACT, RESCHEDULE_NOTICE_HOURS, TRIAL, TRUSTPILOT, TUTOR_FACTS } from "@/lib/academyFacts";
+import { CurrencyProvider, LocalPrice, PriceDisclosure } from "@/components/pricing/LocalPrice";
+import CurrencySelector from "@/components/pricing/CurrencySelector";
+import type { DisplayRates } from "@/lib/currency/rates";
+import {
+  CONTACT,
+  FAMILY_DISCOUNTS,
+  PRICING_PLANS,
+  REFUND_WINDOW_DAYS,
+  RESCHEDULE_NOTICE_HOURS,
+  TRIAL,
+  TRIAL_OFFER,
+  TRUSTPILOT,
+  TUTOR_FACTS,
+} from "@/lib/academyFacts";
 
 interface Props {
   data: CityLandingPageData;
   pageUrl: string;
+  rates: DisplayRates;
+  /** Local display currency for the city's country; "USD" where no licence-clear rate exists. */
+  currency: string;
 }
 
-export default function RebuiltCityView({ data, pageUrl }: Props) {
+const siblingDiscounts = FAMILY_DISCOUNTS.map((d) => `${d.discountPercent}% for ${d.siblings}`).join(", ");
+
+/**
+ * The four shared city FAQs, answered from academyFacts so city pages never state
+ * fixed timetables, unconditional female-tutor availability or stale local prices.
+ * Question wording stays city-specific from the data file.
+ */
+function buildCityFaqs(data: CityLandingPageData, currency: string): { q: string; a: string }[] {
+  const starter = PRICING_PLANS[0];
+  return data.faqs.map(({ q }) => {
+    const question = q.toLowerCase();
+    if (question.includes("female")) {
+      return {
+        q,
+        a: `Yes. ${TUTOR_FACTS.femaleTutors} Mention the preference when you enquire; a female tutor for your ${data.city} time window is assigned subject to availability and confirmed before the trial.`,
+      };
+    }
+    if (question.includes("timing")) {
+      return {
+        q,
+        a: `Request the windows that suit your family in ${data.timezone} — after school, evenings or weekends. There is no fixed public timetable: the recurring time is confirmed after tutor matching, and a class can be moved with ${RESCHEDULE_NOTICE_HOURS} hours' notice, subject to tutor availability.`,
+      };
+    }
+    if (question.includes("cost")) {
+      const localNote = currency === "USD" ? "" : `; the pricing section shows approximate ${currency} amounts`;
+      return {
+        q,
+        a: `Plans start at $${starter.monthlyPriceUsd} a month for one ${starter.sessionMinutes}-minute lesson a week and are billed in US dollars${localNote}. Sibling discounts are ${siblingDiscounts}, and a full refund is available if you ask within ${REFUND_WINDOW_DAYS} days of the first paid class.`,
+      };
+    }
+    return {
+      q,
+      a: `Lessons are live and one-to-one over video. You share the learner's level and the times that suit you in ${data.timezone}; NoorPath matches a tutor and confirms a schedule, and the tutor corrects recitation as your child reads. You start with ${TRIAL_OFFER}, with no credit card.`,
+    };
+  });
+}
+
+export default function RebuiltCityView({ data, pageUrl, rates, currency }: Props) {
+  const faqs = buildCityFaqs(data, currency);
   const isNorthAmerica = data.countrySlug === "online-quran-classes-usa" || data.countrySlug === "online-quran-classes-canada";
   const waTrialText = encodeURIComponent(
-    `Assalamu Alaikum, I would like to book a free Quran trial class for ${data.city}. Please share tutor availability for ${data.timezone}.`
+    `Assalamu Alaikum, I would like to book the free Quran trial sessions for ${data.city}. Please share tutor availability for ${data.timezone}.`
   );
 
   return (
@@ -244,18 +298,19 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
                 <Clock size={22} style={{ color: "var(--emerald, #0a6e4f)" }} />
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", margin: 0 }}>
-                  Class Times for {data.city}
+                  Lesson Windows You Can Request in {data.city}
                 </h2>
               </div>
               <p style={{ color: "var(--muted, #64748b)", fontSize: ".95rem", lineHeight: 1.7, marginBottom: 20 }}>
-                Classes are converted directly to <strong>{data.timezone}</strong>, allowing {data.city} households to set recurring lessons around school and work schedules:
+                These are common windows {data.city} families ask for in <strong>{data.timezone}</strong>. They are not a fixed
+                timetable: the tutor and recurring time are confirmed after matching.
               </p>
 
               <div style={{ overflowX: "auto", background: "#fff", borderRadius: 14, border: "1px solid var(--border, #e2e8f0)", boxShadow: "0 4px 14px rgba(0,0,0,.04)" }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".9rem", textAlign: "left" }}>
                   <thead>
                     <tr style={{ background: "var(--emerald, #0a6e4f)", color: "#fff" }}>
-                      <th style={{ padding: "14px 18px", fontWeight: 700 }}>Lesson Slot</th>
+                      <th style={{ padding: "14px 18px", fontWeight: 700 }}>Window</th>
                       <th style={{ padding: "14px 18px", fontWeight: 700 }}>Local Time ({data.timezone})</th>
                       <th style={{ padding: "14px 18px", fontWeight: 700 }}>Target Routine</th>
                     </tr>
@@ -278,31 +333,40 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
                 <span style={{ fontSize: "1.3rem" }}>💳</span>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", margin: 0 }}>
-                  Local Pricing for {data.city}
+                  Plans and Prices for {data.city}
                 </h2>
               </div>
+              <CurrencyProvider defaultCode={currency} rates={rates}>
               <div style={{ background: "#fff", borderRadius: 14, padding: "24px", border: "1px solid var(--border, #e2e8f0)", boxShadow: "0 4px 14px rgba(0,0,0,.04)" }}>
-                <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: 10 }}>
+                <div style={{ display: "flex", alignItems: "baseline", flexWrap: "wrap", gap: 12, marginBottom: 10 }}>
                   <div style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--emerald, #0a6e4f)" }}>
-                    {data.pricing.display}
+                    From ${PRICING_PLANS[0].monthlyPriceUsd}/month
                   </div>
-                  <div style={{ fontSize: ".85rem", color: "var(--gold, #c9922a)", fontWeight: 700 }}>
-                    Transparent &amp; Flexible Billing
+                  <div style={{ fontSize: ".95rem", color: "var(--slate, #334155)", fontWeight: 700 }}>
+                    <LocalPrice usd={PRICING_PLANS[0].monthlyPriceUsd} />
                   </div>
                 </div>
-                <p style={{ color: "var(--slate, #334155)", fontSize: ".92rem", lineHeight: 1.7, marginBottom: 16 }}>
-                  {data.pricing.note} All plans include private one-to-one lessons with certified tutors, regular progress updates through the Parent Portal, and rescheduling with {RESCHEDULE_NOTICE_HOURS} hours&apos; notice, subject to tutor availability.
+                <p style={{ color: "var(--slate, #334155)", fontSize: ".92rem", lineHeight: 1.7, marginBottom: 12 }}>
+                  Plans are billed in US dollars: {PRICING_PLANS.map((plan) => `$${plan.monthlyPriceUsd}`).join(", ")} a month for{" "}
+                  {PRICING_PLANS.map((plan) => plan.sessionsPerWeek).join(", ")} lessons a week. Sibling discounts: {siblingDiscounts}.
+                  All plans include private one-to-one lessons with certified tutors, regular progress updates through the Parent
+                  Portal, and rescheduling with {RESCHEDULE_NOTICE_HOURS} hours&apos; notice, subject to tutor availability.
                 </p>
+                <div style={{ marginBottom: 12 }}>
+                  <CurrencySelector />
+                </div>
+                <PriceDisclosure style={{ color: "var(--muted, #64748b)", fontSize: ".8rem", lineHeight: 1.6, margin: "0 0 16px" }} />
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
                   <Link href="/pricing" style={{ color: "var(--emerald, #0a6e4f)", fontWeight: 700, fontSize: ".9rem", textDecoration: "underline" }}>
                     View Complete Published Tuition Plans →
                   </Link>
                   <span style={{ color: "var(--muted, #64748b)" }}>·</span>
                   <a href="#book-city-trial" style={{ color: "var(--emerald, #0a6e4f)", fontWeight: 700, fontSize: ".9rem", textDecoration: "underline" }}>
-                    Try Free 30-Min Trial Class →
+                    Start {TRIAL.classes} Free Trial Sessions →
                   </a>
                 </div>
               </div>
+              </CurrencyProvider>
             </section>
 
             {/* ── 6) HOW TUTORS ARE MATCHED IN [CITY] ── */}
@@ -385,7 +449,7 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
               </p>
 
               <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-                {data.faqs.map((faq) => (
+                {faqs.map((faq) => (
                   <div
                     key={faq.q}
                     style={{
@@ -405,7 +469,7 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
                   </div>
                 ))}
               </div>
-              <FaqJsonLd faqs={data.faqs} pageUrl={pageUrl} />
+              <FaqJsonLd faqs={faqs} pageUrl={pageUrl} />
             </section>
 
             {/* ── INTERNAL SIBLING & COUNTRY LINKS ── */}
@@ -502,7 +566,7 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
                 <div>
                   <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 22 }}>
                     {[
-                      "3 free 30-minute 1-on-1 trial lessons",
+                      "3 free 30-minute 1-on-1 trial sessions",
                       "No credit card required upfront",
                       `${data.timezone} flexible schedule matching`,
                       "Female teacher requests welcome",

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TRIAL } from "@/lib/academyFacts";
+import { TRIAL_OFFER } from "@/lib/academyFacts";
 
 const linkStyle = { color: "var(--emerald)", fontWeight: 700 };
 
@@ -201,7 +201,7 @@ export default function UkQuranClassesGuide() {
       </section>
 
       <section id="uk-trial">
-        <h2>What Should Happen in a Free Quran Trial Class?</h2>
+        <h2>What Should Happen in the Free Quran Trial Sessions?</h2>
         <p>
           A trial is most useful when it includes real teaching. The tutor should hear enough of
           the learner to understand the starting level, demonstrate how corrections will be made
@@ -396,7 +396,7 @@ export default function UkQuranClassesGuide() {
       <section id="uk-next-steps">
         <h2>What Should a UK Family Do Next?</h2>
         <div className="highlight-box">
-          <strong>Quick answer:</strong> Request a free {TRIAL.durationMinutes}-minute trial with no credit card, share
+          <strong>Quick answer:</strong> Request {TRIAL_OFFER} with no credit card, share
           your GMT or BST availability and learning goal, then review published USD pricing only
           after a suitable tutor and recurring time are confirmed.
         </div>

@@ -7,6 +7,7 @@ import {
 } from "@/data/backlinkAssets";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
+import { TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -49,7 +50,7 @@ const jsonLd = {
     },
     {
       "@type": "ItemList",
-      name: "NoorPath Backlink and Research Assets",
+      name: "NoorPath Research and Reference Resources",
       numberOfItems: backlinkAssets.length,
       itemListElement: backlinkAssets.map((asset, index) => ({
         "@type": "ListItem",
@@ -87,6 +88,7 @@ const resourceCategories = [
     color: "#0a6e4f",
     resources: [
       { title: "Islamic Tools & Calculators Directory", desc: "All-in-one suite of free Shariah-compliant tools", href: "/tools", type: "Hub" },
+      { title: "Free Quran Teaching Resources", desc: "Qaida games, printable worksheets and tools for teachers, mosques and parents", href: "/free-quran-teaching-resources", type: "Hub" },
       { title: "Zakat Calculator — Live Nisab", desc: "Free private calculator for cash, gold, stocks, crypto & 401k", href: "/tools/zakat-calculator", type: "Free Tool" },
       { title: "Quran Hifz & Completion Planner", desc: "Calculate completion dates, daily Sabaq & Sabqi-Manzil timetables", href: "/tools/hifz-calculator", type: "Free Tool" },
       { title: "Islamic Hijri Date Converter & Calendar", desc: "Convert Gregorian to Hijri with moon sighting adjustments & holiday countdowns", href: "/tools/hijri-date-converter", type: "Free Tool" },
@@ -207,7 +209,7 @@ export default function IslamicResourcesPage() {
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <span className="section-eyebrow">Cite, download and share</span>
             <h2 className="section-title">
-              Backlink and <em className="accent">research assets</em>
+              Research, statistics and <em className="accent">infographics</em>
             </h2>
             <p className="section-desc center">
               Ten canonical resources with source notes, update dates and
@@ -367,7 +369,7 @@ export default function IslamicResourcesPage() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               <Link href="/free-quran-classes-online" style={{ display: "inline-block", background: "var(--gold)", color: "var(--charcoal)", fontWeight: 700, padding: "13px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", whiteSpace: "nowrap", textAlign: "center" }}>
-                🎓 Book a Free Quran Class →
+                🎓 Start {TRIAL.classes} Free Trial Sessions →
               </Link>
               <Link href="/blog" style={{ display: "inline-block", background: "rgba(255,255,255,.1)", color: "#fff", fontWeight: 600, padding: "13px 28px", borderRadius: 50, textDecoration: "none", fontSize: ".9rem", textAlign: "center", border: "1px solid rgba(255,255,255,.2)" }}>
                 Read All {blogPosts.length} Blog Articles →
@@ -388,7 +390,7 @@ export default function IslamicResourcesPage() {
                 ["/courses/islamic-studies-online", "Islamic Studies"],
                 ["/female-quran-teacher-online", "Female Quran Teacher"],
                 ["/quran-teacher-online", "Find a Quran Teacher"],
-                ["/free-quran-classes-online", "Free Trial Class"],
+                ["/free-quran-classes-online", `${TRIAL.classes} Free Trial Sessions`],
                 ["/online-quran-for-beginners", "Quran for Beginners"],
               ].map(([href, label]) => (
                 <Link key={label} href={href} style={{ background: "rgba(10,110,79,.07)", border: "1px solid rgba(10,110,79,.15)", borderRadius: 50, padding: "6px 14px", fontSize: ".8rem", color: "var(--emerald)", fontWeight: 600, textDecoration: "none" }}>

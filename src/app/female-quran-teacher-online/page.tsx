@@ -1,84 +1,286 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  BarChart3,
+  BookOpen,
+  CalendarClock,
+  CheckCircle,
+  ChevronRight,
+  ClipboardCheck,
+  Clock,
+  GraduationCap,
+  Heart,
+  Home,
+  MessageCircle,
+  ShieldCheck,
+  Sparkles,
+  UserCheck,
+  Users,
+} from "lucide-react";
 import CTAForm from "@/components/CTAForm";
-import TrustPolicyStrip from "@/components/TrustPolicyStrip";
+import WhatsAppLink from "@/components/WhatsAppLink";
+import FaqJsonLd from "@/components/FaqJsonLd";
+import {
+  BASE_URL,
+  CANCELLATION_NOTICE_DAYS,
+  CONTACT,
+  PRICING_PLANS,
+  RESCHEDULE_NOTICE_HOURS,
+  SERVICE_FACTS,
+  TRIAL,
+  TRIAL_OFFER,
+  TUTOR_FACTS,
+} from "@/lib/academyFacts";
 import { ORGANIZATION_REF, WEBSITE_ID } from "@/lib/organizationSchema";
-import { CheckCircle, Shield, Award, Users, BookOpen, Clock, Heart } from "lucide-react";
-import { PRICING_PLANS, SERVICE_FACTS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import { toWeeklyWorkload } from "@/lib/jsonLd";
 
 export const revalidate = false;
 
+const PAGE_URL = `${BASE_URL}/female-quran-teacher-online`;
+const META_TITLE = "Female Quran Teacher Online | Classes for Kids & Sisters – NoorPath";
+const META_DESCRIPTION =
+  "Learn Quran online with a female teacher at NoorPath Academy. One-to-one lessons for children and sisters, flexible timings and a free trial.";
+const HERO_IMAGE = {
+  src: "/marketing/female-hafiza-tutor.jpg",
+  width: 1200,
+  height: 800,
+  alt: "A female Quran teacher guiding a young girl through a live one-to-one online Quran lesson on a laptop",
+};
+const CTA_LABEL = `Start ${TRIAL.classes} Free Trial Sessions`;
+const AVAILABILITY_NOTE = "A female tutor is assigned subject to availability and confirmation before your trial.";
+const WHATSAPP_TEXT =
+  "Assalamu Alaikum. I would like to request a female Quran teacher and book a free trial. Please share female tutor availability for my time zone.";
+
 export const metadata: Metadata = {
-  title: { absolute: `Female Quran Teacher Online for Sisters & Kids | NoorPath` },
-  description:
-    `Certified female Quran tutors for girls, sisters & reverts. Private 1-on-1 live classes in your timezone. ${TRIAL.classes} free trial classes, no credit card required.`,
+  title: { absolute: META_TITLE },
+  description: META_DESCRIPTION,
   keywords: [
-    "female quran teacher online", "female quran tutor", "online quran teacher for sisters",
-    "hafiza tutor online", "female quran classes", "quran classes for girls online",
-    "online quran for women", "female quran teacher uk", "female quran teacher usa",
-    "female quran teacher in ireland", "female quran teacher ireland",
-    "quran classes for ladies", "lady quran teacher online", "female islamic teacher online",
-    "online quran classes for females", "hafiza online classes", "female hifz teacher online",
-    "female quran teacher for kids", "female quran teacher for kids uk",
-    "female quran tutor for daughters", "hafiza for kids online", "girl quran teacher online",
+    "female quran teacher online",
+    "online female quran tutor",
+    "female quran teacher for kids",
+    "female quran teacher for adults",
+    "online quran classes with female teacher",
+    "female quran tutor for sisters",
+    "learn quran online with female teacher",
+    "female quran teacher for beginners",
   ],
-  alternates: { canonical: "https://www.noorpath.online/female-quran-teacher-online" },
+  alternates: { canonical: PAGE_URL },
+  robots: { index: true, follow: true },
   openGraph: {
-    title: `Female Quran Teacher Online for Sisters & Kids | NoorPath`,
-    description: `Certified female Quran tutors for girls, sisters & reverts. Private 1-on-1 live classes in your timezone. ${TRIAL.classes} free trial classes, no credit card required.`,
-    url: "https://www.noorpath.online/female-quran-teacher-online",
-    images: [{ url: "/marketing/female-hafiza-tutor.jpg", width: 1200, height: 800, alt: "Female Quran Teacher Online — NoorPath Academy" }],
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    url: PAGE_URL,
+    type: "website",
+    siteName: "NoorPath Academy",
+    images: [{ url: HERO_IMAGE.src, width: HERO_IMAGE.width, height: HERO_IMAGE.height, alt: HERO_IMAGE.alt }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Female Quran Teacher Online for Sisters & Kids | NoorPath`,
-    description: `Certified female Quran tutors for girls, sisters & reverts. Private 1-on-1 live classes in your timezone. ${TRIAL.classes} free trial classes, no credit card required.`,
-    images: ["/marketing/female-hafiza-tutor.jpg"],
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+    images: [HERO_IMAGE.src],
   },
 };
 
-const faqs = [
-  { q: "Can my daughter learn Quran with a female teacher online?", a: "You can request a female teacher for a daughter or adult sister. Lessons are live and 1-to-1; subject and schedule availability are confirmed after your request." },
-  { q: "Are the female tutors at NoorPath qualified?", a: "Yes. Every NoorPath tutor, including every female tutor, holds an Ijazah or a Quran teaching certificate, and you can ask to see it." },
-  { q: "What courses can my daughter study with a female teacher?", a: "Female tutor requests may include Noorani Qaida, Quran recitation, Tajweed, Hifz, Arabic, Islamic studies, or daily duas. Availability is confirmed for the requested subject and schedule." },
-  { q: "How do online Quran classes work for sisters?", a: "Classes are live and 1-to-1. Share the learner's level, subject, timezone, and preferred schedule, and NoorPath will confirm a suitable female tutor option." },
-  { q: "Can adult women learn Quran online with a female teacher?", a: "Yes. Adult sisters can request a female tutor for beginner reading, Tajweed, or Hifz. Relevant adult teaching experience and availability are confirmed before enrolment." },
-  { q: "How much do female Quran classes cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} class per week. The first ${TRIAL.durationMinutes}-minute lesson is free and requires no credit card.` },
-  { q: "Is there a female Quran teacher available in my timezone?", a: "Share your timezone and preferred lesson windows when requesting a trial. Female tutor availability is confirmed after your request." },
-  { q: "Can I request a female Quran teacher in Ireland?", a: "Yes. Irish families — including in Dublin — can request a female tutor with GMT or IST preferences. Availability is confirmed after your request. See the Ireland location page for local scheduling context." },
-  { q: "Can I request a female Hifz teacher for my daughter?", a: "Yes. You can request a female tutor for Hifz. Relevant Hifz credentials, teaching experience, and schedule availability are confirmed for the proposed tutor before enrolment." },
-  { q: "We live in an area with very few Muslims and no local female teacher. Can we still get one online?", a: "Yes. Because NoorPath is online-only, a female tutor request works the same from a small town in Norway, a suburb in Texas or a village in Ireland as it does from London. Share your timezone and preferred windows; availability is confirmed after the request, and the free trial lets you meet the tutor before paying anything." },
-  { q: "How flexible is the timing with a female tutor?", a: "Lessons are one-to-one, so the slot is arranged around your week — evenings after work, weekend mornings, or before school — in your own timezone. A recurring time is confirmed once a suitable female tutor is matched, and it can be revisited when school terms or work shifts change. Very specific windows are confirmed at booking rather than guaranteed in advance." },
+const reasons = [
+  {
+    icon: <Heart size={21} />,
+    title: "A comfortable learning environment",
+    description:
+      "Many girls and sisters recite more freely with a female teacher, especially when they are shy about making mistakes aloud.",
+  },
+  {
+    icon: <UserCheck size={21} />,
+    title: "Individual attention",
+    description: "Every lesson is one-to-one, so the tutor hears each line and corrects it straight away.",
+  },
+  {
+    icon: <Sparkles size={21} />,
+    title: "A suitable learning pace",
+    description: "Lessons move at the learner's pace — slower for new readers, steadier for Tajweed or memorization.",
+  },
+  {
+    icon: <Home size={21} />,
+    title: "Privacy and convenience",
+    description: "Learn from home over live video, with no travel and no group watching.",
+  },
+  {
+    icon: <Users size={21} />,
+    title: "Parent involvement",
+    description:
+      "Parents arrange children's lessons, can stay present or nearby during class, and follow progress in the Parent Portal.",
+  },
+  {
+    icon: <CalendarClock size={21} />,
+    title: "Flexible scheduling",
+    description: "Request lesson windows in your own time zone; the recurring slot is confirmed after tutor matching.",
+  },
 ];
 
-const features = [
-  { icon: <Shield size={22} />, title: "Private 1-to-1 Lessons", desc: "Female tutor requests are arranged as live 1-to-1 lessons for sisters and daughters." },
-  { icon: <Award size={22} />, title: "Certified Female Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Not comfortable with your tutor? We change the tutor immediately." },
-  { icon: <Users size={22} />, title: "Children & Adults", desc: "Matching considers whether the learner is a child, teenager, or adult and the teaching approach requested." },
-  { icon: <BookOpen size={22} />, title: "Subject-Based Matching", desc: "Request support for Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, or daily duas." },
-  { icon: <Clock size={22} />, title: "Timezone Matching", desc: "Share preferred lesson windows; available female tutor options are confirmed after the request." },
-  { icon: <Heart size={22} />, title: "Assess the Fit", desc: "Use the free trial to assess communication, pace, and whether the teaching style suits the learner." },
+const learnerGroups = [
+  {
+    icon: <Sparkles size={20} />,
+    title: "Young girls and children",
+    body: "Daughters can learn with a female tutor using short, encouraging lessons matched to their age and attention span, from letter sounds to fluent reading and daily duas.",
+    links: [
+      { href: "/online-quran-classes-for-kids", label: "Online Quran classes for kids" },
+      { href: "/blog/female-quran-teacher-for-kids", label: "Guide: female Quran teacher for kids" },
+    ],
+  },
+  {
+    icon: <Users size={20} />,
+    title: "Sisters and adult women",
+    body: "Mothers, students and working women can learn privately at their own pace — whether starting from the alphabet or returning to the Quran after years away.",
+    links: [
+      { href: "/online-quran-classes-for-adults", label: "Quran classes for adults" },
+      { href: "/quran-classes-for-sisters", label: "Quran classes for sisters" },
+    ],
+  },
+  {
+    icon: <BookOpen size={20} />,
+    title: "Beginners learning Noorani Qaida",
+    body: "Complete beginners start with Arabic letters, vowel marks and joining, so reading the Quran becomes possible step by step.",
+    links: [
+      { href: "/noorani-qaida", label: "How Noorani Qaida is taught" },
+      { href: "/online-quran-for-beginners", label: "Quran classes for beginners" },
+    ],
+  },
+  {
+    icon: <GraduationCap size={20} />,
+    title: "Quran reading and Tajweed learners",
+    body: "Learners who can already read work on fluency and correct pronunciation, applying Makharij and Tajweed rules with live correction.",
+    links: [{ href: "/learn-tajweed-online", label: "Learn Tajweed online" }],
+  },
+  {
+    icon: <ShieldCheck size={20} />,
+    title: "Students interested in memorization",
+    body: "Girls and women ready to memorize can request a female tutor for Hifz, with new lessons and regular revision paced to the student.",
+    links: [
+      { href: "/hifz-quran-online", label: "Online Hifz program" },
+      { href: "/blog/online-hifz-classes-for-kids", label: "Guide: online Hifz for kids" },
+    ],
+  },
 ];
 
 const courses = [
-  { name: "Noorani Qaida", href: "/courses/noorani-qaida-online", desc: "Arabic alphabet and reading foundations for beginners" },
-  { name: "Quran Recitation", href: "/online-quran-classes", desc: "Surah-by-surah with live pronunciation correction" },
-  { name: "Tajweed Rules", href: "/learn-tajweed-online", desc: "Master the rules of beautiful Quran recitation" },
-  { name: "Hifz Program", href: "/hifz-quran-online", desc: "Request a female tutor for structured Quran memorization" },
-  { name: "Arabic Language", href: "/courses/arabic-language-online", desc: "Understand the Quran in its original language" },
-  { name: "Islamic Studies", href: "/courses/islamic-studies-online", desc: "Fiqh, Seerah, Aqeedah & Islamic character" },
-  { name: "Daily Duas for Kids", href: "/courses/daily-duas-for-kids", desc: "Morning, evening and daily duas with meaning" },
-  { name: "Quran for Adults", href: "/learn-quran-online", desc: "Adult-specific curriculum from zero to fluency" },
+  { title: "Noorani Qaida", description: "Arabic letters, vowels and joining for complete beginners.", href: "/noorani-qaida" },
+  { title: "Quran Reading", description: "Fluent reading from the Mushaf with steady correction.", href: "/learn-quran-online" },
+  { title: "Tajweed", description: "Makharij and recitation rules applied while you read.", href: "/learn-tajweed-online" },
+  { title: "Hifz Quran", description: "Memorization with new lessons and structured revision.", href: "/hifz-quran-online" },
+  { title: "Daily Duas and Kalmas", description: "Everyday duas, the Kalimas and short Surahs for salah.", href: "/courses/daily-duas-for-kids" },
+  { title: "Islamic Studies", description: "Age-appropriate lessons on beliefs, salah and character.", href: "/courses/islamic-studies-online" },
 ];
 
-const PAGE_URL = "https://www.noorpath.online/female-quran-teacher-online";
+const steps = [
+  { title: "Submit a trial enquiry", description: "Use the form or WhatsApp to share who will learn, their level and your time zone." },
+  { title: "Request a female tutor", description: "Mention the female teacher preference for your daughter or for yourself." },
+  { title: "NoorPath checks availability", description: `NoorPath checks female tutor availability for the subject and your preferred windows. ${TRIAL.availabilityNote}` },
+  { title: "Confirm a suitable schedule", description: "The trial time is confirmed in your local time once a suitable female tutor is available." },
+  { title: "Attend the trial", description: `You get ${TRIAL_OFFER}, live and one-to-one, with no credit card required.` },
+  { title: "Discuss the learning plan", description: "Agree the starting course, lesson frequency and recurring time before choosing a paid plan." },
+];
 
-const AREA_SERVED = [
-  "United Kingdom", "United States", "Canada", "Australia", "New Zealand", "Ireland",
-  "Germany", "France", "Netherlands", "Sweden", "Norway", "Denmark", "Finland",
-  "Singapore", "Malaysia", "United Arab Emirates", "Saudi Arabia", "Qatar", "Kuwait",
-  "India", "Pakistan", "Nigeria", "South Africa",
+const regions = [
+  {
+    region: "USA and Canada",
+    detail: "Request windows in Eastern, Central, Mountain or Pacific time. Clocks change in March and November, so the recurring time is reconfirmed around each change.",
+    links: [
+      { href: "/locations/online-quran-classes-usa", label: "USA" },
+      { href: "/locations/online-quran-classes-canada", label: "Canada" },
+    ],
+  },
+  {
+    region: "UK and Ireland",
+    detail: "Share GMT or BST preferences — Ireland follows GMT in winter and Irish Standard Time in summer. Clocks change on the last Sundays of March and October.",
+    links: [
+      { href: "/locations/online-quran-classes-uk", label: "UK" },
+      { href: "/online-quran-classes/london", label: "London" },
+      { href: "/online-quran-classes/birmingham", label: "Birmingham" },
+      { href: "/online-quran-classes/bradford", label: "Bradford" },
+      { href: "/online-quran-classes/manchester", label: "Manchester" },
+      { href: "/locations/online-quran-classes-ireland", label: "Ireland (incl. Dublin)" },
+    ],
+  },
+  {
+    region: "Australia and New Zealand",
+    detail: "Some Australian states use daylight saving and others (Queensland, Western Australia, Northern Territory) do not, so tell us your state or city.",
+    links: [
+      { href: "/locations/online-quran-classes-australia", label: "Australia" },
+      { href: "/locations/online-quran-classes-new-zealand", label: "New Zealand" },
+    ],
+  },
+  {
+    region: "Europe",
+    detail: "Most of Europe uses CET/CEST, changing clocks on the last Sundays of March and October. Share your city and preferred evenings or weekends.",
+    links: [
+      { href: "/locations/online-quran-classes-germany", label: "Germany" },
+      { href: "/locations/online-quran-classes-france", label: "France" },
+      { href: "/locations/online-quran-classes-spain", label: "Spain" },
+    ],
+  },
+  {
+    region: "Gulf countries",
+    detail: "Gulf time zones (GST, AST) do not change clocks. Share your preferred windows around school and weekend days.",
+    links: [
+      { href: "/locations/online-quran-classes-uae", label: "UAE" },
+      { href: "/locations/online-quran-classes-saudi-arabia", label: "Saudi Arabia" },
+      { href: "/locations/online-quran-classes-qatar", label: "Qatar" },
+      { href: "/locations/online-quran-classes-kuwait", label: "Kuwait" },
+      { href: "/locations/online-quran-classes-oman", label: "Oman" },
+    ],
+  },
+];
+
+const otherRegions = [
+  { href: "/locations/online-quran-classes-singapore", label: "Singapore" },
+  { href: "/locations/online-quran-classes-hong-kong", label: "Hong Kong" },
+  { href: "/locations/online-quran-classes-nigeria", label: "Nigeria" },
+  { href: "/online-quran-classes/lagos", label: "Lagos" },
+  { href: "/online-quran-classes/abuja", label: "Abuja" },
+  { href: "/online-quran-classes/port-harcourt", label: "Port Harcourt" },
+];
+
+const portalFeatures = [
+  { icon: <ClipboardCheck size={18} />, label: "Attendance for each class" },
+  { icon: <BookOpen size={18} />, label: "Homework and quizzes" },
+  { icon: <BarChart3 size={18} />, label: "Daily progress" },
+  { icon: <MessageCircle size={18} />, label: "Teacher reports" },
+];
+
+const faqs = [
+  {
+    q: "Can I request a female Quran teacher?",
+    a: `Yes. Mention the preference in your trial enquiry. ${TUTOR_FACTS.femaleTutors} A female tutor is assigned subject to availability for your subject and time window, and confirmed before the trial.`,
+  },
+  {
+    q: "Are female teachers available for children?",
+    a: "Yes, female tutors teach daughters and young children. Parents arrange the lessons, can stay present or nearby during class, and the specific tutor and time are confirmed before the trial.",
+  },
+  {
+    q: "Can adult women learn Quran online?",
+    a: "Yes. Sisters can learn from the Arabic alphabet, improve fluency and Tajweed, or memorize, in private one-to-one lessons at their own pace.",
+  },
+  {
+    q: "Are lessons one-to-one?",
+    a: "Yes. Every NoorPath lesson is one student with one tutor, live over video.",
+  },
+  {
+    q: "Can beginners join?",
+    a: "Yes. Complete beginners usually start with Noorani Qaida — Arabic letters, vowel marks and joining — before moving on to Quran reading.",
+  },
+  {
+    q: "Can I request Tajweed lessons?",
+    a: "Yes. Learners who can already read can request Tajweed with a female tutor, focusing on correct pronunciation and the rules of recitation.",
+  },
+  {
+    q: "Are timings flexible?",
+    a: `Request the windows that suit you in your own time zone; the recurring time is confirmed after tutor matching. A class can be moved with ${RESCHEDULE_NOTICE_HOURS} hours' notice, subject to tutor availability.`,
+  },
+  {
+    q: "How can I book a trial?",
+    a: `Fill in the short form on this page or message NoorPath on WhatsApp and mention the female tutor request. Once a suitable tutor is confirmed, you get ${TRIAL_OFFER} with no credit card required.`,
+  },
 ];
 
 const jsonLd = {
@@ -88,388 +290,633 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": `${PAGE_URL}#webpage`,
       url: PAGE_URL,
-      name: "Female Quran Teacher Online",
-      description:
-        "Request a female Quran teacher online for sisters, daughters and girls. Live 1-to-1 classes with flexible timing in the learner's timezone and a free 30-minute trial.",
-      isPartOf: { "@type": "WebSite", "@id": WEBSITE_ID, url: "https://www.noorpath.online" },
+      name: "Learn Quran Online with a Female Quran Teacher",
+      description: META_DESCRIPTION,
+      isPartOf: { "@id": WEBSITE_ID },
       about: { "@id": `${PAGE_URL}#service` },
-      speakable: {
-        "@type": "SpeakableSpecification",
-        cssSelector: [".page-hero-content h1", ".np-quick-answer"],
+      mainEntity: { "@id": `${PAGE_URL}#course` },
+      breadcrumb: { "@id": `${PAGE_URL}#breadcrumb` },
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}${HERO_IMAGE.src}`,
+        width: HERO_IMAGE.width,
+        height: HERO_IMAGE.height,
       },
     },
     {
       "@type": "Service",
       "@id": `${PAGE_URL}#service`,
-      name: "Female Quran Teacher Online — Tutor Requests",
+      name: "Female Quran Teacher Online",
       description:
-        "Female Quran tutor requests for sisters and daughters. Live 1-on-1 classes may cover Qaida, Tajweed, Hifz, or Arabic, subject to confirmed availability. Online-only; scheduled in the learner's timezone.",
+        "Live one-to-one online Quran lessons with a female tutor for girls, children and adult women, covering Noorani Qaida, Quran reading, Tajweed, Hifz, daily duas and Islamic studies. Female tutor assignment is subject to availability and confirmed before the trial. Online only.",
       provider: ORGANIZATION_REF,
       serviceType: "Online Quran Education",
-      audience: { "@type": "Audience", audienceType: "Female Muslim learners — ages 4 to senior" },
-      areaServed: AREA_SERVED.map((name) => ({ "@type": "Country", name })),
+      audience: [
+        { "@type": "PeopleAudience", audienceType: "Parents of girls and young children" },
+        { "@type": "PeopleAudience", audienceType: "Adult women learning Quran" },
+      ],
       availableChannel: {
         "@type": "ServiceChannel",
-        name: "Live one-to-one video lesson",
-        serviceUrl: "https://www.noorpath.online/free-quran-classes-online",
-        availableLanguage: ["en"],
+        serviceUrl: PAGE_URL,
+        availableLanguage: "English",
       },
-      url: PAGE_URL,
       offers: {
         "@type": "Offer",
-        price: String(PRICING_PLANS[0].monthlyPriceUsd),
-        priceCurrency: "USD",
-        description: `Starting from $${PRICING_PLANS[0].monthlyPriceUsd}/month. Free ${TRIAL.durationMinutes}-minute trial request.`,
+        name: TRIAL_OFFER,
+        price: String(TRIAL.price),
+        priceCurrency: TRIAL.priceCurrency,
+        description: `${TRIAL_OFFER}; no credit card required; ${TRIAL.availabilityNote}`,
+        url: `${PAGE_URL}#trial`,
       },
+      termsOfService: `${BASE_URL}/terms-of-service`,
+      url: PAGE_URL,
     },
     {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
+      // Same one-to-one programme and published plans as /pricing; instances derive from PRICING_PLANS.
+      "@type": "Course",
+      "@id": `${PAGE_URL}#course`,
+      name: "Online Quran Classes with a Female Teacher",
+      description:
+        "One-to-one online Quran lessons with a female tutor, subject to availability: Noorani Qaida, Quran reading, Tajweed, Hifz, daily duas and Islamic studies.",
+      url: PAGE_URL,
+      provider: ORGANIZATION_REF,
+      inLanguage: "en",
+      courseMode: "online",
+      isAccessibleForFree: false,
+      teaches: courses.map((course) => course.title),
+      hasCourseInstance: PRICING_PLANS.map((plan) => ({
+        "@type": "CourseInstance",
+        name: `${plan.name} — ${plan.sessionsPerWeek}x ${plan.sessionMinutes} min per week`,
+        description: plan.description,
+        courseMode: "online",
+        courseWorkload: toWeeklyWorkload(plan.sessionsPerWeek, plan.sessionMinutes),
+        instructor: ORGANIZATION_REF,
+        location: { "@type": "VirtualLocation", url: PAGE_URL },
+        offers: {
+          "@type": "Offer",
+          price: String(plan.monthlyPriceUsd),
+          priceCurrency: "USD",
+          category: "Subscription",
+          url: `${BASE_URL}/pricing`,
+          availability: "https://schema.org/InStock",
+        },
       })),
+      offers: [
+        {
+          "@type": "Offer",
+          name: TRIAL_OFFER,
+          price: String(TRIAL.price),
+          priceCurrency: TRIAL.priceCurrency,
+          category: "Free trial",
+          url: `${PAGE_URL}#trial`,
+          availability: "https://schema.org/InStock",
+        },
+        ...PRICING_PLANS.map((plan) => ({
+          "@type": "Offer",
+          name: `${plan.name} plan`,
+          price: String(plan.monthlyPriceUsd),
+          priceCurrency: "USD",
+          category: "Subscription",
+          url: `${BASE_URL}/pricing`,
+          availability: "https://schema.org/InStock",
+        })),
+      ],
     },
     {
       "@type": "BreadcrumbList",
+      "@id": `${PAGE_URL}#breadcrumb`,
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.noorpath.online" },
-        { "@type": "ListItem", position: 2, name: "Female Quran Teacher Online", item: "https://www.noorpath.online/female-quran-teacher-online" },
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Female Quran Teacher Online", item: PAGE_URL },
       ],
     },
   ],
 };
 
+const cardStyle = {
+  border: "1px solid var(--border)",
+  borderRadius: 18,
+  background: "#fff",
+  padding: 24,
+  boxShadow: "var(--shadow-sm)",
+} as const;
+
+const iconBadgeStyle = {
+  width: 42,
+  height: 42,
+  borderRadius: 12,
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  background: "rgba(13,92,74,.08)",
+  color: "var(--emerald)",
+  marginBottom: 12,
+} as const;
+
+const inlineLinkStyle = {
+  color: "var(--emerald)",
+  fontWeight: 700,
+  display: "inline-flex",
+  alignItems: "center",
+  gap: 4,
+  fontSize: ".9rem",
+} as const;
+
+const chipLinkStyle = {
+  fontSize: ".8rem",
+  fontWeight: 600,
+  color: "var(--emerald)",
+  border: "1px solid var(--border)",
+  borderRadius: 20,
+  padding: "4px 12px",
+  background: "#fff",
+} as const;
+
+function TrialCtaBand({ text, whatsappUrl }: { text: string; whatsappUrl: string }) {
+  return (
+    <div
+      style={{
+        marginTop: 36,
+        padding: "20px 22px",
+        borderRadius: 16,
+        background: "var(--ivory)",
+        border: "1px solid var(--border)",
+        display: "flex",
+        flexWrap: "wrap",
+        gap: 14,
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
+    >
+      <p style={{ margin: 0, fontWeight: 600, color: "var(--charcoal)", maxWidth: 620 }}>{text}</p>
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+        <a href="#trial" className="btn-primary-np">
+          {CTA_LABEL}
+        </a>
+        <WhatsAppLink href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-outline-np">
+          Contact Us on WhatsApp
+        </WhatsAppLink>
+      </div>
+    </div>
+  );
+}
+
 export default function FemaleQuranTeacherPage() {
+  const whatsappUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_TEXT)}`;
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
 
       {/* Hero */}
       <div className="page-hero">
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
-          <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>
-            <Link href="/" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>Home</Link>
-            <span style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>›</span>
-            <span style={{ color: "rgba(255,255,255,.6)", fontSize: ".85rem" }}>Female Quran Teacher Online</span>
-          </nav>
-          <h1>Female Quran Teacher Online</h1>
-          <p>Request a female Quran tutor for a sister or daughter. Live <strong style={{ color: "var(--gold-lt)" }}>1-on-1 online Quran classes</strong> can be matched for reading, Tajweed, Hifz, children, or adults. <strong style={{ color: "var(--gold-lt)" }}>Free 30-minute trial, no credit card.</strong></p>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="/free-quran-classes-online" className="btn-primary-np">Book Free Trial →</Link>
-            <Link href="/online-quran-classes" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>All Classes</Link>
-            <span style={{ color: "rgba(255,255,255,.7)", fontSize: ".85rem", display: "flex", alignItems: "center", gap: 6 }}>
-              Availability confirmed after your request
+          <nav aria-label="Breadcrumb" style={{ marginBottom: 18 }}>
+            <Link href="/" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>
+              Home
+            </Link>
+            <span aria-hidden="true" style={{ color: "rgba(255,255,255,.4)", margin: "0 8px" }}>
+              ›
             </span>
+            <span aria-current="page" style={{ color: "rgba(255,255,255,.65)", fontSize: ".85rem" }}>
+              Female Quran Teacher Online
+            </span>
+          </nav>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <span
+                style={{
+                  display: "inline-flex",
+                  color: "var(--gold-lt)",
+                  fontWeight: 700,
+                  fontSize: ".8rem",
+                  letterSpacing: ".8px",
+                  textTransform: "uppercase",
+                  marginBottom: 14,
+                }}
+              >
+                Female Quran tutor requests
+              </span>
+              <h1 id="female-hero-title">Learn Quran Online with a Female Quran Teacher</h1>
+              <p style={{ maxWidth: 610, marginBottom: 24 }}>
+                Private one-to-one Quran lessons from home, with a female tutor for your daughter or for yourself.
+                Beginners are welcome, and lesson times are arranged around your week.
+              </p>
+
+              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", display: "grid", gap: 11 }}>
+                {[
+                  "Private one-to-one live lessons",
+                  "Female tutor requests for children and sisters",
+                  "Beginner-friendly, from the Arabic alphabet upward",
+                  "Flexible scheduling in your own time zone",
+                  `${TRIAL_OFFER} — no credit card`,
+                ].map((item) => (
+                  <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                    <CheckCircle
+                      size={18}
+                      aria-hidden="true"
+                      style={{ color: "var(--gold-lt)", flexShrink: 0, marginTop: 2 }}
+                    />
+                    <span style={{ color: "rgba(255,255,255,.92)", fontSize: ".94rem", lineHeight: 1.55 }}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+                <a href="#trial" className="btn-primary-np">
+                  {CTA_LABEL}
+                </a>
+                <WhatsAppLink
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline-np"
+                  style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}
+                >
+                  <MessageCircle size={16} aria-hidden="true" /> Contact Us on WhatsApp
+                </WhatsAppLink>
+              </div>
+
+              <p
+                style={{
+                  color: "rgba(255,255,255,.7)",
+                  fontSize: ".8rem",
+                  lineHeight: 1.6,
+                  marginTop: 16,
+                  maxWidth: 580,
+                }}
+              >
+                {TUTOR_FACTS.femaleTutors} {AVAILABILITY_NOTE} NoorPath teaches online only and has no physical
+                branches.
+              </p>
+            </div>
+
+            <div
+              id="trial"
+              style={{
+                background: "rgba(255,255,255,.07)",
+                border: "1px solid rgba(255,255,255,.16)",
+                borderRadius: 20,
+                padding: "26px 24px",
+                boxShadow: "0 24px 60px rgba(0,0,0,.35)",
+                backdropFilter: "blur(6px)",
+                scrollMarginTop: 100,
+              }}
+            >
+              <div style={{ textAlign: "center", marginBottom: 16 }}>
+                <span
+                  style={{
+                    display: "inline-block",
+                    background: "var(--gold)",
+                    color: "var(--charcoal)",
+                    fontWeight: 800,
+                    fontSize: ".72rem",
+                    padding: "5px 12px",
+                    borderRadius: 20,
+                    textTransform: "uppercase",
+                    letterSpacing: ".5px",
+                    marginBottom: 9,
+                  }}
+                >
+                  {TRIAL.classes} free trial sessions · No card
+                </span>
+                <h2 style={{ color: "#fff", fontSize: "1.5rem", marginBottom: 5 }}>Request a Female Tutor</h2>
+                <p style={{ color: "rgba(255,255,255,.7)", fontSize: ".84rem", lineHeight: 1.55 }}>
+                  Mention &ldquo;female tutor&rdquo; in your message, with your time zone and the learner&apos;s level.
+                </p>
+              </div>
+              <CTAForm idPrefix="female-hero-trial" formVariant="female-hero" />
+            </div>
           </div>
         </div>
       </div>
 
-      <section>
+      {/* Service facts */}
+      <section style={{ padding: "28px 0", background: "var(--ivory)" }}>
         <div className="max-w-[1200px] mx-auto px-4">
-
-          {/* Quick Answer */}
-          <div className="np-quick-answer" style={{ background: "rgba(10,110,79,.06)", borderLeft: "4px solid var(--emerald)", borderRadius: 12, padding: "20px 26px", marginBottom: 28, fontSize: ".95rem", lineHeight: 1.75, color: "#374151" }}>
-            <strong style={{ color: "var(--emerald)" }}>Quick answer: </strong>
-            Yes — NoorPath has <strong>certified female Quran teachers</strong> for sisters and daughters in any country. NoorPath is online-only, so it works the same in a Muslim-minority town as in a big city. Classes are live and 1-to-1 with <strong>flexible timing in your own timezone</strong>, and every tutor holds an Ijazah or a Quran teaching certificate. The first {TRIAL.durationMinutes}-minute lesson is free.{" "}
-            <a href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book free trial →</a>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {SERVICE_FACTS.map((fact) => (
+              <div key={fact.label} style={{ textAlign: "center", padding: "12px 8px" }}>
+                <div style={{ color: "var(--emerald)", fontWeight: 800, fontSize: "1.25rem", marginBottom: 3 }}>
+                  {fact.value}
+                </div>
+                <div style={{ color: "var(--muted)", fontSize: ".78rem" }}>{fact.label}</div>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
-            <div style={{ borderRadius: 18, overflow: "hidden", border: "1px solid var(--border)" }}>
+      {/* Why a female teacher */}
+      <section aria-labelledby="female-why-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ marginBottom: 36 }}>
+            <div>
+              <span className="section-eyebrow">Why it helps</span>
+              <h2 id="female-why-heading" className="section-title">
+                Why choose a <em className="accent">female Quran teacher?</em>
+              </h2>
+              <p className="section-desc">
+                For many families, a female tutor makes Quran lessons feel more comfortable — for a shy daughter, a
+                teenage girl or a sister learning as an adult. Every lesson is part of NoorPath&apos;s live{" "}
+                <Link href="/online-quran-classes" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+                  online Quran classes
+                </Link>
+                , taught one-to-one.
+              </p>
+            </div>
+            <div style={{ position: "relative", aspectRatio: "3 / 2", borderRadius: 20, overflow: "hidden" }}>
               <Image
-                src="/marketing/female-hafiza-tutor.jpg"
-                alt="Female Quran tutor teaching a girl online"
-                width={900}
-                height={600}
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ width: "100%", height: "auto", display: "block" }}
+                src={HERO_IMAGE.src}
+                alt={HERO_IMAGE.alt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
               />
             </div>
-            <div>
-              <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.4rem", color: "var(--charcoal)", marginBottom: 12 }}>
-                A comfortable 1-to-1 learning option
-              </h2>
-              <p style={{ color: "var(--muted)", lineHeight: 1.75, marginBottom: 14 }}>
-                Choose a female tutor for a daughter, teenage girl, or adult sister. Every tutor holds an Ijazah or a Quran teaching certificate, and we change the tutor immediately if the fit is not right.
-              </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 8 }}>
-                {[
-                  "Ijazah or certified female tutors",
-                  "Parents can discuss lesson supervision",
-                  "Timezone preferences included in matching",
-                  "Reading, Tajweed, or Hifz tutor requests",
-                ].map((t) => (
-                  <li key={t} style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: ".9rem", color: "var(--slate)" }}>
-                    <CheckCircle size={16} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} /> {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {reasons.map((reason) => (
+              <div key={reason.title} style={cardStyle}>
+                <span style={iconBadgeStyle} aria-hidden="true">
+                  {reason.icon}
+                </span>
+                <h3 style={{ fontSize: "1.05rem", fontWeight: 700, marginBottom: 6 }}>{reason.title}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".92rem", lineHeight: 1.65, margin: 0 }}>
+                  {reason.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="content-card" style={{ marginBottom: 32 }}>
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", marginBottom: 8 }}>Female tutor matching by learning stage</h2>
-            <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 14, lineHeight: 1.6 }}>Learning plans are adjusted after the tutor assesses the learner; no fixed outcome timeline is promised.</p>
-            <div style={{ overflowX: "auto" }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: ".85rem" }}>
-                <thead>
-                  <tr style={{ background: "var(--emerald)", color: "#fff" }}>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Learner</th>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Starting point</th>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Possible focus</th>
-                    <th style={{ padding: "10px 12px", textAlign: "left" }}>Matching consideration</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Young learners", "New to Arabic letters", "Qaida, pronunciation, short duas", "Child-focused teaching approach"],
-                    ["School-age girls", "Reading at any level", "Reading, Tajweed, or Hifz", "Level and learning goal"],
-                    ["Teen girls", "Beginner or returning", "Recitation, Tajweed, or Hifz", "Confidence and subject fit"],
-                    ["Adult sisters", "Beginner to experienced", "Personal Quran learning goals", "Schedule and preferred pace"],
-                  ].map((row) => (
-                    <tr key={row[0]} style={{ borderBottom: "1px solid var(--border)" }}>
-                      {row.map((cell, i) => (
-                        <td key={i} style={{ padding: "10px 12px", fontWeight: i === 0 ? 700 : 400, color: i === 0 ? "var(--charcoal)" : "var(--muted)" }}>{cell}</td>
-                      ))}
-                    </tr>
+      {/* Learner groups */}
+      <section aria-labelledby="female-learners-heading" style={{ background: "var(--ivory)" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <span className="section-eyebrow">Who it&apos;s for</span>
+          <h2 id="female-learners-heading" className="section-title">
+            Female Quran classes for <em className="accent">different learners</em>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5" style={{ marginTop: 8 }}>
+            {learnerGroups.map((group) => (
+              <div key={group.title} style={cardStyle}>
+                <span style={iconBadgeStyle} aria-hidden="true">
+                  {group.icon}
+                </span>
+                <h3 style={{ fontSize: "1.1rem", fontWeight: 700, marginBottom: 8 }}>{group.title}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".93rem", lineHeight: 1.7, marginBottom: 12 }}>
+                  {group.body}
+                </p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 18px" }}>
+                  {group.links.map((link) => (
+                    <Link key={link.href} href={link.href} style={inlineLinkStyle}>
+                      {link.label} <ChevronRight size={16} aria-hidden="true" />
+                    </Link>
                   ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="content-card" style={{ marginBottom: 28, borderTop: "3px solid var(--emerald)" }}>
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.25rem", marginBottom: 10 }}>
-              What we confirm before enrolment (proof, not promises)
-            </h2>
-            <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: 12, fontSize: ".9rem" }}>
-              Female tutors are available, every tutor holds an Ijazah or a Quran teaching certificate, and you meet
-              your tutor in the trial before you pay for a regular plan. Free trial: {TRIAL.durationMinutes}{" "}
-              minutes, no credit card. Plans start from ${PRICING_PLANS[0].monthlyPriceUsd}/month (
-              {PRICING_PLANS[0].sessionsPerWeek} class/week). Trustpilot: {TRUSTPILOT.score}/5 from{" "}
-              {TRUSTPILOT.reviewCount} reviews ({TRUSTPILOT.lastChecked}) —{" "}
-              <a href={TRUSTPILOT.url} rel="noopener noreferrer" style={{ color: "var(--emerald)", fontWeight: 700 }}>
-                read reviews
-              </a>
-              .
-            </p>
-            <p style={{ color: "var(--muted)", lineHeight: 1.7, margin: 0, fontSize: ".9rem" }}>
-              Book via the{" "}
-              <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>
-                free Quran classes online
-              </Link>{" "}
-              trial form and state “female tutor” in your message.
-            </p>
-          </div>
-
-          <div className="content-card" style={{ marginBottom: 40, borderTop: "3px solid var(--emerald)" }}>
-            <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.35rem", marginBottom: 10 }}>
-              Female Quran Teacher for Kids (UK &amp; Online)
-            </h2>
-            <p style={{ color: "var(--muted)", lineHeight: 1.7, marginBottom: 12 }}>
-              Looking for a <strong>female Quran teacher for kids</strong>? Daughters ages 4–12 can request tutor matching for Noorani Qaida, Tajweed, or Hifz —
-              subject to confirmed tutor credentials and schedule availability. Read our full guide:{" "}
-              <Link href="/blog/female-quran-teacher-for-kids" style={{ color: "var(--emerald)", fontWeight: 700 }}>Female Quran Teacher for Kids</Link>
-              {" · "}
-              <Link href="/blog/online-hifz-classes-for-kids" style={{ color: "var(--emerald)", fontWeight: 700 }}>Online Hifz for Kids</Link>.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-              {[
-                ["/online-quran-classes/london", "London"],
-                ["/online-quran-classes/birmingham", "Birmingham"],
-                ["/online-quran-classes/bradford", "Bradford"],
-                ["/online-quran-classes/manchester", "Manchester"],
-                ["/locations/online-quran-classes-uk", "All UK"],
-                ["/online-quran-classes/lagos", "Lagos"],
-                ["/online-quran-classes/abuja", "Abuja"],
-                ["/online-quran-classes/port-harcourt", "Port Harcourt"],
-                ["/locations/online-quran-classes-nigeria", "All Nigeria"],
-              ].map(([href, label]) => (
-                <Link key={href} href={href} style={{ fontSize: ".8rem", fontWeight: 600, color: "var(--emerald)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: 20, padding: "5px 12px", background: "#fff" }}>
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Trust Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            {[
-              { value: SERVICE_FACTS[0].value, label: SERVICE_FACTS[0].label },
-              { value: SERVICE_FACTS[1].value, label: SERVICE_FACTS[1].label },
-              { value: SERVICE_FACTS[2].value, label: SERVICE_FACTS[2].label },
-              { value: "Available", label: "Certified female tutors" },
-            ].map((s) => (
-              <div key={s.label} style={{ textAlign: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 14, padding: "22px 12px" }}>
-                <div style={{ fontSize: "1.55rem", fontWeight: 800, color: "var(--emerald)", lineHeight: 1.2 }}>{s.value}</div>
-                <div style={{ fontSize: ".78rem", color: "var(--muted)", marginTop: 4 }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Why choose */}
-          <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <span className="section-eyebrow">👩‍🏫 Female Tutor Requests</span>
-            <h2 className="section-title">Why Families Choose Our <em className="accent">Female Teachers</em></h2>
-            <p className="section-desc center">
-              At NoorPath Academy, we understand that modesty and comfort matter in Islamic learning. Female tutors are available, every tutor is certified, and the tutor is changed immediately if you are not comfortable.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {features.map((f) => (
-              <div key={f.title} className="content-card" style={{ display: "flex", gap: 16 }}>
-                <div style={{ color: "var(--emerald)", flexShrink: 0, marginTop: 2 }}>{f.icon}</div>
-                <div>
-                  <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: ".97rem", fontWeight: 700, marginBottom: 6 }}>{f.title}</h3>
-                  <p style={{ color: "var(--muted)", fontSize: ".87rem", lineHeight: 1.6, margin: 0 }}>{f.desc}</p>
                 </div>
               </div>
             ))}
           </div>
+          <TrialCtaBand
+            text="Tell us who will learn and we'll check female tutor availability for your time zone."
+            whatsappUrl={whatsappUrl}
+          />
+        </div>
+      </section>
 
-          {/* Courses with female teachers */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Subjects You Can Request with <em className="accent">Female Teachers</em>
+      {/* Courses */}
+      <section aria-labelledby="female-courses-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <span className="section-eyebrow">Courses</span>
+          <h2 id="female-courses-heading" className="section-title">
+            What students can learn with <em className="accent">a female tutor</em>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-            {courses.map((c) => (
-              <Link key={c.name} href={c.href} style={{ textDecoration: "none" }}>
-                <div className="content-card" style={{ height: "100%", transition: "transform .15s" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-                    <CheckCircle size={16} style={{ color: "var(--emerald)", flexShrink: 0 }} />
-                    <strong style={{ fontSize: ".92rem", color: "var(--charcoal)" }}>{c.name}</strong>
-                  </div>
-                  <p style={{ color: "var(--muted)", fontSize: ".82rem", lineHeight: 1.5, margin: 0 }}>{c.desc}</p>
-                </div>
+          <p className="section-desc">
+            Each course is taught one-to-one. Female tutor availability is confirmed for the requested subject and
+            schedule.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {courses.map((course) => (
+              <Link
+                key={course.title}
+                href={course.href}
+                style={{ ...cardStyle, display: "block", textDecoration: "none", color: "inherit" }}
+              >
+                <h3 style={{ fontSize: "1.05rem", fontWeight: 700, marginBottom: 6, color: "var(--charcoal)" }}>
+                  {course.title}
+                </h3>
+                <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.6, margin: 0 }}>{course.description}</p>
               </Link>
             ))}
           </div>
+          <p style={{ color: "var(--muted)", fontSize: ".88rem", marginTop: 16 }}>
+            Arabic is also available —{" "}
+            <Link href="/courses/arabic-language-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+              see the Arabic language course
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
 
-          {/* Who it's for */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Female Quran Classes for Children and Adults
+      {/* How classes work */}
+      <section aria-labelledby="female-steps-heading" style={{ background: "var(--ivory)" }}>
+        <div className="max-w-[1200px] mx-auto px-4">
+          <span className="section-eyebrow">Getting started</span>
+          <h2 id="female-steps-heading" className="section-title">
+            How classes <em className="accent">work</em>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            {[
-              { age: "Children", title: "Girls & Young Learners", points: ["Age-aware lesson planning", "Visual Arabic learning options", "Parent supervision preferences", "Relevant experience confirmed"] },
-              { age: "Teens", title: "Teenage Girls", points: ["Structured 1-to-1 sessions", "Tajweed tutor requests", "Hifz tutor requests", "Teaching fit assessed in trial"] },
-              { age: "Adults", title: "Sisters & Mothers", points: ["Schedule preferences considered", "Complete beginners welcome", "Private 1-to-1 learning", "Adult Hifz requests welcomed"] },
-            ].map((g) => (
-              <div key={g.title} className="content-card" style={{ borderTop: "3px solid var(--emerald)" }}>
-                <div style={{ fontSize: ".72rem", fontWeight: 700, color: "var(--emerald)", textTransform: "uppercase", letterSpacing: ".08em", marginBottom: 6 }}>{g.age}</div>
-                <div style={{ fontWeight: 700, color: "var(--charcoal)", marginBottom: 14 }}>{g.title}</div>
-                {g.points.map((p) => (
-                  <div key={p} style={{ display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 8, fontSize: ".87rem", color: "var(--muted)" }}>
-                    <CheckCircle size={14} style={{ color: "var(--emerald)", marginTop: 2, flexShrink: 0 }} /> {p}
-                  </div>
+          <p className="section-desc">
+            Female tutors are not assigned instantly — NoorPath confirms a suitable tutor and time before your trial.
+          </p>
+          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {steps.map((step, index) => (
+              <li key={step.title} style={{ ...cardStyle, padding: 20 }}>
+                <span
+                  aria-hidden="true"
+                  style={{ color: "var(--gold)", fontWeight: 800, fontSize: "1.4rem", display: "block", marginBottom: 6 }}
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 style={{ fontSize: "1rem", fontWeight: 700, marginBottom: 6 }}>{step.title}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.6, margin: 0 }}>{step.description}</p>
+              </li>
+            ))}
+          </ol>
+          <p style={{ color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.7, marginTop: 20 }}>
+            After the trial, plans start from ${PRICING_PLANS[0].monthlyPriceUsd}/month for{" "}
+            {PRICING_PLANS[0].sessionsPerWeek} lesson per week.{" "}
+            <Link href="/pricing" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+              Compare plans and pricing
+            </Link>
+            .
+          </p>
+          <TrialCtaBand text={`Ready to start? Book ${TRIAL_OFFER} — no card required.`} whatsappUrl={whatsappUrl} />
+        </div>
+      </section>
+
+      {/* International timings */}
+      <section aria-labelledby="female-timings-heading">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <span className="section-eyebrow">Scheduling</span>
+          <h2 id="female-timings-heading" className="section-title">
+            Flexible <em className="accent">international timings</em>
+          </h2>
+          <p className="section-desc" style={{ maxWidth: 760 }}>
+            Share your preferred windows in your local time. Exact female tutor availability is confirmed for each
+            family individually — there is no fixed public timetable.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {regions.map((region) => (
+              <div key={region.region} style={cardStyle}>
+                <span style={iconBadgeStyle} aria-hidden="true">
+                  <Clock size={20} />
+                </span>
+                <h3 style={{ fontSize: "1.02rem", fontWeight: 700, marginBottom: 6 }}>{region.region}</h3>
+                <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.6, marginBottom: 12 }}>{region.detail}</p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  {region.links.map((link) => (
+                    <Link key={link.href} href={link.href} style={chipLinkStyle}>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <div style={cardStyle}>
+              <span style={iconBadgeStyle} aria-hidden="true">
+                <Clock size={20} />
+              </span>
+              <h3 style={{ fontSize: "1.02rem", fontWeight: 700, marginBottom: 6 }}>Other regions</h3>
+              <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.6, marginBottom: 12 }}>
+                Families in Asia and Africa can request a female tutor the same way — share your city and preferred
+                windows.
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {otherRegions.map((link) => (
+                  <Link key={link.href} href={link.href} style={chipLinkStyle}>
+                    {link.label}
+                  </Link>
                 ))}
               </div>
-            ))}
-          </div>
-
-          <p style={{ color: "var(--muted)", lineHeight: 1.7, textAlign: "center", marginBottom: 44, maxWidth: 760, marginLeft: "auto", marginRight: "auto" }}>
-            If you are an adult learner rather than a parent booking for a child, the{" "}
-            <Link href="/quran-classes-for-sisters" style={{ color: "var(--emerald)", fontWeight: 700 }}>
-              Quran classes for sisters and ladies
-            </Link>{" "}
-            page covers the same female tutor request from an adult beginner&rsquo;s starting point.
-          </p>
-
-          {/* Location links */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.5rem", textAlign: "center", marginBottom: 20 }}>
-            Request Female Quran Teachers by Timezone
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-            {[
-              { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "Share your GMT/BST preferences" },
-              { href: "/locations/online-quran-classes-ireland", label: "🇮🇪 Ireland", note: "Female tutor requests for Dublin & Ireland" },
-              { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "Share your US timezone" },
-              { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Share your Canadian timezone" },
-              { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "Share your Australian timezone" },
-              { href: "/locations/online-quran-classes-singapore", label: "🇸🇬 Singapore", note: "SGT evenings & CCA windows" },
-              { href: "/locations/online-quran-classes-hong-kong", label: "🇭🇰 Hong Kong", note: "HKT evenings & weekend windows" },
-              { href: "/locations/online-quran-classes-spain", label: "🇪🇸 Spain", note: "CET/CEST — Madrid & Barcelona" },
-              { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST/NZDT kids matching" },
-              { href: "/free-quran-classes-online", label: "🎁 Free trial", note: "30-min live class, no card" },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
-                <div className="content-card" style={{ textAlign: "center", padding: "18px 12px" }}>
-                  <div style={{ fontWeight: 700, fontSize: ".9rem", color: "var(--charcoal)", marginBottom: 4 }}>{l.label}</div>
-                  <div style={{ fontSize: ".78rem", color: "var(--muted)" }}>{l.note}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Parent trust policy — who teaches, missed class, switch tutor, cancel */}
-          <TrustPolicyStrip />
-
-          {/* FAQ */}
-          <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            Frequently Asked Questions
-          </h2>
-          <div className="max-w-[760px] mx-auto mb-16">
-            {faqs.map((f, i) => (
-              <details key={i} style={{ borderBottom: "1px solid var(--border)", padding: "18px 0" }}>
-                <summary style={{ fontWeight: 600, color: "var(--charcoal)", cursor: "pointer", fontSize: ".95rem", listStyle: "none", display: "flex", justifyContent: "space-between" }}>
-                  {f.q} <span style={{ color: "var(--emerald)", marginLeft: 8 }}>+</span>
-                </summary>
-                <p style={{ color: "var(--muted)", marginTop: 12, lineHeight: 1.75, fontSize: ".9rem" }}>{f.a}</p>
-              </details>
-            ))}
-          </div>
-
-          {/* Related links */}
-          <div style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: "24px 28px", marginBottom: 32 }}>
-            <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.1rem", marginBottom: 14, color: "var(--charcoal)" }}>Related Pages</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-              {[
-                ["/free-quran-classes-online", "Free Quran Trial"],
-                ["/quran-classes-near-me", "“Quran classes near me” — online alternative"],
-                ["/online-quran-classes-no-masjid-nearby", "No masjid nearby? Learn online"],
-                ["/quran-classes-for-working-professionals", "Flexible timing for working adults"],
-                ["/blog/online-quran-classes-canada-for-kids", "Canada kids Quran guide"],
-                ["/blog/female-quran-teacher-online-canada", "Female teacher Canada"],
-                ["/blog/quran-classes-for-adults-in-singapore", "Singapore adults Quran"],
-                ["/online-quran-classes-for-kids", "Kids Quran Classes"],
-                ["/online-quran-classes-for-adults", "Adult Quran Classes"],
-                ["/hifz-quran-online", "Hifz Program Online"],
-                ["/learn-tajweed-online", "Learn Tajweed Online"],
-                ["/online-quran-classes", "All Online Classes"],
-              ].map(([href, label]) => (
-                <Link key={href} href={href} style={{ color: "var(--emerald)", fontWeight: 600, fontSize: ".88rem", textDecoration: "none" }}>→ {label}</Link>
-              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="cta-section" id="cta">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Parent portal */}
+      <section aria-labelledby="female-portal-heading" style={{ background: "var(--ivory)" }}>
+        <div className="max-w-[1000px] mx-auto px-4">
+          <span className="section-eyebrow">For parents</span>
+          <h2 id="female-portal-heading" className="section-title">
+            Parent progress and <em className="accent">communication</em>
+          </h2>
+          <p className="section-desc">
+            Enrolled families get secure Parent Portal access for each child. Scheduling messages go through the
+            parent or guardian using NoorPath&apos;s official email or WhatsApp.
+          </p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3" style={{ listStyle: "none", padding: 0, margin: "0 0 20px" }}>
+            {portalFeatures.map((feature) => (
+              <li
+                key={feature.label}
+                style={{ display: "flex", alignItems: "center", gap: 10, fontSize: ".93rem", fontWeight: 600 }}
+              >
+                <span style={{ color: "var(--emerald)", display: "inline-flex" }} aria-hidden="true">
+                  {feature.icon}
+                </span>
+                {feature.label}
+              </li>
+            ))}
+          </ul>
+          <ul style={{ paddingLeft: 18, margin: 0, display: "grid", gap: 6, color: "var(--muted)", fontSize: ".9rem", lineHeight: 1.6 }}>
+            <li>{TUTOR_FACTS.rematch}</li>
+            <li>
+              A class can be moved with {RESCHEDULE_NOTICE_HOURS} hours&apos; notice, subject to tutor availability.
+            </li>
+            <li>
+              Plans can be cancelled with {CANCELLATION_NOTICE_DAYS} days&apos; notice before the next billing date.{" "}
+              <Link href="/safeguarding" style={{ color: "var(--emerald)", fontWeight: 600 }}>
+                Read the safeguarding guidance for parents
+              </Link>
+              .
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section aria-labelledby="female-faq-heading">
+        <div className="max-w-[900px] mx-auto px-4">
+          <span className="section-eyebrow">FAQ</span>
+          <h2 id="female-faq-heading" className="section-title">
+            Female Quran teacher: <em className="accent">common questions</em>
+          </h2>
+          <FaqJsonLd faqs={faqs} pageUrl={PAGE_URL} />
+          <div style={{ display: "grid", gap: 12, marginTop: 8 }}>
+            {faqs.map((faq) => (
+              <details key={faq.q} style={{ ...cardStyle, padding: "18px 22px" }}>
+                <summary style={{ cursor: "pointer", listStyle: "revert" }}>
+                  <h3 style={{ display: "inline", fontSize: "1rem", fontWeight: 700 }}>{faq.q}</h3>
+                </summary>
+                <p style={{ color: "var(--muted)", fontSize: ".93rem", lineHeight: 1.7, margin: "10px 0 0" }}>{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section
+        aria-labelledby="female-final-cta-heading"
+        style={{ background: "linear-gradient(135deg, var(--emerald-dk, #0a3d32), var(--emerald, #0d5c4a))" }}
+      >
+        <div className="max-w-[1100px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
-                Book a Free Trial with a<br /><em style={{ color: "var(--gold-lt)" }}>Female Tutor Request</em>
+              <h2
+                id="female-final-cta-heading"
+                style={{ color: "#fff", fontSize: "clamp(1.6rem, 4vw, 2.2rem)", marginBottom: 12, lineHeight: 1.25 }}
+              >
+                Find a Comfortable Way to Learn the Quran Online
               </h2>
-              <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
-                No credit card required. Request a free 30-minute class with a female tutor and assess whether the match is right for your daughter or yourself.
+              <p style={{ color: "rgba(255,255,255,.82)", lineHeight: 1.7, marginBottom: 20 }}>
+                Send a short enquiry and mention the female tutor request. {AVAILABILITY_NOTE} Then attend{" "}
+                {TRIAL_OFFER} — no credit card needed.
               </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
-                {["Free 30-min trial — no credit card", "Certified female tutor", "Timezone availability confirmed after enquiry", "Tutor changed immediately if needed"].map((b) => (
-                  <li key={b} style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,.8)", fontSize: ".9rem" }}>
-                    <CheckCircle size={15} style={{ color: "var(--gold)", flexShrink: 0 }} /> {b}
-                  </li>
-                ))}
-              </ul>
+              <WhatsAppLink
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 10,
+                  background: "#25D366",
+                  color: "#0b3d2e",
+                  padding: "13px 22px",
+                  borderRadius: 12,
+                  fontWeight: 800,
+                  textDecoration: "none",
+                }}
+              >
+                <MessageCircle size={18} aria-hidden="true" /> Contact Us on WhatsApp
+              </WhatsAppLink>
             </div>
-            <div className="cta-form-wrap">
-              <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
-                Book Your Free Trial Class
-              </h3>
-              <CTAForm />
+            <div
+              style={{
+                background: "rgba(255,255,255,.07)",
+                border: "1px solid rgba(255,255,255,.16)",
+                borderRadius: 20,
+                padding: "24px 22px",
+              }}
+            >
+              <h3 style={{ color: "#fff", fontSize: "1.2rem", textAlign: "center", marginBottom: 14 }}>{CTA_LABEL}</h3>
+              <CTAForm idPrefix="female-final-trial" formVariant="female-final" />
             </div>
           </div>
         </div>

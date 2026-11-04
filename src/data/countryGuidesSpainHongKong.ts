@@ -21,7 +21,7 @@ export const countryGuidesSpainHongKong: Record<string, CountryGuideContent> = {
         paragraphs: [
           "Muslim families in Spain are concentrated around Madrid, Barcelona, Valencia, Seville and Málaga, with households also across Catalonia, Andalusia and the Mediterranean coast. Local weekend classes exist in some neighbourhoods; elsewhere the realistic choice is a long drive, an overcrowded group, or nothing structured at all. That gap is what usually sends a parent searching for Quran classes near them and landing on an online academy page.",
           "There is a second, quieter reason online tuition gets used here. Many children attend Spanish-language state or concertado schools where Islamic instruction is not part of the school day. Whatever Quran they learn happens after school and is organised by the family — often around football, extracurriculars and homework. A fixed weekly one-to-one call from home can fit that reality better than another cross-city trip.",
-          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during a free 30-minute trial before any ongoing payment — no credit card is required to book it.",
+          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during the 3 free 30-minute trial sessions before any ongoing payment — no credit card is required to book it.",
         ],
         bullets: [
           "Remote-only service — no claim of a NoorPath campus or meeting place in Spain.",
@@ -181,7 +181,7 @@ export const countryGuidesSpainHongKong: Record<string, CountryGuideContent> = {
         id: "spain-start",
         heading: "How should a family in Spain start this week?",
         directAnswer:
-          "Note your city, two workable CET/CEST windows, the learner’s honest reading level, and any female-tutor preference. Then request the free 30-minute trial with no credit card.",
+          "Note your city, two workable CET/CEST windows, the learner’s honest reading level, and any female-tutor preference. Then request the 3 free 30-minute trial sessions with no credit card.",
         paragraphs: [
           "Naming Madrid, Barcelona, Valencia or your own town helps matching understand school finish patterns. Add the female-tutor preference in the same message if it matters.",
           "After matching, protect a short daily echo at home — five minutes of repeating what the tutor corrected. Weekly lessons compound only when something happens on the other six days.",
@@ -197,6 +197,7 @@ export const countryGuidesSpainHongKong: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesHongKong.ts (Nov 2026); kept for reference.
   "online-quran-classes-hong-kong": {
     country: "Hong Kong",
     title: "Online Quran Classes in Hong Kong: Family & Expat Guide",
@@ -211,7 +212,7 @@ export const countryGuidesSpainHongKong: Record<string, CountryGuideContent> = {
           "Yes when a household can protect one recurring HKT slot and sit the learner in front of a screen with an adult nearby when needed. NoorPath teaches online only — there is no Hong Kong campus, branch classroom or home-visit service.",
         paragraphs: [
           "Hong Kong’s Muslim community includes local families, South and Southeast Asian households, and international expats across Hong Kong Island, Kowloon and the New Territories. Some families already have weekend or community options; online one-to-one tutoring is useful when a child needs individual correction, when another cross-harbour trip is costly after a long school day, or when an adult wants discreet beginner lessons after work.",
-          "Online tuition is not a community substitute. It does not replace mosque friendships or a local teacher who knows the family. It does provide weekly live listening and correction when that is the scarce resource. A free 30-minute trial is the honest way to test fit — no credit card is required.",
+          "Online tuition is not a community substitute. It does not replace mosque friendships or a local teacher who knows the family. It does provide weekly live listening and correction when that is the scarce resource. 3 free 30-minute trial sessions are the honest way to test fit — no credit card is required.",
         ],
         bullets: [
           "Remote-only service — no Hong Kong branch or campus claim.",
@@ -346,7 +347,7 @@ export const countryGuidesSpainHongKong: Record<string, CountryGuideContent> = {
         id: "hongkong-start",
         heading: "How should a Hong Kong family start this week?",
         directAnswer:
-          "Note two preferred HKT windows, an honest course goal and any female-tutor preference, then request a free 30-minute trial with no credit card.",
+          "Note two preferred HKT windows, an honest course goal and any female-tutor preference, then request 3 free 30-minute trial sessions with no credit card.",
         paragraphs: [
           "Protect five to ten minutes on non-lesson days for a short home echo of what was corrected. Continuity across exam weeks matters more than an intense plan that collapses mid-term.",
           "For UTC+8 household planning, the Singapore and Malaysia country hubs describe related evening patterns without inventing a Hong Kong campus.",

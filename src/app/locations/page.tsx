@@ -6,7 +6,7 @@ import LocationConversionBar from "@/components/LocationConversionBar";
 import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
 import { locations } from "@/data/locations";
 import { cities, isCityIndexable } from "@/data/cities";
-import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   PRIORITY_MARKETS,
@@ -319,7 +319,7 @@ export default function LocationsPage() {
               Start Your Free Trial <em style={{ color: "var(--gold-lt)" }}>Today</em>
             </h2>
             <p style={{ color: "rgba(255,255,255,.8)", marginBottom: 24 }}>
-              {TRIAL.durationMinutes}-minute trial for ${TRIAL.price}; no credit card required. {TRIAL.availabilityNote}
+              {TRIAL_OFFER}; no credit card required. {TRIAL.availabilityNote}
             </p>
             <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>
               Book Free Trial →

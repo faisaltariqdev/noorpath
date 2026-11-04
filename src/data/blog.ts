@@ -1104,7 +1104,7 @@ export const blogPosts: BlogPost[] = [
     slug: "new-muslim-guide-to-reading-quran",
     title: "New Muslim? How to Start Reading the Quran — Step-by-Step Revert Guide",
     description:
-      "A complete Quran guide for new Muslims and reverts: where to start reading, English translations, learning Arabic letters, your first surahs, salah basics, and patient 1-on-1 teachers for converts. Free trial class.",
+      "A complete Quran guide for new Muslims and reverts: where to start reading, English translations, learning Arabic letters, your first surahs, salah basics, and patient 1-on-1 teachers for converts. 3 free trial sessions.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1123,7 +1123,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-classes-usa-kids-guide",
     title: "Online Quran Classes for Kids in the USA — Parent Guide, Timings & Cost (2026)",
     description:
-      "Online Quran classes for kids in the USA: after-school EST/CST/PST schedules, certified male & female tutors, cost per month, safety checklist for American Muslim parents, and a free 30-minute trial class.",
+      "Online Quran classes for kids in the USA: after-school EST/CST/PST schedules, certified male & female tutors, cost per month, safety checklist for American Muslim parents, and 3 free 30-minute trial sessions.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -2842,7 +2842,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-classes-canada-for-kids",
     title: "Online Quran Classes Canada for Kids — Time Zones & Free Trial",
     description:
-      "Online Quran classes Canada for kids: ET/CT/MT/PT scheduling, after-school routines, Toronto context, female tutor requests, USD→CAD tips, and a free 30-minute trial. Online only.",
+      "Online Quran classes Canada for kids: ET/CT/MT/PT scheduling, after-school routines, Toronto context, female tutor requests, USD→CAD tips, and 3 free 30-minute trial sessions. Online only.",
     category: "Kids & Parenting",
     date: "2026-08-14",
     updatedAt: "2026-08-14",

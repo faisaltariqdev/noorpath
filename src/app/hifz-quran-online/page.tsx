@@ -11,7 +11,7 @@ const PATH = "/hifz-quran-online";
 const { metaTitle, metaDescription, keywords, ...props } = hifzQuranOnline;
 
 const hifzCourseJsonLd = buildStandardCourseJsonLd({
-  name: "Hifz Quran Online — Quran Memorization Program",
+  name: "Online Hifz Program — Quran Memorization",
   description:
     "Structured Quran memorisation programme with new lesson planning, ongoing revision, and one-to-one tutor support.",
   url: "https://www.noorpath.online/hifz-quran-online",

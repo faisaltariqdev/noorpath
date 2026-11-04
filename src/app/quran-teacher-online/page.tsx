@@ -8,7 +8,7 @@ import {
 } from "@/lib/organizationSchema";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Star, Shield, Clock, Users, Award } from "lucide-react";
-import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { PRICING_PLANS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import CTAForm from "@/components/CTAForm";
 
 export const revalidate = false;
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     q: "What happens during the free trial?",
-    a: `The ${TRIAL.durationMinutes}-minute trial introduces the proposed tutor, reviews the learner’s starting point, includes a short sample lesson and discusses possible next steps. It costs $${TRIAL.price}, requires no credit card and does not guarantee a recurring slot until availability is confirmed.`,
+    a: `The ${TRIAL_OFFER} introduce the proposed tutor, review the learner’s starting point, include short sample lessons and discuss possible next steps. They cost $${TRIAL.price}, require no credit card and do not guarantee a recurring slot until availability is confirmed.`,
   },
   {
     q: "How much does an online Quran teacher cost?",
@@ -227,7 +227,7 @@ export default function QuranTeacherOnlinePage() {
               { icon: <Users size={28} />, title: "Female Tutor Requests", desc: "Sisters and families may request a female Quran teacher. Matching is subject to the requested subject and schedule." },
               { icon: <Clock size={28} />, title: "Timezone Matching", desc: "Share your timezone and preferred lesson windows; available options are confirmed after your request." },
               { icon: <Star size={28} />, title: "Subject Matching", desc: "We match for Quran reading, Tajweed, Hifz, children, adults, and other stated learning goals." },
-              { icon: <CheckCircle size={28} />, title: "Trial Before Enrolment", desc: `Use the free ${TRIAL.durationMinutes}-minute trial to assess communication, lesson fit, and next steps before choosing a plan.` },
+              { icon: <CheckCircle size={28} />, title: "Trial Before Enrolment", desc: `Use the ${TRIAL_OFFER} to assess communication, lesson fit, and next steps before choosing a plan.` },
             ].map((item) => (
               <div key={item.title} className="content-card">
                 <div style={{ color: "var(--emerald)", marginBottom: 14 }}>{item.icon}</div>
@@ -298,7 +298,7 @@ export default function QuranTeacherOnlinePage() {
               <div style={{ background: "linear-gradient(135deg, #0a3d28, #0d5436)", borderRadius: 24, padding: 36, textAlign: "center" }}>
                 <div style={{ fontSize: "3rem", marginBottom: 16 }}>🕌</div>
                 <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.4rem", marginBottom: 14 }}>
-                  Start with a Free Trial Class
+                  Start with {TRIAL.classes} Free Trial Sessions
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 8, lineHeight: 1.7 }}>
                   We&apos;ll match a Quran teacher based on:
@@ -311,7 +311,7 @@ export default function QuranTeacherOnlinePage() {
                   ))}
                 </div>
                 <Link href="/free-quran-classes-online" style={{ display: "block", background: "var(--gold)", color: "var(--charcoal)", padding: "14px", borderRadius: 12, fontWeight: 700, textDecoration: "none", fontSize: "1rem", marginBottom: 12 }}>
-                  Book Free Trial Class →
+                  Start {TRIAL.classes} Free Trial Sessions →
                 </Link>
                 <div style={{ color: "rgba(255,255,255,.45)", fontSize: ".75rem" }}>No credit card required for the trial</div>
               </div>
@@ -382,7 +382,7 @@ export default function QuranTeacherOnlinePage() {
             request.
           </p>
           <Link href="/free-quran-classes-online" className="btn-primary-np">
-            Book Free Trial Class →
+            Start {TRIAL.classes} Free Trial Sessions →
           </Link>
         </div>
       </section>

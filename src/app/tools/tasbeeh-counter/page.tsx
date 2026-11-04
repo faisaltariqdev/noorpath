@@ -3,7 +3,7 @@ import Link from "next/link";
 import TasbeehCounter from "@/components/tools/TasbeehCounter";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
-import { BASE_URL } from "@/lib/academyFacts";
+import { BASE_URL, TRIAL } from "@/lib/academyFacts";
 import {
   Bell,
   CheckCircle2,
@@ -197,7 +197,7 @@ export default function TasbeehCounterPage() {
                     className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] font-bold text-sm transition-all shadow-md"
                     style={{ color: "var(--charcoal)" }}
                   >
-                    <span>Book Free 1-on-1 Trial Class</span>
+                    <span>Start {TRIAL.classes} Free Trial Sessions</span>
                     <span>→</span>
                   </Link>
                   <Link

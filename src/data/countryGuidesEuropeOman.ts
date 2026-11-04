@@ -5,6 +5,7 @@ import type { CountryGuideContent } from "@/data/countryGuideTypes";
  * Remote 1-on-1 Quran classes — structured direct answers for parents & LLM citation.
  */
 export const countryGuidesEuropeOman: Record<string, CountryGuideContent> = {
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-italy": {
     country: "Italy",
     title: "Online Quran Classes in Italy: Muslim Family & Parent Guide",
@@ -25,7 +26,7 @@ export const countryGuidesEuropeOman: Record<string, CountryGuideContent> = {
           "1-on-1 live lessons on the Italian clock (CET in winter, CEST in summer).",
           "Dedicated female tutor requests available for young girls and adult sisters.",
           "Personalised pace covering Noorani Qaida, Tajweed, Hifz, and daily Islamic duas.",
-          "Free 30-minute trial class with no credit card requirement.",
+          "3 free 30-minute trial sessions with no credit card requirement.",
         ],
       },
       {
@@ -63,6 +64,7 @@ export const countryGuidesEuropeOman: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-belgium": {
     country: "Belgium",
     title: "Online Quran Classes in Belgium: Parent & Expat Guide",
@@ -103,6 +105,7 @@ export const countryGuidesEuropeOman: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-switzerland": {
     country: "Switzerland",
     title: "Online Quran Classes in Switzerland: Family Guide (Zurich, Geneva, Basel)",
@@ -143,6 +146,7 @@ export const countryGuidesEuropeOman: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesOmanPakistanNigeria.ts (Nov 2026); kept for reference.
   "online-quran-classes-oman": {
     country: "Oman",
     title: "Online Quran Classes in Oman: Muscat, Salalah & Expat Guide",

@@ -16,7 +16,7 @@ interface Props {
 export default function RebuiltCountryView({ data, pageUrl }: Props) {
   const isNorthAmerica = data.slug === "online-quran-classes-usa" || data.slug === "online-quran-classes-canada";
   const waTrialText = encodeURIComponent(
-    `Assalamu Alaikum, I would like to book a free Quran trial class for ${data.countryName}. Please share tutor availability for ${data.timezone}.`
+    `Assalamu Alaikum, I would like to book the free Quran trial sessions for ${data.countryName}. Please share tutor availability for ${data.timezone}.`
   );
 
   return (
@@ -101,7 +101,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                     gap: 8,
                   }}
                 >
-                  Book Free Trial Class →
+                  Start {TRIAL.classes} Free Trial Sessions →
                 </a>
                 <WhatsAppLink
                   href={`${CONTACT.whatsappUrl}?text=${waTrialText}`}
@@ -523,7 +523,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
               </div>
             </section>
 
-            {/* ── REQUIRED SECTION 9: CTA — Book a Free Trial Class in [Country] ── */}
+            {/* ── REQUIRED SECTION 9: CTA — Start Free Trial Sessions in [Country] ── */}
             <section
               id="cta-bottom"
               style={{
@@ -540,7 +540,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                   100% Free · No Obligation
                 </span>
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "2rem", marginTop: 12, marginBottom: 10 }}>
-                  Book a Free Trial Class in {data.countryName}
+                  Start {TRIAL.classes} Free Trial Sessions in {data.countryName}
                 </h2>
                 <p style={{ color: "rgba(255,255,255,.82)", fontSize: ".95rem", lineHeight: 1.65, margin: 0 }}>
                   Experience our 1-on-1 teaching, test audio/video connectivity, and meet your matched tutor. Takes only 60 seconds to request your free trial.
@@ -630,7 +630,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                   <a href="#local-testimonials" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 4. Local Testimonials</a>
                   <a href="#why-choose" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 5. Why Parents Choose NoorPath</a>
                   <a href="#faqs" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 6. Frequently Asked Questions</a>
-                  <a href="#cta-bottom" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 7. Book Free Trial Class</a>
+                  <a href="#cta-bottom" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 7. Start Free Trial Sessions</a>
                 </div>
               </div>
 

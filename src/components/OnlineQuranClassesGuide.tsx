@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
+import { TRIAL } from "@/lib/academyFacts";
 
 const linkStyle = { color: "var(--emerald)", fontWeight: 700 };
 const priorityCountryNames = PRIORITY_MARKETS.map(({ country }) => country).join(", ");
@@ -390,7 +391,7 @@ export default function OnlineQuranClassesGuide() {
             Trustpilot profile
           </a>{" "}
           rather than publishing an unsupported aggregate rating. Reviews should support your
-          decision, not replace a trial lesson and your own checks.
+          decision, not replace the trial sessions and your own checks.
         </p>
       </section>
 
@@ -818,7 +819,7 @@ export default function OnlineQuranClassesGuide() {
             marginTop: 28,
           }}
         >
-          <h3 style={{ color: "#fff", marginTop: 0 }}>Start with a Free Trial Class</h3>
+          <h3 style={{ color: "#fff", marginTop: 0 }}>Start with {TRIAL.classes} Free Trial Sessions</h3>
           <p style={{ color: "rgba(255,255,255,.82)" }}>
             Meet a tutor, receive a level assessment and experience a real one-to-one lesson.
             No credit card and no obligation.

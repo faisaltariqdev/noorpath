@@ -4,10 +4,12 @@ import Link from "next/link";
 import { locations, getLocation } from "@/data/locations";
 import { getCountryLandingPageData, isRebuiltCountry } from "@/data/countryLandingPages";
 import RebuiltCountryView from "@/components/RebuiltCountryView";
+import CountryLandingPage, { countryLandingMetadata } from "@/components/country/CountryLandingPage";
+import { getCountryContent } from "@/data/countryMarkets";
 import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 import { getLocationFaqs, getLocationKeywords, getLocationSeoParagraphs } from "@/data/locationContent";
 import { getCountryGuide } from "@/data/countryGuides";
-import { CONTACT, ENROLLED_STUDENTS_DISPLAY, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import { CONTACT, ENROLLED_STUDENTS_DISPLAY, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL, TRIAL_OFFER, TRUSTPILOT } from "@/lib/academyFacts";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import {
   getCountryHubHreflang,
@@ -54,6 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const loc = getLocation(slug);
   if (!loc) return {};
+  if (getCountryContent(slug)) return countryLandingMetadata(slug);
   const content = getPriorityContent(slug);
   const description =
     content?.metadataDescription ??
@@ -118,6 +121,7 @@ export default async function LocationDetailPage({ params }: Props) {
   const { slug } = await params;
   const loc = getLocation(slug);
   if (!loc) notFound();
+  if (getCountryContent(slug)) return <CountryLandingPage slug={slug} />;
 
   const market = getPriorityMarket(slug);
   const priorityContent = getPriorityContent(slug);
@@ -159,7 +163,7 @@ export default async function LocationDetailPage({ params }: Props) {
     },
     {
       name: "Book a free trial",
-      text: `Request a free ${TRIAL.durationMinutes}-minute trial with no credit card using the form on this page.`,
+      text: `Request ${TRIAL_OFFER} with no credit card using the form on this page.`,
     },
     {
       name: "Confirm tutor match and recurring slot",
@@ -291,7 +295,7 @@ export default async function LocationDetailPage({ params }: Props) {
             {
               "@type": "HowTo",
               "@id": howToId,
-              name: `Book a ${loc.country} trial class`,
+              name: `Book ${loc.country} trial sessions`,
               description: `Steps to request a live online Quran trial for learners in ${loc.country}, with ${loc.timezone} scheduling confirmed after tutor matching.`,
               inLanguage: locale,
               totalTime: "PT30M",
@@ -441,7 +445,7 @@ export default async function LocationDetailPage({ params }: Props) {
               </div>
               <div style={{ marginTop: 22 }}>
                 <LocationHeroCtaCard
-                  whatsappText={`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`}
+                  whatsappText={`Assalamu Alaikum, I want to book the free Quran trial sessions (${loc.country}). Please share tutor availability and the details.`}
                   isNorthAmerica={slug === "online-quran-classes-usa" || slug === "online-quran-classes-canada"}
                 />
               </div>
@@ -466,7 +470,7 @@ export default async function LocationDetailPage({ params }: Props) {
                 </span>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.45rem", textAlign: "center", marginBottom: 4, lineHeight: 1.25 }}>
-                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Free</span> Trial Class
+                Book Your <span style={{ color: "var(--gold-lt)", fontStyle: "italic" }}>Free</span> Trial Sessions
               </h2>
               <p style={{ color: "rgba(255,255,255,.68)", fontSize: ".82rem", textAlign: "center", marginBottom: 10 }}>
                 Live 1-on-1 · {loc.timezone} scheduling · Tutor confirmed after matching
@@ -507,7 +511,7 @@ export default async function LocationDetailPage({ params }: Props) {
 
               {/* WhatsApp quick chat */}
               <WhatsAppLink
-                href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`)}`}
+                href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want to book the free Quran trial sessions (${loc.country}). Please share tutor availability and the details.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -823,7 +827,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Quran Classes for {loc.country}
                 </h3>
                 <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".83rem", marginBottom: 8, lineHeight: 1.6 }}>
-                  {TRIAL.durationMinutes}-minute trial for ${TRIAL.price} — no credit card needed.
+                  {TRIAL_OFFER} — no credit card needed.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, margin: "16px 0" }}>
                   {[
@@ -840,7 +844,7 @@ export default async function LocationDetailPage({ params }: Props) {
                   Book Free Trial →
                 </a>
                 <WhatsAppLink
-                  href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`)}`}
+                  href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I want to book the free Quran trial sessions (${loc.country}). Please share tutor availability and the details.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, background: "#25D366", color: "#0b3d2e", padding: "12px", borderRadius: 12, fontWeight: 800, textDecoration: "none", fontSize: ".9rem", marginTop: 10 }}
@@ -883,13 +887,13 @@ export default async function LocationDetailPage({ params }: Props) {
             Request an online tutor and preferred {loc.timezone} lesson time. Availability is confirmed after matching.
           </p>
           <a href="#trial" className="btn-primary-np">
-            Book Free Trial Class →
+            Start {TRIAL.classes} Free Trial Sessions →
           </a>
         </div>
       </section>
 
       <LocationConversionBar
-        whatsappText={`Assalamu Alaikum, I want to book a Quran trial class (${loc.country}). Please share tutor availability and the details.`}
+        whatsappText={`Assalamu Alaikum, I want to book the free Quran trial sessions (${loc.country}). Please share tutor availability and the details.`}
       />
     </>
   );

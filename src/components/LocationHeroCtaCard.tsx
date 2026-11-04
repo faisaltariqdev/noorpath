@@ -17,7 +17,7 @@ export default function LocationHeroCtaCard({ whatsappText, isNorthAmerica }: Pr
     <div className="location-hero-cta-card">
       <div className="location-hero-cta-text">
         <span className="location-hero-cta-pill">
-          {TRIAL.classes} Free Trial Classes
+          {TRIAL.classes} Free Trial Sessions
         </span>
         <span className="location-hero-cta-divider" aria-hidden="true">·</span>
         <span>No Credit Card</span>

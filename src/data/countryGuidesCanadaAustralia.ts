@@ -163,7 +163,7 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
         id: "canada-next-steps",
         heading: "What should a Canadian family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state your province or territory so the booking uses the correct ET/CT/MT/PT/AT/NT conversion, then review published USD pricing after tutor matching.",
+          "Request 3 free 30-minute trial sessions with no credit card, state your province or territory so the booking uses the correct ET/CT/MT/PT/AT/NT conversion, then review published USD pricing after tutor matching.",
         paragraphs: [
           "Use this country hub as the main enquiry page for Canada. Mention Toronto, Vancouver, Calgary, Ottawa, Montreal or another locality only so matching understands your clock and school routine — not because NoorPath has a Canadian campus. Bring a short learner brief to the trial and confirm the wall-clock time in writing around daylight-saving boundaries, especially where provincial rules differ.",
           "If a female tutor is preferred, state that when booking. Preferences narrow availability across Canadian zones and are confirmed at matching rather than promised in advance.",
@@ -255,7 +255,7 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
       },
       {
         id: "australia-tutor-trial",
-        heading: "What tutor evidence should families seek during a trial lesson?",
+        heading: "What tutor evidence should families seek during the trial sessions?",
         directAnswer:
           "Observe whether the tutor identifies level carefully, hears and explains errors accurately, models clearly, invites active recitation and adjusts language to the learner. Ask NoorPath for specific evidence behind any qualification claim and how tutors are selected, monitored and replaced. A trial shows initial fit; it cannot establish a guaranteed result or completion date.",
         paragraphs: [
@@ -335,7 +335,7 @@ export const countryGuidesCanadaAustralia: Record<string, CountryGuideContent> =
         id: "australia-next-steps",
         heading: "What should an Australian family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state your city or territory so the booking uses the correct AEST/AEDT/ACST/ACDT/AWST conversion, then review published USD pricing after tutor matching.",
+          "Request 3 free 30-minute trial sessions with no credit card, state your city or territory so the booking uses the correct AEST/AEDT/ACST/ACDT/AWST conversion, then review published USD pricing after tutor matching.",
         paragraphs: [
           "Use this country hub as the main enquiry page for Australia. Thin city templates are not the primary SEO owners for Australian searches — your state time zone and school routine matter more than a near-duplicate city URL. Bring a short learner brief to the trial and confirm the wall-clock time in writing around daylight-saving boundaries.",
         ],

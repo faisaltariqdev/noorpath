@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Trophy, BookOpen } from "lucide-react";
+import { TRIAL } from "@/lib/academyFacts";
 
 export interface QuizQuestion {
   question: string;
@@ -343,7 +344,7 @@ export default function InteractiveQuizGame({
                 textDecoration: "none",
               }}
             >
-              <BookOpen size={16} /> Book Free Trial Lesson
+              <BookOpen size={16} /> Start {TRIAL.classes} Free Trial Sessions
             </Link>
           </div>
         </div>

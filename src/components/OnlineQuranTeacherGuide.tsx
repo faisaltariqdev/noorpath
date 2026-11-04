@@ -28,7 +28,7 @@ export default function OnlineQuranTeacherGuide() {
         <strong>Direct answer:</strong> An online Quran teacher provides live, remote instruction
         in reading, Qaida, Tajweed, Hifz or related studies. Choose one by checking the learner&apos;s
         goal, the teacher&apos;s relevant knowledge and experience, safeguarding arrangements,
-        communication, lesson structure and progress records. Use a trial lesson to assess the
+        communication, lesson structure and progress records. Use the trial sessions to assess the
         actual teaching match before committing.
       </div>
 
@@ -49,7 +49,7 @@ export default function OnlineQuranTeacherGuide() {
           <li><a href="#evaluation" style={linkStyle}>Teacher evaluation checklist</a></li>
           <li><a href="#credentials" style={linkStyle}>Credentials and Ijazah checks</a></li>
           <li><a href="#learning-fit" style={linkStyle}>Fit by learner and course</a></li>
-          <li><a href="#trial" style={linkStyle}>Questions for a trial lesson</a></li>
+          <li><a href="#trial" style={linkStyle}>Questions for the trial sessions</a></li>
           <li><a href="#safeguarding" style={linkStyle}>Safeguarding and boundaries</a></li>
           <li><a href="#progress" style={linkStyle}>Evidence of progress</a></li>
           <li><a href="#comparison" style={linkStyle}>Comparison questions</a></li>
@@ -333,7 +333,7 @@ export default function OnlineQuranTeacherGuide() {
       </section>
 
       <section id="trial" style={sectionStyle}>
-        <h2>Questions to Ask During an Online Quran Trial Lesson</h2>
+        <h2>Questions to Ask During Online Quran Trial Sessions</h2>
         <p>
           A trial should reveal teaching, not merely introduce a sales process. Let the learner
           recite enough for a useful assessment, then ask:

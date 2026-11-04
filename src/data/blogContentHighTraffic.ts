@@ -1,5 +1,12 @@
 // High-traffic Tier-S articles — merged into blogContent via index spread
 
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL_OFFER } from "@/lib/academyFacts";
+
+/** NoorPath's own published plans, shown in the pricing guide next to market ranges. */
+const NOORPATH_PRICES_BOX = `<div class="highlight-box">
+            <strong>NoorPath Academy's published prices:</strong> ${PRICING_PLANS.map((p) => `${p.name} $${p.monthlyPriceUsd}/month (${p.sessionsPerMonth} × ${p.sessionMinutes}-minute sessions)`).join(", ")}. Plans are billed monthly in US dollars; sibling discounts are ${FAMILY_DISCOUNTS.map((d) => `${d.discountPercent}% for ${d.siblings}`).join(", ")}. <a href="/pricing">Compare all plans on the pricing page</a> or <a href="/free-quran-classes-online">request ${TRIAL_OFFER}</a> — no credit card required.
+          </div>`;
+
 const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
   .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
   .article-body h3 { font-size: 1.15rem; font-weight: 700; color: var(--emerald); margin: 26px 0 10px; }
@@ -328,7 +335,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ul>
 
           <div class="highlight-box">
-            <strong>Want your child to recite duas with correct Arabic?</strong> NoorPath Academy teaches kids ages 4–12 live 1-on-1 — Qaida, Quran and essential duas. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card.
+            <strong>Want your child to recite duas with correct Arabic?</strong> NoorPath Academy teaches kids ages 4–12 live 1-on-1 — Qaida, Quran and essential duas. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card.
           </div>`,
   },
 
@@ -651,7 +658,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ol>
 
           <div class="highlight-box">
-            <strong>Want correct pronunciation from day one?</strong> A live tutor hears and fixes each word. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card.
+            <strong>Want correct pronunciation from day one?</strong> A live tutor hears and fixes each word. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -723,13 +730,15 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
             </ul>
           </div>
 
+          ${NOORPATH_PRICES_BOX}
+
           <p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer in 2026: anywhere from <strong>$4 to $25 per class</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
 
           <div class="stat-row">
             <div class="stat-pill"><strong>$4–25</strong><span>Per class range</span></div>
             <div class="stat-pill"><strong>$30–80</strong><span>Typical monthly</span></div>
             <div class="stat-pill"><strong>2–5×</strong><span>Classes per week</span></div>
-            <div class="stat-pill"><strong>Free</strong><span>Trial class</span></div>
+            <div class="stat-pill"><strong>3 free</strong><span>Trial sessions</span></div>
           </div>
 
           <h2 id="table">How much do online Quran classes cost in 2026?</h2>
@@ -781,16 +790,16 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </details>
           <details class="faq-acc">
             <summary>Does NoorPath Academy offer a free trial?<span>+</span></summary>
-            <p>Yes, NoorPath Academy provides a completely free 30-minute trial lesson with a certified tutor without requiring any credit card details.</p>
+            <p>Yes, NoorPath Academy provides 3 free 30-minute trial sessions with a certified tutor without requiring any credit card details.</p>
           </details>
 
           <div class="tldr-box">
             <h3>TL;DR</h3>
-            <p>Online Quran classes cost between $4 and $25 per lesson, with monthly rates typically ranging from $30 to $80 for private tutoring. Costs depend on instructor certification, frequency, and whether you enroll in Noorani Qaida, Tajweed, or intensive Hifz. NoorPath Academy provides transparent monthly plans and a free 30-minute trial class.</p>
+            <p>Online Quran classes cost between $4 and $25 per lesson, with monthly rates typically ranging from $30 to $80 for private tutoring. Costs depend on instructor certification, frequency, and whether you enroll in Noorani Qaida, Tajweed, or intensive Hifz. NoorPath Academy provides transparent monthly plans and 3 free 30-minute trial sessions.</p>
           </div>
 
           <div class="gold-box">
-            <strong>Test the proposed match before enrolling.</strong> Request a <a href="/free-quran-classes-online">free 30-minute trial (no credit card)</a>, ask about the tutor&apos;s relevant credentials, and assess the lesson fit. See current <a href="/pricing">NoorPath pricing plans</a>.
+            <strong>Test the proposed match before enrolling.</strong> Request <a href="/free-quran-classes-online">3 free 30-minute trial sessions (no credit card)</a>, ask about the tutor&apos;s relevant credentials, and assess the lesson fit. See current <a href="/pricing">NoorPath pricing plans</a>.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -963,7 +972,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ol>
 
           <div class="gold-box">
-            <strong>Try it before deciding.</strong> The <a href="/online-quran-classes-for-kids">free trial class</a> takes 30 minutes, needs no credit card, and you will know within one session if it fits your child.
+            <strong>Try it before deciding.</strong> The <a href="/online-quran-classes-for-kids">3 free trial sessions</a> take 30 minutes each, need no credit card, and you will know within one session if it fits your child.
           </div>`,
   },
   "how-to-choose-online-quran-teacher": {
@@ -971,7 +980,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
     content: `<p>Online academies may use phrases such as "certified tutors" and "best Quran teachers" without showing evidence for the specific tutor offered. This <strong>12-point checklist</strong> explains how to ask for relevant credentials, what to assess in a trial class, and which pricing or safeguarding gaps need clarification.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> A good online Quran teacher has (1) verifiable certification, (2) teaches 1-on-1 with live correction, (3) offers a free trial, (4) sends written progress reports, and (5) works under an academy with clear safety rules. Test all five in one <a href="/free-quran-classes-online">free trial class</a> before paying anyone.
+            <strong>Quick answer:</strong> A good online Quran teacher has (1) verifiable certification, (2) teaches 1-on-1 with live correction, (3) offers a free trial, (4) sends written progress reports, and (5) works under an academy with clear safety rules. Test all five in the <a href="/free-quran-classes-online">3 free trial sessions</a> before paying anyone.
           </div>
 
           <h2 id="checklist">The 12-point checklist</h2>
@@ -1089,7 +1098,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </ul>
 
           <div class="gold-box">
-            <strong>Reading slowly or with mistakes?</strong> A live tutor can listen to your recitation and discuss suitable fluency or Tajweed goals. <a href="/free-quran-classes-online">Request a free 30-minute trial</a> for a child or adult; timezone availability is confirmed after matching.
+            <strong>Reading slowly or with mistakes?</strong> A live tutor can listen to your recitation and discuss suitable fluency or Tajweed goals. <a href="/free-quran-classes-online">Request 3 free 30-minute trial sessions</a> for a child or adult; timezone availability is confirmed after matching.
           </div>`,
   },
   "attahiyat-full-arabic-english-tashahhud": {
@@ -1180,7 +1189,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <div style="background:linear-gradient(135deg,#072b1d,#0a6e4f);border-radius:16px;padding:32px 24px;color:#fff;margin:36px 0;box-shadow:0 8px 24px rgba(10,110,79,.18);">
             <div style="display:inline-block;background:var(--gold);color:var(--charcoal);font-size:.75rem;font-weight:800;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">Live 1-on-1 Salah &amp; Quran Tutoring</div>
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.55rem;margin:0 0 10px;">Build Salah Fluency &amp; Quran Pronunciation for Your Family</h3>
-            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">Reciting Attahiyat, Tashahhud, and Surahs correctly is a lifelong foundation. NoorPath Academy provides certified native tutors for kids and adults with live pronunciation correction. Book a free 30-minute trial class.</p>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:640px;margin:0 0 20px;">Reciting Attahiyat, Tashahhud, and Surahs correctly is a lifelong foundation. NoorPath Academy provides certified native tutors for kids and adults with live pronunciation correction. Book 3 free 30-minute trial sessions.</p>
             <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;">
               <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:800;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;">Book 3 Free Classes →</a>
               <span style="font-size:.85rem;color:rgba(255,255,255,.8);">· No card required · Flexible timezone slots</span>
@@ -1476,7 +1485,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
 
           <div class="gold-box">
-            <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/free-quran-classes-online">Book a free 30-minute trial</a> for kids or adults.
+            <strong>Want your family to understand what they recite?</strong> NoorPath tutors teach Quran with meaning — not just words. <a href="/free-quran-classes-online">Book 3 free 30-minute trial sessions</a> for kids or adults.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -1634,7 +1643,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </div>
 
           <div class="gold-box">
-            <strong>Give your child a complete Islamic foundation</strong> — Quran, duas, and Islamic knowledge with a personal tutor. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial class</a>.
+            <strong>Give your child a complete Islamic foundation</strong> — Quran, duas, and Islamic knowledge with a personal tutor. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a>.
           </div>`,
   },
 };

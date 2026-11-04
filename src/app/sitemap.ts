@@ -22,6 +22,7 @@ const BRAND_ENTITY_UPDATE = new Date("2026-08-20");
  * Honest content stamp for pages last materially updated in the enterprise overhaul.
  */
 const SITE_CONTENT_STAMP = new Date("2026-08-20");
+const TEACHING_RESOURCES_LAUNCH = new Date("2026-11-04");
 /** Launch stamp for the free tools cluster (zakat calculator shipped 2026-09-02). */
 const TOOLS_LAUNCH_STAMP = new Date("2026-09-02");
 /**
@@ -221,6 +222,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/author/faisal-tariq`,                      priority: 0.85, changeFrequency: "monthly", lastModified: BRAND_ENTITY_UPDATE },
     { url: `${BASE}/our-tutors`,                               priority: 0.88, changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/islamic-resources`,                        priority: 0.87, changeFrequency: "weekly",  lastModified: TOOLS_LAUNCH_STAMP },
+    { url: `${BASE}/free-quran-teaching-resources`,            priority: 0.85, changeFrequency: "monthly", lastModified: TEACHING_RESOURCES_LAUNCH },
     ...toolsSitemapEntries(BASE),
     { url: `${BASE}/safeguarding`,                             priority: 0.65, changeFrequency: "monthly", lastModified: CONTENT_UPDATE },
     { url: `${BASE}/editorial-policy`,                         priority: 0.5,  changeFrequency: "yearly",  lastModified: CONTENT_UPDATE },

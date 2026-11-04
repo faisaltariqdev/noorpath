@@ -11,7 +11,7 @@ import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
 import { BASE_URL, ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { getCountryHubHreflang, PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { CheckCircle, Clock, Users, Award, Video, Shield, Lock } from "lucide-react";
-import { PRICING_PLANS } from "@/lib/academyFacts";
+import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -179,7 +179,7 @@ export default function OnlineQuranClassesPage() {
             <Link href="/courses" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>View All Courses</Link>
           </div>
           <div style={{ marginTop: 28 }}>
-            <LocationHeroCtaCard whatsappText="Assalamu Alaikum, I want to book a free online Quran trial class. Please share tutor availability and the next steps." />
+            <LocationHeroCtaCard whatsappText="Assalamu Alaikum, I want to book the free online Quran trial sessions. Please share tutor availability and the next steps." />
           </div>
         </div>
       </div>
@@ -276,7 +276,7 @@ export default function OnlineQuranClassesPage() {
             <div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "2.2rem", marginBottom: 16 }}>
                 Book Your Free 30-Minute<br />
-                <em style={{ color: "var(--gold-lt)" }}>Trial Class Today</em>
+                <em style={{ color: "var(--gold-lt)" }}>Trial Sessions Today</em>
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {[
@@ -292,7 +292,7 @@ export default function OnlineQuranClassesPage() {
             </div>
             <div className="cta-form-wrap">
               <h3 style={{ fontFamily: "'Playfair Display',serif", color: "#fff", fontSize: "1.25rem", marginBottom: 20, textAlign: "center" }}>
-                Book Your Free Trial Class
+                Start {TRIAL.classes} Free Trial Sessions
               </h3>
               <CTAForm />
             </div>
@@ -300,7 +300,7 @@ export default function OnlineQuranClassesPage() {
         </div>
       </section>
 
-      <LocationConversionBar whatsappText="Assalamu Alaikum, I want to book a free online Quran trial class. Please share tutor availability and the next steps." />
+      <LocationConversionBar whatsappText="Assalamu Alaikum, I want to book the free online Quran trial sessions. Please share tutor availability and the next steps." />
     </>
   );
 }

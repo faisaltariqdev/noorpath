@@ -14,7 +14,7 @@ export const revalidate = false;
 export const metadata: Metadata = {
   title: { absolute: "NoorPath Academy | Online Quran & Islamic Courses" },
   description:
-    "NoorPath Academy courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes and daily duas. Live 1-to-1 lessons and a free 30-minute trial.",
+    "NoorPath Academy courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes and daily duas. Live 1-to-1 lessons and 3 free 30-minute trial sessions.",
   keywords: [
     "online quran courses", "quran classes online", "noorani qaida online", "tajweed classes online",
     "hifz program online", "arabic language online", "islamic studies online", "quran for kids online",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "NoorPath Academy | Online Quran Courses",
-    description: "7 courses: Qaida, Tajweed, Hifz, Arabic and Islamic Studies. Free 30-minute trial.",
+    description: "7 courses: Qaida, Tajweed, Hifz, Arabic and Islamic Studies. 3 free 30-minute trial sessions.",
     images: ["/og-image.png"],
   },
 };
@@ -79,7 +79,7 @@ const faqs = [
   { q: "Can my child take multiple courses at once?", a: "You can request a learning plan that combines related subjects, such as Noorani Qaida with daily duas or Quran recitation with Islamic studies. The suitable lesson structure is confirmed after the learner's needs are reviewed." },
   { q: "Are the courses available for adults?", a: "Adult learners can request matching for Noorani Qaida, Quran reading, Tajweed, Hifz, Arabic, or Islamic studies. The suitable course and tutor are confirmed after reviewing the learner's level and goals." },
   { q: "Do courses include female Quran teachers?", a: "You can request a female Quran teacher when booking. Availability depends on the subject and schedule and is confirmed after your request." },
-  { q: "How much do the courses cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.durationMinutes}-minute trial is free and requires no credit card.` },
+  { q: "How much do the courses cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and require no credit card.` },
 ];
 
 const coursesJsonLd = {
@@ -244,7 +244,7 @@ export default function CoursesPage() {
             {[
               { icon: <Award size={22} />, title: "Certified Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Male and female tutors are available." },
               { icon: <Users size={22} />, title: "Female Tutor Requests", desc: "Sisters and families may request a female tutor; subject and schedule availability are confirmed after enquiry." },
-              { icon: <CheckCircle size={22} />, title: "Trial Before Enrolment", desc: "Use the free 30-minute trial to assess lesson fit before selecting a monthly plan." },
+              { icon: <CheckCircle size={22} />, title: "Trial Before Enrolment", desc: "Use the 3 free 30-minute trial sessions to assess lesson fit before selecting a monthly plan." },
             ].map((f) => (
               <div key={f.title} className="content-card" style={{ textAlign: "center" }}>
                 <div style={{ color: "var(--emerald)", display: "flex", justifyContent: "center", marginBottom: 12 }}>{f.icon}</div>

@@ -45,7 +45,7 @@ export const brandingVisibilityBlogContent = {
       <h2 id="future-of-learning">The Future of Quranic Education</h2>
       <p>As we look forward, NoorPath Academy remains committed to innovation. We are constantly integrating new tools to make learning more interactive and engaging, while never losing sight of the sacred nature of the Quran. Our goal is to empower the next generation of Muslims with the knowledge and confidence to lead a life guided by the Book of Allah.</p>
 
-      <p>Ready to start your journey? We invite you to experience the NoorPath difference firsthand with a <strong>free 30-minute trial class</strong>. No credit card is required—just a commitment to learn.</p>
+      <p>Ready to start your journey? We invite you to experience the NoorPath difference firsthand with <strong>3 free 30-minute trial sessions</strong>. No credit card is required—just a commitment to learn.</p>
       
       <p style="text-align: center; margin-top: 32px;">
         <a href="/free-quran-classes-online" style="display: inline-block; background: var(--gold); color: var(--charcoal); padding: 14px 32px; border-radius: 50px; font-weight: 700; text-decoration: none;">Book Your Free Trial Today →</a>

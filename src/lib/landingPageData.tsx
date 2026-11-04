@@ -1,6 +1,6 @@
 import { Award, BookOpen, CheckCircle, Clock, Home, Music, Brain, Users, Video, Shield, MapPin, Globe, UserCheck } from "lucide-react";
 import type { KeywordLandingPageProps } from "@/components/KeywordLandingPage";
-import { CANCELLATION_NOTICE_DAYS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { CANCELLATION_NOTICE_DAYS, PRICING_PLANS, TRIAL, TRIAL_OFFER, TUTOR_FACTS } from "@/lib/academyFacts";
 
 const BASE_CRUMB = [
   { label: "Home", href: "/" },
@@ -33,7 +33,7 @@ export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & 
   sectionSubtitle:
     "Learn Quran online from home through live one-to-one lessons, tutor matching by timezone, and a structured curriculum from Qaida to Hifz.",
   quickAnswer:
-    `One way to <strong>learn Quran online</strong> is through live <strong>1-on-1 classes</strong> with a tutor — starting with Noorani Qaida, then Quran reading, then Tajweed. NoorPath offers a free ${TRIAL.durationMinutes}-minute trial with no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your free class →</a>`,
+    `One way to <strong>learn Quran online</strong> is through live <strong>1-on-1 classes</strong> with a tutor — starting with Noorani Qaida, then Quran reading, then Tajweed. NoorPath offers ${TRIAL_OFFER} with no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your free class →</a>`,
   seoIntro:
     'Whether you are a parent searching for your child, an adult returning to Quran, or a complete beginner, <strong>learning Quran online</strong> can provide access to live one-to-one teaching from home. NoorPath Academy matches learners with tutors by needs, timezone, preferences, and availability. Unlike self-directed recordings, a live tutor can listen to Makharij (pronunciation) and provide feedback in real time.',
   phases: [
@@ -55,7 +55,7 @@ export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & 
     { q: "How long does it take to learn Quran online?", a: "Learning time is individual and depends on starting level, lesson frequency, practice, goals, and pace. A tutor can suggest an illustrative path after assessing the learner." },
     { q: "Is learning Quran online effective?", a: "Live 1-on-1 classes provide direct tutor attention and real-time pronunciation feedback. Results still depend on the learner's attendance, practice, and pace." },
     { q: "Do you offer learn Quran online for kids?", a: "Yes. Programmes are available for children ages 4–12, with lesson arrangements based on learner needs and tutor availability." },
-    { q: "Is the first class really free?", a: `Yes — new learners can request one live ${TRIAL.durationMinutes}-minute trial. No credit card is required and tutor availability is confirmed after the request.` },
+    { q: "Is the first class really free?", a: `Yes — new learners can request ${TRIAL_OFFER}, live and one-to-one. No credit card is required and tutor availability is confirmed after the request.` },
     { q: "What is the best age to learn Quran online?", a: "Children can start from age 4 with adapted sessions, and adults can begin at any age. The suitable format depends on the individual learner." },
     { q: "Do I need to know Arabic to learn Quran online?", a: "No. You learn to read the Arabic script of the Quran — not conversational Arabic. Your tutor teaches pronunciation from the very first letter." },
   ],
@@ -86,12 +86,12 @@ export const onlineQuranAcademy: Omit<KeywordLandingPageProps, "canonicalPath"> 
   audience: "Muslim families seeking structured online Quran education",
   h1: "Online Quran Academy",
   heroText:
-    `NoorPath Academy is an <strong style="color:var(--gold-lt)">online Quran academy</strong> offering live 1-on-1 tutoring rather than pre-recorded lessons. <strong style="color:var(--gold-lt)">Free ${TRIAL.durationMinutes}-minute trial class.</strong>`,
+    `NoorPath Academy is an <strong style="color:var(--gold-lt)">online Quran academy</strong> offering live 1-on-1 tutoring rather than pre-recorded lessons. <strong style="color:var(--gold-lt)">${TRIAL_OFFER}.</strong>`,
   sectionTitle: <>Why Choose Our <em className="accent">Online Quran Academy</em></>,
   sectionSubtitle:
     "NoorPath is a dedicated Quran academy with live one-to-one lessons, structured programmes, and tutor matching based on learner needs and availability.",
   quickAnswer:
-    `An <strong>online Quran academy</strong> offers structured Quran learning through online lessons. NoorPath Academy provides live 1-on-1 classes and a free ${TRIAL.durationMinutes}-minute trial with no credit card required. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free trial →</a>`,
+    `An <strong>online Quran academy</strong> offers structured Quran learning through online lessons. NoorPath Academy provides live 1-on-1 classes and ${TRIAL_OFFER} with no credit card required. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free trial →</a>`,
   seoIntro:
     'When comparing an <strong>online Quran academy</strong>, families may consider lesson format, curriculum, scheduling, and pricing. NoorPath Academy offers live one-to-one lessons, a structured Noorani Qaida-to-Hifz curriculum, family plans, and tutor matching based on timezone and current availability.',
   phases: [
@@ -117,10 +117,10 @@ export const onlineQuranAcademy: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { q: "What is an online Quran academy?", a: "An online Quran academy provides Quran education via online lessons. NoorPath offers live one-to-one lessons, structured programmes, tutor matching, and enrolment support." },
     { q: "How is NoorPath different from tutor marketplaces?", a: "Tutor marketplaces allow users to select independent listings. NoorPath matches a tutor based on learner needs, preferences, schedule, timezone, and current availability." },
     { q: "What courses does your online Quran academy offer?", a: "Noorani Qaida, Quran reading, Tajweed, Hifz memorization, Arabic language, Islamic studies, and daily duas for kids — all with live 1-on-1 instruction." },
-    { q: "How much does online Quran academy cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. New learners can request a free ${TRIAL.durationMinutes}-minute trial with no credit card required.` },
+    { q: "How much does online Quran academy cost?", a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. New learners can request ${TRIAL_OFFER} with no credit card required.` },
     { q: "Do you have an online Quran academy for kids?", a: "Yes — ages 4–12 with child-specialist tutors. See our dedicated kids program page." },
     { q: "Where is NoorPath Academy located?", a: "We are an online academy serving families worldwide — with timezone-friendly slots for UK, USA, Canada, Australia, UAE, and Pakistan." },
-    { q: "How do I enroll in the online Quran academy?", a: "Book a free 30-minute trial via the form below. After your trial, choose a monthly plan. No payment until you decide to continue." },
+    { q: "How do I enroll in the online Quran academy?", a: "Book 3 free 30-minute trial sessions via the form below. After your trial, choose a monthly plan. No payment until you decide to continue." },
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "Online Quran Academy" }],
   ctaHeadline: <>Join Our <em style={{ color: "var(--gold-lt)" }}>Online Quran Academy</em></>,
@@ -147,11 +147,11 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
   serviceDescription: "Online Tajweed classes with live one-to-one tutoring and real-time recitation feedback.",
   h1: "Learn Tajweed Online",
   heroText:
-    'Study Quran recitation through live <strong style="color:var(--gold-lt)">Tajweed classes online</strong> with one-to-one tutor feedback. <strong style="color:var(--gold-lt)">Free trial lesson.</strong>',
+    'Study Quran recitation through live <strong style="color:var(--gold-lt)">Tajweed classes online</strong> with one-to-one tutor feedback. <strong style="color:var(--gold-lt)">3 free trial sessions.</strong>',
   sectionTitle: <>Master Tajweed <em className="accent">Online</em></>,
   sectionSubtitle: "Tajweed covers Quran recitation rules such as Noon Sakinah, Madd, Ghunna, and Qalqalah, practised using Quran verses.",
   quickAnswer:
-    `To <strong>learn Tajweed online</strong>, live video lessons allow a tutor to listen to your recitation and provide feedback. NoorPath offers Tajweed programmes for different levels, with a free ${TRIAL.durationMinutes}-minute trial available. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free Tajweed lesson →</a>`,
+    `To <strong>learn Tajweed online</strong>, live video lessons allow a tutor to listen to your recitation and provide feedback. NoorPath offers Tajweed programmes for different levels, with ${TRIAL_OFFER} available. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free Tajweed lesson →</a>`,
   seoIntro:
     '<strong>Learning Tajweed online</strong> gives learners access to live recitation feedback when local lessons are not practical. The programme covers Makharij, Noon Sakinah, Madd, Qalqalah, and Ghunna using Quran verses. It is intended for learners who can already read basic Quran and for advanced students preparing for further study.',
   phases: [
@@ -190,15 +190,15 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
 export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Online Hifz Program for Kids & Adults — 1-on-1 | NoorPath",
   metaDescription:
-    `Structured Hifz memorization with revision goals and a personal Hafiz tutor. 1-on-1 live classes, flexible timings. Start with ${TRIAL.classes} free trial classes.`,
+    `Structured Hifz memorization with revision goals and a personal Hafiz tutor. 1-on-1 live classes, flexible timings. Start with ${TRIAL_OFFER}.`,
   keywords: [
     "hifz quran online", "hifz online", "quran memorization online", "online hifz program",
     "memorize quran online", "hifz classes online", "online hifz course", "hifz tutor online",
     "quran hifz online for kids", "hifz e quran online",
   ],
-  serviceName: "Hifz Quran Online — Memorization Program",
+  serviceName: "Online Hifz Program — Quran Memorization",
   serviceDescription: "Structured online Quran memorization with live one-to-one tutoring and a Sabaq, Sabqi, Manzil revision system.",
-  h1: "Hifz Quran Online",
+  h1: "Online Hifz Program for Kids & Adults",
   heroText:
     'Study Quran memorization from home through a live <strong style="color:var(--gold-lt)">Hifz programme online</strong>. Structured Juz-by-Juz learning with revision. Kids and adults welcome. <strong style="color:var(--gold-lt)">Free trial.</strong>',
   sectionTitle: <>Online Hifz Program with <em className="accent">Live Tutoring</em></>,
@@ -219,21 +219,25 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
     { icon: <CheckCircle size={22} />, title: "Revision System", desc: "Sabaq (new), Sabqi (recent), and Manzil (older) provide a structured revision framework." },
     { icon: <Users size={22} />, title: "Kids & Adults", desc: "The programme is available for children from age 7 and for adult learners." },
     { icon: <Clock size={22} />, title: "Consistent Schedule", desc: "Lesson frequency is selected according to the learner's plan and available schedule." },
-    { icon: <BookOpen size={22} />, title: "Sanad Track", desc: "Advanced students can pursue Ijazah and chain of transmission certification." },
+    { icon: <BookOpen size={22} />, title: "Ijazah Questions", desc: "Advanced students can ask about Ijazah study; whether it is offered depends on the matched tutor." },
   ],
   faqs: [
     { q: "Can I do Hifz Quran online?", a: "Yes. Live online Hifz lessons can support memorization and revision from home. Progress depends on consistency, practice, lesson frequency, and individual pace." },
     { q: "How long does it take to complete Hifz online?", a: "Completion time is individual and depends on starting level, age, lesson frequency, revision, and pace. Any estimate after assessment is illustrative, not a guaranteed timeline." },
     { q: "Can adults memorize Quran online?", a: "Yes. Adult learners can follow an online Hifz programme adjusted to their goals, schedule, and pace." },
-    { q: "What is the Sabaq Sabqi Manzil system?", a: "Sabaq is new memorization, Sabqi revises recent portions (last 10 days), and Manzil revises older completed Juz weekly — the standard Hifz methodology worldwide." },
+    { q: "What is the Sabaq Sabqi Manzil system?", a: "Sabaq is new memorization, Sabqi revises recent portions (last 10 days), and Manzil revises older completed Juz weekly — a widely used Hifz revision method." },
+    { q: "How much does the online Hifz program cost?", a: `Plans are billed monthly in USD: ${PRICING_PLANS.map((p) => `${p.name} $${p.monthlyPriceUsd} (${p.sessionsPerMonth} × ${p.sessionMinutes}-minute sessions)`).join(", ")}. The tutor suggests a lesson frequency after the trial; you choose the plan.` },
+    { q: "Are online Hifz classes free?", a: `The first ${TRIAL_OFFER} cost nothing and need no credit card. Ongoing Hifz lessons are on a paid monthly plan.` },
+    { q: "Can my daughter memorise with a female Hafiza?", a: `${TUTOR_FACTS.femaleTutors} Ask for one when you enquire; she is assigned subject to availability and confirmed before the trial.` },
     { q: "Do you offer Hifz for kids online?", a: "Yes — ages 7+ with child-friendly Hafiz tutors and shorter initial sessions that grow with progress." },
     { q: "How many hours per day should I study Hifz online?", a: "The suitable lesson and revision time varies by learner. A tutor can suggest an illustrative routine based on goals, starting level, and availability." },
   ],
-  breadcrumbs: [...BASE_CRUMB, { label: "Hifz Quran Online" }],
+  breadcrumbs: [...BASE_CRUMB, { label: "Online Hifz Program" }],
   ctaHeadline: <>Begin Your <em style={{ color: "var(--gold-lt)" }}>Hifz Journey Online</em></>,
-  ctaSubtext: "Request a free trial lesson and discuss an individual memorization and revision plan.",
+  ctaSubtext: "Request 3 free trial sessions and discuss an individual memorization and revision plan.",
   relatedLinks: [
-    { href: "/hifz-quran-online", label: "Hifz Program Details" },
+    { href: "/tools/hifz-calculator", label: "Free Hifz planner" },
+    { href: "/pricing", label: "Hifz plan prices" },
     { href: "/blog/how-to-memorize-quran-faster", label: "Memorization Tips" },
     { href: "/online-quran-classes-for-kids", label: "Kids Quran Classes" },
     { href: "/learn-quran-online", label: "Learn Quran Online" },
@@ -243,7 +247,7 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
 export const quranLessonOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Quran Lesson Online — Live 1-on-1 Classes | NoorPath Academy",
   metaDescription:
-    "Book live Quran lessons online. 1-on-1 sessions for Qaida, reading, Tajweed and Hifz. Kids and adults. Free 30-minute trial lesson.",
+    "Book live Quran lessons online. 1-on-1 sessions for Qaida, reading, Tajweed and Hifz. Kids and adults. 3 free 30-minute trial sessions.",
   keywords: [
     "quran lesson online", "quran lessons online", "online quran lesson",
     "quran class online", "private quran lesson online", "live quran lesson",
@@ -253,11 +257,11 @@ export const quranLessonOnline: Omit<KeywordLandingPageProps, "canonicalPath"> &
   serviceDescription: "Live one-to-one Quran lessons online, matched to the learner's level, goals, schedule, and tutor availability.",
   h1: "Quran Lesson Online",
   heroText:
-    'Private <strong style="color:var(--gold-lt)">Quran lessons online</strong> — not group classes, not recordings. One tutor, one student, live on Zoom. <strong style="color:var(--gold-lt)">Book a free trial lesson today.</strong>',
+    'Private <strong style="color:var(--gold-lt)">Quran lessons online</strong> — not group classes, not recordings. One tutor, one student, live on Zoom. <strong style="color:var(--gold-lt)">Book 3 free trial sessions today.</strong>',
   sectionTitle: <>Live Quran Lessons <em className="accent">Tailored to You</em></>,
   sectionSubtitle: "Lessons are adapted to your level — whether you're learning your first Arabic letter or developing advanced Tajweed.",
   quickAnswer:
-    `A <strong>Quran lesson online</strong> is a live 1-on-1 video session in which a tutor teaches, listens to recitation, and provides feedback in real time. New learners can request a free ${TRIAL.durationMinutes}-minute trial at NoorPath. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free lesson →</a>`,
+    `A <strong>Quran lesson online</strong> is a live 1-on-1 video session in which a tutor teaches, listens to recitation, and provides feedback in real time. New learners can request ${TRIAL_OFFER} at NoorPath. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book free lesson →</a>`,
   seoIntro:
     'Live one-to-one <strong>Quran lessons online</strong> give the learner direct tutor attention during the scheduled session. Lesson content is adapted to recitation, pace, and goals. Programmes are available for children ages 4+, teens, and adults from complete beginner to advanced Hifz study.',
   phases: [
@@ -277,16 +281,16 @@ export const quranLessonOnline: Omit<KeywordLandingPageProps, "canonicalPath"> &
   faqs: [
     { q: "What happens in an online Quran lesson?", a: "Your tutor reviews homework, teaches new material (letters, reading, or Tajweed rules), listens to your recitation, corrects mistakes live, and assigns practice for the next session." },
     { q: "How long is each Quran lesson online?", a: `Published plan session lengths are ${PRICING_PLANS.map((plan) => `${plan.name}: ${plan.sessionMinutes} minutes`).join("; ")}.` },
-    { q: "Can I book a single trial Quran lesson?", a: `Yes — new learners can request one free ${TRIAL.durationMinutes}-minute trial lesson. No credit card is required and tutor availability is confirmed after the request.` },
+    { q: "Can I book a single trial Quran lesson?", a: `Yes — new learners get ${TRIAL_OFFER}, so you can try a single lesson before committing. No credit card is required and tutor availability is confirmed after the request.` },
     { q: "How many Quran lessons per week do I need?", a: "Lesson frequency is individual and depends on goals, starting level, practice time, and tutor availability. The published plans offer one, two, or four sessions per week." },
     { q: "Are Quran lessons online suitable for children?", a: "Yes — our child-specialist tutors use engaging methods for ages 4–12 with shorter, fun sessions." },
     { q: "What is included in each Quran lesson?", a: "Homework review, new teaching, live recitation with correction, and assigned practice until the next lesson. Parents receive a summary for children's lessons." },
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "Quran Lesson Online" }],
   ctaHeadline: <>Book Your First <em style={{ color: "var(--gold-lt)" }}>Quran Lesson Free</em></>,
-  ctaSubtext: "Request one free live trial lesson before selecting a monthly plan.",
+  ctaSubtext: "Request 3 free live trial sessions before selecting a monthly plan.",
   relatedLinks: [
-    { href: "/free-quran-classes-online", label: "Free Quran Trial Class" },
+    { href: "/free-quran-classes-online", label: "Free Quran Trial Sessions" },
     { href: "/quran-teacher-online", label: "Find a Quran Teacher" },
     { href: "/online-quran-classes-for-kids", label: "Kids Lessons" },
     { href: "/pricing", label: "Lesson Pricing" },
@@ -306,7 +310,7 @@ export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath">
   serviceDescription: "Structured online Quran study program with live 1-on-1 tutoring for all ages and levels.",
   h1: "Studying Quran Online",
   heroText:
-    'Structured <strong style="color:var(--gold-lt)">Quran study online</strong> with a personal tutor — not self-paced apps alone. Live classes, real correction, real progress. <strong style="color:var(--gold-lt)">Free trial session.</strong>',
+    'Structured <strong style="color:var(--gold-lt)">Quran study online</strong> with a personal tutor — not self-paced apps alone. Live classes, real correction, real progress. <strong style="color:var(--gold-lt)">3 free trial sessions.</strong>',
   sectionTitle: <>A Structured Way to <em className="accent">Study Quran Online</em></>,
   sectionSubtitle: "Live online study gives a tutor the opportunity to guide recitation, review practice, and support a consistent routine.",
   quickAnswer:
@@ -332,7 +336,7 @@ export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath">
     { q: "How should I study Quran online effectively?", a: "Book 2–3 live lessons per week, practice 15–20 minutes daily between sessions, and follow your tutor's structured plan from Qaida through Tajweed." },
     { q: "Can children study Quran online?", a: "Yes — ages 4+ with specialist tutors. Shorter sessions, visual Qaida, and games keep children engaged while studying Quran online." },
     { q: "What do I need to study Quran online?", a: "A laptop or tablet with camera, stable internet, Zoom installed, and a printed Noorani Qaida or Mushaf. Your tutor guides everything else." },
-    { q: "Can I try studying Quran online for free?", a: "Yes — book a free 30-minute trial session. Experience a real study lesson before enrolling." },
+    { q: "Can I try studying Quran online for free?", a: "Yes — book 3 free 30-minute trial sessions. Experience a real study lesson before enrolling." },
     { q: "How is studying Quran online different from learning Quran online?", a: "They mean the same thing at NoorPath — live 1-on-1 classes with structured curriculum. 'Studying' often implies regular long-term commitment; we support both casual learners and serious Hifz students." },
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "Studying Quran Online" }],
@@ -399,7 +403,7 @@ export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { 
   sectionSubtitle:
     "Distance is the single biggest reason children in Muslim-minority areas stop learning Quran. A live online tutor removes the drive without removing the teacher.",
   quickAnswer:
-    `Families with <strong>no masjid or madrasa nearby</strong> can learn Quran through live <strong>one-to-one online lessons</strong>. A tutor listens to the child read and corrects pronunciation in real time, so no parent needs to already know Arabic. NoorPath Academy matches tutors by timezone and language preference, and offers a free ${TRIAL.durationMinutes}-minute trial with no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial →</a>`,
+    `Families with <strong>no masjid or madrasa nearby</strong> can learn Quran through live <strong>one-to-one online lessons</strong>. A tutor listens to the child read and corrects pronunciation in real time, so no parent needs to already know Arabic. NoorPath Academy matches tutors by timezone and language preference, and offers ${TRIAL_OFFER} with no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial →</a>`,
   seoIntro:
     'In many towns and rural areas there is no masjid, no madrasa, and no Quran teacher within a reasonable drive. Weekend classes, where they exist at all, can mean an hour in the car each way — and that is the point at which most families quietly give up. <strong>Online Quran classes</strong> change what is being asked of you: instead of moving the child to the teacher, the lesson happens at your kitchen table. NoorPath Academy is an online-only academy, so this is not a fallback version of a local service — it is how every lesson is taught. Tutors are matched by the learner\'s level, timezone, and language of instruction, which matters when a child speaks English or a local language but not Urdu or Arabic.',
   steps: [
@@ -432,7 +436,7 @@ export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { 
     { q: "My child is the only Muslim in their class. Does that change how you teach?", a: "It often changes motivation more than method. Tell the tutor during matching — knowing a child has no Muslim peers helps them pace expectations and keep lessons encouraging rather than pressured." },
     { q: "Can we request a female Quran teacher if there is no one local?", a: "Yes. Female tutors are available for sisters and daughters — choose a female tutor when booking the trial. Every tutor holds an Ijazah or a Quran teaching certificate, and there is no extra charge." },
     { q: "Our week is unpredictable. How flexible is the timing?", a: "Lessons are one-to-one, so the slot is yours rather than a fixed class timetable. Share the evening, weekend or school-holiday windows that work in your local timezone; a recurring time is confirmed after tutor matching, and it can be revisited when work or school terms change." },
-    { q: "How much does it cost and can we try it first?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and needs no credit card, so you can judge the fit before paying anything.` },
+    { q: "How much does it cost and can we try it first?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and need no credit card, so you can judge the fit before paying anything.` },
   ],
   locations: [
     { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST — small, spread-out communities" },
@@ -446,7 +450,7 @@ export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { 
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "No Masjid Nearby" }],
   ctaHeadline: <>No Masjid Nearby? <em style={{ color: "var(--gold-lt)" }}>Start This Week</em></>,
-  ctaSubtext: "Book a free trial lesson from home — meet the tutor, check the audio, and see how your child responds before you decide anything.",
+  ctaSubtext: "Book 3 free trial sessions from home — meet the tutor, check the audio, and see how your child responds before you decide anything.",
   relatedLinks: [
     { href: "/quran-classes-near-me", label: "Searching “Quran Classes Near Me”? Read This First" },
     { href: "/female-quran-teacher-online", label: "Request a Female Quran Teacher" },
@@ -479,7 +483,7 @@ export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { 
 export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Quran Classes Near Me? Live 1-on-1 Online Tutors, Any Timezone | NoorPath",
   metaDescription:
-    "Searched “Quran classes near me” and found nothing that fits? NoorPath is online-only: live 1-on-1 Quran lessons at home, flexible timing in your timezone, female tutors on request. Free 30-minute trial, no credit card.",
+    "Searched “Quran classes near me” and found nothing that fits? NoorPath is online-only: live 1-on-1 Quran lessons at home, flexible timing in your timezone, female tutors on request. 3 free 30-minute trial sessions, no credit card.",
   keywords: [
     "quran classes near me",
     "quran teacher near me",
@@ -520,12 +524,12 @@ export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> 
   sectionSubtitle:
     "NoorPath Academy has no building to drive to, anywhere. Every lesson is a live video call between one learner and one tutor — which is exactly why the class can be “near” a family in a village in Ireland and a flat in Singapore on the same day.",
   quickAnswer:
-    `<strong>“Quran classes near me”</strong> returns two different kinds of result: places you can drive to, and online academies that teach remotely. NoorPath Academy is the second kind — <strong>online-only, no premises</strong>. If there is no usable class within reach, a live <strong>1-on-1 online tutor</strong> teaches your child (or you) at home, at a time that fits your timezone, with <strong>English-speaking and female tutors available</strong>. Start with a free ${TRIAL.durationMinutes}-minute trial, no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book the free trial →</a>`,
+    `<strong>“Quran classes near me”</strong> returns two different kinds of result: places you can drive to, and online academies that teach remotely. NoorPath Academy is the second kind — <strong>online-only, no premises</strong>. If there is no usable class within reach, a live <strong>1-on-1 online tutor</strong> teaches your child (or you) at home, at a time that fits your timezone, with <strong>English-speaking and female tutors available</strong>. Start with ${TRIAL_OFFER}, no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book the free trial →</a>`,
   seoIntro:
     'For a Muslim family in a city with several masjids, “near me” is a useful filter. For a family in a small town in Norway, a suburb in Texas with one masjid forty minutes away, or an expat compound in the Gulf where the only class runs during work hours, the same search mostly produces frustration. This page is written for the second group. It explains plainly what an <strong>online-only Quran academy</strong> can and cannot replace, how <strong>flexible timing</strong> works when the lesson is one-to-one, how to <strong>request a female Quran teacher</strong>, and how to judge a tutor safely when there is no local community to ask. Where a good local class exists within reach, use it — many families sensibly do both: the community class for belonging, and a weekly online slot for the individual correction a group cannot give.',
   steps: [
     { title: "Tell us what “near me” looks like for you", desc: "Your country and timezone, the learner's age and level, whether you need instruction in English, and whether you are requesting a female tutor. If there is nothing local at all, say so — it changes the starting plan." },
-    { title: "Meet a matched tutor in a free live lesson", desc: `A ${TRIAL.durationMinutes}-minute one-to-one trial at home. Hear how the tutor explains letters, check the audio and video from your own room, and let the child (or yourself) decide whether it feels right. No credit card.` },
+    { title: "Meet a matched tutor in free live lessons", desc: `${TRIAL.classes} free ${TRIAL.durationMinutes}-minute one-to-one trial sessions at home. Hear how the tutor explains letters, check the audio and video from your own room, and let the child (or yourself) decide whether it feels right. No credit card.` },
     { title: "Fix a recurring slot you can actually keep", desc: "Because the lesson is one-to-one, the slot is built around your evenings, weekends or school-run — not a hall timetable. Confirmed after matching; revisited when school terms, shifts or seasons change." },
     { title: "Keep a short daily echo at home", desc: "Five to ten minutes repeating the lesson between sessions replaces the daily reinforcement a local madrasa would have provided. The Parent Portal shows homework and attendance so you never have to guess." },
   ],
@@ -552,7 +556,7 @@ export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { q: "Our child only speaks English. Will the tutor be able to teach them?", a: "You can request instruction in English when booking. Tutor and language availability are confirmed during matching, and the free trial lets you hear exactly how the tutor explains things before you commit." },
     { q: "How do I know an online tutor is safe when I have no local community to ask?", a: "Read the published safeguarding policy first, use the free trial to watch a full lesson yourself, keep communication on official channels, and stay present for a child's early lessons. Every tutor holds an Ijazah or a Quran teaching certificate — ask to see it." },
     { q: "Is online worse than a local madrasa for my child?", a: "They trade off differently. A madrasa gives in-person contact and a peer group that online lessons do not replace. One-to-one online lessons give undivided tutor attention, real-time correction and no travel. Where the realistic local alternative is nothing, the fair comparison is with nothing — and many families with a local class still add a weekly online slot for individual correction." },
-    { q: "How much does it cost and can we try before paying?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price}, needs no credit card, and tutor availability is confirmed after the request.` },
+    { q: "How much does it cost and can we try before paying?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free, need no credit card, and tutor availability is confirmed after the request.` },
   ],
   locations: [
     { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "GMT/BST — after-school & weekend slots" },
@@ -564,19 +568,29 @@ export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { href: "/locations/online-quran-classes-spain", label: "🇪🇸 Spain", note: "CET/CEST — Madrid, Barcelona & beyond" },
     { href: "/locations/online-quran-classes-hong-kong", label: "🇭🇰 Hong Kong", note: "HKT — Island, Kowloon & NT" },
     { href: "/locations/online-quran-classes-germany", label: "🇩🇪 Germany", note: "CET — evening windows" },
+    { href: "/locations/online-quran-classes-pakistan", label: "🇵🇰 Pakistan", note: "PKT — Urdu or English, after school" },
+    { href: "/locations/online-quran-classes-india", label: "🇮🇳 India", note: "IST — Mumbai, Hyderabad & beyond" },
+    { href: "/locations/online-quran-classes-singapore", label: "🇸🇬 Singapore", note: "SGT — Iqra and adult classes" },
+    { href: "/locations/online-quran-classes-uae", label: "🇦🇪 UAE", note: "GST — around school and work" },
+    { href: "/locations/online-quran-classes-qatar", label: "🇶🇦 Qatar", note: "AST — Sunday–Thursday weeks" },
     { href: "/locations", label: "🌍 All countries", note: "Nordics, Gulf, Asia, Africa & more" },
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "Quran Classes Near Me" }],
   ctaHeadline: <>No Class Nearby? <em style={{ color: "var(--gold-lt)" }}>Bring the Teacher Home</em></>,
-  ctaSubtext: "Book a free one-to-one trial from your own living room — choose your timezone, request a female or English-speaking tutor, and see how the learner responds before you decide anything.",
+  ctaSubtext: "Book 3 free one-to-one trial sessions from your own living room — choose your timezone, request a female or English-speaking tutor, and see how the learner responds before you decide anything.",
   ctaBullets: [
-    `✓ Free ${TRIAL.durationMinutes}-minute live trial — no credit card`,
+    `✓ ${TRIAL_OFFER} — no credit card`,
     "✓ Online-only: no premises, no travel, any country",
     "✓ Flexible recurring slot in your own timezone",
     "✓ Female tutor and English instruction on request",
   ],
   relatedLinks: [
     { href: "/online-quran-classes/new-york", label: "Online Quran Classes New York (Near Me)" },
+    { href: "/online-quran-classes/london", label: "Online Quran Classes London" },
+    { href: "/online-quran-classes/toronto", label: "Online Quran Classes Toronto" },
+    { href: "/online-quran-classes/mumbai", label: "Online Quran Classes Mumbai" },
+    { href: "/online-quran-classes/doha", label: "Online Quran Classes Doha" },
+    { href: "/online-quran-classes/karachi", label: "Online Quran Classes Karachi" },
     { href: "/locations/online-quran-classes-usa", label: "Online Quran Classes USA Hub" },
     { href: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby — Full Service Guide" },
     { href: "/female-quran-teacher-online", label: "Female Quran Teacher Online" },
@@ -639,7 +653,7 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
   sectionSubtitle:
     "The hardest part of learning Quran alone is that you cannot hear your own mistakes. Arabic has sounds that do not exist in English, and a recording cannot tell you that your ‘ح’ is coming from the wrong place. A tutor can, in the first minute.",
   quickAnswer:
-    `A <strong>revert can learn to read Quran</strong> starting from zero with live <strong>one-to-one online lessons</strong>: first the Arabic alphabet and vowel marks (Noorani Qaida), then joining letters, then Surah Al-Fatiha and the short surahs used in prayer. The tutor listens and corrects pronunciation in real time — the part apps and videos cannot do. NoorPath teaches in English, privately, in your timezone, with a free ${TRIAL.durationMinutes}-minute trial and no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book the free trial →</a>`,
+    `A <strong>revert can learn to read Quran</strong> starting from zero with live <strong>one-to-one online lessons</strong>: first the Arabic alphabet and vowel marks (Noorani Qaida), then joining letters, then Surah Al-Fatiha and the short surahs used in prayer. The tutor listens and corrects pronunciation in real time — the part apps and videos cannot do. NoorPath teaches in English, privately, in your timezone, with ${TRIAL_OFFER} and no credit card. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book the free trial →</a>`,
   seoIntro:
     'Most guidance for new Muslims assumes a Muslim household or a nearby community. Many reverts have neither. Some are the only Muslim in their family; some have not yet told anyone; some are university students who cannot recite aloud in a shared flat. What they share is the same honest problem one convert put plainly: <strong>"you don\'t know what you don\'t know."</strong> You cannot check your own Makharij (where each letter is pronounced from) because you have never heard the correct sound from your own mouth. <strong>Live one-to-one lessons</strong> solve exactly that — a teacher hears you, corrects gently, and moves at your pace. NoorPath Academy is online-only, so lessons are private by default: no classroom, no children\'s group, no one watching except the tutor you chose in the free trial.',
   phases: [
@@ -674,7 +688,7 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { q: "How long until I can read Quran?", a: "It is individual and depends on lesson frequency and daily practice, so NoorPath does not promise a date. After the free trial, the tutor can describe an illustrative path for your starting point — most learners aim first at reading Al-Fatiha and a few short surahs for prayer." },
     { q: "Will the tutor explain what the words mean, or just the sounds?", a: "Both, in English. Reading (the sounds) and meaning are taught together where it helps — especially for Al-Fatiha and the surahs you use in salah — so the words are not empty. Tajweed rules come later, once reading is steady." },
     { q: "Can I request a female or male tutor?", a: "Yes. Male and female tutors are available — state your preference when booking. Every tutor holds an Ijazah or a Quran teaching certificate." },
-    { q: "I am a student on a tight budget. What does it cost?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions, cancellable with ${CANCELLATION_NOTICE_DAYS} days' notice. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and needs no credit card. The interactive Noorani Qaida pages on this site are free without an account for practice between lessons.` },
+    { q: "I am a student on a tight budget. What does it cost?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions, cancellable with ${CANCELLATION_NOTICE_DAYS} days' notice. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and need no credit card. The interactive Noorani Qaida pages on this site are free without an account for practice between lessons.` },
     { q: "Is there a local masjid class near me instead?", a: "Possibly, and if there is a good one within reach, use it — community matters. Many reverts do both: the masjid for belonging, a weekly online lesson for the private, individual correction a group cannot give. NoorPath has no premises; it is online only." },
   ],
   locations: [

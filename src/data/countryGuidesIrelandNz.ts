@@ -21,7 +21,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
         paragraphs: [
           "Ireland’s Muslim community is centred on Dublin, with families also in Cork, Limerick and Galway — and, increasingly, across the commuter belt in Meath, Kildare, Louth and Wicklow, where a household can be forty minutes from the city and much further from any regular children’s class. Parents in the midlands and the west often have no local option at all, which is what sends them searching for a Quran teacher near them in the first place.",
           "There is a second, quieter reason online tuition gets used here. Most primary schools in Ireland operate under religious patronage, and for the great majority of Muslim children Islamic instruction is simply not part of the school day. Dublin has some Muslim-ethos schooling; almost everywhere else, whatever the child learns of Quran happens outside school hours and is organised by the family.",
-          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during a free 30-minute trial before any ongoing payment — no credit card is required to book it.",
+          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during the 3 free 30-minute trial sessions before any ongoing payment — no credit card is required to book it.",
         ],
         bullets: [
           "Remote-only service — no claim of a NoorPath campus or meeting place in Ireland.",
@@ -132,7 +132,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
         id: "ireland-start",
         heading: "How should a family in Ireland start this week?",
         directAnswer:
-          "Note your town, two workable windows written with the UTC offset, the learner’s honest reading level, and any female-tutor preference. Then request the free 30-minute trial with no credit card.",
+          "Note your town, two workable windows written with the UTC offset, the learner’s honest reading level, and any female-tutor preference. Then request the 3 free 30-minute trial sessions with no credit card.",
         paragraphs: [
           "Naming Dublin, Cork, Galway or your own town is more useful than it sounds, because school finish times and travel differ. Add the female-tutor preference in the same message if it matters to you rather than raising it later.",
           "After matching, protect a short daily echo at home — five minutes of repeating what the tutor corrected. Weekly lessons compound only when something happens on the other six days.",
@@ -155,7 +155,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
           "Yes for a household that can hold one fixed weekly slot on the New Zealand clock and sit a child in front of a screen with an adult nearby. NoorPath teaches remotely only — there is no New Zealand campus, branch or drop-in centre, and no lesson is ever held in person.",
         paragraphs: [
           "New Zealand’s Muslim families are spread thinly down a long, narrow country. Auckland has the widest choice of weekend and evening classes; Wellington, Christchurch and Hamilton have community options; and a household in Palmerston North, Napier, Nelson, Dunedin or Invercargill may find the nearest regular children’s Quran class is a drive rather than a suburb away. That distance is usually the real reason a parent searches for Quran classes near me and ends up reading about an online academy.",
-          "Online tuition is not a cure for everything, and it is worth saying so before you book. It works when a child can concentrate for half an hour, when the family has a slot that survives contact with a normal week, and when a tutor is genuinely free at that hour. It works badly as a last resort for a child who will not engage at all. A free 30-minute trial is the honest way to find out which of those you have — no credit card is required to book it.",
+          "Online tuition is not a cure for everything, and it is worth saying so before you book. It works when a child can concentrate for half an hour, when the family has a slot that survives contact with a normal week, and when a tutor is genuinely free at that hour. It works badly as a last resort for a child who will not engage at all. 3 free 30-minute trial sessions are the honest way to find out which of those you have — no credit card is required to book it.",
         ],
         bullets: [
           "Remote teaching only — NoorPath has no premises anywhere in New Zealand.",
@@ -273,7 +273,7 @@ export const countryGuidesIrelandNz: Record<string, CountryGuideContent> = {
         id: "nz-start",
         heading: "How should a New Zealand family start this week?",
         directAnswer:
-          "Write down your town, two workable NZST/NZDT windows, an honest description of the child’s reading level, and any female-tutor preference. Then request the free 30-minute trial — no credit card is required.",
+          "Write down your town, two workable NZST/NZDT windows, an honest description of the child’s reading level, and any female-tutor preference. Then request the 3 free 30-minute trial sessions — no credit card is required.",
         paragraphs: [
           "Offering two windows rather than one makes matching considerably faster across a twelve-hour gap. Give a real account of reading level too: knows a few letters, sounds out slowly with mistakes, and reads fluently but without Tajweed are three different starting points, and a trial spent discovering which one you have is half a trial wasted.",
           "Once matched, protect five or ten minutes on the days between lessons for the child to repeat what was corrected. That short daily echo is what turns a weekly call into progress. Without it, every lesson starts by repairing the last one.",

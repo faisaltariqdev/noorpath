@@ -156,7 +156,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </details>
 
           <div class="highlight-box">
-            <strong>Want your child to recite duas with correct Arabic?</strong> NoorPath Academy teaches kids ages 4–12 live 1-on-1 — Qaida, Quran and essential duas. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card.
+            <strong>Want your child to recite duas with correct Arabic?</strong> NoorPath Academy teaches kids ages 4–12 live 1-on-1 — Qaida, Quran and essential duas. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card.
           </div>`,
   },
 
@@ -783,7 +783,7 @@ export const highTrafficRefreshBlogContent: Record<string, { style: string; cont
           </details>
 
           <div class="highlight-box">
-            <strong>Want correct pronunciation from day one?</strong> A live tutor hears and fixes each word. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card.
+            <strong>Want correct pronunciation from day one?</strong> A live tutor hears and fixes each word. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">

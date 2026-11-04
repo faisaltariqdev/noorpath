@@ -154,7 +154,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     content: {
       metadataTitle: "Online Quran Classes UAE — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for UAE families in GST — Noorani Qaida, Tajweed and Hifz for kids and adults, with a free 30-minute trial.",
+        "NoorPath Academy live 1-on-1 online Quran classes for UAE families in GST — Noorani Qaida, Tajweed and Hifz for kids and adults, with 3 free 30-minute trial sessions.",
       heading: "Online Quran Classes in the UAE",
       introduction:
         "Families in the UAE can request English-language online Quran support for children or adults, delivered as live one-to-one lessons in Gulf Standard Time.",
@@ -254,7 +254,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     content: {
       metadataTitle: "Online Quran Classes India — Live 1-on-1 | NoorPath Academy",
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for Indian families in IST — Noorani Qaida through to Hifz, with a free 30-minute trial and no card required.",
+        "NoorPath Academy live 1-on-1 online Quran classes for Indian families in IST — Noorani Qaida through to Hifz, with 3 free 30-minute trial sessions and no card required.",
       heading: "Online Quran Classes in India",
       introduction:
         "Indian families can request live one-to-one online Quran lessons in IST — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
@@ -290,7 +290,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     content: {
       metadataTitle: "Online Quran Classes Nigeria — Live 1-on-1 | NoorPath",
       metadataDescription:
-        "NoorPath Academy live 1-on-1 online Quran classes for families in Lagos, Abuja, Port Harcourt and Kano, with WAT lesson windows and a free 30-minute trial.",
+        "NoorPath Academy live 1-on-1 online Quran classes for families in Lagos, Abuja, Port Harcourt and Kano, with WAT lesson windows and 3 free 30-minute trial sessions.",
       heading: "Online Quran Classes in Nigeria",
       introduction:
         "Nigerian families can request live one-to-one online Quran lessons in WAT — from Noorani Qaida through Tajweed and Hifz — planned around school hours and confirmed after tutor matching.",
@@ -321,7 +321,7 @@ export const PRIORITY_MARKETS: readonly PriorityMarket[] = [
     content: {
       metadataTitle: "English Online Quran Classes Germany | NoorPath Academy",
       metadataDescription:
-        "NoorPath Academy English-language online Quran classes in Germany, with CET or CEST lesson windows for kids and adults and a free 30-minute trial, no card required.",
+        "NoorPath Academy English-language online Quran classes in Germany, with CET or CEST lesson windows for kids and adults and 3 free 30-minute trial sessions, no card required.",
       heading: "Online Quran Classes in Germany",
       introduction:
         "Families in Germany can request English-language Quran teaching online for children or adults, with live one-to-one lessons planned in CET or CEST.",

@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle2, ShieldCheck, Clock, BookOpen, UserCheck, Award, Sparkles } from "lucide-react";
-import { TRIAL, ENROLLED_STUDENTS_DISPLAY, TRUSTPILOT } from "@/lib/academyFacts";
+import { ENROLLED_STUDENTS_DISPLAY, TRIAL, TRIAL_OFFER, TRUSTPILOT } from "@/lib/academyFacts";
 
 interface Props {
   country?: string;
@@ -67,7 +67,7 @@ export default function AiDirectAnswerBox({ country = "Worldwide", timezone = "L
           </>
         ) : (
           <>
-            Muslim families in <strong>{country}</strong> can study live 1-on-1 with certified Quran tutors scheduled in <strong>{timezone}</strong>. NoorPath Academy provides interactive Noorani Qaida, Tajweed, and Hifz with female tutor requests available, backed by a <strong>free {TRIAL.durationMinutes}-minute trial class</strong> (no credit card required).
+            Muslim families in <strong>{country}</strong> can study live 1-on-1 with certified Quran tutors scheduled in <strong>{timezone}</strong>. NoorPath Academy provides interactive Noorani Qaida, Tajweed, and Hifz with female tutor requests available, backed by <strong>{TRIAL_OFFER}</strong> (no credit card required).
           </>
         )}
       </p>

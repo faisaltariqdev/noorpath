@@ -19,7 +19,7 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
           "Yes for households that want live remote Quran tuition from home and a recurring slot on the Norwegian clock. NoorPath is an online academy — not a Norwegian mosque branch, Oslo classroom, or home-visit service.",
         paragraphs: [
           "Muslim families in Norway are often centred on Oslo, with households also in Bergen, Trondheim, Stavanger and smaller towns where a weekend children’s class may be thin or a long drive away. When local provision is limited, parents search for Quran or Islamic classes near them and find a mix of physical programmes and remote academies — this page is the remote kind.",
-          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during a free 30-minute trial before ongoing payment.",
+          "Treat this country page as an invitation to enquire. Verify the proposed tutor, schedule and course during the 3 free 30-minute trial sessions before ongoing payment.",
         ],
         bullets: [
           "Remote-only service — no claim of a NoorPath campus in Norway.",
@@ -137,7 +137,7 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
           "Remote-only service with no Finnish physical branch claim.",
           "Kids placement by actual reading readiness, not age alone.",
           "Female Quran tutor preferences can be requested for daughters and sisters.",
-          "Free 30-minute trial class before ongoing payment.",
+          "3 free 30-minute trial sessions before ongoing payment.",
         ],
       },
       {
@@ -204,7 +204,7 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
         id: "finland-start",
         heading: "How to start from Helsinki, Espoo or Vantaa this week",
         directAnswer:
-          "Request a free 30-minute trial, state your Finnish city and EET/EEST time preferences, and test the 1-on-1 experience with zero commitment.",
+          "Request 3 free 30-minute trial sessions, state your Finnish city and EET/EEST time preferences, and test the 1-on-1 experience with zero commitment.",
         paragraphs: [
           "After the trial, choose a sustainable weekly plan (2, 3, 4, or 5 days per week). Consistent 30-minute lessons coupled with short daily practice build lifelong Quran reading skills.",
         ],
@@ -231,7 +231,7 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
           "Remote-only — no Copenhagen physical campus claim.",
           "Flexible weekday afternoon, evening and weekend CET/CEST preferences.",
           "Female Quran teacher requests are welcome for daughters and sisters.",
-          "Free 30-minute trial class with no credit card required.",
+          "3 free 30-minute trial sessions with no credit card required.",
         ],
       },
       {
@@ -297,7 +297,7 @@ export const countryGuidesNordic: Record<string, CountryGuideContent> = {
         id: "denmark-start",
         heading: "Start this week from Copenhagen, Aarhus or Odense",
         directAnswer:
-          "Book a free 30-minute trial, state your Danish city and preferred CET/CEST time window, and start learning with no card required.",
+          "Book 3 free 30-minute trial sessions, state your Danish city and preferred CET/CEST time window, and start learning with no card required.",
         paragraphs: [
           "Compare published plans at USD pricing and estimate your monthly DKK budget. Sibling discounts are available when enrolling two or more children.",
         ],

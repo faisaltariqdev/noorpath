@@ -51,8 +51,8 @@ export const FAMILY_DISCOUNTS = [
   { siblings: "4+ siblings", discountPercent: 25 },
 ] as const;
 
-/** e.g. "3 free 30-minute trial classes" */
-export const TRIAL_OFFER = `${TRIAL.classes} free ${TRIAL.durationMinutes}-minute trial classes`;
+/** e.g. "3 free 30-minute trial sessions" */
+export const TRIAL_OFFER = `${TRIAL.classes} free ${TRIAL.durationMinutes}-minute trial sessions`;
 
 export const CANCELLATION_NOTICE_DAYS = 7;
 
@@ -131,7 +131,7 @@ export const PRICING_PLANS = [
 
 export const SERVICE_FACTS = [
   { value: "1-to-1", label: "Live online lessons" },
-  { value: `${TRIAL.classes} free`, label: `${TRIAL.durationMinutes}-min trial classes` },
+  { value: `${TRIAL.classes} free`, label: `${TRIAL.durationMinutes}-min trial sessions` },
   { value: "No card", label: "Required for the trial" },
   { value: "Flexible", label: "Tutor matching by timezone" },
 ] as const;
@@ -143,7 +143,7 @@ export const SERVICE_FACTS = [
 export const VERIFIED_TRUST_CLAIMS = [
   {
     id: "free-trial-no-card",
-    title: `${TRIAL.classes} free trial classes — no card`,
+    title: `${TRIAL.classes} free trial sessions — no card`,
     text: `Take ${TRIAL_OFFER}, live and 1-to-1. No credit card is required.`,
   },
   {

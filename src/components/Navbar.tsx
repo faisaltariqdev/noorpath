@@ -87,7 +87,7 @@ export default function Navbar() {
           }}
         >
           🎁{" "}
-          <strong style={{ fontWeight: 700 }}>Free {TRIAL.durationMinutes}-minute trial</strong>{" "}
+          <strong style={{ fontWeight: 700 }}>{TRIAL.classes} free {TRIAL.durationMinutes}-minute trial sessions</strong>{" "}
           — No credit card required.{" "}
           <Link
             href="/free-quran-classes-online"
@@ -506,7 +506,7 @@ export default function Navbar() {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  <GraduationCap size={15} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Book Free Trial Class
+                  <GraduationCap size={15} style={{ display: "inline", verticalAlign: "middle", marginRight: 6 }} />Start {TRIAL.classes} Free Trial Sessions
                 </Link>
               </li>
             </ul>

@@ -473,7 +473,7 @@ Generated privately via https://www.noorpath.online/tools/hifz-calculator`;
                 className="flex-1 text-center py-2.5 px-3 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] text-[var(--charcoal)] text-xs font-bold transition-colors"
                 style={{ color: "var(--charcoal)" }}
               >
-                Book Free Trial Class
+                Start {TRIAL.classes} Free Trial Sessions
               </Link>
             </div>
           </div>

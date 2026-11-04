@@ -5,7 +5,7 @@ import { ArrowRight, BookOpen, CheckCircle } from "lucide-react";
 import { QAIDA_SCREENSHOTS } from "@/data/noorani-qaida";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
-import { CONTACT, TRIAL } from "@/lib/academyFacts";
+import { CONTACT, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 
 export const QAIDA_BASE_URL = "https://www.noorpath.online/noorani-qaida";
 
@@ -78,7 +78,7 @@ export function QaidaCallout({
 
 export function QaidaCourseCta({
   title = "Want guided Noorani Qaida lessons?",
-  description = `Book a free ${TRIAL.durationMinutes}-minute live 1-to-1 Qaida class for ages 4+ with a certified tutor. Female tutors available, no credit card.`,
+  description = `Book ${TRIAL_OFFER}, live and 1-to-1, for ages 4+ with a certified tutor. Female tutors available, no credit card.`,
 }: {
   title?: string;
   description?: string;
@@ -86,12 +86,12 @@ export function QaidaCourseCta({
   return (
     <section id="qaida-trial" className="qaida-course-cta" aria-labelledby="qaida-course-cta-title">
       <div className="qaida-course-cta-copy">
-        <span className="qaida-eyebrow">Free live trial class</span>
+        <span className="qaida-eyebrow">{TRIAL.classes} free live trial sessions</span>
         <h2 id="qaida-course-cta-title">{title}</h2>
         <p>{description}</p>
         <div className="qaida-cta-actions">
           <WhatsAppLink
-            href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I am practicing Noorani Qaida with my child and would like to book a free ${TRIAL.durationMinutes}-minute 1-on-1 trial class.`)}`}
+            href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I am practicing Noorani Qaida with my child and would like to book ${TRIAL_OFFER}.`)}`}
             className="btn-outline-np"
             style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#25D366", borderColor: "#25D366", color: "#fff", fontWeight: 700 }}
             target="_blank"

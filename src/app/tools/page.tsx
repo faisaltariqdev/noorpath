@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
-import { BASE_URL } from "@/lib/academyFacts";
+import { BASE_URL, TRIAL } from "@/lib/academyFacts";
 import { TOOLS_HUB_FAQS } from "@/data/tools";
 import {
   BookOpen,
@@ -254,6 +254,8 @@ export default function ToolsHubPage() {
               Read the <Link href="/holy-quran/para/1" className="font-semibold text-[var(--emerald)]">Holy Quran reader</Link>
               {" · "}
               <Link href="/islamic-resources" className="font-semibold text-[var(--emerald)]">Islamic resources</Link>
+              {" · "}
+              <Link href="/free-quran-teaching-resources" className="font-semibold text-[var(--emerald)]">Free Quran teaching resources</Link>
             </p>
           </section>
 
@@ -283,7 +285,7 @@ export default function ToolsHubPage() {
                   className="inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-[var(--gold)] hover:bg-[var(--gold-lt)] font-bold text-sm transition-all shadow-md"
                   style={{ color: "var(--charcoal)" }}
                 >
-                  <span>Book Free 1-on-1 Trial Class</span>
+                  <span>Start {TRIAL.classes} Free Trial Sessions</span>
                   <span>→</span>
                 </Link>
                 <Link

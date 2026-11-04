@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     absolute: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
   },
   description:
-    "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
+    "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and 3 free trial sessions at NoorPath Academy.",
   keywords: [
     "online quran classes for kids",
     "quran classes for children",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
     description:
-      "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
+      "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and 3 free trial sessions at NoorPath Academy.",
     url: "https://www.noorpath.online/online-quran-classes-for-kids",
     images: [
       {
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
     description:
-      "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
+      "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and 3 free trial sessions at NoorPath Academy.",
     images: ["/marketing/kids-online-quran-class.jpg"],
   },
 };
@@ -117,8 +117,8 @@ const faqs = [
     a: "Depending on your child's age and starting level, they can study Noorani Qaida, fluent Quran recitation with Tajweed rules, Quran memorization (Hifz), daily Islamic duas, the 6 Kalimas, and foundational Islamic manners (Akhlaq).",
   },
   {
-    q: "How can I book a trial class?",
-    a: `Fill out the free trial request form on this page with your child's age, level, preferred time window, and teacher preference. Our academic coordinator will match a suitable tutor and confirm your ${TRIAL.classes} free ${TRIAL.durationMinutes}-minute trial classes via WhatsApp or email — no credit card needed.`,
+    q: "How can I book the free trial sessions?",
+    a: `Fill out the free trial request form on this page with your child's age, level, preferred time window, and teacher preference. Our academic coordinator will match a suitable tutor and confirm your ${TRIAL_OFFER} via WhatsApp or email — no credit card needed.`,
   },
   {
     q: "Can parents monitor their child's progress?",
@@ -142,7 +142,7 @@ const jsonLd = {
       url: PAGE_URL,
       name: "Online Quran Classes for Kids | One-to-One Quran Lessons – NoorPath",
       description:
-        "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and a free trial class at NoorPath Academy.",
+        "Help your child learn the Quran online with one-to-one lessons, qualified teachers, flexible timings and 3 free trial sessions at NoorPath Academy.",
       isPartOf: { "@type": "WebSite", "@id": `${BASE_URL}/#website`, url: BASE_URL },
       about: { "@id": `${PAGE_URL}#service` },
       mainEntity: { "@id": `${PAGE_URL}#course` },
@@ -171,7 +171,7 @@ const jsonLd = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        name: `${TRIAL.classes} Free ${TRIAL.durationMinutes}-Minute Trial Quran Classes`,
+        name: `${TRIAL.classes} Free ${TRIAL.durationMinutes}-Minute Quran Trial Sessions`,
         description: `${TRIAL_OFFER} with no credit card required. Tutor availability confirmed after request.`,
         url: `${BASE_URL}/free-quran-classes-online`,
       },
@@ -189,7 +189,7 @@ const jsonLd = {
 
 const trustStats = [
   { value: "1-to-1", label: "Private Live Lessons" },
-  { value: `${TRIAL.classes} Free`, label: `${TRIAL.durationMinutes}-Min Trial Classes` },
+  { value: `${TRIAL.classes} Free`, label: `${TRIAL.durationMinutes}-Min Trial Sessions` },
   { value: "No Card", label: "Required for Trial" },
   { value: "Flexible", label: "Timezone Scheduling" },
   { value: "Available", label: "Female Quran Tutors" },
@@ -231,7 +231,7 @@ export default function OnlineQuranClassesForKidsPage() {
             With undivided individual attention, patient beginner-friendly guidance, flexible after-school and weekend
             timings, and regular parent progress updates, your child develops accurate Arabic pronunciation and genuine love
             for the Book of Allah. Book{" "}
-            <strong style={{ color: "var(--gold-lt)" }}>{TRIAL.classes} free {TRIAL.durationMinutes}-minute trial classes</strong> — no credit card required.
+            <strong style={{ color: "var(--gold-lt)" }}>{TRIAL_OFFER}</strong> — no credit card required.
           </p>
 
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", marginTop: 26 }}>
@@ -240,7 +240,7 @@ export default function OnlineQuranClassesForKidsPage() {
             </a>
             <WhatsAppLink
               href={`https://wa.me/923124877906?text=${encodeURIComponent(
-                "Assalamu Alaikum! I would like to book a free Quran trial class for my child at NoorPath Academy. Please share details."
+                "Assalamu Alaikum! I would like to book the free Quran trial sessions for my child at NoorPath Academy. Please share details."
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -330,7 +330,7 @@ export default function OnlineQuranClassesForKidsPage() {
                   { v: "1-on-1", l: "Private live video sessions" },
                   { v: "Interactive", l: "Visual letter games & drills" },
                   { v: "Ages 4+", l: "Beginner-friendly progression" },
-                  { v: "No Card", l: "3 free trial classes to start" },
+                  { v: "No Card", l: "3 free trial sessions to start" },
                 ].map((x) => (
                   <div key={x.l} style={{ background: "rgba(10,110,79,.05)", borderRadius: 12, padding: "12px 14px" }}>
                     <div style={{ fontWeight: 800, color: "var(--emerald)", fontSize: "1.05rem" }}>{x.v}</div>
@@ -345,7 +345,7 @@ export default function OnlineQuranClassesForKidsPage() {
                 </Link>{" "}
                 or start with our{" "}
                 <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 600 }}>
-                  free trial class details
+                  free trial session details
                 </Link>.
               </p>
             </div>
@@ -424,7 +424,7 @@ export default function OnlineQuranClassesForKidsPage() {
 
           <div style={{ textAlign: "center", marginTop: 32 }}>
             <a href="#trial-form" className="btn-primary-np" style={{ textDecoration: "none" }}>
-              Request Your Child&apos;s Free Trial Class →
+              Start {TRIAL.classes} Free Trial Sessions →
             </a>
             <p style={{ color: "var(--muted)", fontSize: ".88rem", marginTop: 14 }}>
               Are you also looking for adult lessons? Explore our dedicated{" "}
@@ -622,7 +622,7 @@ export default function OnlineQuranClassesForKidsPage() {
               {
                 step: "1",
                 title: "Assess Child's Level",
-                desc: "During the free trial class, the tutor listens gently to assess letter recognition, attention span, and current reading ability.",
+                desc: "During the free trial sessions, the tutor listens gently to assess letter recognition, attention span, and current reading ability.",
               },
               {
                 step: "2",
@@ -811,7 +811,7 @@ export default function OnlineQuranClassesForKidsPage() {
 
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                 <a href="#trial-form" className="btn-primary-np" style={{ textDecoration: "none" }}>
-                  Start with 3 Free Trial Classes →
+                  Start {TRIAL.classes} Free Trial Sessions →
                 </a>
                 <Link href="/pricing" className="btn-outline-np" style={{ textDecoration: "none" }}>
                   View Family Pricing Plans
@@ -1009,7 +1009,7 @@ export default function OnlineQuranClassesForKidsPage() {
                 Give Your Child a Meaningful Quran Learning Journey
               </h2>
               <p style={{ color: "rgba(255,255,255,.8)", lineHeight: 1.75, marginBottom: 20, fontSize: "1rem" }}>
-                Book {TRIAL.classes} free {TRIAL.durationMinutes}-minute trial classes today. Experience our live one-to-one teaching,
+                Book {TRIAL_OFFER} today. Experience our live one-to-one teaching,
                 see how your child connects with the tutor, and receive a clear personal learning recommendation before choosing any paid plan.
               </p>
 
@@ -1032,7 +1032,7 @@ export default function OnlineQuranClassesForKidsPage() {
               <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
                 <WhatsAppLink
                   href={`https://wa.me/923124877906?text=${encodeURIComponent(
-                    "Assalamu Alaikum! I would like to book a free Quran trial class for my child. Please share available lesson times."
+                    "Assalamu Alaikum! I would like to book the free Quran trial sessions for my child. Please share available lesson times."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1058,7 +1058,7 @@ export default function OnlineQuranClassesForKidsPage() {
                   textAlign: "center",
                 }}
               >
-                Book Your Child&apos;s Free Trial Class
+                Start {TRIAL.classes} Free Trial Sessions
               </h3>
               <p style={{ color: "rgba(255,255,255,.75)", fontSize: ".82rem", textAlign: "center", margin: "-6px 0 16px" }}>
                 Takes 30 seconds · No credit card required · Tutor availability confirmed

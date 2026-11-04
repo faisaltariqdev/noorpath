@@ -158,7 +158,7 @@ export const countryGuidesUsaUae: Record<string, CountryGuideContent> = {
         id: 'usa-next-steps',
         heading: 'What should a US family do next?',
         directAnswer:
-          'Request a free 30-minute trial with no credit card, share your time zone and learning goal, then review published USD pricing only after a suitable tutor and slot are confirmed.',
+          'Request 3 free 30-minute trial sessions with no credit card, share your time zone and learning goal, then review published USD pricing only after a suitable tutor and slot are confirmed.',
         paragraphs: [
           'Bring a short brief to the trial: learner age, current reading ability, preferred ET/CT/MT/PT window, and any female-tutor preference. Use the session to check audio, placement and teaching fit. Enrolment decisions should follow evidence from that session, not a promised Hifz timeline.',
         ],

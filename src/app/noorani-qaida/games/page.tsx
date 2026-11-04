@@ -7,6 +7,7 @@ import {
   QAIDA_GAMES_HUB_FAQS,
 } from "@/data/noorani-qaida";
 import ParentShareButtons from "@/components/noorani-qaida/ParentShareButtons";
+import { TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import QaidaGamesWorksheetsGrid from "@/components/noorani-qaida/QaidaGamesWorksheetsGrid";
 import {
   QAIDA_BASE_URL,
@@ -23,7 +24,7 @@ export const revalidate = false;
 const pageUrl = `${QAIDA_BASE_URL}/games`;
 const title = "Free Noorani Qaida Games Online for Kids";
 const description =
-  "Play free Noorani Qaida games online: Arabic letter matching, harakat quiz, and a parent progress checklist. Mobile-friendly practice for ages 3–12 — no login.";
+  "Free Noorani Qaida games for kids: Arabic letter matching, harakat quiz and a parent checklist. Plays in your browser on any phone — no app, no login.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | NoorPath` },
@@ -181,6 +182,17 @@ export default function NooraniQaidaGamesHubPage() {
               ))}
             </div>
           </section>
+
+          <QaidaCallout title="Ready for a live teacher?" tone="gold">
+            <p>
+              Games help with recognising letters, but pronunciation needs someone listening. NoorPath&apos;s{" "}
+              <Link href="/online-quran-classes-for-kids">online Quran classes for kids</Link> are live and one-to-one,
+              starting with Noorani Qaida, and the first {TRIAL_OFFER} need no credit card.
+            </p>
+            <p>
+              <a href="#qaida-trial" className="btn-primary-np">Start {TRIAL.classes} Free Trial Sessions</a>
+            </p>
+          </QaidaCallout>
 
           <section className="qaida-section" aria-labelledby="how-parents-heading">
             <span className="qaida-eyebrow">Parent routine</span>

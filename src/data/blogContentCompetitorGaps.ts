@@ -1,4 +1,4 @@
-import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { PRICING_PLANS, TRIAL_OFFER } from "@/lib/academyFacts";
 
 const STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
   .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
@@ -63,7 +63,7 @@ export const competitorGapBlogContent: Record<string, { style: string; content: 
           <p>Credential questions sit beside frequency questions such as “how many classes per week to memorize Quran.” Memorisation needs depend on retention and revision load; reading/Tajweed goals may need fewer weekly sessions. Compare <a href="/blog/difference-between-hifz-and-tajweed-classes">Hifz vs Tajweed classes</a> and published <a href="/pricing">pricing plans</a>.</p>
 
           <div class="highlight-box">
-            <strong>Next step:</strong> Request a free ${TRIAL.durationMinutes}-minute trial with no credit card, then ask for the proposed tutor’s credential details before paid enrolment — <a href="/free-quran-classes-online">start with a free trial class</a> · <a href="/one-on-one-quran-classes">1-to-1 Quran classes</a>.
+            <strong>Next step:</strong> Request ${TRIAL_OFFER} with no credit card, then ask for the proposed tutor’s credential details before paid enrolment — <a href="/free-quran-classes-online">start with 3 free trial sessions</a> · <a href="/one-on-one-quran-classes">1-to-1 Quran classes</a>.
           </div>
 
           <h2>Frequently Asked Questions</h2>
@@ -71,7 +71,7 @@ export const competitorGapBlogContent: Record<string, { style: string; content: 
           <div class="faq-item"><div class="faq-q">Is Ijazah the same as Al-Azhar certification?</div><div class="faq-a">No. Al-Azhar refers to a university/institutional pathway; Ijazah refers to authorisation in a Quran reading/teaching tradition. A person may have one, both, or neither.</div></div>
           <div class="faq-item"><div class="faq-q">Should every online Quran academy claim all tutors have Ijazah?</div><div class="faq-a">Be cautious of blanket claims. Ask for the specific tutor’s credentials related to your course goal.</div></div>
           <div class="faq-item"><div class="faq-q">Can I request proof before paying?</div><div class="faq-a">Yes. Reputable academies confirm relevant credentials for the proposed tutor before enrolment. Use the free trial to assess teaching fit as well.</div></div>
-          <div class="faq-item"><div class="faq-q">Where can I try a class without a credit card?</div><div class="faq-a">NoorPath offers a free ${TRIAL.durationMinutes}-minute trial with no credit card required. <a href="/free-quran-classes-online">Book a free trial</a>.</div></div>
+          <div class="faq-item"><div class="faq-q">Where can I try a class without a credit card?</div><div class="faq-a">NoorPath offers ${TRIAL_OFFER} with no credit card required. <a href="/free-quran-classes-online">Book a free trial</a>.</div></div>
     `,
   },
 
@@ -125,7 +125,7 @@ export const competitorGapBlogContent: Record<string, { style: string; content: 
           </ol>
 
           <div class="highlight-box">
-            <strong>Ready to compare with a live lesson?</strong> <a href="/free-quran-classes-online">Start with a free trial class</a> · <a href="/one-on-one-quran-classes">see 1-to-1 Quran classes</a> · <a href="/blog/how-to-choose-online-quran-teacher">how to choose a teacher</a>.
+            <strong>Ready to compare with a live lesson?</strong> <a href="/free-quran-classes-online">Start with 3 free trial sessions</a> · <a href="/one-on-one-quran-classes">see 1-to-1 Quran classes</a> · <a href="/blog/how-to-choose-online-quran-teacher">how to choose a teacher</a>.
           </div>
 
           <p>Adults comparing formats can test fit via a free trial on <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
@@ -198,7 +198,7 @@ export const competitorGapBlogContent: Record<string, { style: string; content: 
           <div class="faq-item"><div class="faq-q">Can I take both together?</div><div class="faq-a">Sometimes. A tutor may correct Tajweed inside Hifz lessons, or keep separate focus blocks. Overloading beginners usually slows both goals.</div></div>
           <div class="faq-item"><div class="faq-q">How many classes per week to memorize Quran?</div><div class="faq-a">It depends on retention, revision quality, and available practice time. More lessons help only if revision is also done between classes. Ask for a personal plan after assessment.</div></div>
           <div class="faq-item"><div class="faq-q">Which course is cheaper?</div><div class="faq-a">Price depends on session length and weekly frequency more than the label. Compare plans on the pricing page; Hifz often needs more weekly contact.</div></div>
-          <div class="faq-item"><div class="faq-q">How do I start without guessing?</div><div class="faq-a">Book a free ${TRIAL.durationMinutes}-minute trial with no credit card. The tutor can recommend Qaida, Tajweed, or Hifz after hearing the learner.</div></div>
+          <div class="faq-item"><div class="faq-q">How do I start without guessing?</div><div class="faq-a">Book ${TRIAL_OFFER} with no credit card. The tutor can recommend Qaida, Tajweed, or Hifz after hearing the learner.</div></div>
     `,
   },
 };

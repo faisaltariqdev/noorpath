@@ -4,7 +4,7 @@ import CTAForm from "@/components/CTAForm";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Users, Clock, BookOpen, Award, Video, UserCheck } from "lucide-react";
-import { PRICING_PLANS, SERVICE_FACTS, TRIAL } from "@/lib/academyFacts";
+import { PRICING_PLANS, SERVICE_FACTS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 
@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     q: "How much do one-on-one Quran classes cost?",
-    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.durationMinutes}-minute trial is free and requires no credit card.`,
+    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and require no credit card.`,
   },
   {
     q: "How do I book a private Quran trial?",
@@ -273,10 +273,10 @@ export default function OneOnOneQuranClassesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
-                Book Your Private<br /><em style={{ color: "var(--gold-lt)" }}>1-to-1 Trial Class</em>
+                Book Your Private<br /><em style={{ color: "var(--gold-lt)" }}>1-to-1 Trial Sessions</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
-                No credit card required. Request a free {TRIAL.durationMinutes}-minute one-on-one Quran class and assess tutor fit before choosing a plan.
+                No credit card required. Request {TRIAL_OFFER}, one-on-one, and assess tutor fit before choosing a plan.
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
                 {["Private 1-to-1 lesson format", "Timezone & schedule matching", "Male or female tutors available", "Ijazah or certified tutors"].map((b) => (
@@ -288,7 +288,7 @@ export default function OneOnOneQuranClassesPage() {
             </div>
             <div className="cta-form-wrap">
               <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
-                Book Your Free Trial Class
+                Start {TRIAL.classes} Free Trial Sessions
               </h3>
               <CTAForm formVariant="one-on-one-landing" />
             </div>

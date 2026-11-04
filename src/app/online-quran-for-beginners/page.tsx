@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PRICING_PLANS } from "@/lib/academyFacts";
+import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
 import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import { CheckCircle, BookOpen, Clock, Star } from "lucide-react";
+
+/** Shown on the page and used for FAQPage schema, so both always match. */
+const BEGINNER_FAQS = [
+  { q: "Can I learn Quran online as a complete beginner?", a: "Absolutely. NoorPath Academy specialises in complete beginners. Our Noorani Qaida program starts from the very first letter with no prior knowledge of Arabic required." },
+  { q: "Where do I start when learning Quran from scratch?", a: "Beginners commonly start with Noorani Qaida — learning Arabic letters, pronunciation, vowel signs, and foundational rules. The tutor can adjust the starting point after hearing the learner read." },
+  { q: "How long does it take a beginner to read the Quran?", a: "There is no universal timeframe. Progress depends on starting level, lesson frequency, attendance and practice. The trial helps identify a suitable routine." },
+  { q: "What age is best to start learning Quran?", a: "Children and adults can begin at a level suited to their reading ability and attention span. Parents can use the trial to discuss whether the format suits their child." },
+  { q: "Is online Quran learning effective for beginners?", a: "A live 1-on-1 lesson lets the tutor hear the learner, correct pronunciation and adjust the pace. Results still depend on consistent attendance and practice." },
+  { q: "Do I need special equipment to learn Quran online?", a: "A smartphone, tablet, or laptop with a stable internet connection and the agreed meeting app is sufficient. The tutor can share Quran or Qaida material during the lesson." },
+];
 
 export const revalidate = false;
 
@@ -42,33 +52,11 @@ const jsonLd = {
     }),
     {
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Can I learn Quran online as a complete beginner?",
-          acceptedAnswer: { "@type": "Answer", text: "Absolutely. NoorPath Academy specialises in teaching complete beginners. Our Noorani Qaida program starts from the very first Arabic letter and builds up step by step. No prior knowledge of Arabic or Quran is needed." },
-        },
-        {
-          "@type": "Question",
-          name: "Where do beginners start when learning Quran online?",
-          acceptedAnswer: { "@type": "Answer", text: "Beginners commonly start with Noorani Qaida — a structured book that teaches Arabic letters (Huroof), pronunciation points (Makharij), vowel signs (Harakat), and basic Tajweed rules. Progress depends on starting level, lesson frequency and practice." },
-        },
-        {
-          "@type": "Question",
-          name: "How long does it take for a beginner to learn to read the Quran?",
-          acceptedAnswer: { "@type": "Answer", text: "There is no universal timeframe. Progress depends on starting level, lesson frequency, attendance and practice. The trial helps identify a suitable starting point and lesson routine." },
-        },
-        {
-          "@type": "Question",
-          name: "What age is best to start learning Quran online?",
-          acceptedAnswer: { "@type": "Answer", text: "Children and adults can begin at a level suited to their reading ability and attention span. A parent can request a trial to discuss whether the lesson format is suitable for their child." },
-        },
-        {
-          "@type": "Question",
-          name: "Is online Quran learning effective for beginners?",
-          acceptedAnswer: { "@type": "Answer", text: "Live one-to-one lessons allow the tutor to listen to the learner, correct pronunciation during the session and adapt the lesson pace. Results still depend on attendance and practice." },
-        },
-      ],
+      mainEntity: BEGINNER_FAQS.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
     },
     {
       "@type": "BreadcrumbList",
@@ -227,14 +215,7 @@ export default function OnlineQuranBeginnersPage() {
             Beginner Questions Answered
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-            {[
-              { q: "Can I learn Quran online as a complete beginner?", a: "Absolutely. NoorPath Academy specialises in complete beginners. Our Noorani Qaida program starts from the very first letter with no prior knowledge of Arabic required." },
-              { q: "Where do I start when learning Quran from scratch?", a: "Beginners commonly start with Noorani Qaida — learning Arabic letters, pronunciation, vowel signs, and foundational rules. The tutor can adjust the starting point after hearing the learner read." },
-              { q: "How long does it take a beginner to read the Quran?", a: "There is no universal timeframe. Progress depends on starting level, lesson frequency, attendance and practice. The trial helps identify a suitable routine." },
-              { q: "What age is best to start learning Quran?", a: "Children and adults can begin at a level suited to their reading ability and attention span. Parents can use the trial to discuss whether the format suits their child." },
-              { q: "Is online Quran learning effective for beginners?", a: "A live 1-on-1 lesson lets the tutor hear the learner, correct pronunciation and adjust the pace. Results still depend on consistent attendance and practice." },
-              { q: "Do I need special equipment to learn Quran online?", a: "A smartphone, tablet, or laptop with a stable internet connection and the agreed meeting app is sufficient. The tutor can share Quran or Qaida material during the lesson." },
-            ].map((item) => (
+            {BEGINNER_FAQS.map((item) => (
               <div key={item.q} style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 12, padding: "18px 22px" }}>
                 <h3 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 700, fontSize: ".95rem", color: "var(--charcoal)", marginBottom: 8 }}>{item.q}</h3>
                 <p style={{ color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
@@ -254,7 +235,7 @@ export default function OnlineQuranBeginnersPage() {
             Start from your current level with a live one-to-one lesson. Request a free trial before choosing a paid plan.
           </p>
           <Link href="/free-quran-classes-online" className="btn-primary-np">
-            Book Free Trial Class →
+            Start {TRIAL.classes} Free Trial Sessions →
           </Link>
         </div>
       </section>

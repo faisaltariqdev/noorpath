@@ -28,7 +28,7 @@ const STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #37
   @media (max-width: 576px) { .np-table { font-size: .82rem; } .np-table th, .np-table td { padding: 8px 9px; } .arabic { font-size: 1.55rem; line-height: 2.3; } }`;
 
 const ctaButton = `<p style="text-align: center; margin-top: 32px;">
-    <a href="/free-quran-classes-online" style="display: inline-block; background: var(--gold); color: var(--charcoal); padding: 14px 32px; border-radius: 50px; font-weight: 700; text-decoration: none;">Book Your Free Trial Class →</a>
+    <a href="/free-quran-classes-online" style="display: inline-block; background: var(--gold); color: var(--charcoal); padding: 14px 32px; border-radius: 50px; font-weight: 700; text-decoration: none;">Start 3 Free Trial Sessions →</a>
   </p>`;
 
 export const earningPillarBlogContent: Record<string, { style: string; content: string }> = {

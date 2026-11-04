@@ -20,13 +20,13 @@ const trustItems = [
 
 export default function InlineTrialCTA({
   placement = "end-article",
-  title = `Book ${TRIAL.classes} free trial classes`,
+  title = `Book ${TRIAL.classes} free trial sessions`,
   subtitle = "Live 1-on-1 lesson — no credit card, no commitment.",
 }: Props) {
   return (
     <aside
       className="inline-trial-cta"
-      aria-label="Book a free trial class"
+      aria-label="Book 3 free trial sessions"
       data-placement={placement}
       style={{
         background: "linear-gradient(165deg, #f0faf5 0%, #fff 60%)",

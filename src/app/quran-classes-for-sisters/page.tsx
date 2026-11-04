@@ -4,7 +4,7 @@ import CTAForm from "@/components/CTAForm";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
 import { ORGANIZATION_REF } from "@/lib/organizationSchema";
 import { CheckCircle, Heart, Shield, Clock, BookOpen, Users } from "lucide-react";
-import { PRICING_PLANS, TRIAL, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
+import { PRICING_PLANS, TRIAL, TRIAL_OFFER, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
 import { serializeJsonLd } from "@/lib/jsonLd";
 import { buildStandardCourseJsonLd } from "@/lib/courseJsonLd";
 
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "How much do Quran classes for sisters cost?",
-    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.durationMinutes}-minute trial is free and requires no credit card.`,
+    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerWeek} session per week. The first ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and require no credit card.`,
   },
   {
     q: "Do you offer evening or weekend slots for sisters who work or care for family?",
@@ -238,12 +238,12 @@ export default function QuranClassesForSistersPage() {
                 Start with a Free Trial<br /><em style={{ color: "var(--gold-lt)" }}>Female Tutor Request</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
-                No credit card required. Request a free {TRIAL.durationMinutes}-minute class and assess tutor fit before choosing a plan.
+                No credit card required. Request {TRIAL_OFFER} and assess tutor fit before choosing a plan.
               </p>
             </div>
             <div className="cta-form-wrap">
               <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
-                Book Your Free Trial Class
+                Start {TRIAL.classes} Free Trial Sessions
               </h3>
               <CTAForm formVariant="sisters-landing" />
             </div>

@@ -34,14 +34,14 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
         paragraphs: [
           'Many NYC Muslim parents initially look for a local masjid or madrasa within walking distance or a short drive. However, in New York, weekend madrasahs often feature large class sizes (15–25 students per teacher) where a child only gets 3 to 5 minutes of individual recitation and Makharij correction. Furthermore, winter weather and evening rush-hour traffic on the BQE, LIE, or Belt Parkway turn a 20-minute journey into an exhausting ordeal for young children.',
           'NoorPath Academy’s online Quran classes provide the ideal solution: your child learns 1-on-1 with a qualified tutor via live video, receiving 100% focused correction on Arabic letter pronunciation, Tajweed rules, and Hifz retention. Sessions are scheduled directly in New York Eastern Time (ET) — ideal for 4:00 PM to 8:30 PM after-school slots or weekend mornings.',
-          'US and Canadian parents can reach us directly via regular phone call or SMS text message at +1 (917) 555-0199 (no WhatsApp required), or connect via WhatsApp and email. You can also start with a free 30-minute trial class to evaluate tutor compatibility before committing.',
+          'US and Canadian parents can reach us directly via regular phone call or SMS text message at +1 (917) 555-0199 (no WhatsApp required), or connect via WhatsApp and email. You can also start with 3 free 30-minute trial sessions to evaluate tutor compatibility before committing.',
         ],
         bullets: [
           'Zero commute: Learn comfortably from home across all NYC boroughs and suburbs',
           'Live 1-on-1 private tuition with 100% dedicated teacher attention',
           'Convenient Eastern Time (ET) scheduling after school and weekends',
           'Direct USA/Canada phone call and SMS support (+1 917 555 0199) without needing WhatsApp',
-          'Free 30-minute trial class with no credit card required',
+          '3 free 30-minute trial sessions with no credit card required',
         ],
       },
       {
@@ -204,7 +204,7 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
         id: "new-york-next-steps",
         heading: "What should a New York family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred Eastern Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred Eastern Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],
@@ -314,7 +314,7 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
       },
       {
         id: 'houston-how-should-we-use-a-trial',
-        heading: 'How should a family use a trial lesson?',
+        heading: 'How should a family use the trial sessions?',
         directAnswer:
           'Treat the trial as a structured evaluation of level, tutor interaction, and technology. Confirm the price, duration, platform, tutor, and whether the tutor would remain after enrollment. The session should include meaningful sample teaching and a recommendation, while leaving the family free to review the commercial terms afterward.',
         paragraphs: [
@@ -413,7 +413,7 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
         id: "houston-next-steps",
         heading: "What should a Houston family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],
@@ -523,7 +523,7 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
       },
       {
         id: 'dallas-what-makes-a-useful-trial',
-        heading: 'What makes a trial lesson commercially useful?',
+        heading: 'What makes the trial sessions useful?',
         directAnswer:
           'A useful trial lets the learner experience real instruction while the family checks technology and tutor fit. Before joining, confirm cost, length, course, platform, tutor identity, and whether that tutor would continue. Afterward, request a reasoned placement, proposed Central Time schedule, and written USD plan without pressure.',
         paragraphs: [
@@ -622,7 +622,7 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
         id: "dallas-next-steps",
         heading: "What should a Dallas family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],

@@ -1,5 +1,5 @@
 // Auto-extracted from original HTML blog files — styles + content
-import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 
 // Shared style for Islamic reference articles (verses, duas, alphabet)
 const ISLAMIC_STYLE = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
@@ -192,7 +192,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Want your child to learn Allahu Akbar, Salah and daily dhikr with correct pronunciation?</strong> NoorPath Academy teaches Islamic phrases, Noorani Qaida and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to learn Allahu Akbar, Salah and daily dhikr with correct pronunciation?</strong> NoorPath Academy teaches Islamic phrases, Noorani Qaida and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card required.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -390,7 +390,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Help your child learn the Kalimas and Shahada with correct Tajweed.</strong> NoorPath Academy teaches the 6 Kalimas, Islamic Studies and Quran in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+            <strong>Help your child learn the Kalimas and Shahada with correct Tajweed.</strong> NoorPath Academy teaches the 6 Kalimas, Islamic Studies and Quran in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a>.
           </div>`,
   },
   "dua-before-sleeping-islam": {
@@ -469,7 +469,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Want your child to learn bedtime duas with correct pronunciation?</strong> NoorPath Academy teaches sleeping adhkar, daily duas and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+            <strong>Want your child to learn bedtime duas with correct pronunciation?</strong> NoorPath Academy teaches sleeping adhkar, daily duas and Quran with Tajweed in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a>.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -557,7 +557,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Teach your child Surah Al-Falaq, An-Nas and daily protection duas with a live tutor.</strong> NoorPath Academy offers Islamic Studies and Quran classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+            <strong>Teach your child Surah Al-Falaq, An-Nas and daily protection duas with a live tutor.</strong> NoorPath Academy offers Islamic Studies and Quran classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a>.
           </div>`,
   },
   "morning-evening-adhkar-dhikr": {
@@ -646,7 +646,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Build a daily adhkar habit for your whole family.</strong> NoorPath Academy teaches morning/evening adhkar, duas and Quran with Tajweed in live 1-on-1 classes for kids and adults. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+            <strong>Build a daily adhkar habit for your whole family.</strong> NoorPath Academy teaches morning/evening adhkar, duas and Quran with Tajweed in live 1-on-1 classes for kids and adults. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a>.
           </div>`,
   },
   "last-two-ayahs-surah-baqarah": {
@@ -769,7 +769,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Want your child to learn the last two ayats with correct Tajweed and meaning?</strong> NoorPath Academy teaches Quran memorisation, bedtime adhkar, Noorani Qaida and Islamic Studies in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to learn the last two ayats with correct Tajweed and meaning?</strong> NoorPath Academy teaches Quran memorisation, bedtime adhkar, Noorani Qaida and Islamic Studies in live 1-on-1 classes for kids worldwide. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card required.
           </div>`,
   },
   "dua-for-parents-rabbirhamhuma": {
@@ -890,7 +890,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </details>
 
           <div class="highlight-box">
-            <strong>Want your child to learn Quranic duas with correct pronunciation and meaning?</strong> NoorPath Academy teaches <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>, Noorani Qaida, Quran with Tajweed and Islamic Studies in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to learn Quranic duas with correct pronunciation and meaning?</strong> NoorPath Academy teaches <a href="/blog/duas-for-kids-to-memorize">duas for kids</a>, Noorani Qaida, Quran with Tajweed and Islamic Studies in live 1-on-1 classes. <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a> — no credit card required.
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -998,7 +998,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <p>There is no fixed daily minimum. Recite it in Salah, three times morning and evening with the other Quls, and before sleep. Reciting it often is highly rewarded because of its virtue.</p>
           </details>
           <details class="faq-acc"><summary>Can my child learn Surah Ikhlas online?<span>+</span></summary>
-            <p>Yes. Live 1-on-1 online classes are ideal because a tutor corrects pronunciation in real time. NoorPath Academy teaches Surah Ikhlas, the 4 Quls, Noorani Qaida and Quran with Tajweed — with a free 30-minute trial.</p>
+            <p>Yes. Live 1-on-1 online classes are ideal because a tutor corrects pronunciation in real time. NoorPath Academy teaches Surah Ikhlas, the 4 Quls, Noorani Qaida and Quran with Tajweed — with 3 free 30-minute trial sessions.</p>
           </details>
 
           <div class="tldr-box">
@@ -1015,7 +1015,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p><strong>Dua e Istikhara</strong> is the supplication of seeking guidance from Allah before any important decision — marriage, a job offer, moving abroad, choosing a school, or any matter where the heart hesitates. The Prophet ﷺ taught this dua to his companions "as he would teach them a surah of the Quran" (Sahih al-Bukhari 1162) — showing how central it is to a Muslim's life. Children learning to make decisions can be taught Istikhara step by step in <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Istikhara means "seeking the best (khayr) from Allah." You pray <strong>2 rakats of voluntary prayer</strong>, then recite the Istikhara dua, mentioning your specific need. The answer comes as ease or difficulty in the matter — <em>not necessarily a dream</em>. The full dua with Arabic, transliteration and English is below. Want to learn duas and Salah with a live tutor? <a href="/online-quran-classes-for-kids">Book a free trial class</a>.
+            <strong>Quick answer:</strong> Istikhara means "seeking the best (khayr) from Allah." You pray <strong>2 rakats of voluntary prayer</strong>, then recite the Istikhara dua, mentioning your specific need. The answer comes as ease or difficulty in the matter — <em>not necessarily a dream</em>. The full dua with Arabic, transliteration and English is below. Want to learn duas and Salah with a live tutor? <a href="/online-quran-classes-for-kids">Book 3 free trial sessions</a>.
           </div>
 
           <h2 id="what-is">What is Istikhara?</h2>
@@ -1067,7 +1067,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Teenagers especially benefit from learning Istikhara early — it trains them to include Allah in every decision. Start by teaching the shortened concept ("we ask Allah to choose for us"), then help them memorise the dua in parts, and let them see you praying Istikhara for family decisions.</p>
 
           <div class="highlight-box">
-            <strong>Want your child to learn duas, Salah and Quran with guided pronunciation practice?</strong> NoorPath Academy offers live 1-on-1 classes covering Salah, selected duas and Quran with Tajweed. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to learn duas, Salah and Quran with guided pronunciation practice?</strong> NoorPath Academy offers live 1-on-1 classes covering Salah, selected duas and Quran with Tajweed. <a href="/online-quran-classes-for-kids">Request 3 free 30-minute trial sessions</a> — no credit card required.
           </div>`,
   },
   "tahajjud-prayer": {
@@ -1075,7 +1075,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p><strong>Tahajjud</strong> is the voluntary night prayer performed after waking from sleep — the prayer of the Prophets, the righteous, and every believer seeking closeness to Allah. The Quran promises the one who prays it a <em>Maqam Mahmud</em> — a praised station: "And during the night, wake up and pray, as an extra offering of your own; so that your Lord may raise you to a praised station." (Surah Al-Isra 17:79)</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Tahajjud is prayed <strong>after Isha and after sleeping</strong>, ideally in the <strong>last third of the night</strong> (roughly 1–2 hours before Fajr). Pray a minimum of <strong>2 rakats</strong>, in sets of two — the Prophet ﷺ commonly prayed 8 rakats plus 3 Witr. Duas in this time are answered. Full method below. Want to perfect your Salah and recitation? <a href="/online-quran-classes-for-adults">Book a free trial class</a>.
+            <strong>Quick answer:</strong> Tahajjud is prayed <strong>after Isha and after sleeping</strong>, ideally in the <strong>last third of the night</strong> (roughly 1–2 hours before Fajr). Pray a minimum of <strong>2 rakats</strong>, in sets of two — the Prophet ﷺ commonly prayed 8 rakats plus 3 Witr. Duas in this time are answered. Full method below. Want to perfect your Salah and recitation? <a href="/online-quran-classes-for-adults">Book 3 free trial sessions</a>.
           </div>
 
           <h2 id="what-is">What is Tahajjud?</h2>
@@ -1138,7 +1138,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ol>
 
           <div class="highlight-box">
-            <strong>Want guided practice for Salah, recitation and duas?</strong> NoorPath Academy offers adults and children live 1-on-1 lessons in Salah, Tajweed and Quran from the basics. <a href="/online-quran-classes-for-adults">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Want guided practice for Salah, recitation and duas?</strong> NoorPath Academy offers adults and children live 1-on-1 lessons in Salah, Tajweed and Quran from the basics. <a href="/online-quran-classes-for-adults">Request 3 free 30-minute trial sessions</a> — no credit card required.
           </div>`,
   },
   "surah-waqiah-benefits": {
@@ -1323,7 +1323,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p><strong>Darood Sharif</strong> (also spelled Durood Shareef) is the beautiful blessing that Muslims send upon the Prophet Muhammad ﷺ. The most well-known form — <strong>Darood Ibrahim</strong> — is recited in the final sitting of every Salah, making it one of the most repeated supplications in a Muslim's life.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Darood Sharif means sending blessings (salawat) upon the Prophet ﷺ. The complete form recited in Salah is <strong>Darood Ibrahim</strong>: "Allaahumma salli alaa Muhammadin wa alaa aali Muhammad…". Allah promises ten blessings for every one Darood a person sends. Want your child to recite it perfectly in Salah? <a href="/online-quran-classes-for-kids">Book a free trial class</a>.
+            <strong>Quick answer:</strong> Darood Sharif means sending blessings (salawat) upon the Prophet ﷺ. The complete form recited in Salah is <strong>Darood Ibrahim</strong>: "Allaahumma salli alaa Muhammadin wa alaa aali Muhammad…". Allah promises ten blessings for every one Darood a person sends. Want your child to recite it perfectly in Salah? <a href="/online-quran-classes-for-kids">Book 3 free trial sessions</a>.
           </div>
 
           <h2 id="what-is">What is Darood Sharif?</h2>
@@ -1410,7 +1410,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Want your child to practise Darood Sharif for prayer?</strong> NoorPath Academy offers live 1-on-1 lessons covering Salah, Darood and Quran recitation. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Want your child to practise Darood Sharif for prayer?</strong> NoorPath Academy offers live 1-on-1 lessons covering Salah, Darood and Quran recitation. <a href="/online-quran-classes-for-kids">Request 3 free 30-minute trial sessions</a> — no credit card required.
           </div>`,
   },
   "4-quls": {
@@ -1569,7 +1569,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Ready to introduce your child to the Arabic alphabet?</strong> NoorPath Academy offers live 1-on-1 Arabic alphabet and Noorani Qaida lessons. Male and female tutors are available. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial</a> — no credit card required.
+            <strong>Ready to introduce your child to the Arabic alphabet?</strong> NoorPath Academy offers live 1-on-1 Arabic alphabet and Noorani Qaida lessons. Male and female tutors are available. <a href="/online-quran-classes-for-kids">Request 3 free 30-minute trial sessions</a> — no credit card required.
           </div>`,
   },
   "ayat-e-karima": {
@@ -1613,7 +1613,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Learn the Quran and selected duas with guided Tajweed practice.</strong> NoorPath Academy offers live 1-on-1 Quran, duas and Tajweed lessons with a free 30-minute trial request. <a href="/online-quran-classes-for-kids">Request your trial</a> — no credit card required.
+            <strong>Learn the Quran and selected duas with guided Tajweed practice.</strong> NoorPath Academy offers live 1-on-1 Quran, duas and Tajweed lessons with 3 free 30-minute trial sessions. <a href="/online-quran-classes-for-kids">Request your trial</a> — no credit card required.
           </div>`,
   },
   "six-kalimas-of-islam": {
@@ -1644,7 +1644,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p>The <strong>6 Kalimas of Islam</strong> are the very first thing most Muslim children are taught to memorise — six short, powerful statements that summarise the core of Islamic belief. From declaring the Oneness of Allah to seeking His forgiveness and rejecting disbelief, the Six Kalimas are a complete foundation of faith in just a few lines.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> The 6 Kalimas are: (1) <strong>Tayyabah</strong> (Purity), (2) <strong>Shahadat</strong> (Testimony), (3) <strong>Tamjeed</strong> (Glorification), (4) <strong>Tawheed</strong> (Oneness), (5) <strong>Istighfar</strong> (Seeking Forgiveness), and (6) <strong>Radd-e-Kufr</strong> (Rejection of Disbelief). Below you will find each one in Arabic, transliteration and clear English — plus how to help your child memorise them. Want a tutor to teach them correctly? <a href="/online-quran-classes-for-kids">Book a free 30-minute trial</a>.
+            <strong>Quick answer:</strong> The 6 Kalimas are: (1) <strong>Tayyabah</strong> (Purity), (2) <strong>Shahadat</strong> (Testimony), (3) <strong>Tamjeed</strong> (Glorification), (4) <strong>Tawheed</strong> (Oneness), (5) <strong>Istighfar</strong> (Seeking Forgiveness), and (6) <strong>Radd-e-Kufr</strong> (Rejection of Disbelief). Below you will find each one in Arabic, transliteration and clear English — plus how to help your child memorise them. Want a tutor to teach them correctly? <a href="/online-quran-classes-for-kids">Book 3 free 30-minute trial sessions</a>.
           </div>
 
           <div class="gold-box">
@@ -1762,7 +1762,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Ready to help your child learn the Kalimas?</strong> NoorPath Academy offers live 1-on-1 lessons covering the Six Kalimas, Noorani Qaida and Quran recitation. Tutor preference and class time are confirmed after matching. <a href="/online-quran-classes-for-kids">Request a free 30-minute trial class</a> — no credit card required.
+            <strong>Ready to help your child learn the Kalimas?</strong> NoorPath Academy offers live 1-on-1 lessons covering the Six Kalimas, Noorani Qaida and Quran recitation. Tutor preference and class time are confirmed after matching. <a href="/online-quran-classes-for-kids">Request 3 free 30-minute trial sessions</a> — no credit card required.
           </div><p>New Muslims learning kalimas often continue into reading foundations via <a href="/online-quran-for-beginners">online Quran for beginners</a>.</p>
           `,
   },
@@ -1789,7 +1789,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
     content: `<p>If you are a Muslim parent in the UK searching for <strong>online Quran classes for your kids</strong>, live lessons can provide a travel-free option around school and family schedules in Birmingham, Bradford, London, Luton, Manchester, Leicester, and elsewhere. Tutor and GMT/BST availability should be confirmed before enrolment.</p>
 
           <div class="highlight-box">
-            <strong>Quick answer:</strong> Online Quran classes can connect a child with a tutor over a live 1-on-1 video call. Compare the proposed tutor's credentials, safeguarding process, complete monthly price, lesson length and confirmed schedule before enrolling. NoorPath lets families <a href="/online-quran-classes-for-kids">request a free 30-minute trial class</a> with no credit card. Country scheduling context: <a href="/locations/online-quran-classes-uk">online Quran classes UK</a>.
+            <strong>Quick answer:</strong> Online Quran classes can connect a child with a tutor over a live 1-on-1 video call. Compare the proposed tutor's credentials, safeguarding process, complete monthly price, lesson length and confirmed schedule before enrolling. NoorPath lets families <a href="/online-quran-classes-for-kids">request 3 free 30-minute trial sessions</a> with no credit card. Country scheduling context: <a href="/locations/online-quran-classes-uk">online Quran classes UK</a>.
           </div>
 
           <p>This guide covers everything a UK parent needs to decide: how online classes work, what they cost, how to keep your child safe, whether they are as effective as in-person madrassah, and how to choose the right teacher. Let's begin.</p>
@@ -1914,7 +1914,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <h2 id="choose">How to choose an online Quran academy in the UK</h2>
           <p>Before you pay, use this checklist and ask each provider to explain what it can actually confirm:</p>
           <ul>
-            <li>✅ <strong>Free trial lesson</strong> before any payment (no credit card required)</li>
+            <li>✅ <strong>3 free trial sessions</strong> before any payment (no credit card required)</li>
             <li>✅ Evidence of credentials relevant to the proposed tutor and course</li>
             <li>✅ <strong>Live 1-on-1</strong> classes (not pre-recorded videos or group calls)</li>
             <li>✅ <strong>Female tutors available</strong> for daughters</li>
@@ -1926,18 +1926,18 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <h2 id="getting-started">How to get started (the easy first step)</h2>
-          <p>You do not need to commit to anything to find out if online learning suits your child. The smartest first move is a <strong>free trial class</strong>: you meet the tutor, watch how they interact with your child, and see the platform in action — all before paying a penny.</p>
-          <p>NoorPath offers a <strong>${TRIAL.durationMinutes}-minute trial for $${TRIAL.price}</strong> with no credit card required. UK learners can request a GMT/BST tutor match; availability is confirmed after the request. NoorPath does not claim physical UK branches.</p>
+          <p>You do not need to commit to anything to find out if online learning suits your child. The smartest first move is the <strong>3 free trial sessions</strong>: you meet the tutor, watch how they interact with your child, and see the platform in action — all before paying a penny.</p>
+          <p>NoorPath offers <strong>${TRIAL_OFFER}</strong> with no credit card required. UK learners can request a GMT/BST tutor match; availability is confirmed after the request. NoorPath does not claim physical UK branches.</p>
 
           <div class="gold-box">
-            <strong>Ready to try?</strong> <a href="/online-quran-classes-for-kids">Book your child's free 30-minute trial class</a> today — choose a UK-friendly time, request a male or female tutor, and see the difference 1-on-1 learning makes.
+            <strong>Ready to try?</strong> <a href="/online-quran-classes-for-kids">Book your child's 3 free trial sessions</a> today — choose a UK-friendly time, request a male or female tutor, and see the difference 1-on-1 learning makes.
           </div>
 
           <h2 id="faq">Frequently asked questions</h2>
 
           <details class="faq-acc">
             <summary>How much do online Quran classes cost in the UK? <span>+</span></summary>
-            <p>NoorPath's ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd} USD/month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute sessions. Published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and does not require a credit card.</p>
+            <p>NoorPath's ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd} USD/month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute sessions. Published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and do not require a credit card.</p>
           </details>
 
           <details class="faq-acc">
@@ -2116,7 +2116,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn Arabic &amp; Understand the Quran</h3>
             <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Understanding these phrases is the first step. Learn to read the Quran in its original language with a certified tutor — free 30-minute trial.</p>
-            <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+            <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Start 3 Free Trial Sessions →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -2208,7 +2208,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn to Recite &amp; Understand the Quran</h3>
             <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Deepen your connection with Allah — learn Quran and Arabic with a certified tutor. Free 30-minute trial, no credit card.</p>
-            <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+            <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Start 3 Free Trial Sessions →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -2482,7 +2482,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Learn to Recite Surah Mulk Correctly</h3>
-            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Recite and memorize Surah Al-Mulk with proper Tajweed under a certified tutor. Free 30-minute trial class.</p>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">Recite and memorize Surah Al-Mulk with proper Tajweed under a certified tutor. 3 free 30-minute trial sessions.</p>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
               <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial →</a>
               <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Hifz Program</a>
@@ -2909,9 +2909,9 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <!-- =================== CTA =================== -->
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:44px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Find Peace Through a Deeper Connection with the Quran</h3>
-            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">The Quran is described as a healing for what is in the hearts (10:57). Learning to recite and understand it with presence is one of the most powerful long-term remedies for a restless heart. NoorPath Academy offers structured 1-on-1 classes in <a href="/courses/noorani-qaida-online" style="color:var(--gold);text-decoration:underline;font-weight:700;">Noorani Qaida online</a>, <a href="/courses/tajweed-classes-online" style="color:var(--gold);text-decoration:underline;font-weight:700;">Tajweed classes online</a>, and adult recitation. Start with a free 30-minute trial with a certified tutor.</p>
+            <p style="color:rgba(255,255,255,.82);margin-bottom:24px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto;">The Quran is described as a healing for what is in the hearts (10:57). Learning to recite and understand it with presence is one of the most powerful long-term remedies for a restless heart. NoorPath Academy offers structured 1-on-1 classes in <a href="/courses/noorani-qaida-online" style="color:var(--gold);text-decoration:underline;font-weight:700;">Noorani Qaida online</a>, <a href="/courses/tajweed-classes-online" style="color:var(--gold);text-decoration:underline;font-weight:700;">Tajweed classes online</a>, and adult recitation. Start with 3 free 30-minute trial sessions with a certified tutor.</p>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book a Free Trial Class →</a>
+              <a href="/free-quran-classes-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Start 3 Free Trial Sessions →</a>
               <a href="/online-quran-for-beginners" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Quran for Beginners</a>
             </div>
           </div>
@@ -3023,7 +3023,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>📖 The Hadith on Asmaul Husna:</strong> The Prophet ﷺ said: <em>"Inna lillahi tis'atan wa tis'eena isma, mi'atan illa wahida, man ahsaha dakhala al-jannah."</em> — "Allah has ninety-nine names, one hundred minus one. Whoever memorizes them will enter Paradise." (Sahih Bukhari, Hadith 2736; Sahih Muslim, Hadith 2677)
           </div>
 
-          <p>Scholars explain that "memorizing" (ahsaha) means <strong>understanding, reflecting on, and living by</strong> the meanings — not just reciting the names. Each name of Allah is a doorway to deeper faith, better worship, and more sincere dua. Families who want live guidance for Asmaul Husna and Quran can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a>.</p>
+          <p>Scholars explain that "memorizing" (ahsaha) means <strong>understanding, reflecting on, and living by</strong> the meanings — not just reciting the names. Each name of Allah is a doorway to deeper faith, better worship, and more sincere dua. Families who want live guidance for Asmaul Husna and Quran can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with 3 free trial sessions</a>.</p>
 
           <!-- =================== NAMES 1-10 =================== -->
           <div class="category-header">
@@ -3909,7 +3909,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Learn Asmaul Husna, Tajweed &amp; Quran at NoorPath Academy</strong><br>
             NoorPath Academy matches students of all ages with certified native tutors for 1-on-1 personalized lessons. Build strong Quranic foundations in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, refine your pronunciation with <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">Tajweed classes online</a>, or explore our comprehensive <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">Islamic Studies classes</a>.<br><br>
-            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp;
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with 3 free trial sessions →</a> &nbsp;|&nbsp;
             <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran classes for kids →</a> &nbsp;|&nbsp;
             <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Online Hifz program →</a>
           </div>
@@ -4203,7 +4203,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== TEACHING KIDS =================== -->
           <h2>How can parents teach children to say Alhamdulillah?</h2>
-          <p>Alhamdulillah is one of the first Islamic phrases a child should learn — even before formal Quran lessons begin. Families who want guided practice can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a>, then <a href="/pricing" style="color:var(--emerald);font-weight:600;">see our simple pricing plans</a> if they continue. Here's how to teach it naturally:</p>
+          <p>Alhamdulillah is one of the first Islamic phrases a child should learn — even before formal Quran lessons begin. Families who want guided practice can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with 3 free trial sessions</a>, then <a href="/pricing" style="color:var(--emerald);font-weight:600;">see our simple pricing plans</a> if they continue. Here's how to teach it naturally:</p>
           <ul>
             <li><strong>Model it constantly:</strong> Say Alhamdulillah out loud in front of your children — after eating, when something good happens, after sneezing.</li>
             <li><strong>Connect it to feelings:</strong> When your child experiences something good, prompt them: "What do we say? Alhamdulillah!"</li>
@@ -4240,7 +4240,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Teach your children the language of gratitude from day one.</strong> At NoorPath Academy, our certified tutors teach Alhamdulillah, daily Sunnah duas, and Quran recitation with Tajweed. Build a complete foundation with our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a> or <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a> &nbsp;|&nbsp; <a href="/pricing" style="color:var(--emerald);font-weight:700;">See pricing plans →</a>
+            <strong>Teach your children the language of gratitude from day one.</strong> At NoorPath Academy, our certified tutors teach Alhamdulillah, daily Sunnah duas, and Quran recitation with Tajweed. Build a complete foundation with our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a> or <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with 3 free trial sessions →</a> &nbsp;|&nbsp; <a href="/pricing" style="color:var(--emerald);font-weight:700;">See pricing plans →</a>
           </div>
         </div>
 
@@ -4411,7 +4411,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <!-- =================== IN THE QURAN =================== -->
           <h2>Where is Astaghfirullah mentioned in the Quran?</h2>
-          <p>Allah commands istighfar in the Quran repeatedly, and promises extraordinary rewards for those who do it. Parents who want children to learn istighfar, duas, and Quran with a live tutor can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a> before committing to a plan:</p>
+          <p>Allah commands istighfar in the Quran repeatedly, and promises extraordinary rewards for those who do it. Parents who want children to learn istighfar, duas, and Quran with a live tutor can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with 3 free trial sessions</a> before committing to a plan:</p>
 
           <div class="quran-ref">
             <div class="quran-ref-arabic">فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا ۝ يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا ۝ وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا</div>
@@ -4521,7 +4521,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Learn proper Quran recitation and Islamic knowledge at NoorPath Academy.</strong> Our native tutors teach the correct pronunciation of all Islamic phrases including istighfar, as well as Tajweed, Islamic Studies, and Quran for all ages. Start your journey with our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, master rules in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or enroll in the <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">online Hifz program</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with a free trial class →</a>
+            <strong>Learn proper Quran recitation and Islamic knowledge at NoorPath Academy.</strong> Our native tutors teach the correct pronunciation of all Islamic phrases including istighfar, as well as Tajweed, Islamic Studies, and Quran for all ages. Start your journey with our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, master rules in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or enroll in the <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">online Hifz program</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Start with 3 free trial sessions →</a>
           </div>
         </div>
 
@@ -4921,7 +4921,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <a href="/online-quran-classes-for-kids" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.3);">Kids Quran Classes — Free Trial</a>
               <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.3);">Hifz Memorisation Program</a>
             </div>
-            <p style="color:rgba(255,255,255,.65);font-size:.8rem;margin-top:14px;margin-bottom:0;">See <a href="/pricing" style="color:rgba(255,255,255,.9);font-weight:600;">pricing plans</a> — or <a href="/free-quran-classes-online" style="color:rgba(255,255,255,.9);font-weight:600;">book a free 30-minute trial</a> with no card required.</p>
+            <p style="color:rgba(255,255,255,.65);font-size:.8rem;margin-top:14px;margin-bottom:0;">See <a href="/pricing" style="color:rgba(255,255,255,.9);font-weight:600;">pricing plans</a> — or <a href="/free-quran-classes-online" style="color:rgba(255,255,255,.9);font-weight:600;">book 3 free 30-minute trial sessions</a> with no card required.</p>
           </div>
         </div>
 
@@ -5064,7 +5064,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <div class="highlight-box">
-            NoorPath Academy meets all these criteria. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class today</a> — no payment required. JazakAllah Khair.
+            NoorPath Academy meets all these criteria. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book 3 free trial sessions today</a> — no payment required. JazakAllah Khair.
           </div>
         </div>
 
@@ -5209,7 +5209,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ol>
 
           <div class="highlight-box">
-            <strong>Start with a Free Trial:</strong> Not sure which level is right for your child? At NoorPath Academy, we assess your child's level in the <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">free 30-minute trial class</a> and recommend the perfect starting point — no pressure, no payment required.
+            <strong>Start with a Free Trial:</strong> Not sure which level is right for your child? At NoorPath Academy, we assess your child's level in the <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">3 free 30-minute trial sessions</a> and recommend the perfect starting point — no pressure, no payment required.
           </div>
 
           <h2>Common Questions (FAQ)</h2>
@@ -5228,7 +5228,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Ready to begin your child's Quran journey?</strong><br>
-            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class at NoorPath Academy</a> — we'll assess your child's level and create a personalised learning plan. No payment required. JazakAllah Khair.
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book 3 free trial sessions at NoorPath Academy</a> — we'll assess your child's level and create a personalised learning plan. No payment required. JazakAllah Khair.
           </div>
         </div>
 
@@ -5489,7 +5489,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <div class="highlight-box">
-            <strong>At NoorPath Academy</strong>, our tutors teach Dua e Qunoot alongside correct Witr prayer methods, Tajweed, and Quran recitation — all in one structured lesson. <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">See our Islamic Studies course →</a> or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book a free trial class</a>.
+            <strong>At NoorPath Academy</strong>, our tutors teach Dua e Qunoot alongside correct Witr prayer methods, Tajweed, and Quran recitation — all in one structured lesson. <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">See our Islamic Studies course →</a> or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book 3 free trial sessions</a>.
           </div>
 
           <!-- =================== FAQ =================== -->
@@ -5693,7 +5693,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </ul>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Daily Duas are part of our All-in-One Kids Program at NoorPath Academy.</strong> Our tutors teach children their daily Duas alongside Noorani Qaida, short Surahs, and basic Islamic manners — all in one structured class. <a href="/courses/daily-duas-for-kids" style="color:var(--emerald);font-weight:700;">Learn about our Daily Duas program →</a> or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book a free trial class</a>.
+            <strong>Daily Duas are part of our All-in-One Kids Program at NoorPath Academy.</strong> Our tutors teach children their daily Duas alongside Noorani Qaida, short Surahs, and basic Islamic manners — all in one structured class. <a href="/courses/daily-duas-for-kids" style="color:var(--emerald);font-weight:700;">Learn about our Daily Duas program →</a> or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book 3 free trial sessions</a>.
           </div>
         </div>
 
@@ -5852,7 +5852,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box">
-            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Explore our Online Hifz Memorisation Program →</a> · <a href="/pricing" style="color:var(--emerald);font-weight:600;">view Hifz lesson plans &amp; pricing</a> · or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">request a free trial class</a>.
+            <strong>Need a Hifz tutor?</strong> At NoorPath Academy, you can request a tutor match and discuss Sabaq, Sabqi and Manzil revision goals. Lesson frequency and parent updates depend on the agreed plan. <a href="/hifz-quran-online" style="color:var(--emerald);font-weight:700;">Explore our Online Hifz Memorisation Program →</a> · <a href="/pricing" style="color:var(--emerald);font-weight:600;">view Hifz lesson plans &amp; pricing</a> · or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">request 3 free trial sessions</a>.
           </div>
         </div>
 
@@ -6105,7 +6105,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want guided help learning Salah, Quran, and Islamic basics?</strong> NoorPath Academy teaches children, adults, and new Muslims with patient one-to-one tutors. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your free trial class</a>.
+            <strong>Want guided help learning Salah, Quran, and Islamic basics?</strong> NoorPath Academy teaches children, adults, and new Muslims with patient one-to-one tutors. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book 3 free trial sessions</a>.
           </div>
         </div>
 
@@ -6230,10 +6230,10 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <h2>Conclusion</h2>
           <p>Teaching your child the Quran is one of the greatest acts of love and worship a parent can perform. Start early, stay consistent, make it joyful, and choose the right tutor.</p>
-          <p>If you're looking for a certified online Quran tutor for your child, <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">NoorPath Academy offers a free 30-minute trial class</a> — no payment required. See the difference a qualified, caring tutor makes.</p>
+          <p>If you're looking for a certified online Quran tutor for your child, <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">NoorPath Academy offers 3 free 30-minute trial sessions</a> — no payment required. See the difference a qualified, caring tutor makes.</p>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Ready to begin?</strong> <a href="/free-quran-classes-online" style="color:var(--emerald);">Request your child's free trial class</a> and discuss an available tutor match. JazakAllah Khair.
+            <strong>Ready to begin?</strong> <a href="/free-quran-classes-online" style="color:var(--emerald);">Request your child's 3 free trial sessions</a> and discuss an available tutor match. JazakAllah Khair.
           </div>
         </div>
 
@@ -7033,7 +7033,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           </div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Teach your children to say Mashallah naturally at NoorPath Academy.</strong> Our native tutors teach everyday Islamic phrases, manners (adab), and proper recitation. Build strong Quranic foundations in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida online course</a> or refine your pronunciation in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class today →</a>
+            <strong>Teach your children to say Mashallah naturally at NoorPath Academy.</strong> Our native tutors teach everyday Islamic phrases, manners (adab), and proper recitation. Build strong Quranic foundations in our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida online course</a> or refine your pronunciation in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book 3 free trial sessions today →</a>
           </div>
         </div>
 
@@ -7140,7 +7140,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Ready to start Noorani Qaida?</strong><br>
-            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request a free 30-minute trial class</a> at NoorPath Academy. The trial can identify your starting level and an available tutor match. JazakAllah Khair.
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request 3 free 30-minute trial sessions</a> at NoorPath Academy. The trial can identify your starting level and an available tutor match. JazakAllah Khair.
           </div>
         </div>
 
@@ -7533,7 +7533,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
         <li><a href="/blog/duas-for-kids-to-memorize" style="color:var(--emerald);">Essential Duas for Kids to Memorize</a></li>
       </ul>
       <div style="margin-top:16px;">
-        <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class at NoorPath Academy →</a>
+        <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book 3 free trial sessions at NoorPath Academy →</a>
       </div>
     </div>`,
   },
@@ -8201,7 +8201,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               <a href="/learn-tajweed-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Explore our Tajweed Course →</a>
               <a href="/hifz-quran-online" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Memorise Surah Yaseen — Hifz Program</a>
             </div>
-            <p style="color:rgba(255,255,255,.65);font-size:.82rem;margin-top:16px;margin-bottom:0;">Or <a href="/free-quran-classes-online" style="color:rgba(255,255,255,.9);font-weight:600;">book a free trial class</a> and tell us your current level.</p>
+            <p style="color:rgba(255,255,255,.65);font-size:.82rem;margin-top:16px;margin-bottom:0;">Or <a href="/free-quran-classes-online" style="color:rgba(255,255,255,.9);font-weight:600;">book 3 free trial sessions</a> and tell us your current level.</p>
           </div>
         </div>
 
@@ -8448,7 +8448,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Want to learn Quran recitation with Tajweed?</strong><br/>
-  NoorPath offers live one-to-one Quran lessons with pronunciation guidance, including practice from Surah Al-Kahf. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request a free trial class →</a>
+  NoorPath offers live one-to-one Quran lessons with pronunciation guidance, including practice from Surah Al-Kahf. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request 3 free trial sessions →</a>
 </div>
     `,
   },
@@ -8555,7 +8555,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Learn to pray Salah correctly with a certified tutor</strong><br/>
-  Our tutors teach Wudu, Salah, Tajweed and Islamic studies to children and adults. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your free 30-min trial →</a>
+  Our tutors teach Wudu, Salah, Tajweed and Islamic studies to children and adults. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book your 3 free 30-minute trial sessions →</a>
 </div>
     `,
   },
@@ -8662,7 +8662,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);text-align:center;">
   <strong>📚 Teach your children the Quran and its wisdom</strong><br/>
-  NoorPath offers online Quran and Islamic Studies lessons whose content depends on the selected course and learner level. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request a free trial class →</a>
+  NoorPath offers online Quran and Islamic Studies lessons whose content depends on the selected course and learner level. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request 3 free trial sessions →</a>
 </div>
     `,
   },
@@ -8731,7 +8731,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 <p>Teaching children the Five Pillars from an early age builds their Islamic identity, gives them spiritual discipline, and connects them to their Creator. At NoorPath Academy, our Islamic Studies course covers all Five Pillars with age-appropriate explanations, Quranic references, and interactive activities designed for children aged 4-16.</p>
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Want to teach your child the Five Pillars properly?</strong><br/>
-  Enroll in our <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">Islamic Studies Online Course</a> — structured lessons on Aqeedah, Fiqh, Seerah, and Islamic practice. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book a free trial class →</a>
+  Enroll in our <a href="/courses/islamic-studies-online" style="color:var(--emerald);font-weight:700;">Islamic Studies Online Course</a> — structured lessons on Aqeedah, Fiqh, Seerah, and Islamic practice. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book 3 free trial sessions →</a>
 </div>
 
 <p>If Salah is already part of your life and you want stronger Quran recitation as an adult learner, see <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
@@ -8828,7 +8828,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);">
   <strong>📚 Want your child to learn Surah Al-Fatiha with correct Tajweed?</strong><br/>
-  Surah Al-Fatiha can be included in the <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme according to the learner's level. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request a free 30-min trial →</a>
+  Surah Al-Fatiha can be included in the <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:700;">Quran Classes for Kids</a> programme according to the learner's level. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Request 3 free 30-minute trial sessions →</a>
 </div>
     `,
   },
@@ -8911,9 +8911,9 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
 <div class="highlight-box" style="background:rgba(201,146,42,.08);border-color:var(--gold);text-align:center;">
   <strong>Ready to request a tutor match?</strong><br/><br/>
-  Live 1-on-1 online lessons · ${TRIAL.durationMinutes}-minute trial for $${TRIAL.price} · no credit card required.<br/>
+  Live 1-on-1 online lessons · ${TRIAL_OFFER} · no credit card required.<br/>
   Tutor and timezone availability are confirmed after your request.<br/><br/>
-  <a href="/free-quran-classes-online" style="display:inline-block;background:var(--emerald);color:#fff;padding:14px 32px;border-radius:50px;font-weight:700;text-decoration:none;margin-top:8px;">Book Your Free Trial Class →</a>
+  <a href="/free-quran-classes-online" style="display:inline-block;background:var(--emerald);color:#fff;padding:14px 32px;border-radius:50px;font-weight:700;text-decoration:none;margin-top:8px;">Start 3 Free Trial Sessions →</a>
 </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9112,7 +9112,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <details class="faq-acc"><summary>Can children learn Inshallah easily?<span>+</span></summary><p>Yes. Use it in daily talk before homework, outings, and weekend plans. Pair it with Bismillah and Alhamdulillah so Islamic phrases become natural habits.</p></details>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, enroll in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book a free trial class today →</a>
+            <strong>Want your children to learn Inshallah, Quran, and Islamic manners together?</strong> NoorPath Academy teaches daily Islamic phrases, Noorani Qaida, Tajweed, and live 1-on-1 Quran classes for kids and adults. Explore our <a href="/courses/noorani-qaida-online" style="color:var(--emerald);font-weight:700;">Noorani Qaida course</a>, enroll in <a href="/courses/tajweed-classes-online" style="color:var(--emerald);font-weight:700;">online Tajweed classes</a>, or <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">book 3 free trial sessions today →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9280,7 +9280,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <p>Before paying for months of lessons, verify these points during your free trial:</p>
           <ul class="checklist">
             <li><strong>Relevant credentials</strong> — ask for evidence connected to the proposed tutor and course</li>
-            <li><strong>Free trial lesson</strong> — no payment required before you experience a class</li>
+            <li><strong>3 free trial sessions</strong> — no payment required before you experience a class</li>
             <li><strong>1-on-1 live classes</strong> — not pre-recorded videos marketed as "classes"</li>
             <li><strong>Written rescheduling terms</strong> — confirm notice requirements before payment</li>
             <li><strong>Patient with adult beginners</strong> — teacher does not rush or show frustration</li>
@@ -9319,7 +9319,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               ${PRICING_PLANS.map((plan) => `<tr><td><strong>${plan.name}</strong></td><td>${plan.sessionsPerWeek} per week × ${plan.sessionMinutes} min</td><td>$${plan.monthlyPriceUsd}/month</td><td>${plan.description}</td></tr>`).join("")}
             </tbody>
           </table>
-          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, the ${PRICING_PLANS[0].name} plan is <strong>$${PRICING_PLANS[0].monthlyPriceUsd}/month</strong>. Published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price}, with no credit card required.</p>
+          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy</a>, the ${PRICING_PLANS[0].name} plan is <strong>$${PRICING_PLANS[0].monthlyPriceUsd}/month</strong>. Published sibling discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free, with no credit card required.</p>
 
           <h2>Can Women Learn Quran Online with a Female Teacher?</h2>
           <p>Adult women can request a female tutor for comfort and privacy. NoorPath confirms a suitable tutor and schedule according to the learner's goals and current availability. Ask for the proposed tutor's credentials before enrolment. See also our <a href="/learn-tajweed-online" style="color:var(--emerald);font-weight:600;">Learn Tajweed Online</a> page if your goal is pronunciation practice.</p>
@@ -9374,9 +9374,9 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <div class="highlight-box"><strong>What if I studied as a child but forgot everything?</strong><br>Very common. Your tutor will assess whether you need full Qaida or can restart from a mid-Qaida page. Most returning adults refresh Qaida in 4–6 weeks then move to the Mushaf.</div>
 
           <div class="highlight-box" style="margin-top:32px;">
-            <strong>Ready to start? You are one free trial away from reading your first ayah.</strong><br><br>
+            <strong>Ready to start? You are 3 free trial sessions away from reading your first ayah.</strong><br><br>
             NoorPath Academy offers live 1-on-1 <strong>online Quran classes for adults and kids</strong> with tutor matching by course goal and timezone, plus a structured Qaida → Quran → Tajweed learning path. No prior Arabic is required for beginner Qaida. The trial is free and does not require a credit card.<br><br>
-            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;font-size:1.05rem;">Book your free 30-minute trial class now →</a>
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;font-size:1.05rem;">Book your 3 free 30-minute trial sessions now →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9523,9 +9523,9 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
               ${PRICING_PLANS.map((plan) => `<tr><td>${plan.name}</td><td>${plan.sessionsPerWeek}× ${plan.sessionMinutes} min</td><td>$${plan.monthlyPriceUsd}/month</td></tr>`).join("")}
             </tbody>
           </table>
-          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy pricing</a>, the ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd}/month. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and requires no credit card.</p>
+          <p>At <a href="/pricing" style="color:var(--emerald);font-weight:600;">NoorPath Academy pricing</a>, the ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd}/month. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and require no credit card.</p>
 
-          <h2>What Happens in the First Free Trial Class?</h2>
+          <h2>What Happens in the Free Trial Sessions?</h2>
           <ol>
             <li>Teacher introduces themselves warmly to your child (5 min)</li>
             <li>Gentle level assessment — any prior Arabic? (5 min)</li>
@@ -9601,8 +9601,8 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div class="highlight-box" style="margin-top:32px;">
             <strong>Ready to give your child the gift of Quran?</strong><br><br>
-            NoorPath Academy offers <strong>live 1-on-1 online Quran classes for kids</strong>. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price}, requires no credit card, and is subject to tutor matching.<br><br>
-            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;font-size:1.1rem;">Book your child's free trial class now →</a>
+            NoorPath Academy offers <strong>live 1-on-1 online Quran classes for kids</strong>. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free, require no credit card, and is subject to tutor matching.<br><br>
+            <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;font-size:1.1rem;">Book your child's 3 free trial sessions now →</a>
           </div>
 
           <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
@@ -9755,7 +9755,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
           <h2>How can parents easily teach children to say Bismillah?</h2>
           <p>The best way children learn is daily repetition in context — not lectures. Say it aloud before every meal, every car journey, and every Quran lesson. When children hear parents say Bismillah naturally, they adopt it as their own habit.</p>
           <p>For ages 3–6, one clear “Bismillah” before food is enough. For ages 7+, add the full form before Quran practice. Interactive lessons help restless learners stay engaged — explore <a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">interactive Noorani Qaida</a> and <a href="/online-quran-classes-for-kids" style="color:var(--emerald);font-weight:600;">online Quran classes for kids</a>.</p>
-          <p>Families who want a gentle start can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with a free trial class</a> and ask the tutor to include Bismillah and daily manners in the first lessons.</p>
+          <p>Families who want a gentle start can <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:600;">start with 3 free trial sessions</a> and ask the tutor to include Bismillah and daily manners in the first lessons.</p>
 
           <h2>How does Bismillah compare with other daily Islamic phrases?</h2>
           <ul>
@@ -10091,7 +10091,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
 
           <div style="background:linear-gradient(135deg,#0a3d28,var(--emerald));border-radius:16px;padding:32px;text-align:center;margin:40px 0;">
             <h3 style="font-family:var(--font-playfair),serif;color:#fff;font-size:1.6rem;margin-bottom:12px;">Begin Your Hifz Journey Today</h3>
-            <p style="color:rgba(255,255,255,.8);margin-bottom:24px;line-height:1.7;">${TRIAL.durationMinutes}-minute trial for $${TRIAL.price}, with no credit card required. Tutor availability is confirmed after your request.</p>
+            <p style="color:rgba(255,255,255,.8);margin-bottom:24px;line-height:1.7;">${TRIAL_OFFER}, with no credit card required. Tutor availability is confirmed after your request.</p>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
               <a href="/hifz-quran-online" style="background:var(--gold);color:var(--charcoal);font-weight:700;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.95rem;">Book Free Hifz Trial →</a>
               <a href="/online-quran-classes-for-kids" style="background:rgba(255,255,255,.12);color:#fff;font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.3);">Kids Quran Classes</a>
@@ -10111,7 +10111,6 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   },
 };
 
-const canonicalTrialText = `${TRIAL.durationMinutes}-minute trial for $${TRIAL.price}`;
 const canonicalStarterPrice = `$${PRICING_PLANS[0].monthlyPriceUsd}/month`;
 
 export const blogContent: Record<string, { style: string; content: string }> =
@@ -10121,8 +10120,10 @@ export const blogContent: Record<string, { style: string; content: string }> =
       {
         ...entry,
         content: entry.content
-          .replace(/\b(?:a )?free 30-minute trial(?: class)?\b/gi, canonicalTrialText)
-          .replace(/\bfree 30-min trial\b/gi, canonicalTrialText)
+          // Singular trial wording → the published offer ("3 free 30-minute trial sessions").
+          .replace(/\b[Aa] (<a [^>]*>)free 30-minute (adult )?trial\b(?! session)/g, `$1${TRIAL.classes} free 30-minute $2trial sessions`)
+          .replace(/\b(?:a )?free <a ([^>]*)>30-minute trial<\/a>/gi, `<a $1>${TRIAL_OFFER}</a>`)
+          .replace(/\b(?:a )?(?<!\d )free 30-min(?:ute)? trial(?: class| lesson)?\b(?! session)/gi, TRIAL_OFFER)
           .replace(/\$29\/month/gi, canonicalStarterPrice),
       },
     ])

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { cities, getCity, getCityKeywords, isCityIndexable } from "@/data/cities";
 import { getCityLandingPageData, isRebuiltCity } from "@/data/cityLandingPages";
 import RebuiltCityView from "@/components/RebuiltCityView";
+import { getDisplayRates } from "@/lib/currency/rates";
+import { getCountryMarket } from "@/data/countryMarkets";
 import { getCityGuide } from "@/data/cityGuides";
 import { getLocation } from "@/data/locations";
 import { CONTACT, FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
@@ -82,7 +84,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...(indexable ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
       title: `Online Quran Classes in ${c.city} — Live 1-on-1 | NoorPath Academy`,
-      description: `Live 1-on-1 online Quran classes for families in ${c.city} with NoorPath Academy. ${c.timezone} lesson windows for kids and adults, plus a free 30-minute trial.`,
+      description: `Live 1-on-1 online Quran classes for families in ${c.city} with NoorPath Academy. ${c.timezone} lesson windows for kids and adults, plus 3 free 30-minute trial sessions.`,
       url: `https://www.noorpath.online/online-quran-classes/${c.slug}`,
       locale: getOpenGraphLocale(c.countrySlug),
       images: [{ url: "/marketing/family-evening-quran.jpg", width: 1200, height: 800, alt: `Online Quran Classes ${c.city}` }],
@@ -116,7 +118,7 @@ export default async function CityPage({ params }: Props) {
   const cityGuide = getCityGuide(c.slug);
   const memorisation = locale === "en-US" ? "memorization" : "memorisation";
   const waText = encodeURIComponent(
-    `Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`
+    `Assalamu Alaikum, I want to book the free Quran trial sessions for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`
   );
 
   const faqs = [
@@ -126,7 +128,7 @@ export default async function CityPage({ params }: Props) {
     },
     {
       q: `How much do online Quran classes cost in ${c.city}?`,
-      a: `The ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute sessions. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} with no credit card required. Published family discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}.`,
+      a: `The ${PRICING_PLANS[0].name} plan is $${PRICING_PLANS[0].monthlyPriceUsd}/month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute sessions. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free, with no credit card required. Published family discounts are ${FAMILY_DISCOUNTS.map(({ siblings, discountPercent }) => `${siblings}: ${discountPercent}%`).join(", ")}.`,
     },
     {
       q: `Do you have a female Quran teacher for daughters in ${c.city}?`,
@@ -290,7 +292,12 @@ export default async function CityPage({ params }: Props) {
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <RebuiltCityView data={rebuilt} pageUrl={pageUrl} />
+        <RebuiltCityView
+          data={rebuilt}
+          pageUrl={pageUrl}
+          rates={await getDisplayRates()}
+          currency={getCountryMarket(rebuilt.countrySlug)?.currency ?? "USD"}
+        />
       </>
     );
   }
@@ -383,7 +390,7 @@ export default async function CityPage({ params }: Props) {
               </div>
               <div style={{ marginTop: 22 }}>
                 <LocationHeroCtaCard
-                  whatsappText={`Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
+                  whatsappText={`Assalamu Alaikum, I want to book the free Quran trial sessions for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
                   isNorthAmerica={isNorthAmerica}
                 />
               </div>
@@ -698,7 +705,7 @@ export default async function CityPage({ params }: Props) {
             Request a tutor and preferred {c.timezone} lesson time. Availability is confirmed after matching.
           </p>
           <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="#trial" className="btn-primary-np">Book Free Trial Class →</a>
+            <a href="#trial" className="btn-primary-np">Start {TRIAL.classes} Free Trial Sessions →</a>
             <WhatsAppLink
               href={`${CONTACT.whatsappUrl}?text=${waText}`}
               target="_blank"
@@ -713,7 +720,7 @@ export default async function CityPage({ params }: Props) {
       </section>
 
       <LocationConversionBar
-        whatsappText={`Assalamu Alaikum, I want to book a Quran trial class for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
+        whatsappText={`Assalamu Alaikum, I want to book the free Quran trial sessions for my family in ${c.city}. Please share tutor availability for ${c.timezone}.`}
       />
     </>
   );

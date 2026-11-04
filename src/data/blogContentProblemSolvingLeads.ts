@@ -3,7 +3,7 @@
  * Honest fixes, soft trial CTAs, no invented outcomes.
  */
 
-import { CANCELLATION_NOTICE_DAYS, PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { CANCELLATION_NOTICE_DAYS, PRICING_PLANS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 
 const S = `.article-body { font-size: 1.05rem; line-height: 1.85; color: #374151; }
   .article-body h2 { font-size: 1.55rem; font-weight: 700; color: var(--charcoal); margin: 44px 0 16px; scroll-margin-top: 90px; }
@@ -208,7 +208,7 @@ export const problemSolvingLeadsBlogContent: Record<string, { style: string; con
             <p>Not automatically. Intensive ($${PRICING_PLANS[2].monthlyPriceUsd}/mo) increases live time but can overwhelm a refusing child. Match plan to attention and habit first.</p>
           </details>
           <p>Homework resistance usually improves when tasks shrink and timing stabilises — not when parents turn every evening into a debate.</p>
-          <p>If you have tried every trick for a month and refusal is getting worse, a fresh tutor voice in a ${TRIAL.durationMinutes}-minute trial sometimes resets the dynamic — especially when the current teacher assigns vague homework or runs overlong sessions.</p>`,
+          <p>If you have tried every trick for a month and refusal is getting worse, a fresh tutor voice in the ${TRIAL_OFFER} sometimes resets the dynamic — especially when the current teacher assigns vague homework or runs overlong sessions.</p>`,
   },
 
   "how-to-know-if-online-quran-tutor-is-good": {
@@ -403,7 +403,7 @@ export const problemSolvingLeadsBlogContent: Record<string, { style: string; con
 
   "online-quran-trial-what-to-expect": {
     style: S,
-    content: `<p>Searching <strong>what to expect in online Quran trial</strong> usually means you are ready to try — but fear wasting time on a sales call. A honest <strong>free Quran trial class</strong> should feel like a real mini-lesson: placement listen, gentle correction, and clear next steps — not pressure to pay on the spot.</p>
+    content: `<p>Searching <strong>what to expect in online Quran trial</strong> usually means you are ready to try — but fear wasting time on a sales call. An honest <strong>free Quran trial class</strong> should feel like a real mini-lesson: placement listen, gentle correction, and clear next steps — not pressure to pay on the spot.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> Expect ${TRIAL.durationMinutes} minutes live one-to-one, a level check (Qaida or reading), one small skill focus, and written follow-up if the academy is organised. No credit card for NoorPath trials. ${TRIAL.availabilityNote} <a href="/free-quran-classes-online">Book your free trial</a>.
@@ -606,7 +606,7 @@ export const problemSolvingLeadsBlogContent: Record<string, { style: string; con
           <p>If your child has completed fewer than three Qaida chapters with stable echo, any “months to Quran” guess is premature. Let the tutor name the next milestone — usually a mus-haf trial ayah — before you worry about Surah length or Hifz timelines.</p>
 
           <h2 id="start">Get an honest placement — not a sales timeline</h2>
-          <p>Ask for a Qaida-to-Quran assessment in your ${TRIAL.durationMinutes}-minute trial. No credit card. ${TRIAL.availabilityNote} <a href="/free-quran-classes-online">Book free trial</a> · <a href="/learn-quran-online">learn Quran online</a>.</p>
+          <p>Ask for a Qaida-to-Quran assessment during your ${TRIAL_OFFER}. No credit card. ${TRIAL.availabilityNote} <a href="/free-quran-classes-online">Book free trial</a> · <a href="/learn-quran-online">learn Quran online</a>.</p>
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>How long until a 6-year-old can read Quran?<span>+</span></summary>

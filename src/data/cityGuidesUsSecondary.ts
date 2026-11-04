@@ -155,7 +155,7 @@ export const cityGuidesUsSecondary: Record<string, CityGuideContent> = {
         id: "chicago-next-steps",
         heading: "What should a Chicago family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred Central Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],
@@ -325,7 +325,7 @@ export const cityGuidesUsSecondary: Record<string, CityGuideContent> = {
         id: "los-angeles-next-steps",
         heading: "What should a Los Angeles family do next?",
         directAnswer:
-          "Request a free 30-minute trial with no credit card, state preferred Pacific Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
+          "Request 3 free 30-minute trial sessions with no credit card, state preferred Pacific Time windows, and use the country hub for market-level scheduling context. This city page is online-only guidance — not a local campus.",
         paragraphs: [
           "Bring a short learner brief: current reading level, course goal and any female-tutor preference. Confirm the recurring wall-clock time in writing around seasonal clock changes. Review published USD pricing only after tutor matching.",
         ],

@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "How much do flexible adult Quran classes cost?",
-    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. The first ${TRIAL.durationMinutes}-minute trial is free with no credit card.`,
+    a: `Plans start from $${PRICING_PLANS[0].monthlyPriceUsd}/month. The first ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free with no credit card.`,
   },
 ];
 
@@ -234,7 +234,7 @@ export default function QuranClassesForWorkingProfessionalsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "2rem", marginBottom: 16 }}>
-                Evening-Friendly<br /><em style={{ color: "var(--gold-lt)" }}>Free Trial Class</em>
+                Evening-Friendly<br /><em style={{ color: "var(--gold-lt)" }}>{TRIAL.classes} Free Trial Sessions</em>
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", marginBottom: 20 }}>
                 No credit card. Share your preferred after-work or weekend window and we will confirm tutor availability.
@@ -242,7 +242,7 @@ export default function QuranClassesForWorkingProfessionalsPage() {
             </div>
             <div className="cta-form-wrap">
               <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
-                Book Your Free Trial Class
+                Start {TRIAL.classes} Free Trial Sessions
               </h3>
               <CTAForm formVariant="professionals-landing" />
             </div>

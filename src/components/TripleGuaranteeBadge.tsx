@@ -6,7 +6,7 @@ export default function TripleGuaranteeBadge() {
   const guarantees = [
     {
       icon: ShieldCheck,
-      title: `${TRIAL.classes} Free Trial Classes`,
+      title: `${TRIAL.classes} Free Trial Sessions`,
       desc: `Take ${TRIAL_OFFER} before paying a single dollar. No credit card required, zero obligation.`,
       badge: "Risk-Free",
     },

@@ -23,6 +23,7 @@ import {
   PRICING_PLANS,
   SERVICE_FACTS,
   TRIAL,
+  TRIAL_OFFER,
 } from "@/lib/academyFacts";
 import {
   ORGANIZATION_REF,
@@ -138,7 +139,7 @@ const processSteps = [
   {
     number: "03",
     title: "Attend the trial",
-    text: `Use the ${TRIAL.durationMinutes}-minute live trial to meet the tutor, review the starting level and discuss the learning route.`,
+    text: `Use the ${TRIAL_OFFER} to meet the tutor, review the starting level and discuss the learning route.`,
   },
   {
     number: "04",
@@ -170,7 +171,7 @@ function buildFaqs(config: UkCityPageConfig) {
     },
     {
       question: `How much do online Quran lessons cost in ${config.city}?`,
-      answer: `Published plans currently start at $${PRICING_PLANS[0].monthlyPriceUsd} per month. Prices are published in USD, so UK families should confirm payment details before enrolling. The ${TRIAL.durationMinutes}-minute trial costs $${TRIAL.price} and requires no credit card.`,
+      answer: `Published plans currently start at $${PRICING_PLANS[0].monthlyPriceUsd} per month. Prices are published in USD, so UK families should confirm payment details before enrolling. The ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and require no credit card.`,
     },
     {
       question: `Can I request after-school or weekend Quran lessons in ${config.city}?`,
@@ -206,7 +207,7 @@ export default function UkCityQuranPage({
   const faqs = buildFaqs(config);
   const cityGuide = getCityGuide(config.slug);
   const whatsappUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(
-    `Assalamu Alaikum. I would like to request a free online Quran trial class for a learner in ${config.city}. Please share GMT/BST tutor availability and the next steps.`,
+    `Assalamu Alaikum. I would like to request the free online Quran trial sessions for a learner in ${config.city}. Please share GMT/BST tutor availability and the next steps.`,
   )}`;
   const jsonLd = {
     "@context": "https://schema.org",

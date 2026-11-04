@@ -5,6 +5,7 @@ import { serializeJsonLd } from "@/lib/jsonLd";
 import { absolutePageTitle } from "@/lib/pageTitle";
 import { NISAB_GRAMS } from "@/lib/zakat/engine";
 import { ShieldCheck, Sparkles, Scale, BookOpen, Clock, HeartHandshake } from "lucide-react";
+import { TRIAL } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
@@ -322,7 +323,7 @@ export default function ZakatCalculatorPage() {
           </h2>
           <p className="text-xs sm:text-sm text-[var(--muted)] max-w-2xl mx-auto mb-7 leading-relaxed">
             NoorPath Academy teaches Quran reading, Tajweed and Hifz in live one-to-one online classes for children and
-            adults. Explore our free resources, or meet a teacher in a free trial lesson.
+            adults. Explore our free resources, or meet a teacher in {TRIAL.classes} free trial sessions.
           </p>
           <div className="flex gap-3.5 flex-wrap justify-center">
             <Link
@@ -337,7 +338,7 @@ export default function ZakatCalculatorPage() {
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--gold)] to-[var(--gold-lt)] font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-sm hover:opacity-95 transition-opacity"
               style={{ color: "var(--charcoal)" }}
             >
-              🎓 Book a Free Trial Class
+              🎓 Start {TRIAL.classes} Free Trial Sessions
             </Link>
           </div>
         </div>

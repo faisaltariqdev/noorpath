@@ -166,7 +166,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         ],
         bullets: [
           "Share city, IST window, learner level and tutor preference",
-          "Book a free 30-minute trial with no credit card",
+          "Book 3 free 30-minute trial sessions with no credit card",
           "Confirm tutor fit, audio quality and the recurring slot in writing",
           "Protect a short daily home practice so live lessons compound",
         ],
@@ -194,6 +194,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesOmanPakistanNigeria.ts (Nov 2026); kept for reference.
   "online-quran-classes-pakistan": {
     country: "Pakistan",
     title: "Online Quran Classes in Pakistan: Home Learning Guide",
@@ -269,6 +270,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-malaysia": {
     country: "Malaysia",
     title: "Online Quran Classes in Malaysia: Family Guide",
@@ -330,6 +332,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-bangladesh": {
     country: "Bangladesh",
     title: "Online Quran Classes in Bangladesh: Family Guide",
@@ -391,6 +394,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-indonesia": {
     country: "Indonesia",
     title: "Online Quran Classes in Indonesia: WIB & WITA Guide",
@@ -475,7 +479,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
           "Yes when a household can protect one recurring SGT slot and sit the learner in front of a screen with an adult nearby when needed. NoorPath teaches online only — there is no Singapore campus, branch classroom or home-visit service.",
         paragraphs: [
           "Singapore’s Malay-Muslim community balances dense school calendars, CCA and tuition with Islamic learning. Many families already have weekend or school-linked options; online one-to-one tutoring is useful when a child needs individual correction, when traffic across the island makes another trip costly, or when an adult wants discreet beginner lessons after work.",
-          "Online tuition is not a community substitute. It does not replace mosque friendships or a local teacher who knows the family. It does provide weekly live listening and correction when that is the scarce resource. A free 30-minute trial is the honest way to test fit — no credit card is required.",
+          "Online tuition is not a community substitute. It does not replace mosque friendships or a local teacher who knows the family. It does provide weekly live listening and correction when that is the scarce resource. 3 free 30-minute trial sessions are the honest way to test fit — no credit card is required.",
         ],
         bullets: [
           "Remote-only service — no Singapore branch or campus claim.",
@@ -559,7 +563,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         id: "singapore-start",
         heading: "How should a Singapore family start this week?",
         directAnswer:
-          "Note two preferred SGT windows, an honest course goal and any female-tutor preference, then request a free 30-minute trial with no credit card.",
+          "Note two preferred SGT windows, an honest course goal and any female-tutor preference, then request 3 free 30-minute trial sessions with no credit card.",
         paragraphs: [
           "Protect five to ten minutes on non-lesson days for a short home echo of what was corrected. Continuity across CCA weeks matters more than an intense plan that collapses in Term 3 or 4.",
           "For Malaysia–Singapore household planning in the same UTC+8 band, the parent blog on Malaysian and Singaporean families links both country hubs without inventing campuses.",
@@ -577,6 +581,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-turkey": {
     country: "Turkey",
     title: "Online Quran Classes in Turkey: Family & Expat Guide",
@@ -638,6 +643,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesOmanPakistanNigeria.ts (Nov 2026); kept for reference.
   "online-quran-classes-nigeria": {
     country: "Nigeria",
     title: "Online Quran Classes in Nigeria: A Guide for Muslim Families",
@@ -784,7 +790,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
         ],
         bullets: [
           "Share city, WAT window, learner level and tutor preference",
-          "Book a free 30-minute trial with no credit card",
+          "Book 3 free 30-minute trial sessions with no credit card",
           "Confirm tutor fit, audio quality and the recurring slot in writing",
           "Protect a short daily home practice so live lessons compound",
         ],
@@ -812,6 +818,7 @@ export const countryGuidesAsiaAfrica: Record<string, CountryGuideContent> = {
     ],
   },
 
+  // Superseded by countryGuidesRewrite2026.ts (Nov 2026); kept for reference.
   "online-quran-classes-south-africa": {
     country: "South Africa",
     title: "Online Quran Classes in South Africa: Family Guide",

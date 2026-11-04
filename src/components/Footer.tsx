@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MessageCircle, Mail, Globe, Star, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram, FaTiktok, FaFacebookF, FaYoutube } from "react-icons/fa6";
-import { CONTACT, GOOGLE_BUSINESS_URL, SOCIAL_PROFILES, TRUSTPILOT } from "@/lib/academyFacts";
+import { CONTACT, GOOGLE_BUSINESS_URL, SOCIAL_PROFILES, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { getBuildLabel } from "@/lib/siteVersion";
 import WhatsAppLink from "@/components/WhatsAppLink";
@@ -103,7 +103,7 @@ export default function Footer() {
                 textDecoration: "none",
               }}
             >
-              Free Trial Class
+              {TRIAL.classes} Free Trial Sessions
             </Link>
           </div>
           <nav aria-label="Priority country locations" className="flex flex-wrap gap-3 justify-center mb-3">

@@ -4,7 +4,7 @@
  * Commercial bridges to pricing/trial — no invented outcomes or medical claims.
  */
 
-import { PRICING_PLANS, TRIAL } from "@/lib/academyFacts";
+import { PRICING_PLANS, TRIAL, TRIAL_OFFER } from "@/lib/academyFacts";
 
 const starter = PRICING_PLANS[0];
 const standard = PRICING_PLANS[1];
@@ -209,7 +209,7 @@ export const highDemandGapBlogContent: Record<string, { style: string; content: 
           <p>Safeguarding and observation expectations: <a href="/safeguarding">safeguarding</a>.</p>
 
           <h2 id="trial">Use the free trial to measure length fit</h2>
-          <p>During the ${TRIAL.durationMinutes}-minute free trial, watch minute-by-minute energy. Note when focus peaks and when it drops. Tell the matcher what you observed when choosing a continuing plan. No credit card is required for the published trial.</p>
+          <p>During the ${TRIAL_OFFER}, watch minute-by-minute energy. Note when focus peaks and when it drops. Tell the matcher what you observed when choosing a continuing plan. No credit card is required for the published trial.</p>
 
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>How long should online Quran lessons be for a 6-year-old?<span>+</span></summary>

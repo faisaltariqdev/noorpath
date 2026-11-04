@@ -307,7 +307,7 @@ export default async function NooraniQaidaWorksheetPage({ params }: Props) {
           {/* Mandatory Trial CTA */}
           <QaidaCourseCta
             title="Practice with a live Noorani Qaida teacher — Book a free trial"
-            description="Worksheets strengthen handwriting and visual memory. Pronunciation needs a trained teacher listening live. Book a free 30-minute 1-on-1 trial class with a patient, certified tutor in your timezone — no credit card needed."
+            description="Worksheets strengthen handwriting and visual memory. Pronunciation needs a trained teacher listening live. Book 3 free 30-minute 1-on-1 trial sessions with a patient, certified tutor in your timezone — no credit card needed."
           />
         </div>
       </div>

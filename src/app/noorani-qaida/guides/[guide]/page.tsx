@@ -296,7 +296,7 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
 
           <QaidaCourseCta
             title="Practice with a live Noorani Qaida teacher — Book a free trial"
-            description="Guides establish clarity. Pronunciation needs a trained teacher listening live. Book a free 30-minute 1-on-1 trial class with a patient, certified tutor in your timezone — no credit card needed."
+            description="Guides establish clarity. Pronunciation needs a trained teacher listening live. Book 3 free 30-minute 1-on-1 trial sessions with a patient, certified tutor in your timezone — no credit card needed."
           />
         </div>
       </div>
