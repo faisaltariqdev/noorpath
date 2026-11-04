@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Plus_Jakarta_Sans, Amiri } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import PublicShell from "@/components/PublicShell";
 import { SOCIAL_PROFILES, TRUSTPILOT } from "@/lib/academyFacts";
@@ -16,29 +16,43 @@ export const viewport: Viewport = {
   colorScheme: "light",
 };
 
-// ─── Fonts: self-hosted at build time — removes render-blocking Google CDN request ───
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700"],
+// ─── Fonts: self-hosted from src/app/fonts (OFL-1.1, via @fontsource) — no Google request at build or runtime ───
+const playfair = localFont({
+  src: "./fonts/playfair-display-latin-wght-normal.woff2",
+  weight: "400 900",
   variable: "--font-playfair",
   display: "swap",
   preload: true,
 });
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+const jakarta = localFont({
+  src: "./fonts/plus-jakarta-sans-latin-wght-normal.woff2",
+  weight: "200 800",
   variable: "--font-jakarta",
   display: "swap",
   preload: true,
 });
 
-const amiri = Amiri({
-  subsets: ["arabic", "latin"],
-  weight: ["400", "700"],
-  variable: "--font-amiri",
+// Amiri ships as separate Arabic and Latin files; globals.css chains them as --font-amiri.
+const amiriArabic = localFont({
+  src: [
+    { path: "./fonts/amiri-arabic-400-normal.woff2", weight: "400" },
+    { path: "./fonts/amiri-arabic-700-normal.woff2", weight: "700" },
+  ],
+  variable: "--font-amiri-arabic",
   display: "swap",
   preload: false, // Arabic font: not needed for initial paint
+  adjustFontFallback: false, // let Latin characters fall through to the Latin file
+});
+
+const amiriLatin = localFont({
+  src: [
+    { path: "./fonts/amiri-latin-400-normal.woff2", weight: "400" },
+    { path: "./fonts/amiri-latin-700-normal.woff2", weight: "700" },
+  ],
+  variable: "--font-amiri-latin",
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -117,7 +131,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${jakarta.variable} ${amiri.variable}`}
+      className={`${playfair.variable} ${jakarta.variable} ${amiriArabic.variable} ${amiriLatin.variable}`}
     >
       <head>
         <meta name="msapplication-TileColor" content="#0a6e4f" />

@@ -1,4 +1,4 @@
-/* Fonts via next/font/google in layout.tsx — no render-blocking CDN */
+/* Fonts self-hosted via next/font/local in layout.tsx (src/app/fonts) — no Google request */
 @import "tailwindcss";
 /* Reference tailwind.config.ts for Tailwind v4 */
 @config "../../tailwind.config.ts";
@@ -7,6 +7,8 @@
    DESIGN TOKENS
 ══════════════════════════════════════════════════════════════ */
 :root {
+  /* Amiri: Arabic glyphs first, then the Latin file (both set by next/font/local in layout.tsx) */
+  --font-amiri: var(--font-amiri-arabic), var(--font-amiri-latin);
   --emerald:    #0a6e4f;
   --emerald-dk: #063d2c;
   --emerald-mid:#0f8f66;
