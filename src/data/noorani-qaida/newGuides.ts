@@ -96,7 +96,7 @@ export const NEW_QAIDA_GUIDES: ExtendedQaidaGuide[] = [
       },
       {
         heading: "Realistic Timelines and Pace Expectations by Age",
-        body: "For ages 4 to 6, completing the full Qaida typically takes 6 to 9 months with 3 to 4 weekly lessons of 20 to 30 minutes. For ages 7 to 12, completion usually takes 4 to 6 months. Never rush a child past a module until they can decode lines smoothly without guessing. Moving forward with unstable vowels guarantees tears when reading multi-syllable verses.",
+        body: "For ages 4 to 6, completing the full Qaida typically takes 6 to 9 months with 3 to 4 weekly lessons of 20 to 30 minutes. For ages 7 to 12, completion usually takes 4 to 6 months. Never rush a child past a module until they can decode lines smoothly without guessing. Moving forward with unstable vowels often leads to frustration when reading multi-syllable verses.",
       },
       {
         heading: "Weekly Mastery Milestones and Checkpoints",

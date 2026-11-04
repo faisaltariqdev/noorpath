@@ -294,7 +294,7 @@ export default function OnlineQuranClassesForKidsPage() {
               Online Quran classes for kids connect children ages 4–12 with certified teachers via live 1-on-1 video lessons.
               Children learn from home through tailored instruction covering Noorani Qaida, Tajweed, daily duas, and Hifz.
               Parents choose convenient lesson windows in their local timezone with male or female tutors.
-              NoorPath Academy offers {TRIAL_OFFER} with no credit card required, plus full parent portal visibility and a {REFUND_WINDOW_DAYS}-day money-back guarantee.
+              NoorPath Academy offers {TRIAL_OFFER} with no credit card required, plus full parent portal visibility and a {REFUND_WINDOW_DAYS}-day full refund after your first paid class.
             </span>
           </div>
         </div>
@@ -718,7 +718,7 @@ export default function OnlineQuranClassesForKidsPage() {
               {
                 num: "05",
                 title: "Begin Ongoing Lessons (No Lock-In)",
-                desc: `If you decide to continue, choose a simple monthly plan from $${PRICING_PLANS[0].monthlyPriceUsd}/mo. Enjoy sibling discounts (${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[2].discountPercent}%) and a ${REFUND_WINDOW_DAYS}-day refund guarantee. Cancel anytime.`,
+                desc: `If you decide to continue, choose a simple monthly plan from $${PRICING_PLANS[0].monthlyPriceUsd}/mo. Enjoy sibling discounts (${FAMILY_DISCOUNTS[0].discountPercent}%–${FAMILY_DISCOUNTS[2].discountPercent}%) and a ${REFUND_WINDOW_DAYS}-day full refund after your first paid class. Cancel anytime.`,
               },
               {
                 num: "06",
@@ -1019,7 +1019,7 @@ export default function OnlineQuranClassesForKidsPage() {
                   "Certified male & female Quran teachers holding an Ijazah",
                   "Scheduled in your local timezone around school hours",
                   `Sibling discounts from ${FAMILY_DISCOUNTS[0].discountPercent}% to ${FAMILY_DISCOUNTS[2].discountPercent}%`,
-                  `7-day full refund guarantee after your first paid class`,
+                  `${REFUND_WINDOW_DAYS}-day full refund after your first paid class`,
                   "Cancel anytime with 7 days' notice before renewal",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", alignItems: "center", gap: 10, color: "rgba(255,255,255,.9)", fontSize: ".9rem" }}>

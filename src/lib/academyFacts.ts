@@ -18,9 +18,9 @@ export const CONTACT = {
 
 export const TRUSTPILOT = {
   url: "https://www.trustpilot.com/review/noorpath.online",
-  score: "4.0",
-  reviewCount: 4,
-  lastChecked: "July 2026",
+  score: "4.2",
+  reviewCount: 6,
+  lastChecked: "November 2026",
 } as const;
 
 export const GOOGLE_BUSINESS_URL =

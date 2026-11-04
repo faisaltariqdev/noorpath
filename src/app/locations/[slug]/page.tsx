@@ -779,7 +779,7 @@ export default async function LocationDetailPage({ params }: Props) {
                 </div>
               </div>
 
-              <TrustpilotSnippet count={3} title={`Families learning from ${loc.country}`} country={loc.country} />
+              <TrustpilotSnippet count={3} title="What families say about NoorPath" country={loc.country} />
 
               {/* FAQ */}
               <FaqJsonLd faqs={faqs} pageUrl={pageUrl} />

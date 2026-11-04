@@ -23,10 +23,10 @@ export const brandingVisibilityBlogContent = {
       <p>The landscape of online Quran learning is vast, but NoorPath Academy distinguishes itself through a "People-First" approach. We believe that technology should enhance, not replace, the traditional teacher-student bond (Suhbah). Every aspect of our platform, from the <strong>Parent Portal</strong> to our rigorous tutor selection process, is designed to ensure that the learner's progress and well-being are the top priorities.</p>
 
       <h3>1. Certified & Vetted Tutors</h3>
-      <p>We don't just hire teachers; we partner with educators who possess not only the formal qualifications (Ijazah) but also the patience and pedagogical skill required for online instruction. Our tutors are trained in digital classroom management and child safeguarding, ensuring a safe and productive environment for your children.</p>
+      <p>We don't just hire teachers; we partner with educators who possess not only the formal qualifications (Ijazah) but also the patience and pedagogical skill required for online instruction. Our tutors hold an Ijazah or a Quran teaching certificate, and use our NoorPath curriculum.</p>
 
       <h3>2. Transparency via the Parent Portal</h3>
-      <p>One of the biggest challenges in online education is tracking progress. NoorPath solves this with a dedicated Parent Portal. Parents can see daily lesson reports, homework assignments, attendance records, and monthly progress charts, keeping them fully engaged in their child's spiritual journey.</p>
+      <p>One of the biggest challenges in online education is tracking progress. NoorPath solves this with a dedicated Parent Portal. Parents can see daily progress, homework assignments, attendance records, quizzes and teacher reports, keeping them fully engaged in their child's spiritual journey.</p>
 
       <h2 id="our-curriculum">A Curriculum Rooted in Tradition</h2>
       <p>Our curriculum is carefully structured to take a student from zero to mastery. Whether a 4-year-old child starting with <strong>Noorani Qaida</strong> or an adult wanting to perfect their <strong>Tajweed</strong>, we have a path for everyone.</p>

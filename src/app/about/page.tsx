@@ -3,14 +3,14 @@ import React from "react";
 import Link from "next/link";
 import { ORGANIZATION_ID } from "@/lib/organizationSchema";
 import { Award, Users, Globe, Heart, Landmark, Sprout, TrendingUp, CheckCircle, Shield, BookOpen, Clock, GraduationCap } from "lucide-react";
-import { FAMILY_DISCOUNTS, SERVICE_FACTS } from "@/lib/academyFacts";
+import { FAMILY_DISCOUNTS, SERVICE_FACTS, TRIAL_OFFER } from "@/lib/academyFacts";
 
 export const revalidate = false;
 
 export const metadata: Metadata = {
   title: { absolute: "About NoorPath Academy — Online Quran Education for Families" },
   description:
-    "NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes with a free 30-minute trial.",
+    `NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes with ${TRIAL_OFFER}.`,
   keywords: [
     "about noorpath academy", "noorpath", "noor path", "noorpath academy",
     "noor path academy", "online quran academy", "online quran tutors", "quran tutor matching",
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.noorpath.online/about" },
   openGraph: {
     title: "About NoorPath Academy — Online Quran Education for Families",
-    description: "Our mission is to make quality Quran education accessible through live 1-to-1 lessons, tutor matching, and a free 30-minute trial.",
+    description: `Our mission is to make quality Quran education accessible through live 1-to-1 lessons, tutor matching, and ${TRIAL_OFFER}.`,
     url: "https://www.noorpath.online/about",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About NoorPath Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About NoorPath Academy",
-    description: "Live 1-to-1 Quran education for children and adults, with tutor matching and a free 30-minute trial.",
+    description: `Live 1-to-1 Quran education for children and adults, with tutor matching and ${TRIAL_OFFER}.`,
     images: ["/og-image.png"],
   },
 };
@@ -183,7 +183,7 @@ export default function AboutPage() {
               { icon: <Award size={22} />, title: "Certified Tutors", desc: "Every tutor holds an Ijazah or a Quran teaching certificate. Ask to see your tutor's credentials." },
               { icon: <GraduationCap size={22} />, title: "Teaching Experience", desc: "The proposed tutor's experience with the learner's age group and subject is considered during matching." },
               { icon: <CheckCircle size={22} />, title: "Details Before Enrolment", desc: "Families can review the proposed tutor's relevant qualifications and teaching focus before choosing a paid plan." },
-              { icon: <Clock size={22} />, title: "Trial Lesson", desc: "The free 30-minute trial provides a practical opportunity to assess communication, pace, and lesson fit." },
+              { icon: <Clock size={22} />, title: "Trial Lessons", desc: `The ${TRIAL_OFFER} provide a practical opportunity to assess communication, pace, and lesson fit.` },
               { icon: <BookOpen size={22} />, title: "Subject Matching", desc: "Matching categories include children, adults, Hifz, Tajweed, Quran reading, and female tutor requests." },
               { icon: <Heart size={22} />, title: "Learner Fit", desc: "The learner's current level, goals, timezone, and tutor preference guide the proposed match." },
             ].map((f) => (
@@ -270,7 +270,7 @@ export default function AboutPage() {
               Ready to Start Your <em style={{ color: "var(--gold-lt)" }}>Quran Journey?</em>
             </h2>
             <p style={{ color: "rgba(255,255,255,.8)", marginBottom: 24, lineHeight: 1.7 }}>
-              Start with a free 30-minute trial. No credit card is required, and tutor availability is confirmed after your request.
+              Start with {TRIAL_OFFER}. No credit card is required, and tutor availability is confirmed after your request.
             </p>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ background: "var(--gold)", color: "var(--charcoal)" }}>Book Free Trial →</Link>

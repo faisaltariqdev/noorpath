@@ -6,7 +6,7 @@ import type { CityLandingPageData } from "@/data/cityLandingPages";
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import FaqJsonLd from "@/components/FaqJsonLd";
-import { CONTACT, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import { CONTACT, RESCHEDULE_NOTICE_HOURS, TRIAL, TRUSTPILOT, TUTOR_FACTS } from "@/lib/academyFacts";
 
 interface Props {
   data: CityLandingPageData;
@@ -291,7 +291,7 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
                   </div>
                 </div>
                 <p style={{ color: "var(--slate, #334155)", fontSize: ".92rem", lineHeight: 1.7, marginBottom: 16 }}>
-                  {data.pricing.note} All plans include private one-to-one instruction with certified tutors, monthly progress reports, and 24-hour notice rescheduling.
+                  {data.pricing.note} All plans include private one-to-one lessons with certified tutors, regular progress updates through the Parent Portal, and rescheduling with {RESCHEDULE_NOTICE_HOURS} hours&apos; notice, subject to tutor availability.
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
                   <Link href="/pricing" style={{ color: "var(--emerald, #0a6e4f)", fontWeight: 700, fontSize: ".9rem", textDecoration: "underline" }}>
@@ -305,57 +305,19 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
               </div>
             </section>
 
-            {/* ── 6) MEET YOUR [CITY] TUTORS ── */}
+            {/* ── 6) HOW TUTORS ARE MATCHED IN [CITY] ── */}
             <section id="meet-tutors" style={{ marginBottom: 44, scrollMarginTop: 80 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
                 <UserCheck size={22} style={{ color: "var(--emerald, #0a6e4f)" }} />
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", margin: 0 }}>
-                  Meet Your {data.city} Tutors
+                  How Tutors Are Matched in {data.city}
                 </h2>
               </div>
-              <p style={{ color: "var(--muted, #64748b)", fontSize: ".95rem", lineHeight: 1.7, marginBottom: 20 }}>
-                Our tutors are thoroughly vetted, hold authentic Ijazah or Quran teaching certificates, and specialize in teaching English-speaking and international Muslim learners:
+              <p style={{ color: "var(--muted, #64748b)", fontSize: ".95rem", lineHeight: 1.7, margin: 0 }}>
+                Your child will be matched with a qualified male or female tutor based on their level, schedule and
+                teacher preference. {TUTOR_FACTS.credentials} {TUTOR_FACTS.rematch}
               </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                {data.tutors.map((tutor) => (
-                  <div
-                    key={tutor.name}
-                    style={{
-                      background: "#fff",
-                      borderRadius: 14,
-                      padding: "22px",
-                      border: "1px solid var(--border, #e2e8f0)",
-                      boxShadow: "0 4px 14px rgba(0,0,0,.04)",
-                    }}
-                  >
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                      <div style={{ width: 44, height: 44, borderRadius: "50%", background: "rgba(10,110,79,.1)", color: "var(--emerald, #0a6e4f)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: "1.1rem" }}>
-                        {tutor.name.charAt(0)}
-                      </div>
-                      <div>
-                        <h3 style={{ fontSize: "1.05rem", fontWeight: 700, margin: 0, color: "var(--charcoal, #0f172a)" }}>
-                          {tutor.name}
-                        </h3>
-                        <div style={{ fontSize: ".8rem", color: "var(--emerald, #0a6e4f)", fontWeight: 600 }}>
-                          {tutor.role}
-                        </div>
-                      </div>
-                    </div>
-                    <div style={{ fontSize: ".85rem", color: "var(--slate, #334155)", lineHeight: 1.65 }}>
-                      <div style={{ marginBottom: 6 }}>
-                        <strong>Credentials:</strong> {tutor.credentials}
-                      </div>
-                      <div style={{ marginBottom: 6 }}>
-                        <strong>Specialization:</strong> {tutor.specialization}
-                      </div>
-                      <div>
-                        <strong>Background:</strong> {tutor.experience}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {/* ADD REAL TUTOR profiles here once verified on /our-tutors */}
             </section>
 
             {/* ── 7) HOW ONLINE CLASSES WORK ── */}
@@ -616,7 +578,7 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
                   <a href="#who-we-teach" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 1. Who We Teach in {data.city}</a>
                   <a href="#class-times" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 2. Class Times ({data.timezone})</a>
                   <a href="#local-pricing" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 3. Local Pricing</a>
-                  <a href="#meet-tutors" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 4. Meet Your Tutors</a>
+                  <a href="#meet-tutors" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 4. How Tutors Are Matched</a>
                   <a href="#how-it-works" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 5. How Online Classes Work</a>
                   <a href="#city-faqs" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 6. Frequently Asked Questions</a>
                   <a href="#cta-city-bottom" style={{ color: "var(--emerald, #0a6e4f)", textDecoration: "none" }}>→ 7. Book Free Trial in {data.city}</a>
@@ -630,7 +592,11 @@ export default function RebuiltCityView({ data, pageUrl }: Props) {
                   <span style={{ fontWeight: 700, fontSize: ".88rem", color: "var(--emerald, #0a6e4f)" }}>Parent Assurance</span>
                 </div>
                 <p style={{ fontSize: ".82rem", color: "var(--slate, #334155)", margin: 0, lineHeight: 1.6 }}>
-                  Free tutor rematch anytime. All lessons monitored for safeguarding and quality. No credit card required to start your free trial.
+                  Free tutor rematch on request. Read our{" "}
+                  <Link href="/safeguarding" style={{ color: "var(--emerald, #0a6e4f)", fontWeight: 600 }}>
+                    safeguarding guidance for parents
+                  </Link>
+                  . No credit card required to start your free trial.
                 </p>
               </div>
             </div>

@@ -42,7 +42,7 @@ export default function AiDirectAnswerBox({ country = "Worldwide", timezone = "L
           Verified Academy Facts & Summary
         </span>
         <span style={{ fontSize: "0.8rem", color: "#15803d", fontWeight: 600 }}>
-          ★ {TRUSTPILOT.score}/5 Independent Rating · {ENROLLED_STUDENTS_DISPLAY} Active Students
+          ★ {TRUSTPILOT.score}/5 Independent Rating · {ENROLLED_STUDENTS_DISPLAY} Students Enrolled
         </span>
       </div>
 

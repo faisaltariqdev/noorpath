@@ -1,20 +1,12 @@
 /**
  * Curated landing page data for 37 key cities rebuilt with high-intent keywords,
- * rich unique copy (>600 words each), converted timezones, and full internal linking.
+ * city-specific copy, converted timezones, and full internal linking.
  */
 
 export interface CityTimingSlot {
   slot: string;
   time: string;
   description: string;
-}
-
-export interface CityTutorCard {
-  name: string;
-  role: string;
-  credentials: string;
-  specialization: string;
-  experience: string;
 }
 
 export interface CityFaq {
@@ -51,7 +43,6 @@ export interface CityLandingPageData {
     display: string;
     note: string;
   };
-  tutors: [CityTutorCard, CityTutorCard];
   howItWorks: {
     step1: { title: string; desc: string };
     step2: { title: string; desc: string };
@@ -95,7 +86,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in London start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in London often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across London receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in London have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in London can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -123,22 +114,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -154,7 +129,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -222,7 +197,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Birmingham start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Birmingham often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Birmingham receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Birmingham have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Birmingham can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -250,22 +225,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -281,7 +240,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -349,7 +308,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Manchester start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Manchester often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Manchester receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Manchester have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Manchester can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -377,22 +336,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -408,7 +351,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -476,7 +419,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Leeds start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Leeds often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Leeds receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Leeds have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Leeds can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -504,22 +447,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -535,7 +462,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -603,7 +530,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Leicester start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Leicester often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Leicester receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Leicester have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Leicester can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -631,22 +558,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -662,7 +573,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -730,7 +641,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Luton start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Luton often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Luton receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Luton have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Luton can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -758,22 +669,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -789,7 +684,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -857,7 +752,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Bradford start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Bradford often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Bradford receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Bradford have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Bradford can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -885,22 +780,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. £23/month (£5.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Kingdom and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -916,7 +795,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -984,7 +863,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in New York start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in New York often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across New York receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in New York have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in New York can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1012,22 +891,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "$29/month ($7.25 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United States and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1043,7 +906,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1111,7 +974,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Houston start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Houston often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Houston receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Houston have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Houston can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1139,22 +1002,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "$29/month ($7.25 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United States and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1170,7 +1017,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1238,7 +1085,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Dallas start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Dallas often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Dallas receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Dallas have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Dallas can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1266,22 +1113,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "$29/month ($7.25 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United States and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1297,7 +1128,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1365,7 +1196,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Chicago start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Chicago often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Chicago receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Chicago have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Chicago can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1393,22 +1224,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "$29/month ($7.25 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United States and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1424,7 +1239,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1492,7 +1307,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Toronto start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Toronto often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Toronto receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Toronto have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Toronto can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1520,22 +1335,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. CA$40/month (CA$10.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Canada and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1551,7 +1350,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1619,7 +1418,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Sydney start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Sydney often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Sydney receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Sydney have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Sydney can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1647,22 +1446,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. AU$44/month (AU$11.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Australia and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1678,7 +1461,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1746,7 +1529,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Melbourne start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Melbourne often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Melbourne receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Melbourne have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Melbourne can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1774,22 +1557,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. AU$44/month (AU$11.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Australia and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1805,7 +1572,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -1847,7 +1614,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
     "localGuide": {
       "heading": "Why Melbourne Families Choose NoorPath for Quranic Learning",
       "paragraphs": [
-        "From Broadmeadows and Coburg in the north to Tarneit, Werribee, and Dandenong, Melbourne Muslim families frequently request female Quran tutors for their daughters. Our live video platform guarantees privacy, modesty, and patient teaching, helping sisters build Quranic fluency at home.",
+        "From Broadmeadows and Coburg in the north to Tarneit, Werribee, and Dandenong, Melbourne Muslim families frequently request female Quran tutors for their daughters. Our live one-to-one video lessons are private and modest, and our tutors are patient, helping sisters build Quranic fluency at home.",
         "Traditional weekend madrasas and evening mosque programs play a valuable role in local Muslim community life. However, large group classes with 15 to 25 children often leave students with barely 2 to 3 minutes of direct recitation time with the teacher. NoorPath's 1-on-1 format ensures that your child recites continuously for the full 30, 45, or 60 minutes, ensuring every letter, vowel sign, and Tajweed rule is heard and corrected instantly.",
         "Our curriculum is calibrated for modern households in Melbourne, taking into account Victorian school term dates, VCE preparation periods, and AEST/AEDT schedules. Whether your objective is helping your 5-year-old complete their first Noorani Qaida, supporting a teenager in memorizing Surah Al-Kahf, or mastering Tajweed yourself as an adult, NoorPath provides the dedicated teacher, flexible scheduling, and verified methodology to achieve your spiritual goals."
       ]
@@ -1873,7 +1640,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Dubai start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Dubai often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Dubai receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Dubai have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Dubai can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -1901,22 +1668,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. AED 107/month (AED 26.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Arab Emirates and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -1932,7 +1683,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2000,7 +1751,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Abu Dhabi start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Abu Dhabi often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Abu Dhabi receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Abu Dhabi have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Abu Dhabi can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2028,22 +1779,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. AED 107/month (AED 26.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across United Arab Emirates and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2059,7 +1794,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2127,7 +1862,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Riyadh start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Riyadh often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Riyadh receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Riyadh have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Riyadh can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2155,22 +1890,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. SAR 109/month (SAR 27.25 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Saudi Arabia and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2186,7 +1905,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2254,7 +1973,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Jeddah start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Jeddah often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Jeddah receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Jeddah have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Jeddah can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2282,22 +2001,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. SAR 109/month (SAR 27.25 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Saudi Arabia and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2313,7 +2016,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2381,7 +2084,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Karachi start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Karachi often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Karachi receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Karachi have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Karachi can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2409,22 +2112,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From PKR 8,100/month (PKR 2,025 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Pakistan and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2440,7 +2127,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2508,7 +2195,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Lahore start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Lahore often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Lahore receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Lahore have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Lahore can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2536,22 +2223,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From PKR 8,100/month (PKR 2,025 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Pakistan and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2567,7 +2238,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2635,7 +2306,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Hyderabad start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Hyderabad often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Hyderabad receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Hyderabad have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Hyderabad can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2663,22 +2334,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From PKR 8,100/month (PKR 2,025 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Pakistan and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2694,7 +2349,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2762,7 +2417,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Mumbai start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Mumbai often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Mumbai receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Mumbai have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Mumbai can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2790,22 +2445,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. ₹2,450/month (₹612 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across India and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2821,7 +2460,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -2889,7 +2528,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Lagos start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Lagos often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Lagos receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Lagos have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Lagos can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -2917,22 +2556,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. ₦44,000/month (₦11,000 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Nigeria and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -2948,7 +2571,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3016,7 +2639,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Abuja start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Abuja often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Abuja receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Abuja have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Abuja can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3044,22 +2667,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. ₦44,000/month (₦11,000 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Nigeria and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3075,7 +2682,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3143,7 +2750,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Kano start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Kano often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Kano receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Kano have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Kano can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3171,22 +2778,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. ₦44,000/month (₦11,000 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Nigeria and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3202,7 +2793,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3270,7 +2861,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Port Harcourt start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Port Harcourt often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Port Harcourt receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Port Harcourt have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Port Harcourt can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3298,22 +2889,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. ₦44,000/month (₦11,000 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Nigeria and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3329,7 +2904,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3397,7 +2972,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Dublin start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Dublin often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Dublin receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Dublin have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Dublin can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3425,22 +3000,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. €27/month (€6.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Ireland and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3456,7 +3015,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3524,7 +3083,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Cork start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Cork often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Cork receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Cork have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Cork can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3552,22 +3111,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. €27/month (€6.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Ireland and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3583,7 +3126,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3651,7 +3194,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Galway start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Galway often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Galway receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Galway have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Galway can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3679,22 +3222,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. €27/month (€6.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Ireland and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3710,7 +3237,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3778,7 +3305,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Auckland start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Auckland often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Auckland receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Auckland have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Auckland can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3806,22 +3333,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. NZ$48/month (NZ$12.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across New Zealand and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3837,7 +3348,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -3905,7 +3416,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Christchurch start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Christchurch often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Christchurch receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Christchurch have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Christchurch can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -3933,22 +3444,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. NZ$48/month (NZ$12.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across New Zealand and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -3964,7 +3459,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -4032,7 +3527,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Wellington start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Wellington often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Wellington receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Wellington have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Wellington can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -4060,22 +3555,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. NZ$48/month (NZ$12.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across New Zealand and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -4091,7 +3570,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -4159,7 +3638,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Helsinki start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Helsinki often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Helsinki receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Helsinki have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Helsinki can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -4187,22 +3666,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. €27/month (€6.75 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Finland and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -4218,7 +3681,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -4286,7 +3749,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Oslo start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Oslo often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Oslo receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Oslo have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Oslo can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -4314,22 +3777,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. NOK 310/month (NOK 77.50 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Norway and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -4345,7 +3792,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -4413,7 +3860,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Bergen start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Bergen often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Bergen receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Bergen have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Bergen can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -4441,22 +3888,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. NOK 310/month (NOK 77.50 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Norway and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -4472,7 +3903,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -4540,7 +3971,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Aarhus start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Aarhus often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Aarhus receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Aarhus have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Aarhus can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -4568,22 +3999,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. DKK 200/month (DKK 50.00 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Denmark and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -4599,7 +4014,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [
@@ -4667,7 +4082,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "kids": "Children aged 4 to 16 in Doha start with interactive Noorani Qaida exercises, learning Arabic alphabet sounds, letter combinations, and foundational Makharaj. As reading confidence develops, lessons progress into fluent Quran reading, essential daily Duas, and short Surah memorisation. Tutors use positive encouragement to keep young minds motivated.",
       "adults": "Adult learners in Doha often want to correct their pronunciation, revise Tajweed rules, or rekindle Quran reading habits after years away. Private 1-on-1 instruction allows adults to practice recitation without hesitation, receiving immediate phonetic feedback at a comfortable, respectful adult pace.",
       "reverts": "New Muslims and revert brothers and sisters residing across Doha receive supportive, step-by-step guidance starting from complete zero. Tutors explain the mechanics of Arabic articulation, guide through basic prayer recitations (Surah Al-Fatiha and Salah verses), and provide a welcoming, judgment-free space to ask questions.",
-      "sisters": "Sisters and teenage girls in Doha have guaranteed access to certified female Quran teachers. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
+      "sisters": "Sisters and teenage girls in Doha can request a certified female Quran teacher, subject to availability. Lessons take place in complete privacy over live 1-on-1 audio or video, allowing female students to build deep Quranic understanding with comfort and ease."
     },
     "timingsSlots": [
       {
@@ -4695,22 +4110,6 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "display": "From approx. QAR 106/month (QAR 26.50 per 1-on-1 class)",
       "note": "Public pricing converted from standard USD plans ($29, $49, $79/mo). Sibling discounts: 15% for 2, 20% for 3, 25% for 4+. Free trial included."
     },
-    "tutors": [
-      {
-        "name": "Qari Tariq Al-Husseini",
-        "role": "Senior Quran & Tajweed Specialist",
-        "credentials": "Ijazah in Hafs 'an 'Asim · 11+ years online teaching experience",
-        "specialization": "Noorani Qaida for young beginners, Makharaj phonetics, and structured youth Hifz",
-        "experience": "Has tutored over 240 international students across Qatar and Western Europe."
-      },
-      {
-        "name": "Ustadha Amina Siddiqui",
-        "role": "Certified Female Quran Tutor",
-        "credentials": "Certified Qaria & Islamic Studies graduate · 8+ years experience",
-        "specialization": "Sisters Quran classes, gentle Tajweed correction for girls, and Juz Amma memorisation",
-        "experience": "Known for high patience, warm rapport, and tailored pacing for children and adult women."
-      }
-    ],
     "howItWorks": {
       "step1": {
         "title": "Book Your Free Trial",
@@ -4726,7 +4125,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       },
       "step4": {
         "title": "Weekly Practice & Reports",
-        "desc": "Attend recurring live lessons with monthly progress updates and lesson recordings shared in your parent portal."
+        "desc": "Attend recurring live lessons, with regular progress updates through the Parent Portal (attendance, homework and teacher reports)."
       }
     },
     "faqs": [

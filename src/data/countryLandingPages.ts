@@ -160,9 +160,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Teachers fluent in Urdu and English explain intricate Tajweed rules and Arabic grammar clearly to students of all ages.",
       },
       {
-        title: "Parent Portal & Recorded Progress",
+        title: "Parent Portal Progress Updates",
         description:
-          "Parents receive lesson recordings and monthly progress reports to easily monitor student Qaida fluency and Hifz retention.",
+          "Parents get regular progress updates through the Parent Portal (attendance, homework and teacher reports) to follow student Qaida fluency and Hifz retention.",
       },
     ],
     faqs: [
@@ -284,9 +284,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Teaching pace adjusts around UK academic terms, half-term breaks, and GCSE/A-level exam periods.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
-          "Review past lessons, practice Tajweed exercises at home, and track Surah completion through our dedicated parent portal.",
+          "Practice Tajweed exercises at home and track Surah completion through our dedicated Parent Portal.",
       },
     ],
     faqs: [
@@ -398,9 +398,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Syllabus designed for American Muslim youth balancing public school demands with Islamic education.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
-          "Full transparency with lesson recordings and real-time attendance and progress tracking via our parent portal.",
+          "Full transparency with regular progress updates through the Parent Portal (attendance, homework and teacher reports).",
       },
     ],
     faqs: [
@@ -532,9 +532,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Teaching approaches match the learning pace of students enrolled in British, American, IB, and Indian curriculum schools.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
-          "Expat families can easily monitor their children's recitation, review class recordings, and follow milestone assessments.",
+          "Expat families get regular progress updates through the Parent Portal (attendance, homework and teacher reports) and can follow milestone assessments.",
       },
     ],
     faqs: [
@@ -646,9 +646,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Native Arabic and bilingual English-Arabic instructors supporting both local Saudi citizens and international expat families.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
-          "Access past recitation recordings and transparent milestone progress tracking via our secure parent portal.",
+          "Get regular progress updates through the Parent Portal (attendance, homework and teacher reports) and transparent milestone progress tracking via our secure Parent Portal.",
       },
     ],
     faqs: [
@@ -760,9 +760,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Fluent English instruction ensures children grasp Arabic phonetics, Makharaj, and Tajweed terminology with ease.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
-          "Never fall behind due to network disruptions; review lesson recordings and homework updates directly in the parent portal.",
+          "Follow homework and progress updates directly in the Parent Portal between live lessons.",
       },
     ],
     faqs: [
@@ -874,7 +874,7 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Classes complement the busy schedules of students attending British, American, IB, and bilingual schools in Qatar.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
           "Parents can review past classes, supervise recitation drills, and check tutor feedback via our dedicated portal.",
       },
@@ -988,9 +988,9 @@ export const countryLandingPages: Record<RebuiltCountrySlug, CountryLandingPageD
           "Lesson timetables adapt around provincial school terms, march break, exam periods, and daylight saving shifts.",
       },
       {
-        title: "Recorded Lessons & Parent Portal",
+        title: "Parent Portal Progress Updates",
         description:
-          "Access lesson recordings, practice Makharaj exercises, and track your child's Noorani Qaida and Hifz milestones from home.",
+          "Practice Makharaj exercises, get regular progress updates through the Parent Portal (attendance, homework and teacher reports), and track your child's Noorani Qaida and Hifz milestones from home.",
       },
     ],
     faqs: [

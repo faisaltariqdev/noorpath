@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Award, BookOpen, Users, CheckCircle } from "lucide-react";
-import { SERVICE_FACTS, TRIAL, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
+import { SERVICE_FACTS, TRIAL, TRIAL_OFFER, VERIFIED_TRUST_CLAIMS } from "@/lib/academyFacts";
 
 import { tutorCredentialStandards } from "@/data/tutors";
 import { absolutePageTitle } from "@/lib/pageTitle";
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Online Quran Tutors | NoorPath Academy",
-    description: "Role-based tutor matching for live online Quran classes. Free 30-minute trial; no credit card required.",
+    description: `Role-based tutor matching for live online Quran classes. ${TRIAL_OFFER}; no credit card required.`,
     images: ["/og-image.png"],
   },
 };
@@ -102,7 +102,7 @@ const tutors = [
 const qualitySteps = [
   { icon: <Award size={22} />, title: "Match the Subject", desc: "We identify the teaching focus required, such as reading, Tajweed, Hifz, children, or adult learning." },
   { icon: <CheckCircle size={22} />, title: "Confirm Credentials", desc: "Specific qualifications and relevant teaching experience are confirmed for the proposed tutor before enrolment." },
-  { icon: <BookOpen size={22} />, title: "Trial the Lesson", desc: "The free 30-minute trial lets the learner and family assess teaching style, communication, and fit." },
+  { icon: <BookOpen size={22} />, title: "Trial the Lessons", desc: `The ${TRIAL_OFFER} let the learner and family assess teaching style, communication, and fit.` },
   { icon: <Users size={22} />, title: "Confirm Preferences", desc: "We consider level, learning goals, timezone, male or female tutor preference, and language of instruction preferences where available when arranging a match. Tutor availability is confirmed after your request." },
 ];
 
@@ -293,7 +293,7 @@ export default function OurTutorsPage() {
             Request Your Tutor Match — <em style={{ color: "var(--gold-lt)" }}>Free Trial</em>
           </h2>
           <p style={{ color: "rgba(255,255,255,.75)", maxWidth: 580, margin: "0 auto 32px", lineHeight: 1.75, fontSize: ".95rem" }}>
-            Start with a free {TRIAL.durationMinutes}-minute trial. No credit card is required, and tutor availability is confirmed after your request.
+            Start with {TRIAL_OFFER}. No credit card is required, and tutor availability is confirmed after your request.
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/free-quran-classes-online" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "linear-gradient(135deg,#c9922a,#d4a030)", color: "#1a1a2e", fontWeight: 700, padding: "15px 32px", borderRadius: 50, textDecoration: "none", fontSize: ".95rem" }}>

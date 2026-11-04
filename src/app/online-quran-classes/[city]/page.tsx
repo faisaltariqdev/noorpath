@@ -15,7 +15,6 @@ import { CheckCircle, Clock, MapPin, Shield, BookOpen, Users } from "lucide-reac
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import CountryQuranClassesGuide from "@/components/CountryQuranClassesGuide";
-import TrustpilotSnippet from "@/components/TrustpilotSnippet";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import LocationConversionBar from "@/components/LocationConversionBar";
 import LocationHeroCtaCard from "@/components/LocationHeroCtaCard";
@@ -327,7 +326,6 @@ export default async function CityPage({ params }: Props) {
                   "✓ Live 1-on-1 classes from $29/mo",
                   "✓ Free 30-min trial — no credit card required",
                   "✓ Parent Portal to track homework & progress",
-                  "✓ Top-rated tutors (4.0 Trustpilot score)",
                 ].map((b) => (
                   <div key={b} style={{ color: "#fff", fontSize: ".92rem", fontWeight: 500 }}>{b}</div>
                 ))}
@@ -616,8 +614,6 @@ export default async function CityPage({ params }: Props) {
                   ))}
                 </div>
               </div>
-
-              <TrustpilotSnippet count={2} title={`Verified Reviews for ${c.city} & ${c.country} Families`} country={c.country} />
 
               <FaqJsonLd faqs={faqs} pageUrl={pageUrl} />
               <div className="content-card" style={{ marginBottom: 28 }}>

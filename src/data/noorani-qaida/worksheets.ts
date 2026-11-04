@@ -168,7 +168,7 @@ export const QAIDA_WORKSHEETS: QaidaWorksheetMeta[] = [
       },
       {
         heading: "Integrating Tracing with Oral Reading Practice",
-        body: "As your child traces each letter, have them say its authentic Arabic name (e.g. 'Jeeeeem', not 'Ja'). This pairing of visual motor action with auditory vocalization guarantees that letter names stick firmly in long-term memory.",
+        body: "As your child traces each letter, have them say its authentic Arabic name (e.g. 'Jeeeeem', not 'Ja'). This pairing of visual motor action with auditory vocalization helps letter names stick in long-term memory.",
       },
     ],
     worksheetExercises: [
