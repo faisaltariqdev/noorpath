@@ -449,7 +449,9 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
               <div>
                 {post.guestAuthorUrl ? (
-                  <span style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem" }}>{post.author}</span>
+                  <a href={post.guestAuthorUrl} style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem", textDecoration: "none" }}>
+                    {post.author}
+                  </a>
                 ) : (
                   <Link href="/author/faisal-tariq" style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem", textDecoration: "none" }}>
                     {post.author}
@@ -784,6 +786,13 @@ export default async function BlogPostPage({ params }: Props) {
                   <div className="author-bio np-author-bio" style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 22, marginTop: 40 }}>
                     <p style={{ margin: 0, color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7 }}>
                       This is a guest post by <strong>{post.author}</strong>. The views, claims and links in it are the guest author&apos;s own.
+                    </p>
+                    <p style={{ margin: "10px 0 0", color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7 }}>
+                      About the author: visit {post.author} at{" "}
+                      <a href={post.guestAuthorUrl} style={{ color: "var(--emerald)", fontWeight: 600 }}>
+                        {post.guestAuthorUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                      </a>
+                      .
                     </p>
                   </div>
                 ) : (
