@@ -19,7 +19,7 @@
   --ivory:      #f7f2e8;
   --charcoal:   #1a1a2e;
   --slate:      #2d3748;
-  --muted:      #6b7280;
+  --muted:      #5f6673; /* 5.2:1 on cream, 5.8:1 on white (WCAG AA) */
   --border:     rgba(10,110,79,.12);
   --shadow-sm:  0 2px 12px rgba(10,110,79,.08);
   --shadow-md:  0 8px 32px rgba(10,110,79,.14);
@@ -710,7 +710,7 @@ footer.site-footer {
   }
   .mobile-sticky-whatsapp {
     background: #25d366;
-    color: #fff;
+    color: #0b3d2e;
     box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
   }
   .mobile-sticky-whatsapp:hover,

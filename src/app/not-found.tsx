@@ -134,7 +134,7 @@ export default function NotFound() {
               alignItems: "center",
               gap: 8,
               background: "#25D366",
-              color: "#fff",
+              color: "#0b3d2e",
               fontWeight: 700,
               padding: "14px 28px",
               borderRadius: 50,

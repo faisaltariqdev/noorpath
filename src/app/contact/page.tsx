@@ -175,7 +175,7 @@ export default function ContactPage() {
                       alignItems: "center",
                       gap: 6,
                       background: "#25D366",
-                      color: "#fff",
+                      color: "#0b3d2e",
                       fontSize: ".82rem",
                       fontWeight: 700,
                       padding: "8px 14px",

@@ -110,7 +110,6 @@ export default function MobileStickyActionBar() {
               type="button"
               onClick={handleTrialClick}
               className="mobile-sticky-btn mobile-sticky-trial"
-              aria-label="Navigate to booking trial form"
               style={{ fontSize: ".78rem", padding: "0 8px" }}
             >
               <span>⚡ Free Trial</span>
@@ -123,7 +122,6 @@ export default function MobileStickyActionBar() {
               target="_blank"
               rel="noopener noreferrer"
               className="mobile-sticky-btn mobile-sticky-whatsapp"
-              aria-label="Chat on WhatsApp"
             >
               <svg
                 width="18"
@@ -142,7 +140,6 @@ export default function MobileStickyActionBar() {
               type="button"
               onClick={handleTrialClick}
               className="mobile-sticky-btn mobile-sticky-trial"
-              aria-label="Navigate to booking trial form"
             >
               <span>⚡ Book Free Trial</span>
             </button>

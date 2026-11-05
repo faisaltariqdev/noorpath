@@ -54,7 +54,7 @@ export default function CountryQuranClassesGuide({
         <p style={{ color: "var(--muted)", fontSize: ".8rem", margin: 0 }}>
           Reviewed {guide.reviewedDate} · Service details are checked against
           NoorPath&apos;s published policies and current booking process.{" "}
-          <Link href="/editorial-policy" style={{ color: "var(--emerald)" }}>
+          <Link href="/editorial-policy" style={{ color: "var(--emerald)", textDecoration: "underline" }}>
             Read the editorial policy
           </Link>
           .

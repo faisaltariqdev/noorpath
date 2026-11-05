@@ -128,7 +128,7 @@ export default function InlineTrialCTA({
               alignItems: "center",
               gap: 6,
               background: "#25D366",
-              color: "#fff",
+              color: "#0b3d2e",
               padding: "7px 15px",
               borderRadius: 50,
               fontSize: ".82rem",

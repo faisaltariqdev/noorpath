@@ -93,7 +93,7 @@ export default function TripleGuaranteeBadge() {
                   </div>
                   <span
                     className="text-[0.7rem] font-bold px-2 py-0.5 rounded-full"
-                    style={{ background: "rgba(212, 160, 23, 0.15)", color: "#b45309" }}
+                    style={{ background: "rgba(212, 160, 23, 0.15)", color: "#a1460a" }}
                   >
                     {g.badge}
                   </span>

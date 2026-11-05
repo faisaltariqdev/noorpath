@@ -235,7 +235,7 @@ export default function Footer() {
                   href={TRUSTPILOT.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Review NoorPath Academy on Trustpilot"
+                  aria-label="Review us on Trustpilot — NoorPath Academy"
                   style={{
                     display: "inline-flex",
                     alignItems: "center",

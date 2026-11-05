@@ -73,13 +73,13 @@ export function useTrialFormSubmit(options: Options = {}) {
       const { email, phone } = splitContactField(contactRaw);
       const name = String(fd.get("name") || "").trim();
       const country = String(fd.get("country") || "").trim();
-      const childName = String(fd.get("child_name") || "").trim();
+      const childName = String(fd.get("child_name") || "").trim() || name;
       const childAge = String(fd.get("child_age") || "").trim();
       const learnerType = String(fd.get("learner_type") || "").trim();
       const preferredTime = String(fd.get("preferred_class_time") || "").trim();
       const tutorPreference = String(fd.get("tutor_preference") || "").trim();
       const course = String(fd.get("course") || "Free trial class").trim();
-      if (!country || !learnerType || !childName || !childAge) {
+      if (!country || !learnerType || !childAge) {
         setStatus("error");
         setMsg("Please add the country and learner details.");
         return;

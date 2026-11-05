@@ -434,10 +434,10 @@ export default function HomePage() {
               rel="noopener noreferrer"
               style={{ display: "inline-flex", alignItems: "center", gap: 10, marginTop: 16, background: "#f7f9f8", border: "1px solid var(--border)", borderRadius: 12, padding: "10px 20px", textDecoration: "none" }}
             >
-              <span style={{ color: "#00b67a", fontSize: "1.05rem", letterSpacing: 2 }}>{"★".repeat(Math.round(trustpilotAggregate.ratingValue))}</span>
+              <span style={{ color: "#007f55", fontSize: "1.05rem", letterSpacing: 2 }}>{"★".repeat(Math.round(trustpilotAggregate.ratingValue))}</span>
               <span style={{ color: "var(--charcoal)", fontWeight: 800, fontSize: ".95rem" }}>According to Trustpilot: {trustpilotAggregate.ratingValue}/5 rating</span>
               <span style={{ color: "var(--muted)", fontSize: ".82rem" }}>· {trustpilotAggregate.reviewCount} reviews · last checked {TRUSTPILOT.lastChecked}</span>
-              <span style={{ color: "#00b67a", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
+              <span style={{ color: "#007f55", fontWeight: 800, fontSize: ".9rem" }}>★ Trustpilot</span>
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -445,14 +445,14 @@ export default function HomePage() {
               <div key={t.name} className="testimonial-card">
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "#00b67a" }} />
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-                  <span style={{ color: "#00b67a", fontSize: "1.15rem", letterSpacing: 2 }}>{"★".repeat(t.stars)}</span>
+                  <span style={{ color: "#007f55", fontSize: "1.15rem", letterSpacing: 2 }}>{"★".repeat(t.stars)}</span>
                   <span style={{ fontSize: ".76rem", color: "var(--muted)" }}>{t.date}</span>
                 </div>
                 <div style={{ fontWeight: 700, color: "var(--charcoal)", fontSize: ".95rem", marginBottom: 8 }}>{t.title}</div>
                 <p style={{ color: "var(--slate)", fontSize: ".91rem", lineHeight: 1.78, marginBottom: 20, fontStyle: "italic" }}>&quot;{t.text}&quot;</p>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8, paddingTop: 14, borderTop: "1px solid rgba(10,110,79,.08)" }}>
                   <strong style={{ color: "var(--charcoal)", fontSize: ".92rem" }}>{t.name} <span style={{ fontWeight: 500, color: "var(--muted)", fontSize: ".82rem" }}>· {t.country}</span></strong>
-                  <span style={{ fontSize: ".78rem", color: "#00b67a", fontWeight: 700 }}>★ Published on Trustpilot · last checked {TRUSTPILOT.lastChecked}</span>
+                  <span style={{ fontSize: ".78rem", color: "#007f55", fontWeight: 700 }}>★ Published on Trustpilot · last checked {TRUSTPILOT.lastChecked}</span>
                 </div>
               </div>
             ))}

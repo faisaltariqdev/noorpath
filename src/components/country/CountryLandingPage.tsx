@@ -827,7 +827,7 @@ export default async function CountryLandingPage({ slug }: { slug: string }) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {localReviews.map((review) => (
                   <figure key={review.name} style={{ ...cardStyle, padding: 20, margin: 0 }}>
-                    <div aria-label={`${review.stars} out of 5 stars`} style={{ color: "#00b67a", letterSpacing: 2, marginBottom: 8 }}>
+                    <div aria-label={`${review.stars} out of 5 stars`} style={{ color: "#007f55", letterSpacing: 2, marginBottom: 8 }}>
                       {"★".repeat(review.stars)}
                     </div>
                     <blockquote style={{ margin: "0 0 10px", color: "var(--slate)", fontSize: ".92rem", lineHeight: 1.7 }}>

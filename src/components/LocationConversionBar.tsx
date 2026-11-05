@@ -35,7 +35,6 @@ export default function LocationConversionBar({ whatsappText }: Props) {
           target="_blank"
           rel="noopener noreferrer"
           className="location-conversion-btn location-conversion-whatsapp"
-          aria-label="Chat on WhatsApp"
         >
           <MessageCircle size={16} aria-hidden="true" />
           <span>WhatsApp Us</span>

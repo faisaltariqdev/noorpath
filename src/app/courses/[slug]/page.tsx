@@ -30,12 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!course) return {};
   const description = `${course.title} for ${course.age}. Live one-to-one online lessons, schedule matching and a free trial request.`;
   return {
-    title: absolutePageTitle(`${course.title} — Online | NoorPath Academy`),
+    title: absolutePageTitle(`${course.title} | NoorPath Academy`),
     description,
     keywords: course.keywords,
     alternates: { canonical: `https://www.noorpath.online/courses/${slug}` },
     openGraph: {
-      title: `${course.title} — Online | NoorPath Academy`,
+      title: `${course.title} | NoorPath Academy`,
       description,
       url: `https://www.noorpath.online/courses/${slug}`,
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: course.title }],

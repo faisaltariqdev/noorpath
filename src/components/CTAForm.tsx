@@ -196,14 +196,13 @@ export default function CTAForm({
         <option value="other">Another family member</option>
       </select>
 
-      <label className="sr-only" htmlFor={id("childName")}>Learner&apos;s name</label>
+      <label className="sr-only" htmlFor={id("childName")}>Learner&apos;s name (optional)</label>
       <input
         className="cta-input"
         type="text"
         name="child_name"
         id={id("childName")}
-        placeholder="Learner's name"
-        required
+        placeholder="Learner's name (optional)"
         autoComplete="off"
       />
 

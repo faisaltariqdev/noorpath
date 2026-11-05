@@ -199,12 +199,13 @@ export async function POST(request: Request) {
   const { email, phone } = splitContact(contact);
   const country = String(body.country || "").trim();
   const learnerType = String(body.learner_type || "").trim();
-  const childName = String(body.child_name || "").trim();
+  // Learner name is optional on the form; fall back to the contact name (e.g. adults booking for themselves).
+  const childName = String(body.child_name || "").trim() || name;
   const childAge = String(body.child_age || "").trim();
   const course = String(body.course || "").trim();
   const preferredTime = String(body.preferred_class_time || body.preferred_time || "").trim();
   const tutorPreference = String(body.tutor_preference || "").trim();
-  if (!country || !learnerType || !childName || !childAge) {
+  if (!country || !learnerType || !childAge) {
     return NextResponse.json({ ok: false, error: "learner_details_required" }, { status: 400 });
   }
   const formVariant = String(body.form_variant || "standard");

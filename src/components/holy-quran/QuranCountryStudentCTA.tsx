@@ -168,7 +168,7 @@ export default function QuranCountryStudentCTA({
                   alignItems: "center",
                   gap: 10,
                   background: "#25D366",
-                  color: "#fff",
+                  color: "#0b3d2e",
                   padding: "12px 24px",
                   borderRadius: 50,
                   fontWeight: 800,

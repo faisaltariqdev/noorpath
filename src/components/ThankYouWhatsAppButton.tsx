@@ -31,7 +31,7 @@ export default function ThankYouWhatsAppButton() {
         alignItems: "center",
         gap: 10,
         background: "#25D366",
-        color: "#fff",
+        color: "#0b3d2e",
         padding: "14px 28px",
         borderRadius: 12,
         fontWeight: 700,

@@ -93,7 +93,7 @@ export function QaidaCourseCta({
           <WhatsAppLink
             href={`${CONTACT.whatsappUrl}?text=${encodeURIComponent(`Assalamu Alaikum, I am practicing Noorani Qaida with my child and would like to book ${TRIAL_OFFER}.`)}`}
             className="btn-outline-np"
-            style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#25D366", borderColor: "#25D366", color: "#fff", fontWeight: 700 }}
+            style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "#25D366", borderColor: "#25D366", color: "#0b3d2e", fontWeight: 700 }}
             target="_blank"
             rel="noopener noreferrer"
           >

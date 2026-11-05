@@ -81,7 +81,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in London"
     ],
     "h1": "Quran Teacher for Kids in London — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in London — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in London — Online 1-on-1 | NoorPath",
     "metaDescription": "Looking for an experienced Quran teacher for kids in London? 1-on-1 Noorani Qaida, Tajweed & Hifz in GMT/BST after school. Book 3 free trial sessions.",
     "answerBox": "NoorPath pairs London children aged 4 to 16 with patient, certified online Quran teachers. Lessons focus on Noorani Qaida, Tajweed rules, and Surah memorization, scheduled conveniently around UK school hours in GMT/BST. Start your child's journey today with 3 free 30-minute trial sessions—no credit card required.",
     "whoWeTeach": {
@@ -192,7 +192,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Birmingham"
     ],
     "h1": "Female Quran Teacher Online in Birmingham — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Birmingham — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Birmingham | NoorPath",
     "metaDescription": "Request a qualified female Quran teacher online in Birmingham. Private 1-on-1 Tajweed, Qaida & Hifz for daughters and sisters in GMT/BST. Free trial.",
     "answerBox": "NoorPath connects sisters, young daughters, and female adult students in Birmingham with certified female Quran teachers. Enjoy private 1-on-1 instruction in Noorani Qaida, Tajweed, and Hifz matched to your family's schedule in GMT/BST. Reserve your 3 free 30-minute trial sessions today with zero upfront payment.",
     "whoWeTeach": {
@@ -303,7 +303,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Manchester"
     ],
     "h1": "Tajweed Classes for Adults in Manchester — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Manchester — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Manchester — 1-on-1 | NoorPath",
     "metaDescription": "Master Quranic Arabic pronunciation with Tajweed classes for adults in Manchester. Private 1-on-1 online evening slots in GMT/BST. Free trial available.",
     "answerBox": "NoorPath provides structured online Tajweed classes for university students, professionals, and reverts across Greater Manchester. Master Arabic Makharaj, articulation points, and fluent recitation through flexible one-on-one lessons scheduled around your GMT/BST work commitments. Experience our verified teaching approach with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -414,7 +414,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Leeds"
     ],
     "h1": "Quran Teacher for Kids in Leeds — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Leeds — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Leeds — Online 1-on-1 | NoorPath",
     "metaDescription": "Find a dedicated Quran teacher for kids in Leeds. Live 1-on-1 Noorani Qaida, Tajweed & Hifz lessons tailored to West Yorkshire families. Free trial.",
     "answerBox": "NoorPath connects West Yorkshire families with qualified Quran teachers for children in Leeds. Delivering private 1-on-1 Noorani Qaida, Tajweed, and Hifz coaching, lessons adapt around British school terms in GMT/BST. Evaluate tutor compatibility and lesson structure with 3 free 30-minute trial sessions with no credit card needed.",
     "whoWeTeach": {
@@ -525,7 +525,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Leicester"
     ],
     "h1": "Female Quran Teacher Online in Leicester — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Leicester — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Leicester — 1-on-1 | NoorPath",
     "metaDescription": "Private female Quran teacher online in Leicester. Dedicated 1-on-1 Tajweed and Qaida instruction for sisters and daughters in GMT/BST. Free trial.",
     "answerBox": "NoorPath offers sisters, teenage girls, and mothers in Leicester access to accredited female Quran teachers. Our private online sessions cover Noorani Qaida, Tajweed phonetics, and Surah revision scheduled around your GMT/BST availability. Begin your Quran journey with 3 free 30-minute introductory trial sessions today without entering payment details.",
     "whoWeTeach": {
@@ -636,7 +636,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Luton"
     ],
     "h1": "Tajweed Classes for Adults in Luton — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Luton — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Luton — 1-on-1 | NoorPath",
     "metaDescription": "Learn proper Quranic recitation with adult Tajweed classes in Luton. Private 1-on-1 online evening lessons in GMT/BST. Register for a free trial.",
     "answerBox": "NoorPath delivers personalized adult Tajweed classes for commuters, revert Muslims, and professionals residing in Luton. Refine letter articulation, stopping rules, and melodious Quranic recitation through flexible 1-on-1 evening lessons in GMT/BST. Discover how our experienced tutors can elevate your recitation with 3 free 30-minute trial sessions.",
     "whoWeTeach": {
@@ -747,7 +747,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Bradford"
     ],
     "h1": "Quran Teacher for Kids in Bradford — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Bradford — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Bradford — 1-on-1 | NoorPath",
     "metaDescription": "Certified Quran teacher for kids in Bradford. Live 1-on-1 Noorani Qaida, Tajweed & Hifz tutoring in GMT/BST after school. 3 free trial sessions available.",
     "answerBox": "NoorPath supplies Bradford parents with certified, DBS-aware online Quran teachers for kids aged 4 to 16. Covering Noorani Qaida fundamentals, Tajweed rules, and Juz Amma memorization, lessons run after school in GMT/BST. Book 3 free 30-minute trial sessions today to see how 1-on-1 teaching accelerates your child's learning.",
     "whoWeTeach": {
@@ -858,7 +858,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in New York"
     ],
     "h1": "Quran Teacher for Kids in New York — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in New York — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in New York — 1-on-1 | NoorPath",
     "metaDescription": "Trusted Quran teacher for kids in New York. Live 1-on-1 Noorani Qaida, Tajweed & Hifz lessons in Eastern Time (ET). Book 3 free trial sessions today.",
     "answerBox": "NoorPath connects Muslim families in New York with verified 1-on-1 online Quran teachers for children. Covering beginner Noorani Qaida, Tajweed rules, and Hifz, classes are scheduled in Eastern Time (ET) to match NY school days. Schedule 3 free 30-minute trial sessions today with zero obligation and no card needed.",
     "whoWeTeach": {
@@ -969,7 +969,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Houston"
     ],
     "h1": "Female Quran Teacher Online in Houston — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Houston — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Houston — 1-on-1 | NoorPath",
     "metaDescription": "Request a female Quran teacher online in Houston. Private 1-on-1 lessons in Noorani Qaida, Tajweed & Hifz in Central Time (CT). 3 free trial sessions.",
     "answerBox": "NoorPath provides daughters, sisters, and female adults across Greater Houston with certified female Quran tutors. Experience private one-on-one lessons in Noorani Qaida, Tajweed, and Hifz memorization scheduled in Central Time (CT) around your family's routine. Get started today with 3 free 30-minute trial sessions—no credit card required.",
     "whoWeTeach": {
@@ -1080,7 +1080,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Dallas"
     ],
     "h1": "Tajweed Classes for Adults in Dallas — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Dallas — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Dallas — 1-on-1 | NoorPath",
     "metaDescription": "Private Tajweed classes for adults in Dallas-Fort Worth. 1-on-1 online Quran pronunciation instruction in Central Time (CT). 3 free trial sessions available.",
     "answerBox": "NoorPath delivers specialized online Tajweed classes for working professionals, university students, and reverts throughout the Dallas-Fort Worth metroplex. Master Arabic Makharaj, phonetic rules, and fluent Quran recitation through customized 1-on-1 lessons scheduled in Central Time (CT). Experience our proven methodology with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -1191,7 +1191,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Chicago"
     ],
     "h1": "Quran Teacher for Kids in Chicago — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Chicago — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Chicago — Online 1-on-1 | NoorPath",
     "metaDescription": "Find a verified Quran teacher for kids in Chicago. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in Central Time (CT). Schedule 3 free trial sessions today.",
     "answerBox": "NoorPath pairs Chicago children aged 4 to 16 with patient, certified online Quran teachers. Our curriculum spans Noorani Qaida, Tajweed pronunciation, and Surah memorization, scheduled in Central Time (CT) around Illinois school hours. Start your child's Quranic education today with 3 free 30-minute trial sessions—no credit card required.",
     "whoWeTeach": {
@@ -1302,7 +1302,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Toronto"
     ],
     "h1": "Quran Teacher for Kids in Toronto — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Toronto — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Toronto — Online 1-on-1 | NoorPath",
     "metaDescription": "Certified Quran teacher for kids in Toronto. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in Eastern Time (ET). Book 3 free trial sessions today.",
     "answerBox": "NoorPath delivers live 1-on-1 online Quran classes for Muslim children across the Greater Toronto Area. Covering beginner Noorani Qaida, Tajweed rules, and Hifz, lessons are scheduled in Eastern Time (ET) to fit Canadian school days. Reserve your child's 3 free 30-minute trial sessions today without entering payment information.",
     "whoWeTeach": {
@@ -1413,7 +1413,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Sydney"
     ],
     "h1": "Quran Teacher for Kids in Sydney — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Sydney — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Sydney — Online 1-on-1 | NoorPath",
     "metaDescription": "Dedicated Quran teacher for kids in Sydney. 1-on-1 online Noorani Qaida, Tajweed & Hifz in AEST/AEDT after school. Book 3 free trial sessions today.",
     "answerBox": "NoorPath pairs Sydney children with certified, experienced online Quran teachers for live 1-on-1 lessons. Covering Noorani Qaida, Tajweed rules, and Surah memorization, classes run in AEST/AEDT to suit Australian primary and high school schedules. Begin your child's learning with 3 free 30-minute trial sessions—no credit card required.",
     "whoWeTeach": {
@@ -1524,7 +1524,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Melbourne"
     ],
     "h1": "Female Quran Teacher Online in Melbourne — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Melbourne — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Melbourne — 1-on-1 | NoorPath",
     "metaDescription": "Qualified female Quran teacher online in Melbourne. Private 1-on-1 lessons in Tajweed, Qaida & Hifz for daughters and sisters in AEST/AEDT. Free trial.",
     "answerBox": "NoorPath connects sisters, young daughters, and female adult students in Melbourne with verified female Quran teachers. Enjoy private 1-on-1 lessons in Noorani Qaida, Tajweed, and Hifz memorization scheduled in AEST/AEDT around your routine. Reserve your 3 free 30-minute trial sessions today with zero commitment and no upfront payment.",
     "whoWeTeach": {
@@ -1635,7 +1635,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Dubai"
     ],
     "h1": "Quran Teacher for Kids in Dubai — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Dubai — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Dubai — Online 1-on-1 | NoorPath",
     "metaDescription": "Verified Quran teacher for kids in Dubai. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in GST (UTC+4). British & IB school aligned. Free trial.",
     "answerBox": "NoorPath provides expat and resident families in Dubai with certified 1-on-1 online Quran teachers for children. Covering Noorani Qaida, Tajweed, and Hifz in GST (UTC+4), lessons fit seamlessly around international school schedules. Book 3 free 30-minute trial sessions today to discover our engaging, private instruction.",
     "whoWeTeach": {
@@ -1746,7 +1746,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Abu Dhabi"
     ],
     "h1": "Female Quran Teacher Online in Abu Dhabi — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Abu Dhabi — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Abu Dhabi — 1-on-1 | NoorPath",
     "metaDescription": "Certified female Quran teacher online in Abu Dhabi. Private 1-on-1 lessons for daughters and sisters in GST (UTC+4). Register for 3 free trial sessions.",
     "answerBox": "NoorPath connects sisters and young daughters across Abu Dhabi with accredited female Quran teachers. Experience private one-on-one lessons in Noorani Qaida, Tajweed rules, and Hifz memorization scheduled in GST (UTC+4) around your home routine. Request a tutor and begin with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -1857,7 +1857,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Riyadh"
     ],
     "h1": "Tajweed Classes for Adults in Riyadh — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Riyadh — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Riyadh — 1-on-1 | NoorPath",
     "metaDescription": "Master Quranic pronunciation with adult Tajweed classes in Riyadh. Private 1-on-1 evening slots in AST (UTC+3) coordinated with Salah. Free trial.",
     "answerBox": "NoorPath provides specialized online Tajweed classes for working professionals and expatriate adults in Riyadh. Refine Makharaj, stopping rules, and classical Quran recitation through private 1-on-1 sessions scheduled in AST (UTC+3) around local prayer times. Start your Quranic advancement with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -1968,7 +1968,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Jeddah"
     ],
     "h1": "Quran Teacher for Kids in Jeddah — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Jeddah — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Jeddah — Online 1-on-1 | NoorPath",
     "metaDescription": "Certified Quran teacher for kids in Jeddah. 1-on-1 Noorani Qaida, Tajweed & Hifz in AST (UTC+3). Private online instruction. Free trial available.",
     "answerBox": "NoorPath connects Jeddah families with certified online Quran teachers for children aged 4 to 16. Covering Noorani Qaida, Tajweed rules, and Hifz memorization in AST (UTC+3), lessons fit around international school days and Friday-Saturday weekends. Book your child's 3 free 30-minute trial sessions today without credit card details.",
     "whoWeTeach": {
@@ -2079,7 +2079,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Karachi"
     ],
     "h1": "Quran Teacher for Kids in Karachi — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Karachi — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Karachi — Online 1-on-1 | NoorPath",
     "metaDescription": "Experienced Quran teacher for kids in Karachi. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in PKT (UTC+5). Urdu & English tutors. 3 free trial sessions.",
     "answerBox": "NoorPath provides dedicated 1-on-1 online Quran teachers for children across Karachi. Students master Noorani Qaida, proper Tajweed, and Surah memorization with interactive lessons scheduled in PKT (UTC+5) around school and college hours. Test our teaching quality with 3 free 30-minute trial sessions—no credit card required.",
     "whoWeTeach": {
@@ -2190,7 +2190,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Lahore"
     ],
     "h1": "Female Quran Teacher Online in Lahore — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Lahore — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Lahore — 1-on-1 | NoorPath",
     "metaDescription": "Qualified female Quran teacher online in Lahore. Private 1-on-1 Tajweed, Qaida & Hifz for daughters and sisters in PKT (UTC+5). 3 free trial sessions.",
     "answerBox": "NoorPath connects daughters, sisters, and female students in Lahore with certified female Quran teachers. Benefit from private 1-on-1 guidance in Noorani Qaida, Tajweed phonetics, and Hifz memorization scheduled in PKT (UTC+5) around your family routine. Begin with 3 free 30-minute trial sessions today without any upfront payment.",
     "whoWeTeach": {
@@ -2301,7 +2301,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Hyderabad"
     ],
     "h1": "Tajweed Classes for Adults in Hyderabad — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Hyderabad — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Hyderabad — 1-on-1 | NoorPath",
     "metaDescription": "Private Tajweed classes for adults in Hyderabad. 1-on-1 online Quran pronunciation instruction in PKT (UTC+5). Register for 3 free trial sessions.",
     "answerBox": "NoorPath offers specialized online Tajweed classes for university students, professionals, and adults in Hyderabad. Master classical Arabic Makharaj, articulation, and melodious Quran recitation through personalized 1-on-1 sessions scheduled in PKT (UTC+5) to suit your schedule. Start your learning journey with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -2412,7 +2412,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Mumbai"
     ],
     "h1": "Quran Teacher for Kids in Mumbai — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Mumbai — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Mumbai — Online 1-on-1 | NoorPath",
     "metaDescription": "Dedicated Quran teacher for kids in Mumbai. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in IST (UTC+5:30). Monsoon-proof home classes. Free trial.",
     "answerBox": "NoorPath pairs children aged 4 to 16 in Mumbai with patient, certified online Quran teachers. Students learn Noorani Qaida, Tajweed rules, and Surah memorization with live one-on-one lessons scheduled in IST (UTC+5:30) around school hours. Start your child's lessons with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -2523,7 +2523,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Lagos"
     ],
     "h1": "Quran Teacher for Kids in Lagos — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Lagos — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Lagos — Online 1-on-1 | NoorPath",
     "metaDescription": "Experienced Quran teacher for kids in Lagos. 1-on-1 online Noorani Qaida, Tajweed & Hifz in WAT (UTC+1). Skip traffic with home lessons. Free trial.",
     "answerBox": "NoorPath connects Lagos families with certified online Quran teachers for kids aged 4 to 16. Covering beginner Noorani Qaida, Tajweed rules, and Hifz memorization in WAT (UTC+1), lessons run after school. Book your child's 3 free 30-minute trial sessions today with no credit card required.",
     "whoWeTeach": {
@@ -2634,7 +2634,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Abuja"
     ],
     "h1": "Female Quran Teacher Online in Abuja — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Abuja — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Abuja — 1-on-1 | NoorPath",
     "metaDescription": "Certified female Quran teacher online in Abuja. Private 1-on-1 lessons in Tajweed, Qaida & Hifz for daughters and sisters in WAT (UTC+1). Free trial.",
     "answerBox": "NoorPath pairs sisters, young daughters, and female adult learners in Abuja with certified female Quran teachers. Enjoy private one-to-one lessons in Noorani Qaida, Tajweed, and Hifz matched to your preferred WAT (UTC+1) window. Reserve your 3 free 30-minute trial sessions today with zero commitment and no upfront card payment.",
     "whoWeTeach": {
@@ -2745,7 +2745,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Kano"
     ],
     "h1": "Tajweed Classes for Adults in Kano — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Kano — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Kano — 1-on-1 | NoorPath",
     "metaDescription": "Master classical Quranic recitation with adult Tajweed classes in Kano. Private 1-on-1 online sessions in WAT (UTC+1). Schedule 3 free trial sessions.",
     "answerBox": "NoorPath provides specialized online Tajweed classes for working professionals, university students, and adult learners in Kano. Perfect Arabic Makharaj, stopping rules, and classical recitation through customized 1-on-1 lessons scheduled in WAT (UTC+1) around your daily commitments. Register for 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -2856,7 +2856,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Port Harcourt"
     ],
     "h1": "Quran Teacher for Kids in Port Harcourt — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Port Harcourt — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Port Harcourt — 1-on-1 | NoorPath",
     "metaDescription": "Certified Quran teacher for kids in Port Harcourt. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in WAT (UTC+1). Book 3 free trial sessions today.",
     "answerBox": "NoorPath connects Muslim families in Port Harcourt with certified 1-on-1 online Quran teachers for children. Covering Noorani Qaida, Tajweed pronunciation, and Surah memorization in WAT (UTC+1), lessons fit after-school hours. Schedule your child's 3 free 30-minute trial sessions today with no credit card required.",
     "whoWeTeach": {
@@ -2967,7 +2967,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Dublin"
     ],
     "h1": "Quran Teacher for Kids in Dublin — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Dublin — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Dublin — Online 1-on-1 | NoorPath",
     "metaDescription": "Experienced Quran teacher for kids in Dublin. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in Irish time (GMT/IST). Schedule 3 free trial sessions.",
     "answerBox": "NoorPath provides dedicated 1-on-1 online Quran teachers for Muslim children aged 4 to 16 in Dublin. Covering Noorani Qaida, Tajweed rules, and Surah memorization, lessons run in GMT/IST after school. Book 3 free 30-minute trial sessions today to see how private tutoring builds recitation confidence.",
     "whoWeTeach": {
@@ -3078,7 +3078,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Cork"
     ],
     "h1": "Female Quran Teacher Online in Cork — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Cork — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Cork — 1-on-1 | NoorPath",
     "metaDescription": "Certified female Quran teacher online in Cork. Private 1-on-1 lessons in Tajweed, Qaida & Hifz for daughters and sisters in GMT/IST. Free trial.",
     "answerBox": "NoorPath connects sisters, young daughters, and female learners in Cork with certified female Quran teachers. Enjoy private 1-on-1 lessons in Noorani Qaida, Tajweed phonetics, and Hifz memorization scheduled in GMT/IST around your routine. Reserve your 3 free 30-minute trial sessions today with no credit card required.",
     "whoWeTeach": {
@@ -3189,7 +3189,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Galway"
     ],
     "h1": "Tajweed Classes for Adults in Galway — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Galway — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Galway — 1-on-1 | NoorPath",
     "metaDescription": "Private Tajweed classes for adults in Galway. 1-on-1 online Quran pronunciation and recitation in GMT/IST. Schedule 3 free trial sessions today.",
     "answerBox": "NoorPath offers specialized online Tajweed classes for university students, reverts, and adult learners in Galway. Master Arabic Makharaj, articulation points, and fluent recitation through personalized 1-on-1 lessons scheduled in GMT/IST around your commitments. Start your learning journey with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -3300,7 +3300,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Auckland"
     ],
     "h1": "Quran Teacher for Kids in Auckland — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Auckland — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Auckland — 1-on-1 | NoorPath",
     "metaDescription": "Dedicated Quran teacher for kids in Auckland. 1-on-1 online Noorani Qaida, Tajweed & Hifz in NZST/NZDT after school. Book 3 free trial sessions.",
     "answerBox": "NoorPath connects Auckland families with certified online Quran teachers for kids aged 4 to 16. Covering Noorani Qaida fundamentals, Tajweed rules, and Juz Amma memorization, lessons run in NZST/NZDT after school. Book 3 free 30-minute trial sessions today to give your child individual recitation guidance.",
     "whoWeTeach": {
@@ -3411,7 +3411,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Christchurch"
     ],
     "h1": "Female Quran Teacher Online in Christchurch — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Christchurch — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Christchurch | NoorPath",
     "metaDescription": "Qualified female Quran teacher online in Christchurch. Private 1-on-1 Tajweed, Qaida & Hifz for daughters and sisters in NZST/NZDT. Free trial.",
     "answerBox": "NoorPath pairs sisters, young daughters, and female learners in Christchurch with accredited female Quran teachers. Benefit from private 1-on-1 guidance in Noorani Qaida, Tajweed phonetics, and Hifz memorization scheduled in NZST/NZDT around your family routine. Begin with 3 free 30-minute trial sessions today without upfront payment.",
     "whoWeTeach": {
@@ -3522,7 +3522,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Wellington"
     ],
     "h1": "Tajweed Classes for Adults in Wellington — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Wellington — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Wellington — 1-on-1 | NoorPath",
     "metaDescription": "Master Arabic Quran pronunciation with adult Tajweed classes in Wellington. Private 1-on-1 online sessions in NZST/NZDT. Book your free trial.",
     "answerBox": "NoorPath delivers specialized online Tajweed classes for public sector professionals, reverts, and adult learners in Wellington. Perfect Arabic Makharaj, phonetic rules, and classical Quran recitation through customized 1-on-1 lessons scheduled in NZST/NZDT around your workday. Register for 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -3633,7 +3633,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Helsinki"
     ],
     "h1": "Quran Teacher for Kids in Helsinki — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Helsinki — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Helsinki — 1-on-1 | NoorPath",
     "metaDescription": "Certified Quran teacher for kids in Helsinki. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in EET/EEST. Cozy home lessons in Nordic winter. Free trial.",
     "answerBox": "NoorPath pairs children aged 4 to 16 in Helsinki with patient, certified online Quran teachers. Students learn Noorani Qaida, proper Tajweed, and Surah memorization with interactive live lessons scheduled in EET/EEST around Finnish school hours. Book your child's 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -3744,7 +3744,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Oslo"
     ],
     "h1": "Quran Teacher for Kids in Oslo — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Oslo — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Oslo — Online 1-on-1 | NoorPath",
     "metaDescription": "Verified Quran teacher for kids in Oslo. Live 1-on-1 Noorani Qaida, Tajweed & Hifz in CET/CEST after school. Skip cold commutes. 3 free trial sessions.",
     "answerBox": "NoorPath connects Oslo families with certified online Quran teachers for kids aged 4 to 16. Covering beginner Noorani Qaida, Tajweed rules, and Hifz memorization in CET/CEST, lessons run after school. Book your child's 3 free 30-minute trial sessions today with zero obligation and no card required.",
     "whoWeTeach": {
@@ -3855,7 +3855,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Bergen"
     ],
     "h1": "Female Quran Teacher Online in Bergen — 1-on-1 Online Classes",
-    "metaTitle": "Female Quran Teacher Online in Bergen — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Female Quran Teacher Online in Bergen — 1-on-1 | NoorPath",
     "metaDescription": "Certified female Quran teacher online in Bergen. Private 1-on-1 Tajweed, Qaida & Hifz for daughters and sisters in CET/CEST. Book a free trial.",
     "answerBox": "NoorPath connects sisters, young daughters, and female learners in Bergen with certified female Quran teachers. Enjoy private 1-on-1 lessons in Noorani Qaida, Tajweed phonetics, and Hifz memorization scheduled in CET/CEST around your routine. Reserve your 3 free 30-minute trial sessions today with no credit card required.",
     "whoWeTeach": {
@@ -3966,7 +3966,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Aarhus"
     ],
     "h1": "Tajweed Classes for Adults in Aarhus — 1-on-1 Online Classes",
-    "metaTitle": "Tajweed Classes for Adults in Aarhus — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Tajweed Classes for Adults in Aarhus — 1-on-1 | NoorPath",
     "metaDescription": "Master Quranic pronunciation with adult Tajweed classes in Aarhus. Private 1-on-1 online evening slots in CET/CEST. Book your free trial today.",
     "answerBox": "NoorPath offers specialized online Tajweed classes for university students, reverts, and adult learners in Aarhus. Master Arabic Makharaj, articulation points, and fluent recitation through personalized 1-on-1 lessons scheduled in CET/CEST around your commitments. Start your learning journey with 3 free 30-minute trial sessions today.",
     "whoWeTeach": {
@@ -4077,7 +4077,7 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       "Noorani Qaida classes in Doha"
     ],
     "h1": "Quran Teacher for Kids in Doha — 1-on-1 Online Classes",
-    "metaTitle": "Quran Teacher for Kids in Doha — 1-on-1 Online Classes | NoorPath",
+    "metaTitle": "Quran Teacher for Kids in Doha — Online 1-on-1 | NoorPath",
     "metaDescription": "Verified Quran teacher for kids in Doha. 1-on-1 Noorani Qaida, Tajweed & Hifz in AST (UTC+3). Aligned with international school schedules. Free trial.",
     "answerBox": "NoorPath provides expat and local families in Doha with certified 1-on-1 online Quran teachers for children. Covering Noorani Qaida, Tajweed, and Hifz in AST (UTC+3), lessons fit around international school hours and the Friday-Saturday weekend. Book 3 free 30-minute trial sessions today with no credit card needed.",
     "whoWeTeach": {

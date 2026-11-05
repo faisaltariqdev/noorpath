@@ -102,12 +102,11 @@ export default function FreeResourceLeadMagnet() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2.5 py-3 px-5 rounded-xl font-bold text-white transition-all transform hover:scale-105"
+                  className="w-full inline-flex items-center justify-center gap-2.5 py-3 px-5 rounded-xl font-bold text-[#0b3d2e] transition-all transform hover:scale-105"
                   style={{
                     background: "#25d366",
                     boxShadow: "0 4px 15px rgba(37, 211, 102, 0.4)",
                   }}
-                  aria-label="Get Free PDF via WhatsApp"
                 >
                   <svg
                     width="18"

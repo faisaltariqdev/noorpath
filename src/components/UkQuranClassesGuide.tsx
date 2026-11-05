@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { TRIAL_OFFER } from "@/lib/academyFacts";
 
-const linkStyle = { color: "var(--emerald)", fontWeight: 700 };
+const linkStyle = { color: "var(--emerald)", fontWeight: 700, textDecoration: "underline" };
 
 export default function UkQuranClassesGuide() {
   return (

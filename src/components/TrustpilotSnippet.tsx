@@ -67,7 +67,7 @@ export default function TrustpilotSnippet({
           href={TRUSTPILOT.url}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#00b67a", fontWeight: 700, fontSize: ".82rem", textDecoration: "none" }}
+          style={{ color: "#007f55", fontWeight: 700, fontSize: ".82rem", textDecoration: "none" }}
         >
           Verified on Trustpilot · last checked {TRUSTPILOT.lastChecked} →
         </a>
@@ -84,7 +84,7 @@ export default function TrustpilotSnippet({
               borderLeft: "3px solid #00b67a",
             }}
           >
-            <div style={{ color: "#00b67a", letterSpacing: 2, fontSize: ".95rem", marginBottom: 6 }}>
+            <div style={{ color: "#007f55", letterSpacing: 2, fontSize: ".95rem", marginBottom: 6 }}>
               {"★".repeat(t.stars)}
             </div>
             <p style={{ color: "var(--slate)", fontSize: ".86rem", lineHeight: 1.65, margin: "0 0 10px", fontStyle: "italic" }}>

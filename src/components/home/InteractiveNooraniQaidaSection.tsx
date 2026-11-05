@@ -279,7 +279,7 @@ export default function InteractiveNooraniQaidaSection() {
                   rel="noopener noreferrer"
                   target="_blank"
                   className="btn-outline-np"
-                  aria-label="Open the interactive Alif lesson live demo in a new tab"
+                  aria-label="View Live Demo — interactive Alif lesson (opens in a new tab)"
                 >
                   <Video size={16} aria-hidden="true" /> View Live Demo
                 </a>

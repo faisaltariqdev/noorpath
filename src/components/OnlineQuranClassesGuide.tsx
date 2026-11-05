@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { TRIAL } from "@/lib/academyFacts";
 
-const linkStyle = { color: "var(--emerald)", fontWeight: 700 };
+const linkStyle = { color: "var(--emerald)", fontWeight: 700, textDecoration: "underline" };
 const priorityCountryNames = PRIORITY_MARKETS.map(({ country }) => country).join(", ");
 
 export default function OnlineQuranClassesGuide() {

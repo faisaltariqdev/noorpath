@@ -304,7 +304,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
             {/* ── REQUIRED SECTION 6: Local Testimonials ── */}
             <section id="local-testimonials" style={{ marginBottom: 44, scrollMarginTop: 80 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-                <Star size={22} style={{ color: "#00b67a" }} />
+                <Star size={22} style={{ color: "#007f55" }} />
                 <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.65rem", margin: 0 }}>
                   Local Testimonials
                 </h2>
@@ -325,7 +325,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                         }}
                       >
                         <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
-                          <span style={{ color: "#00b67a", letterSpacing: 2 }}>{"★".repeat(t.stars)}</span>
+                          <span style={{ color: "#007f55", letterSpacing: 2 }}>{"★".repeat(t.stars)}</span>
                           <span style={{ fontSize: ".78rem", color: "var(--muted, #64748b)" }}>{t.date}</span>
                         </div>
                         <p style={{ fontStyle: "italic", fontSize: ".92rem", lineHeight: 1.7, color: "var(--slate, #334155)", marginBottom: 14 }}>
@@ -334,7 +334,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                         <div style={{ fontSize: ".85rem", fontWeight: 700, color: "var(--charcoal, #0f172a)" }}>
                           {t.name} <span style={{ fontWeight: 400, color: "var(--muted, #64748b)" }}>· {t.location}</span>
                         </div>
-                        <div style={{ fontSize: ".74rem", color: "#00b67a", fontWeight: 700, marginTop: 4 }}>
+                        <div style={{ fontSize: ".74rem", color: "#007f55", fontWeight: 700, marginTop: 4 }}>
                           ★ Verified Trustpilot Review · last checked {TRUSTPILOT.lastChecked}
                         </div>
                       </div>
@@ -353,7 +353,7 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                       href={TRUSTPILOT.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ fontSize: ".85rem", color: "#00b67a", fontWeight: 700, textDecoration: "none" }}
+                      style={{ fontSize: ".85rem", color: "#007f55", fontWeight: 700, textDecoration: "none" }}
                     >
                       Read our verified international reviews on Trustpilot ({TRUSTPILOT.score}/5 rating) →
                     </a>

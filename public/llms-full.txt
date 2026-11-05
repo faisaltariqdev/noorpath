@@ -602,6 +602,8 @@ These URLs are the preferred owners for global service and audience questions. C
   Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login.
 - [Islamic Tools & Calculators](https://www.noorpath.online/tools)
   Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance.
+- [Free Quran Teaching Resources](https://www.noorpath.online/free-quran-teaching-resources)
+  Free Noorani Qaida games, printable worksheets, Hifz planner and Islamic calculators for madrasah teachers, mosque classes, Islamic schools and parents. No login.
 - [Pricing](https://www.noorpath.online/pricing)
   Published USD plans and family discount rules.
 
