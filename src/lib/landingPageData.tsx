@@ -481,9 +481,9 @@ export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { 
  * have a local class but cannot use it (timing, female tutor, one-to-one need).
  */
 export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Quran Classes Near Me? Live 1-on-1 Online Tutors, Any Timezone | NoorPath",
+  metaTitle: "Quran Classes Near Me? Live 1-on-1 Online Tutors | NoorPath",
   metaDescription:
-    "Searched “Quran classes near me” and found nothing that fits? NoorPath is online-only: live 1-on-1 Quran lessons at home, flexible timing in your timezone, female tutors on request. 3 free 30-minute trial sessions, no credit card.",
+    "No Quran class near you that fits? Live 1-on-1 online Quran lessons at home in your time zone, female tutors on request. 3 free trial sessions, no card.",
   keywords: [
     "quran classes near me",
     "quran teacher near me",
