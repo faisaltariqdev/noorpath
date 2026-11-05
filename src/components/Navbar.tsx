@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, GraduationCap, ChevronDown, Video } from "lucide-react";
 import { CONTACT, TRIAL } from "@/lib/academyFacts";
-import { PRIORITY_MARKETS } from "@/lib/geoSeo";
 import { NOORANI_QAIDA_LIVE_PREVIEW_URL } from "@/lib/nooraniQaidaPlatform";
 
 /* Primary nav — brand SERP sitelink hubs (Classes, Courses, Holy Quran, Trial, Pricing, Blog) */
@@ -32,14 +31,39 @@ const moreLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-const priorityCountries = [
-  { href: "/locations/online-quran-classes-uk", label: "United Kingdom" },
-  { href: "/locations/online-quran-classes-usa", label: "United States" },
-  { href: "/locations/online-quran-classes-canada", label: "Canada" },
-  { href: "/locations/online-quran-classes-australia", label: "Australia" },
-  { href: "/locations/online-quran-classes-uae", label: "UAE" },
-  { href: "/locations/online-quran-classes-saudi-arabia", label: "Saudi Arabia" },
+/** Every country hub, grouped for the Countries menu. Slugs map to /locations/online-quran-classes-{slug}. */
+const countryGroups: { region: string; countries: [slug: string, label: string][] }[] = [
+  {
+    region: "UK & Europe",
+    countries: [
+      ["uk", "United Kingdom"], ["ireland", "Ireland"], ["germany", "Germany"], ["france", "France"],
+      ["netherlands", "Netherlands"], ["belgium", "Belgium"], ["italy", "Italy"], ["spain", "Spain"],
+      ["switzerland", "Switzerland"], ["denmark", "Denmark"], ["finland", "Finland"], ["norway", "Norway"],
+      ["sweden", "Sweden"], ["turkey", "Turkey"],
+    ],
+  },
+  {
+    region: "Americas & Oceania",
+    countries: [["usa", "United States"], ["canada", "Canada"], ["australia", "Australia"], ["new-zealand", "New Zealand"]],
+  },
+  {
+    region: "Gulf",
+    countries: [["uae", "UAE"], ["saudi-arabia", "Saudi Arabia"], ["qatar", "Qatar"], ["kuwait", "Kuwait"], ["oman", "Oman"]],
+  },
+  {
+    region: "Asia & Africa",
+    countries: [
+      ["pakistan", "Pakistan"], ["india", "India"], ["bangladesh", "Bangladesh"], ["indonesia", "Indonesia"],
+      ["malaysia", "Malaysia"], ["singapore", "Singapore"], ["hong-kong", "Hong Kong"], ["nigeria", "Nigeria"],
+      ["south-africa", "South Africa"],
+    ],
+  },
 ];
+
+const countryHref = (slug: string) => `/locations/online-quran-classes-${slug}`;
+
+/** Desktop menu columns: Europe, then Americas/Oceania + Gulf together, then Asia & Africa. */
+const countryColumns = [[countryGroups[0]], [countryGroups[1], countryGroups[2]], [countryGroups[3]]];
 
 function closeParentDetails(e: React.MouseEvent<HTMLElement>) {
   const details = e.currentTarget.closest("details");
@@ -304,8 +328,10 @@ export default function Navbar() {
                     position: "absolute",
                     top: "calc(100% + 10px)",
                     right: 0,
-                    width: 220,
-                    padding: 8,
+                    width: 600,
+                    maxHeight: "calc(100vh - 140px)",
+                    overflowY: "auto",
+                    padding: "12px 10px",
                     background: "rgba(6,28,18,.99)",
                     border: "1px solid rgba(255,255,255,.12)",
                     borderRadius: 12,
@@ -315,21 +341,34 @@ export default function Navbar() {
                   <Link
                     href="/locations"
                     onClick={closeParentDetails}
-                    style={{ display: "block", color: "#e8b84b", padding: "8px 12px", fontWeight: 700, textDecoration: "none", borderRadius: 8 }}
+                    style={{ display: "block", color: "#e8b84b", padding: "4px 12px 10px", fontWeight: 700, textDecoration: "none", borderRadius: 8 }}
                   >
                     All locations →
                   </Link>
-                  {priorityCountries.map((country) => (
-                    <Link
-                      key={country.href}
-                      href={country.href}
-                      onClick={closeParentDetails}
-                      style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "7px 12px", fontSize: ".83rem", textDecoration: "none", borderRadius: 8 }}
-                      className="nav-link-np"
-                    >
-                      {country.label}
-                    </Link>
-                  ))}
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 4 }}>
+                    {countryColumns.map((column, columnIndex) => (
+                      <div key={columnIndex}>
+                        {column.map((group) => (
+                          <div key={group.region} style={{ marginBottom: 10 }}>
+                            <div style={{ color: "rgba(255,255,255,.45)", fontSize: ".7rem", fontWeight: 700, letterSpacing: ".06em", textTransform: "uppercase", padding: "4px 12px" }}>
+                              {group.region}
+                            </div>
+                            {group.countries.map(([slug, label]) => (
+                              <Link
+                                key={slug}
+                                href={countryHref(slug)}
+                                onClick={closeParentDetails}
+                                style={{ display: "block", color: "rgba(255,255,255,.82)", padding: "5px 12px", fontSize: ".82rem", textDecoration: "none", borderRadius: 8 }}
+                                className="nav-link-np"
+                              >
+                                {label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </details>
             </li>
@@ -436,31 +475,40 @@ export default function Navbar() {
               <li style={{ borderBottom: "1px solid rgba(255,255,255,.06)", padding: "8px" }}>
                 <details ref={mobileCountriesRef}>
                   <summary style={{ color: "rgba(255,255,255,.85)", padding: "5px 0", fontWeight: 600, cursor: "pointer" }}>
-                    Priority countries
+                    Countries
                   </summary>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 4, paddingTop: 8 }}>
+                  <div style={{ paddingTop: 8 }}>
                     <Link
                       href="/locations"
                       onClick={(e) => {
                         closeParentDetails(e);
                         setOpen(false);
                       }}
-                      style={{ color: "#e8b84b", padding: "6px 0", fontSize: ".84rem" }}
+                      style={{ display: "block", color: "#e8b84b", padding: "6px 0", fontSize: ".84rem" }}
                     >
                       All locations
                     </Link>
-                    {priorityCountries.map((country) => (
-                      <Link
-                        key={country.href}
-                        href={country.href}
-                        onClick={(e) => {
-                          closeParentDetails(e);
-                          setOpen(false);
-                        }}
-                        style={{ color: "rgba(255,255,255,.78)", padding: "6px 0", fontSize: ".84rem" }}
-                      >
-                        {country.label}
-                      </Link>
+                    {countryGroups.map((group) => (
+                      <div key={group.region} style={{ marginTop: 8 }}>
+                        <div style={{ color: "rgba(255,255,255,.45)", fontSize: ".7rem", fontWeight: 700, letterSpacing: ".06em", textTransform: "uppercase", padding: "4px 0" }}>
+                          {group.region}
+                        </div>
+                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
+                          {group.countries.map(([slug, label]) => (
+                            <Link
+                              key={slug}
+                              href={countryHref(slug)}
+                              onClick={(e) => {
+                                closeParentDetails(e);
+                                setOpen(false);
+                              }}
+                              style={{ color: "rgba(255,255,255,.78)", padding: "6px 0", fontSize: ".84rem" }}
+                            >
+                              {label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </details>

@@ -1,4 +1,34 @@
 import type { NextConfig } from "next";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+// Country hubs live at /locations/online-quran-classes-{country}. Read the slugs from the
+// country data so every hub also answers its short forms (/locations/denmark, etc.).
+const COUNTRY_SHORT_NAMES = [
+  ...readFileSync(join(process.cwd(), "src/data/countryMarkets.ts"), "utf8").matchAll(/"online-quran-classes-([a-z-]+)": \{/g),
+].map((match) => match[1]);
+
+// Other names people type for a country; the value must be one of COUNTRY_SHORT_NAMES.
+const COUNTRY_ALIASES: Record<string, string> = {
+  "united-kingdom": "uk", england: "uk", britain: "uk", "great-britain": "uk", scotland: "uk", wales: "uk",
+  "united-states": "usa", america: "usa", us: "usa",
+  "united-arab-emirates": "uae", emirates: "uae",
+  saudi: "saudi-arabia", ksa: "saudi-arabia",
+  hongkong: "hong-kong", nz: "new-zealand", "newzealand": "new-zealand", turkiye: "turkey", holland: "netherlands",
+};
+
+function countryShortFormRedirects() {
+  const names: [string, string][] = [
+    ...COUNTRY_SHORT_NAMES.map((name): [string, string] => [name, name]),
+    ...Object.entries(COUNTRY_ALIASES).filter(([, target]) => COUNTRY_SHORT_NAMES.includes(target)),
+  ];
+  return names.flatMap(([from, to]) => {
+    const destination = `/locations/online-quran-classes-${to}`;
+    const sources = [`/locations/${from}`, `/online-quran-classes/${from}`, `/online-quran-classes-${from}`];
+    if (from !== to) sources.push(`/locations/online-quran-classes-${from}`);
+    return sources.map((source) => ({ source, destination, permanent: true }));
+  });
+}
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
@@ -94,6 +124,8 @@ const nextConfig: NextConfig = {
         destination: "/locations",
         permanent: true,
       },
+      // ── Country hub short forms → canonical hub URL ─────────────────────────
+      ...countryShortFormRedirects(),
       // ── Global 301 redirect for all .html URLs to their clean versions ───────
       {
         source: "/:path*.html",
