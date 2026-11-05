@@ -258,7 +258,7 @@ export default function Footer() {
                   href={GOOGLE_BUSINESS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="View NoorPath Academy on Google"
+                  aria-label="View on Google — NoorPath Academy"
                   style={{ color: "rgba(255,255,255,.72)", fontSize: ".78rem" }}
                 >
                   View on Google

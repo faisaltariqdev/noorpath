@@ -739,7 +739,7 @@ export default function FemaleQuranTeacherPage() {
               <li key={step.title} style={{ ...cardStyle, padding: 20 }}>
                 <span
                   aria-hidden="true"
-                  style={{ color: "var(--gold)", fontWeight: 800, fontSize: "1.4rem", display: "block", marginBottom: 6 }}
+                  style={{ color: "#a8721a", fontWeight: 800, fontSize: "1.4rem", display: "block", marginBottom: 6 }}
                 >
                   {String(index + 1).padStart(2, "0")}
                 </span>

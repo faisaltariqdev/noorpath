@@ -723,7 +723,7 @@ export default async function CountryLandingPage({ slug }: { slug: string }) {
           <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {STEPS.map((step, index) => (
               <li key={step.title} style={{ ...cardStyle, padding: 20 }}>
-                <span aria-hidden="true" style={{ color: "var(--gold)", fontWeight: 800, fontSize: "1.4rem", display: "block", marginBottom: 6 }}>
+                <span aria-hidden="true" style={{ color: "#a8721a", fontWeight: 800, fontSize: "1.4rem", display: "block", marginBottom: 6 }}>
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 style={{ fontSize: "1rem", fontWeight: 700, marginBottom: 6 }}>{step.title}</h3>
