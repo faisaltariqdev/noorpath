@@ -2,6 +2,11 @@
 
 import { FAMILY_DISCOUNTS, PRICING_PLANS, TRIAL_OFFER } from "@/lib/academyFacts";
 
+const perLessonCosts = PRICING_PLANS.map((p) => p.monthlyPriceUsd / p.sessionsPerMonth);
+/** NoorPath's cost per one-to-one lesson across plans, e.g. "$4.94–$7.25". */
+const NOORPATH_PER_LESSON = `$${Math.min(...perLessonCosts).toFixed(2)}–$${Math.max(...perLessonCosts).toFixed(2)}`;
+const NOORPATH_MONTHLY = `$${PRICING_PLANS[0].monthlyPriceUsd}–$${PRICING_PLANS[PRICING_PLANS.length - 1].monthlyPriceUsd}`;
+
 /** NoorPath's own published plans, shown in the pricing guide next to market ranges. */
 const NOORPATH_PRICES_BOX = `<div class="highlight-box">
             <strong>NoorPath Academy's published prices:</strong> ${PRICING_PLANS.map((p) => `${p.name} $${p.monthlyPriceUsd}/month (${p.sessionsPerMonth} × ${p.sessionMinutes}-minute sessions)`).join(", ")}. Plans are billed monthly in US dollars; sibling discounts are ${FAMILY_DISCOUNTS.map((d) => `${d.discountPercent}% for ${d.siblings}`).join(", ")}. <a href="/pricing">Compare all plans on the pricing page</a> or <a href="/free-quran-classes-online">request ${TRIAL_OFFER}</a> — no credit card required.
@@ -718,13 +723,13 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
   "online-quran-classes-cost-pricing-guide": {
     style: S,
     content: `<div class="answer-box">
-            <strong>Quick Answer:</strong> Online Quran classes cost between $4 and $25 per class, averaging $30 to $80 monthly for two weekly 30-minute one-on-one sessions. Pricing varies by tutor credentials, course specialization (such as Hifz or Tajweed), and lesson frequency. Quality academies provide flexible monthly billing and free trial evaluations without upfront lock-in contracts.
+            <strong>Quick Answer:</strong> Online Quran class prices vary widely between academies, depending on tutor credentials, the course (such as Hifz or Tajweed), lesson length and how many lessons you take each week. As a reference point, NoorPath's published plans cost ${NOORPATH_MONTHLY} a month — about ${NOORPATH_PER_LESSON} per one-to-one lesson. Compare per-lesson cost, lesson length and what's included, and use a free trial before paying.
           </div>
 
           <div class="key-takeaways">
             <h3>Key Takeaways</h3>
             <ul>
-              <li>Average classes cost $4 to $25 per session, totaling $30 to $80 monthly for standard private instruction.</li>
+              <li>Prices vary widely between academies; compare the cost per lesson and the lesson length, not just the monthly fee.</li>
               <li>Specialized tracks like Hifz and advanced Tajweed cost more due to tutor qualifications and intensive schedules.</li>
               <li>Reputable academies offer month-to-month billing, sibling discounts, and free 30-minute trial classes without credit cards.</li>
             </ul>
@@ -732,24 +737,25 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           ${NOORPATH_PRICES_BOX}
 
-          <p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer in 2026: anywhere from <strong>$4 to $25 per class</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
+          <p>Before booking any academy, every parent asks the same question: <strong>how much do online Quran classes cost?</strong> The honest answer: <strong>it varies a lot between academies</strong> — and the difference is rarely explained. This guide breaks down real per-hour and per-month prices, what actually changes the price, and the red flags that mean you are overpaying.</p>
 
           <div class="stat-row">
-            <div class="stat-pill"><strong>$4–25</strong><span>Per class range</span></div>
-            <div class="stat-pill"><strong>$30–80</strong><span>Typical monthly</span></div>
+            <div class="stat-pill"><strong>${NOORPATH_PER_LESSON}</strong><span>Per NoorPath lesson</span></div>
+            <div class="stat-pill"><strong>${NOORPATH_MONTHLY}</strong><span>NoorPath monthly plans</span></div>
             <div class="stat-pill"><strong>2–5×</strong><span>Classes per week</span></div>
             <div class="stat-pill"><strong>3 free</strong><span>Trial sessions</span></div>
           </div>
 
           <h2 id="table">How much do online Quran classes cost in 2026?</h2>
           <table class="np-table">
-            <tr><th>Course type</th><th>Per 30-min class</th><th>Typical monthly (2×/week)</th><th>Notes</th></tr>
+            <tr><th>Course type</th><th>Illustrative per 30-min class*</th><th>Illustrative monthly (2×/week)*</th><th>Notes</th></tr>
             <tr><td>Noorani Qaida (beginners)</td><td>$4–$10</td><td>$30–$60</td><td>Best starting point for kids and adult beginners — explore <a href="/courses/noorani-qaida-online">Noorani Qaida online</a></td></tr>
             <tr><td>Quran reading (Nazra)</td><td>$5–$12</td><td>$35–$70</td><td>Fluency and daily recitation</td></tr>
             <tr><td>Tajweed course</td><td>$6–$15</td><td>$40–$90</td><td>Requires a genuinely certified tutor — explore <a href="/courses/tajweed-classes-online">Tajweed classes online</a></td></tr>
             <tr><td>Hifz (memorisation)</td><td>$8–$25</td><td>$60–$150</td><td>Needs 4–5 days/week with a Hafiz — see <a href="/hifz-quran-online">Hifz online</a></td></tr>
             <tr><td>Arabic language</td><td>$7–$18</td><td>$50–$100</td><td>Grammar-based, longer sessions</td></tr>
           </table>
+          <p style="font-size:.85rem;color:#6b7280;">*Illustrative ranges only, not a survey. Prices vary by academy and change often — always check each academy's current prices. NoorPath's own prices are on the <a href="/pricing">pricing page</a>.</p>
 
           <h2 id="factors">What factors change the price of online Quran classes?</h2>
           <ul>
@@ -778,7 +784,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           <h2 id="faq">Frequently asked questions about online Quran class pricing</h2>
           <details class="faq-acc">
             <summary>How much do online Quran classes cost per month?<span>+</span></summary>
-            <p>Most families pay between $30 and $80 per month for two weekly 30-minute private lessons, depending on course level and teacher credentials.</p>
+            <p>It depends on the academy, lesson length and how many lessons a week. At NoorPath, plans run from $${PRICING_PLANS[0].monthlyPriceUsd} a month (${PRICING_PLANS[0].sessionsPerMonth} × ${PRICING_PLANS[0].sessionMinutes}-minute lessons) to $${PRICING_PLANS[PRICING_PLANS.length - 1].monthlyPriceUsd} a month (${PRICING_PLANS[PRICING_PLANS.length - 1].sessionsPerMonth} × ${PRICING_PLANS[PRICING_PLANS.length - 1].sessionMinutes}-minute lessons).</p>
           </details>
           <details class="faq-acc">
             <summary>Why do Hifz memorization classes cost more?<span>+</span></summary>
@@ -786,7 +792,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
           </details>
           <details class="faq-acc">
             <summary>Are online Quran classes cheaper than private home tutors?<span>+</span></summary>
-            <p>Yes, online tutoring eliminates travel surcharges and facility overhead, typically reducing overall monthly costs by 30% to 50%.</p>
+            <p>It can be. Online lessons remove travel time and travel costs, but whether they are cheaper than a home tutor depends on local rates and lesson length — compare the price per lesson.</p>
           </details>
           <details class="faq-acc">
             <summary>Does NoorPath Academy offer a free trial?<span>+</span></summary>
@@ -795,7 +801,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <div class="tldr-box">
             <h3>TL;DR</h3>
-            <p>Online Quran classes cost between $4 and $25 per lesson, with monthly rates typically ranging from $30 to $80 for private tutoring. Costs depend on instructor certification, frequency, and whether you enroll in Noorani Qaida, Tajweed, or intensive Hifz. NoorPath Academy provides transparent monthly plans and 3 free 30-minute trial sessions.</p>
+            <p>Online Quran class prices vary widely between academies. NoorPath's published plans are ${NOORPATH_MONTHLY} a month — about ${NOORPATH_PER_LESSON} per one-to-one lesson. Costs depend on instructor certification, frequency, and whether you enroll in Noorani Qaida, Tajweed, or intensive Hifz. NoorPath Academy provides transparent monthly plans and 3 free 30-minute trial sessions.</p>
           </div>
 
           <div class="gold-box">

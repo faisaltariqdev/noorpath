@@ -115,6 +115,8 @@ export default function FreeQuranClassesPage() {
 
       <div className="page-hero" style={{ paddingBottom: 100 }}>
         <div className="max-w-[1200px] mx-auto px-4 page-hero-content">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_.9fr] gap-10 items-start">
+          <div>
           <nav aria-label="Breadcrumb" style={{ marginBottom: 16 }}>
             <Link href="/" style={{ color: "var(--gold-lt)", fontSize: ".85rem" }}>
               Home
@@ -150,7 +152,7 @@ export default function FreeQuranClassesPage() {
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
             <Link
-              href="#cta"
+              href="#trial"
               style={{
                 background: "var(--gold)",
                 color: "var(--charcoal)",
@@ -190,6 +192,45 @@ export default function FreeQuranClassesPage() {
                 {t}
               </span>
             ))}
+          </div>
+          </div>
+
+          {/* Trial form in the hero, so visitors arriving from "Book Free Trial" buttons see it straight away */}
+          <div
+            id="trial"
+            style={{
+              background: "rgba(255,255,255,.07)",
+              border: "1px solid rgba(255,255,255,.16)",
+              borderRadius: 20,
+              padding: "26px 24px",
+              boxShadow: "0 24px 60px rgba(0,0,0,.35)",
+              scrollMarginTop: 100,
+            }}
+          >
+            <div style={{ textAlign: "center", marginBottom: 16 }}>
+              <span
+                style={{
+                  display: "inline-block",
+                  background: "var(--gold)",
+                  color: "var(--charcoal)",
+                  fontWeight: 800,
+                  fontSize: ".72rem",
+                  padding: "5px 12px",
+                  borderRadius: 20,
+                  textTransform: "uppercase",
+                  letterSpacing: ".5px",
+                  marginBottom: 9,
+                }}
+              >
+                {TRIAL.classes} free trial sessions · No card
+              </span>
+              <h2 style={{ color: "#fff", fontSize: "1.5rem", marginBottom: 5 }}>Book Your Free Trial</h2>
+              <p style={{ color: "rgba(255,255,255,.7)", fontSize: ".84rem", lineHeight: 1.55 }}>
+                Tell us the learner&apos;s level and the times that suit you.
+              </p>
+            </div>
+            <CTAForm idPrefix="free-hero-trial" formVariant="free-trial-hero" />
+          </div>
           </div>
         </div>
       </div>
@@ -568,10 +609,10 @@ export default function FreeQuranClassesPage() {
                   marginBottom: 16,
                 }}
               >
-                Book your free Quran class
+                Book your free trial sessions
               </h2>
               <p style={{ color: "rgba(255,255,255,.75)", lineHeight: 1.7 }}>
-                {TRIAL.classes} classes, {TRIAL.durationMinutes} minutes each. Live. 1-to-1. Tutor match confirmed. No credit card.
+                {TRIAL.classes} sessions, {TRIAL.durationMinutes} minutes each. Live. 1-to-1. Tutor match confirmed. No credit card.
               </p>
               <p style={{ marginTop: 12, fontSize: ".85rem", color: "rgba(255,255,255,.7)" }}>
                 Already submitted a request? View our{" "}

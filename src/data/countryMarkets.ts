@@ -261,7 +261,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       h1: "Online Quran Classes in Canada for Kids and Adults",
       metaTitle: "Online Quran Classes in Canada for Kids & Adults | NoorPath",
       metaDescription:
-        "Learn Quran online with one-to-one classes for kids and adults across Canada. Flexible scheduling, personalized lessons and free trial sessions at NoorPath Academy.",
+        "One-to-one online Quran classes for kids and adults across Canada, in your province's time zone. Qaida, Tajweed and Hifz, with free trial sessions.",
       eyebrow: "For families across Canada",
       hook: "Looking for a Quran teacher your child will look forward to — without winter drives to weekend school? Live one-to-one lessons at home, at times that work for your province.",
       scheduleBullet: "Flexible scheduling in your province's time zone",
@@ -326,9 +326,9 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Australia",
       formCountry: "Australia",
       h1: "Online Quran Classes in Australia for Kids and Adults",
-      metaTitle: "Online Quran Classes in Australia for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Australia — Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults across Australia. Qaida, Quran reading, Tajweed and Hifz at times that suit your state, with free trial sessions.",
+        "One-to-one online Quran classes for kids and adults across Australia: Qaida, Quran reading, Tajweed and Hifz in your state's time, with free trial sessions.",
       eyebrow: "For families across Australia",
       hook: "Want your child to learn the Quran with a teacher who listens to every letter, without adding another drive to the week? Live one-to-one lessons at home, at times that suit your state.",
       scheduleBullet: "Flexible scheduling in your state's time zone",
@@ -403,7 +403,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "New Zealand",
       formCountry: "New Zealand",
       h1: "Online Quran Classes in New Zealand for Kids and Adults",
-      metaTitle: "Online Quran Classes in New Zealand for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes New Zealand — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes for kids and adults across New Zealand. Qaida, Quran reading, Tajweed and Hifz in NZ time, with free trial sessions and no card.",
       eyebrow: "For whānau across Aotearoa New Zealand",
@@ -602,7 +602,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "the Netherlands",
       formCountry: "Netherlands",
       h1: "Online Quran Classes in the Netherlands for Kids and Adults",
-      metaTitle: "Online Quran Classes Netherlands for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Netherlands — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes in English for kids and adults in the Netherlands. Qaida, reading, Tajweed and Hifz in Dutch time, with free trial sessions.",
       eyebrow: "For families across the Netherlands",
@@ -766,7 +766,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       h1: "Online Quran Classes in Spain for Kids and Adults",
       metaTitle: "Online Quran Classes in Spain for Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes in English for kids and adults in Spain, including the Canary Islands. Qaida, reading, Tajweed and Hifz, with free trial sessions.",
+        "One-to-one online Quran classes in English for kids and adults in Spain and the Canary Islands: Qaida, Tajweed and Hifz, with free trial sessions.",
       eyebrow: "For families across Spain",
       hook: "Want your child to learn the Quran with a patient teacher who explains in English, without travelling across the city? Live one-to-one lessons at home, in Spanish time.",
       scheduleBullet: "Lesson times arranged in Spanish time",
@@ -1063,7 +1063,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Switzerland",
       formCountry: "Switzerland",
       h1: "Online Quran Classes in Switzerland for Kids and Adults",
-      metaTitle: "Online Quran Classes in Switzerland for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Switzerland — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes in English for kids and adults in Switzerland. Qaida, reading, Tajweed and Hifz in Swiss time, with free trial sessions.",
       eyebrow: "For families across Switzerland",
@@ -1182,7 +1182,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       h1: "Online Quran Classes in India for Kids and Adults",
       metaTitle: "Online Quran Classes in India for Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults in India. Noorani Qaida, Quran reading, Tajweed and Hifz in IST, taught in English, with free trial sessions.",
+        "One-to-one online Quran classes for kids and adults in India: Noorani Qaida, Quran reading, Tajweed and Hifz in IST, in English, with free trial sessions.",
       eyebrow: "For families across India",
       hook: "Want your child to learn correct recitation from a teacher who listens to every letter, without adding tuition travel to a packed school week? Live one-to-one lessons at home, in IST.",
       scheduleBullet: "Lesson times arranged in India Standard Time",
@@ -1221,9 +1221,9 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Indonesia",
       formCountry: "Indonesia",
       h1: "Online Quran Classes in Indonesia for Kids and Adults",
-      metaTitle: "Online Quran Classes in Indonesia for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Indonesia — Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes in English for kids and adults in Indonesia. Iqro/Qaida, reading, Tajweed and Hifz in WIB, WITA or WIT, with free trial sessions.",
+        "One-to-one online Quran classes in English for kids and adults in Indonesia: Iqro/Qaida, Tajweed and Hifz in WIB, WITA or WIT, with free trial sessions.",
       eyebrow: "For families across Indonesia",
       hook: "Want one-to-one Quran lessons explained in English, alongside Iqro or TPQ? Live classes at home, in your own Indonesian time zone.",
       scheduleBullet: "Lesson times in WIB, WITA or WIT",
@@ -1282,7 +1282,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Malaysia",
       formCountry: "Malaysia",
       h1: "Online Quran Classes in Malaysia for Kids and Adults",
-      metaTitle: "Online Quran Classes in Malaysia for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Malaysia — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes in English for kids and adults in Malaysia. Iqra/Qaida, reading, Tajweed and Hifz in MYT, with free trial sessions.",
       eyebrow: "For families across Malaysia",
@@ -1340,9 +1340,9 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Singapore",
       formCountry: "Singapore",
       h1: "Online Quran and Iqra Classes in Singapore for Kids and Adults",
-      metaTitle: "Online Quran & Iqra Classes Singapore — Kids & Adults | NoorPath",
+      metaTitle: "Quran & Iqra Classes Singapore — Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults in Singapore. Iqra/Qaida, Quran reading, Tajweed and Hifz in SGT, around school and CCAs, with free trial sessions.",
+        "One-to-one online Quran and Iqra classes for kids and adults in Singapore: Qaida, Tajweed and Hifz in SGT, around school and CCAs, with free trial sessions.",
       eyebrow: "For families in Singapore",
       hook: "Looking for Quran or Iqra lessons that fit around school, CCAs and work? Live one-to-one classes at home, in Singapore time, for children and for adults starting or restarting.",
       scheduleBullet: "Lesson times arranged in Singapore Time",
@@ -1397,7 +1397,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Hong Kong",
       formCountry: "Hong Kong",
       h1: "Online Quran Classes in Hong Kong for Kids and Adults",
-      metaTitle: "Online Quran Classes in Hong Kong for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Hong Kong — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes in English for kids and adults in Hong Kong. Qaida, Quran reading, Tajweed and Hifz in HKT, with free trial sessions.",
       eyebrow: "For families in Hong Kong",
@@ -1452,7 +1452,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "South Africa",
       formCountry: "South Africa",
       h1: "Online Quran Classes in South Africa for Kids and Adults",
-      metaTitle: "Online Quran Classes in South Africa for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes South Africa — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes for kids and adults in South Africa, alongside madrassah. Qaida, reading, Tajweed and Hifz in SAST, with free trial sessions.",
       eyebrow: "For families across South Africa",
@@ -1512,7 +1512,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       h1: "Online Quran Classes in the UAE for Kids and Adults",
       metaTitle: "Online Quran Classes in UAE for Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults across the UAE. Qaida, Quran reading, Tajweed and Hifz in GST, around school and work, with free trial sessions.",
+        "One-to-one online Quran classes for kids and adults across the UAE: Qaida, Quran reading, Tajweed and Hifz in GST, around school, with free trial sessions.",
       eyebrow: "For families across the Emirates",
       hook: "Want a dedicated Quran teacher for your child that fits around school runs and Dubai or Abu Dhabi traffic? Live one-to-one lessons at home, in UAE time.",
       scheduleBullet: "Lesson times arranged in Gulf Standard Time",
@@ -1555,9 +1555,9 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Saudi Arabia",
       formCountry: "Saudi Arabia",
       h1: "Online Quran Classes in Saudi Arabia for Kids and Adults",
-      metaTitle: "Online Quran Classes in Saudi Arabia for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Saudi Arabia — Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes in English for kids and adults in Saudi Arabia. Qaida, reading, Tajweed and Hifz in Arabia Standard Time, with free trial sessions.",
+        "One-to-one online Quran classes in English for kids and adults in Saudi Arabia: Qaida, Tajweed and Hifz in Saudi time, with free trial sessions.",
       eyebrow: "For families across Saudi Arabia",
       hook: "Looking for an English-speaking Quran teacher who can give your child one-to-one attention at home? Live lessons in Saudi time, around school and family life.",
       scheduleBullet: "Lesson times arranged in Arabia Standard Time",
@@ -1601,7 +1601,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       h1: "Online Quran Classes in Qatar for Kids and Adults",
       metaTitle: "Online Quran Classes in Qatar for Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults in Qatar. Qaida, Quran reading, Tajweed and Hifz in Doha time, around school and work, with free trial sessions.",
+        "One-to-one online Quran classes for kids and adults in Qatar: Qaida, Quran reading, Tajweed and Hifz in Doha time, around school, with free trial sessions.",
       eyebrow: "For families in Doha and across Qatar",
       hook: "Want your child to learn the Quran one-to-one, without another drive across Doha after school? Live lessons at home, at times that suit your family's week.",
       scheduleBullet: "Lesson times arranged in Qatar time",
@@ -1737,7 +1737,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Pakistan",
       formCountry: "Pakistan",
       h1: "Online Quran Classes in Pakistan for Kids and Adults",
-      metaTitle: "Online Quran Classes in Pakistan for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Pakistan — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes for kids and adults in Pakistan. Noorani Qaida, Nazra, Tajweed and Hifz in PKT, from home, with free trial sessions.",
       eyebrow: "For families across Pakistan",
@@ -1799,7 +1799,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Bangladesh",
       formCountry: "Bangladesh",
       h1: "Online Quran Classes in Bangladesh for Kids and Adults",
-      metaTitle: "Online Quran Classes in Bangladesh for Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Bangladesh — Kids & Adults | NoorPath",
       metaDescription:
         "One-to-one online Quran classes for kids and adults in Bangladesh. Qaida, reading, Tajweed and Hifz in Bangladesh time, with free trial sessions.",
       eyebrow: "For families across Bangladesh",
@@ -1861,7 +1861,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       h1: "Online Quran Classes in Nigeria for Kids and Adults",
       metaTitle: "Online Quran Classes in Nigeria for Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults in Nigeria. Noorani Qaida, Quran reading, Tajweed and Hifz in WAT, taught in English, with free trial sessions.",
+        "One-to-one online Quran classes for kids and adults in Nigeria: Noorani Qaida, Quran reading, Tajweed and Hifz in WAT, in English, with free trial sessions.",
       eyebrow: "For families across Nigeria",
       hook: "Want a Quran teacher who explains in English and gives your child one-to-one attention, without crossing the city after school? Live lessons at home, in Nigerian time.",
       scheduleBullet: "Lesson times arranged in West Africa Time",

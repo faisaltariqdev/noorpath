@@ -152,7 +152,7 @@ export default function HomePage() {
   const trustpilotAggregate = getTrustpilotAggregateFromReviews();
 
   return (
-    <>
+    <div className="home-cv">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -781,11 +781,11 @@ export default function HomePage() {
                   {index < priorityCountries.length - 2 ? ", " : index === priorityCountries.length - 2 ? " and " : ". "}
                 </React.Fragment>
               ))}
-              <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your free Quran class today →</Link>
+              <Link href="/free-quran-classes-online" style={{ color: "var(--emerald)", fontWeight: 700 }}>Book your 3 free trial sessions today →</Link>
             </p>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
