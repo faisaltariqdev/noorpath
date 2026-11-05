@@ -16,6 +16,8 @@ export interface BlogPost {
   inLanguage?: string;
   /** Optional social / article cover (path under /public) */
   coverImage?: string;
+  /** Set for guest posts: the guest author's website. Replaces the NoorPath staff byline and bio. */
+  guestAuthorUrl?: string;
 }
 
 const AUTHOR = "Faisal Tariq";
@@ -24,6 +26,26 @@ const AUTHOR_SLUG = "founder";
 
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
+  {
+    slug: "why-online-quran-classes-are-ideal-for-busy-muslim-families",
+    title: "Why Online Quran Classes Are Ideal for Busy Muslim Families",
+    description:
+      "Why online Quran classes suit busy Muslim families: learning from home, flexible timings, one-to-one attention, courses for kids and adults, and how to choose an academy.",
+    category: "Kids & Parenting",
+    date: "2026-11-05",
+    updatedAt: "2026-11-05",
+    readTime: "6 min",
+    keywords: [
+      "online quran classes for busy families", "online quran classes", "quran classes for kids at home",
+      "flexible quran classes", "one to one quran classes", "how to choose online quran academy",
+    ],
+    excerpt:
+      "Work, school and daily routines make mosque classes hard to fit in. Ten reasons online Quran classes suit busy Muslim families, and what to check before choosing an academy.",
+    author: "Learn Quran Centre",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://learnqurancentre.co.uk/",
+  },
   {
     slug: "sayyidul-istighfar-arabic-english",
     title: "Sayyidul Istighfar — Arabic, Transliteration, English & Virtue",

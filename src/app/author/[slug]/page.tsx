@@ -79,7 +79,7 @@ export default async function AuthorProfilePage({ params }: Props) {
   const author = AUTHORS_DATA[slug];
   if (!author) notFound();
 
-  const authorArticles = blogPosts.slice(0, 12);
+  const authorArticles = blogPosts.filter((post) => !post.guestAuthorUrl).slice(0, 12);
   const profileUrl = `${BASE_URL}/author/faisal-tariq`;
 
   const jsonLd = {

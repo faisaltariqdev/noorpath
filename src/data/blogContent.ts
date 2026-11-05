@@ -52,6 +52,7 @@ import { wazaifDemandBlogContent } from "./blogContentWazaifDemand";
 import { geoCommercialBlogContent } from "./blogContentGeoCommercial";
 import { brandingVisibilityBlogContent } from "./blogContentBranding";
 import { earningPillarBlogContent } from "./blogContentEarningPillars";
+import { guestPostBlogContent } from "./blogContentGuestPosts";
 
 const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...highTrafficBlogContent,
@@ -76,6 +77,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
   ...geoCommercialBlogContent,
   ...brandingVisibilityBlogContent,
   ...earningPillarBlogContent,
+  ...guestPostBlogContent,
   "allahu-akbar-meaning-in-english": {
     style: ISLAMIC_STYLE,
     content: `<div class="answer-box">

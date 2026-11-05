@@ -201,7 +201,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: post.title },
     description: post.description,
     keywords: post.keywords,
-    authors: [{ name: post.author, url: "https://www.noorpath.online/author/faisal-tariq" }],
+    authors: [{ name: post.author, url: post.guestAuthorUrl ?? "https://www.noorpath.online/author/faisal-tariq" }],
     alternates: { canonical: `https://www.noorpath.online/blog/${post.slug}` },
     openGraph: {
       title: post.title,
@@ -273,13 +273,15 @@ export default async function BlogPostPage({ params }: Props) {
         datePublished: post.date,
         dateModified: post.updatedAt ?? post.date,
         image: { "@type": "ImageObject", url: articleImage, width: 1200, height: articleImageHeight },
-        author: {
-          "@type": "Person",
-          name: post.author,
-          jobTitle: post.authorTitle,
-          url: "https://www.noorpath.online/author/faisal-tariq",
-          worksFor: ORGANIZATION_REF,
-        },
+        author: post.guestAuthorUrl
+          ? { "@type": "Organization", name: post.author, url: post.guestAuthorUrl }
+          : {
+              "@type": "Person",
+              name: post.author,
+              jobTitle: post.authorTitle,
+              url: "https://www.noorpath.online/author/faisal-tariq",
+              worksFor: ORGANIZATION_REF,
+            },
         publisher: {
           "@type": "Organization",
           "@id": ORGANIZATION_ID,
@@ -443,12 +445,16 @@ export default async function BlogPostPage({ params }: Props) {
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 16, marginTop: 18, paddingTop: 18, borderTop: "1px solid rgba(255,255,255,.1)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg,#0a6e4f,#c9922a)", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 700, fontSize: ".9rem", flexShrink: 0 }}>
-                FT
+                {post.guestAuthorUrl ? post.author.charAt(0) : "FT"}
               </div>
               <div>
-                <Link href="/author/faisal-tariq" style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem", textDecoration: "none" }}>
-                  {post.author}
-                </Link>
+                {post.guestAuthorUrl ? (
+                  <span style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem" }}>{post.author}</span>
+                ) : (
+                  <Link href="/author/faisal-tariq" style={{ color: "#fff", fontWeight: 600, fontSize: ".87rem", textDecoration: "none" }}>
+                    {post.author}
+                  </Link>
+                )}
                 <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".75rem" }}>{post.authorTitle}</div>
               </div>
             </div>
@@ -773,7 +779,14 @@ export default async function BlogPostPage({ params }: Props) {
                   </aside>
                 )}
 
-                {/* Author bio block */}
+                {/* Author bio block (guest posts get a guest note instead of the staff bio) */}
+                {post.guestAuthorUrl ? (
+                  <div className="author-bio np-author-bio" style={{ background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 22, marginTop: 40 }}>
+                    <p style={{ margin: 0, color: "var(--muted)", fontSize: ".88rem", lineHeight: 1.7 }}>
+                      This is a guest post by <strong>{post.author}</strong>. The views, claims and links in it are the guest author&apos;s own.
+                    </p>
+                  </div>
+                ) : (
                 <div className="author-bio np-author-bio" style={{ display: "flex", gap: 16, alignItems: "center", background: "var(--ivory)", border: "1px solid var(--border)", borderRadius: 16, padding: 22, marginTop: 40 }}>
                   <img
                     src="/assets/faisal-tariq-founder.png"
@@ -784,6 +797,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <strong>{post.author}</strong> is a {post.authorTitle} at NoorPath Academy with 10+ years of experience teaching Quran recitation, Tajweed, and Islamic Studies. <Link href={`/author/${post.authorSlug || "faisal-tariq"}`} style={{ color: "var(--emerald)", fontWeight: 600 }}>Read more</Link>
                   </p>
                 </div>
+                )}
 
                 <div id="book-trial" style={{ scrollMarginTop: 90 }}>
                   <InlineTrialCTA
