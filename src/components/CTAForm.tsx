@@ -51,6 +51,8 @@ type Props = {
   idPrefix?: string;
   /** Preselect the country when the form appears on a country landing page */
   defaultCountry?: string;
+  /** Shows an optional free-text box (e.g. "What helps your child?") when set. */
+  notesLabel?: string;
 };
 
 export default function CTAForm({
@@ -58,6 +60,7 @@ export default function CTAForm({
   formVariant = "standard",
   idPrefix = "trial",
   defaultCountry = "",
+  notesLabel,
 }: Props) {
   const { status, msg, handleSubmit } = useTrialFormSubmit({ formVariant });
   const id = (name: string) => `${idPrefix}-${name}`;
@@ -251,6 +254,21 @@ export default function CTAForm({
         <option value="Male tutor requested">Male tutor requested</option>
         <option value="No preference">No preference</option>
       </select>
+
+      {notesLabel && (
+        <>
+          <label className="sr-only" htmlFor={id("learnerNotes")}>{notesLabel}</label>
+          <textarea
+            className="cta-input"
+            name="learner_notes"
+            id={id("learnerNotes")}
+            rows={3}
+            maxLength={600}
+            placeholder={notesLabel}
+            style={{ resize: "vertical", minHeight: 76, fontFamily: "inherit" }}
+          />
+        </>
+      )}
 
       <label
         style={{

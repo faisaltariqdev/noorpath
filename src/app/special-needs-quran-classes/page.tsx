@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import KeywordLandingPage from "@/components/KeywordLandingPage";
 import { specialNeedsQuranClasses } from "@/lib/landingPageData";
+import { SpecialNeedsIntro, SpecialNeedsLearningKit } from "@/components/special-needs/SpecialNeedsSections";
 import { BASE_URL } from "@/lib/academyFacts";
 
 export const revalidate = false;
@@ -18,11 +19,18 @@ export const metadata: Metadata = {
     description: metaDescription,
     url: `${BASE_URL}${PATH}`,
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: metaTitle }],
+    images: [{ url: "/marketing/special-needs-calm-lesson.jpg", width: 1200, height: 570, alt: metaTitle }],
   },
-  twitter: { card: "summary_large_image", title: metaTitle, description: metaDescription, images: ["/og-image.png"] },
+  twitter: { card: "summary_large_image", title: metaTitle, description: metaDescription, images: ["/marketing/special-needs-calm-lesson.jpg"] },
 };
 
 export default function SpecialNeedsQuranClassesPage() {
-  return <KeywordLandingPage canonicalPath={PATH} {...props} />;
+  return (
+    <KeywordLandingPage
+      canonicalPath={PATH}
+      {...props}
+      introContent={<SpecialNeedsIntro />}
+      extraContent={<SpecialNeedsLearningKit />}
+    />
+  );
 }

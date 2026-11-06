@@ -13,6 +13,8 @@ export type LeadEmail = {
   course: string;
   preferredTime: string;
   tutorPreference: string;
+  /** Free-text note from the parent, e.g. what helps their child (optional). */
+  learnerNotes?: string;
   landingPage: string;
   referrer: string;
   formVariant: string;
@@ -71,6 +73,7 @@ export function leadEmailText(lead: LeadEmail, now = new Date()): string {
     `Course: ${lead.course || "Free trial class"}`,
     `Preferred time: ${lead.preferredTime || "Not specified"}`,
     `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
+    ...(lead.learnerNotes ? [`About the learner: ${lead.learnerNotes}`] : []),
     "",
     `Form: ${lead.formVariant}`,
     `Landing page: ${lead.landingPage || "Not provided"}`,
@@ -152,7 +155,10 @@ export function leadEmailHtml(lead: LeadEmail, now = new Date()): string {
         row("Age", esc(lead.learnerAge || "Not provided")) +
         row("Course", esc(lead.course || "Free trial class")) +
         row("Preferred time", esc(lead.preferredTime || "Not specified")) +
-        row("Tutor", esc(lead.tutorPreference || "Not specified"), true),
+        row("Tutor", esc(lead.tutorPreference || "Not specified"), !lead.learnerNotes) +
+        (lead.learnerNotes
+          ? row("About the learner", esc(lead.learnerNotes).replace(/\n/g, "<br>"), true)
+          : ""),
     )}
 
     ${section("Source", row("Form", esc(lead.formVariant)) + row("Landing page", landing) + row("Referrer", esc(lead.referrer || "Direct"), true))}

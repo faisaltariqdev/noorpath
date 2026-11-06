@@ -957,6 +957,7 @@ footer.site-footer {
    CTA SECTION
 ══════════════════════════════════════════════════════════════ */
 .cta-section {
+  scroll-margin-top: 120px; /* clears the fixed header when linked as #cta */
   background: linear-gradient(135deg, #0a3d28 0%, #0d4a31 50%, #0a3d28 100%);
   padding: 88px 0;
   position: relative;
@@ -1912,6 +1913,17 @@ pre { max-width: 100%; }
   .skip-to-content,
   .no-print { display: none !important; }
   main { padding-top: 0 !important; }
+}
+
+/* Special-needs home kit: the print button prints only #np-print-kit */
+.np-print-only { display: none; }
+@media print {
+  body.np-printing * { visibility: hidden; }
+  body.np-printing #np-print-kit,
+  body.np-printing #np-print-kit * { visibility: visible; }
+  body.np-printing #np-print-kit { position: absolute; inset: 0 0 auto 0; margin: 0 !important; }
+  body.np-printing .np-print-only { display: block; }
+  body.np-printing .np-kit-card { break-inside: avoid; box-shadow: none !important; }
 }
 
 /* ══════════════════════════════════════════════════════════════

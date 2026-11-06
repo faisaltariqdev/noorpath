@@ -215,6 +215,7 @@ export async function POST(request: Request) {
   const course = String(body.course || "").trim();
   const preferredTime = String(body.preferred_class_time || body.preferred_time || "").trim();
   const tutorPreference = String(body.tutor_preference || "").trim();
+  const learnerNotes = String(body.learner_notes || "").trim().slice(0, 600);
   if (!country || !learnerType || !childAge) {
     return NextResponse.json({ ok: false, error: "learner_details_required" }, { status: 400 });
   }
@@ -239,6 +240,7 @@ export async function POST(request: Request) {
     course,
     preferredTime,
     tutorPreference,
+    learnerNotes,
     landingPage,
     referrer,
     formVariant,
@@ -264,7 +266,7 @@ export async function POST(request: Request) {
           child_name: childName || undefined,
           child_age: childAge || undefined,
           quran_level:
-            [course, learnerNote, tutorPreference].filter(Boolean).join(" — ") || undefined,
+            [course, learnerNote, tutorPreference, learnerNotes].filter(Boolean).join(" — ") || undefined,
           preferred_time: preferredTime || undefined,
           contact_method: email ? "email" : "whatsapp",
           consent_status: "granted",

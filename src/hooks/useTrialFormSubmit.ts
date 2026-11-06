@@ -79,6 +79,7 @@ export function useTrialFormSubmit(options: Options = {}) {
       const learnerType = String(fd.get("learner_type") || "").trim();
       const preferredTime = String(fd.get("preferred_class_time") || "").trim();
       const tutorPreference = String(fd.get("tutor_preference") || "").trim();
+      const learnerNotes = String(fd.get("learner_notes") || "").trim();
       const course = String(fd.get("course") || "Free trial class").trim();
       if (!country || !learnerType || !childAge) {
         setStatus("error");
@@ -104,6 +105,7 @@ export function useTrialFormSubmit(options: Options = {}) {
             child_age: childAge,
             preferred_class_time: preferredTime,
             tutor_preference: tutorPreference,
+            learner_notes: learnerNotes,
             course,
             form_variant: formVariant,
             source_page: sourcePage,

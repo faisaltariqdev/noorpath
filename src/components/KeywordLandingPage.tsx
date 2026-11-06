@@ -85,6 +85,12 @@ export interface KeywordLandingPageProps {
   ctaBullets?: string[];
   relatedLinks?: { href: string; label: string }[];
   extraContent?: ReactNode;
+  /** Rendered right after "Who this page is for", before the trust stats. */
+  introContent?: ReactNode;
+  /** Hero button target; "#cta" keeps visitors on the page with its own form. */
+  heroCtaHref?: string;
+  /** Optional free-text prompt shown in the trial form (see CTAForm notesLabel). */
+  formNotesLabel?: string;
 }
 
 const DEFAULT_STATS = SERVICE_FACTS;
@@ -138,6 +144,9 @@ export default function KeywordLandingPage({
   ],
   relatedLinks,
   extraContent,
+  introContent,
+  heroCtaHref = "/free-quran-classes-online",
+  formNotesLabel,
 }: KeywordLandingPageProps) {
   const url = `https://www.noorpath.online${canonicalPath}`;
 
@@ -221,7 +230,7 @@ export default function KeywordLandingPage({
           <h1>{h1}</h1>
           <p dangerouslySetInnerHTML={{ __html: heroText }} />
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24, alignItems: "center" }}>
-            <Link href="/free-quran-classes-online" className="btn-primary-np">
+            <Link href={heroCtaHref} className="btn-primary-np">
               Book Free Trial →
             </Link>
             <Link href="/pricing" className="btn-outline-np" style={{ color: "#fff", borderColor: "rgba(255,255,255,.5)" }}>
@@ -281,6 +290,8 @@ export default function KeywordLandingPage({
               </ul>
             </div>
           )}
+
+          {introContent}
 
           {/* Trust stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -441,7 +452,7 @@ export default function KeywordLandingPage({
                 No credit card for the trial. Family discounts: {FAMILY_DISCOUNTS.map((item) => `${item.siblings} ${item.discountPercent}% off`).join(" · ")}. Cancel with {CANCELLATION_NOTICE_DAYS} days&apos; notice before the next billing date.
               </p>
             </div>
-            <Link href="/free-quran-classes-online" className="btn-primary-np" style={{ whiteSpace: "nowrap" }}>
+            <Link href={heroCtaHref} className="btn-primary-np" style={{ whiteSpace: "nowrap" }}>
               Book Free Trial →
             </Link>
           </div>
@@ -542,7 +553,7 @@ export default function KeywordLandingPage({
               <h3 style={{ fontFamily: "var(--font-playfair), serif", color: "#fff", fontSize: "1.2rem", marginBottom: 20, textAlign: "center" }}>
                 Request Your Free Trial
               </h3>
-              <CTAForm />
+              <CTAForm notesLabel={formNotesLabel} />
             </div>
           </div>
         </div>
