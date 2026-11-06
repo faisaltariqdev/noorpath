@@ -8,7 +8,7 @@
  * claim must come from academyFacts or an official source noted beside it.
  */
 
-import { RESCHEDULE_NOTICE_HOURS, TRIAL_OFFER, TUTOR_FACTS } from "@/lib/academyFacts";
+import { PRICING_PLANS, RESCHEDULE_NOTICE_HOURS, TRIAL_OFFER, TUTOR_FACTS } from "@/lib/academyFacts";
 
 export interface CountryTimeZone {
   zone: string;
@@ -57,6 +57,8 @@ export interface CountryMarket {
   currency: string;
   content?: CountryContent;
 }
+
+const starterPlanUsd = PRICING_PLANS[0].monthlyPriceUsd;
 
 const PARENT_PORTAL_ANSWER =
   "Enrolled families get secure Parent Portal access for each child, showing attendance, homework, quizzes, daily progress and teacher reports.";
@@ -326,9 +328,9 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       countryName: "Australia",
       formCountry: "Australia",
       h1: "Online Quran Classes in Australia for Kids and Adults",
-      metaTitle: "Online Quran Classes Australia — Kids & Adults | NoorPath",
+      metaTitle: "Online Quran Classes Australia — Kids, Tajweed & Hifz | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes for kids and adults across Australia: Qaida, Quran reading, Tajweed and Hifz in your state's time, with free trial sessions.",
+        "Live 1-on-1 online Quran classes for kids and adults in Australia: Qaida, Tajweed and Hifz in AEST, ACST or AWST. Female tutors, 3 free trial sessions.",
       eyebrow: "For families across Australia",
       hook: "Want your child to learn the Quran with a teacher who listens to every letter, without adding another drive to the week? Live one-to-one lessons at home, at times that suit your state.",
       scheduleBullet: "Flexible scheduling in your state's time zone",
@@ -337,7 +339,7 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
         a: `NoorPath teaches live one-to-one Quran lessons over video for children and adults anywhere in Australia. You share your state, the learner's level and the times that suit you; NoorPath confirms a tutor and schedule, and you start with ${TRIAL_OFFER} — no credit card needed.`,
       },
       whyIntro:
-        "Across Australia's suburbs and regional towns, a local Quran class can be far away or full. Online lessons give your child individual recitation time at home, fitted around school terms and weekend sport.",
+        "From the suburbs of Sydney, Melbourne, Brisbane, Perth and Adelaide to regional towns, the nearest weekend madrasa can be a long drive, full, or on at the same time as junior sport. Online lessons give your child individual recitation time at home, fitted around school terms.",
       timeZonesIntro: "Australia has three main time zones, and only some states use daylight saving — tell us your state when you enquire.",
       timeZones: [
         { zone: "AEST / AEDT", detail: "NSW, Victoria, ACT and Tasmania (daylight saving); Queensland stays on AEST all year" },
@@ -367,6 +369,22 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
           q: "Can adults join?",
           a: "Yes. Adults can start from the alphabet, return to reading after a long gap, or work on Tajweed or memorization, at their own pace.",
         },
+        {
+          q: "What makes a good Quran class for kids in Australia?",
+          a: "A qualified teacher, one-to-one attention, short regular lessons at a time your child is fresh, and progress you can see. Judge all four with your own child in the free trial sessions before paying.",
+        },
+        {
+          q: "My child goes to weekend madrasa. Can online lessons help as well?",
+          a: "Yes. Many families keep madrasa for community and add one or two one-to-one lessons a week to fix the letters and rules their child keeps getting wrong in a big group.",
+        },
+        {
+          q: "Do you offer online Tajweed classes in Australia?",
+          a: "Yes. Teens and adults who already read the Mushaf can take one-to-one Tajweed lessons in their own state's time, with the tutor correcting the rules on the verses they recite.",
+        },
+        {
+          q: "How much do online Quran classes cost in Australia?",
+          a: `Plans are billed in US dollars, from $${starterPlanUsd} a month for one 30-minute lesson a week; the plans section on this page shows approximate AUD amounts. Siblings get a family discount.`,
+        },
         { q: "How do free trial sessions work?", a: trialAnswer("your state's time zone") },
         { q: "Can parents monitor progress?", a: PARENT_PORTAL_ANSWER },
       ],
@@ -390,6 +408,14 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
           title: "Choosing a Quran class for your child",
           body: "Before deciding, ask who will teach, whether lessons are one-to-one, how progress is shared with parents and how classes move around school holidays. The free trial sessions let you see the tutor with your child before you pay.",
           link: { href: "/online-quran-classes-for-kids", label: "Online Quran classes for kids" },
+        },
+        {
+          title: "Perth, Brisbane and Adelaide families",
+          body: "Western Australia and Queensland don't use daylight saving, and South Australia runs half an hour behind the east coast. Tell us your state and the lesson time is agreed in your local time.",
+        },
+        {
+          title: "Through the school holidays",
+          body: "Reading slips most over the long summer break. Online lessons can continue through the holidays, even from a relative's home, as long as there is a connection.",
         },
       ],
       guide: "country",
@@ -1502,6 +1528,181 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
       guide: "country",
       whatsappText:
         "Assalamu Alaikum. I am in South Africa and would like to book free online Quran trial sessions. Please share tutor availability in SAST.",
+    },
+  },
+  "online-quran-classes-japan": {
+    currency: "JPY",
+    content: {
+      countryName: "Japan",
+      formCountry: "Japan",
+      h1: "Online Quran Classes in Japan for Kids and Adults",
+      metaTitle: "Online Quran Classes in Japan — Kids & Adults | NoorPath",
+      metaDescription:
+        "Live 1-on-1 online Quran classes in English for kids and adults in Japan: Qaida, Tajweed and Hifz in JST. Female tutors available, 3 free trial sessions.",
+      eyebrow: "For Muslim families across Japan",
+      hook: "No Quran class near you, or none that fits around school and juku? Live one-to-one lessons at home, in Japan time, explained in English.",
+      scheduleBullet: "Lesson times arranged in Japan Standard Time",
+      quickAnswer: {
+        q: "How do online Quran classes work for families in Japan?",
+        a: `NoorPath teaches live one-to-one Quran lessons over video, in English, for children and adults anywhere in Japan. You share the learner's level and the times that suit you in JST; NoorPath confirms a tutor and schedule, and you start with ${TRIAL_OFFER} — no credit card needed.`,
+      },
+      whyIntro:
+        "Outside a few areas around Tokyo, Nagoya, Osaka and Fukuoka, the nearest mosque class can be hours away, and few are taught in English. Online lessons give your child individual recitation time at home, fitted around the Japanese school week.",
+      timeZonesIntro: "Japan uses one time zone and never changes its clocks.",
+      timeZones: [{ zone: "Japan Standard Time (JST)", detail: "UTC+9 all year — no daylight saving" }],
+      clockNote:
+        "Japan's clocks never change, but some tutors' clocks may. NoorPath agrees lesson times in JST and reconfirms them if a tutor's local time shifts.",
+      schoolWeek:
+        "The school year starts in April and the weekend is Saturday and Sunday. Families often ask for evening slots after juku or club activities, or weekend mornings. Exact times are confirmed after your request.",
+      faqs: [
+        { q: "Are online Quran classes available across Japan?", a: "Yes — from Hokkaido to Okinawa. Lessons are fully online; NoorPath has no office in Japan." },
+        { q: "Are lessons taught in Japanese?", a: "No. NoorPath's tutors teach in English, so lessons suit children and adults who are comfortable following explanations in English." },
+        { q: "Can children start as beginners?", a: BEGINNER_ANSWER },
+        { q: "Are classes one-to-one?", a: ONE_TO_ONE_ANSWER },
+        { q: "Can I request a female Quran teacher?", a: femaleTeacherAnswer("JST") },
+        { q: "Can lessons fit around juku and club activities?", a: "Yes. Request evening or weekend windows in JST; the recurring time is confirmed after tutor matching and can be reviewed when the school timetable changes in April." },
+        { q: "Can adults and new Muslims join?", a: ADULTS_ANSWER },
+        { q: "How do free trial sessions work?", a: trialAnswer("JST") },
+        { q: "Can parents monitor progress?", a: PARENT_PORTAL_ANSWER },
+      ],
+      cityLinks: [],
+      heroImage: IMAGES.childLaptop,
+      localNotes: [
+        {
+          title: "Keeping Arabic alive in a Japanese school week",
+          body: "Children who speak Japanese all day can lose their Arabic letters quickly. A short weekly lesson plus a few minutes of reading at home keeps the habit going.",
+          link: { href: "/noorani-qaida", label: "Free interactive Noorani Qaida" },
+        },
+        {
+          title: "New Muslims in Japan",
+          body: "If there is no one nearby to learn from, a private one-to-one lesson lets you start from the alphabet at your own pace, without anyone else listening.",
+          link: { href: "/learn-quran-as-a-revert", label: "Learning the Quran as a new Muslim" },
+        },
+        {
+          title: "Typhoon and heavy-rain days",
+          body: "Because lessons happen online, a school closure for weather does not have to stop them, as long as you have power and a connection at home.",
+        },
+      ],
+      guide: "country",
+      whatsappText:
+        "Assalamu Alaikum. I am in Japan and would like to book free online Quran trial sessions. Please share tutor availability in JST.",
+    },
+  },
+  "online-quran-classes-russia": {
+    currency: "USD",
+    content: {
+      countryName: "Russia",
+      formCountry: "Russia",
+      h1: "Online Quran Classes in Russia for Kids and Adults",
+      metaTitle: "Online Quran Classes in Russia — Taught in English | NoorPath",
+      metaDescription:
+        "Live 1-on-1 online Quran classes in English for kids, students and adults in Russia: Qaida, Tajweed and Hifz in your local time. 3 free trial sessions.",
+      eyebrow: "For English-speaking families in Russia",
+      hook: "Looking for a Quran teacher who explains in English, at a time that suits your city? Live one-to-one lessons at home, from Kaliningrad to Vladivostok.",
+      scheduleBullet: "Lesson times arranged in your city's time zone",
+      quickAnswer: {
+        q: "How do online Quran classes work for families in Russia?",
+        a: `NoorPath teaches live one-to-one Quran lessons over video, in English, for children and adults anywhere in Russia. You share your city, the learner's level and the times that suit you; NoorPath confirms a tutor and schedule, and you start with ${TRIAL_OFFER} — no credit card needed.`,
+      },
+      whyIntro:
+        "Russia has long-established Muslim communities, but Quran classes taught in English are rare. Online lessons suit international families, foreign students and English-speaking adults who want individual recitation time at home.",
+      timeZonesIntro: "Russia spans eleven time zones, so tell us your city when you enquire.",
+      timeZones: [
+        { zone: "Moscow Time (UTC+3)", detail: "Moscow, St Petersburg, Kazan, Grozny, Makhachkala" },
+        { zone: "Yekaterinburg Time (UTC+5)", detail: "Ufa, Yekaterinburg, Chelyabinsk" },
+        { zone: "Other zones", detail: "From Kaliningrad (UTC+2) to Kamchatka (UTC+12)" },
+      ],
+      clockNote:
+        "Russia has not changed its clocks since 2014, but some tutors' clocks may. NoorPath agrees lesson times in your local time and reconfirms them if a tutor's local time shifts.",
+      schoolWeek:
+        "The school year starts on 1 September. Families often ask for slots after school or on Saturday and Sunday mornings; students and adults usually prefer evenings. Exact times are confirmed after your request.",
+      faqs: [
+        { q: "Are online Quran classes available across Russia?", a: "Yes — in any city, as long as you have a stable internet connection. Lessons are fully online; NoorPath has no office in Russia." },
+        { q: "Are lessons taught in Russian?", a: "No. NoorPath's tutors teach in English, so lessons suit families and adults who are comfortable following explanations in English." },
+        { q: "How can I pay from Russia?", a: "Plans are billed in US dollars. Cards issued by Russian banks often cannot be used for international payments, so ask NoorPath which payment method will work for you before enrolling." },
+        { q: "Can children start as beginners?", a: BEGINNER_ANSWER },
+        { q: "Are classes one-to-one?", a: ONE_TO_ONE_ANSWER },
+        { q: "Can I request a female Quran teacher?", a: femaleTeacherAnswer("local") },
+        { q: "Can university students and adults join?", a: ADULTS_ANSWER },
+        { q: "How do free trial sessions work?", a: trialAnswer("your local time") },
+      ],
+      cityLinks: [],
+      heroImage: IMAGES.boyReading,
+      localNotes: [
+        {
+          title: "Check payment before you enrol",
+          body: "Russian-issued cards often don't work for international payments. Ask which payment method will work for you at the start, so the trial isn't wasted.",
+        },
+        {
+          title: "Test the connection in the trial",
+          body: "Lessons run on Zoom. Use the free trial sessions to check video and sound are clear on your connection before paying.",
+        },
+        {
+          title: "Students away from home",
+          body: "International students at Russian universities often keep their recitation going best with one fixed weekly evening lesson.",
+          link: { href: "/online-quran-classes-for-adults", label: "Quran classes for adults" },
+        },
+      ],
+      guide: "country",
+      whatsappText:
+        "Assalamu Alaikum. I am in Russia and would like to book free online Quran trial sessions. My city is: ",
+    },
+  },
+  "online-quran-classes-china": {
+    currency: "CNY",
+    content: {
+      countryName: "China",
+      formCountry: "China",
+      h1: "Online Quran Classes in China for Kids and Adults",
+      metaTitle: "Online Quran Classes in China — Taught in English | NoorPath",
+      metaDescription:
+        "Live 1-on-1 online Quran classes in English for expats, students and adults in China: Qaida, Tajweed and Hifz in Beijing time. 3 free trial sessions.",
+      eyebrow: "For international families in China",
+      hook: "Living in China and can't find a Quran teacher who explains in English? Live one-to-one lessons at home, in Beijing time.",
+      scheduleBullet: "Lesson times arranged in China Standard Time",
+      quickAnswer: {
+        q: "How do online Quran classes work for families in China?",
+        a: `NoorPath teaches live one-to-one Quran lessons over video, in English, for children and adults living in China. You share the learner's level and the times that suit you in Beijing time; NoorPath confirms a tutor and schedule, and you start with ${TRIAL_OFFER} — no credit card needed.`,
+      },
+      whyIntro:
+        "For expat families in Beijing, Shanghai, Guangzhou, Shenzhen or Yiwu, an English-language Quran class nearby is rare. Online lessons give your child individual recitation time at home, around international-school timetables.",
+      timeZonesIntro: "The whole of China uses one time zone and never changes its clocks.",
+      timeZones: [{ zone: "China Standard Time (CST)", detail: "UTC+8 all year — no daylight saving" }],
+      clockNote:
+        "China's clocks never change, but some tutors' clocks may. NoorPath agrees lesson times in Beijing time and reconfirms them if a tutor's local time shifts.",
+      schoolWeek:
+        "Families at international schools often ask for slots after school or weekend mornings; students and working adults usually prefer evenings. Exact times are confirmed after your request.",
+      faqs: [
+        { q: "Are lessons taught in Chinese?", a: "No. NoorPath's tutors teach in English, so lessons suit expat families, international students and adults who are comfortable following English." },
+        { q: "Will lessons work on my connection in China?", a: "Lessons run on Zoom. Use the free trial sessions to check video and sound on your connection before you pay. Some apps, including WhatsApp, may not be reachable from mainland China, so tell us how best to contact you, for example by email." },
+        { q: "Are there any local rules to check?", a: "Rules on religious education in mainland China differ from most other countries. Families, especially those with children, should check what applies to them before enrolling." },
+        { q: "Can children start as beginners?", a: BEGINNER_ANSWER },
+        { q: "Are classes one-to-one?", a: ONE_TO_ONE_ANSWER },
+        { q: "Can I request a female Quran teacher?", a: femaleTeacherAnswer("Beijing-time") },
+        { q: "Can adults and students join?", a: ADULTS_ANSWER },
+        { q: "How do free trial sessions work?", a: trialAnswer("Beijing time") },
+      ],
+      cityLinks: [],
+      heroImage: IMAGES.family,
+      localNotes: [
+        {
+          title: "Test the connection first",
+          body: "Use the free trial sessions to make sure Zoom runs smoothly on your connection before you pay anything.",
+        },
+        {
+          title: "Living in Hong Kong?",
+          body: "Families in Hong Kong have their own page with HKT times and local notes.",
+          link: { href: "/locations/online-quran-classes-hong-kong", label: "Online Quran classes in Hong Kong" },
+        },
+        {
+          title: "International students",
+          body: "A fixed weekly evening lesson helps students keep their recitation going through a busy semester far from home.",
+          link: { href: "/online-quran-classes-for-adults", label: "Quran classes for adults" },
+        },
+      ],
+      guide: "country",
+      whatsappText:
+        "Assalamu Alaikum. I am in China and would like to book free online Quran trial sessions. Please share tutor availability in Beijing time.",
     },
   },
   "online-quran-classes-uae": {

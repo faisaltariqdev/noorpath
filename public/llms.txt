@@ -765,6 +765,21 @@ NoorPath serves students and families who prefer or need online Quran learning �
 - [Online Quran Classes — South Africa](https://www.noorpath.online/locations/online-quran-classes-south-africa)
   South Africa SAST scheduling context for Johannesburg, Cape Town & Durban families (online only).
 
+### Japan
+
+- [Online Quran Classes — Japan](https://www.noorpath.online/locations/online-quran-classes-japan)
+  Japan JST (UTC+9) lessons in English for Muslim families and adults in Tokyo, Osaka, Nagoya & Fukuoka — around school, juku and club activities (online only).
+
+### Russia
+
+- [Online Quran Classes — Russia](https://www.noorpath.online/locations/online-quran-classes-russia)
+  Russia lessons in English across all time zones (Moscow, Kazan, Ufa) — check payment method and connection in the free trial (online only).
+
+### China
+
+- [Online Quran Classes — China](https://www.noorpath.online/locations/online-quran-classes-china)
+  China CST (UTC+8) lessons in English for expat families, international students and adults in Beijing, Shanghai, Guangzhou & Yiwu (online only).
+
 ### Indonesia
 
 - [Online Quran Classes — Indonesia](https://www.noorpath.online/locations/online-quran-classes-indonesia)

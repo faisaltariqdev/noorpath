@@ -37,6 +37,9 @@ const countries = [
   "Belgium",
   "Switzerland",
   "Oman",
+  "Japan",
+  "Russia",
+  "China",
   "Other",
 ];
 

@@ -520,6 +520,61 @@ export const locations: Location[] = [
       "tajweed classes oman",
     ],
   },
+  {
+    slug: "online-quran-classes-japan",
+    flag: "🇯🇵",
+    country: "Japan",
+    cities: "Tokyo, Osaka, Nagoya, Yokohama, Fukuoka",
+    desc: "Live 1-on-1 online Quran classes in English for Muslim families and adults in Japan — JST timezone, free trial.",
+    timezone: "JST (UTC+9)",
+    localContext:
+      "Muslim families and adults in Tokyo, Osaka, Nagoya, Fukuoka and across Japan can request live one-to-one Quran lessons in Japan Standard Time (UTC+9, no daylight saving), around school, juku and club activities. Lessons are taught in English. NoorPath teaches online only (no Japan office).",
+    keywords: [
+      "online quran classes japan",
+      "quran teacher japan",
+      "quran classes tokyo",
+      "learn quran online japan",
+      "quran classes for kids japan",
+      "female quran teacher japan",
+      "islamic classes for kids japan",
+    ],
+  },
+  {
+    slug: "online-quran-classes-russia",
+    flag: "🇷🇺",
+    country: "Russia",
+    cities: "Moscow, St Petersburg, Kazan, Ufa, Makhachkala",
+    desc: "Live 1-on-1 online Quran classes in English for families, students and adults in Russia — any time zone, free trial.",
+    timezone: "MSK (UTC+3) and other zones",
+    localContext:
+      "English-speaking families, international students and adults in Moscow, St Petersburg, Kazan, Ufa and across Russia can request live one-to-one Quran lessons in their own time zone; Russia does not change its clocks. Lessons are taught in English, not Russian. NoorPath teaches online only (no Russia office).",
+    keywords: [
+      "online quran classes russia",
+      "quran teacher russia",
+      "quran classes moscow",
+      "learn quran online russia",
+      "online quran classes in english russia",
+      "tajweed classes russia",
+    ],
+  },
+  {
+    slug: "online-quran-classes-china",
+    flag: "🇨🇳",
+    country: "China",
+    cities: "Beijing, Shanghai, Guangzhou, Shenzhen, Yiwu",
+    desc: "Live 1-on-1 online Quran classes in English for expat families, students and adults in China — Beijing time, free trial.",
+    timezone: "CST (UTC+8)",
+    localContext:
+      "Expat families, international students and adults in Beijing, Shanghai, Guangzhou, Shenzhen and Yiwu can request live one-to-one Quran lessons in China Standard Time (UTC+8, no daylight saving). Lessons are taught in English. NoorPath teaches online only (no China office).",
+    keywords: [
+      "online quran classes china",
+      "quran teacher china",
+      "quran classes shanghai",
+      "quran classes beijing",
+      "learn quran online china",
+      "online quran classes for expats china",
+    ],
+  },
 ];
 
 export function getLocation(slug: string): Location | undefined {

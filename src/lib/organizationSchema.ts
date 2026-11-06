@@ -54,6 +54,9 @@ const PRIORITY_COUNTRIES = [
   "Belgium",
   "Switzerland",
   "Oman",
+  "Japan",
+  "Russia",
+  "China",
 ] as const;
 
 export function getOrganizationJsonLd() {

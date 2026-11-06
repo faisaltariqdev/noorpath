@@ -34,7 +34,7 @@ export const OFFICIAL_PEGS: Record<string, { perUsd: number; issuer: string }> =
 /** ECB reference currencies NoorPath country pages use. */
 const ECB_CURRENCIES = [
   "GBP", "CAD", "AUD", "NZD", "DKK", "NOK", "SEK", "CHF", "TRY",
-  "INR", "IDR", "MYR", "SGD", "HKD", "ZAR",
+  "INR", "IDR", "MYR", "SGD", "HKD", "ZAR", "JPY", "CNY",
 ] as const;
 
 function parseEcbXml(xml: string): { date: string; perEur: Record<string, number> } | null {

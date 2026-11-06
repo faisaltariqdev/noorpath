@@ -11,6 +11,7 @@ import { countryGuidesOmanPakistanNigeria } from "@/data/countryGuidesOmanPakist
 import { countryGuidesHongKong } from "@/data/countryGuidesHongKong";
 import { countryGuidesRewrite2026 } from "@/data/countryGuidesRewrite2026";
 import { countryGuidesUsaUae } from "@/data/countryGuidesUsaUae";
+import { countryGuidesAustraliaJapanRussiaChina } from "@/data/countryGuidesAustraliaJapanRussiaChina";
 import type { CountryGuideContent } from "@/data/countryGuideTypes";
 
 const COUNTRY_GUIDES: Record<string, CountryGuideContent> = {
@@ -28,6 +29,7 @@ const COUNTRY_GUIDES: Record<string, CountryGuideContent> = {
   ...countryGuidesOmanPakistanNigeria,
   ...countryGuidesHongKong,
   ...countryGuidesRewrite2026,
+  ...countryGuidesAustraliaJapanRussiaChina,
 };
 
 export function getCountryGuide(slug: string): CountryGuideContent | undefined {

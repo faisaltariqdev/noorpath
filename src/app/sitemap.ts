@@ -54,6 +54,14 @@ const LOCATION_REFRESH_SLUGS = new Set([
   "online-quran-classes-switzerland",
   "online-quran-classes-oman",
 ]);
+/** Japan, Russia and China hubs added and the Australia hub rewritten from GSC query data. */
+const COUNTRY_EXPANSION_STAMP = new Date("2026-11-06");
+const COUNTRY_EXPANSION_SLUGS = new Set([
+  "online-quran-classes-australia",
+  "online-quran-classes-japan",
+  "online-quran-classes-russia",
+  "online-quran-classes-china",
+]);
 
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
@@ -241,7 +249,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = locations.map((l) => ({
     url: `${BASE}/locations/${l.slug}`,
-    lastModified: LOCATION_REFRESH_SLUGS.has(l.slug) ? LOCATION_REFRESH_STAMP : SITE_CONTENT_STAMP,
+    lastModified: COUNTRY_EXPANSION_SLUGS.has(l.slug)
+      ? COUNTRY_EXPANSION_STAMP
+      : LOCATION_REFRESH_SLUGS.has(l.slug)
+        ? LOCATION_REFRESH_STAMP
+        : SITE_CONTENT_STAMP,
     priority: 0.88,
     changeFrequency: "weekly" as const,
   }));

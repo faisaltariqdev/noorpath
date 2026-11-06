@@ -40,6 +40,9 @@ export const LOCATION_HREFLANG_BY_SLUG: Record<string, string> = {
   "online-quran-classes-belgium": "en-BE",
   "online-quran-classes-switzerland": "en-CH",
   "online-quran-classes-oman": "en-OM",
+  "online-quran-classes-japan": "en-JP",
+  "online-quran-classes-russia": "en-RU",
+  "online-quran-classes-china": "en-CN",
 };
 
 export type EnglishStyle = "British English" | "American English" | "Natural English";

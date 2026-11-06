@@ -55,7 +55,7 @@ const countryGroups: { region: string; countries: [slug: string, label: string][
     countries: [
       ["pakistan", "Pakistan"], ["india", "India"], ["bangladesh", "Bangladesh"], ["indonesia", "Indonesia"],
       ["malaysia", "Malaysia"], ["singapore", "Singapore"], ["hong-kong", "Hong Kong"], ["nigeria", "Nigeria"],
-      ["south-africa", "South Africa"],
+      ["south-africa", "South Africa"], ["japan", "Japan"], ["china", "China"], ["russia", "Russia"],
     ],
   },
 ];
