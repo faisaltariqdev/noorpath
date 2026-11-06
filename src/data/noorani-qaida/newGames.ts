@@ -27,9 +27,9 @@ export const NEW_QAIDA_GAMES: NewQaidaGameMeta[] = [
   {
     slug: "arabic-letter-sound-quiz",
     title: "Arabic Letter Sound Quiz for Kids",
-    metaTitle: "Arabic Letter Sound Quiz — Test Noorani Qaida Audio Sounds",
+    metaTitle: "Arabic Letter Sound Quiz for Kids — Noorani Qaida",
     description:
-      "Test your child's recognition of Arabic letter sounds with this free interactive quiz. Match sounds to letters, hear correct audio, and build reading recall.",
+      "Free Arabic letter sound quiz for kids: match each letter to its sound, tell look-alike letters apart and build Noorani Qaida reading recall. No login.",
     keywords: [
       "arabic letter sound quiz",
       "noorani qaida sound quiz",

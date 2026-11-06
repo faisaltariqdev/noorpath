@@ -7,9 +7,9 @@ export interface ExtendedQaidaGuide extends QaidaGuide {
 export const NEW_QAIDA_GUIDES: ExtendedQaidaGuide[] = [
   {
     slug: "how-to-teach-noorani-qaida",
-    title: "How to Teach Noorani Qaida at Home — Step-by-Step Parent Guide",
+    title: "How to Teach Noorani Qaida at Home — Parent Guide",
     description:
-      "Learn how to teach Noorani Qaida at home with a calm, proven routine. Discover sequencing tips, mistake correction methods, and short daily practice habits for kids.",
+      "How to teach Noorani Qaida at home with a calm routine: the right lesson order, gentle mistake correction and short daily practice habits for kids.",
     audience: "Parents and carers teaching Noorani Qaida at home",
     answerBox:
       "Teaching Noorani Qaida at home requires a consistent, gentle routine prioritizing recognition before pronunciation. Parents should model sounds once, guide short five-minute practice sessions, and avoid testing unlearned letters. This guide outlines step-by-step teaching methods, distraction management, and when to involve a qualified Quran teacher to correct subtle makharij mistakes safely.",
@@ -74,7 +74,7 @@ export const NEW_QAIDA_GUIDES: ExtendedQaidaGuide[] = [
   },
   {
     slug: "noorani-qaida-lesson-plan",
-    title: "Noorani Qaida Lesson Plan — Structured Curriculum & Milestones",
+    title: "Noorani Qaida Lesson Plan — Curriculum & Milestones",
     description:
       "Complete Noorani Qaida lesson plan and milestone framework for parents and tutors. Detailed 11-module breakdown with timing, weekly goals, and checklists.",
     audience: "Quran tutors, homeschoolers, and parents seeking curriculum structure",

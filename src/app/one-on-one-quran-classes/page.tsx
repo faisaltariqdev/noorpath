@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     absolute: "One-on-One Quran Classes Online — Private Tutor | NoorPath Academy",
   },
   description:
-    "Private one-on-one Quran classes online with a live tutor. 1-to-1 Qaida, Tajweed and Hifz lessons for kids and adults — free 30-minute trial, no credit card.",
+    "Private one-on-one Quran classes online with a live tutor: Qaida, Tajweed and Hifz for kids and adults. 3 free trial sessions, no credit card.",
   keywords: [
     "one-on-one quran classes",
     "1-to-1 quran classes",

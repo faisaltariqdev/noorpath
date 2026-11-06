@@ -11,7 +11,7 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: absolutePageTitle("Our Online Quran Tutors — Tutor Matching | NoorPath Academy"),
-  description: "Find an online Quran tutor matched for Quran reading, Tajweed, Hifz, children, adults, or a female tutor. Every tutor holds an Ijazah or a Quran teaching certificate.",
+  description: "Find an online Quran tutor for reading, Tajweed or Hifz — for kids, adults or with a female tutor. Every tutor holds an Ijazah or Quran teaching certificate.",
   alternates: { canonical: "https://www.noorpath.online/our-tutors" },
   openGraph: {
     title: "Online Quran Tutors — Tutor Matching | NoorPath Academy",

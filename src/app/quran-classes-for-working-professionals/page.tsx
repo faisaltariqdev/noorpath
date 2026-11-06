@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     absolute: "Quran Classes for Working Professionals | NoorPath Academy",
   },
   description:
-    "Online Quran classes for working professionals with evening and weekend schedule matching. Live 1-to-1 lessons — free 30-minute trial, no credit card.",
+    "Online Quran classes for working professionals: live 1-to-1 lessons at evening and weekend times that suit you. 3 free trial sessions, no credit card.",
   keywords: [
     "online quran classes for working professionals",
     "evening quran classes online",

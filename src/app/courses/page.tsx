@@ -14,7 +14,7 @@ export const revalidate = false;
 export const metadata: Metadata = {
   title: { absolute: "NoorPath Academy | Online Quran & Islamic Courses" },
   description:
-    "NoorPath Academy courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies, kids classes and daily duas. Live 1-to-1 lessons and 3 free 30-minute trial sessions.",
+    "Online Quran courses: Noorani Qaida, Tajweed, Hifz, Arabic, Islamic studies and daily duas. Live 1-to-1 lessons for kids and adults, 3 free trial sessions.",
   keywords: [
     "online quran courses", "quran classes online", "noorani qaida online", "tajweed classes online",
     "hifz program online", "arabic language online", "islamic studies online", "quran for kids online",

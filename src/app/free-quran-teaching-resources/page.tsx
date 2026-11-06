@@ -10,7 +10,7 @@ const PATH = "/free-quran-teaching-resources";
 const PAGE_URL = `${BASE_URL}${PATH}`;
 const TITLE = "Free Quran Teaching Resources for Teachers & Mosques | NoorPath";
 const DESCRIPTION =
-  "Free Noorani Qaida games, printable worksheets, a Hifz planner and Islamic calculators for madrasah teachers, mosque classes, Islamic schools and parents. No login.";
+  "Free Noorani Qaida games, printable worksheets, a Hifz planner and Islamic calculators for madrasah teachers, mosque classes and parents. No login.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

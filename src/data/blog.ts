@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     slug: "why-online-quran-classes-are-ideal-for-busy-muslim-families",
     title: "Why Online Quran Classes Are Ideal for Busy Muslim Families",
     description:
-      "Why online Quran classes suit busy Muslim families: learning from home, flexible timings, one-to-one attention, courses for kids and adults, and how to choose an academy.",
+      "Why online Quran classes suit busy Muslim families: learning from home, flexible timings, one-to-one attention for kids and adults, and how to pick an academy.",
     category: "Kids & Parenting",
     date: "2026-11-05",
     updatedAt: "2026-11-05",
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
     slug: "sayyidul-istighfar-arabic-english",
     title: "Sayyidul Istighfar — Arabic, Transliteration, English & Virtue",
     description:
-      "Sayyidul Istighfar, the master dua of seeking forgiveness from Sahih al-Bukhari — full Arabic, easy transliteration, English meaning, its authentic reward, and a simple daily routine.",
+      "Sayyidul Istighfar, the master dua for forgiveness (Sahih al-Bukhari): full Arabic, easy transliteration, English meaning, its reward and when to recite it.",
     category: "Dhikr & Duas",
     date: "2026-08-28",
     readTime: "9 min",
@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
     slug: "manzil-dua-protection-ruqyah",
     title: "Manzil Dua — Quranic Verses for Protection & Ruqyah",
     description:
-      "The Manzil is a compilation of 33 Quranic verses for protection and ruqyah. Learn which verses it contains, how and when to recite it, and the correct belief while seeking protection through the Quran.",
+      "Manzil dua: 33 Quranic verses recited for protection and ruqyah. Which verses it contains, how and when to recite it, and the correct belief behind it.",
     category: "Dhikr & Duas",
     date: "2026-08-28",
     readTime: "10 min",
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ayat-al-shifa-quranic-verses-of-healing",
     title: "Ayat al-Shifa — 6 Quranic Verses of Healing (Arabic & English)",
     description:
-      "Ayat al-Shifa are the six verses of the Quran that mention healing. Read all six with Arabic, transliteration and English meaning, how to recite them for healing, and the correct belief while seeking cure.",
+      "Ayat al-Shifa: the six Quran verses that mention healing, in Arabic with transliteration and English meaning, and how to recite them when seeking a cure.",
     category: "Dhikr & Duas",
     date: "2026-08-28",
     readTime: "9 min",
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "female-quran-teacher-for-kids",
     title: "Female Quran Teacher for Kids — Safe Hafiza Tutors Online",
-    description: "How to find a female Quran teacher for kids online: what Hafiza tutors cover for daughters aged 4–12, how safe 1-on-1 video lessons work, and how to book a free trial.",
+    description: "How to find a female Quran teacher for kids online: what Hafiza tutors teach girls aged 4–12, how safe 1-on-1 video lessons work and how to book a free trial.",
     category: "Quran Learning",
     date: "2026-07-13",
     updatedAt: "2026-07-27",
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "online-hifz-classes-for-kids",
     title: "Online Hifz Classes for Kids — 2026 Guide & Free Trial",
-    description: "A parent guide to online Hifz classes for kids: the Sabaq–Sabqi–Manzil revision system, the best age to start, realistic daily targets and how to choose a Hafiz tutor.",
+    description: "Online Hifz classes for kids, explained for parents: the Sabaq–Sabqi–Manzil revision system, best age to start, daily targets and choosing a Hafiz tutor.",
     category: "Quran Learning",
     date: "2026-07-13",
     updatedAt: "2026-07-13",
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-for-success-exams",
     title: "Dua for Success & Exams — Powerful Duas from Quran & Sunnah",
-    description: "Authentic duas for success in exams, studies and life from the Quran and Sunnah — including Rabbir zidni ilma — with full Arabic, transliteration, English meaning and a pre-exam routine.",
+    description: "Dua for success in exams and studies from the Quran and Sunnah, including Rabbi zidni ilma — Arabic, transliteration, English meaning and a pre-exam routine.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-for-marriage",
     title: "Dua for Marriage — Arabic, English & Istikhara for Nikah",
-    description: "Authentic duas for marriage and a righteous spouse from the Quran and Sunnah, with full Arabic, transliteration and English meaning, plus how to make Istikhara for nikah.",
+    description: "Dua for marriage and a righteous spouse from the Quran and Sunnah, in Arabic with transliteration and English meaning, plus how to pray Istikhara for nikah.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -212,7 +212,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-for-forgiveness-istighfar",
     title: "Dua for Forgiveness (Istighfar) — Best Duas, Arabic & English",
-    description: "Best dua for forgiveness in Islam: Sayyid al-Istighfar, Astaghfirullah, and Quranic duas. Full Arabic, transliteration, English meaning, how many times to recite, and the conditions of sincere Tawbah.",
+    description: "Best dua for forgiveness in Islam — Sayyid al-Istighfar, Astaghfirullah and Quranic duas in Arabic and English, how often to recite and sincere Tawbah.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-11-03",
@@ -230,7 +230,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-do-ghusl-step-by-step",
     title: "How to Do Ghusl Step by Step — Complete Guide (Men & Women)",
-    description: "How to perform ghusl (full body purification) step by step according to Sunnah: intention, washing order, what invalidates ghusl, differences for men and women, and common mistakes. Clear English guide with prophetic method.",
+    description: "How to do ghusl step by step according to the Sunnah: intention, washing order, what invalidates it, differences for men and women, and common mistakes.",
     category: "Salah & Worship",
     date: "2026-07-13",
     updatedAt: "2026-11-03",
@@ -247,7 +247,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "labbaik-allahumma-labbaik",
     title: "Labbaik Allahumma Labbaik — Meaning, Arabic & Talbiyah Explained",
-    description: "Labbaik Allahumma labbaik meaning in English: the Talbiyah of Hajj and Umrah. Full Arabic text, transliteration, word-by-word meaning, when pilgrims recite it, and its spiritual power.",
+    description: "Labbaik Allahumma labbaik meaning in English — the Talbiyah of Hajj and Umrah, with full Arabic, transliteration, word-by-word meaning and when to recite it.",
     category: "Islamic Knowledge",
     date: "2026-07-13",
     updatedAt: "2026-11-03",
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-entering-leaving-home",
     title: "Dua for Entering & Leaving Home — Arabic, English & Protection",
-    description: "Authentic dua when entering home and leaving home in Islam. Full Arabic, transliteration, English meaning, protection from Shaytan, and how to teach these short duas to children.",
+    description: "Dua for entering and leaving home in Islam: Arabic, transliteration and English meaning, protection from Shaytan, and how to teach these short duas to kids.",
     category: "Dhikr & Duas",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -283,7 +283,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-pray-witr",
     title: "How to Pray Witr — Step by Step, Rakats, Dua e Qunoot & Timing",
-    description: "Complete guide on how to pray Witr salah: number of rakats (1, 3, 5+), Hanafi vs other methods, when to pray Witr, Dua e Qunoot, and what to do if you miss it. Clear step-by-step for beginners.",
+    description: "How to pray Witr step by step: number of rakats (1, 3, 5+), Hanafi and other methods, when to pray it, Dua e Qunoot, and what to do if you miss it.",
     category: "Salah & Worship",
     date: "2026-07-13",
     updatedAt: "2026-08-04",
@@ -300,7 +300,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "allahu-akbar-meaning-in-english",
     title: "Allahu Akbar Meaning in English — Arabic, When to Say It & Benefits",
-    description: "Allahu Akbar (الله أكبر) meaning in English: 'Allah is the Greatest.' Full Arabic text, transliteration, word-by-word meaning, when Muslims say it, authentic hadith benefits, and how it is used in Salah, Adhan and daily dhikr.",
+    description: "Allahu Akbar (الله أكبر) means 'Allah is the Greatest'. Arabic, transliteration, word-by-word meaning, when Muslims say it and its use in Salah and Adhan.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
     updatedAt: "2026-11-03",
@@ -317,9 +317,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "la-ilaha-illallah-meaning",
-    title: "La Ilaha Illallah Meaning — Arabic, English & Virtues",
+    title: "La Ilaha Illallah Meaning in English & Arabic (لا إله إلا الله)",
     description:
-      "La Ilaha Illallah meaning in English, Arabic text, transliteration & audio. Discover virtues, when to say it vs when not to say it + free PDF guide.",
+      "La ilaha illallah means 'There is no god but Allah'. Arabic text, transliteration, word-by-word meaning, its virtues and when to say it.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
     updatedAt: "2026-11-03",
@@ -337,8 +337,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-before-sleeping-islam",
-    title: "Dua Before Sleeping in Islam — Arabic, English & Complete Bedtime Adhkar",
-    description: "Complete dua before sleeping in Islam: Bismika Allahumma amutu wa ahya, Ayatul Kursi, last two ayats of Surah Baqarah, and the 3 Quls. Full Arabic, transliteration, English meaning, and the Sunnah bedtime routine from authentic hadith.",
+    title: "Dua Before Sleeping in Islam — Arabic, English & Bedtime Adhkar",
+    description: "Dua before sleeping in Islam: Bismika Allahumma amutu wa ahya, Ayatul Kursi, the last two ayats of Baqarah and the 3 Quls, in Arabic and English.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
     updatedAt: "2026-07-10",
@@ -356,8 +356,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "evil-eye-dua-nazar-ruqyah",
-    title: "Evil Eye Dua (Nazar) — Symptoms, Protection, Ruqyah & Surahs from Quran",
-    description: "Complete guide to the evil eye (nazar/al-ain) in Islam: authentic duas for protection, Ruqyah from Quran (Ayatul Kursi, Al-Falaq, An-Nas), symptoms, what to say when admiring something, and how to protect children.",
+    title: "Evil Eye Dua (Nazar) — Protection, Ruqyah, Symptoms & Surahs",
+    description: "Evil eye (nazar) dua for protection in Islam: Ruqyah from the Quran (Ayatul Kursi, Al-Falaq, An-Nas), symptoms, what to say when admiring, and protecting kids.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
     updatedAt: "2026-07-10",
@@ -374,8 +374,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "morning-evening-adhkar-dhikr",
-    title: "Morning & Evening Adhkar — Complete Dhikr List with Arabic & English",
-    description: "Complete morning and evening adhkar (adhkar as-sabah wal-masa) from authentic hadith: Ayatul Kursi, 3 Quls, Sayyid al-Istighfar, Hasbiyallahu, and more. Full Arabic, transliteration, English meaning, and daily dhikr routine.",
+    title: "Morning & Evening Adhkar — Full Dhikr List in Arabic & English",
+    description: "Morning and evening adhkar from authentic hadith — Ayatul Kursi, the 3 Quls, Sayyid al-Istighfar, Hasbiyallahu and more — in Arabic and English.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
     updatedAt: "2026-07-10",
@@ -393,8 +393,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "last-two-ayahs-surah-baqarah",
-    title: "Last Two Ayats of Surah Baqarah — Arabic, English, Meaning & Benefits",
-    description: "The last 2 ayats of Surah Al-Baqarah (2:285–286) in Arabic with English translation, transliteration, word-by-word meaning, authentic hadith benefits, and when to recite before sleep for protection.",
+    title: "Last Two Ayats of Surah Baqarah — Arabic, English & Benefits",
+    description: "Last 2 ayats of Surah Al-Baqarah (2:285–286) in Arabic with English translation and transliteration, hadith benefits and why to recite them before sleep.",
     category: "Quran",
     date: "2026-07-10",
     updatedAt: "2026-07-10",
@@ -412,8 +412,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-for-parents-rabbirhamhuma",
-    title: "Dua for Parents — Arabic, English, Rabbirhamhuma Meaning & Benefits",
-    description: "The best dua for parents from the Quran — Rabbirhamhuma kama rabbayani saghira (Surah Al-Isra 17:24). Full Arabic text, transliteration, English meaning, benefits for living and deceased parents, and how to teach it to children.",
+    title: "Dua for Parents — Rabbirhamhuma in Arabic, English & Meaning",
+    description: "Best dua for parents from the Quran — Rabbirhamhuma kama rabbayani saghira (17:24) — in Arabic and English, for living and deceased parents, with meaning.",
     category: "Dhikr & Duas",
     date: "2026-07-10",
     updatedAt: "2026-07-10",
@@ -432,7 +432,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "surah-ikhlas-benefits",
     title: "Surah Ikhlas — Arabic, English Translation, Meaning & Benefits",
-    description: "Surah Al-Ikhlas (chapter 112) in Arabic with English translation, transliteration, meaning and benefits. Learn why it equals one-third of the Quran, when to recite it, and how to teach it to kids.",
+    description: "Surah Ikhlas (112) in Arabic with English translation, transliteration and meaning. Why it equals one-third of the Quran, when to recite it and its benefits.",
     category: "Quran",
     date: "2026-07-10",
     updatedAt: "2026-11-03",
@@ -450,8 +450,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-e-istikhara",
-    title: "Dua e Istikhara — Arabic, English & How to Pray Salat al-Istikhara",
-    description: "Full Dua e Istikhara in Arabic with English translation and transliteration. Learn how to pray Salat al-Istikhara step by step, when to do it, and how to recognise the answer — from Sahih al-Bukhari.",
+    title: "Dua e Istikhara in Arabic & English — How to Pray Istikhara",
+    description: "Full Dua e Istikhara in Arabic with English translation and transliteration, and how to pray Salat al-Istikhara step by step (Sahih al-Bukhari).",
     category: "Dhikr & Duas",
     date: "2026-07-09",
     updatedAt: "2026-07-09",
@@ -469,7 +469,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tahajjud-prayer",
     title: "Tahajjud Prayer — How to Pray, Best Time, Rakats & Benefits",
-    description: "Complete Tahajjud guide: what it is, the best time to pray Tahajjud, how many rakats, step-by-step method, powerful duas, and its benefits from Quran & Hadith. Learn the night prayer of the Prophet ﷺ.",
+    description: "How to pray Tahajjud: the best time, how many rakats, a step-by-step method, duas to make and its benefits from the Quran and Hadith.",
     category: "Salah & Worship",
     date: "2026-07-09",
     updatedAt: "2026-07-09",
@@ -487,7 +487,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "surah-waqiah-benefits",
     title: "Surah Waqiah — Benefits, Arabic Text & English Translation",
-    description: "Surah Al-Waqiah (chapter 56) benefits for rizq and protection from poverty, with Arabic text of key verses, English translation, when to recite it, and what the hadith really say. Read the Surah of Wealth explained.",
+    description: "Surah Waqiah benefits for rizq and protection from poverty — key verses in Arabic and English, when to recite it, and what the hadith really say.",
     category: "Quran",
     date: "2026-07-09",
     updatedAt: "2026-11-03",
@@ -505,7 +505,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "surah-rahman-benefits",
     title: "Surah Rahman — Benefits, Arabic Text & English Translation",
-    description: "Surah Ar-Rahman (chapter 55) — the 'Bride of the Quran'. Its benefits, the meaning of 'Which of the favours of your Lord will you deny?', key verses in Arabic & English, and the best times to recite it.",
+    description: "Surah Rahman benefits — the 'Bride of the Quran'. What 'Which of the favours of your Lord will you deny?' means, key verses in Arabic and English, when to read.",
     category: "Quran",
     date: "2026-07-09",
     updatedAt: "2026-07-09",
@@ -522,8 +522,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "darood-sharif",
-    title: "Darood Sharif — Arabic, English Translation, Transliteration & Benefits",
-    description: "Read Darood Sharif (Durood Ibrahim) in Arabic with English translation, transliteration, meaning and benefits. Learn the Darood recited in Salah, its rewards from Hadith & how to teach it to kids.",
+    title: "Darood Sharif in Arabic & English — Durood Ibrahim & Benefits",
+    description: "Darood Sharif (Durood Ibrahim) in Arabic with English translation and transliteration — the Darood recited in Salah, its meaning and rewards from Hadith.",
     category: "Dhikr & Duas",
     date: "2026-07-07",
     updatedAt: "2026-07-07",
@@ -540,8 +540,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "4-quls",
-    title: "4 Quls — Arabic, English Translation & Benefits (Four Quls of the Quran)",
-    description: "The 4 Quls — Surah Al-Kafirun, Al-Ikhlas, Al-Falaq & An-Nas — with full Arabic, transliteration, English translation and benefits. Learn the Four Quls for protection & help kids memorize them.",
+    title: "4 Quls in Arabic & English — Four Quls with Benefits",
+    description: "The 4 Quls — Al-Kafirun, Al-Ikhlas, Al-Falaq and An-Nas — in Arabic with transliteration and English translation, their benefits and tips for kids.",
     category: "Quran",
     date: "2026-07-07",
     updatedAt: "2026-07-07",
@@ -558,8 +558,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "arabic-alphabet-for-kids",
-    title: "Arabic Alphabet for Kids — 28 Letters (Huroof-e-Tahaji) with Sounds & Names",
-    description: "Learn the Arabic alphabet for kids: all 28 letters (Huroof-e-Tahaji) with names, sounds, English transliteration and a printable-style chart. The easy first step before Noorani Qaida & reading the Quran.",
+    title: "Arabic Alphabet for Kids — 28 Letters with Names & Sounds",
+    description: "Arabic alphabet for kids: all 28 letters (Huroof-e-Tahaji) with names, sounds and English transliteration — the easy first step before Noorani Qaida.",
     category: "Quran Learning",
     date: "2026-07-07",
     updatedAt: "2026-07-07",
@@ -578,7 +578,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ayat-e-karima",
     title: "Ayat e Karima — Arabic, English Translation, Meaning & Benefits",
-    description: "Ayat e Karima (La ilaha illa anta subhanaka inni kuntu minaz-zalimin) — the dua of Prophet Yunus. Read the Arabic, transliteration, English meaning, benefits, and how to recite it in hardship.",
+    description: "Ayat e Karima — La ilaha illa anta subhanaka inni kuntu minaz-zalimin, the dua of Prophet Yunus — in Arabic and English, its benefits and when to recite it.",
     category: "Dhikr & Duas",
     date: "2026-07-07",
     updatedAt: "2026-07-07",
@@ -595,8 +595,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "six-kalimas-of-islam",
-    title: "6 Kalimas of Islam — Arabic, English Translation, Transliteration & Meaning",
-    description: "Learn all 6 Kalimas of Islam with Arabic text, English translation, transliteration and meaning. First to Sixth Kalima — Tayyabah, Shahadat, Tamjeed, Tawheed, Istighfar & Radd-e-Kufr, with memorization tips for kids.",
+    title: "6 Kalimas of Islam in Arabic & English — With Meaning",
+    description: "All 6 Kalimas of Islam in Arabic with English translation and transliteration — Tayyabah, Shahadat, Tamjeed, Tawheed, Istighfar and Radd-e-Kufr.",
     category: "Islamic Knowledge",
     date: "2026-07-07",
     updatedAt: "2026-07-07",
@@ -614,8 +614,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "online-quran-classes-uk-kids-guide",
-    title: "Online Quran Classes in the UK for Kids — The Complete 2026 Parents' Guide",
-    description: "Looking for online Quran classes in the UK for your kids? Compare costs, safety, timings, female tutors & how to choose the best academy. Free 30-min trial — no credit card.",
+    title: "Online Quran Classes for Kids in the UK — 2026 Parent Guide",
+    description: "Online Quran classes for kids in the UK: compare costs, safety, UK-time slots and female tutors, and how to choose an academy. 3 free trial sessions.",
     category: "Online Learning",
     date: "2026-07-06",
     updatedAt: "2026-07-06",
@@ -634,8 +634,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "islamic-phrases-meaning",
-    title: "30 Common Islamic Phrases & Their Meanings — Arabic, English & When to Say Them",
-    description: "The complete guide to common Islamic phrases every Muslim uses daily — Alhamdulillah, Subhanallah, Mashallah, Inshallah, JazakAllah & more, with Arabic, meaning & usage.",
+    title: "30 Islamic Phrases & Meanings — Arabic, English & When to Say",
+    description: "30 common Islamic phrases Muslims use daily — Alhamdulillah, Subhanallah, Mashallah, Inshallah, JazakAllah and more — with Arabic, meaning and when to say them.",
     category: "Islamic Knowledge",
     date: "2026-07-03",
     updatedAt: "2026-07-03",
@@ -652,7 +652,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "subhanallah-meaning",
     title: "Subhanallah Meaning in English — Arabic, When to Say It & Benefits",
-    description: "Subhanallah (سبحان الله) means 'Glory be to Allah.' Learn the full meaning, Arabic text, when to say it, its benefits from Hadith, and how it differs from Alhamdulillah.",
+    description: "Subhanallah (سبحان الله) means 'Glory be to Allah'. Its full meaning, when to say it, benefits from Hadith and how it differs from Alhamdulillah.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
     updatedAt: "2026-07-03",
@@ -668,9 +668,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "jazakallah-khair-meaning",
-    title: "Jazakallah Khair Meaning + How to Reply (Male/Female/Group)",
+    title: "Jazakallah Khair Meaning & How to Reply to a Man or Woman",
     description:
-      "Jazakallah Khair meaning in English + exact reply table for male, female & group. Includes Arabic text, transliteration, audio guide and free PDF chart.",
+      "Jazakallah Khair (جزاك الله خيرا) means 'May Allah reward you with good'. The correct reply to a man, woman or group — Wa iyyak, Wa iyyaki, Wa iyyakum.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
     updatedAt: "2026-11-03",
@@ -686,8 +686,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "surah-mulk-benefits",
-    title: "Surah Mulk — Benefits, Arabic Text, English Translation & Why to Read It Nightly",
-    description: "Surah Al-Mulk (the 67th chapter) protects from the punishment of the grave. Read the full benefits, Arabic text, English translation and why the Prophet ﷺ recited it every night.",
+    title: "Surah Mulk Benefits — Arabic, English & Why to Read It Nightly",
+    description: "Surah Mulk (67) protects from the punishment of the grave. Its benefits, Arabic text, English translation and why the Prophet ﷺ recited it every night.",
     category: "Quran",
     date: "2026-07-03",
     updatedAt: "2026-07-03",
@@ -704,7 +704,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dua-for-anxiety-stress-depression",
     title: "Dua for Anxiety, Stress & Depression — 15 Duas in Arabic & English",
-    description: "15 authentic duas for anxiety, stress, depression, overthinking & a broken heart — full Arabic, transliteration, English meaning, Hadith source & when to recite.",
+    description: "15 authentic duas for anxiety, stress, depression & overthinking — Arabic, transliteration, English meaning, Hadith source and when to recite.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
     updatedAt: "2026-11-03",
@@ -737,7 +737,7 @@ export const blogPosts: BlogPost[] = [
     slug: "alhamdulillah-meaning-in-english",
     title: "Alhamdulillah Meaning — Praise Allah (Arabic Guide)",
     description:
-      "Alhamdulillah meaning in English: “All praise is due to Allah.” Arabic الحمد لله, when to say it, Quran references, benefits, and how to teach kids this daily dhikr.",
+      "Alhamdulillah means “All praise is due to Allah” (الحمد لله). When to say it, Quran references, its benefits and how to teach kids this daily dhikr.",
     category: "Dhikr & Duas",
     date: "2025-07-10",
     updatedAt: "2026-11-03",
@@ -750,7 +750,7 @@ export const blogPosts: BlogPost[] = [
     slug: "astaghfirullah-meaning",
     title: "Astaghfirullah Meaning — Seek Forgiveness from Allah",
     description:
-      "Astaghfirullah meaning in English: “I seek forgiveness from Allah.” Arabic أستغفر الله, Hadith benefits, how often to say istighfar, and a simple daily forgiveness habit.",
+      "Astaghfirullah means “I seek forgiveness from Allah” (أستغفر الله). Hadith benefits, how often to say istighfar and a simple daily habit.",
     category: "Dhikr & Duas",
     date: "2025-07-20",
     updatedAt: "2026-11-03",
@@ -761,7 +761,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ayatul-kursi-arabic-english-benefits",
-    title: "Ayatul Kursi Meaning — Arabic, English Translation, Transliteration & Benefits",
+    title: "Ayatul Kursi in Arabic & English — Meaning & Benefits",
     description: "Read Ayatul Kursi in Arabic with English translation, transliteration, meaning, word-by-word explanation, benefits and when to recite it.",
     category: "Quran",
     date: "2025-08-01",
@@ -829,7 +829,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-pray-salah-step-by-step",
     title: "How to Pray Salah Step by Step — Complete Beginner's Guide",
-    description: "Complete step-by-step guide to praying Salah (Islamic prayer) for beginners — with Arabic, transliteration, English meaning, and detailed instructions for each position.",
+    description: "How to pray Salah step by step for beginners — every position explained, with the Arabic words, transliteration and English meaning.",
     category: "Prayer & Worship",
     date: "2025-10-15",
     readTime: "14 min",
@@ -872,8 +872,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "mashallah-meaning",
-    title: "Mashallah Meaning in English — Arabic, When to Say It & Response (2026)",
-    description: "Mashallah (ما شاء الله) means 'What Allah has willed.' Complete guide: Arabic text, full meaning, when to say it, how to respond, and evil eye protection.",
+    title: "Mashallah Meaning in English — When to Say It & How to Reply",
+    description: "Mashallah (ما شاء الله) means 'What Allah has willed'. When to say it, how to reply, what 'Mashallah Barakallahu feek' means, and its link to the evil eye.",
     category: "Dhikr & Duas",
     date: "2025-12-10",
     updatedAt: "2026-11-03",
@@ -885,7 +885,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "noorani-qaida-complete-guide",
     title: "Noorani Qaida Complete Guide 2026 — Learn Arabic Reading Online",
-    description: "A complete beginner guide to Noorani Qaida online: how the lessons are sequenced, how Arabic pronunciation is taught step by step, and what to expect at each stage.",
+    description: "Noorani Qaida guide for beginners: how the lessons are ordered, how Arabic pronunciation is taught step by step, and what to expect at each stage.",
     category: "Quran Learning",
     date: "2026-01-10",
     readTime: "11 min",
@@ -952,7 +952,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "best-online-quran-academy-guide",
     title: "Best Online Quran Academy 2026 — How to Choose & What to Look For",
-    description: "Looking for the best online Quran academy for your needs? Compare tutor evidence, safeguarding, lesson format, pricing, trial terms and red flags before choosing.",
+    description: "How to choose the best online Quran academy: compare tutor credentials, safeguarding, lesson format, pricing, trial terms and red flags before you pay.",
     category: "Online Learning",
     date: "2026-05-01",
     readTime: "12 min",
@@ -985,7 +985,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "online-quran-classes-for-kids-parent-guide",
     title: "Best Online Quran Classes for Kids — 2026 Parent Guide",
-    description: "A parent guide to choosing online Quran classes for kids: a safety checklist, how to vet tutors, what monthly costs typically cover and how to judge the curriculum.",
+    description: "Choosing online Quran classes for kids: a safety checklist, how to vet tutors, what monthly fees usually cover and how to judge the curriculum.",
     category: "Online Learning",
     date: "2026-06-24",
     readTime: "20 min",
@@ -1002,9 +1002,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bismillah-meaning-in-english",
-    title: "Bismillah Meaning in English — Translation, Arabic & Rules",
+    title: "Bismillah Meaning in English — Full Translation & Arabic",
     description:
-      "Bismillah meaning in English, full Arabic text, transliteration & audio. Learn when to say Bismillah and when NOT to say it. Download free PDF reference.",
+      "Bismillah in English: 'In the name of Allah, the Most Gracious, the Most Merciful'. Word-by-word meaning, Arabic text and when to say it (and when not to).",
     category: "Dhikr & Duas",
     date: "2026-06-24",
     updatedAt: "2026-11-03",
@@ -1021,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "learn-quran-online-adult-beginner-guide",
     title: "Learn Quran Online as an Adult Beginner — Complete Guide 2026",
-    description: "Learn Quran online as an adult from zero: Noorani Qaida roadmap, 12-week plan, 2–3 weekly lessons, Tajweed tips, tutor checklist, cost ($29/mo), UK/US/AU schedules & free trial — never too late to start.",
+    description: "Learn Quran online as an adult beginner: a Noorani Qaida roadmap, 12-week plan, Tajweed tips, a tutor checklist and costs from $29/month. Never too late.",
     category: "Online Learning",
     date: "2026-06-24",
     readTime: "22 min",
@@ -1040,7 +1040,7 @@ export const blogPosts: BlogPost[] = [
     slug: "inshallah-meaning-in-english",
     title: "Inshallah Meaning — If Allah Wills (Arabic + FAQ)",
     description:
-      "Inshallah meaning in English is “If Allah wills.” Arabic إن شاء الله, when to say it, how to reply, vs Mashallah, Quran 18:23–24, and a clear parent-friendly FAQ.",
+      "Inshallah means “If Allah wills” (إن شاء الله). When to say it, how to reply, Inshallah vs Mashallah, and its Quran source (18:23–24).",
     category: "Dhikr & Duas",
     date: "2026-06-24",
     updatedAt: "2026-11-03",
@@ -1057,7 +1057,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-long-to-memorize-quran",
     title: "How Long Does It Take to Memorize the Quran? — Complete 2026 Guide",
     description:
-      "How long does it take to memorize the Quran? Real timelines by age, sessions/week & method. Kids: 2–4 years. Adults: 3–7 years. Full Hifz breakdown with Sabaq-Sabqi-Manzil system.",
+      "How long does it take to memorize the Quran? Typical Hifz timelines by age, lessons per week and method, with the Sabaq–Sabqi–Manzil revision system.",
     category: "Hifz & Memorization",
     date: "2026-07-01",
     updatedAt: "2026-11-03",
@@ -1126,7 +1126,7 @@ export const blogPosts: BlogPost[] = [
     slug: "new-muslim-guide-to-reading-quran",
     title: "New Muslim? How to Start Reading the Quran — Step-by-Step Revert Guide",
     description:
-      "A complete Quran guide for new Muslims and reverts: where to start reading, English translations, learning Arabic letters, your first surahs, salah basics, and patient 1-on-1 teachers for converts. 3 free trial sessions.",
+      "New Muslim and want to read the Quran? Where to start, which English translation, learning the Arabic letters, your first surahs and salah basics.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1143,9 +1143,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "online-quran-classes-usa-kids-guide",
-    title: "Online Quran Classes for Kids in the USA — Parent Guide, Timings & Cost (2026)",
+    title: "Online Quran Classes for Kids in the USA — Timings & Cost",
     description:
-      "Online Quran classes for kids in the USA: after-school EST/CST/PST schedules, certified male & female tutors, cost per month, safety checklist for American Muslim parents, and 3 free 30-minute trial sessions.",
+      "Online Quran classes for kids in the USA: after-school EST, CST and PST slots, male and female tutors, monthly cost, a safety checklist and 3 free trials.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1164,7 +1164,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-to-choose-online-quran-teacher",
     title: "How to Choose an Online Quran Teacher — 12-Point Checklist & Red Flags",
     description:
-      "Choosing an online Quran teacher? Use this 12-point checklist: Ijazah certification, trial class tests, Tajweed accuracy, safety rules for kids, pricing traps and red flags. Compare academies before you pay.",
+      "How to choose an online Quran teacher: a 12-point checklist — Ijazah, trial class tests, Tajweed accuracy, child safety, pricing traps and red flags.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1181,9 +1181,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "finish-quran-in-ramadan-30-day-plan",
-    title: "How to Finish the Quran in Ramadan — 30-Day Khatm Reading Plan (Printable)",
+    title: "How to Finish the Quran in Ramadan — 30-Day Khatm Plan",
     description:
-      "Finish the whole Quran in Ramadan with this 30-day Khatm plan: 4 pages after each salah, juz-per-day table, busy-schedule and working-parent versions, plus tips to keep going after Ramadan ends.",
+      "Finish the Quran in Ramadan with a 30-day Khatm plan: 4 pages after each salah, a juz-per-day table and versions for busy schedules and working parents.",
     category: "Quran Learning",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1200,9 +1200,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attahiyat-full-arabic-english-tashahhud",
-    title: "Attahiyat Full Dua: Arabic, English, Transliteration + Audio",
+    title: "Attahiyat Full Dua in Arabic & English (Tashahhud + Meaning)",
     description:
-      "Learn Attahiyat full dua in Salah with Arabic text, English translation & audio pronunciation. Download the free PDF tashahhud guide for kids and adults.",
+      "Attahiyat full dua (Tashahhud) in Arabic with English transliteration and meaning, line by line — when to recite it in Salah, common mistakes and tips for kids.",
     category: "Prayer & Worship",
     date: "2026-07-14",
     updatedAt: "2026-11-03",
@@ -1219,9 +1219,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "safar-ki-dua-travel-dua-arabic-english",
-    title: "Safar Ki Dua — Arabic, English, Transliteration for Travel",
+    title: "Safar Ki Dua in Arabic & English — Travel Dua with Meaning",
     description:
-      "Safar Ki Dua for travel: full Arabic text, English translation, transliteration & audio. Learn plane & car travel Sunnahs with our free printable PDF.",
+      "Safar ki dua (travel dua) in Arabic with English transliteration and meaning — Subhanalladhi sakhkhara lana hadha — for car and plane trips, plus Sunnah tips.",
     category: "Dhikr & Duas",
     date: "2026-07-14",
     updatedAt: "2026-11-03",
@@ -1238,9 +1238,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "inna-lillahi-wa-inna-ilayhi-rajiun-meaning",
-    title: "Inna Lillahi Wa Inna Ilayhi Rajiun — Meaning, When to Say It & Reply to Condolences",
+    title: "Inna Lillahi Wa Inna Ilayhi Rajiun Meaning — When to Say It",
     description:
-      "Inna lillahi wa inna ilayhi rajiun (إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ) means 'Indeed we belong to Allah, and to Him we return' — Quran 2:156. Full meaning, when to say it, how to reply, and the dua of Umm Salamah for loss.",
+      "Inna lillahi wa inna ilayhi rajiun means 'Indeed we belong to Allah, and to Him we return' (Quran 2:156). When to say it, how to reply and the dua for loss.",
     category: "Islamic Knowledge",
     date: "2026-07-14",
     updatedAt: "2026-11-03",
@@ -1257,9 +1257,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-before-and-after-eating",
-    title: "Dua Before & After Eating — Arabic, English + What If You Forget (Bismillah)",
+    title: "Dua Before & After Eating — Arabic, English & If You Forget",
     description:
-      "Dua before eating (Bismillah), the dua if you forget (Bismillahi awwalahu wa akhirahu), and dua after eating (Alhamdulillahilladhi at'amana) — full Arabic, transliteration, English meaning, Sunnah eating etiquettes, and how to teach kids.",
+      "Dua before eating (Bismillah), if you forget (Bismillahi awwalahu wa akhirahu) and after eating — in Arabic, transliteration and English, with Sunnah manners.",
     category: "Dhikr & Duas",
     date: "2026-07-14",
     updatedAt: "2026-07-14",
@@ -1276,9 +1276,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "islamic-months-names-in-order",
-    title: "12 Islamic Months in Order — Names, Meanings & Important Dates (Hijri Calendar)",
+    title: "12 Islamic Months in Order — Names, Meanings & Key Dates",
     description:
-      "All 12 Islamic months in order — Muharram to Dhul Hijjah — with correct Arabic names, meanings, the four sacred months, and key dates: Ramadan, both Eids, Ashura, Hajj and more. Complete Hijri calendar guide.",
+      "All 12 Islamic months in order, Muharram to Dhul Hijjah, with Arabic names, meanings, the four sacred months and key dates like Ramadan, Eid, Ashura and Hajj.",
     category: "Islamic Knowledge",
     date: "2026-07-14",
     updatedAt: "2026-11-03",
@@ -1295,9 +1295,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-long-does-noorani-qaida-take",
-    title: "How Long Does Noorani Qaida Take for Kids? Realistic Timeline for Parents",
+    title: "How Long Does Noorani Qaida Take for Kids? Realistic Timeline",
     description:
-      "How long does Noorani Qaida take for kids? Realistic 3–9 month timelines by age, what “finished” should mean, weekly plans, and when to slow down so letters stay correct.",
+      "How long does Noorani Qaida take for kids? Realistic 3–9 month timelines by age, what 'finished' should mean, weekly plans and when to slow down.",
     category: "Parenting & Education",
     date: "2026-07-17",
     updatedAt: "2026-07-17",
@@ -1315,7 +1315,7 @@ export const blogPosts: BlogPost[] = [
     slug: "parents-dont-speak-arabic-child-learn-quran",
     title: "Can My Child Learn Quran If I Don’t Speak Arabic? A Parent Guide",
     description:
-      "Can my child learn Quran if I don’t speak Arabic? Yes. Learn your role vs the tutor’s, how to practise at home without Arabic, common mistakes, and tips for convert parents.",
+      "Can my child learn Quran if I don't speak Arabic? Yes. Your role vs the tutor's, how to practise at home without Arabic, and tips for convert parents.",
     category: "Parenting & Education",
     date: "2026-07-17",
     updatedAt: "2026-07-27",
@@ -1334,7 +1334,7 @@ export const blogPosts: BlogPost[] = [
     slug: "child-wont-sit-for-quran-class",
     title: "My Child Won’t Sit for Quran Class — What Parents Can Do",
     description:
-      "My child won’t sit for Quran class? Shorten lessons, fix timing, use a calm 1-on-1 tutor, and follow a 7-step playbook that rebuilds focus without pressure or guilt.",
+      "Child won't sit for Quran class or refuses to learn? Shorter lessons, better timing, a calm 1-on-1 tutor and a 7-step plan to rebuild focus without pressure.",
     category: "Kids & Parenting",
     date: "2026-07-17",
     updatedAt: "2026-07-17",
@@ -1352,7 +1352,7 @@ export const blogPosts: BlogPost[] = [
     slug: "quran-practice-routine-at-home-kids",
     title: "Quran Practice Routine at Home for Kids — 12-Minute Daily Plan",
     description:
-      "Build a Quran practice routine at home for kids: a 12-minute daily template, weekly school-life rhythm, level-by-level focus, and mistakes that break consistency.",
+      "A Quran practice routine at home for kids: a 12-minute daily plan, a weekly rhythm around school, focus by level and the mistakes that break consistency.",
     category: "Kids & Parenting",
     date: "2026-07-17",
     updatedAt: "2026-07-17",
@@ -1508,9 +1508,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "interactive-noorani-qaida-kids-studio",
-    title: "Interactive Noorani Qaida for Kids — Kids Studio Style Learning Parents Prefer",
+    title: "Interactive Noorani Qaida for Kids Who Get Bored Easily",
     description:
-      "Interactive Noorani Qaida for kids who know letter sounds but get bored by repetition. Pace tips, joined-letter readiness, Kids Studio style practice, and how to book a level-matched free trial.",
+      "Interactive Noorani Qaida for kids who know letter sounds but get bored by repetition: pacing tips, joined-letter readiness and a level-matched free trial.",
     category: "Kids & Parenting",
     date: "2026-07-22",
     updatedAt: "2026-07-27",
@@ -1535,9 +1535,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "islamic-knowledge-for-kids-stories-hadith",
-    title: "Islamic Knowledge for Kids — Stories, Hadith & Character Lessons Ages 3–12",
+    title: "Islamic Knowledge for Kids — Stories, Hadith & Manners (3–12)",
     description:
-      "Islamic knowledge for kids beyond Qaida: who is Allah, prophets’ stories, child-friendly hadith, manners, and how interactive lessons build iman for ages 3–12 without heavy textbooks.",
+      "Islamic knowledge for kids aged 3–12: who is Allah, stories of the prophets, child-friendly hadith and manners — building iman without heavy textbooks.",
     category: "Kids & Parenting",
     date: "2026-07-22",
     updatedAt: "2026-07-22",
@@ -1612,9 +1612,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "muslim-homeschool-quran-curriculum",
-    title: "Muslim Homeschool Quran Curriculum — Weekly Schedule Templates Ages 4–14",
+    title: "Muslim Homeschool Quran Curriculum — Weekly Schedules 4–14",
     description:
-      "Build a Muslim homeschool Quran curriculum: weekly schedules by age, Qaida to Tajweed map, Islamic studies balance, and how live online tutors fit your homeschool week.",
+      "A Muslim homeschool Quran curriculum: weekly schedules by age, a Qaida-to-Tajweed map, Islamic studies balance and where live online tutors fit.",
     category: "Kids & Parenting",
     date: "2026-07-23",
     updatedAt: "2026-07-23",
@@ -1658,9 +1658,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "quran-learning-speech-delay-kids",
-    title: "Quran Learning with Speech Delay — Gentle Arabic Sound Practice for Kids",
+    title: "Teaching Quran to a Child with Speech Delay — Parent Guide",
     description:
-      "Complete parent guide to Quran learning with speech delay: age goals, 4-week sound plan, tutor scripts, home drills, when to pause, and how to book a calm free trial.",
+      "How to teach Quran to a child with speech delay: realistic goals by age, a 4-week Arabic sound plan, home drills, when to pause and how to brief a tutor.",
     category: "Kids & Parenting",
     date: "2026-07-24",
     updatedAt: "2026-07-27",
@@ -1685,9 +1685,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "online-summer-quran-camp-for-kids",
-    title: "Online Summer Quran Camp for Kids — Fun Holiday Learning UK & US Timezones",
+    title: "Online Summer Quran Camp for Kids — UK & US Time Zones",
     description:
-      "Full online summer Quran camp guide: 4-week curriculum map, age tracks, UK/US/AU/Gulf slots, travel weeks, progress checklist, and how to enrol a holiday intensive.",
+      "Online summer Quran camp for kids: a 4-week curriculum, age tracks, UK, US, Australia and Gulf time slots, travel weeks and how to enrol.",
     category: "Kids & Parenting",
     date: "2026-07-24",
     updatedAt: "2026-07-27",
@@ -1714,7 +1714,7 @@ export const blogPosts: BlogPost[] = [
     slug: "child-forgets-arabic-letters",
     title: "My Child Forgets Arabic Letters — Fix It Without Starting Over",
     description:
-      "Complete fix when a child forgets Arabic letters: assessment script, 7- and 14-day recovery plans, lookalike chart, 8 review games, spaced repetition, and tutor briefing notes.",
+      "Child keeps forgetting Arabic letters? A quick check, 7- and 14-day recovery plans, a look-alike letter chart, 8 review games and spaced repetition.",
     category: "Kids & Parenting",
     date: "2026-07-24",
     updatedAt: "2026-07-27",
@@ -1825,9 +1825,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-e-masura-arabic-english",
-    title: "Dua-e-Masura — Arabic, English, Transliteration + Audio",
+    title: "Dua e Masura in Arabic & English — Full Text with Meaning",
     description:
-      "Full Dua-e-Masura in Salah: line-by-line Arabic, transliteration, English meaning & audio. Learn when to recite it after Tashahhud. Free PDF download.",
+      "Dua e Masura full text in Arabic with English transliteration and meaning, line by line. When to recite it in Salah — after Attahiyat and Durood, before Salam.",
     category: "Dhikr & Duas",
     date: "2026-07-27",
     updatedAt: "2026-11-03",
@@ -1932,7 +1932,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ijazah-in-quran-teaching",
     title: "What Is Ijazah in Quran Teaching? — Meaning & How to Verify",
     description:
-      "What is Ijazah in Quran teaching? Clear meaning, Ijazah vs Al-Azhar claims, what to ask before enrolment, and how to verify a tutor without falling for marketing slogans.",
+      "What is Ijazah in Quran teaching? What it means, Ijazah vs Al-Azhar claims, questions to ask before enrolling and how to verify a tutor's Ijazah.",
     category: "Online Learning",
     date: "2026-07-24",
     updatedAt: "2026-07-24",
@@ -1952,7 +1952,7 @@ export const blogPosts: BlogPost[] = [
     slug: "is-online-quran-learning-as-effective-as-in-person",
     title: "Is Online Quran Learning as Effective as In-Person? Honest Guide",
     description:
-      "Is online Quran learning as effective as in-person? Compare live 1-to-1 online vs local classes for correction, schedule, cost, safeguarding, and how to test fit with a free trial.",
+      "Is online Quran learning as effective as in-person? Live 1-to-1 online vs local classes compared on correction, schedule, cost and safety.",
     category: "Online Learning",
     date: "2026-07-24",
     updatedAt: "2026-07-24",
@@ -1971,7 +1971,7 @@ export const blogPosts: BlogPost[] = [
     slug: "difference-between-hifz-and-tajweed-classes",
     title: "Difference Between Hifz and Tajweed Classes — Which First?",
     description:
-      "Difference between Hifz and Tajweed classes: goals, weekly practice, who should start where, and how many lessons per week to plan — without fake completion promises.",
+      "Hifz vs Tajweed classes: the difference in goals and weekly practice, which to start first, and how many lessons per week to plan.",
     category: "Online Learning",
     date: "2026-07-24",
     updatedAt: "2026-07-24",
@@ -1991,7 +1991,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-to-teach-quran-when-theres-no-mosque-nearby",
     title: "How to Teach Quran When There's No Mosque Nearby",
     description:
-      "Practical plan for teaching Quran when no mosque is nearby: home routines, free Interactive Noorani Qaida practice, online tutors, and NZ/Ireland starting points.",
+      "How to teach your child Quran with no mosque nearby: home routines, free interactive Noorani Qaida practice and live online tutors.",
     category: "Kids & Parenting",
     date: "2026-07-28",
     updatedAt: "2026-07-28",
@@ -2011,7 +2011,7 @@ export const blogPosts: BlogPost[] = [
     slug: "raising-muslim-child-in-non-muslim-country",
     title: "Raising a Muslim Child in a Non-Muslim Country",
     description:
-      "Identity, community, and faith habits for raising a Muslim child in a non-Muslim country — distinct from literacy-only guides, with soft next steps for families.",
+      "Raising a Muslim child in a non-Muslim country: building identity, finding community and keeping faith habits strong at home.",
     category: "Kids & Parenting",
     date: "2026-07-28",
     updatedAt: "2026-07-28",
@@ -2031,7 +2031,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-classes-for-muslim-families-abroad",
     title: "Online Quran Classes for Muslim Families Abroad",
     description:
-      "Online Quran classes for Muslim families abroad: timezone matching, English instruction preferences, NZ and Ireland hubs, pricing clarity, and a free trial path.",
+      "Online Quran classes for Muslim families living abroad: tutors matched to your time zone, lessons in English, clear pricing and 3 free trial sessions.",
     category: "Kids & Parenting",
     date: "2026-07-28",
     updatedAt: "2026-07-28",
@@ -2297,7 +2297,7 @@ export const blogPosts: BlogPost[] = [
     slug: "dua-for-rizq-arabic-english",
     title: "Dua for Rizq — Arabic, English & Powerful Duas for Provision",
     description:
-      "Best dua for rizq in Islam: prophetic morning dua, Quran 2:201 and 65:2–3, Arabic, transliteration, English meaning, when to recite, and etiquette for lawful provision.",
+      "Best dua for rizq in Islam: the prophetic morning dua and Quran 2:201 and 65:2–3, in Arabic with transliteration and English meaning, and when to recite.",
     category: "Dhikr & Duas",
     date: "2026-07-30",
     updatedAt: "2026-07-30",
@@ -2364,7 +2364,7 @@ export const blogPosts: BlogPost[] = [
     slug: "sibling-online-quran-classes-scheduling",
     title: "Sibling Online Quran Classes — Schedule, Discounts & Same-Tutor Tips",
     description:
-      "Sibling online Quran classes: separate vs shared lessons, published family discounts, same-tutor decisions, back-to-back buffers, and how to book two kids cleanly.",
+      "Online Quran classes for siblings: separate vs shared lessons, family discounts of 15–25%, one tutor or two, and scheduling back-to-back classes.",
     category: "Kids & Parenting",
     date: "2026-08-02",
     updatedAt: "2026-08-02",
@@ -2406,7 +2406,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-classes-for-teenagers",
     title: "Online Quran Classes for Teenagers — Fluency, Tajweed or Light Hifz",
     description:
-      "Online Quran classes for teenagers: what to learn first after a pause, lesson length, dignity-first restart tips, female-tutor preferences, and realistic 90-day goals.",
+      "Online Quran classes for teenagers: what to learn after a long break, lesson length, restarting without embarrassment, female tutors and 90-day goals.",
     category: "Kids & Parenting",
     date: "2026-08-02",
     updatedAt: "2026-08-02",
@@ -2427,7 +2427,7 @@ export const blogPosts: BlogPost[] = [
     slug: "keeping-quran-classes-during-exams-and-holidays",
     title: "Keeping Quran Classes During Exams & School Holidays",
     description:
-      "Keeping Quran classes during exams and holidays: when to reduce vs pause, make-up questions, holiday maintenance vs intensives, and how to restart after a long break.",
+      "Quran classes during exams and school holidays: when to reduce or pause, holiday revision vs intensives, and how to restart after a long break.",
     category: "Kids & Parenting",
     date: "2026-08-02",
     updatedAt: "2026-08-02",
@@ -2446,7 +2446,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "after-school-quran-classes-for-gulf-families",
-    title: "After-School Quran Classes for Gulf Families — UAE & Qatar Parent Guide",
+    title: "After-School Quran Classes in the UAE & Qatar — Parent Guide",
     description:
       "After-school Quran classes for Gulf families: GST evening windows, online-only clarity, travel weeks, USD-to-AED/QAR budgeting, and how to request a trial.",
     category: "Kids & Parenting",
@@ -2469,7 +2469,7 @@ export const blogPosts: BlogPost[] = [
     slug: "dua-for-children-arabic-english",
     title: "Dua for Children — Arabic, English & Protection Duas Parents Teach",
     description:
-      "Dua for children in Islam: prophetic protection dua (Bukhari), Quranic duas for righteous offspring, Arabic, transliteration, English, and how parents teach them correctly.",
+      "Dua for children in Islam: the prophetic protection dua (Bukhari) and Quran duas for righteous children, in Arabic, transliteration and English.",
     category: "Dhikr & Duas",
     date: "2026-08-02",
     updatedAt: "2026-08-02",
@@ -2491,7 +2491,7 @@ export const blogPosts: BlogPost[] = [
     slug: "dua-for-sick-person-arabic-english",
     title: "Dua for Sick Person — Arabic, English & Prophetic Shifa Duas",
     description:
-      "Best dua for a sick person in Islam: Allahumma Rabban-naas shifa dua, pain dua, visiting the sick, Quran for ruqyah, Arabic, transliteration, and English meaning.",
+      "Dua for a sick person in Islam: the Allahumma Rabban-nas shifa dua, a dua for pain and what to say when visiting the sick — in Arabic and English.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
     updatedAt: "2026-11-03",
@@ -2553,9 +2553,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "barakallah-meaning",
-    title: "Barakallah Meaning in English + Correct Reply (With Arabic)",
+    title: "Barakallah Meaning in English & Reply: Wa Feek or Wa Feeki?",
     description:
-      "Barakallah meaning in English & correct reply table (Wa Feek vs Wa Feeki). Includes Arabic text, transliteration, audio help & printable free PDF guide.",
+      "Barakallah (بارك الله) means 'May Allah bless'. How to reply to a man or woman (Wa feek, Wa feeki), Barakallahu feek explained, with Arabic and examples.",
     category: "Dhikr & Duas",
     date: "2026-08-03",
     updatedAt: "2026-11-03",
@@ -2616,9 +2616,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-is-wazifa-in-islam",
-    title: "What Is Wazifa in Islam? Meaning, Rules & Common Misuse",
+    title: "Wazifa Meaning in Islam — What Is a Wazifa? Authentic Guide",
     description:
-      "What is Wazifa in Islam? Authentic meaning, Sunnah adhkar rules & common misuse. Learn when to recite daily wazaif and download our free PDF checklist.",
+      "Wazifa meaning: a regular daily dhikr or dua. What counts as an authentic wazifa, Sunnah adhkar to use, fake 'wazifa' red flags and a simple 7-day start.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-10-12",
@@ -2640,7 +2640,7 @@ export const blogPosts: BlogPost[] = [
     slug: "adhkar-after-salah-arabic-english",
     title: "Adhkar After Salah — Arabic, English & Sunnah Routine",
     description:
-      "Adhkar after salah: Astaghfirullah, Allahumma anta as-salam, Subhanallah/Alhamdulillah/Allahu Akbar 33, La ilaha completion, Ayatul Kursi, Mu‘awwidhat, full routine card.",
+      "Adhkar after salah in order: Astaghfirullah, Allahumma anta as-salam, Subhanallah, Alhamdulillah and Allahu Akbar 33 times, Ayatul Kursi and the Quls.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-08-04",
@@ -2661,7 +2661,7 @@ export const blogPosts: BlogPost[] = [
     slug: "hasbunallahu-wa-nimal-wakeel-meaning",
     title: "Hasbunallahu Wa Ni'mal Wakeel Meaning — Arabic & When to Recite",
     description:
-      "Full meaning of Hasbunallahu wa ni'mal wakeel: Arabic text, correct pronunciation, prophetic context in times of hardship, and daily spiritual benefits.",
+      "Hasbunallahu wa ni'mal wakeel means 'Allah is enough for us, and He is the best disposer of affairs'. Arabic, Quran 3:173 context and when to say it.",
     category: "Dhikr & Duas",
     date: "2026-08-04",
     updatedAt: "2026-11-03",
@@ -2764,7 +2764,7 @@ export const blogPosts: BlogPost[] = [
     slug: "quran-homework-kids-wont-practice",
     title: "Quran Homework Kids Won't Do — Calm Practice Plan",
     description:
-      "Quran homework kids won't do? Diagnose refusal vs overload, shrink tasks to five minutes, fix timing, and know when a patient online tutor helps — no shame tactics.",
+      "Child won't do Quran homework? Tell refusal from overload, shrink practice to five minutes, fix the timing, and know when a patient tutor helps.",
     category: "Online Quran Classes",
     date: "2026-08-05",
     updatedAt: "2026-08-05",
@@ -2785,7 +2785,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-to-know-if-online-quran-tutor-is-good",
     title: "How to Know If Your Online Quran Tutor Is Good",
     description:
-      "How to know if your Quran tutor is good: lesson checklist, 4–8 week signs, home echo test, red flags, and when to rematch — evaluation during lessons, not just hiring.",
+      "How to know if your online Quran tutor is good: a lesson checklist, signs to expect in 4–8 weeks, a home echo test, red flags and when to switch.",
     category: "Online Quran Classes",
     date: "2026-08-05",
     updatedAt: "2026-08-05",
@@ -2806,7 +2806,7 @@ export const blogPosts: BlogPost[] = [
     slug: "adult-embarrassed-to-learn-quran-beginner",
     title: "Embarrassed to Learn Quran as an Adult? Start Here",
     description:
-      "Embarrassed to learn Quran as an adult? Private one-to-one online lessons, shame diagnosis, dignified first steps, and a no-judgment trial — never too late to start.",
+      "Embarrassed to learn Quran as an adult? Start privately with one-to-one online lessons, simple first steps and a no-judgement free trial.",
     category: "Online Quran Classes",
     date: "2026-08-05",
     updatedAt: "2026-08-05",
@@ -2827,7 +2827,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-trial-what-to-expect",
     title: "Online Quran Trial: What to Expect (Honest Guide)",
     description:
-      "What to expect in an online Quran trial: minute-by-minute walkthrough, prep checklist, parent vs adult differences, red flags, and honest next steps — no credit card.",
+      "What to expect in a free online Quran trial: a minute-by-minute walkthrough, a prep checklist, kids vs adults, red flags and next steps.",
     category: "Online Quran Classes",
     date: "2026-08-05",
     updatedAt: "2026-08-05",
@@ -2848,7 +2848,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-long-until-child-reads-quran",
     title: "How Long Until a Child Can Read Quran?",
     description:
-      "How long until a child can read Quran? Honest Qaida-to-Quran ranges by age and starting point — no fixed promises — plus milestones, home habits, and placement trial.",
+      "How long until a child can read the Quran? Honest Qaida-to-Quran timelines by age and starting point, with milestones and home habits that help.",
     category: "Online Quran Classes",
     date: "2026-08-05",
     updatedAt: "2026-08-05",
@@ -2869,7 +2869,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-classes-canada-for-kids",
     title: "Online Quran Classes Canada for Kids — Time Zones & Free Trial",
     description:
-      "Online Quran classes Canada for kids: ET/CT/MT/PT scheduling, after-school routines, Toronto context, female tutor requests, USD→CAD tips, and 3 free 30-minute trial sessions. Online only.",
+      "Online Quran classes for kids in Canada: after-school slots in ET, CT, MT and PT, female tutors on request, CAD cost guide and 3 free trial sessions.",
     category: "Kids & Parenting",
     date: "2026-08-14",
     updatedAt: "2026-08-14",
@@ -2891,7 +2891,7 @@ export const blogPosts: BlogPost[] = [
     slug: "quran-classes-for-adults-in-singapore",
     title: "Quran Classes for Adults in Singapore — SGT Online Guide",
     description:
-      "Quran classes for adults in Singapore: discreet SGT evening slots, beginner-honest placement, female tutor requests, USD→SGD budgeting, and a free trial. Online only — not a campus.",
+      "Online Quran classes for adults in Singapore: private SGT evening slots, beginner-friendly placement, female tutors on request and a free trial.",
     category: "Quran Learning",
     date: "2026-08-14",
     updatedAt: "2026-08-14",
@@ -2912,7 +2912,7 @@ export const blogPosts: BlogPost[] = [
     slug: "online-quran-classes-new-zealand-for-kids",
     title: "Online Quran Classes New Zealand for Kids — NZST Guide",
     description:
-      "Online Quran classes New Zealand for kids: NZST/NZDT matching, Auckland & smaller-town context, female tutors on request, free trial. Online only — no NZ campus.",
+      "Online Quran classes for kids in New Zealand: tutors matched to NZST/NZDT, for Auckland and smaller towns, female tutors on request and a free trial.",
     category: "Kids & Parenting",
     date: "2026-08-14",
     updatedAt: "2026-08-14",
@@ -2933,7 +2933,7 @@ export const blogPosts: BlogPost[] = [
     slug: "after-school-quran-classes-australia-for-kids",
     title: "After-School Quran Classes Australia for Kids — AEST Guide",
     description:
-      "After-school Quran classes Australia for kids: AEST/AEDT/ACST/AWST scheduling, Sydney & Melbourne online guides, course fit, free trial. Online only — no Australian campus.",
+      "After-school online Quran classes for kids in Australia: slots in AEST, ACST and AWST, for Sydney, Melbourne and beyond, with a free trial.",
     category: "Kids & Parenting",
     date: "2026-08-14",
     updatedAt: "2026-08-14",
@@ -2954,7 +2954,7 @@ export const blogPosts: BlogPost[] = [
     slug: "female-quran-teacher-online-canada",
     title: "Female Quran Teacher Online Canada — Tutor Requests & Trial",
     description:
-      "Request a female Quran teacher online in Canada for daughters or sisters. Live 1-to-1 classes, provincial time-zone matching, free 30-minute trial. Online only.",
+      "Female Quran teacher online in Canada for daughters or sisters: live 1-to-1 classes matched to your province's time zone, with 3 free trial sessions.",
     category: "Quran Learning",
     date: "2026-08-14",
     updatedAt: "2026-08-14",

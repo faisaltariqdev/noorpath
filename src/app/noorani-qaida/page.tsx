@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     absolute: "Interactive Noorani Qaida for Kids — Letters & Games | NoorPath",
   },
   description:
-    "Explore an interactive 11-module Noorani Qaida for ages 3–12: Arabic letters, Harakaat, pronunciation guidance, tracing, games, rewards, parent tips and teacher support.",
+    "Free interactive Noorani Qaida for kids aged 3–12: 11 modules of Arabic letters, Harakaat, pronunciation, tracing and games, with tips for parents.",
   keywords: [
     "interactive Noorani Qaida",
     "Interactive Noorani Qaida online",

@@ -336,7 +336,7 @@ export const cityGuidesUkSecondary: Record<string, CityGuideContent> = {
     country: 'United Kingdom',
     title: 'Online Quran Classes in Glasgow: Remote Study Guide',
     description:
-      'A practical guide to remote Quran tuition for Glasgow households, covering Scottish school-term routines in general terms, course and tutor selection, trials, safeguarding, weather, GMT/BST scheduling, progress and USD fee comparisons.',
+      'Online Quran classes for Glasgow families: live 1-on-1 tutors, after-school and weekend slots in GMT/BST, female tutors available and 3 free trial sessions.',
     reviewedDate: '15 July 2026',
     sections: [
       {

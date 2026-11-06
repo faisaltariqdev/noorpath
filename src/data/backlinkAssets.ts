@@ -138,7 +138,7 @@ export const backlinkAssets: BacklinkAsset[] = [
     slug: "muslim-population-statistics-uk-usa",
     title: "Muslim Population UK & USA 2026 — Latest Census Data",
     description:
-      "Muslim population in UK & USA 2026 data: verified UK Census & Pew Research stats. View demographic charts, state breakdowns and download free PDF data.",
+      "Muslim population in the UK and USA: latest UK Census and Pew Research figures, demographic charts, a state-by-state breakdown and a free CSV dataset.",
     category: CATEGORY,
     date: DATE,
     updatedAt: "2026-11-03",
@@ -267,7 +267,7 @@ export const backlinkAssets: BacklinkAsset[] = [
   },
   {
     slug: "online-quran-class-setup",
-    title: "Online Quran Class Setup",
+    title: "Online Quran Class Setup — Device, Audio & Room Checklist",
     description:
       "Prepare a reliable online Quran class setup with practical guidance for devices, audio, lighting, materials, privacy and routines.",
     category: CATEGORY,

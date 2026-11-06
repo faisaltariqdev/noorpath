@@ -174,7 +174,7 @@ export const cityGuidesUsSecondary: Record<string, CityGuideContent> = {
     country: 'United States',
     title: 'Online Quran Classes in Los Angeles: A Practical Family Guide',
     description:
-      'Commercial guidance for Los Angeles families evaluating remote Quran lessons, Pacific Time scheduling, broad-metro routines, course placement, tutor matching, USD costs, safety, and progress.',
+      'Online Quran classes for Los Angeles families: live 1-on-1 tutors in Pacific Time, Noorani Qaida to Hifz, female tutors available, 3 free trial sessions.',
     reviewedDate: 'July 15, 2026',
     sections: [
       {

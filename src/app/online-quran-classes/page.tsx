@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     absolute: "Online Quran Classes — Live 1-on-1 Lessons | NoorPath",
   },
   description:
-    "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz & Arabic with timezone matching. Free 30-min trial, no card required.",
+    "Live 1-on-1 online Quran classes for kids and adults: Noorani Qaida, Tajweed, Hifz and Arabic in your time zone. 3 free trial sessions, no card.",
   keywords: [
     "online quran classes", "learn quran online", "quran classes online", "online quran academy",
     "quran tutor online", "live quran classes", "quran classes for kids", "online quran teacher",

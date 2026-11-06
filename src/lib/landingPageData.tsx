@@ -17,7 +17,7 @@ const DEFAULT_COMPARE = [
 export const learnQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Learn Quran Online — Live 1-on-1 Classes | NoorPath Academy",
   metaDescription:
-    "Learn Quran online from zero with live tutors. Noorani Qaida, Tajweed, Hifz and Arabic — 1-on-1 online classes for kids and adults. Free 30-min trial, no credit card.",
+    "Learn Quran online from zero with live tutors: Noorani Qaida, Tajweed, Hifz and Arabic, 1-on-1 for kids and adults. 3 free trial sessions, no credit card.",
   keywords: [
     "learn quran online", "learning quran online", "learn the quran online", "quran learning online",
     "how to learn quran online", "learn quran online free trial", "learn quran online for beginners",
@@ -137,7 +137,7 @@ export const onlineQuranAcademy: Omit<KeywordLandingPageProps, "canonicalPath"> 
 export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Learn Tajweed Online — Live 1-on-1 Tutors | NoorPath Academy",
   metaDescription:
-    "Learn Tajweed online through live 1-on-1 classes covering Makharij, Madd, Ghunna and Qalqalah. Free 30-minute trial with no credit card.",
+    "Learn Tajweed online in live 1-on-1 classes covering Makharij, Madd, Ghunna and Qalqalah. 3 free 30-minute trial sessions, no credit card.",
   keywords: [
     "learn tajweed online", "tajweed classes online", "online tajweed course",
     "learn tajweed online free trial", "tajweed lessons online", "quran tajweed online",
@@ -364,7 +364,7 @@ export const studyingQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath">
 export const noMasjidNearby: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Online Quran Classes With No Masjid Nearby | NoorPath Academy",
   metaDescription:
-    "No masjid or Quran teacher near you? NoorPath matches families in Muslim-minority areas with live 1-on-1 online tutors who teach in English — flexible timing in your timezone, female tutors available. Free 30-minute trial, no credit card.",
+    "No masjid or Quran teacher near you? Live 1-on-1 online Quran classes in English, in your timezone, with female tutors available. 3 free trial sessions.",
   keywords: [
     "online quran classes no masjid nearby",
     "quran classes no mosque near me",
@@ -614,9 +614,9 @@ export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> 
  * value claimed is a patient one-to-one teacher who hears and corrects.
  */
 export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Learn Quran as a Revert — Private 1-on-1 Lessons From the Alphabet | NoorPath",
+  metaTitle: "Learn Quran as a Revert — Private 1-on-1 Lessons | NoorPath",
   metaDescription:
-    "New Muslim and can't read Quran yet? Learn privately from the Arabic alphabet with a patient English-speaking tutor, one-to-one, at a time that suits you. No Muslim family needed, no judgement. Free 30-minute trial, no credit card.",
+    "New Muslim and can't read the Quran yet? Learn privately from the Arabic alphabet with a patient English-speaking tutor. 3 free trial sessions, no card.",
   keywords: [
     "learn quran as a revert",
     "revert learn to read quran",
@@ -725,7 +725,7 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
 export const specialNeedsQuranClasses: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
   metaTitle: "Special Needs Quran Classes — Autism, ADHD & Dyslexia | NoorPath",
   metaDescription:
-    `Online Quran classes for children with autism, ADHD, dyslexia, speech delay or anxiety: short 1-on-1 lessons, one target at a time, a tutor briefed on your child. ${TRIAL_OFFER}, no credit card.`,
+    "Calm 1-on-1 online Quran classes for kids with autism, ADHD, dyslexia, speech delay or anxiety. Short lessons, one goal at a time. 3 free trial sessions.",
   keywords: [
     "special needs quran classes online",
     "quran classes for special needs child",

@@ -10,7 +10,7 @@ export const revalidate = false;
 export const metadata: Metadata = {
   title: { absolute: "About NoorPath Academy — Online Quran Education for Families" },
   description:
-    `NoorPath Academy is a founder-led online Quran academy offering live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes with ${TRIAL_OFFER}.`,
+    `NoorPath Academy is a founder-led online Quran academy: live 1-to-1 Noorani Qaida, Tajweed, Hifz and Arabic classes, with ${TRIAL_OFFER}.`,
   keywords: [
     "about noorpath academy", "noorpath", "noor path", "noorpath academy",
     "noor path academy", "online quran academy", "online quran tutors", "quran tutor matching",

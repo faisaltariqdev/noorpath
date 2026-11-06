@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "Online Quran Classes with Free Trial — 3 Free Sessions | NoorPath",
   },
   description:
-    "NoorPath Academy: 3 free 30-minute live one-to-one online Quran trial sessions for kids or adults. No credit card; tutor and schedule availability are confirmed.",
+    "Book 3 free 30-minute live 1-to-1 online Quran trial sessions for kids or adults. No credit card — we confirm your tutor and class time before you pay.",
   keywords: [
     "free quran classes online",
     "quran classes free trial no credit card",
