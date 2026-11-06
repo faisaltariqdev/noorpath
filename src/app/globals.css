@@ -92,6 +92,9 @@ textarea {
     font-size: 16px !important;
   }
 }
+/* Checkboxes and radios keep their natural size — the wrapping label is the touch target */
+input[type="checkbox"],
+input[type="radio"] { min-height: unset; }
 /* Override for decorative/inline elements that shouldn't expand */
 .blog-tag, .section-eyebrow, .trust-label { min-height: unset; }
 

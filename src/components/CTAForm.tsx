@@ -253,7 +253,7 @@ export default function CTAForm({
         style={{
           display: "flex",
           alignItems: "flex-start",
-          gap: 8,
+          gap: 10,
           color: compact ? "var(--muted)" : "rgba(255,255,255,.82)",
           fontSize: ".78rem",
           lineHeight: 1.5,
@@ -261,7 +261,20 @@ export default function CTAForm({
           cursor: "pointer",
         }}
       >
-        <input type="checkbox" name="contact_consent" value="Agreed" required style={{ marginTop: 3 }} />
+        <input
+          type="checkbox"
+          name="contact_consent"
+          value="Agreed"
+          required
+          style={{
+            width: 18,
+            height: 18,
+            flexShrink: 0,
+            marginTop: 1,
+            accentColor: compact ? "var(--emerald)" : "var(--gold)",
+            cursor: "pointer",
+          }}
+        />
         <span>
           I agree that NoorPath may contact me about this free trial.{" "}
           <Link href="/privacy-policy" style={{ color: compact ? "var(--emerald)" : "var(--gold-lt)" }}>
