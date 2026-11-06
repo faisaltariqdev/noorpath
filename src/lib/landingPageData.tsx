@@ -723,7 +723,7 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
 };
 
 export const specialNeedsQuranClasses: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Special Needs Quran Classes Online — Autism, ADHD & Dyslexia",
+  metaTitle: "Special Needs Quran Classes — Autism, ADHD & Dyslexia | NoorPath",
   metaDescription:
     `Online Quran classes for children with autism, ADHD, dyslexia, speech delay or anxiety: short 1-on-1 lessons, one target at a time, a tutor briefed on your child. ${TRIAL_OFFER}, no credit card.`,
   keywords: [
