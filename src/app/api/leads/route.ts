@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { leadEmailHtml, leadEmailSubject, leadEmailText, type LeadEmail } from "@/lib/leadEmail";
 
 export const dynamic = "force-dynamic";
 
@@ -46,20 +47,6 @@ function isValidContact(contact: string): boolean {
   return digits.length >= 7 && digits.length <= 15;
 }
 
-type LeadEmail = {
-  name: string;
-  contact: string;
-  country: string;
-  learnerType: string;
-  learnerName: string;
-  learnerAge: string;
-  course: string;
-  preferredTime: string;
-  tutorPreference: string;
-  landingPage: string;
-  referrer: string;
-  formVariant: string;
-};
 
 async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured" | "failed"> {
   const apiKey = process.env.RESEND_API_KEY || "";
@@ -70,23 +57,10 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
   console.log("=== NEW NOORPATH TRIAL LEAD RECEIVED ===");
   console.log(JSON.stringify(lead, null, 2));
 
-  const subject = `Trial request — ${lead.country} — ${lead.name}`;
-  const text = [
-    "New NoorPath trial request",
-    "",
-    `Parent / contact name: ${lead.name}`,
-    `Contact: ${lead.contact}`,
-    `Country: ${lead.country}`,
-    `Learner type: ${lead.learnerType}`,
-    `Learner name: ${lead.learnerName}`,
-    `Learner age: ${lead.learnerAge}`,
-    `Course: ${lead.course || "Free trial class"}`,
-    `Preferred time: ${lead.preferredTime || "Not specified"}`,
-    `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
-    `Form: ${lead.formVariant}`,
-    `Landing page: ${lead.landingPage || "Not provided"}`,
-    `Referrer: ${lead.referrer || "Direct"}`,
-  ].join("\n");
+  const now = new Date();
+  const subject = leadEmailSubject(lead);
+  const text = leadEmailText(lead, now);
+  const html = leadEmailHtml(lead, now);
   const replyTo = lead.contact.includes("@") ? lead.contact : undefined;
 
   // Primary: the domain's own mailbox (Hostinger SMTP). Needs SMTP_USER / SMTP_PASS on the server.
@@ -110,6 +84,7 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
         replyTo,
         subject,
         text,
+        html,
       });
       return "sent";
     } catch (err) {
@@ -132,6 +107,7 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
           reply_to: replyTo,
           subject,
           text,
+          html,
         }),
         signal: AbortSignal.timeout(8_000),
       });
