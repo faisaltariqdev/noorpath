@@ -55,7 +55,7 @@ const supportingResourceLinks: Record<string, string[]> = {
     "quran-practice-routine-at-home-kids",
   ],
   "child-wont-sit-for-quran-class": [
-    "online-quran-classes-for-shy-kids",
+    "quran-classes-for-shy-or-anxious-kids",
     "best-age-to-start-quran-learning",
     "online-quran-classes-for-kids-parent-guide",
   ],
@@ -68,11 +68,6 @@ const supportingResourceLinks: Record<string, string[]> = {
     "arabic-alphabet-for-kids",
     "noorani-qaida-complete-guide",
     "tajweed-rules-complete-guide",
-  ],
-  "online-quran-classes-for-shy-kids": [
-    "child-wont-sit-for-quran-class",
-    "female-quran-teacher-for-kids",
-    "online-quran-classes-for-kids-parent-guide",
   ],
 };
 

@@ -870,6 +870,21 @@ export default function OnlineQuranClassesForKidsPage() {
                 desc: "Short lesson bursts, movement breaks, and how a private 1-on-1 tutor adapts pacing.",
               },
               {
+                href: "/blog/quran-classes-for-autistic-kids",
+                title: "Autism-Friendly Quran Lessons",
+                desc: "How to teach Quran to an autistic child: listening first, short predictable sessions and a calm setup.",
+              },
+              {
+                href: "/blog/quran-for-children-with-dyslexia",
+                title: "Dyslexia & Arabic Letters",
+                desc: "One letter at a time, look-alike letters kept apart, and full harakat for children who find reading hard.",
+              },
+              {
+                href: "/special-needs-quran-classes",
+                title: "Special Needs Quran Classes",
+                desc: "Short private 1-on-1 lessons for autism, ADHD, dyslexia, speech delay or anxiety.",
+              },
+              {
                 href: "/blog/quran-classes-for-shy-or-anxious-kids",
                 title: "Shy or Anxious Reciters",
                 desc: "How private 1-on-1 teaching removes peer pressure and builds gentle recitation confidence.",

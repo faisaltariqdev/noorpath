@@ -155,7 +155,7 @@ export const decisionGuideBlogContent: Record<string, { style: string; content: 
             <li>Learner is shy and freezes in groups — private 1-to-1 helps</li>
             <li>Parents cannot check pronunciation themselves</li>
           </ul>
-          <p>Related: <a href="/blog/is-online-quran-learning-as-effective-as-in-person">is online Quran learning as effective as in-person</a> and <a href="/blog/online-quran-classes-for-shy-kids">online Quran classes for shy kids</a>.</p>
+          <p>Related: <a href="/blog/is-online-quran-learning-as-effective-as-in-person">is online Quran learning as effective as in-person</a> and <a href="/blog/quran-classes-for-shy-or-anxious-kids">online Quran classes for shy kids</a>.</p>
 
           <h2 id="when-recorded">When pre-recorded still has value</h2>
           <ul>
@@ -250,7 +250,7 @@ export const decisionGuideBlogContent: Record<string, { style: string; content: 
             <li>Watch for fatigue in the final minutes (length may be wrong)</li>
             <li>Keep siblings from interrupting the camera frame</li>
           </ul>
-          <p>Safeguarding expectations: <a href="/safeguarding">safeguarding</a>. Shy learners: <a href="/blog/online-quran-classes-for-shy-kids">online Quran classes for shy kids</a>.</p>
+          <p>Safeguarding expectations: <a href="/safeguarding">safeguarding</a>. Shy learners: <a href="/blog/quran-classes-for-shy-or-anxious-kids">online Quran classes for shy kids</a>.</p>
 
           <h2 id="after">After the lesson — 3-minute wrap</h2>
           <ol>

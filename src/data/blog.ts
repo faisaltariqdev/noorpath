@@ -703,7 +703,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dua-for-anxiety-stress-depression",
-    title: "Dua for Anxiety, Stress & Depression — 15 Powerful Duas for Peace of Mind (Arabic + English)",
+    title: "Dua for Anxiety, Stress & Depression — 15 Duas in Arabic & English",
     description: "15 authentic duas for anxiety, stress, depression, overthinking & a broken heart — full Arabic, transliteration, English meaning, Hadith source & when to recite.",
     category: "Dhikr & Duas",
     date: "2026-07-03",
@@ -1385,24 +1385,6 @@ export const blogPosts: BlogPost[] = [
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
-    slug: "online-quran-classes-for-shy-kids",
-    title: "Online Quran Classes for Shy Kids — Private 1-on-1 Parent Guide",
-    description:
-      "Online Quran classes for shy kids: why private 1-on-1 works, a 4-week settling plan, what to tell the tutor, and how to protect confidence at home.",
-    category: "Kids & Parenting",
-    date: "2026-07-17",
-    updatedAt: "2026-07-17",
-    readTime: "9 min",
-    keywords: [
-      "online quran classes for shy kids", "shy child quran class", "quiet child learn quran online",
-      "private quran tutor for shy kids", "quran class anxiety kids", "1 on 1 quran for introverted child",
-      "female tutor shy daughter quran",
-    ],
-    excerpt:
-      "Shy children often freeze in busy halls but open up in a private online room. Here’s how to choose the format, settle in over four weeks, and protect their confidence.",
-    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
-  },
-  {
     slug: "raising-quran-literate-child-living-in-west",
     title: "Raising a Quran-Literate Child While Living in the West",
     description:
@@ -1578,14 +1560,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "quran-classes-for-autistic-kids",
-    title: "Quran Classes for Autistic Kids — Calm 1-to-1 Online Guide for Parents",
+    title: "How to Teach Quran to an Autistic Child — Calm Parent Guide",
     description:
-      "Online Quran classes for autistic kids: sensory-friendly tips, micro-lessons, tutor fit, parent co-regulation, and how to book a calm free trial without overwhelm.",
+      "How to teach Quran to an autistic child: 7 calm steps, sensory-friendly setup, short 1-to-1 lessons, tutor briefing and realistic goals for parents.",
     category: "Kids & Parenting",
     date: "2026-07-23",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-11-06",
     readTime: "12 min",
     keywords: [
+      "how to teach quran to autistic child",
       "quran classes for autistic kids",
       "online quran for autism",
       "autism friendly quran teacher",
@@ -1603,14 +1586,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "quran-classes-for-adhd-kids",
-    title: "Quran Classes for ADHD Kids — Short Sessions That Hold Attention",
+    title: "How to Teach Quran to a Child with ADHD — Short Sessions That Work",
     description:
-      "ADHD-friendly online Quran classes: 15-minute lesson blocks, movement breaks, reward systems, tutor briefing tips, and how to keep progress without shame.",
+      "How to teach Quran to a child with ADHD: 7 steps with 15-minute blocks, movement breaks, varied activities, rewards and tutor teamwork, without shame.",
     category: "Kids & Parenting",
     date: "2026-07-23",
-    updatedAt: "2026-07-27",
+    updatedAt: "2026-11-06",
     readTime: "11 min",
     keywords: [
+      "how to teach quran to child with adhd",
       "quran classes for adhd kids",
       "adhd quran teacher online",
       "short quran lessons adhd",
@@ -1649,6 +1633,27 @@ export const blogPosts: BlogPost[] = [
     ],
     excerpt:
       "A practical Muslim homeschool Quran curriculum with age-banded weekly templates, Qaida-to-reading progression, and how to plug in a live online tutor without burning out.",
+    author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
+  },
+  {
+    slug: "quran-for-children-with-dyslexia",
+    title: "How to Teach Quran to a Child with Dyslexia — Calm Parent Guide",
+    description:
+      "How to teach Quran to a child with dyslexia: 7 steps, one letter at a time, look-alike letters, harakat, multi-sensory practice and realistic pacing.",
+    category: "Kids & Parenting",
+    date: "2026-11-06",
+    updatedAt: "2026-11-06",
+    readTime: "8 min",
+    keywords: [
+      "how to teach quran to child with dyslexia",
+      "quran for dyslexic child",
+      "dyslexia arabic reading kids",
+      "dyslexia noorani qaida",
+      "child mixes up arabic letters",
+      "special needs quran reading",
+    ],
+    excerpt:
+      "Dyslexic children can learn to read Quran with short 1-to-1 lessons, one letter at a time, full harakat and plenty of review, while memorising by ear continues alongside.",
     author: AUTHOR, authorTitle: AUTHOR_TITLE, authorSlug: AUTHOR_SLUG,
   },
   {
@@ -2654,7 +2659,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "hasbunallahu-wa-nimal-wakeel-meaning",
-    title: "Hasbunallahu Wa Ni'mal Wakeel Meaning — Arabic, Word-by-Word & When to Recite (Quran 3:173)",
+    title: "Hasbunallahu Wa Ni'mal Wakeel Meaning — Arabic & When to Recite",
     description:
       "Full meaning of Hasbunallahu wa ni'mal wakeel: Arabic text, correct pronunciation, prophetic context in times of hardship, and daily spiritual benefits.",
     category: "Dhikr & Duas",

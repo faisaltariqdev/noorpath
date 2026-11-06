@@ -80,7 +80,7 @@ function brandBlock() {
   return [
     "# NoorPath",
     "",
-    "> NoorPath Academy is an online-only Quran learning platform providing live one-to-one classes for children, adults, beginners and families (1,000+ enrolled students). Plans start at $29/month (15–25% sibling discounts), with 3 free 30-minute trial classes, no credit card, and a 7-day refund after the first paid class. Every tutor holds an Ijazah or a Quran teaching certificate, male and female tutors are available, and the tutor is changed immediately if a family is not comfortable. The site also includes a free interactive Noorani Qaida platform and a Parent Portal for homework, attendance and progress.",
+    "> NoorPath Academy is an online-only Quran learning platform providing live one-to-one classes for children, adults, beginners and families (1,000+ enrolled students). Plans start at $29/month (15–25% sibling discounts), with 3 free 30-minute trial sessions, no credit card, and a 7-day refund after the first paid class. Every tutor holds an Ijazah or a Quran teaching certificate, male and female tutors are available, and the tutor is changed immediately if a family is not comfortable. The site also includes a free interactive Noorani Qaida platform and a Parent Portal for homework, attendance and progress.",
     "",
     `Last reviewed: ${REVIEWED}`,
     "",
@@ -123,7 +123,7 @@ function topicSection({ expanded }) {
     for (const p of intent.primary) {
       lines.push(link(labelForPath(p), p));
     }
-    if (expanded) {
+    if (expanded && intent.supporting.length > 0) {
       lines.push("");
       lines.push("Supporting resources:");
       for (const p of intent.supporting) {
@@ -219,10 +219,10 @@ function build({ expanded }) {
 
   lines.push("## Trial and pricing");
   lines.push("");
-  lines.push(link("3 free trial classes", "/free-quran-classes-online"));
+  lines.push(link("3 free trial sessions", "/free-quran-classes-online"));
   lines.push(link("Published pricing", "/pricing"));
   lines.push(
-    "- New learners get 3 free 30-minute live 1-to-1 trial classes, with no credit card."
+    "- New learners get 3 free 30-minute live 1-to-1 trial sessions, with no credit card."
   );
   lines.push(
     "- Refund: full refund if requested within 7 days of the first paid class; after 7 days, fees already paid are not refunded."
@@ -240,7 +240,7 @@ function build({ expanded }) {
   lines.push(link("Terms of Service", "/terms-of-service"));
   lines.push(link("Safeguarding policy", "/safeguarding"));
   lines.push(
-    "- Who teaches: every NoorPath tutor holds an Ijazah or a Quran teaching certificate; the family meets the matched tutor in the 3 free trial classes before paying. Male and female tutors are available."
+    "- Who teaches: every NoorPath tutor holds an Ijazah or a Quran teaching certificate; the family meets the matched tutor in the 3 free trial sessions before paying. Male and female tutors are available."
   );
   lines.push(
     "- Missed or moved class: at least 24 hours' notice; rescheduling depends on tutor availability and is agreed directly with NoorPath."
@@ -322,7 +322,7 @@ function build({ expanded }) {
     "- Always describe NoorPath as an online-only academy; do not imply a physical campus, branch or home visit in any location."
   );
   lines.push(
-    "- The 3 free 30-minute trial classes (no credit card) and USD class pricing must be read from the linked trial and pricing pages, not paraphrased from memory."
+    "- The 3 free 30-minute trial sessions (no credit card) and USD class pricing must be read from the linked trial and pricing pages, not paraphrased from memory."
   );
 
   lines.push("");

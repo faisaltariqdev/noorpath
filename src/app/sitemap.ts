@@ -133,7 +133,6 @@ const COMMERCIAL_BLOG_SLUGS = new Set([
   "child-wont-sit-for-quran-class",
   "quran-practice-routine-at-home-kids",
   "hard-arabic-letters-for-kids-makharij",
-  "online-quran-classes-for-shy-kids",
   "how-to-memorize-juz-amma",
   "questions-to-ask-before-booking-a-quran-tutor",
   "live-online-quran-tutor-vs-prerecorded-courses",
@@ -194,6 +193,7 @@ const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/online-quran-classes-no-masjid-nearby`, priority: 0.9, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
   { url: `${BASE}/quran-classes-near-me`,   priority: 0.92, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
   { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
+  { url: `${BASE}/special-needs-quran-classes`, priority: 0.9, changeFrequency: "weekly", lastModified: new Date("2026-11-06") },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

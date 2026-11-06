@@ -721,3 +721,106 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { href: "/quran-classes-near-me", label: "No Class Near You? Online Alternative" },
   ],
 };
+
+export const specialNeedsQuranClasses: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
+  metaTitle: "Special Needs Quran Classes Online — Autism, ADHD & Dyslexia",
+  metaDescription:
+    `Online Quran classes for children with autism, ADHD, dyslexia, speech delay or anxiety: short 1-on-1 lessons, one target at a time, a tutor briefed on your child. ${TRIAL_OFFER}, no credit card.`,
+  keywords: [
+    "special needs quran classes online",
+    "quran classes for special needs child",
+    "sen quran classes",
+    "quran classes for autistic child",
+    "quran classes for adhd child",
+    "quran for dyslexic child",
+    "quran tutor for child with learning difficulties",
+    "online quran for children with additional needs",
+  ],
+  serviceName: "1-on-1 Online Quran Lessons for Children with Additional Needs",
+  serviceDescription:
+    "Private one-to-one online Quran and Noorani Qaida lessons paced for children with autism, ADHD, dyslexia, speech delay or anxiety: short sessions, one target at a time, predictable routine and a tutor briefed by the parent.",
+  audience: "Parents of children with autism, ADHD, dyslexia, speech delay, anxiety or other additional needs",
+  areaServed: [
+    "United Kingdom", "United States", "Canada", "Australia", "New Zealand", "Ireland",
+    "Germany", "France", "Netherlands", "Sweden", "Norway", "Denmark", "Finland", "United Arab Emirates", "Qatar", "Saudi Arabia", "Singapore", "Malaysia",
+  ],
+  whoThisIsFor: [
+    "Your child is autistic and a busy madrasah or group class overwhelms them",
+    "Your child has ADHD and loses focus long before a standard lesson ends",
+    "Your child memorises by ear but struggles to read the letters on the page",
+    "Your child has a speech delay and finds some Arabic sounds hard to make",
+    "Your child is shy or anxious and freezes when asked to recite in front of others",
+    "A previous teacher was impatient, and your child now dreads Quran class",
+  ],
+  h1: "Special Needs Quran Classes Online — Calm, 1-on-1, at Your Child’s Pace",
+  eyebrow: "Autism · ADHD · dyslexia · speech delay · anxiety",
+  heroText:
+    `Short private lessons with <strong style="color:var(--gold-lt)">one target at a time</strong>, the same routine every week, and a tutor you brief about what helps your child. <strong style="color:var(--gold-lt)">${TRIAL_OFFER} — no credit card.</strong>`,
+  sectionTitle: <>Why Standard Quran Classes Often <em className="accent">Don’t Fit</em> — and What Helps</>,
+  sectionSubtitle:
+    "Group classes ask every child to sit for the same length of time, at the same pace, with the same noise around them. Many children with additional needs can learn Quran well — just not in that format.",
+  quickAnswer:
+    `Children with <strong>autism, ADHD, dyslexia or speech delay</strong> usually learn Quran best in <strong>short one-to-one lessons</strong> with focused blocks of about 10–20 minutes, one clear target per session, a predictable routine, multi-sensory practice and plenty of review. NoorPath lessons are private video calls, so the tutor can slow down, repeat and adapt for your child. Our tutors are Quran teachers, not therapists or clinicians — you brief them on what works, and you watch how they teach in the free trial before paying. <a href="/free-quran-classes-online" style="color:var(--emerald);font-weight:700;">Book the free trial →</a>`,
+  seoIntro:
+    'Parents of children with additional needs often tell the same story: the child loves hearing Quran at home but melts down, drifts off or goes silent in class. That is usually a mismatch of format, not of ability. A one-to-one online lesson removes the noise of a classroom, lets the session stop while your child is still calm, and lets the tutor repeat a letter as many times as needed without a queue of other students waiting. Detailed parent guides: <a href="/blog/quran-classes-for-autistic-kids">how to teach Quran to an autistic child</a>, <a href="/blog/quran-classes-for-adhd-kids">how to teach Quran to a child with ADHD</a>, <a href="/blog/quran-for-children-with-dyslexia">how to teach Quran to a child with dyslexia</a> and <a href="/blog/quran-learning-speech-delay-kids">Quran learning with speech delay</a>.',
+  phases: [
+    { phase: "Stage 1", title: "Settle & Listen", duration: "Own pace", desc: "Short calm sessions built around listening, echoing and one or two letter sounds, so your child links Quran time with feeling safe." },
+    { phase: "Stage 2", title: "Letters & Harakat", duration: "Own pace", desc: "Noorani Qaida one step at a time, with look-alike letters separated, visual supports and lots of review." },
+    { phase: "Stage 3", title: "Short Surahs", duration: "Ongoing", desc: "Al-Fatiha and short surahs for salah, by ear and from the page, at whatever pace your child can sustain." },
+  ],
+  steps: [
+    { title: "Tell us about your child", desc: "Age, what they find hard, what calms them, any school or therapy strategies that work, and the time of day they are most settled." },
+    { title: "Meet the tutor in free trial sessions", desc: `${TRIAL_OFFER}. Watch how the tutor paces the lesson and responds to your child before deciding anything.` },
+    { title: "Keep the same slot and routine", desc: "Short sessions at the same calm time each week, with the same tutor and the same lesson order." },
+    { title: "Five minutes at home", desc: "Agree one tiny home task with the tutor. The free interactive Noorani Qaida pages on this site need no account." },
+  ],
+  compareRows: [
+    { method: "1-on-1 online tutor (NoorPath)", verdict: "Paced to your child", note: "Quiet, private, short sessions; the tutor can stop, repeat and adapt without a class waiting" },
+    { method: "Madrasah or masjid group class", verdict: "Community, fixed pace", note: "Valuable for belonging, but noise, long sitting and a shared pace can overwhelm some children" },
+    { method: "Apps and videos alone", verdict: "Practice aid", note: "Helpful for listening and letter recognition; nothing adapts or listens back" },
+    { method: "Specialist SEN tutor", verdict: "Specialist support", note: "Worth seeking if your child needs clinical-level support; NoorPath tutors are Quran teachers, not therapists" },
+  ],
+  features: [
+    { icon: <Clock size={22} />, title: "Short Focus Blocks", desc: `The shortest plan is ${PRICING_PLANS[0].sessionMinutes} minutes, taught as short focused blocks with a break between them, so your child can stay regulated.` },
+    { icon: <UserCheck size={22} />, title: "One Learner, One Tutor", desc: "No classmates, no waiting, no reciting in front of others. The tutor’s attention is on your child the whole time." },
+    { icon: <BookOpen size={22} />, title: "One Target at a Time", desc: "One letter, one harakah or one short ayah per session, reviewed until secure before moving on." },
+    { icon: <Brain size={22} />, title: "Parent-Briefed", desc: "You tell the tutor about triggers, communication style and what helps. Lessons follow that brief." },
+    { icon: <Shield size={22} />, title: "Safeguarding", desc: "Parents can sit in on every lesson. Male and female tutors are available." },
+    { icon: <Award size={22} />, title: "Qualified Quran Teachers", desc: `${TUTOR_FACTS.credentials} We do not claim clinical or SEN qualifications.` },
+  ],
+  faqs: [
+    { q: "Can children with autism, ADHD or dyslexia learn Quran online?", a: "Many can. The format matters more than the label: short one-to-one sessions, one target at a time, a predictable routine and plenty of review usually work better than a long group class. Progress is individual, so NoorPath does not promise a timeline." },
+    { q: "Are your tutors SEN specialists?", a: "No. NoorPath tutors are qualified Quran teachers, not therapists or special-education clinicians. What we offer is the format — short, private, patient lessons — and a tutor who follows your brief. If your child needs clinical-level support, keep that with their school or therapist." },
+    { q: "How long should each lesson be?", a: `Many children with additional needs focus best in blocks of 10–20 minutes. The shortest NoorPath plan is ${PRICING_PLANS[0].sessionMinutes} minutes, so tell us at booking if your child needs a movement or calm-down break inside the lesson.` },
+    { q: "Can I sit in on the lessons?", a: "Yes. Parents are welcome to stay in the room, and many find it helps their child settle in the first weeks." },
+    { q: "Can my child learn by listening if reading is very hard?", a: "Yes. Memorising short surahs by ear can continue alongside slower reading practice, so your child stays connected to the Quran while reading skills develop." },
+    { q: "What does it cost?", a: `Published plans start at $${PRICING_PLANS[0].monthlyPriceUsd} per month for ${PRICING_PLANS[0].sessionsPerMonth} ${PRICING_PLANS[0].sessionMinutes}-minute one-to-one sessions, cancellable with ${CANCELLATION_NOTICE_DAYS} days' notice. ${TRIAL_OFFER} are free with no credit card.` },
+  ],
+  locations: [
+    { href: "/locations/online-quran-classes-uk", label: "🇬🇧 United Kingdom", note: "GMT/BST — after-school & weekend slots" },
+    { href: "/locations/online-quran-classes-usa", label: "🇺🇸 United States", note: "EST to PST" },
+    { href: "/locations/online-quran-classes-canada", label: "🇨🇦 Canada", note: "Provincial timezones" },
+    { href: "/locations/online-quran-classes-australia", label: "🇦🇺 Australia", note: "AEST/AWST" },
+    { href: "/locations/online-quran-classes-uae", label: "🇦🇪 UAE", note: "GST" },
+    { href: "/locations", label: "🌍 All countries", note: "Europe, Gulf, Asia, Africa & more" },
+  ],
+  breadcrumbs: [...BASE_CRUMB, { label: "Special Needs Quran Classes" }],
+  ctaHeadline: <>A Calm Start, <em style={{ color: "var(--gold-lt)" }}>At Your Child’s Pace</em></>,
+  ctaSubtext: "Book free trial sessions, tell us what helps your child, and watch how the tutor teaches before deciding anything.",
+  ctaBullets: [
+    `✓ ${TRIAL_OFFER} — no credit card`,
+    "✓ Short, private one-to-one lessons",
+    "✓ Parents welcome to sit in",
+    "✓ Male and female tutors available",
+  ],
+  relatedLinks: [
+    { href: "/blog/quran-classes-for-autistic-kids", label: "How to Teach Quran to an Autistic Child" },
+    { href: "/blog/quran-classes-for-adhd-kids", label: "How to Teach Quran to a Child with ADHD" },
+    { href: "/blog/quran-for-children-with-dyslexia", label: "How to Teach Quran to a Child with Dyslexia" },
+    { href: "/blog/quran-learning-speech-delay-kids", label: "Quran Learning with Speech Delay" },
+    { href: "/blog/quran-classes-for-shy-or-anxious-kids", label: "Quran Classes for Shy or Anxious Kids" },
+    { href: "/blog/child-wont-sit-for-quran-class", label: "My Child Won’t Sit for Quran Class" },
+    { href: "/online-quran-classes-for-kids", label: "Online Quran Classes for Kids" },
+    { href: "/noorani-qaida", label: "Free Interactive Noorani Qaida" },
+  ],
+};

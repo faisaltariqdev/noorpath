@@ -743,6 +743,7 @@ export default function HomePage() {
                   ["/online-quran-classes-no-masjid-nearby", "No Masjid Nearby? Learn Online"],
                   ["/quran-classes-near-me", "Quran Classes Near Me (Online)"],
                   ["/learn-quran-as-a-revert", "Learn Quran as a Revert"],
+                  ["/special-needs-quran-classes", "Special Needs Quran Classes"],
                   ["/pricing", "Pricing & Plans"],
                   ["/about", "About NoorPath Academy"],
                   ["/founder", "Founder"],

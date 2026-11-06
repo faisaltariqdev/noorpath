@@ -105,6 +105,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/online-quran-classes-for-shy-kids",
+        destination: "/blog/quran-classes-for-shy-or-anxious-kids",
+        permanent: true,
+      },
+      {
         source: "/blog/index.html",
         destination: "/blog",
         permanent: true,

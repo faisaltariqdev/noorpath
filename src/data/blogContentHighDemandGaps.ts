@@ -161,7 +161,7 @@ export const highDemandGapBlogContent: Record<string, { style: string; content: 
             <tr><td><strong>Adults</strong></td><td>30–45 minutes</td><td>Respect work fatigue; consistency &gt; hero sessions</td></tr>
             <tr><td><strong>Intensive Hifz (ready)</strong></td><td>45–60 minutes</td><td>Only if revision capacity exists</td></tr>
           </table>
-          <p>These are planning ranges, not medical prescriptions. If a child melts down at minute 18 every week, shorten before buying a longer package. Related: <a href="/blog/online-quran-classes-for-shy-kids">online Quran classes for shy kids</a>.</p>
+          <p>These are planning ranges, not medical prescriptions. If a child melts down at minute 18 every week, shorten before buying a longer package. Related: <a href="/blog/quran-classes-for-shy-or-anxious-kids">online Quran classes for shy kids</a>.</p>
 
           <h2 id="published">How NoorPath session lengths map to plans</h2>
           <ul>

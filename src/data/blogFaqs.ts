@@ -394,44 +394,6 @@ const rawBlogFaqs: Record<string, BlogFaqSchema> = {
       },
     ],
   },
-  "online-quran-classes-for-shy-kids": {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Are online Quran classes good for shy kids?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Private one-to-one online lessons often suit shy children because there is no classroom audience, a parent can stay nearby, and the tutor can use a gentle pace. Measure progress by comfort and accuracy, not volume on day one.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Should shy kids start Quran in a group to build confidence?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Usually not at the beginning. Confidence grows from safe success. Groups can come later if the family wants social learning.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is it okay if my child barely speaks in the first Quran trial?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. A good tutor can still assess listening, pointing to letters, and comfort. Ask for a second short session before deciding.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can a shy child do Hifz later?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Many Huffaz were quiet children. Build reading trust first; memorisation intensity can wait until the child feels safe with the tutor.",
-        },
-      },
-    ],
-  },
   "raising-quran-literate-child-living-in-west": {
     "@context": "https://schema.org",
     "@type": "FAQPage",

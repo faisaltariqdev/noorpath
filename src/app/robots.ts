@@ -48,8 +48,9 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "KimiBot", allow: "/", disallow: PRIVATE_PATHS },
       { userAgent: "MoonshotBot", allow: "/", disallow: PRIVATE_PATHS },
       { userAgent: "Qwenbot", allow: "/", disallow: PRIVATE_PATHS },
+      // Common Crawl feeds the open datasets many LLMs learn from — allowed so the brand is known to models
+      { userAgent: "CCBot", allow: "/", disallow: PRIVATE_PATHS },
       // ── Aggressive Unattributed Training Scrapers (Disallowed) ──
-      { userAgent: "CCBot", disallow: "/" },
       { userAgent: "Bytespider", disallow: "/" },
       { userAgent: "Diffbot", disallow: "/" },
     ],
@@ -58,6 +59,5 @@ export default function robots(): MetadataRoute.Robots {
       "https://www.noorpath.online/holy-quran/sitemap.xml",
       "https://www.noorpath.online/tools/sitemap.xml",
     ],
-    host: "https://www.noorpath.online",
   };
 }

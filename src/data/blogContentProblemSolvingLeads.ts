@@ -139,7 +139,7 @@ export const problemSolvingLeadsBlogContent: Record<string, { style: string; con
 
           <h2 id="problem">Why kids refuse Quran homework</h2>
           <p>Children resist when the task feels too big, the timing is wrong, or every mistake becomes a lecture. Screens, siblings, and hunger amplify refusal. Some children also associate Quran with shame after being compared to cousins — a common but fixable pattern.</p>
-          <p>Related: <a href="/blog/child-wont-sit-for-quran-class">child won’t sit for class</a> · <a href="/blog/online-quran-classes-for-shy-kids">classes for shy kids</a>.</p>
+          <p>Related: <a href="/blog/child-wont-sit-for-quran-class">child won’t sit for class</a> · <a href="/blog/quran-classes-for-shy-or-anxious-kids">classes for shy kids</a>.</p>
 
           <h2 id="diagnosis">Diagnosis — refusal or overload?</h2>
           <table class="np-table">
@@ -505,7 +505,7 @@ export const problemSolvingLeadsBlogContent: Record<string, { style: string; con
             <p>Each learner needs placement. Sibling discounts apply on paid plans — see <a href="/pricing">pricing</a> and family scheduling: <a href="/blog/sibling-online-quran-classes-scheduling">sibling scheduling</a>.</p>
           </details>
           <details class="faq-acc"><summary>What if my child will not talk in the trial?<span>+</span></summary>
-            <p>Normal for shy kids. A patient tutor uses listening tasks and short wins — see <a href="/blog/online-quran-classes-for-shy-kids">shy kids guide</a>.</p>
+            <p>Normal for shy kids. A patient tutor uses listening tasks and short wins — see <a href="/blog/quran-classes-for-shy-or-anxious-kids">shy kids guide</a>.</p>
           </details>
           <details class="faq-acc"><summary>How soon can regular classes start?<span>+</span></summary>
             <p>Often within days once tutor availability is confirmed after your request and you choose a plan.</p>

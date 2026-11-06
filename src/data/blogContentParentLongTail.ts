@@ -436,62 +436,6 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <details class="faq-acc"><summary>Can apps detect makharij accurately?<span>+</span></summary><p>Apps can support listening and motivation. They should not be treated as final proof that a throat letter is correct. Use a human teacher for judgment calls.</p></details>`,
   },
 
-  "online-quran-classes-for-shy-kids": {
-    style: S,
-    content: `<p>Some children freeze in a busy madrasah hall but blossom in a quiet Zoom room. Parents searching for <strong>online Quran classes for shy kids</strong> want privacy, patience, and a tutor who will not force loud performance before trust exists. Shyness is not a barrier to Quran — the wrong classroom format is.</p>
-
-          <div class="highlight-box">
-            <strong>Quick answer:</strong> Choose private 1-on-1 lessons (not large groups), allow a parent in the room for the first weeks, request a gentle tutor (female tutors are a common preference for daughters), keep sessions short, and measure progress by comfort + accuracy — not how loudly the child recites on day one.
-          </div>
-
-          <h2 id="why-online">Why shy children often prefer online 1-on-1</h2>
-          <ul>
-            <li>No classmates watching mistakes</li>
-            <li>Familiar home seat and parent nearby</li>
-            <li>Tutor can whisper-pace and use nods instead of public correction</li>
-            <li>Camera can start off or show only a book if the academy agrees during settling-in</li>
-            <li>Less sensory overload than a packed classroom</li>
-          </ul>
-
-          <h2 id="settling">A 4-week settling plan for shy learners</h2>
-          <table class="np-table">
-            <tr><th>Week</th><th>Goal</th><th>Parent role</th></tr>
-            <tr><td>1</td><td>Child stays for full short lesson; speaks a little</td><td>Sit beside; no pressure to “perform for relatives”</td></tr>
-            <tr><td>2</td><td>Child greets tutor and repeats letters</td><td>Step slightly back but stay visible</td></tr>
-            <tr><td>3</td><td>Child reads a known line with camera on</td><td>Praise courage, not perfection</td></tr>
-            <tr><td>4</td><td>Child can start class with parent in next room</td><td>Check-in at end for homework only</td></tr>
-          </table>
-
-          <h2 id="tutor-fit">What to request when booking</h2>
-          <ul>
-            <li>“Shy child — needs a patient, soft-spoken tutor”</li>
-            <li>Preferred tutor gender (many families request a <a href="/female-quran-teacher-online">female Quran teacher</a> for daughters)</li>
-            <li>Age and attention notes (e.g. “warms up after 5 minutes”)</li>
-            <li>Short lesson length to start</li>
-            <li>English encouragement phrases the child already knows</li>
-          </ul>
-
-          <h2 id="home">Home habits that protect confidence</h2>
-          <ul>
-            <li>Never force recitation for guests as entertainment</li>
-            <li>Avoid “why can’t you be like your cousin?” comparisons</li>
-            <li>Share one specific win after class (“you said Assalamu Alaikum yourself”)</li>
-            <li>Keep practice private until the child offers to show someone</li>
-          </ul>
-          <p>If refusal is the main issue, also read <a href="/blog/child-wont-sit-for-quran-class">my child won’t sit for Quran class</a>.</p>
-
-          <div class="gold-box">
-            <p><strong>NoorPath for quiet learners:</strong> private 1-on-1 classes, parent-welcome rooms, and tutors briefed for gentle pacing. Book a free trial and write “shy child” in your request.</p>
-            <p style="margin-bottom:0;"><a href="/free-quran-classes-online">Book free trial</a> · <a href="/online-quran-classes-for-kids">Online Quran classes for kids</a> · <a href="/blog/female-quran-teacher-for-kids">Female tutors for kids</a></p>
-          </div>
-
-          <h2 id="faq">FAQs</h2>
-          <details class="faq-acc"><summary>Should shy kids start in a group to “build confidence”?<span>+</span></summary><p>Usually no at the beginning. Confidence grows from safe success. Groups can come later if the family wants social learning.</p></details>
-          <details class="faq-acc"><summary>Is it okay if my child barely speaks in the first trial?<span>+</span></summary><p>Yes. A good tutor still assesses listening, pointing to letters, and comfort. Ask for a second short session before deciding.</p></details>
-          <details class="faq-acc"><summary>Can a shy child do Hifz later?<span>+</span></summary><p>Yes. Many Huffaz were quiet children. Build reading trust first; memorisation intensity can wait until the child feels safe with the tutor.</p></details>
-          <details class="faq-acc"><summary>What if shyness is extreme or linked to anxiety?<span>+</span></summary><p>Go slower, keep lessons very short, and consider professional support if anxiety affects wider life. Quran class should never become another source of dread.</p></details>`,
-  },
-
   "when-child-ready-qaida-to-quran": {
     style: S,
     content: `<p>Parents searching <strong>when is my child ready to move from Noorani Qaida to Quran</strong> usually feel two things at once: pride that the booklet is nearly finished, and fear of opening the mushaf too early. That anxiety is useful. Jumping into full Quran pages before letters and joins are stable is one of the most common reasons children freeze, guess, or quietly dislike reading.</p>
@@ -911,7 +855,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
   "quran-classes-for-autistic-kids": {
     style: S,
-    content: `<p>Parents searching for <strong>Quran classes for autistic kids</strong> are rarely looking for a louder classroom. They want a calm path: short sessions, predictable routines, a patient tutor, and progress that respects how their child processes sound, language, and social demand. This guide explains what autism-friendly online Quran learning can look like — without medical claims, and without pressure to “keep up” with cousins.</p>
+    content: `<p>Parents asking <strong>how to teach Quran to an autistic child</strong> — or searching for <strong>Quran classes for autistic kids</strong> — are rarely looking for a louder classroom. They want a calm path: short sessions, predictable routines, a patient tutor, and progress that respects how their child processes sound, language, and social demand. This guide explains what autism-friendly online Quran learning can look like — without medical claims, and without pressure to “keep up” with cousins.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> Many autistic children learn Quran best in <strong>1-to-1 online sessions</strong> of about <strong>10–20 minutes</strong>, with a quiet setup, visual structure, and a tutor briefed on sensory needs. Goals should be connection and gentle skill — not speed.
@@ -924,9 +868,20 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <div class="stat-pill"><strong>Parent brief</strong><span>Tutor knows needs</span></div>
           </div>
 
+          <h2 id="how-to-teach-autistic-child">How to teach Quran to an autistic child: 7 steps</h2>
+          <ol>
+            <li><strong>Start with listening.</strong> Play one short surah (Al-Fatiha or Al-Ikhlas) at the same calm time each day before asking the child to read or repeat anything.</li>
+            <li><strong>Keep it 1-to-1 and short.</strong> Begin with 10–15 minutes and stop while your child is still regulated, not after they shut down.</li>
+            <li><strong>Use the same routine every time.</strong> Same greeting, same order, same tutor: warm-up, one skill, one win, goodbye.</li>
+            <li><strong>Teach one target at a time.</strong> One letter sound or one short ayah per session, with slow and clear recitation to echo.</li>
+            <li><strong>Make it visual.</strong> Large letters, a picture schedule of the lesson steps, and a visible “done” tick.</li>
+            <li><strong>Lower sensory load.</strong> Quiet room, headphones if they help, soft light, and no pressure for eye contact.</li>
+            <li><strong>Brief the tutor and judge fit in a trial.</strong> Share triggers, communication style and what calms your child, then watch a trial lesson before committing.</li>
+          </ol>
+
           <h2 id="why-standard-classes-fail">Why standard Quran classes often fail autistic learners</h2>
           <p>Traditional group settings can stack hard demands: background noise, unpredictable turns, long sitting, rapid correction, and social performance. Online 1-to-1 removes some of that load — but only if the tutor adapts. A generic “kids class” on Zoom with the same pace as neurotypical peers can still overwhelm.</p>
-          <p>Related parent guides on attention and comfort: <a href="/blog/child-wont-sit-for-quran-class">my child won’t sit for Quran class</a> and <a href="/blog/online-quran-classes-for-shy-kids">online Quran classes for shy kids</a>. For ADHD-specific pacing, see <a href="/blog/quran-classes-for-adhd-kids">Quran classes for ADHD kids</a>.</p>
+          <p>Related parent guides on attention and comfort: <a href="/blog/child-wont-sit-for-quran-class">my child won’t sit for Quran class</a> and <a href="/blog/quran-classes-for-shy-or-anxious-kids">online Quran classes for shy kids</a>. For ADHD-specific pacing, see <a href="/blog/quran-classes-for-adhd-kids">Quran classes for ADHD kids</a>.</p>
 
           <h2 id="what-works">What autism-friendly Quran learning usually includes</h2>
           <ul>
@@ -1053,6 +1008,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
 
           <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>How do I teach Quran to an autistic child at home?<span>+</span></summary><p>Start with listening to one short surah at a fixed calm time, then add 10–15 minute 1-to-1 sessions with one target each (a letter sound or one ayah), the same routine every time, visual supports, and a quiet setting. Stop while your child is still calm and celebrate one small win.</p></details>
           <details class="faq-acc"><summary>Can autistic children learn Quran online?<span>+</span></summary><p>Yes — many do well with 1-to-1 online lessons when sessions are short, predictable, and sensory-aware. Success depends on tutor fit and realistic goals, not on forcing a standard classroom model.</p></details>
           <details class="faq-acc"><summary>How long should a Quran session be for an autistic child?<span>+</span></summary><p>Often 10–20 minutes to start. Some children build to 25 minutes later. Stop while the child is still regulated.</p></details>
           <details class="faq-acc"><summary>Do we need a specialist SEN-qualified tutor?<span>+</span></summary><p>Specialist training helps, but the non-negotiables are patience, flexibility, listening to parents, and refusing shame-based teaching. Brief the tutor clearly either way.</p></details>
@@ -1063,10 +1019,12 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
               <li><a href="/blog/quran-classes-for-adhd-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for ADHD Kids</a></li>
+              <li><a href="/blog/quran-for-children-with-dyslexia" style="color:var(--emerald);font-weight:600;">How to Teach Quran to a Child with Dyslexia</a></li>
+              <li><a href="/special-needs-quran-classes" style="color:var(--emerald);font-weight:600;">Special Needs Quran Classes Online</a></li>
               <li><a href="/blog/muslim-homeschool-quran-curriculum" style="color:var(--emerald);font-weight:600;">Muslim Homeschool Quran Curriculum</a></li>
               <li><a href="/blog/interactive-noorani-qaida-kids-studio" style="color:var(--emerald);font-weight:600;">Interactive Noorani Qaida — Kids Studio</a></li>
               <li><a href="/blog/child-wont-sit-for-quran-class" style="color:var(--emerald);font-weight:600;">My Child Won’t Sit for Quran Class</a></li>
-              <li><a href="/blog/online-quran-classes-for-shy-kids" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Shy Kids</a></li>
+              <li><a href="/blog/quran-classes-for-shy-or-anxious-kids" style="color:var(--emerald);font-weight:600;">Quran Classes for Shy or Anxious Kids</a></li>
               <li><a href="/blog/online-quran-classes-for-kids-parent-guide" style="color:var(--emerald);font-weight:600;">Online Quran Classes for Kids — Parent Guide</a></li>
             </ul>
           </div>`,
@@ -1074,11 +1032,23 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
   "quran-classes-for-adhd-kids": {
     style: S,
-    content: `<p>Parents searching for <strong>Quran classes for ADHD kids</strong> usually already know the pattern: the child starts bright, then drifts, fidgets, argues, or shuts down when lessons feel long or repetitive. The fix is rarely “try harder.” It is better lesson design — shorter blocks, clearer targets, movement, and motivation that protects dignity.</p>
+    content: `<p>Parents asking <strong>how to teach Quran to a child with ADHD</strong> — or searching for <strong>Quran classes for ADHD kids</strong> — usually already know the pattern: the child starts bright, then drifts, fidgets, argues, or shuts down when lessons feel long or repetitive. The fix is rarely “try harder.” It is better lesson design — shorter blocks, clearer targets, movement, and motivation that protects dignity.</p>
 
           <div class="highlight-box">
             <strong>Quick answer:</strong> ADHD-friendly online Quran classes often work best as <strong>15–20 minute</strong> focused 1-to-1 sessions, 3–4 times a week if possible, with a warm-up, one skill target, a movement reset, and a visible win before goodbye.
           </div>
+
+          <h2 id="how-to-teach-adhd-child">How to teach Quran to a child with ADHD: 7 steps</h2>
+          <ol>
+            <li><strong>Pick the right time.</strong> Schedule class when your child has energy — not late at night or straight after a long school day.</li>
+            <li><strong>Keep blocks short.</strong> 15–20 minute 1-to-1 sessions, 3–4 times a week, work better than one long weekly class.</li>
+            <li><strong>One target per block.</strong> One letter group or one ayah, then a quick check and a visible win.</li>
+            <li><strong>Build in movement.</strong> A 30–60 second stand-up or stretch reset halfway, and allow fidget tools or flexible seating.</li>
+            <li><strong>Vary the activity.</strong> Switch between listening, echoing, pointing, tracing and a short game instead of repeating the same line for the whole lesson.</li>
+            <li><strong>Reward progress, not stillness.</strong> Praise effort and specific wins; avoid shame language about fidgeting.</li>
+            <li><strong>Work as a team.</strong> Share what works at school or therapy with the tutor, and agree one 5-minute home practice slot.</li>
+          </ol>
+          <p>Research on this is still small. One 2024 study of the Ummi method with ADHD students in Indonesia found the structured method workable, while noting that concentration was easily disturbed and that audiovisual material and trained teachers were often missing (<a href="https://ejournal.upi.edu/index.php/tarbawy/article/view/69789/28054" target="_blank" rel="noopener">Tarbawy: Indonesian Journal of Islamic Education</a>).</p>
 
           <h2 id="why-attention-drops">Why attention drops in Quran class</h2>
           <ul>
@@ -1214,6 +1184,7 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
 
 
           <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>How do I teach Quran to a child with ADHD?<span>+</span></summary><p>Use short 15–20 minute 1-to-1 sessions at a time your child has energy, with one target per block, a quick movement break, varied activities (listen, echo, point, trace, game) and praise for specific wins. Share what works at school with the tutor and keep home practice to about 5 minutes a day.</p></details>
           <details class="faq-acc"><summary>How long should ADHD Quran classes be?<span>+</span></summary><p>Often 15–20 minutes of focused work. Some children manage 25 with a mid-lesson reset. Longer is not better if attention collapses.</p></details>
           <details class="faq-acc"><summary>Can kids with ADHD do Hifz?<span>+</span></summary><p>Yes, with shorter daily targets, strong review systems, and a tutor who designs for attention — not with shame or marathon sittings.</p></details>
           <details class="faq-acc"><summary>Should we medicate around class times?<span>+</span></summary><p>That is a medical decision for your clinician — not a Quran teacher. Share timing only if it helps the tutor plan energy windows.</p></details>
@@ -2941,5 +2912,76 @@ export const parentLongTailBlogContent: Record<string, { style: string; content:
           <p>Muslim families abroad keep Quran learning alive when the plan respects real clocks, honest language needs, and sustainable budgets. Request a free trial, state your timezone clearly, and protect a small daily echo at home so live lessons compound instead of resetting every week.</p>
           <p>If you are ready this week: open your country location page, skim pricing, and submit the trial form with age, goals, and preferred evenings. Confirmation of a suitable tutor comes after matching — that honesty is part of enterprise-quality enrolment.</p>
 `,
-  }
+  },
+  "quran-for-children-with-dyslexia": {
+    style: S,
+    content: `<p>Parents searching for <strong>how to teach Quran to a child with dyslexia</strong> usually see the same pattern: the child memorises a surah by ear quickly, but freezes, guesses or mixes up letters when asked to read from the page. That gap is not laziness and it is not a lack of iman. It is a reading-processing difference, and Quran reading can be taught around it.</p>
+
+          <div class="highlight-box">
+            <strong>Quick answer:</strong> Children with dyslexia usually learn to read Quran best in <strong>short 1-to-1 lessons</strong> that teach <strong>one letter shape and sound at a time</strong>, use <strong>multi-sensory practice</strong> (see it, say it, trace it), read <strong>with full harakat</strong>, and give much more review than a standard Noorani Qaida pace. Listening and memorising by ear can continue alongside — they are not cheating.
+          </div>
+
+          <h2 id="how-to-teach-dyslexic-child">How to teach Quran to a child with dyslexia: 7 steps</h2>
+          <ol>
+            <li><strong>Keep listening and memorising separate from reading.</strong> Let your child keep learning short surahs by ear so their connection to the Quran does not depend on reading speed.</li>
+            <li><strong>Go one letter at a time.</strong> Introduce a single letter shape and its sound, then practise it until it is secure before adding the next.</li>
+            <li><strong>Separate look-alike letters.</strong> Letters that differ only by dots — ب ت ث, ج ح خ, د ذ, ر ز, س ش — are taught on different days, then contrasted once each is solid.</li>
+            <li><strong>Make it multi-sensory.</strong> See the letter, say the sound, trace it with a finger or in sand, and hear the tutor echo it.</li>
+            <li><strong>Always read with harakat.</strong> Use a clearly vowelled Qaida and Mushaf in a large, clean font with generous spacing.</li>
+            <li><strong>Use a pointer and short lines.</strong> A finger or card under one word at a time cuts down skipping and losing the place.</li>
+            <li><strong>Review more than you think you need.</strong> Start each lesson with yesterday’s letters, and keep sessions to 15–20 minutes so the child ends on a success.</li>
+          </ol>
+
+          <h2 id="why-arabic-is-different">Why Arabic reading feels different for dyslexic children</h2>
+          <p>Arabic letters change shape depending on where they sit in a word, several letters are told apart only by the number or position of dots, and short vowels are written as small marks above or below the letter. Each of those adds load for a child who already finds sound–symbol mapping hard.</p>
+          <p>The good news is that the Quran is printed with full vowel marks. Research with Arabic-speaking children with dyslexia found that vowel marks play a central role in how they read (<a href="https://link.springer.com/10.1007/s11145-016-9713-1" target="_blank" rel="noopener">Schiff &amp; Saiegh-Haddad, <em>Reading and Writing</em></a>), and researchers have also described a vowel-specific form of dyslexia in Arabic (<a href="https://cris.iucc.ac.il/en/publications/types-of-developmental-dyslexia-in-arabic/" target="_blank" rel="noopener">Friedmann &amp; Haddad-Hanna</a>). In practice, that means harakat should be taught explicitly and slowly — not rushed as “the easy part”.</p>
+
+          <h2 id="signs">Signs a reading difficulty may be more than a slow start</h2>
+          <ul>
+            <li>The same letters are confused week after week, especially letters that differ only by dots</li>
+            <li>The child recites fluently from memory but cannot decode a short new word</li>
+            <li>Lines are skipped or the place on the page is lost repeatedly</li>
+            <li>Similar struggles show up with reading in English or the school language</li>
+          </ul>
+          <p>A Quran tutor cannot diagnose dyslexia. If you see these signs, speak to your child’s school or an educational psychologist. A diagnosis does not decide whether your child can read Quran — it helps everyone pace it properly.</p>
+
+          <h2 id="lesson-blueprint">A 15-minute lesson blueprint</h2>
+          <ul>
+            <li><strong>2 min</strong> — review yesterday’s letters with a quick win</li>
+            <li><strong>5 min</strong> — one new letter or one harakah: see, say, trace, echo</li>
+            <li><strong>4 min</strong> — read 3–5 short syllables or words using that letter, with a pointer</li>
+            <li><strong>2 min</strong> — listening: the tutor recites, the child echoes a short ayah by ear</li>
+            <li><strong>2 min</strong> — name today’s win out loud and stop</li>
+          </ul>
+
+          <h2 id="what-to-tell-tutor">What to tell the tutor before a free trial</h2>
+          <ul>
+            <li>Which letters or vowels your child already confuses</li>
+            <li>Whether there is a diagnosis or a school support plan, and what helps there (larger fonts, coloured overlays, extra time)</li>
+            <li>That you want slow, cumulative progress and no reading aloud under time pressure</li>
+            <li>That memorising by ear should continue alongside reading practice</li>
+          </ul>
+          <p>NoorPath lessons are 1-to-1, so the tutor can slow the Qaida down and repeat a lesson as often as your child needs. You can see how the tutor handles this in the free trial before paying. Related guides: <a href="/blog/child-forgets-arabic-letters">child forgets Arabic letters</a>, <a href="/blog/hard-arabic-letters-for-kids-makharij">hard Arabic letters for kids</a> and <a href="/blog/quran-learning-speech-delay-kids">Quran learning with speech delay</a>.</p>
+
+          <h2 id="realistic-expectations">Realistic expectations</h2>
+          <p>Many children with dyslexia take longer than average to finish Noorani Qaida, and that is fine. Fluent, confident reading built slowly lasts longer than a fast finish that leaves the child anxious about opening the Mushaf. Avoid comparing them with siblings or cousins.</p>
+
+          <h2 id="faq">FAQ</h2>
+          <details class="faq-acc"><summary>Can a child with dyslexia learn to read the Quran?<span>+</span></summary><p>Yes. Many children with dyslexia learn to read Quran with short 1-to-1 lessons, one letter at a time, multi-sensory practice and plenty of review. It usually takes longer than average, so pace matters more than speed.</p></details>
+          <details class="faq-acc"><summary>How do I teach Quran to a child with dyslexia?<span>+</span></summary><p>Keep listening and memorising going by ear, teach one letter shape and sound at a time, separate look-alike letters, use see-say-trace practice, always read with harakat in a large clear font, use a pointer, and keep lessons to 15–20 minutes with lots of review.</p></details>
+          <details class="faq-acc"><summary>Is memorising by ear allowed if my child cannot read well yet?<span>+</span></summary><p>Yes. Learning the Quran by listening is how many Muslims have always learned it. It keeps your child connected to the Quran while reading skills catch up.</p></details>
+          <details class="faq-acc"><summary>Which Arabic letters are hardest for dyslexic children?<span>+</span></summary><p>Usually letters that share a shape and differ only by dots, such as ب ت ث, ج ح خ, د ذ, ر ز and س ش, plus the short vowel marks. Teach them on separate days before contrasting them.</p></details>
+          <details class="faq-acc"><summary>Can a Quran teacher diagnose dyslexia?<span>+</span></summary><p>No. A tutor can notice patterns and adapt lessons, but diagnosis comes from your child’s school or an educational psychologist.</p></details>
+
+          <div style="margin-top:48px;border-top:1px solid var(--border);padding-top:32px;">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Related Articles</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+              <li><a href="/blog/child-forgets-arabic-letters" style="color:var(--emerald);font-weight:600;">Child Forgets Arabic Letters</a></li>
+              <li><a href="/blog/quran-learning-speech-delay-kids" style="color:var(--emerald);font-weight:600;">Quran Learning with Speech Delay</a></li>
+              <li><a href="/blog/quran-classes-for-adhd-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to a Child with ADHD</a></li>
+              <li><a href="/blog/quran-classes-for-autistic-kids" style="color:var(--emerald);font-weight:600;">How to Teach Quran to an Autistic Child</a></li>
+              <li><a href="/special-needs-quran-classes" style="color:var(--emerald);font-weight:600;">Special Needs Quran Classes Online</a></li>
+            </ul>
+          </div>`,
+  },
 };

@@ -2,7 +2,7 @@
 
 > NoorPath Academy is an online-only Quran learning platform providing live one-to-one classes for children, adults, beginners and families (1,000+ enrolled students). Plans start at $29/month (15–25% sibling discounts), with 3 free 30-minute trial sessions, no credit card, and a 7-day refund after the first paid class. Every tutor holds an Ijazah or a Quran teaching certificate, male and female tutors are available, and the tutor is changed immediately if a family is not comfortable. The site also includes a free interactive Noorani Qaida platform and a Parent Portal for homework, attendance and progress.
 
-Last reviewed: 2026-10-21
+Last reviewed: 2026-11-06
 
 ## Brand identity
 
@@ -70,11 +70,12 @@ Also useful:
 - [Parent guide to kids Quran classes](https://www.noorpath.online/blog/online-quran-classes-for-kids-parent-guide)
 - [How to teach Quran to kids](https://www.noorpath.online/blog/how-to-teach-quran-to-kids)
 
-### Child won't sit / resists Quran class / ADHD, autistic, shy or anxious kids
+### Child won't sit / resists Quran class / ADHD, autistic, dyslexic, shy or anxious kids / special needs
 
-Parent-facing diagnosis pages for children who refuse Quran class, won't do homework, forget letters, or need ADHD-, autism- or anxiety-aware pacing. The consistent answer is shorter one-to-one lessons, a teacher whose manner suits the child (checked in the free trial), and 5-minute daily echoes at home — not pushing harder. No clinical or outcome claims.
+Parent-facing guides on how to teach Quran to children who refuse class, won't do homework, forget letters, or are autistic, have ADHD, dyslexia, speech delay or anxiety. The consistent answer is short one-to-one lessons with one target at a time, a predictable routine, multi-sensory practice, a teacher whose manner suits the child (checked in the free trial), and 5-minute daily echoes at home — not pushing harder. NoorPath tutors are qualified Quran teachers, not therapists; no clinical or outcome claims.
 
 Primary resources:
+- [Special Needs Quran Classes](https://www.noorpath.online/special-needs-quran-classes)
 - [Quran Classes for Kids](https://www.noorpath.online/online-quran-classes-for-kids)
 
 Also useful:
@@ -95,7 +96,7 @@ Also useful:
 
 ### Learn Quran as a revert / new Muslim / convert
 
-For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; free 30-minute trial; no fluency date promised.
+For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; 3 free 30-minute trial sessions; no fluency date promised.
 
 Primary resources:
 - [Learn Quran as a Revert (New Muslim)](https://www.noorpath.online/learn-quran-as-a-revert)
@@ -375,7 +376,7 @@ Also useful:
 
 ### Nordic online Quran classes (Finland, Denmark, Norway, Sweden)
 
-Live 1-on-1 online Quran classes for Muslim families in Finland (Helsinki, Espoo in EET/EEST) and Denmark (Copenhagen, Aarhus in CET/CEST): flexible after-school and weekend morning windows, English-speaking tutors for bilingual children, female teacher options for daughters, Noorani Qaida, Daily Duas, and a free 30-minute trial.
+Live 1-on-1 online Quran classes for Muslim families in Finland (Helsinki, Espoo in EET/EEST) and Denmark (Copenhagen, Aarhus in CET/CEST): flexible after-school and weekend morning windows, English-speaking tutors for bilingual children, female teacher options for daughters, Noorani Qaida, Daily Duas, and 3 free 30-minute trial sessions.
 
 Primary resources:
 - [Finland](https://www.noorpath.online/locations/online-quran-classes-finland)
@@ -472,6 +473,8 @@ These URLs are the preferred owners for global service and audience questions. C
   Kids-focused online Quran classes.
 - [Quran Classes for Adults](https://www.noorpath.online/online-quran-classes-for-adults)
   Adult online Quran classes.
+- [Special Needs Quran Classes](https://www.noorpath.online/special-needs-quran-classes)
+  Short private 1-to-1 Quran lessons for children with autism, ADHD, dyslexia, speech delay or anxiety. Quran teachers, not therapists.
 - [Learn Quran as a Revert (New Muslim)](https://www.noorpath.online/learn-quran-as-a-revert)
   Private 1-to-1 Quran lessons in English for new Muslims, starting from the Arabic alphabet.
 - [Quran for Beginners](https://www.noorpath.online/online-quran-for-beginners)
@@ -813,12 +816,12 @@ Selected high-value articles. For the fuller guide set, see llms-full.txt. Indiv
 ### Online Quran Learning Guides
 
 - [Benefits of online Quran classes](https://www.noorpath.online/blog/benefits-of-online-quran-classes)
+- [Why online Quran classes suit busy Muslim families (guest post)](https://www.noorpath.online/blog/why-online-quran-classes-are-ideal-for-busy-muslim-families)
 - [Online vs in-person Quran learning](https://www.noorpath.online/blog/is-online-quran-learning-as-effective-as-in-person)
 - [How to choose an online Quran teacher](https://www.noorpath.online/blog/how-to-choose-online-quran-teacher)
 - [Questions before booking a Quran tutor](https://www.noorpath.online/blog/questions-to-ask-before-booking-a-quran-tutor)
 - [Finding a trustworthy online Quran teacher abroad](https://www.noorpath.online/blog/trustworthy-online-quran-teacher-live-abroad)
-- [Live tutor vs pre-recorded courses](https://www.noorpath.online/blog/live-online-quran-tutor-vs-prerecorded-courses)
-- …and 9 more in https://www.noorpath.online/llms-full.txt
+- …and 10 more in https://www.noorpath.online/llms-full.txt
 
 ### Kids Quran Learning Guides
 
@@ -828,7 +831,7 @@ Selected high-value articles. For the fuller guide set, see llms-full.txt. Indiv
 - [What a child should learn first in Quran](https://www.noorpath.online/blog/what-should-my-child-learn-first-in-quran)
 - [When parents do not speak Arabic](https://www.noorpath.online/blog/parents-dont-speak-arabic-child-learn-quran)
 - [Kids Quran practice routine at home](https://www.noorpath.online/blog/quran-practice-routine-at-home-kids)
-- …and 12 more in https://www.noorpath.online/llms-full.txt
+- …and 14 more in https://www.noorpath.online/llms-full.txt
 
 ### Beginner & Adult Learning Guides
 

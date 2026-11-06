@@ -12,7 +12,7 @@
 
 export const BASE = "https://www.noorpath.online";
 
-export const REVIEWED = "2026-10-21";
+export const REVIEWED = "2026-11-06";
 
 /**
  * Semantic topic → resource map for AI answerability.
@@ -48,22 +48,22 @@ export const TOPIC_INTENTS = [
   {
     topic: "Quran classes for kids / children",
     summary:
-      "Online Quran classes for children ages 4–12 ($29–$79/month, 15–25% sibling discounts, 3 free trial classes, certified male and female tutors, parent guidance and practice routines).",
+      "Online Quran classes for children ages 4–12 ($29–$79/month, 15–25% sibling discounts, 3 free trial sessions, certified male and female tutors, parent guidance and practice routines).",
     primary: ["/online-quran-classes-for-kids"],
     supporting: [
       "/blog/online-quran-classes-for-kids-parent-guide",
       "/blog/how-to-teach-quran-to-kids",
       "/blog/what-should-my-child-learn-first-in-quran",
       "/blog/female-quran-teacher-for-kids",
-      "/blog/online-quran-classes-for-shy-kids",
+      "/blog/quran-classes-for-shy-or-anxious-kids",
       "/blog/child-wont-sit-for-quran-class",
     ],
   },
   {
-    topic: "Child won't sit / resists Quran class / ADHD, autistic, shy or anxious kids",
+    topic: "Child won't sit / resists Quran class / ADHD, autistic, dyslexic, shy or anxious kids / special needs",
     summary:
-      "Parent-facing diagnosis pages for children who refuse Quran class, won't do homework, forget letters, or need ADHD-, autism- or anxiety-aware pacing. The consistent answer is shorter one-to-one lessons, a teacher whose manner suits the child (checked in the free trial), and 5-minute daily echoes at home — not pushing harder. No clinical or outcome claims.",
-    primary: ["/online-quran-classes-for-kids"],
+      "Parent-facing guides on how to teach Quran to children who refuse class, won't do homework, forget letters, or are autistic, have ADHD, dyslexia, speech delay or anxiety. The consistent answer is short one-to-one lessons with one target at a time, a predictable routine, multi-sensory practice, a teacher whose manner suits the child (checked in the free trial), and 5-minute daily echoes at home — not pushing harder. NoorPath tutors are qualified Quran teachers, not therapists; no clinical or outcome claims.",
+    primary: ["/special-needs-quran-classes", "/online-quran-classes-for-kids"],
     supporting: [
       "/blog/child-wont-sit-for-quran-class",
       "/blog/quran-homework-kids-wont-practice",
@@ -71,6 +71,8 @@ export const TOPIC_INTENTS = [
       "/blog/quran-classes-for-adhd-kids",
       "/blog/quran-classes-for-shy-or-anxious-kids",
       "/blog/quran-classes-for-autistic-kids",
+      "/blog/quran-for-children-with-dyslexia",
+      "/blog/quran-learning-speech-delay-kids",
     ],
   },
   {
@@ -89,7 +91,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Learn Quran as a revert / new Muslim / convert",
     summary:
-      "For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; free 30-minute trial; no fluency date promised.",
+      "For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; 3 free 30-minute trial sessions; no fluency date promised.",
     primary: ["/learn-quran-as-a-revert"],
     supporting: [
       "/online-quran-for-beginners",
@@ -100,9 +102,16 @@ export const TOPIC_INTENTS = [
     ],
   },
   {
+    topic: "Prices and local currency",
+    summary:
+      "Plans are priced and billed in US dollars: Starter $29/month (4 × 30-minute sessions), Standard $49/month (8 × 45-minute sessions) and Intensive $79/month (16 × 60-minute sessions). Sibling discounts are 15% for 2 siblings, 20% for 3 and 25% for 4+. Country pages also show approximate local-currency amounts converted from USD with European Central Bank reference rates (or the official USD pegs for AED, SAR, QAR and OMR), refreshed daily; the family's bank or card provider sets the actual conversion at billing. The United States, Pakistan, Bangladesh, Nigeria and Kuwait pages show USD only.",
+    primary: ["/pricing"],
+    supporting: [],
+  },
+  {
     topic: "NoorPath policies: missed classes, tutor switch, cancellation, who teaches",
     summary:
-      "Published parent policies: meet the matched tutor in the 3 free trial classes before paying; full refund within 7 days of the first paid class; 24 hours' notice to move a class (subject to tutor availability); the tutor is changed immediately if the family is not comfortable; male and female tutors are available; every tutor holds an Ijazah or a Quran teaching certificate; cancel with 7 days' notice before the next billing date with no fee. Source: Terms of Service. No completion certificate is published.",
+      "Published parent policies: meet the matched tutor in the 3 free trial sessions before paying; full refund within 7 days of the first paid class; 24 hours' notice to move a class (subject to tutor availability); the tutor is changed immediately if the family is not comfortable; male and female tutors are available; every tutor holds an Ijazah or a Quran teaching certificate; cancel with 7 days' notice before the next billing date with no fee. Source: Terms of Service. No completion certificate is published.",
     primary: ["/terms-of-service", "/pricing"],
     supporting: ["/free-quran-classes-online", "/safeguarding", "/online-quran-classes-for-kids"],
   },
@@ -383,7 +392,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Nordic online Quran classes (Finland, Denmark, Norway, Sweden)",
     summary:
-      "Live 1-on-1 online Quran classes for Muslim families in Finland (Helsinki, Espoo in EET/EEST) and Denmark (Copenhagen, Aarhus in CET/CEST): flexible after-school and weekend morning windows, English-speaking tutors for bilingual children, female teacher options for daughters, Noorani Qaida, Daily Duas, and a free 30-minute trial.",
+      "Live 1-on-1 online Quran classes for Muslim families in Finland (Helsinki, Espoo in EET/EEST) and Denmark (Copenhagen, Aarhus in CET/CEST): flexible after-school and weekend morning windows, English-speaking tutors for bilingual children, female teacher options for daughters, Noorani Qaida, Daily Duas, and 3 free 30-minute trial sessions.",
     primary: [
       "/locations/online-quran-classes-finland",
       "/locations/online-quran-classes-denmark",
@@ -589,6 +598,7 @@ export const CORE_SERVICES = [
   { path: "/learn-quran-online", label: "Learn Quran Online", note: "Overview of online Quran learning with NoorPath." },
   { path: "/online-quran-classes-for-kids", label: "Quran Classes for Kids", note: "Kids-focused online Quran classes." },
   { path: "/online-quran-classes-for-adults", label: "Quran Classes for Adults", note: "Adult online Quran classes." },
+  { path: "/special-needs-quran-classes", label: "Special Needs Quran Classes", note: "Short private 1-to-1 Quran lessons for children with autism, ADHD, dyslexia, speech delay or anxiety. Quran teachers, not therapists." },
   { path: "/learn-quran-as-a-revert", label: "Learn Quran as a Revert (New Muslim)", note: "Private 1-to-1 Quran lessons in English for new Muslims, starting from the Arabic alphabet." },
   { path: "/online-quran-for-beginners", label: "Quran for Beginners", note: "Beginner pathway from letters and Qaida toward reading." },
   { path: "/quran-teacher-online", label: "Online Quran Teacher", note: "Matched with a certified online Quran teacher." },
@@ -596,11 +606,12 @@ export const CORE_SERVICES = [
   { path: "/quran-classes-for-sisters", label: "Quran Classes for Sisters", note: "Adult sisters and ladies online Quran classes with certified female tutors." },
   { path: "/one-on-one-quran-classes", label: "One-on-One Quran Classes", note: "Private live lesson format explanation." },
   { path: "/quran-classes-for-working-professionals", label: "Quran Classes for Working Professionals", note: "Online Quran learning around busy work schedules." },
-  { path: "/free-quran-classes-online", label: "Free Trial Class", note: "3 free 30-minute live trial classes (no credit card)." },
+  { path: "/free-quran-classes-online", label: "Free Trial Sessions", note: "3 free 30-minute live trial sessions (no credit card)." },
   { path: "/online-quran-classes-no-masjid-nearby", label: "No Masjid Nearby Quran Classes", note: "Live 1-on-1 online Quran classes for families in rural or Muslim-minority areas with no local masjid or madrasa." },
   { path: "/quran-classes-near-me", label: "Quran Classes Near Me (Online-Only Answer)", note: "Honest answer to the “near me” search: no premises anywhere; live 1-on-1 video lessons in the learner's timezone, female and English-speaking tutors available." },
   { path: "/holy-quran", label: "Holy Quran Reader", note: "Free public Uthmani Arabic reader for all 114 Surahs and 30 Paras. No login." },
   { path: "/tools", label: "Islamic Tools & Calculators", note: "Free public tools hub: Zakat, Hifz planner, Hijri converter, Tasbeeh, inheritance." },
+  { path: "/free-quran-teaching-resources", label: "Free Quran Teaching Resources", note: "Free Noorani Qaida games, printable worksheets, Hifz planner and Islamic calculators for madrasah teachers, mosque classes, Islamic schools and parents. No login." },
   { path: "/pricing", label: "Pricing", note: "Published USD plans and family discount rules." },
 ];
 
@@ -683,6 +694,7 @@ export const BLOG_CLUSTERS = [
     heading: "Online Quran Learning Guides",
     items: [
       { slug: "benefits-of-online-quran-classes", label: "Benefits of online Quran classes" },
+      { slug: "why-online-quran-classes-are-ideal-for-busy-muslim-families", label: "Why online Quran classes suit busy Muslim families (guest post)" },
       { slug: "is-online-quran-learning-as-effective-as-in-person", label: "Online vs in-person Quran learning" },
       { slug: "how-to-choose-online-quran-teacher", label: "How to choose an online Quran teacher" },
       { slug: "questions-to-ask-before-booking-a-quran-tutor", label: "Questions before booking a Quran tutor" },
@@ -710,8 +722,10 @@ export const BLOG_CLUSTERS = [
       { slug: "quran-practice-routine-at-home-kids", label: "Kids Quran practice routine at home" },
       { slug: "female-quran-teacher-for-kids", label: "Female Quran teacher for kids" },
       { slug: "online-hifz-classes-for-kids", label: "Online Hifz classes for kids" },
-      { slug: "online-quran-classes-for-shy-kids", label: "Online Quran classes for shy kids" },
       { slug: "child-wont-sit-for-quran-class", label: "When a child will not sit for Quran class" },
+      { slug: "quran-classes-for-autistic-kids", label: "How to teach Quran to an autistic child" },
+      { slug: "quran-classes-for-adhd-kids", label: "How to teach Quran to a child with ADHD" },
+      { slug: "quran-for-children-with-dyslexia", label: "How to teach Quran to a child with dyslexia" },
       { slug: "child-forgets-quran-between-classes", label: "When a child forgets Quran between classes" },
       { slug: "quran-homework-kids-wont-practice", label: "When kids will not practice Quran homework" },
       { slug: "sibling-online-quran-classes-scheduling", label: "Sibling online Quran class scheduling" },
