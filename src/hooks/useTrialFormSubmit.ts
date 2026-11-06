@@ -6,7 +6,8 @@ import { hasAnalyticsConsent } from "@/components/TrackingConsent";
 
 export type TrialFormStatus = "idle" | "loading" | "success" | "error";
 
-const FORMSUBMIT = "https://formsubmit.co/ajax/info@noorpath.online";
+// FormSubmit disabled (service unreliable — returned 522 in Nov 2026). Lead email is sent server-side by /api/leads.
+// const FORMSUBMIT = "https://formsubmit.co/ajax/info@noorpath.online";
 
 /** Split a single contact field into email and/or phone for tracking + CRM. */
 export function splitContactField(contact: string): { email: string; phone: string } {
@@ -129,42 +130,50 @@ export function useTrialFormSubmit(options: Options = {}) {
           return;
         }
 
-        // Attempt secondary client-side email fallback if server indicated email provider was unconfigured
-        if (leadData.email_delivery !== "sent" && leadData.formsubmit_fallback_required) {
-          try {
-            const mailFd = new FormData();
-            mailFd.set("name", name);
-            mailFd.set("email", email || "leads+whatsapp@noorpath.online");
-            mailFd.set("phone", phone || (email ? "Contact via email" : ""));
-            mailFd.set("contact", contactRaw);
-            mailFd.set("country", country);
-            mailFd.set("learner_type", learnerType);
-            mailFd.set("child_name", childName);
-            mailFd.set("child_age", childAge);
-            mailFd.set("preferred_class_time", preferredTime || "Not specified");
-            mailFd.set("tutor_preference", tutorPreference || "Not specified");
-            mailFd.set("course", course);
-            mailFd.set("source_page", sourcePage);
-            mailFd.set("referrer", referrer);
-            mailFd.set("form_variant", formVariant);
-            mailFd.set("_template", "table");
-            mailFd.set("_captcha", "false");
-            mailFd.set("_honey", String(fd.get("_honey") || ""));
-
-            // Must finish before the thank-you redirect, or the browser cancels it.
-            await Promise.race([
-              fetch(FORMSUBMIT, {
-                method: "POST",
-                body: mailFd,
-                headers: { Accept: "application/json" },
-                keepalive: true,
-              }).catch(() => null),
-              new Promise((r) => setTimeout(r, 6000)),
-            ]);
-          } catch {
-            // Ignore secondary fallback errors
-          }
+        // No email reached the team (all providers failed): don't show a false success — send the visitor to WhatsApp.
+        if (leadData.email_delivery !== "sent") {
+          setStatus("error");
+          setMsg("We couldn't send your request to our team just now. Please message us on WhatsApp so we can book your free trial:");
+          return;
         }
+
+        // FormSubmit client fallback disabled — see note at the top of this file.
+        // // Attempt secondary client-side email fallback if server indicated email provider was unconfigured
+        // if (leadData.email_delivery !== "sent" && leadData.formsubmit_fallback_required) {
+        //   try {
+        //     const mailFd = new FormData();
+        //     mailFd.set("name", name);
+        //     mailFd.set("email", email || "leads+whatsapp@noorpath.online");
+        //     mailFd.set("phone", phone || (email ? "Contact via email" : ""));
+        //     mailFd.set("contact", contactRaw);
+        //     mailFd.set("country", country);
+        //     mailFd.set("learner_type", learnerType);
+        //     mailFd.set("child_name", childName);
+        //     mailFd.set("child_age", childAge);
+        //     mailFd.set("preferred_class_time", preferredTime || "Not specified");
+        //     mailFd.set("tutor_preference", tutorPreference || "Not specified");
+        //     mailFd.set("course", course);
+        //     mailFd.set("source_page", sourcePage);
+        //     mailFd.set("referrer", referrer);
+        //     mailFd.set("form_variant", formVariant);
+        //     mailFd.set("_template", "table");
+        //     mailFd.set("_captcha", "false");
+        //     mailFd.set("_honey", String(fd.get("_honey") || ""));
+
+        //     // Must finish before the thank-you redirect, or the browser cancels it.
+        //     await Promise.race([
+        //       fetch(FORMSUBMIT, {
+        //         method: "POST",
+        //         body: mailFd,
+        //         headers: { Accept: "application/json" },
+        //         keepalive: true,
+        //       }).catch(() => null),
+        //       new Promise((r) => setTimeout(r, 6000)),
+        //     ]);
+        //   } catch {
+        //     // Ignore secondary fallback errors
+        //   }
+        // }
 
         const nameParts = name.split(/\s+/);
         if (hasAnalyticsConsent()) {

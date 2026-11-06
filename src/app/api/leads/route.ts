@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export const dynamic = "force-dynamic";
 
@@ -69,25 +70,55 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
   console.log("=== NEW NOORPATH TRIAL LEAD RECEIVED ===");
   console.log(JSON.stringify(lead, null, 2));
 
+  const subject = `Trial request — ${lead.country} — ${lead.name}`;
+  const text = [
+    "New NoorPath trial request",
+    "",
+    `Parent / contact name: ${lead.name}`,
+    `Contact: ${lead.contact}`,
+    `Country: ${lead.country}`,
+    `Learner type: ${lead.learnerType}`,
+    `Learner name: ${lead.learnerName}`,
+    `Learner age: ${lead.learnerAge}`,
+    `Course: ${lead.course || "Free trial class"}`,
+    `Preferred time: ${lead.preferredTime || "Not specified"}`,
+    `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
+    `Form: ${lead.formVariant}`,
+    `Landing page: ${lead.landingPage || "Not provided"}`,
+    `Referrer: ${lead.referrer || "Direct"}`,
+  ].join("\n");
+  const replyTo = lead.contact.includes("@") ? lead.contact : undefined;
+
+  // Primary: the domain's own mailbox (Hostinger SMTP). Needs SMTP_USER / SMTP_PASS on the server.
+  const smtpUser = process.env.SMTP_USER || "";
+  const smtpPass = process.env.SMTP_PASS || "";
+  if (smtpUser && smtpPass) {
+    try {
+      const port = Number(process.env.SMTP_PORT || 465);
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST || "smtp.hostinger.com",
+        port,
+        secure: port === 465,
+        auth: { user: smtpUser, pass: smtpPass },
+        connectionTimeout: 8_000,
+        greetingTimeout: 8_000,
+        socketTimeout: 10_000,
+      });
+      await transporter.sendMail({
+        from: `"NoorPath Leads" <${smtpUser}>`,
+        to,
+        replyTo,
+        subject,
+        text,
+      });
+      return "sent";
+    } catch (err) {
+      console.error("SMTP email dispatch error:", err);
+    }
+  }
+
   // If Resend API Key is set, use Resend API
   if (apiKey) {
-    const text = [
-      "New NoorPath trial request",
-      "",
-      `Parent / contact name: ${lead.name}`,
-      `Contact: ${lead.contact}`,
-      `Country: ${lead.country}`,
-      `Learner type: ${lead.learnerType}`,
-      `Learner name: ${lead.learnerName}`,
-      `Learner age: ${lead.learnerAge}`,
-      `Course: ${lead.course || "Free trial class"}`,
-      `Preferred time: ${lead.preferredTime || "Not specified"}`,
-      `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
-      `Form: ${lead.formVariant}`,
-      `Landing page: ${lead.landingPage || "Not provided"}`,
-      `Referrer: ${lead.referrer || "Direct"}`,
-    ].join("\n");
-
     try {
       const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
@@ -98,8 +129,8 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
         body: JSON.stringify({
           from,
           to: [to],
-          reply_to: lead.contact.includes("@") ? lead.contact : undefined,
-          subject: `Trial request — ${lead.country} — ${lead.name}`,
+          reply_to: replyTo,
+          subject,
           text,
         }),
         signal: AbortSignal.timeout(8_000),
@@ -111,6 +142,8 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
     }
   }
 
+  // FormSubmit disabled (service unreliable — returned 522 in Nov 2026). Kept for reference.
+  /*
   // Primary mode when using FormSubmit (or fallback when Resend is not set up):
   // Post directly to FormSubmit server-to-server (bypasses browser ad-blockers and CORS limits)
   try {
@@ -123,7 +156,7 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
         Referer: lead.landingPage || "https://www.noorpath.online/",
       },
       body: JSON.stringify({
-        _subject: `Trial request — ${lead.country} — ${lead.name}`,
+        _subject: subject,
         _template: "table",
         _captcha: "false",
         name: lead.name,
@@ -153,6 +186,7 @@ async function sendLeadEmail(lead: LeadEmail): Promise<"sent" | "not_configured"
   } catch (err) {
     console.error("FormSubmit server dispatch error:", err);
   }
+  */
 
   return "failed";
 }
