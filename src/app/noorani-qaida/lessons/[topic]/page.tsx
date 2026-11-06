@@ -6,6 +6,7 @@ import {
   QAIDA_TOPIC_BY_SLUG,
 } from "@/data/noorani-qaida";
 import { QAIDA_BASE_URL } from "@/components/noorani-qaida/QaidaSeoComponents";
+import { fitTitle, withTail } from "@/lib/seoMeta";
 
 interface Props {
   params: Promise<{ topic: string }>;
@@ -23,10 +24,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const topic = QAIDA_TOPIC_BY_SLUG[slug];
   if (!topic || topic.category !== "lesson") return {};
   const url = `${QAIDA_BASE_URL}/lessons/${topic.slug}`;
-  const title = `${topic.title} in Noorani Qaida: Examples & Practice`;
-  const description = `${topic.summary} Learn with Arabic examples, mouth and writing cues, common mistakes, four practice steps, and parent and teacher guidance.`;
+  const title = fitTitle([
+    `${topic.title} in Noorani Qaida: Examples & Practice | NoorPath`,
+    `${topic.title} in Noorani Qaida: Examples & Practice`,
+    `${topic.title} in Noorani Qaida | NoorPath`,
+  ]);
+  const description = withTail(topic.summary, [
+    "Arabic examples, common mistakes and practice steps for kids and beginners.",
+    "With Arabic examples, common mistakes and practice steps.",
+    "With Arabic examples and practice steps.",
+  ]);
   return {
-    title: { absolute: `${title} | NoorPath` },
+    title: { absolute: title },
     description,
     keywords: topic.keywords,
     alternates: { canonical: url },

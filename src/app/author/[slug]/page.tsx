@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pageUrl = `${BASE_URL}/author/${slug}`;
 
   return {
-    title: absolutePageTitle(`${author.name} — ${author.title} | NoorPath`),
-    description: `${author.name} is ${author.role}. ${author.bio.slice(0, 150)}...`,
+    title: absolutePageTitle(`${author.name} — ${author.role}`),
+    description: `${author.name}, ${author.role}, oversees the Noorani Qaida, Tajweed and Hifz curriculum for families learning the Quran worldwide.`,
     alternates: { canonical: `${BASE_URL}/author/faisal-tariq` },
     openGraph: {
       title: `${author.name} — ${author.role}`,
