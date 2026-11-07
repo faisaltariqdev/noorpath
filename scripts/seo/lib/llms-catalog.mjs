@@ -91,7 +91,7 @@ export const TOPIC_INTENTS = [
   {
     topic: "Learn Quran as a revert / new Muslim / convert",
     summary:
-      "For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; 3 free 30-minute trial sessions; no fluency date promised.",
+      "For reverts and new Muslims (converts, mualaf) starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, with salah recitation and meanings, scheduled in private hours in the learner's timezone. Includes a first-steps guide for new Muslims (shahada, wudu and salah, Al-Fatiha, Arabic letters, community). Male and female tutors available; 3 free 30-minute trial sessions; no fluency date promised.",
     primary: ["/learn-quran-as-a-revert"],
     supporting: [
       "/online-quran-for-beginners",
@@ -534,7 +534,7 @@ export const PRIORITY_COUNTRIES = [
   { path: "/locations/online-quran-classes-canada", label: "Canada", note: "Canada timezone scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-australia", label: "Australia", note: "Australia timezone scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-singapore", label: "Singapore", note: "Singapore SGT scheduling context for online Quran classes (online only)." },
-  { path: "/locations/online-quran-classes-malaysia", label: "Malaysia", note: "Malaysia MYT scheduling context for online Quran classes (online only)." },
+  { path: "/locations/online-quran-classes-malaysia", label: "Malaysia", note: "Online Quran classes taught in English in Malaysia (MYT): Iqra/Qaida, Tajweed and Hifz for international-school children, KL expat families, adults and mualaf (online only)." },
   { path: "/locations/online-quran-classes-india", label: "India", note: "India IST after-school scheduling context for online Quran classes." },
   { path: "/locations/online-quran-classes-pakistan", label: "Pakistan", note: "Pakistan PKT scheduling context for online Quran classes (online only)." },
   { path: "/locations/online-quran-classes-nigeria", label: "Nigeria", note: "Nigeria WAT after-school scheduling context for online Quran classes." },
@@ -602,7 +602,7 @@ export const CORE_SERVICES = [
   { path: "/online-quran-classes-for-kids", label: "Quran Classes for Kids", note: "Kids-focused online Quran classes." },
   { path: "/online-quran-classes-for-adults", label: "Quran Classes for Adults", note: "Adult online Quran classes." },
   { path: "/special-needs-quran-classes", label: "Special Needs Quran Classes", note: "Short private 1-to-1 Quran lessons for children with autism, ADHD, dyslexia, speech delay or anxiety. Quran teachers, not therapists." },
-  { path: "/learn-quran-as-a-revert", label: "Learn Quran as a Revert (New Muslim)", note: "Private 1-to-1 Quran lessons in English for new Muslims, starting from the Arabic alphabet." },
+  { path: "/learn-quran-as-a-revert", label: "Quran Classes for Reverts & New Muslims", note: "Private 1-to-1 Quran lessons in English for reverts and new Muslims, from the Arabic alphabet to Al-Fatiha and salah surahs, with a first-steps guide." },
   { path: "/online-quran-for-beginners", label: "Quran for Beginners", note: "Beginner pathway from letters and Qaida toward reading." },
   { path: "/quran-teacher-online", label: "Online Quran Teacher", note: "Matched with a certified online Quran teacher." },
   { path: "/female-quran-teacher-online", label: "Female Quran Teacher Online", note: "Certified female tutors for sisters and daughters." },

@@ -117,7 +117,12 @@ export const locations: Location[] = [
     timezone: "MYT (UTC+8)",
     localContext:
       "Malaysia's Muslim majority has established Quranic education traditions, and online tutoring can add one-to-one Tajweed or Hifz support alongside school. MYT evening and weekend preferences are subject to tutor matching.",
-    keywords: ["online quran classes malaysia", "quran teacher malaysia", "learn quran malaysia", "islamic classes kl", "online quran kl"],
+    keywords: [
+      "online quran classes malaysia", "online quran classes malaysia english", "quran teacher malaysia", "learn quran malaysia",
+      "quran tutor kuala lumpur", "online quran kl", "islamic classes kl", "tajweed class kl english", "quran classes penang",
+      "quran classes johor bahru", "mengaji online english", "quran classes for mualaf malaysia", "online hifz malaysia",
+      "quran classes for expats malaysia", "iqra online english",
+    ],
   },
   {
     slug: "online-quran-classes-pakistan",

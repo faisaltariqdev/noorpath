@@ -62,6 +62,8 @@ const COUNTRY_EXPANSION_SLUGS = new Set([
   "online-quran-classes-russia",
   "online-quran-classes-china",
 ]);
+/** Malaysia hub (English-medium, mualaf, KL expats) and the revert page rewritten for new-Muslim searches. */
+const NEW_MUSLIM_MALAYSIA_STAMP = new Date("2026-11-07");
 
 
 /** High-traffic Islamic reference blogs — priority indexing for organic search */
@@ -200,7 +202,7 @@ const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/hifz-quran-online`,       priority: 0.94, changeFrequency: "weekly", lastModified: SITE_CONTENT_STAMP },
   { url: `${BASE}/online-quran-classes-no-masjid-nearby`, priority: 0.9, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
   { url: `${BASE}/quran-classes-near-me`,   priority: 0.92, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
-  { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
+  { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEW_MUSLIM_MALAYSIA_STAMP },
   { url: `${BASE}/special-needs-quran-classes`, priority: 0.9, changeFrequency: "weekly", lastModified: new Date("2026-11-06") },
 ];
 
@@ -249,7 +251,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = locations.map((l) => ({
     url: `${BASE}/locations/${l.slug}`,
-    lastModified: COUNTRY_EXPANSION_SLUGS.has(l.slug)
+    lastModified: l.slug === "online-quran-classes-malaysia"
+      ? NEW_MUSLIM_MALAYSIA_STAMP
+      : COUNTRY_EXPANSION_SLUGS.has(l.slug)
       ? COUNTRY_EXPANSION_STAMP
       : LOCATION_REFRESH_SLUGS.has(l.slug)
         ? LOCATION_REFRESH_STAMP

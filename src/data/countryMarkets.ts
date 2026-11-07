@@ -1307,12 +1307,12 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
     content: {
       countryName: "Malaysia",
       formCountry: "Malaysia",
-      h1: "Online Quran Classes in Malaysia for Kids and Adults",
-      metaTitle: "Online Quran Classes Malaysia — Kids & Adults | NoorPath",
+      h1: "Online Quran Classes in Malaysia — Taught in English for Kids and Adults",
+      metaTitle: "Online Quran Classes Malaysia in English — Kids & Adults | NoorPath",
       metaDescription:
-        "One-to-one online Quran classes in English for kids and adults in Malaysia. Iqra/Qaida, reading, Tajweed and Hifz in MYT, with free trial sessions.",
-      eyebrow: "For families across Malaysia",
-      hook: "Want private Quran lessons explained in English, alongside KAFA or Iqra? Live one-to-one classes at home, in Malaysian time.",
+        "One-to-one online Quran classes taught in English for kids, adults and mualaf in Malaysia: Iqra/Qaida, reading, Tajweed and Hifz in MYT. KL, Penang, JB. Free trial.",
+      eyebrow: "For families in KL, Penang, Johor Bahru and across Malaysia",
+      hook: "Want private Quran lessons explained in English — for an international-school child, an expat family in KL, or an adult or mualaf starting from Iqra? Live one-to-one classes at home, in Malaysian time.",
       scheduleBullet: "Lesson times arranged in Malaysia Time",
       quickAnswer: {
         q: "How do online Quran classes work for families in Malaysia?",
@@ -1330,17 +1330,31 @@ export const COUNTRY_MARKETS: Record<string, CountryMarket> = {
         "Weekends differ by state: most rest on Saturday and Sunday, while a few, such as Kelantan and Terengganu, rest on Friday and Saturday. Tell us your state; exact times are confirmed after your request.",
       faqs: [
         { q: "Are online Quran classes available across Malaysia?", a: "Yes \u2014 anywhere in Malaysia. Lessons are fully online; NoorPath has no office in Malaysia." },
+        { q: "Are lessons taught in Malay (Bahasa Melayu)?", a: "No. NoorPath's tutors teach in English. If you want lessons in Bahasa Melayu, a local mengaji class or a Malaysian platform will suit you better; NoorPath suits children and adults who prefer explanations in English." },
+        { q: "Is Noorani Qaida the same as Iqra?", a: "They are different books with the same goal: letters, vowel marks and joining before Quran reading. NoorPath teaches with Noorani Qaida; a child who has already finished some Iqra books continues from the matching level after a short check in the free trial." },
+        { q: "Can expat families in Kuala Lumpur join?", a: "Yes. Lessons are online, so families in Mont Kiara, Bangsar, Cyberjaya, Penang or Johor Bahru follow the same process, with times agreed in MYT around the international-school timetable." },
+        { q: "Can mualaf (new Muslims) in Malaysia learn with you?", a: "Yes. Adults who have embraced Islam can start from the alphabet in private one-to-one lessons explained in English, beginning with Surah Al-Fatiha and the short surahs used in prayer." },
         { q: "Can children start as beginners?", a: BEGINNER_ANSWER },
         { q: "Are classes one-to-one?", a: ONE_TO_ONE_ANSWER },
         { q: "Can I request a female Quran teacher?", a: femaleTeacherAnswer("Malaysian") },
         { q: "Are classes available after school?", a: "Yes. Request after-school, evening or weekend windows in MYT for your state's weekend; the recurring time is confirmed after tutor matching." },
         { q: "Can adults join?", a: ADULTS_ANSWER },
         { q: "How do free trial sessions work?", a: trialAnswer("Malaysian time") },
+        { q: "How much do lessons cost in ringgit?", a: `Plans are priced in US dollars, starting at $${starterPlanUsd} per month; the pricing page shows an approximate ringgit figure. The trial sessions are free and need no credit card.` },
         { q: "Can parents monitor progress?", a: PARENT_PORTAL_ANSWER },
       ],
       cityLinks: [],
       heroImage: IMAGES.femaleTutor,
       localNotes: [
+        {
+          title: "For mualaf starting from the first letter",
+          body: "If you embraced Islam as an adult and want to learn to read with explanations in English, private lessons start at the alphabet and Al-Fatiha — with no class watching.",
+          link: { href: "/learn-quran-as-a-revert", label: "Quran classes for reverts and new Muslims" },
+        },
+        {
+          title: "International-school families",
+          body: "Children taught in English all day often follow an English explanation more easily. Lessons can sit after school or on your state's weekend.",
+        },
         {
           title: "Bilingual explanations",
           body: "Malaysian children often switch between Malay, English and other home languages. NoorPath's tutors are English-speaking, which suits families who use English at home or at school.",

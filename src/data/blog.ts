@@ -27,6 +27,26 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "connection-between-quranic-unity-and-pilgrimage-rituals",
+    title: "The Connection Between Quranic Unity and Pilgrimage Rituals",
+    description:
+      "Explore the connection between Quranic unity and Hajj pilgrimage rituals, discovering how faith, equality, humility, and shared worship unite Muslims worldwide.",
+    category: "Islamic Knowledge",
+    date: "2026-11-07",
+    updatedAt: "2026-11-07",
+    readTime: "6 min",
+    keywords: [
+      "quranic unity", "hajj and unity", "pilgrimage rituals meaning", "hajj equality in islam",
+      "meaning of ihram", "day of arafah", "hajj rituals explained", "lessons of hajj",
+    ],
+    excerpt:
+      "How Hajj puts the Quran's message of unity into practice — from ihram and tawaf to the Day of 'Arafah — and the lessons pilgrims carry home.",
+    author: "Bismillah Tours",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://www.bismillahtours.com/",
+  },
+  {
     slug: "why-online-quran-classes-are-ideal-for-busy-muslim-families",
     title: "Why Online Quran Classes Are Ideal for Busy Muslim Families",
     description:

@@ -55,6 +55,20 @@ const amiriLatin = localFont({
   preload: false,
 });
 
+// ﷺ (U+FDFA) is missing from Plus Jakarta Sans and Playfair, so browsers fell back to a
+// large system glyph that overlapped the line. This face serves only that character from Amiri.
+const salawat = localFont({
+  src: "./fonts/amiri-arabic-400-normal.woff2",
+  variable: "--font-salawat",
+  display: "swap",
+  preload: false,
+  adjustFontFallback: false,
+  declarations: [
+    { prop: "unicode-range", value: "U+FDFA, U+FDFB" },
+    { prop: "size-adjust", value: "78%" },
+  ],
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noorpath.online"),
   title: {
@@ -131,7 +145,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${jakarta.variable} ${amiriArabic.variable} ${amiriLatin.variable}`}
+      className={`${playfair.variable} ${jakarta.variable} ${amiriArabic.variable} ${amiriLatin.variable} ${salawat.variable}`}
     >
       <head>
         <meta name="msapplication-TileColor" content="#0a6e4f" />

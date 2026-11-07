@@ -32,7 +32,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-family: var(--font-jakarta), var(--font-salawat), 'Plus Jakarta Sans', system-ui, sans-serif;
   color: var(--charcoal);
   background: #fff;
   overflow-x: hidden;
@@ -155,7 +155,7 @@ table.responsive-table > tbody {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-playfair), var(--font-salawat), 'Playfair Display', Georgia, serif;
   line-height: 1.2;
 }
 
@@ -219,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .logo-text {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-playfair), var(--font-salawat), 'Playfair Display', Georgia, serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
@@ -231,7 +231,7 @@ h1,h2,h3,h4,h5,h6 {
   color: rgba(255,255,255,.4);
   font-size: .65rem;
   vertical-align: middle;
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-jakarta), var(--font-salawat), sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -433,7 +433,7 @@ section { padding: 88px 0; }
 }
 .trust-label { color: var(--muted); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; white-space: nowrap; }
 .trust-logo-item {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-playfair), var(--font-salawat), Georgia, serif;
   font-size: .95rem;
   font-weight: 700;
   color: var(--slate);
@@ -561,7 +561,7 @@ footer.site-footer {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin-bottom: 18px;
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-jakarta), var(--font-salawat), sans-serif;
 }
 .footer-links { list-style: none; padding: 0; margin: 0; }
 .footer-links li { margin-bottom: 10px; }
@@ -982,7 +982,7 @@ footer.site-footer {
   margin-bottom: 12px;
   outline: none;
   transition: border-color .2s, background .2s;
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-jakarta), var(--font-salawat), sans-serif;
 }
 .cta-input::placeholder { color: rgba(255,255,255,.4); }
 .cta-input:focus {
@@ -1483,7 +1483,7 @@ pre { max-width: 100%; }
 .qaida-container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
 .qaida-hero { padding: 150px 0 68px; background: linear-gradient(135deg, #052f20, #0a6e4f); color: #fff; }
 .qaida-hero-grid { display: grid; gap: 2.5rem; align-items: center; }
-.qaida-hero h1 { color: #fff; font: 700 clamp(2.2rem, 5vw, 4rem)/1.08 var(--font-playfair), Georgia, serif; margin: .8rem 0 1rem; }
+.qaida-hero h1 { color: #fff; font: 700 clamp(2.2rem, 5vw, 4rem)/1.08 var(--font-playfair), var(--font-salawat), Georgia, serif; margin: .8rem 0 1rem; }
 .qaida-hero p { color: rgba(255,255,255,.84); line-height: 1.8; max-width: 720px; }
 .qaida-eyebrow { color: var(--emerald); display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .qaida-hero .qaida-eyebrow { color: var(--gold-lt); }
@@ -1501,7 +1501,7 @@ pre { max-width: 100%; }
    Only .qaida-section has no padding of its own, so we add it explicitly. */
 .qaida-section { padding: 0; margin: 0 auto 2.5rem; }
 .qaida-section > h2, .qaida-callout h2, .qaida-course-cta h2 {
-  color: var(--charcoal); font: 700 clamp(1.55rem, 3vw, 2.2rem)/1.2 var(--font-playfair), Georgia, serif; margin: .55rem 0 1rem;
+  color: var(--charcoal); font: 700 clamp(1.55rem, 3vw, 2.2rem)/1.2 var(--font-playfair), var(--font-salawat), Georgia, serif; margin: .55rem 0 1rem;
 }
 .qaida-section > p, .qaida-prose { color: var(--muted); font-size: 1rem; line-height: 1.85; max-width: 850px; }
 .qaida-grid { display: grid; gap: 1rem; }
@@ -1620,7 +1620,7 @@ pre { max-width: 100%; }
 .home-qaida-more p:last-child { margin-bottom: 0; }
 .home-qaida-subheading {
   color: var(--charcoal);
-  font: 700 clamp(1.15rem, 2.5vw, 1.45rem)/1.25 var(--font-playfair), Georgia, serif;
+  font: 700 clamp(1.15rem, 2.5vw, 1.45rem)/1.25 var(--font-playfair), var(--font-salawat), Georgia, serif;
   margin: 1.75rem 0 .85rem;
 }
 .home-qaida-subheading.center { text-align: center; }

@@ -91,15 +91,15 @@ Primary resources:
 - [Quran for Beginners](https://www.noorpath.online/online-quran-for-beginners)
 
 Also useful:
-- [Learn Quran as a Revert (New Muslim)](https://www.noorpath.online/learn-quran-as-a-revert)
+- [Quran Classes for Reverts & New Muslims](https://www.noorpath.online/learn-quran-as-a-revert)
 - [Adult beginner guide to learning Quran online](https://www.noorpath.online/blog/learn-quran-online-adult-beginner-guide)
 
 ### Learn Quran as a revert / new Muslim / convert
 
-For new Muslims starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, scheduled in private hours in the learner's timezone. Male and female tutors available; 3 free 30-minute trial sessions; no fluency date promised.
+For reverts and new Muslims (converts, mualaf) starting from zero, often without a Muslim family and sometimes before their faith is known to everyone around them. Private one-to-one online lessons in English from the Arabic alphabet to Surah Al-Fatiha and the short prayer surahs, with salah recitation and meanings, scheduled in private hours in the learner's timezone. Includes a first-steps guide for new Muslims (shahada, wudu and salah, Al-Fatiha, Arabic letters, community). Male and female tutors available; 3 free 30-minute trial sessions; no fluency date promised.
 
 Primary resources:
-- [Learn Quran as a Revert (New Muslim)](https://www.noorpath.online/learn-quran-as-a-revert)
+- [Quran Classes for Reverts & New Muslims](https://www.noorpath.online/learn-quran-as-a-revert)
 
 Also useful:
 - [Quran for Beginners](https://www.noorpath.online/online-quran-for-beginners)
@@ -475,8 +475,8 @@ These URLs are the preferred owners for global service and audience questions. C
   Adult online Quran classes.
 - [Special Needs Quran Classes](https://www.noorpath.online/special-needs-quran-classes)
   Short private 1-to-1 Quran lessons for children with autism, ADHD, dyslexia, speech delay or anxiety. Quran teachers, not therapists.
-- [Learn Quran as a Revert (New Muslim)](https://www.noorpath.online/learn-quran-as-a-revert)
-  Private 1-to-1 Quran lessons in English for new Muslims, starting from the Arabic alphabet.
+- [Quran Classes for Reverts & New Muslims](https://www.noorpath.online/learn-quran-as-a-revert)
+  Private 1-to-1 Quran lessons in English for reverts and new Muslims, from the Arabic alphabet to Al-Fatiha and salah surahs, with a first-steps guide.
 - [Quran for Beginners](https://www.noorpath.online/online-quran-for-beginners)
   Beginner pathway from letters and Qaida toward reading.
 - [Online Quran Teacher](https://www.noorpath.online/quran-teacher-online)
@@ -632,7 +632,7 @@ NoorPath serves students and families who prefer or need online Quran learning â
 ### Malaysia
 
 - [Online Quran Classes â€” Malaysia](https://www.noorpath.online/locations/online-quran-classes-malaysia)
-  Malaysia MYT scheduling context for online Quran classes (online only).
+  Online Quran classes taught in English in Malaysia (MYT): Iqra/Qaida, Tajweed and Hifz for international-school children, KL expat families, adults and mualaf (online only).
 
 ### India
 

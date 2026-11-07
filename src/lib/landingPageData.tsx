@@ -613,10 +613,49 @@ export const quranClassesNearMe: Omit<KeywordLandingPageProps, "canonicalPath"> 
  * ashamed I can't read". Honesty rule: no promise of fluency timelines; the
  * value claimed is a patient one-to-one teacher who hears and corrects.
  */
+const NEW_MUSLIM_STEPS: { title: string; body: string; link?: { href: string; label: string } }[] = [
+  { title: "Understand the shahada and the basics of belief", body: "What you said when you became Muslim, and what it means for daily life. Short, clear explanations in English are enough to begin.", link: { href: "/courses/islamic-studies-online", label: "Islamic Studies online" } },
+  { title: "Learn wudu and the movements of salah", body: "Washing for prayer, the prayer times, and what you do in each position — standing, bowing, prostrating, sitting.", link: { href: "/blog/how-to-pray-salah-step-by-step", label: "Step-by-step salah guide" } },
+  { title: "Learn Al-Fatiha and two or three short surahs", body: "These are recited in every prayer. This is where a live tutor helps most: hearing and correcting each sound until it is right." },
+  { title: "Learn the Arabic letters so you can read for yourself", body: "Letters, vowel marks and joining with Noorani Qaida — then you are no longer dependent on transliteration.", link: { href: "/noorani-qaida", label: "Free interactive Noorani Qaida" } },
+  { title: "Find community at your own pace", body: "A local masjid or new-Muslim group gives friendship and support. Private online lessons can sit alongside it, or come first if you are not ready to go yet." },
+];
+
+/** Practical first-steps checklist for reverts, shown on the revert landing page. */
+function NewMuslimFirstSteps() {
+  return (
+    <section aria-labelledby="new-muslim-first-steps" style={{ margin: "0 0 48px" }}>
+      <h2 id="new-muslim-first-steps" style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.5rem", color: "var(--charcoal)", margin: "0 0 8px" }}>
+        New Muslim? Your First Steps — and Where Quran Lessons Fit
+      </h2>
+      <p style={{ margin: "0 0 20px", color: "var(--slate)", lineHeight: 1.7, fontSize: ".95rem" }}>
+        You do not need to learn everything at once. Most reverts find this order manageable; a tutor can help with the recitation
+        parts from your very first lesson.
+      </p>
+      <ol style={{ margin: 0, padding: 0, listStyle: "none", display: "grid", gap: 12, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+        {NEW_MUSLIM_STEPS.map((step, index) => (
+          <li key={step.title} style={{ background: "#fff", border: "1px solid rgba(15,118,110,.18)", borderRadius: 16, padding: "18px 18px 16px" }}>
+            <span aria-hidden="true" style={{ display: "inline-flex", width: 28, height: 28, alignItems: "center", justifyContent: "center", borderRadius: 999, background: "var(--emerald)", color: "#fff", fontWeight: 800, fontSize: ".85rem" }}>
+              {index + 1}
+            </span>
+            <h3 style={{ margin: "10px 0 6px", fontSize: "1rem", color: "var(--charcoal)", lineHeight: 1.4 }}>{step.title}</h3>
+            <p style={{ margin: 0, fontSize: ".88rem", color: "var(--slate)", lineHeight: 1.6 }}>{step.body}</p>
+            {step.link ? (
+              <a href={step.link.href} style={{ display: "inline-block", marginTop: 8, fontSize: ".85rem", fontWeight: 700, color: "var(--emerald)" }}>
+                {step.link.label} →
+              </a>
+            ) : null}
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
 export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Learn Quran as a Revert — Private 1-on-1 Lessons | NoorPath",
+  metaTitle: "Quran Classes for Reverts & New Muslims — Online 1-on-1 | NoorPath",
   metaDescription:
-    "New Muslim and can't read the Quran yet? Learn privately from the Arabic alphabet with a patient English-speaking tutor. 3 free trial sessions, no card.",
+    "Online Quran classes for reverts and new Muslims: learn to read from the Arabic alphabet, then Al-Fatiha and the surahs for salah, with a patient English-speaking tutor. 3 free trials.",
   keywords: [
     "learn quran as a revert",
     "revert learn to read quran",
@@ -628,6 +667,18 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     "quran lessons for converts online",
     "learn arabic alphabet to read quran",
     "learn quran quietly online private",
+    "online quran classes for reverts",
+    "quran classes for new muslims",
+    "new muslim classes online",
+    "revert classes online",
+    "new muslim course online",
+    "free quran classes for reverts",
+    "quran classes for converts",
+    "how to pray as a new muslim",
+    "learn salah as a revert",
+    "what should a new muslim learn first",
+    "quran classes for mualaf",
+    "revert sister quran class female teacher",
   ],
   serviceName: "Quran Reading Lessons for Reverts and New Muslims",
   serviceDescription:
@@ -636,6 +687,7 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
   areaServed: [
     "United Kingdom", "United States", "Canada", "Australia", "New Zealand", "Ireland",
     "Germany", "France", "Netherlands", "Sweden", "Norway", "Denmark", "Finland", "Singapore", "South Africa",
+    "Malaysia", "Japan", "Hong Kong", "United Arab Emirates", "Qatar",
   ],
   whoThisIsFor: [
     "You took your shahada recently — or years ago — and still cannot read the Arabic script",
@@ -644,9 +696,10 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     "You need lessons that are private and quiet — perhaps not everyone knows about your faith yet",
     "You tried YouTube and apps and realised you cannot correct your own pronunciation",
     "You would rather learn one-to-one than sit in a children's class at the masjid",
+    "You want to learn how to pray, and to understand what you are saying in salah",
   ],
-  h1: "Learn Quran as a Revert — From the First Letter, Privately",
-  eyebrow: "For new Muslims · start from zero",
+  h1: "Online Quran Classes for Reverts & New Muslims — From the First Letter, Privately",
+  eyebrow: "For reverts & new Muslims · start from zero",
   heroText:
     `You do not need a Muslim family, an Arabic background, or a masjid nearby. A patient tutor teaches you the <strong style="color:var(--gold-lt)">Arabic letters, the sounds, and Surah Al-Fatiha</strong> in private one-to-one lessons, in English, at a time you choose. <strong style="color:var(--gold-lt)">Free ${TRIAL.durationMinutes}-minute trial — no credit card, no judgement.</strong>`,
   sectionTitle: <>Why Reverts Struggle Alone — and What a <em className="accent">Live Teacher</em> Changes</>,
@@ -682,6 +735,9 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { icon: <Award size={22} />, title: "Prayer First", desc: "If your immediate goal is to pray with confidence, say so. The tutor prioritises Al-Fatiha and the short surahs, with their meanings, before anything else." },
   ],
   faqs: [
+    { q: "What should a new Muslim learn first?", a: "Most teachers start with what you need every day: the meaning of the shahada, wudu, and how to pray — and prayer needs Surah Al-Fatiha and a few short surahs. That is why lessons for reverts usually begin with the Arabic letters and Al-Fatiha side by side, rather than long reading. Take one step at a time; nobody expects you to know everything at once." },
+    { q: "Can the lessons also help me learn how to pray (salah)?", a: "Yes. The recitation used in salah — Al-Fatiha, short surahs and the words said in each position, with their meanings in English — is a normal part of lessons for reverts. Wudu and the basics of prayer can be covered through the Islamic Studies track. Tell the tutor that prayer is your priority." },
+    { q: "Are there free Quran classes for reverts?", a: `NoorPath's ${TRIAL.classes} ${TRIAL.durationMinutes}-minute trial sessions are free and need no credit card, and the interactive Noorani Qaida pages on this site are free to use without an account. Ongoing one-to-one lessons are paid monthly plans. Some masjids and new-Muslim organisations also run free community classes — worth joining for support alongside private lessons.` },
     { q: "I am a revert and cannot read a single Arabic letter. Is that too early to start?", a: "No — it is the normal starting point. Lessons begin with the alphabet and the sounds, using Noorani Qaida, exactly as a young child's first lesson would, but paced for an adult. No prior exposure is assumed." },
     { q: "Can I really not learn this on my own from videos?", a: "You can learn the letter shapes alone. What you cannot do alone is hear whether your pronunciation is right — several Arabic letters are made in places English never uses, and a recording cannot correct you. That is the specific gap a live tutor fills; many reverts who started with videos add a tutor for this reason." },
     { q: "I have not told my family or flatmates about my faith. Can lessons still work?", a: "Yes. Lessons are one-to-one video calls at a normal speaking volume, with headphones if you prefer. Tell us which hours are genuinely private for you and we schedule within them. Nothing is posted, shared or recorded publicly." },
@@ -699,6 +755,8 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { href: "/locations/online-quran-classes-germany", label: "🇩🇪 Germany", note: "CET — evening windows" },
     { href: "/locations/online-quran-classes-ireland", label: "🇮🇪 Ireland", note: "GMT/IST" },
     { href: "/locations/online-quran-classes-new-zealand", label: "🇳🇿 New Zealand", note: "NZST" },
+    { href: "/locations/online-quran-classes-malaysia", label: "🇲🇾 Malaysia", note: "MYT — lessons in English for mualaf" },
+    { href: "/locations/online-quran-classes-singapore", label: "🇸🇬 Singapore", note: "SGT — evening & weekend" },
     { href: "/locations", label: "🌍 All countries", note: "Europe, Gulf, Asia, Africa & more" },
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "Learn Quran as a Revert" }],
@@ -711,6 +769,9 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     "✓ Male and female tutors available, your timezone",
   ],
   relatedLinks: [
+    { href: "/blog/new-muslim-guide-to-reading-quran", label: "New Muslim Guide to Reading the Quran" },
+    { href: "/blog/how-to-pray-salah-step-by-step", label: "How to Pray Salah Step by Step" },
+    { href: "/courses/islamic-studies-online", label: "Islamic Studies Online (Faith & Prayer Basics)" },
     { href: "/online-quran-for-beginners", label: "Quran for Complete Beginners" },
     { href: "/online-quran-classes-for-adults", label: "Quran Classes for Adults" },
     { href: "/blog/adult-embarrassed-to-learn-quran-beginner", label: "Embarrassed to Learn as an Adult? Read This" },
@@ -720,6 +781,7 @@ export const learnQuranAsRevert: Omit<KeywordLandingPageProps, "canonicalPath"> 
     { href: "/female-quran-teacher-online", label: "Request a Female Tutor" },
     { href: "/quran-classes-near-me", label: "No Class Near You? Online Alternative" },
   ],
+  extraContent: <NewMuslimFirstSteps />,
 };
 
 export const specialNeedsQuranClasses: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
