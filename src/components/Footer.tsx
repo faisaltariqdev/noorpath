@@ -294,6 +294,7 @@ export default function Footer() {
             <div>
               <div className="footer-heading">Contact Us</div>
               <ul className="footer-links">
+                {CONTACT.usaLineActive && (
                 <li style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
                   <Phone size={14} style={{ flexShrink: 0, marginTop: 4, opacity: 0.8, color: "var(--gold)" }} />
                   <div>
@@ -323,6 +324,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </li>
+                )}
                 <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <MessageCircle size={14} style={{ flexShrink: 0, opacity: 0.7, color: "#25D366" }} />
                   <WhatsAppLink

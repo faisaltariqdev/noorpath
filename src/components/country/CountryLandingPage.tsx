@@ -372,6 +372,7 @@ function TrialCtaBand({ text, whatsappUrl }: { text: string; whatsappUrl: string
 }
 
 function NorthAmericaPhoneLine() {
+  if (!CONTACT.usaLineActive) return null;
   const linkStyle = { display: "inline-flex", alignItems: "center", gap: 6, color: "var(--gold-lt)", fontWeight: 700, fontSize: ".86rem" } as const;
   return (
     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px 16px", marginTop: 14 }}>

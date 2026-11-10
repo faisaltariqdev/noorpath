@@ -10,14 +10,15 @@ export default function MobileStickyActionBar() {
   const router = useRouter();
   const pathname = usePathname();
   const isNorthAmerica =
-    pathname?.includes("usa") ||
+    CONTACT.usaLineActive &&
+    (pathname?.includes("usa") ||
     pathname?.includes("canada") ||
     pathname?.includes("new-york") ||
     pathname?.includes("houston") ||
     pathname?.includes("chicago") ||
     pathname?.includes("dallas") ||
     pathname?.includes("los-angeles") ||
-    pathname?.includes("toronto");
+    pathname?.includes("toronto"));
 
   const whatsappUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_TRIAL_MESSAGE)}`;
 

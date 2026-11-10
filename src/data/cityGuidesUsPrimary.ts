@@ -34,7 +34,7 @@ export const cityGuidesUsPrimary: Record<string, CityGuideContent> = {
         paragraphs: [
           'Many NYC Muslim parents initially look for a local masjid or madrasa within walking distance or a short drive. However, in New York, weekend madrasahs often feature large class sizes (15–25 students per teacher) where a child only gets 3 to 5 minutes of individual recitation and Makharij correction. Furthermore, winter weather and evening rush-hour traffic on the BQE, LIE, or Belt Parkway turn a 20-minute journey into an exhausting ordeal for young children.',
           'NoorPath Academy’s online Quran classes provide the ideal solution: your child learns 1-on-1 with a qualified tutor via live video, receiving 100% focused correction on Arabic letter pronunciation, Tajweed rules, and Hifz retention. Sessions are scheduled directly in New York Eastern Time (ET) — ideal for 4:00 PM to 8:30 PM after-school slots or weekend mornings.',
-          'US and Canadian parents can reach us directly via regular phone call or SMS text message at +1 (917) 555-0199 (no WhatsApp required), or connect via WhatsApp and email. You can also start with 3 free 30-minute trial sessions to evaluate tutor compatibility before committing.',
+          'US and Canadian parents can reach us on WhatsApp or by email, or send the trial form on this page. You can also start with 3 free 30-minute trial sessions to evaluate tutor compatibility before committing.',
         ],
         bullets: [
           'Zero commute: Learn comfortably from home across all NYC boroughs and suburbs',

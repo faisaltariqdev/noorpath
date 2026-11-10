@@ -8,7 +8,8 @@ interface Props {
   isNorthAmerica?: boolean;
 }
 
-export default function LocationHeroCtaCard({ whatsappText, isNorthAmerica }: Props) {
+export default function LocationHeroCtaCard({ whatsappText, isNorthAmerica: northAmericaPage }: Props) {
+  const isNorthAmerica = Boolean(northAmericaPage) && CONTACT.usaLineActive;
   const whatsappUrl = `${CONTACT.whatsappUrl}?text=${encodeURIComponent(
     whatsappText ?? WHATSAPP_TRIAL_MESSAGE,
   )}`;

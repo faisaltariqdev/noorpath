@@ -78,6 +78,7 @@ export default function ContactPage() {
             {/* Region Contact Channels Grid */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16, marginBottom: 28 }}>
               {/* USA & Canada Dedicated Call / SMS Card */}
+              {CONTACT.usaLineActive && (
               <div
                 style={{
                   background: "linear-gradient(145deg, rgba(10,110,79,.06), rgba(201,146,42,.08))",
@@ -141,6 +142,7 @@ export default function ContactPage() {
                   🕒 Available {CONTACT.usaAvailableHours}
                 </div>
               </div>
+              )}
 
               {/* Global WhatsApp & Phone Card */}
               <div

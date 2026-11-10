@@ -116,7 +116,7 @@ export function getOrganizationJsonLd() {
           name,
         })),
         contactPoint: [
-          {
+          ...(CONTACT.usaLineActive ? [{
             "@type": "ContactPoint",
             telephone: CONTACT.usaPhoneE164,
             email: CONTACT.email,
@@ -127,7 +127,7 @@ export function getOrganizationJsonLd() {
               { "@type": "Country", name: "United States" },
               { "@type": "Country", name: "Canada" },
             ],
-          },
+          }] : []),
           {
             "@type": "ContactPoint",
             telephone: CONTACT.phoneE164,

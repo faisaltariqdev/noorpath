@@ -119,6 +119,7 @@ export default function Navbar() {
           >
             Request Trial →
           </Link>
+          {CONTACT.usaLineActive && (<>
           <span style={{ margin: "0 10px", opacity: 0.5 }}>|</span>
           <a
             href={CONTACT.usaCallUrl}
@@ -145,6 +146,7 @@ export default function Navbar() {
           >
             Text / SMS
           </a>
+          </>)}
           <button
             aria-label="Close announcement"
             onClick={() => setPromoVisible(false)}

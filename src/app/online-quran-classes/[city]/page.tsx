@@ -284,8 +284,9 @@ export default async function CityPage({ params }: Props) {
   };
 
   const isNorthAmerica =
-    c.countrySlug === "online-quran-classes-usa" ||
-    c.countrySlug === "online-quran-classes-canada";
+    CONTACT.usaLineActive &&
+    (c.countrySlug === "online-quran-classes-usa" ||
+      c.countrySlug === "online-quran-classes-canada");
 
   if (isRebuiltCity(c.slug)) {
     const rebuilt = getCityLandingPageData(c.slug)!;
