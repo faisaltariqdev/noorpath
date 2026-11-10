@@ -204,6 +204,9 @@ const KEYWORD_LANDING_PAGES: MetadataRoute.Sitemap = [
   { url: `${BASE}/quran-classes-near-me`,   priority: 0.92, changeFrequency: "weekly", lastModified: NEAR_ME_CLUSTER_STAMP },
   { url: `${BASE}/learn-quran-as-a-revert`, priority: 0.9,  changeFrequency: "weekly", lastModified: NEW_MUSLIM_MALAYSIA_STAMP },
   { url: `${BASE}/special-needs-quran-classes`, priority: 0.9, changeFrequency: "weekly", lastModified: new Date("2026-11-06") },
+  { url: `${BASE}/online-madrasah`, priority: 0.9, changeFrequency: "weekly", lastModified: new Date("2026-11-10") },
+  { url: `${BASE}/nazra-quran-online`, priority: 0.9, changeFrequency: "weekly", lastModified: new Date("2026-11-10") },
+  { url: `${BASE}/online-quran-classes-in-urdu`, priority: 0.9, changeFrequency: "weekly", lastModified: new Date("2026-11-10") },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

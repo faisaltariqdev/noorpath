@@ -368,9 +368,9 @@ export default function KeywordLandingPage({
 
           {/* How it works */}
           <h2 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.6rem", textAlign: "center", marginBottom: 28 }}>
-            How to Get Started — 3 Simple Steps
+            How to Get Started — {steps.length} Simple Steps
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className={steps.length === 4 ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16" : "grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"}>
             {steps.map((s, i) => (
               <div key={s.title} style={{ textAlign: "center", padding: "24px 16px" }}>
                 <div

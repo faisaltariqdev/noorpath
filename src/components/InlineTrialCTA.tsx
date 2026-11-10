@@ -2,7 +2,9 @@
 
 import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
+import Link from "next/link";
 import { CONTACT, ENROLLED_STUDENTS_DISPLAY, TRIAL, TRUSTPILOT, WHATSAPP_TRIAL_MESSAGE } from "@/lib/academyFacts";
+import { useVisitorCountry } from "@/lib/visitorCountry";
 
 type Props = {
   /** Distinguishes mid-article vs end / course placements for CRM + unique field ids */
@@ -23,6 +25,7 @@ export default function InlineTrialCTA({
   title = `Book ${TRIAL.classes} free trial sessions`,
   subtitle = "Live 1-on-1 lesson — no credit card, no commitment.",
 }: Props) {
+  const visitor = useVisitorCountry();
   return (
     <aside
       className="inline-trial-cta"
@@ -69,6 +72,14 @@ export default function InlineTrialCTA({
         <p style={{ color: "var(--muted)", fontSize: ".86rem", lineHeight: 1.55, margin: "0 0 12px" }}>
           {subtitle}
         </p>
+        {visitor ? (
+          <p style={{ fontSize: ".84rem", lineHeight: 1.5, margin: "-4px 0 12px", color: "var(--charcoal)" }}>
+            <span aria-hidden="true">{visitor.flag}</span> In {visitor.inText}? Lessons are scheduled in your local time —{" "}
+            <Link href={visitor.href} style={{ color: "var(--emerald)", fontWeight: 700 }}>
+              see online Quran classes in {visitor.inText} →
+            </Link>
+          </p>
+        ) : null}
 
         {/* Trust pills */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 16 }}>
@@ -168,7 +179,14 @@ export default function InlineTrialCTA({
         />
       </div>
 
-      <CTAForm compact formVariant={`inline-${placement}`} idPrefix={`inline-${placement}`} />
+      {/* key remounts the form once the country is known, so the select can preselect it */}
+      <CTAForm
+        key={visitor?.formName ?? "any"}
+        compact
+        formVariant={`inline-${placement}`}
+        idPrefix={`inline-${placement}`}
+        defaultCountry={visitor?.formName ?? ""}
+      />
     </aside>
   );
 }

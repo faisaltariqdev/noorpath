@@ -11,6 +11,7 @@ import { faqPageJsonLdFromHtml } from "@/lib/faqFromHtml";
 import { splitArticleHtml } from "@/lib/splitArticleHtml";
 import { TRIAL_OFFER } from "@/lib/academyFacts";
 import InlineTrialCTA from "@/components/InlineTrialCTA";
+import CountryClassesCard from "@/components/CountryClassesCard";
 import BlogAeoQuickSummary from "@/components/BlogAeoQuickSummary";
 import { Clock, BookOpen, ArrowLeft } from "lucide-react";
 
@@ -838,6 +839,8 @@ export default async function BlogPostPage({ params }: Props) {
                   Book Free Trial →
                 </Link>
               </div>
+
+              <CountryClassesCard />
 
               {/* Related posts */}
               {related.length > 0 && (

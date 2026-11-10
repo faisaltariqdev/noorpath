@@ -8,14 +8,19 @@ import { getBuildLabel } from "@/lib/siteVersion";
 import WhatsAppLink from "@/components/WhatsAppLink";
 
 const courses = [
-  { href: "/holy-quran", label: "Holy Quran Reader" },
-  { href: "/noorani-qaida", label: "Interactive Noorani Qaida" },
   { href: "/courses/noorani-qaida-online", label: "Noorani Qaida Online" },
-  { href: "/courses/tajweed-classes-online", label: "Tajweed Classes Online" },
+  { href: "/nazra-quran-online", label: "Nazra Quran Reading" },
+  { href: "/learn-tajweed-online", label: "Tajweed Classes Online" },
   { href: "/hifz-quran-online", label: "Hifz Program" },
   { href: "/online-quran-classes-for-kids", label: "Kids Quran Classes" },
+  { href: "/online-madrasah", label: "Online Madrasah for Kids" },
+  { href: "/online-quran-classes-for-adults", label: "Adult Quran Classes" },
+  { href: "/online-quran-for-beginners", label: "Quran for Beginners" },
   { href: "/female-quran-teacher-online", label: "Female Quran Teacher" },
+  { href: "/online-quran-classes-in-urdu", label: "Quran Classes in Urdu" },
   { href: "/one-on-one-quran-classes", label: "1-to-1 Quran Classes" },
+  { href: "/learn-quran-as-a-revert", label: "New Muslims & Reverts" },
+  { href: "/special-needs-quran-classes", label: "Autism & ADHD Quran Classes" },
   { href: "/courses/arabic-language-online", label: "Arabic Language" },
   { href: "/courses/islamic-studies-online", label: "Islamic Studies" },
 ];

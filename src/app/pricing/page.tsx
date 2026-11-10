@@ -64,6 +64,7 @@ const plans = PRICING_PLANS.map((plan) => ({
 
 const faqs = [
   { q: "How much do online Quran classes cost?", a: `NoorPath plans are billed monthly in US dollars: ${PRICING_PLANS.map((p) => `${p.name} $${p.monthlyPriceUsd} for ${p.sessionsPerMonth} × ${p.sessionMinutes}-minute one-to-one sessions`).join("; ")}. The price depends on the plan you choose — lessons per week and lesson length.` },
+  { q: "What are the online Quran academy fees per class?", a: `Fees are monthly, which works out at about ${PRICING_PLANS.map((p) => `$${(p.monthlyPriceUsd / p.sessionsPerMonth).toFixed(2)} per ${p.sessionMinutes}-minute class on ${p.name}`).join(", ")}. Every class is live and one-to-one.` },
   { q: "Is there a free trial?", a: `Yes. New learners get ${TRIAL_OFFER}, live and 1-to-1. No credit card is required. Tutor availability is confirmed after the request.` },
   { q: "Do you have family discounts?", a: `Yes — ${FAMILY_DISCOUNTS.map((item) => `${item.siblings}: ${item.discountPercent}% off`).join("; ")}. Contact us to confirm the applicable plan.` },
   { q: "Can I change my plan later?", a: "Absolutely. You can upgrade or downgrade your plan at any time. Changes take effect from the next billing cycle." },

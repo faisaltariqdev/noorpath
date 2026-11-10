@@ -121,6 +121,10 @@ const faqs = [
     a: `Fill out the free trial request form on this page with your child's age, level, preferred time window, and teacher preference. Our academic coordinator will match a suitable tutor and confirm your ${TRIAL_OFFER} via WhatsApp or email — no credit card needed.`,
   },
   {
+    q: "How do I find a good online Quran teacher for my child?",
+    a: `Look for a teacher who teaches children one-to-one, corrects pronunciation gently and tells you after each lesson what to practise. At NoorPath your child meets the matched tutor in ${TRIAL_OFFER} before you pay anything. ${TUTOR_FACTS.credentials} ${TUTOR_FACTS.rematch}`,
+  },
+  {
     q: "Can parents monitor their child's progress?",
     a: "Yes. Parents are always welcome to observe lessons at home. In addition, enrolled families receive regular tutor feedback notes and can log into the secure Parent Portal to review attendance, assigned homework, and curriculum milestone reports.",
   },
@@ -878,6 +882,11 @@ export default function OnlineQuranClassesForKidsPage() {
                 href: "/blog/quran-for-children-with-dyslexia",
                 title: "Dyslexia & Arabic Letters",
                 desc: "One letter at a time, look-alike letters kept apart, and full harakat for children who find reading hard.",
+              },
+              {
+                href: "/online-madrasah",
+                title: "Online Madrasah for Kids",
+                desc: "Quran reading, daily duas and Islamic studies together, one-to-one at home.",
               },
               {
                 href: "/special-needs-quran-classes",

@@ -558,6 +558,7 @@ export const searchDemandBlogContent: Record<string, { style: string; content: s
             <p>Barakallah (بَارَكَ ٱللَّٰهُ) means 'May Allah bless you' and is used to invoke divine abundance, protection, and gratitude. Reply with 'Wa feek barakallah' to reciprocate the supplication warmly.</p>
           </div>
 
+          <p><strong>Learning these phrases as an adult or a new Muslim?</strong> A patient teacher makes the Arabic sounds far easier than videos alone. See <a href="/learn-quran-as-a-revert">private Quran lessons for reverts and new Muslims</a>, or <a href="/female-quran-teacher-online">request a female Quran teacher</a> for yourself or your daughter.</p>
           <h2 id="faq">Frequently asked questions about Barakallah</h2>
           <details class="faq-acc"><summary>What does Barakallah mean in English?<span>+</span></summary>
             <p>It means “May Allah bless” or “May Allah place barakah.” Longer forms specify blessing upon a person or in a matter.</p>

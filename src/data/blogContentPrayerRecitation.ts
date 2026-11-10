@@ -190,6 +190,7 @@ export const prayerRecitationBlogContent: Record<string, { style: string; conten
           <p>Additional calm repetition on day 4 should focus on clarity of each word, not on increasing speed or volume.</p>
           <p>Additional calm repetition on day 5 should focus on clarity of each word, not on increasing speed or volume.</p>
           <p>Additional calm repetition on day 6 should focus on clarity of each word, not on increasing speed or volume.</p>
+          <p><strong>Reciting the duas of salah correctly starts with reading Arabic properly.</strong> Children can learn with <a href="/online-quran-classes-for-kids">online Quran classes for kids</a>, and adults who never learned can begin with <a href="/online-quran-for-beginners">Quran lessons for beginners</a>.</p>
           <h2 id="faq">Frequently asked questions</h2>
           <div class="tldr-box">
             <h3>TL;DR</h3>

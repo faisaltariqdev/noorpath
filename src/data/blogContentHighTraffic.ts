@@ -1387,6 +1387,7 @@ export const highTrafficBlogContent: Record<string, { style: string; content: st
 
           <p>Families based in the Emirates who want steady Quran lessons around travel and school schedules can explore <a href="/locations/online-quran-classes-uae">online Quran classes in the UAE</a> (GST matching, subject to tutor availability).</p>
 
+          <p><strong>Travelling often?</strong> Quran lessons can travel with you. <a href="/online-quran-classes">One-to-one online Quran classes</a> are scheduled in your own time zone, and children can keep their <a href="/hifz-quran-online">Hifz going online</a> during holidays and trips.</p>
           <h2 id="faq">Frequently asked questions about Safar ki dua</h2>
           <details class="faq-acc"><summary>What is safar ki dua (the travel dua)?<span>+</span></summary>
             <p>The travel dua is 'Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina la-munqalibun' (Quran 43:13-14) — Glory be to the One who subjected this vehicle for us; we could never have done it ourselves, and to our Lord we will return.</p>

@@ -176,6 +176,7 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
           </ol>
           <p>Parents: teach children short pieces — <a href="/blog/duas-for-kids-to-memorize">duas for kids</a> · <a href="/online-quran-classes-for-kids">kids classes</a>. Adults returning to practice can start gently with a <a href="/learn-quran-online">learn Quran online</a> trial.</p>
 
+          <p><strong>The most reliable daily practice is the Quran itself, recited correctly.</strong> If you want a structured routine rather than a list of wazaif, consider <a href="/learn-tajweed-online">one-to-one Tajweed lessons</a>, or memorising surahs step by step with an <a href="/hifz-quran-online">online Hifz teacher</a>.</p>
           <h2 id="faq">FAQ</h2>
           <details class="faq-acc"><summary>Is wazifa allowed in Islam?<span>+</span></summary>
             <p>Consistent dhikr and dua from Quran and Sunnah are encouraged. Invented formulas with guaranteed outcomes are not a substitute for authentic worship.</p>
@@ -407,6 +408,7 @@ export const wazaifDemandBlogContent: Record<string, { style: string; content: s
             <p>Hasbunallahu wa ni'mal wakeel (Surah Aal Imran 3:173) means 'Allah is sufficient for us, and He is the best Disposer of affairs.' Recite this powerful declaration during hardship and anxiety, placing complete trust in Allah while taking lawful practical action.</p>
           </div>
 
+          <p><strong>Want to recite this dua — and the Quran — correctly?</strong> Pronunciation is easiest to fix with a live teacher. You can <a href="/learn-tajweed-online">learn Tajweed online one-to-one</a>, or start from the Arabic letters with <a href="/online-quran-classes-for-adults">online Quran classes for adults</a>.</p>
           <h2 id="faq">Frequently asked questions about Hasbunallahu wa nimal wakeel</h2>
           <details class="faq-acc"><summary>What does Hasbunallahu wa nimal wakeel mean?<span>+</span></summary>
             <p>It means Allah is enough for us, and He is the best One to entrust our affairs to.</p>

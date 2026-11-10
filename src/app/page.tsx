@@ -42,14 +42,14 @@ export const metadata: Metadata = {
   // present in the SERP title-link and site-name sources; the leading keyword phrase
   // targets commercial queries while the pipe keeps NoorPath visible.
   title: {
-    absolute: "Online Quran Classes for Kids & Adults — 3 Trials | NoorPath",
+    absolute: "Online Quran Classes for Kids & Adults — Free Trial | NoorPath",
   },
   description:
     `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial sessions, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
   // No trailing slash — consistent with trailingSlash:false in next.config.ts
   alternates: { canonical: "https://www.noorpath.online" },
   openGraph: {
-    title: "Online Quran Classes for Kids & Adults — 3 Trials | NoorPath",
+    title: "Online Quran Classes for Kids & Adults — Free Trial | NoorPath",
     description: `Live 1-on-1 online Quran classes for kids & adults. Noorani Qaida, Tajweed & Hifz with certified tutors. ${TRIAL.classes} free trial sessions, no credit card. From $${PRICING_PLANS[0].monthlyPriceUsd}/mo.`,
     url: "https://www.noorpath.online",
     type: "website",
@@ -737,13 +737,13 @@ export default function HomePage() {
                   ["/female-quran-teacher-online", "Female Quran Teacher Online"],
                   ["/online-quran-classes-for-adults", "Quran Classes for Adults"],
                   ["/online-quran-classes", "Online Quran Classes"],
-                  ["/online-quran-academy", "Online Quran Academy"],
-                  ["/quran-lesson-online", "Quran Lesson Online"],
-                  ["/studying-quran-online", "Studying Quran Online"],
                   ["/online-quran-classes-no-masjid-nearby", "No Masjid Nearby? Learn Online"],
                   ["/quran-classes-near-me", "Quran Classes Near Me (Online)"],
                   ["/learn-quran-as-a-revert", "Learn Quran as a Revert"],
                   ["/special-needs-quran-classes", "Special Needs Quran Classes"],
+                  ["/online-madrasah", "Online Madrasah for Kids"],
+                  ["/nazra-quran-online", "Nazra Quran Online"],
+                  ["/online-quran-classes-in-urdu", "Quran Classes in Urdu"],
                   ["/pricing", "Pricing & Plans"],
                   ["/about", "About NoorPath Academy"],
                   ["/founder", "Founder"],

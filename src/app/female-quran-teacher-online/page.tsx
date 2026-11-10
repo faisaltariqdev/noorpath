@@ -262,6 +262,10 @@ const faqs = [
     a: "Yes. Sisters can learn from the Arabic alphabet, improve fluency and Tajweed, or memorize, in private one-to-one lessons at their own pace.",
   },
   {
+    q: "Is there a female Quran teacher near me?",
+    a: "NoorPath is online only, so where you live does not limit the choice. A female Quran teacher (Ustadha) teaches you or your daughter live at home, in your own time zone, which helps where no local female teacher is available. Availability for your time window is confirmed before the trial.",
+  },
+  {
     q: "Are lessons one-to-one?",
     a: "Yes. Every NoorPath lesson is one student with one tutor, live over video.",
   },

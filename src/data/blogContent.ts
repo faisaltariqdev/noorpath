@@ -372,6 +372,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <li><a href="/blog/surah-ikhlas-benefits">Surah Ikhlas — Pure Tawheed in 4 Verses</a></li>
           </ul>
 
+          <p><strong>Recently said the shahada?</strong> Learning to read the Quran as a new Muslim starts with the Arabic letters and Surah Al-Fatiha. NoorPath teaches <a href="/learn-quran-as-a-revert">private one-to-one Quran lessons for reverts</a>, explained in English and at your own pace.</p>
           <h2 id="faq">Frequently asked questions about La ilaha illallah</h2>
           <details class="faq-acc"><summary>What is La ilaha illallah in English?<span>+</span></summary>
             <p>"There is no god worthy of worship except Allah." It rejects all false deities and affirms that only Allah deserves worship, obedience and devotion.</p>
@@ -2389,6 +2390,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             <strong>Common spelling variations:</strong> JazakAllah, Jazak Allah, JazakAllahu Khairan, Jazakumullah Khair — these are all transliterations of the same Arabic phrase. "JazakAllahu Khairan" is the most complete and grammatically correct form.
           </div>
 
+          <p><strong>Teaching your children Islamic phrases?</strong> JazakAllah Khair, Bismillah and daily duas stick best when a child hears them used and gets gentle correction. NoorPath's <a href="/online-quran-classes-for-kids">one-to-one online Quran classes for kids</a> include daily duas and Noorani Qaida, and adults who want to read the Arabic themselves can start with <a href="/online-quran-for-beginners">Quran classes for complete beginners</a>.</p>
           <h2>Frequently asked questions about Jazakallah Khair</h2>
           <details class="faq-acc"><summary>What does JazakAllah Khair mean?</summary><p>JazakAllah Khair (جزاك الله خيرا) means "May Allah reward you with good." It is the Islamic way of saying thank you — instead of thanking a person directly, you ask Allah to reward them, which is the greatest form of gratitude since Allah rewards without limit.</p></details>
           <details class="faq-acc"><summary>How do you respond to JazakAllah Khair?</summary><p>The most common response is "Wa iyyakum" (and you too). You can also say "Wa antum fa jazakumullahu khairan" (and may Allah reward you with good too) or "Barakallahu feek" (may Allah bless you). All acknowledge the dua and return the good wish.</p></details>
@@ -7013,6 +7015,7 @@ const rawBlogContent: Record<string, { style: string; content: string }> = {
             </div>
           </div>
 
+          <p><strong>Children learn phrases like MashaAllah by hearing them every day — and Quran reading works the same way.</strong> Families who want structured support often choose a <a href="/female-quran-teacher-online">female Quran teacher for their daughters</a> or <a href="/hifz-quran-online">online Hifz classes</a> for children ready to memorise.</p>
           <h2 id="faqs">Frequently asked questions about Mashallah</h2>
 
           <div class="faq-list">

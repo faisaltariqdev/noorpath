@@ -2,7 +2,7 @@
 
 > NoorPath Academy is an online-only Quran learning platform providing live one-to-one classes for children, adults, beginners and families (1,000+ enrolled students). Plans start at $29/month (15–25% sibling discounts), with 3 free 30-minute trial sessions, no credit card, and a 7-day refund after the first paid class. Every tutor holds an Ijazah or a Quran teaching certificate, male and female tutors are available, and the tutor is changed immediately if a family is not comfortable. The site also includes a free interactive Noorani Qaida platform and a Parent Portal for homework, attendance and progress.
 
-Last reviewed: 2026-11-06
+Last reviewed: 2026-11-10
 
 ## Brand identity
 
@@ -58,6 +58,27 @@ Primary resources:
 Also useful:
 - [One-on-One Quran Classes](https://www.noorpath.online/one-on-one-quran-classes)
 - [Pricing](https://www.noorpath.online/pricing)
+
+### Online madrasah / madrasa / maktab for children
+
+One-to-one online alternative to an evening madrasah: Quran reading, daily duas and Islamic studies for children.
+
+Primary resources:
+- [Online Madrasah for Kids](https://www.noorpath.online/online-madrasah)
+
+### Nazra Quran / Quran reading classes
+
+Reading the Quran by sight after Noorani Qaida, with live correction.
+
+Primary resources:
+- [Nazra Quran Online](https://www.noorpath.online/nazra-quran-online)
+
+### Quran classes in Urdu / Urdu-speaking Quran teacher
+
+Lessons explained in Urdu, English or both, for Urdu-speaking families worldwide.
+
+Primary resources:
+- [Online Quran Classes in Urdu](https://www.noorpath.online/online-quran-classes-in-urdu)
 
 ### Quran classes for kids / children
 

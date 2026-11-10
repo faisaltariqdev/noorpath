@@ -188,7 +188,7 @@ export const learnTajweedOnline: Omit<KeywordLandingPageProps, "canonicalPath"> 
 };
 
 export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & { keywords: string[]; metaTitle: string; metaDescription: string } = {
-  metaTitle: "Online Hifz Program for Kids & Adults — 1-on-1 | NoorPath",
+  metaTitle: "Online Hifz Program — Quran Memorization Classes | NoorPath",
   metaDescription:
     `Structured Hifz memorization with revision goals and a personal Hafiz tutor. 1-on-1 live classes, flexible timings. Start with ${TRIAL_OFFER}.`,
   keywords: [
@@ -230,6 +230,10 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
     { q: "Are online Hifz classes free?", a: `The first ${TRIAL_OFFER} cost nothing and need no credit card. Ongoing Hifz lessons are on a paid monthly plan.` },
     { q: "Can my daughter memorise with a female Hafiza?", a: `${TUTOR_FACTS.femaleTutors} Ask for one when you enquire; she is assigned subject to availability and confirmed before the trial.` },
     { q: "Do you offer Hifz for kids online?", a: "Yes — ages 7+ with child-friendly Hafiz tutors and shorter initial sessions that grow with progress." },
+    { q: "Is Hifz the same as Quran memorization classes?", a: "Yes. Hifz (also spelled Hifdh) is the Arabic word for memorising the Quran, so NoorPath's online Hifz program and its Quran memorization classes are the same one-to-one lessons." },
+    { q: "Is this an online Hifz course or private Hifz classes?", a: "It is a structured Hifz course taught as private one-to-one online classes. Each learner has their own tutor, their own daily Sabaq and their own revision plan; there are no group classes." },
+    { q: "Can we join the online Hifz program from the USA, UK, Canada or Australia?", a: "Yes. The program is fully online and lesson times are arranged in your own time zone. Share your time zone when you request the trial; the tutor and time are confirmed before it starts." },
+    { q: "I searched for Hifz classes near me. Do you have a local class?", a: "NoorPath is online only and has no physical branch. Lessons are live at home over video, which suits families with no Hifz class or Hafiz teacher nearby." },
     { q: "How many hours per day should I study Hifz online?", a: "The suitable lesson and revision time varies by learner. A tutor can suggest an illustrative routine based on goals, starting level, and availability." },
   ],
   breadcrumbs: [...BASE_CRUMB, { label: "Online Hifz Program" }],
@@ -237,6 +241,7 @@ export const hifzQuranOnline: Omit<KeywordLandingPageProps, "canonicalPath"> & {
   ctaSubtext: "Request 3 free trial sessions and discuss an individual memorization and revision plan.",
   relatedLinks: [
     { href: "/tools/hifz-calculator", label: "Free Hifz planner" },
+    { href: "/nazra-quran-online", label: "Nazra Quran (before Hifz)" },
     { href: "/pricing", label: "Hifz plan prices" },
     { href: "/blog/how-to-memorize-quran-faster", label: "Memorization Tips" },
     { href: "/online-quran-classes-for-kids", label: "Kids Quran Classes" },

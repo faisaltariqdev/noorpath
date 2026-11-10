@@ -20,8 +20,11 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "ClaudeBot", allow: "/", disallow: PRIVATE_PATHS },
       { userAgent: "Claude-Web", allow: "/", disallow: PRIVATE_PATHS },
       { userAgent: "anthropic-ai", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Claude-SearchBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Claude-User", allow: "/", disallow: PRIVATE_PATHS },
       // Perplexity AI
       { userAgent: "PerplexityBot", allow: "/", disallow: PRIVATE_PATHS },
+      { userAgent: "Perplexity-User", allow: "/", disallow: PRIVATE_PATHS },
       // Google Search & Gemini
       { userAgent: "Googlebot", allow: "/", disallow: PRIVATE_PATHS },
       { userAgent: "Google-Extended", allow: "/", disallow: PRIVATE_PATHS },
