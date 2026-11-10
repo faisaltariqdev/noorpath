@@ -45,6 +45,7 @@ export const blogPosts: BlogPost[] = [
     authorTitle: "Guest author",
     authorSlug: "",
     guestAuthorUrl: "https://www.bismillahtravel.co.uk/",
+    coverImage: "/marketing/quran-during-ramadan-umrah-cover.jpg",
   },
   {
     slug: "connection-between-quranic-unity-and-pilgrimage-rituals",
