@@ -28,6 +28,13 @@ const ORPHAN_ALLOWLIST = new Set([
   "/_global-error",
   "/index",
   "/thank-you",
+  // Legacy URLs that src/proxy.ts 301-redirects to their canonical page: never linked on purpose.
+  "/online-quran-academy",
+  "/quran-lesson-online",
+  "/studying-quran-online",
+  // Thin template city pages kept noindex (TEMPLATE_CITY_NOINDEX_SLUGS), so they are not linked from content.
+  "/online-quran-classes/copenhagen",
+  "/online-quran-classes/espoo",
 ]);
 
 const findings = [];
