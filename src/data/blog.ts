@@ -27,6 +27,26 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "quran-during-ramadan-umrah",
+    title: "How to Complete the Quran During Ramadan Umrah: A Practical Guide",
+    description:
+      "Learn how to complete the Quran during Ramadan Umrah with a practical daily reading schedule, worship tips and preparation advice.",
+    category: "Quran Learning",
+    date: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readTime: "6 min",
+    keywords: [
+      "complete quran in ramadan", "quran during umrah", "ramadan umrah quran schedule",
+      "khatam quran ramadan", "one juz a day", "reading quran in masjid al haram", "ramadan umrah tips",
+    ],
+    excerpt:
+      "A realistic plan for finishing the Quran while performing Umrah in Ramadan — one Juz a day split around the five prayers, time in the Haram, and the last ten nights.",
+    author: "Bismillah Travel",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://www.bismillahtravel.co.uk/",
+  },
+  {
     slug: "connection-between-quranic-unity-and-pilgrimage-rituals",
     title: "The Connection Between Quranic Unity and Pilgrimage Rituals",
     description:
