@@ -63,6 +63,12 @@ const popularCities = [
   { href: "/online-quran-classes/new-york", label: "🇺🇸 New York" },
   { href: "/online-quran-classes/toronto", label: "🇨🇦 Toronto" },
   { href: "/online-quran-classes/sydney", label: "🇦🇺 Sydney" },
+  { href: "/online-quran-classes/mississauga", label: "🇨🇦 Mississauga" },
+  { href: "/online-quran-classes/brampton", label: "🇨🇦 Brampton" },
+  { href: "/online-quran-classes/calgary", label: "🇨🇦 Calgary" },
+  { href: "/online-quran-classes/washington-dc", label: "🇺🇸 Washington DC" },
+  { href: "/online-quran-classes/brisbane", label: "🇦🇺 Brisbane" },
+  { href: "/online-quran-classes/perth", label: "🇦🇺 Perth" },
 ];
 
 export default function Footer() {

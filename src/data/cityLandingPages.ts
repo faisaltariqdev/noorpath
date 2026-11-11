@@ -3,6 +3,8 @@
  * city-specific copy, converted timezones, and full internal linking.
  */
 
+import { newCityLandingPages } from "./cityLandingPagesNew";
+
 export interface CityTimingSlot {
   slot: string;
   time: string;
@@ -65,9 +67,15 @@ export interface CityLandingPageData {
     heading: string;
     paragraphs: [string, string, string];
   };
+  /**
+   * Optional city-specific parent questions with fixed answers. Rendered before the
+   * four shared FAQs and included in FAQPage schema. Answers must only use facts
+   * from academyFacts / the Terms (no unsupported promises).
+   */
+  parentQa?: CityFaq[];
 }
 
-export const cityLandingPages: Record<string, CityLandingPageData> = {
+const baseCityLandingPages: Record<string, CityLandingPageData> = {
   "london": {
     "slug": "london",
     "city": "London",
@@ -4175,6 +4183,11 @@ export const cityLandingPages: Record<string, CityLandingPageData> = {
       ]
     }
   }
+};
+
+export const cityLandingPages: Record<string, CityLandingPageData> = {
+  ...baseCityLandingPages,
+  ...newCityLandingPages,
 };
 
 export function getCityLandingPageData(slug: string): CityLandingPageData | undefined {

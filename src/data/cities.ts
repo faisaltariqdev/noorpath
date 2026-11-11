@@ -1,3 +1,5 @@
+import { newCities } from "./citiesNew";
+
 export interface City {
   /** URL slug, e.g. "london" → /online-quran-classes/london */
   slug: string;
@@ -26,7 +28,7 @@ export function isCityIndexable(slug: string): boolean {
   return !TEMPLATE_CITY_NOINDEX_SLUGS.has(slug);
 }
 
-export const cities: City[] = [
+const baseCities: City[] = [
   // ── United Kingdom ──────────────────────────────────────────────
   {
     slug: "london",
@@ -652,6 +654,9 @@ export const cities: City[] = [
     ],
   },
 ];
+
+/** Existing city pages plus the Phase 2 city expansion (see citiesNew.ts). */
+export const cities: City[] = [...baseCities, ...newCities];
 
 export function getCity(slug: string): City | undefined {
   return cities.find((c) => c.slug === slug);

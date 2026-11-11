@@ -38,7 +38,7 @@ const siblingDiscounts = FAMILY_DISCOUNTS.map((d) => `${d.discountPercent}% for 
  */
 function buildCityFaqs(data: CityLandingPageData, currency: string): { q: string; a: string }[] {
   const starter = PRICING_PLANS[0];
-  return data.faqs.map(({ q }) => {
+  const shared = data.faqs.map(({ q }) => {
     const question = q.toLowerCase();
     if (question.includes("female")) {
       return {
@@ -64,6 +64,7 @@ function buildCityFaqs(data: CityLandingPageData, currency: string): { q: string
       a: `Lessons are live and one-to-one over video. You share the learner's level and the times that suit you in ${data.timezone}; NoorPath matches a tutor and confirms a schedule, and the tutor corrects recitation as your child reads. You start with ${TRIAL_OFFER}, with no credit card.`,
     };
   });
+  return [...(data.parentQa ?? []), ...shared];
 }
 
 export default function RebuiltCityView({ data, pageUrl, rates, currency }: Props) {
@@ -473,6 +474,36 @@ export default function RebuiltCityView({ data, pageUrl, rates, currency }: Prop
             </section>
 
             {/* ── INTERNAL SIBLING & COUNTRY LINKS ── */}
+            <section id="learn-by-goal" style={{ marginBottom: 44, background: "#fff", borderRadius: 14, padding: "22px", border: "1px solid var(--border, #e2e8f0)" }}>
+              <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.15rem", marginBottom: 12 }}>
+                Choose a Quran Course by Goal in {data.city}
+              </h3>
+              <p style={{ fontSize: ".86rem", color: "var(--muted, #64748b)", marginBottom: 14 }}>
+                Every course is taught one-to-one over live video. Pick the one that matches the learner:
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 10 }}>
+                {[
+                  { href: "/online-quran-classes-for-kids", label: `Quran classes for kids in ${data.city}`, hint: "Ages 4 to 16, patient and encouraging" },
+                  { href: "/courses/noorani-qaida-online", label: "Noorani Qaida online", hint: "Letters and reading from zero" },
+                  { href: "/learn-tajweed-online", label: `Learn Tajweed online in ${data.city}`, hint: "Fix pronunciation and recitation rules" },
+                  { href: "/hifz-quran-online", label: `Online Hifz program for ${data.city} students`, hint: "Structured memorisation and revision" },
+                  { href: "/female-quran-teacher-online", label: `Female Quran teacher for ${data.city} families`, hint: "For sisters, daughters and young children" },
+                  { href: "/online-quran-classes-for-adults", label: `Quran classes for adults in ${data.city}`, hint: "Beginners and Tajweed revision" },
+                  { href: "/learn-quran-as-a-revert", label: "Quran for new Muslims", hint: "A gentle start from the beginning" },
+                  { href: "/free-quran-classes-online", label: "Request a free trial", hint: "Meet the tutor before you pay" },
+                ].map((x) => (
+                  <Link
+                    key={x.href}
+                    href={x.href}
+                    style={{ display: "block", padding: "12px 14px", borderRadius: 10, background: "rgba(10,110,79,.05)", textDecoration: "none", border: "1px solid rgba(10,110,79,.1)" }}
+                  >
+                    <span style={{ display: "block", color: "var(--emerald, #0a6e4f)", fontWeight: 700, fontSize: ".9rem" }}>{x.label} →</span>
+                    <span style={{ display: "block", color: "var(--muted, #64748b)", fontSize: ".78rem", marginTop: 2 }}>{x.hint}</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+
             <section style={{ marginBottom: 44, background: "#fff", borderRadius: 14, padding: "22px", border: "1px solid var(--border, #e2e8f0)" }}>
               <h3 style={{ fontFamily: "var(--font-playfair), serif", fontSize: "1.15rem", marginBottom: 12 }}>
                 Related Learning Hubs in {data.country}

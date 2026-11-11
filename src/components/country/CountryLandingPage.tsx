@@ -47,6 +47,7 @@ import { getDisplayRates } from "@/lib/currency/rates";
 import { getCountryGuide } from "@/data/countryGuides";
 import { getCountryMarket, type CountryContent } from "@/data/countryMarkets";
 import { getLocation } from "@/data/locations";
+import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 import { trustpilotReviews } from "@/data/trustpilotReviews";
 
 const CTA_LABEL = `Start ${TRIAL.classes} Free Trial Sessions`;
@@ -394,6 +395,12 @@ export default async function CountryLandingPage({ slug }: { slug: string }) {
   const content = market?.content;
   if (!market || !content) throw new Error(`No country landing content for ${slug}`);
   const countryLabel = getLocation(slug)?.country ?? content.countryName;
+  const allCityLinks = [
+    ...content.cityLinks,
+    ...getCitiesByCountrySlug(slug)
+      .filter((c) => isCityIndexable(c.slug) && !content.cityLinks.some((l) => l.href === `/online-quran-classes/${c.slug}`))
+      .map((c) => ({ label: c.city, href: `/online-quran-classes/${c.slug}` })),
+  ];
 
   const rates = await getDisplayRates();
   const countryGuide = content.guide === "country" ? getCountryGuide(slug) : undefined;
@@ -681,11 +688,11 @@ export default async function CountryLandingPage({ slug }: { slug: string }) {
             <p style={{ color: "var(--muted)", fontSize: ".92rem", lineHeight: 1.7, margin: "0 0 8px" }}>{content.clockNote}</p>
             <p style={{ color: "var(--muted)", fontSize: ".92rem", lineHeight: 1.7, margin: 0 }}>{content.schoolWeek}</p>
           </div>
-          {content.cityLinks.length > 0 && (
+          {allCityLinks.length > 0 && (
             <div style={{ marginTop: 20 }}>
               <h3 style={{ fontSize: "1rem", fontWeight: 700, marginBottom: 10 }}>City scheduling notes</h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                {content.cityLinks.map((city) => (
+                {allCityLinks.map((city) => (
                   <Link key={city.href} href={city.href} style={chipLinkStyle}>
                     {city.label}
                   </Link>

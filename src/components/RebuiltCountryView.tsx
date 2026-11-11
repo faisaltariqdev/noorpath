@@ -7,6 +7,7 @@ import CTAForm from "@/components/CTAForm";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import { CONTACT, TRIAL, TRUSTPILOT } from "@/lib/academyFacts";
+import { getCitiesByCountrySlug, isCityIndexable } from "@/data/cities";
 
 interface Props {
   data: CountryLandingPageData;
@@ -445,7 +446,12 @@ export default function RebuiltCountryView({ data, pageUrl }: Props) {
                 Looking for localized classes tailored to your specific city or borough? Browse our dedicated metropolitan programs:
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                {data.cityLinks.map((city) => (
+                {[
+                  ...data.cityLinks,
+                  ...getCitiesByCountrySlug(data.slug)
+                    .filter((c) => isCityIndexable(c.slug) && !data.cityLinks.some((l) => l.url === `/online-quran-classes/${c.slug}`))
+                    .map((c) => ({ name: c.city, url: `/online-quran-classes/${c.slug}` })),
+                ].map((city) => (
                   <Link
                     key={city.url}
                     href={city.url}
