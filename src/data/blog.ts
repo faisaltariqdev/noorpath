@@ -27,6 +27,27 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "ramadan-umrah-checklist",
+    title: "Ramadan Umrah Checklist: Quran, Duas and Essential Preparations",
+    description:
+      "Prepare for Ramadan Umrah with this UK-focused checklist: Quran guidance, authentic duas, Umrah rituals, flights, hotels and what to pack.",
+    category: "Islamic Knowledge",
+    date: "2026-11-11",
+    updatedAt: "2026-11-11",
+    readTime: "7 min",
+    keywords: [
+      "ramadan umrah checklist", "umrah checklist uk", "ramadan umrah preparation", "umrah duas",
+      "umrah packing list", "ramadan umrah uk", "quran during umrah", "umrah rituals step by step",
+    ],
+    excerpt:
+      "A practical checklist for UK Muslims planning Umrah in Ramadan: Quran to read, authentic duas to learn, the four stages of Umrah, fasting tips, travel documents and a packing list.",
+    author: "Makkah Travel",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://makkahtravel.co.uk/",
+    coverImage: "/marketing/ramadan-umrah-checklist-cover.jpg",
+  },
+  {
     slug: "quran-during-ramadan-umrah",
     title: "How to Complete the Quran During Ramadan Umrah: A Practical Guide",
     description:

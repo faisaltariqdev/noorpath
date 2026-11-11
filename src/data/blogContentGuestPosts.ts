@@ -227,4 +227,168 @@ export const guestPostBlogContent: Record<string, { style: string; content: stri
           <p>If you are planning your Umrah journey from the UK, <a href="https://www.bismillahtravel.co.uk/">Bismillah Travel</a> can help you consider your accommodation and other travel arrangements. Having your trip well organised can allow you to spend more time focusing on your worship and making the most of your spiritual journey.</p>
           <p>Ultimately, keep your intention sincere, recite at a comfortable pace, and use this blessed month to strengthen your connection with the Quran. May Allah accept your efforts, grant you a blessed Umrah, and make it a spiritually rewarding experience. Ameen.</p>`,
   },
+  "ramadan-umrah-checklist": {
+    style: S,
+    content: `<p>Ramadan is one of the most spiritually rewarding times to perform Umrah. For Muslims across the United Kingdom, travelling to Makkah during this blessed month offers an opportunity to strengthen their faith, seek forgiveness and increase their worship. Combining fasting, Salah, Quran recitation and the rituals of Umrah makes this journey particularly meaningful.</p>
+          <p>However, performing Umrah during Ramadan requires careful preparation. Flights and accommodation can be in high demand, while large crowds make travelling around the holy cities more challenging. Whether you are travelling from London, Manchester, Birmingham or Bradford, having a practical checklist can help you enjoy a comfortable and spiritually rewarding pilgrimage.</p>
+          <p>This guide covers Quranic guidance, authentic duas, essential Sunnah practices and travel preparations for UK Muslims planning Ramadan Umrah.</p>
+
+          <h2 id="importance-of-umrah-in-ramadan">1. Understand the Importance of Umrah in Ramadan</h2>
+          <p>Umrah is an important act of worship that allows Muslims to demonstrate their devotion to Allah through specific rituals. Performing it during Ramadan provides an additional spiritual opportunity.</p>
+          <p>Ibn Abbas (RA) reported that the Prophet Muhammad (peace and blessings be upon him) said:</p>
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"Umrah in Ramadan is equivalent to Hajj."</blockquote>
+          <p>This narration is recorded in Sahih al-Bukhari and Sahih Muslim. It highlights the exceptional virtue of performing Umrah during Ramadan. However, it does not replace the obligatory Hajj for those upon whom Hajj is compulsory.</p>
+          <p>Before travelling, make a sincere intention, seek forgiveness and prepare yourself spiritually. Remember that the purpose of Umrah is to worship Allah sincerely and strengthen your relationship with Him.</p>
+
+          <h2 id="quran-checklist">2. Quran Checklist for Ramadan Umrah</h2>
+          <p>The Quran should remain at the centre of your Ramadan worship. Establishing a reading routine before departure can help you maintain consistency throughout your pilgrimage.</p>
+          <p>Consider including these practices:</p>
+          <ul>
+            <li><strong>Read Surah Al-Baqarah:</strong> Pay particular attention to verses 183–187, which discuss fasting, patience and the purpose of Ramadan. Allah explains in verse 183 that fasting has been prescribed so believers may develop Taqwa.</li>
+            <li><strong>Recite the three Quls:</strong> Surah Al-Ikhlas, Al-Falaq and An-Nas are valuable additions to your morning and evening adhkar.</li>
+            <li><strong>Read Ayat al-Kursi:</strong> Surah Al-Baqarah 2:255 describes the greatness and authority of Allah. Include it in your daily recitation.</li>
+            <li><strong>Follow a Quran schedule:</strong> Read after Fajr, Dhuhr or Asr and dedicate some time after Taraweeh to Quran recitation. Completing one Juz daily is a common Ramadan goal, but understanding and reflecting upon the Quran is equally important.</li>
+          </ul>
+
+          <h2 id="essential-duas">3. Essential Duas to Learn Before Travelling</h2>
+          <p>Learning authentic supplications before departure can make your pilgrimage more meaningful. Start with duas from the Quran and Sunnah.</p>
+
+          <h3 id="dua-for-travelling">Dua for Travelling</h3>
+          <p><strong>Arabic:</strong></p>
+          <p dir="rtl" lang="ar" style="font-size:1.5rem;line-height:2.2;text-align:right;">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ ۝ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ</p>
+          <p><strong>Meaning:</strong> "Glory be to Him Who has subjected this to us, and we could not have done it ourselves. And surely to our Lord we will return." (Surah Az-Zukhruf 43:13–14)</p>
+
+          <h3 id="dua-for-forgiveness">Dua for Forgiveness</h3>
+          <p><strong>Arabic:</strong></p>
+          <p dir="rtl" lang="ar" style="font-size:1.5rem;line-height:2.2;text-align:right;">رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ</p>
+          <p><strong>Transliteration:</strong> Rabbi-ghfir li wa tub 'alayya innaka Antat-Tawwabur-Raheem.</p>
+          <p><strong>Meaning:</strong> My Lord, forgive me and accept my repentance. Indeed, You are the Accepter of repentance, the Most Merciful.</p>
+
+          <h3 id="dua-for-goodness">Dua for Goodness</h3>
+          <p><strong>Arabic:</strong></p>
+          <p dir="rtl" lang="ar" style="font-size:1.5rem;line-height:2.2;text-align:right;">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+          <p><strong>Transliteration:</strong> Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina adhaban-nar.</p>
+          <p><strong>Meaning:</strong> Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire. (Surah Al-Baqarah 2:201)</p>
+
+          <h3 id="talbiyah">Talbiyah for Umrah</h3>
+          <p><strong>Arabic:</strong></p>
+          <p dir="rtl" lang="ar" style="font-size:1.5rem;line-height:2.2;text-align:right;">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ</p>
+          <p><strong>Transliteration:</strong> Labbayk Allahumma labbayk. Labbayka la sharika laka labbayk. Innal-hamda wan-ni'mata laka wal-mulk, la sharika lak.</p>
+          <p>Learn the correct pronunciation and the relevant Ihram rulings before travelling.</p>
+
+          <h2 id="travel-preparations">4. Essential Travel Preparations for UK Pilgrims</h2>
+          <p>Planning an international pilgrimage involves more than booking flights and accommodation. Organise your documents and understand the latest Saudi entry requirements before departure.</p>
+          <p>Your travel checklist should include:</p>
+          <ul>
+            <li>A valid passport and appropriate Saudi visa.</li>
+            <li>Confirmed return flight tickets.</li>
+            <li>Hotel reservations in Makkah and Madinah.</li>
+            <li>Travel insurance covering relevant medical and travel needs.</li>
+            <li>Emergency contact information.</li>
+            <li>Copies of important documents.</li>
+            <li>Any required health documentation or vaccination records.</li>
+          </ul>
+          <p>UK travellers should check official Saudi government guidance and the Foreign, Commonwealth and Development Office (FCDO) travel advice.</p>
+
+          <h3 id="book-early">Book Your Ramadan Umrah Tickets Early</h3>
+          <p>Ramadan is one of the busiest periods for Muslims travelling to Saudi Arabia. Many UK pilgrims begin planning several months ahead to secure suitable flights and accommodation.</p>
+          <p>If you are travelling from London, Manchester, Birmingham or another UK city, researching <a href="https://makkahtravel.co.uk/ramadan-umrah-packages"><strong>Ramadan Umrah Tickets</strong></a> early can help you compare departure dates, flight schedules and baggage allowances. Early booking may also provide greater flexibility when selecting travel arrangements that suit your budget.</p>
+          <p>Before confirming your tickets, consider whether the flight is direct or connecting, the arrival time, airport transfers and cancellation conditions. Families travelling with children or elderly relatives should also consider journey duration and convenience.</p>
+
+          <h3 id="accommodation">Choose Suitable Accommodation</h3>
+          <p>Your hotel location can make a significant difference during Ramadan. Consider the walking distance to Masjid al-Haram or Masjid an-Nabawi, availability of lifts, family rooms, meal arrangements and accessibility.</p>
+          <p>Staying closer to the Haram can reduce walking time and make attending congregational prayers easier. Choose accommodation that meets your budget and physical requirements.</p>
+
+          <h2 id="main-rituals">5. Understand the Main Rituals of Umrah</h2>
+          <p>Before travelling, familiarise yourself with the four main stages of Umrah.</p>
+          <ol>
+            <li><strong>Ihram:</strong> Enter the sacred state with the intention of performing Umrah before crossing the relevant Miqat. Men wear the prescribed two unstitched cloths, while women wear appropriate modest clothing. Observe all Ihram restrictions.</li>
+            <li><strong>Tawaf:</strong> Circle the Ka'bah seven times in an anticlockwise direction, beginning at the Black Stone. Avoid pushing other pilgrims and follow the designated routes.</li>
+            <li><strong>Sa'i:</strong> Walk seven circuits between Safa and Marwah, beginning at Safa and finishing at Marwah. This ritual commemorates the patience and trust in Allah demonstrated by Hajar (AS).</li>
+            <li><strong>Halq or Taqsir:</strong> Men shave their heads or shorten their hair, with shaving being more virtuous according to the Sunnah. Women shorten a small portion of their hair according to Islamic rulings.</li>
+          </ol>
+          <p>There is no requirement to recite a different fixed dua for every Tawaf circuit. You can remember Allah, recite the Quran and make personal supplications.</p>
+
+          <h2 id="fasting-and-worship">6. Prepare for Fasting and Worship</h2>
+          <p>Performing Umrah while fasting can be physically demanding, particularly in crowded conditions. Plan your routine to balance worship, meals and rest.</p>
+          <p><strong>Suhoor:</strong> Follow the Sunnah of taking Suhoor, as the Prophet Muhammad (peace and blessings be upon him) taught that there is blessing in it. Choose nutritious foods such as oats, eggs, fruit, yoghurt and wholegrain bread.</p>
+          <p><strong>Iftar:</strong> Break your fast with dates and water when available, following the Sunnah. Enjoy a balanced meal after Maghrib to maintain your energy for Isha and Taraweeh.</p>
+          <p><strong>Rest:</strong> Avoid unnecessary physical exertion and drink sufficient water between Iftar and Suhoor.</p>
+          <p>Islam provides concessions for certain travellers and people unable to fast. If you have health concerns, seek medical advice and consult a knowledgeable scholar about the relevant Islamic rulings.</p>
+
+          <h2 id="packing-list">7. Essential Items to Pack</h2>
+          <p>Packing carefully can make your pilgrimage more comfortable.</p>
+          <h3 id="pack-religious">Religious essentials</h3>
+          <ul>
+            <li>Pocket-sized Quran or Quran application.</li>
+            <li>Dua book containing authentic supplications.</li>
+            <li>Prayer mat and notebook.</li>
+          </ul>
+          <h3 id="pack-clothing">Clothing</h3>
+          <ul>
+            <li>Appropriate Ihram clothing for men.</li>
+            <li>Modest, comfortable clothing for women.</li>
+            <li>Comfortable footwear.</li>
+            <li>Extra socks and lightweight clothing.</li>
+          </ul>
+          <h3 id="pack-personal">Personal essentials</h3>
+          <ul>
+            <li>Unscented toiletries suitable for Ihram.</li>
+            <li>Prescription medicines.</li>
+            <li>Basic first-aid supplies.</li>
+            <li>Reusable water bottle.</li>
+            <li>Phone charger and travel adapter.</li>
+            <li>Power bank, subject to airline regulations.</li>
+          </ul>
+          <h3 id="pack-travel">Travel essentials</h3>
+          <ul>
+            <li>Passport and visa documents.</li>
+            <li>Flight and hotel confirmations.</li>
+            <li>Insurance information.</li>
+            <li>Emergency contact details.</li>
+            <li>Saudi Riyals for everyday expenses.</li>
+          </ul>
+          <p>Check airline baggage restrictions before packing.</p>
+
+          <h2 id="umrah-packages-2027">8. Consider Suitable Umrah Packages for 2027</h2>
+          <p>For British Muslims planning a future pilgrimage, preparing early can make the journey more organised. Researching <a href="https://makkahtravel.co.uk/umrah-packages-2027"><strong>Umrah packages 2027</strong></a> can help you compare flights, accommodation and transport arrangements before making a decision.</p>
+          <p>A suitable package may include return flights from the UK, hotels in Makkah and Madinah, airport transfers, visa assistance where applicable and guided Umrah support.</p>
+          <p>Before paying a deposit, check the travel company's credentials and read the booking conditions carefully. UK travellers should also verify whether the provider has the appropriate ATOL protection for the arrangements being sold, where applicable.</p>
+          <p>Compare hotel distances, included meals, transfer arrangements, cancellation policies and any additional charges. Understanding what is included will help you avoid unexpected expenses.</p>
+
+          <h2 id="sunnah-practices">9. Follow Important Sunnah Practices During Ramadan</h2>
+          <p>Ramadan Umrah is an opportunity to develop good habits that continue after returning home.</p>
+          <ul>
+            <li><strong>Maintain Salah:</strong> Prioritise the five daily prayers and attend congregational prayers whenever possible.</li>
+            <li><strong>Increase Dhikr:</strong> Frequently recite SubhanAllah, Alhamdulillah, Allahu Akbar and Astaghfirullah.</li>
+            <li><strong>Give charity:</strong> Support people in need through trustworthy organisations.</li>
+            <li><strong>Show good character:</strong> Avoid arguments, impatience and pushing in crowded areas.</li>
+            <li><strong>Send Salawat:</strong> Increase blessings upon the Prophet Muhammad (peace and blessings be upon him).</li>
+            <li><strong>Seek forgiveness:</strong> Make sincere repentance and commit to improving your actions.</li>
+          </ul>
+          <p>Treat fellow pilgrims with kindness and patience, remembering that good character is an important part of Islamic worship.</p>
+
+          <h2 id="final-checklist">10. Final Ramadan Umrah Checklist</h2>
+          <p>Before leaving the UK, review these essential preparations:</p>
+          <ul>
+            <li>Make a sincere intention for Umrah.</li>
+            <li>Learn the main rituals and Ihram restrictions.</li>
+            <li>Study relevant Quranic verses and authentic duas.</li>
+            <li>Arrange your passport and Saudi visa.</li>
+            <li>Confirm flights and accommodation.</li>
+            <li>Check travel insurance and entry requirements.</li>
+            <li>Prepare suitable clothing and footwear.</li>
+            <li>Pack essential medicines and toiletries.</li>
+            <li>Plan your Suhoor and Iftar routine.</li>
+            <li>Arrange airport transfers.</li>
+            <li>Save emergency contact information.</li>
+            <li>Prepare a personal list of duas.</li>
+          </ul>
+
+          <h2 id="conclusion">Conclusion</h2>
+          <p>Performing Umrah during Ramadan is a valuable opportunity to strengthen your faith, seek forgiveness and increase your good deeds. However, a rewarding pilgrimage requires preparation beyond booking flights and packing a suitcase.</p>
+          <p>By learning Quranic guidance, memorising authentic duas, understanding the Sunnah rituals and organising travel arrangements, UK Muslims can approach their journey with greater confidence and peace of mind.</p>
+          <p>Whether travelling alone, with family or as part of a group, remember that the purpose of Umrah is sincere worship and closeness to Allah.</p>
+          <p>May Allah accept your Umrah, make your Ramadan journey easy, forgive your shortcomings and grant you the opportunity to return to the holy cities. Ameen.</p>`,
+  },
 };
