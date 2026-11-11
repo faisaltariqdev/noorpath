@@ -100,7 +100,7 @@ export default function Navbar() {
   return (
     <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1050 }}>
       {/* ── PROMO BAR ── */}
-      {promoVisible && (
+      {promoVisible && CONTACT.usaLineActive && (
         <div
           className="promo-bar-np"
           style={{
@@ -112,17 +112,7 @@ export default function Navbar() {
             letterSpacing: ".2px",
           }}
         >
-          🎁{" "}
-          <strong style={{ fontWeight: 700 }}>{TRIAL.classes} free {TRIAL.durationMinutes}-minute trial sessions</strong>{" "}
-          — No credit card required.{" "}
-          <Link
-            href="/free-quran-classes-online"
-            style={{ color: "#e8b84b", fontWeight: 700, marginLeft: 8, textDecoration: "none", whiteSpace: "nowrap" }}
-          >
-            Request Trial →
-          </Link>
           {CONTACT.usaLineActive && (<>
-          <span style={{ margin: "0 10px", opacity: 0.5 }}>|</span>
           <a
             href={CONTACT.usaCallUrl}
             style={{ color: "#fff", fontWeight: 600, textDecoration: "none", whiteSpace: "nowrap" }}

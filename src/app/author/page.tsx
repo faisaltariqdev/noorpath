@@ -8,25 +8,25 @@ import { ArrowRight, BookOpen, ShieldCheck } from "lucide-react";
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: absolutePageTitle("Editorial Authors & Quran Instructors | NoorPath Academy"),
+  title: absolutePageTitle("Our Authors | NoorPath Academy"),
   description:
-    "Meet our editorial authors, Islamic curriculum specialists, and certified Quran tutors at NoorPath Academy.",
+    "Meet the author behind NoorPath Academy's Quran, Tajweed and Hifz guides, and read how we prepare and check our articles.",
   alternates: { canonical: `${BASE_URL}/author` },
 };
 
 export default function AuthorsIndexPage() {
   return (
-    <main className="min-h-screen bg-[var(--background)] py-16 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-[var(--background)] pt-32 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-10">
         <div className="text-center space-y-3">
           <span className="inline-block bg-[var(--emerald)]/10 text-[var(--emerald)] text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider">
             NoorPath Academy Editorial Team
           </span>
           <h1 className="text-3xl sm:text-4xl font-serif font-extrabold text-[var(--charcoal)]">
-            Our Authors &amp; Islamic Scholars
+            Our Authors
           </h1>
           <p className="text-sm sm:text-base text-[var(--slate)] max-w-2xl mx-auto leading-relaxed">
-            All educational articles, Tajweed explanations, and prayer guides on NoorPath are written and reviewed by qualified Islamic educators and certified tutors.
+            The Quran, Tajweed and dua guides on NoorPath are written by our founder and the NoorPath Academy team, and checked against the Quran, authentic hadith collections and standard Tajweed references.
           </p>
         </div>
 
@@ -70,10 +70,10 @@ export default function AuthorsIndexPage() {
         <div className="bg-[var(--ivory)] border border-[var(--border)] rounded-2xl p-6 text-center space-y-2">
           <h3 className="font-serif font-bold text-sm text-[var(--charcoal)] flex items-center justify-center gap-2">
             <ShieldCheck size={18} className="text-[var(--emerald)]" />
-            <span>Strict Editorial &amp; Verification Standards</span>
+            <span>Our Editorial Standards</span>
           </h3>
           <p className="text-xs text-[var(--slate)] max-w-xl mx-auto">
-            Every supplication, hadith citation, and Tajweed rule is cross-referenced with primary authentic sources before publication. Learn more about our commitment in our <Link href="/editorial-policy" className="text-[var(--emerald)] underline font-semibold">Editorial Policy</Link>.
+            Duas, hadith citations and Tajweed rules are checked against primary sources before we publish them. Read the full details in our <Link href="/editorial-policy" className="text-[var(--emerald)] underline font-semibold">Editorial Policy</Link>.
           </p>
         </div>
       </div>
