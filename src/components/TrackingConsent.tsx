@@ -4,6 +4,7 @@ import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import Script from "next/script";
 import FacebookPixel from "@/components/FacebookPixel";
+import TikTokPixel from "@/components/TikTokPixel";
 
 type ConsentChoice = "analytics" | "essential";
 
@@ -52,6 +53,7 @@ export default function TrackingConsent() {
       {choice === "analytics" && (
         <>
           <FacebookPixel />
+          <TikTokPixel />
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID || GOOGLE_ADS_ID}`}
             strategy="afterInteractive"
@@ -95,7 +97,7 @@ export default function TrackingConsent() {
             }}
           >
             NoorPath uses essential storage for your preferences. With your
-            permission, we also use Google and Meta tools to understand visits
+            permission, we also use Google, Meta and TikTok tools to understand visits
             and measure enquiries. Read our{" "}
             <Link href="/privacy-policy" style={{ color: "var(--emerald)" }}>
               Privacy Policy

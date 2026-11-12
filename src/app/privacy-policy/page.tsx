@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
               enquiry.
             </p>
             <p style={paragraphStyle}>
-              If you allow analytics cookies, Google and Meta tools may collect
+              If you allow analytics cookies, Google, Meta and TikTok tools may collect
               information about visits and interactions, such as page views,
               referral information, device or browser details, cookie or
               advertising identifiers, and enquiry events. When a consented
@@ -92,7 +92,8 @@ export default function PrivacyPolicyPage() {
               classes. Depending on the features enabled, these may include FormSubmit for trial-form
               delivery; WhatsApp for conversations; Google Analytics and Google
               Ads for consented measurement; Meta Pixel and Conversions API for
-              consented advertising measurement; and online meeting providers
+              consented advertising measurement; TikTok Pixel for consented
+              advertising measurement; and online meeting providers
               such as Zoom or Google Meet for classes. These providers process
               information under their own terms and privacy policies.
             </p>
@@ -105,7 +106,7 @@ export default function PrivacyPolicyPage() {
 
             <h2 style={sectionStyle}>Cookies and tracking choices</h2>
             <p style={paragraphStyle}>
-              Essential storage remembers your privacy choice. Google and Meta
+              Essential storage remembers your privacy choice. Google, Meta and TikTok
               tracking is loaded only after you select &quot;Accept
               analytics&quot;. Selecting &quot;Essential only&quot; keeps those
               optional tools disabled. You can reopen Cookie settings at any
