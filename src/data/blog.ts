@@ -27,6 +27,27 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "ramadan-in-makkah",
+    title: "Ramadan in Makkah: A Journey of Umrah and Quran",
+    description:
+      "Discover the blessings of Ramadan in Makkah through Umrah, Quran recitation, and Sunnah. Explore spiritual guidance, travel tips, and planning advice for 2027.",
+    category: "Islamic Knowledge",
+    date: "2026-11-12",
+    updatedAt: "2026-11-12",
+    readTime: "10 min",
+    keywords: [
+      "ramadan in makkah", "umrah in ramadan", "ramadan umrah from uk", "umrah and quran",
+      "last ten nights makkah", "umrah flight tickets 2027", "quran in masjid al haram ramadan", "umrah sunnah ramadan",
+    ],
+    excerpt:
+      "How Umrah, Quran recitation and the Sunnah come together in Ramadan in Makkah: the virtue of Ramadan Umrah, the four stages of Umrah, the last ten nights, and practical planning for UK Muslims heading into Ramadan 2027.",
+    author: "Hajj Umrah Hub",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://www.hajjumrahhub.co.uk/",
+    coverImage: "/marketing/ramadan-in-makkah-cover.jpg",
+  },
+  {
     slug: "ramadan-umrah-checklist",
     title: "Ramadan Umrah Checklist: Quran, Duas and Essential Preparations",
     description:
