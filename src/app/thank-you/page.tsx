@@ -47,29 +47,6 @@ export default function ThankYouPage() {
         `}
       </Script>
 
-      {/* ── TikTok SubmitForm (only if the visitor accepted analytics, so ttq exists) ── */}
-      <Script id="tiktok-thankyou-lead" strategy="afterInteractive">
-        {`
-          (function () {
-            var tries = 0;
-            function fire() {
-              if (!window.ttq || typeof window.ttq.track !== 'function') {
-                if (tries++ < 100) { setTimeout(fire, 100); }
-                return;
-              }
-              var params = new URLSearchParams(window.location.search);
-              var fromForm = params.get('submitted') === '1';
-              var already = sessionStorage.getItem('np_tt_lead_tracked') === '1';
-              if (fromForm && !already) {
-                window.ttq.track('SubmitForm', { content_name: 'free_trial_booking' });
-                sessionStorage.setItem('np_tt_lead_tracked', '1');
-              }
-            }
-            fire();
-          })();
-        `}
-      </Script>
-
       <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0a3d28 0%, #0d5436 50%, #063d2c 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 16px" }}>
         <div style={{ maxWidth: 560, width: "100%", textAlign: "center" }}>
 

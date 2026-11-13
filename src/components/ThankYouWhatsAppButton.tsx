@@ -1,15 +1,22 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import { CONTACT } from "@/lib/academyFacts";
 import WhatsAppLink from "@/components/WhatsAppLink";
+import { readThankYouDetails, type ThankYouDetails } from "@/lib/thankYouHandoff";
 
 export default function ThankYouWhatsAppButton() {
-  const searchParams = useSearchParams();
-  const name = searchParams.get("name") || "";
-  const child = searchParams.get("child") || "";
-  const course = searchParams.get("course") || "";
-  const country = searchParams.get("country") || "";
+  // Details come from sessionStorage (set by the trial form), never from the URL.
+  const [saved, setSaved] = useState<Partial<ThankYouDetails>>({});
+  useEffect(() => {
+    const details = readThankYouDetails();
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- sessionStorage is only readable after mount
+    if (details) setSaved(details);
+  }, []);
+  const name = saved.name || "";
+  const child = saved.child || "";
+  const course = saved.course || "";
+  const country = saved.country || "";
 
   let text = "Assalamu Alaikum. I just submitted a free trial request on NoorPath Academy. Please confirm tutor and schedule availability.";
   if (name || child || country) {

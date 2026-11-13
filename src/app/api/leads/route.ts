@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { normalisePhone } from "@/lib/phone";
 import { leadEmailHtml, leadEmailSubject, leadEmailText, type LeadEmail } from "@/lib/leadEmail";
 
 export const dynamic = "force-dynamic";
@@ -230,9 +231,25 @@ export async function POST(request: Request) {
       ? `Learner: ${childName || "n/a"}${childAge ? `, age ${childAge}` : ""} (${learnerType})`
       : "";
 
+  // Add the country code the parent left out so the team can message them on WhatsApp.
+  const phoneInfo = phone ? normalisePhone(phone, country) : null;
+  const dialablePhone = phoneInfo?.international || phone;
+
+  const utmContent = String(body.utm_content || "").trim().slice(0, 150);
+  const ttclid = String(body.ttclid || "").trim().slice(0, 200);
+  const firstLanding = String(body.first_landing || "").trim().slice(0, 200);
+
   const emailDeliveryPromise = sendLeadEmail({
+    contactTyped: phoneInfo && dialablePhone !== contact ? contact : "",
+    phoneStatus: phoneInfo?.status,
+    utmSource: String(body.utm_source || "").trim().slice(0, 150),
+    utmMedium: medium === "website" ? "" : medium.slice(0, 150),
+    utmCampaign: campaign.slice(0, 150),
+    utmContent,
+    ttclid,
+    firstLanding,
     name,
-    contact,
+    contact: phoneInfo ? dialablePhone : contact,
     country,
     learnerType,
     learnerName: childName,
@@ -261,7 +278,7 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           parent_name: name,
           email: email || undefined,
-          whatsapp: phone || undefined,
+          whatsapp: dialablePhone || undefined,
           country: country || undefined,
           child_name: childName || undefined,
           child_age: childAge || undefined,

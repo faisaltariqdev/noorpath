@@ -3,6 +3,10 @@
 import { useCallback, useEffect, useState } from "react";
 import { track } from "next-pixels";
 import { hasAnalyticsConsent } from "@/components/TrackingConsent";
+import { captureAttribution } from "@/lib/leadAttribution";
+import { normalisePhone } from "@/lib/phone";
+import { saveThankYouDetails } from "@/lib/thankYouHandoff";
+import { identifyTikTokUser } from "@/lib/tiktokMatching";
 
 export type TrialFormStatus = "idle" | "loading" | "success" | "error";
 
@@ -71,7 +75,7 @@ export function useTrialFormSubmit(options: Options = {}) {
         return;
       }
 
-      const { email, phone } = splitContactField(contactRaw);
+      const { email, phone: typedPhone } = splitContactField(contactRaw);
       const name = String(fd.get("name") || "").trim();
       const country = String(fd.get("country") || "").trim();
       const childName = String(fd.get("child_name") || "").trim() || name;
@@ -81,6 +85,8 @@ export function useTrialFormSubmit(options: Options = {}) {
       const tutorPreference = String(fd.get("tutor_preference") || "").trim();
       const learnerNotes = String(fd.get("learner_notes") || "").trim();
       const course = String(fd.get("course") || "Free trial class").trim();
+      // Same country-code fix as the server, so TikTok/Meta get a usable international number.
+      const phone = typedPhone ? normalisePhone(typedPhone, country).international.replace(/\s/g, "") : "";
       if (!country || !learnerType || !childAge) {
         setStatus("error");
         setMsg("Please add the country and learner details.");
@@ -89,7 +95,8 @@ export function useTrialFormSubmit(options: Options = {}) {
       const consentTimestamp = new Date().toISOString();
       const sourcePage = window.location.href;
       const referrer = document.referrer || "Direct";
-      const params = new URLSearchParams(window.location.search);
+      // Ad tags from this page's URL, or remembered from earlier in the session.
+      const attribution = captureAttribution();
 
       setStatus("loading");
       try {
@@ -113,9 +120,12 @@ export function useTrialFormSubmit(options: Options = {}) {
             contact_consent: consent,
             consent_timestamp: consentTimestamp,
             _honey: String(fd.get("_honey") || ""),
-            utm_source: params.get("utm_source") || "",
-            utm_medium: params.get("utm_medium") || "",
-            utm_campaign: params.get("utm_campaign") || "",
+            utm_source: attribution.utm_source || "",
+            utm_medium: attribution.utm_medium || "",
+            utm_campaign: attribution.utm_campaign || "",
+            utm_content: attribution.utm_content || "",
+            ttclid: attribution.ttclid || "",
+            first_landing: attribution.first_landing || "",
           }),
         });
         const leadData = (await leadRes.json().catch(() => null)) as
@@ -189,6 +199,8 @@ export function useTrialFormSubmit(options: Options = {}) {
           } catch {
             /* ignore */
           }
+          // Hashed email/phone for TikTok matching; must run before the event is sent.
+          await identifyTikTokUser({ email, phone });
           track({
             eventName: "Lead",
             emails: email ? [email] : undefined,
@@ -210,11 +222,9 @@ export function useTrialFormSubmit(options: Options = {}) {
         await new Promise((r) => setTimeout(r, hasAnalyticsConsent() ? 1200 : 800));
 
         const targetUrl = new URL("/thank-you", window.location.origin);
+        // Personal details go through sessionStorage, not the URL (URLs are seen by ad pixels).
+        saveThankYouDetails({ name, child: childName, course, country });
         targetUrl.searchParams.set("submitted", "1");
-        targetUrl.searchParams.set("name", name);
-        targetUrl.searchParams.set("child", childName);
-        targetUrl.searchParams.set("course", course);
-        targetUrl.searchParams.set("country", country);
         window.location.href = targetUrl.toString();
       } catch {
         setStatus("error");

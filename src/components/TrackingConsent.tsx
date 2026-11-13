@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import Script from "next/script";
 import FacebookPixel from "@/components/FacebookPixel";
 import TikTokPixel from "@/components/TikTokPixel";
+import { captureAttribution } from "@/lib/leadAttribution";
 
 type ConsentChoice = "analytics" | "essential";
 
@@ -41,6 +42,11 @@ export default function TrackingConsent() {
     () => null,
   );
   const [settingsOpen, setSettingsOpen] = useState(false);
+
+  // Remember ad tags (utm_*, ttclid) for this session so the trial form can report the lead's source.
+  useEffect(() => {
+    captureAttribution();
+  }, []);
 
   function saveChoice(nextChoice: ConsentChoice) {
     window.localStorage.setItem(STORAGE_KEY, nextChoice);

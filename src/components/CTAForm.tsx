@@ -162,7 +162,7 @@ export default function CTAForm({
         type="text"
         name="contact"
         id={id("contact")}
-        placeholder="WhatsApp number or email"
+        placeholder="WhatsApp number (with country code) or email"
         required
         autoComplete="tel"
         inputMode="text"

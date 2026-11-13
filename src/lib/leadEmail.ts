@@ -18,7 +18,34 @@ export type LeadEmail = {
   landingPage: string;
   referrer: string;
   formVariant: string;
+  /** Ad attribution captured from the visitor's URL (all optional). */
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  utmContent?: string;
+  /** TikTok click id: present when the visitor arrived by clicking a TikTok ad. */
+  ttclid?: string;
+  firstLanding?: string;
+  /** What the parent actually typed, shown only when we changed it (e.g. added the country code). */
+  contactTyped?: string;
+  phoneStatus?: "kept" | "added" | "assumed_full" | "unknown";
 };
+
+function phoneNote(lead: LeadEmail): string {
+  if (lead.phoneStatus === "added") return "Country code added from the selected country — confirm it on the first message.";
+  if (lead.phoneStatus === "unknown") return "No country code and the country is not listed — check the number before messaging.";
+  return "";
+}
+
+/** Short label for where the lead came from, e.g. "TikTok ad". */
+export function leadSourceLabel(lead: LeadEmail): string {
+  const src = (lead.utmSource || "").toLowerCase();
+  if (lead.ttclid || src.includes("tiktok")) return "TikTok ad";
+  if (src.includes("facebook") || src.includes("meta") || src.includes("instagram") || src === "fb" || src === "ig") return "Meta ad";
+  if (src.includes("google")) return "Google";
+  if (lead.utmSource) return lead.utmSource;
+  return "Website (no ad tag)";
+}
 
 const EMERALD = "#0a6e4f";
 const EMERALD_DK = "#063d2c";
@@ -56,7 +83,9 @@ function receivedAt(date: Date): string {
 }
 
 export function leadEmailSubject(lead: LeadEmail): string {
-  return `New trial request — ${lead.name} (${lead.country})`;
+  const label = leadSourceLabel(lead);
+  const tag = label.endsWith("ad") ? `[${label}] ` : "";
+  return `${tag}New trial request — ${lead.name} (${lead.country})`;
 }
 
 export function leadEmailText(lead: LeadEmail, now = new Date()): string {
@@ -66,6 +95,8 @@ export function leadEmailText(lead: LeadEmail, now = new Date()): string {
     "",
     `Contact name: ${lead.name}`,
     `Contact: ${lead.contact}`,
+    ...(lead.contactTyped ? [`Typed as: ${lead.contactTyped}`] : []),
+    ...(phoneNote(lead) ? [`Note: ${phoneNote(lead)}`] : []),
     `Country: ${lead.country}`,
     "",
     `Learner: ${lead.learnerName || "Not provided"} (${learnerTypeLabel(lead.learnerType)})`,
@@ -75,6 +106,11 @@ export function leadEmailText(lead: LeadEmail, now = new Date()): string {
     `Tutor preference: ${lead.tutorPreference || "Not specified"}`,
     ...(lead.learnerNotes ? [`About the learner: ${lead.learnerNotes}`] : []),
     "",
+    `Lead source: ${leadSourceLabel(lead)}`,
+    ...(lead.utmCampaign ? [`Campaign: ${lead.utmCampaign}`] : []),
+    ...(lead.utmMedium ? [`Medium: ${lead.utmMedium}`] : []),
+    ...(lead.utmContent ? [`Ad / content: ${lead.utmContent}`] : []),
+    ...(lead.firstLanding ? [`First page visited: ${lead.firstLanding}`] : []),
     `Form: ${lead.formVariant}`,
     `Landing page: ${lead.landingPage || "Not provided"}`,
     `Referrer: ${lead.referrer || "Direct"}`,
@@ -139,14 +175,17 @@ export function leadEmailHtml(lead: LeadEmail, now = new Date()): string {
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid ${BORDER};">
     <tr><td style="background:${EMERALD_DK};background-image:linear-gradient(135deg,${EMERALD_DK},${EMERALD});padding:24px 32px;">
       <div style="font-size:20px;font-weight:800;color:#ffffff;">Noor<span style="color:${GOLD};">Path</span> <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,.75);">Academy</span></div>
-      <div style="margin-top:14px;display:inline-block;padding:4px 10px;border-radius:999px;background:${GOLD};color:#1a1a2e;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;">New trial request</div>
+      <div style="margin-top:14px;display:inline-block;padding:4px 10px;border-radius:999px;background:${GOLD};color:#1a1a2e;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;">New trial request · ${esc(leadSourceLabel(lead))}</div>
       <div style="margin-top:10px;font-size:22px;font-weight:700;color:#ffffff;line-height:1.3;">${esc(lead.name)}</div>
       <div style="margin-top:4px;font-size:13px;color:rgba(255,255,255,.8);">${esc(lead.country)} · ${esc(receivedAt(now))}</div>
     </td></tr>
 
     ${actions ? `<tr><td style="padding:24px 32px 0;">${actions}</td></tr>` : ""}
 
-    ${section("Contact", row("Name", esc(lead.name)) + row("Contact", contactValue) + row("Country", esc(lead.country), true))}
+    ${section("Contact", row("Name", esc(lead.name)) + row("Contact", contactValue) +
+        (lead.contactTyped ? row("Typed as", esc(lead.contactTyped)) : "") +
+        (phoneNote(lead) ? row("Note", esc(phoneNote(lead))) : "") +
+        row("Country", esc(lead.country), true))}
 
     ${section(
       "Learner",
@@ -161,7 +200,17 @@ export function leadEmailHtml(lead: LeadEmail, now = new Date()): string {
           : ""),
     )}
 
-    ${section("Source", row("Form", esc(lead.formVariant)) + row("Landing page", landing) + row("Referrer", esc(lead.referrer || "Direct"), true))}
+    ${section(
+      "Source",
+      row("Lead source", esc(leadSourceLabel(lead))) +
+        (lead.utmCampaign ? row("Campaign", esc(lead.utmCampaign)) : "") +
+        (lead.utmMedium ? row("Medium", esc(lead.utmMedium)) : "") +
+        (lead.utmContent ? row("Ad / content", esc(lead.utmContent)) : "") +
+        (lead.firstLanding ? row("First page visited", esc(lead.firstLanding)) : "") +
+        row("Form", esc(lead.formVariant)) +
+        row("Landing page", landing) +
+        row("Referrer", esc(lead.referrer || "Direct"), true),
+    )}
 
     <tr><td style="padding:24px 32px 28px;">
       <div style="background:${CREAM};border-radius:10px;padding:14px 16px;font-size:13px;color:${MUTED};line-height:1.5;">
