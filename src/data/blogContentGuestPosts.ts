@@ -611,4 +611,202 @@ export const guestPostBlogContent: Record<string, { style: string; content: stri
 
           <p>It is advisable to research and book flights and accommodation several months in advance, particularly if travelling during the last ten nights of Ramadan. Early planning gives travellers more flexibility when comparing flight routes, hotels, and travel arrangements. Always check current visa and travel requirements before booking.</p>`,
   },
+  "historical-islamic-sites-to-visit-in-makkah": {
+    style: S,
+    content: `<p><img src="/marketing/historical-islamic-sites-makkah-cover.jpg" alt="10 historical Islamic sites to visit in Makkah: Jabal al-Noor, Jabal Thawr, Masjid al-Jinn, Jannat al-Mu'alla, Masjid al-Hudaybiyah and more, for Canadian Umrah pilgrims" width="1200" height="675" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 8px;" /></p>
+
+          <p>Makkah is the holiest city in Islam and a destination that holds immense spiritual significance for Muslims around the world. For Muslims living in Canada, travelling to Makkah for Umrah or Hajj is often a lifelong dream and an opportunity to strengthen their relationship with Allah Almighty. Beyond performing Tawaf around the Holy Kaaba and offering prayers at Masjid al-Haram, pilgrims can explore several historical Islamic locations connected to the life of Prophet Muhammad ﷺ, his companions, and the early Muslim community. These landmarks preserve important memories of Islam's beginnings and offer valuable lessons about faith, patience, sacrifice, and devotion.</p>
+
+          <p>For Canadian Muslims planning their spiritual journey, exploring Makkah's Islamic heritage can make the experience even more meaningful. Choosing suitable <a href="https://www.kaabahtours.com/umrah-packages.html">Umrah Packages from Canada</a> can help pilgrims organise their flights, accommodation, transportation, and other essential arrangements before departure. Whether travelling from Toronto, Vancouver, Calgary, Ottawa, or Montreal, proper preparation lets Canadian pilgrims spend more time focusing on worship and exploring the historical significance of this blessed city.</p>
+
+          <h2 id="why-should-canadian-muslims-explore-the-historical-sites-of-makkah">Why Should Canadian Muslims Explore the Historical Sites of Makkah?</h2>
+
+          <p>Many Muslims travelling from Canada visit Makkah primarily to perform Umrah or Hajj. However, understanding the city's Islamic history can add another dimension to their spiritual experience.</p>
+
+          <p>Makkah witnessed the beginning of the revelation of the Quran, the struggles of the earliest Muslims, and several major events in the life of Prophet Muhammad ﷺ.</p>
+
+          <p>Allah Almighty says:</p>
+
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"Indeed, the first House [of worship] established for mankind was that at Makkah – blessed and a guidance for the worlds."<br><span style="font-style:normal;font-size:.92rem;">(Surah Aal-e-Imran 3:96)</span></blockquote>
+
+          <p>This verse highlights Makkah's unique position in Islamic history. By learning about its historical locations, Canadian pilgrims can develop a deeper appreciation of the sacrifices made by the Prophet ﷺ and his companions.</p>
+
+          <h2 id="jabal-al-noor-the-mountain-of-the-first-revelation">1. Jabal al-Noor – The Mountain of the First Revelation</h2>
+
+          <p>Jabal al-Noor is one of the most significant historical mountains in Makkah. It is home to the Cave of Hira, where Prophet Muhammad ﷺ received the first revelation of the Holy Quran.</p>
+
+          <p>Before prophethood, the Prophet ﷺ regularly visited this cave for reflection and worship. During one of these visits, Angel Jibreel (AS) appeared and delivered the first revelation:</p>
+
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"Read in the name of your Lord who created."<br><span style="font-style:normal;font-size:.92rem;">(Surah Al-Alaq 96:1)</span></blockquote>
+
+          <p>For Canadian Muslims, visiting or learning about Jabal al-Noor provides an opportunity to understand where the message of Islam began. It also highlights the importance of knowledge, reflection, and seeking guidance from Allah.</p>
+
+          <p><strong>Travel tip:</strong> Climbing the mountain can be physically demanding, particularly during hot weather. Canadian pilgrims should consider their fitness, hydration, and local safety guidance before attempting the climb. It is not an obligatory part of Umrah.</p>
+
+          <h2 id="jabal-thawr-the-mountain-of-the-prophet-s-migration">2. Jabal Thawr – The Mountain of the Prophet's Migration</h2>
+
+          <p>Jabal Thawr holds an important place in Islamic history because of its connection with the Hijrah of Prophet Muhammad ﷺ from Makkah to Madinah.</p>
+
+          <p>During this journey, the Prophet ﷺ and Abu Bakr (RA) took shelter inside the Cave of Thawr while the Quraysh searched for them.</p>
+
+          <p>The Quran records the Prophet's reassuring words:</p>
+
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"Do not grieve; indeed Allah is with us."<br><span style="font-style:normal;font-size:.92rem;">(Surah At-Tawbah 9:40)</span></blockquote>
+
+          <p>This historical event teaches Canadian pilgrims valuable lessons about patience, courage, friendship, and trust in Allah. It reminds Muslims that difficulties can be overcome through sincere faith and practical efforts.</p>
+
+          <h2 id="masjid-al-jinn-the-mosque-associated-with-the-jinn">3. Masjid al-Jinn – The Mosque Associated with the Jinn</h2>
+
+          <p>Masjid al-Jinn is a historically recognised mosque in Makkah associated with an important incident involving a group of jinn who listened to the recitation of the Quran.</p>
+
+          <p>Surah Al-Jinn describes their experience:</p>
+
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"Indeed, we have heard an amazing Qur'an."<br><span style="font-style:normal;font-size:.92rem;">(Surah Al-Jinn 72:1)</span></blockquote>
+
+          <p>This location reminds Muslims that the message of Islam is universal and that the Quran provides guidance beyond human understanding.</p>
+
+          <p>Canadian pilgrims interested in Islamic history can learn more about this incident by reading Surah Al-Jinn and its authentic explanations before visiting the mosque.</p>
+
+          <h2 id="jannat-al-mu-alla-the-historic-cemetery-of-makkah">4. Jannat al-Mu'alla – The Historic Cemetery of Makkah</h2>
+
+          <p>Jannat al-Mu'alla is among the oldest and most historically significant Muslim cemeteries in Makkah. It is traditionally associated with members of Prophet Muhammad's ﷺ family and early Muslim history.</p>
+
+          <p>Khadijah bint Khuwaylid (RA), the Prophet's ﷺ first wife, is traditionally associated with this cemetery. She supported the Prophet ﷺ during the earliest and most challenging years of his mission.</p>
+
+          <p>Her life offers an inspiring example of loyalty, generosity, patience, and unwavering faith.</p>
+
+          <p>For Muslims travelling from Canada, this location provides an opportunity to reflect on the sacrifices of early Muslims and remember the temporary nature of worldly life.</p>
+
+          <p>Visitors should maintain proper Islamic etiquette and avoid practices that contradict Tawheed.</p>
+
+          <h2 id="masjid-al-taneem-masjid-aisha-ra">5. Masjid al-Taneem – Masjid Aisha (RA)</h2>
+
+          <p>Masjid al-Taneem, commonly known as Masjid Aisha, is an important location for people already staying in Makkah who intend to enter Ihram for another Umrah.</p>
+
+          <p>Its historical significance is connected with Aisha (RA). During the Prophet's ﷺ farewell pilgrimage, she wished to perform Umrah separately. The Prophet ﷺ instructed her brother, Abdur Rahman ibn Abi Bakr (RA), to accompany her to Tan'eem.</p>
+
+          <p>Canadian pilgrims who plan an extended stay in Makkah may find it useful to understand this location's role in the practical arrangements for Umrah.</p>
+
+          <p>However, pilgrims travelling from Canada generally enter Ihram at their designated Miqat before reaching Makkah. Visiting Masjid al-Taneem is not required to complete Umrah.</p>
+
+          <h2 id="masjid-al-hudaybiyah-the-site-of-the-historic-treaty">6. Masjid al-Hudaybiyah – The Site of the Historic Treaty</h2>
+
+          <p>Hudaybiyah is remembered as the location of the historic Treaty of Hudaybiyah, which took place in the sixth year after Hijrah.</p>
+
+          <p>Prophet Muhammad ﷺ and his companions travelled towards Makkah intending to perform Umrah. However, the Quraysh prevented them from entering the city. Following negotiations, both parties agreed to a peace treaty.</p>
+
+          <p>Allah Almighty revealed Surah Al-Fath in connection with this important period.</p>
+
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"Indeed, We have given you, [O Muhammad], a clear conquest."<br><span style="font-style:normal;font-size:.92rem;">(Surah Al-Fath 48:1)</span></blockquote>
+
+          <p>The treaty teaches Muslims patience, peaceful negotiation, wisdom, and trust in Allah's plan.</p>
+
+          <p>For Canadian pilgrims, understanding this event provides a deeper appreciation of the challenges faced by the first Muslim community.</p>
+
+          <h2 id="masjid-al-bay-ah-the-mosque-of-the-pledge-of-aqabah">7. Masjid al-Bay'ah – The Mosque of the Pledge of Aqabah</h2>
+
+          <p>Masjid al-Bay'ah is associated with the Pledge of Aqabah, an important event that helped pave the way for Muslims' migration from Makkah to Madinah.</p>
+
+          <p>Representatives from Yathrib, later known as Madinah, pledged their support and protection to Prophet Muhammad ﷺ.</p>
+
+          <p>This commitment played an important role in establishing the first Muslim community in Madinah.</p>
+
+          <p>The historical significance of this location highlights the importance of unity, loyalty, and cooperation among Muslims.</p>
+
+          <p>Canadian Muslims can reflect on these lessons within their own communities, where mosques, Islamic centres, and educational institutions play an important role in preserving Islamic identity.</p>
+
+          <h2 id="the-traditional-birthplace-of-prophet-muhammad">8. The Traditional Birthplace of Prophet Muhammad ﷺ</h2>
+
+          <p>The traditional location associated with the birthplace of Prophet Muhammad ﷺ is situated in the Suq al-Layl area near Masjid al-Haram. The building is commonly associated with Maktaba Makkah al-Mukarramah.</p>
+
+          <p>The Prophet ﷺ was born in the Year of the Elephant, approximately 570 CE. His life later became an extraordinary example of honesty, mercy, patience, and devotion to Allah.</p>
+
+          <p>The Quran describes his character:</p>
+
+          <blockquote style="border-left:4px solid var(--emerald);padding:6px 0 6px 16px;margin:0 0 18px;font-style:italic;">"And indeed, you are of a great moral character."<br><span style="font-style:normal;font-size:.92rem;">(Surah Al-Qalam 68:4)</span></blockquote>
+
+          <p>Canadian pilgrims interested in the Seerah can learn about the Prophet's ﷺ early life and the circumstances of Islam's beginning.</p>
+
+          <p>It is important to understand that visiting the traditional birthplace is a historical activity, not an obligatory or established Umrah ritual.</p>
+
+          <h2 id="masjid-al-rayah-the-mosque-of-the-banner">9. Masjid al-Rayah – The Mosque of the Banner</h2>
+
+          <p>Masjid al-Rayah is a historical mosque associated with the events surrounding the conquest of Makkah in the eighth year after Hijrah.</p>
+
+          <p>The conquest was a remarkable moment in Islamic history. Prophet Muhammad ﷺ returned to Makkah with the Muslim community after years of persecution and hardship.</p>
+
+          <p>Instead of seeking revenge, he showed forgiveness and mercy to many who had opposed him.</p>
+
+          <p>This event teaches Muslims that strength is not simply about power but also about controlling anger, forgiving others, and maintaining humility.</p>
+
+          <p>Canadian pilgrims can take inspiration from this example and apply the Prophet's ﷺ teachings of kindness and forgiveness in their everyday lives.</p>
+
+          <h2 id="masjid-al-khayf-the-historic-mosque-of-mina">10. Masjid al-Khayf – The Historic Mosque of Mina</h2>
+
+          <p>Masjid al-Khayf is located in Mina, near Makkah, and is associated with the Hajj pilgrimage.</p>
+
+          <p>The mosque has a significant place in Islamic tradition, with reports mentioning that numerous prophets prayed in the area. Prophet Muhammad ﷺ also prayed there during his Hajj.</p>
+
+          <p>Mina becomes especially important during the days of Hajj, when pilgrims stay in the area and perform the prescribed ritual of stoning the Jamarat.</p>
+
+          <p>For Canadian Muslims planning their first Hajj, understanding Mina's geography and historical significance can help them prepare for the pilgrimage.</p>
+
+          <h2 id="important-travel-tips-for-canadian-pilgrims-visiting-makkah">Important Travel Tips for Canadian Pilgrims Visiting Makkah</h2>
+
+          <p>Travelling from Canada to Saudi Arabia requires careful preparation, particularly for Muslims visiting Makkah for the first time.</p>
+
+          <h3 id="prepare-your-travel-documents-early">1. Prepare Your Travel Documents Early</h3>
+
+          <p>Check your passport validity, Saudi visa requirements, and current entry regulations before departure. Canadian citizens should consult official Saudi government resources for the latest requirements.</p>
+
+          <h3 id="consider-the-canadian-travel-distance">2. Consider the Canadian Travel Distance</h3>
+
+          <p>Flights from Toronto, Vancouver, Montreal, and other Canadian cities can involve long travel times and connecting flights. Plan your arrival and departure schedules carefully to avoid unnecessary exhaustion.</p>
+
+          <h3 id="understand-the-weather-differences">3. Understand the Weather Differences</h3>
+
+          <p>Canadian pilgrims travelling during winter may experience a significant temperature difference after arriving in Saudi Arabia. Pack comfortable clothing, suitable footwear, sunscreen, and essential personal items.</p>
+
+          <h3 id="prioritise-worship-over-sightseeing">4. Prioritise Worship Over Sightseeing</h3>
+
+          <p>Historical visits should complement your spiritual journey rather than distract from it. Prioritise Salah, Tawaf, Quran recitation, and other prescribed acts of worship.</p>
+
+          <h3 id="arrange-reliable-transportation-and-guidance">5. Arrange Reliable Transportation and Guidance</h3>
+
+          <p>Some historical sites are located outside central Makkah and require additional transportation. A knowledgeable tour guide can explain their historical backgrounds and help you understand their significance.</p>
+
+          <p>Selecting a reliable <a href="https://www.kaabahtours.com/">Umrah Travel agency</a> can also simplify hotel bookings, airport transfers, local transportation, and other arrangements for Canadian families and first-time pilgrims.</p>
+
+          <h2 id="conclusion">Conclusion</h2>
+
+          <p>Makkah is a city of extraordinary spiritual and historical importance for Muslims worldwide. For Canadian pilgrims, exploring its historical Islamic sites provides an opportunity to learn about the beginning of Islam, the sacrifices of Prophet Muhammad ﷺ, and the dedication of his companions. From Jabal al-Noor and Jabal Thawr to Hudaybiyah and Masjid al-Khayf, each location offers valuable lessons from Islamic history.</p>
+
+          <p>Whether you are travelling from Toronto, Vancouver, Calgary, or Montreal, prepare your journey carefully and approach every historical visit with authentic knowledge and respect. Most importantly, remember that the purpose of Umrah is to worship Allah sincerely, follow the Quran and Sunnah, and strengthen your faith. Let the lessons of Makkah stay with you long after you return to Canada.</p>
+
+          <h2 id="frequently-asked-questions-faqs">Frequently Asked Questions (FAQs)</h2>
+
+          <h3 id="which-historical-places-should-canadian-muslims-visit-in-makkah">1. Which Historical Places Should Canadian Muslims Visit in Makkah?</h3>
+
+          <p>Canadian pilgrims can explore Jabal al-Noor, Jabal Thawr, Masjid al-Jinn, Jannat al-Mu'alla, Masjid al-Taneem, and Hudaybiyah. Each location is connected to important events in Islamic history.</p>
+
+          <h3 id="can-canadian-muslims-visit-these-historical-sites-during-umrah">2. Can Canadian Muslims Visit These Historical Sites During Umrah?</h3>
+
+          <p>Yes. Pilgrims can visit accessible historical sites during their stay, as long as they follow local regulations and do not neglect obligatory worship.</p>
+
+          <h3 id="how-many-days-should-canadian-pilgrims-spend-in-makkah">3. How Many Days Should Canadian Pilgrims Spend in Makkah?</h3>
+
+          <p>The ideal duration depends on individual travel arrangements, budget, and religious plans. Many pilgrims prefer to spend several days in Makkah to perform Umrah, offer prayers, and explore historical sites without rushing.</p>
+
+          <h3 id="is-climbing-jabal-al-noor-compulsory-during-umrah">4. Is Climbing Jabal al-Noor Compulsory During Umrah?</h3>
+
+          <p>No. Climbing Jabal al-Noor is not obligatory during Umrah or Hajj. It is a historical visit associated with the first revelation of the Quran.</p>
+
+          <h3 id="what-should-canadian-pilgrims-pack-for-umrah">5. What Should Canadian Pilgrims Pack for Umrah?</h3>
+
+          <p>Canadian pilgrims should prepare comfortable footwear, Ihram clothing where applicable, modest clothing, personal medication, travel documents, sunscreen, and a small bag for daily essentials.</p>
+
+          <h3 id="can-families-with-children-visit-historical-islamic-sites-in-makkah">6. Can Families with Children Visit Historical Islamic Sites in Makkah?</h3>
+
+          <p>Yes, families can visit suitable historical locations. However, parents should consider walking distances, weather conditions, accessibility, and children's physical comfort before planning excursions.</p>`,
+  },
 };

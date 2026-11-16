@@ -27,6 +27,27 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "historical-islamic-sites-to-visit-in-makkah",
+    title: "10 Historical Islamic Sites to Visit in Makkah",
+    description:
+      "Explore 10 historical Islamic sites in Makkah with this Canadian Umrah guide, featuring Quranic history, Prophetic landmarks and travel tips.",
+    category: "Islamic Knowledge",
+    date: "2026-11-16",
+    updatedAt: "2026-11-16",
+    readTime: "10 min",
+    keywords: [
+      "historical islamic sites in makkah", "makkah ziyarat places", "jabal al noor cave of hira", "jabal thawr cave of thawr",
+      "masjid al jinn makkah", "umrah from canada", "umrah packages from canada", "makkah historical places for pilgrims",
+    ],
+    excerpt:
+      "A guide for Canadian Muslims to ten historical Islamic sites in Makkah, from Jabal al-Noor and Jabal Thawr to Hudaybiyah and Masjid al-Khayf, with Quranic references and practical Umrah travel tips.",
+    author: "Kaabah Tours",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://www.kaabahtours.com/",
+    coverImage: "/marketing/historical-islamic-sites-makkah-cover.jpg",
+  },
+  {
     slug: "ramadan-in-makkah",
     title: "Ramadan in Makkah: A Journey of Umrah and Quran",
     description:
