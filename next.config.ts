@@ -30,20 +30,27 @@ function countryShortFormRedirects() {
   });
 }
 
+// Cloudflare Pages build (scripts/cloudflare-build.mjs): ship the site as static files.
+// Vercel builds never set this, so they are unchanged.
+const isCloudflareExport = process.env.CLOUDFLARE_EXPORT === "1";
+
 const nextConfig: NextConfig = {
+  ...(isCloudflareExport ? { output: "export" as const } : {}),
   trailingSlash: false,
   compress: true,
   poweredByHeader: false,
 
   env: {
-    NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: process.env.VERCEL_GIT_COMMIT_SHA ?? "",
-    NEXT_PUBLIC_BUILD_DATE: process.env.VERCEL_GIT_COMMIT_SHA
+    NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.CF_PAGES_COMMIT_SHA ?? "",
+    NEXT_PUBLIC_BUILD_DATE: process.env.VERCEL_GIT_COMMIT_SHA || process.env.CF_PAGES_COMMIT_SHA
       ? new Date().toISOString().split("T")[0]
       : "",
   },
 
   // Image optimization: prefer avif then webp, serve from /public
   images: {
+    // The default image optimiser needs a server; static export serves the files as they are.
+    ...(isCloudflareExport ? { unoptimized: true } : {}),
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
