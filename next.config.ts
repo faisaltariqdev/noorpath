@@ -41,6 +41,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
 
   env: {
+    // Public Meta (Facebook) pixel ID. Not a secret; it is visible in every page's network requests.
+    // The env var overrides it if ever needed. Without a value next-pixels renders no Meta pixel.
+    NEXT_PUBLIC_FB_PIXEL_ID: process.env.NEXT_PUBLIC_FB_PIXEL_ID || "1894649638654103",
     NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.CF_PAGES_COMMIT_SHA ?? process.env.WORKERS_CI_COMMIT_SHA ?? "",
     NEXT_PUBLIC_BUILD_DATE: process.env.VERCEL_GIT_COMMIT_SHA || process.env.CF_PAGES_COMMIT_SHA || process.env.WORKERS_CI_COMMIT_SHA
       ? new Date().toISOString().split("T")[0]
