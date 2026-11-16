@@ -2,8 +2,8 @@
 /**
  * Builds the site as plain static files for Cloudflare Pages (folder: out/).
  *
- *   Cloudflare Pages build command:  node scripts/cloudflare-build.mjs
- *   Cloudflare Pages output folder:  out
+ *   Cloudflare build command:  node scripts/cloudflare-build.mjs   (output folder: out)
+ *   Cloudflare Workers deploy command: npx wrangler deploy        (see wrangler.jsonc)
  *   Local test (safe, works on a temporary copy):  node scripts/cloudflare-build.mjs
  *
  * What it does, in order:
@@ -16,7 +16,7 @@
  *      out/_headers (security headers, long caching for assets, noindex for thin city pages).
  *
  * The Vercel setup is untouched: in the repo itself nothing is deleted. On Cloudflare Pages
- * (CF_PAGES=1) the script edits the throw-away build checkout; locally it works on a copy in the
+ * (CF_PAGES=1 / WORKERS_CI=1) the script edits the throw-away build checkout; locally it works on a copy in the
  * OS temp folder.
  */
 import { spawnSync } from "node:child_process";
@@ -26,7 +26,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const inCI = process.env.CF_PAGES === "1";
+// Cloudflare Pages sets CF_PAGES=1, Cloudflare Workers Builds sets WORKERS_CI=1.
+const inCI = process.env.CF_PAGES === "1" || process.env.WORKERS_CI === "1";
 const MAX_STATIC_REDIRECTS = 2000; // Cloudflare Pages limit
 
 function run(cmd, args, opts = {}) {

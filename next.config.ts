@@ -41,8 +41,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
 
   env: {
-    NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.CF_PAGES_COMMIT_SHA ?? "",
-    NEXT_PUBLIC_BUILD_DATE: process.env.VERCEL_GIT_COMMIT_SHA || process.env.CF_PAGES_COMMIT_SHA
+    NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA: process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.CF_PAGES_COMMIT_SHA ?? process.env.WORKERS_CI_COMMIT_SHA ?? "",
+    NEXT_PUBLIC_BUILD_DATE: process.env.VERCEL_GIT_COMMIT_SHA || process.env.CF_PAGES_COMMIT_SHA || process.env.WORKERS_CI_COMMIT_SHA
       ? new Date().toISOString().split("T")[0]
       : "",
   },
