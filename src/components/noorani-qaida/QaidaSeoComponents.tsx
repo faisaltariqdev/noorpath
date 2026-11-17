@@ -148,13 +148,16 @@ export function QaidaFaqs({
 export function QaidaRelatedLinks({
   title,
   links,
+  headingId = "qaida-related-heading",
 }: {
   title: string;
   links: Array<{ href: string; label: string; description?: string }>;
+  /** Unique per block, so a page can show more than one related-links section. */
+  headingId?: string;
 }) {
   return (
-    <section className="qaida-section" aria-labelledby="qaida-related-heading">
-      <h2 id="qaida-related-heading">{title}</h2>
+    <section className="qaida-section" aria-labelledby={headingId}>
+      <h2 id={headingId}>{title}</h2>
       <div className="qaida-related-grid">
         {links.map((link) => (
           <Link key={link.href} href={link.href}>
@@ -168,5 +171,35 @@ export function QaidaRelatedLinks({
         ))}
       </div>
     </section>
+  );
+}
+
+/**
+ * Parent next steps shown on the Noorani Qaida hub, games and guides. These pages bring most of the site's
+ * search visits; this sends them to the parent-question articles that already rank near the top of Google.
+ */
+export function QaidaParentNextSteps() {
+  return (
+    <QaidaRelatedLinks
+      title="Next steps for parents"
+      headingId="qaida-parent-steps-heading"
+      links={[
+        {
+          href: "/blog/how-long-does-noorani-qaida-take",
+          label: "How long does Noorani Qaida take for kids?",
+          description: "Realistic 3–9 month timelines by age and what “finished” should mean.",
+        },
+        {
+          href: "/blog/when-child-ready-qaida-to-quran",
+          label: "When is my child ready to move to the Quran?",
+          description: "A readiness checklist and a 4-week bridge plan.",
+        },
+        {
+          href: "/blog/child-forgets-arabic-letters",
+          label: "My child forgets Arabic letters",
+          description: "A quick check, recovery plans and review games.",
+        },
+      ]}
+    />
   );
 }

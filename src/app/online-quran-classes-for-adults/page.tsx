@@ -11,7 +11,7 @@ import { buildCourseWithPricingJsonLd } from "@/lib/courseJsonLd";
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: { absolute: "Online Quran Classes for Adults — Beginners & Reverts | NoorPath" },
+  title: { absolute: "Adult Quran Classes Online: 1-on-1 for Beginners | NoorPath" },
   description:
     "Online Quran classes for adults: complete beginners, Tajweed & Hifz. Live 1-on-1 tutor matching, female tutors available, and 3 free trial sessions.",
   keywords: [

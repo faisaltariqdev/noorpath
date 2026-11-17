@@ -1209,7 +1209,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "learn-quran-as-an-adult-never-too-late",
-    title: "Learning Quran as an Adult Beginner (Start Privately at Any Age)",
+    title: "Learn Quran for Adults: Beginner Guide (Start at Any Age)",
     description:
       "Starting Quran from zero at 25, 40 or 60? A step-by-step adult beginner route from Arabic letters (Qaida) to guided reading, in private 1-to-1 lessons.",
     category: "Quran Learning",

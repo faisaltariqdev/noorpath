@@ -15,6 +15,7 @@ import {
   QaidaCallout,
   QaidaCourseCta,
   QaidaFaqs,
+  QaidaParentNextSteps,
   QaidaRelatedLinks,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
 import { serializeJsonLd } from "@/lib/jsonLd";
@@ -297,8 +298,25 @@ export default function NooraniQaidaGamesHubPage() {
                 label: "Live Qaida classes for Australia",
                 description: "After-school and weekend lesson windows in Australian time.",
               },
+              {
+                href: "/locations/online-quran-classes-denmark",
+                label: "Live Qaida classes for Denmark",
+                description: "Online lessons for families far from a mosque, in Danish time.",
+              },
+              {
+                href: "/locations/online-quran-classes-finland",
+                label: "Live Qaida classes for Finland",
+                description: "One-to-one online lessons around short winter days.",
+              },
+              {
+                href: "/locations/online-quran-classes-nigeria",
+                label: "Live Qaida classes for Nigeria",
+                description: "Online tutor matching in West Africa Time (WAT).",
+              },
             ]}
           />
+
+          <QaidaParentNextSteps />
 
           <QaidaGamesWorksheetsGrid currentHref={pageUrl} limit={6} />
 

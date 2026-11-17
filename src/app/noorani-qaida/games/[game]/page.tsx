@@ -14,6 +14,7 @@ import {
   QaidaCallout,
   QaidaCourseCta,
   QaidaFaqs,
+  QaidaParentNextSteps,
   QaidaRelatedLinks,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
 import { serializeJsonLd } from "@/lib/jsonLd";
@@ -250,6 +251,8 @@ export default async function NooraniQaidaGamePage({ params }: Props) {
             title="Core learning links"
             links={primaryInternalLinks}
           />
+
+          <QaidaParentNextSteps />
 
           <QaidaGamesWorksheetsGrid currentHref={url} limit={6} />
 

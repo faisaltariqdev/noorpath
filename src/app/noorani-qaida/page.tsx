@@ -18,6 +18,7 @@ import {
   QAIDA_BASE_URL,
   QaidaBreadcrumbs,
   QaidaCourseCta,
+  QaidaParentNextSteps,
   QaidaScreenshot,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
 import { serializeJsonLd } from "@/lib/jsonLd";
@@ -361,6 +362,8 @@ export default function NooraniQaidaHubPage() {
               ))}
             </div>
           </section>
+
+          <QaidaParentNextSteps />
 
           <section className="qaida-section" aria-labelledby="live-qaida-locations-heading">
             <span className="qaida-eyebrow">Live lessons</span>

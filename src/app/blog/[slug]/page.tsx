@@ -391,6 +391,23 @@ export default async function BlogPostPage({ params }: Props) {
     "muslim-population-statistics-uk-usa",
   ].includes(slug);
 
+  // High-traffic phrase pages: the reader just learnt a phrase or dua, so ask the next natural question
+  // instead of the generic prompt. Every line stays within the published trial offer (TRIAL_OFFER).
+  const PHRASE_CTA: Record<string, string> = {
+    "attahiyat-full-arabic-english-tashahhud": "Not sure your Attahiyat is pronounced correctly?",
+    "dua-e-masura-arabic-english": "Learning Dua Masura by heart?",
+    "safar-ki-dua-travel-dua-arabic-english": "Want your child to say duas with correct Arabic?",
+    "dua-before-school-for-kids": "Want your child to say duas with correct Arabic?",
+    "jazakallah-khair-meaning": "Want to read and say phrases like this in Arabic with confidence?",
+    "barakallah-meaning": "Want to read and say phrases like this in Arabic with confidence?",
+    "bismillah-meaning-in-english": "Want to read Arabic yourself, or teach your child?",
+    "la-ilaha-illallah-meaning": "Want to read Arabic yourself, or teach your child?",
+    "what-is-wazifa-in-islam": "Want to read the Quran properly yourself?",
+    "4-quls": "Want to recite the 4 Quls with correct Tajweed?",
+  };
+  const ctaQuestion = PHRASE_CTA[slug] ?? "Want to read Arabic like this yourself, or teach your child?";
+  const ctaIsContextual = slug in PHRASE_CTA;
+
   const hasAnswerBox = Boolean(richContent?.content && richContent.content.includes("answer-box"));
 
   const speakableSchema = (isCtrRescuePage || hasAnswerBox)
@@ -693,10 +710,18 @@ export default async function BlogPostPage({ params }: Props) {
                         }}
                       >
                         <span style={{ color: "var(--charcoal)", fontSize: ".92rem", lineHeight: 1.5 }}>
-                          <strong>Want to read Arabic like this yourself, or teach your child?</strong>{" "}
+                          <strong>{ctaQuestion}</strong>{" "}
+                          {ctaIsContextual ? "A live tutor can listen and correct you. " : ""}
                           {TRIAL_OFFER} with a certified tutor — no card.
                         </span>
-                        <a href="#book-trial" style={{ color: "var(--emerald)", fontWeight: 700, fontSize: ".9rem", textDecoration: "none", whiteSpace: "nowrap" }}>
+                        <a
+                          href="#book-trial"
+                          style={
+                            ctaIsContextual
+                              ? { background: "var(--emerald)", borderRadius: 10, color: "#fff", fontWeight: 700, fontSize: ".9rem", padding: "10px 18px", textDecoration: "none", whiteSpace: "nowrap" }
+                              : { color: "var(--emerald)", fontWeight: 700, fontSize: ".9rem", textDecoration: "none", whiteSpace: "nowrap" }
+                          }
+                        >
                           Book free classes →
                         </a>
                       </aside>

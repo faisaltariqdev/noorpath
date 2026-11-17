@@ -12,6 +12,7 @@ import {
   QaidaCallout,
   QaidaCourseCta,
   QaidaFaqs,
+  QaidaParentNextSteps,
   QaidaRelatedLinks,
   QaidaScreenshot,
 } from "@/components/noorani-qaida/QaidaSeoComponents";
@@ -291,6 +292,8 @@ export default async function NooraniQaidaGuidePage({ params }: Props) {
               { href: `${QAIDA_BASE_PATH}/games`, label: "All Free Games", description: "Browse letter, harakat, and progress quizzes." },
             ]}
           />
+
+          <QaidaParentNextSteps />
 
           <QaidaGamesWorksheetsGrid currentHref={url} limit={6} />
 
