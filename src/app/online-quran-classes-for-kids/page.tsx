@@ -258,7 +258,8 @@ export default function OnlineQuranClassesForKidsPage() {
               View Pricing &amp; Plans
             </Link>
             <span style={{ color: "rgba(255,255,255,.75)", fontSize: ".85rem", display: "inline-flex", alignItems: "center", gap: 6 }}>
-              ✓ Ages 4–12 · Female tutors available · Timezone matching
+              ✓ Ages 4–12 · Female tutors available · Timezone matching ·{" "}
+              <Link href="/online-quran-classes-for-4-year-olds" style={{ color: "var(--gold-lt)", textDecoration: "underline" }}>Starting at 4?</Link>
             </span>
           </div>
         </div>

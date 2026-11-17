@@ -781,6 +781,22 @@ export default async function CountryLandingPage({ slug }: { slug: string }) {
             <Link href="/pricing" style={{ color: "var(--emerald)", fontWeight: 700 }}>
               Compare all plans
             </Link>
+            {slug === "online-quran-classes-uk" && (
+              <>
+                {" "}or see the{" "}
+                <Link href="/online-quran-classes-uk-fees" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                  UK fees guide with prices in pounds
+                </Link>
+              </>
+            )}
+            {slug === "online-quran-classes-australia" && (
+              <>
+                {" "}or see the{" "}
+                <Link href="/online-quran-classes-australia-fees" style={{ color: "var(--emerald)", fontWeight: 700 }}>
+                  Australia fees guide with prices in AUD
+                </Link>
+              </>
+            )}
             .
           </p>
           <TrialCtaBand text={`Start with ${TRIAL_OFFER} before choosing a plan — no card required.`} whatsappUrl={whatsappUrl} />

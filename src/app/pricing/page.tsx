@@ -186,6 +186,15 @@ export default function PricingPage() {
             ))}
           </div>
 
+          <p style={{ textAlign: "center", color: "var(--muted)", fontSize: ".9rem", marginBottom: 32 }}>
+            Pricing by country:{" "}
+            <Link href="/online-quran-classes-uk-fees" style={{ color: "var(--emerald)", fontWeight: 600 }}>UK fees</Link>
+            {" · "}
+            <Link href="/online-quran-classes-australia-fees" style={{ color: "var(--emerald)", fontWeight: 600 }}>Australia fees</Link>
+            {" · "}
+            <Link href="/online-quran-classes-for-4-year-olds" style={{ color: "var(--emerald)", fontWeight: 600 }}>plans for 4 and 5 year olds</Link>
+          </p>
+
           {/* Triple Peace of Mind Guarantee */}
           <TripleGuaranteeBadge />
 

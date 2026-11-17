@@ -222,6 +222,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/online-quran-for-beginners`,               priority: 0.9,  changeFrequency: "monthly", lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/blog`,                                     priority: 0.85, changeFrequency: "daily",   lastModified: SITE_CONTENT_STAMP },
     { url: `${BASE}/pricing`,                                  priority: 0.85, changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
+    { url: `${BASE}/online-quran-classes-uk-fees`,             priority: 0.8,  changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
+    { url: `${BASE}/online-quran-classes-australia-fees`,      priority: 0.8,  changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
+    { url: `${BASE}/online-quran-classes-for-4-year-olds`,     priority: 0.85, changeFrequency: "monthly", lastModified: NEAR_ME_CLUSTER_STAMP },
     // ── Tier 3: supporting pages ────────────────────────────────────────────────
     { url: `${BASE}/female-quran-teacher-online`,              priority: 0.9,  changeFrequency: "weekly",  lastModified: NEAR_ME_CLUSTER_STAMP },
     { url: `${BASE}/one-on-one-quran-classes`,                 priority: 0.94, changeFrequency: "weekly",  lastModified: SITE_CONTENT_STAMP },
