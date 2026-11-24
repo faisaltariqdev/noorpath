@@ -27,6 +27,27 @@ const AUTHOR_SLUG = "founder";
 export const blogPosts: BlogPost[] = [
   ...backlinkAssets,
   {
+    slug: "benefits-of-reading-quran-every-day-in-ramadan",
+    title: "Benefits of Reading the Quran Every Day in Ramadan",
+    description:
+      "Ten benefits of reading the Quran every day in Ramadan, from a stronger connection with Allah to a lasting habit, with practical tips for individuals and families.",
+    category: "Ramadan",
+    date: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readTime: "5 min",
+    keywords: [
+      "benefits of reading quran every day in ramadan", "reading quran daily in ramadan", "ramadan quran reading routine",
+      "ramadan quran tips", "quran reading habit after ramadan", "ramadan timetable quran",
+    ],
+    excerpt:
+      "Ten benefits of reading the Quran every day in Ramadan: a closer connection with Allah, peace, reflection, a steady worship routine, family habits and a routine that lasts after Eid, plus practical daily tips.",
+    author: "Online Quran Classes",
+    authorTitle: "Guest author",
+    authorSlug: "",
+    guestAuthorUrl: "https://onlinequranclasess.com/",
+    coverImage: "/marketing/benefits-of-reading-quran-every-day-ramadan-cover.jpg",
+  },
+  {
     slug: "historical-islamic-sites-to-visit-in-makkah",
     title: "10 Historical Islamic Sites to Visit in Makkah",
     description:
